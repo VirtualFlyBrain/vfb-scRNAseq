@@ -1,0 +1,19 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/check_fbbt_mapping.py"
+          },
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/check_fbbt_term_request.py"
+          }
+        ]
+      }
+    ]
+  }
+}

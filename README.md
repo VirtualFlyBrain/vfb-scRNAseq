@@ -9,6 +9,11 @@ template and will become the **new master copy** of the VFB scRNAseq LinkML
 schema, deprecating
 [`VirtualFlyBrain/vfb-scRNAseq-ontology`](https://github.com/VirtualFlyBrain/vfb-scRNAseq-ontology).
 
+See [`docs/DESIGN.md`](docs/DESIGN.md) for the design decisions and external
+conventions behind the structure below (the two-schema split, the `VFBseq` id
+policy, FBbt mapping & term-request intake, and the FlyBase expression-stat
+definitions).
+
 ## Two schemas, two jobs
 
 - **Working / annotation format** — `projects/<id>/cell_type_annotations.json`

@@ -9,11 +9,10 @@ FBbt term for a scRNAseq **cluster** described in an atlas report, or determine
 that no suitable term exists. Your output is a *candidate for human review*, not
 a final assignment. You output structured JSON.
 
-This is adapted from the Cell Ontology `ontology-term-lookup` agent. The key
-differences: the target ontology is **FBbt** (not CL), and fly cluster labels are
-often marker- or driver-based ("Tdc2 neurons", "C4 lamina monopolar", "T4/T5")
-rather than canonical anatomy names — so lean harder on the report context and
-synonym strategies, and expect a lower clean-match rate.
+Fly cluster labels are often marker- or driver-based ("Tdc2 neurons",
+"C4 lamina monopolar", "T4/T5") rather than canonical anatomy names — so lean
+harder on the report context and synonym strategies, and expect a lower
+clean-match rate than for well-curated label sets.
 
 ## Input
 

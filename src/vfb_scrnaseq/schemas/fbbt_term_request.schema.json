@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://virtualflybrain.org/schemas/fbbt_term_request.schema.json",
+  "title": "FBbt new term request",
+  "description": "Draft request for a new Drosophila anatomy (FBbt) term, generated when a cluster has no exact FBbt match. Mirrors the FlyBase drosophila-anatomy-developmental-ontology issue template: References + Term label(s) are the only required content; everything else is a non-authoritative suggestion for the curator.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "cluster_label",
+    "references",
+    "term_labels",
+    "ntr_markdown"
+  ],
+  "properties": {
+    "cluster_label": {
+      "type": "string",
+      "description": "The atlas cluster label this request is for (provenance, not part of the issue body)."
+    },
+    "references": {
+      "type": "array",
+      "description": "REQUIRED by FBbt. Publications with information about the term, as FBrf / DOI / PMID.",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "term_labels": {
+      "type": "array",
+      "description": "Proposed name(s) for the new term as used in the publication, or a pointer to where the type names appear (e.g. 'Table S3').",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "suggested_details": {
+      "description": "OPTIONAL, non-authoritative suggestions for the curator, derived from the literature report. FBbt curators author the authoritative definition/axioms; these only assist.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "draft_definition": { "type": "string" },
+            "parent_term": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["fbbt_term", "fbbt_id"],
+              "properties": {
+                "fbbt_term": { "type": "string" },
+                "fbbt_id": { "type": "string", "pattern": "^FBbt:[0-9]{8}$" }
+              }
+            },
+            "location": {
+              "description": "FBbt region/neuropil the cell likely 'overlaps'.",
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["fbbt_term", "fbbt_id"],
+              "properties": {
+                "fbbt_term": { "type": "string" },
+                "fbbt_id": { "type": "string", "pattern": "^FBbt:[0-9]{8}$" }
+              }
+            },
+            "markers": {
+              "type": "array",
+              "description": "Key marker genes (FlyBase symbols and FBgn ids).",
+              "items": { "type": "string" }
+            },
+            "synonyms": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["synonym", "scope"],
+                "properties": {
+                  "synonym": { "type": "string" },
+                  "scope": { "enum": ["exact", "related", "broad", "narrow"] },
+                  "reference": { "type": "string" }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ntr_markdown": {
+      "type": "string",
+      "description": "Issue-ready markdown: the two required FBbt sections, followed by an optional clearly-marked 'Suggested details' block."
+    }
+  }
+}
