@@ -71,6 +71,42 @@ Rationale:
 
 Prefix is `VFBseq` (not `VFBexp`, which is already in use).
 
+## Data acquisition (GEO)
+
+GEO metadata is fetched in `src/vfb_scrnaseq/ingest.py` from GEO's **SOFT** text
+endpoint (`acc.cgi?...&targ=all&form=text&view=full`) over plain HTTP — no auth,
+deterministic, CI-friendly. `fetch_series("GSE...")` returns a typed `GeoSeries`
+(title, summary, platform ids, BioProject, SRA study, supplementary-file URLs)
+with a list of `GeoSample` (accession, title, organism, raw `characteristics`,
+`relations` such as `SRA`/`BioSample`, supp-file URLs). Parsing (`parse_soft`)
+is split from the network call so it is unit-tested against a fixture.
+
+Deliberate boundaries:
+
+- **Metadata only — never the expression matrix.** The matrix is an
+  expression-stats-phase concern. (Same philosophy as the `anndata-zarr-summary`
+  skill, which reads `obs/` only.)
+- **Raw characteristics in, ontology mapping out.** `ingest` surfaces GEO's raw
+  strings (`stage_hint`, `sex_hint`, `characteristic(...)`); mapping them onto
+  FBdv stages and the schema's `sex` enum needs ontology lookup and lives in
+  `build.py`.
+- **`supplementary_files` is the hook for cluster labels from GEO** — many atlases
+  attach a per-cell metadata file with cluster assignments; `ingest` captures
+  those URLs, so they are an authoritative alternative to scraping supp tables.
+
+GEOparse / pysradb are optional swap-ins (e.g. richer SOFT parsing, GSM→SRX/SRR
+resolution) but are **not required**; the stdlib path covers what the schema records.
+
+### `retrieve-dataset` skill — not copied (deferred)
+
+The upstream `Cellular-Semantics/claude-skills` `retrieve-dataset` skill was
+**deliberately not copied**. It is a **MapMyCells annotation-transfer** tool
+(load → convert → emit a `cell_id → cluster` JSON for F1 scoring against the
+Allen/CL taxonomies), pulling the `annotation-transfer` CLI plus R/Seurat — none
+of which serves FBbt mapping. Its only reusable kernel (multi-format → AnnData +
+`obs` inspection) is already covered by `anndata-zarr-summary` for the obs path.
+Revisit only in the expression-stats phase, and even then lift just the loader.
+
 ## FBbt mapping & new-term requests
 
 ### Mapping (`map-clusters-to-fbbt` agent)
@@ -126,7 +162,21 @@ system developmental atlas
 ([GSE156455](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156455),
 DOI `10.1016/j.neuron.2020.10.006`, PMID 33125872). 36 GSM samples
 (GSM4731869–GSM4731904) across DGRP + w1118 strains and pupal timepoints
-(24/48/72h) + adult. Cluster labels are curated from the paper / supplementary
-tables. Chosen as a good FBbt-mapping stress test: canonical optic-lobe types
-(T4/T5, lamina monopolar L1–L5, medulla neurons) map cleanly, while marker- and
-temporal-stage labels exercise the human-review path.
+(24/48/72h) + adult. Chosen as a good FBbt-mapping stress test: canonical
+optic-lobe types (T4/T5, lamina monopolar L1–L5, medulla neurons) map cleanly,
+while marker- and temporal-stage labels exercise the human-review path.
+
+Structure confirmed by `ingest.fetch_series("GSE156455")`:
+
+- **36 samples**, each with `BioSample` (SAMN…) and `SRA` (SRX…) resolved;
+  platform `GPL25244`, BioProject `PRJNA658010`, SRA study `SRP278058`.
+- **Sparse characteristics:** only `tissue` (optic lobes) and `age` — **no sex**,
+  so the schema `sex` slot is unset/mixed for this dataset.
+- **Stages are APF time windows** (`0-96h`, `24h`, `48h`, `72h`, `96h APF`) →
+  map to FBdv pupal stages.
+- **Two sub-datasets, `early` and `main`**, in the supplementary files:
+  `matrix_{early,main}.mtx.gz` (MatrixMarket — the FlyBase/fuzzy-onions format),
+  `barcodes_*`, `features_*`, and `metadata_{early,main}.tsv.gz`.
+- **Cluster labels:** the `metadata_*.tsv.gz` files hold per-cell cluster /
+  cell-type assignments — an authoritative, complete source, usable in place of
+  scraping the paper's supplementary tables.
