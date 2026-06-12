@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vfb-scrnaseq"
+version = "0.0.0"
+description = "Produce RDF metadata for Drosophila scRNAseq datasets (dataset/sample/cluster annotations, FBbt cell-type links, expression summary stats)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Virtual Fly Brain" }]
+dependencies = [
+  "linkml>=1.7",
+  "linkml-runtime>=1.7",
+  "pydantic>=2",
+  "PyYAML>=6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vfb_scrnaseq"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

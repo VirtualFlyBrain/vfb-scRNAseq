@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://virtualflybrain.org/schemas/fbbt_mapping.schema.json",
+  "title": "FBbt mapping result",
+  "description": "Result of mapping one scRNAseq cluster label to a Drosophila anatomy (FBbt) term.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "cluster_label",
+    "working_definition",
+    "searches_performed",
+    "best_match",
+    "justification",
+    "other_candidates",
+    "recommendation",
+    "new_term_needed"
+  ],
+  "properties": {
+    "cluster_label": { "type": "string" },
+    "working_definition": { "type": "string" },
+    "searches_performed": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "best_match": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["fbbt_term", "fbbt_id", "fbbt_definition", "match_type", "skos_mapping", "confidence"],
+          "properties": {
+            "fbbt_term": { "type": "string" },
+            "fbbt_id": { "type": "string", "pattern": "^FBbt:[0-9]{8}$" },
+            "fbbt_definition": { "type": "string" },
+            "match_type": { "enum": ["exact match", "broad match", "narrow match"] },
+            "skos_mapping": { "enum": ["skos:exactMatch", "skos:broadMatch", "skos:narrowMatch"] },
+            "confidence": { "enum": ["high", "medium", "low"] }
+          }
+        }
+      ]
+    },
+    "justification": { "type": "string" },
+    "other_candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["fbbt_term", "fbbt_id", "fbbt_definition", "reason_rejected"],
+        "properties": {
+          "fbbt_term": { "type": "string" },
+          "fbbt_id": { "type": "string", "pattern": "^FBbt:[0-9]{8}$" },
+          "fbbt_definition": { "type": "string" },
+          "reason_rejected": { "type": "string" }
+        }
+      }
+    },
+    "recommendation": { "type": "string" },
+    "new_term_needed": { "type": "boolean" }
+  }
+}

@@ -1,0 +1,29 @@
+# Project config for the first worked example.
+# Kurmangaliyev et al. 2020, Drosophila visual system developmental atlas.
+project: kurmangaliyev_2020
+
+source:
+  doi: 10.1016/j.neuron.2020.10.006
+  pmid: "33125872"
+  title: Transcriptional Programs of Circuit Assembly in the Drosophila Visual System
+  journal: Neuron
+  year: 2020
+
+organism: Drosophila melanogaster
+
+# Dataset-level metadata -> maps to the LinkML `Dataset` class.
+# GEO/SRA accessions are cross-references (schema `site` + `accession` slots),
+# NOT the minted VFBseq IRI.
+dataset:
+  site: GEO
+  accession: GSE156455
+  bioproject: PRJNA658010
+  sra_study: SRP278058
+  platform: GPL25244            # Illumina NovaSeq 6000
+  licence: CC-BY-4.0
+  assay_type: FBcv:0009000      # single-cell RNA-seq
+
+# Biological samples -> LinkML `Sample` / `Assay`. GSM accessions become dbxrefs.
+# Full range is GSM4731869–GSM4731904 (36 samples, DGRP + w1118, pupal 24/48/72h
+# + adult). To be enumerated with stage/sex/strain when the sample sheet is added.
+samples: []

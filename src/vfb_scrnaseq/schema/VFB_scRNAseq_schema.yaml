@@ -1,0 +1,284 @@
+id: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
+name: VFB_scRNAseq
+imports:
+  - linkml:types
+prefixes:
+  FBcv: http://purl.obolibrary.org/obo/FBcv_
+  FBbt: http://purl.obolibrary.org/obo/FBbt_
+  FBdv: http://purl.obolibrary.org/obo/FBdv_
+  OBI: http://purl.obolibrary.org/obo/OBI_
+  IAO: http://purl.obolibrary.org/obo/IAO_
+  BAO: http://www.bioassayontology.org/bao#BAO_
+  RO: http://purl.obolibrary.org/obo/RO_
+  BFO: http://purl.obolibrary.org/obo/BFO_
+  linkml: https://w3id.org/linkml/
+  FlyBase: http://flybase.org/reports/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  oboInOwl: http://www.geneontology.org/formats/oboInOwl#
+  owl: http://www.w3.org/2002/07/owl#
+  dc: http://purl.org/dc/terms/
+  neo_custom: http://n2o.neo/custom/
+  neo_property: http://n2o.neo/property/
+  vfb: http://virtualflybrain.org/reports/
+default_curi_maps:
+    - semweb_context
+default_range: string
+
+
+classes:
+
+  Thing:
+    class_uri: owl:Class
+    slots:
+      - id
+
+  Class:
+    is_a: Thing
+    annotations:
+      owl: NamedIndividual
+    slots:
+      - name
+      - title
+
+  Dataset:
+    is_a: Class
+    class_uri: FBcv:0003023
+    annotations:
+      owl.fstring: ClassAssertion( FBcv:0003023 {id} )
+    attributes:
+      publication:
+        slot_uri: dc:references
+        description: Publication associated with the Dataset.
+        range: Publication
+        annotations:
+          owl.fstring: AnnotationAssertion( dc:references {id} {V} )
+      licence:
+        slot_uri: dc:licence
+        description: Licence for the Dataset (all CC-BY 4.0 for scExpressionAtlas).
+        range: Thing
+        annotations:
+          owl.fstring: AnnotationAssertion( dc:licence {id} {V} )
+      assay_type:
+        slot_uri: OBI:0000312
+        description: Assay type (FBcv ID) for the Dataset, this will probably be 'FBcv:0009000' ('single-cell RNA-seq').
+        range: Thing
+        annotations:
+          owl.fstring: ClassAssertion( ObjectSomeValuesFrom( OBI:0000312 {V} ) {id} )
+      site:
+        slot_uri: oboInOwl:hasDbXref
+        description: VFB site node curie. The site must be created in VFB and added to the dictionary in ../scripts/process_site_data.py to successfully map from FB data.
+        range: Thing
+        annotations:
+          owl.fstring: AnnotationAssertion(
+                        Annotation( neo_custom:accession {accession} )
+                        oboInOwl:hasDbXref {id} {V} )
+      accession:
+        slot_uri: neo_custom:accession
+        description: Accession of the Dataset at the given Site.
+        range: string
+    slots:
+      - neo_label
+      - total_gene_count
+      - filtered_gene_count
+
+  Sample:
+    is_a: Class
+    class_uri: FBcv:0003024
+    annotations:
+      owl.fstring: ClassAssertion( FBcv:0003024 {id} )
+    attributes:
+      sample_tissue:
+        slot_uri: RO:0002131
+        description: Tissue(s) (FBbt IDs) in the sample. Multiple IDs should be separated with '|' or in different rows. Maps as an overlaps relationship rather than part_of due to imprecision of dissection.
+        range: Thing
+        annotations:
+          owl.fstring: ClassAssertion( ObjectSomeValuesFrom( RO:0002131 {V} ) {id} )
+        multivalued: true
+      associated_assay:
+        slot_uri: RO:0002352
+        description: Assay(s) that use this sample. Multiple IDs should be separated with '|' or in different rows.
+        range: Assay
+        annotations:
+          owl: ObjectPropertyAssertion
+        multivalued: true
+    slots:
+      - stage
+      - associated_dataset
+      - sex
+      - neo_label
+
+  Assay:
+    is_a: Class
+    class_uri: FBcv:0003025
+    annotations:
+      owl.fstring: ClassAssertion( FBcv:0003025 {id} )
+    attributes:
+      method:
+        slot_uri: BAO:0000212
+        description: Method used for the assay - currently getting any direct subclass of FBcv:0009005 'single-cell library sequencing' for scRNAseq data.
+        range: Thing
+        annotations:
+          owl.fstring: ClassAssertion( ObjectSomeValuesFrom( BAO:0000212 {V} ) {id} )
+        multivalued: false
+      associated_sample_for_assay:
+        slot_uri: RO:0002233
+        description: Input sample(s) for the scRNAseq assay. Multiple IDs should be separated with '|' or in different rows.
+        range: Sample
+        annotations:
+          owl: ObjectPropertyAssertion
+        multivalued: true
+    slots:
+      - associated_dataset
+      - neo_label
+
+  Clustering:
+    is_a: Class
+    class_uri: FBcv:0009002
+    annotations:
+      owl.fstring: ClassAssertion( FBcv:0009002 {id} )
+    attributes:
+      associated_sample_or_assay_for_clustering:
+        slot_uri: BFO:0000051
+        description: Sample or Assay (FBlc ID) that the Clustering uses.
+        range: Class
+        annotations:
+          owl: ObjectPropertyAssertion
+    slots:
+      - associated_dataset
+
+  Cluster:
+    is_a: Class
+    class_uri: FBcv:0009003
+    annotations:
+      owl.fstring: ClassAssertion( FBcv:0009003 {id} )
+    attributes:
+      associated_clustering:
+        slot_uri: BFO:0000050
+        description: Clustering (FBlc ID) that the Cluster belongs to.
+        range: Clustering
+        annotations:
+          owl: ObjectPropertyAssertion
+      cell_number:
+        slot_uri: neo_custom:cell_count
+        description: The number of cells in the Cluster (as integer).
+        range: integer
+        annotations:
+          owl: AnnotationProperty
+      cell_type:
+        slot_uri: RO:0002473
+        description: Anatomy (FBbt IDs) for the Cluster. Multiple IDs should be separated with '|'.
+        range: Thing
+        multivalued: true
+        annotations:
+          owl.fstring: ClassAssertion( ObjectSomeValuesFrom( RO:0002473 {V} ) {id} )
+    slots:
+      - stage
+      - associated_dataset
+      - sex
+      - neo_label
+      - gene
+      - expression_level
+      - expression_extent
+      - hide_in_terminfo
+      - total_gene_count
+      - filtered_gene_count
+
+  Publication:
+    is_a: Thing
+    class_uri: FBcv:0000212
+    annotations:
+      owl: NamedIndividual
+    attributes:
+      pub_dataset:
+        description: DataSet for the publication - created and used in tsv processing - not incorporated into ontology.
+    slots:
+      - neo_label
+
+# slots can be used as attributes that can be shared by multiple classes
+slots:
+  id:
+    description: Identifier for the entity. FlyBase identifiers should be prefixed with 'FlyBase:'.
+    identifier: true
+    range: uriorcurie
+    required: true
+  name:
+    slot_uri: rdfs:label
+    description: Short systematic label for the entity.
+    annotations:
+      owl: AnnotationAssertion
+    recommended: true
+  title:
+    slot_uri: IAO:0000115
+    description: Short description of the entity.
+    annotations:
+      owl: AnnotationAssertion
+    recommended: true
+  associated_dataset:
+    slot_uri: dc:source
+    description: Dataset (FBlc ID) that the Sample or Cluster belongs to.
+    range: Dataset
+    annotations:
+      owl.fstring: AnnotationAssertion( dc:source {id} {V} )
+  sex:
+    slot_uri: BFO:0000050
+    description: Sex for the entity. Should be 'male' or 'female'.
+    range: sex_options
+    annotations:
+      owl.fstring: ClassAssertion( ObjectSomeValuesFrom( BFO:0000050 {V} ) {id} )
+  stage:
+    slot_uri: RO:0002490
+    description: Developmental stage (FBdv ID) of the Sample or Cluster.
+    range: Thing
+    annotations:
+      owl.fstring: ClassAssertion( ObjectSomeValuesFrom( RO:0002490 {V} ) {id} )
+  neo_label:
+    slot_uri: neo_property:nodeLabel
+    description: neo4j node label to add to entity.
+    annotations:
+      owl: AnnotationProperty
+  gene:
+    slot_uri: RO:0002292
+    description: A gene (FBgn ID) that is expressed by the entity. Max one gene per tsv row alongside its expression_level, expression_extent (for scRNAseq clusters) and hide_in_terminfo (=true).
+    range: Thing
+    annotations:
+      owl.template: |-
+        {% if gene %}
+        ClassAssertion ( 
+            Annotation ( neo_custom:hide_in_terminfo {{hide_in_terminfo}} ) 
+            Annotation ( neo_custom:expression_level {{expression_level}} ) 
+            {% if expression_extent %}
+            Annotation ( neo_custom:expression_extent {{expression_extent}} ) 
+            {% endif %}
+            ObjectSomeValuesFrom ( RO:0002292 {{gene}}) {{id}})
+        {% endif %}
+  hide_in_terminfo:
+    slot_uri: neo_custom:hide_in_terminfo
+    description: Flag to hide expression edges in VFB Term Info pane. Range must be string - boolean changes capitalisation and does not add datatype anyway.
+  expression_extent:
+    slot_uri: neo_custom:expression_extent
+    description: Extent of expression of the given gene.
+    range: float
+  expression_level:
+    slot_uri: neo_custom:expression_level
+    description: Level of expression of the given gene.
+    range: float
+  total_gene_count:
+    slot_uri: neo_custom:total_gene_count
+    description: Total number of distinct genes associated with the entity before filtering by extent.
+    annotations:
+      owl: AnnotationProperty
+    range: integer
+  filtered_gene_count:
+    slot_uri: neo_custom:filtered_gene_count
+    description: Total number of distinct genes associated with the entity after filtering by extent.
+    annotations:
+      owl: AnnotationProperty
+    range: integer
+
+enums:
+  sex_options:
+    permissible_values:
+      male:
+        meaning: FBbt:00007004
+      female:
+        meaning: FBbt:00007011
