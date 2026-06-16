@@ -178,5 +178,28 @@ Structure confirmed by `ingest.fetch_series("GSE156455")`:
   `matrix_{early,main}.mtx.gz` (MatrixMarket — the FlyBase/fuzzy-onions format),
   `barcodes_*`, `features_*`, and `metadata_{early,main}.tsv.gz`.
 - **Cluster labels:** the `metadata_*.tsv.gz` files hold per-cell cluster /
-  cell-type assignments — an authoritative, complete source, usable in place of
-  scraping the paper's supplementary tables.
+  cell-type assignments at three granularity levels — `class` (4: N/G/C/R),
+  `type` (187 in `main`), `subtype` (196 in `main`). The `early` subset is mostly
+  provisional `x*` clusters.
+
+**First annotation pass (decided):** scope = **`main`** subset only; granularity =
+**`subtype`** (the finest resolved identity; `type`/`class` retained as grouping).
+`scripts/build_annotations_from_geo.py` derives
+`projects/kurmangaliyev_2020/cell_type_annotations.json` from the GEO metadata —
+196 subtype annotations, each with `cell_number`, parent `type`, `class`, and the
+`timepoints` it appears at (193,727 cells total).
+
+**Label provenance policy:** take cluster labels from the **most authoritative
+machine-readable source**, and use the other source to validate.
+
+- *Preferred when present:* clean supplementary tables (curated, human-authored
+  naming), validated against the GEO `metadata_*.tsv.gz` label set.
+- *When the supp is figures-only* (as for Kurmangaliyev — the PDF has no
+  spreadsheets), this **inverts**: the GEO `metadata_*.tsv.gz` is the authoritative
+  label source, and the **paper PDF** is the description/validation source.
+
+The GEO metadata wins here on the merits, not just as a fallback: it is
+machine-readable, carries named types at multiple granularity levels, is the
+*corrected* version (the README documents the T4c/T4d label-swap fix that PDF
+figures may predate), and yields per-cluster cell counts (`cell_number`) directly.
+Either way, mismatches are **flagged for review**, never silently resolved.

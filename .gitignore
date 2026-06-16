@@ -16,5 +16,14 @@ venv/
 # Generated
 src/vfb_scrnaseq/model.py
 
+# Downloaded data cache (GEO metadata/matrices)
+.cache/
+
+# Copyrighted / large per-project source data — keep out of the repo
+projects/*/*.pdf
+projects/*/local_index/
+*.mtx.gz
+*_metadata_*.tsv.gz
+
 # OS
 .DS_Store
