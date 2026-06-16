@@ -139,6 +139,29 @@ emits References + Term label(s) as the deliverable, plus an optional,
 / markers / draft definition / synonyms) drawn from the report, never presented
 as authoritative.
 
+## Report generation & cost model
+
+Per-cluster cell-type reports (the descriptive evidence that feeds FBbt mapping)
+are generated with the **Claude Code agentic flow**, not atlas-chat's standalone
+`atlas-report` CLI.
+
+- The `atlas-report` CLI makes its own **paid** Anthropic API calls per report —
+  an ongoing per-cluster cost. We avoid it.
+- Instead, the LLM work runs as **Claude Code subagents in-session** (covered by
+  an existing Claude Code subscription — no metered API billing), drawing evidence
+  from free sources: the **local PDF index** (`local-paper-index`, local MiniLM
+  embeddings), the **OLS MCP** (FBbt), and **PubMed / Europe PMC** in place of
+  ASTA. No `ANTHROPIC_API_KEY` / `ASTA_API_KEY` required.
+- `local-paper-index` (the genuinely useful, free part of atlas-chat) is installed
+  in a sibling clone and the project is **symlinked** in, so the built index and
+  generated `reports/` land back in this repo.
+
+**Validated end-to-end on `T4a`** (zero API cost): local-index evidence →
+in-session synthesis (`reports/T4a.md`) → `map-clusters-to-fbbt` (OLS) →
+`mapping/T4a.fbbt_mapping.json`, an **exact match to FBbt:00003732 (T4a neuron)**,
+high confidence, schema-validated by the hook. The agent correctly rejected the
+parent `T4 neuron` (too broad) and the child `T4ai` (too specific).
+
 ## Expression statistics (later phase)
 
 Summary stats must be computed **the way FlyBase did** (fuzzy-onions
