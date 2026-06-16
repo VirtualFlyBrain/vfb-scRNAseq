@@ -1,0 +1,34 @@
+{
+  "cluster_label": "T4a",
+  "working_definition": "T4a is one of four directional subtypes (a–d) of T4 neurons in the Drosophila optic lobe. It is a columnar, ON-pathway, direction-selective neuron whose dendrites arborise in medulla layer M10 and whose axon terminals project specifically to lobula plate layer 1 (layer a). The four T4 subtypes encode cardinal directions of visual motion; T4a encodes the diagonal front-to-back direction read out in lobula plate layer 1.",
+  "searches_performed": [
+    "T4a neuron (fbbt)",
+    "T4 neuron (fbbt)",
+    "T4 lobula plate layer 1 (fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "T4a neuron",
+    "fbbt_id": "FBbt:00003732",
+    "fbbt_definition": "T4 neuron with its lobula plate arbor in layer 1 (Fischbach and Dittrich, 1989). It responds to motion in a diagonal front-to-back direction (Henning et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00003732 'T4a neuron' is defined as the T4 subtype with its lobula plate arbor in layer 1 that responds to diagonal front-to-back motion (Fischbach and Dittrich 1989; Henning et al. 2022). The atlas cluster 'T4a' is defined identically: a T4 (ON-pathway) columnar optic lobe neuron whose axon terminals target lobula plate layer a (layer 1) and which encodes the corresponding cardinal direction of motion. The label, layer specificity, and directional tuning all match precisely. The FBbt term is not obsolete and is a direct subtype of T4 neuron (FBbt:00003731). FBbt further sub-divides T4a into T4ai (FBbt:00052241) and T4aii (FBbt:00052242) based on finer diagonal direction sub-tuning, but the atlas cluster 'T4a' does not resolve to that level of granularity; the cluster maps to the T4a level, not the sub-sub-types.",
+  "other_candidates": [
+    {
+      "fbbt_term": "T4 neuron",
+      "fbbt_id": "FBbt:00003731",
+      "fbbt_definition": "T neuron with its cell body posterior to the lobula plate and a cell body fiber that projects through the lobula plate and via the second optic chiasma, with little or no arborization, to medulla layer 10 (Fischbach and Dittrich, 1989; Shinomiya et al., 2019). It forms a fine arborization in medulla layers M9 and M10 and its axon then doubles back across the second optic chiasma to form bleb-type arborizations in a single layer of the lobula plate (Fischbach and Dittrich, 1989; Shinomiya et al., 2019). It is a cholinergic neuron (Mauss et al., 2014; Shinomiya et al., 2014). There are a large number of these cells, which are generated from neuroblasts that amplify by symmetric division (type III) before generating the T4 (and T5) neurons (Mora et al., 2018).",
+      "reason_rejected": "Parent term covering all four T4 subtypes (a–d); the cluster 'T4a' is specifically the layer-1 subtype. Using the parent would be a broad match and would lose the defining layer-identity information that is central to this cluster's annotation."
+    },
+    {
+      "fbbt_term": "T4ai neuron",
+      "fbbt_id": "FBbt:00052241",
+      "fbbt_definition": "T4a neuron that responds to motion in a diagonal upward front-to-back direction (Henning et al., 2022).",
+      "reason_rejected": "Child of T4a neuron, representing a further sub-subtype defined by a specific diagonal sub-direction. The atlas cluster 'T4a' is not resolved to this level; this term is more specific than the cluster."
+    }
+  ],
+  "recommendation": "Map cluster T4a to FBbt:00003732 (T4a neuron) with skos:exactMatch. The label, lobula plate layer-1 targeting, and direction-selectivity all correspond precisely. No new FBbt term is needed.",
+  "new_term_needed": false
+}
