@@ -1,0 +1,29 @@
+{
+  "cluster_label": "N1",
+  "working_definition": "N1 is an unresolved transcriptional cluster from a Drosophila adult optic-lobe scRNAseq atlas (Kurmangaliyev et al. 2020, GSE156455). It was assigned to cell class N (neuron) but not matched to any named optic-lobe cell type by the authors; they used numbered labels (N1, N19, ...) specifically for clusters whose anatomical identity they could not resolve. The cluster is defined solely by its transcriptional profile; its specific neuropil location, morphology, neurotransmitter identity, and function are all unresolved.",
+  "searches_performed": [
+    "N1 (exact cluster label)",
+    "adult optic lobe neuron",
+    "optic lobe neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "adult optic lobe neuron",
+    "fbbt_id": "FBbt:00003702",
+    "fbbt_definition": "Neuron that has its cell body in the adult optic lobe. These neurons develop from neuroblasts of the larval optic anlage (Hofbauer and Campos-Ortega, 1990).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "low"
+  },
+  "justification": "N1 is a numbered, anatomically unresolved cluster from an adult optic-lobe atlas; it belongs to cell class N (neuron) and its cells originate in the optic lobe. FBbt:00003702 'adult optic lobe neuron' is therefore a valid high-level parent: the cluster IS-A adult optic lobe neuron in the broadest sense. No more specific term is defensible because the subtype, neuropil, morphology, and neurotransmitter are all unknown. The 'N1' label returned by the exact search matched a larval mushroom-body output neuron (FBbt:00047989), which is unrelated and was rejected. No exact match exists in FBbt for this uncharacterised cluster.",
+  "other_candidates": [
+    {
+      "fbbt_term": "larval mushroom body output neuron n1",
+      "fbbt_id": "FBbt:00047989",
+      "fbbt_definition": "Larval neuron with postsynaptic terminals ipsilaterally in all three mushroom body vertical lobe regions (V1, V2 and V3) and in the dorsoposterior compartment (posterior superior medial protocerebrum) (Saumweber et al., 2018). It also has postsynapses and presynapses in the dorsoanterior compartment (anterior superior medial protocerebrum) and basocentral compartment (ventromedial cerebrum) (Saumweber et al., 2018). It develops from neuroblast BAmd1 (Saumweber et al., 2018). It outputs onto FAN-1 (Eschbach et al., 2020).",
+      "reason_rejected": "Larval mushroom-body neuron with no relation to the adult optic-lobe context of this cluster. The label match ('n1') is purely coincidental."
+    }
+  ],
+  "recommendation": "Leave unmapped (or retain the broad match to FBbt:00003702 as a placeholder) pending resolution of the anatomical identity of this cluster. This is an unidentified transcriptomic cluster, not a characterised new cell type, so no FBbt new-term request is appropriate at this stage.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

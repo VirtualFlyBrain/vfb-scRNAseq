@@ -1,0 +1,28 @@
+{
+  "cluster_label": "L1",
+  "working_definition": "L1 is lamina monopolar neuron 1, a columnar interneuron with soma and dendrites in the lamina and an axon projecting to the medulla (layers M1 and M5). It receives histaminergic input from outer photoreceptors R1-R6 in the lamina and relays the signal to medulla targets including Mi1; it is the principal interneuron of the ON motion-detection pathway.",
+  "searches_performed": [
+    "lamina monopolar neuron L1 (fbbt)",
+    "L1 neuron lamina (fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "lamina monopolar neuron L1",
+    "fbbt_id": "FBbt:00003719",
+    "fbbt_definition": "Lamina monopolar neuron that has short collaterals projecting radially from the main projection in the lamina and arborization in medulla layers M1 and M5 (Fischbach and Dittrich, 1989; Kind et al., 2021). In the lamina, these short collaterals are strongly postsynaptic to the terminals of photoreceptors R1-6 (Rivera-Alba et al., 2011). In the medulla, it makes strong reciprocal synaptic connections with lamina monopolar cell L5 and centrifugal neuron C2, as well as substantial output synapses to C3, Mi1 and Tm3 cells (Takemura et al., 2013). It is also electrically synapsed to lamina monopolar neuron L2 (Joesch et al., 2010). It is a glutamatergic neuron (Gao et al., 2008; Takemura et al., 2011). There is usually one of these cells per optic column (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00003719 is labelled 'lamina monopolar neuron L1', which is precisely the cell type described in the cluster report. The FBbt definition confirms: lamina monopolar neuron, arborization in medulla M1 and M5, postsynaptic to photoreceptors R1-6 in the lamina, output synapses to Mi1 and other ON-pathway targets \u2014 all consistent with the report's description of L1 as the principal ON-pathway interneuron. The term is not obsolete. The immature variant (FBbt:00053356) refers to a developmental precursor and is rejected as less specific to the adult scRNAseq context.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature lamina monopolar neuron L1",
+      "fbbt_id": "FBbt:00053356",
+      "fbbt_definition": "Immature neuron that will develop into an adult lamina monopolar neuron L1.",
+      "reason_rejected": "Describes the larval/pupal precursor stage, not the adult neuron profiled in this atlas."
+    }
+  ],
+  "recommendation": "Accept FBbt:00003719 (lamina monopolar neuron L1) as an exact match. No new term needed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}
