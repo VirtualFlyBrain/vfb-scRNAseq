@@ -13,7 +13,8 @@
     "justification",
     "other_candidates",
     "recommendation",
-    "new_term_needed"
+    "new_term_needed",
+    "verification_needed"
   ],
   "properties": {
     "cluster_label": { "type": "string" },
@@ -57,6 +58,13 @@
       }
     },
     "recommendation": { "type": "string" },
-    "new_term_needed": { "type": "boolean" }
+    "new_term_needed": {
+      "type": "boolean",
+      "description": "True only when NO adequate FBbt term exists at any level (best_match is null, or only a too-broad parent with no findable specific term). A genuine new-term candidate."
+    },
+    "verification_needed": {
+      "type": "boolean",
+      "description": "True when a plausible specific FBbt term EXISTS but its equivalence to this cluster is unconfirmed (e.g. a same-named subtype defined from a different source/modality). A curator-verification task, NOT a new term. Distinct from new_term_needed; both are false for a confident exact match."
+    }
   }
 }

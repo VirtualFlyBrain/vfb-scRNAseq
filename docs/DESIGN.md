@@ -119,6 +119,34 @@ enforced by the `check_fbbt_mapping.py` hook). It **proposes**; a human reviews.
 Fly cluster labels are often marker-/driver-based, so expect a lower clean-match
 rate than for canonical label sets.
 
+### Mapping outcome flags: `new_term_needed` vs `verification_needed`
+
+`fbbt_mapping.json` records two independent booleans (not the inverse of "exact
+match"):
+
+- **`new_term_needed`** — true only when *no adequate FBbt term exists at any
+  level* (best_match null, or only a too-broad parent). A real request-a-new-term
+  case.
+- **`verification_needed`** — true when a plausible specific term *exists but its
+  equivalence is unconfirmed* (e.g. a same-named subtype defined from a different
+  source/modality). A curator-verification task, not a new term.
+- A confident exact match → both false.
+
+This split was added after the pilot: Dm3a/Dm3b broad-match the `Dm3` parent while
+FBbt subtype terms (FBbt:00052303/4, from Özel 2021 connectome data) exist but
+can't be confirmed equivalent to Kurmangaliyev's transcriptomic a/b — that is
+`verification_needed`, not `new_term_needed`.
+
+### Author cell class drives the broad-match ceiling
+
+The GEO metadata annotates a `class` per cluster: **N** (neuron, 153 types),
+**G** (glia, 19), **R** (photoreceptor, 3), **C** (undefined in the README —
+likely cone/pigment/accessory eye cells; confirm in the paper before mapping
+C-class clusters). For unidentified numbered clusters the class still fixes the
+correct high-level FBbt term (N→neuron, G→glial cell, R→photoreceptor), so e.g.
+`N1` (class N) broad-matches `adult optic lobe neuron` rather than being left
+unmapped. The mapping step is given the cluster's class for this reason.
+
 ### New-term requests — how FBbt intake actually works
 
 FBbt is maintained at

@@ -85,8 +85,23 @@ Write the result to `output_path`. It **must** conform to the JSON Schema at:
 
 Required top-level fields: `cluster_label`, `working_definition`,
 `searches_performed` (>=1), `best_match` (object or null), `justification`,
-`other_candidates` (may be empty), `recommendation`, `new_term_needed`
-(false only for an exact match).
+`other_candidates` (may be empty), `recommendation`, `new_term_needed`,
+`verification_needed`.
+
+**`new_term_needed` vs `verification_needed`** — set these independently; they are
+NOT the inverse of "exact match":
+
+- `new_term_needed = true` only when **no adequate FBbt term exists at any level**
+  — `best_match` is null, or the only option is a too-broad parent and no specific
+  term can be found. A genuine request-a-new-term case.
+- `verification_needed = true` when a **plausible specific term EXISTS but its
+  equivalence to this cluster is unconfirmed** — e.g. a same-named subtype defined
+  from a different source/modality (record it in `other_candidates`, broad-match
+  the parent, and flag for curator check). This is a verification task, NOT a new
+  term, so `new_term_needed` stays **false**.
+- A **confident exact match** → both `false`.
+- An honest **broad/narrow** match where no finer term plausibly exists → both
+  `false` (the broad term is simply the correct level).
 
 `best_match` fields: `fbbt_term`, `fbbt_id` (FBbt:NNNNNNNN, 8 digits),
 `fbbt_definition`, `match_type`, `skos_mapping`, `confidence` (high/medium/low).

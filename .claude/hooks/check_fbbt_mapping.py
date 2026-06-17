@@ -65,6 +65,9 @@ def validate_inline(data: dict) -> list[str]:
     if not isinstance(data.get("new_term_needed"), bool):
         errors.append("'new_term_needed' must be a boolean")
 
+    if not isinstance(data.get("verification_needed"), bool):
+        errors.append("'verification_needed' must be a boolean")
+
     oc = data.get("other_candidates")
     if not isinstance(oc, list):
         errors.append("'other_candidates' must be a list (may be empty)")
@@ -88,7 +91,7 @@ def validate_inline(data: dict) -> list[str]:
     allowed_top = {
         "cluster_label", "working_definition", "searches_performed",
         "best_match", "justification", "other_candidates",
-        "recommendation", "new_term_needed",
+        "recommendation", "new_term_needed", "verification_needed",
     }
     extra_top = set(data.keys()) - allowed_top
     if extra_top:
@@ -98,6 +101,8 @@ def validate_inline(data: dict) -> list[str]:
     if bm is None:
         if data.get("new_term_needed") is not True:
             errors.append("When best_match is null, 'new_term_needed' must be true")
+        if data.get("verification_needed") is True:
+            errors.append("When best_match is null there is nothing to verify; 'verification_needed' must be false")
         return errors
 
     if not isinstance(bm, dict):
@@ -137,12 +142,16 @@ def validate_inline(data: dict) -> list[str]:
     if mt in type_to_skos and skos and type_to_skos[mt] != skos:
         errors.append(f"match_type '{mt}' and skos_mapping '{skos}' are inconsistent")
 
+    # Cross-checks: a confident exact match needs neither a new term nor verification.
+    # Broad/narrow matches do NOT force new_term_needed (a specific term may exist but
+    # be unverified -> that is verification_needed, decided by the agent).
     ntn = data.get("new_term_needed")
-    if isinstance(ntn, bool):
-        if mt == "exact match" and ntn is True:
-            errors.append("'new_term_needed' should be false for exact match")
-        if mt in ("broad match", "narrow match") and ntn is False:
-            errors.append(f"'new_term_needed' should be true for {mt}")
+    vfn = data.get("verification_needed")
+    if mt == "exact match":
+        if ntn is True:
+            errors.append("'new_term_needed' should be false for an exact match")
+        if vfn is True:
+            errors.append("'verification_needed' should be false for an exact match")
 
     return errors
 
