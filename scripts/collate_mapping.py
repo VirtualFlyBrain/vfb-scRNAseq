@@ -29,8 +29,15 @@ COLUMNS = [
     "cluster_label", "type", "class", "cell_number", "kind",
     "fbbt_id", "fbbt_label", "match_type", "confidence",
     "new_term_needed", "verification_needed", "n_other_candidates", "recommendation",
-    "reviewed", "review_notes",
+    "manual_edit", "reviewed", "review_notes",
 ]
+
+
+def _manual_edit_summary(m: dict) -> str:
+    me = m.get("manual_edit")
+    if not me:
+        return ""
+    return f"{me.get('by', '?')}@{me.get('date', '?')}: {me.get('change') or me.get('reason', '')}".strip()
 
 
 def main() -> None:
@@ -73,6 +80,7 @@ def main() -> None:
             "verification_needed": m.get("verification_needed", ""),
             "n_other_candidates": len(m.get("other_candidates", [])),
             "recommendation": " ".join(m.get("recommendation", "").split()),
+            "manual_edit": _manual_edit_summary(m),
             "reviewed": "",
             "review_notes": "",
         })

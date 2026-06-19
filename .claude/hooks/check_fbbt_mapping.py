@@ -91,8 +91,12 @@ def validate_inline(data: dict) -> list[str]:
     allowed_top = {
         "cluster_label", "working_definition", "searches_performed",
         "best_match", "justification", "other_candidates",
-        "recommendation", "new_term_needed", "verification_needed",
+        "recommendation", "new_term_needed", "verification_needed", "manual_edit",
     }
+    me = data.get("manual_edit")
+    if me is not None:
+        if not isinstance(me, dict) or not all(isinstance(me.get(k), str) and me.get(k) for k in ("by", "date", "reason")):
+            errors.append("'manual_edit' must be an object with non-empty 'by', 'date', 'reason'")
     extra_top = set(data.keys()) - allowed_top
     if extra_top:
         errors.append(f"Extra top-level fields not allowed: {extra_top}")

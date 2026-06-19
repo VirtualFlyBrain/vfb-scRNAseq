@@ -126,6 +126,10 @@ verification_needed**.
 No additional fields anywhere (`additionalProperties: false`). Set `best_match`
 to `null` when no FBbt term is adequate.
 
+**Never set `manual_edit`.** That optional field is reserved for *human* hand-edits
+to a mapping (it records the non-reproducible curator intervention). Agent output
+is pipeline-generated, so it must omit `manual_edit` entirely.
+
 ## Quality Rules
 
 - **Precision over recall**: an honest broad match beats a forced exact one.

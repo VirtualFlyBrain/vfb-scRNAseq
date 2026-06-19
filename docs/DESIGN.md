@@ -220,6 +220,24 @@ GEO ingester; a non-GEO source (h5ad `obs`, CELLxGENE) would be a sibling script
 emitting the same `cell_type_annotations.json`, with the config/placeholder/collate
 layers downstream unchanged.
 
+## Recording manual edits to mappings
+
+Per-term *full* provenance isn't recorded (the set-level `provenance.json` covers
+versions/tools). But **manual edits are** — they're the non-reproducible part a
+re-run would otherwise silently erase. A mapping JSON carries an optional
+`manual_edit` block **only when a human has hand-edited it**:
+
+```json
+"manual_edit": { "by": "curator", "date": "2026-06-20",
+                 "change": "best_match FBbt:00003770 -> FBbt:00052303; broad -> exact",
+                 "reason": "curator confirmed the Wnt marker corresponds to bi" }
+```
+
+Absent = pipeline-generated (agent or placeholder script). Agents/scripts must
+**never** set it. `collate_mapping.py` surfaces a `manual_edit` column so overrides
+are visible in `mapping.tsv`, and a re-run should skip/flag clusters carrying it so
+a curator decision is not lost. Git history remains the full diff backstop.
+
 ## Provenance & version recording
 
 Each project records a `provenance.json` (schema:

@@ -65,6 +65,18 @@
     "verification_needed": {
       "type": "boolean",
       "description": "True when a plausible specific FBbt term EXISTS but its equivalence to this cluster is unconfirmed (e.g. a same-named subtype defined from a different source/modality). A curator-verification task, NOT a new term. Distinct from new_term_needed; both are false for a confident exact match."
+    },
+    "manual_edit": {
+      "description": "Present ONLY when a human has hand-edited this mapping (i.e. it is not purely pipeline-generated). Records the non-reproducible curator intervention so a re-run does not silently erase it. Agents/scripts must NOT set this.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["by", "date", "reason"],
+      "properties": {
+        "by": { "type": "string", "description": "Who made the edit (name/ORCID/handle)." },
+        "date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+        "change": { "type": "string", "description": "What was changed (e.g. 'best_match FBbt:00003770 -> FBbt:00052303; broad -> exact')." },
+        "reason": { "type": "string" }
+      }
     }
   }
 }
