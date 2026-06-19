@@ -15,6 +15,10 @@
           {
             "type": "command",
             "command": "python3 .claude/hooks/check_report_text.py"
+          },
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/check_provenance.py"
           }
         ]
       }

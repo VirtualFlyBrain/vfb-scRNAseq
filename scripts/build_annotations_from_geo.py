@@ -1,25 +1,19 @@
 #!/usr/bin/env python
-"""Build cell_type_annotations.json for a project from a GEO metadata file.
+"""Build cell_type_annotations.json for a project from its GEO metadata file.
 
-For GSE156455 (Kurmangaliyev 2020) the GEO ``metadata_<subset>.tsv.gz`` file is
-the authoritative cluster-label source: it carries named cell types at three
-granularity levels (``class`` -> ``type`` -> ``subtype``) as data columns, is the
-*corrected* version (e.g. the T4c/T4d label swap fixed per the GEO README), and
-yields per-label cell counts for free. We therefore take labels from GEO and use
-the paper PDF only for description/validation.
+Generic across GEO projects: all column names, the source file, DOI/title and
+accession are read from the project's config.yaml (`annotations`, `source`,
+`dataset` sections) via vfb_scrnaseq.project_config. Per-label it records the
+cell count, the dominant value of each `carry_columns` entry (flagging any that
+are ambiguous), and the set of timepoints seen.
 
-This builder is intentionally stdlib-only and reproducible: re-running it
-regenerates the annotations deterministically from the metadata file.
+(For non-GEO sources, write a sibling ingester that emits the same
+cell_type_annotations.json shape; the downstream config/placeholder/collate
+layers are unchanged.)
 
 Usage:
-    python scripts/build_annotations_from_geo.py \\
-        --project kurmangaliyev_2020 \\
-        --accession GSE156455 --subset main \\
-        --level subtype \\
-        [--metadata /path/to/metadata_main.tsv.gz]   # downloaded if omitted
-
-Column names default to this dataset's convention (class/type/subtype/time);
-override with --class-col / --type-col / --level / --time-col for other datasets.
+    python scripts/build_annotations_from_geo.py --project kurmangaliyev_2020
+    # optional: --metadata /path/to/local_copy.tsv.gz   (else downloaded from GEO)
 """
 
 from __future__ import annotations
@@ -28,24 +22,27 @@ import argparse
 import csv
 import gzip
 import json
+import sys
 import urllib.request
 from collections import Counter, defaultdict
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO_ROOT / "src"))
+
+from vfb_scrnaseq.project_config import load_config  # noqa: E402
+
 _USER_AGENT = "vfb-scrnaseq/0.0 (https://github.com/VirtualFlyBrain)"
 
 
 def geo_suppl_url(accession: str, filename: str) -> str:
-    # GEO groups series under GSE<nnn>nnn/<acc>/suppl/
     stub = accession[:-3] + "nnn"
     return f"https://ftp.ncbi.nlm.nih.gov/geo/series/{stub}/{accession}/suppl/{filename}"
 
 
-def ensure_metadata(accession: str, subset: str, metadata: Path | None) -> Path:
+def ensure_metadata(accession: str, filename: str, metadata: Path | None) -> Path:
     if metadata and metadata.exists():
         return metadata
-    filename = f"{accession}_metadata_{subset}.tsv.gz"
     dest = metadata or (REPO_ROOT / ".cache" / filename)
     dest.parent.mkdir(parents=True, exist_ok=True)
     url = geo_suppl_url(accession, filename)
@@ -56,36 +53,30 @@ def ensure_metadata(accession: str, subset: str, metadata: Path | None) -> Path:
     return dest
 
 
-def build(rows, *, level, class_col, type_col, time_col):
-    """Aggregate per-label: cell count, dominant class/type, timepoints seen."""
+def build(rows, *, label_col, carry_cols, time_col):
     counts: Counter[str] = Counter()
-    classes: dict[str, Counter] = defaultdict(Counter)
-    types: dict[str, Counter] = defaultdict(Counter)
+    carried: dict[str, dict[str, Counter]] = defaultdict(lambda: defaultdict(Counter))
     times: dict[str, set] = defaultdict(set)
 
     for row in rows:
-        label = row[level]
+        label = row[label_col]
         counts[label] += 1
-        if class_col in row:
-            classes[label][row[class_col]] += 1
-        if type_col in row and type_col != level:
-            types[label][row[type_col]] += 1
-        if time_col in row:
+        for col in carry_cols:
+            if col in row and col != label_col:
+                carried[label][col][row[col]] += 1
+        if time_col and time_col in row:
             times[label].add(row[time_col])
 
     annotations = []
     for label, n in counts.most_common():
-        ann = {"label": label, "granularity": level, "cell_number": n}
-        if types[label]:
-            dom_type, _ = types[label].most_common(1)[0]
-            ann["type"] = dom_type
-            if len(types[label]) > 1:
-                ann["type_ambiguous"] = dict(types[label])
-        if classes[label]:
-            dom_class, _ = classes[label].most_common(1)[0]
-            ann["class"] = dom_class
-            if len(classes[label]) > 1:
-                ann["class_ambiguous"] = dict(classes[label])
+        ann = {"label": label, "granularity": label_col, "cell_number": n}
+        for col in carry_cols:
+            counter = carried[label].get(col)
+            if counter:
+                dom, _ = counter.most_common(1)[0]
+                ann[col] = dom
+                if len(counter) > 1:
+                    ann[f"{col}_ambiguous"] = dict(counter)
         if times[label]:
             ann["timepoints"] = sorted(times[label])
         annotations.append(ann)
@@ -93,38 +84,33 @@ def build(rows, *, level, class_col, type_col, time_col):
 
 
 def main() -> None:
-    p = argparse.ArgumentParser()
-    p.add_argument("--project", required=True)
-    p.add_argument("--accession", required=True)
-    p.add_argument("--subset", default="main")
-    p.add_argument("--level", default="subtype", help="metadata column used as the cluster label")
-    p.add_argument("--class-col", default="class")
-    p.add_argument("--type-col", default="type")
-    p.add_argument("--time-col", default="time")
-    p.add_argument("--metadata", type=Path, default=None)
-    p.add_argument("--doi", default="10.1016/j.neuron.2020.10.006")
-    p.add_argument("--title", default="Transcriptional Programs of Circuit Assembly in the Drosophila Visual System")
-    args = p.parse_args()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--project", required=True)
+    ap.add_argument("--metadata", type=Path, default=None, help="local metadata file (else downloaded)")
+    args = ap.parse_args()
 
-    meta_path = ensure_metadata(args.accession, args.subset, args.metadata)
+    cfg = load_config(args.project)
+    acfg = cfg["annotations"]
+    src, ds = cfg.get("source", {}), cfg.get("dataset", {})
+
+    meta_path = ensure_metadata(ds["accession"], acfg["source_file"], args.metadata)
     with gzip.open(meta_path, "rt") as fh:
         rows = list(csv.DictReader(fh, delimiter="\t"))
 
     annotations = build(
         rows,
-        level=args.level,
-        class_col=args.class_col,
-        type_col=args.type_col,
-        time_col=args.time_col,
+        label_col=acfg["label_column"],
+        carry_cols=acfg.get("carry_columns", []),
+        time_col=acfg.get("timepoint_column"),
     )
 
     out = {
-        "source": {"doi": args.doi, "title": args.title},
+        "source": {"doi": src.get("doi"), "title": src.get("title")},
         "dataset": {
-            "accession": args.accession,
-            "subset": args.subset,
-            "label_source": f"GEO {args.accession}_metadata_{args.subset}.tsv.gz",
-            "label_level": args.level,
+            "accession": ds.get("accession"),
+            "subset": acfg.get("subset"),
+            "label_source": f"GEO {acfg['source_file']}",
+            "label_level": acfg["label_column"],
             "validate_against": "paper PDF (description/names)",
         },
         "annotations": annotations,
@@ -132,7 +118,7 @@ def main() -> None:
 
     out_path = REPO_ROOT / "projects" / args.project / "cell_type_annotations.json"
     out_path.write_text(json.dumps(out, indent=2) + "\n")
-    print(f"wrote {len(annotations)} annotations ({args.level}) -> {out_path}")
+    print(f"wrote {len(annotations)} annotations ({acfg['label_column']}) -> {out_path}")
 
 
 if __name__ == "__main__":

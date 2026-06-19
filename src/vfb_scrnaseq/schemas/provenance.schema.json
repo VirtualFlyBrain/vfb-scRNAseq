@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://virtualflybrain.org/schemas/provenance.schema.json",
+  "title": "Mapping provenance / version metadata",
+  "description": "Per-project record of the exact versions of everything used to produce the mappings — ontologies, data sources, software, and models — so results are reproducible and can be re-checked when a source changes (e.g. an FBbt release renames a term). One provenance.json per project.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["project", "generated_at", "pipeline", "ontologies", "data_sources", "software"],
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "Project directory name this provenance applies to."
+    },
+    "generated_at": {
+      "type": "string",
+      "description": "ISO 8601 date or datetime when this provenance record was produced.",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}"
+    },
+    "pipeline": {
+      "type": "object",
+      "description": "The code in THIS repo that produced the mappings.",
+      "additionalProperties": false,
+      "required": ["name", "version"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string", "description": "Package version and/or human label." },
+        "repo": { "type": "string", "format": "uri" },
+        "commit": { "type": "string", "description": "Git commit SHA (full or abbreviated)." }
+      }
+    },
+    "ontologies": {
+      "type": "array",
+      "description": "Every ontology consulted for mapping (FBbt, FBdv, FBcv, RO, ...).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "accessed_via"],
+        "properties": {
+          "id": { "type": "string", "description": "Ontology short id, e.g. FBbt, FBdv, RO." },
+          "name": { "type": "string" },
+          "version": { "type": "string", "description": "Release version string or date (e.g. 2026-05-12)." },
+          "version_iri": { "type": "string", "format": "uri", "description": "owl:versionIRI of the release used." },
+          "release_date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+          "accessed_via": { "type": "string", "description": "How it was queried, e.g. 'OLS MCP', 'OBO PURL', 'ROBOT', 'OAK'." },
+          "accessed_url": { "type": "string", "format": "uri" },
+          "accessed_at": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}" }
+        }
+      }
+    },
+    "data_sources": {
+      "type": "array",
+      "description": "Datasets, publications, and individual files the mapping/annotation was built from.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "id"],
+        "properties": {
+          "type": { "enum": ["dataset", "publication", "file", "other"] },
+          "id": { "type": "string", "description": "Accession (GSE.../PMID/DOI) or identifier." },
+          "title": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "retrieved_at": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}" },
+          "files": {
+            "type": "array",
+            "description": "Specific files used, with checksums for exact reproducibility.",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["name"],
+              "properties": {
+                "name": { "type": "string" },
+                "url": { "type": "string", "format": "uri" },
+                "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+                "bytes": { "type": "integer", "minimum": 0 },
+                "retrieved_at": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "software": {
+      "type": "array",
+      "description": "External code, libraries, services and tools used in the pipeline.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "kind"],
+        "properties": {
+          "name": { "type": "string" },
+          "kind": { "enum": ["library", "service", "repository", "cli", "tool", "language"] },
+          "version": { "type": "string" },
+          "repo": { "type": "string", "format": "uri" },
+          "commit": { "type": "string", "description": "Git commit SHA where applicable." },
+          "url": { "type": "string", "format": "uri" },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "models": {
+      "type": "array",
+      "description": "ML/LLM models used (the mapping LLM, the local-index embedding model, etc.).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role", "name"],
+        "properties": {
+          "role": { "enum": ["mapping-llm", "report-llm", "embedding", "other"] },
+          "name": { "type": "string", "description": "Model identifier." },
+          "provider": { "type": "string" },
+          "version": { "type": "string" },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}

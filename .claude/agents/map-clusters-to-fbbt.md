@@ -103,6 +103,20 @@ NOT the inverse of "exact match":
 - An honest **broad/narrow** match where no finer term plausibly exists → both
   `false` (the broad term is simply the correct level).
 
+**Provenance decides exact-vs-verification for same-named subtypes.** Check the
+candidate FBbt term's definition citations:
+- If the FBbt subtype was defined **from the same publication** as this cluster
+  (its definition cites the cluster's source paper) with **matching defining
+  criteria** (markers, region) → it is an **exact match** (both flags false). The
+  ontology term *is* this cell type; there is nothing to "verify".
+- `verification_needed` applies only when the FBbt term comes from a **different
+  study/modality** and cross-source equivalence is genuinely unconfirmed.
+
+Worked contrast: Tm9a/Tm9b — FBbt:00058233/4 were defined *from Kurmangaliyev 2020
+itself* (same Wnt10/dorsal, Wnt4/ventral criteria) → **exact**. Dm3a/Dm3b — FBbt's
+subtypes come from a *different* study (Özel 2021 connectome) → **broad +
+verification_needed**.
+
 `best_match` fields: `fbbt_term`, `fbbt_id` (FBbt:NNNNNNNN, 8 digits),
 `fbbt_definition`, `match_type`, `skos_mapping`, `confidence` (high/medium/low).
 

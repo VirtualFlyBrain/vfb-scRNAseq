@@ -190,6 +190,56 @@ in-session synthesis (`reports/T4a.md`) → `map-clusters-to-fbbt` (OLS) →
 high confidence, schema-validated by the hook. The agent correctly rejected the
 parent `T4 neuron` (too broad) and the child `T4ai` (too specific).
 
+## Generic pipeline vs per-project config
+
+The scripts in `scripts/` (`build_annotations_from_geo.py`,
+`assign_placeholders.py`, `collate_mapping.py`) are **dataset-agnostic drivers**.
+All project/tissue-specific knowledge lives in `projects/<name>/config.yaml` and
+is read through `src/vfb_scrnaseq/project_config.py`. Config sections:
+
+- **`annotations`** — which metadata columns are the label / class / grouping /
+  timepoint, and the source file. (Kurmangaliyev: `subtype`/`class`/`type`/`time`.)
+- **`unidentified`** — how to handle clusters with no named identity:
+  - `rule` — `class_prefixed_numbered` (label == `<class><digits>`), `none`, or
+    `regex:<pattern>`;
+  - `hold_classes` — classes of undefined meaning, held not mapped (e.g. `C`);
+  - `class_anchors` — the broad FBbt term per author class for this tissue
+    (e.g. N→`adult optic lobe neuron`, G→`adult optic lobe glial cell`).
+
+Nothing optic-lobe-specific remains in the shared code: a different atlas ships a
+different `config.yaml` and the `scripts/`/`src/` code is reused untouched.
+
+**Escape hatch for bespoke logic:** a project may include
+`projects/<name>/project.py` defining `is_unidentified(label, cls, config)` and/or
+`broad_anchor(cls, config)`; `project_config` prefers these over the config-driven
+defaults. So the common cases are declarative, and the rare oddball overrides in
+its own folder — never in the shared pipeline.
+
+**Source adapters** are a separate axis: `build_annotations_from_geo.py` is the
+GEO ingester; a non-GEO source (h5ad `obs`, CELLxGENE) would be a sibling script
+emitting the same `cell_type_annotations.json`, with the config/placeholder/collate
+layers downstream unchanged.
+
+## Provenance & version recording
+
+Each project records a `provenance.json` (schema:
+`src/vfb_scrnaseq/schemas/provenance.schema.json`, validated by the
+`check_provenance.py` hook) capturing the exact versions of **everything used to
+produce the mappings**, so a result can be re-checked when a source changes:
+
+- **ontologies** — id, version + `version_iri`, how/when accessed (e.g. FBbt
+  `2026-06-11` via OLS MCP);
+- **data_sources** — datasets/publications and the specific files used, with
+  `sha256` + byte size for exact reproducibility (GEO metadata file, the PDF);
+- **software** — external code/libraries/services with versions and git commits
+  (atlas-chat commit, sentence-transformers, pymupdf4llm, OLS, Python);
+- **models** — the mapping/report LLM and the local-index embedding model.
+
+Motivation: the FBbt `2026-06-11` release fixed a Dm8 rename error — recording the
+FBbt `version_iri` makes it explicit which release a mapping was made against, so
+mappings can be revisited when the ontology moves. (A future helper can auto-stamp
+git commits / file checksums rather than hand-filling.)
+
 ## Expression statistics (later phase)
 
 Summary stats must be computed **the way FlyBase did** (fuzzy-onions

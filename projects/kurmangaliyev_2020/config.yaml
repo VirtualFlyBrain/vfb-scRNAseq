@@ -27,3 +27,38 @@ dataset:
 # Full range is GSM4731869–GSM4731904 (36 samples, DGRP + w1118, pupal 24/48/72h
 # + adult). To be enumerated with stage/sex/strain when the sample sheet is added.
 samples: []
+
+# --- Project-specific pipeline config (read by the generic scripts) ---
+
+# How to read the source metadata table into cell_type_annotations.json.
+# Column names follow GSE156455's metadata_main.tsv.gz convention.
+annotations:
+  source_file: GSE156455_metadata_main.tsv.gz   # GEO supplementary metadata file
+  subset: main
+  label_column: subtype          # the cluster label (finest resolved identity)
+  class_column: class            # author cell class (drives the broad-match ceiling)
+  carry_columns: [type, class]   # extra columns recorded per annotation
+  timepoint_column: time
+
+# How to handle clusters with no named cell-type identity.
+unidentified:
+  # Rule for detecting an unidentified numbered cluster. Options:
+  #   class_prefixed_numbered  -> label == <class-code><digits> (e.g. N1, G37, C16)
+  #   none                     -> no clusters are treated as placeholders
+  #   "regex:<pattern>"        -> custom full-match regex on the label
+  rule: class_prefixed_numbered
+  hold_classes: [C]              # classes of undefined meaning -> held, not mapped
+  # Broad FBbt anchor per author class, used for unidentified clusters (this tissue).
+  class_anchors:
+    N:
+      fbbt_id: FBbt:00003702
+      label: adult optic lobe neuron
+      definition: Neuron of the adult optic lobe.
+    G:
+      fbbt_id: FBbt:00100517
+      label: adult optic lobe glial cell
+      definition: Glial cell of the adult that is associated with the optic lobe.
+    R:
+      fbbt_id: FBbt:00006009
+      label: eye photoreceptor cell
+      definition: Photoreceptor cell of the compound eye.
