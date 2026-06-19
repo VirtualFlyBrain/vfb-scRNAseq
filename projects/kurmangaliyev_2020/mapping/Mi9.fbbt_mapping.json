@@ -1,0 +1,29 @@
+{
+  "cluster_label": "Mi9",
+  "working_definition": "Mi9 is a medulla intrinsic narrow-field columnar neuron of the Drosophila optic lobe. It arborises in outer medulla layers M2-M4 and inner layers M9-M10 with bleb-type and fine terminal morphology, establishing both pre- and post-synaptic connections in those layers. It receives major input from lamina monopolar neuron L3 and is a glutamatergic interneuron participating in the OFF motion-detection pathway. There is one cell per optic column.",
+  "searches_performed": [
+    "Mi9 (fbbt)",
+    "medulla intrinsic neuron Mi9 (fbbt)",
+    "medulla intrinsic columnar neuron (fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "medulla intrinsic neuron Mi9",
+    "fbbt_id": "FBbt:00003784",
+    "fbbt_definition": "Medulla intrinsic narrow field neuron with a bushy mix of bleb-type and fine terminal arborization in layers M2, M3 and M4 and in the lower medulla layers M9-M10 (Fischbach and Dittrich, 1989; Kind et al., 2021). It establishes pre- and post-synaptic connections in both the inner and outer medulla layers (Fischbach and Dittrich, 1989; Morante and Desplan, 2008). It receives input from lamina monopolar neuron L3 (Takemura et al., 2013). It is glutamatergic (Takemura et al., 2017). There is usually one of these cells per optic column (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The cluster label 'Mi9' directly names the canonical medulla intrinsic neuron Mi9, a well-characterised Drosophila optic lobe cell type. FBbt:00003784 ('medulla intrinsic neuron Mi9') matches on every defining feature: narrow-field columnar medulla intrinsic neuron, arborisations in outer layers M2-M4 and inner layers M9-M10 with bleb-type and fine terminal morphology, pre- and post-synaptic connections in both layer zones, major L3 input, and glutamatergic neurotransmitter identity. The cluster is from an adult fly atlas (Kurmangaliyev 2020) and the FBbt term describes the adult form. The immature form (FBbt:00052320) is correctly excluded. The FBbt term is not obsolete.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature medulla intrinsic neuron Mi9",
+      "fbbt_id": "FBbt:00052320",
+      "fbbt_definition": "Immature form of the medullary intrinsic neuron Mi9 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Opa/Erm temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "This term describes the immature/developmental form of Mi9, whereas the Kurmangaliyev 2020 atlas profiles adult neurons. The cluster represents the mature adult cell type."
+    }
+  ],
+  "recommendation": "Accept FBbt:00003784 (medulla intrinsic neuron Mi9) as an exact match. The cluster label is the standard abbreviated anatomical name; all morphological, connectivity, and neurotransmitter features align precisely with the FBbt definition.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

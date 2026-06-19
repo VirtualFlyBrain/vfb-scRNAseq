@@ -1,0 +1,29 @@
+{
+  "cluster_label": "Dm10",
+  "working_definition": "Dm10 is a distal medullary wide-field amacrine interneuron of the adult optic lobe. Its soma lies in the cell body rind of the medulla cortex and it has a tri-stratified branching pattern spanning medulla layers M1, M3B, and M5, with an elliptical arbor aligned along the dorsal-ventral axis covering fewer than 10 columns in an intracolumnar position. It is GABAergic (Davis et al., 2020), a secondary Notch OFF hemilineage neuron, and is named after the canonical morphological type characterised by Morante and Desplan (2008).",
+  "searches_performed": [
+    "Dm10",
+    "distal medullary amacrine neuron Dm10",
+    "distal medullary amacrine neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "distal medullary amacrine neuron Dm10",
+    "fbbt_id": "FBbt:00110135",
+    "fbbt_definition": "Distal medullary wide-field amacrine neuron whose cell body is located in the cell body rind of the medulla. It has a distinct tri-stratified layer pattern, branching extensively in medulla layers M1, M3B and M5. Its arbor resembles an ellipse, with the long axis aligned with the dorsal-ventral axis, and covering less than 10 columns. The processes in M1 and M3B to M5 are located in an intracolumnar position. There are around 300 Dm10 neurons per hemisphere. They are GABAergic (Davis et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The cluster label 'Dm10' denotes the canonical optic-lobe cell type that FBbt records as 'distal medullary amacrine neuron Dm10' (FBbt:00110135). Every diagnostic feature aligns: soma in the medulla cortex cell body rind, tri-stratified wide-field arbor in layers M1, M3B, and M5, elliptical arbor with dorsal-ventral long axis covering fewer than 10 columns, intracolumnar process position, approximately 300 neurons per hemisphere, and GABAergic neurotransmitter identity. The cluster class (N=neuron) and region (optic lobe medulla) are consistent. FBbt:00110135 is not obsolete and has no Dm10-specific subtype terms that would require further discrimination. The label match is direct and the definition correspondence is complete.",
+  "other_candidates": [
+    {
+      "fbbt_term": "distal medullary amacrine neuron",
+      "fbbt_id": "FBbt:00003767",
+      "fbbt_definition": "An amacrine neuron that is intrinsic to the medulla, whose soma is located in the cortex of the medulla and that branches and arborizes in the distal medulla. These neurons project through the distal surface of the medulla, to form wide (sometimes very wide) terminal arborizations mainly or completely restricted to a single layer of the medulla.",
+      "reason_rejected": "Valid parent class; rejected in favour of the specific Dm10 term because FBbt:00110135 matches at exactly the right level of specificity with no ambiguity."
+    }
+  ],
+  "recommendation": "Accept exact match to FBbt:00110135. No further curator action required; both new_term_needed and verification_needed are false.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

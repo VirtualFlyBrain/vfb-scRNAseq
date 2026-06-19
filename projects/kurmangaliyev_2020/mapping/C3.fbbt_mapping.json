@@ -1,0 +1,22 @@
+{
+  "cluster_label": "C3",
+  "working_definition": "C3 is a GABAergic centrifugal columnar neuron of the adult Drosophila optic lobe, unicolumnar (one per optic column), that carries signals from the medulla back to the lamina. It arborizes in medulla layers M1-2, M5, and M9-10, forms both presynapses and postsynapses in the lamina, and is strongly presynaptic to L2 and T1 in medulla layer M2 while being strongly postsynaptic to L1.",
+  "searches_performed": [
+    "centrifugal neuron C3 [fbbt]",
+    "optic lobe centrifugal columnar neuron [fbbt]",
+    "centrifugal neuron lamina medulla [fbbt]"
+  ],
+  "best_match": {
+    "fbbt_term": "centrifugal neuron C3",
+    "fbbt_id": "FBbt:00003744",
+    "fbbt_definition": "Adult centrifugal neuron with arborizations in medulla layers M1-2, M5, and M9-10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). It forms presynapses and postsynapses in the lamina (Morante and Desplan, 2008; Rivera-Alba et al., 2011). In the medulla it is strongly presynaptic to monopolar lamina neuron L2 and columnar neuron T1, and strongly postsynaptic to L1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010). There is usually one of these cells per optic column (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The cluster label 'C3' is the canonical Fischbach and Dittrich (1989) anatomical name for this centrifugal columnar neuron, identical to the FBbt term label. The FBbt definition for FBbt:00003744 covers every defining feature of this cluster: medulla arborisations in layers M1-2, M5, M9-10; restricted lamina arborisations with both pre- and postsynapses; strong presynaptic output to L2 and T1 in medulla M2; strong postsynaptic input from L1; GABAergic neurotransmitter identity; and unicolumnar organisation (one cell per optic column). The term is not obsolete. No FBbt subtypes of C3 exist, so no more specific term is available or needed.",
+  "other_candidates": [],
+  "recommendation": "Accept exact match FBbt:00003744 'centrifugal neuron C3'. Label, definition, connectivity, neurotransmitter, and columnar organisation all correspond precisely to the cluster. No further curation required.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

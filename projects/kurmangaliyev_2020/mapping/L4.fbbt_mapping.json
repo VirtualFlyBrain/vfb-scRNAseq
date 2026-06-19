@@ -1,0 +1,36 @@
+{
+  "cluster_label": "L4",
+  "working_definition": "L4 is lamina monopolar neuron 4, a columnar interneuron with soma and arborizations in the proximal lamina and an axon projecting to medulla layers M2 and M4-M5, where collaterals penetrate one to two adjacent optic columns. It forms presynaptic terminals in M2 and M4-M5 with transmedullary neuron Tm2, providing lateral integration across columns. It is capable of both cholinergic and GABAergic neurotransmission and occurs once per optic column.",
+  "searches_performed": [
+    "L4 lamina monopolar neuron (fbbt)",
+    "lamina monopolar neuron L4 (fbbt)",
+    "lamina monopolar neuron (fbbt)",
+    "L4 optic lobe neuron (fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "lamina monopolar neuron L4",
+    "fbbt_id": "FBbt:00003722",
+    "fbbt_definition": "A lamina monopolar neuron that arborizes in the proximal lamina, forms a spreading arbor in medulla layer M2 and a small terminal arbor in M4-M5 that penetrates adjacent columns (Fischbach and Dittrich, 1989; Takemura et al., 2008; Takemura et al., 2011). In the medulla it forms presynaptic terminals in both M2 and M4-M5 with transmedullary neuron Tm2; three L4 neurons, one from the parent column and two from the posterior ones contact the same Tm2 neuron (Takemura et al., 2008; Takemura et al., 2011). It seems to be capable of both cholinergic and GABAergic neurotransmission.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00003722 is labelled 'lamina monopolar neuron L4', precisely the cell type represented by this cluster. The FBbt definition matches all key anatomical features: proximal lamina arborization, medulla arbors in M2 and M4-M5, penetration of adjacent columns, presynaptic output to Tm2 from three converging L4 neurons, and dual cholinergic/GABAergic neurotransmitter capacity confirmed by both scRNAseq (Davis et al. 2020; cited in the FBbt note) and driver-based approaches. The term is not obsolete.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature lamina monopolar neuron L4",
+      "fbbt_id": "FBbt:00053359",
+      "fbbt_definition": "Immature neuron that will develop into an adult lamina monopolar neuron L4.",
+      "reason_rejected": "Describes the larval/pupal precursor stage, not the adult neuron profiled in this atlas."
+    },
+    {
+      "fbbt_term": "lamina monopolar neuron",
+      "fbbt_id": "FBbt:00003718",
+      "fbbt_definition": "Monopolar, intrinsic unicolumnar neuron of the adult optic lobe that has its soma in the cell body rind of the lamina and connects the lamina to the medulla (Fischbach and Dittrich, 1989). It has a single major projection that projects along one optic cartridge in the lamina, crosses the first optic chiasm and terminates in the same cartridge in the medulla (Fischbach and Dittrich, 1989).",
+      "reason_rejected": "Parent class; too broad. The cluster is specifically L4, not the general lamina monopolar neuron type."
+    }
+  ],
+  "recommendation": "Accept FBbt:00003722 (lamina monopolar neuron L4) as an exact match. No new term needed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

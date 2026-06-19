@@ -1,0 +1,20 @@
+{
+  "cluster_label": "R184",
+  "working_definition": "Unidentified numbered cluster (class R = photoreceptor) from the Kurmangaliyev 2020 optic lobe atlas. The authors assigned it a cell class but no named cell-type identity.",
+  "searches_performed": [
+    "(placeholder: class-based broad assignment; no literature search performed)"
+  ],
+  "best_match": {
+    "fbbt_term": "eye photoreceptor cell",
+    "fbbt_id": "FBbt:00006009",
+    "fbbt_definition": "Photoreceptor cell of the compound eye.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "low"
+  },
+  "justification": "No named identity was assigned to cluster R184 by the atlas authors; only its cell class (R) is known. The honest mapping is a broad match to the class-level FBbt term FBbt:00006009 (eye photoreceptor cell). Not a specific cell-type assignment.",
+  "other_candidates": [],
+  "recommendation": "Class-based broad placeholder (eye photoreceptor cell). Revisit if the cluster's identity is resolved in future work.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

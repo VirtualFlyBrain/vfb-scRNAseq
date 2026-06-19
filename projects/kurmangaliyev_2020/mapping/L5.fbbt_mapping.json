@@ -1,0 +1,34 @@
+{
+  "cluster_label": "L5",
+  "working_definition": "L5 is lamina monopolar neuron 5, a columnar interneuron of the adult optic lobe that is unusual in having almost no arborization in the lamina itself, instead forming a branched arborization in medulla layers M1 and M2 and a clump of terminals in M5. It forms strong reciprocal synaptic connections with L1 and presynaptic output to Mi1, Mi4 and Tm3a, and is a cholinergic neuron occurring once per optic column.",
+  "searches_performed": [
+    "lamina monopolar neuron L5 (fbbt)",
+    "immature lamina monopolar neuron L5 (fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "lamina monopolar neuron L5",
+    "fbbt_id": "FBbt:00003725",
+    "fbbt_definition": "A lamina monopolar neuron that hardly arborizes at all in the lamina, but forms a branched arborization in medulla layers M1 and M2 and a clump of terminals in M5. In the medulla, it forms strong reciprocal synaptic connections with monopolar lamina monopolar neuron L1 (Takemura et al., 2013). It also receives substantial input from L2 and C2 neurons and has many presynapses connecting to medullary intrinsic neurons Mi1 and Mi4, and to transmedullary neuron Tm3a (Takemura et al., 2013). It is a cholinergic neuron (Davis et al., 2020). There is usually one of these cells per optic column (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00003725 is labelled 'lamina monopolar neuron L5', precisely the cell type represented by this cluster. The FBbt definition matches all key anatomical features: minimal lamina arborization, branched arborization in medulla M1 and M2, terminal clump in M5, reciprocal synaptic connection with L1, presynaptic output to Mi1/Mi4/Tm3a, cholinergic neurotransmitter identity (Davis et al. 2020, also cited by the FBbt term), and one cell per optic column. The term is not obsolete.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature lamina monopolar neuron L5",
+      "fbbt_id": "FBbt:00053360",
+      "fbbt_definition": "Immature neuron that will develop into an adult lamina monopolar neuron L5.",
+      "reason_rejected": "Describes the larval/pupal precursor stage, not the adult neuron profiled in this atlas."
+    },
+    {
+      "fbbt_term": "lamina monopolar neuron",
+      "fbbt_id": "FBbt:00003718",
+      "fbbt_definition": "Monopolar, intrinsic unicolumnar neuron of the adult optic lobe that has its soma in the cell body rind of the lamina and connects the lamina to the medulla (Fischbach and Dittrich, 1989). It has a single major projection that projects along one optic cartridge in the lamina, crosses the first optic chiasm and terminates in the same cartridge in the medulla (Fischbach and Dittrich, 1989).",
+      "reason_rejected": "Parent class; too broad. The cluster is specifically L5, not the general lamina monopolar neuron type."
+    }
+  ],
+  "recommendation": "Accept FBbt:00003725 (lamina monopolar neuron L5) as an exact match. No new term needed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,29 @@
+{
+  "cluster_label": "T1",
+  "working_definition": "T1 is an intrinsic columnar neuron of the Drosophila optic lobe with its soma in the medulla cortex. The cell body fiber branches at the medulla surface into a T-shaped linking fiber connecting a bush-like arborization in distal medulla layers M1 and M2 with climbing fibers in the equivalent lamina column. It is confined to the lamina-medulla axis (unicolumnar, one per column), is exclusively postsynaptic in the lamina (principally from amacrine neurons), and receives strong medulla input from centrifugal neuron C3 in M2 and from lamina monopolar neuron L2.",
+  "searches_performed": [
+    "T1 neuron (fbbt)",
+    "columnar neuron T1 (fbbt)",
+    "T1 optic lobe lamina medulla (fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "columnar neuron T1",
+    "fbbt_id": "FBbt:00003727",
+    "fbbt_definition": "An intrinsic columnar neuron whose cell body lies in the cortex of the medulla. The fiber of the T1 cell body branches at the medulla surface to form a T-shaped linking fiber between a bush-like arborization in the distal part of a medulla column (M1 and M2), and a bundle of climbing fibers in the equivalent column of the lamina (Fischbach and Dittrich, 1989). Synaptic connections in the lamina are exclusively postsynaptic and include a large number of connections from lamina intrinsic (amacrine) neurons (Meinertzhagen and O'Neil, 1991; Rivera-Alba et al., 2011). In the medulla, it is strongly synapsed by centrifugal neuron C3 in medulla layer M2 and lamina monopolar neuron L2 (Takemura et al., 2008; Takemura et al., 2013). There is usually one of these cells per optic column (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00003727 'columnar neuron T1' is defined as the intrinsic columnar optic-lobe neuron with soma in the medulla cortex, a T-shaped linking fiber from the medulla surface connecting distal medulla column arborisations in M1 and M2 with climbing fibers in the equivalent lamina column, exclusively postsynaptic lamina connections (from amacrine neurons), and strong medulla synaptic input from C3 in M2 and from L2 (Fischbach and Dittrich, 1989; Meinertzhagen and O'Neil, 1991; Rivera-Alba et al., 2011; Takemura et al., 2008, 2013). The atlas cluster 'T1' carries the identical canonical label and is a unicolumnar neuron matched to this morphological cell type. The label is a direct anatomical name (not a driver alias), the FBbt term is not obsolete, and no feature of the cluster falls outside the FBbt definition. The match is therefore exact.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature columnar neuron T1",
+      "fbbt_id": "FBbt:00052324",
+      "fbbt_definition": "Immature form of the columnar neuron T1 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the D/BarHI temporal window.",
+      "reason_rejected": "This term refers specifically to the immature (pupal) form of T1. The Kurmangaliyev 2020 atlas profiles cells across 24-96 h APF developmental timepoints, but the cluster is annotated as the canonical T1 type and is matched to the adult morphological cell type. The adult FBbt:00003727 is the appropriate referent; the immature form is a distinct developmental stage term."
+    }
+  ],
+  "recommendation": "Map cluster T1 to FBbt:00003727 (columnar neuron T1) with skos:exactMatch. Soma position in medulla cortex, T-shaped linking fiber, M1/M2 medulla arborisations, climbing fibers in the lamina column, exclusively postsynaptic lamina connections from amacrine neurons, and C3/L2 medulla inputs all correspond precisely. No new FBbt term is needed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

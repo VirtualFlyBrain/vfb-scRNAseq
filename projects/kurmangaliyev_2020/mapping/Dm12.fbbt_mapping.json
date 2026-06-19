@@ -1,0 +1,29 @@
+{
+  "cluster_label": "Dm12",
+  "working_definition": "Dm12 is a distal medullary wide-field amacrine interneuron of the adult Drosophila optic lobe. Its soma sits in the medulla cortex cell body rind; the primary neurite runs to layer M6 and turns back to M3B, forming a circular arbor covering 15-20 columns in a peripheral intracolumnar position. The neuron is glutamatergic, belongs to the Notch OFF hemilineage, and approximately 120 Dm12 cells are present per hemisphere.",
+  "searches_performed": [
+    "searchClasses fbbt: 'Dm12'",
+    "searchClasses fbbt: 'distal medullary amacrine neuron'",
+    "searchClasses fbbt: 'medulla amacrine neuron'"
+  ],
+  "best_match": {
+    "fbbt_term": "distal medullary amacrine neuron Dm12",
+    "fbbt_id": "FBbt:00111273",
+    "fbbt_definition": "Distal medullary wide-field amacrine neuron whose cell body is located in the cell body rind of the medulla. Its primary neurite extends into the M6 layer, and then turns back to project to M3B. The arbor is circular in shape, overlapping and covering around 15-20 columns. The arbor is located in a peripheral intracolumnar position. There are around 120 Dm12 neurons per hemisphere. They are glutamatergic (Davis et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The FBbt term 'distal medullary amacrine neuron Dm12' (FBbt:00111273) matches the cluster on every defining feature: soma in medulla cortex cell body rind, primary neurite to M6 returning to M3B, circular wide-field arbor covering 15-20 columns in peripheral intracolumnar position, glutamatergic neurotransmitter identity, and approximately 120 cells per hemisphere. The cluster label 'Dm12' is the canonical morphological type name used in the FBbt term. The term is not obsolete. No subtype splits exist in FBbt for Dm12, so no downgrade to broad match is warranted.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature distal medullary amacrine neuron Dm12",
+      "fbbt_id": "FBbt:00052308",
+      "fbbt_definition": "Immature form of the distal medullary amacrine neuron Dm12 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hbn/Opa/Slp temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Describes the immature (pupal/developing) form; this atlas covers adult and late-pupal timepoints (24h-96h APF) and the cluster type is the mature adult Dm12 cell type, not its immature precursor state."
+    }
+  ],
+  "recommendation": "Use FBbt:00111273 (distal medullary amacrine neuron Dm12) as an exact match. No new term needed and no curator verification required beyond standard review.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,43 @@
+{
+  "cluster_label": "Dm8",
+  "working_definition": "Dm8 is a distal medullary wide-field amacrine interneuron of the adult optic lobe. Its soma lies in the medulla cortex cell body rind and it elaborates an extensive arbor principally in medulla layer M6A, spanning approximately 16 columns. It is glutamatergic, postsynaptic to R7 photoreceptors, and presynaptic to Tm5c neurons, placing it on the UV colour-discrimination pathway. The atlas cluster is labelled at the pre-subtype-split Dm8 level with no transcriptomic resolution between Dm8a and Dm8b.",
+  "searches_performed": [
+    "searchClasses fbbt 'Dm8'",
+    "fetch FBbt:00013774 (distal medullary amacrine neuron Dm8)",
+    "fetch FBbt:00053638 (distal medullary amacrine neuron Dm8a)",
+    "fetch FBbt:00053639 (distal medullary amacrine neuron Dm8b)",
+    "fetch FBbt:00003767 (distal medullary amacrine neuron)"
+  ],
+  "best_match": {
+    "fbbt_term": "distal medullary amacrine neuron Dm8",
+    "fbbt_id": "FBbt:00013774",
+    "fbbt_definition": "Connectivity inferred from EM reconstructions from a single EM section. The neurotransmitter was assessed in cells labelled with a glutamate GAL4 driver P{GawB}vGlut[OK371] (FBti0076967) (Gao et al., 2008), RT-PCR and by immunohistochemistry (Karuppudurai et al., 2014). Connectivity with R7 was assessed by EM reconstruction of a single medulla column (Gao et al., 2008) or reconstruction of serial-section TEM (Takemura et al., 2013).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00013774 is the canonical grouping term for Dm8 confirmed current and not obsolete in the latest FBbt release. The atlas cluster is labelled at exactly this level, representing the pre-subtype-split Dm8 without resolution into Dm8a or Dm8b, precisely matching the scope of FBbt:00013774. The FBbt definition references the same glutamatergic identity (vGlut driver, RT-PCR, immunohistochemistry) and R7 connectivity described in the cluster report (Gao et al., 2008; Karuppudurai et al., 2014). The previous mapping to FBbt:00003767 (broad match, new term needed) was based on stale term IDs and is superseded by this correction.",
+  "other_candidates": [
+    {
+      "fbbt_term": "distal medullary amacrine neuron Dm8a",
+      "fbbt_id": "FBbt:00053638",
+      "fbbt_definition": "Subtype of Dm8 that receives input mainly from yellow, rather than pale, R7 photoreceptor cells and sends output mainly to Tm5a, rather than Tm5b, neurons (Nern et al., 2025). It expresses the surface protein DIP-gamma (Carrillo et al., 2015; Courgeon and Desplan, 2019).",
+      "reason_rejected": "More specific than the cluster: the atlas cluster cannot be resolved to Dm8a at the transcript level; assigning to this subtype would overstate precision."
+    },
+    {
+      "fbbt_term": "distal medullary amacrine neuron Dm8b",
+      "fbbt_id": "FBbt:00053639",
+      "fbbt_definition": "Subtype of Dm8 that receives input mainly from pale, rather than yellow, R7 photoreceptor cells and sends output mainly to Tm5b, rather than Tm5a, neurons (Nern et al., 2025). It does not express the surface protein DIP-gamma (Carrillo et al., 2015; Courgeon and Desplan, 2019).",
+      "reason_rejected": "More specific than the cluster: the atlas cluster cannot be resolved to Dm8b at the transcript level; assigning to this subtype would overstate precision."
+    },
+    {
+      "fbbt_term": "distal medullary amacrine neuron",
+      "fbbt_id": "FBbt:00003767",
+      "fbbt_definition": "An amacrine neuron that is intrinsic to the medulla, whose soma is located in the cortex of the medulla and that branches and arborizes in the distal medulla. These neurons project through the distal surface of the medulla, to form wide (sometimes very wide) terminal arborizations mainly or completely restricted to a single layer of the medulla.",
+      "reason_rejected": "Parent class, broader than the cluster. Superseded as best match by the more specific FBbt:00013774 which directly names Dm8."
+    }
+  ],
+  "recommendation": "Assign FBbt:00013774 (distal medullary amacrine neuron Dm8) as an exact match. The term is current, non-obsolete, and scoped identically to the pre-subtype-split Dm8 cluster. No new FBbt term is needed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

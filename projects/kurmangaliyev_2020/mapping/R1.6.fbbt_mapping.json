@@ -4,7 +4,9 @@
   "searches_performed": [
     "R1-R6 photoreceptor (fbbt)",
     "outer photoreceptor (fbbt)",
-    "photoreceptor cell R1 (fbbt)"
+    "photoreceptor cell R1 (fbbt)",
+    "outer photoreceptor cell (fbbt)",
+    "photoreceptor R1-R6 compound eye (fbbt)"
   ],
   "best_match": {
     "fbbt_term": "outer photoreceptor cell",
@@ -14,19 +16,13 @@
     "skos_mapping": "skos:exactMatch",
     "confidence": "high"
   },
-  "justification": "FBbt:00006007 'outer photoreceptor cell' directly encodes the R1-R6 grouping: it specifies six cells per ommatidium, rhabdomeres forming the outer trapezoid, single axons projecting into lamina cartridges, and strong presynaptic connections to L1/L2 and the lamina amacrine neuron \u2014 exactly matching the cluster's anatomy, location, and connectivity. The cluster label R1.6 is shorthand for the outer photoreceptors R1-R6 taken together; FBbt:00006007 is the canonical grouping term for this set. Individual R1-R6 FBbt terms exist (FBbt:00004213\u201300004223) but are more specific than the cluster, which does not resolve subtypes. No new term is needed.",
+  "justification": "FBbt:00006007 'outer photoreceptor cell' directly encodes the R1-R6 grouping: it specifies six cells per ommatidium, rhabdomeres forming the outer trapezoid, single axons projecting into lamina cartridges, and strong presynaptic connections to L1/L2 and the lamina amacrine neuron \u2014 exactly matching the cluster's anatomy, location, and connectivity. The cluster label R1.6 is shorthand for the outer photoreceptors R1-R6 taken together; FBbt:00006007 is the canonical grouping term for this set. Individual R1-R6 FBbt terms exist (FBbt:00004213-00004223) but are more specific than the cluster, which does not resolve subtypes. No new term is needed.",
   "other_candidates": [
     {
       "fbbt_term": "photoreceptor cell R1",
       "fbbt_id": "FBbt:00004213",
-      "fbbt_definition": "Individual outer photoreceptor cell R1 of the compound eye ommatidium.",
-      "reason_rejected": "More specific than the cluster: the cluster aggregates all six outer photoreceptors R1-R6 and does not distinguish individual subtypes."
-    },
-    {
-      "fbbt_term": "photoreceptor cell R6",
-      "fbbt_id": "FBbt:00004223",
-      "fbbt_definition": "Individual outer photoreceptor cell R6 of the compound eye ommatidium.",
-      "reason_rejected": "More specific than the cluster: the cluster aggregates R1-R6 collectively and individual R6 identity cannot be resolved from this scRNAseq cluster."
+      "fbbt_definition": "Outer photoreceptor cell of the adult eye whose rhabdomere is located at the right angle vertex of the longer of the two parallel sides of the trapezoid of rhabdomeres in each ommatidium. It has a single axon that projects along a single lamina optic cartridge (Fischbach and Dittrich, 1989; Wolff and Ready, 1993).",
+      "reason_rejected": "More specific than the cluster: this term refers to photoreceptor cell R1 only. The cluster aggregates all six outer photoreceptors R1-R6 and does not distinguish individual subtypes; the parent grouping term FBbt:00006007 is the correct level."
     }
   ],
   "recommendation": "Accept FBbt:00006007 'outer photoreceptor cell' as an exact match. The term was designed for precisely this grouping (R1-R6, six per ommatidium, lamina-projecting), and the cluster label and biology align completely.",

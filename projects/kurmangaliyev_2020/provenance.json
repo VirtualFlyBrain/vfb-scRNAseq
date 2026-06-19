@@ -1,0 +1,123 @@
+{
+  "project": "kurmangaliyev_2020",
+  "generated_at": "2026-06-19",
+  "people": [
+    {
+      "role": "curator",
+      "name": "Clare Pilgrim",
+      "username": "Clare72",
+      "orcid": "0000-0002-1373-1705"
+    }
+  ],
+  "notes": "All 62 distinct FBbt terms across 184 mapped clusters verified current/non-obsolete/label-match against FBbt 2026-06-11 via scripts/verify_mappings.py. Deterministic steps (annotations, 124 placeholders, collate) reproduce byte-identically from current code; the 8 pilot clusters were re-run under current agent guidance with 0 changes in FBbt assignment/match-type/flags. 12 class-C clusters held (class undefined).",
+  "pipeline": {
+    "name": "vfb-scrnaseq",
+    "version": "0.0.0",
+    "repo": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
+    "commit": "79a3c83"
+  },
+  "ontologies": [
+    {
+      "id": "FBbt",
+      "name": "Drosophila gross anatomy ontology",
+      "version": "2026-06-11",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-06-11/fbbt.owl",
+      "release_date": "2026-06-11",
+      "accessed_via": "OLS MCP (OLS4)",
+      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-06-17"
+    }
+  ],
+  "data_sources": [
+    {
+      "type": "publication",
+      "id": "10.1016/j.neuron.2020.10.006",
+      "title": "Transcriptional Programs of Circuit Assembly in the Drosophila Visual System (Kurmangaliyev et al. 2020); PMID 33125872",
+      "url": "https://doi.org/10.1016/j.neuron.2020.10.006",
+      "files": [
+        {
+          "name": "Kurmangaliyev2020.pdf",
+          "sha256": "70caf4e65f85d739ffeaaa4500fe74920bc8c69e3bc8b8f1384ecd36a96ad5ab",
+          "bytes": 11379261,
+          "retrieved_at": "2026-06-15"
+        }
+      ]
+    },
+    {
+      "type": "dataset",
+      "id": "GSE156455",
+      "title": "GEO series: optic lobe scRNA-seq across pupal development (main + early subsets)",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156455",
+      "retrieved_at": "2026-06-16",
+      "files": [
+        {
+          "name": "GSE156455_metadata_main.tsv.gz",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE156nnn/GSE156455/suppl/GSE156455_metadata_main.tsv.gz",
+          "sha256": "a312e1ef40819ff0d988cb0de00231fa5fbae3ddd3befd90b05031140c24f2c1",
+          "bytes": 2098986,
+          "retrieved_at": "2026-06-16"
+        }
+      ]
+    }
+  ],
+  "software": [
+    {
+      "name": "atlas-chat / Atlas Reporter (local-paper-index)",
+      "kind": "repository",
+      "repo": "https://github.com/Cellular-Semantics/Atlas-chat",
+      "commit": "4c90b6c",
+      "notes": "Used only for building/querying the local PDF snippet index (local-paper-index)."
+    },
+    {
+      "name": "sentence-transformers",
+      "kind": "library",
+      "version": "5.5.1",
+      "notes": "Local index embeddings."
+    },
+    {
+      "name": "pymupdf4llm",
+      "kind": "library",
+      "version": "1.27.2.3",
+      "notes": "PDF text extraction for the local index."
+    },
+    {
+      "name": "OLS4 (Ontology Lookup Service)",
+      "kind": "service",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "notes": "FBbt term search/lookup during mapping (via OLS MCP)."
+    },
+    {
+      "name": "Python",
+      "kind": "language",
+      "version": "3.14.3",
+      "notes": "atlas-chat / local-index environment (uv-managed)."
+    },
+    {
+      "name": "Claude Code",
+      "kind": "cli",
+      "version": "2.1.183",
+      "notes": "Harness orchestrating the agentic pipeline (main session + map-clusters-to-fbbt subagents)."
+    }
+  ],
+  "models": [
+    {
+      "role": "orchestrator",
+      "name": "claude-opus-4-8",
+      "provider": "Anthropic",
+      "version": "Opus 4.8 (1M context); model id claude-opus-4-8[1m]",
+      "notes": "Claude Code main session that drove the pipeline: dispatched the mapping subagents, authored the deterministic scripts (build_annotations/assign_placeholders/collate/verify) and the initial pilot reports, and made the curation/design decisions."
+    },
+    {
+      "role": "mapping-llm",
+      "name": "claude-sonnet",
+      "provider": "Anthropic",
+      "notes": "map-clusters-to-fbbt Claude Code subagent (agent frontmatter model: sonnet); also synthesised most per-cluster reports."
+    },
+    {
+      "role": "embedding",
+      "name": "sentence-transformers/all-MiniLM-L6-v2",
+      "provider": "sentence-transformers",
+      "notes": "Local PDF snippet-index embeddings."
+    }
+  ]
+}

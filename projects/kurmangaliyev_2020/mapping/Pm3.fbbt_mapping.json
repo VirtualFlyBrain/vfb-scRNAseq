@@ -1,0 +1,28 @@
+{
+  "cluster_label": "Pm3",
+  "working_definition": "Pm3 is a proximal medullary amacrine interneuron of the adult Drosophila optic lobe. It branches at the proximal surface of the medulla, arborising in layer M9 with broad, intermingling arbors at a peripheral intracolumnar position. It is GABAergic and there are approximately 35-40 cells per hemisphere.",
+  "searches_performed": [
+    "Pm3 proximal medulla neuron (FBbt, OLS searchClasses)",
+    "proximal medullary amacrine neuron (FBbt, label from search result)"
+  ],
+  "best_match": {
+    "fbbt_term": "proximal medullary amacrine neuron Pm3",
+    "fbbt_id": "FBbt:00110066",
+    "fbbt_definition": "Proximal medullary amacrine neuron that branches at the proximal surface of the medulla, with both branches forming a broad terminal arbor in medulla layer M9. The processes of different cells intermingle significantly, and the arbor density is heterogeneous. It occupies a peripheral intracolumnar position. It is GABAergic (Davis et al., 2020). There are around 35-40 of these cells per hemisphere (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The FBbt term 'proximal medullary amacrine neuron Pm3' (FBbt:00110066) matches the cluster on every dimension: same name (Pm3), same neuropil location (proximal surface of medulla, layer M9), same morphology (broad terminal arbor, intermingling processes, peripheral intracolumnar position), same neurotransmitter (GABAergic), and consistent cell count (~35-40 per hemisphere). The term is not obsolete and has no sub-subtypes in FBbt that would require a more specific assignment. The cluster label in the atlas is the canonical anatomical name, making this an exact match.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature proximal medullary amacrine neuron Pm3",
+      "fbbt_id": "FBbt:00053543",
+      "fbbt_definition": "Immature form of the proximal medullary amacrine neuron Pm2 (Erclik et al., 2017). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hth temporal window (Erclik et al., 2017).",
+      "reason_rejected": "This term describes the immature (larval/pupal) precursor form of Pm3, not the adult neuron. The Kurmangaliyev 2020 atlas is an adult fly optic-lobe dataset, so the mature adult term is the correct match."
+    }
+  ],
+  "recommendation": "Assign FBbt:00110066 (proximal medullary amacrine neuron Pm3) as an exact match. No new term is needed and no curator verification is required beyond routine review.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,28 @@
+{
+  "cluster_label": "Lpi3.4",
+  "working_definition": "Lpi3.4 is the Kurmangaliyev 2020 atlas label for the lobula plate intrinsic neuron LPi3-4. It is an adult optic lobe interneuron whose soma lies in the medulla cell body rind; its primary neurite crosses the second optic chiasm to reach the lobula plate, where it receives postsynaptic input in layer 3 and provides presynaptic output in layer 4. It is glutamatergic and receives its principal input from T4c and T5c neurons.",
+  "searches_performed": [
+    "Lpi3-4 lobula plate intrinsic neuron (fbbt)",
+    "lobula plate intrinsic neuron (fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "lobula plate intrinsic neuron LPi3-4",
+    "fbbt_id": "FBbt:00111289",
+    "fbbt_definition": "Lobula plate intrinsic neuron with its soma in the cell body rind of the medulla (Mauss et al., 2015; Shinomiya et al., 2019). The primary neurite traverses the medulla, from distal to proximal and crosses the second optic chiasm, to terminate in the lobula plate (Mauss et al., 2015; Shinomiya et al., 2019). It has presynaptic terminals in layer 4 and postsynaptic ones in layer 3 (Mauss et al., 2015; Shinomiya et al., 2019). It receives most of its input from T4c and T5c neurons (Shinomiya et al., 2022). It is a glutamatergic neuron (Mauss et al., 2015). There are around 55-60 of these cells on each side (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00111289 'lobula plate intrinsic neuron LPi3-4' is defined as an adult optic lobe interneuron with soma in the medulla cell body rind, postsynaptic dendrites in lobula plate layer 3, presynaptic terminals in layer 4, glutamatergic neurotransmitter identity, and predominant input from T4c and T5c neurons. The atlas cluster 'Lpi3.4' (label variant of LPi3-4) is the same type: named by its layer-3 input / layer-4 output connectivity and characterised by the same glutamatergic identity and T4c/T5c input profile. The label difference (dot vs hyphen separator) is a typographic convention of the atlas; the underlying biology is identical. The term is not obsolete. The note in the FBbt definition regarding the Matsliah 2024 alternative nomenclature records a synonym unrelated to layer innervation and does not affect the match.",
+  "other_candidates": [
+    {
+      "fbbt_term": "lobula plate intrinsic neuron",
+      "fbbt_id": "FBbt:00003910",
+      "fbbt_definition": "Neuron that is intrinsic to the lobula plate.",
+      "reason_rejected": "Parent class covering all lobula plate intrinsic neuron types. Too broad; FBbt:00111289 captures the specific layer-3/4 connectivity and glutamatergic identity that define this cluster."
+    }
+  ],
+  "recommendation": "Map cluster Lpi3.4 to FBbt:00111289 (lobula plate intrinsic neuron LPi3-4) with skos:exactMatch. The label is a direct variant of the FBbt term label; the layer identity, soma location, neurotransmitter, and input profile all match precisely. No new FBbt term is needed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

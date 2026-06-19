@@ -1,0 +1,35 @@
+{
+  "cluster_label": "LC6",
+  "working_definition": "LC6 is an extrinsic lobula columnar visual projection neuron of the adult Drosophila optic lobe. Its dendrites arborise in lobula layers 4 and 5B and its axon projects via the anterior optic tract to an optic glomerulus in the dorsolateral posterior ventrolateral protocerebrum (PVLP). It is cholinergic, with approximately 60 cells per hemisphere, and responds to wide-field visual stimuli including looming.",
+  "searches_performed": [
+    "LC6 [exact cluster label, ontology fbbt]",
+    "lobula columnar neuron LC6 [core anatomical type + identifier, ontology fbbt]",
+    "lobula columnar neuron [class-level term, ontology fbbt]"
+  ],
+  "best_match": {
+    "fbbt_term": "lobula columnar neuron LC6",
+    "fbbt_id": "FBbt:00003876",
+    "fbbt_definition": "Extrinsic lobula columnar neuron whose cell body is in the dorsal lateral cell body rind (Wu et al., 2016). It has its main dendritic arbors in lobula layers 4 and 5B (Wu et al., 2016), with most synapses concentrated in layer 5B (Tanaka and Clark, 2022). There is also some evidence of presynaptic sites in layers 4 and 5B (Wu et al., 2016). Its arbors span approximately 30 optic columns, overlapping with other LC6 cells (Wu et al., 2016). It fasciculates in the anterior optic tract, fasciculating with LC9 (Otsuna and Ito, 2006), and innervates an optic glomerulus in the dorsolateral PVLP, ventral to the one from LC16 (Wu et al., 2016; Morimoto et al., 2020). There are around 60 of these cells per hemisphere and they are cholinergic (Morimoto et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The cluster label 'LC6' directly names the anatomical cell type 'lobula columnar neuron LC6' (FBbt:00003876). The FBbt definition matches all key features of the cluster: lobula layers 4/5B dendritic input, anterior optic tract projection, optic glomerulus in the dorsolateral PVLP, approximately 60 cells per hemisphere, and cholinergic neurotransmitter identity. The term is current (not obsolete) and is the most specific FBbt term for this cell type. No more-specific subtype term exists in FBbt. The LC6 glomerulus interneuron terms (FBbt:00049986 and subtypes) were noted but are downstream postsynaptic interneurons, not the LC6 neuron itself.",
+  "other_candidates": [
+    {
+      "fbbt_term": "lobula columnar neuron",
+      "fbbt_id": "FBbt:00003870",
+      "fbbt_definition": "Adult optic lobe columnar neuron whose dendrites are in the lobula and whose axons project to the central brain.",
+      "reason_rejected": "Parent class of FBbt:00003876; too broad — does not capture the LC6-specific morphology, lobula layer specificity, or PVLP glomerulus target."
+    },
+    {
+      "fbbt_term": "LC6 glomerulus interneuron",
+      "fbbt_id": "FBbt:00049986",
+      "fbbt_definition": "Interneuron that receives substantial input in the LC6 optic glomerulus and is activated downstream of lobula columnar neuron LC6 (Morimoto et al., 2020).",
+      "reason_rejected": "This is a downstream postsynaptic interneuron in the LC6 optic glomerulus, not the LC6 neuron itself."
+    }
+  ],
+  "recommendation": "Map cluster LC6 to FBbt:00003876 (lobula columnar neuron LC6) with skos:exactMatch. The label, anatomy, neurotransmitter, cell count, and connectivity all agree precisely with the FBbt definition.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

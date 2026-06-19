@@ -1,0 +1,35 @@
+{
+  "cluster_label": "LPC1",
+  "working_definition": "LPC1 is a columnar visual projection neuron of the adult Drosophila optic lobe with its soma in the cell body rind of the lobula plate. It receives dendritic input exclusively in lobula plate layer 2, primarily from T4b and T5b neurons (back-to-front horizontal motion channels), and projects posteriorly to a small glomerulus in the optic glomeruli of the PVLP (posterior to LC4, ventral to LPLC3). It is cholinergic.",
+  "searches_performed": [
+    "LPC1 lobula plate columnar neuron (fbbt)",
+    "lobula plate columnar neuron LPC1 (fbbt)",
+    "LPC lobula plate columnar (fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "lobula plate columnar neuron LPC1",
+    "fbbt_id": "FBbt:00111767",
+    "fbbt_definition": "Lobula plate columnar neuron that has its main dendritic arborization in lobula plate layer 2 and receives input from T4b and T5b neurons (Shinomiya et al., 2022). It projects to a small glomerulus in the posterior region of the optic glomeruli of the PVLP, posterior to LC4 and ventral to LPLC3. It is cholinergic (Davis et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00111767 'lobula plate columnar neuron LPC1' is defined as a lobula plate columnar neuron with its main dendritic arborization in lobula plate layer 2, receiving input from T4b and T5b neurons, projecting to a small posterior PVLP glomerulus (posterior to LC4, ventral to LPLC3), and identified as cholinergic (Shinomiya et al., 2022; Davis et al., 2020). The atlas cluster 'LPC1' carries the identical canonical label and is assigned to this morphological cell type. The FBbt label is the canonical anatomical name (not a driver alias), the term is not obsolete, and every anatomical feature in the FBbt definition (lobula plate layer 2 dendrites, T4b/T5b presynaptic input, PVLP glomerulus projection, cholinergic transmitter) is consistent with the cluster annotation. The match is therefore exact.",
+  "other_candidates": [
+    {
+      "fbbt_term": "lobula plate columnar neuron",
+      "fbbt_id": "FBbt:00111766",
+      "fbbt_definition": "Columnar visual projection neuron with its soma in the cell body rind of the lobula plate (Shinomiya et al., 2022). It receives input in the lobula plate (but no other optic neuropil regions) and projects along a path posterior to the lobula plate to the central brain (Shinomiya et al., 2022).",
+      "reason_rejected": "This is the parent class of LPC1. It correctly describes the general LPC class properties (lobula plate soma, lobula-plate-only input, posterior central brain projection) but does not distinguish the LPC1 subtype from LPC2. FBbt:00111767 is the correct, more specific term."
+    },
+    {
+      "fbbt_term": "lobula plate columnar neuron LPC2",
+      "fbbt_id": "FBbt:00052852",
+      "fbbt_definition": "Lobula plate columnar neuron that has its main dendritic arborization in lobula plate layer 3 and receives input from T4c and T5c neurons (Shinomiya et al., 2022).",
+      "reason_rejected": "LPC2 arborises in lobula plate layer 3 and receives T4c/T5c input (front-to-back motion channel), making it the sibling subtype. The cluster is specifically labelled LPC1 (layer 2, T4b/T5b input) and the two subtypes are distinct."
+    }
+  ],
+  "recommendation": "Map cluster LPC1 to FBbt:00111767 (lobula plate columnar neuron LPC1) with skos:exactMatch. Lobula plate layer 2 dendritic arborisation, T4b/T5b presynaptic input, PVLP glomerulus projection posterior to LC4 and ventral to LPLC3, and cholinergic transmitter identity all correspond precisely. No new FBbt term is needed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

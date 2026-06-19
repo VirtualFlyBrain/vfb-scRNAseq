@@ -1,0 +1,35 @@
+{
+  "cluster_label": "Dm11",
+  "working_definition": "Dm11 is a distal medullary wide-field amacrine interneuron of the adult optic lobe. Its soma lies in the dorsal region of the medulla cortex cell body rind; the primary neurite extends beyond layer M6A then turns back to form recurrent columnar processes from M6A to M1 and into the first optic chiasm, covering approximately 9 columns and showing tiling in M6A with thin columnar processes in other layers associated with R7 and R8 photoreceptor axons. It is glutamatergic (Davis et al., 2020), a secondary Notch OFF hemilineage neuron, and is named after the canonical morphological type established by Fischbach and Dittrich (1989).",
+  "searches_performed": [
+    "Dm11",
+    "distal medullary amacrine neuron Dm11",
+    "distal medullary amacrine neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "distal medullary amacrine neuron Dm11",
+    "fbbt_id": "FBbt:00111272",
+    "fbbt_definition": "Distal medullary wide-field amacrine neuron whose cell body is located in the dorsal region of the cell body rind of the medulla. Its primary neurite extends beyond M6A layer, and then turns back, forming recurrent, columnar processes from M6A to M1, and into the first optic chiasm. The arbor varies in shape between cells, covering around 9 columns and showing tiling. The terminals of these cells in M6A collectively occupy the whole layer, whereas in the other layers the processes are thin, with each process occupying only one column, and being associated with R7 and R8 photoreceptor axons. There are around 70 Dm11 neurons per hemisphere. They are glutamatergic (Davis et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The cluster label 'Dm11' denotes the canonical optic-lobe cell type that FBbt records as 'distal medullary amacrine neuron Dm11' (FBbt:00111272). Every diagnostic feature aligns: soma in the dorsal medulla cortex cell body rind, primary neurite extending beyond M6A with recurrent columnar processes from M6A to M1 and into the first optic chiasm, ~9-column wide-field arbor with tiling in M6A, thin single-column processes in other layers associated with R7/R8 photoreceptors, approximately 70 cells per hemisphere, and glutamatergic neurotransmitter identity. The cluster class (N=neuron) and region (optic lobe medulla) are consistent. FBbt:00111272 is not obsolete, is the adult form (distinct from the immature FBbt:00052307), and has no Dm11-specific subtype terms requiring further discrimination. The label match is direct and the definition correspondence is complete.",
+  "other_candidates": [
+    {
+      "fbbt_term": "distal medullary amacrine neuron",
+      "fbbt_id": "FBbt:00003767",
+      "fbbt_definition": "An amacrine neuron that is intrinsic to the medulla, whose soma is located in the cortex of the medulla and that branches and arborizes in the distal medulla. These neurons project through the distal surface of the medulla, to form wide (sometimes very wide) terminal arborizations mainly or completely restricted to a single layer of the medulla.",
+      "reason_rejected": "Valid parent class; rejected in favour of the specific Dm11 term because FBbt:00111272 matches at exactly the right level of specificity with no ambiguity."
+    },
+    {
+      "fbbt_term": "immature distal medullary amacrine neuron Dm11",
+      "fbbt_id": "FBbt:00052307",
+      "fbbt_definition": "Immature form of the distal medullary amacrine neuron Dm11 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hbn/Opa/Slp temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Immature (pupal/larval) form of Dm11; Kurmangaliyev 2020 is an adult optic lobe atlas so the adult term FBbt:00111272 is the correct match."
+    }
+  ],
+  "recommendation": "Accept exact match to FBbt:00111272. No further curator action required; both new_term_needed and verification_needed are false.",
+  "new_term_needed": false,
+  "verification_needed": false
+}
