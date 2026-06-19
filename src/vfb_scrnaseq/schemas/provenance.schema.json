@@ -15,6 +15,21 @@
       "type": "string",
       "description": "Free-text provenance notes, e.g. verification/reproduction status."
     },
+    "people": {
+      "type": "array",
+      "description": "Humans responsible for the mappings (curator, reviewer, contact).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role"],
+        "properties": {
+          "role": { "type": "string", "description": "e.g. curator, reviewer, contact." },
+          "name": { "type": "string" },
+          "username": { "type": "string", "description": "Handle, e.g. GitHub username." },
+          "orcid": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]$" }
+        }
+      }
+    },
     "generated_at": {
       "type": "string",
       "description": "ISO 8601 date or datetime when this provenance record was produced.",
@@ -109,7 +124,7 @@
         "additionalProperties": false,
         "required": ["role", "name"],
         "properties": {
-          "role": { "enum": ["mapping-llm", "report-llm", "embedding", "other"] },
+          "role": { "enum": ["orchestrator", "mapping-llm", "report-llm", "embedding", "other"] },
           "name": { "type": "string", "description": "Model identifier." },
           "provider": { "type": "string" },
           "version": { "type": "string" },
