@@ -136,6 +136,14 @@ is pipeline-generated, so it must omit `manual_edit` entirely.
 - **Definition is king**: a right-looking label with the wrong definition is NOT
   a match; a different label with a matching definition IS.
 - **Check for obsolescence**: never return an obsolete FBbt term.
+- **Developmental stage — do NOT assume "adult".** Many fly atlases are
+  *developmental* (e.g. Kurmangaliyev is pupal 24-96h APF + adult). FBbt has
+  distinct **`immature X neuron`** terms for developing forms. Choose mature vs
+  immature by the cluster's actual developmental stage, not by assumption:
+  - integrated/late clusters spanning to ~adult → the mature form (resolved identity);
+  - early-stage-specific clusters (e.g. 24/48h APF) → the **immature** form is often
+    more appropriate. Never reject an immature term solely because "it's an adult
+    atlas" unless the data really are adult.
 - **One best match**: exactly one (or null); the rest go in `other_candidates`.
 - **You propose, a human disposes**: set `confidence` honestly — these feed a
   reviewed `mapping.tsv`, not a direct ontology commit.

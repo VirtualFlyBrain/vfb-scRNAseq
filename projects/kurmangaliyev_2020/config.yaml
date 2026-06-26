@@ -23,10 +23,39 @@ dataset:
   licence: CC-BY-4.0
   assay_type: FBcv:0009000      # single-cell RNA-seq
 
-# Biological samples -> LinkML `Sample` / `Assay`. GSM accessions become dbxrefs.
-# Full range is GSM4731869–GSM4731904 (36 samples, DGRP + w1118, pupal 24/48/72h
-# + adult). To be enumerated with stage/sex/strain when the sample sheet is added.
-samples: []
+# Biological samples -> LinkML `Sample` / `Assay`, built from GEO by
+# scripts/build_samples_from_geo.py (config-driven; see sample_build below).
+
+sample_build:
+  # GSM titles are "set_timepoint_biorep_techrep" (e.g. W1118_24h_A_1).
+  # Biological Sample = set_timepoint_biorep; Assay = each techrep (one 10x library = one GSM).
+  title_pattern: set_timepoint_biorep_techrep
+  assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
+  # set -> genotype/stock string
+  genotype_map:
+    DGRP: DGRP (Drosophila Genetic Reference Panel)
+    W1118: w[1118]
+  # timepoint -> developmental stage (FBdv) + dissected tissue (FBbt). Curated.
+  # NB the atlas is developmental (pupal 24-96h APF + adult); 24h tissue is the
+  # immature (embryonic/larval) optic lobe. 'P-stage' is broader than 'pupal stage'.
+  timepoint_map:
+    "24h":
+      stage:  { fbdv_id: FBdv:00005349, label: pupal stage }
+      tissue: { fbbt_id: FBbt:00001930, label: embryonic/larval optic lobe }
+    "48h":
+      stage:  { fbdv_id: FBdv:00006011, label: pharate adult stage }
+      tissue: { fbbt_id: FBbt:00003701, label: adult optic lobe }
+    "72h":
+      stage:  { fbdv_id: FBdv:00006011, label: pharate adult stage }
+      tissue: { fbbt_id: FBbt:00003701, label: adult optic lobe }
+    "All":
+      stage:  { fbdv_id: FBdv:00007001, label: P-stage }
+      tissue: { fbbt_id: FBbt:00003701, label: adult optic lobe }
+    "Adult":
+      stage:  { fbdv_id: FBdv:00005369, label: adult stage }
+      tissue: { fbbt_id: FBbt:00003701, label: adult optic lobe }
+  # clustering analyses present in this dataset (GEO subsets)
+  clusterings: [main, early]
 
 # --- Project-specific pipeline config (read by the generic scripts) ---
 

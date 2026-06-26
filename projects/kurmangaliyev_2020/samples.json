@@ -1,0 +1,674 @@
+{
+  "dataset": {
+    "vfbseq_id": "VFBseq_00000001",
+    "accession": "GSE156455",
+    "site": "GEO"
+  },
+  "samples": [
+    {
+      "vfbseq_id": "VFBseq_00000002",
+      "sample_id": "DGRP_All_A",
+      "set": "DGRP",
+      "timepoint": "All",
+      "biorep": "A",
+      "genotype": "DGRP (Drosophila Genetic Reference Panel)",
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00007001",
+        "label": "P-stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00003701",
+        "label": "adult optic lobe"
+      },
+      "associated_dataset": "VFBseq_00000001",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000003",
+        "VFBseq_00000004",
+        "VFBseq_00000005",
+        "VFBseq_00000006",
+        "VFBseq_00000007",
+        "VFBseq_00000008",
+        "VFBseq_00000009",
+        "VFBseq_00000010"
+      ],
+      "n_assays": 8
+    },
+    {
+      "vfbseq_id": "VFBseq_00000011",
+      "sample_id": "DGRP_All_B",
+      "set": "DGRP",
+      "timepoint": "All",
+      "biorep": "B",
+      "genotype": "DGRP (Drosophila Genetic Reference Panel)",
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00007001",
+        "label": "P-stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00003701",
+        "label": "adult optic lobe"
+      },
+      "associated_dataset": "VFBseq_00000001",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000012",
+        "VFBseq_00000013",
+        "VFBseq_00000014",
+        "VFBseq_00000015",
+        "VFBseq_00000016",
+        "VFBseq_00000017",
+        "VFBseq_00000018",
+        "VFBseq_00000019"
+      ],
+      "n_assays": 8
+    },
+    {
+      "vfbseq_id": "VFBseq_00000020",
+      "sample_id": "W1118_24h_A",
+      "set": "W1118",
+      "timepoint": "24h",
+      "biorep": "A",
+      "genotype": "w[1118]",
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00005349",
+        "label": "pupal stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00001930",
+        "label": "embryonic/larval optic lobe"
+      },
+      "associated_dataset": "VFBseq_00000001",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000021",
+        "VFBseq_00000022",
+        "VFBseq_00000023",
+        "VFBseq_00000024"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000025",
+      "sample_id": "W1118_48h_A",
+      "set": "W1118",
+      "timepoint": "48h",
+      "biorep": "A",
+      "genotype": "w[1118]",
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00006011",
+        "label": "pharate adult stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00003701",
+        "label": "adult optic lobe"
+      },
+      "associated_dataset": "VFBseq_00000001",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000026",
+        "VFBseq_00000027",
+        "VFBseq_00000028",
+        "VFBseq_00000029"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000030",
+      "sample_id": "W1118_48h_B",
+      "set": "W1118",
+      "timepoint": "48h",
+      "biorep": "B",
+      "genotype": "w[1118]",
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00006011",
+        "label": "pharate adult stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00003701",
+        "label": "adult optic lobe"
+      },
+      "associated_dataset": "VFBseq_00000001",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000031",
+        "VFBseq_00000032",
+        "VFBseq_00000033",
+        "VFBseq_00000034"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000035",
+      "sample_id": "W1118_72h_A",
+      "set": "W1118",
+      "timepoint": "72h",
+      "biorep": "A",
+      "genotype": "w[1118]",
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00006011",
+        "label": "pharate adult stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00003701",
+        "label": "adult optic lobe"
+      },
+      "associated_dataset": "VFBseq_00000001",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000036",
+        "VFBseq_00000037",
+        "VFBseq_00000038",
+        "VFBseq_00000039"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000040",
+      "sample_id": "W1118_Adult_A",
+      "set": "W1118",
+      "timepoint": "Adult",
+      "biorep": "A",
+      "genotype": "w[1118]",
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00005369",
+        "label": "adult stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00003701",
+        "label": "adult optic lobe"
+      },
+      "associated_dataset": "VFBseq_00000001",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000041",
+        "VFBseq_00000042",
+        "VFBseq_00000043",
+        "VFBseq_00000044"
+      ],
+      "n_assays": 4
+    }
+  ],
+  "assays": [
+    {
+      "vfbseq_id": "VFBseq_00000003",
+      "library_id": "DGRP_All_A_1",
+      "accession": "GSM4731869",
+      "sra": "SRX8969218",
+      "biosample": "SAMN15856189",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000002",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000004",
+      "library_id": "DGRP_All_A_2",
+      "accession": "GSM4731870",
+      "sra": "SRX8969219",
+      "biosample": "SAMN15856188",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000002",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000005",
+      "library_id": "DGRP_All_A_3",
+      "accession": "GSM4731871",
+      "sra": "SRX8969220",
+      "biosample": "SAMN15856187",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000002",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000006",
+      "library_id": "DGRP_All_A_4",
+      "accession": "GSM4731872",
+      "sra": "SRX8969221",
+      "biosample": "SAMN15856186",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000002",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000007",
+      "library_id": "DGRP_All_A_5",
+      "accession": "GSM4731873",
+      "sra": "SRX8969222",
+      "biosample": "SAMN15856185",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000002",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000008",
+      "library_id": "DGRP_All_A_6",
+      "accession": "GSM4731874",
+      "sra": "SRX8969223",
+      "biosample": "SAMN15856184",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000002",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000009",
+      "library_id": "DGRP_All_A_7",
+      "accession": "GSM4731875",
+      "sra": "SRX8969224",
+      "biosample": "SAMN15856183",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000002",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000010",
+      "library_id": "DGRP_All_A_8",
+      "accession": "GSM4731876",
+      "sra": "SRX8969225",
+      "biosample": "SAMN15856182",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000002",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000012",
+      "library_id": "DGRP_All_B_1",
+      "accession": "GSM4731877",
+      "sra": "SRX8969226",
+      "biosample": "SAMN15856181",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000011",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000013",
+      "library_id": "DGRP_All_B_2",
+      "accession": "GSM4731878",
+      "sra": "SRX8969227",
+      "biosample": "SAMN15856180",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000011",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000014",
+      "library_id": "DGRP_All_B_3",
+      "accession": "GSM4731879",
+      "sra": "SRX8969228",
+      "biosample": "SAMN15856179",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000011",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000015",
+      "library_id": "DGRP_All_B_4",
+      "accession": "GSM4731880",
+      "sra": "SRX8969229",
+      "biosample": "SAMN15856178",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000011",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000016",
+      "library_id": "DGRP_All_B_5",
+      "accession": "GSM4731881",
+      "sra": "SRX8969230",
+      "biosample": "SAMN15856177",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000011",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000017",
+      "library_id": "DGRP_All_B_6",
+      "accession": "GSM4731882",
+      "sra": "SRX8969231",
+      "biosample": "SAMN15856176",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000011",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000018",
+      "library_id": "DGRP_All_B_7",
+      "accession": "GSM4731883",
+      "sra": "SRX8969232",
+      "biosample": "SAMN15856175",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000011",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000019",
+      "library_id": "DGRP_All_B_8",
+      "accession": "GSM4731884",
+      "sra": "SRX8969233",
+      "biosample": "SAMN15856174",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000011",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000021",
+      "library_id": "W1118_24h_A_1",
+      "accession": "GSM4731885",
+      "sra": "SRX8969234",
+      "biosample": "SAMN15856173",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000020",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000022",
+      "library_id": "W1118_24h_A_2",
+      "accession": "GSM4731886",
+      "sra": "SRX8969235",
+      "biosample": "SAMN15856172",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000020",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000023",
+      "library_id": "W1118_24h_A_3",
+      "accession": "GSM4731887",
+      "sra": "SRX8969236",
+      "biosample": "SAMN15856171",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000020",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000024",
+      "library_id": "W1118_24h_A_4",
+      "accession": "GSM4731888",
+      "sra": "SRX8969237",
+      "biosample": "SAMN15856170",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000020",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000026",
+      "library_id": "W1118_48h_A_1",
+      "accession": "GSM4731889",
+      "sra": "SRX8969238",
+      "biosample": "SAMN15856169",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000025",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000027",
+      "library_id": "W1118_48h_A_2",
+      "accession": "GSM4731890",
+      "sra": "SRX8969239",
+      "biosample": "SAMN15856168",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000025",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000028",
+      "library_id": "W1118_48h_A_3",
+      "accession": "GSM4731891",
+      "sra": "SRX8969240",
+      "biosample": "SAMN15856167",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000025",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000029",
+      "library_id": "W1118_48h_A_4",
+      "accession": "GSM4731892",
+      "sra": "SRX8969241",
+      "biosample": "SAMN15856166",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000025",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000031",
+      "library_id": "W1118_48h_B_1",
+      "accession": "GSM4731893",
+      "sra": "SRX8969242",
+      "biosample": "SAMN15856165",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000030",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000032",
+      "library_id": "W1118_48h_B_2",
+      "accession": "GSM4731894",
+      "sra": "SRX8969243",
+      "biosample": "SAMN15856164",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000030",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000033",
+      "library_id": "W1118_48h_B_3",
+      "accession": "GSM4731895",
+      "sra": "SRX8969244",
+      "biosample": "SAMN15856163",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000030",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000034",
+      "library_id": "W1118_48h_B_4",
+      "accession": "GSM4731896",
+      "sra": "SRX8969245",
+      "biosample": "SAMN15856162",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000030",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000036",
+      "library_id": "W1118_72h_A_1",
+      "accession": "GSM4731897",
+      "sra": "SRX8969246",
+      "biosample": "SAMN15856161",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000035",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000037",
+      "library_id": "W1118_72h_A_2",
+      "accession": "GSM4731898",
+      "sra": "SRX8969247",
+      "biosample": "SAMN15856160",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000035",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000038",
+      "library_id": "W1118_72h_A_3",
+      "accession": "GSM4731899",
+      "sra": "SRX8969248",
+      "biosample": "SAMN15856159",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000035",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000039",
+      "library_id": "W1118_72h_A_4",
+      "accession": "GSM4731900",
+      "sra": "SRX8969249",
+      "biosample": "SAMN15856158",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000035",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000041",
+      "library_id": "W1118_Adult_A_1",
+      "accession": "GSM4731901",
+      "sra": "SRX8969250",
+      "biosample": "SAMN15856157",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000040",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000042",
+      "library_id": "W1118_Adult_A_2",
+      "accession": "GSM4731902",
+      "sra": "SRX8969251",
+      "biosample": "SAMN15856156",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000040",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000043",
+      "library_id": "W1118_Adult_A_3",
+      "accession": "GSM4731903",
+      "sra": "SRX8969252",
+      "biosample": "SAMN15856155",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000040",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000044",
+      "library_id": "W1118_Adult_A_4",
+      "accession": "GSM4731904",
+      "sra": "SRX8969253",
+      "biosample": "SAMN15856154",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000040",
+      "associated_dataset": "VFBseq_00000001"
+    }
+  ],
+  "clusterings": [
+    {
+      "vfbseq_id": "VFBseq_00000045",
+      "subset": "main",
+      "associated_dataset": "VFBseq_00000001"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000046",
+      "subset": "early",
+      "associated_dataset": "VFBseq_00000001"
+    }
+  ]
+}

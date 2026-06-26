@@ -9,7 +9,7 @@
       "orcid": "0000-0002-1373-1705"
     }
   ],
-  "notes": "All 62 distinct FBbt terms across 184 mapped clusters verified current/non-obsolete/label-match against FBbt 2026-06-11 via scripts/verify_mappings.py. Deterministic steps (annotations, 124 placeholders, collate) reproduce byte-identically from current code; the 8 pilot clusters were re-run under current agent guidance with 0 changes in FBbt assignment/match-type/flags. 12 class-C clusters held (class undefined).",
+  "notes": "All 62 distinct FBbt terms across 184 mapped clusters verified current/non-obsolete/label-match against FBbt 2026-06-11 via scripts/verify_mappings.py. Deterministic steps (annotations, 124 placeholders, collate) reproduce byte-identically from current code; the 8 pilot clusters were re-run under current agent guidance with 0 changes in FBbt assignment/match-type/flags. 12 class-C clusters held (class undefined). Sample/Assay/Clustering layer built from GEO (7 biological samples, 36 10x-library assays, 2 clusterings) with FBdv stages + FBbt tissue per curated timepoint map; FBdv 2026-04-02, FBcv 2026-04-03.",
   "pipeline": {
     "name": "vfb-scrnaseq",
     "version": "0.0.0",
@@ -26,6 +26,26 @@
       "accessed_via": "OLS MCP (OLS4)",
       "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
       "accessed_at": "2026-06-17"
+    },
+    {
+      "id": "FBdv",
+      "name": "Drosophila developmental ontology",
+      "version": "2026-04-02",
+      "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-04-02/fbdv.owl",
+      "release_date": "2026-04-02",
+      "accessed_via": "OLS4 API",
+      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "accessed_at": "2026-06-19"
+    },
+    {
+      "id": "FBcv",
+      "name": "FlyBase controlled vocabulary",
+      "version": "2026-04-03",
+      "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-04-03/fbcv.owl",
+      "release_date": "2026-04-03",
+      "accessed_via": "OLS4 API",
+      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "accessed_at": "2026-06-19"
     }
   ],
   "data_sources": [

@@ -258,6 +258,45 @@ FBbt `version_iri` makes it explicit which release a mapping was made against, s
 mappings can be revisited when the ontology moves. (A future helper can auto-stamp
 git commits / file checksums rather than hand-filling.)
 
+## Sample / Assay / Dataset metadata (beyond cell types)
+
+The cluster→FBbt layer is done; the rest of the schema is populated from GEO
+(`ingest.fetch_series`) + `config.yaml`. Decisions for the Kurmangaliyev worked
+example:
+
+- **Granularity: 7 `Sample`s + 36 `Assay`s.** Biological `Sample` =
+  `set_timepoint_biorep` (DGRP_All_A/B, W1118_{24h,48h_A,48h_B,72h,Adult}_A);
+  `Assay` = each 10x library/techrep (the 36 GSMs), carrying GSM + SRX as dbxrefs.
+  (README: techrep = "a single 10X library".)
+- **Genotype/stock:** the master schema has no slot for strain (DGRP vs W1118) —
+  **add a `genotype`/`stock` slot to `Sample`** (we own the schema). Real
+  biological metadata we shouldn't drop.
+- **`stage` → FBdv and `sample_tissue` → FBbt** (curated per timepoint):
+
+  | timepoint | FBdv stage | FBbt tissue |
+  |---|---|---|
+  | 24h APF | `FBdv:00005349` pupal stage | `FBbt:00001930` embryonic/larval optic lobe |
+  | 48h / 72h APF | `FBdv:00006011` pharate adult stage | `FBbt:00003701` adult optic lobe |
+  | 0–96h pooled (DGRP All) | `FBdv:00007001` P-stage *(broader than "pupal stage")* | `FBbt:00003701` adult optic lobe |
+  | adult | `FBdv:00005369` adult stage | `FBbt:00003701` adult optic lobe |
+
+- **Developmental atlas, not adult.** Kurmangaliyev is pupal (24–96h APF) + adult.
+  At the **sample** level the gradient is captured above (24h → embryonic/larval
+  optic lobe). At the **cell-type** level, FBbt has distinct `immature X neuron`
+  terms; the cell-type mapping agent was corrected to weigh developmental stage
+  (integrated/late clusters → mature form; early-stage-specific → immature form)
+  rather than assume "adult". The **main integrated clusters** (cells pooled 24–96h
+  APF) keep the **mature** resolved-identity terms; **immature forms apply to the
+  `early` subset and any future per-timepoint layer.**
+- **`sex`:** unannotated → unset (schema enum is male/female only).
+- **`Assay.method`:** `FBcv:0009008` "10x sequencing".
+- **`Clustering`:** two — `main` and `early` — each linked to its dataset + the
+  samples/assays that fed it.
+
+New ontologies now in play (add to provenance `ontologies`): **FBdv** (stages),
+**FBcv** (assay method), and FBbt also for tissue. Tissue→FBbt and stage→FBdv are
+new mapping steps alongside the existing cell-type mapping.
+
 ## Expression statistics (later phase)
 
 Summary stats must be computed **the way FlyBase did** (fuzzy-onions
