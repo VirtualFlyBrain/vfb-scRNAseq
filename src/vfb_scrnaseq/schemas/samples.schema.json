@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://virtualflybrain.org/schemas/samples.schema.json",
+  "title": "Sample / Assay / Clustering metadata",
+  "description": "Per-project Dataset/Sample/Assay/Clustering metadata built from GEO by build_samples_from_geo.py. Minted VFBseq IDs are the entity IRIs; GEO/SRA accessions are cross-references.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["dataset", "samples", "assays", "clusterings"],
+  "definitions": {
+    "vfbseq": { "type": "string", "pattern": "^VFBseq_[0-9]{8}$" },
+    "ont_ref_fbdv": {
+      "type": "object", "additionalProperties": false, "required": ["fbdv_id", "label"],
+      "properties": { "fbdv_id": { "type": "string", "pattern": "^FBdv:[0-9]{8}$" }, "label": { "type": "string" } }
+    },
+    "ont_ref_fbbt": {
+      "type": "object", "additionalProperties": false, "required": ["fbbt_id", "label"],
+      "properties": { "fbbt_id": { "type": "string", "pattern": "^FBbt:[0-9]{8}$" }, "label": { "type": "string" } }
+    },
+    "ont_ref_fbcv": {
+      "type": "object", "additionalProperties": false, "required": ["fbcv_id", "label"],
+      "properties": { "fbcv_id": { "type": "string", "pattern": "^FBcv:[0-9]{7}$" }, "label": { "type": "string" } }
+    }
+  },
+  "properties": {
+    "dataset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vfbseq_id", "accession"],
+      "properties": {
+        "vfbseq_id": { "$ref": "#/definitions/vfbseq" },
+        "accession": { "type": "string" },
+        "site": { "type": "string" }
+      }
+    },
+    "samples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["vfbseq_id", "sample_id", "associated_dataset", "assay_vfbseq_ids"],
+        "properties": {
+          "vfbseq_id": { "$ref": "#/definitions/vfbseq" },
+          "sample_id": { "type": "string" },
+          "set": { "type": "string" },
+          "timepoint": { "type": "string" },
+          "biorep": { "type": "string" },
+          "genotype": { "type": ["string", "null"] },
+          "sex": { "type": ["string", "null"], "enum": ["male", "female", null] },
+          "stage": { "oneOf": [ { "type": "null" }, { "$ref": "#/definitions/ont_ref_fbdv" } ] },
+          "sample_tissue": { "oneOf": [ { "type": "null" }, { "$ref": "#/definitions/ont_ref_fbbt" } ] },
+          "associated_dataset": { "$ref": "#/definitions/vfbseq" },
+          "assay_vfbseq_ids": { "type": "array", "items": { "$ref": "#/definitions/vfbseq" } },
+          "n_assays": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "assays": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["vfbseq_id", "accession", "sample_vfbseq_id", "method"],
+        "properties": {
+          "vfbseq_id": { "$ref": "#/definitions/vfbseq" },
+          "library_id": { "type": "string" },
+          "accession": { "type": "string", "pattern": "^GSM[0-9]+$" },
+          "sra": { "type": ["string", "null"] },
+          "biosample": { "type": ["string", "null"] },
+          "method": { "$ref": "#/definitions/ont_ref_fbcv" },
+          "sample_vfbseq_id": { "$ref": "#/definitions/vfbseq" },
+          "associated_dataset": { "$ref": "#/definitions/vfbseq" }
+        }
+      }
+    },
+    "clusterings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["vfbseq_id", "subset", "associated_dataset"],
+        "properties": {
+          "vfbseq_id": { "$ref": "#/definitions/vfbseq" },
+          "subset": { "type": "string" },
+          "associated_dataset": { "$ref": "#/definitions/vfbseq" }
+        }
+      }
+    }
+  }
+}
