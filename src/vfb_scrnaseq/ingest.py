@@ -24,6 +24,8 @@ Design notes:
 
 from __future__ import annotations
 
+import time
+import urllib.error
 import urllib.request
 from dataclasses import dataclass, field
 from urllib.parse import urlencode
@@ -89,11 +91,28 @@ def soft_url(accession: str) -> str:
     return f"{GEO_ACC_URL}?{query}"
 
 
-def fetch_soft(accession: str, *, timeout: float = 60.0) -> str:
-    """Download the SOFT text for a GEO accession (no auth)."""
+def fetch_soft(accession: str, *, timeout: float = 60.0, retries: int = 4,
+               backoff: float = 3.0) -> str:
+    """Download the SOFT text for a GEO accession (no auth).
+
+    GEO's acc.cgi intermittently returns 5xx (502/503) or times out; retry with
+    exponential backoff on transient errors before giving up.
+    """
     req = urllib.request.Request(soft_url(accession), headers={"User-Agent": _USER_AGENT})
-    with urllib.request.urlopen(req, timeout=timeout) as resp:  # noqa: S310 (trusted host)
-        return resp.read().decode("utf-8", errors="replace")
+    last_err: Exception | None = None
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:  # noqa: S310 (trusted host)
+                return resp.read().decode("utf-8", errors="replace")
+        except urllib.error.HTTPError as exc:
+            last_err = exc
+            if exc.code < 500:  # 4xx is not transient — fail fast
+                raise
+        except (urllib.error.URLError, TimeoutError) as exc:
+            last_err = exc
+        if attempt < retries - 1:
+            time.sleep(backoff * (2 ** attempt))
+    raise RuntimeError(f"GEO fetch for {accession} failed after {retries} attempts: {last_err}")
 
 
 def _strip_relation_value(raw: str) -> tuple[str, str]:
