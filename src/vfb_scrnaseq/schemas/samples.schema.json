@@ -44,6 +44,8 @@
           "set": { "type": "string" },
           "timepoint": { "type": "string" },
           "biorep": { "type": "string" },
+          "tissue_raw": { "type": ["string", "null"] },
+          "age_raw": { "type": ["string", "null"] },
           "genotype": { "type": ["string", "null"] },
           "sex": { "type": ["string", "null"], "enum": ["male", "female", null] },
           "stage": { "oneOf": [ { "type": "null" }, { "$ref": "#/definitions/ont_ref_fbdv" } ] },

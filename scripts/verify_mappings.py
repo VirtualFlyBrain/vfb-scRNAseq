@@ -9,7 +9,7 @@ re-certified against any FBbt release (e.g. the 2026-06-11 release that fixed th
 Dm8 rename). Does NOT re-run the LLM judgement; it certifies term validity only.
 
 Usage:
-    python scripts/verify_mappings.py --project kurmangaliyev_2020
+    uv run python scripts/verify_mappings.py --project kurmangaliyev_2020
 Exit code 1 if any term fails verification.
 """
 

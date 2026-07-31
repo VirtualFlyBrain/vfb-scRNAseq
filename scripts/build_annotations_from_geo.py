@@ -12,7 +12,7 @@ cell_type_annotations.json shape; the downstream config/placeholder/collate
 layers are unchanged.)
 
 Usage:
-    python scripts/build_annotations_from_geo.py --project kurmangaliyev_2020
+    uv run python scripts/build_annotations_from_geo.py --project kurmangaliyev_2020
     # optional: --metadata /path/to/local_copy.tsv.gz   (else downloaded from GEO)
 """
 

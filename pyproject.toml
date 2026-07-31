@@ -11,8 +11,10 @@ requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "Virtual Fly Brain" }]
 dependencies = [
-  "linkml>=1.7",
-  "linkml-runtime>=1.7",
+  "linkml>=1.11",
+  "linkml-runtime>=1.11",
+  "linkml-owl>=0.5",       # OWL emission via the schema owl.fstring/owl.template annotations
+  "rdflib>=7",
   "pydantic>=2",
   "PyYAML>=6",
 ]

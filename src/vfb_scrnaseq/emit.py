@@ -1,24 +1,128 @@
-"""Emit RDF/TTL from schema-conformant LinkML data.
+"""Validate and emit RDF using the standard LinkML tools.
 
-STUB. Predicates and class assertions come straight from the schema's
-``slot_uri`` / ``class_uri`` / ``owl.fstring`` annotations, so emission is
-largely a call to ``linkml-convert``::
+Rather than hand-building triples, this drives the LinkML CLIs against a
+``tree_root`` Container instance of the entities:
+  - ``linkml-validate`` — checks the data conforms to the schema (types, ranges,
+    required slots, and rejects unknown slots) → our validation pass;
+  - ``linkml-convert -t ttl`` — emits RDF using the schema's slot_uri/class_uri.
 
-    linkml-convert -s src/vfb_scrnaseq/schema/VFB_scRNAseq_schema.yaml \\
-        -t ttl -C Dataset <data.yaml> > out.ttl
-
-The schema uses ``owl.fstring`` / ``owl.template`` annotations to control the
-exact OWL produced (e.g. the per-gene expression ClassAssertion). Verify the TTL
-against the previous FlyBase-produced output during the migration.
+The only post-processing is stripping the Container index node (a tree_root
+artefact) so the output is just the domain entities.
 """
 
 from __future__ import annotations
 
+import os
+import shutil
+import subprocess
+import sys
+import sysconfig
+import tempfile
 from pathlib import Path
 
+import yaml
+from rdflib import Graph, RDF, URIRef
+
+
+def _script(name: str) -> str:
+    """Path to a console script for THIS interpreter (avoids a stray 3.9 shadow on PATH)."""
+    p = os.path.join(sysconfig.get_path("scripts"), name)
+    return p if os.path.exists(p) else name
+
 SCHEMA_PATH = Path(__file__).parent / "schema" / "VFB_scRNAseq_schema.yaml"
+CONTAINER_TYPE = URIRef("http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Container")
+
+ENTITY_GROUPS = {
+    "Dataset": "datasets", "Sample": "samples", "Assay": "assays",
+    "Clustering": "clusterings", "Cluster": "clusters",
+}
 
 
-def emit_ttl(data, out_path: str | Path):
-    """Serialise built LinkML objects to Turtle. TODO: implement."""
-    raise NotImplementedError("emit_ttl: pending build step")
+def container_from_entities(entities: list[dict]) -> dict:
+    """Group flat entity records into the tree_root Container shape."""
+    cont: dict[str, list] = {g: [] for g in ENTITY_GROUPS.values()}
+    for e in entities:
+        group = ENTITY_GROUPS[e["type"]]
+        cont[group].append({k: v for k, v in e.items() if k != "type"})
+    return {k: v for k, v in cont.items() if v}
+
+
+def validate(container: dict, schema_path: Path = SCHEMA_PATH) -> None:
+    """Run linkml-validate on the container; raise with the report on failure."""
+    with tempfile.NamedTemporaryFile("w", suffix=".yaml", delete=False) as fh:
+        yaml.safe_dump(container, fh, sort_keys=False)
+        data_path = fh.name
+    r = subprocess.run([_script("linkml-validate"), "-s", str(schema_path), data_path],
+                       capture_output=True, text=True)
+    if r.returncode != 0 or "No issues found" not in r.stdout:
+        raise RuntimeError(f"linkml-validate failed:\n{r.stdout}\n{r.stderr}")
+
+
+def emit_ttl(entities: list[dict], out_path: str | Path,
+             schema_path: Path = SCHEMA_PATH, do_validate: bool = True) -> Path:
+    """Validate then convert entities to Turtle via the LinkML CLIs."""
+    container = container_from_entities(entities)
+    with tempfile.NamedTemporaryFile("w", suffix=".yaml", delete=False) as fh:
+        yaml.safe_dump(container, fh, sort_keys=False)
+        data_path = fh.name
+
+    if do_validate:
+        validate(container, schema_path)
+
+    r = subprocess.run([_script("linkml-convert"), "-s", str(schema_path), "-t", "ttl", data_path],
+                       capture_output=True, text=True)
+    if r.returncode != 0:
+        raise RuntimeError(f"linkml-convert failed:\n{r.stderr}")
+
+    g = Graph()
+    g.parse(data=r.stdout, format="turtle")
+    # strip the tree_root Container index node (not domain data)
+    for cnode in list(g.subjects(RDF.type, CONTAINER_TYPE)):
+        for triple in list(g.triples((cnode, None, None))):
+            g.remove(triple)
+    out_path = Path(out_path)
+    g.serialize(destination=str(out_path), format="turtle")
+    return out_path
+
+
+def emit_owl(entities: list[dict], out_path: str | Path,
+             schema_path: Path = SCHEMA_PATH, do_validate: bool = True) -> Path:
+    """Emit OWL via linkml-owl, honouring the schema's owl.fstring/owl.template
+    annotations (ClassAssertions, ObjectSomeValuesFrom restrictions, and the
+    annotated expression axioms) — the VFB-pipeline-compatible representation.
+
+    Output format follows the file extension (.ofn functional syntax, .owl RDF/XML,
+    .ttl Turtle).
+    """
+    container = container_from_entities(entities)
+    if do_validate:
+        validate(container, schema_path)
+    with tempfile.NamedTemporaryFile("w", suffix=".yaml", delete=False) as fh:
+        yaml.safe_dump(container, fh, sort_keys=False)
+        data_path = fh.name
+    out_path = Path(out_path)
+    r = subprocess.run(
+        [_script("linkml-data2owl"), "-s", str(schema_path), data_path, "-o", str(out_path)],
+        capture_output=True, text=True)
+    if r.returncode != 0:
+        raise RuntimeError(f"linkml-data2owl failed:\n{r.stdout}\n{r.stderr}")
+    return out_path
+
+
+def to_owlxml(ofn_path: str | Path, out_path: str | Path | None = None) -> Path | None:
+    """Convert an OWL functional-syntax (.ofn) file to OWL/XML (.owl) with ROBOT.
+
+    ROBOT is an external Java tool (not a pip/uv dep); if it is not on PATH this
+    is skipped with a warning and returns None rather than failing the pipeline.
+    """
+    robot = shutil.which("robot")
+    ofn_path = Path(ofn_path)
+    out_path = Path(out_path) if out_path else ofn_path.with_suffix(".owl")
+    if not robot:
+        print("  robot not on PATH — skipping OWL/XML (.owl) conversion", file=sys.stderr)
+        return None
+    r = subprocess.run([robot, "convert", "-i", str(ofn_path), "-o", str(out_path)],
+                       capture_output=True, text=True)
+    if r.returncode != 0:
+        raise RuntimeError(f"robot convert failed:\n{r.stdout}\n{r.stderr}")
+    return out_path

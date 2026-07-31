@@ -271,14 +271,17 @@ example:
 - **Genotype/stock:** the master schema has no slot for strain (DGRP vs W1118) —
   **add a `genotype`/`stock` slot to `Sample`** (we own the schema). Real
   biological metadata we shouldn't drop.
-- **`stage` → FBdv and `sample_tissue` → FBbt** (curated per timepoint):
+- **`stage` → FBdv and `sample_tissue` → FBbt**, curated and keyed on the GEO
+  **`age` characteristic** (`age_map` in config), NOT the sample-title token — the
+  token is not 1:1 with age (the sample titled `Adult` is actually `96h APF` =
+  pharate adult). Both the mapping and the sample `rdfs:label` derive from the raw
+  GEO info:
 
-  | timepoint | FBdv stage | FBbt tissue |
+  | GEO age | FBdv stage | FBbt tissue |
   |---|---|---|
   | 24h APF | `FBdv:00005349` pupal stage | `FBbt:00001930` embryonic/larval optic lobe |
-  | 48h / 72h APF | `FBdv:00006011` pharate adult stage | `FBbt:00003701` adult optic lobe |
-  | 0–96h pooled (DGRP All) | `FBdv:00007001` P-stage *(broader than "pupal stage")* | `FBbt:00003701` adult optic lobe |
-  | adult | `FBdv:00005369` adult stage | `FBbt:00003701` adult optic lobe |
+  | 48h / 72h / 96h APF | `FBdv:00006011` pharate adult stage | `FBbt:00003701` adult optic lobe |
+  | 0–96h APF (DGRP pooled) | `FBdv:00007001` P-stage *(broader than "pupal stage")* | `FBbt:00003701` adult optic lobe |
 
 - **Developmental atlas, not adult.** Kurmangaliyev is pupal (24–96h APF) + adult.
   At the **sample** level the gradient is captured above (24h → embryonic/larval
@@ -296,6 +299,61 @@ example:
 New ontologies now in play (add to provenance `ontologies`): **FBdv** (stages),
 **FBcv** (assay method), and FBbt also for tissue. Tissue→FBbt and stage→FBdv are
 new mapping steps alongside the existing cell-type mapping.
+
+## RDF assembly & emission
+
+`vfb_scrnaseq.build` reads the working-format JSON (config, `samples.json`,
+`cell_type_annotations.json`, `mapping/*.json`), mints `Cluster` IDs, and writes
+`entities.json` — a flat list of records keyed by LinkML **slot names**, with
+minted `VFBseq` IRIs and GEO/SRA accessions as `dbxref`s.
+
+`vfb_scrnaseq.emit` then uses the **standard LinkML tools** (not hand-written
+triples): it groups the entities into the schema's `tree_root` **Container** and
+runs
+  - **`linkml-validate`** — conforms the data to the schema (types, ranges,
+    required slots; **rejects unknown slots**, so mis-keyed data errors loudly
+    instead of being silently dropped); then
+  - **`linkml-convert -t ttl`** — emits RDF from the schema's `slot_uri`/`class_uri`.
+
+`scripts/build_rdf.py` runs build → emit, in **two representations** (both from
+the same schema + `Container` data, no custom triple code):
+
+- **OWL** (`--format owl`, default `both`) via **`linkml-owl` (`linkml-data2owl`)**,
+  which honours the schema's `owl.fstring`/`owl.template` annotations →
+  `ClassAssertion(ObjectSomeValuesFrom(R Term) {id})` existential restrictions,
+  `ObjectPropertyAssertion`s, `AnnotationAssertion`s, and (expression phase) the
+  annotated `expresses some gene` axioms. This is the **VFB-pipeline-compatible**
+  output → `projects/<name>/<accession>.ofn`. Worked example: **1516 axioms** (242
+  type + 235 restrictions + object/annotation assertions).
+- **Flat RDF** (`--format ttl`) via **`linkml-convert`**, which uses `slot_uri`/
+  `class_uri` only — simpler generic RDF (ontology-term links are plain triples,
+  no OWL restrictions), Container node stripped → `<accession>.ttl` (1785 triples).
+- **OWL/XML** — the `.ofn` is then converted to RDF/XML with **`robot convert`** →
+  `<accession>.owl` (lossless; round-trip verified). ROBOT is an external Java tool,
+  not a pip/uv dep, so this step is skipped with a warning if `robot` isn't on PATH.
+
+Both are preceded by **`linkml-validate`** (types, ranges, required slots, rejects
+unknown slots). Use OWL for VFB/reasoning; flat RDF for generic SPARQL. See the
+`owl.fstring` discussion — the OWL path restores the existential-restriction
+semantics the flat path drops, and is required for the expression-stats axioms.
+
+Schema use: the LinkML schema now drives **validation** (`linkml-validate`),
+**flat RDF** (`linkml-convert`), and **OWL** (`linkml-owl`) — the `owl.*`
+annotations are the linkml-owl input format the schema was authored for.
+
+**Caveats / deferred** (deliberately not done here):
+- **owl.fstring / owl.template not applied.** The schema's bespoke OWL templates
+  target the VFB *neo* pipeline; we emit the standard `slot_uri` RDF instead.
+  Producing that exact OWL (ClassAssertion/ObjectSomeValuesFrom) would be a
+  separate emitter.
+- **Publication** is linked as the DOI IRI (`dc:references`), not a full
+  `Publication` entity yet.
+- **Dataset gene counts** (`total/filtered_gene_count`) need the expression
+  matrix — expression-stats phase.
+- **`Clustering.associated_sample_or_assay_for_clustering`** left unwired: cells
+  from 24h APF appear in both `early` and `main`, so the sample→clustering link is
+  not 1:1 (single-valued slot). Only `associated_dataset` is set.
+- **`sex`** unset (not annotated in GEO).
 
 ## Expression statistics (later phase)
 

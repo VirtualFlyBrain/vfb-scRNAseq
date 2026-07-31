@@ -20,6 +20,7 @@ prefixes:
   neo_custom: http://n2o.neo/custom/
   neo_property: http://n2o.neo/property/
   vfb: http://virtualflybrain.org/reports/
+  VFBseq: http://virtualflybrain.org/reports/VFBseq_
 default_curi_maps:
     - semweb_context
 default_range: string
@@ -106,6 +107,7 @@ classes:
       - associated_dataset
       - sex
       - genotype
+      - dbxref
       - neo_label
 
   Assay:
@@ -130,6 +132,7 @@ classes:
         multivalued: true
     slots:
       - associated_dataset
+      - dbxref
       - neo_label
 
   Clustering:
@@ -146,6 +149,7 @@ classes:
           owl: ObjectPropertyAssertion
     slots:
       - associated_dataset
+      - neo_label
 
   Cluster:
     is_a: Class
@@ -195,6 +199,18 @@ classes:
     slots:
       - neo_label
 
+  # Collection root, used only for data handling (linkml-validate / linkml-convert).
+  # Holds one project's entities; the Container node itself is stripped from the
+  # emitted RDF (it is an index artefact, not domain data).
+  Container:
+    tree_root: true
+    attributes:
+      datasets:    { range: Dataset,    multivalued: true, inlined_as_list: true }
+      samples:     { range: Sample,     multivalued: true, inlined_as_list: true }
+      assays:      { range: Assay,      multivalued: true, inlined_as_list: true }
+      clusterings: { range: Clustering, multivalued: true, inlined_as_list: true }
+      clusters:    { range: Cluster,    multivalued: true, inlined_as_list: true }
+
 # slots can be used as attributes that can be shared by multiple classes
 slots:
   id:
@@ -237,6 +253,12 @@ slots:
     description: Genotype / stock of the Sample (e.g. a DGRP line panel, or w[1118]). Free text; FlyBase stock/genotype nomenclature where available.
     annotations:
       owl: AnnotationProperty
+  dbxref:
+    slot_uri: oboInOwl:hasDbXref
+    description: Cross-reference accession(s) for the entity (e.g. GEO GSM, SRA SRX/SRP, BioSample SAMN). Not an IRI for the entity.
+    multivalued: true
+    annotations:
+      owl: AnnotationAssertion
   neo_label:
     slot_uri: neo_property:nodeLabel
     description: neo4j node label to add to entity.

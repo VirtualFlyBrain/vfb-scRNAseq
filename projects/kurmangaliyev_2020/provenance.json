@@ -113,6 +113,41 @@
       "notes": "atlas-chat / local-index environment (uv-managed)."
     },
     {
+      "name": "linkml",
+      "kind": "library",
+      "version": "1.11.1",
+      "notes": "linkml-validate (data conformance) + linkml-convert (flat RDF/TTL) driven by the schema tree_root Container."
+    },
+    {
+      "name": "linkml-owl",
+      "kind": "library",
+      "version": "0.5.0",
+      "notes": "linkml-data2owl: OWL emission honouring the schema owl.fstring/owl.template annotations (ClassAssertions, ObjectSomeValuesFrom restrictions) — VFB-pipeline-compatible."
+    },
+    {
+      "name": "funowl",
+      "kind": "library",
+      "version": "0.2.3",
+      "notes": "OWL functional-syntax construction (used by linkml-owl)."
+    },
+    {
+      "name": "ROBOT",
+      "kind": "tool",
+      "version": "1.9.8",
+      "notes": "robot convert: OWL functional syntax (.ofn) -> OWL/XML (.owl). External Java tool, not a pip/uv dependency."
+    },
+    {
+      "name": "linkml-runtime",
+      "kind": "library",
+      "version": "1.11.1"
+    },
+    {
+      "name": "rdflib",
+      "kind": "library",
+      "version": "7.1.1",
+      "notes": "Turtle (de)serialization + stripping the Container index node from the flat RDF."
+    },
+    {
       "name": "Claude Code",
       "kind": "cli",
       "version": "2.1.183",

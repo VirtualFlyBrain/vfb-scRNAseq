@@ -10,7 +10,7 @@ All project/tissue specifics live in config.yaml — see vfb_scrnaseq.project_co
 Idempotent: never overwrites an existing mapping file.
 
 Usage:
-    python scripts/assign_placeholders.py --project kurmangaliyev_2020
+    uv run python scripts/assign_placeholders.py --project kurmangaliyev_2020
 """
 
 from __future__ import annotations
@@ -97,7 +97,7 @@ def main() -> None:
         data = placeholder(label, cls, anchor)
         out.write_text(json.dumps(data, indent=2) + "\n")
         payload = json.dumps({"tool_input": {"file_path": str(out), "content": json.dumps(data)}})
-        r = subprocess.run(["python3", ".claude/hooks/check_fbbt_mapping.py"],
+        r = subprocess.run([sys.executable, ".claude/hooks/check_fbbt_mapping.py"],
                            input=payload, capture_output=True, text=True, cwd=REPO_ROOT)
         if r.returncode != 0:
             raise SystemExit(f"placeholder for {label} failed validation:\n{r.stderr}")

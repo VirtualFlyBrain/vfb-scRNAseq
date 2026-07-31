@@ -5,7 +5,7 @@ Generic across projects: the named/placeholder/held classification is driven by
 the project's config.yaml (`unidentified` section) via vfb_scrnaseq.project_config.
 
 Usage:
-    python scripts/collate_mapping.py --project kurmangaliyev_2020
+    uv run python scripts/collate_mapping.py --project kurmangaliyev_2020
 """
 
 from __future__ import annotations

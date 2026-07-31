@@ -32,7 +32,7 @@ project config + curated cluster labels
   -> FBbt mapping candidates   (.claude/agents/map-clusters-to-fbbt.md, via OLS MCP)
   -> human review              (projects/<id>/mapping.tsv)
   -> LinkML objects            (vfb_scrnaseq.build)
-  -> RDF/TTL                   (vfb_scrnaseq.emit -> linkml-convert)
+  -> validate + RDF + OWL      (vfb_scrnaseq.emit -> linkml-validate / -convert / linkml-owl)
 ```
 
 ## Identifiers
@@ -57,23 +57,34 @@ src/vfb_scrnaseq/
   schemas/fbbt_mapping.schema.json  # FBbt mapping agent output contract
   ids.py        # VFBseq id minting (registry-backed, idempotent)
   mapping.py    # collect FBbt candidates -> reviewable mapping.tsv
-  build.py      # curated annotations -> LinkML objects   (stub)
-  emit.py       # LinkML -> RDF/TTL                        (stub)
+  build.py      # curated annotations + samples -> entity records (+ mints Cluster ids)
+  emit.py       # entities -> validate + flat RDF (linkml-convert) + OWL (linkml-owl)
 .claude/agents/map-clusters-to-fbbt.md   # FBbt mapper (adapted ontology-term-lookup)
 projects/kurmangaliyev_2020/             # first worked example
 id_registry/                             # minted-id registry (JSON)
 ```
 
-## Status
+## Develop & run
 
-Scaffold. `ids.py` is implemented and tested; `build.py` / `emit.py` are stubs
-pending Pydantic-model generation from the schema and curated inputs.
-
-## Develop
+The environment is managed with **uv** (`pyproject.toml` + `uv.lock`); run
+everything via `uv run` so the locked deps (linkml, linkml-owl, …) are used.
 
 ```sh
-pip install -e ".[dev]"
-pytest
-# generate Pydantic models from the master schema:
-gen-pydantic src/vfb_scrnaseq/schema/VFB_scRNAseq_schema.yaml > src/vfb_scrnaseq/model.py
+uv sync                      # create/update the .venv from uv.lock
+uv run pytest                # tests
+
+# full pipeline for a project (GEO -> working JSON -> RDF + OWL):
+uv run python scripts/build_annotations_from_geo.py --project kurmangaliyev_2020
+uv run python scripts/build_samples_from_geo.py     --project kurmangaliyev_2020
+uv run python scripts/collate_mapping.py            --project kurmangaliyev_2020
+uv run python scripts/build_rdf.py                  --project kurmangaliyev_2020   # -> .ttl + .ofn
 ```
+
+Cell-type FBbt mapping itself runs as Claude Code subagents (`map-clusters-to-fbbt`)
+against the OLS MCP — see `docs/DESIGN.md`.
+
+## Status
+
+`ids.py`, `ingest.py`, `build.py`, `emit.py`, and the `scripts/` pipeline are
+implemented; the worked example emits validated RDF (`linkml-convert`) and OWL
+(`linkml-owl`). Expression statistics are a later phase.

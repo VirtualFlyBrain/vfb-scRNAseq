@@ -8,7 +8,7 @@ genotype, and assay method, mints stable VFBseq IDs (idempotent registry), and
 writes projects/<name>/samples.json. GEO/SRA accessions are dbxrefs, never IRIs.
 
 Usage:
-    python scripts/build_samples_from_geo.py --project kurmangaliyev_2020
+    uv run python scripts/build_samples_from_geo.py --project kurmangaliyev_2020
 """
 
 from __future__ import annotations
@@ -72,11 +72,19 @@ def main() -> None:
     for sample_id in sorted(by_sample):
         members = by_sample[sample_id]
         p0 = members[0][0]
-        tp = sb["timepoint_map"].get(p0["timepoint"], {})
-        sample_vid = reg.mint("Sample", sample_id, label=sample_id)
+        gsm0 = members[0][1]  # original GEO characteristics (consistent within a sample)
+        age_raw = gsm0.stage_hint
+        tp = sb["age_map"].get(age_raw, {})
+        if not tp:
+            print(f"  WARNING: no age_map entry for age {age_raw!r} (sample {sample_id}); "
+                  f"stage/tissue left unset", file=sys.stderr)
+        # natural keys are dataset-scoped (accession prefix) so they never collide
+        # across projects/datasets (e.g. a 'DGRP_All_A' sample in another GEO series).
+        sample_vid = reg.mint("Sample", f"{accession}:{sample_id}", label=sample_id)
         assay_vids = []
         for p, gsm in sorted(members, key=lambda m: m[1].accession):
-            assay_vid = reg.mint("Assay", gsm.accession, label=p["techrep"], accession=gsm.accession)
+            assay_vid = reg.mint("Assay", f"{accession}:{gsm.accession}",
+                                 label=p["techrep"], accession=gsm.accession)
             assay_vids.append(assay_vid)
             assays_out.append({
                 "vfbseq_id": assay_vid,
@@ -94,6 +102,8 @@ def main() -> None:
             "set": p0["set"],
             "timepoint": p0["timepoint"],
             "biorep": p0["biorep"],
+            "tissue_raw": gsm0.characteristic("tissue"),   # original GEO characteristics
+            "age_raw": gsm0.stage_hint,
             "genotype": sb.get("genotype_map", {}).get(p0["set"]),
             "sex": None,
             "stage": tp.get("stage"),
