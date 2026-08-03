@@ -355,21 +355,40 @@ annotations are the linkml-owl input format the schema was authored for.
   not 1:1 (single-valued slot). Only `associated_dataset` is set.
 - **`sex`** unset (not annotated in GEO).
 
-## Expression statistics (later phase)
+## Expression statistics
 
-Summary stats must be computed **the way FlyBase did** (fuzzy-onions
-`Project.summarise_expression()`; FlyBase SOP). Per cluster × gene, on the
-**normalised** counts matrix:
+Computed **the way FlyBase did** (fuzzy-onions `summarise_expression`; FlyBase SOP)
+by `vfb_scrnaseq.stats` (`scripts/build_expression.py`). Per cluster × gene:
 
-- `expression_level` = sum of expression values / **number of cells that express
-  the gene** — i.e. the mean over *expressing cells only*, NOT over all cells in
-  the cluster. (This is the detail most often gotten wrong — scanpy's usual mean
-  is over all cells.)
-- `expression_extent` = number of cells expressing / total cells in cluster.
-- "Expressing" = value `> 0` in the normalised matrix.
+- `expression_extent` = cells expressing (value > 0) / total cells in cluster —
+  **normalisation-invariant, so exact**.
+- `expression_level` = **mean over *expressing cells only*** (Σ / n_expressing),
+  NOT over all cells (the detail scanpy's default gets wrong).
+- **Normalisation**: SOP uses the SCEA *Normalised Counts* table; Kurmangaliyev is
+  GEO-raw (never went through SCEA), so we replicate the *method* with **CPM**
+  (linear) — `level` cannot be SCEA-identical, but extent is exact.
+- **Filter**: `extent > 0.2` (from the old repo's `process_metadata.py`);
+  `Cluster.total_gene_count` (any expression) vs `filtered_gene_count` (> 0.2).
 
-These map onto `Cluster.expression_level` / `Cluster.expression_extent` (with
-`gene` via `RO:0002292`).
+**Compute**: two chunked streaming passes over the 1 GB 10x `.mtx.gz` (cell totals
+for CPM, then per-cluster×gene sums via `bincount`) — dense accumulators genes×clusters
+only, ~95 s, low memory. The matrix lives in `.cache/` (gitignored).
+
+**Scale & outputs** (worked example: 17,561 genes, 194k cells → **584,710 rows**
+after the filter):
+- `expression.tsv` — filtered rows, plain/diffable, **committed** (~32 MB).
+- `expression_report.md` — per-cluster cells + total/filtered gene counts.
+- `<accession>_expression.owl.gz` — **committed, loadable** (~13.5 MB; 584,710
+  annotated `expresses` axioms).
+- `total/filtered_gene_count` also set on the `Cluster` entities in the metadata OWL.
+
+**Emission — efficient, NOT linkml-owl.** linkml-owl renders *and re-parses* the
+template per row (~1.4 ms/row → ~14 min / ~3 GB at this scale). Instead we render
+the schema's `gene` `owl.template` per row (Jinja) straight to one `.ofn` (~0.6 s),
+then a single `robot convert` → `.owl` → gzip (~30 s total). linkml-owl is kept for
+the *metadata* (small). NB the `gene` template was fixed for the modern
+`py-horned-owl` backend (quoted/typed literals, `xsd:` prefix); gene fillers are
+`FlyBase:FBgn…` CURIEs.
 
 ## Worked example
 

@@ -21,6 +21,7 @@ prefixes:
   neo_property: http://n2o.neo/property/
   vfb: http://virtualflybrain.org/reports/
   VFBseq: http://virtualflybrain.org/reports/VFBseq_
+  xsd: http://www.w3.org/2001/XMLSchema#
 default_curi_maps:
     - semweb_context
 default_range: string
@@ -272,10 +273,10 @@ slots:
       owl.template: |-
         {% if gene %}
         ClassAssertion ( 
-            Annotation ( neo_custom:hide_in_terminfo {{hide_in_terminfo}} ) 
-            Annotation ( neo_custom:expression_level {{expression_level}} ) 
+            Annotation ( neo_custom:hide_in_terminfo "{{hide_in_terminfo}}" )
+            Annotation ( neo_custom:expression_level "{{expression_level}}"^^xsd:float )
             {% if expression_extent %}
-            Annotation ( neo_custom:expression_extent {{expression_extent}} ) 
+            Annotation ( neo_custom:expression_extent "{{expression_extent}}"^^xsd:float )
             {% endif %}
             ObjectSomeValuesFrom ( RO:0002292 {{gene}}) {{id}})
         {% endif %}

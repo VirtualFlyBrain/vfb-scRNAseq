@@ -60,6 +60,17 @@ sample_build:
   # clustering analyses present in this dataset (GEO subsets)
   clusterings: [main, early]
 
+# Summary expression statistics (extent + CPM level per cluster x gene).
+# Matrix/features/barcodes are the 10x MEX files in .cache (metadata + label column
+# reuse the `annotations` section). extent_cutoff 0.2 matches the old repo.
+expression:
+  matrix_file: GSE156455_matrix_main.mtx.gz
+  features_file: GSE156455_features_main.tsv.gz
+  barcodes_file: GSE156455_barcodes_main.tsv.gz
+  normalisation: CPM
+  extent_cutoff: 0.2
+  hide_in_terminfo: "true"
+
 # --- Project-specific pipeline config (read by the generic scripts) ---
 
 # How to read the source metadata table into cell_type_annotations.json.

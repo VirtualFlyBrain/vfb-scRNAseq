@@ -119,6 +119,8 @@ def build_entities(project: str) -> list[dict]:
     # --- Clusters (annotated clusters belong to the 'main' clustering) ---
     subset = anns_subset(proj)
     main_clustering = clustering_iri_by_subset.get(subset)
+    ecf = proj / "expression_counts.json"
+    expr_counts = json.loads(ecf.read_text()) if ecf.exists() else {}
     for ann in anns:
         label = ann["label"]
         cid = reg.mint("Cluster", f"{d['accession']}:{subset}:{label}", label=label)
@@ -134,6 +136,9 @@ def build_entities(project: str) -> list[dict]:
         bm = (m or {}).get("best_match") or {}
         if bm.get("fbbt_id"):
             rec["cell_type"] = [bm["fbbt_id"]]
+        if label in expr_counts:
+            rec["total_gene_count"] = expr_counts[label]["total_gene_count"]
+            rec["filtered_gene_count"] = expr_counts[label]["filtered_gene_count"]
         entities.append(rec)
 
     reg.save()

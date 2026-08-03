@@ -9,7 +9,7 @@
       "orcid": "0000-0002-1373-1705"
     }
   ],
-  "notes": "All 62 distinct FBbt terms across 184 mapped clusters verified current/non-obsolete/label-match against FBbt 2026-06-11 via scripts/verify_mappings.py. Deterministic steps (annotations, 124 placeholders, collate) reproduce byte-identically from current code; the 8 pilot clusters were re-run under current agent guidance with 0 changes in FBbt assignment/match-type/flags. 12 class-C clusters held (class undefined). Sample/Assay/Clustering layer built from GEO (7 biological samples, 36 10x-library assays, 2 clusterings) with FBdv stages + FBbt tissue per curated timepoint map; FBdv 2026-04-02, FBcv 2026-04-03.",
+  "notes": "All 62 distinct FBbt terms across 184 mapped clusters verified current/non-obsolete/label-match against FBbt 2026-06-11 via scripts/verify_mappings.py. Deterministic steps (annotations, 124 placeholders, collate) reproduce byte-identically from current code; the 8 pilot clusters were re-run under current agent guidance with 0 changes in FBbt assignment/match-type/flags. 12 class-C clusters held (class undefined). Sample/Assay/Clustering layer built from GEO (7 biological samples, 36 10x-library assays, 2 clusterings) with FBdv stages + FBbt tissue per curated timepoint map; FBdv 2026-04-02, FBcv 2026-04-03. Expression summary stats computed from the raw 10x matrix: CPM-normalised mean over expressing cells (level) + extent, filtered extent>0.2 -> 584,710 cluster x gene rows (expression.tsv + GSE156455_expression.owl.gz); total/filtered gene counts on each Cluster.",
   "pipeline": {
     "name": "vfb-scrnaseq",
     "version": "0.0.0",
@@ -76,6 +76,13 @@
           "sha256": "a312e1ef40819ff0d988cb0de00231fa5fbae3ddd3befd90b05031140c24f2c1",
           "bytes": 2098986,
           "retrieved_at": "2026-06-16"
+        },
+        {
+          "name": "GSE156455_matrix_main.mtx.gz",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE156nnn/GSE156455/suppl/GSE156455_matrix_main.mtx.gz",
+          "sha256": "e34a0728501cb8a40713b24c861f261fe293900cf113ab92f2ed522791b5f81e",
+          "bytes": 1054537791,
+          "retrieved_at": "2026-07-31"
         }
       ]
     }
@@ -146,6 +153,18 @@
       "kind": "library",
       "version": "7.1.1",
       "notes": "Turtle (de)serialization + stripping the Container index node from the flat RDF."
+    },
+    {
+      "name": "pandas",
+      "kind": "library",
+      "version": "3.0.5",
+      "notes": "Chunked streaming of the 10x MatrixMarket for expression stats."
+    },
+    {
+      "name": "numpy",
+      "kind": "library",
+      "version": "2.5.1",
+      "notes": "CPM normalisation + per-cluster extent/level accumulation (bincount)."
     },
     {
       "name": "Claude Code",

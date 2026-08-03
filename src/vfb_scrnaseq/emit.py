@@ -21,6 +21,7 @@ import tempfile
 from pathlib import Path
 
 import yaml
+from linkml_runtime import SchemaView
 from rdflib import Graph, RDF, URIRef
 
 
@@ -107,6 +108,58 @@ def emit_owl(entities: list[dict], out_path: str | Path,
     if r.returncode != 0:
         raise RuntimeError(f"linkml-data2owl failed:\n{r.stdout}\n{r.stderr}")
     return out_path
+
+
+def _gene_template(sv: SchemaView) -> str:
+    """The `gene` slot's owl.template string from the schema (the axiom shape spec)."""
+    ann = sv.get_slot("gene").annotations
+    a = ann.get("owl.template") if hasattr(ann, "get") else ann["owl.template"]
+    return a.value
+
+
+def emit_expression_owl(rows, out_owl_gz: str | Path, schema_path: Path = SCHEMA_PATH,
+                        hide: str = "true") -> Path:
+    """Emit the per-(cluster,gene) expression axioms as gzipped OWL/XML.
+
+    Efficient: renders the schema's `gene` owl.template per row (Jinja, no per-row
+    OWL parse), writes one .ofn, then a single `robot convert` -> .owl -> gzip.
+    `rows` = iterable of (cluster_vfbseq_id, cluster_label, fbgn, symbol, level, extent).
+    """
+    import gzip as gz
+
+    import jinja2
+
+    sv = SchemaView(str(schema_path))
+    tmpl = jinja2.Template(_gene_template(sv))
+    header = "\n".join(f"Prefix({p}:=<{o.prefix_reference}>)" for p, o in sv.schema.prefixes.items())
+
+    ofn = tempfile.NamedTemporaryFile("w", suffix=".ofn", delete=False)
+    ofn.write(header + "\nOntology(\n")
+    for cid, _label, fbgn, _sym, level, extent in rows:
+        ofn.write(tmpl.render(id=f"vfb:{cid}", gene=f"FlyBase:{fbgn}",
+                              expression_level=level, expression_extent=extent,
+                              hide_in_terminfo=hide) + "\n")
+    ofn.write(")\n")
+    ofn.close()
+
+    out_owl_gz = Path(out_owl_gz)
+    robot = shutil.which("robot")
+    if not robot:
+        # fall back to gzipped functional syntax (no OWL/XML) with a warning
+        alt = out_owl_gz.with_suffix("").with_suffix(".ofn.gz")
+        with open(ofn.name, "rb") as fi, gz.open(alt, "wb") as fo:
+            fo.writelines(fi)
+        print(f"  robot not on PATH — wrote {alt} (functional syntax) instead of OWL/XML", file=sys.stderr)
+        return alt
+    with tempfile.NamedTemporaryFile(suffix=".owl", delete=False) as owl_tmp:
+        owl_path = owl_tmp.name
+    r = subprocess.run([robot, "convert", "-i", ofn.name, "-o", owl_path],
+                       capture_output=True, text=True)
+    if r.returncode != 0:
+        raise RuntimeError(f"robot convert failed:\n{r.stdout}\n{r.stderr}")
+    with open(owl_path, "rb") as fi, gz.open(out_owl_gz, "wb") as fo:
+        fo.writelines(fi)
+    return out_owl_gz
 
 
 def to_owlxml(ofn_path: str | Path, out_path: str | Path | None = None) -> Path | None:
