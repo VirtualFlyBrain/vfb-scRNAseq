@@ -376,11 +376,19 @@ only, ~95 s, low memory. The matrix lives in `.cache/` (gitignored).
 
 **Scale & outputs** (worked example: 17,561 genes, 194k cells → **584,710 rows**
 after the filter):
-- `expression.tsv` — filtered rows, plain/diffable, **committed** (~32 MB).
-- `expression_report.md` — per-cluster cells + total/filtered gene counts.
-- `<accession>_expression.owl.gz` — **committed, loadable** (~13.5 MB; 584,710
-  annotated `expresses` axioms).
+- `projects/<p>/expression.tsv` — filtered rows, plain/diffable, **committed** (~32 MB).
+- `projects/<p>/expression_report.md` — per-cluster cells + total/filtered gene counts.
+- `expression/vfb_scRNAseq_expression_<project>.owl.gz` — **committed, loadable**
+  (~13.5 MB; 584,710 annotated `expresses` axioms).
 - `total/filtered_gene_count` also set on the `Cluster` entities in the metadata OWL.
+
+**Release layout.** The VFB-loadable OWL is aggregated across projects in two
+top-level folders so the loader picks them up from one place (mirrors the old
+repo's `metadata_release_files/` + `expression_data/`):
+`metadata/vfb_scRNAseq_metadata_<project>.owl` (dataset metadata) and
+`expression/vfb_scRNAseq_expression_<project>.owl.gz` (expression). The build
+scripts write there directly; per-project dirs keep only the
+intermediates/diffables (`.ttl`, `.ofn`, `expression.tsv`, report, counts).
 
 **Emission — efficient, NOT linkml-owl.** linkml-owl renders *and re-parses* the
 template per row (~1.4 ms/row → ~14 min / ~3 GB at this scale). Instead we render

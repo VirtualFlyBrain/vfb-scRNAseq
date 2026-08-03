@@ -5,7 +5,8 @@ Runs vfb_scrnaseq.stats (streaming CPM extent/level, filter extent>cutoff) and w
   - projects/<p>/expression.tsv            filtered rows (committed, diffable)
   - projects/<p>/expression_report.md      per-cluster cell + total/filtered gene counts
   - projects/<p>/expression_counts.json    {label: {total,filtered}} for build.py
-  - projects/<p>/<accession>_expression.owl.gz   gzipped OWL (committed, loadable)
+  - expression/vfb_scRNAseq_expression_<project>.owl.gz   gzipped OWL (committed,
+                                                 loadable; aggregated across projects for VFB)
 
 Requires the Cluster ids to be minted first (run build_rdf.py). The GEO matrix/
 features/barcodes must be in .cache (see config `expression`).
@@ -74,8 +75,11 @@ def main() -> None:
                    "filtered_gene_count": c.filtered_gene_count} for c in counts}, indent=2) + "\n")
     print(f"  wrote {counts_json}")
 
-    # 4. gzipped OWL (efficient direct emit + single robot convert)
-    out = emit_expression_owl(rows, proj / f"{acc}_expression.owl.gz", hide=hide)
+    # 4. gzipped OWL (efficient direct emit + single robot convert) — the loadable
+    #    artifact, aggregated across projects in the top-level expression/ folder.
+    expr_dir = REPO_ROOT / "expression"
+    expr_dir.mkdir(exist_ok=True)
+    out = emit_expression_owl(rows, expr_dir / f"vfb_scRNAseq_expression_{args.project}.owl.gz", hide=hide)
     print(f"  emitted {out}")
 
 

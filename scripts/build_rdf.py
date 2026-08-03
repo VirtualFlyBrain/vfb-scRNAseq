@@ -34,12 +34,17 @@ def main() -> None:
 
     proj = REPO_ROOT / "projects" / args.project
     accession = json.loads((proj / "samples.json").read_text())["dataset"]["accession"]
+    # Loadable OWL is aggregated across projects in the top-level metadata/ folder
+    # (VFB picks these up directly); intermediates (.ttl, .ofn) stay in the project dir.
+    metadata_dir = REPO_ROOT / "metadata"
+    metadata_dir.mkdir(exist_ok=True)
     if args.format in ("ttl", "both"):
         print(f"emitted flat RDF -> {emit_ttl(entities, proj / f'{accession}.ttl')}")
     if args.format in ("owl", "both"):
         ofn = emit_owl(entities, proj / f"{accession}.ofn")
         print(f"emitted OWL      -> {ofn}")
-        owlxml = to_owlxml(ofn)               # RDF/XML via ROBOT (skipped if robot absent)
+        # RDF/XML via ROBOT (skipped if robot absent)
+        owlxml = to_owlxml(ofn, metadata_dir / f"vfb_scRNAseq_metadata_{args.project}.owl")
         if owlxml:
             print(f"converted OWL/XML -> {owlxml}")
 
