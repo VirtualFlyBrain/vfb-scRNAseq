@@ -17,9 +17,11 @@ Usage:
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 from vfb_scrnaseq.ids import IDRegistry
+from vfb_scrnaseq.pub import resolve_pub
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 VFB_BASE = "http://virtualflybrain.org/reports/"
@@ -55,12 +57,27 @@ def build_entities(project: str) -> list[dict]:
         "accession": d["accession"],
         "neo_label": "DataSet",
     }
-    if src.get("doi"):
-        dataset["publication"] = f"https://doi.org/{src['doi']}"
     if ds_cfg.get("licence"):
         dataset["licence"] = CC_BY_4
     if ds_cfg.get("assay_type"):
         dataset["assay_type"] = ds_cfg["assay_type"]
+
+    # Publication: link the Dataset to an existing VFB :pub node (FlyBase FBrf).
+    # Check the VFB curation KB by PMID first (catches freshly-added pubs), then
+    # fall back to a curator-supplied source.fbrf in config.
+    pub = resolve_pub(pmid=src.get("pmid"), doi=src.get("doi"),
+                      fallback_fbrf=src.get("fbrf"))
+    if pub:
+        pub_curie = f"FlyBase:{pub['fbrf']}"
+        dataset["publication"] = pub_curie
+        entities.append({
+            "type": "Publication", "id": pub_curie, "neo_label": "pub",
+        })
+        print(f"  linked publication {pub['fbrf']} (via {pub['source']})", file=sys.stderr)
+    else:
+        print(f"  WARNING: no VFB :pub node found for PMID {src.get('pmid')!r} in the KB "
+              f"and no `source.fbrf` in config; Dataset left without a publication link. "
+              f"Curator should add the pub to VFB or set `source.fbrf`.", file=sys.stderr)
     entities.append(dataset)
 
     # --- Samples ---

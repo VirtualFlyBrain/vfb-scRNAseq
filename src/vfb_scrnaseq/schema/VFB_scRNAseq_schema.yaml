@@ -108,6 +108,7 @@ classes:
       - associated_dataset
       - sex
       - genotype
+      - stock
       - dbxref
       - neo_label
 
@@ -206,11 +207,12 @@ classes:
   Container:
     tree_root: true
     attributes:
-      datasets:    { range: Dataset,    multivalued: true, inlined_as_list: true }
-      samples:     { range: Sample,     multivalued: true, inlined_as_list: true }
-      assays:      { range: Assay,      multivalued: true, inlined_as_list: true }
-      clusterings: { range: Clustering, multivalued: true, inlined_as_list: true }
-      clusters:    { range: Cluster,    multivalued: true, inlined_as_list: true }
+      datasets:     { range: Dataset,     multivalued: true, inlined_as_list: true }
+      samples:      { range: Sample,      multivalued: true, inlined_as_list: true }
+      assays:       { range: Assay,       multivalued: true, inlined_as_list: true }
+      clusterings:  { range: Clustering,  multivalued: true, inlined_as_list: true }
+      clusters:     { range: Cluster,     multivalued: true, inlined_as_list: true }
+      publications: { range: Publication, multivalued: true, inlined_as_list: true }
 
 # slots can be used as attributes that can be shared by multiple classes
 slots:
@@ -257,6 +259,17 @@ slots:
     description: Genotype / stock of the Sample (e.g. a DGRP line panel, or w[1118]). Free text; FlyBase stock/genotype nomenclature where available.
     annotations:
       owl: AnnotationProperty
+  stock:
+    slot_uri: neo_custom:stock
+    description: >-
+      Cross-reference to the FlyBase stock/allele backing the Sample's genotype
+      (e.g. FBst####### or FBal#######), complementing the free-text `genotype`.
+      Reserved for future use — currently unpopulated (FlyBase Chado unavailable),
+      so genotype stays free text for now.
+    range: uriorcurie
+    multivalued: true
+    annotations:
+      owl: AnnotationAssertion
   dbxref:
     slot_uri: oboInOwl:hasDbXref
     description: Cross-reference accession(s) for the entity (e.g. GEO GSM, SRA SRX/SRP, BioSample SAMN). Not an IRI for the entity.

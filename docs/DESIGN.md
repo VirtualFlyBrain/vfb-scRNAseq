@@ -346,14 +346,42 @@ annotations are the linkml-owl input format the schema was authored for.
   target the VFB *neo* pipeline; we emit the standard `slot_uri` RDF instead.
   Producing that exact OWL (ClassAssertion/ObjectSomeValuesFrom) would be a
   separate emitter.
-- **Publication** is linked as the DOI IRI (`dc:references`), not a full
-  `Publication` entity yet.
 - **Dataset gene counts** (`total/filtered_gene_count`) need the expression
   matrix — expression-stats phase.
 - **`Clustering.associated_sample_or_assay_for_clustering`** left unwired: cells
   from 24h APF appear in both `early` and `main`, so the sample→clustering link is
   not 1:1 (single-valued slot). Only `associated_dataset` is set.
-- **`sex`** unset (not annotated in GEO).
+
+### Publication → VFB `:pub` node
+
+The `Dataset` links to an existing VFB `:pub` node via `dc:references` pointing at
+the paper's FlyBase **`FBrf`** IRI (matching the old repo and VFB pdb), and a
+minimal `Publication` entity (`id = FlyBase:FBrf…`, `neo_label: pub`) is emitted so
+the loader attaches the `:pub` label. Earlier this was a bare DOI IRI with no node.
+
+The FBrf is resolved by `vfb_scrnaseq.pub.resolve_pub`: it **checks the VFB curation
+KB** (`kb.virtualflybrain.org`, by PMID) first so a freshly-curated pub is picked up,
+then falls back to a curator-supplied `source.fbrf` in `config.yaml`. The KB lookup
+degrades gracefully (network/auth errors → fall back, never fail the build). For
+Kurmangaliyev the pub (FBrf0247594) is not in the curation KB but is in production
+(confirmed via the VFB MCP), so the config fallback is used. If neither resolves,
+the build warns and leaves the Dataset without a publication link.
+
+### `sex`
+
+Modelled as `part of some <FBbt organism>` (female = FBbt:00007011, male =
+FBbt:00007004) — the same shape as the old repo. GEO records **no** sex for
+Kurmangaliyev; it is **female**, confirmed from the paper, and supplied via
+`sample_build.sex` in config. `build_samples_from_geo.py` prefers the GEO sex
+characteristic, falls back to that config value, and **warns the curator to check
+the paper** when neither is present (so an unannotated dataset is never silently
+left sexless).
+
+### Genotype / stock
+
+`Sample.genotype` is **free text** (`DGRP (…)`, `w[1118]`) — no FlyBase IDs. A
+`stock` slot (FBst/FBal xref) exists in the schema but is **unpopulated** (reserved
+for future structured stock links; FlyBase Chado currently unavailable).
 
 ## Expression statistics
 

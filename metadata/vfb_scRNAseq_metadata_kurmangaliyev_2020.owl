@@ -629,6 +629,14 @@
     
 
 
+    <!-- http://flybase.org/reports/FBrf0247594 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBrf0247594">
+        <neo_property:nodeLabel>pub</neo_property:nodeLabel>
+    </NamedIndividual>
+    
+
+
     <!-- http://virtualflybrain.org/reports/VFBseq_00000001 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000001">
@@ -642,7 +650,7 @@
         <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
         <obo:IAO_0000115>Transcriptional Programs of Circuit Assembly in the Drosophila Visual System</obo:IAO_0000115>
         <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dc:references rdf:resource="https://doi.org/10.1016/j.neuron.2020.10.006"/>
+        <dc:references rdf:resource="http://flybase.org/reports/FBrf0247594"/>
         <rdfs:label>scRNAseq data from Kurmangaliyev (2020)</rdfs:label>
     </NamedIndividual>
     

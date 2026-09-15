@@ -5,6 +5,10 @@ project: kurmangaliyev_2020
 source:
   doi: 10.1016/j.neuron.2020.10.006
   pmid: "33125872"
+  # FlyBase reference id for the paper's VFB :pub node. The build checks the VFB
+  # curation KB by PMID first (to catch a freshly-added pub); this is the fallback
+  # used when the KB has no match. Confirmed present in VFB production (get_term_info).
+  fbrf: FBrf0247594
   title: Transcriptional Programs of Circuit Assembly in the Drosophila Visual System
   journal: Neuron
   year: 2020

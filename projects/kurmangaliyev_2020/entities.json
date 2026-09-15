@@ -1,14 +1,19 @@
 [
   {
+    "type": "Publication",
+    "id": "FlyBase:FBrf0247594",
+    "neo_label": "pub"
+  },
+  {
     "type": "Dataset",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000001",
     "name": "scRNAseq data from Kurmangaliyev (2020)",
     "title": "Transcriptional Programs of Circuit Assembly in the Drosophila Visual System",
     "accession": "GSE156455",
     "neo_label": "DataSet",
-    "publication": "https://doi.org/10.1016/j.neuron.2020.10.006",
     "licence": "https://creativecommons.org/licenses/by/4.0/",
-    "assay_type": "FBcv:0009000"
+    "assay_type": "FBcv:0009000",
+    "publication": "FlyBase:FBrf0247594"
   },
   {
     "type": "Sample",

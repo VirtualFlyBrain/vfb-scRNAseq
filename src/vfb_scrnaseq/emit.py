@@ -31,11 +31,11 @@ def _script(name: str) -> str:
     return p if os.path.exists(p) else name
 
 SCHEMA_PATH = Path(__file__).parent / "schema" / "VFB_scRNAseq_schema.yaml"
-CONTAINER_TYPE = URIRef("http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Container")
+CONTAINER_TYPE = URIRef("http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/Container")
 
 ENTITY_GROUPS = {
     "Dataset": "datasets", "Sample": "samples", "Assay": "assays",
-    "Clustering": "clusterings", "Cluster": "clusters",
+    "Clustering": "clusterings", "Cluster": "clusters", "Publication": "publications",
 }
 
 
