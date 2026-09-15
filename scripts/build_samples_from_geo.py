@@ -27,6 +27,18 @@ from vfb_scrnaseq.ingest import fetch_series  # noqa: E402
 from vfb_scrnaseq.project_config import load_config  # noqa: E402
 
 
+def normalize_sex(raw: str | None) -> str | None:
+    """Map a raw GEO/config sex string onto the schema enum ('male'/'female')."""
+    if not raw:
+        return None
+    r = raw.strip().lower()
+    if r in ("female", "f", "females"):
+        return "female"
+    if r in ("male", "m", "males"):
+        return "male"
+    return None  # unrecognised -> treat as unknown (unset)
+
+
 def parse_title(title: str) -> dict | None:
     """set_timepoint_biorep_techrep -> components (techrep may contain underscores)."""
     parts = (title or "").split("_")
@@ -78,6 +90,21 @@ def main() -> None:
         if not tp:
             print(f"  WARNING: no age_map entry for age {age_raw!r} (sample {sample_id}); "
                   f"stage/tissue left unset", file=sys.stderr)
+
+        # Sex: prefer the GEO characteristic; fall back to a curator-confirmed
+        # `sample_build.sex` in config (used when GEO carries no sex). If neither is
+        # present, leave unset and prompt the curator to check the paper.
+        geo_sex = normalize_sex(gsm0.sex_hint)
+        cfg_sex = normalize_sex(sb.get("sex"))
+        sex = geo_sex or cfg_sex
+        if geo_sex is None and cfg_sex is None:
+            print(f"  WARNING: sex not in GEO metadata for sample {sample_id!r} and no "
+                  f"`sample_build.sex` in config; CURATOR should check the paper for the "
+                  f"sex of the animals and set `sample_build.sex` (sex left unset)",
+                  file=sys.stderr)
+        elif geo_sex and cfg_sex and geo_sex != cfg_sex:
+            print(f"  WARNING: sample {sample_id!r} GEO sex {geo_sex!r} disagrees with "
+                  f"config `sample_build.sex` {cfg_sex!r}; using GEO value", file=sys.stderr)
         # natural keys are dataset-scoped (accession prefix) so they never collide
         # across projects/datasets (e.g. a 'DGRP_All_A' sample in another GEO series).
         sample_vid = reg.mint("Sample", f"{accession}:{sample_id}", label=sample_id)
@@ -105,7 +132,7 @@ def main() -> None:
             "tissue_raw": gsm0.characteristic("tissue"),   # original GEO characteristics
             "age_raw": gsm0.stage_hint,
             "genotype": sb.get("genotype_map", {}).get(p0["set"]),
-            "sex": None,
+            "sex": sex,
             "stage": tp.get("stage"),
             "sample_tissue": tp.get("tissue"),
             "associated_dataset": dataset_id,

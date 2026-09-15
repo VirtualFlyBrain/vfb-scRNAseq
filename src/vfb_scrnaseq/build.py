@@ -86,6 +86,10 @@ def build_entities(project: str) -> list[dict]:
             rec["stage"] = s["stage"]["fbdv_id"]
         if s.get("genotype"):
             rec["genotype"] = s["genotype"]
+        if s.get("sex"):
+            # emit the FBbt organism CURIE (schema sex_options meanings) so the OWL
+            # renders `part of some FBbt:0000701x`, matching the FlyBase/VFB convention.
+            rec["sex"] = {"female": "FBbt:00007011", "male": "FBbt:00007004"}[s["sex"]]
         entities.append(rec)
 
     # --- Assays ---

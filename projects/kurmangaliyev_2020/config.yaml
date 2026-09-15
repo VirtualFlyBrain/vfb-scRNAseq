@@ -32,6 +32,11 @@ sample_build:
   # Biological Sample = set_timepoint_biorep; Assay = each techrep (one 10x library = one GSM).
   title_pattern: set_timepoint_biorep_techrep
   assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
+  # Sex is NOT recorded in GEO for this dataset. Confirmed FEMALE from the paper
+  # (Kurmangaliyev et al. 2020 dissected female optic lobes). This curator-confirmed
+  # value is used because GEO carries no sex characteristic; if it were also absent
+  # here, build_samples_from_geo.py warns the curator to check the paper.
+  sex: female
   # set -> genotype/stock string
   genotype_map:
     DGRP: DGRP (Drosophila Genetic Reference Panel)

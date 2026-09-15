@@ -239,8 +239,11 @@ slots:
       owl.fstring: AnnotationAssertion( dc:source {id} {V} )
   sex:
     slot_uri: BFO:0000050
-    description: Sex for the entity. Should be 'male' or 'female'.
-    range: sex_options
+    description: >-
+      Sex for the entity, as the FBbt organism CURIE (female = FBbt:00007011,
+      male = FBbt:00007004; see the sex_options enum). Modelled as 'part of some
+      <sex>' to match the FlyBase/VFB convention.
+    range: Thing
     annotations:
       owl.fstring: ClassAssertion( ObjectSomeValuesFrom( BFO:0000050 {V} ) {id} )
   stage:
