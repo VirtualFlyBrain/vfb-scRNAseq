@@ -41,10 +41,55 @@ sample_build:
   # value is used because GEO carries no sex characteristic; if it were also absent
   # here, build_samples_from_geo.py warns the curator to check the paper.
   sex: female
-  # set -> genotype/stock string
-  genotype_map:
-    DGRP: DGRP (Drosophila Genetic Reference Panel)
-    W1118: w[1118]
+  # set -> FlyBase stock ref(s) (FBst), from the paper's Key Resources Table
+  # (resolved via FlyBase Chado). Bare FBst ids; build.py emits them as FlyBase: CURIEs
+  # and the schema links them via BAO:0095000 'is derived from'. The stock resolves to
+  # the strain genotype in FlyBase, and the strain (DGRP/W1118) is in the sample label,
+  # so no separate free-text genotype field is kept. Pooled samples get ALL applicable
+  # stocks.
+  #  - W1118: the w[1118] background, BDSC #5905 = FBst0005905. (The paper's KRT table
+  #    has a typo "BDSC:5909" — an unrelated FRT stock — but the text says "w[1118]
+  #    (BDSC #5905)", so 5905 is correct.)
+  #  - DGRP: DGRP_All samples pool the 35 DGRP lines listed in the KRT (reshuffled
+  #    across timepoints/replicates), so all 35 stocks are linked to each DGRP sample.
+  stock_map:
+    W1118: [FBst0005905]
+    DGRP:
+      - FBst0025177  # DGRP-304
+      - FBst0025179  # DGRP-307
+      - FBst0025182  # DGRP-324
+      - FBst0025191  # DGRP-391
+      - FBst0025194  # DGRP-437
+      - FBst0028122  # DGRP-21
+      - FBst0028124  # DGRP-28
+      - FBst0028141  # DGRP-129
+      - FBst0028150  # DGRP-177
+      - FBst0028151  # DGRP-181
+      - FBst0028152  # DGRP-189
+      - FBst0028185  # DGRP-374
+      - FBst0028189  # DGRP-382
+      - FBst0028190  # DGRP-383
+      - FBst0028198  # DGRP-441
+      - FBst0028200  # DGRP-461
+      - FBst0028203  # DGRP-492
+      - FBst0028205  # DGRP-508
+      - FBst0028213  # DGRP-589
+      - FBst0028224  # DGRP-748
+      - FBst0028232  # DGRP-790
+      - FBst0028237  # DGRP-805
+      - FBst0028239  # DGRP-810
+      - FBst0028242  # DGRP-819
+      - FBst0028249  # DGRP-850
+      - FBst0028260  # DGRP-897
+      - FBst0028275  # DGRP-235
+      - FBst0029651  # DGRP-40
+      - FBst0029654  # DGRP-320
+      - FBst0029657  # DGRP-406
+      - FBst0055019  # DGRP-348
+      - FBst0055020  # DGRP-354
+      - FBst0055022  # DGRP-395
+      - FBst0055024  # DGRP-505
+      - FBst0055038  # DGRP-355
   # Keyed on the GEO `age` characteristic (age_raw), NOT the sample-title token,
   # because the token is not 1:1 with developmental age (e.g. the sample titled
   # 'Adult' has age 96h APF = pharate adult, not adult). Curated.

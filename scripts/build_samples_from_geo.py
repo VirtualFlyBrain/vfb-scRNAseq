@@ -131,7 +131,7 @@ def main() -> None:
             "biorep": p0["biorep"],
             "tissue_raw": gsm0.characteristic("tissue"),   # original GEO characteristics
             "age_raw": gsm0.stage_hint,
-            "genotype": sb.get("genotype_map", {}).get(p0["set"]),
+            "stock": sb.get("stock_map", {}).get(p0["set"]),  # FlyBase FBst ref(s)
             "sex": sex,
             "stage": tp.get("stage"),
             "sample_tissue": tp.get("tissue"),

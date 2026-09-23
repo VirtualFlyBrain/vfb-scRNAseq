@@ -7,6 +7,7 @@
      xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
      xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
      xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
+     xmlns:bao="http://www.bioassayontology.org/bao#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -47,12 +48,6 @@
     <!-- http://n2o.neo/custom/filtered_gene_count -->
 
     <AnnotationProperty rdf:about="http://n2o.neo/custom/filtered_gene_count"/>
-    
-
-
-    <!-- http://n2o.neo/custom/genotype -->
-
-    <AnnotationProperty rdf:about="http://n2o.neo/custom/genotype"/>
     
 
 
@@ -154,6 +149,12 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0000212 -->
 
     <ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000212"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0095000 -->
+
+    <ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0095000"/>
     
 
 
@@ -637,6 +638,222 @@
     
 
 
+    <!-- http://flybase.org/reports/FBst0005905 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0005905"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0025177 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0025177"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0025179 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0025179"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0025182 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0025182"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0025191 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0025191"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0025194 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0025194"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028122 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028122"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028124 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028124"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028141 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028141"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028150 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028150"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028151 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028151"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028152 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028152"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028185 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028185"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028189 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028189"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028190 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028190"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028198 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028198"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028200 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028200"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028203 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028203"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028205 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028205"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028213 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028213"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028224 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028224"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028232 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028232"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028237 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028237"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028239 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028239"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028242 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028242"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028249 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028249"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028260 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028260"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0028275 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0028275"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0029651 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0029651"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0029654 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0029654"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0029657 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0029657"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0055019 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0055019"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0055020 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0055020"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0055022 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0055022"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0055024 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0055024"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBst0055038 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0055038"/>
+    
+
+
     <!-- http://virtualflybrain.org/reports/VFBseq_00000001 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000001">
@@ -686,7 +903,41 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000008"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000009"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000010"/>
-        <neo_custom:genotype>DGRP (Drosophila Genetic Reference Panel)</neo_custom:genotype>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0025177"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0025179"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0025182"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0025191"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0025194"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028122"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028124"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028141"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028150"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028151"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028152"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028185"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028189"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028190"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028198"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028200"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028203"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028205"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028213"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028224"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028232"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028237"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028239"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028242"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028249"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028260"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028275"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0029651"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0029654"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0029657"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0055019"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0055020"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0055022"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0055024"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0055038"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000001"/>
         <rdfs:label>optic lobes, 0-96h APF, DGRP rep A (Kurmangaliyev 2020)</rdfs:label>
@@ -892,7 +1143,41 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000017"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000018"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000019"/>
-        <neo_custom:genotype>DGRP (Drosophila Genetic Reference Panel)</neo_custom:genotype>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0025177"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0025179"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0025182"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0025191"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0025194"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028122"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028124"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028141"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028150"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028151"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028152"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028185"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028189"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028190"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028198"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028200"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028203"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028205"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028213"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028224"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028232"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028237"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028239"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028242"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028249"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028260"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0028275"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0029651"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0029654"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0029657"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0055019"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0055020"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0055022"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0055024"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0055038"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000001"/>
         <rdfs:label>optic lobes, 0-96h APF, DGRP rep B (Kurmangaliyev 2020)</rdfs:label>
@@ -1094,7 +1379,7 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000022"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000023"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000024"/>
-        <neo_custom:genotype>w[1118]</neo_custom:genotype>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0005905"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000001"/>
         <rdfs:label>optic lobes, 24h APF, W1118 rep A (Kurmangaliyev 2020)</rdfs:label>
@@ -1212,7 +1497,7 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000027"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000028"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000029"/>
-        <neo_custom:genotype>w[1118]</neo_custom:genotype>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0005905"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000001"/>
         <rdfs:label>optic lobes, 48h APF, W1118 rep A (Kurmangaliyev 2020)</rdfs:label>
@@ -1330,7 +1615,7 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000032"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000033"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000034"/>
-        <neo_custom:genotype>w[1118]</neo_custom:genotype>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0005905"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000001"/>
         <rdfs:label>optic lobes, 48h APF, W1118 rep B (Kurmangaliyev 2020)</rdfs:label>
@@ -1448,7 +1733,7 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000037"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000038"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000039"/>
-        <neo_custom:genotype>w[1118]</neo_custom:genotype>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0005905"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000001"/>
         <rdfs:label>optic lobes, 72h APF, W1118 rep A (Kurmangaliyev 2020)</rdfs:label>
@@ -1566,7 +1851,7 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000042"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000043"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000044"/>
-        <neo_custom:genotype>w[1118]</neo_custom:genotype>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0005905"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000001"/>
         <rdfs:label>optic lobes, 96h APF, W1118 rep A (Kurmangaliyev 2020)</rdfs:label>

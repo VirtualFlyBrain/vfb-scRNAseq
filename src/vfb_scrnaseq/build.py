@@ -101,8 +101,9 @@ def build_entities(project: str) -> list[dict]:
             rec["sample_tissue"] = [s["sample_tissue"]["fbbt_id"]]
         if s.get("stage"):
             rec["stage"] = s["stage"]["fbdv_id"]
-        if s.get("genotype"):
-            rec["genotype"] = s["genotype"]
+        if s.get("stock"):
+            # FlyBase stock refs: bare FBst ids -> FlyBase: CURIEs (IRIs in RDF)
+            rec["stock"] = [f"FlyBase:{fbst}" for fbst in s["stock"]]
         if s.get("sex"):
             # emit the FBbt organism CURIE (schema sex_options meanings) so the OWL
             # renders `part of some FBbt:0000701x`, matching the FlyBase/VFB convention.

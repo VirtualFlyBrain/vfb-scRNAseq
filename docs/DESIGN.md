@@ -377,11 +377,30 @@ characteristic, falls back to that config value, and **warns the curator to chec
 the paper** when neither is present (so an unannotated dataset is never silently
 left sexless).
 
-### Genotype / stock
+### Stock (and why there is no genotype slot)
 
-`Sample.genotype` is **free text** (`DGRP (…)`, `w[1118]`) — no FlyBase IDs. A
-`stock` slot (FBst/FBal xref) exists in the schema but is **unpopulated** (reserved
-for future structured stock links; FlyBase Chado currently unavailable).
+A `Sample` links to the FlyBase **stock(s)** it derives from via a multivalued
+`stock` slot (`FlyBase:FBst…`), resolved from the paper's Key Resources Table via
+FlyBase Chado (`psql -h chado.flybase.org -U flybase flybase`) and driven by
+`sample_build.stock_map` in config. Stocks are preferred over alleles. A genuinely
+**pooled** sample links **all** applicable stocks — the DGRP `DGRP_All` samples each
+carry the 35 DGRP lines the paper used; the w1118 samples carry `FBst0005905` (the
+paper's KRT *table* has a typo, "BDSC:5909" = an unrelated FRT stock, but its text
+says "w[1118] (BDSC #5905)", so 5905 is used).
+
+The link uses **`BAO:0095000` "is derived from"** (an object property; BAO is already
+imported for the assay method). It is undefined in BAO, but reads correctly and
+avoids `RO:0001000` derives_from's strict "source ceases to exist" clause, which is
+wrong for a persistent stock — so it is preferred here over RO/the earlier custom
+`neo_custom:stock`. Emitted as an IRI object in flat RDF (`BAO:0095000` → FBst IRI)
+and as `ObjectPropertyAssertion(BAO:0095000 …)` in OWL.
+
+**No free-text `genotype` slot.** An earlier `neo_custom:genotype` string was dropped
+to avoid a redundant second free-text field: the strain (`DGRP`/`W1118`) is already in
+the Sample's `rdfs:label`, and the precise genotype resolves from the structured
+`stock` (FBst) link in FlyBase. Searches of RO/GENO/OBI/IAO/BAO found no standard
+datatype property for a genotype string anyway (GENO models genotype only as an
+entity via `GENO:0000536`/`GENO:0000222`, which would be far heavier).
 
 ## Expression statistics
 
