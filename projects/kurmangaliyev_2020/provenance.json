@@ -1,6 +1,6 @@
 {
   "project": "kurmangaliyev_2020",
-  "generated_at": "2026-06-19",
+  "generated_at": "2026-09-23",
   "people": [
     {
       "role": "curator",
@@ -9,12 +9,12 @@
       "orcid": "0000-0002-1373-1705"
     }
   ],
-  "notes": "All 62 distinct FBbt terms across 184 mapped clusters verified current/non-obsolete/label-match against FBbt 2026-06-11 via scripts/verify_mappings.py. Deterministic steps (annotations, 124 placeholders, collate) reproduce byte-identically from current code; the 8 pilot clusters were re-run under current agent guidance with 0 changes in FBbt assignment/match-type/flags. 12 class-C clusters held (class undefined). Sample/Assay/Clustering layer built from GEO (7 biological samples, 36 10x-library assays, 2 clusterings) with FBdv stages + FBbt tissue per curated timepoint map; FBdv 2026-04-02, FBcv 2026-04-03. Expression summary stats computed from the raw 10x matrix: CPM-normalised mean over expressing cells (level) + extent, filtered extent>0.2 -> 584,710 cluster x gene rows (expression.tsv + GSE156455_expression.owl.gz); total/filtered gene counts on each Cluster.",
+  "notes": "All 62 distinct FBbt terms across 184 mapped clusters verified current/non-obsolete/label-match against FBbt 2026-06-11 via scripts/verify_mappings.py. Deterministic steps (annotations, 124 placeholders, collate) reproduce byte-identically from current code; the 8 pilot clusters were re-run under current agent guidance with 0 changes in FBbt assignment/match-type/flags. 12 class-C clusters held (class undefined). Sample/Assay/Clustering layer built from GEO (7 biological samples, 36 10x-library assays, 2 clusterings) with FBdv stages + FBbt tissue per curated timepoint map; FBdv 2026-04-02, FBcv 2026-04-03. Expression summary stats computed from the raw 10x matrix: CPM-normalised mean over expressing cells (level) + extent, filtered extent>0.2 -> 584,710 cluster x gene rows (expression.tsv + GSE156455_expression.owl.gz); total/filtered gene counts on each Cluster, and dataset-level total/filtered gene counts on the Dataset (union across clusters, matching the old repo's get_gene_counts). Sample sex set to female (from the paper; not annotated in GEO). FlyBase stock refs (FBst) for each sample resolved from FlyBase Chado and linked via BAO:0095000 'is derived from'; no free-text genotype slot. Publication linked to the VFB :pub node FBrf0247594 (checked in the VFB curation KB by PMID; config fallback used as it is not yet in the KB). Dataset carries site vfb:GEO (VFB Site node) with the GSE accession as the dbxref annotation.",
   "pipeline": {
     "name": "vfb-scrnaseq",
     "version": "0.0.0",
     "repo": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
-    "commit": "79a3c83"
+    "commit": "fe0853c"
   },
   "ontologies": [
     {
@@ -46,6 +46,13 @@
       "accessed_via": "OLS4 API",
       "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
       "accessed_at": "2026-06-19"
+    },
+    {
+      "id": "BAO",
+      "name": "BioAssay Ontology",
+      "accessed_via": "OLS MCP (OLS4)",
+      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/bao",
+      "accessed_at": "2026-09-23"
     }
   ],
   "data_sources": [
@@ -85,6 +92,13 @@
           "retrieved_at": "2026-07-31"
         }
       ]
+    },
+    {
+      "type": "other",
+      "id": "FlyBase Chado",
+      "title": "FlyBase Chado public PostgreSQL (psql -h chado.flybase.org -U flybase flybase) — source of the FlyBase stock ids (FBst) for the sample strains, cross-checked against the paper's Key Resources Table",
+      "url": "https://chado.flybase.org",
+      "retrieved_at": "2026-09-23"
     }
   ],
   "software": [
@@ -112,6 +126,12 @@
       "kind": "service",
       "url": "https://www.ebi.ac.uk/ols4",
       "notes": "FBbt term search/lookup during mapping (via OLS MCP)."
+    },
+    {
+      "name": "VFB curation KB (neo4j)",
+      "kind": "service",
+      "url": "https://kb.virtualflybrain.org",
+      "notes": "Queried by vfb_scrnaseq.pub to resolve the publication FBrf (:pub node, matched by PMID) and to confirm the GEO Site node; config fallback used when a pub is not present in the KB."
     },
     {
       "name": "Python",
