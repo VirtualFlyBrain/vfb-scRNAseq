@@ -132,20 +132,22 @@ match"):
   source/modality). A curator-verification task, not a new term.
 - A confident exact match → both false.
 
-This split was added after the pilot: Dm3a/Dm3b broad-match the `Dm3` parent while
-FBbt subtype terms (FBbt:00052303/4, from Özel 2021 connectome data) exist but
-can't be confirmed equivalent to Kurmangaliyev's transcriptomic a/b — that is
+The two are distinct because a transcriptomic subtype can share a name with an FBbt
+subtype term defined from a different modality (e.g. connectome data) without
+confirmed equivalence: an adequate specific term exists but its identity is
+unconfirmed, so the cluster broad-matches the parent and is flagged
 `verification_needed`, not `new_term_needed`.
 
 ### Author cell class drives the broad-match ceiling
 
-The GEO metadata annotates a `class` per cluster: **N** (neuron, 153 types),
-**G** (glia, 19), **R** (photoreceptor, 3), **C** (undefined in the README —
-likely cone/pigment/accessory eye cells; confirm in the paper before mapping
-C-class clusters). For unidentified numbered clusters the class still fixes the
-correct high-level FBbt term (N→neuron, G→glial cell, R→photoreceptor), so e.g.
-`N1` (class N) broad-matches `adult optic lobe neuron` rather than being left
-unmapped. The mapping step is given the cluster's class for this reason.
+Atlas metadata often annotates a broad `class` per cluster (e.g. neuron / glia /
+photoreceptor). For unidentified numbered clusters the class still fixes the correct
+high-level FBbt term (neuron → a neuron term, glia → a glial-cell term, …), so such a
+cluster broad-matches its class anchor rather than being left unmapped. The mapping
+step is given the cluster's class for this reason, and the per-class broad FBbt
+anchors are declared in the project `config.yaml` (`unidentified.class_anchors`).
+A class of undefined meaning can instead be **held** (listed in `hold_classes`) and
+left unmapped pending curation.
 
 ### New-term requests — how FBbt intake actually works
 
@@ -184,12 +186,6 @@ are generated with the **Claude Code agentic flow**, not atlas-chat's standalone
   in a sibling clone and the project is **symlinked** in, so the built index and
   generated `reports/` land back in this repo.
 
-**Validated end-to-end on `T4a`** (zero API cost): local-index evidence →
-in-session synthesis (`reports/T4a.md`) → `map-clusters-to-fbbt` (OLS) →
-`mapping/T4a.fbbt_mapping.json`, an **exact match to FBbt:00003732 (T4a neuron)**,
-high confidence, schema-validated by the hook. The agent correctly rejected the
-parent `T4 neuron` (too broad) and the child `T4ai` (too specific).
-
 ## Generic pipeline vs per-project config
 
 The scripts in `scripts/` (`build_annotations_from_geo.py`,
@@ -198,7 +194,7 @@ All project/tissue-specific knowledge lives in `projects/<name>/config.yaml` and
 is read through `src/vfb_scrnaseq/project_config.py`. Config sections:
 
 - **`annotations`** — which metadata columns are the label / class / grouping /
-  timepoint, and the source file. (Kurmangaliyev: `subtype`/`class`/`type`/`time`.)
+  timepoint, and the source file.
 - **`unidentified`** — how to handle clusters with no named identity:
   - `rule` — `class_prefixed_numbered` (label == `<class><digits>`), `none`, or
     `regex:<pattern>`;
@@ -253,52 +249,40 @@ produce the mappings**, so a result can be re-checked when a source changes:
   (atlas-chat commit, sentence-transformers, pymupdf4llm, OLS, Python);
 - **models** — the mapping/report LLM and the local-index embedding model.
 
-Motivation: the FBbt `2026-06-11` release fixed a Dm8 rename error — recording the
-FBbt `version_iri` makes it explicit which release a mapping was made against, so
-mappings can be revisited when the ontology moves. (A future helper can auto-stamp
-git commits / file checksums rather than hand-filling.)
+Motivation: ontology releases can rename, re-home, or obsolete terms, so recording
+the FBbt `version_iri` makes it explicit which release a mapping was made against,
+and mappings can be revisited when the ontology moves. (A future helper can
+auto-stamp git commits / file checksums rather than hand-filling.)
 
 ## Sample / Assay / Dataset metadata (beyond cell types)
 
-The cluster→FBbt layer is done; the rest of the schema is populated from GEO
-(`ingest.fetch_series`) + `config.yaml`. Decisions for the Kurmangaliyev worked
-example:
+Beyond the cluster→FBbt layer, the rest of the schema is populated from GEO
+(`ingest.fetch_series`) + `config.yaml`. Design decisions:
 
-- **Granularity: 7 `Sample`s + 36 `Assay`s.** Biological `Sample` =
-  `set_timepoint_biorep` (DGRP_All_A/B, W1118_{24h,48h_A,48h_B,72h,Adult}_A);
-  `Assay` = each 10x library/techrep (the 36 GSMs), carrying GSM + SRX as dbxrefs.
-  (README: techrep = "a single 10X library".)
-- **Genotype/stock:** the master schema has no slot for strain (DGRP vs W1118) —
-  **add a `genotype`/`stock` slot to `Sample`** (we own the schema). Real
-  biological metadata we shouldn't drop.
+- **Granularity — biological `Sample` vs `Assay`.** A biological `Sample` groups the
+  libraries from one biological condition/replicate; an `Assay` is a single
+  sequencing library (one GSM), carrying GSM + SRX (+ BioSample) as dbxrefs. The
+  GSM→Sample grouping is driven by the GSM-title pattern declared in `sample_build`.
+- **Stock:** the master schema had no slot for the source stock — a `stock` slot was
+  **added to `Sample`** (we own the schema), carrying the FlyBase FBst reference(s).
+  Real biological metadata we shouldn't drop; see the *Stock* note below.
 - **`stage` → FBdv and `sample_tissue` → FBbt**, curated and keyed on the GEO
-  **`age` characteristic** (`age_map` in config), NOT the sample-title token — the
-  token is not 1:1 with age (the sample titled `Adult` is actually `96h APF` =
-  pharate adult). Both the mapping and the sample `rdfs:label` derive from the raw
-  GEO info:
+  **`age` characteristic** (`age_map` in config), NOT the sample-title token — a title
+  token is not always 1:1 with developmental age. Both the FBdv/FBbt mapping and the
+  sample `rdfs:label` derive from the raw GEO info.
+- **Developmental atlases.** Where a dataset spans developmental stages, the
+  sample-level `stage`/`tissue` capture the gradient, and the cell-type mapping weighs
+  developmental stage (integrated/late clusters → mature form; early-stage-specific →
+  immature form) rather than assuming the adult form.
+- **`sex`:** set from GEO where present, else curator-confirmed from the paper;
+  unset only when genuinely unknown (see the *sex* note below).
+- **`Assay.method`:** the sequencing method as an FBcv term (e.g. `FBcv:0009008`
+  "10x sequencing"), from `sample_build`.
+- **`Clustering`:** one per clustering analysis in the dataset, each linked to its
+  dataset (and, where the link is 1:1, the samples/assays that fed it).
 
-  | GEO age | FBdv stage | FBbt tissue |
-  |---|---|---|
-  | 24h APF | `FBdv:00005349` pupal stage | `FBbt:00001930` embryonic/larval optic lobe |
-  | 48h / 72h / 96h APF | `FBdv:00006011` pharate adult stage | `FBbt:00003701` adult optic lobe |
-  | 0–96h APF (DGRP pooled) | `FBdv:00007001` P-stage *(broader than "pupal stage")* | `FBbt:00003701` adult optic lobe |
-
-- **Developmental atlas, not adult.** Kurmangaliyev is pupal (24–96h APF) + adult.
-  At the **sample** level the gradient is captured above (24h → embryonic/larval
-  optic lobe). At the **cell-type** level, FBbt has distinct `immature X neuron`
-  terms; the cell-type mapping agent was corrected to weigh developmental stage
-  (integrated/late clusters → mature form; early-stage-specific → immature form)
-  rather than assume "adult". The **main integrated clusters** (cells pooled 24–96h
-  APF) keep the **mature** resolved-identity terms; **immature forms apply to the
-  `early` subset and any future per-timepoint layer.**
-- **`sex`:** unannotated → unset (schema enum is male/female only).
-- **`Assay.method`:** `FBcv:0009008` "10x sequencing".
-- **`Clustering`:** two — `main` and `early` — each linked to its dataset + the
-  samples/assays that fed it.
-
-New ontologies now in play (add to provenance `ontologies`): **FBdv** (stages),
-**FBcv** (assay method), and FBbt also for tissue. Tissue→FBbt and stage→FBdv are
-new mapping steps alongside the existing cell-type mapping.
+New ontologies in play beyond FBbt: **FBdv** (stages) and **FBcv** (assay method),
+plus FBbt for tissue — record all in provenance `ontologies`.
 
 ## RDF assembly & emission
 
@@ -323,11 +307,10 @@ the same schema + `Container` data, no custom triple code):
   `ClassAssertion(ObjectSomeValuesFrom(R Term) {id})` existential restrictions,
   `ObjectPropertyAssertion`s, `AnnotationAssertion`s, and (expression phase) the
   annotated `expresses some gene` axioms. This is the **VFB-pipeline-compatible**
-  output → `projects/<name>/<accession>.ofn`. Worked example: **1516 axioms** (242
-  type + 235 restrictions + object/annotation assertions).
+  output → `projects/<name>/<accession>.ofn`.
 - **Flat RDF** (`--format ttl`) via **`linkml-convert`**, which uses `slot_uri`/
   `class_uri` only — simpler generic RDF (ontology-term links are plain triples,
-  no OWL restrictions), Container node stripped → `<accession>.ttl` (1785 triples).
+  no OWL restrictions), Container node stripped → `<accession>.ttl`.
 - **OWL/XML** — the `.ofn` is then converted to RDF/XML with **`robot convert`** →
   `<accession>.owl` (lossless; round-trip verified). ROBOT is an external Java tool,
   not a pip/uv dep, so this step is skipped with a warning if `robot` isn't on PATH.
@@ -348,59 +331,44 @@ annotations are the linkml-owl input format the schema was authored for.
   separate emitter.
 - **Dataset gene counts** (`total/filtered_gene_count`) need the expression
   matrix — expression-stats phase.
-- **`Clustering.associated_sample_or_assay_for_clustering`** left unwired: cells
-  from 24h APF appear in both `early` and `main`, so the sample→clustering link is
-  not 1:1 (single-valued slot). Only `associated_dataset` is set.
+- **`Clustering.associated_sample_or_assay_for_clustering`** left unwired when a
+  sample/assay feeds more than one clustering (the slot is single-valued), so the
+  sample→clustering link is not 1:1. Only `associated_dataset` is set.
 
-### Publication → VFB `:pub` node
+## Publication → VFB `:pub` node
 
 The `Dataset` links to an existing VFB `:pub` node via `dc:references` pointing at
-the paper's FlyBase **`FBrf`** IRI (matching the old repo and VFB pdb), and a
-minimal `Publication` entity (`id = FlyBase:FBrf…`, `neo_label: pub`) is emitted so
-the loader attaches the `:pub` label. Earlier this was a bare DOI IRI with no node.
+the paper's FlyBase **`FBrf`** IRI, and a minimal `Publication` entity
+(`id = FlyBase:FBrf…`, `neo_label: pub`) is emitted so the loader attaches the
+`:pub` label.
 
 The FBrf is resolved by `vfb_scrnaseq.pub.resolve_pub`: it **checks the VFB curation
 KB** (`kb.virtualflybrain.org`, by PMID) first so a freshly-curated pub is picked up,
 then falls back to a curator-supplied `source.fbrf` in `config.yaml`. The KB lookup
-degrades gracefully (network/auth errors → fall back, never fail the build). For
-Kurmangaliyev the pub (FBrf0247594) is not in the curation KB but is in production
-(confirmed via the VFB MCP), so the config fallback is used. If neither resolves,
-the build warns and leaves the Dataset without a publication link.
+degrades gracefully (network/auth errors → fall back, never fail the build). If
+neither resolves, the build warns and leaves the Dataset without a publication link.
 
-### `sex`
+## `sex`
 
 Modelled as `part of some <FBbt organism>` (female = FBbt:00007011, male =
-FBbt:00007004) — the same shape as the old repo. GEO records **no** sex for
-Kurmangaliyev; it is **female**, confirmed from the paper, and supplied via
-`sample_build.sex` in config. `build_samples_from_geo.py` prefers the GEO sex
-characteristic, falls back to that config value, and **warns the curator to check
-the paper** when neither is present (so an unannotated dataset is never silently
-left sexless).
+FBbt:00007004). `build_samples_from_geo.py` takes sex from the GEO characteristic,
+falls back to a curator-confirmed `sample_build.sex` in config, and **warns the
+curator to check the paper** when neither is present — so an unannotated dataset is
+never silently left sexless.
 
-### Stock (and why there is no genotype slot)
+## Stock
 
 A `Sample` links to the FlyBase **stock(s)** it derives from via a multivalued
-`stock` slot (`FlyBase:FBst…`), resolved from the paper's Key Resources Table via
-FlyBase Chado (`psql -h chado.flybase.org -U flybase flybase`) and driven by
-`sample_build.stock_map` in config. Stocks are preferred over alleles. A genuinely
-**pooled** sample links **all** applicable stocks — the DGRP `DGRP_All` samples each
-carry the 35 DGRP lines the paper used; the w1118 samples carry `FBst0005905` (the
-paper's KRT *table* has a typo, "BDSC:5909" = an unrelated FRT stock, but its text
-says "w[1118] (BDSC #5905)", so 5905 is used).
+`stock` slot (`FlyBase:FBst…`), driven by `sample_build.stock_map` in config (stock
+ids resolved from the paper against FlyBase Chado,
+`psql -h chado.flybase.org -U flybase flybase`). Stocks are preferred over alleles,
+and a genuinely **pooled** sample links **all** applicable stocks.
 
 The link uses **`BAO:0095000` "is derived from"** (an object property; BAO is already
 imported for the assay method). It is undefined in BAO, but reads correctly and
 avoids `RO:0001000` derives_from's strict "source ceases to exist" clause, which is
-wrong for a persistent stock — so it is preferred here over RO/the earlier custom
-`neo_custom:stock`. Emitted as an IRI object in flat RDF (`BAO:0095000` → FBst IRI)
-and as `ObjectPropertyAssertion(BAO:0095000 …)` in OWL.
-
-**No free-text `genotype` slot.** An earlier `neo_custom:genotype` string was dropped
-to avoid a redundant second free-text field: the strain (`DGRP`/`W1118`) is already in
-the Sample's `rdfs:label`, and the precise genotype resolves from the structured
-`stock` (FBst) link in FlyBase. Searches of RO/GENO/OBI/IAO/BAO found no standard
-datatype property for a genotype string anyway (GENO models genotype only as an
-entity via `GENO:0000536`/`GENO:0000222`, which would be far heavier).
+wrong for a persistent stock. Emitted as an IRI object in flat RDF (`BAO:0095000` →
+FBst IRI) and as `ObjectPropertyAssertion(BAO:0095000 …)` in OWL.
 
 ## Expression statistics
 
@@ -411,8 +379,8 @@ by `vfb_scrnaseq.stats` (`scripts/build_expression.py`). Per cluster × gene:
   **normalisation-invariant, so exact**.
 - `expression_level` = **mean over *expressing cells only*** (Σ / n_expressing),
   NOT over all cells (the detail scanpy's default gets wrong).
-- **Normalisation**: SOP uses the SCEA *Normalised Counts* table; Kurmangaliyev is
-  GEO-raw (never went through SCEA), so we replicate the *method* with **CPM**
+- **Normalisation**: SOP uses the SCEA *Normalised Counts* table; a GEO-raw dataset
+  (one that never went through SCEA) instead replicates the *method* with **CPM**
   (linear) — `level` cannot be SCEA-identical, but extent is exact.
 - **Filter**: `extent > 0.2` (from the old repo's `process_metadata.py`);
   `Cluster.total_gene_count` (any expression) vs `filtered_gene_count` (> 0.2).
