@@ -2,6 +2,7 @@
 
 - normalisation: **CPM**; extent filter: **> 0.2**
 - 17561 genes x 193727 cells; 196 clusters; 584,710 filtered rows
+- dataset-level: total_gene_count **15700**, filtered_gene_count **7031**
 
 | cluster | cells | total_gene_count | filtered_gene_count |
 |---|---|---|---|

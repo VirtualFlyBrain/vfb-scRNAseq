@@ -61,18 +61,23 @@ def main() -> None:
         fh.write(f"# Expression summary — {acc}\n\n")
         fh.write(f"- normalisation: **{meta['normalisation']}**; extent filter: **> {meta['cutoff']}**\n")
         fh.write(f"- {meta['n_genes']} genes x {meta['n_cells']} cells; {len(counts)} clusters; "
-                 f"{len(rows):,} filtered rows\n\n")
+                 f"{len(rows):,} filtered rows\n")
+        fh.write(f"- dataset-level: total_gene_count **{meta['dataset_total_gene_count']}**, "
+                 f"filtered_gene_count **{meta['dataset_filtered_gene_count']}**\n\n")
         fh.write("| cluster | cells | total_gene_count | filtered_gene_count |\n")
         fh.write("|---|---|---|---|\n")
         for c in counts:
             fh.write(f"| {c.label} | {c.cells} | {c.total_gene_count} | {c.filtered_gene_count} |\n")
     print(f"  wrote {report}")
 
-    # 3. per-cluster counts for build.py (-> Cluster.total/filtered_gene_count)
+    # 3. gene counts for build.py: dataset-level (-> Dataset) + per-cluster (-> Cluster).
     counts_json = proj / "expression_counts.json"
-    counts_json.write_text(json.dumps(
-        {c.label: {"total_gene_count": c.total_gene_count,
-                   "filtered_gene_count": c.filtered_gene_count} for c in counts}, indent=2) + "\n")
+    counts_json.write_text(json.dumps({
+        "dataset": {"total_gene_count": meta["dataset_total_gene_count"],
+                    "filtered_gene_count": meta["dataset_filtered_gene_count"]},
+        "clusters": {c.label: {"total_gene_count": c.total_gene_count,
+                               "filtered_gene_count": c.filtered_gene_count} for c in counts},
+    }, indent=2) + "\n")
     print(f"  wrote {counts_json}")
 
     # 4. gzipped OWL (efficient direct emit + single robot convert) — the loadable

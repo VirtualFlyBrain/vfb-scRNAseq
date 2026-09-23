@@ -47,6 +47,13 @@ def build_entities(project: str) -> list[dict]:
     reg = IDRegistry.load(REPO_ROOT / "id_registry" / "registry.json")
     entities: list[dict] = []
 
+    # gene counts from the expression phase (if computed): dataset-level -> Dataset,
+    # per-cluster -> each Cluster. Written by scripts/build_expression.py.
+    ecf = proj / "expression_counts.json"
+    expr_counts = json.loads(ecf.read_text()) if ecf.exists() else {}
+    clu_counts = expr_counts.get("clusters", expr_counts)  # tolerate the older flat shape
+    ds_counts = expr_counts.get("dataset")
+
     # --- Dataset ---
     d = samples["dataset"]
     dataset_iri = iri(d["vfbseq_id"])
@@ -65,6 +72,9 @@ def build_entities(project: str) -> list[dict]:
         dataset["licence"] = CC_BY_4
     if ds_cfg.get("assay_type"):
         dataset["assay_type"] = ds_cfg["assay_type"]
+    if ds_counts:
+        dataset["total_gene_count"] = ds_counts["total_gene_count"]
+        dataset["filtered_gene_count"] = ds_counts["filtered_gene_count"]
 
     # Publication: link the Dataset to an existing VFB :pub node (FlyBase FBrf).
     # Check the VFB curation KB by PMID first (catches freshly-added pubs), then
@@ -145,8 +155,6 @@ def build_entities(project: str) -> list[dict]:
     # --- Clusters (annotated clusters belong to the 'main' clustering) ---
     subset = anns_subset(proj)
     main_clustering = clustering_iri_by_subset.get(subset)
-    ecf = proj / "expression_counts.json"
-    expr_counts = json.loads(ecf.read_text()) if ecf.exists() else {}
     for ann in anns:
         label = ann["label"]
         cid = reg.mint("Cluster", f"{d['accession']}:{subset}:{label}", label=label)
@@ -162,9 +170,9 @@ def build_entities(project: str) -> list[dict]:
         bm = (m or {}).get("best_match") or {}
         if bm.get("fbbt_id"):
             rec["cell_type"] = [bm["fbbt_id"]]
-        if label in expr_counts:
-            rec["total_gene_count"] = expr_counts[label]["total_gene_count"]
-            rec["filtered_gene_count"] = expr_counts[label]["filtered_gene_count"]
+        if label in clu_counts:
+            rec["total_gene_count"] = clu_counts[label]["total_gene_count"]
+            rec["filtered_gene_count"] = clu_counts[label]["filtered_gene_count"]
         entities.append(rec)
 
     reg.save()

@@ -126,6 +126,16 @@ def compute_expression(project: str, cfg: dict):
                            int((N[:, k] > 0).sum()), int((extent[:, k] > cutoff).sum()))
               for lab, k in cidx.items()]
     counts.sort(key=lambda c: c.label)
+
+    # dataset-level gene counts, matching the old repo's get_gene_counts: distinct
+    # genes over the per-cluster x gene expression (union across clusters, NOT a
+    # dataset-wide extent). total = genes expressed in any cluster; filtered = genes
+    # with extent > cutoff in at least one cluster (== distinct genes in expression.tsv).
+    dataset_total_gene_count = int((N > 0).any(axis=1).sum())
+    dataset_filtered_gene_count = int((extent > cutoff).any(axis=1).sum())
+
     meta = {"n_genes": n_genes, "n_cells": int(cluster_size.sum()), "cutoff": cutoff,
-            "normalisation": ex.get("normalisation", "CPM")}
+            "normalisation": ex.get("normalisation", "CPM"),
+            "dataset_total_gene_count": dataset_total_gene_count,
+            "dataset_filtered_gene_count": dataset_filtered_gene_count}
     return out_rows, counts, meta
