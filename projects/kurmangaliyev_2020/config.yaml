@@ -20,7 +20,7 @@ organism: Drosophila melanogaster
 # GEO/SRA accessions are cross-references (schema `site` + `accession` slots),
 # NOT the minted VFBseq IRI.
 dataset:
-  site: GEO
+  site: GEO                       # VFB Site node short_form (vfb:GEO); build.py CURIE-ifies it
   accession: GSE156455
   bioproject: PRJNA658010
   sra_study: SRP278058

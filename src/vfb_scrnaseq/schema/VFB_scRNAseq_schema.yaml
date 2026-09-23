@@ -72,7 +72,7 @@ classes:
         range: Thing
         annotations:
           owl.fstring: AnnotationAssertion(
-                        Annotation( neo_custom:accession {accession} )
+                        Annotation( neo_custom:accession "{accession}" )
                         oboInOwl:hasDbXref {id} {V} )
       accession:
         slot_uri: neo_custom:accession

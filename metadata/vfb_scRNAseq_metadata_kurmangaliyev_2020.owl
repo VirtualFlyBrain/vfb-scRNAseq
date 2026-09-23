@@ -39,6 +39,12 @@
     
 
 
+    <!-- http://n2o.neo/custom/accession -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/custom/accession"/>
+    
+
+
     <!-- http://n2o.neo/custom/cell_count -->
 
     <AnnotationProperty rdf:about="http://n2o.neo/custom/cell_count"/>
@@ -868,8 +874,15 @@
         <obo:IAO_0000115>Transcriptional Programs of Circuit Assembly in the Drosophila Visual System</obo:IAO_0000115>
         <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dc:references rdf:resource="http://flybase.org/reports/FBrf0247594"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
         <rdfs:label>scRNAseq data from Kurmangaliyev (2020)</rdfs:label>
     </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000001"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSE156455</neo_custom:accession>
+    </Axiom>
     
 
 

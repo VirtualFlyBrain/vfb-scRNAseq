@@ -13,6 +13,7 @@
 @prefix neo_property: <http://n2o.neo/property/> .
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vfb: <http://virtualflybrain.org/reports/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 VFBseq:00000046 a FBcv:0009002 ;
@@ -2510,5 +2511,6 @@ VFBseq:00000001 a FBcv:0003023 ;
     IAO:0000115 "Transcriptional Programs of Circuit Assembly in the Drosophila Visual System" ;
     OBI:0000312 FBcv:0009000 ;
     dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:references FlyBase:FBrf0247594 .
+    dcterms:references FlyBase:FBrf0247594 ;
+    oboInOwl:hasDbXref vfb:GEO .
 

@@ -57,6 +57,10 @@ def build_entities(project: str) -> list[dict]:
         "accession": d["accession"],
         "neo_label": "DataSet",
     }
+    if d.get("site"):
+        # VFB Site node CURIE (e.g. GEO -> vfb:GEO = http://virtualflybrain.org/reports/GEO);
+        # the schema's `site` owl.fstring emits hasDbXref->site annotated with the accession.
+        dataset["site"] = f"vfb:{d['site']}"
     if ds_cfg.get("licence"):
         dataset["licence"] = CC_BY_4
     if ds_cfg.get("assay_type"):
