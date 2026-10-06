@@ -38,13 +38,18 @@ diff stays clean; planned edits (e.g. the `VFBseq` prefix, dropping the FlyBase
 ### Pipeline (cell-type-annotation focus)
 
 ```
-project config + curated cluster labels
-  -> literature reports        (atlas-chat report pipeline)
-  -> FBbt mapping candidates   (.claude/agents/map-clusters-to-fbbt.md, via OLS MCP)
-  -> human review              (projects/<id>/mapping.tsv)
-  -> LinkML objects            (vfb_scrnaseq.build)
-  -> RDF/TTL                   (vfb_scrnaseq.emit -> linkml-convert)
+project config (+ project script for bespoke clusterings)
+  -> cell_type_annotations.json   (build_annotations_from_geo.py: one entry per author cluster)
+  -> samples.json                 (build_samples_from_geo.py: Samples / Assays / Clusterings)
+  -> per-type reports             (write-cell-type-report agent; Atlas-reporter paper index)
+  -> FBbt mapping JSON            (map-clusters-to-fbbt agent via OLS; assign_placeholders.py)
+  -> mapping.tsv + human review   (collate_mapping.py)
+  -> entities -> metadata OWL/TTL (build_rdf.py: linkml-validate / -convert / linkml-owl)
+  -> expression stats + OWL       (build_expression.py)
+  -> CI                           (tests, file validation, mapping.tsv freshness, weekly FBbt check)
 ```
+
+See *Adding a new dataset* (end of this document) for the step-by-step checklist.
 
 ## Identifiers
 
@@ -268,9 +273,11 @@ is read through `src/vfb_scrnaseq/project_config.py`. Config sections:
   single-valued `sex` slot stays unset without the "check the paper" warning.
 - **`annotations.barcode_column`** — the per-cell metadata column that matches the
   matrix barcodes (default `barcode`).
-- **`prior_mapping`** — optional TSV of a previous load's FBbt terms per cluster;
-  `collate_mapping.py` adds `prior_fbbt_*` / `prior_agrees` columns as a cross-check.
-  Never an input to the mapping itself.
+- **`prior_mapping`** — optional TSV of a previous load's FBbt terms per cluster
+  (`cluster_label`, `old_fbbt_id`, `old_fbbt_label`); `collate_mapping.py` adds
+  `prior_fbbt_*` / `prior_agrees` columns as a cross-check while reviewing a dataset
+  that was loaded before by the old FlyBase/SCEA mechanism. Never an input to the
+  mapping itself; drop it once the review is done (as for Davie and Kurmangaliyev).
 - **`annotations.extra_clusterings`** — further author clusterings in other GEO
   metadata files (`{id, name, source_file, label_prefix}`), ingested by
   `build_annotations_from_geo.py` as entries of that Clustering with prefixed labels
@@ -423,12 +430,6 @@ Schema use: the LinkML schema now drives **validation** (`linkml-validate`),
 annotations are the linkml-owl input format the schema was authored for.
 
 **Caveats / deferred** (deliberately not done here):
-- **owl.fstring / owl.template not applied.** The schema's bespoke OWL templates
-  target the VFB *neo* pipeline; we emit the standard `slot_uri` RDF instead.
-  Producing that exact OWL (ClassAssertion/ObjectSomeValuesFrom) would be a
-  separate emitter.
-- **Dataset gene counts** (`total/filtered_gene_count`) need the expression
-  matrix — expression-stats phase.
 - **`Clustering.associated_sample_or_assay_for_clustering`** left unwired when a
   sample/assay feeds more than one clustering (the slot is single-valued), so the
   sample→clustering link is not 1:1. Only `associated_dataset` is set.
@@ -616,8 +617,8 @@ clusters span timepoints and genotypes regardless. Added:
   numbered N/G clusters with early anchors (N → *immature adult optic lobe neuron*;
   G → *glial cell*, as FBbt has no immature optic-lobe glia term), 62 held (class `x`
   = unresolved, and class C).
-- **Cross-check against the old FlyBase/SCEA load (FBlc0006237)** —
-  `prior_mapping_FBlc0006237.tsv`; 183 of 184 comparable main clusters agree.
+- **Cross-check against the old FlyBase/SCEA load (FBlc0006237)** during review:
+  183 of 184 comparable main clusters agreed (crosswalk since removed).
 
 ## Second project: Davie 2018
 
@@ -661,9 +662,8 @@ in VFB from the old FlyBase/SCEA mechanism (`FBlc0006090`, SCEA `E-CURD-91`,
   clusters the authors left numbered are `unannotated` and emitted without an FBbt
   link (`hold_unidentified: true`).
 - **Fresh VFBseq ids, no FBlc link.** Retiring the old load is handled outside
-  this repo. The old FBbt assignments are kept only as a cross-check
-  (`prior_mapping_FBlc0006090.tsv`, crosswalked to the authors' types by name +
-  cell count).
+  this repo. The old FBbt assignments were used as a cross-check during review
+  (crosswalked to the authors' types by name + cell count; since removed).
 - **Sex mixed** (20 female + 20 male brains per run); **stocks** FBst0055026
   (DGRP-551, BDSC 55026) and FBst0003605 (w[1118], BDSC 3605), from the Key
   Resources Table via Chado; stages = FBdv "day N of adulthood".
@@ -671,3 +671,43 @@ in VFB from the old FlyBase/SCEA mechanism (`FBlc0006090`, SCEA `E-CURD-91`,
   index, plus Tables S2 (annotation method + references per cluster) and S3
   (markers per res-2.0 cluster) joined per author type in `supp_evidence.json`;
   reports are per author type (`reports/<type>.md`).
+
+## Adding a new dataset
+
+A checklist; each step's details are in the sections above. Nothing is loaded into
+VFB until the release files are merged, so ids can still change during review.
+
+1. **Scope with the curator first:** which part of the series (matrices / subsets),
+   which author clusterings, where the authors' cluster labels live (GEO metadata,
+   supplementary tables), whether the dataset was in the old FlyBase/SCEA load.
+2. **`projects/<name>/config.yaml`:** `source` (DOI, PMID, FBrf fallback),
+   `dataset` (GEO / BioProject / SRA), `sample_build` (title pattern, sex, stocks
+   from the paper's Key Resources Table resolved in FlyBase Chado, `age_map` →
+   FBdv stage + FBbt tissue, clusterings), `annotations` (label/class/timepoint
+   columns, extra clusterings, prefixes), `unidentified` (rule, held classes,
+   class anchors), `expression` (matrix files, extra parts).
+3. **Clusters:** `build_annotations_from_geo.py` (one entry per author cluster;
+   the main cluster label must be the authors' cluster, not a merged type). For
+   layouts it can't express, a project script writes `cell_type_annotations.json`
+   (as `projects/davie_2018/build_clusters.py` does).
+4. **Samples:** `build_samples_from_geo.py` → `samples.json` (GEO-based samples).
+5. **Paper index:** add the paper (JATS if open access, else PDF) with the
+   Atlas-reporter clone (`local-paper-index` skill); keep supplementary tables in
+   `projects/<name>/supp/` (gitignored).
+6. **Reports:** dispatch `write-cell-type-report` subagents in batches of related
+   types.
+7. **Mapping:** dispatch `map-clusters-to-fbbt` subagents (the curation rules are in
+   the agent); `assign_placeholders.py` for class-anchored unnamed clusters. Check
+   that broad-match parents are true ancestors of the members.
+8. **Review:** `collate_mapping.py` → `mapping.tsv` (optionally with a `prior_mapping`
+   crosswalk to the old load); curator changes are made in the mapping JSON with a
+   `manual_edit` block.
+9. **Build:** `build_rdf.py` (mints Cluster ids) → `build_expression.py` →
+   `build_rdf.py` again (gene counts) → `verify_mappings.py`.
+10. **Record:** `provenance.json` (ontology versions, files + sha256, software,
+    models, curator decisions); add the release files to the `metadata/` and
+    `expression/` READMEs and the project to README.
+11. **Term requests:** only with curator sign-off; add each to
+    `checks/pending_fbbt_requests.json`.
+12. **Check:** `pytest`, `validate_project_files.py`, `check_mapping_tsv.py`; commit
+    in stages on a branch and open a PR (CI runs the same checks).

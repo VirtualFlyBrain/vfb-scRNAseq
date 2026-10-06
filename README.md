@@ -27,13 +27,15 @@ definitions).
 ## Pipeline (cell-type-annotation focus)
 
 ```
-project config + curated cluster labels
-  -> literature reports        (atlas-chat report pipeline)
-  -> FBbt mapping candidates   (.claude/agents/map-clusters-to-fbbt.md, via OLS MCP)
-  -> human review              (projects/<id>/mapping.tsv)
-  -> LinkML objects            (vfb_scrnaseq.build)
-  -> validate + RDF + OWL      (vfb_scrnaseq.emit -> linkml-validate / -convert / linkml-owl)
+project config (+ project script for bespoke clusterings)
+  -> author clusters + samples    (build_annotations_from_geo.py, build_samples_from_geo.py)
+  -> per-type reports             (write-cell-type-report agent)
+  -> FBbt mapping + human review  (map-clusters-to-fbbt agent; collate_mapping.py -> mapping.tsv)
+  -> metadata RDF/OWL             (build_rdf.py)
+  -> expression stats + OWL       (build_expression.py)
 ```
+
+To add a dataset, follow *Adding a new dataset* in [`docs/DESIGN.md`](docs/DESIGN.md#adding-a-new-dataset).
 
 ## Identifiers
 
@@ -60,10 +62,14 @@ src/vfb_scrnaseq/
   schema/VFB_scRNAseq_schema.yaml   # MASTER LinkML schema
   schemas/fbbt_mapping.schema.json  # FBbt mapping agent output contract
   ids.py        # VFBseq id minting (registry-backed, idempotent)
-  mapping.py    # collect FBbt candidates -> reviewable mapping.tsv
   build.py      # curated annotations + samples -> entity records (+ mints Cluster ids)
   emit.py       # entities -> validate + flat RDF (linkml-convert) + OWL (linkml-owl)
-.claude/agents/map-clusters-to-fbbt.md   # FBbt mapper (adapted ontology-term-lookup)
+  stats.py      # FlyBase-style expression extent/level per cluster x gene
+  project_config.py / ingest.py / pub.py   # config knobs, GEO SOFT ingest, :pub lookup
+scripts/                                 # dataset-agnostic pipeline + CI check scripts
+.claude/agents/map-clusters-to-fbbt.md   # FBbt mapper (curation rules built in)
+.claude/agents/write-cell-type-report.md # per-type background reports
+checks/                                  # weekly FBbt check record + pending term requests
 projects/kurmangaliyev_2020/             # first worked example
 projects/davie_2018/                     # second project (adult brain, ageing)
 id_registry/                             # minted-id registry (JSON)
@@ -81,8 +87,14 @@ uv run pytest                # tests
 # full pipeline for a project (GEO -> working JSON -> RDF + OWL):
 uv run python scripts/build_annotations_from_geo.py --project kurmangaliyev_2020
 uv run python scripts/build_samples_from_geo.py     --project kurmangaliyev_2020
+uv run python scripts/assign_placeholders.py        --project kurmangaliyev_2020
 uv run python scripts/collate_mapping.py            --project kurmangaliyev_2020
-uv run python scripts/build_rdf.py                  --project kurmangaliyev_2020   # -> .ttl + .ofn
+uv run python scripts/build_rdf.py                  --project kurmangaliyev_2020   # -> .ttl + .ofn + metadata/*.owl
+uv run python scripts/build_expression.py           --project kurmangaliyev_2020   # -> expression/*.owl.gz
+
+# the CI checks
+uv run python scripts/validate_project_files.py
+uv run python scripts/check_mapping_tsv.py
 ```
 
 Cell-type FBbt mapping itself runs as Claude Code subagents (`map-clusters-to-fbbt`)
