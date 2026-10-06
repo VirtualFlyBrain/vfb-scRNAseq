@@ -111,3 +111,66 @@ def test_pending_request_still_open_waits(tmp_path, monkeypatch):
     issue = {"state": "open", "state_reason": None, "closed_at": None, "html_url": "u"}
     mod, pend, opened, rel = _pending(tmp_path, monkeypatch, issue)
     assert mod.check_pending(rel) is False and opened == []
+
+
+# --- FlyBase release -> gene id reminder ----------------------------------------
+
+def _flybase(tmp_path, monkeypatch, website, lookup):
+    mod = _script("check_flybase_release")
+    ug = _script("update_gene_ids")
+    proj = tmp_path / "projects" / "p"
+    proj.mkdir(parents=True)
+    (proj / "gene_id_map.tsv").write_text(
+        "# FlyBase Chado; FlyBase FB2026_03, released September 17, 2026\n"
+        "input_fbgn\tinput_symbol\tstatus\tcurrent_fbgn\tcurrent_symbol\n"
+        "FBgn0000001\ta\tcurrent\tFBgn0000001\ta\n"
+        "FBgn0000002\tb\tcurrent\tFBgn0000002\tb\n")
+    monkeypatch.setattr(mod, "REPO_ROOT", tmp_path)
+    monkeypatch.setattr(mod, "RECORD", tmp_path / "checks" / "flybase_release_check.json")
+    monkeypatch.setattr(ug, "flybase_release", lambda: website)
+    monkeypatch.setattr(ug, "chado_lookup", lookup)
+    opened = []
+
+    class _Fbbt:
+        @staticmethod
+        def open_issue(title, body, dry_run):
+            opened.append((title, body))
+            return "issue-url"
+    monkeypatch.setattr(mod, "_script", lambda name: ug if name == "update_gene_ids" else _Fbbt)
+    monkeypatch.setattr("sys.argv", ["check_flybase_release.py"])
+    return mod, opened
+
+
+def test_flybase_newer_release_with_changes_opens_issue_once(tmp_path, monkeypatch):
+    def lookup(ids):   # FBgn0000002 retired into FBgn0000009; FBgn0000001 renamed
+        return {"FBgn0000001": [("current", "FBgn0000001", "a2")],
+                "FBgn0000002": [("secondary", "FBgn0000009", "z")]}
+    mod, opened = _flybase(tmp_path, monkeypatch, "FB2026_04, released December 1, 2026", lookup)
+    assert mod.main() == 0 and len(opened) == 1
+    title, body = opened[0]
+    assert "FB2026_04" in title and "1 id change(s)" in body and "1 symbol change(s)" in body
+    assert "update_gene_ids.py  --project p" in body
+    assert mod.main() == 0 and len(opened) == 1                      # same release: not re-reported
+
+
+def test_flybase_newer_release_no_changes_records_without_issue(tmp_path, monkeypatch):
+    def lookup(ids):
+        return {"FBgn0000001": [("current", "FBgn0000001", "a")],
+                "FBgn0000002": [("current", "FBgn0000002", "b")]}
+    mod, opened = _flybase(tmp_path, monkeypatch, "FB2026_04, released December 1, 2026", lookup)
+    assert mod.main() == 0 and opened == []
+    assert json.loads((tmp_path / "checks" / "flybase_release_check.json").read_text())["release"] == "FB2026_04"
+
+
+def test_flybase_chado_unreachable_still_opens_issue(tmp_path, monkeypatch):
+    def lookup(ids):
+        raise FileNotFoundError("psql")
+    mod, opened = _flybase(tmp_path, monkeypatch, "FB2026_04, released December 1, 2026", lookup)
+    assert mod.main() == 0 and len(opened) == 1 and "could not be queried" in opened[0][1]
+
+
+def test_flybase_same_release_does_nothing(tmp_path, monkeypatch):
+    mod, opened = _flybase(tmp_path, monkeypatch, "FB2026_03, released September 17, 2026",
+                           lambda ids: (_ for _ in ()).throw(AssertionError("queried")))
+    assert mod.main() == 0 and opened == []
+    assert not (tmp_path / "checks" / "flybase_release_check.json").exists()

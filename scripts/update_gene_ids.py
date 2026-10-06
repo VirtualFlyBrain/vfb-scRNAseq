@@ -77,6 +77,19 @@ def features(cfg: dict) -> list[tuple[str, str]]:
     return list(seen.items())
 
 
+def read_map(path: Path) -> tuple[str, list[dict]]:
+    """A committed gene_id_map.tsv -> (header comment line, rows)."""
+    with path.open() as fh:
+        header = fh.readline().rstrip("\n")
+        return header, list(csv.DictReader(fh, delimiter="\t"))
+
+
+def map_release(path: Path) -> str:
+    """The FlyBase release ('FB2026_03') recorded in a gene_id_map.tsv header, or ''."""
+    m = re.search(r"FlyBase (FB\d{4}_\d{2})", read_map(path)[0])
+    return m.group(1) if m else ""
+
+
 def chado_lookup(ids: list[str]) -> dict[str, list[tuple[str, str, str]]]:
     out = subprocess.run(PSQL + ["-c", QUERY.format(ids=",".join(ids))],
                          capture_output=True, text=True, check=True).stdout
