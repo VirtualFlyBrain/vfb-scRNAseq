@@ -1,0 +1,29 @@
+{
+  "cluster_label": "main_LPLC2",
+  "working_definition": "LPLC2 is a lobula plate-lobula columnar projection neuron of the adult Drosophila optic lobe. Its cell body lies in the dorsal lateral cell body rind; dendrites arborise across all four lobula plate layers (each arbor oriented along the motion-detection axis of that layer, conferring loom selectivity) and in lobula layers 4 and 5B, with output sites in lobula layer 4. The axon projects to a dedicated optic glomerulus in the PVLP (anterior to LPLC1, dorsal to LC4). LPLC2 is cholinergic, spans approximately 25 optic columns, and its activation elicits a jump escape response.",
+  "searches_performed": [
+    "LPLC2 (fbbt)",
+    "lobula plate-lobula columnar neuron LPLC2 (fbbt)",
+    "lobula plate lobula columnar neuron (fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "lobula plate-lobula columnar neuron LPLC2",
+    "fbbt_id": "FBbt:00111763",
+    "fbbt_definition": "Lobula plate-lobula columnar neuron whose cell body lies in the dorsal area of the lateral cell body rind (Wu et al., 2016). It has a distinct dendritic arbor in each lobula plate layer, extending outwards from the main fiber in the direction of motion detection for the layer (Klapoetke et al., 2017). This arrangement allows it to detect looming (expansion) stimuli (Klapoetke et al., 2017). In the lobula, it has its main dendritic arbors in layers 4 and 5B, with minor processes in layer 5A, and presynaptic sites in layer 4 (Wu et al., 2016; Tanaka and Clark, 2022). Its arbors span approximately 25 lobula optic columns, overlapping with other LPLC2 cells (Wu et al., 2016). It projects to an optic glomerulus of the PVLP, anterior to LPLC1 and dorsal to LC4 (Wu et al., 2016). Its activity elicits a jump escape response (Wu et al., 2016; Klapoetke et al., 2017). There are approximately 80 of these cells per optic lobe (Wu et al., 2016) and they are cholinergic (Davis et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00111763 'lobula plate-lobula columnar neuron LPLC2' matches the cluster in every dimension: label identity, soma position (dorsal lateral cell body rind), multi-layer lobula plate dendritic geometry enabling loom detection, lobula layer 4/5B input arbors with layer-4 presynaptic sites, PVLP optic glomerulus position, cholinergic neurotransmitter, approximately 25-column wide-field span, and jump escape response output. The atlas cluster 'LPLC2' is defined by correlation with this exact morphological and functional type from Wu et al. 2016 and Klapoetke et al. 2017, which are the primary sources cited in the FBbt definition. The term is not obsolete and is a direct subtype of 'lobula plate-lobula columnar neuron LPLC' (FBbt:00003880).",
+  "other_candidates": [
+    {
+      "fbbt_term": "lobula plate-lobula columnar neuron LPLC",
+      "fbbt_id": "FBbt:00003880",
+      "fbbt_definition": "Lobula complex columnar neuron that arborises in both the lobula plate and the lobula (Fischbach and Dittrich, 1989).",
+      "reason_rejected": "Parent class covering all LPLC subtypes (LPLC1, LPLC2, etc.). The cluster 'LPLC2' is specifically the LPLC2 subtype; using the parent term would be a broad match and would lose the defining morphological and functional identity of this cluster."
+    }
+  ],
+  "recommendation": "Map cluster LPLC2 to FBbt:00111763 (lobula plate-lobula columnar neuron LPLC2) with skos:exactMatch at high confidence. The FBbt term was defined from the same primary literature that characterises this cluster type; no new term is needed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,29 @@
+{
+  "cluster_label": "main_Lawf2",
+  "working_definition": "Lawf2 is lamina wide-field neuron 2, an adult optic lobe interneuron with its soma in the lamina. It makes wide-field arborisations in the distal lamina spanning approximately 28 cartridges and arborises in medulla layers M1 (approximately 120 cartridges) and M8-M10 (approximately 17 cartridges). It is putatively cholinergic and belongs to the Lawf family of wide-field neurons distinct from the narrow columnar lamina monopolar neurons.",
+  "searches_performed": [
+    "Lawf2 [fbbt]",
+    "lamina wide-field neuron [fbbt]",
+    "Lawf [fbbt]"
+  ],
+  "best_match": {
+    "fbbt_term": "lamina wide-field 2 neuron",
+    "fbbt_id": "FBbt:00110065",
+    "fbbt_definition": "A lamina wide-field neuron that has a main projection into the lamina making wide-field arborizations in the distal lamina, innervating 28 cartridges. These neurons also arborize in the medulla (Hasegawa et al., 2011). In the M1 layer, the branches are large and overlapping, encompassing around 120 cartridges. In medulla layers M8 to M10 the branches are smaller, encompassing around 17 cartridges and show less overlap. Putative cholinergic presynaptic sites are observed in the lamina.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00110065 'lamina wide-field 2 neuron' is defined directly from Hasegawa et al. 2011 with precise quantitative morphological details (28 cartridges in lamina; approximately 120 in M1; approximately 17 in M8-M10) and putative cholinergic identity that match the established anatomy of the Lawf2 cluster. The cluster label 'Lawf2' is the conventional abbreviation for this same neuron type. The FBbt term is not obsolete and is the unique specific term for this cell type. No distinguishing features in the cluster definition fall outside the FBbt term scope.",
+  "other_candidates": [
+    {
+      "fbbt_term": "lamina wide-field neuron",
+      "fbbt_id": "FBbt:00059323",
+      "fbbt_definition": "Parent class of lamina wide-field neurons including Lawf1 and Lawf2.",
+      "reason_rejected": "Too broad: this is the parent class covering both Lawf1 and Lawf2; the cluster is specifically Lawf2 and the more specific term FBbt:00110065 is available."
+    }
+  ],
+  "recommendation": "Map Lawf2 cluster to FBbt:00110065 (lamina wide-field 2 neuron) as skos:exactMatch. The FBbt definition was derived from the same Hasegawa et al. 2011 morphological data that underlies the Lawf2 nomenclature used in this atlas.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

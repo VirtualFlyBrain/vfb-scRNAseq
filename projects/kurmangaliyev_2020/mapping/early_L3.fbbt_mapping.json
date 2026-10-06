@@ -1,0 +1,33 @@
+{
+  "cluster_label": "early_L3",
+  "working_definition": "Early-dataset (0-24h APF) cluster named 'L3' by the authors (Kurmangaliyev et al. 2020, GSE156455 metadata_early subtype); composed primarily of immature L3 cells of the developing optic lobe/eye.",
+  "searches_performed": [
+    "early_L3",
+    "immature L3",
+    "L3",
+    "immature adult optic lobe neuron",
+    "immature T neuron",
+    "immature columnar neuron",
+    "photoreceptor precursor"
+  ],
+  "best_match": {
+    "fbbt_term": "immature lamina monopolar neuron L3",
+    "fbbt_id": "FBbt:00053358",
+    "fbbt_definition": "Immature neuron that will develop into an adult lamina monopolar neuron L3.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Early (0-24h APF) cluster named L3 by the authors; FBbt has the matching immature term (same type, developmental stage appropriate).",
+  "other_candidates": [
+    {
+      "fbbt_term": "lamina monopolar neuron L3",
+      "fbbt_id": "FBbt:00003721",
+      "fbbt_definition": "Lamina monopolar neuron with short spines that project to one side of the main projection as it extends through the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). It terminates with an arborization in medulla layer M3 (Fischbach and Dittrich, 1989; Kind et al., 2021). In the lamina it is postsynaptic to the outer photoreceptors (R1-R6) (Rivera-Alba et al., 2011). It also receives input from the inner photoreceptors, partly in the first optic chiasm and partly in the medulla (Kind et al., 2021). It forms presynaptic terminals in medulla layer M3 (Takemura et al., 2008), with strong outputs to Mi9 and Tm20 (Takemura et al., 2013). It is a GABAergic neuron (Raghu et al., 2013). There is usually one of these cells per optic column (Nern et al., 2025).",
+      "reason_rejected": "Mature/adult term; cells are 0-24h APF immature neurons."
+    }
+  ],
+  "recommendation": "Accept exact match to the immature term.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

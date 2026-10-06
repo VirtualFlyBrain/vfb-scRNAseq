@@ -1,0 +1,29 @@
+{
+  "cluster_label": "early_Dm3",
+  "working_definition": "Early-dataset (0-24h APF, 0h/12h/24h) cluster typed by the authors as Dm3; cluster is composed primarily of developing Dm3 neurons (immature). Authors left the subtypes unsplit in the early data.",
+  "searches_performed": [
+    "immature distal medullary amacrine neuron Dm3",
+    "immature Dm3",
+    "OLS4 REST search fbbt \"immature\" medulla/transmedullary/amacrine terms"
+  ],
+  "best_match": {
+    "fbbt_term": "immature distal medullary amacrine neuron Dm3",
+    "fbbt_id": "FBbt:00052310",
+    "fbbt_definition": "Immature form of the distal medullary amacrine neuron Dm3 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Slp/D temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Authors' typing taken at face value; stage 0-24h APF so the immature term immature distal medullary amacrine neuron Dm3 is the matching developing form. Immature term covers the unsplit subtypes (parent group term chosen over a/b).",
+  "other_candidates": [
+    {
+      "fbbt_term": "distal medullary amacrine neuron Dm3",
+      "fbbt_id": "FBbt:00003770",
+      "fbbt_definition": "Distal medullary wide-field amacrine neuron whose cell body is located in the cell body rind of the medulla. It projects asymmetrically along layers M2 and M3A forming mixed morphology arborizations (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). The arborization is proximal to that of Dm15 in M2 and distal to Dm4, Dm12 and Dm20 in M3B. Its arbor has a distinct narrow and elongated shape, covering one column wide and 10 columns long. The arbors overlap significantly between cells, aligning with rows of medulla columns, and extending in one of two orthogonal orientations. It is a glutamatergic neuron (Raghu and Borst, 2011). There are two subtypes with different dendrite orientation, synaptic partners and gene expression (Ozel et al., 2021).",
+      "reason_rejected": "Mature (adult) form; cluster is 0-24h APF so the immature term is used."
+    }
+  ],
+  "recommendation": "Accept immature exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,33 @@
+{
+  "cluster_label": "early_L5",
+  "working_definition": "Early-dataset (0-24h APF) cluster named 'L5' by the authors (Kurmangaliyev et al. 2020, GSE156455 metadata_early subtype); composed primarily of immature L5 cells of the developing optic lobe/eye.",
+  "searches_performed": [
+    "early_L5",
+    "immature L5",
+    "L5",
+    "immature adult optic lobe neuron",
+    "immature T neuron",
+    "immature columnar neuron",
+    "photoreceptor precursor"
+  ],
+  "best_match": {
+    "fbbt_term": "immature lamina monopolar neuron L5",
+    "fbbt_id": "FBbt:00053360",
+    "fbbt_definition": "Immature neuron that will develop into an adult lamina monopolar neuron L5.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Early (0-24h APF) cluster named L5 by the authors; FBbt has the matching immature term (same type, developmental stage appropriate).",
+  "other_candidates": [
+    {
+      "fbbt_term": "lamina monopolar neuron L5",
+      "fbbt_id": "FBbt:00003725",
+      "fbbt_definition": "A lamina monopolar neuron that hardly arborizes at all in the lamina, but forms a branched arborization in medulla layers M1 and M2 and a clump of terminals in M5. In the medulla, it forms strong reciprocal synaptic connections with monopolar lamina monopolar neuron L1 (Takemura et al., 2013). It also receives substantial input from L2 and C2 neurons and has many presynapses connecting to medullary intrinsic neurons Mi1 and Mi4, and to transmedullary neuron Tm3a (Takemura et al., 2013). It is a cholinergic neuron (Davis et al., 2020). There is usually one of these cells per optic column (Nern et al., 2025).",
+      "reason_rejected": "Mature/adult term; cells are 0-24h APF immature neurons."
+    }
+  ],
+  "recommendation": "Accept exact match to the immature term.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,6 +1,6 @@
 {
   "project": "kurmangaliyev_2020",
-  "generated_at": "2026-09-23",
+  "generated_at": "2026-10-06",
   "people": [
     {
       "role": "curator",
@@ -9,7 +9,7 @@
       "orcid": "0000-0002-1373-1705"
     }
   ],
-  "notes": "All 62 distinct FBbt terms across 184 mapped clusters verified current/non-obsolete/label-match against FBbt 2026-06-11 via scripts/verify_mappings.py. Deterministic steps (annotations, 124 placeholders, collate) reproduce byte-identically from current code; the 8 pilot clusters were re-run under current agent guidance with 0 changes in FBbt assignment/match-type/flags. 12 class-C clusters held (class undefined). Sample/Assay/Clustering layer built from GEO (7 biological samples, 36 10x-library assays, 2 clusterings) with FBdv stages + FBbt tissue per curated timepoint map; FBdv 2026-04-02, FBcv 2026-04-03. Expression summary stats computed from the raw 10x matrix: CPM-normalised mean over expressing cells (level) + extent, filtered extent>0.2 -> 584,710 cluster x gene rows (expression.tsv + GSE156455_expression.owl.gz); total/filtered gene counts on each Cluster, and dataset-level total/filtered gene counts on the Dataset (union across clusters, matching the old repo's get_gene_counts). Sample sex set to female (from the paper; not annotated in GEO). FlyBase stock refs (FBst) for each sample resolved from FlyBase Chado and linked via BAO:0095000 'is derived from'; no free-text genotype slot. Publication linked to the VFB :pub node FBrf0247594 (checked in the VFB curation KB by PMID; config fallback used as it is not yet in the KB). Dataset carries site vfb:GEO (VFB Site node) with the GSE accession as the dbxref annotation.",
+  "notes": "All 62 distinct FBbt terms across 184 mapped clusters verified current/non-obsolete/label-match against FBbt 2026-06-11 via scripts/verify_mappings.py. Deterministic steps (annotations, 124 placeholders, collate) reproduce byte-identically from current code; the 8 pilot clusters were re-run under current agent guidance with 0 changes in FBbt assignment/match-type/flags. 12 class-C clusters held (class undefined). Sample/Assay/Clustering layer built from GEO (7 biological samples, 36 10x-library assays, 2 clusterings) with FBdv stages + FBbt tissue per curated timepoint map; FBdv 2026-04-02, FBcv 2026-04-03. Expression summary stats computed from the raw 10x matrix: CPM-normalised mean over expressing cells (level) + extent, filtered extent>0.2 -> 584,710 cluster x gene rows (expression.tsv + GSE156455_expression.owl.gz); total/filtered gene counts on each Cluster, and dataset-level total/filtered gene counts on the Dataset (union across clusters, matching the old repo's get_gene_counts). Sample sex set to female (from the paper; not annotated in GEO). FlyBase stock refs (FBst) for each sample resolved from FlyBase Chado and linked via BAO:0095000 'is derived from'; no free-text genotype slot. Publication linked to the VFB :pub node FBrf0247594 (checked in the VFB curation KB by PMID; config fallback used as it is not yet in the KB). Dataset carries site vfb:GEO (VFB Site node) with the GSE accession as the dbxref annotation. 2026-10-06 regeneration under the general curation rules: the main dataset already had one row per author cluster (the 196 subtype populations of the authors' clustering; `type` only groups them), so its clusters, mappings and ids are unchanged. Added the authors' separately clustered EARLY dataset (0-24h APF, GSE156455_metadata_early / matrix_early) as Clusters of the existing 'early' Clustering: 110 clusters labelled early_<cluster> (main clusters relabelled main_<cluster>, registry keys renamed so ids are unchanged) (28 named, mapped by map-clusters-to-fbbt subagents to immature FBbt terms, e.g. immature lamina monopolar neuron L1; 20 numbered N/G with stage-appropriate anchors - N: immature adult optic lobe neuron FBbt:00053539, G: glial cell FBbt:00005144 as FBbt has no immature optic-lobe glia term; 62 held: 58 class x (unresolved) + 4 class C). Old FlyBase/SCEA load FBlc0006237 crosswalked as a cross-check (prior_mapping_FBlc0006237.tsv): 183 of 184 comparable main clusters agree (R184 placeholder anchor eye photoreceptor cell vs old light-sensitive neuron). All 88 FBbt terms verified current against FBbt 2026-10-01. Expression recomputed for main + early (main rows byte-identical; 901,382 rows total; dataset total/filtered gene counts 15,754/7,473). Publication FBrf0247594 now resolved from VFB production (pdb).",
   "pipeline": {
     "name": "vfb-scrnaseq",
     "version": "0.0.0",
@@ -20,12 +20,12 @@
     {
       "id": "FBbt",
       "name": "Drosophila gross anatomy ontology",
-      "version": "2026-06-11",
-      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-06-11/fbbt.owl",
-      "release_date": "2026-06-11",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "release_date": "2026-10-01",
       "accessed_via": "OLS MCP (OLS4)",
       "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
-      "accessed_at": "2026-06-17"
+      "accessed_at": "2026-10-06"
     },
     {
       "id": "FBdv",
@@ -90,6 +90,20 @@
           "sha256": "e34a0728501cb8a40713b24c861f261fe293900cf113ab92f2ed522791b5f81e",
           "bytes": 1054537791,
           "retrieved_at": "2026-07-31"
+        },
+        {
+          "name": "GSE156455_metadata_early.tsv.gz",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE156nnn/GSE156455/suppl/GSE156455_metadata_early.tsv.gz",
+          "retrieved_at": "2026-10-06",
+          "sha256": "e01230c01278d7491e65d54b49157bede03c2627503f45fe5ccb5caa3ac1c63f",
+          "bytes": 314718
+        },
+        {
+          "name": "GSE156455_matrix_early.mtx.gz",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE156nnn/GSE156455/suppl/GSE156455_matrix_early.mtx.gz",
+          "retrieved_at": "2026-10-06",
+          "sha256": "32c46f2eebb4e50aea149485b5cfb0486cf1ffd4ad85e9afa16a02c031916fe2",
+          "bytes": 159343027
         }
       ]
     },
@@ -189,7 +203,7 @@
     {
       "name": "Claude Code",
       "kind": "cli",
-      "version": "2.1.183",
+      "version": "2.1.280",
       "notes": "Harness orchestrating the agentic pipeline (main session + map-clusters-to-fbbt subagents)."
     }
   ],
@@ -212,6 +226,13 @@
       "name": "sentence-transformers/all-MiniLM-L6-v2",
       "provider": "sentence-transformers",
       "notes": "Local PDF snippet-index embeddings."
+    },
+    {
+      "role": "other",
+      "name": "claude-opus-5-5",
+      "provider": "Anthropic",
+      "version": "Opus 5.5; model id claude-opus-5-5",
+      "notes": "Orchestrator of the 2026-10-06 regeneration (early-dataset addition, crosswalk, rebuild); dispatched the early-cluster mapping subagents."
     }
   ]
 }

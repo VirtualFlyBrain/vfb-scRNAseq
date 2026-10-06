@@ -1,0 +1,33 @@
+{
+  "cluster_label": "early_L2",
+  "working_definition": "Early-dataset (0-24h APF) cluster named 'L2' by the authors (Kurmangaliyev et al. 2020, GSE156455 metadata_early subtype); composed primarily of immature L2 cells of the developing optic lobe/eye.",
+  "searches_performed": [
+    "early_L2",
+    "immature L2",
+    "L2",
+    "immature adult optic lobe neuron",
+    "immature T neuron",
+    "immature columnar neuron",
+    "photoreceptor precursor"
+  ],
+  "best_match": {
+    "fbbt_term": "immature lamina monopolar neuron L2",
+    "fbbt_id": "FBbt:00053357",
+    "fbbt_definition": "Immature neuron that will develop into an adult lamina monopolar neuron L2.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Early (0-24h APF) cluster named L2 by the authors; FBbt has the matching immature term (same type, developmental stage appropriate).",
+  "other_candidates": [
+    {
+      "fbbt_term": "lamina monopolar neuron L2",
+      "fbbt_id": "FBbt:00003720",
+      "fbbt_definition": "A lamina monopolar neuron with short collaterals that project radially from the main projection in the lamina and that arborizes in medulla layer M2. In the lamina it receives strong input from photoreceptors R1-R6 (Rivera-Alba et al., 2011). It has both pre- and postsynaptic connections in medulla layer M2, with strong synaptic input coming from centrifugal neurons C2 and C3 (Takemura et al., 2013). It has a large number of presynaptic connections to lamina monopolar neuron L5, columnar neuron T1, and transmedullary neurons Tm1, Tm2 and Tm4 (Takemura et al., 2013). It is a cholinergic neuron (Takemura et al., 2011) and is electrically synapsed to lamina monopolar neuron L1 (Joesch et al., 2010). There is usually one of these cells per optic column (Nern et al., 2025).",
+      "reason_rejected": "Mature/adult term; cells are 0-24h APF immature neurons."
+    }
+  ],
+  "recommendation": "Accept exact match to the immature term.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

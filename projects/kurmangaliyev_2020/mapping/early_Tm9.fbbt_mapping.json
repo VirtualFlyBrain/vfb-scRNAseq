@@ -1,0 +1,29 @@
+{
+  "cluster_label": "early_Tm9",
+  "working_definition": "Early-dataset (0-24h APF, 0h/12h/24h) cluster typed by the authors as Tm9; cluster is composed primarily of developing Tm9 neurons (immature). Authors left the subtypes unsplit in the early data.",
+  "searches_performed": [
+    "immature transmedullary neuron Tm9",
+    "immature Tm9",
+    "OLS4 REST search fbbt \"immature\" medulla/transmedullary/amacrine terms"
+  ],
+  "best_match": {
+    "fbbt_term": "immature transmedullary neuron Tm9",
+    "fbbt_id": "FBbt:00052333",
+    "fbbt_definition": "Immature form of the transmedullary neuron Tm9 (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Erm/Ey temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Authors' typing taken at face value; stage 0-24h APF so the immature term immature transmedullary neuron Tm9 is the matching developing form. Immature term covers the unsplit subtypes (parent group term chosen over a/b).",
+  "other_candidates": [
+    {
+      "fbbt_term": "transmedullary neuron Tm9a",
+      "fbbt_id": "FBbt:00058233",
+      "fbbt_definition": "Transmedullary neuron Tm9 that targets the dorsal half of the lobula. It is distinguished from other Tm9 neurons by its expression of Wnt10 (Kurmangaliyev et al., 2020).",
+      "reason_rejected": "Mature (adult) form; cluster is 0-24h APF so the immature term is used."
+    }
+  ],
+  "recommendation": "Accept immature exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

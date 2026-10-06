@@ -1,0 +1,34 @@
+{
+  "cluster_label": "main_T5a",
+  "working_definition": "T5a is one of four directional subtypes (a-d) of T5 neurons in the Drosophila optic lobe. It is a columnar, OFF-pathway, direction-selective neuron whose dendrites arborise in lobula layer Lo1 and whose axon terminals project specifically to lobula plate layer 1 (layer a). The four T5 subtypes encode cardinal directions of visual motion; T5a encodes the diagonal front-to-back direction read out in lobula plate layer 1.",
+  "searches_performed": [
+    "T5a neuron (exact label, fbbt)",
+    "T5 neuron (core anatomical type, fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "T5a neuron",
+    "fbbt_id": "FBbt:00003737",
+    "fbbt_definition": "T5 neuron with its lobula plate arbor in layer 1 (Fischbach and Dittrich, 1989). It responds to motion in a diagonal front-to-back direction (Henning et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00003737 'T5a neuron' is defined as the T5 subtype with its lobula plate arbor in layer 1 that responds to diagonal front-to-back motion (Fischbach and Dittrich 1989; Henning et al. 2022). The atlas cluster 'T5a' is defined identically: a T5 (OFF-pathway) columnar optic lobe neuron whose axon terminals target lobula plate layer a (layer 1) and which encodes the corresponding cardinal direction of motion. The label, layer specificity, and directional tuning all match precisely. The FBbt term is not obsolete and is a direct subtype of T5 neuron (FBbt:00003736). FBbt further sub-divides T5a into T5ai (FBbt:00052245) and T5aii (FBbt:00052246) based on finer diagonal direction sub-tuning, but the atlas cluster 'T5a' does not resolve to that level of granularity; the cluster maps to the T5a level, not the sub-subtypes.",
+  "other_candidates": [
+    {
+      "fbbt_term": "T5 neuron",
+      "fbbt_id": "FBbt:00003736",
+      "fbbt_definition": "Pre- versus postsynaptic innervation judged by scoring of terminal morphology from figures in Fischbach and Dittrich (1989) as assessed by FlyBrain Neuron DB. The neurotransmitter was assessed with a split-GAL4 strategy using a Chat-DBD allele (FBal0198074) (Mauss et al., 2014) and single-cell transcript profiling (Shinomiya et al., 2014). Connectivity in the lobula was assessed by serial section electron microscopy of a single column (Shinomiya et al., 2014).",
+      "reason_rejected": "Parent class covering all four T5 subtypes (a-d); the cluster 'T5a' is specifically the layer-1 subtype. Using the parent would be a broad match and would lose the defining layer-identity information that is central to this cluster's annotation."
+    },
+    {
+      "fbbt_term": "T5ai neuron",
+      "fbbt_id": "FBbt:00052245",
+      "fbbt_definition": "T5a neuron that responds to motion in a diagonal upward front-to-back direction (Henning et al., 2022).",
+      "reason_rejected": "Child of T5a neuron, representing a further sub-subtype defined by a specific diagonal sub-direction. The atlas cluster 'T5a' is not resolved to this level; this term is more specific than the cluster."
+    }
+  ],
+  "recommendation": "Map cluster T5a to FBbt:00003737 (T5a neuron) with skos:exactMatch. The label, lobula plate layer-1 targeting, and direction-selectivity all correspond precisely. No new FBbt term is needed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

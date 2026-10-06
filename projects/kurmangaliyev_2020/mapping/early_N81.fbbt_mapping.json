@@ -1,0 +1,20 @@
+{
+  "cluster_label": "early_N81",
+  "working_definition": "Unidentified numbered cluster (class N) with no named cell-type identity assigned by the atlas authors.",
+  "searches_performed": [
+    "(placeholder: class-based broad assignment; no literature search performed)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature adult optic lobe neuron",
+    "fbbt_id": "FBbt:00053539",
+    "fbbt_definition": "Immature neuron that develops from an optic neuroblast and will become an adult optic lobe neuron.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "low"
+  },
+  "justification": "No named identity was assigned to cluster early_N81; only its cell class (N) is known. The honest mapping is a broad match to the class-level FBbt term FBbt:00053539 (immature adult optic lobe neuron). Not a specific assignment.",
+  "other_candidates": [],
+  "recommendation": "Class-based broad placeholder (immature adult optic lobe neuron). Revisit if the cluster's identity is resolved in future work.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

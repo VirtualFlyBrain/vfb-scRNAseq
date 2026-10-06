@@ -1,0 +1,33 @@
+{
+  "cluster_label": "early_R1.6",
+  "working_definition": "Early-dataset (0-24h APF) cluster named 'R1.6' by the authors (Kurmangaliyev et al. 2020, GSE156455 metadata_early subtype); composed primarily of immature R1-R6 photoreceptor cells of the developing optic lobe/eye.",
+  "searches_performed": [
+    "early_R1.6",
+    "immature R1-R6 photoreceptor",
+    "R1-R6 photoreceptor",
+    "immature adult optic lobe neuron",
+    "immature T neuron",
+    "immature columnar neuron",
+    "photoreceptor precursor"
+  ],
+  "best_match": {
+    "fbbt_term": "eye photoreceptor precursor cell",
+    "fbbt_id": "FBbt:00048002",
+    "fbbt_definition": "Immature neuron of the eye disc that will develop into one of the photoreceptors (R1-R8) of the adult eye.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "low"
+  },
+  "justification": "Authors group R1-R6 (outer photoreceptors) in the early data. FBbt has per-cell precursor terms (photoreceptor R1..R6 precursor cell, FBbt:00048003-8) and a general eye photoreceptor precursor cell, but no outer-photoreceptor-specific immature term; the general precursor cell term is the nearest stage-appropriate parent. These precursor terms are defined for the larval eye disc, so fit to 0-24h APF is approximate.",
+  "other_candidates": [
+    {
+      "fbbt_term": "outer photoreceptor cell",
+      "fbbt_id": "FBbt:00006007",
+      "fbbt_definition": "An eye photoreceptor cell whose rhabdomere is part of the outer trapezoid of rhabdomeres of each ommatidium. There are six of these per ommatidium. Each has a single axon that projects along a single lamina optic cartridge within which it makes extensive synaptic connections before terminating in the proximal lamina. It is strongly presynaptic to lamina monopolar neurons L1 and L2 and the lamina intrinsic (amacrine) neuron (Rivera-Alba et al., 2011).",
+      "reason_rejected": "Mature outer photoreceptor; cells are developing (0-24h APF)."
+    }
+  ],
+  "recommendation": "Broad match to eye photoreceptor precursor cell; low confidence due to stage mismatch (eye disc precursor vs pupal developing photoreceptor).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,22 @@
+{
+  "cluster_label": "main_T2",
+  "working_definition": "T2 is a translobula T neuron of the Drosophila optic lobe whose soma lies posteriorly adjacent to the gap between the medulla and lobula plate. Its cell body fiber runs along the proximal medulla surface, bifurcates at the second optic chiasm, and sends one branch into a medulla column (arborisations in M9, M1, M2, M5) and another to lobula layer 3 where it forms a broad, bleb-type terminal arborisation. The cell appears capable of both cholinergic and GABAergic neurotransmission.",
+  "searches_performed": [
+    "T2 neuron (fbbt)",
+    "T2 translobula neuron (fbbt)",
+    "translobula neuron medulla lobula (fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "T2 neuron",
+    "fbbt_id": "FBbt:00003728",
+    "fbbt_definition": "T neuron with its soma posteriorly adjacent to the gap between the medulla and lobula plate and a cell body fiber that projects along the proximal surface of the medulla before branching in the second optic chiasm (Fischbach and Dittrich, 1989; Shinomiya et al., 2019). One branch projects into a medulla column, where it forms a bushy, fine, arborization in medulla layer M9 and then projects through the rest of the medulla column, forming fine arborizations in M1, M2 and M5. The other branch forms a terminal arborization in lobula layer 3 that is much wider than a single column and has bleb-type terminal branches. It seems to be capable of cholinergic and GABAergic neurotransmission.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00003728 'T2 neuron' is defined as the T neuron with soma adjacent to the medulla/lobula-plate gap, a cell body fiber along the proximal medulla surface, bifurcation at the second optic chiasm, medulla arborisations in M9/M1/M2/M5, and a broad bleb-type terminal in lobula layer 3, with cholinergic/GABAergic competence (Fischbach and Dittrich, 1989; Shinomiya et al., 2019). The atlas cluster 'T2' carries the identical canonical label and is defined by exactly this morphological and neurochemical profile. The label is a direct anatomical name (not a driver alias), the FBbt term is not obsolete, and no distinguishing feature of the cluster falls outside the FBbt definition. The match is therefore exact.",
+  "other_candidates": [],
+  "recommendation": "Map cluster T2 to FBbt:00003728 (T2 neuron) with skos:exactMatch. Label, soma position, medulla layer arborisations (M9/M1/M2/M5), lobula layer 3 terminal field, and dual cholinergic/GABAergic character all correspond precisely. No new FBbt term is needed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

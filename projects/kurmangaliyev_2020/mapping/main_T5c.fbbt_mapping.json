@@ -1,0 +1,28 @@
+{
+  "cluster_label": "main_T5c",
+  "working_definition": "T5c is one of the four directional subtypes (a-d) of T5, the OFF-motion direction-selective columnar neurons of the Drosophila optic lobe. It is defined by its axon terminal targeting lobula plate layer 3 (layer c), and its dendrites arborise in lobula layer Lo1. T5c encodes upward motion and is a first-order OFF-pathway direction-selective neuron.",
+  "searches_performed": [
+    "T5c neuron (exact label, fbbt)",
+    "T5 neuron (core anatomical type, fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "T5c neuron",
+    "fbbt_id": "FBbt:00003739",
+    "fbbt_definition": "T5 neuron with its lobula plate arbor in layer 3 (Fischbach and Dittrich, 1989). It responds to motion in an upwards direction (Henning et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00003739 'T5c neuron' is defined as the T5 subtype with its lobula plate arbor in layer 3 \u2014 precisely the anatomical identity described for this cluster (OFF-motion columnar neuron, dendrites in lobula Lo1, axon terminals in lobula plate layer 3, upward direction tuning). The FBbt label is identical to the cluster label (T5c). The FBbt term is not obsolete. The parent term FBbt:00003736 'T5 neuron' is more general and rejected as the cluster has the layer-specific subtype identity that FBbt:00003739 captures exactly.",
+  "other_candidates": [
+    {
+      "fbbt_term": "T5 neuron",
+      "fbbt_id": "FBbt:00003736",
+      "fbbt_definition": "Pre- versus postsynaptic innervation judged by scoring of terminal morphology from figures in Fischbach and Dittrich (1989) as assessed by FlyBrain Neuron DB. The neurotransmitter was assessed with a split-GAL4 strategy using a Chat-DBD allele (FBal0198074) (Mauss et al., 2014) and single-cell transcript profiling (Shinomiya et al., 2014). Connectivity in the lobula was assessed by serial section electron microscopy of a single column (Shinomiya et al., 2014).",
+      "reason_rejected": "Parent class of T5c; too broad \u2014 does not capture the layer 3 / lobula plate specificity or upward directional identity of T5c. FBbt:00003739 is the appropriate exact-match subtype."
+    }
+  ],
+  "recommendation": "Accept FBbt:00003739 'T5c neuron' as an exact match. The FBbt term was found by direct label search, is non-obsolete, and its definition fully aligns with the cluster's anatomical identity (T5 subtype, lobula plate layer 3 arbor, OFF-motion, upward direction tuning).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

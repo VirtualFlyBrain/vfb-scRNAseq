@@ -1,0 +1,29 @@
+{
+  "cluster_label": "main_T5d",
+  "working_definition": "T5d is one of the four directional subtypes (a-d) of T5, the OFF-motion direction-selective columnar neurons of the Drosophila optic lobe. It is defined by its axon terminal targeting lobula plate layer 4 (layer d), with dendrites arborising in lobula layer 1 (Lo1). T5d encodes downward motion and is a first-order OFF-pathway direction-selective neuron.",
+  "searches_performed": [
+    "T5d neuron (exact label, fbbt)",
+    "T5 neuron (core anatomical type, fbbt)",
+    "T5di T5dii neuron (sub-subtype check, fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "T5d neuron",
+    "fbbt_id": "FBbt:00003740",
+    "fbbt_definition": "T5 neuron with its lobula plate arbor in layer 4 (Fischbach and Dittrich, 1989). It responds to motion in a downwards direction (Henning et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00003740 'T5d neuron' is defined as the T5 subtype with its lobula plate arbor in layer 4 that responds to downward motion -- precisely the anatomical identity described for this cluster (OFF-motion columnar neuron, dendrites in lobula Lo1, axon terminals in lobula plate layer 4, downward direction tuning). The FBbt label is identical to the cluster label (T5d). The FBbt term is not obsolete and is a direct subtype of T5 neuron (FBbt:00003736). Unlike T5a (which has T5ai/T5aii sub-subtypes in FBbt), no further subdivision of T5d exists in FBbt, confirming FBbt:00003740 is the most specific available term and the cluster maps cleanly at this level.",
+  "other_candidates": [
+    {
+      "fbbt_term": "T5 neuron",
+      "fbbt_id": "FBbt:00003736",
+      "fbbt_definition": "Pre- versus postsynaptic innervation judged by scoring of terminal morphology from figures in Fischbach and Dittrich (1989) as assessed by FlyBrain Neuron DB. The neurotransmitter was assessed with a split-GAL4 strategy using a Chat-DBD allele (FBal0198074) (Mauss et al., 2014) and single-cell transcript profiling (Shinomiya et al., 2014). Connectivity in the lobula was assessed by serial section electron microscopy of a single column (Shinomiya et al., 2014).",
+      "reason_rejected": "Parent class of T5d; too broad -- does not capture the layer 4 / lobula plate specificity or downward directional identity of T5d. FBbt:00003740 is the appropriate exact-match subtype."
+    }
+  ],
+  "recommendation": "Accept FBbt:00003740 'T5d neuron' as an exact match. The FBbt term was found by direct label search, is non-obsolete, and its definition fully aligns with the cluster's anatomical identity (T5 subtype, lobula plate layer 4 arbor, OFF-motion, downward direction tuning). No new FBbt term is needed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}
