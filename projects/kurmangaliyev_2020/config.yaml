@@ -128,6 +128,9 @@ expression:
   normalisation: CPM
   extent_cutoff: 0.2
   hide_in_terminfo: "true"
+  # current FlyBase gene ids (scripts/update_gene_ids.py; FB2026_03): retired ids ->
+  # current gene (merges summed per cell), split/withdrawn ids dropped
+  gene_id_map: gene_id_map.tsv
   # the early dataset is a separate matrix (same genes); its clusters are labelled
   # early_<cluster> as in cell_type_annotations.json
   extra_parts:

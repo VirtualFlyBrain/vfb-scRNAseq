@@ -1,4 +1,4 @@
-name: FBbt release check
+name: FBbt and FlyBase release check
 
 # Weekly: if OLS has a newer FBbt release than the one recorded in
 # checks/fbbt_last_checked.json, verify every project's FBbt terms against it
@@ -7,6 +7,10 @@ name: FBbt release check
 # run re-checks. On a new release it also follows up the FBbt term requests in
 # checks/pending_fbbt_requests.json: any whose FBbt issue was closed on or before
 # the release date gets a reminder issue in this repo (clusters to re-map).
+# It also checks flybase.org for a FlyBase release newer than the one in the
+# projects' gene_id_map.tsv files and, if any gene id or symbol used by the
+# expression output changed (re-checked against FlyBase Chado), opens an issue to
+# run scripts/update_gene_ids.py + build_expression.py.
 
 on:
   schedule:
@@ -42,12 +46,21 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: uv run python scripts/check_fbbt_release.py ${{ inputs.force && '--force' || '' }}
 
+      - name: Check for a new FlyBase release (gene ids)
+        id: flybase
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        # psql ships with the Ubuntu runner image; if Chado is unreachable the reminder
+        # issue is still opened, without counts
+        run: uv run python scripts/check_flybase_release.py
+
       - name: Commit the updated record / pending requests
         # also after a failed verification, so released term requests are not re-reported
-        if: always() && steps.fbbt.outputs.changed == 'true'
+        if: always() && (steps.fbbt.outputs.changed == 'true' || steps.flybase.outputs.changed == 'true')
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add checks/
-          git commit -m "FBbt release check: $(jq -r .version checks/fbbt_last_checked.json)"
+          git commit -m "Weekly release check: FBbt $(jq -r .version checks/fbbt_last_checked.json), FlyBase $(jq -r '.release // "n/a"' checks/flybase_release_check.json 2>/dev/null || echo n/a)"
           git push
