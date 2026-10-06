@@ -1,0 +1,29 @@
+{
+  "cluster_label": "main_LC4",
+  "working_definition": "LC4 is a wide-field lobula columnar visual projection neuron of the adult Drosophila optic lobe. Its dendrites arborise in lobula layers 2 and 4, spanning approximately 40 optic columns, and its axon projects to a dedicated optic glomerulus in the ventral medial PVLP. It detects looming (expanding) visual stimuli and drives escape behaviour.",
+  "searches_performed": [
+    "LC4 (exact label, fbbt)",
+    "lobula columnar neuron (core anatomical type, fbbt)",
+    "visual projection neuron lobula (synonym/rephrasing, fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "lobula columnar neuron LC4",
+    "fbbt_id": "FBbt:00003874",
+    "fbbt_definition": "Lobula columnar neuron whose cell body is in an extended region of the lateral cell body rind (Wu et al., 2016). It has its main dendritic arbors in lobula layers 2 and 4 (Wu et al., 2016; Tanaka and Clark, 2022). Its arbors span approximately 40 optic columns, overlapping with other LC4 cells (Wu et al., 2016). It projects to an optic glomerulus in the PVLP that is medial to the one from LC12 and ventral to LPLC2 and LPLC1 (Wu et al., 2016). There are an estimated 66 neurons of this type (Wu et al., 2016). It has been reported as being both glutamatergic (Raghu and Borst, 2011) and cholinergic (Davis et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00003874 is labelled 'lobula columnar neuron LC4' and its definition matches the cluster in every key feature: cell body in the lateral cell body rind, dendrites in lobula layers 2 and 4, arbors spanning approximately 40 columns with overlap, axon projecting to a PVLP optic glomerulus medial to LC12 and ventral to LPLC2/LPLC1, approximately 66 cells per lobe, and the same dual glutamate/acetylcholine neurotransmitter debate. The cluster label 'LC4' is the established anatomical name for this exact cell type. The term is not obsolete. No FBbt subtypes of LC4 exist that would require a narrower assignment.",
+  "other_candidates": [
+    {
+      "fbbt_term": "LC4 optic glomerulus",
+      "fbbt_id": "FBbt:00052655",
+      "fbbt_definition": "Optic glomerulus formed by the axon terminals of lobula columnar (LC) 4 neurons (Wu et al., 2016). It is found in the ventral medial part of the posterior ventrolateral protocerebrum.",
+      "reason_rejected": "This term describes the axon-terminal glomerulus structure, not the LC4 neuron cell type itself. A scRNAseq cluster represents cells (neurons), not the neuropil region they innervate."
+    }
+  ],
+  "recommendation": "Accept FBbt:00003874 (lobula columnar neuron LC4) as an exact match. The FBbt definition and the cluster description are co-extensive in anatomy, connectivity, and neurotransmitter status. No new term is required.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

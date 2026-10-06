@@ -111,8 +111,12 @@ sample_build:
     "0-96h APF":
       stage:  { fbdv_id: FBdv:00007001, label: P-stage }
       tissue: { fbbt_id: FBbt:00003701, label: adult optic lobe }
-  # clustering analyses present in this dataset (GEO subsets)
-  clusterings: [main, early]
+  # clustering analyses present in this dataset (GEO subsets): the main dataset
+  # (24-96h APF, 196 clusters) and the separately clustered early dataset (0-24h APF,
+  # 110 clusters; 24h cells are in both).
+  clusterings:
+    - { id: main, name: "Kurmangaliyev 2020 main dataset clustering (24-96h APF, 196 clusters)" }
+    - { id: early, name: "Kurmangaliyev 2020 early dataset clustering (0-24h APF, 110 clusters)" }
 
 # Summary expression statistics (extent + CPM level per cluster x gene).
 # Matrix/features/barcodes are the 10x MEX files in .cache (metadata + label column
@@ -124,6 +128,14 @@ expression:
   normalisation: CPM
   extent_cutoff: 0.2
   hide_in_terminfo: "true"
+  # the early dataset is a separate matrix (same genes); its clusters are labelled
+  # early_<cluster> as in cell_type_annotations.json
+  extra_parts:
+    - matrix_file: GSE156455_matrix_early.mtx.gz
+      features_file: GSE156455_features_early.tsv.gz
+      barcodes_file: GSE156455_barcodes_early.tsv.gz
+      metadata_file: GSE156455_metadata_early.tsv.gz
+      label_prefix: early_
 
 # --- Project-specific pipeline config (read by the generic scripts) ---
 
@@ -136,6 +148,17 @@ annotations:
   class_column: class            # author cell class (drives the broad-match ceiling)
   carry_columns: [type, class]   # extra columns recorded per annotation
   timepoint_column: time
+  # One row per author cluster: the main dataset's 196 clusters (subtype = the
+  # clustering's populations) plus the early dataset's 110 clusters. Labels carry
+  # their clustering (main_L1, early_L1).
+  label_prefix: main_
+  clustering_id: main
+  clustering_name: "main dataset, 24-96h APF"
+  extra_clusterings:
+    - id: early
+      name: "early dataset, 0-24h APF"
+      source_file: GSE156455_metadata_early.tsv.gz
+      label_prefix: early_
 
 # How to handle clusters with no named cell-type identity.
 unidentified:
@@ -144,7 +167,8 @@ unidentified:
   #   none                     -> no clusters are treated as placeholders
   #   "regex:<pattern>"        -> custom full-match regex on the label
   rule: class_prefixed_numbered
-  hold_classes: [C]              # classes of undefined meaning -> held, not mapped
+  hold_classes: [C, x]           # classes of undefined meaning -> held, not mapped
+                                 # (x = unresolved, early dataset only)
   # Broad FBbt anchor per author class, used for unidentified clusters (this tissue).
   class_anchors:
     N:
@@ -159,3 +183,20 @@ unidentified:
       fbbt_id: FBbt:00006009
       label: eye photoreceptor cell
       definition: Photoreceptor cell of the compound eye.
+  # Early dataset (0-24h APF): the adult anchors above are the wrong stage.
+  clustering_class_anchors:
+    early:
+      N:
+        fbbt_id: FBbt:00053539
+        label: immature adult optic lobe neuron
+        definition: Immature neuron that develops from an optic neuroblast and will become an adult optic lobe neuron.
+      G:
+        # FBbt has no immature/pupal optic lobe glia term; stage-neutral class used
+        fbbt_id: FBbt:00005144
+        label: glial cell
+        definition: A supporting cell of the nervous system.
+
+# The FBbt assignments of the old FlyBase/SCEA load (FBlc0006237), crosswalked to the
+# main-dataset clusters by name (merged SCEA clusters -> several clusters); used only
+# to cross-check the mappings in mapping.tsv. Not an input to the mapping itself.
+prior_mapping: prior_mapping_FBlc0006237.tsv

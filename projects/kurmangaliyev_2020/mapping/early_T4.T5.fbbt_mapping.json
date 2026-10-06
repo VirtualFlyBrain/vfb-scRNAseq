@@ -1,0 +1,45 @@
+{
+  "cluster_label": "early_T4.T5",
+  "working_definition": "Early-dataset (0-24h APF) cluster named 'T4.T5' by the authors (Kurmangaliyev et al. 2020, GSE156455 metadata_early subtype); composed primarily of immature T4/T5 cells of the developing optic lobe/eye.",
+  "searches_performed": [
+    "early_T4.T5",
+    "immature T4/T5",
+    "T4/T5",
+    "immature adult optic lobe neuron",
+    "immature T neuron",
+    "immature columnar neuron",
+    "photoreceptor precursor"
+  ],
+  "best_match": {
+    "fbbt_term": "immature T neuron",
+    "fbbt_id": "FBbt:00059279",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T neuron (Hormann et al., 2020).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Authors left all T4/T5 subtypes (T4a-d, T5a-d) unsplit in the early data. FBbt has immature T4 (FBbt:00052257) and immature T5 (FBbt:00052258) but no combined T4/T5 term; the common parent immature T neuron is the nearest grouping term (it also covers T2/T3, hence broad).",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature T4 neuron",
+      "fbbt_id": "FBbt:00052257",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T4 neuron (Hormann et al., 2020).",
+      "reason_rejected": "Covers only the T4 half of the grouped cluster."
+    },
+    {
+      "fbbt_term": "immature T5 neuron",
+      "fbbt_id": "FBbt:00052258",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T5 neuron (Hormann et al., 2020).",
+      "reason_rejected": "Covers only the T5 half of the grouped cluster."
+    },
+    {
+      "fbbt_term": "T4a neuron",
+      "fbbt_id": "FBbt:00003732",
+      "fbbt_definition": "T4 neuron with its lobula plate arbor in layer 1 (Fischbach and Dittrich, 1989). It responds to motion in a diagonal front-to-back direction (Henning et al., 2022).",
+      "reason_rejected": "Mature T4a only; cells are immature and the cluster groups all T4/T5 subtypes."
+    }
+  ],
+  "recommendation": "Broad match to immature T neuron (common parent of immature T4 and T5).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

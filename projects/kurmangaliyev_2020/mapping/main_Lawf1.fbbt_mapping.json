@@ -1,0 +1,35 @@
+{
+  "cluster_label": "main_Lawf1",
+  "working_definition": "Lawf1 is a cholinergic columnar interneuron of the adult Drosophila optic lobe whose cell body sits in the medulla cortex. Its main projection ascends via the first optic chiasm into the lamina, traveling within a single column before making wide-field arborizations in the distal lamina; it also arborizes on the distal medulla surface and in layer M4. It is one of two lamina wide-field neuron subtypes (Lawf1 and Lawf2) and forms presynaptic connections to L3 and lamina intrinsic neurons.",
+  "searches_performed": [
+    "searchClasses fbbt: Lawf1",
+    "searchClasses fbbt: lamina wide-field neuron",
+    "searchClasses fbbt: Lawf optic lobe neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "lamina wide-field 1 neuron",
+    "fbbt_id": "FBbt:00003741",
+    "fbbt_definition": "A lamina wide-field neuron that has a main projection that ascends via the first optic chiasm into the lamina where it is restricted to a single column for most of its length before making wide-field arborizations in the distal lamina. These neurons also arborize on the distal surface of the medulla in a circular field of about 20 columns. Several linking fibers from this arborization descend into M4 where they form a wide arborization field covering about 30-40 columns (Fischbach and Dittrich, 1989; Morante and Desplan, 2008). In the lamina, it forms numerous presynaptic connections to lamina monopolar neuron L3 and lamina intrinsic (amacrine) neuron (Rivera-Alba et al., 2011).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00003741 'lamina wide-field 1 neuron' matches Lawf1 in every defining feature: it is the Lawf1 subtype (as opposed to Lawf2), has its cell body in the medulla cortex, projects via the first optic chiasm into the lamina making wide-field arborizations in the distal lamina, arborizes on the medulla surface in a field of ~20 columns, and sends linking fibers into M4 over 30-40 columns. The presynaptic partners (L3, lamina intrinsic neuron) and the cholinergic neurotransmitter identity are consistent. The cluster label 'Lawf1' is the standard abbreviation for this cell type, and the FBbt label 'lamina wide-field 1 neuron' is the full canonical form of the same name. No meaningful biological discrepancy exists between the cluster and the term.",
+  "other_candidates": [
+    {
+      "fbbt_term": "lamina wide-field neuron",
+      "fbbt_id": "FBbt:00059323",
+      "fbbt_definition": "An intrinsic columnar neuron of the visual system whose cell body is located in the medulla cortex and that has a main projection making wide-field arborizations in the lamina. It expresses the transcription factor Fer2 (Ozel et al., 2021) and is cholinergic (Davis et al., 2020).",
+      "reason_rejected": "Parent class encompassing both Lawf1 and Lawf2; too broad for this cluster, which is specifically Lawf1."
+    },
+    {
+      "fbbt_term": "lamina wide-field 2 neuron",
+      "fbbt_id": "FBbt:00110065",
+      "fbbt_definition": "A lamina wide-field neuron that has a main projection into the lamina making wide-field arborizations in the distal lamina, innervating 28 cartridges. These neurons also arborize in the medulla (Hasegawa et al., 2011). In the M1 layer, the branches are large and overlapping, encompassing around 120 cartridges. In medulla layers M8 to M10 the branches are smaller, encompassing around 17 cartridges and show less overlap. Putative cholinergic presynaptic sites are observed in the lamina.",
+      "reason_rejected": "Sibling subtype Lawf2, which has a distinct morphology and different medulla arborization pattern (M1, M8-M10 rather than M4). Not the correct subtype."
+    }
+  ],
+  "recommendation": "Accept FBbt:00003741 'lamina wide-field 1 neuron' as an exact match for cluster Lawf1. The FBbt term was defined from the same primary literature (Fischbach and Dittrich 1989; Morante and Desplan 2008; Rivera-Alba et al. 2011) that characterises this cell type, and the morphological, connectivity, and neurotransmitter features align precisely.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

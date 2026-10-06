@@ -1,0 +1,21 @@
+{
+  "cluster_label": "main_C2",
+  "working_definition": "Centrifugal neuron C2 is a GABAergic columnar interneuron of the adult Drosophila optic lobe that carries signals centrifugally from the medulla back to the lamina. It arborises in medulla layers M1, M5/M6, M8 and M10 and in the lamina, makes reciprocal connections with L1 and is presynaptic to L2, L5 and Mi1, and there is one per optic column.",
+  "searches_performed": [
+    "C2 centrifugal neuron (fbbt)",
+    "centrifugal neuron lamina medulla (fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "centrifugal neuron C2",
+    "fbbt_id": "FBbt:00003743",
+    "fbbt_definition": "Adult centrifugal neuron with arborizations in the medulla layers M1, M5/M6, M8 and M10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). In the medulla, it makes reciprocal connections to lamina monopolar neuron L1, and is presynaptic to L2 and L5, as well as medullary intrinsic neuron Mi1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010). There is usually one of these cells per optic column (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The cluster label 'C2' in Kurmangaliyev 2020 directly names the centrifugal neuron C2 of Fischbach and Dittrich (1989). FBbt:00003743 carries the label 'centrifugal neuron C2' and its definition precisely matches the working definition: GABAergic optic-lobe columnar neuron, medulla arborisations in M1/M5-M6/M8/M10, restricted lamina arborisations, reciprocal connection to L1, presynaptic to L2/L5/Mi1, one per optic column. The first OLS search returned this term as the top hit with no ambiguity. The term is not obsolete.",
+  "other_candidates": [],
+  "recommendation": "Accept as exact match. FBbt:00003743 'centrifugal neuron C2' is the canonical anatomical term for this cluster.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

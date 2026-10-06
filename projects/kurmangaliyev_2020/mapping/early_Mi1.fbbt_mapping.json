@@ -1,0 +1,29 @@
+{
+  "cluster_label": "early_Mi1",
+  "working_definition": "Early-dataset (0-24h APF, 0h/12h/24h) cluster typed by the authors as Mi1; cluster is composed primarily of developing Mi1 neurons (immature).",
+  "searches_performed": [
+    "immature medulla intrinsic neuron Mi1",
+    "immature Mi1",
+    "OLS4 REST search fbbt \"immature\" medulla/transmedullary/amacrine terms"
+  ],
+  "best_match": {
+    "fbbt_term": "immature medulla intrinsic neuron Mi1",
+    "fbbt_id": "FBbt:00052317",
+    "fbbt_definition": "Immature form of the medullary intrinsic neuron Mi1 (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Hth temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Authors' typing taken at face value; stage 0-24h APF so the immature term immature medulla intrinsic neuron Mi1 is the matching developing form.",
+  "other_candidates": [
+    {
+      "fbbt_term": "medulla intrinsic neuron Mi1",
+      "fbbt_id": "FBbt:00003776",
+      "fbbt_definition": "Unicolumnar medullary intrinsic neuron with bushy, fine arborizations in medulla layers M1, M5 and M9-10 (Fischbach and Dittrich, 1989; Kind et al., 2021). The projection of this neuron branches at the inner-face of the medulla to form two to three varicose recurrent terminal specializations that extend back up to the inner border of layer M8 (Fischbach and Dittrich, 1989; Morante and Desplan, 2008). In central (non-dorsal margin) columns it receives input from an R8 photoreceptor cell, but connections are substantially weaker in dorsal margin columns (Kind et al., 2021). Pre-synaptic terminals are present mainly in medulla layers M9-M10, but also in all other layers where neurites extend laterally (Pankova and Borst, 2017). It receives input from lamina monopolar neurons L1 and L5 and centrifugal neuron C2 (Takemura et al., 2013). It outputs to T4 neurons and transmedullary neuron Tm3a (Takemura et al., 2013). It is a cholinergic neuron (Hasegawa et al., 2011; Pankova and Borst, 2017). There is usually one of these cells per optic column (Nern et al., 2025).",
+      "reason_rejected": "Mature (adult) form; cluster is 0-24h APF so the immature term is used."
+    }
+  ],
+  "recommendation": "Accept immature exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

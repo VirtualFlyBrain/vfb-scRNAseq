@@ -1,0 +1,33 @@
+{
+  "cluster_label": "early_L1",
+  "working_definition": "Early-dataset (0-24h APF) cluster named 'L1' by the authors (Kurmangaliyev et al. 2020, GSE156455 metadata_early subtype); composed primarily of immature L1 cells of the developing optic lobe/eye.",
+  "searches_performed": [
+    "early_L1",
+    "immature L1",
+    "L1",
+    "immature adult optic lobe neuron",
+    "immature T neuron",
+    "immature columnar neuron",
+    "photoreceptor precursor"
+  ],
+  "best_match": {
+    "fbbt_term": "immature lamina monopolar neuron L1",
+    "fbbt_id": "FBbt:00053356",
+    "fbbt_definition": "Immature neuron that will develop into an adult lamina monopolar neuron L1.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Early (0-24h APF) cluster named L1 by the authors; FBbt has the matching immature term (same type, developmental stage appropriate).",
+  "other_candidates": [
+    {
+      "fbbt_term": "lamina monopolar neuron L1",
+      "fbbt_id": "FBbt:00003719",
+      "fbbt_definition": "Lamina monopolar neuron that has short collaterals projecting radially from the main projection in the lamina and arborization in medulla layers M1 and M5 (Fischbach and Dittrich, 1989; Kind et al., 2021). In the lamina, these short collaterals are strongly postsynaptic to the terminals of photoreceptors R1-6 (Rivera-Alba et al., 2011). In the medulla, it makes strong reciprocal synaptic connections with lamina monopolar cell L5 and centrifugal neuron C2, as well as substantial output synapses to C3, Mi1 and Tm3 cells (Takemura et al., 2013). It is also electrically synapsed to lamina monopolar neuron L2 (Joesch et al., 2010). It is a glutamatergic neuron (Gao et al., 2008; Takemura et al., 2011). There is usually one of these cells per optic column (Nern et al., 2025).",
+      "reason_rejected": "Mature/adult term; cells are 0-24h APF immature neurons."
+    }
+  ],
+  "recommendation": "Accept exact match to the immature term.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

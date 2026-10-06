@@ -1,0 +1,29 @@
+{
+  "cluster_label": "early_Tm29",
+  "working_definition": "Early-dataset (0-24h APF, 0h/12h/24h) cluster typed by the authors as Tm29; cluster is composed primarily of developing Tm29 neurons (immature).",
+  "searches_performed": [
+    "immature transmedullary neuron Tm29",
+    "immature Tm29",
+    "OLS4 REST search fbbt \"immature\" medulla/transmedullary/amacrine terms"
+  ],
+  "best_match": {
+    "fbbt_term": "immature transmedullary neuron Tm29",
+    "fbbt_id": "FBbt:00052328",
+    "fbbt_definition": "Immature form of the transmedullary neuron Tm29 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Erm/Ey temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Authors' typing taken at face value; stage 0-24h APF so the immature term immature transmedullary neuron Tm29 is the matching developing form.",
+  "other_candidates": [
+    {
+      "fbbt_term": "transmedullary neuron Tm29",
+      "fbbt_id": "FBbt:00049916",
+      "fbbt_definition": "Transmedullary neuron that receives most of its input in around 5 columns of medulla layer M6, where it also has a small number of presynapses (Nern et al., 2025). It also has a small amount of arborization in the rest of M3-M8 (Nern et al., 2025). It crosses the second optic chiasm and has mixed pre- and post-synapses in around 3 columns of lobula layer 5B (Nern et al., 2025). It is glutamatergic (Davis et al., 2020). There are around 170-270 of these cells per hemisphere (Nern et al., 2025).",
+      "reason_rejected": "Mature (adult) form; cluster is 0-24h APF so the immature term is used."
+    }
+  ],
+  "recommendation": "Accept immature exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

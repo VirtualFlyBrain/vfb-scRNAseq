@@ -53,53 +53,28 @@ def _read_chunks(path: Path):
     fh.close()
 
 
-def compute_expression(project: str, cfg: dict):
-    """Return (rows, counts, meta).
+def _label_memberships(meta_f: Path, bc_col: str, label_col: str, prefix: str = "") -> dict[str, list[str]]:
+    with gzip.open(meta_f, "rt") as fh:
+        return {r[bc_col]: [prefix + r[label_col]] for r in csv.DictReader(fh, delimiter="\t")}
 
-    rows: list of (cluster_vfbseq_id, cluster_label, fbgn, symbol, level, extent)
-          for cluster x gene with extent > cutoff, sorted by (label, fbgn).
-    counts: list[ClusterCount] per cluster.
-    meta: dict with n_genes, n_cells, cutoff, normalisation.
-    """
-    acc = cfg["dataset"]["accession"]
-    subset = cfg["annotations"].get("subset", "main")
-    label_col = cfg["annotations"]["label_column"]
-    ex = cfg["expression"]
-    cutoff = float(ex.get("extent_cutoff", 0.2))
-    cache = REPO_ROOT / ".cache"
-    mtx = cache / ex["matrix_file"]
-    feats = cache / ex["features_file"]
-    bcs = cache / ex["barcodes_file"]
-    meta_f = cache / cfg["annotations"]["source_file"]
 
+def _accumulate(mtx: Path, feats: Path, bcs: Path, memberships: dict[str, list[str]]) -> dict:
+    """Stream one 10x matrix: per (gene, cluster) CPM sums over expressing cells (S),
+    expressing-cell counts (N) and cluster sizes, for the clusters in `memberships`."""
     with gzip.open(feats, "rt") as fh:
         rows = [ln.rstrip("\n").split("\t") for ln in fh]
     fbgn = [r[0] for r in rows]
     symbol = [r[1] if len(r) > 1 else r[0] for r in rows]
     with gzip.open(bcs, "rt") as fh:
         barcodes = [ln.strip() for ln in fh]
-    # cell -> cluster(s). Default: one cluster per cell from the metadata label column.
-    # `expression.membership_file` (barcode<TAB>cluster, in .cache) instead allows a
-    # cell to belong to clusters of several (overlapping) clusterings.
-    memberships: dict[str, list[str]] = {}
-    if ex.get("membership_file"):
-        with gzip.open(cache / ex["membership_file"], "rt") as fh:
-            for r in csv.DictReader(fh, delimiter="\t"):
-                memberships.setdefault(r["barcode"], []).append(r["cluster"])
-    else:
-        with gzip.open(meta_f, "rt") as fh:
-            # the per-cell id column must match the matrix barcodes file (default
-            # "barcode"; e.g. Davie 2018 needs the sample-suffixed "new_barcode").
-            bc_col = cfg["annotations"].get("barcode_column", "barcode")
-            memberships = {r[bc_col]: [r[label_col]] for r in csv.DictReader(fh, delimiter="\t")}
 
     _, n_genes, n_cells, _ = _open_mtx(mtx)
-    clusters = sorted({c for cs in memberships.values() for c in cs})
+    clusters = sorted({c for b in barcodes for c in memberships.get(b, [])})
     cidx = {c: i for i, c in enumerate(clusters)}
     n_clu = len(clusters)
     # layers: the k-th membership of each cell -> layer k, so within a layer a cell has
     # at most one cluster (-1 = none) and the bincount accumulation stays vectorised
-    n_layers = max(len(cs) for cs in memberships.values())
+    n_layers = max((len(memberships.get(b, [])) for b in barcodes), default=0)
     layers = np.full((n_layers, n_cells), -1, dtype=np.int32)
     for j, b in enumerate(barcodes):
         for k, c in enumerate(memberships.get(b, [])):
@@ -124,8 +99,63 @@ def compute_expression(project: str, cfg: dict):
             flat = g[keep] * n_clu + k[keep]
             S += np.bincount(flat, weights=w[keep], minlength=n_genes * n_clu)
             N += np.bincount(flat, minlength=n_genes * n_clu)
-    S = S.reshape(n_genes, n_clu)
-    N = N.reshape(n_genes, n_clu)
+    cells = {b for j, b in enumerate(barcodes) if (layers[:, j] >= 0).any()}
+    return {"fbgn": fbgn, "symbol": symbol, "clusters": clusters, "cluster_size": cluster_size,
+            "S": S.reshape(n_genes, n_clu), "N": N.reshape(n_genes, n_clu), "cells": cells}
+
+
+def compute_expression(project: str, cfg: dict):
+    """Return (rows, counts, meta).
+
+    rows: list of (cluster_vfbseq_id, cluster_label, fbgn, symbol, level, extent)
+          for cluster x gene with extent > cutoff, sorted by (label, fbgn).
+    counts: list[ClusterCount] per cluster.
+    meta: dict with n_genes, n_cells, cutoff, normalisation.
+    """
+    acc = cfg["dataset"]["accession"]
+    subset = cfg["annotations"].get("subset", "main")
+    label_col = cfg["annotations"]["label_column"]
+    ex = cfg["expression"]
+    cutoff = float(ex.get("extent_cutoff", 0.2))
+    cache = REPO_ROOT / ".cache"
+
+    # cell -> cluster(s). Default: one cluster per cell from the metadata label column.
+    # `expression.membership_file` (barcode<TAB>cluster, in .cache) instead allows a
+    # cell to belong to clusters of several (overlapping) clusterings.
+    memberships: dict[str, list[str]] = {}
+    if ex.get("membership_file"):
+        with gzip.open(cache / ex["membership_file"], "rt") as fh:
+            for r in csv.DictReader(fh, delimiter="\t"):
+                memberships.setdefault(r["barcode"], []).append(r["cluster"])
+    else:
+        # the per-cell id column must match the matrix barcodes file (default
+        # "barcode"; e.g. Davie 2018 needs the sample-suffixed "new_barcode").
+        memberships = _label_memberships(cache / cfg["annotations"]["source_file"],
+                                         cfg["annotations"].get("barcode_column", "barcode"),
+                                         label_col, prefix=cfg["annotations"].get("label_prefix", ""))
+    parts = [_accumulate(cache / ex["matrix_file"], cache / ex["features_file"],
+                         cache / ex["barcodes_file"], memberships)]
+    # further matrices (`expression.extra_parts`, e.g. a separately clustered early
+    # dataset): same genes, own cells; cluster labels get the part's label_prefix
+    for part in ex.get("extra_parts", []):
+        pm = _label_memberships(cache / part["metadata_file"],
+                                cfg["annotations"].get("barcode_column", "barcode"),
+                                label_col, prefix=part.get("label_prefix", ""))
+        parts.append(_accumulate(cache / part["matrix_file"], cache / part["features_file"],
+                                 cache / part["barcodes_file"], pm))
+    fbgn, symbol = parts[0]["fbgn"], parts[0]["symbol"]
+    for p in parts[1:]:
+        if p["fbgn"] != fbgn:
+            raise SystemExit("expression parts have different feature lists; cannot combine")
+    n_genes = len(fbgn)
+    clusters = [c for p in parts for c in p["clusters"]]
+    if len(set(clusters)) != len(clusters):
+        raise SystemExit("cluster labels repeat across expression parts; set a label_prefix")
+    cidx = {c: i for i, c in enumerate(clusters)}
+    cluster_size = np.concatenate([p["cluster_size"] for p in parts])
+    S = np.concatenate([p["S"] for p in parts], axis=1)
+    N = np.concatenate([p["N"] for p in parts], axis=1)
+    n_cells = len(set().union(*(p["cells"] for p in parts)))
     with np.errstate(divide="ignore", invalid="ignore"):
         extent = N / cluster_size[None, :]
         level = np.where(N > 0, 1e6 * S / N, 0.0)
@@ -159,7 +189,7 @@ def compute_expression(project: str, cfg: dict):
     dataset_total_gene_count = int((N > 0).any(axis=1).sum())
     dataset_filtered_gene_count = int((extent > cutoff).any(axis=1).sum())
 
-    meta = {"n_genes": n_genes, "n_cells": int((layers >= 0).any(axis=0).sum()), "cutoff": cutoff,
+    meta = {"n_genes": n_genes, "n_cells": n_cells, "cutoff": cutoff,
             "normalisation": ex.get("normalisation", "CPM"),
             "dataset_total_gene_count": dataset_total_gene_count,
             "dataset_filtered_gene_count": dataset_filtered_gene_count}

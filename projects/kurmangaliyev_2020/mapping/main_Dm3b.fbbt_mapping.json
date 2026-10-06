@@ -1,0 +1,42 @@
+{
+  "cluster_label": "main_Dm3b",
+  "working_definition": "Dm3b is a transcriptomically defined subtype of Dm3 neurons in the Kurmangaliyev 2020 visual system atlas (GSE156455). Dm3 neurons are distal-medulla, amacrine-like, multicolumnar glutamatergic interneurons arborising around medulla layer M3. The atlas resolved Dm3 into two subtypes (Dm3a, Dm3b) by mutually exclusive marker expression; the specific discriminating markers are dataset-defined and not detailed in the report.",
+  "searches_performed": [
+    "Dm3 neuron",
+    "Dm3p neuron",
+    "Dm3b neuron",
+    "distal medullary amacrine neuron Dm3"
+  ],
+  "best_match": {
+    "fbbt_term": "distal medullary amacrine neuron Dm3",
+    "fbbt_id": "FBbt:00003770",
+    "fbbt_definition": "Distal medullary wide-field amacrine neuron whose cell body is located in the cell body rind of the medulla. It projects asymmetrically along layers M2 and M3A forming mixed morphology arborizations (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). The arborization is proximal to that of Dm15 in M2 and distal to Dm4, Dm12 and Dm20 in M3B. Its arbor has a distinct narrow and elongated shape, covering one column wide and 10 columns long. The arbors overlap significantly between cells, aligning with rows of medulla columns, and extending in one of two orthogonal orientations. It is a glutamatergic neuron (Raghu and Borst, 2011). There are two subtypes with different dendrite orientation, synaptic partners and gene expression (Ozel et al., 2021).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt does contain a 'distal medullary amacrine neuron Dm3b' (FBbt:00052304), but that subtype is defined by connectome-derived criteria from Ozel et al. 2021: posterior-dorsally oriented dendrites and expression of the transcription factor bi. The atlas cluster Dm3b is a transcriptomic subtype distinguished by mutually exclusive marker expression in Kurmangaliyev 2020; the report does not specify which markers define Dm3b vs Dm3a. Because the basis for the a/b split in the atlas may not be identical to the a/b split in FBbt (which is connectome-derived from a different study), an exact match to FBbt:00052304 cannot be confirmed. The parent term FBbt:00003770 (distal medullary amacrine neuron Dm3) is the safe broad match: the cluster IS-A Dm3 neuron, with subtype-level resolution that FBbt:00003770 does not capture. If subsequent analysis confirms the atlas Dm3b discriminating markers include bi (or posterior-dorsal dendrite orientation), the match could be upgraded to exact match against FBbt:00052304.",
+  "other_candidates": [
+    {
+      "fbbt_term": "distal medullary amacrine neuron Dm3b",
+      "fbbt_id": "FBbt:00052304",
+      "fbbt_definition": "Dm3 neuron with posterior-dorsally oriented dendrites (Ozel et al., 2021). It can be distinguished from Dm3a based on its expression of bi (Ozel et al., 2021).",
+      "reason_rejected": "FBbt Dm3b is defined by connectome-derived criteria (dendrite orientation, bi expression) from Ozel et al. 2021, a different study from the atlas. The Kurmangaliyev 2020 Dm3b subtype is defined by transcriptomic marker expression whose identity is not specified in the report, so identity with FBbt Dm3b cannot be confirmed. Exact match would require verification that the atlas discriminating marker aligns with bi or dendrite orientation. Retained as a strong candidate for upgrade upon curator review."
+    },
+    {
+      "fbbt_term": "distal medullary amacrine neuron Dm3a",
+      "fbbt_id": "FBbt:00052303",
+      "fbbt_definition": "Dm3 neuron with posterior-ventrally oriented dendrites (Ozel et al., 2021). It can be distinguished from Dm3b based on its lack of bi expression (Ozel et al., 2021).",
+      "reason_rejected": "This is the complementary Dm3 subtype (not Dm3b). Rejected because the cluster is labelled Dm3b, not Dm3a, and FBbt Dm3a is the subtype lacking bi expression with posterior-ventrally oriented dendrites."
+    }
+  ],
+  "recommendation": "Retain the broad match to the parent FBbt:00003770 (distal medullary amacrine neuron Dm3). Curator reviewed the Ozel et al. 2021 Dm3a/Dm3b subtype definitions (dendrite orientation, bi expression) and found no evidence that the Kurmangaliyev 2020 transcriptomic Dm3b cluster corresponds to the Ozel Dm3b subtype, so the specific FBbt:00052304 term is NOT assigned.",
+  "new_term_needed": false,
+  "verification_needed": false,
+  "manual_edit": {
+    "by": "curator",
+    "date": "2026-09-15",
+    "change": "verification_needed true -> false; retain broad match to parent FBbt:00003770 (not FBbt:00052304)",
+    "reason": "No evidence that the Kurmangaliyev 2020 Dm3b transcriptomic subtype corresponds to the Ozel et al. 2021 Dm3b subtype (the source of FBbt:00052304). The a/b split here is dataset-specific and cannot be equated with the connectome-derived FBbt subtypes, so the parent Dm3 term is the honest assignment."
+  }
+}

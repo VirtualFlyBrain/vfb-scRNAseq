@@ -1,0 +1,35 @@
+{
+  "cluster_label": "main_Tm29",
+  "working_definition": "Tm29 is a transmedullary columnar neuron of the adult Drosophila optic lobe. It is primarily postsynaptic in approximately 5 columns of medulla layer M6, with minor arborizations in M3-M8, and crosses the second optic chiasma to form mixed pre- and post-synapses in approximately 3 columns of lobula layer 5B. It is glutamatergic and belongs to the adult transmedullary CB3851 group (with Tm39 and Tm40), a Notch OFF hemilineage neuron born during the Erm/Ey temporal window.",
+  "searches_performed": [
+    "searchClasses fbbt 'Tm29'",
+    "searchClasses fbbt 'transmedullary neuron Tm29'",
+    "searchClasses fbbt 'transmedullary neuron'"
+  ],
+  "best_match": {
+    "fbbt_term": "transmedullary neuron Tm29",
+    "fbbt_id": "FBbt:00049916",
+    "fbbt_definition": "Transmedullary neuron that receives most of its input in around 5 columns of medulla layer M6, where it also has a small number of presynapses (Nern et al., 2025). It also has a small amount of arborization in the rest of M3-M8 (Nern et al., 2025). It crosses the second optic chiasm and has mixed pre- and post-synapses in around 3 columns of lobula layer 5B (Nern et al., 2025). It is glutamatergic (Davis et al., 2020). There are around 170-270 of these cells per hemisphere (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The cluster label 'Tm29' directly names a well-characterised anatomical cell type, and FBbt:00049916 is the canonical term for that exact type. The FBbt record (label: 'transmedullary neuron Tm29') is not obsolete, and its definition is fully concordant with the cluster description: transmedullary columnar neuron, primary postsynaptic input in approximately 5 columns of medulla M6 with minor arborization in M3-M8, crosses the second optic chiasma, mixed pre- and post-synapses in approximately 3 columns of lobula layer 5B, and glutamatergic identity (Davis et al., 2020). All defining anatomical and neurochemical features of the cluster are covered by the FBbt term, and the FBbt term introduces no contradictory properties.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult transmedullary CB3851 neuron",
+      "fbbt_id": "FBbt:20007266",
+      "fbbt_definition": "Cell type from Schlegel et al. (2024), based on FlyWire v783 (FAFB) data (Dorkenwald et al., 2024; Schlegel et al., 2024), two of three (Tm29, Tm39, Tm40) proposed subtypes identified at light level by Nern et al. (2025). Adult transmedullary neuron with its soma distal to the medulla (Nern et al., 2025). It is mainly postsynaptic, but also has presynapses, in around 5 columns of the medulla, with arbors mainly in M6, but also other layers from M3-M8 (Nern et al., 2025). It crosses the second optic chiasm and has mixed pre- and post-synapses in around 3 columns of lobula layer 5 (Nern et al., 2025). There are approximately 370-550 of these cells per hemisphere (Nern et al., 2025).",
+      "reason_rejected": "Valid parent of Tm29 (the CB3851 group encompasses Tm29, Tm39 and Tm40 together), but more general than the cluster which resolves specifically to the Tm29 subtype. The specific named term FBbt:00049916 is the correct level of match."
+    },
+    {
+      "fbbt_term": "immature transmedullary neuron Tm29",
+      "fbbt_id": "FBbt:00052328",
+      "fbbt_definition": "Immature form of the transmedullary neuron Tm29 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Erm/Ey temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Describes the immature (developing) form of Tm29, not the adult neuron. The Kurmangaliyev 2020 atlas predominantly captures adult or late-pupal differentiating cells; the cluster label 'Tm29' refers to the adult cell type, best represented by FBbt:00049916."
+    }
+  ],
+  "recommendation": "Map cluster Tm29 to FBbt:00049916 (transmedullary neuron Tm29) with skos:exactMatch. The label, transmedullary columnar morphology, medulla M6 primary input zone (with minor M3-M8 arborization), lobula layer 5B mixed synaptic terminal, glutamatergic neurotransmitter identity, and cell count are all concordant between the cluster description and the FBbt definition. No new term is needed and no curator verification is required beyond routine review.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

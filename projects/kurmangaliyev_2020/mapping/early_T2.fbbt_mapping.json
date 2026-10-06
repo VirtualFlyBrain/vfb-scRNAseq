@@ -1,0 +1,33 @@
+{
+  "cluster_label": "early_T2",
+  "working_definition": "Early-dataset (0-24h APF) cluster named 'T2' by the authors (Kurmangaliyev et al. 2020, GSE156455 metadata_early subtype); composed primarily of immature T2 cells of the developing optic lobe/eye.",
+  "searches_performed": [
+    "early_T2",
+    "immature T2",
+    "T2",
+    "immature adult optic lobe neuron",
+    "immature T neuron",
+    "immature columnar neuron",
+    "photoreceptor precursor"
+  ],
+  "best_match": {
+    "fbbt_term": "immature T neuron",
+    "fbbt_id": "FBbt:00059279",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T neuron (Hormann et al., 2020).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Authors name this early cluster T2. FBbt has no immature T2 term; nearest parent with an immature form is immature T neuron (precursor to adult T neurons, which include T2).",
+  "other_candidates": [
+    {
+      "fbbt_term": "T2 neuron",
+      "fbbt_id": "FBbt:00003728",
+      "fbbt_definition": "T neuron with its soma posteriorly adjacent to the gap between the medulla and lobula plate and a cell body fiber that projects along the proximal surface of the medulla before branching in the second optic chiasm (Fischbach and Dittrich, 1989; Shinomiya et al., 2019). One branch projects into a medulla column, where it forms a bushy, fine, arborization in medulla layer M9 and then projects through the rest of the medulla column, forming fine arborizations in M1, M2 and M5. The other branch forms a terminal arborization in lobula layer 3 that is much wider than a single column and has bleb-type terminal branches. It seems to be capable of cholinergic and GABAergic neurotransmission.",
+      "reason_rejected": "Mature/adult term; cells are 0-24h APF immature neurons."
+    }
+  ],
+  "recommendation": "Broad match to immature T neuron; request immature T2 term only if fine granularity is wanted.",
+  "new_term_needed": false,
+  "verification_needed": false
+}
