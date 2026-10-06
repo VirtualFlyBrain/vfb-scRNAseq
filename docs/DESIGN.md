@@ -521,7 +521,12 @@ some are no longer current FlyBase genes. `scripts/update_gene_ids.py` queries F
 Chado (`psql -h chado.flybase.org -U flybase flybase`; a current gene's FlyBase
 dbxrefs list its own FBgn as current and the retired FBgns it absorbed as non-current)
 and writes a committed `projects/<p>/gene_id_map.tsv`, which the expression build
-applies (`expression.gene_id_map`) as the matrix streams:
+applies (`expression.gene_id_map`) as the matrix streams. The table header records
+the FlyBase release (read from the flybase.org homepage, e.g. "FB2026_03, released
+September 17, 2026" — the website and Chado are updated together) and Chado's
+last-modified date (the release's data freeze).
+
+Mapping rules:
 
 - **secondary** id of one current gene → that gene (and its current symbol);
 - **merge** (several input ids → one current gene) → counts summed per cell before
