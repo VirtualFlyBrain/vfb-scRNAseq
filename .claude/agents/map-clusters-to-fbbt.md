@@ -14,6 +14,41 @@ Fly cluster labels are often marker- or driver-based ("Tdc2 neurons",
 harder on the report context and synonym strategies, and expect a lower
 clean-match rate than for well-curated label sets.
 
+## Curation rules (these override anything a report suggests)
+
+The repo's general curation rules (`docs/DESIGN.md` → *General curation rules*):
+
+1. **The authors' typing is taken at face value.** Map each cluster to what the
+   authors say it is (GEO metadata label, paper, supplementary tables). Do NOT
+   downgrade, hedge or flag on the basis of your own (or the report's) reading of
+   marker lists, cell counts, possible contamination/doublets, dissection details,
+   or which other clusters a sub-cluster's cells came from. Reports are background
+   evidence; their "Mapping notes" are not decisions.
+2. **Relation is *composed primarily of*** (RO:0002473): not every cell need be of
+   the annotated type.
+3. **Pick the term for exactly the type the authors name.** A single named type
+   ("Pm4", "Tm5c", "C2") → that type's term, exact match. A grouped call
+   ("Pm1/Pm2", "L1/L2/L3/L4/L5", "Octopaminergic-Tyraminergic", unsplit "T4.T5") →
+   the most specific COMMON PARENT that is a true ancestor of every member (check
+   ancestors in OLS with a large page size), broad match, members listed in
+   `other_candidates`. A remainder label (cells of a class not resolved to a
+   subtype) → the class term. A group named for two co-expressed markers may be
+   mapped to both classes (`best_match` + `additional_matches`) when FBbt has a term
+   for each (e.g. "Mip/ITP" → Mip neuron + ITP neuron).
+4. **Stage-appropriate terms.** Adult data → prefer the adult-specific variant
+   ("adult X") where FBbt has one. Developing tissue (e.g. 0-24h APF) → the
+   `immature X` term for the named type; if none exists, the immature form of the
+   nearest parent (broad), with the mature term in `other_candidates`.
+5. **Flags.** `verification_needed` only when the FBbt term for the named type is a
+   subtype defined from a different study/modality whose equivalence to the
+   authors' usage is genuinely unclear — NOT for disagreements between the
+   authors' own sources (those are flagged per cluster by the project pipeline).
+   `new_term_needed` only when FBbt has nothing adequate at any level; new terms
+   from gene expression alone are the exception, and no request is made without
+   curator sign-off.
+6. **No adequate term → `best_match: null`.** Do not force a generic fallback
+   (the pipeline holds such clusters).
+
 ## Input
 
 1. **report_path**: Path to the cluster's cell type report markdown file
@@ -132,7 +167,8 @@ is pipeline-generated, so it must omit `manual_edit` entirely.
 
 ## Quality Rules
 
-- **Precision over recall**: an honest broad match beats a forced exact one.
+- **Precision over recall**: an honest broad match beats a forced exact one —
+  but "honest" means at the level the AUTHORS named, not a level you infer.
 - **Definition is king**: a right-looking label with the wrong definition is NOT
   a match; a different label with a matching definition IS.
 - **Check for obsolescence**: never return an obsolete FBbt term.
@@ -145,5 +181,9 @@ is pipeline-generated, so it must omit `manual_edit` entirely.
     more appropriate. Never reject an immature term solely because "it's an adult
     atlas" unless the data really are adult.
 - **One best match**: exactly one (or null); the rest go in `other_candidates`.
+  The only exception is rule 3's two-marker groups, where further classes go in
+  `additional_matches` (same shape as `best_match`).
+- **Write each JSON with the Write tool**, not via a shell script, so the
+  `check_fbbt_mapping.py` hook validates it (CI re-checks every file anyway).
 - **You propose, a human disposes**: set `confidence` honestly — these feed a
   reviewed `mapping.tsv`, not a direct ontology commit.
