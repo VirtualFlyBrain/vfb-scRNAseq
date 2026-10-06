@@ -5,6 +5,14 @@ description: Build and query a local ASTA-shape snippet index for an atlas proje
 
 # local-paper-index
 
+**Where it runs (vfb-scRNAseq):** the commands below are run from a sibling clone of
+[Atlas-reporter](https://github.com/Cellular-Semantics/Atlas-reporter) (formerly
+atlas-chat), pinned to commit `2acd38e`, with this repo's project symlinked into its
+`projects/` — e.g. `cd ~/git/Atlas-reporter && uv sync --extra local-index &&
+ln -s <repo>/projects/<name> projects/<name>`. See "Report generation & cost model" in
+`docs/DESIGN.md`. For a single paper, `add --project <name> --doi <DOI> --jats
+<file> --role atlas` (or `--pdf`) is enough; the subatlas discovery flow is optional.
+
 A project's `local_index/` is a **corpus** of one or more papers:
 
 - Exactly one `role: atlas` paper — the DOI in `cell_type_annotations.json.source.doi`.
