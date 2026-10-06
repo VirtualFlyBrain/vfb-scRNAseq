@@ -267,6 +267,15 @@ is read through `src/vfb_scrnaseq/project_config.py`. Config sections:
 - **`prior_mapping`** — optional TSV of a previous load's FBbt terms per cluster;
   `collate_mapping.py` adds `prior_fbbt_*` / `prior_agrees` columns as a cross-check.
   Never an input to the mapping itself.
+- **`annotations.extra_clusterings`** — further author clusterings in other GEO
+  metadata files (`{id, name, source_file, label_prefix}`), ingested by
+  `build_annotations_from_geo.py` as entries of that Clustering with prefixed labels
+  (e.g. Kurmangaliyev's early dataset → `early_L1`); label rules apply to the authors'
+  own cluster id. The main clustering can be prefixed and named the same way
+  (`annotations.label_prefix` / `clustering_id` / `clustering_name`, e.g. `main_L1`). **`unidentified.clustering_class_anchors.<clustering>`** overrides the
+  class anchors for one clustering (e.g. immature anchors for an early-stage one).
+  **`expression.extra_parts`** adds further matrices (same genes) to the expression
+  stats, with the matching `label_prefix`.
 - **`annotations.review_columns`** — extra per-cluster fields from
   `cell_type_annotations.json` shown after the cluster key in `mapping.tsv` (e.g.
   Davie's clustering, the authors' cluster id, the Table S2 call and any conflict).
@@ -565,8 +574,7 @@ Either way, mismatches are **flagged for review**, never silently resolved.
 type_mapping / term-request / provenance / samples file through the same
 `.claude/hooks/check_*.py` validators Claude Code uses on write (hand edits otherwise
 bypass them); and `scripts/check_mapping_tsv.py`, which fails if a `mapping.tsv` no
-longer matches what `collate_mapping.py` would produce (kurmangaliyev_2020 is skipped
-until it is re-collated).
+longer matches what `collate_mapping.py` would produce.
 
 `.github/workflows/fbbt-release-check.yml` runs weekly (and on demand).
 `scripts/check_fbbt_release.py` compares OLS's current FBbt release with the one
@@ -575,6 +583,29 @@ every project's FBbt terms (current, non-obsolete, label unchanged). On success 
 record is updated and committed by the workflow; on failure the job fails and the
 record is kept, so the next run re-checks. Not run on PRs: it needs OLS, which is
 sometimes unavailable.
+
+### 2026-10 regeneration under the general curation rules
+
+The main dataset already had one row per author cluster: the paper's clustering
+"revealed 196 transcriptionally distinct cell populations", which are the 196
+`subtype` values; `type` only groups them (T4/T5 matched eight clusters; Dm3 and Tm9
+two each). Its clusters, mappings and ids are unchanged; its labels now carry the
+clustering prefix (`main_L1`, alongside `early_L1`), with the registry keys renamed so
+every cluster kept its VFBseq id. The DGRP samples stay as the GEO-based pooled
+samples (`DGRP_All_A/B`): the per-animal samples recovered by demultiplexing (3
+animals × 9 timepoints × 2 rounds) are not modelled separately — curator decision;
+clusters span timepoints and genotypes regardless. Added:
+
+- **The early dataset (0–24h APF)** — the authors' separate clustering of 0/12/24h
+  APF cells (GEO `metadata_early` / `matrix_early`; 24h cells are in both datasets) —
+  as 110 Clusters of the existing `early` Clustering (`early_<cluster>`): 28 named
+  clusters mapped to **immature** FBbt terms (these are developing neurons; unsplit
+  T4.T5 / Dm3 / Tm9 / R1.6 / R7.8 map to the immature group or nearest parent), 20
+  numbered N/G clusters with early anchors (N → *immature adult optic lobe neuron*;
+  G → *glial cell*, as FBbt has no immature optic-lobe glia term), 62 held (class `x`
+  = unresolved, and class C).
+- **Cross-check against the old FlyBase/SCEA load (FBlc0006237)** —
+  `prior_mapping_FBlc0006237.tsv`; 183 of 184 comparable main clusters agree.
 
 ## Second project: Davie 2018
 
