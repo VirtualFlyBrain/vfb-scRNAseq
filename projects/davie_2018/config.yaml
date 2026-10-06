@@ -120,8 +120,3 @@ annotations:
 unidentified:
   rule: none
   hold_unidentified: true
-
-# The FBbt assignments of the old FlyBase/SCEA load (FBlc0006090), crosswalked to
-# these labels (matched on a cluster's author type); used only to cross-check the new mappings (collate_mapping flags
-# disagreements). Not an input to the mapping itself.
-prior_mapping: prior_mapping_FBlc0006090.tsv
