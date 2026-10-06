@@ -4,7 +4,9 @@ name: FBbt release check
 # checks/fbbt_last_checked.json, verify every project's FBbt terms against it
 # (current, non-obsolete, label unchanged). On success the record is updated and
 # committed; on failure the job fails and the record is left alone, so the next
-# run re-checks.
+# run re-checks. On a new release it also follows up the FBbt term requests in
+# checks/pending_fbbt_requests.json: any whose FBbt issue was closed on or before
+# the release date gets a reminder issue in this repo (clusters to re-map).
 
 on:
   schedule:
@@ -18,6 +20,7 @@ on:
 
 permissions:
   contents: write   # to commit the updated record
+  issues: write     # to open re-mapping reminders for released term requests
 
 jobs:
   fbbt:
@@ -34,13 +37,17 @@ jobs:
 
       - name: Check for a new FBbt release and verify mappings
         id: fbbt
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: uv run python scripts/check_fbbt_release.py ${{ inputs.force && '--force' || '' }}
 
-      - name: Commit the updated record
-        if: steps.fbbt.outputs.updated == 'true'
+      - name: Commit the updated record / pending requests
+        # also after a failed verification, so released term requests are not re-reported
+        if: always() && steps.fbbt.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add checks/fbbt_last_checked.json
-          git commit -m "Record verified FBbt release $(jq -r .version checks/fbbt_last_checked.json)"
+          git add checks/
+          git commit -m "FBbt release check: $(jq -r .version checks/fbbt_last_checked.json)"
           git push

@@ -199,6 +199,10 @@ emits References + Term label(s) as the deliverable, plus an optional,
 / markers / draft definition / synonyms) drawn from the report, never presented
 as authoritative.
 
+When a request is opened, add it to `checks/pending_fbbt_requests.json` (issue,
+labels, affected clusters, `status: pending`) so the weekly FBbt release check opens
+a re-mapping reminder once FBbt releases the terms (see *Continuous integration*).
+
 ## Report generation & cost model
 
 Per-cluster cell-type reports (the descriptive evidence that feeds FBbt mapping)
@@ -581,7 +585,15 @@ longer matches what `collate_mapping.py` would produce.
 recorded in `checks/fbbt_last_checked.json` and only when it is newer re-verifies
 every project's FBbt terms (current, non-obsolete, label unchanged). On success the
 record is updated and committed by the workflow; on failure the job fails and the
-record is kept, so the next run re-checks. Not run on PRs: it needs OLS, which is
+record is kept, so the next run re-checks.
+
+The same run follows up **pending FBbt term requests** (`checks/pending_fbbt_requests.json`:
+FBbt issue, requested labels, clusters waiting on them). A request whose FBbt issue was
+closed on or before the new release's date is taken to be in that release: the job
+opens a reminder issue in this repo listing the clusters to re-map (with the new term
+ids where the requested labels are found in the release, and the closing reason if not
+"completed"), and marks the request `released` so it is reported once. A request closed
+after the release waits for the next one. Not run on PRs: it needs OLS, which is
 sometimes unavailable.
 
 ### 2026-10 regeneration under the general curation rules
