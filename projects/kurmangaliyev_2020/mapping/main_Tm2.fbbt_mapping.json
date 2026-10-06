@@ -1,0 +1,29 @@
+{
+  "cluster_label": "main_Tm2",
+  "working_definition": "Tm2 is a narrow-field transmedullary columnar neuron of the adult Drosophila optic lobe. Its cell body lies in the distal cortex of the medulla; it receives dendritic input principally in medulla layer M2 (with arborizations in M1 and M4) from lamina monopolar neuron L2, and projects across the second optic chiasma to presynaptic terminals in lobula layer 2. It is cholinergic, unicolumnar (one cell per optic column), and is a core component of the OFF motion-detection pathway. It is one of the 13 medulla neurons with mapped connectome data in the Kurmangaliyev 2020 atlas.",
+  "searches_performed": [
+    "searchClasses fbbt 'Tm2'",
+    "searchClasses fbbt 'transmedullary neuron'",
+    "searchClasses fbbt 'Tm2 medulla lobula columnar'"
+  ],
+  "best_match": {
+    "fbbt_term": "transmedullary neuron Tm2",
+    "fbbt_id": "FBbt:00003790",
+    "fbbt_definition": "The neurotransmitter has been assessed by co-labelling cells with a P{Cha-GAL4.7.4} driver (FBtp0014830) and an anti-ChAT antibody (Varija Raghu et al., 2011), by using a Cha-GAL4.DBD (FBtp002350) (Gao et al., 2008) and by neurotransmitter was assessed by single cell RT-PCR measurement of choline acetyltransferase (FBgn0000303) expression (Takemura et al., 2011). Connectivity in the medulla was extrapolated from serial EM of 3 columns from a single sample (Takemura et al., 2008) or from 7 columns (Takemura et al., 2013). Connectivity in the lobula was assessed by serial section electron microscopy of a single column (Shinomiya et al., 2014).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The cluster label 'Tm2' directly names a well-characterised anatomical cell type, and FBbt:00003790 is the canonical term for that exact type. The FBbt record (label: 'transmedullary neuron Tm2') is not obsolete and its provenance notes are fully concordant with the cluster description: both reference the same cholinergic neurotransmitter evidence (Cha-GAL4 / anti-ChAT, Gao et al. 2008, Varija Raghu et al. 2011) and the same medulla and lobula connectivity datasets (Takemura et al. 2008, 2013; Shinomiya et al. 2014). The parent class FBbt:00003788 ('transmedullary neuron') is defined as a columnar optic-lobe neuron with cell body in the distal medulla cortex that projects through the medulla and second optic chiasma into the lobula, precisely matching the cluster morphology. No qualifying features of the cluster fall outside the FBbt term, and the FBbt term introduces no contradictory properties.",
+  "other_candidates": [
+    {
+      "fbbt_term": "transmedullary neuron",
+      "fbbt_id": "FBbt:00003788",
+      "fbbt_definition": "An intrinsic columnar neuron of the optic lobe whose cell body lies in the distal cortex of the medulla and that projects through the medulla and optic chiasm into the lobula. All neurons arborize in the lobula and most, but not all, in the medulla (Fischbach and Dittrich, 1989).",
+      "reason_rejected": "Valid parent class of Tm2 but more general; the cluster resolves to a specific named type (Tm2) so the parent is redundant as best match."
+    }
+  ],
+  "recommendation": "Map cluster Tm2 to FBbt:00003790 (transmedullary neuron Tm2) with skos:exactMatch. The label, cholinergic neurotransmitter identity, connectivity evidence sources, and columnar optic-lobe morphology are all concordant. No new term is needed and no curator verification is required beyond routine review.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

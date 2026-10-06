@@ -16,13 +16,8 @@
 @prefix vfb: <http://virtualflybrain.org/reports/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-VFBseq:00000046 a FBcv:0009002 ;
-    rdfs:label "GSE156455 early clustering" ;
-    neo_property:nodeLabel "Clustering" ;
-    dcterms:source VFBseq:00000001 .
-
 VFBseq:00000047 a FBcv:0009003 ;
-    rdfs:label "Tm3 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Tm3 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 3338 ;
     neo_custom:filtered_gene_count 2536 ;
     neo_custom:total_gene_count 11538 ;
@@ -32,7 +27,7 @@ VFBseq:00000047 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000048 a FBcv:0009003 ;
-    rdfs:label "N1 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N1 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 3119 ;
     neo_custom:filtered_gene_count 2505 ;
     neo_custom:total_gene_count 11446 ;
@@ -42,7 +37,7 @@ VFBseq:00000048 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000049 a FBcv:0009003 ;
-    rdfs:label "Mi9 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Mi9 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 3071 ;
     neo_custom:filtered_gene_count 2537 ;
     neo_custom:total_gene_count 11321 ;
@@ -52,7 +47,7 @@ VFBseq:00000049 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000050 a FBcv:0009003 ;
-    rdfs:label "Dm3a cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Dm3 cluster Dm3a (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2953 ;
     neo_custom:filtered_gene_count 2277 ;
     neo_custom:total_gene_count 11313 ;
@@ -62,7 +57,7 @@ VFBseq:00000050 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000051 a FBcv:0009003 ;
-    rdfs:label "TmY5a cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "TmY5a cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2905 ;
     neo_custom:filtered_gene_count 2756 ;
     neo_custom:total_gene_count 11342 ;
@@ -72,7 +67,7 @@ VFBseq:00000051 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000052 a FBcv:0009003 ;
-    rdfs:label "Dm2 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Dm2 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2879 ;
     neo_custom:filtered_gene_count 2240 ;
     neo_custom:total_gene_count 11224 ;
@@ -82,7 +77,7 @@ VFBseq:00000052 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000053 a FBcv:0009003 ;
-    rdfs:label "Mi4 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Mi4 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2842 ;
     neo_custom:filtered_gene_count 2781 ;
     neo_custom:total_gene_count 11437 ;
@@ -92,7 +87,7 @@ VFBseq:00000053 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000054 a FBcv:0009003 ;
-    rdfs:label "Tm20 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Tm20 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2839 ;
     neo_custom:filtered_gene_count 2350 ;
     neo_custom:total_gene_count 11294 ;
@@ -102,7 +97,7 @@ VFBseq:00000054 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000055 a FBcv:0009003 ;
-    rdfs:label "Dm3b cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Dm3 cluster Dm3b (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2835 ;
     neo_custom:filtered_gene_count 2249 ;
     neo_custom:total_gene_count 11235 ;
@@ -112,7 +107,7 @@ VFBseq:00000055 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000056 a FBcv:0009003 ;
-    rdfs:label "C3 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "C3 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2816 ;
     neo_custom:filtered_gene_count 2743 ;
     neo_custom:total_gene_count 11314 ;
@@ -122,7 +117,7 @@ VFBseq:00000056 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000057 a FBcv:0009003 ;
-    rdfs:label "T4d cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "T4.T5 cluster T4d (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2731 ;
     neo_custom:filtered_gene_count 2265 ;
     neo_custom:total_gene_count 11226 ;
@@ -132,7 +127,7 @@ VFBseq:00000057 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000058 a FBcv:0009003 ;
-    rdfs:label "T2 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "T2 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2685 ;
     neo_custom:filtered_gene_count 2674 ;
     neo_custom:total_gene_count 11332 ;
@@ -142,7 +137,7 @@ VFBseq:00000058 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000059 a FBcv:0009003 ;
-    rdfs:label "T4a cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "T4.T5 cluster T4a (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2679 ;
     neo_custom:filtered_gene_count 2425 ;
     neo_custom:total_gene_count 11268 ;
@@ -152,7 +147,7 @@ VFBseq:00000059 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000060 a FBcv:0009003 ;
-    rdfs:label "L2 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "L2 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2641 ;
     neo_custom:filtered_gene_count 3666 ;
     neo_custom:total_gene_count 11581 ;
@@ -162,7 +157,7 @@ VFBseq:00000060 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000061 a FBcv:0009003 ;
-    rdfs:label "R1.6 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "R1.6 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2627 ;
     neo_custom:filtered_gene_count 3669 ;
     neo_custom:total_gene_count 11640 ;
@@ -172,7 +167,7 @@ VFBseq:00000061 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000062 a FBcv:0009003 ;
-    rdfs:label "C2 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "C2 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2624 ;
     neo_custom:filtered_gene_count 2550 ;
     neo_custom:total_gene_count 11147 ;
@@ -182,7 +177,7 @@ VFBseq:00000062 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000063 a FBcv:0009003 ;
-    rdfs:label "C16 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "C16 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2615 ;
     neo_custom:filtered_gene_count 3349 ;
     neo_custom:total_gene_count 11913 ;
@@ -191,7 +186,7 @@ VFBseq:00000063 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000064 a FBcv:0009003 ;
-    rdfs:label "Tm2 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Tm2 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2602 ;
     neo_custom:filtered_gene_count 2898 ;
     neo_custom:total_gene_count 11226 ;
@@ -201,7 +196,7 @@ VFBseq:00000064 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000065 a FBcv:0009003 ;
-    rdfs:label "Tm4 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Tm4 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2593 ;
     neo_custom:filtered_gene_count 2679 ;
     neo_custom:total_gene_count 11374 ;
@@ -211,7 +206,7 @@ VFBseq:00000065 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000066 a FBcv:0009003 ;
-    rdfs:label "N19 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N19 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2522 ;
     neo_custom:filtered_gene_count 2397 ;
     neo_custom:total_gene_count 11198 ;
@@ -221,7 +216,7 @@ VFBseq:00000066 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000067 a FBcv:0009003 ;
-    rdfs:label "T5c cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "T4.T5 cluster T5c (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2408 ;
     neo_custom:filtered_gene_count 2302 ;
     neo_custom:total_gene_count 11197 ;
@@ -231,7 +226,7 @@ VFBseq:00000067 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000068 a FBcv:0009003 ;
-    rdfs:label "L1 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "L1 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2375 ;
     neo_custom:filtered_gene_count 3467 ;
     neo_custom:total_gene_count 11315 ;
@@ -241,7 +236,7 @@ VFBseq:00000068 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000069 a FBcv:0009003 ;
-    rdfs:label "T3 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "T3 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2302 ;
     neo_custom:filtered_gene_count 2234 ;
     neo_custom:total_gene_count 11043 ;
@@ -251,7 +246,7 @@ VFBseq:00000069 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000070 a FBcv:0009003 ;
-    rdfs:label "T5b cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "T4.T5 cluster T5b (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2295 ;
     neo_custom:filtered_gene_count 2381 ;
     neo_custom:total_gene_count 11069 ;
@@ -261,7 +256,7 @@ VFBseq:00000070 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000071 a FBcv:0009003 ;
-    rdfs:label "Mi1 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Mi1 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2281 ;
     neo_custom:filtered_gene_count 3090 ;
     neo_custom:total_gene_count 11230 ;
@@ -271,7 +266,7 @@ VFBseq:00000071 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000072 a FBcv:0009003 ;
-    rdfs:label "L5 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "L5 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2273 ;
     neo_custom:filtered_gene_count 2904 ;
     neo_custom:total_gene_count 11100 ;
@@ -281,7 +276,7 @@ VFBseq:00000072 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000073 a FBcv:0009003 ;
-    rdfs:label "Mi15 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Mi15 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2243 ;
     neo_custom:filtered_gene_count 2178 ;
     neo_custom:total_gene_count 10997 ;
@@ -291,7 +286,7 @@ VFBseq:00000073 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000074 a FBcv:0009003 ;
-    rdfs:label "Tm1 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Tm1 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2228 ;
     neo_custom:filtered_gene_count 2957 ;
     neo_custom:total_gene_count 11244 ;
@@ -301,7 +296,7 @@ VFBseq:00000074 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000075 a FBcv:0009003 ;
-    rdfs:label "T4b cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "T4.T5 cluster T4b (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2180 ;
     neo_custom:filtered_gene_count 2365 ;
     neo_custom:total_gene_count 10948 ;
@@ -311,7 +306,7 @@ VFBseq:00000075 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000076 a FBcv:0009003 ;
-    rdfs:label "T5a cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "T4.T5 cluster T5a (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2177 ;
     neo_custom:filtered_gene_count 2421 ;
     neo_custom:total_gene_count 11097 ;
@@ -321,7 +316,7 @@ VFBseq:00000076 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000077 a FBcv:0009003 ;
-    rdfs:label "T5d cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "T4.T5 cluster T5d (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2108 ;
     neo_custom:filtered_gene_count 2323 ;
     neo_custom:total_gene_count 11003 ;
@@ -331,7 +326,7 @@ VFBseq:00000077 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000078 a FBcv:0009003 ;
-    rdfs:label "T2a cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "T2a cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 2015 ;
     neo_custom:filtered_gene_count 2574 ;
     neo_custom:total_gene_count 11006 ;
@@ -341,7 +336,7 @@ VFBseq:00000078 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000079 a FBcv:0009003 ;
-    rdfs:label "C32 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "C32 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1963 ;
     neo_custom:filtered_gene_count 2868 ;
     neo_custom:total_gene_count 11310 ;
@@ -350,7 +345,7 @@ VFBseq:00000079 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000080 a FBcv:0009003 ;
-    rdfs:label "N33 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N33 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1908 ;
     neo_custom:filtered_gene_count 2706 ;
     neo_custom:total_gene_count 11054 ;
@@ -360,7 +355,7 @@ VFBseq:00000080 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000081 a FBcv:0009003 ;
-    rdfs:label "N34 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N34 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1871 ;
     neo_custom:filtered_gene_count 2604 ;
     neo_custom:total_gene_count 10916 ;
@@ -370,7 +365,7 @@ VFBseq:00000081 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000082 a FBcv:0009003 ;
-    rdfs:label "N35 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N35 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1860 ;
     neo_custom:filtered_gene_count 2396 ;
     neo_custom:total_gene_count 10819 ;
@@ -380,7 +375,7 @@ VFBseq:00000082 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000083 a FBcv:0009003 ;
-    rdfs:label "L3 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "L3 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1820 ;
     neo_custom:filtered_gene_count 3005 ;
     neo_custom:total_gene_count 11004 ;
@@ -390,7 +385,7 @@ VFBseq:00000083 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000084 a FBcv:0009003 ;
-    rdfs:label "G37 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G37 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1812 ;
     neo_custom:filtered_gene_count 2923 ;
     neo_custom:total_gene_count 11228 ;
@@ -400,7 +395,7 @@ VFBseq:00000084 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000085 a FBcv:0009003 ;
-    rdfs:label "L4 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "L4 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1808 ;
     neo_custom:filtered_gene_count 2516 ;
     neo_custom:total_gene_count 10848 ;
@@ -410,7 +405,7 @@ VFBseq:00000085 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000086 a FBcv:0009003 ;
-    rdfs:label "N39 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N39 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1807 ;
     neo_custom:filtered_gene_count 2496 ;
     neo_custom:total_gene_count 10766 ;
@@ -420,7 +415,7 @@ VFBseq:00000086 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000087 a FBcv:0009003 ;
-    rdfs:label "TmY3 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "TmY3 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1802 ;
     neo_custom:filtered_gene_count 2911 ;
     neo_custom:total_gene_count 10989 ;
@@ -430,7 +425,7 @@ VFBseq:00000087 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000088 a FBcv:0009003 ;
-    rdfs:label "Dm8 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Dm8 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1800 ;
     neo_custom:filtered_gene_count 2516 ;
     neo_custom:total_gene_count 10854 ;
@@ -440,7 +435,7 @@ VFBseq:00000088 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000089 a FBcv:0009003 ;
-    rdfs:label "N42 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N42 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1797 ;
     neo_custom:filtered_gene_count 2161 ;
     neo_custom:total_gene_count 10714 ;
@@ -450,7 +445,7 @@ VFBseq:00000089 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000090 a FBcv:0009003 ;
-    rdfs:label "G43 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G43 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1789 ;
     neo_custom:filtered_gene_count 1991 ;
     neo_custom:total_gene_count 10462 ;
@@ -460,7 +455,7 @@ VFBseq:00000090 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000091 a FBcv:0009003 ;
-    rdfs:label "T1 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "T1 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1774 ;
     neo_custom:filtered_gene_count 3244 ;
     neo_custom:total_gene_count 10907 ;
@@ -470,7 +465,7 @@ VFBseq:00000091 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000092 a FBcv:0009003 ;
-    rdfs:label "Tm9a cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Tm9 cluster Tm9a (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1765 ;
     neo_custom:filtered_gene_count 2385 ;
     neo_custom:total_gene_count 10757 ;
@@ -480,7 +475,7 @@ VFBseq:00000092 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000093 a FBcv:0009003 ;
-    rdfs:label "C46 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "C46 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1761 ;
     neo_custom:filtered_gene_count 2964 ;
     neo_custom:total_gene_count 11437 ;
@@ -489,7 +484,7 @@ VFBseq:00000093 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000094 a FBcv:0009003 ;
-    rdfs:label "T4c cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "T4.T5 cluster T4c (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1727 ;
     neo_custom:filtered_gene_count 2324 ;
     neo_custom:total_gene_count 10692 ;
@@ -499,7 +494,7 @@ VFBseq:00000094 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000095 a FBcv:0009003 ;
-    rdfs:label "N48 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N48 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1681 ;
     neo_custom:filtered_gene_count 2377 ;
     neo_custom:total_gene_count 10847 ;
@@ -509,7 +504,7 @@ VFBseq:00000095 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000096 a FBcv:0009003 ;
-    rdfs:label "G49 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G49 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1603 ;
     neo_custom:filtered_gene_count 2362 ;
     neo_custom:total_gene_count 10673 ;
@@ -519,7 +514,7 @@ VFBseq:00000096 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000097 a FBcv:0009003 ;
-    rdfs:label "Dm10 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Dm10 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1494 ;
     neo_custom:filtered_gene_count 3090 ;
     neo_custom:total_gene_count 10827 ;
@@ -529,7 +524,7 @@ VFBseq:00000097 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000098 a FBcv:0009003 ;
-    rdfs:label "G51 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G51 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1437 ;
     neo_custom:filtered_gene_count 3194 ;
     neo_custom:total_gene_count 11114 ;
@@ -539,7 +534,7 @@ VFBseq:00000098 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000099 a FBcv:0009003 ;
-    rdfs:label "N52 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N52 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1412 ;
     neo_custom:filtered_gene_count 3041 ;
     neo_custom:total_gene_count 10780 ;
@@ -549,7 +544,7 @@ VFBseq:00000099 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000100 a FBcv:0009003 ;
-    rdfs:label "Tm5c cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Tm5c cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1400 ;
     neo_custom:filtered_gene_count 2671 ;
     neo_custom:total_gene_count 10607 ;
@@ -559,7 +554,7 @@ VFBseq:00000100 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000101 a FBcv:0009003 ;
-    rdfs:label "N54 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N54 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1392 ;
     neo_custom:filtered_gene_count 1914 ;
     neo_custom:total_gene_count 10486 ;
@@ -569,7 +564,7 @@ VFBseq:00000101 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000102 a FBcv:0009003 ;
-    rdfs:label "N55 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N55 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1321 ;
     neo_custom:filtered_gene_count 3318 ;
     neo_custom:total_gene_count 10939 ;
@@ -579,7 +574,7 @@ VFBseq:00000102 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000103 a FBcv:0009003 ;
-    rdfs:label "N56 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N56 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1316 ;
     neo_custom:filtered_gene_count 2945 ;
     neo_custom:total_gene_count 10697 ;
@@ -589,7 +584,7 @@ VFBseq:00000103 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000104 a FBcv:0009003 ;
-    rdfs:label "G57 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G57 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1271 ;
     neo_custom:filtered_gene_count 3240 ;
     neo_custom:total_gene_count 10625 ;
@@ -599,7 +594,7 @@ VFBseq:00000104 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000105 a FBcv:0009003 ;
-    rdfs:label "N58 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N58 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1240 ;
     neo_custom:filtered_gene_count 3527 ;
     neo_custom:total_gene_count 10873 ;
@@ -609,7 +604,7 @@ VFBseq:00000105 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000106 a FBcv:0009003 ;
-    rdfs:label "N59 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N59 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1234 ;
     neo_custom:filtered_gene_count 2839 ;
     neo_custom:total_gene_count 10600 ;
@@ -619,7 +614,7 @@ VFBseq:00000106 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000107 a FBcv:0009003 ;
-    rdfs:label "R7.8 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "R7.8 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1222 ;
     neo_custom:filtered_gene_count 3890 ;
     neo_custom:total_gene_count 11190 ;
@@ -629,7 +624,7 @@ VFBseq:00000107 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000108 a FBcv:0009003 ;
-    rdfs:label "N61 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N61 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1199 ;
     neo_custom:filtered_gene_count 2127 ;
     neo_custom:total_gene_count 10287 ;
@@ -639,7 +634,7 @@ VFBseq:00000108 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000109 a FBcv:0009003 ;
-    rdfs:label "Tm9b cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Tm9 cluster Tm9b (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1140 ;
     neo_custom:filtered_gene_count 2334 ;
     neo_custom:total_gene_count 10239 ;
@@ -649,7 +644,7 @@ VFBseq:00000109 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000110 a FBcv:0009003 ;
-    rdfs:label "G63 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G63 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1130 ;
     neo_custom:filtered_gene_count 1631 ;
     neo_custom:total_gene_count 10028 ;
@@ -659,7 +654,7 @@ VFBseq:00000110 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000111 a FBcv:0009003 ;
-    rdfs:label "Tm29 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Tm29 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1082 ;
     neo_custom:filtered_gene_count 2607 ;
     neo_custom:total_gene_count 10277 ;
@@ -669,7 +664,7 @@ VFBseq:00000111 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000112 a FBcv:0009003 ;
-    rdfs:label "N65 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N65 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 1018 ;
     neo_custom:filtered_gene_count 2880 ;
     neo_custom:total_gene_count 10396 ;
@@ -679,7 +674,7 @@ VFBseq:00000112 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000113 a FBcv:0009003 ;
-    rdfs:label "G66 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G66 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 987 ;
     neo_custom:filtered_gene_count 2820 ;
     neo_custom:total_gene_count 10509 ;
@@ -689,7 +684,7 @@ VFBseq:00000113 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000114 a FBcv:0009003 ;
-    rdfs:label "C67 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "C67 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 980 ;
     neo_custom:filtered_gene_count 1891 ;
     neo_custom:total_gene_count 11062 ;
@@ -698,7 +693,7 @@ VFBseq:00000114 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000115 a FBcv:0009003 ;
-    rdfs:label "C68 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "C68 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 943 ;
     neo_custom:filtered_gene_count 2766 ;
     neo_custom:total_gene_count 10772 ;
@@ -707,7 +702,7 @@ VFBseq:00000115 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000116 a FBcv:0009003 ;
-    rdfs:label "N69 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N69 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 940 ;
     neo_custom:filtered_gene_count 3442 ;
     neo_custom:total_gene_count 10554 ;
@@ -717,7 +712,7 @@ VFBseq:00000116 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000117 a FBcv:0009003 ;
-    rdfs:label "N70 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N70 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 911 ;
     neo_custom:filtered_gene_count 3031 ;
     neo_custom:total_gene_count 10369 ;
@@ -727,7 +722,7 @@ VFBseq:00000117 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000118 a FBcv:0009003 ;
-    rdfs:label "N71 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N71 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 893 ;
     neo_custom:filtered_gene_count 2998 ;
     neo_custom:total_gene_count 10200 ;
@@ -737,7 +732,7 @@ VFBseq:00000118 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000119 a FBcv:0009003 ;
-    rdfs:label "C72 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "C72 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 866 ;
     neo_custom:filtered_gene_count 3300 ;
     neo_custom:total_gene_count 10641 ;
@@ -746,7 +741,7 @@ VFBseq:00000119 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000120 a FBcv:0009003 ;
-    rdfs:label "N73 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N73 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 865 ;
     neo_custom:filtered_gene_count 3816 ;
     neo_custom:total_gene_count 10608 ;
@@ -756,7 +751,7 @@ VFBseq:00000120 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000121 a FBcv:0009003 ;
-    rdfs:label "N75 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N75 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 860 ;
     neo_custom:filtered_gene_count 3327 ;
     neo_custom:total_gene_count 10737 ;
@@ -766,7 +761,7 @@ VFBseq:00000121 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000122 a FBcv:0009003 ;
-    rdfs:label "G74 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G74 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 860 ;
     neo_custom:filtered_gene_count 1890 ;
     neo_custom:total_gene_count 10221 ;
@@ -776,7 +771,7 @@ VFBseq:00000122 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000123 a FBcv:0009003 ;
-    rdfs:label "N76 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N76 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 857 ;
     neo_custom:filtered_gene_count 2967 ;
     neo_custom:total_gene_count 10180 ;
@@ -786,7 +781,7 @@ VFBseq:00000123 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000124 a FBcv:0009003 ;
-    rdfs:label "G77 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G77 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 846 ;
     neo_custom:filtered_gene_count 1511 ;
     neo_custom:total_gene_count 9723 ;
@@ -796,7 +791,7 @@ VFBseq:00000124 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000125 a FBcv:0009003 ;
-    rdfs:label "G78 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G78 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 831 ;
     neo_custom:filtered_gene_count 1505 ;
     neo_custom:total_gene_count 9412 ;
@@ -806,7 +801,7 @@ VFBseq:00000125 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000126 a FBcv:0009003 ;
-    rdfs:label "N79 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N79 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 824 ;
     neo_custom:filtered_gene_count 3466 ;
     neo_custom:total_gene_count 11006 ;
@@ -816,7 +811,7 @@ VFBseq:00000126 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000127 a FBcv:0009003 ;
-    rdfs:label "N80 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N80 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 818 ;
     neo_custom:filtered_gene_count 3982 ;
     neo_custom:total_gene_count 10491 ;
@@ -826,7 +821,7 @@ VFBseq:00000127 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000128 a FBcv:0009003 ;
-    rdfs:label "N81 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N81 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 810 ;
     neo_custom:filtered_gene_count 2751 ;
     neo_custom:total_gene_count 10067 ;
@@ -836,7 +831,7 @@ VFBseq:00000128 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000129 a FBcv:0009003 ;
-    rdfs:label "N82 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N82 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 791 ;
     neo_custom:filtered_gene_count 3057 ;
     neo_custom:total_gene_count 10189 ;
@@ -846,7 +841,7 @@ VFBseq:00000129 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000130 a FBcv:0009003 ;
-    rdfs:label "N83 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N83 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 781 ;
     neo_custom:filtered_gene_count 3091 ;
     neo_custom:total_gene_count 10128 ;
@@ -856,7 +851,7 @@ VFBseq:00000130 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000131 a FBcv:0009003 ;
-    rdfs:label "N84 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N84 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 777 ;
     neo_custom:filtered_gene_count 2586 ;
     neo_custom:total_gene_count 9983 ;
@@ -866,7 +861,7 @@ VFBseq:00000131 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000132 a FBcv:0009003 ;
-    rdfs:label "N85 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N85 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 774 ;
     neo_custom:filtered_gene_count 2045 ;
     neo_custom:total_gene_count 9744 ;
@@ -876,7 +871,7 @@ VFBseq:00000132 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000133 a FBcv:0009003 ;
-    rdfs:label "C86 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "C86 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 770 ;
     neo_custom:filtered_gene_count 1834 ;
     neo_custom:total_gene_count 10346 ;
@@ -885,7 +880,7 @@ VFBseq:00000133 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000134 a FBcv:0009003 ;
-    rdfs:label "N87 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N87 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 767 ;
     neo_custom:filtered_gene_count 2673 ;
     neo_custom:total_gene_count 9955 ;
@@ -895,7 +890,7 @@ VFBseq:00000134 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000135 a FBcv:0009003 ;
-    rdfs:label "N88 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N88 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 761 ;
     neo_custom:filtered_gene_count 2792 ;
     neo_custom:total_gene_count 10023 ;
@@ -905,7 +900,7 @@ VFBseq:00000135 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000136 a FBcv:0009003 ;
-    rdfs:label "N89 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N89 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 759 ;
     neo_custom:filtered_gene_count 2915 ;
     neo_custom:total_gene_count 9987 ;
@@ -915,7 +910,7 @@ VFBseq:00000136 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000137 a FBcv:0009003 ;
-    rdfs:label "N90 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N90 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 744 ;
     neo_custom:filtered_gene_count 1978 ;
     neo_custom:total_gene_count 9828 ;
@@ -925,7 +920,7 @@ VFBseq:00000137 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000138 a FBcv:0009003 ;
-    rdfs:label "N92 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N92 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 734 ;
     neo_custom:filtered_gene_count 3314 ;
     neo_custom:total_gene_count 10069 ;
@@ -935,7 +930,7 @@ VFBseq:00000138 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000139 a FBcv:0009003 ;
-    rdfs:label "G91 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G91 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 734 ;
     neo_custom:filtered_gene_count 1534 ;
     neo_custom:total_gene_count 9405 ;
@@ -945,7 +940,7 @@ VFBseq:00000139 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000140 a FBcv:0009003 ;
-    rdfs:label "N93 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N93 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 732 ;
     neo_custom:filtered_gene_count 3161 ;
     neo_custom:total_gene_count 10059 ;
@@ -955,7 +950,7 @@ VFBseq:00000140 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000141 a FBcv:0009003 ;
-    rdfs:label "LLPC1 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "LLPC1 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 711 ;
     neo_custom:filtered_gene_count 3192 ;
     neo_custom:total_gene_count 10288 ;
@@ -965,7 +960,7 @@ VFBseq:00000141 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000142 a FBcv:0009003 ;
-    rdfs:label "N95 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N95 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 681 ;
     neo_custom:filtered_gene_count 3777 ;
     neo_custom:total_gene_count 10210 ;
@@ -975,7 +970,7 @@ VFBseq:00000142 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000143 a FBcv:0009003 ;
-    rdfs:label "N96 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N96 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 680 ;
     neo_custom:filtered_gene_count 3052 ;
     neo_custom:total_gene_count 9955 ;
@@ -985,7 +980,7 @@ VFBseq:00000143 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000144 a FBcv:0009003 ;
-    rdfs:label "Lawf1 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Lawf1 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 649 ;
     neo_custom:filtered_gene_count 3733 ;
     neo_custom:total_gene_count 10068 ;
@@ -995,7 +990,7 @@ VFBseq:00000144 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000145 a FBcv:0009003 ;
-    rdfs:label "Lawf2 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Lawf2 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 644 ;
     neo_custom:filtered_gene_count 3989 ;
     neo_custom:total_gene_count 10100 ;
@@ -1005,7 +1000,7 @@ VFBseq:00000145 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000146 a FBcv:0009003 ;
-    rdfs:label "N99 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N99 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 625 ;
     neo_custom:filtered_gene_count 3145 ;
     neo_custom:total_gene_count 10010 ;
@@ -1015,7 +1010,7 @@ VFBseq:00000146 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000147 a FBcv:0009003 ;
-    rdfs:label "N100 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N100 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 622 ;
     neo_custom:filtered_gene_count 4193 ;
     neo_custom:total_gene_count 10274 ;
@@ -1025,7 +1020,7 @@ VFBseq:00000147 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000148 a FBcv:0009003 ;
-    rdfs:label "N101 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N101 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 608 ;
     neo_custom:filtered_gene_count 3213 ;
     neo_custom:total_gene_count 9964 ;
@@ -1035,7 +1030,7 @@ VFBseq:00000148 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000149 a FBcv:0009003 ;
-    rdfs:label "N102 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N102 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 597 ;
     neo_custom:filtered_gene_count 2719 ;
     neo_custom:total_gene_count 9852 ;
@@ -1045,7 +1040,7 @@ VFBseq:00000149 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000150 a FBcv:0009003 ;
-    rdfs:label "N103 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N103 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 593 ;
     neo_custom:filtered_gene_count 2266 ;
     neo_custom:total_gene_count 10121 ;
@@ -1055,7 +1050,7 @@ VFBseq:00000150 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000151 a FBcv:0009003 ;
-    rdfs:label "N104 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N104 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 592 ;
     neo_custom:filtered_gene_count 2885 ;
     neo_custom:total_gene_count 9772 ;
@@ -1065,7 +1060,7 @@ VFBseq:00000151 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000152 a FBcv:0009003 ;
-    rdfs:label "LC10a cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "LC10a cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 578 ;
     neo_custom:filtered_gene_count 3052 ;
     neo_custom:total_gene_count 10136 ;
@@ -1075,7 +1070,7 @@ VFBseq:00000152 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000153 a FBcv:0009003 ;
-    rdfs:label "N106 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N106 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 576 ;
     neo_custom:filtered_gene_count 2779 ;
     neo_custom:total_gene_count 9713 ;
@@ -1085,7 +1080,7 @@ VFBseq:00000153 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000154 a FBcv:0009003 ;
-    rdfs:label "Dm12 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Dm12 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 573 ;
     neo_custom:filtered_gene_count 3665 ;
     neo_custom:total_gene_count 9858 ;
@@ -1095,7 +1090,7 @@ VFBseq:00000154 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000155 a FBcv:0009003 ;
-    rdfs:label "N108 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N108 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 569 ;
     neo_custom:filtered_gene_count 3250 ;
     neo_custom:total_gene_count 9807 ;
@@ -1105,7 +1100,7 @@ VFBseq:00000155 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000156 a FBcv:0009003 ;
-    rdfs:label "Lai cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Lai cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 551 ;
     neo_custom:filtered_gene_count 3639 ;
     neo_custom:total_gene_count 9916 ;
@@ -1115,7 +1110,7 @@ VFBseq:00000156 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000157 a FBcv:0009003 ;
-    rdfs:label "N110 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N110 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 530 ;
     neo_custom:filtered_gene_count 2752 ;
     neo_custom:total_gene_count 9653 ;
@@ -1125,7 +1120,7 @@ VFBseq:00000157 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000158 a FBcv:0009003 ;
-    rdfs:label "N111 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N111 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 509 ;
     neo_custom:filtered_gene_count 2778 ;
     neo_custom:total_gene_count 9556 ;
@@ -1135,7 +1130,7 @@ VFBseq:00000158 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000159 a FBcv:0009003 ;
-    rdfs:label "C112 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "C112 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 501 ;
     neo_custom:filtered_gene_count 1915 ;
     neo_custom:total_gene_count 9597 ;
@@ -1144,7 +1139,7 @@ VFBseq:00000159 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000160 a FBcv:0009003 ;
-    rdfs:label "G113 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G113 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 499 ;
     neo_custom:filtered_gene_count 3097 ;
     neo_custom:total_gene_count 9667 ;
@@ -1154,7 +1149,7 @@ VFBseq:00000160 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000161 a FBcv:0009003 ;
-    rdfs:label "N114 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N114 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 498 ;
     neo_custom:filtered_gene_count 2596 ;
     neo_custom:total_gene_count 9522 ;
@@ -1164,7 +1159,7 @@ VFBseq:00000161 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000162 a FBcv:0009003 ;
-    rdfs:label "N115 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N115 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 489 ;
     neo_custom:filtered_gene_count 3893 ;
     neo_custom:total_gene_count 9890 ;
@@ -1174,7 +1169,7 @@ VFBseq:00000162 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000163 a FBcv:0009003 ;
-    rdfs:label "N116 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N116 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 488 ;
     neo_custom:filtered_gene_count 3188 ;
     neo_custom:total_gene_count 9593 ;
@@ -1184,7 +1179,7 @@ VFBseq:00000163 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000164 a FBcv:0009003 ;
-    rdfs:label "N117 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N117 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 486 ;
     neo_custom:filtered_gene_count 3038 ;
     neo_custom:total_gene_count 9620 ;
@@ -1194,7 +1189,7 @@ VFBseq:00000164 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000165 a FBcv:0009003 ;
-    rdfs:label "N118 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N118 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 472 ;
     neo_custom:filtered_gene_count 2359 ;
     neo_custom:total_gene_count 9337 ;
@@ -1204,7 +1199,7 @@ VFBseq:00000165 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000166 a FBcv:0009003 ;
-    rdfs:label "N119 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N119 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 471 ;
     neo_custom:filtered_gene_count 4056 ;
     neo_custom:total_gene_count 9846 ;
@@ -1214,7 +1209,7 @@ VFBseq:00000166 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000167 a FBcv:0009003 ;
-    rdfs:label "N120 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N120 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 470 ;
     neo_custom:filtered_gene_count 2041 ;
     neo_custom:total_gene_count 9262 ;
@@ -1224,7 +1219,7 @@ VFBseq:00000167 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000168 a FBcv:0009003 ;
-    rdfs:label "G121 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G121 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 449 ;
     neo_custom:filtered_gene_count 1904 ;
     neo_custom:total_gene_count 9645 ;
@@ -1234,7 +1229,7 @@ VFBseq:00000168 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000169 a FBcv:0009003 ;
-    rdfs:label "N122 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N122 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 448 ;
     neo_custom:filtered_gene_count 3652 ;
     neo_custom:total_gene_count 10070 ;
@@ -1244,7 +1239,7 @@ VFBseq:00000169 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000170 a FBcv:0009003 ;
-    rdfs:label "N123 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N123 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 447 ;
     neo_custom:filtered_gene_count 3122 ;
     neo_custom:total_gene_count 9567 ;
@@ -1254,7 +1249,7 @@ VFBseq:00000170 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000171 a FBcv:0009003 ;
-    rdfs:label "N124 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N124 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 442 ;
     neo_custom:filtered_gene_count 4125 ;
     neo_custom:total_gene_count 9787 ;
@@ -1264,7 +1259,7 @@ VFBseq:00000171 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000172 a FBcv:0009003 ;
-    rdfs:label "G125 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G125 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 436 ;
     neo_custom:filtered_gene_count 2820 ;
     neo_custom:total_gene_count 10031 ;
@@ -1274,7 +1269,7 @@ VFBseq:00000172 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000173 a FBcv:0009003 ;
-    rdfs:label "N126 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N126 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 435 ;
     neo_custom:filtered_gene_count 3961 ;
     neo_custom:total_gene_count 9674 ;
@@ -1284,7 +1279,7 @@ VFBseq:00000173 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000174 a FBcv:0009003 ;
-    rdfs:label "Pm3 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Pm3 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 424 ;
     neo_custom:filtered_gene_count 3631 ;
     neo_custom:total_gene_count 9684 ;
@@ -1294,7 +1289,7 @@ VFBseq:00000174 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000175 a FBcv:0009003 ;
-    rdfs:label "N128 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N128 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 412 ;
     neo_custom:filtered_gene_count 3237 ;
     neo_custom:total_gene_count 9527 ;
@@ -1304,7 +1299,7 @@ VFBseq:00000175 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000176 a FBcv:0009003 ;
-    rdfs:label "N129 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N129 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 408 ;
     neo_custom:filtered_gene_count 2915 ;
     neo_custom:total_gene_count 9346 ;
@@ -1314,7 +1309,7 @@ VFBseq:00000176 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000177 a FBcv:0009003 ;
-    rdfs:label "C130 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "C130 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 403 ;
     neo_custom:filtered_gene_count 3743 ;
     neo_custom:total_gene_count 10130 ;
@@ -1323,7 +1318,7 @@ VFBseq:00000177 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000178 a FBcv:0009003 ;
-    rdfs:label "N131 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N131 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 397 ;
     neo_custom:filtered_gene_count 2961 ;
     neo_custom:total_gene_count 9367 ;
@@ -1333,7 +1328,7 @@ VFBseq:00000178 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000179 a FBcv:0009003 ;
-    rdfs:label "N132 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N132 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 386 ;
     neo_custom:filtered_gene_count 3101 ;
     neo_custom:total_gene_count 9392 ;
@@ -1343,7 +1338,7 @@ VFBseq:00000179 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000180 a FBcv:0009003 ;
-    rdfs:label "Dm9 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Dm9 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 381 ;
     neo_custom:filtered_gene_count 4062 ;
     neo_custom:total_gene_count 9651 ;
@@ -1353,7 +1348,7 @@ VFBseq:00000180 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000181 a FBcv:0009003 ;
-    rdfs:label "N134 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N134 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 377 ;
     neo_custom:filtered_gene_count 3257 ;
     neo_custom:total_gene_count 9595 ;
@@ -1363,7 +1358,7 @@ VFBseq:00000181 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000182 a FBcv:0009003 ;
-    rdfs:label "N135 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N135 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 376 ;
     neo_custom:filtered_gene_count 2801 ;
     neo_custom:total_gene_count 9251 ;
@@ -1373,7 +1368,7 @@ VFBseq:00000182 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000183 a FBcv:0009003 ;
-    rdfs:label "N136 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N136 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 373 ;
     neo_custom:filtered_gene_count 3618 ;
     neo_custom:total_gene_count 9771 ;
@@ -1383,7 +1378,7 @@ VFBseq:00000183 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000184 a FBcv:0009003 ;
-    rdfs:label "N137 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N137 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 372 ;
     neo_custom:filtered_gene_count 3310 ;
     neo_custom:total_gene_count 9669 ;
@@ -1393,7 +1388,7 @@ VFBseq:00000184 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000185 a FBcv:0009003 ;
-    rdfs:label "N138 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N138 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 371 ;
     neo_custom:filtered_gene_count 3582 ;
     neo_custom:total_gene_count 9622 ;
@@ -1403,7 +1398,7 @@ VFBseq:00000185 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000186 a FBcv:0009003 ;
-    rdfs:label "N139 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N139 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 371 ;
     neo_custom:filtered_gene_count 2424 ;
     neo_custom:total_gene_count 9118 ;
@@ -1413,7 +1408,7 @@ VFBseq:00000186 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000187 a FBcv:0009003 ;
-    rdfs:label "N140 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N140 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 370 ;
     neo_custom:filtered_gene_count 3396 ;
     neo_custom:total_gene_count 9625 ;
@@ -1423,7 +1418,7 @@ VFBseq:00000187 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000188 a FBcv:0009003 ;
-    rdfs:label "Dm11 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Dm11 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 369 ;
     neo_custom:filtered_gene_count 3226 ;
     neo_custom:total_gene_count 9308 ;
@@ -1433,7 +1428,7 @@ VFBseq:00000188 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000189 a FBcv:0009003 ;
-    rdfs:label "N142 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N142 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 367 ;
     neo_custom:filtered_gene_count 2988 ;
     neo_custom:total_gene_count 9297 ;
@@ -1443,7 +1438,7 @@ VFBseq:00000189 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000190 a FBcv:0009003 ;
-    rdfs:label "N143 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N143 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 361 ;
     neo_custom:filtered_gene_count 3779 ;
     neo_custom:total_gene_count 9652 ;
@@ -1453,7 +1448,7 @@ VFBseq:00000190 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000191 a FBcv:0009003 ;
-    rdfs:label "Lpi3.4 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Lpi3.4 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 351 ;
     neo_custom:filtered_gene_count 3694 ;
     neo_custom:total_gene_count 9457 ;
@@ -1463,7 +1458,7 @@ VFBseq:00000191 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000192 a FBcv:0009003 ;
-    rdfs:label "G145 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G145 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 336 ;
     neo_custom:filtered_gene_count 2539 ;
     neo_custom:total_gene_count 9141 ;
@@ -1473,7 +1468,7 @@ VFBseq:00000192 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000193 a FBcv:0009003 ;
-    rdfs:label "N146 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N146 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 334 ;
     neo_custom:filtered_gene_count 3383 ;
     neo_custom:total_gene_count 9515 ;
@@ -1483,7 +1478,7 @@ VFBseq:00000193 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000194 a FBcv:0009003 ;
-    rdfs:label "Pm4 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Pm4 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 327 ;
     neo_custom:filtered_gene_count 4243 ;
     neo_custom:total_gene_count 9389 ;
@@ -1493,7 +1488,7 @@ VFBseq:00000194 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000195 a FBcv:0009003 ;
-    rdfs:label "N148 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N148 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 322 ;
     neo_custom:filtered_gene_count 3274 ;
     neo_custom:total_gene_count 9237 ;
@@ -1503,7 +1498,7 @@ VFBseq:00000195 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000196 a FBcv:0009003 ;
-    rdfs:label "LC6 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "LC6 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 307 ;
     neo_custom:filtered_gene_count 3585 ;
     neo_custom:total_gene_count 9644 ;
@@ -1513,7 +1508,7 @@ VFBseq:00000196 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000197 a FBcv:0009003 ;
-    rdfs:label "N150 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N150 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 305 ;
     neo_custom:filtered_gene_count 3892 ;
     neo_custom:total_gene_count 9393 ;
@@ -1523,7 +1518,7 @@ VFBseq:00000197 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000198 a FBcv:0009003 ;
-    rdfs:label "N151 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N151 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 297 ;
     neo_custom:filtered_gene_count 3750 ;
     neo_custom:total_gene_count 9375 ;
@@ -1533,7 +1528,7 @@ VFBseq:00000198 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000199 a FBcv:0009003 ;
-    rdfs:label "N152 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N152 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 296 ;
     neo_custom:filtered_gene_count 3233 ;
     neo_custom:total_gene_count 9261 ;
@@ -1543,7 +1538,7 @@ VFBseq:00000199 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000200 a FBcv:0009003 ;
-    rdfs:label "N154 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N154 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 290 ;
     neo_custom:filtered_gene_count 2827 ;
     neo_custom:total_gene_count 9144 ;
@@ -1553,7 +1548,7 @@ VFBseq:00000200 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000201 a FBcv:0009003 ;
-    rdfs:label "N153 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N153 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 290 ;
     neo_custom:filtered_gene_count 2901 ;
     neo_custom:total_gene_count 9058 ;
@@ -1563,7 +1558,7 @@ VFBseq:00000201 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000202 a FBcv:0009003 ;
-    rdfs:label "N155 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N155 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 287 ;
     neo_custom:filtered_gene_count 3405 ;
     neo_custom:total_gene_count 9151 ;
@@ -1573,7 +1568,7 @@ VFBseq:00000202 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000203 a FBcv:0009003 ;
-    rdfs:label "N156 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N156 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 283 ;
     neo_custom:filtered_gene_count 2808 ;
     neo_custom:total_gene_count 8913 ;
@@ -1583,7 +1578,7 @@ VFBseq:00000203 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000204 a FBcv:0009003 ;
-    rdfs:label "G157 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G157 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 279 ;
     neo_custom:filtered_gene_count 1905 ;
     neo_custom:total_gene_count 9198 ;
@@ -1593,7 +1588,7 @@ VFBseq:00000204 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000205 a FBcv:0009003 ;
-    rdfs:label "N158 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N158 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 264 ;
     neo_custom:filtered_gene_count 3600 ;
     neo_custom:total_gene_count 9256 ;
@@ -1603,7 +1598,7 @@ VFBseq:00000205 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000206 a FBcv:0009003 ;
-    rdfs:label "N159 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N159 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 263 ;
     neo_custom:filtered_gene_count 2995 ;
     neo_custom:total_gene_count 8878 ;
@@ -1613,7 +1608,7 @@ VFBseq:00000206 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000207 a FBcv:0009003 ;
-    rdfs:label "N160 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N160 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 263 ;
     neo_custom:filtered_gene_count 3869 ;
     neo_custom:total_gene_count 9187 ;
@@ -1623,7 +1618,7 @@ VFBseq:00000207 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000208 a FBcv:0009003 ;
-    rdfs:label "N161 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N161 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 257 ;
     neo_custom:filtered_gene_count 3557 ;
     neo_custom:total_gene_count 9106 ;
@@ -1633,7 +1628,7 @@ VFBseq:00000208 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000209 a FBcv:0009003 ;
-    rdfs:label "N162 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N162 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 254 ;
     neo_custom:filtered_gene_count 3630 ;
     neo_custom:total_gene_count 9327 ;
@@ -1643,7 +1638,7 @@ VFBseq:00000209 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000210 a FBcv:0009003 ;
-    rdfs:label "N163 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N163 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 253 ;
     neo_custom:filtered_gene_count 4209 ;
     neo_custom:total_gene_count 9342 ;
@@ -1653,7 +1648,7 @@ VFBseq:00000210 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000211 a FBcv:0009003 ;
-    rdfs:label "N164 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N164 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 240 ;
     neo_custom:filtered_gene_count 3416 ;
     neo_custom:total_gene_count 9011 ;
@@ -1663,7 +1658,7 @@ VFBseq:00000211 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000212 a FBcv:0009003 ;
-    rdfs:label "C165 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "C165 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 230 ;
     neo_custom:filtered_gene_count 3055 ;
     neo_custom:total_gene_count 9453 ;
@@ -1672,7 +1667,7 @@ VFBseq:00000212 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000213 a FBcv:0009003 ;
-    rdfs:label "LC10b cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "LC10b cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 221 ;
     neo_custom:filtered_gene_count 3183 ;
     neo_custom:total_gene_count 9075 ;
@@ -1682,7 +1677,7 @@ VFBseq:00000213 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000214 a FBcv:0009003 ;
-    rdfs:label "C167 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "C167 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 218 ;
     neo_custom:filtered_gene_count 2368 ;
     neo_custom:total_gene_count 9493 ;
@@ -1691,7 +1686,7 @@ VFBseq:00000214 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000215 a FBcv:0009003 ;
-    rdfs:label "N168 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N168 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 212 ;
     neo_custom:filtered_gene_count 3317 ;
     neo_custom:total_gene_count 9058 ;
@@ -1701,7 +1696,7 @@ VFBseq:00000215 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000216 a FBcv:0009003 ;
-    rdfs:label "N169 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N169 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 198 ;
     neo_custom:filtered_gene_count 3294 ;
     neo_custom:total_gene_count 8930 ;
@@ -1711,7 +1706,7 @@ VFBseq:00000216 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000217 a FBcv:0009003 ;
-    rdfs:label "N170 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N170 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 178 ;
     neo_custom:filtered_gene_count 3233 ;
     neo_custom:total_gene_count 8715 ;
@@ -1721,7 +1716,7 @@ VFBseq:00000217 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000218 a FBcv:0009003 ;
-    rdfs:label "N172 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N172 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 177 ;
     neo_custom:filtered_gene_count 4030 ;
     neo_custom:total_gene_count 8817 ;
@@ -1731,7 +1726,7 @@ VFBseq:00000218 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000219 a FBcv:0009003 ;
-    rdfs:label "LC4 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "LC4 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 177 ;
     neo_custom:filtered_gene_count 4018 ;
     neo_custom:total_gene_count 9098 ;
@@ -1741,7 +1736,7 @@ VFBseq:00000219 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000220 a FBcv:0009003 ;
-    rdfs:label "G173 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G173 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 171 ;
     neo_custom:filtered_gene_count 3291 ;
     neo_custom:total_gene_count 8765 ;
@@ -1751,7 +1746,7 @@ VFBseq:00000220 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000221 a FBcv:0009003 ;
-    rdfs:label "N174 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N174 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 165 ;
     neo_custom:filtered_gene_count 3479 ;
     neo_custom:total_gene_count 8742 ;
@@ -1761,7 +1756,7 @@ VFBseq:00000221 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000222 a FBcv:0009003 ;
-    rdfs:label "LPLC2 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "LPLC2 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 160 ;
     neo_custom:filtered_gene_count 3910 ;
     neo_custom:total_gene_count 8839 ;
@@ -1771,7 +1766,7 @@ VFBseq:00000222 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000223 a FBcv:0009003 ;
-    rdfs:label "N176 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N176 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 153 ;
     neo_custom:filtered_gene_count 3532 ;
     neo_custom:total_gene_count 8590 ;
@@ -1781,7 +1776,7 @@ VFBseq:00000223 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000224 a FBcv:0009003 ;
-    rdfs:label "N177 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N177 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 151 ;
     neo_custom:filtered_gene_count 3573 ;
     neo_custom:total_gene_count 8660 ;
@@ -1791,7 +1786,7 @@ VFBseq:00000224 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000225 a FBcv:0009003 ;
-    rdfs:label "N178 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N178 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 137 ;
     neo_custom:filtered_gene_count 3859 ;
     neo_custom:total_gene_count 8557 ;
@@ -1801,7 +1796,7 @@ VFBseq:00000225 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000226 a FBcv:0009003 ;
-    rdfs:label "N180 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N180 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 129 ;
     neo_custom:filtered_gene_count 3000 ;
     neo_custom:total_gene_count 8149 ;
@@ -1811,7 +1806,7 @@ VFBseq:00000226 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000227 a FBcv:0009003 ;
-    rdfs:label "N179 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N179 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 129 ;
     neo_custom:filtered_gene_count 3729 ;
     neo_custom:total_gene_count 8437 ;
@@ -1821,7 +1816,7 @@ VFBseq:00000227 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000228 a FBcv:0009003 ;
-    rdfs:label "N182 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N182 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 128 ;
     neo_custom:filtered_gene_count 2778 ;
     neo_custom:total_gene_count 8217 ;
@@ -1831,7 +1826,7 @@ VFBseq:00000228 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000229 a FBcv:0009003 ;
-    rdfs:label "N181 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N181 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 128 ;
     neo_custom:filtered_gene_count 3351 ;
     neo_custom:total_gene_count 8379 ;
@@ -1841,7 +1836,7 @@ VFBseq:00000229 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000230 a FBcv:0009003 ;
-    rdfs:label "N183 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N183 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 128 ;
     neo_custom:filtered_gene_count 2392 ;
     neo_custom:total_gene_count 8815 ;
@@ -1851,7 +1846,7 @@ VFBseq:00000230 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000231 a FBcv:0009003 ;
-    rdfs:label "Dm1 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Dm1 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 126 ;
     neo_custom:filtered_gene_count 4014 ;
     neo_custom:total_gene_count 8479 ;
@@ -1861,7 +1856,7 @@ VFBseq:00000231 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000232 a FBcv:0009003 ;
-    rdfs:label "R184 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "R184 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 126 ;
     neo_custom:filtered_gene_count 3153 ;
     neo_custom:total_gene_count 8419 ;
@@ -1871,7 +1866,7 @@ VFBseq:00000232 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000233 a FBcv:0009003 ;
-    rdfs:label "G186 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G186 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 123 ;
     neo_custom:filtered_gene_count 2610 ;
     neo_custom:total_gene_count 8363 ;
@@ -1881,7 +1876,7 @@ VFBseq:00000233 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000234 a FBcv:0009003 ;
-    rdfs:label "Dm4 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "Dm4 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 120 ;
     neo_custom:filtered_gene_count 3563 ;
     neo_custom:total_gene_count 8450 ;
@@ -1891,7 +1886,7 @@ VFBseq:00000234 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000235 a FBcv:0009003 ;
-    rdfs:label "N188 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N188 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 119 ;
     neo_custom:filtered_gene_count 3481 ;
     neo_custom:total_gene_count 8291 ;
@@ -1901,7 +1896,7 @@ VFBseq:00000235 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000236 a FBcv:0009003 ;
-    rdfs:label "LPC1 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "LPC1 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 119 ;
     neo_custom:filtered_gene_count 3113 ;
     neo_custom:total_gene_count 8297 ;
@@ -1911,7 +1906,7 @@ VFBseq:00000236 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000237 a FBcv:0009003 ;
-    rdfs:label "N190 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N190 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 118 ;
     neo_custom:filtered_gene_count 3345 ;
     neo_custom:total_gene_count 8176 ;
@@ -1921,7 +1916,7 @@ VFBseq:00000237 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000238 a FBcv:0009003 ;
-    rdfs:label "LPLC1 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "LPLC1 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 107 ;
     neo_custom:filtered_gene_count 4034 ;
     neo_custom:total_gene_count 8480 ;
@@ -1931,7 +1926,7 @@ VFBseq:00000238 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000239 a FBcv:0009003 ;
-    rdfs:label "C192 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "C192 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 104 ;
     neo_custom:filtered_gene_count 2111 ;
     neo_custom:total_gene_count 8187 ;
@@ -1940,7 +1935,7 @@ VFBseq:00000239 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000240 a FBcv:0009003 ;
-    rdfs:label "G193 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "G193 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 96 ;
     neo_custom:filtered_gene_count 2350 ;
     neo_custom:total_gene_count 8527 ;
@@ -1950,7 +1945,7 @@ VFBseq:00000240 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000241 a FBcv:0009003 ;
-    rdfs:label "N194 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N194 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 94 ;
     neo_custom:filtered_gene_count 3225 ;
     neo_custom:total_gene_count 7884 ;
@@ -1960,13 +1955,1051 @@ VFBseq:00000241 a FBcv:0009003 ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000242 a FBcv:0009003 ;
-    rdfs:label "N195 cluster (Kurmangaliyev 2020)" ;
+    rdfs:label "N195 cluster (main dataset, 24-96h APF) (Kurmangaliyev 2020)" ;
     neo_custom:cell_count 78 ;
     neo_custom:filtered_gene_count 2545 ;
     neo_custom:total_gene_count 7388 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000045 ;
     RO:0002473 FBbt:00003702 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000428 a FBcv:0009003 ;
+    rdfs:label "T4.T5 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 2254 ;
+    neo_custom:filtered_gene_count 2528 ;
+    neo_custom:total_gene_count 10935 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00059279 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000429 a FBcv:0009003 ;
+    rdfs:label "x0 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 978 ;
+    neo_custom:filtered_gene_count 4357 ;
+    neo_custom:total_gene_count 11242 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000430 a FBcv:0009003 ;
+    rdfs:label "x2 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 824 ;
+    neo_custom:filtered_gene_count 2972 ;
+    neo_custom:total_gene_count 10332 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000431 a FBcv:0009003 ;
+    rdfs:label "R1.6 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 763 ;
+    neo_custom:filtered_gene_count 3705 ;
+    neo_custom:total_gene_count 10221 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00048002 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000432 a FBcv:0009003 ;
+    rdfs:label "Mi4 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 733 ;
+    neo_custom:filtered_gene_count 2274 ;
+    neo_custom:total_gene_count 9575 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052319 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000433 a FBcv:0009003 ;
+    rdfs:label "Mi9 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 602 ;
+    neo_custom:filtered_gene_count 2267 ;
+    neo_custom:total_gene_count 9374 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052320 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000434 a FBcv:0009003 ;
+    rdfs:label "x5 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 585 ;
+    neo_custom:filtered_gene_count 2399 ;
+    neo_custom:total_gene_count 9457 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000435 a FBcv:0009003 ;
+    rdfs:label "x6 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 581 ;
+    neo_custom:filtered_gene_count 3932 ;
+    neo_custom:total_gene_count 10274 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000436 a FBcv:0009003 ;
+    rdfs:label "x7 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 535 ;
+    neo_custom:filtered_gene_count 2791 ;
+    neo_custom:total_gene_count 9575 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000437 a FBcv:0009003 ;
+    rdfs:label "C68 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 507 ;
+    neo_custom:filtered_gene_count 2802 ;
+    neo_custom:total_gene_count 9837 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000438 a FBcv:0009003 ;
+    rdfs:label "x10 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 478 ;
+    neo_custom:filtered_gene_count 4028 ;
+    neo_custom:total_gene_count 10365 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000439 a FBcv:0009003 ;
+    rdfs:label "x11 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 471 ;
+    neo_custom:filtered_gene_count 3016 ;
+    neo_custom:total_gene_count 9535 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000440 a FBcv:0009003 ;
+    rdfs:label "x13 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 418 ;
+    neo_custom:filtered_gene_count 2613 ;
+    neo_custom:total_gene_count 9185 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000441 a FBcv:0009003 ;
+    rdfs:label "Dm3 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 413 ;
+    neo_custom:filtered_gene_count 2437 ;
+    neo_custom:total_gene_count 9146 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052310 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000442 a FBcv:0009003 ;
+    rdfs:label "x16 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 404 ;
+    neo_custom:filtered_gene_count 3072 ;
+    neo_custom:total_gene_count 9638 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000443 a FBcv:0009003 ;
+    rdfs:label "x17 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 400 ;
+    neo_custom:filtered_gene_count 3258 ;
+    neo_custom:total_gene_count 9924 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000444 a FBcv:0009003 ;
+    rdfs:label "Tm3 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 379 ;
+    neo_custom:filtered_gene_count 2397 ;
+    neo_custom:total_gene_count 9074 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052329 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000445 a FBcv:0009003 ;
+    rdfs:label "Tm9 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 379 ;
+    neo_custom:filtered_gene_count 2331 ;
+    neo_custom:total_gene_count 9005 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052333 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000446 a FBcv:0009003 ;
+    rdfs:label "x20 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 374 ;
+    neo_custom:filtered_gene_count 2531 ;
+    neo_custom:total_gene_count 9071 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000447 a FBcv:0009003 ;
+    rdfs:label "Mi1 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 368 ;
+    neo_custom:filtered_gene_count 2435 ;
+    neo_custom:total_gene_count 9006 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052317 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000448 a FBcv:0009003 ;
+    rdfs:label "x23 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 357 ;
+    neo_custom:filtered_gene_count 3056 ;
+    neo_custom:total_gene_count 9306 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000449 a FBcv:0009003 ;
+    rdfs:label "x24 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 352 ;
+    neo_custom:filtered_gene_count 3567 ;
+    neo_custom:total_gene_count 9443 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000450 a FBcv:0009003 ;
+    rdfs:label "x25 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 350 ;
+    neo_custom:filtered_gene_count 3682 ;
+    neo_custom:total_gene_count 9407 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000451 a FBcv:0009003 ;
+    rdfs:label "x26 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 343 ;
+    neo_custom:filtered_gene_count 2136 ;
+    neo_custom:total_gene_count 9481 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000452 a FBcv:0009003 ;
+    rdfs:label "x28 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 335 ;
+    neo_custom:filtered_gene_count 2307 ;
+    neo_custom:total_gene_count 9378 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000453 a FBcv:0009003 ;
+    rdfs:label "x27 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 335 ;
+    neo_custom:filtered_gene_count 3694 ;
+    neo_custom:total_gene_count 9648 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000454 a FBcv:0009003 ;
+    rdfs:label "Tm20 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 329 ;
+    neo_custom:filtered_gene_count 2499 ;
+    neo_custom:total_gene_count 8937 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052327 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000455 a FBcv:0009003 ;
+    rdfs:label "TmY5a cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 317 ;
+    neo_custom:filtered_gene_count 2642 ;
+    neo_custom:total_gene_count 8860 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052339 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000456 a FBcv:0009003 ;
+    rdfs:label "x31 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 305 ;
+    neo_custom:filtered_gene_count 2963 ;
+    neo_custom:total_gene_count 9239 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000457 a FBcv:0009003 ;
+    rdfs:label "x32 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 303 ;
+    neo_custom:filtered_gene_count 2888 ;
+    neo_custom:total_gene_count 9102 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000458 a FBcv:0009003 ;
+    rdfs:label "x33 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 298 ;
+    neo_custom:filtered_gene_count 2934 ;
+    neo_custom:total_gene_count 9189 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000459 a FBcv:0009003 ;
+    rdfs:label "x34 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 287 ;
+    neo_custom:filtered_gene_count 2443 ;
+    neo_custom:total_gene_count 8861 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000460 a FBcv:0009003 ;
+    rdfs:label "L5 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 286 ;
+    neo_custom:filtered_gene_count 2714 ;
+    neo_custom:total_gene_count 8973 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053360 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000461 a FBcv:0009003 ;
+    rdfs:label "x36 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 283 ;
+    neo_custom:filtered_gene_count 2344 ;
+    neo_custom:total_gene_count 8757 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000462 a FBcv:0009003 ;
+    rdfs:label "x37 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 279 ;
+    neo_custom:filtered_gene_count 3024 ;
+    neo_custom:total_gene_count 8973 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000463 a FBcv:0009003 ;
+    rdfs:label "x38 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 275 ;
+    neo_custom:filtered_gene_count 2242 ;
+    neo_custom:total_gene_count 8664 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000464 a FBcv:0009003 ;
+    rdfs:label "T3 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 268 ;
+    neo_custom:filtered_gene_count 2423 ;
+    neo_custom:total_gene_count 8720 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00059279 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000465 a FBcv:0009003 ;
+    rdfs:label "T2 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 268 ;
+    neo_custom:filtered_gene_count 2681 ;
+    neo_custom:total_gene_count 8761 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00059279 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000466 a FBcv:0009003 ;
+    rdfs:label "R7.8 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 265 ;
+    neo_custom:filtered_gene_count 3657 ;
+    neo_custom:total_gene_count 9434 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00048002 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000467 a FBcv:0009003 ;
+    rdfs:label "x42 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 265 ;
+    neo_custom:filtered_gene_count 1757 ;
+    neo_custom:total_gene_count 8357 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000468 a FBcv:0009003 ;
+    rdfs:label "x43 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 258 ;
+    neo_custom:filtered_gene_count 2830 ;
+    neo_custom:total_gene_count 8920 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000469 a FBcv:0009003 ;
+    rdfs:label "G63 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 254 ;
+    neo_custom:filtered_gene_count 1675 ;
+    neo_custom:total_gene_count 8479 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00005144 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000470 a FBcv:0009003 ;
+    rdfs:label "x45 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 250 ;
+    neo_custom:filtered_gene_count 1648 ;
+    neo_custom:total_gene_count 8637 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000471 a FBcv:0009003 ;
+    rdfs:label "x46 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 245 ;
+    neo_custom:filtered_gene_count 1999 ;
+    neo_custom:total_gene_count 9362 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000472 a FBcv:0009003 ;
+    rdfs:label "x47 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 245 ;
+    neo_custom:filtered_gene_count 3453 ;
+    neo_custom:total_gene_count 9150 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000473 a FBcv:0009003 ;
+    rdfs:label "x48 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 244 ;
+    neo_custom:filtered_gene_count 2382 ;
+    neo_custom:total_gene_count 8736 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000474 a FBcv:0009003 ;
+    rdfs:label "x49 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 239 ;
+    neo_custom:filtered_gene_count 3418 ;
+    neo_custom:total_gene_count 9118 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000475 a FBcv:0009003 ;
+    rdfs:label "x50 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 234 ;
+    neo_custom:filtered_gene_count 2874 ;
+    neo_custom:total_gene_count 9250 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000476 a FBcv:0009003 ;
+    rdfs:label "x52 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 225 ;
+    neo_custom:filtered_gene_count 2975 ;
+    neo_custom:total_gene_count 8838 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000477 a FBcv:0009003 ;
+    rdfs:label "x51 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 225 ;
+    neo_custom:filtered_gene_count 3741 ;
+    neo_custom:total_gene_count 9063 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000478 a FBcv:0009003 ;
+    rdfs:label "x53 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 224 ;
+    neo_custom:filtered_gene_count 2068 ;
+    neo_custom:total_gene_count 8392 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000479 a FBcv:0009003 ;
+    rdfs:label "N1 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 214 ;
+    neo_custom:filtered_gene_count 2475 ;
+    neo_custom:total_gene_count 8515 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000480 a FBcv:0009003 ;
+    rdfs:label "Dm10 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 209 ;
+    neo_custom:filtered_gene_count 2729 ;
+    neo_custom:total_gene_count 8579 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052306 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000481 a FBcv:0009003 ;
+    rdfs:label "T1 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 200 ;
+    neo_custom:filtered_gene_count 2197 ;
+    neo_custom:total_gene_count 8359 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052324 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000482 a FBcv:0009003 ;
+    rdfs:label "C130 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 200 ;
+    neo_custom:filtered_gene_count 3932 ;
+    neo_custom:total_gene_count 9411 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000483 a FBcv:0009003 ;
+    rdfs:label "TmY3 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 198 ;
+    neo_custom:filtered_gene_count 2501 ;
+    neo_custom:total_gene_count 8534 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052337 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000484 a FBcv:0009003 ;
+    rdfs:label "x59 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 196 ;
+    neo_custom:filtered_gene_count 2877 ;
+    neo_custom:total_gene_count 8733 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000485 a FBcv:0009003 ;
+    rdfs:label "N48 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 195 ;
+    neo_custom:filtered_gene_count 2619 ;
+    neo_custom:total_gene_count 8536 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000486 a FBcv:0009003 ;
+    rdfs:label "L2 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 194 ;
+    neo_custom:filtered_gene_count 2999 ;
+    neo_custom:total_gene_count 8513 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053357 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000487 a FBcv:0009003 ;
+    rdfs:label "x62 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 188 ;
+    neo_custom:filtered_gene_count 2250 ;
+    neo_custom:total_gene_count 8561 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000488 a FBcv:0009003 ;
+    rdfs:label "Mi15 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 186 ;
+    neo_custom:filtered_gene_count 2491 ;
+    neo_custom:total_gene_count 8549 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052318 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000489 a FBcv:0009003 ;
+    rdfs:label "T2a cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 182 ;
+    neo_custom:filtered_gene_count 2531 ;
+    neo_custom:total_gene_count 8412 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00059279 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000490 a FBcv:0009003 ;
+    rdfs:label "N88 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 179 ;
+    neo_custom:filtered_gene_count 2662 ;
+    neo_custom:total_gene_count 8363 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000491 a FBcv:0009003 ;
+    rdfs:label "G43 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 173 ;
+    neo_custom:filtered_gene_count 2028 ;
+    neo_custom:total_gene_count 8458 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00005144 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000492 a FBcv:0009003 ;
+    rdfs:label "Tm29 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 168 ;
+    neo_custom:filtered_gene_count 2619 ;
+    neo_custom:total_gene_count 8380 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052328 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000493 a FBcv:0009003 ;
+    rdfs:label "Tm5c cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 164 ;
+    neo_custom:filtered_gene_count 2576 ;
+    neo_custom:total_gene_count 8262 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052332 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000494 a FBcv:0009003 ;
+    rdfs:label "x69 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 164 ;
+    neo_custom:filtered_gene_count 3171 ;
+    neo_custom:total_gene_count 8662 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000495 a FBcv:0009003 ;
+    rdfs:label "x70 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 163 ;
+    neo_custom:filtered_gene_count 2695 ;
+    neo_custom:total_gene_count 8287 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000496 a FBcv:0009003 ;
+    rdfs:label "x71 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 161 ;
+    neo_custom:filtered_gene_count 3612 ;
+    neo_custom:total_gene_count 8816 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000497 a FBcv:0009003 ;
+    rdfs:label "x72 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 158 ;
+    neo_custom:filtered_gene_count 3453 ;
+    neo_custom:total_gene_count 9136 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000498 a FBcv:0009003 ;
+    rdfs:label "N34 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 155 ;
+    neo_custom:filtered_gene_count 2427 ;
+    neo_custom:total_gene_count 8124 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000499 a FBcv:0009003 ;
+    rdfs:label "N136 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 154 ;
+    neo_custom:filtered_gene_count 4023 ;
+    neo_custom:total_gene_count 8888 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000500 a FBcv:0009003 ;
+    rdfs:label "x75 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 153 ;
+    neo_custom:filtered_gene_count 2366 ;
+    neo_custom:total_gene_count 8250 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000501 a FBcv:0009003 ;
+    rdfs:label "N137 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 151 ;
+    neo_custom:filtered_gene_count 4062 ;
+    neo_custom:total_gene_count 9002 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000502 a FBcv:0009003 ;
+    rdfs:label "N55 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 140 ;
+    neo_custom:filtered_gene_count 2822 ;
+    neo_custom:total_gene_count 8327 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000503 a FBcv:0009003 ;
+    rdfs:label "x79 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 139 ;
+    neo_custom:filtered_gene_count 4164 ;
+    neo_custom:total_gene_count 8902 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000504 a FBcv:0009003 ;
+    rdfs:label "L4 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 135 ;
+    neo_custom:filtered_gene_count 2446 ;
+    neo_custom:total_gene_count 8215 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053359 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000505 a FBcv:0009003 ;
+    rdfs:label "L1 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 132 ;
+    neo_custom:filtered_gene_count 2569 ;
+    neo_custom:total_gene_count 8252 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053356 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000506 a FBcv:0009003 ;
+    rdfs:label "N65 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 125 ;
+    neo_custom:filtered_gene_count 2829 ;
+    neo_custom:total_gene_count 8103 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000507 a FBcv:0009003 ;
+    rdfs:label "x83 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 124 ;
+    neo_custom:filtered_gene_count 3300 ;
+    neo_custom:total_gene_count 8354 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000508 a FBcv:0009003 ;
+    rdfs:label "N119 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 123 ;
+    neo_custom:filtered_gene_count 4010 ;
+    neo_custom:total_gene_count 8385 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000509 a FBcv:0009003 ;
+    rdfs:label "C46 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 120 ;
+    neo_custom:filtered_gene_count 3348 ;
+    neo_custom:total_gene_count 8527 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000510 a FBcv:0009003 ;
+    rdfs:label "x87 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 118 ;
+    neo_custom:filtered_gene_count 3822 ;
+    neo_custom:total_gene_count 8275 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000511 a FBcv:0009003 ;
+    rdfs:label "x88 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 116 ;
+    neo_custom:filtered_gene_count 4024 ;
+    neo_custom:total_gene_count 8387 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000512 a FBcv:0009003 ;
+    rdfs:label "x89 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 116 ;
+    neo_custom:filtered_gene_count 3289 ;
+    neo_custom:total_gene_count 8245 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000513 a FBcv:0009003 ;
+    rdfs:label "x90 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 115 ;
+    neo_custom:filtered_gene_count 1591 ;
+    neo_custom:total_gene_count 7602 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000514 a FBcv:0009003 ;
+    rdfs:label "x92 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 109 ;
+    neo_custom:filtered_gene_count 3289 ;
+    neo_custom:total_gene_count 8116 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000515 a FBcv:0009003 ;
+    rdfs:label "x93 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 109 ;
+    neo_custom:filtered_gene_count 2349 ;
+    neo_custom:total_gene_count 7825 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000516 a FBcv:0009003 ;
+    rdfs:label "N58 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 106 ;
+    neo_custom:filtered_gene_count 3312 ;
+    neo_custom:total_gene_count 8189 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000517 a FBcv:0009003 ;
+    rdfs:label "N95 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 103 ;
+    neo_custom:filtered_gene_count 3185 ;
+    neo_custom:total_gene_count 8014 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000518 a FBcv:0009003 ;
+    rdfs:label "G74 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 100 ;
+    neo_custom:filtered_gene_count 1671 ;
+    neo_custom:total_gene_count 7790 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00005144 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000519 a FBcv:0009003 ;
+    rdfs:label "N81 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 98 ;
+    neo_custom:filtered_gene_count 2778 ;
+    neo_custom:total_gene_count 7775 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000520 a FBcv:0009003 ;
+    rdfs:label "x98 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 97 ;
+    neo_custom:filtered_gene_count 2984 ;
+    neo_custom:total_gene_count 8388 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000521 a FBcv:0009003 ;
+    rdfs:label "x99 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 92 ;
+    neo_custom:filtered_gene_count 3725 ;
+    neo_custom:total_gene_count 8124 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000522 a FBcv:0009003 ;
+    rdfs:label "x100 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 89 ;
+    neo_custom:filtered_gene_count 2981 ;
+    neo_custom:total_gene_count 7821 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000523 a FBcv:0009003 ;
+    rdfs:label "N162 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 80 ;
+    neo_custom:filtered_gene_count 3758 ;
+    neo_custom:total_gene_count 8106 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000524 a FBcv:0009003 ;
+    rdfs:label "x102 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 79 ;
+    neo_custom:filtered_gene_count 3168 ;
+    neo_custom:total_gene_count 7903 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000525 a FBcv:0009003 ;
+    rdfs:label "C112 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 75 ;
+    neo_custom:filtered_gene_count 1933 ;
+    neo_custom:total_gene_count 7426 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000526 a FBcv:0009003 ;
+    rdfs:label "x104 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 74 ;
+    neo_custom:filtered_gene_count 3558 ;
+    neo_custom:total_gene_count 7866 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000527 a FBcv:0009003 ;
+    rdfs:label "Lai cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 73 ;
+    neo_custom:filtered_gene_count 3266 ;
+    neo_custom:total_gene_count 7642 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052316 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000528 a FBcv:0009003 ;
+    rdfs:label "x106 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 71 ;
+    neo_custom:filtered_gene_count 1540 ;
+    neo_custom:total_gene_count 7684 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000529 a FBcv:0009003 ;
+    rdfs:label "Dm9 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 68 ;
+    neo_custom:filtered_gene_count 3232 ;
+    neo_custom:total_gene_count 7606 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052315 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000530 a FBcv:0009003 ;
+    rdfs:label "x108 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 63 ;
+    neo_custom:filtered_gene_count 2427 ;
+    neo_custom:total_gene_count 7157 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000531 a FBcv:0009003 ;
+    rdfs:label "N70 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 62 ;
+    neo_custom:filtered_gene_count 2817 ;
+    neo_custom:total_gene_count 7364 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000532 a FBcv:0009003 ;
+    rdfs:label "N129 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 60 ;
+    neo_custom:filtered_gene_count 2395 ;
+    neo_custom:total_gene_count 7232 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000533 a FBcv:0009003 ;
+    rdfs:label "Pm4 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 59 ;
+    neo_custom:filtered_gene_count 3476 ;
+    neo_custom:total_gene_count 7548 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00052323 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000534 a FBcv:0009003 ;
+    rdfs:label "N158 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 57 ;
+    neo_custom:filtered_gene_count 3560 ;
+    neo_custom:total_gene_count 7641 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000535 a FBcv:0009003 ;
+    rdfs:label "L3 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 54 ;
+    neo_custom:filtered_gene_count 2475 ;
+    neo_custom:total_gene_count 7074 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053358 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000536 a FBcv:0009003 ;
+    rdfs:label "N124 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 46 ;
+    neo_custom:filtered_gene_count 3817 ;
+    neo_custom:total_gene_count 7558 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00000001 .
+
+VFBseq:00000537 a FBcv:0009003 ;
+    rdfs:label "x115 cluster (early dataset, 0-24h APF) (Kurmangaliyev 2020)" ;
+    neo_custom:cell_count 12 ;
+    neo_custom:filtered_gene_count 2606 ;
+    neo_custom:total_gene_count 5508 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000046 ;
     dcterms:source VFBseq:00000001 .
 
 FlyBase:FBrf0247594 a FBcv:0000212 ;
@@ -2499,16 +3532,21 @@ VFBseq:00000011 a FBcv:0003024 ;
         FlyBase:FBst0055024,
         FlyBase:FBst0055038 .
 
+VFBseq:00000046 a FBcv:0009002 ;
+    rdfs:label "Kurmangaliyev 2020 early dataset clustering (0-24h APF, 110 clusters)" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000001 .
+
 VFBseq:00000045 a FBcv:0009002 ;
-    rdfs:label "GSE156455 main clustering" ;
+    rdfs:label "Kurmangaliyev 2020 main dataset clustering (24-96h APF, 196 clusters)" ;
     neo_property:nodeLabel "Clustering" ;
     dcterms:source VFBseq:00000001 .
 
 VFBseq:00000001 a FBcv:0003023 ;
     rdfs:label "scRNAseq data from Kurmangaliyev (2020)" ;
     neo_custom:accession "GSE156455" ;
-    neo_custom:filtered_gene_count 7031 ;
-    neo_custom:total_gene_count 15700 ;
+    neo_custom:filtered_gene_count 7473 ;
+    neo_custom:total_gene_count 15754 ;
     neo_property:nodeLabel "DataSet" ;
     IAO:0000115 "Transcriptional Programs of Circuit Assembly in the Drosophila Visual System" ;
     OBI:0000312 FBcv:0009000 ;

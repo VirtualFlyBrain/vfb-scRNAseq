@@ -1,0 +1,29 @@
+{
+  "cluster_label": "early_Mi4",
+  "working_definition": "Early-dataset (0-24h APF, 0h/12h/24h) cluster typed by the authors as Mi4; cluster is composed primarily of developing Mi4 neurons (immature).",
+  "searches_performed": [
+    "immature medulla intrinsic neuron Mi4",
+    "immature Mi4",
+    "OLS4 REST search fbbt \"immature\" medulla/transmedullary/amacrine terms"
+  ],
+  "best_match": {
+    "fbbt_term": "immature medulla intrinsic neuron Mi4",
+    "fbbt_id": "FBbt:00052319",
+    "fbbt_definition": "Immature form of the medullary intrinsic neuron Mi4 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hth/Opa temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Authors' typing taken at face value; stage 0-24h APF so the immature term immature medulla intrinsic neuron Mi4 is the matching developing form.",
+  "other_candidates": [
+    {
+      "fbbt_term": "medulla intrinsic neuron Mi4",
+      "fbbt_id": "FBbt:00003779",
+      "fbbt_definition": "Medulla intrinsic narrow field neuron with both fine and bleb-type arborizations in medulla layers M1, M2, M3 and M8, but with only fine arborizations in medulla layers M4 and M5, and only bleb-type arborizations in medulla layer M9 (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). It receives input from the lamina monopolar neuron L5 and photoreceptor R8 (Takemura et al., 2013). It is a GABAergic neuron (Takemura et al., 2017). There is usually one of these cells per optic column (Nern et al., 2025).",
+      "reason_rejected": "Mature (adult) form; cluster is 0-24h APF so the immature term is used."
+    }
+  ],
+  "recommendation": "Accept immature exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

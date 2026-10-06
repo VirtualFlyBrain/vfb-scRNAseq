@@ -1,790 +1,1230 @@
 {
   "dataset": {
-    "total_gene_count": 15700,
-    "filtered_gene_count": 7031
+    "total_gene_count": 15754,
+    "filtered_gene_count": 7473
   },
   "clusters": {
-    "C112": {
+    "early_C112": {
+      "total_gene_count": 7426,
+      "filtered_gene_count": 1933
+    },
+    "early_C130": {
+      "total_gene_count": 9411,
+      "filtered_gene_count": 3932
+    },
+    "early_C46": {
+      "total_gene_count": 8527,
+      "filtered_gene_count": 3348
+    },
+    "early_C68": {
+      "total_gene_count": 9837,
+      "filtered_gene_count": 2802
+    },
+    "early_Dm10": {
+      "total_gene_count": 8579,
+      "filtered_gene_count": 2729
+    },
+    "early_Dm3": {
+      "total_gene_count": 9146,
+      "filtered_gene_count": 2437
+    },
+    "early_Dm9": {
+      "total_gene_count": 7606,
+      "filtered_gene_count": 3232
+    },
+    "early_G43": {
+      "total_gene_count": 8458,
+      "filtered_gene_count": 2028
+    },
+    "early_G63": {
+      "total_gene_count": 8479,
+      "filtered_gene_count": 1675
+    },
+    "early_G74": {
+      "total_gene_count": 7790,
+      "filtered_gene_count": 1671
+    },
+    "early_L1": {
+      "total_gene_count": 8252,
+      "filtered_gene_count": 2569
+    },
+    "early_L2": {
+      "total_gene_count": 8513,
+      "filtered_gene_count": 2999
+    },
+    "early_L3": {
+      "total_gene_count": 7074,
+      "filtered_gene_count": 2475
+    },
+    "early_L4": {
+      "total_gene_count": 8215,
+      "filtered_gene_count": 2446
+    },
+    "early_L5": {
+      "total_gene_count": 8973,
+      "filtered_gene_count": 2714
+    },
+    "early_Lai": {
+      "total_gene_count": 7642,
+      "filtered_gene_count": 3266
+    },
+    "early_Mi1": {
+      "total_gene_count": 9006,
+      "filtered_gene_count": 2435
+    },
+    "early_Mi15": {
+      "total_gene_count": 8549,
+      "filtered_gene_count": 2491
+    },
+    "early_Mi4": {
+      "total_gene_count": 9575,
+      "filtered_gene_count": 2274
+    },
+    "early_Mi9": {
+      "total_gene_count": 9374,
+      "filtered_gene_count": 2267
+    },
+    "early_N1": {
+      "total_gene_count": 8515,
+      "filtered_gene_count": 2475
+    },
+    "early_N119": {
+      "total_gene_count": 8385,
+      "filtered_gene_count": 4010
+    },
+    "early_N124": {
+      "total_gene_count": 7558,
+      "filtered_gene_count": 3817
+    },
+    "early_N129": {
+      "total_gene_count": 7232,
+      "filtered_gene_count": 2395
+    },
+    "early_N136": {
+      "total_gene_count": 8888,
+      "filtered_gene_count": 4023
+    },
+    "early_N137": {
+      "total_gene_count": 9002,
+      "filtered_gene_count": 4062
+    },
+    "early_N158": {
+      "total_gene_count": 7641,
+      "filtered_gene_count": 3560
+    },
+    "early_N162": {
+      "total_gene_count": 8106,
+      "filtered_gene_count": 3758
+    },
+    "early_N34": {
+      "total_gene_count": 8124,
+      "filtered_gene_count": 2427
+    },
+    "early_N48": {
+      "total_gene_count": 8536,
+      "filtered_gene_count": 2619
+    },
+    "early_N55": {
+      "total_gene_count": 8327,
+      "filtered_gene_count": 2822
+    },
+    "early_N58": {
+      "total_gene_count": 8189,
+      "filtered_gene_count": 3312
+    },
+    "early_N65": {
+      "total_gene_count": 8103,
+      "filtered_gene_count": 2829
+    },
+    "early_N70": {
+      "total_gene_count": 7364,
+      "filtered_gene_count": 2817
+    },
+    "early_N81": {
+      "total_gene_count": 7775,
+      "filtered_gene_count": 2778
+    },
+    "early_N88": {
+      "total_gene_count": 8363,
+      "filtered_gene_count": 2662
+    },
+    "early_N95": {
+      "total_gene_count": 8014,
+      "filtered_gene_count": 3185
+    },
+    "early_Pm4": {
+      "total_gene_count": 7548,
+      "filtered_gene_count": 3476
+    },
+    "early_R1.6": {
+      "total_gene_count": 10221,
+      "filtered_gene_count": 3705
+    },
+    "early_R7.8": {
+      "total_gene_count": 9434,
+      "filtered_gene_count": 3657
+    },
+    "early_T1": {
+      "total_gene_count": 8359,
+      "filtered_gene_count": 2197
+    },
+    "early_T2": {
+      "total_gene_count": 8761,
+      "filtered_gene_count": 2681
+    },
+    "early_T2a": {
+      "total_gene_count": 8412,
+      "filtered_gene_count": 2531
+    },
+    "early_T3": {
+      "total_gene_count": 8720,
+      "filtered_gene_count": 2423
+    },
+    "early_T4.T5": {
+      "total_gene_count": 10935,
+      "filtered_gene_count": 2528
+    },
+    "early_Tm20": {
+      "total_gene_count": 8937,
+      "filtered_gene_count": 2499
+    },
+    "early_Tm29": {
+      "total_gene_count": 8380,
+      "filtered_gene_count": 2619
+    },
+    "early_Tm3": {
+      "total_gene_count": 9074,
+      "filtered_gene_count": 2397
+    },
+    "early_Tm5c": {
+      "total_gene_count": 8262,
+      "filtered_gene_count": 2576
+    },
+    "early_Tm9": {
+      "total_gene_count": 9005,
+      "filtered_gene_count": 2331
+    },
+    "early_TmY3": {
+      "total_gene_count": 8534,
+      "filtered_gene_count": 2501
+    },
+    "early_TmY5a": {
+      "total_gene_count": 8860,
+      "filtered_gene_count": 2642
+    },
+    "early_x0": {
+      "total_gene_count": 11242,
+      "filtered_gene_count": 4357
+    },
+    "early_x10": {
+      "total_gene_count": 10365,
+      "filtered_gene_count": 4028
+    },
+    "early_x100": {
+      "total_gene_count": 7821,
+      "filtered_gene_count": 2981
+    },
+    "early_x102": {
+      "total_gene_count": 7903,
+      "filtered_gene_count": 3168
+    },
+    "early_x104": {
+      "total_gene_count": 7866,
+      "filtered_gene_count": 3558
+    },
+    "early_x106": {
+      "total_gene_count": 7684,
+      "filtered_gene_count": 1540
+    },
+    "early_x108": {
+      "total_gene_count": 7157,
+      "filtered_gene_count": 2427
+    },
+    "early_x11": {
+      "total_gene_count": 9535,
+      "filtered_gene_count": 3016
+    },
+    "early_x115": {
+      "total_gene_count": 5508,
+      "filtered_gene_count": 2606
+    },
+    "early_x13": {
+      "total_gene_count": 9185,
+      "filtered_gene_count": 2613
+    },
+    "early_x16": {
+      "total_gene_count": 9638,
+      "filtered_gene_count": 3072
+    },
+    "early_x17": {
+      "total_gene_count": 9924,
+      "filtered_gene_count": 3258
+    },
+    "early_x2": {
+      "total_gene_count": 10332,
+      "filtered_gene_count": 2972
+    },
+    "early_x20": {
+      "total_gene_count": 9071,
+      "filtered_gene_count": 2531
+    },
+    "early_x23": {
+      "total_gene_count": 9306,
+      "filtered_gene_count": 3056
+    },
+    "early_x24": {
+      "total_gene_count": 9443,
+      "filtered_gene_count": 3567
+    },
+    "early_x25": {
+      "total_gene_count": 9407,
+      "filtered_gene_count": 3682
+    },
+    "early_x26": {
+      "total_gene_count": 9481,
+      "filtered_gene_count": 2136
+    },
+    "early_x27": {
+      "total_gene_count": 9648,
+      "filtered_gene_count": 3694
+    },
+    "early_x28": {
+      "total_gene_count": 9378,
+      "filtered_gene_count": 2307
+    },
+    "early_x31": {
+      "total_gene_count": 9239,
+      "filtered_gene_count": 2963
+    },
+    "early_x32": {
+      "total_gene_count": 9102,
+      "filtered_gene_count": 2888
+    },
+    "early_x33": {
+      "total_gene_count": 9189,
+      "filtered_gene_count": 2934
+    },
+    "early_x34": {
+      "total_gene_count": 8861,
+      "filtered_gene_count": 2443
+    },
+    "early_x36": {
+      "total_gene_count": 8757,
+      "filtered_gene_count": 2344
+    },
+    "early_x37": {
+      "total_gene_count": 8973,
+      "filtered_gene_count": 3024
+    },
+    "early_x38": {
+      "total_gene_count": 8664,
+      "filtered_gene_count": 2242
+    },
+    "early_x42": {
+      "total_gene_count": 8357,
+      "filtered_gene_count": 1757
+    },
+    "early_x43": {
+      "total_gene_count": 8920,
+      "filtered_gene_count": 2830
+    },
+    "early_x45": {
+      "total_gene_count": 8637,
+      "filtered_gene_count": 1648
+    },
+    "early_x46": {
+      "total_gene_count": 9362,
+      "filtered_gene_count": 1999
+    },
+    "early_x47": {
+      "total_gene_count": 9150,
+      "filtered_gene_count": 3453
+    },
+    "early_x48": {
+      "total_gene_count": 8736,
+      "filtered_gene_count": 2382
+    },
+    "early_x49": {
+      "total_gene_count": 9118,
+      "filtered_gene_count": 3418
+    },
+    "early_x5": {
+      "total_gene_count": 9457,
+      "filtered_gene_count": 2399
+    },
+    "early_x50": {
+      "total_gene_count": 9250,
+      "filtered_gene_count": 2874
+    },
+    "early_x51": {
+      "total_gene_count": 9063,
+      "filtered_gene_count": 3741
+    },
+    "early_x52": {
+      "total_gene_count": 8838,
+      "filtered_gene_count": 2975
+    },
+    "early_x53": {
+      "total_gene_count": 8392,
+      "filtered_gene_count": 2068
+    },
+    "early_x59": {
+      "total_gene_count": 8733,
+      "filtered_gene_count": 2877
+    },
+    "early_x6": {
+      "total_gene_count": 10274,
+      "filtered_gene_count": 3932
+    },
+    "early_x62": {
+      "total_gene_count": 8561,
+      "filtered_gene_count": 2250
+    },
+    "early_x69": {
+      "total_gene_count": 8662,
+      "filtered_gene_count": 3171
+    },
+    "early_x7": {
+      "total_gene_count": 9575,
+      "filtered_gene_count": 2791
+    },
+    "early_x70": {
+      "total_gene_count": 8287,
+      "filtered_gene_count": 2695
+    },
+    "early_x71": {
+      "total_gene_count": 8816,
+      "filtered_gene_count": 3612
+    },
+    "early_x72": {
+      "total_gene_count": 9136,
+      "filtered_gene_count": 3453
+    },
+    "early_x75": {
+      "total_gene_count": 8250,
+      "filtered_gene_count": 2366
+    },
+    "early_x79": {
+      "total_gene_count": 8902,
+      "filtered_gene_count": 4164
+    },
+    "early_x83": {
+      "total_gene_count": 8354,
+      "filtered_gene_count": 3300
+    },
+    "early_x87": {
+      "total_gene_count": 8275,
+      "filtered_gene_count": 3822
+    },
+    "early_x88": {
+      "total_gene_count": 8387,
+      "filtered_gene_count": 4024
+    },
+    "early_x89": {
+      "total_gene_count": 8245,
+      "filtered_gene_count": 3289
+    },
+    "early_x90": {
+      "total_gene_count": 7602,
+      "filtered_gene_count": 1591
+    },
+    "early_x92": {
+      "total_gene_count": 8116,
+      "filtered_gene_count": 3289
+    },
+    "early_x93": {
+      "total_gene_count": 7825,
+      "filtered_gene_count": 2349
+    },
+    "early_x98": {
+      "total_gene_count": 8388,
+      "filtered_gene_count": 2984
+    },
+    "early_x99": {
+      "total_gene_count": 8124,
+      "filtered_gene_count": 3725
+    },
+    "main_C112": {
       "total_gene_count": 9597,
       "filtered_gene_count": 1915
     },
-    "C130": {
+    "main_C130": {
       "total_gene_count": 10130,
       "filtered_gene_count": 3743
     },
-    "C16": {
+    "main_C16": {
       "total_gene_count": 11913,
       "filtered_gene_count": 3349
     },
-    "C165": {
+    "main_C165": {
       "total_gene_count": 9453,
       "filtered_gene_count": 3055
     },
-    "C167": {
+    "main_C167": {
       "total_gene_count": 9493,
       "filtered_gene_count": 2368
     },
-    "C192": {
+    "main_C192": {
       "total_gene_count": 8187,
       "filtered_gene_count": 2111
     },
-    "C2": {
+    "main_C2": {
       "total_gene_count": 11147,
       "filtered_gene_count": 2550
     },
-    "C3": {
+    "main_C3": {
       "total_gene_count": 11314,
       "filtered_gene_count": 2743
     },
-    "C32": {
+    "main_C32": {
       "total_gene_count": 11310,
       "filtered_gene_count": 2868
     },
-    "C46": {
+    "main_C46": {
       "total_gene_count": 11437,
       "filtered_gene_count": 2964
     },
-    "C67": {
+    "main_C67": {
       "total_gene_count": 11062,
       "filtered_gene_count": 1891
     },
-    "C68": {
+    "main_C68": {
       "total_gene_count": 10772,
       "filtered_gene_count": 2766
     },
-    "C72": {
+    "main_C72": {
       "total_gene_count": 10641,
       "filtered_gene_count": 3300
     },
-    "C86": {
+    "main_C86": {
       "total_gene_count": 10346,
       "filtered_gene_count": 1834
     },
-    "Dm1": {
+    "main_Dm1": {
       "total_gene_count": 8479,
       "filtered_gene_count": 4014
     },
-    "Dm10": {
+    "main_Dm10": {
       "total_gene_count": 10827,
       "filtered_gene_count": 3090
     },
-    "Dm11": {
+    "main_Dm11": {
       "total_gene_count": 9308,
       "filtered_gene_count": 3226
     },
-    "Dm12": {
+    "main_Dm12": {
       "total_gene_count": 9858,
       "filtered_gene_count": 3665
     },
-    "Dm2": {
+    "main_Dm2": {
       "total_gene_count": 11224,
       "filtered_gene_count": 2240
     },
-    "Dm3a": {
+    "main_Dm3a": {
       "total_gene_count": 11313,
       "filtered_gene_count": 2277
     },
-    "Dm3b": {
+    "main_Dm3b": {
       "total_gene_count": 11235,
       "filtered_gene_count": 2249
     },
-    "Dm4": {
+    "main_Dm4": {
       "total_gene_count": 8450,
       "filtered_gene_count": 3563
     },
-    "Dm8": {
+    "main_Dm8": {
       "total_gene_count": 10854,
       "filtered_gene_count": 2516
     },
-    "Dm9": {
+    "main_Dm9": {
       "total_gene_count": 9651,
       "filtered_gene_count": 4062
     },
-    "G113": {
+    "main_G113": {
       "total_gene_count": 9667,
       "filtered_gene_count": 3097
     },
-    "G121": {
+    "main_G121": {
       "total_gene_count": 9645,
       "filtered_gene_count": 1904
     },
-    "G125": {
+    "main_G125": {
       "total_gene_count": 10031,
       "filtered_gene_count": 2820
     },
-    "G145": {
+    "main_G145": {
       "total_gene_count": 9141,
       "filtered_gene_count": 2539
     },
-    "G157": {
+    "main_G157": {
       "total_gene_count": 9198,
       "filtered_gene_count": 1905
     },
-    "G173": {
+    "main_G173": {
       "total_gene_count": 8765,
       "filtered_gene_count": 3291
     },
-    "G186": {
+    "main_G186": {
       "total_gene_count": 8363,
       "filtered_gene_count": 2610
     },
-    "G193": {
+    "main_G193": {
       "total_gene_count": 8527,
       "filtered_gene_count": 2350
     },
-    "G37": {
+    "main_G37": {
       "total_gene_count": 11228,
       "filtered_gene_count": 2923
     },
-    "G43": {
+    "main_G43": {
       "total_gene_count": 10462,
       "filtered_gene_count": 1991
     },
-    "G49": {
+    "main_G49": {
       "total_gene_count": 10673,
       "filtered_gene_count": 2362
     },
-    "G51": {
+    "main_G51": {
       "total_gene_count": 11114,
       "filtered_gene_count": 3194
     },
-    "G57": {
+    "main_G57": {
       "total_gene_count": 10625,
       "filtered_gene_count": 3240
     },
-    "G63": {
+    "main_G63": {
       "total_gene_count": 10028,
       "filtered_gene_count": 1631
     },
-    "G66": {
+    "main_G66": {
       "total_gene_count": 10509,
       "filtered_gene_count": 2820
     },
-    "G74": {
+    "main_G74": {
       "total_gene_count": 10221,
       "filtered_gene_count": 1890
     },
-    "G77": {
+    "main_G77": {
       "total_gene_count": 9723,
       "filtered_gene_count": 1511
     },
-    "G78": {
+    "main_G78": {
       "total_gene_count": 9412,
       "filtered_gene_count": 1505
     },
-    "G91": {
+    "main_G91": {
       "total_gene_count": 9405,
       "filtered_gene_count": 1534
     },
-    "L1": {
+    "main_L1": {
       "total_gene_count": 11315,
       "filtered_gene_count": 3467
     },
-    "L2": {
+    "main_L2": {
       "total_gene_count": 11581,
       "filtered_gene_count": 3666
     },
-    "L3": {
+    "main_L3": {
       "total_gene_count": 11004,
       "filtered_gene_count": 3005
     },
-    "L4": {
+    "main_L4": {
       "total_gene_count": 10848,
       "filtered_gene_count": 2516
     },
-    "L5": {
+    "main_L5": {
       "total_gene_count": 11100,
       "filtered_gene_count": 2904
     },
-    "LC10a": {
+    "main_LC10a": {
       "total_gene_count": 10136,
       "filtered_gene_count": 3052
     },
-    "LC10b": {
+    "main_LC10b": {
       "total_gene_count": 9075,
       "filtered_gene_count": 3183
     },
-    "LC4": {
+    "main_LC4": {
       "total_gene_count": 9098,
       "filtered_gene_count": 4018
     },
-    "LC6": {
+    "main_LC6": {
       "total_gene_count": 9644,
       "filtered_gene_count": 3585
     },
-    "LLPC1": {
+    "main_LLPC1": {
       "total_gene_count": 10288,
       "filtered_gene_count": 3192
     },
-    "LPC1": {
+    "main_LPC1": {
       "total_gene_count": 8297,
       "filtered_gene_count": 3113
     },
-    "LPLC1": {
+    "main_LPLC1": {
       "total_gene_count": 8480,
       "filtered_gene_count": 4034
     },
-    "LPLC2": {
+    "main_LPLC2": {
       "total_gene_count": 8839,
       "filtered_gene_count": 3910
     },
-    "Lai": {
+    "main_Lai": {
       "total_gene_count": 9916,
       "filtered_gene_count": 3639
     },
-    "Lawf1": {
+    "main_Lawf1": {
       "total_gene_count": 10068,
       "filtered_gene_count": 3733
     },
-    "Lawf2": {
+    "main_Lawf2": {
       "total_gene_count": 10100,
       "filtered_gene_count": 3989
     },
-    "Lpi3.4": {
+    "main_Lpi3.4": {
       "total_gene_count": 9457,
       "filtered_gene_count": 3694
     },
-    "Mi1": {
+    "main_Mi1": {
       "total_gene_count": 11230,
       "filtered_gene_count": 3090
     },
-    "Mi15": {
+    "main_Mi15": {
       "total_gene_count": 10997,
       "filtered_gene_count": 2178
     },
-    "Mi4": {
+    "main_Mi4": {
       "total_gene_count": 11437,
       "filtered_gene_count": 2781
     },
-    "Mi9": {
+    "main_Mi9": {
       "total_gene_count": 11321,
       "filtered_gene_count": 2537
     },
-    "N1": {
+    "main_N1": {
       "total_gene_count": 11446,
       "filtered_gene_count": 2505
     },
-    "N100": {
+    "main_N100": {
       "total_gene_count": 10274,
       "filtered_gene_count": 4193
     },
-    "N101": {
+    "main_N101": {
       "total_gene_count": 9964,
       "filtered_gene_count": 3213
     },
-    "N102": {
+    "main_N102": {
       "total_gene_count": 9852,
       "filtered_gene_count": 2719
     },
-    "N103": {
+    "main_N103": {
       "total_gene_count": 10121,
       "filtered_gene_count": 2266
     },
-    "N104": {
+    "main_N104": {
       "total_gene_count": 9772,
       "filtered_gene_count": 2885
     },
-    "N106": {
+    "main_N106": {
       "total_gene_count": 9713,
       "filtered_gene_count": 2779
     },
-    "N108": {
+    "main_N108": {
       "total_gene_count": 9807,
       "filtered_gene_count": 3250
     },
-    "N110": {
+    "main_N110": {
       "total_gene_count": 9653,
       "filtered_gene_count": 2752
     },
-    "N111": {
+    "main_N111": {
       "total_gene_count": 9556,
       "filtered_gene_count": 2778
     },
-    "N114": {
+    "main_N114": {
       "total_gene_count": 9522,
       "filtered_gene_count": 2596
     },
-    "N115": {
+    "main_N115": {
       "total_gene_count": 9890,
       "filtered_gene_count": 3893
     },
-    "N116": {
+    "main_N116": {
       "total_gene_count": 9593,
       "filtered_gene_count": 3188
     },
-    "N117": {
+    "main_N117": {
       "total_gene_count": 9620,
       "filtered_gene_count": 3038
     },
-    "N118": {
+    "main_N118": {
       "total_gene_count": 9337,
       "filtered_gene_count": 2359
     },
-    "N119": {
+    "main_N119": {
       "total_gene_count": 9846,
       "filtered_gene_count": 4056
     },
-    "N120": {
+    "main_N120": {
       "total_gene_count": 9262,
       "filtered_gene_count": 2041
     },
-    "N122": {
+    "main_N122": {
       "total_gene_count": 10070,
       "filtered_gene_count": 3652
     },
-    "N123": {
+    "main_N123": {
       "total_gene_count": 9567,
       "filtered_gene_count": 3122
     },
-    "N124": {
+    "main_N124": {
       "total_gene_count": 9787,
       "filtered_gene_count": 4125
     },
-    "N126": {
+    "main_N126": {
       "total_gene_count": 9674,
       "filtered_gene_count": 3961
     },
-    "N128": {
+    "main_N128": {
       "total_gene_count": 9527,
       "filtered_gene_count": 3237
     },
-    "N129": {
+    "main_N129": {
       "total_gene_count": 9346,
       "filtered_gene_count": 2915
     },
-    "N131": {
+    "main_N131": {
       "total_gene_count": 9367,
       "filtered_gene_count": 2961
     },
-    "N132": {
+    "main_N132": {
       "total_gene_count": 9392,
       "filtered_gene_count": 3101
     },
-    "N134": {
+    "main_N134": {
       "total_gene_count": 9595,
       "filtered_gene_count": 3257
     },
-    "N135": {
+    "main_N135": {
       "total_gene_count": 9251,
       "filtered_gene_count": 2801
     },
-    "N136": {
+    "main_N136": {
       "total_gene_count": 9771,
       "filtered_gene_count": 3618
     },
-    "N137": {
+    "main_N137": {
       "total_gene_count": 9669,
       "filtered_gene_count": 3310
     },
-    "N138": {
+    "main_N138": {
       "total_gene_count": 9622,
       "filtered_gene_count": 3582
     },
-    "N139": {
+    "main_N139": {
       "total_gene_count": 9118,
       "filtered_gene_count": 2424
     },
-    "N140": {
+    "main_N140": {
       "total_gene_count": 9625,
       "filtered_gene_count": 3396
     },
-    "N142": {
+    "main_N142": {
       "total_gene_count": 9297,
       "filtered_gene_count": 2988
     },
-    "N143": {
+    "main_N143": {
       "total_gene_count": 9652,
       "filtered_gene_count": 3779
     },
-    "N146": {
+    "main_N146": {
       "total_gene_count": 9515,
       "filtered_gene_count": 3383
     },
-    "N148": {
+    "main_N148": {
       "total_gene_count": 9237,
       "filtered_gene_count": 3274
     },
-    "N150": {
+    "main_N150": {
       "total_gene_count": 9393,
       "filtered_gene_count": 3892
     },
-    "N151": {
+    "main_N151": {
       "total_gene_count": 9375,
       "filtered_gene_count": 3750
     },
-    "N152": {
+    "main_N152": {
       "total_gene_count": 9261,
       "filtered_gene_count": 3233
     },
-    "N153": {
+    "main_N153": {
       "total_gene_count": 9058,
       "filtered_gene_count": 2901
     },
-    "N154": {
+    "main_N154": {
       "total_gene_count": 9144,
       "filtered_gene_count": 2827
     },
-    "N155": {
+    "main_N155": {
       "total_gene_count": 9151,
       "filtered_gene_count": 3405
     },
-    "N156": {
+    "main_N156": {
       "total_gene_count": 8913,
       "filtered_gene_count": 2808
     },
-    "N158": {
+    "main_N158": {
       "total_gene_count": 9256,
       "filtered_gene_count": 3600
     },
-    "N159": {
+    "main_N159": {
       "total_gene_count": 8878,
       "filtered_gene_count": 2995
     },
-    "N160": {
+    "main_N160": {
       "total_gene_count": 9187,
       "filtered_gene_count": 3869
     },
-    "N161": {
+    "main_N161": {
       "total_gene_count": 9106,
       "filtered_gene_count": 3557
     },
-    "N162": {
+    "main_N162": {
       "total_gene_count": 9327,
       "filtered_gene_count": 3630
     },
-    "N163": {
+    "main_N163": {
       "total_gene_count": 9342,
       "filtered_gene_count": 4209
     },
-    "N164": {
+    "main_N164": {
       "total_gene_count": 9011,
       "filtered_gene_count": 3416
     },
-    "N168": {
+    "main_N168": {
       "total_gene_count": 9058,
       "filtered_gene_count": 3317
     },
-    "N169": {
+    "main_N169": {
       "total_gene_count": 8930,
       "filtered_gene_count": 3294
     },
-    "N170": {
+    "main_N170": {
       "total_gene_count": 8715,
       "filtered_gene_count": 3233
     },
-    "N172": {
+    "main_N172": {
       "total_gene_count": 8817,
       "filtered_gene_count": 4030
     },
-    "N174": {
+    "main_N174": {
       "total_gene_count": 8742,
       "filtered_gene_count": 3479
     },
-    "N176": {
+    "main_N176": {
       "total_gene_count": 8590,
       "filtered_gene_count": 3532
     },
-    "N177": {
+    "main_N177": {
       "total_gene_count": 8660,
       "filtered_gene_count": 3573
     },
-    "N178": {
+    "main_N178": {
       "total_gene_count": 8557,
       "filtered_gene_count": 3859
     },
-    "N179": {
+    "main_N179": {
       "total_gene_count": 8437,
       "filtered_gene_count": 3729
     },
-    "N180": {
+    "main_N180": {
       "total_gene_count": 8149,
       "filtered_gene_count": 3000
     },
-    "N181": {
+    "main_N181": {
       "total_gene_count": 8379,
       "filtered_gene_count": 3351
     },
-    "N182": {
+    "main_N182": {
       "total_gene_count": 8217,
       "filtered_gene_count": 2778
     },
-    "N183": {
+    "main_N183": {
       "total_gene_count": 8815,
       "filtered_gene_count": 2392
     },
-    "N188": {
+    "main_N188": {
       "total_gene_count": 8291,
       "filtered_gene_count": 3481
     },
-    "N19": {
+    "main_N19": {
       "total_gene_count": 11198,
       "filtered_gene_count": 2397
     },
-    "N190": {
+    "main_N190": {
       "total_gene_count": 8176,
       "filtered_gene_count": 3345
     },
-    "N194": {
+    "main_N194": {
       "total_gene_count": 7884,
       "filtered_gene_count": 3225
     },
-    "N195": {
+    "main_N195": {
       "total_gene_count": 7388,
       "filtered_gene_count": 2545
     },
-    "N33": {
+    "main_N33": {
       "total_gene_count": 11054,
       "filtered_gene_count": 2706
     },
-    "N34": {
+    "main_N34": {
       "total_gene_count": 10916,
       "filtered_gene_count": 2604
     },
-    "N35": {
+    "main_N35": {
       "total_gene_count": 10819,
       "filtered_gene_count": 2396
     },
-    "N39": {
+    "main_N39": {
       "total_gene_count": 10766,
       "filtered_gene_count": 2496
     },
-    "N42": {
+    "main_N42": {
       "total_gene_count": 10714,
       "filtered_gene_count": 2161
     },
-    "N48": {
+    "main_N48": {
       "total_gene_count": 10847,
       "filtered_gene_count": 2377
     },
-    "N52": {
+    "main_N52": {
       "total_gene_count": 10780,
       "filtered_gene_count": 3041
     },
-    "N54": {
+    "main_N54": {
       "total_gene_count": 10486,
       "filtered_gene_count": 1914
     },
-    "N55": {
+    "main_N55": {
       "total_gene_count": 10939,
       "filtered_gene_count": 3318
     },
-    "N56": {
+    "main_N56": {
       "total_gene_count": 10697,
       "filtered_gene_count": 2945
     },
-    "N58": {
+    "main_N58": {
       "total_gene_count": 10873,
       "filtered_gene_count": 3527
     },
-    "N59": {
+    "main_N59": {
       "total_gene_count": 10600,
       "filtered_gene_count": 2839
     },
-    "N61": {
+    "main_N61": {
       "total_gene_count": 10287,
       "filtered_gene_count": 2127
     },
-    "N65": {
+    "main_N65": {
       "total_gene_count": 10396,
       "filtered_gene_count": 2880
     },
-    "N69": {
+    "main_N69": {
       "total_gene_count": 10554,
       "filtered_gene_count": 3442
     },
-    "N70": {
+    "main_N70": {
       "total_gene_count": 10369,
       "filtered_gene_count": 3031
     },
-    "N71": {
+    "main_N71": {
       "total_gene_count": 10200,
       "filtered_gene_count": 2998
     },
-    "N73": {
+    "main_N73": {
       "total_gene_count": 10608,
       "filtered_gene_count": 3816
     },
-    "N75": {
+    "main_N75": {
       "total_gene_count": 10737,
       "filtered_gene_count": 3327
     },
-    "N76": {
+    "main_N76": {
       "total_gene_count": 10180,
       "filtered_gene_count": 2967
     },
-    "N79": {
+    "main_N79": {
       "total_gene_count": 11006,
       "filtered_gene_count": 3466
     },
-    "N80": {
+    "main_N80": {
       "total_gene_count": 10491,
       "filtered_gene_count": 3982
     },
-    "N81": {
+    "main_N81": {
       "total_gene_count": 10067,
       "filtered_gene_count": 2751
     },
-    "N82": {
+    "main_N82": {
       "total_gene_count": 10189,
       "filtered_gene_count": 3057
     },
-    "N83": {
+    "main_N83": {
       "total_gene_count": 10128,
       "filtered_gene_count": 3091
     },
-    "N84": {
+    "main_N84": {
       "total_gene_count": 9983,
       "filtered_gene_count": 2586
     },
-    "N85": {
+    "main_N85": {
       "total_gene_count": 9744,
       "filtered_gene_count": 2045
     },
-    "N87": {
+    "main_N87": {
       "total_gene_count": 9955,
       "filtered_gene_count": 2673
     },
-    "N88": {
+    "main_N88": {
       "total_gene_count": 10023,
       "filtered_gene_count": 2792
     },
-    "N89": {
+    "main_N89": {
       "total_gene_count": 9987,
       "filtered_gene_count": 2915
     },
-    "N90": {
+    "main_N90": {
       "total_gene_count": 9828,
       "filtered_gene_count": 1978
     },
-    "N92": {
+    "main_N92": {
       "total_gene_count": 10069,
       "filtered_gene_count": 3314
     },
-    "N93": {
+    "main_N93": {
       "total_gene_count": 10059,
       "filtered_gene_count": 3161
     },
-    "N95": {
+    "main_N95": {
       "total_gene_count": 10210,
       "filtered_gene_count": 3777
     },
-    "N96": {
+    "main_N96": {
       "total_gene_count": 9955,
       "filtered_gene_count": 3052
     },
-    "N99": {
+    "main_N99": {
       "total_gene_count": 10010,
       "filtered_gene_count": 3145
     },
-    "Pm3": {
+    "main_Pm3": {
       "total_gene_count": 9684,
       "filtered_gene_count": 3631
     },
-    "Pm4": {
+    "main_Pm4": {
       "total_gene_count": 9389,
       "filtered_gene_count": 4243
     },
-    "R1.6": {
+    "main_R1.6": {
       "total_gene_count": 11640,
       "filtered_gene_count": 3669
     },
-    "R184": {
+    "main_R184": {
       "total_gene_count": 8419,
       "filtered_gene_count": 3153
     },
-    "R7.8": {
+    "main_R7.8": {
       "total_gene_count": 11190,
       "filtered_gene_count": 3890
     },
-    "T1": {
+    "main_T1": {
       "total_gene_count": 10907,
       "filtered_gene_count": 3244
     },
-    "T2": {
+    "main_T2": {
       "total_gene_count": 11332,
       "filtered_gene_count": 2674
     },
-    "T2a": {
+    "main_T2a": {
       "total_gene_count": 11006,
       "filtered_gene_count": 2574
     },
-    "T3": {
+    "main_T3": {
       "total_gene_count": 11043,
       "filtered_gene_count": 2234
     },
-    "T4a": {
+    "main_T4a": {
       "total_gene_count": 11268,
       "filtered_gene_count": 2425
     },
-    "T4b": {
+    "main_T4b": {
       "total_gene_count": 10948,
       "filtered_gene_count": 2365
     },
-    "T4c": {
+    "main_T4c": {
       "total_gene_count": 10692,
       "filtered_gene_count": 2324
     },
-    "T4d": {
+    "main_T4d": {
       "total_gene_count": 11226,
       "filtered_gene_count": 2265
     },
-    "T5a": {
+    "main_T5a": {
       "total_gene_count": 11097,
       "filtered_gene_count": 2421
     },
-    "T5b": {
+    "main_T5b": {
       "total_gene_count": 11069,
       "filtered_gene_count": 2381
     },
-    "T5c": {
+    "main_T5c": {
       "total_gene_count": 11197,
       "filtered_gene_count": 2302
     },
-    "T5d": {
+    "main_T5d": {
       "total_gene_count": 11003,
       "filtered_gene_count": 2323
     },
-    "Tm1": {
+    "main_Tm1": {
       "total_gene_count": 11244,
       "filtered_gene_count": 2957
     },
-    "Tm2": {
+    "main_Tm2": {
       "total_gene_count": 11226,
       "filtered_gene_count": 2898
     },
-    "Tm20": {
+    "main_Tm20": {
       "total_gene_count": 11294,
       "filtered_gene_count": 2350
     },
-    "Tm29": {
+    "main_Tm29": {
       "total_gene_count": 10277,
       "filtered_gene_count": 2607
     },
-    "Tm3": {
+    "main_Tm3": {
       "total_gene_count": 11538,
       "filtered_gene_count": 2536
     },
-    "Tm4": {
+    "main_Tm4": {
       "total_gene_count": 11374,
       "filtered_gene_count": 2679
     },
-    "Tm5c": {
+    "main_Tm5c": {
       "total_gene_count": 10607,
       "filtered_gene_count": 2671
     },
-    "Tm9a": {
+    "main_Tm9a": {
       "total_gene_count": 10757,
       "filtered_gene_count": 2385
     },
-    "Tm9b": {
+    "main_Tm9b": {
       "total_gene_count": 10239,
       "filtered_gene_count": 2334
     },
-    "TmY3": {
+    "main_TmY3": {
       "total_gene_count": 10989,
       "filtered_gene_count": 2911
     },
-    "TmY5a": {
+    "main_TmY5a": {
       "total_gene_count": 11342,
       "filtered_gene_count": 2756
     }

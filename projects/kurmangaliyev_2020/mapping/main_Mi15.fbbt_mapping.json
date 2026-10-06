@@ -1,0 +1,29 @@
+{
+  "cluster_label": "main_Mi15",
+  "working_definition": "Mi15 is a medulla intrinsic unicolumnar interneuron of the adult Drosophila optic lobe. Its primary neurite splits in layer M1 and extends vertical branches to layer M7, with an additional process into the first optic chiasma that receives predominantly R8 photoreceptor input (selectivity lost in the dorsal rim area). It is both cholinergic and dopaminergic, and is a Notch OFF hemilineage secondary neuron born from a medulla neuroblast.",
+  "searches_performed": [
+    "Mi15 (exact cluster label, ontology_id fbbt)",
+    "medulla intrinsic neuron Mi15 (core anatomical type with name)",
+    "medulla intrinsic columnar neuron (parent type)"
+  ],
+  "best_match": {
+    "fbbt_term": "medulla intrinsic neuron Mi15",
+    "fbbt_id": "FBbt:00111285",
+    "fbbt_definition": "Medulla intrinsic unicolumnar neuron whose primary neurite splits in the M1 layer, sending vertical branches as far as the M7 layer (Takemura et al., 2013; Takemura et al., 2015; Kind et al., 2021). A process also extends from the distal medulla into the first optic chiasma, where it receives around half of its photoreceptor input (Kind et al., 2021). In central columns, these cells selectively receive input from R8, rather than R7 photoreceptors, but selectivity is not maintained in Mi15 cells of the dorsal rim area (Kind et al., 2021). It seems to be both cholinergic and dopaminergic (Davis et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The FBbt term 'medulla intrinsic neuron Mi15' (FBbt:00111285) is a direct name match for the cluster and its definition covers every defining feature of the cluster: unicolumnar morphology, layer span M1-M7, first optic chiasma process with R8-selective photoreceptor input, dual cholinergic and dopaminergic neurotransmitter identity, and Notch OFF hemilineage secondary neuron status. The term is not obsolete. No subtype split exists in FBbt that would require a broad match. FBbt:00052318 'immature medulla intrinsic neuron Mi15' is the developmental precursor form and is not appropriate for an adult scRNAseq cluster.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature medulla intrinsic neuron Mi15",
+      "fbbt_id": "FBbt:00052318",
+      "fbbt_definition": "Immature form of the medullary intrinsic neuron Mi15 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the D/BarHI temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "This term describes the immature (developing) form of Mi15. The Kurmangaliyev 2020 atlas samples adult flies; the cluster represents the mature adult neuron, not the immature precursor."
+    }
+  ],
+  "recommendation": "Map cluster Mi15 to FBbt:00111285 'medulla intrinsic neuron Mi15' as skos:exactMatch. The FBbt definition and cluster biology are in full agreement. No new term needed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

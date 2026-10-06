@@ -1,0 +1,42 @@
+{
+  "cluster_label": "main_T5b",
+  "working_definition": "T5b is the OFF-motion direction-selective columnar neuron of the Drosophila optic lobe whose axon terminal projects to lobula plate layer b (layer 2), encoding motion in the diagonal back-to-front direction. Its dendrites arborise in lobula layer Lo1, distinguishing it from the ON-pathway T4b neuron whose dendrites are in medulla M10. Subtype identity within the T4/T5 combined transcriptomic cluster is defined by lobula plate layer targeting rather than a unique molecular marker.",
+  "searches_performed": [
+    "T5b neuron (FBbt exact label)",
+    "T5 neuron (core anatomical type, fbbt)",
+    "T5 neuron lobula plate layer 2",
+    "OFF motion direction selective columnar neuron lobula"
+  ],
+  "best_match": {
+    "fbbt_term": "T5b neuron",
+    "fbbt_id": "FBbt:00003738",
+    "fbbt_definition": "T5 neuron with its lobula plate arbor in layer 2 (Fischbach and Dittrich, 1989). It responds to motion in a diagonal back-to-front direction (Henning et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00003738 'T5b neuron' is defined as the T5 subtype with its lobula plate arbor in layer 2, tuned to diagonal back-to-front motion \u2014 precisely matching the cluster definition. The cluster label 'T5b' is the canonical anatomical name used in FBbt. The FBbt term is the adult form (not immature), consistent with the adult-tissue atlas. The layer-2 axonal targeting and OFF-pathway columnar identity fully overlap with the report. Children T5bi (FBbt:00052247) and T5bii (FBbt:00052248) represent finer sub-subtypes based on sub-diagonal tuning not resolved at the transcriptomic level in this atlas, so the cluster maps correctly at the T5b level.",
+  "other_candidates": [
+    {
+      "fbbt_term": "T5 neuron",
+      "fbbt_id": "FBbt:00003736",
+      "fbbt_definition": "Pre- versus postsynaptic innervation judged by scoring of terminal morphology from figures in Fischbach and Dittrich (1989) as assessed by FlyBrain Neuron DB. The neurotransmitter was assessed with a split-GAL4 strategy using a Chat-DBD allele (FBal0198074) (Mauss et al., 2014) and single-cell transcript profiling (Shinomiya et al., 2014). Connectivity in the lobula was assessed by serial section electron microscopy of a single column (Shinomiya et al., 2014).",
+      "reason_rejected": "Parent class of T5b; too broad \u2014 does not capture the layer 2 / lobula plate specificity or directional identity of T5b. FBbt:00003738 is the appropriate exact-match subtype."
+    },
+    {
+      "fbbt_term": "T5bi neuron",
+      "fbbt_id": "FBbt:00052247",
+      "fbbt_definition": "T5b neuron that responds to motion in a diagonal downward back-to-front direction (Henning et al., 2022).",
+      "reason_rejected": "Too specific \u2014 this is a sub-subtype of T5b based on sub-diagonal tuning not distinguished in the transcriptomic cluster."
+    },
+    {
+      "fbbt_term": "T5bii neuron",
+      "fbbt_id": "FBbt:00052248",
+      "fbbt_definition": "T5b neuron that responds to motion in a diagonal upward back-to-front direction (Henning et al., 2022).",
+      "reason_rejected": "Too specific \u2014 same reason as T5bi; transcriptomic cluster maps at the T5b level."
+    }
+  ],
+  "recommendation": "Accept FBbt:00003738 'T5b neuron' as an exact match. The FBbt term was found by direct label search, is non-obsolete, and its definition fully aligns with the cluster's anatomical identity (T5 subtype, lobula plate layer 2 arbor, OFF-motion, back-to-front direction tuning). No new term needed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

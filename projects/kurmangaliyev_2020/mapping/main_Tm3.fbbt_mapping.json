@@ -1,0 +1,41 @@
+{
+  "cluster_label": "main_Tm3",
+  "working_definition": "Tm3 is a narrow-field transmedullary columnar neuron of the adult Drosophila optic lobe. It arborises in medulla layers M1, M4, M5, M9, and M10 and terminates in lobula layers 1 and 4 with bleb-like morphology. It receives input from lamina monopolar neurons L1 and L5 and medulla intrinsic neuron Mi1, and outputs to T4 neurons, placing it in the ON motion detection pathway. It is capable of both cholinergic and GABAergic neurotransmission.",
+  "searches_performed": [
+    "Tm3 (exact label, ontology: fbbt)",
+    "transmedullary neuron Tm3 (core anatomical type with qualifier, ontology: fbbt)",
+    "transmedullary neuron (parent class, ontology: fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "transmedullary neuron Tm3",
+    "fbbt_id": "FBbt:00003791",
+    "fbbt_definition": "Transmedullary narrow field neuron that terminates in lobula layers 1 and 4 with bleb-like terminal arborizations. It has fine arborizations in medulla layers M1, M4, and M5, and has bleb-type arborization in medulla layers M1, M4, M9 and M10 (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). Pre-synaptic terminals are present mainly in medulla layers M9-M10, but also in all other layers where neurites extend laterally (Pankova and Borst, 2017). It receives input from lamina monopolar neuron L1 and L5 and medullary intrinsic neuron Mi1 and it outputs to T4 neurons (Takemura et al., 2013). It seems to be capable of both cholinergic (Pankova and Borst, 2017) and GABAergic (Raghu et al., 2013) neurotransmission.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The cluster label 'Tm3' corresponds directly to the canonical adult Drosophila optic lobe neuron FBbt:00003791 'transmedullary neuron Tm3' (also known as Tm3a). The FBbt definition matches precisely on all key features: narrow-field transmedullary morphology, medulla layer arborisations (M1, M4, M5, M9, M10), lobula layer terminals (layers 1 and 4), connectivity (input from L1, L5, Mi1; output to T4), and dual cholinergic/GABAergic neurotransmitter identity. The Kurmangaliyev 2020 atlas profiles adult optic lobe cells, consistent with this being the mature adult form. The closely related FBbt:00110071 (Tm3b) is distinguished by an additional M8 branch and is a distinct subtype; FBbt:00052329 is the immature developmental form, not the adult; and FBbt:00003830 (Tm3Y) is a transmedullary Y neuron and a separate cell class.",
+  "other_candidates": [
+    {
+      "fbbt_term": "transmedullary neuron Tm3b",
+      "fbbt_id": "FBbt:00110071",
+      "fbbt_definition": "Transmedullary neuron that terminates in lobula layers 1 and 4 with bleb-like terminal arborizations. It has fine arborizations in medulla layers M1, M4, and M5, and has bleb-type arborization in medulla layers M1, M4, M9 and M10 (Fischbach and Dittrich, 1989). It has a small branch at medulla layer M8 that projects towards medulla layer M10, which distinguishes it from the Tm3a (Tm3) neuron (Hasegawa et al., 2011).",
+      "reason_rejected": "Tm3b is a distinct morphological subtype defined by an additional branch at medulla layer M8. The cluster is labelled 'Tm3' without the 'b' qualifier, and corresponds to the canonical Tm3a form (FBbt:00003791) rather than this variant."
+    },
+    {
+      "fbbt_term": "immature transmedullary neuron Tm3",
+      "fbbt_id": "FBbt:00052329",
+      "fbbt_definition": "Immature form of the transmedullary neuron Tm3 (Tm3a) (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Erm/Ey temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "This is the developmental/immature precursor form of Tm3, not the adult neuron. The Kurmangaliyev 2020 atlas profiles adult optic lobe cells, so the mature adult term FBbt:00003791 is the correct match."
+    },
+    {
+      "fbbt_term": "transmedullary neuron Tm3Y",
+      "fbbt_id": "FBbt:00003830",
+      "fbbt_definition": "Transmedullary neuron that terminates in lobula layer 4 with bleb-like terminal arborizations. It has fine arborizations in medulla layers M1, M4, and M5, and has bleb-type arborization in medulla layers M1, M4, M9 and M10. It differs from the transmedullary neuron Tm3 or TmY3 in that an individual of a retinotopic set may or may not form branches in the lobula plate.",
+      "reason_rejected": "Tm3Y is a transmedullary Y neuron (a distinct class with variable lobula plate branching) and is explicitly distinguished from Tm3 in the FBbt definition. It belongs to the transmedullary Y neuron parent class rather than the narrow-field transmedullary neuron class of Tm3."
+    }
+  ],
+  "recommendation": "Map cluster 'Tm3' to FBbt:00003791 'transmedullary neuron Tm3' with skos:exactMatch. This is a well-characterised and unambiguous match: the cluster name directly corresponds to the canonical adult Tm3 (Tm3a) cell type, and all anatomical and functional features align. No new term is needed and no additional verification is required.",
+  "new_term_needed": false,
+  "verification_needed": false
+}
