@@ -1,0 +1,35 @@
+{
+  "cluster_label": "main_R7.8",
+  "working_definition": "The two inner photoreceptors R7 and R8 of the compound eye, taken as an aggregate. Their rhabdomeres occupy the centre of each ommatidium; both axons project through the lamina without synapsing and terminate in the medulla (R7 in layers M1/M5/M6, R8 in M3). R7 expresses UV-sensitive rhodopsins Rh3/Rh4; R8 expresses blue/green-sensitive rhodopsins Rh5/Rh6. Together they mediate wavelength-specific (chromatic) vision.",
+  "searches_performed": [
+    "inner photoreceptor cell (fbbt)",
+    "R7 photoreceptor (fbbt)",
+    "photoreceptor cell R8 (fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "inner photoreceptor cell",
+    "fbbt_id": "FBbt:00006008",
+    "fbbt_definition": "Eye photoreceptor cell whose rhabdomere is located in the center of each ommatidium.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00006008 'inner photoreceptor cell' is the canonical grouping term for the R7+R8 pair: it covers any eye photoreceptor whose rhabdomere is located in the centre of the ommatidium, which is the defining anatomical feature shared by R7 and R8 and no other photoreceptors. The cluster label R7.8 is shorthand for this same inner-photoreceptor grouping. Both individual terms (FBbt:00004225 photoreceptor cell R7; FBbt:00004227 photoreceptor cell R8) are direct children of FBbt:00006008, confirming it is the correct level for a cluster that does not resolve the two subtypes. The parallel with the R1.6 -> FBbt:00006007 'outer photoreceptor cell' mapping is exact. No new term is needed.",
+  "other_candidates": [
+    {
+      "fbbt_term": "photoreceptor cell R7",
+      "fbbt_id": "FBbt:00004225",
+      "fbbt_definition": "Inner photoreceptor cell of the ommatidium whose rhabdomere is located distally, directly above that of R8 (Wernet and Desplan, 2004). It has a single axon that extends through a single column of the lamina without making synapses (Fischbach and Dittrich, 1989). This axon crosses the first optic chiasm and extends through a single column of the medulla where it makes pre-synaptic contacts, mainly in medulla layers M1 and M5 (Takemura et al., 2008), before terminating in M6 (Gao et al., 2008; Sancer et al., 2019).",
+      "reason_rejected": "More specific than the cluster: the cluster aggregates both R7 and R8 and does not resolve them as distinct subtypes."
+    },
+    {
+      "fbbt_term": "photoreceptor cell R8",
+      "fbbt_id": "FBbt:00004227",
+      "fbbt_definition": "Inner photoreceptor cell of the ommatidium whose rhabdomere is located proximally, directly below that of R7 (Wernet and Desplan, 2004). It has a single axon that extends through a single column of the lamina without making synapses and crosses the first optic chiasm to reach the medulla (Fischbach and Dittrich, 1989).",
+      "reason_rejected": "More specific than the cluster: the cluster aggregates both R7 and R8 and does not resolve them as distinct subtypes."
+    }
+  ],
+  "recommendation": "Accept FBbt:00006008 'inner photoreceptor cell' as an exact match. The term covers all photoreceptors with centrally located rhabdomeres (R7 + R8), which is precisely what the R7.8 cluster represents. Individual R7/R8 subtypes are too specific; the parent term is the correct level.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

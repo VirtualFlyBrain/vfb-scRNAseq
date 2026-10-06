@@ -1,0 +1,29 @@
+{
+  "cluster_label": "early_Dm10",
+  "working_definition": "Early-dataset (0-24h APF, 0h/12h/24h) cluster typed by the authors as Dm10; cluster is composed primarily of developing Dm10 neurons (immature).",
+  "searches_performed": [
+    "immature distal medullary amacrine neuron Dm10",
+    "immature Dm10",
+    "OLS4 REST search fbbt \"immature\" medulla/transmedullary/amacrine terms"
+  ],
+  "best_match": {
+    "fbbt_term": "immature distal medullary amacrine neuron Dm10",
+    "fbbt_id": "FBbt:00052306",
+    "fbbt_definition": "Immature form of the distal medullary amacrine neuron Dm10 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Ey/Hbn temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Authors' typing taken at face value; stage 0-24h APF so the immature term immature distal medullary amacrine neuron Dm10 is the matching developing form.",
+  "other_candidates": [
+    {
+      "fbbt_term": "distal medullary amacrine neuron Dm10",
+      "fbbt_id": "FBbt:00110135",
+      "fbbt_definition": "Distal medullary wide-field amacrine neuron whose cell body is located in the cell body rind of the medulla. It has a distinct tri-stratified layer pattern, branching extensively in medulla layers M1, M3B and M5. Its arbor resembles an ellipse, with the long axis aligned with the dorsal-ventral axis, and covering less than 10 columns. The processes in M1 and M3B to M5 are located in an intracolumnar position. There are around 300 Dm10 neurons per hemisphere. They are GABAergic (Davis et al., 2020).",
+      "reason_rejected": "Mature (adult) form; cluster is 0-24h APF so the immature term is used."
+    }
+  ],
+  "recommendation": "Accept immature exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

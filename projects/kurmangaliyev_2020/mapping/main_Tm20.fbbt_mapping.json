@@ -1,0 +1,35 @@
+{
+  "cluster_label": "main_Tm20",
+  "working_definition": "Tm20 is a narrow-field transmedullary columnar neuron of the adult Drosophila optic lobe. It receives dendritic input in medulla layers M1-M3 (from lamina monopolar neuron L3 and photoreceptor R8) and projects across the second optic chiasma to presynaptic terminals in lobula layer 5, where it provides strong input to lobula intrinsic neuron Li4. It is cholinergic, unicolumnar (one cell per optic column), and is one of the 13 medulla neurons with mapped connectome data in the Kurmangaliyev 2020 atlas.",
+  "searches_performed": [
+    "searchClasses fbbt 'Tm20'",
+    "searchClasses fbbt 'transmedullary neuron Tm20'",
+    "searchClasses fbbt 'transmedullary neuron'"
+  ],
+  "best_match": {
+    "fbbt_term": "transmedullary neuron Tm20",
+    "fbbt_id": "FBbt:00003808",
+    "fbbt_definition": "Transmedullary neuron that has dendritic arborization in medulla layers M1-M3, as well as presynaptic sites in M8 (Fischbach and Dittrich, 1989; Gao et al., 2008). In the medulla, it spans just one column (Kind et al., 2021), and receives input from lamina monopolar neuron L3 (Takemura et al., 2013) and an R8 photoreceptor (Kind et al., 2021). Its axon follows the anterior edge of its cognate medulla column (Ting et al., 2014), then crosses the second optic chiasma and projects to lobula layer 5 (Fischbach and Dittrich, 1989; Gao et al., 2008). It provides input to the lobula intrinsic neuron Li4 via many synapses (Lin et al., 2016). It is a cholinergic neuron (Gao et al., 2008). There is usually one of these cells per optic column (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The cluster label 'Tm20' directly names a well-characterised anatomical cell type, and FBbt:00003808 is the canonical term for that exact type. The FBbt definition and the cluster description are fully concordant: both describe a narrow-field transmedullary columnar neuron with dendrites in medulla M1-M3, input from L3 and R8, an axon crossing the second optic chiasma, and a terminal in lobula layer 5 providing strong output to Li4. Both record cholinergic neurotransmitter identity and unicolumnar organisation. The term is not obsolete. No qualifying features of the cluster are absent from the FBbt term, and the FBbt term introduces no contradictory properties.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature transmedullary neuron Tm20",
+      "fbbt_id": "FBbt:00052327",
+      "fbbt_definition": "Immature form of the transmedullary neuron Tm20 (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Hbn/Opa/Slp temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "This term denotes the immature (pupal/larval) form of Tm20, not the adult neuron. The Kurmangaliyev 2020 atlas profiled adult Drosophila optic lobe cells; FBbt:00003808 (adult) is the correct term."
+    },
+    {
+      "fbbt_term": "narrow field transmedullary neuron",
+      "fbbt_id": "FBbt:00013789",
+      "fbbt_definition": "Transmedullary neuron whose arborizations span a narrow field, typically one optic column.",
+      "reason_rejected": "Valid parent class of Tm20 but more general; the cluster resolves to a specific named type (Tm20) so the parent is redundant as best match."
+    }
+  ],
+  "recommendation": "Map cluster Tm20 to FBbt:00003808 (transmedullary neuron Tm20) with skos:exactMatch. The term, definition, connectivity, neurotransmitter, and morphology are all concordant. No new term is needed and no curator verification is required beyond routine review.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

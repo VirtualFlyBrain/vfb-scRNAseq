@@ -1,0 +1,29 @@
+{
+  "cluster_label": "early_Dm9",
+  "working_definition": "Early-dataset (0-24h APF, 0h/12h/24h) cluster typed by the authors as Dm9; cluster is composed primarily of developing Dm9 neurons (immature).",
+  "searches_performed": [
+    "immature distal medullary amacrine neuron Dm9",
+    "immature Dm9",
+    "OLS4 REST search fbbt \"immature\" medulla/transmedullary/amacrine terms"
+  ],
+  "best_match": {
+    "fbbt_term": "immature distal medullary amacrine neuron Dm9",
+    "fbbt_id": "FBbt:00052315",
+    "fbbt_definition": "Immature form of the distal medullary amacrine neuron Dm9 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hbn/Opa/Slp temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Authors' typing taken at face value; stage 0-24h APF so the immature term immature distal medullary amacrine neuron Dm9 is the matching developing form.",
+  "other_candidates": [
+    {
+      "fbbt_term": "distal medullary amacrine neuron Dm9",
+      "fbbt_id": "FBbt:00111271",
+      "fbbt_definition": "Distal medullary wide-field amacrine neuron with arbors that span multiple columns in layers M1 and M6A and columnar processes between these two layers. The processes in M2 and M5 occupy a central column position and are closely associated with R7 and R8 photoreceptor axons, covering around 7 columns. There are around 110 Dm9 neurons per hemisphere. They are glutamatergic (Davis et al., 2020).",
+      "reason_rejected": "Mature (adult) form; cluster is 0-24h APF so the immature term is used."
+    }
+  ],
+  "recommendation": "Accept immature exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

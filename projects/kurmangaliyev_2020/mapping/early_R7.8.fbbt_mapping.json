@@ -1,0 +1,45 @@
+{
+  "cluster_label": "early_R7.8",
+  "working_definition": "Early-dataset (0-24h APF) cluster named 'R7.8' by the authors (Kurmangaliyev et al. 2020, GSE156455 metadata_early subtype); composed primarily of immature R7/R8 photoreceptor cells of the developing optic lobe/eye.",
+  "searches_performed": [
+    "early_R7.8",
+    "immature R7/R8 photoreceptor",
+    "R7/R8 photoreceptor",
+    "immature adult optic lobe neuron",
+    "immature T neuron",
+    "immature columnar neuron",
+    "photoreceptor precursor"
+  ],
+  "best_match": {
+    "fbbt_term": "eye photoreceptor precursor cell",
+    "fbbt_id": "FBbt:00048002",
+    "fbbt_definition": "Immature neuron of the eye disc that will develop into one of the photoreceptors (R1-R8) of the adult eye.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "low"
+  },
+  "justification": "Authors group R7 and R8 (inner photoreceptors) in the early data. FBbt has photoreceptor R7 precursor cell (FBbt:00048009) and R8 precursor cell (FBbt:00048010) but no combined inner-photoreceptor immature term; the general eye photoreceptor precursor cell is the common parent. Stage fit (eye disc precursor vs 0-24h APF) is approximate.",
+  "other_candidates": [
+    {
+      "fbbt_term": "photoreceptor R7 precursor cell",
+      "fbbt_id": "FBbt:00048009",
+      "fbbt_definition": "Immature neuron of the eye disc that will develop into a photoreceptor cell R7 of the adult eye.",
+      "reason_rejected": "Only R7; cluster groups R7 and R8."
+    },
+    {
+      "fbbt_term": "photoreceptor R8 precursor cell",
+      "fbbt_id": "FBbt:00048010",
+      "fbbt_definition": "Immature neuron of the eye disc that will develop into a photoreceptor cell R8 of the adult eye.",
+      "reason_rejected": "Only R8; cluster groups R7 and R8."
+    },
+    {
+      "fbbt_term": "inner photoreceptor cell",
+      "fbbt_id": "FBbt:00006008",
+      "fbbt_definition": "Eye photoreceptor cell whose rhabdomere is located in the center of each ommatidium.",
+      "reason_rejected": "Mature inner photoreceptor; cells are developing (0-24h APF)."
+    }
+  ],
+  "recommendation": "Broad match to eye photoreceptor precursor cell; low confidence due to stage mismatch.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

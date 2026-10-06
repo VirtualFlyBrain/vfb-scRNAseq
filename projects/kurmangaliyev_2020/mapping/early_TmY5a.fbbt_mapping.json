@@ -1,0 +1,29 @@
+{
+  "cluster_label": "early_TmY5a",
+  "working_definition": "Early-dataset (0-24h APF, 0h/12h/24h) cluster typed by the authors as TmY5a; cluster is composed primarily of developing TmY5a neurons (immature).",
+  "searches_performed": [
+    "immature transmedullary Y neuron TmY5a",
+    "immature TmY5a",
+    "OLS4 REST search fbbt \"immature\" medulla/transmedullary/amacrine terms"
+  ],
+  "best_match": {
+    "fbbt_term": "immature transmedullary Y neuron TmY5a",
+    "fbbt_id": "FBbt:00052339",
+    "fbbt_definition": "Immature form of the transmedullary Y neuron TmY5a (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Erm/Ey temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Authors' typing taken at face value; stage 0-24h APF so the immature term immature transmedullary Y neuron TmY5a is the matching developing form.",
+  "other_candidates": [
+    {
+      "fbbt_term": "transmedullary Y neuron TmY5a",
+      "fbbt_id": "FBbt:00003823",
+      "fbbt_definition": "Transmedullary Y narrow field neuron that terminates with both fine and bleb-type arborizations in lobula layers 4, 5 and 6, and in lobula plate layer 3, but only has fine arborizations in lobula plate layer 1. It displays both fine and bleb-type arborizations in medulla layers M6 and M8, and has fine arborizations in medulla layers M2, M3, M4, M5 and M9 (Morante and Desplan, 2008; Fischbach and Dittrich (1989). It is glutamatergic (Davis et al., 2020).",
+      "reason_rejected": "Mature (adult) form; cluster is 0-24h APF so the immature term is used."
+    }
+  ],
+  "recommendation": "Accept immature exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -47,7 +47,8 @@ from FlyBase; that authority is being dropped.)
 
 - `projects/kurmangaliyev_2020/` — Kurmangaliyev et al. 2020, *Drosophila* visual
   system developmental atlas ([GSE156455](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156455),
-  PMID 33125872). Cluster labels are curated from the paper / supplementary tables.
+  PMID 33125872): the 24-96h main dataset (196 clusters) and the 0-24h early
+  dataset (110 clusters).
 - `projects/davie_2018/` — Davie et al. 2018, ageing adult brain atlas
   ([GSE107451](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107451),
   PMID 29909982), 57K 10x set. Replaces the old FlyBase/SCEA load (FBlc0006090).

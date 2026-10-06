@@ -1,0 +1,28 @@
+{
+  "cluster_label": "main_Mi4",
+  "working_definition": "Mi4 is a medulla intrinsic narrow-field columnar (unicolumnar) neuron of the Drosophila optic lobe. It arborises in medulla layers M1-M5, M8 and M9, with both fine and bleb-type processes across most layers. It receives input from lamina monopolar neuron L5 and photoreceptor R8 and is GABAergic, placing it in the OFF-pathway circuitry of the medulla.",
+  "searches_performed": [
+    "Mi4 neuron (fbbt)",
+    "medulla intrinsic neuron Mi4 (fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "medulla intrinsic neuron Mi4",
+    "fbbt_id": "FBbt:00003779",
+    "fbbt_definition": "Medulla intrinsic narrow field neuron with both fine and bleb-type arborizations in medulla layers M1, M2, M3 and M8, but with only fine arborizations in medulla layers M4 and M5, and only bleb-type arborizations in medulla layer M9 (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). It receives input from the lamina monopolar neuron L5 and photoreceptor R8 (Takemura et al., 2013). It is a GABAergic neuron (Takemura et al., 2017). There is usually one of these cells per optic column (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The cluster label 'Mi4' directly names the canonical medulla intrinsic neuron Mi4, a well-characterised Drosophila optic lobe cell type. FBbt:00003779 ('medulla intrinsic neuron Mi4') matches on every defining feature: narrow-field columnar medulla intrinsic neuron, arborisations in layers M1-M5/M8/M9, L5 and R8 input, and GABAergic neurotransmitter. The term is not obsolete. The cluster label is the standard abbreviated anatomical name; there is no ambiguity between the atlas cluster and this FBbt term.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature medulla intrinsic neuron Mi4",
+      "fbbt_id": "FBbt:00052319",
+      "fbbt_definition": "Immature form of the medullary intrinsic neuron Mi4 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hth/Opa temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "This term describes the immature/developmental form of Mi4, whereas the Kurmangaliyev 2020 atlas profiles adult neurons. The cluster represents the mature adult cell type."
+    }
+  ],
+  "recommendation": "Accept FBbt:00003779 (medulla intrinsic neuron Mi4) as an exact match. The cluster label is the standard abbreviated name for this well-curated FBbt term; all anatomical, connectivity, and neurotransmitter features align precisely.",
+  "new_term_needed": false,
+  "verification_needed": false
+}
