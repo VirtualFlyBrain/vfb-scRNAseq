@@ -107,7 +107,7 @@
       "kind": "repository",
       "repo": "https://github.com/Cellular-Semantics/Atlas-chat",
       "commit": "4c90b6c",
-      "notes": "Used only for building/querying the local PDF snippet index (local-paper-index)."
+      "notes": "Used only for building/querying the local PDF snippet index (local-paper-index). Local-index code is byte-identical at Atlas-reporter (atlas-chat renamed) commit 2acd38e on main (https://github.com/Cellular-Semantics/Atlas-reporter), where 4c90b6c is no longer on main; re-ingesting the Davie paper at 2acd38e reproduced the index exactly (checked 2026-10-06), so this provenance remains reproducible from 2acd38e."
     },
     {
       "name": "sentence-transformers",
