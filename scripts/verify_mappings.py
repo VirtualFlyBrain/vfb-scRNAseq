@@ -40,12 +40,13 @@ def lookup(curie: str) -> dict | None:
     return None
 
 
-def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--project", required=True)
-    args = ap.parse_args()
+def verify(project: str) -> tuple[dict, list]:
+    """Check every FBbt term a project's mappings use against live OLS FBbt.
 
-    mdir = REPO_ROOT / "projects" / args.project / "mapping"
+    Returns (terms, problems): terms = {fbbt_id: {recorded_label, clusters}},
+    problems = [(fbbt_id, message, info)] for missing / obsolete / relabelled terms.
+    """
+    mdir = REPO_ROOT / "projects" / project / "mapping"
     # unique (fbbt_id -> recorded_label), with the clusters that use each
     terms: dict[str, dict] = {}
     for f in sorted(mdir.glob("*.fbbt_mapping.json")):
@@ -57,9 +58,6 @@ def main() -> int:
             terms.setdefault(fid, {"recorded_label": bm.get("fbbt_term", ""), "clusters": []})
             terms[fid]["clusters"].append(m["cluster_label"])
 
-    print(f"verifying {len(terms)} distinct FBbt terms across "
-          f"{sum(len(t['clusters']) for t in terms.values())} clusters against live OLS FBbt\n")
-
     problems = []
     for fid, info in sorted(terms.items()):
         doc = lookup(fid)
@@ -69,6 +67,17 @@ def main() -> int:
             problems.append((fid, f"OBSOLETE (label: {doc.get('label')})", info))
         elif doc.get("label") != info["recorded_label"]:
             problems.append((fid, f"LABEL CHANGED: recorded {info['recorded_label']!r} -> current {doc.get('label')!r}", info))
+    return terms, problems
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--project", required=True)
+    args = ap.parse_args()
+
+    terms, problems = verify(args.project)
+    print(f"verifying {len(terms)} distinct FBbt terms across "
+          f"{sum(len(t['clusters']) for t in terms.values())} clusters against live OLS FBbt\n")
 
     if not problems:
         print(f"OK — all {len(terms)} terms current, non-obsolete, labels match.")
