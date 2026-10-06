@@ -70,15 +70,12 @@ def _manual_edit_summary(m: dict) -> str:
     return f"{me.get('by', '?')}@{me.get('date', '?')}: {me.get('change') or me.get('reason', '')}".strip()
 
 
-def main() -> None:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--project", required=True)
-    args = ap.parse_args()
+def collate(project: str) -> tuple[list[str], list[dict]]:
+    """Return (columns, rows) for a project's mapping.tsv, without writing it."""
+    cfg = load_config(project)
+    kind_of = annotation_kind(project, cfg)
 
-    cfg = load_config(args.project)
-    kind_of = annotation_kind(args.project, cfg)
-
-    proj = REPO_ROOT / "projects" / args.project
+    proj = REPO_ROOT / "projects" / project
     anns = json.loads((proj / "cell_type_annotations.json").read_text())["annotations"]
     prior = _load_prior(proj, cfg)
     # extra per-cluster fields from cell_type_annotations.json shown after the label
@@ -136,12 +133,24 @@ def main() -> None:
     rows.sort(key=lambda r: (not r["fbbt_id"], [int(t) if t.isdigit() else t
                                                  for t in re.split(r"(\d+)", r["cluster_label"])]))
 
+    cols = COLUMNS[:1] + source_cols + COLUMNS[1:]
+    if prior is not None:
+        cols = (cols[:cols.index("manual_edit")] + PRIOR_COLUMNS
+                + cols[cols.index("manual_edit"):])
+    return cols, rows
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--project", required=True)
+    args = ap.parse_args()
+
+    proj = REPO_ROOT / "projects" / args.project
+    cols, rows = collate(args.project)
+    out = proj / "mapping.tsv"
     with out.open("w", newline="") as fh:
-        cols = COLUMNS[:1] + source_cols + COLUMNS[1:]
-        if prior is not None:
-            cols = (cols[:cols.index("manual_edit")] + PRIOR_COLUMNS
-                    + cols[cols.index("manual_edit"):])
-        w = csv.DictWriter(fh, fieldnames=cols, delimiter="\t")
+        # LF line endings, matching how git stores/checks out the file (no churn)
+        w = csv.DictWriter(fh, fieldnames=cols, delimiter="\t", lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
     print(f"wrote {len(rows)} rows -> {out}")
