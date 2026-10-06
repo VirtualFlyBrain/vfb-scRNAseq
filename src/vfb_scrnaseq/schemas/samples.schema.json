@@ -47,6 +47,8 @@
           "tissue_raw": { "type": ["string", "null"] },
           "age_raw": { "type": ["string", "null"] },
           "genotype": { "type": ["string", "null"] },
+          "stock": { "oneOf": [ { "type": "null" },
+                                { "type": "array", "items": { "type": "string", "pattern": "^FBst[0-9]{7}$" } } ] },
           "sex": { "type": ["string", "null"], "enum": ["male", "female", null] },
           "stage": { "oneOf": [ { "type": "null" }, { "$ref": "#/definitions/ont_ref_fbdv" } ] },
           "sample_tissue": { "oneOf": [ { "type": "null" }, { "$ref": "#/definitions/ont_ref_fbbt" } ] },
@@ -83,6 +85,7 @@
         "properties": {
           "vfbseq_id": { "$ref": "#/definitions/vfbseq" },
           "subset": { "type": "string" },
+          "name": { "type": "string" },
           "associated_dataset": { "$ref": "#/definitions/vfbseq" }
         }
       }
