@@ -86,7 +86,7 @@ def main() -> None:
         if kind == "held":
             held_n += 1
             continue
-        anchor = broad_anchor(args.project, cfg, cls)
+        anchor = broad_anchor(args.project, cfg, cls, a.get("clustering"))
         if not anchor:
             no_anchor += 1
             print(f"  WARNING: no class_anchor for class {cls!r} (cluster {label}); skipped", file=sys.stderr)

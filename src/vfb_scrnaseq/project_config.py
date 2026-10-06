@@ -94,7 +94,9 @@ def annotation_kind(project: str, config: dict) -> Callable[[dict], str]:
     hold_all = bool((config.get("unidentified") or {}).get("hold_unidentified", False))
 
     def kind(ann: dict) -> str:
-        label, cls = ann["label"], ann.get("class", "")
+        # label rules apply to the authors' own cluster id (labels may be prefixed
+        # to keep them unique across clusterings, e.g. early_N1)
+        label, cls = ann.get("source_cluster_id", ann["label"]), ann.get("class", "")
         if ann.get("unannotated"):
             return "held" if hold_all else "placeholder"
         if is_held(label, cls):
@@ -117,10 +119,16 @@ def label_slug(label: str) -> str:
     return re.sub(r"[^A-Za-z0-9._+-]", "_", s)
 
 
-def broad_anchor(project: str, config: dict, cls: str) -> dict | None:
-    """Return the broad FBbt anchor {fbbt_id,label,definition} for a cell class."""
+def broad_anchor(project: str, config: dict, cls: str, clustering: str | None = None) -> dict | None:
+    """Return the broad FBbt anchor {fbbt_id,label,definition} for a cell class.
+
+    `unidentified.clustering_class_anchors.<clustering>` overrides `class_anchors`
+    for clusters of that clustering (e.g. an early-stage clustering needs immature /
+    stage-neutral anchors rather than adult ones).
+    """
     overrides = _load_overrides(project)
     if overrides and hasattr(overrides, "broad_anchor"):
         return overrides.broad_anchor(cls, config)
-    anchors = (config.get("unidentified") or {}).get("class_anchors", {})
-    return anchors.get(cls)
+    unid = config.get("unidentified") or {}
+    per = (unid.get("clustering_class_anchors") or {}).get(clustering or "", {})
+    return per.get(cls) or unid.get("class_anchors", {}).get(cls)
