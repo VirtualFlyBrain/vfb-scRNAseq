@@ -1,0 +1,35 @@
+{
+  "cluster_label": "FMRFa",
+  "working_definition": "A 44-cell adult brain population recovered from the neuropeptide re-clustering by expression of FMRFamide (FMRFa), a classical Drosophila neuropeptide gene expressed by a large, heterogeneous set of ~90 morphologically distinct neurons spanning brain, subesophageal zone and ventral nerve cord (White et al., 1999). FMRFa marks a neurochemical class distributed across many otherwise-unrelated neuron types, not a single anatomical cell type; the parent res-2.0 cluster (16) is large, heterogeneous and 'Unannotated', with no FMRFa-specific top markers and no independent (res-8.0) cross-check.",
+  "searches_performed": [
+    "FMRFamide neuron",
+    "FMRFamide",
+    "adult FMRFamide neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "adult peptidergic neuron",
+    "fbbt_id": "FBbt:00058202",
+    "fbbt_definition": "Any peptidergic neuron of the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "low"
+  },
+  "justification": "FBbt has no generic 'FMRFamide neuron' gene-expression class (unlike its CCAP/CCHamide-1/corazonin/Ms/GPA2-GPB5 neuron classes) -- only two specific, disambiguated FMRFamide-expressing interneuron subtypes (FMRFamide SE2 neuron, FBbt:00001981; FMRFamide SE3 neuron, FBbt:00100392), each a single named subesophageal-zone cell type. This transcriptomic cluster explicitly cannot be resolved to either of those (or to any other single FMRFa+ type): the report's own analysis concludes FMRFa marks a co-expression class spanning ~90 distinct neurons of many types, and the honest target is a broad, non-specific parent. 'Adult peptidergic neuron' is the best defensible common parent covering this heterogeneous population; a more specific FBbt term would misrepresent the data even if one existed.",
+  "other_candidates": [
+    {
+      "fbbt_term": "FMRFamide SE2 neuron",
+      "fbbt_id": "FBbt:00001981",
+      "fbbt_definition": "Bilaterally paired FMRFamide expressing interneuron of the subesophageal neuromere, located more anteriorly than the FMRFamide SE3 cells (Schneider et al., 1993).",
+      "reason_rejected": "A single specific named cell type (paired interneurons of the SEZ); this 44-cell cluster is not resolved to any single FMRFa+ subtype and likely pools many anatomically distinct FMRFa neurons, not just the SE2 pair."
+    },
+    {
+      "fbbt_term": "FMRFamide SE3 neuron",
+      "fbbt_id": "FBbt:00100392",
+      "fbbt_definition": "FMRFamide expressing interneuron of the subesophageal neuromere located more posteriorly than the FMRFamide SE2 neurons (Schneider et al., 1993).",
+      "reason_rejected": "Same reasoning as FMRFamide SE2 neuron: too specific a single subtype for this heterogeneous, unresolved 44-cell cluster."
+    }
+  ],
+  "recommendation": "Map to FBbt:00058202 'adult peptidergic neuron' as an honest broad match with low confidence, reflecting that FMRFa marks a co-expression class spanning many distinct, anatomically unrelated adult neuron types that this cluster does not resolve. No FBbt term exists at an intermediate 'FMRFamide-expressing neuron' class level (unlike other neuropeptides in this dataset), but since even such a term would only be a similarly broad grouping rather than a coherent cell type, this is treated as the correct level rather than a term gap.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

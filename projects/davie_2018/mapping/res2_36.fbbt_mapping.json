@@ -1,0 +1,31 @@
+{
+  "cluster_label": "res2_36",
+  "working_definition": "Remainder of the 'Clock neurons' cluster (Davie et al. 2018, res-2.0 cluster 36; 389 cells) after Pdf-positive LNv cells were pulled out via neuropeptide re-clustering (reported separately as 'LNv'). Confirmed by core clock genes (tim, Clk, cry, vri); most likely an unresolved mix of LNd, DN2, DN3 and/or LPN clock neurons (and possibly residual DN1 cells not captured by the separately-clustered DN1 group), with somata in dorsal/lateral protocerebrum. Not resolved to any single named clock-neuron subgroup.",
+  "searches_performed": [
+    "circadian clock neuron",
+    "period expressing neuron",
+    "pacemaker neuron",
+    "LNd neuron",
+    "Clock (exact cluster label)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult pacemaker neuron",
+    "fbbt_id": "FBbt:00100163",
+    "fbbt_definition": "Pacemaker neuron that is part of the adult nervous system.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt:00006048 'pacemaker neuron' (parent of FBbt:00100163) defines the class by exactly the criterion used to identify this cluster: molecular oscillation of Period/Timeless expression that supports diurnal-rhythm control - matching the tim/Clk/cry/vri marker signature and 'circadian pacemaker neuron' function described in the report. FBbt:00100163 restricts this to the adult nervous system, matching the confirmed adult tissue. The remainder cluster is explicitly a class-level mixture of several named clock-neuron subgroups (LNd, DN2, DN3, LPN) with no further transcriptomic separation, so per dataset guidance for remainder labels the class-level pacemaker-neuron term is the correct (honest) mapping level, not any single subgroup. Confidence is medium rather than high because 'pacemaker neuron' is a functional/molecular class definition rather than a dedicated 'circadian clock neuron of adult brain' anatomy term, and because DN1 residual contamination cannot be ruled out.",
+  "other_candidates": [
+    {
+      "fbbt_term": "LNd neuron",
+      "fbbt_id": "FBbt:00004045",
+      "fbbt_definition": "Lateral period-expressing neuron (LN) of the adult brain whose cell body is located in the dorsal-most cluster of LNs; six per hemisphere; evening cells.",
+      "reason_rejected": "Too specific: the report explicitly states the remainder cluster likely mixes LNd with DN2, DN3 and/or LPN (and possibly residual DN1), so assigning LNd alone would overstate the resolution achieved."
+    }
+  ],
+  "recommendation": "Accept adult pacemaker neuron (FBbt:00100163) as the class-level mapping for this unresolved non-LNv, non-DN1 clock-neuron remainder; do not assign any single named clock subgroup (LNd/DN2/DN3/LPN).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

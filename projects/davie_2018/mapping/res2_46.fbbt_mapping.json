@@ -1,0 +1,37 @@
+{
+  "cluster_label": "res2_46",
+  "working_definition": "The principal Dimm-dependent peptidergic/neurosecretory neuron cluster of the Davie et al. 2018 adult brain atlas (res-2.0 cluster 46, 155 cells), identified by broad expression of neuropeptide precursor genes and peptide-processing machinery (Hug, Proc, twit, Crz, ITP, etc.) rather than one cell-type identity. It is the remainder pool left after the authors' finer neuropeptide subclustering (Figure 2K) pulled out CCAP, Hugin, IPC, LNv and other specific peptidergic types, so it represents a heterogeneous, anatomically unlocalised mixture of adult peptidergic neurons.",
+  "searches_performed": [
+    "Peptidergic",
+    "peptidergic neuron",
+    "neurosecretory cell",
+    "adult peptidergic neuron",
+    "Dimm neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "adult peptidergic neuron",
+    "fbbt_id": "FBbt:00058202",
+    "fbbt_definition": "Any peptidergic neuron of the adult.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "This is an explicit remainder/class-level label per the report: the authors themselves describe it as a mixed, unresolved pool of dimm-positive peptidergic neurons rather than a single anatomical cell type. FBbt:00058202 'adult peptidergic neuron' (any peptidergic neuron of the adult) is defined at exactly this class level - the correct and honest target for an unresolved remainder group - so the label mismatch (driver/marker-based grouping vs. ontology class term) does not downgrade this to a broad match; the cluster IS this class, just not resolved further.",
+  "other_candidates": [
+    {
+      "fbbt_term": "peptidergic neuron",
+      "fbbt_id": "FBbt:00004101",
+      "fbbt_definition": "Any neuron that is capable of some peptide secretion (GO:0002790).",
+      "reason_rejected": "Stage-unqualified parent; adult-specific FBbt:00058202 is the more precise appropriate level for this adult-brain atlas."
+    },
+    {
+      "fbbt_term": "neurosecretory cell of adult brain",
+      "fbbt_id": "FBbt:00052761",
+      "fbbt_definition": "Neurosecretory cell of the adult brain.",
+      "reason_rejected": "Narrower physiological/anatomical restriction (classic large neurosecretory cells) not clearly matched by this heterogeneous marker-defined cluster, which the report does not localise to a single brain compartment."
+    }
+  ],
+  "recommendation": "Accept as the class-level mapping for this unresolved remainder cluster; no finer term is appropriate given the report's own characterisation of the group as a mixture.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

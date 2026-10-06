@@ -1,0 +1,37 @@
+{
+  "cluster_label": "neuropeptide_ITP",
+  "working_definition": "A small (n=25), rare-cell subcluster from Davie et al. 2018's Figure 2K neuropeptide re-clustering, defined by ITP (ion transport peptide) expression. Its nominal res-2.0 parent cluster (32, 'Unannotated') is transcriptionally uninformative (ribosomal/mitochondrial genes), and cells are spread ambiguously across several res-2.0 clusters, so the population is not further resolved beyond its ITP marker identity; the paper does not localise it to a specific known ITP+ subtype (e.g. clock LNd vs. other ITP+ populations).",
+  "searches_performed": [
+    "ITP",
+    "ITP neuron",
+    "ion transport peptide neuron",
+    "adult ITP neuron",
+    "LN ITP neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "ITP neuron",
+    "fbbt_id": "FBbt:00048313",
+    "fbbt_definition": "Neuron that expresses Ion transport peptide. It is neurosecretory.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "The report explicitly recommends treating this cluster at marker-defined granularity as 'ITP-expressing neurons', not as a resolved specific anatomical subtype - this matches FBbt:00048313 'ITP neuron' exactly, which is itself defined purely by ITP expression (plus neurosecretory character) with no further anatomical restriction. No adult-stage-qualified version of this general term exists in FBbt, but the general term is not stage-restricted so it applies cleanly to this adult cluster. Confidence is medium rather than high because the cluster's small size and ambiguous origin leave it unclear which of the several known ITP+ populations (clock-associated LNd/LN ITP neuron, or other neurosecretory ITP+ cells) it represents, though this uncertainty is intrinsic to the FBbt term's own generality, not a mismatch.",
+  "other_candidates": [
+    {
+      "fbbt_term": "LN ITP neuron",
+      "fbbt_id": "FBbt:00052724",
+      "fbbt_definition": "Lateral period-expressing neuron (LN) of the adult brain that also expresses ion transport peptide (ITP); 2 cells per hemisphere (Ma et al., 2021).",
+      "reason_rejected": "Too specific: a named clock-circuit subtype with only 2 cells/hemisphere; the report does not establish that this cluster corresponds specifically to the clock LN-ITP population rather than other ITP+ neurosecretory cells."
+    },
+    {
+      "fbbt_term": "ITP and CRY expressing LNd neuron",
+      "fbbt_id": "FBbt:00047189",
+      "fbbt_definition": "A clock LNd neuron subtype expressing ITP and CRY.",
+      "reason_rejected": "Same reason - overly specific clock subtype not confirmed by this atlas's data."
+    }
+  ],
+  "recommendation": "Accept as an exact match at the marker-defined 'ITP neuron' granularity; do not narrow to a specific clock/LN subtype without further evidence.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

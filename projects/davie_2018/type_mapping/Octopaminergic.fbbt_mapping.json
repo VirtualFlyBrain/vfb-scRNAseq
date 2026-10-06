@@ -1,0 +1,29 @@
+{
+  "cluster_label": "Octopaminergic",
+  "working_definition": "Tbh-positive subset of the parent Tdc2(+) cluster (Davie et al. 2018, res-2.0 cluster 64; 76 cells): octopamine-releasing neurons (Tbh converts tyramine to octopamine). Broadly distributed across the subesophageal zone and central-brain/optic-lobe-projecting groups (ventral unpaired median, ventral paired median, dorsal clusters); this atlas resolves the octopaminergic identity as a single neurotransmitter-class group without further anatomical subtyping.",
+  "searches_performed": [
+    "octopaminergic neuron",
+    "adult octopaminergic neuron",
+    "Octopaminergic (exact cluster label)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult octopaminergic neuron",
+    "fbbt_id": "FBbt:00058203",
+    "fbbt_definition": "Any octopaminergic neuron of the adult (parent class; direct parent of specific octopaminergic neuron types such as octopaminergic AL2i1 neuron and adult octopaminergic subesophageal AkhR/InR neuron in FBbt).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "This is a class-level, neurotransmitter-defined cluster (Tbh+ subset of Tdc2+ neurons) explicitly not resolved to any anatomical subtype by the atlas. FBbt:00058203 'adult octopaminergic neuron' is the class-level FBbt term at exactly this resolution, restricted to adult tissue matching the confirmed adult (0-50 day) atlas. Per dataset guidance, remainder/class-level clusters map to the class term as the correct (not merely broad) level.",
+  "other_candidates": [
+    {
+      "fbbt_term": "octopaminergic neuron",
+      "fbbt_id": "FBbt:00007364",
+      "fbbt_definition": "Any neuron that is capable of some octopamine secretion, neurotransmission.",
+      "reason_rejected": "Life-stage-unspecified parent; adult-specific FBbt:00058203 better matches the confirmed adult tissue."
+    }
+  ],
+  "recommendation": "Accept adult octopaminergic neuron (FBbt:00058203) as the class-level mapping; no individual octopaminergic subtype (e.g. ventral unpaired median vs dorsal cluster) should be assigned.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

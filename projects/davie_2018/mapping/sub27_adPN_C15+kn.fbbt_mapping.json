@@ -1,0 +1,24 @@
+{
+  "cluster_label": "sub27_adPN/C15&kn",
+  "working_definition": "\"C15(+) kn(+) adPNs\": anterodorsal-lineage antennal-lobe olfactory projection neurons (131 cells, the largest of the five Table S2 marker subgroups) within Davie et al. 2018 res-2.0 cluster 27, co-expressing C15 and knot (kn), reproducing a Li et al. (2017) SMART-seq2 subcluster. Uniglomerular, projecting via iACT to mushroom body calyx and lateral horn. The report explicitly flags this two-marker combination as a finer transcriptomic split of uncertain anatomical specificity, possibly spanning more than one glomerular PN type given its size.",
+  "searches_performed": [
+    "adPN/C15&kn",
+    "C15 kn adPN",
+    "knot projection neuron",
+    "adult antennal lobe projection neuron adPN",
+    "C15 kn antennal lobe"
+  ],
+  "best_match": {
+    "fbbt_term": "adult antennal lobe projection neuron adPN",
+    "fbbt_id": "FBbt:00007438",
+    "fbbt_definition": "An adult antennal lobe projection neuron that is derived from neuroblast ALad1 (FBbt:00067346). All of these neurons have axons that fasciculate with the medial antennal lobe tract (mALT) and innervate the lateral horn.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "No FBbt term is built on the C15/kn combinatorial marker code or cites Li et al. 2017 / Davie et al. 2018 for this subgroup (searched directly - no hits). The report concludes this is a transcriptomic subgroup of uncertain anatomical granularity, noting its comparatively large size (131 cells) may indicate it spans more than one closely related PN type rather than a single glomerular class. The cluster IS-A adult antennal lobe projection neuron adPN (FBbt:00007438) but the distinguishing C15+/kn+ combination is not captured by any FBbt term, making this an honest broad match.",
+  "other_candidates": [],
+  "recommendation": "Broad-match to the adPN lineage term; do not mint a new term given the unconfirmed, possibly-composite anatomical identity of this transcriptomic subgroup. Both flags left false per dataset guidance.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

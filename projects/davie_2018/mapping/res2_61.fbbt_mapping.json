@@ -1,0 +1,27 @@
+{
+  "cluster_label": "res2_61",
+  "working_definition": "Authors call this cluster dFB, dorsal fan-shaped body neurons.",
+  "searches_performed": [
+    "dorsal fan-shaped body neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "adult dorsal fan-shaped body tangential neuron",
+    "fbbt_id": "FBbt:00049537",
+    "fbbt_definition": "Any fan-shaped body tangential neuron that arborizes across a dorsal layer (6-9) of the fan-shaped body. Some of these neurons are involved in sleep regulation (Donlea et al., 2011; Donlea et al., 2014; Qian et al., 2017; Ni et al., 2019).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "Authors name the dorsal fan-shaped body neuron class; FBbt adult dorsal fan-shaped body tangential neuron is that class.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult ventral fan-shaped body tangential neuron",
+      "fbbt_id": "FBbt:00049538",
+      "fbbt_definition": "Fan-shaped body tangential neuron that arborizes across a ventral layer of the fan-shaped body.",
+      "reason_rejected": "Ventral, not dorsal"
+    }
+  ],
+  "recommendation": "Accept exact match to class term.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

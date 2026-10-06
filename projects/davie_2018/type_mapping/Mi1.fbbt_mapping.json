@@ -1,0 +1,22 @@
+{
+  "cluster_label": "Mi1",
+  "working_definition": "Mi1 is a well-characterized medulla intrinsic columnar interneuron, identified in this atlas by the combinatorial co-expression of hth and bsh (Hasegawa et al., 2011), with dendrites spanning medulla layers M1, M5 and M9/M10 and cell body in the medulla cortex. It is a core ON-pathway motion-detection element, postsynaptic to lamina neuron L1 and presynaptic to T4. The cluster is clean with no ambiguity flagged, and the authors independently confirm Mi1 identity via its distinct Bsh-controlled SCENIC regulatory network.",
+  "searches_performed": [
+    "Mi1 neuron",
+    "medulla intrinsic neuron Mi1",
+    "medulla columnar interneuron hth bsh"
+  ],
+  "best_match": {
+    "fbbt_term": "medulla intrinsic neuron Mi1",
+    "fbbt_id": "FBbt:00003776",
+    "fbbt_definition": "Pre-synaptic terminals assessed by labelling with a UAS-Synaptotagmin reporter. The neurotransmitter was assessed by labelling cells with an anti-ChAT antibody (Hasegawa et al., 2011). Morphology of terminals judged from figures in Fischbach and Dittrich (1989). Connectivity and morphology in the medulla assessed by EM reconstruction from 7 columns (Takemura et al., 2013).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The FBbt term cites the same Hasegawa et al. (2011) source the Davie et al. paper itself uses to identify Mi1 by hth+bsh co-expression, and both describe the same medulla intrinsic columnar neuron with M1/M5/M9-M10 arborization. Label provenance is unambiguous (GEO = Table S2, literature markers/mapping, no REVIEW flag). This is an adult brain atlas; FBbt:00003776 is the mature/adult form and no immature-specific term is needed.",
+  "other_candidates": [],
+  "recommendation": "Accept as exact match at high confidence. No further action needed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,36 @@
+{
+  "cluster_label": "res2_41",
+  "working_definition": "Tm5ab groups two of the four classically described Tm5 colour-vision transmedullary subtypes (Tm5a and Tm5b), identified from literature markers (Table S2: literature markers; ref Konstantinides et al. 2018) rather than cross-dataset mapping. Tm5a and Tm5b are cholinergic transmedullary neurons with dendrites in the medulla and axon terminals in the lobula, relaying R7/R8-associated chromatic (UV/blue) photoreceptor signals, distinguished from the glutamatergic Tm5c. Table S2 and GEO agree exactly on the merged 'Tm5ab' label; the cluster resolution genuinely cannot separate Tm5a from Tm5b.",
+  "searches_performed": [
+    "Tm5a neuron",
+    "Tm5b neuron",
+    "transmedullary neuron Tm5",
+    "Tm5ab"
+  ],
+  "best_match": {
+    "fbbt_term": "transmedullary neuron Tm5",
+    "fbbt_id": "FBbt:00003793",
+    "fbbt_definition": "Pre- versus postsynaptic innervation judged by scoring of terminal morphology from figures in Fischbach and Dittrich (1989) as assessed by FlyBrain Neuron DB. In these figures, the neuron has characteristics of the three Tm5 subtypes.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "Tm5a (FBbt:00110072) and Tm5b (FBbt:00110073) are both direct children of 'transmedullary neuron Tm5' (FBbt:00003793) in FBbt, and both are cholinergic transmedullary neurons receiving R7 input and terminating in the lobula -- matching the report's description of Tm5a/Tm5b as cholinergic, R7/R8-associated, medulla-to-lobula relay neurons distinct from the glutamatergic Tm5c. This FBbt parent term is exactly the 'Tm5ab' grouping (i.e. Tm5 minus Tm5c), making it a precisely-fitting common parent rather than an overly broad fallback. No FBbt term specifically labelled 'Tm5ab' exists, so this is the correct, most specific broad match.",
+  "other_candidates": [
+    {
+      "fbbt_term": "transmedullary neuron Tm5a",
+      "fbbt_id": "FBbt:00110072",
+      "fbbt_definition": "Transmedullary Tm5 neuron centered on a single yellow column in the medulla, arborizing in M3/M6/M8, selectively receiving R7 (not R8) input; axon terminates in lobula layer 5B; cholinergic (Kind et al., 2021; Karuppudurai et al., 2014).",
+      "reason_rejected": "One of the two merged member subtypes; this cluster cannot resolve Tm5a from Tm5b."
+    },
+    {
+      "fbbt_term": "transmedullary neuron Tm5b",
+      "fbbt_id": "FBbt:00110073",
+      "fbbt_definition": "Transmedullary Tm5 neuron spanning ~5 medulla columns, arborizing in M3/M6/M8, receiving R7 input mainly from pale ommatidia; axon innervates lobula layer 5; cholinergic (Kind et al., 2021; Karuppudurai et al., 2014).",
+      "reason_rejected": "One of the two merged member subtypes; this cluster cannot resolve Tm5a from Tm5b."
+    }
+  ],
+  "recommendation": "Accept broad match to 'transmedullary neuron Tm5' (FBbt:00003793) at high confidence -- this parent term corresponds almost exactly to the intended 'Tm5a+Tm5b, not Tm5c' grouping. List Tm5a and Tm5b as constituent member types. Genuine merged group intrinsic to the data (literature-marker based, well supported), so no verification flag or new-term request is warranted.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

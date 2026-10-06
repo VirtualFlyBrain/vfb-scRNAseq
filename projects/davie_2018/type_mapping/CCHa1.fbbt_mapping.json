@@ -1,0 +1,22 @@
+{
+  "cluster_label": "CCHa1",
+  "working_definition": "A small (22-cell) population of adult brain cells recovered from the neuropeptide re-clustering, in which the neuropeptide gene CCHamide-1 (CCHa1) is enriched among the top markers of the underlying (otherwise poorly characterised, 'Unannotated') parent res-2.0 cluster 68. CCHa1 is a Drosophila neuropeptide with described roles in feeding, locomotor activity, and modulation of insulin/reward signalling, with CNS expression noted alongside its primary characterisation in gut enteroendocrine cells (Sano et al., 2015). Unlike CCAP/Hug/Gr43a, this cluster has no independent higher-resolution (res-8.0) or literature cross-check in the paper.",
+  "searches_performed": [
+    "CCHa1",
+    "CCHamide-1 neuron",
+    "CCHamide"
+  ],
+  "best_match": {
+    "fbbt_term": "CCHamide-1 neuron",
+    "fbbt_id": "FBbt:00048298",
+    "fbbt_definition": "Any neuron (FBbt:00005106) that is capable of some peptide hormone secretion (GO:0030072) and expresses CCHa1 (FBgn0038199).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "low"
+  },
+  "justification": "FBbt defines 'CCHamide-1 neuron' at exactly the gene-expression-class level that this cluster represents -- any neuron expressing CCHa1 -- with no stage restriction, so no development-stage mismatch. However, unlike CCAP/Hug/Gr43a, this cluster has weak internal evidentiary support (no Table S2 direct annotation beyond 'Unannotated', no res-8.0 cross-check, and several non-peptidergic co-markers alongside CCHa1), so although the biological identity denoted by label and term match, confidence in this specific cluster genuinely representing CCHa1 neurons is low.",
+  "other_candidates": [],
+  "recommendation": "Map to FBbt:00048298 'CCHamide-1 neuron' as an exact match at the gene-expression class level, but flag low confidence given the weak evidentiary basis noted in the report (no independent corroboration in this paper).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

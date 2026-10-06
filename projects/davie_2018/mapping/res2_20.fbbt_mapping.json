@@ -1,0 +1,53 @@
+{
+  "cluster_label": "res2_20",
+  "working_definition": "Davie 2018 Table S2 res-2.0 cluster 20, annotated by the authors as 'L1/L2/L3/L4/L5' (lamina monopolar neurons; mapping, Tan et al. 2015); sub-clustered into L1, L2, L3 and L4/L5.",
+  "searches_performed": [
+    "L1/L2/L3/L4/L5",
+    "lamina monopolar neuron",
+    "adult lamina monopolar neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "lamina monopolar neuron",
+    "fbbt_id": "FBbt:00003718",
+    "fbbt_definition": "Monopolar, intrinsic unicolumnar neuron of the adult optic lobe that has its soma in the cell body rind of the lamina and connects the lamina to the medulla (Fischbach and Dittrich, 1989). It has a single major projection that projects along one optic cartridge in the lamina, crosses the first optic chiasm and terminates in the same cartridge in the medulla (Fischbach and Dittrich, 1989).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' call is a group of lamina monopolar neuron types L1-L5, so the most specific common parent is lamina monopolar neuron (FBbt:00003718). OLS ancestors of L4 (FBbt:00003722) and L5 (FBbt:00003725) include it; L1-L3 are its children. The term is adult-specific by definition.",
+  "other_candidates": [
+    {
+      "fbbt_term": "lamina monopolar neuron L1",
+      "fbbt_id": "FBbt:00003719",
+      "fbbt_definition": "Lamina monopolar neuron L1.",
+      "reason_rejected": "Single member of the group named by the authors."
+    },
+    {
+      "fbbt_term": "lamina monopolar neuron L2",
+      "fbbt_id": "FBbt:00003720",
+      "fbbt_definition": "Lamina monopolar neuron L2.",
+      "reason_rejected": "Single member of the group named by the authors."
+    },
+    {
+      "fbbt_term": "lamina monopolar neuron L3",
+      "fbbt_id": "FBbt:00003721",
+      "fbbt_definition": "Lamina monopolar neuron L3.",
+      "reason_rejected": "Single member of the group named by the authors."
+    },
+    {
+      "fbbt_term": "lamina monopolar neuron L4",
+      "fbbt_id": "FBbt:00003722",
+      "fbbt_definition": "Lamina monopolar neuron L4.",
+      "reason_rejected": "Single member of the group named by the authors."
+    },
+    {
+      "fbbt_term": "lamina monopolar neuron L5",
+      "fbbt_id": "FBbt:00003725",
+      "fbbt_definition": "Lamina monopolar neuron L5.",
+      "reason_rejected": "Single member of the group named by the authors."
+    }
+  ],
+  "recommendation": "Accept broad match to lamina monopolar neuron (FBbt:00003718).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

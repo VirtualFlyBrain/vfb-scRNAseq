@@ -1,0 +1,257 @@
+{
+  "project": "davie_2018",
+  "generated_at": "2026-10-06",
+  "people": [
+    {
+      "role": "curator",
+      "name": "Clare Pilgrim",
+      "username": "Clare72",
+      "orcid": "0000-0002-1373-1705"
+    }
+  ],
+  "notes": "Davie et al. 2018 (Cell; GSE107451; FBrf0239740), rebuilt from GEO to replace the old FlyBase/SCEA load FBlc0006090 (E-CURD-91); fresh VFBseq ids, no FBlc link (curator decision). Scope: the paper's 57K stringently filtered 10x set only - 26 GSMs (12 DGRP-551, 14 w1118; adults 0-50 d), selected by sample_build.title_pattern regex. 26 Samples / 26 Assays. 2026-10-05 restructure (curator decision): one row per AUTHOR CLUSTER, never merged by cell type; typing from the authors, not re-analysis. 7 Clusterings / 125 Clusters (projects/davie_2018/build_clusters.py): 87 res-2.0 (Table S2), 5 S2-annotated res-8.0, sub-clusterings of res-2.0 20/27/42/64 (5+9+2+2), 15 neuropeptide re-clustering groups. The 18 sub-clusters are linked to their parent res-2.0 cluster via parent_cluster (BFO:0000050 part of; new schema slot); res-8.0 and neuropeptide clusters have no parent. Cluster type = authors' GEO annotation (sub-clustered parents take the S2 parent call); Table S2 recorded per cluster, 14 clusters with a differing S2 call flagged (author_conflict -> verification_needed); 42 unannotated clusters held. Type-level mappings (type_mapping/) by map-clusters-to-fbbt subagents from per-type reports; 21 types re-mapped on 2026-10-05 under the face-value rule (authors' named type -> that FBbt term; grouped calls -> common parent; no downgrading from our own marker/contamination reading); copied per cluster into mapping/. 82 clusters mapped; 43 held (42 left numbered by the authors + Hsp, which has no FBbt term - general rule: no FBbt term -> held). new_term_needed is recorded for Poxn and Proc/Gpb5 but no requests will be made (expression-only terms are the exception). Curator hand edits (manual_edit): Photoreceptors -> rhabdomeric photoreceptor cell; Mip/OCT -> adult myoinhibitory peptide neuron; Mip/ITP -> Mip + ITP neuron; AstA/NPF -> AstA + adult NPF neuron; Proc/Ms -> Ms neuron. No Cluster stage (stage is on Samples; Cluster stage only when determined from expression). All 62 distinct FBbt terms verified current/non-obsolete/label-match against live OLS FBbt (scripts/verify_mappings.py); OLS MCP was returning 503 during the re-map, so agents looked terms up via the OLS4 REST API / local fbbt-full.obo / VFB. Old FBlc0006090 FBbt terms (crosswalked by author type) agree for 60 typed clusters, differ for 6 (all the more specific adult / adult-brain term chosen here). Sex mixed (20F+20M brains per run; slot unset). Stocks FBst0055026 / FBst0003605 via Chado. Stages FBdv 'day N of adulthood'; tissue FBbt:00003624 adult brain. Expression per Clustering from a barcode->cluster membership file (a cell counted once per Clustering): 284,188 cluster x gene rows (extent>0.2) over 17,473 genes / 56,902 cells; dataset total/filtered gene counts 14,463/6,707. Gene ids are the 2018 GEO FBgns: 137 now secondary, 1 with no current gene (Chado, 2026-09-23) - not remapped (same as kurmangaliyev_2020). Publication FBrf0239740 resolved from VFB production (pdb) by PMID; not in the curation KB. (Earlier KB 401s were caused by the curator's VFB_KB_* env vars for the writable KB being picked up; pub.py now uses VFBSEQ_* overrides.) The 57K MEX tarball was unpacked and re-gzipped into .cache; checksums are of the re-gzipped files.",
+  "pipeline": {
+    "name": "vfb-scrnaseq",
+    "version": "0.0.0",
+    "repo": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
+    "commit": "fa62920 (+ uncommitted davie_2018 changes)"
+  },
+  "ontologies": [
+    {
+      "id": "FBbt",
+      "name": "Drosophila gross anatomy ontology",
+      "version": "2026-07-09",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-07-09/fbbt.owl",
+      "release_date": "2026-07-09",
+      "accessed_via": "OLS MCP (OLS4)",
+      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-09-23"
+    },
+    {
+      "id": "FBdv",
+      "name": "Drosophila developmental ontology",
+      "version": "2026-07-09",
+      "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-07-09/fbdv.owl",
+      "release_date": "2026-07-09",
+      "accessed_via": "OLS4 API",
+      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "accessed_at": "2026-09-23"
+    },
+    {
+      "id": "FBcv",
+      "name": "FlyBase controlled vocabulary",
+      "version": "2026-07-10",
+      "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-07-10/fbcv.owl",
+      "release_date": "2026-07-10",
+      "accessed_via": "OLS4 API",
+      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "accessed_at": "2026-09-23"
+    },
+    {
+      "id": "BAO",
+      "name": "BioAssay Ontology",
+      "accessed_via": "OLS MCP (OLS4)",
+      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/bao",
+      "accessed_at": "2026-09-23"
+    }
+  ],
+  "data_sources": [
+    {
+      "type": "publication",
+      "id": "10.1016/j.cell.2018.05.057",
+      "title": "A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain (Davie et al. 2018); PMID 29909982; PMC6086935",
+      "url": "https://doi.org/10.1016/j.cell.2018.05.057",
+      "files": [
+        {
+          "name": "Davie2018.xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6086935/fullTextXML",
+          "sha256": "929d6f2fa987cef8cfcc608b7dbcabce28330733ffa748a6a42cffa39fe19537",
+          "bytes": 261217,
+          "retrieved_at": "2026-09-23"
+        },
+        {
+          "name": "supp/mmc1.pdf (Table S1)",
+          "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867418307207-mmc1.pdf",
+          "sha256": "3316385c22e1384ff43c01433da34221943e25bcf33ae348a210f3813b45d852",
+          "bytes": 608300,
+          "retrieved_at": "2026-09-23"
+        },
+        {
+          "name": "supp/mmc2.xlsx (Table S2)",
+          "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867418307207-mmc2.xlsx",
+          "sha256": "0d4743d8c6e3637fdf5529e5f021e75e4cf5db6a3f144b1c8ac7b9d2413fdcc7",
+          "bytes": 140827,
+          "retrieved_at": "2026-09-23"
+        },
+        {
+          "name": "supp/mmc3.xlsx (Table S3)",
+          "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867418307207-mmc3.xlsx",
+          "sha256": "72cf6a8f974d8e998c11c37537cd0cef7abf39382b93ce221a75ebb9faacf5cc",
+          "bytes": 959066,
+          "retrieved_at": "2026-09-23"
+        }
+      ]
+    },
+    {
+      "type": "dataset",
+      "id": "GSE107451",
+      "title": "GEO series: adult brain scRNA-seq across ageing (57K 10x subset used)",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107451",
+      "retrieved_at": "2026-09-23",
+      "files": [
+        {
+          "name": "GSE107451_DGRP-551_w1118_WholeBrain_57k_Metadata.tsv.gz",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE107nnn/GSE107451/suppl/GSE107451_DGRP-551_w1118_WholeBrain_57k_Metadata.tsv.gz",
+          "sha256": "bb0e13e263d182b819df3e4bebfde77e267c070a30ec5d68ba19bd9a19c46cc9",
+          "bytes": 4642833,
+          "retrieved_at": "2026-09-23"
+        },
+        {
+          "name": "GSE107451_matrix_57k.mtx.gz (re-gzipped matrix.mtx from the 57k MEX tarball)",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE107nnn/GSE107451/suppl/GSE107451_DGRP-551_w1118_WholeBrain_57k_0d_1d_3d_6d_9d_15d_30d_50d_10X_DGEM_MEX.mtx.tsv.tar.gz",
+          "sha256": "d213369de8ee4dc9493f7834eca09afedc52eb3d036068b6596c68edafb4a2ae",
+          "bytes": 218587382,
+          "retrieved_at": "2026-09-23"
+        },
+        {
+          "name": "GSE107451_features_57k.tsv.gz (re-gzipped genes.tsv)",
+          "sha256": "9c430b6b0912b605650653525306ed560daef2e1dd821304ee014d4e38bb3f2f",
+          "bytes": 106186,
+          "retrieved_at": "2026-09-23"
+        },
+        {
+          "name": "GSE107451_barcodes_57k.tsv.gz (re-gzipped barcodes.tsv)",
+          "sha256": "b3a0969428d7b349498f05b55cf0b2402aef274ab3aab5e8527cf62ba8c82ad7",
+          "bytes": 277093,
+          "retrieved_at": "2026-09-23"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "id": "vfb-scRNAseq-ontology FBlc0006090",
+      "title": "Old FlyBase/SCEA load of this dataset (metadata_release_files/VFB_scRNAseq_FBlc0006090.owl); FBbt terms used only as a cross-check",
+      "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq-ontology",
+      "retrieved_at": "2026-09-23"
+    },
+    {
+      "type": "other",
+      "id": "FlyBase Chado",
+      "title": "FlyBase Chado public PostgreSQL (psql -h chado.flybase.org -U flybase flybase) - FBst ids for DGRP-551 / w[1118] (cross-checked against the Key Resources Table) and FBgn currency check",
+      "url": "https://chado.flybase.org",
+      "retrieved_at": "2026-09-23"
+    }
+  ],
+  "software": [
+    {
+      "name": "atlas-chat / Atlas Reporter (local-paper-index)",
+      "kind": "repository",
+      "repo": "https://github.com/Cellular-Semantics/Atlas-chat",
+      "commit": "4c90b6c",
+      "notes": "Used only for building/querying the local JATS snippet index (local-paper-index)."
+    },
+    {
+      "name": "sentence-transformers",
+      "kind": "library",
+      "version": "5.5.1",
+      "notes": "Local index embeddings."
+    },
+    {
+      "name": "OLS4 (Ontology Lookup Service)",
+      "kind": "service",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "notes": "FBbt term search/lookup during mapping (via OLS MCP)."
+    },
+    {
+      "name": "VFB curation KB + production (neo4j)",
+      "kind": "service",
+      "url": "https://kb.virtualflybrain.org ; https://pdb.virtualflybrain.org",
+      "notes": "Queried by vfb_scrnaseq.pub by PMID to resolve the publication FBrf: curation KB first, then production; config fallback."
+    },
+    {
+      "name": "Python",
+      "kind": "language",
+      "version": "3.14.3",
+      "notes": "atlas-chat / local-index + pipeline environment (uv-managed)."
+    },
+    {
+      "name": "linkml",
+      "kind": "library",
+      "version": "1.11.1",
+      "notes": "linkml-validate (data conformance) + linkml-convert (flat RDF/TTL) driven by the schema tree_root Container."
+    },
+    {
+      "name": "linkml-owl",
+      "kind": "library",
+      "version": "0.5.0",
+      "notes": "linkml-data2owl: OWL emission honouring the schema owl.fstring/owl.template annotations (ClassAssertions, ObjectSomeValuesFrom restrictions) — VFB-pipeline-compatible."
+    },
+    {
+      "name": "funowl",
+      "kind": "library",
+      "version": "0.2.3",
+      "notes": "OWL functional-syntax construction (used by linkml-owl)."
+    },
+    {
+      "name": "ROBOT",
+      "kind": "tool",
+      "version": "1.9.8",
+      "notes": "robot convert: OWL functional syntax (.ofn) -> OWL/XML (.owl). External Java tool, not a pip/uv dependency."
+    },
+    {
+      "name": "linkml-runtime",
+      "kind": "library",
+      "version": "1.11.1"
+    },
+    {
+      "name": "rdflib",
+      "kind": "library",
+      "version": "7.1.1",
+      "notes": "Turtle (de)serialization + stripping the Container index node from the flat RDF."
+    },
+    {
+      "name": "pandas",
+      "kind": "library",
+      "version": "3.0.5",
+      "notes": "Chunked streaming of the 10x MatrixMarket for expression stats."
+    },
+    {
+      "name": "numpy",
+      "kind": "library",
+      "version": "2.5.1",
+      "notes": "CPM normalisation + per-cluster extent/level accumulation (bincount)."
+    },
+    {
+      "name": "openpyxl",
+      "kind": "library",
+      "notes": "Reading Tables S2/S3 (projects/davie_2018/supp_evidence.py)."
+    },
+    {
+      "name": "Claude Code",
+      "kind": "cli",
+      "version": "2.1.280",
+      "notes": "Harness orchestrating the agentic pipeline (main session + report and map-clusters-to-fbbt subagents)."
+    }
+  ],
+  "models": [
+    {
+      "role": "orchestrator",
+      "name": "claude-opus-5-5",
+      "provider": "Anthropic",
+      "version": "Opus 5.5; model id claude-opus-5-5",
+      "notes": "Claude Code main session: generalised the pipeline (title_pattern regex, hold_unidentified, label_slug, barcode_column, prior_mapping columns, sex: mixed), wrote config + supp_evidence.py + crosswalk, dispatched report/mapping subagents, post-mapping checks."
+    },
+    {
+      "role": "mapping-llm",
+      "name": "claude-sonnet",
+      "provider": "Anthropic",
+      "notes": "Per-cluster report subagents (general-purpose, model sonnet) and map-clusters-to-fbbt subagents (agent frontmatter model: sonnet)."
+    },
+    {
+      "role": "embedding",
+      "name": "sentence-transformers/all-MiniLM-L6-v2",
+      "provider": "sentence-transformers",
+      "notes": "Local PDF snippet-index embeddings."
+    }
+  ]
+}

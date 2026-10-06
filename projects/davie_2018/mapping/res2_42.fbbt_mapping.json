@@ -1,0 +1,35 @@
+{
+  "cluster_label": "res2_42",
+  "working_definition": "Davie 2018 Table S2 res-2.0 cluster 42, annotated by the authors as 'Dopaminergic' (literature markers); all dopaminergic neurons of the cluster, sub-clustered into PAM Fer2(+) and Fer2(-).",
+  "searches_performed": [
+    "Dopaminergic",
+    "dopaminergic neuron",
+    "adult dopaminergic neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "adult dopaminergic neuron",
+    "fbbt_id": "FBbt:00058206",
+    "fbbt_definition": "Any dopaminergic neuron of the adult.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors name the general class 'Dopaminergic', and the data are adult; the adult-specific class term adult dopaminergic neuron is the exact match.",
+  "other_candidates": [
+    {
+      "fbbt_term": "dopaminergic neuron",
+      "fbbt_id": "FBbt:00005131",
+      "fbbt_definition": "Any neuron that is capable of some dopamine secretion, neurotransmission.",
+      "reason_rejected": "Life-stage-unspecified parent; adult-specific term preferred."
+    },
+    {
+      "fbbt_term": "adult dopaminergic PAM neuron",
+      "fbbt_id": "FBbt:00100214",
+      "fbbt_definition": "Dopaminergic neuron in the PAM cluster of the adult brain.",
+      "reason_rejected": "Only the PAM subset, not the authors' general call."
+    }
+  ],
+  "recommendation": "Accept exact match to adult dopaminergic neuron (FBbt:00058206).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

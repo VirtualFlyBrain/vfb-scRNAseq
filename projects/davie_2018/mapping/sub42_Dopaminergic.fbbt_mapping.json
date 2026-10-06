@@ -1,0 +1,29 @@
+{
+  "cluster_label": "sub42_Dopaminergic",
+  "working_definition": "Fer2-negative remainder of the parent dopaminergic cluster (Davie et al. 2018, res-2.0 cluster 42; 125 cells) after the PAM (Fer2-positive) subcluster was split out. Represents an unresolved mixture of the ~7 non-PAM dopaminergic neuron groups of the adult central brain (PPL1, PPL2ab, PPM1/2, PPM3, PAL etc.), sharing a canonical dopaminergic marker signature (DAT, ple, Vmat, Ddc) but not further separated transcriptomically.",
+  "searches_performed": [
+    "dopaminergic neuron",
+    "adult dopaminergic neuron",
+    "Dopaminergic (exact cluster label)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult dopaminergic neuron",
+    "fbbt_id": "FBbt:00058206",
+    "fbbt_definition": "Any dopaminergic neuron of the adult.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Per dataset guidance, this is a 'remainder' label (cells of the dopaminergic class not resolved to a subtype after PAM was pulled out) and the correct honest mapping level is the class term itself, not any of the individually-named DAN clusters (PPL1, PPL2ab, PPM1/2, PPM3, PAL) it mixes. FBbt:00058206 'adult dopaminergic neuron' is exactly this class-level term restricted to adult tissue, matching the report's central-brain, adult, dopamine-releasing description. Note this term is broader than the true underlying biology (~7 named DAN clusters) but that breadth is honest given the atlas provides no further resolution.",
+  "other_candidates": [
+    {
+      "fbbt_term": "dopaminergic neuron",
+      "fbbt_id": "FBbt:00005131",
+      "fbbt_definition": "Any neuron that is capable of some dopamine secretion, neurotransmission.",
+      "reason_rejected": "Life-stage-unspecified parent; adult-specific FBbt:00058206 better matches the confirmed adult (0-50 day) tissue."
+    }
+  ],
+  "recommendation": "Accept adult dopaminergic neuron (FBbt:00058206) as the honest class-level mapping for this non-PAM dopaminergic remainder; do not assign any individual DAN cluster term.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

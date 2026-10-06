@@ -1,0 +1,22 @@
+{
+  "cluster_label": "C3",
+  "working_definition": "Cluster 'C3' (GEO label, adult Davie 2018 optic lobe data) annotated by the authors as the single type C3. Mapped at face value to the FBbt term for the named type; cluster is composed primarily of cells of this type.",
+  "searches_performed": [
+    "C3",
+    "centrifugal neuron C3",
+    "local FBbt (fbbt-full.obo) lookup by label/synonym (OLS MCP returned 503)"
+  ],
+  "best_match": {
+    "fbbt_term": "centrifugal neuron C3",
+    "fbbt_id": "FBbt:00003744",
+    "fbbt_definition": "Adult centrifugal neuron with arborizations in medulla layers M1-2, M5, and M9-10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). It forms presynapses and postsynapses in the lamina (Morante and Desplan, 2008; Rivera-Alba et al., 2011). In the medulla it is strongly presynaptic to monopolar lamina neuron L2 and columnar neuron T1, and strongly postsynaptic to L1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010). There is usually one of these cells per optic column (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' GEO label names the single type C3; FBbt has a non-obsolete adult term for it (centrifugal neuron C3, FBbt:00003744). Taken at face value under the 'composed primarily of' relation.",
+  "other_candidates": [],
+  "recommendation": "Accept as exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

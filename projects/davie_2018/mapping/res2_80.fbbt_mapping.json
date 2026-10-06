@@ -1,0 +1,39 @@
+{
+  "cluster_label": "res2_80",
+  "working_definition": "A 99-cell adult brain transcriptomic cluster (Davie et al. 2018, Seurat res-2.0 cluster 80) defined by expression of the Poxn (Pox neuro) homeodomain transcription factor. The source text describes ~350 Poxn-expressing cells across two distinct anatomical interneuron populations, the protocerebral dorsal cluster and the deutocerebral ventral cluster (Boll and Noll, 2002; Minocha et al., 2017), associated with gustatory/mechanosensory processing and brain patterning. This 99-cell cluster is much smaller than the combined ~350-cell population and shows a mixed dopaminergic/GABAergic marker signature, suggesting it captures only a subset or a transcriptomically distinct portion of one or both anatomical groups rather than a single well-defined cell type.",
+  "searches_performed": [
+    "Poxn neuron",
+    "Poxn",
+    "Pox neuro",
+    "Pox-neuro",
+    "protocerebral dorsal cluster",
+    "protocerebral dorsal cluster neuron",
+    "deutocerebral ventral cluster"
+  ],
+  "best_match": {
+    "fbbt_term": "adult interneuron",
+    "fbbt_id": "FBbt:00052046",
+    "fbbt_definition": "Any interneuron of the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt has no term for Poxn-expressing neurons, nor for either of the two specific anatomical populations named in the source text (the protocerebral dorsal Poxn+ cluster or the deutocerebral ventral Poxn+ cluster of Boll and Noll, 2002 / Minocha et al., 2017) - searches for 'Poxn', 'Pox neuro', 'protocerebral dorsal cluster', and 'deutocerebral ventral cluster' returned no relevant hits in FBbt. The report itself flags that this 99-cell transcriptomic cluster likely merges/subsets the ~350-cell combined population and recommends a common-parent mapping level rather than forcing a specific anatomical identity. Boll and Noll (2002) and Minocha et al. (2017) characterize these Poxn+ cells as adult brain interneurons, and the cluster's mixed dopaminergic (Dat) and GABAergic (Gad1/Rdl) marker signature is consistent with interneuron identity spanning more than one population. 'adult interneuron' (FBbt:00052046) captures the confirmed cell-type level (interneuron, adult CNS) without asserting a specific brain region or subtype that the transcriptomic cluster itself cannot resolve. This is a genuine broad match: the cluster is almost certainly more specific than 'adult interneuron' (it corresponds to Poxn+ cells of one or both named anatomical groups) but no such specific FBbt term exists for curators to select.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult CNS neuron",
+      "fbbt_id": "FBbt:00059274",
+      "fbbt_definition": "Any neuron that has its soma in the adult central nervous system.",
+      "reason_rejected": "Correct in location (central brain) and stage (adult) but even less specific than 'adult interneuron', which additionally captures the interneuron functional/morphological class documented for Poxn+ cells in Boll and Noll (2002) and Minocha et al. (2017)."
+    },
+    {
+      "fbbt_term": "adult neuron",
+      "fbbt_id": "FBbt:00047095",
+      "fbbt_definition": "A neuron that is part of the adult nervous system. These can be born during the postembryonic phase of neurogenesis (Lacin and Truman, 2016) or they can develop from larval neurons during the pupal stage (Veverytsa and Allan, 2013).",
+      "reason_rejected": "Too general - does not capture the interneuron identity or CNS location that are supported by the report and cited literature."
+    }
+  ],
+  "recommendation": "Use 'adult interneuron' (FBbt:00052046) as a broad-match placeholder pending curator review. Consider requesting new FBbt terms for the two specific Poxn+ anatomical populations described in Boll and Noll (2002) / Minocha et al. (2017) (protocerebral dorsal cluster Poxn neuron; deutocerebral ventral cluster Poxn neuron), since these are well-documented, literature-defined cell types with no current FBbt representation. Curators should also weigh the cell-count discrepancy (99 vs ~350 cells) and mixed neurotransmitter markers when deciding whether this cluster should be split or annotated as an ambiguous mixture before any new-term request is drafted.",
+  "new_term_needed": true,
+  "verification_needed": false
+}

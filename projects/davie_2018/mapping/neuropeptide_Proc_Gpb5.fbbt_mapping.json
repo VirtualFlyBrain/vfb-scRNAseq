@@ -1,0 +1,30 @@
+{
+  "cluster_label": "neuropeptide_Proc/Gpb5",
+  "working_definition": "A 52-cell adult brain population co-expressing proctolin (Proc, a locomotor/muscle-modulating neuropeptide) and Gpb5 (glycoprotein hormone beta-5, part of the insect GPA2/GPB5 hormone signalling through LGR3, implicated in ion/water homeostasis and stress responses), recovered from the neuropeptide re-clustering in Davie et al. 2018. Unlike Proc/Ms, this subcluster is drawn overwhelmingly (50/52 cells) from a single res-2.0 parent cluster (46, 'Peptidergic', the same shared parent as Hug and Gr43a), indicating a coherent subpopulation rather than a scattered remainder -- but no independently published 'Proc/Gpb5 neuron' population is described in the literature; this appears to be a co-expression grouping first delineated by this atlas.",
+  "searches_performed": [
+    "Gpb5 neuron",
+    "GPA2/GPB5 neuron",
+    "proctolin neuron",
+    "Proc neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "adult peptidergic neuron",
+    "fbbt_id": "FBbt:00058202",
+    "fbbt_definition": "Any peptidergic neuron of the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "low"
+  },
+  "justification": "FBbt has a 'GPA2/GPB5 neuron' class (FBbt:00110879) but this is defined by co-expression of the Gpa2+Gpb5 heterodimer specifically, not Proc+Gpb5 as in this cluster -- a different defining marker combination, so it is not an adequate match. No FBbt term exists for a Proc+Gpb5 co-expressing neuron. The cluster is internally coherent (50/52 cells from one dominant parent, unlike Proc/Ms), and the report gives a reasonably reproducible definition (Proc+Gpb5 co-expression, dominant single parent cluster, consistent age range) that FBbt currently lacks -- but with no independent anatomical corroboration in the literature, so this remains a candidate for a new term rather than an established type. 'Adult peptidergic neuron' is the best current containing class.",
+  "other_candidates": [
+    {
+      "fbbt_term": "GPA2/GPB5 neuron",
+      "fbbt_id": "FBbt:00110879",
+      "fbbt_definition": "Neuron that expresses the heterodimer formed by Gpa2 (FBgn0261386) and Gpb5 (FBgn0063368).",
+      "reason_rejected": "Different defining marker combination (Gpa2+Gpb5 heterodimer) from this cluster's Proc+Gpb5 co-expression signature; Gpa2 co-expression is not established or tested for this cluster, so this term cannot be assumed equivalent."
+    }
+  ],
+  "recommendation": "Map to FBbt:00058202 'adult peptidergic neuron' as a low-confidence broad match. Given the cluster's internal coherence (dominant single parent cluster, consistent with Hug/Gr43a) and the report's reasonably reproducible co-expression definition (Proc+Gpb5, adult brain, ages 0-50d) that FBbt currently lacks any equivalent term for, this is flagged as a genuine new-term candidate for curator consideration, distinct from the noisier Proc/Ms remainder group.",
+  "new_term_needed": true,
+  "verification_needed": false
+}

@@ -1,0 +1,30 @@
+{
+  "cluster_label": "PAM",
+  "working_definition": "The Fer2-positive subcluster of the parent dopaminergic cluster (Davie et al. 2018, res-2.0 cluster 42; 222 cells): the protocerebral anterior-medial (PAM) dopaminergic neuron cluster, whole population as one unit. PAM neurons are dopaminergic afferents to the horizontal (beta', gamma) mushroom body lobes with somata in the anterior-medial protocerebrum, mediating reward/appetitive reinforcement signalling; known from other work to comprise ~15 anatomically distinct compartment-specific subtypes, none of which are resolved individually here.",
+  "searches_performed": [
+    "PAM neuron",
+    "protocerebral anterior medial dopaminergic neuron",
+    "adult dopaminergic PAM neuron",
+    "PAM (exact cluster label)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult dopaminergic PAM neuron",
+    "fbbt_id": "FBbt:00100214",
+    "fbbt_definition": "A dopaminergic neuron whose cell body is located in a cluster of approximately 100 cell bodies in the cortex of the anterior inferior medial protocerebrum of the adult brain. There are multiple subtypes, of which most (but not all) target the medial lobe. They all follow a mushroom body commissure to the contralateral mushroom body. They are secondary neurons, with some belonging to the CREa1A (BAMd1A) hemilineage and some belonging to the CREa2A (DALcm1A) hemilineage.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "This FBbt term describes exactly the whole-PAM-cluster level of resolution achieved in the atlas: a single dopaminergic neuron population with cell bodies in the anterior (inferior) medial protocerebrum, comprising multiple subtypes not distinguished here, all following a mushroom body commissure. This matches the report's own conclusion that the correct mapping level is the PAM-cluster parent, not any of the ~15 individual compartment-specific PAM subtypes (e.g. PAM01-PAM15, individually defined by different criteria such as MB commissure position in Li et al. 2020/Otto et al. 2020 - not the source of this cluster).",
+  "other_candidates": [
+    {
+      "fbbt_term": "dopaminergic PAM neuron 1",
+      "fbbt_id": "FBbt:00111015",
+      "fbbt_definition": "One of ~15 individually-named PAM dopaminergic neuron subtypes (e.g. PAM01), each defined by mushroom body compartment/commissure innervated.",
+      "reason_rejected": "Too specific: this scRNAseq cluster (222 cells, Fer2+ marker only) does not resolve individual PAM compartment subtypes; assigning a single PAM0x subtype would overstate the resolution achieved."
+    }
+  ],
+  "recommendation": "Accept adult dopaminergic PAM neuron (FBbt:00100214) as the mapping for the whole PAM cluster; do not assign any individual PAM compartment subtype.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

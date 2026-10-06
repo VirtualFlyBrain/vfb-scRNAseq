@@ -1,0 +1,30 @@
+{
+  "cluster_label": "neuropeptide_LNv",
+  "working_definition": "Pdf-expressing lateral ventral clock neurons (Davie et al. 2018; 41 cells), recovered via neuropeptide-focused re-clustering (dominant contributor res-2.0 cluster 36 'Clock neurons', with minor contributions from several other clusters). The paper states this recovers essentially the complete LNv population per brain ('all but one' LNv). Comprises small (sLNv) and large (lLNv) ventral lateral clock neurons, both Pdf-expressing, not distinguished from one another in this cluster; master circadian pacemaker neurons synchronizing the clock network via Pdf release.",
+  "searches_performed": [
+    "lateral ventral neuron",
+    "LNv neuron",
+    "LN Pdf neuron",
+    "LNv (exact cluster label)"
+  ],
+  "best_match": {
+    "fbbt_term": "LNv neuron",
+    "fbbt_id": "FBbt:00004046",
+    "fbbt_definition": "Lateral period-expressing neuron (LN) of the adult brain whose cell body is located in the ventral cluster of LNs, at the level of the esophageal foramen. Has neurites associated with the accessory medulla. Necessary and sufficient for generation of robust adult locomotor rhythms. There are approximately nine of these cells per hemisphere. They are peptidergic, with eight per hemisphere expressing Pdf and the other expressing ion transport peptide.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00004046 'LNv neuron' is defined at exactly the resolution achieved by this cluster: the whole ventral-LN population (sLNv + lLNv, ~9 cells/hemisphere, predominantly Pdf-expressing) of the adult brain, without splitting into sLNv/lLNv subtypes. This matches the report's own conclusion that a term covering 'Pdf-expressing lateral ventral neurons' (parent of sLNv/lLNv) is the honest mapping level, since the paper's description does not distinguish the two morphological subtypes within this subcluster. Location (accessory medulla association) and function (locomotor rhythm pacemaking via Pdf) both align closely.",
+  "other_candidates": [
+    {
+      "fbbt_term": "LN Pdf neuron",
+      "fbbt_id": "FBbt:00003762",
+      "fbbt_definition": "Lateral period-expressing neuron (LN) of the adult brain that also expresses Pigment-dispersing factor (Pdf).",
+      "reason_rejected": "Slightly narrower than LNv neuron (excludes the one non-Pdf, ITP-expressing LNv cell that the paper says is recovered along with the Pdf+ cells - 'all but one' LNv); LNv neuron better matches the near-complete population described."
+    }
+  ],
+  "recommendation": "Accept LNv neuron (FBbt:00004046) as the mapping; do not split into sLNv/lLNv-specific terms since the cluster does not distinguish them.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,35 @@
+{
+  "cluster_label": "CCAP",
+  "working_definition": "A small (9-cell) population of adult brain neurons expressing crustacean cardioactive peptide (CCAP), recovered by targeted re-clustering of neuropeptide-expressing cells in Davie et al. 2018 (57K adult brain atlas). CCAP-expressing neurons are a classically studied, molecularly and functionally defined population (CCAP-GAL4, Luan et al. 2006) implicated in ecdysis, cardiac/abdominal muscle modulation, and post-eclosion wing expansion with bursicon; the brain-restricted subset captured here is not resolved to any single morphological subtype. Independently corroborated as a distinct cluster (res-8.0 cluster 151) in the same paper.",
+  "searches_performed": [
+    "CCAP neuron",
+    "crustacean cardioactive peptide neuron",
+    "adult CCAP neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "adult CCAP neuron",
+    "fbbt_id": "FBbt:00111316",
+    "fbbt_definition": "Adult neuron that expresses CCAP (Crustacean cardioactive peptide) (FBgn0039007).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The cluster is explicitly a CCAP-gene-expression-defined class (per Luan et al. 2006, the same driver/reference tradition FBbt uses to define this class), not a single morphological cell type. FBbt:00111316 'adult CCAP neuron' is defined at exactly this level -- any adult neuron expressing CCAP -- matching the report's own conclusion that class-level granularity is the honest target. Adult stage is correct for this atlas (whole adult brain, ages 1-30 days). The cluster is well corroborated within the paper (independent res-8.0 cluster 151, same literature marker), supporting high confidence despite the small cell number.",
+  "other_candidates": [
+    {
+      "fbbt_term": "CCAP neuron",
+      "fbbt_id": "FBbt:00051052",
+      "fbbt_definition": "Any neuron (FBbt:00005106) that expresses CCAP (FBgn0039007).",
+      "reason_rejected": "Stage-unspecified parent of 'adult CCAP neuron'; less specific than the adult-stage term which correctly applies to this adult-brain atlas."
+    },
+    {
+      "fbbt_term": "adult CCAP protocerebrum neuron",
+      "fbbt_id": "FBbt:00111317",
+      "fbbt_definition": "Neuron from Selcho et al. (2018) mapped to a specific brain CCAP neuron type with defined morphology and lineage.",
+      "reason_rejected": "A specific named subtype (one of several adult CCAP neuron populations); this transcriptomic cluster cannot be resolved to this or any other single anatomical subtype (SEZ, protocerebrum, thoracic, abdominal variants all exist)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00111316 'adult CCAP neuron' as an exact match at the class level; do not attempt to resolve to a specific CCAP neuron subtype as the transcriptomic cluster does not support this.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

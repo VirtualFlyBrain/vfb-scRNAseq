@@ -1,0 +1,43 @@
+{
+  "cluster_label": "neuropeptide_Capa",
+  "working_definition": "Capa (Capability/periviscerokinin/pyrokinin family) neuropeptide-expressing neurosecretory neurons from Davie et al. 2018's adult whole-brain atlas (73 cells), recovered independently at both the neuropeptide-subclustering (Figure 2K) and res-8.0 (cluster 119) levels. Defining markers include Capa plus general neurosecretory/peptide-processing genes (7B2, amon, Phm, IA-2, Pdi). Because the dataset profiles brain only (no VNC), this most likely represents a brain-resident Capa+ neurosecretory population rather than the classic VNC/abdominal-ganglion Capa (Va) neurons described in the wider literature.",
+  "searches_performed": [
+    "Capa",
+    "Capa neuron",
+    "Capability neuron",
+    "adult Capability neuron",
+    "Va Capability neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "adult Capability neuron",
+    "fbbt_id": "FBbt:00048012",
+    "fbbt_definition": "Any neuron that is part of some adult nervous system and is capable of some peptide hormone secretion and expresses Capa (FBgn0039722).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "This FBbt term's defining criteria (adult nervous system, peptide-hormone-secreting, expresses Capa) match the cluster's defining marker and neurosecretory character exactly, and critically it is not restricted to the VNC/abdominal-ganglion 'Va neuron' subtype - it covers any adult Capa-expressing neuron anywhere in the nervous system, including the brain. This resolves the report's own brain-vs-VNC caveat: the general adult Capability neuron term is the correct level for a brain-resident Capa+ population, since the more specific classic 'Va neuron' terms are VNC/abdominal-ganglion-restricted and would not apply to whole-brain-derived cells.",
+  "other_candidates": [
+    {
+      "fbbt_term": "larval Va Capability neuron",
+      "fbbt_id": "FBbt:00110116",
+      "fbbt_definition": "Larval Va neurosecretory neuron expressing Capa, classically located in the abdominal ganglion.",
+      "reason_rejected": "Wrong developmental stage (larval) and wrong body region (VNC/abdominal ganglion); this atlas profiles adult whole brains only, and the report notes VNC-restricted Capa/Va neurons would not be represented."
+    },
+    {
+      "fbbt_term": "adult subesophageal Capability neuron",
+      "fbbt_id": "FBbt:00052777",
+      "fbbt_definition": "Adult Capability neuron located in the subesophageal zone.",
+      "reason_rejected": "Overly specific location restriction (SEZ only) not established by the report, which does not localise the cluster within the brain."
+    },
+    {
+      "fbbt_term": "Capability neuron",
+      "fbbt_id": "FBbt:00048011",
+      "fbbt_definition": "Any neuron capable of peptide hormone secretion that expresses Capa.",
+      "reason_rejected": "Stage-unqualified parent of the chosen adult-specific term; the adult variant is more precise and equally applicable here."
+    }
+  ],
+  "recommendation": "High-confidence exact match at the general adult Capa-neuron level; the report's brain-vs-VNC caveat is resolved by this term's lack of VNC restriction, so no further narrowing or new term is needed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,23 @@
+{
+  "cluster_label": "T1",
+  "working_definition": "T1 is a classical optic-lobe columnar neuron of the lamina-medulla circuit, uniquely identified in this atlas by expression of the glutamate transporter Eaat1 (the only neuronal type to express it). It has processes in the lamina and terminals in medulla layers M1-M2, providing feedback from lamina to medulla in the ON motion pathway. The cluster is clean and single-identity, with GEO and Table S2 agreeing exactly on the T1 label (literature markers/mapping, Hamanaka and Meinertzhagen 2010; Konstantinides et al. 2018).",
+  "searches_performed": [
+    "T1 neuron",
+    "columnar neuron T1",
+    "lamina medulla feedback neuron",
+    "optic lobe T1"
+  ],
+  "best_match": {
+    "fbbt_term": "columnar neuron T1",
+    "fbbt_id": "FBbt:00003727",
+    "fbbt_definition": "An intrinsic columnar neuron whose cell body lies in the cortex of the medulla. The fiber of the T1 cell body branches at the medulla surface to form a T-shaped linking fiber between a bush-like arborization in the distal part of a medulla column (M1 and M2), and a bundle of climbing fibers in the equivalent column of the lamina (Fischbach and Dittrich, 1989). In the medulla, it is strongly synapsed by centrifugal neuron C3 in medulla layer M2 and lamina monopolar neuron L2. There is usually one of these cells per optic column.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The FBbt definition of columnar neuron T1 matches the report's anatomy point for point: medulla cell body, T-shaped fiber, arborization in M1-M2, climbing fibers into the lamina cartridge. This is the same classical Fischbach and Dittrich (1989) morphological type the paper cites for its own T1 identification (Hamanaka and Meinertzhagen 2010 builds on this). Label provenance is unambiguous (GEO = Table S2, no REVIEW flag), and the cluster is described as clean/single-identity. This is an adult brain atlas and FBbt:00003727 is the (implicitly adult) mature form; no separate 'adult T1 neuron' term exists, and no immature-specific term is warranted since the cluster spans 0-30 days post-eclosion (mature adult).",
+  "other_candidates": [],
+  "recommendation": "Accept as exact match at high confidence. No further action needed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

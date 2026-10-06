@@ -1,0 +1,23 @@
+{
+  "cluster_label": "lPN/CG31676",
+  "working_definition": "\"CG31676(+) lPNs\": lateral-lineage antennal-lobe olfactory projection neurons (52 cells) within Davie et al. 2018 res-2.0 cluster 27, expressing the uncharacterized gene CG31676, reproducing a Li et al. (2017) SMART-seq2 subcluster. Uni- or multiglomerular, projecting via mACT to lateral horn and mushroom body calyx. The report explicitly flags CG31676 as a combinatorial transcriptomic marker of uncertain anatomical specificity.",
+  "searches_performed": [
+    "lPN/CG31676",
+    "CG31676 lateral projection neuron",
+    "CG31676",
+    "adult antennal lobe projection neuron lPN"
+  ],
+  "best_match": {
+    "fbbt_term": "adult antennal lobe projection neuron lPN",
+    "fbbt_id": "FBbt:00007439",
+    "fbbt_definition": "Adult antennal lobe projection neuron that belongs to the dorsal (Notch OFF) hemilineage of the lateral antennal lobe neuroblast (ALl1) (Lin et al., 2012; Bates et al., 2020). Its cell body is located in the lateral part of the cell body rind of the antennal lobe.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "No FBbt term is built on the CG31676 marker or cites Li et al. 2017 / Davie et al. 2018 for this subgroup (searched directly - no hits). The report concludes it is not established whether CG31676(+) lPNs is one of the six PN classes Li et al. (2017) 'unequivocally mapped' to a known glomerulus, so it should be treated as a transcriptomic subgroup of uncertain specificity. The cluster IS-A adult antennal lobe projection neuron lPN (FBbt:00007439) but the distinguishing CG31676+ marker is not captured by any FBbt term.",
+  "other_candidates": [],
+  "recommendation": "Broad-match to the lPN lineage term; do not mint a new term given unconfirmed anatomical specificity. Both flags left false per dataset guidance.",
+  "new_term_needed": false,
+  "verification_needed": false
+}
