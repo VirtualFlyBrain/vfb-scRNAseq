@@ -164,6 +164,16 @@ classes:
         range: Clustering
         annotations:
           owl: ObjectPropertyAssertion
+      parent_cluster:
+        slot_uri: BFO:0000050
+        description: >-
+          For a sub-cluster, the Cluster whose cells the authors re-clustered to produce
+          it (every cell of the sub-cluster is in the parent). Only for genuine
+          sub-clusterings — not for clusters of an independent clustering that merely
+          overlap.
+        range: Cluster
+        annotations:
+          owl: ObjectPropertyAssertion
       cell_number:
         slot_uri: neo_custom:cell_count
         description: The number of cells in the Cluster (as integer).
@@ -249,7 +259,10 @@ slots:
       owl.fstring: ClassAssertion( ObjectSomeValuesFrom( BFO:0000050 {V} ) {id} )
   stage:
     slot_uri: RO:0002490
-    description: Developmental stage (FBdv ID) of the Sample or Cluster.
+    description: >-
+      Developmental stage (FBdv ID) of the Sample or Cluster. Normally set on the
+      Sample only; set on a Cluster only when the stage is determined from the
+      cluster's own gene expression (not copied from its samples).
     range: Thing
     annotations:
       owl.fstring: ClassAssertion( ObjectSomeValuesFrom( RO:0002490 {V} ) {id} )

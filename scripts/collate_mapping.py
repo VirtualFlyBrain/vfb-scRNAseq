@@ -13,6 +13,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -20,9 +21,9 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
 from vfb_scrnaseq.project_config import (  # noqa: E402
-    hold_classes,
+    annotation_kind,
+    label_slug,
     load_config,
-    unidentified_classifier,
 )
 
 COLUMNS = [
@@ -31,6 +32,35 @@ COLUMNS = [
     "new_term_needed", "verification_needed", "n_other_candidates", "recommendation",
     "manual_edit", "reviewed", "review_notes",
 ]
+
+
+PRIOR_COLUMNS = ["prior_fbbt_id", "prior_fbbt_label", "prior_agrees"]
+
+
+def _load_prior(proj: Path, cfg: dict) -> dict[str, tuple[str, str]] | None:
+    """Optional `prior_mapping` TSV (cluster_label, old_fbbt_id, old_fbbt_label): the
+    FBbt terms of a previous load of this dataset, used only as a cross-check."""
+    name = cfg.get("prior_mapping")
+    if not name:
+        return None
+    with (proj / name).open() as fh:
+        return {r["cluster_label"]: (r["old_fbbt_id"], r["old_fbbt_label"])
+                for r in csv.DictReader(fh, delimiter="\t")}
+
+
+REPORTS_README = REPO_ROOT / "src" / "vfb_scrnaseq" / "templates" / "reports_README.md"
+
+
+def ensure_reports_readme(proj: Path) -> Path | None:
+    """Give a project's reports/ folder the generic README (reports are background
+    evidence; mapping.tsv is authoritative) if it has reports but no README yet.
+    Never overwrites an existing README. Returns the path written, else None."""
+    rdir = proj / "reports"
+    readme = rdir / "README.md"
+    if readme.exists() or not any(p.name != "README.md" for p in rdir.glob("*.md")):
+        return None
+    readme.write_text(REPORTS_README.read_text())
+    return readme
 
 
 def _manual_edit_summary(m: dict) -> str:
@@ -46,34 +76,40 @@ def main() -> None:
     args = ap.parse_args()
 
     cfg = load_config(args.project)
-    is_unidentified = unidentified_classifier(args.project, cfg)
-    held = hold_classes(cfg)
-
-    def kind_of(label: str, cls: str) -> str:
-        if cls in held:
-            return "held"
-        if is_unidentified(label, cls):
-            return "placeholder"
-        return "named"
+    kind_of = annotation_kind(args.project, cfg)
 
     proj = REPO_ROOT / "projects" / args.project
     anns = json.loads((proj / "cell_type_annotations.json").read_text())["annotations"]
+    prior = _load_prior(proj, cfg)
+    # extra per-cluster fields from cell_type_annotations.json shown after the label
+    # (`annotations.review_columns`, e.g. the authors' clustering + cluster id)
+    source_cols = [c for c in (cfg.get("annotations") or {}).get("review_columns", [])
+                   if c not in COLUMNS]
+    # keep any review already recorded in an existing mapping.tsv
+    out = proj / "mapping.tsv"
+    previous = {}
+    if out.exists():
+        with out.open() as fh:
+            previous = {r["cluster_label"]: r for r in csv.DictReader(fh, delimiter="\t")}
 
     rows = []
     for ann in anns:
         label, cls = ann["label"], ann.get("class", "")
-        kind = kind_of(label, cls)
-        mfile = proj / "mapping" / f"{label}.fbbt_mapping.json"
+        kind = kind_of(ann)
+        mfile = proj / "mapping" / f"{label_slug(label)}.fbbt_mapping.json"
         m = json.loads(mfile.read_text()) if mfile.exists() else {}
         bm = m.get("best_match") or {}
+        if kind != "held" and m and not bm:
+            kind = "held"   # general rule: a cluster with no FBbt term is held
         rows.append({
             "cluster_label": label,
             "type": ann.get("type", ""),
             "class": cls,
             "cell_number": ann.get("cell_number", ""),
             "kind": kind,
-            "fbbt_id": bm.get("fbbt_id", ""),
-            "fbbt_label": bm.get("fbbt_term", ""),
+            # best match first, then any additional_matches, " | "-joined
+            "fbbt_id": " | ".join(x.get("fbbt_id", "") for x in [bm] + m.get("additional_matches", []) if x),
+            "fbbt_label": " | ".join(x.get("fbbt_term", "") for x in [bm] + m.get("additional_matches", []) if x),
             "match_type": bm.get("match_type", "HELD" if kind == "held" else "pending" if not m else "no match"),
             "confidence": bm.get("confidence", ""),
             "new_term_needed": m.get("new_term_needed", ""),
@@ -81,22 +117,36 @@ def main() -> None:
             "n_other_candidates": len(m.get("other_candidates", [])),
             "recommendation": " ".join(m.get("recommendation", "").split()),
             "manual_edit": _manual_edit_summary(m),
-            "reviewed": "",
-            "review_notes": "",
+            "reviewed": previous.get(label, {}).get("reviewed", ""),
+            "review_notes": previous.get(label, {}).get("review_notes", ""),
         })
+        for c in source_cols:
+            rows[-1][c] = ann.get(c, "")
+        if prior is not None:
+            pid, plab = prior.get(label) or prior.get(ann.get("type", ""), ("", ""))
+            new = bm.get("fbbt_id", "")
+            rows[-1].update({
+                "prior_fbbt_id": pid, "prior_fbbt_label": plab,
+                # "" = nothing to compare (no prior term, or not yet mapped / held)
+                "prior_agrees": ("" if not (pid and new) else "yes" if pid == new else "NO"),
+            })
 
-    kind_order = {"named": 0, "placeholder": 1, "held": 2}
-    order = {"exact match": 0, "narrow match": 1, "broad match": 2, "no match": 3, "pending": 4, "HELD": 5}
-    conf = {"high": 0, "medium": 1, "low": 2, "": 3}
-    rows.sort(key=lambda r: (kind_order.get(r["kind"], 9), order.get(r["match_type"], 9),
-                             conf.get(r["confidence"], 9), r["cluster_label"]))
+    # stable order: clusters with an FBbt term first (presence, not value), then by
+    # cluster label with numbers compared numerically (res2_2 < res2_10)
+    rows.sort(key=lambda r: (not r["fbbt_id"], [int(t) if t.isdigit() else t
+                                                 for t in re.split(r"(\d+)", r["cluster_label"])]))
 
-    out = proj / "mapping.tsv"
     with out.open("w", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=COLUMNS, delimiter="\t")
+        cols = COLUMNS[:1] + source_cols + COLUMNS[1:]
+        if prior is not None:
+            cols = (cols[:cols.index("manual_edit")] + PRIOR_COLUMNS
+                    + cols[cols.index("manual_edit"):])
+        w = csv.DictWriter(fh, fieldnames=cols, delimiter="\t")
         w.writeheader()
         w.writerows(rows)
     print(f"wrote {len(rows)} rows -> {out}")
+    if (readme := ensure_reports_readme(proj)):
+        print(f"wrote {readme} (generic reports README)")
 
 
 if __name__ == "__main__":
