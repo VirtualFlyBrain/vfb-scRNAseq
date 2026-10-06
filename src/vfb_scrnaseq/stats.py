@@ -58,17 +58,51 @@ def _label_memberships(meta_f: Path, bc_col: str, label_col: str, prefix: str = 
         return {r[bc_col]: [prefix + r[label_col]] for r in csv.DictReader(fh, delimiter="\t")}
 
 
-def _accumulate(mtx: Path, feats: Path, bcs: Path, memberships: dict[str, list[str]]) -> dict:
+def load_gene_id_map(path: Path) -> dict[str, tuple[str, str] | None]:
+    """gene_id_map.tsv (scripts/update_gene_ids.py) -> {input fbgn: (current fbgn,
+    current symbol)}, or None for ids to drop (split / withdrawn)."""
+    with path.open() as fh:
+        rows = csv.DictReader((ln for ln in fh if not ln.startswith("#")), delimiter="\t")
+        return {r["input_fbgn"]: ((r["current_fbgn"], r["current_symbol"]) if r["current_fbgn"] else None)
+                for r in rows}
+
+
+def _accumulate(mtx: Path, feats: Path, bcs: Path, memberships: dict[str, list[str]],
+                gene_map: dict[str, tuple[str, str] | None] | None = None) -> dict:
     """Stream one 10x matrix: per (gene, cluster) CPM sums over expressing cells (S),
-    expressing-cell counts (N) and cluster sizes, for the clusters in `memberships`."""
+    expressing-cell counts (N) and cluster sizes, for the clusters in `memberships`.
+
+    With `gene_map`, input genes are remapped to current FlyBase genes as the matrix
+    streams: retired ids -> their current gene, unmappable ids dropped, and genes that
+    several input ids now map to (merges) have their counts summed per cell before
+    extent/level are taken. CPM still uses each cell's full library size."""
     with gzip.open(feats, "rt") as fh:
         rows = [ln.rstrip("\n").split("\t") for ln in fh]
-    fbgn = [r[0] for r in rows]
-    symbol = [r[1] if len(r) > 1 else r[0] for r in rows]
+    in_fbgn = [r[0] for r in rows]
+    in_symbol = [r[1] if len(r) > 1 else r[0] for r in rows]
+    if gene_map is None:
+        fbgn, symbol = in_fbgn, in_symbol
+        remap = np.arange(len(in_fbgn), dtype=np.int64)
+        merged = np.zeros(len(fbgn), dtype=bool)
+    else:
+        fbgn, symbol, idx = [], [], {}
+        remap = np.full(len(in_fbgn), -1, dtype=np.int64)
+        for i, f in enumerate(in_fbgn):
+            tgt = gene_map.get(f, (f, in_symbol[i]))   # ids not in the map are kept as is
+            if tgt is None:
+                continue
+            if tgt[0] not in idx:
+                idx[tgt[0]] = len(fbgn)
+                fbgn.append(tgt[0])
+                symbol.append(tgt[1])
+            remap[i] = idx[tgt[0]]
+        sources = np.bincount(remap[remap >= 0], minlength=len(fbgn))
+        merged = sources > 1
     with gzip.open(bcs, "rt") as fh:
         barcodes = [ln.strip() for ln in fh]
 
-    _, n_genes, n_cells, _ = _open_mtx(mtx)
+    _, _, n_cells, _ = _open_mtx(mtx)
+    n_genes = len(fbgn)
     clusters = sorted({c for b in barcodes for c in memberships.get(b, [])})
     cidx = {c: i for i, c in enumerate(clusters)}
     n_clu = len(clusters)
@@ -89,16 +123,32 @@ def _accumulate(mtx: Path, feats: Path, bcs: Path, memberships: dict[str, list[s
 
     S = np.zeros(n_genes * n_clu, dtype=np.float64)
     N = np.zeros(n_genes * n_clu, dtype=np.int64)
-    for chunk in _read_chunks(mtx):
-        c = chunk.c.values - 1
-        g = chunk.g.values - 1
-        w = chunk.v.values / col_total[c]
+
+    def add(g, c, v):
+        w = v / col_total[c]
         for lay in layers:
             k = lay[c]
             keep = k >= 0
             flat = g[keep] * n_clu + k[keep]
-            S += np.bincount(flat, weights=w[keep], minlength=n_genes * n_clu)
-            N += np.bincount(flat, minlength=n_genes * n_clu)
+            S[:] += np.bincount(flat, weights=w[keep], minlength=n_genes * n_clu)
+            N[:] += np.bincount(flat, minlength=n_genes * n_clu)
+
+    held_g, held_c, held_v = [], [], []          # entries of merged genes, summed at the end
+    for chunk in _read_chunks(mtx):
+        g = remap[chunk.g.values - 1]
+        c = chunk.c.values - 1
+        v = chunk.v.values
+        keep = g >= 0
+        g, c, v = g[keep], c[keep], v[keep]
+        m = merged[g]
+        if m.any():
+            held_g.append(g[m]); held_c.append(c[m]); held_v.append(v[m])
+            g, c, v = g[~m], c[~m], v[~m]
+        add(g, c, v)
+    if held_g:
+        g = np.concatenate(held_g); c = np.concatenate(held_c); v = np.concatenate(held_v)
+        key, inv = np.unique(g.astype(np.int64) * n_cells + c, return_inverse=True)
+        add(key // n_cells, key % n_cells, np.bincount(inv, weights=v))
     cells = {b for j, b in enumerate(barcodes) if (layers[:, j] >= 0).any()}
     return {"fbgn": fbgn, "symbol": symbol, "clusters": clusters, "cluster_size": cluster_size,
             "S": S.reshape(n_genes, n_clu), "N": N.reshape(n_genes, n_clu), "cells": cells}
@@ -133,8 +183,11 @@ def compute_expression(project: str, cfg: dict):
         memberships = _label_memberships(cache / cfg["annotations"]["source_file"],
                                          cfg["annotations"].get("barcode_column", "barcode"),
                                          label_col, prefix=cfg["annotations"].get("label_prefix", ""))
+    # current FlyBase gene ids (`expression.gene_id_map`, from scripts/update_gene_ids.py)
+    gene_map = (load_gene_id_map(REPO_ROOT / "projects" / project / ex["gene_id_map"])
+                if ex.get("gene_id_map") else None)
     parts = [_accumulate(cache / ex["matrix_file"], cache / ex["features_file"],
-                         cache / ex["barcodes_file"], memberships)]
+                         cache / ex["barcodes_file"], memberships, gene_map)]
     # further matrices (`expression.extra_parts`, e.g. a separately clustered early
     # dataset): same genes, own cells; cluster labels get the part's label_prefix
     for part in ex.get("extra_parts", []):
@@ -142,7 +195,7 @@ def compute_expression(project: str, cfg: dict):
                                 cfg["annotations"].get("barcode_column", "barcode"),
                                 label_col, prefix=part.get("label_prefix", ""))
         parts.append(_accumulate(cache / part["matrix_file"], cache / part["features_file"],
-                                 cache / part["barcodes_file"], pm))
+                                 cache / part["barcodes_file"], pm, gene_map))
     fbgn, symbol = parts[0]["fbgn"], parts[0]["symbol"]
     for p in parts[1:]:
         if p["fbgn"] != fbgn:

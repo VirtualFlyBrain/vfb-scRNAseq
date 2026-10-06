@@ -90,6 +90,7 @@ uv run python scripts/build_samples_from_geo.py     --project kurmangaliyev_2020
 uv run python scripts/assign_placeholders.py        --project kurmangaliyev_2020
 uv run python scripts/collate_mapping.py            --project kurmangaliyev_2020
 uv run python scripts/build_rdf.py                  --project kurmangaliyev_2020   # -> .ttl + .ofn + metadata/*.owl
+uv run python scripts/update_gene_ids.py            --project kurmangaliyev_2020   # needs psql (FlyBase Chado)
 uv run python scripts/build_expression.py           --project kurmangaliyev_2020   # -> expression/*.owl.gz
 
 # the CI checks
@@ -113,5 +114,5 @@ from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#genera
 implemented; the worked example emits validated RDF (`linkml-convert`) and OWL
 (`linkml-owl`), and expression statistics are computed for both projects.
 
-**TODO:** map secondary/withdrawn FBgns to current genes in the expression output
-(see *Expression statistics* in `docs/DESIGN.md`).
+Gene ids in the expression output are mapped to current FlyBase genes
+(`scripts/update_gene_ids.py`; see *Expression statistics* in `docs/DESIGN.md`).

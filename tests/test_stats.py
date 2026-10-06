@@ -113,3 +113,26 @@ def test_extra_parts_combine_second_matrix(tmp_path, monkeypatch):
     ext = {(label, sym): round(extent, 2) for _i, label, _f, sym, _l, extent in rows}
     assert ext[("early_X", "sym1")] == 1.0 and ext[("early_X", "sym3")] == 0.5
     assert meta["n_cells"] == 12
+
+
+def test_gene_id_map_merge_rename_drop(tmp_path, monkeypatch):
+    # g2 is a retired id of g1 (merge: cell 1 expresses both and must count once),
+    # g3 is renamed to a current id, g4 is dropped (split/withdrawn)
+    cfg = _setup(tmp_path, monkeypatch)
+    proj = tmp_path / "projects" / "t"
+    proj.mkdir(parents=True)
+    (proj / "gene_id_map.tsv").write_text(
+        "# test\ninput_fbgn\tinput_symbol\tstatus\tcurrent_fbgn\tcurrent_symbol\n"
+        "FBgn0000001\tsym1\tcurrent\tFBgn0000001\tnew1\n"
+        "FBgn0000002\tsym2\tsecondary\tFBgn0000001\tnew1\n"
+        "FBgn0000003\tsym3\tsecondary\tFBgn0000099\tsym99\n"
+        "FBgn0000004\tsym4\tsplit\t\tFBgn1 a; FBgn2 b\n")
+    cfg["expression"]["gene_id_map"] = "gene_id_map.tsv"
+    rows, counts, meta = stats.compute_expression("t", cfg)
+    got = {(label, fbgn, sym): (lvl, ext) for _i, label, fbgn, sym, lvl, ext in rows}
+    # merged gene in A: cells 1,2,3 express it (cell 1 once) -> extent 0.6; each of those
+    # cells' library is all in this gene -> CPM 1e6 -> level 1e6 (not halved/doubled)
+    assert got[("A", "FBgn0000001", "new1")] == (1e6, 0.6)
+    assert ("B", "FBgn0000099", "sym99") in got
+    assert not any(f in ("FBgn0000002", "FBgn0000003", "FBgn0000004") for _l, f, _s in got)
+    assert meta["n_genes"] == 2                               # new1 + sym99

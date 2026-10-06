@@ -95,6 +95,9 @@ expression:
   normalisation: CPM
   extent_cutoff: 0.2
   hide_in_terminfo: "true"
+  # current FlyBase gene ids (scripts/update_gene_ids.py; FB2026_03): retired ids ->
+  # current gene (merges summed per cell), split/withdrawn ids dropped
+  gene_id_map: gene_id_map.tsv
   # barcode -> cluster for every clustering (a cell is in one cluster per clustering);
   # written by projects/davie_2018/build_clusters.py
   membership_file: GSE107451_57k_cluster_membership.tsv.gz
