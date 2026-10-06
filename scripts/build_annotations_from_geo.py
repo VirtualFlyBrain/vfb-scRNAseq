@@ -44,6 +44,8 @@ def ensure_metadata(accession: str, filename: str, metadata: Path | None) -> Pat
     if metadata and metadata.exists():
         return metadata
     dest = metadata or (REPO_ROOT / ".cache" / filename)
+    if dest.exists():
+        return dest
     dest.parent.mkdir(parents=True, exist_ok=True)
     url = geo_suppl_url(accession, filename)
     print(f"downloading {url} -> {dest}")
@@ -103,6 +105,33 @@ def main() -> None:
         carry_cols=acfg.get("carry_columns", []),
         time_col=acfg.get("timepoint_column"),
     )
+
+    # the main clustering can be named and its labels prefixed too
+    # (`annotations.clustering_id` / `clustering_name` / `label_prefix`), so labels read
+    # the same way in every clustering (e.g. main_L1 alongside early_L1)
+    if acfg.get("label_prefix"):
+        for a in annotations:
+            src_id = a["label"]
+            a["label"] = f"{acfg['label_prefix']}{src_id}"
+            a["clustering"] = acfg.get("clustering_id", acfg.get("subset", "main"))
+            a["clustering_name"] = acfg.get("clustering_name", a["clustering"])
+            a["source_cluster_id"] = src_id
+
+    # further author clusterings in other GEO metadata files (`annotations.extra_clusterings`):
+    # one entry per cluster, label prefixed so it stays unique across clusterings
+    for extra in acfg.get("extra_clusterings", []):
+        xpath = ensure_metadata(ds["accession"], extra["source_file"], None)
+        with gzip.open(xpath, "rt") as fh:
+            xrows = list(csv.DictReader(fh, delimiter="\t"))
+        for a in build(xrows, label_col=acfg["label_column"],
+                       carry_cols=acfg.get("carry_columns", []),
+                       time_col=acfg.get("timepoint_column")):
+            src_id = a["label"]
+            a["label"] = f"{extra.get('label_prefix', extra['id'] + '_')}{src_id}"
+            a["clustering"] = extra["id"]
+            a["clustering_name"] = extra.get("name", extra["id"])
+            a["source_cluster_id"] = src_id
+            annotations.append(a)
 
     out = {
         "source": {"doi": src.get("doi"), "title": src.get("title")},
