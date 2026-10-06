@@ -1,0 +1,36 @@
+{
+  "cluster_label": "A/B*-KC",
+  "working_definition": "Alpha'/beta'-lobe Kenyon cells (α'/β'-KCs) of the adult mushroom body: intrinsic mushroom body neurons whose axons bifurcate to form the alpha' and beta' lobes, identified in this atlas by trio+/sNPF- expression and DAT (dopamine transporter) as a specific marker, plus elevated OxPhos gene expression/mitochondrial turnover. Required for early (acquisition/short-to-middle-term) memory consolidation. This 0-50-day adult brain atlas resolves α'/β'-KCs only at the whole-lobe level, not into finer anterior/posterior/middle subtypes.",
+  "searches_performed": [
+    "A/B*-KC",
+    "alpha'/beta' Kenyon cell",
+    "adult alpha'/beta' Kenyon cell",
+    "Kenyon cell"
+  ],
+  "best_match": {
+    "fbbt_term": "adult alpha'/beta' Kenyon cell",
+    "fbbt_id": "FBbt:00049834",
+    "fbbt_definition": "Mushroom body neuron of the adult that bifurcates at the anterior end of the pedunculus, projecting into the mushroom body alpha'-lobe and beta'-lobe (Lee et al., 1999; Tanaka et al., 2008). It develops from a larval alpha'/beta' Kenyon cell with little alteration during metamorphosis (Lee et al., 1999). ... There is a total of around 340 of these cells per hemisphere (Li et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The cluster's discriminating marker (trio+, sNPF-, plus DAT as a distinguishing marker per the paper's Fig S3G-H) and neuropil (alpha'/beta' lobes, adult brain) match FBbt:00049834 'adult alpha'/beta' Kenyon cell' exactly. This atlas is adult tissue and the FBbt term is explicitly the adult form (developing with little alteration from the larval alpha'/beta' KC during metamorphosis). FBbt further subdivides into anterior-posterior/middle subtypes from connectomic studies, but the report states no finer subtype resolution was achieved in this atlas (subclustering separated on technical covariates only), so the whole-lobe adult term is the correct and complete level.",
+  "other_candidates": [
+    {
+      "fbbt_term": "alpha'/beta' Kenyon cell",
+      "fbbt_id": "FBbt:00100249",
+      "fbbt_definition": "Mushroom body neuron that is born during the late-larval stage... During the pupal stage, it remains largely the same and forms the alpha'/beta' lobes of the adult.",
+      "reason_rejected": "Parent term spanning larval-through-adult lineage; less specific than the adult-restricted term, which is the correct level for this adult-brain atlas."
+    },
+    {
+      "fbbt_term": "alpha'/beta' anterior-posterior Kenyon cell",
+      "fbbt_id": "FBbt:00100250",
+      "fbbt_definition": "A subgroup of the adult mushroom body alpha'/beta' neurons that has dendrites in the main calyx and projects axons to the anterior and posterior layers of the alpha'/beta' lobes (connectomic classification).",
+      "reason_rejected": "Finer sub-lobe subtype from connectomic (EM) studies, not resolvable from this transcriptomic atlas per the report's subclustering analysis."
+    }
+  ],
+  "recommendation": "Map to FBbt:00049834 'adult alpha'/beta' Kenyon cell' as an exact match at the correct (whole-lobe) resolution level supported by the data.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

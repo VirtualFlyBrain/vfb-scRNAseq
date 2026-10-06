@@ -1,0 +1,2569 @@
+[
+  {
+    "type": "Publication",
+    "id": "FlyBase:FBrf0239740",
+    "neo_label": "pub"
+  },
+  {
+    "type": "Dataset",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "name": "scRNAseq data from Davie (2018)",
+    "title": "A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain",
+    "accession": "GSE107451",
+    "neo_label": "DataSet",
+    "site": "vfb:GEO",
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "assay_type": "FBcv:0009000",
+    "total_gene_count": 14463,
+    "filtered_gene_count": 6707,
+    "publication": "FlyBase:FBrf0239740"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000244",
+    "name": "brain, < 8 Hours, DGRP-551 rep r1 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000245"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007075",
+    "stock": [
+      "FlyBase:FBst0055026"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000246",
+    "name": "brain, < 8 Hours, DGRP-551 rep r2 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000247"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007075",
+    "stock": [
+      "FlyBase:FBst0055026"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000248",
+    "name": "brain, 15 Days, DGRP-551 rep r1 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000249"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007090",
+    "stock": [
+      "FlyBase:FBst0055026"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000250",
+    "name": "brain, 1 Day, DGRP-551 rep r1 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000251"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007076",
+    "stock": [
+      "FlyBase:FBst0055026"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000252",
+    "name": "brain, 30 Days, DGRP-551 rep r1 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000253"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007105",
+    "stock": [
+      "FlyBase:FBst0055026"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000254",
+    "name": "brain, 30 Days, DGRP-551 rep r2 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000255"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007105",
+    "stock": [
+      "FlyBase:FBst0055026"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000256",
+    "name": "brain, 3 Days, DGRP-551 rep r1 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000257"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007078",
+    "stock": [
+      "FlyBase:FBst0055026"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000258",
+    "name": "brain, 3 Days, DGRP-551 rep r2 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000259"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007078",
+    "stock": [
+      "FlyBase:FBst0055026"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000260",
+    "name": "brain, 50 Days, DGRP-551 rep r1 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000261"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007125",
+    "stock": [
+      "FlyBase:FBst0055026"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000262",
+    "name": "brain, 6 Days, DGRP-551 rep r1 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000263"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007081",
+    "stock": [
+      "FlyBase:FBst0055026"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000264",
+    "name": "brain, 6 Days, DGRP-551 rep r2 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000265"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007081",
+    "stock": [
+      "FlyBase:FBst0055026"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000266",
+    "name": "brain, 9 Days, DGRP-551 rep r1 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000267"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007084",
+    "stock": [
+      "FlyBase:FBst0055026"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000268",
+    "name": "brain, < 8 Hours, w1118 rep r1 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000269"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007075",
+    "stock": [
+      "FlyBase:FBst0003605"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000270",
+    "name": "brain, < 8 Hours, w1118 rep r2 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000271"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007075",
+    "stock": [
+      "FlyBase:FBst0003605"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000272",
+    "name": "brain, 15 Days, w1118 rep r1 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000273"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007090",
+    "stock": [
+      "FlyBase:FBst0003605"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000274",
+    "name": "brain, 1 Day, w1118 rep r1 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000275"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007076",
+    "stock": [
+      "FlyBase:FBst0003605"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000276",
+    "name": "brain, 30 Days, w1118 rep r1 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000277"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007105",
+    "stock": [
+      "FlyBase:FBst0003605"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000278",
+    "name": "brain, 3 Days, w1118 rep r1 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000279"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007078",
+    "stock": [
+      "FlyBase:FBst0003605"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000280",
+    "name": "brain, 3 Days, w1118 rep r2 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000281"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007078",
+    "stock": [
+      "FlyBase:FBst0003605"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000282",
+    "name": "brain, 3 Days, w1118 rep r3 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000283"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007078",
+    "stock": [
+      "FlyBase:FBst0003605"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000284",
+    "name": "brain, 6 Days, w1118 rep r1 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000285"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007081",
+    "stock": [
+      "FlyBase:FBst0003605"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000286",
+    "name": "brain, 6 Days, w1118 rep r2 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000287"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007081",
+    "stock": [
+      "FlyBase:FBst0003605"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000288",
+    "name": "brain, 6 Days, w1118 rep r3 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000289"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007081",
+    "stock": [
+      "FlyBase:FBst0003605"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000290",
+    "name": "brain, 9 Days, w1118 rep r1 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000291"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007084",
+    "stock": [
+      "FlyBase:FBst0003605"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000292",
+    "name": "brain, 9 Days, w1118 rep r2 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000293"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007084",
+    "stock": [
+      "FlyBase:FBst0003605"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000294",
+    "name": "brain, 9 Days, w1118 rep r3 (Davie 2018)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000295"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00007084",
+    "stock": [
+      "FlyBase:FBst0003605"
+    ]
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000245",
+    "name": "GSM2867552",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000244"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867552",
+      "SRX3426759",
+      "SAMN08105415"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000247",
+    "name": "GSM2867553",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000246"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867553",
+      "SRX3426760",
+      "SAMN08105414"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000249",
+    "name": "GSM2867560",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000248"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867560",
+      "SRX3426767",
+      "SAMN08105407"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000251",
+    "name": "GSM2867554",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000250"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867554",
+      "SRX3426761",
+      "SAMN08105413"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000253",
+    "name": "GSM2867561",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000252"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867561",
+      "SRX3426768",
+      "SAMN08105406"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000255",
+    "name": "GSM2867562",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000254"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867562",
+      "SRX3426769",
+      "SAMN08105405"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000257",
+    "name": "GSM2867555",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000256"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867555",
+      "SRX3426762",
+      "SAMN08105412"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000259",
+    "name": "GSM2867556",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000258"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867556",
+      "SRX3426763",
+      "SAMN08105411"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000261",
+    "name": "GSM2867563",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000260"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867563",
+      "SRX3426770",
+      "SAMN08105404"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000263",
+    "name": "GSM2867557",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000262"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867557",
+      "SRX3426764",
+      "SAMN08105410"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000265",
+    "name": "GSM2867558",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000264"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867558",
+      "SRX3426765",
+      "SAMN08105409"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000267",
+    "name": "GSM2867559",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000266"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867559",
+      "SRX3426766",
+      "SAMN08105408"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000269",
+    "name": "GSM2867564",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000268"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867564",
+      "SRX3426771",
+      "SAMN08105403"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000271",
+    "name": "GSM2867565",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000270"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867565",
+      "SRX3426773",
+      "SAMN08105402"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000273",
+    "name": "GSM2867576",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000272"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867576",
+      "SRX3426784",
+      "SAMN08105391"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000275",
+    "name": "GSM2867566",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000274"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867566",
+      "SRX3426774",
+      "SAMN08105401"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000277",
+    "name": "GSM2867577",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000276"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867577",
+      "SRX3426785",
+      "SAMN08105390"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000279",
+    "name": "GSM2867567",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000278"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867567",
+      "SRX3426775",
+      "SAMN08105400"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000281",
+    "name": "GSM2867568",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000280"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867568",
+      "SRX3426776",
+      "SAMN08105399"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000283",
+    "name": "GSM2867569",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000282"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867569",
+      "SRX3426777",
+      "SAMN08105398"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000285",
+    "name": "GSM2867570",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000284"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867570",
+      "SRX3426778",
+      "SAMN08105397"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000287",
+    "name": "GSM2867571",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000286"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867571",
+      "SRX3426779",
+      "SAMN08105396"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000289",
+    "name": "GSM2867572",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000288"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867572",
+      "SRX3426780",
+      "SAMN08105395"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000291",
+    "name": "GSM2867573",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000290"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867573",
+      "SRX3426781",
+      "SAMN08105394"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000293",
+    "name": "GSM2867574",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000292"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867574",
+      "SRX3426782",
+      "SAMN08105393"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000295",
+    "name": "GSM2867575",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000294"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "dbxref": [
+      "GSM2867575",
+      "SRX3426783",
+      "SAMN08105392"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "name": "Davie 2018 Seurat res-2.0 clustering of the 57K cells (87 clusters, Table S2)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000297",
+    "name": "Davie 2018 Seurat res-8.0 clustering (clusters annotated in Table S2)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000298",
+    "name": "Davie 2018 sub-clustering of res-2.0 cluster 20 (lamina monopolar neurons)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000299",
+    "name": "Davie 2018 sub-clustering of res-2.0 cluster 27 (olfactory projection neurons)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000300",
+    "name": "Davie 2018 sub-clustering of res-2.0 cluster 42 (dopaminergic neurons)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000301",
+    "name": "Davie 2018 sub-clustering of res-2.0 cluster 64 (octopaminergic-tyraminergic neurons)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000302",
+    "name": "Davie 2018 re-clustering of neuropeptide-expressing cells (Figure 2K)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000303",
+    "name": "cluster 0 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 4109,
+    "neo_label": "Cluster",
+    "total_gene_count": 10808,
+    "filtered_gene_count": 1916
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000304",
+    "name": "cluster 1 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 4079,
+    "neo_label": "Cluster",
+    "total_gene_count": 10746,
+    "filtered_gene_count": 1739
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000305",
+    "name": "cluster 2 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 2852,
+    "neo_label": "Cluster",
+    "total_gene_count": 10515,
+    "filtered_gene_count": 2225
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000306",
+    "name": "cluster 3 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 2624,
+    "neo_label": "Cluster",
+    "total_gene_count": 10322,
+    "filtered_gene_count": 2060
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000307",
+    "name": "cluster 4 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 2522,
+    "neo_label": "Cluster",
+    "total_gene_count": 10316,
+    "filtered_gene_count": 2093
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000308",
+    "name": "cluster 5 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 2319,
+    "neo_label": "Cluster",
+    "total_gene_count": 10628,
+    "filtered_gene_count": 2686
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000309",
+    "name": "cluster 6 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 1926,
+    "neo_label": "Cluster",
+    "total_gene_count": 9404,
+    "filtered_gene_count": 1529
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000310",
+    "name": "cluster 7 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 1743,
+    "neo_label": "Cluster",
+    "total_gene_count": 9857,
+    "filtered_gene_count": 2067
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000311",
+    "name": "G-KC cluster 8 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 1642,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049828"
+    ],
+    "total_gene_count": 9181,
+    "filtered_gene_count": 1646
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000312",
+    "name": "cluster 9 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 1545,
+    "neo_label": "Cluster",
+    "total_gene_count": 9743,
+    "filtered_gene_count": 2037
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000313",
+    "name": "Astrocyte-like cluster 10 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 1422,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047841"
+    ],
+    "total_gene_count": 9267,
+    "filtered_gene_count": 900
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000314",
+    "name": "TmY14 cluster 11 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 1400,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111286"
+    ],
+    "total_gene_count": 9304,
+    "filtered_gene_count": 1787
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000315",
+    "name": "Pm1/Pm2 cluster 12 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 1164,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003832"
+    ],
+    "total_gene_count": 9129,
+    "filtered_gene_count": 1996
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000316",
+    "name": "cluster 13 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 1070,
+    "neo_label": "Cluster",
+    "total_gene_count": 9251,
+    "filtered_gene_count": 2024
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000317",
+    "name": "Ensheathing_glia cluster 14 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 1069,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100504"
+    ],
+    "total_gene_count": 9096,
+    "filtered_gene_count": 1144
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000318",
+    "name": "cluster 15 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 1048,
+    "neo_label": "Cluster",
+    "total_gene_count": 9327,
+    "filtered_gene_count": 2061
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000319",
+    "name": "cluster 16 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 986,
+    "neo_label": "Cluster",
+    "total_gene_count": 9292,
+    "filtered_gene_count": 2143
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000320",
+    "name": "Mip cluster 17 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 842,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047527"
+    ],
+    "total_gene_count": 8999,
+    "filtered_gene_count": 1673
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000321",
+    "name": "cluster 18 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 780,
+    "neo_label": "Cluster",
+    "total_gene_count": 8559,
+    "filtered_gene_count": 1687
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000322",
+    "name": "cluster 19 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 747,
+    "neo_label": "Cluster",
+    "total_gene_count": 8583,
+    "filtered_gene_count": 1645
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000323",
+    "name": "L1/L2/L3/L4/L5 cluster 20 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 736,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003718"
+    ],
+    "total_gene_count": 8533,
+    "filtered_gene_count": 1518
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000324",
+    "name": "cluster 21 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 733,
+    "neo_label": "Cluster",
+    "total_gene_count": 8556,
+    "filtered_gene_count": 1789
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000325",
+    "name": "A/B-KC cluster 22 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 688,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100248"
+    ],
+    "total_gene_count": 8438,
+    "filtered_gene_count": 1556
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000326",
+    "name": "Hsp cluster 23 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 681,
+    "neo_label": "Cluster",
+    "total_gene_count": 9644,
+    "filtered_gene_count": 3250
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000327",
+    "name": "T4/T5 cluster 24 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 648,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003726"
+    ],
+    "total_gene_count": 8451,
+    "filtered_gene_count": 1523
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000328",
+    "name": "cluster 25 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 585,
+    "neo_label": "Cluster",
+    "total_gene_count": 9271,
+    "filtered_gene_count": 2623
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000329",
+    "name": "Mi1 cluster 26 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 562,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003776"
+    ],
+    "total_gene_count": 8095,
+    "filtered_gene_count": 1713
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000330",
+    "name": "OPN: adPN and lPN cluster 27 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 543,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067123"
+    ],
+    "total_gene_count": 9382,
+    "filtered_gene_count": 3180
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000331",
+    "name": "A/B*-KC cluster 28 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 518,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049834"
+    ],
+    "total_gene_count": 8153,
+    "filtered_gene_count": 1782
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000332",
+    "name": "cluster 29 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 516,
+    "neo_label": "Cluster",
+    "total_gene_count": 8518,
+    "filtered_gene_count": 1651
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000333",
+    "name": "cluster 30 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 514,
+    "neo_label": "Cluster",
+    "total_gene_count": 8549,
+    "filtered_gene_count": 2182
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000334",
+    "name": "T2 cluster 31 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 507,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003728"
+    ],
+    "total_gene_count": 8132,
+    "filtered_gene_count": 1405
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000335",
+    "name": "cluster 32 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 503,
+    "neo_label": "Cluster",
+    "total_gene_count": 10231,
+    "filtered_gene_count": 4469
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000336",
+    "name": "T3 cluster 33 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 471,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003730"
+    ],
+    "total_gene_count": 7951,
+    "filtered_gene_count": 1403
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000337",
+    "name": "cluster 34 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 458,
+    "neo_label": "Cluster",
+    "total_gene_count": 8973,
+    "filtered_gene_count": 2275
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000338",
+    "name": "Ensheathing_glia cluster 35 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 450,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100504"
+    ],
+    "total_gene_count": 8725,
+    "filtered_gene_count": 1518
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000339",
+    "name": "Clock cluster 36 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 439,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100163"
+    ],
+    "total_gene_count": 8935,
+    "filtered_gene_count": 2321
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000340",
+    "name": "T1 cluster 37 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 435,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003727"
+    ],
+    "total_gene_count": 8058,
+    "filtered_gene_count": 1885
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000341",
+    "name": "Serotonergic cluster 38 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 392,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049526"
+    ],
+    "total_gene_count": 8587,
+    "filtered_gene_count": 2163
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000342",
+    "name": "Tm5c cluster 39 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 382,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00110074"
+    ],
+    "total_gene_count": 7944,
+    "filtered_gene_count": 2295
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000343",
+    "name": "cluster 40 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 375,
+    "neo_label": "Cluster",
+    "total_gene_count": 7919,
+    "filtered_gene_count": 1515
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000344",
+    "name": "Tm5ab cluster 41 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 351,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003793"
+    ],
+    "total_gene_count": 7549,
+    "filtered_gene_count": 1285
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000345",
+    "name": "Dopaminergic cluster 42 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 347,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058206"
+    ],
+    "total_gene_count": 8326,
+    "filtered_gene_count": 2215
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000346",
+    "name": "Plasmatocytes cluster 43 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 334,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058144"
+    ],
+    "total_gene_count": 9348,
+    "filtered_gene_count": 2208
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000347",
+    "name": "cluster 44 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 329,
+    "neo_label": "Cluster",
+    "total_gene_count": 8617,
+    "filtered_gene_count": 2507
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000348",
+    "name": "Tm1/TmY8 cluster 45 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 325,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003788"
+    ],
+    "total_gene_count": 8149,
+    "filtered_gene_count": 1668
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000349",
+    "name": "Peptidergic cluster 46 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 325,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058202"
+    ],
+    "total_gene_count": 9328,
+    "filtered_gene_count": 3596
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000350",
+    "name": "cluster 47 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 320,
+    "neo_label": "Cluster",
+    "total_gene_count": 8074,
+    "filtered_gene_count": 1969
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000351",
+    "name": "Pm1/Pm2/Pm3 cluster 48 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 316,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003832"
+    ],
+    "total_gene_count": 8064,
+    "filtered_gene_count": 1999
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000352",
+    "name": "cluster 49 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 296,
+    "neo_label": "Cluster",
+    "total_gene_count": 7582,
+    "filtered_gene_count": 1405
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000353",
+    "name": "cluster 50 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 286,
+    "neo_label": "Cluster",
+    "total_gene_count": 8889,
+    "filtered_gene_count": 1761
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000354",
+    "name": "cluster 51 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 280,
+    "neo_label": "Cluster",
+    "total_gene_count": 7470,
+    "filtered_gene_count": 1399
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000355",
+    "name": "Dm8/Dm11 cluster 52 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 278,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003767"
+    ],
+    "total_gene_count": 7550,
+    "filtered_gene_count": 1454
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000356",
+    "name": "Photoreceptors cluster 53 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 277,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007251"
+    ],
+    "total_gene_count": 8544,
+    "filtered_gene_count": 1891
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000357",
+    "name": "cluster 54 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 276,
+    "neo_label": "Cluster",
+    "total_gene_count": 8616,
+    "filtered_gene_count": 1994
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000358",
+    "name": "Pm4 cluster 55 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 271,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111282"
+    ],
+    "total_gene_count": 7730,
+    "filtered_gene_count": 1832
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000359",
+    "name": "cluster 56 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 265,
+    "neo_label": "Cluster",
+    "total_gene_count": 8572,
+    "filtered_gene_count": 1777
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000360",
+    "name": "MBON cluster 57 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 259,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047955"
+    ],
+    "total_gene_count": 8480,
+    "filtered_gene_count": 1746
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000361",
+    "name": "Lawf1 cluster 58 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 246,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003741"
+    ],
+    "total_gene_count": 7513,
+    "filtered_gene_count": 1797
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000362",
+    "name": "cluster 59 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 246,
+    "neo_label": "Cluster",
+    "total_gene_count": 8709,
+    "filtered_gene_count": 1973
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000363",
+    "name": "Cortex_glia cluster 60 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 239,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100501"
+    ],
+    "total_gene_count": 8250,
+    "filtered_gene_count": 1511
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000364",
+    "name": "dorsal_Fan-shaped_Body cluster 61 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 232,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049537"
+    ],
+    "total_gene_count": 7777,
+    "filtered_gene_count": 2356
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000365",
+    "name": "cluster 62 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 230,
+    "neo_label": "Cluster",
+    "total_gene_count": 7814,
+    "filtered_gene_count": 2085
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000366",
+    "name": "Tm9 cluster 63 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 229,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003797"
+    ],
+    "total_gene_count": 7380,
+    "filtered_gene_count": 1395
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000367",
+    "name": "Octopaminergic-Tyraminergic cluster 64 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 225,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058201"
+    ],
+    "total_gene_count": 8062,
+    "filtered_gene_count": 2660
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000368",
+    "name": "C3 cluster 65 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 219,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003744"
+    ],
+    "total_gene_count": 7413,
+    "filtered_gene_count": 1493
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000369",
+    "name": "Subperineurial_glia cluster 66 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 218,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100507"
+    ],
+    "total_gene_count": 8787,
+    "filtered_gene_count": 1710
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000370",
+    "name": "cluster 67 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 216,
+    "neo_label": "Cluster",
+    "total_gene_count": 7465,
+    "filtered_gene_count": 1588
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000371",
+    "name": "cluster 68 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 215,
+    "neo_label": "Cluster",
+    "total_gene_count": 8708,
+    "filtered_gene_count": 1734
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000372",
+    "name": "cluster 69 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 205,
+    "neo_label": "Cluster",
+    "total_gene_count": 8264,
+    "filtered_gene_count": 1953
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000373",
+    "name": "Perineurial_glia cluster 70 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 200,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100506"
+    ],
+    "total_gene_count": 8060,
+    "filtered_gene_count": 1604
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000374",
+    "name": "cluster 71 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 193,
+    "neo_label": "Cluster",
+    "total_gene_count": 8121,
+    "filtered_gene_count": 1968
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000375",
+    "name": "Lawf2 cluster 72 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 173,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00110065"
+    ],
+    "total_gene_count": 7808,
+    "filtered_gene_count": 2002
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000376",
+    "name": "Pm3 cluster 73 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 155,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00110066"
+    ],
+    "total_gene_count": 7533,
+    "filtered_gene_count": 2515
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000377",
+    "name": "Dm9 cluster 74 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 139,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111271"
+    ],
+    "total_gene_count": 7336,
+    "filtered_gene_count": 2327
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000378",
+    "name": "cluster 75 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 138,
+    "neo_label": "Cluster",
+    "total_gene_count": 8054,
+    "filtered_gene_count": 2061
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000379",
+    "name": "cluster 76 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 131,
+    "neo_label": "Cluster",
+    "total_gene_count": 8052,
+    "filtered_gene_count": 1653
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000380",
+    "name": "C2 cluster 77 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 127,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003743"
+    ],
+    "total_gene_count": 6643,
+    "filtered_gene_count": 1301
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000381",
+    "name": "cluster 78 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 124,
+    "neo_label": "Cluster",
+    "total_gene_count": 7411,
+    "filtered_gene_count": 2818
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000382",
+    "name": "cluster 79 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 117,
+    "neo_label": "Cluster",
+    "total_gene_count": 7787,
+    "filtered_gene_count": 1972
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000383",
+    "name": "Poxn cluster 80 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 99,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052046"
+    ],
+    "total_gene_count": 7377,
+    "filtered_gene_count": 2717
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000384",
+    "name": "cluster 81 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 95,
+    "neo_label": "Cluster",
+    "total_gene_count": 8314,
+    "filtered_gene_count": 2208
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000385",
+    "name": "Chiasm_glia cluster 82 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 86,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100525"
+    ],
+    "total_gene_count": 7294,
+    "filtered_gene_count": 1459
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000386",
+    "name": "cluster 83 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 84,
+    "neo_label": "Cluster",
+    "total_gene_count": 7491,
+    "filtered_gene_count": 2090
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000387",
+    "name": "cluster 84 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 73,
+    "neo_label": "Cluster",
+    "total_gene_count": 7017,
+    "filtered_gene_count": 2401
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000388",
+    "name": "Perineurial_glia cluster 85 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 59,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100506"
+    ],
+    "total_gene_count": 8153,
+    "filtered_gene_count": 3111
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000389",
+    "name": "DN1 cluster 86 (res-2.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000296",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 29,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003629"
+    ],
+    "total_gene_count": 6481,
+    "filtered_gene_count": 3052
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000390",
+    "name": "cluster 30 (res-8.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000297",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 555,
+    "neo_label": "Cluster",
+    "total_gene_count": 9189,
+    "filtered_gene_count": 2654
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000391",
+    "name": "DCN cluster 118 (res-8.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000297",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 98,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100486"
+    ],
+    "total_gene_count": 7333,
+    "filtered_gene_count": 2729
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000392",
+    "name": "Capa cluster 119 (res-8.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000297",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 95,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048012"
+    ],
+    "total_gene_count": 7614,
+    "filtered_gene_count": 2816
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000393",
+    "name": "Gr43a cluster 129 (res-8.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000297",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 79,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058222"
+    ],
+    "total_gene_count": 8144,
+    "filtered_gene_count": 3939
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000394",
+    "name": "CCAP cluster 151 (res-8.0) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000297",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111316"
+    ],
+    "total_gene_count": 4973,
+    "filtered_gene_count": 3347
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000395",
+    "name": "Lamina_monopolar cluster (sub-clustering of cluster 20) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000298",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 307,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000323",
+    "cell_type": [
+      "FBbt:00003718"
+    ],
+    "total_gene_count": 7672,
+    "filtered_gene_count": 1560
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000396",
+    "name": "L4/L5 cluster (sub-clustering of cluster 20) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000298",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 163,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000323",
+    "cell_type": [
+      "FBbt:00003718"
+    ],
+    "total_gene_count": 7155,
+    "filtered_gene_count": 1366
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000397",
+    "name": "L3 cluster (sub-clustering of cluster 20) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000298",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 101,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000323",
+    "cell_type": [
+      "FBbt:00003721"
+    ],
+    "total_gene_count": 6633,
+    "filtered_gene_count": 1423
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000398",
+    "name": "L1 cluster (sub-clustering of cluster 20) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000298",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 84,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000323",
+    "cell_type": [
+      "FBbt:00003719"
+    ],
+    "total_gene_count": 6740,
+    "filtered_gene_count": 1708
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000399",
+    "name": "L2 cluster (sub-clustering of cluster 20) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000298",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 81,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000323",
+    "cell_type": [
+      "FBbt:00003720"
+    ],
+    "total_gene_count": 6534,
+    "filtered_gene_count": 1629
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000400",
+    "name": "adPN/C15&kn cluster (sub-clustering of cluster 27) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000299",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 131,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000330",
+    "cell_type": [
+      "FBbt:00007438"
+    ],
+    "total_gene_count": 8092,
+    "filtered_gene_count": 3595
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000401",
+    "name": "adPN cluster (sub-clustering of cluster 27) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000299",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 107,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000330",
+    "cell_type": [
+      "FBbt:00007438"
+    ],
+    "total_gene_count": 7725,
+    "filtered_gene_count": 2878
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000402",
+    "name": "Olfactory_projection_neurons cluster (sub-clustering of cluster 27) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000299",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 71,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000330",
+    "cell_type": [
+      "FBbt:00051299"
+    ],
+    "total_gene_count": 7269,
+    "filtered_gene_count": 2639
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000403",
+    "name": "adPN/kn cluster (sub-clustering of cluster 27) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000299",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 70,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000330",
+    "cell_type": [
+      "FBbt:00007438"
+    ],
+    "total_gene_count": 7278,
+    "filtered_gene_count": 2987
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000404",
+    "name": "lPN/CG31676 cluster (sub-clustering of cluster 27) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000299",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 52,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000330",
+    "cell_type": [
+      "FBbt:00007439"
+    ],
+    "total_gene_count": 7085,
+    "filtered_gene_count": 3168
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000405",
+    "name": "adPN/C15 cluster (sub-clustering of cluster 27) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000299",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 46,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000330",
+    "cell_type": [
+      "FBbt:00007438"
+    ],
+    "total_gene_count": 7230,
+    "filtered_gene_count": 3659
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000406",
+    "name": "lPN/unpg cluster (sub-clustering of cluster 27) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000299",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 41,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000330",
+    "cell_type": [
+      "FBbt:00007439"
+    ],
+    "total_gene_count": 6793,
+    "filtered_gene_count": 2835
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000407",
+    "name": "lPN cluster (sub-clustering of cluster 27) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000299",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 14,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000330",
+    "cell_type": [
+      "FBbt:00007439"
+    ],
+    "total_gene_count": 5527,
+    "filtered_gene_count": 3178
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000408",
+    "name": "adPN/kn&CG31676 cluster (sub-clustering of cluster 27) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000299",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 11,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000330",
+    "cell_type": [
+      "FBbt:00051299"
+    ],
+    "total_gene_count": 4848,
+    "filtered_gene_count": 2344
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000409",
+    "name": "PAM cluster (sub-clustering of cluster 42) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000300",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 222,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000345",
+    "cell_type": [
+      "FBbt:00100214"
+    ],
+    "total_gene_count": 7824,
+    "filtered_gene_count": 2074
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000410",
+    "name": "Dopaminergic cluster (sub-clustering of cluster 42) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000300",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 125,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000345",
+    "cell_type": [
+      "FBbt:00058206"
+    ],
+    "total_gene_count": 7626,
+    "filtered_gene_count": 2441
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000411",
+    "name": "Tyraminergic cluster (sub-clustering of cluster 64) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000301",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 122,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000367",
+    "cell_type": [
+      "FBbt:00058204"
+    ],
+    "total_gene_count": 7539,
+    "filtered_gene_count": 2430
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000412",
+    "name": "Octopaminergic cluster (sub-clustering of cluster 64) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000301",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 76,
+    "neo_label": "Cluster",
+    "parent_cluster": "http://virtualflybrain.org/reports/VFBseq_00000367",
+    "cell_type": [
+      "FBbt:00058203"
+    ],
+    "total_gene_count": 7207,
+    "filtered_gene_count": 2893
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000413",
+    "name": "LNv cluster (neuropeptide re-clustering) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000302",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 41,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004046"
+    ],
+    "total_gene_count": 7349,
+    "filtered_gene_count": 3587
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000414",
+    "name": "IPC cluster (neuropeptide re-clustering) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000302",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 17,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00110107"
+    ],
+    "total_gene_count": 5274,
+    "filtered_gene_count": 1905
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000415",
+    "name": "Capa cluster (neuropeptide re-clustering) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000302",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 73,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048012"
+    ],
+    "total_gene_count": 7384,
+    "filtered_gene_count": 2897
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000416",
+    "name": "Hug cluster (neuropeptide re-clustering) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000302",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 42,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00110924"
+    ],
+    "total_gene_count": 7273,
+    "filtered_gene_count": 3645
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000417",
+    "name": "CCAP cluster (neuropeptide re-clustering) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000302",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 9,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111316"
+    ],
+    "total_gene_count": 5417,
+    "filtered_gene_count": 3856
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000418",
+    "name": "AstA/Nplp1 cluster (neuropeptide re-clustering) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000302",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 83,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048142"
+    ],
+    "total_gene_count": 7323,
+    "filtered_gene_count": 3135
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000419",
+    "name": "AstA/NPF cluster (neuropeptide re-clustering) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000302",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 20,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048142",
+      "FBbt:00048113"
+    ],
+    "total_gene_count": 5994,
+    "filtered_gene_count": 2536
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000420",
+    "name": "CCHa1 cluster (neuropeptide re-clustering) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000302",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 22,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048298"
+    ],
+    "total_gene_count": 6936,
+    "filtered_gene_count": 3160
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000421",
+    "name": "Crz cluster (neuropeptide re-clustering) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000302",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 9,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051053"
+    ],
+    "total_gene_count": 4470,
+    "filtered_gene_count": 2780
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000422",
+    "name": "FMRFa cluster (neuropeptide re-clustering) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000302",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 44,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058202"
+    ],
+    "total_gene_count": 7215,
+    "filtered_gene_count": 3503
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000423",
+    "name": "ITP cluster (neuropeptide re-clustering) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000302",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 25,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048313"
+    ],
+    "total_gene_count": 7576,
+    "filtered_gene_count": 4193
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000424",
+    "name": "Mip/ITP cluster (neuropeptide re-clustering) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000302",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 9,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047527",
+      "FBbt:00048313"
+    ],
+    "total_gene_count": 6019,
+    "filtered_gene_count": 4637
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000425",
+    "name": "Mip/OCT cluster (neuropeptide re-clustering) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000302",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 26,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047527"
+    ],
+    "total_gene_count": 6226,
+    "filtered_gene_count": 2839
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000426",
+    "name": "Proc/Ms cluster (neuropeptide re-clustering) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000302",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 71,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058028"
+    ],
+    "total_gene_count": 8000,
+    "filtered_gene_count": 3842
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000427",
+    "name": "Proc/Gpb5 cluster (neuropeptide re-clustering) (Davie 2018)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000302",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000243",
+    "cell_number": 52,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058202"
+    ],
+    "total_gene_count": 7535,
+    "filtered_gene_count": 4087
+  }
+]

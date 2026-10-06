@@ -50,12 +50,12 @@ def main() -> int:
     terms: dict[str, dict] = {}
     for f in sorted(mdir.glob("*.fbbt_mapping.json")):
         m = json.loads(f.read_text())
-        bm = m.get("best_match") or {}
-        fid = bm.get("fbbt_id")
-        if not fid:
-            continue
-        terms.setdefault(fid, {"recorded_label": bm.get("fbbt_term", ""), "clusters": []})
-        terms[fid]["clusters"].append(m["cluster_label"])
+        for bm in [m.get("best_match") or {}] + (m.get("additional_matches") or []):
+            fid = bm.get("fbbt_id")
+            if not fid:
+                continue
+            terms.setdefault(fid, {"recorded_label": bm.get("fbbt_term", ""), "clusters": []})
+            terms[fid]["clusters"].append(m["cluster_label"])
 
     print(f"verifying {len(terms)} distinct FBbt terms across "
           f"{sum(len(t['clusters']) for t in terms.values())} clusters against live OLS FBbt\n")

@@ -78,15 +78,35 @@ def compute_expression(project: str, cfg: dict):
     symbol = [r[1] if len(r) > 1 else r[0] for r in rows]
     with gzip.open(bcs, "rt") as fh:
         barcodes = [ln.strip() for ln in fh]
-    with gzip.open(meta_f, "rt") as fh:
-        bc2cluster = {r["barcode"]: r[label_col] for r in csv.DictReader(fh, delimiter="\t")}
+    # cell -> cluster(s). Default: one cluster per cell from the metadata label column.
+    # `expression.membership_file` (barcode<TAB>cluster, in .cache) instead allows a
+    # cell to belong to clusters of several (overlapping) clusterings.
+    memberships: dict[str, list[str]] = {}
+    if ex.get("membership_file"):
+        with gzip.open(cache / ex["membership_file"], "rt") as fh:
+            for r in csv.DictReader(fh, delimiter="\t"):
+                memberships.setdefault(r["barcode"], []).append(r["cluster"])
+    else:
+        with gzip.open(meta_f, "rt") as fh:
+            # the per-cell id column must match the matrix barcodes file (default
+            # "barcode"; e.g. Davie 2018 needs the sample-suffixed "new_barcode").
+            bc_col = cfg["annotations"].get("barcode_column", "barcode")
+            memberships = {r[bc_col]: [r[label_col]] for r in csv.DictReader(fh, delimiter="\t")}
 
     _, n_genes, n_cells, _ = _open_mtx(mtx)
-    clusters = sorted(set(bc2cluster.values()))
+    clusters = sorted({c for cs in memberships.values() for c in cs})
     cidx = {c: i for i, c in enumerate(clusters)}
     n_clu = len(clusters)
-    col_cluster = np.array([cidx[bc2cluster[b]] for b in barcodes], dtype=np.int32)
-    cluster_size = np.bincount(col_cluster, minlength=n_clu).astype(np.int64)
+    # layers: the k-th membership of each cell -> layer k, so within a layer a cell has
+    # at most one cluster (-1 = none) and the bincount accumulation stays vectorised
+    n_layers = max(len(cs) for cs in memberships.values())
+    layers = np.full((n_layers, n_cells), -1, dtype=np.int32)
+    for j, b in enumerate(barcodes):
+        for k, c in enumerate(memberships.get(b, [])):
+            layers[k, j] = cidx[c]
+    cluster_size = np.zeros(n_clu, dtype=np.int64)
+    for lay in layers:
+        cluster_size += np.bincount(lay[lay >= 0], minlength=n_clu)
 
     col_total = np.zeros(n_cells, dtype=np.float64)
     for chunk in _read_chunks(mtx):
@@ -96,9 +116,14 @@ def compute_expression(project: str, cfg: dict):
     N = np.zeros(n_genes * n_clu, dtype=np.int64)
     for chunk in _read_chunks(mtx):
         c = chunk.c.values - 1
-        flat = (chunk.g.values - 1) * n_clu + col_cluster[c]
-        S += np.bincount(flat, weights=chunk.v.values / col_total[c], minlength=n_genes * n_clu)
-        N += np.bincount(flat, minlength=n_genes * n_clu)
+        g = chunk.g.values - 1
+        w = chunk.v.values / col_total[c]
+        for lay in layers:
+            k = lay[c]
+            keep = k >= 0
+            flat = g[keep] * n_clu + k[keep]
+            S += np.bincount(flat, weights=w[keep], minlength=n_genes * n_clu)
+            N += np.bincount(flat, minlength=n_genes * n_clu)
     S = S.reshape(n_genes, n_clu)
     N = N.reshape(n_genes, n_clu)
     with np.errstate(divide="ignore", invalid="ignore"):
@@ -134,7 +159,7 @@ def compute_expression(project: str, cfg: dict):
     dataset_total_gene_count = int((N > 0).any(axis=1).sum())
     dataset_filtered_gene_count = int((extent > cutoff).any(axis=1).sum())
 
-    meta = {"n_genes": n_genes, "n_cells": int(cluster_size.sum()), "cutoff": cutoff,
+    meta = {"n_genes": n_genes, "n_cells": int((layers >= 0).any(axis=0).sum()), "cutoff": cutoff,
             "normalisation": ex.get("normalisation", "CPM"),
             "dataset_total_gene_count": dataset_total_gene_count,
             "dataset_filtered_gene_count": dataset_filtered_gene_count}

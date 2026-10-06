@@ -1,0 +1,31 @@
+{
+  "cluster_label": "Plasmatocytes",
+  "working_definition": "Hemocytes (blood cells), specifically plasmatocytes, incidentally captured in the dissected adult brain sample rather than an intrinsic brain cell type; identified by the paper via Hml (Hemolectin) and canonical hemocyte/phagocytic markers (Col4a1, Ppn, lectin-28C/24Db, Sr-CI). Plasmatocytes are the dominant Drosophila hemocyte class, responsible for phagocytosis and basement-membrane/ECM deposition, and adhere to or are trapped within brain tissue during dissection.",
+  "searches_performed": [
+    "Plasmatocytes",
+    "plasmatocyte",
+    "adult plasmatocyte",
+    "hemocyte Drosophila",
+    "Hemolectin hemocyte"
+  ],
+  "best_match": {
+    "fbbt_term": "adult plasmatocyte",
+    "fbbt_id": "FBbt:00058144",
+    "fbbt_definition": "Plasmatocyte of the adult. These cells all originate during embryonic and larval development. They do not divide in the adult and their numbers decrease slowly throughout adult life (Honti et al., 2014).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "This is a non-CNS blood cell type incidentally captured in the dissected adult brain sample, per the report and per the dataset-specific guidance that hemocyte/plasmatocyte clusters should be mapped as real cell types rather than excluded. The report confirms the cells are adult (0-50 days post-eclosion) plasmatocytes marked by Hml and phagocytic/ECM genes, matching FBbt's 'adult plasmatocyte' definition exactly (adult-stage hemocyte, originates embryonically/larvally, does not divide in adult). The GEO label 'Plasmatocytes' is noted in the report as a curator-applied synonym for the authors' broader Table S2 'Hemocytes' annotation, consistent with plasmatocytes being the dominant expected hemocyte type in this context.",
+  "other_candidates": [
+    {
+      "fbbt_term": "plasmatocyte",
+      "fbbt_id": "FBbt:00058145",
+      "fbbt_definition": "Phagocytic hemocyte. These cells represent about 90% of all hemocytes (Lanot et al., 2001). They are responsible for the engulfment of small particles, microbes and apoptotic tissue debris and for the secretion of antimicrobial peptides and opsonins.",
+      "reason_rejected": "Not stage-specific; the adult-specific child term FBbt:00058144 is equally supported and more precise for this 0-50-day adult brain atlas."
+    }
+  ],
+  "recommendation": "Accept FBbt:00058144 (adult plasmatocyte) as an exact match. High confidence. Note for downstream use: this is a non-brain, non-neural cell type incidentally present in the dissected tissue, not a resident CNS cell type - flag accordingly if the pipeline distinguishes brain-intrinsic vs incidental cell types.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,67 @@
+{
+  "cluster_label": "AstA/NPF",
+  "working_definition": "A small (n=20) neuropeptide co-expression subcluster (AstA + NPF) from Davie et al. 2018's Figure 2K re-clustering. Nearly all cells (19/20) derive from res-2.0 cluster 17, the same parent as the atlas's separate 'Mip' label, whose own markers already include NPF and optic-lobe patterning genes (Optix, Lim1, Rx). The report concludes this is a transcriptomic co-expression subgroup drawn from the same loosely-localised (optic-lobe-leaning) parent population as Mip, not a separately characterised anatomical neuron type in its own right.",
+  "searches_performed": [
+    "AstA/NPF",
+    "allatostatin A neuron",
+    "adult allatostatin A neuron",
+    "NPF neuron",
+    "AstA NPF co-expression neuron",
+    "peptidergic neuron",
+    "NPF neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "allatostatin A neuron",
+    "fbbt_id": "FBbt:00048142",
+    "fbbt_definition": "Any neuron that is capable of some peptide hormone secretion (GO:0030072) and expresses AstA (FBgn0015591).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "AstA/NPF is one of the authors' named groups from the re-clustering of neuropeptide-expressing cells (Figure 2K), named for co-expression of AstA and NPF. Its cells are therefore both allatostatin A neurons (FBbt:00048142; FBbt has no general adult AstA neuron class) and NPF neurons (adult-specific FBbt:00048113); the cluster is mapped to both as composed primarily of. Broad matches: the group is a subset of each class.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult allatostatin A neuron of superior lateral protocerebrum",
+      "fbbt_id": "FBbt:00049007",
+      "fbbt_definition": "Allatostatin A-expressing neuron of the adult with cell body in the superior lateral protocerebrum; glutamatergic; involved in sleep regulation via ExFl2 synapses (Ni et al., 2019).",
+      "reason_rejected": "A single, specifically characterised sleep-circuit cell type; the report's evidence (optic-lobe-leaning parent cluster, NPF co-expression) does not support equating this cluster with this specific SLP subtype."
+    },
+    {
+      "fbbt_term": "adult peptidergic neuron",
+      "fbbt_id": "FBbt:00058202",
+      "fbbt_definition": "Any peptidergic neuron of the adult.",
+      "reason_rejected": "Correct but less specific than 'allatostatin A neuron', which the cluster's own AstA marker directly supports as a containing class; retained here only as the next-broadest fallback."
+    },
+    {
+      "fbbt_term": "adult myoinhibitory peptide neuron",
+      "fbbt_id": "FBbt:00047527",
+      "fbbt_definition": "Any adult neuron that expresses Mip (FBgn0036713).",
+      "reason_rejected": "This subcluster is defined by AstA and NPF expression, not Mip; sharing a parent res-2.0 cluster with the Mip label does not establish that these cells themselves are Mip+."
+    },
+    {
+      "fbbt_term": "NPF neuron",
+      "fbbt_id": "FBbt:00053266",
+      "fbbt_definition": "Any neuron (FBbt:00005106) that expresses NPF (FBgn0027109).",
+      "reason_rejected": "Stage-neutral parent; the adult-specific FBbt:00048113 adult NPF neuron is used for adult data."
+    }
+  ],
+  "recommendation": "Broad match to both FBbt:00048142 allatostatin A neuron and FBbt:00048113 adult NPF neuron.",
+  "new_term_needed": false,
+  "verification_needed": false,
+  "additional_matches": [
+    {
+      "fbbt_term": "adult NPF neuron",
+      "fbbt_id": "FBbt:00048113",
+      "fbbt_definition": "Adult neuron that expresses neuropeptide F. There are approximately 25 in the male brain and 20 in the female brain (Lee et al., 2006). Some of these neurons are involved in the regulation of locomotion, circadian rhythm of activity and reward-based memory (Lee et al., 2006; Shao et al., 2017).",
+      "match_type": "broad match",
+      "skos_mapping": "skos:broadMatch",
+      "confidence": "medium"
+    }
+  ],
+  "manual_edit": {
+    "by": "Clare Pilgrim (Clare72)",
+    "date": "2026-10-05",
+    "change": "best_match FBbt:00048142 allatostatin A neuron (broad, low -> medium) + additional_matches FBbt:00048113 adult NPF neuron (broad, medium)",
+    "reason": "curator: group named for co-expression of AstA and NPF; map to both peptide classes"
+  }
+}

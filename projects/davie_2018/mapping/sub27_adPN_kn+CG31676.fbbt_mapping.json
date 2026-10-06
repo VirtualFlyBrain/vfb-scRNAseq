@@ -1,0 +1,37 @@
+{
+  "cluster_label": "sub27_adPN/kn&CG31676",
+  "working_definition": "A very small (11-cell) GEO-metadata subgroup within Davie et al. 2018 res-2.0 cluster 27, not listed in Table S2, whose label combines an adPN-lineage marker (kn) with CG31676 (elsewhere associated only with lPNs). The report concludes this most plausibly represents a boundary/overlap population between the kn(+) adPN and CG31676(+) lPN calls (or doublets/technical artefact) rather than a genuine cell type described by the authors, and flags a mismatched provenance note as a REVIEW-worthy discrepancy.",
+  "searches_performed": [
+    "adPN/kn&CG31676",
+    "kn CG31676 projection neuron",
+    "olfactory projection neuron",
+    "adult antennal lobe projection neuron adPN",
+    "adult antennal lobe projection neuron lPN"
+  ],
+  "best_match": {
+    "fbbt_term": "adult olfactory projection neuron",
+    "fbbt_id": "FBbt:00051299",
+    "fbbt_definition": "Adult neuron that relays olfactory (smell) information from one or more sensory neuropil regions to one or more higher brain centers.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "low"
+  },
+  "justification": "This label is not a genuine, reproducible cell type as described by the authors: it is absent from Table S2, its marker combination (kn+/CG31676+) mixes an adPN marker with an lPN marker in a way not discussed in the paper text, and its label_validation.tsv provenance note appears mismatched (referencing an unrelated neuropeptide-reclustering method). The report explicitly recommends treating it as unresolved/uncertain - possibly doublets, transitional cells, or a curation artefact - and, if a mapping is required at all, using the most honest general level: 'olfactory projection neuron'. Given the lineage ambiguity (adPN vs lPN marker overlap), even the lineage-level adPN/lPN terms cannot be safely assigned, so the broader OPN class term is the only defensible anchor. Both adPN and lPN lineage terms are listed as rejected candidates below since either specific lineage assignment would overstate what the data support.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult antennal lobe projection neuron adPN",
+      "fbbt_id": "FBbt:00007438",
+      "fbbt_definition": "An adult antennal lobe projection neuron that is derived from neuroblast ALad1 (FBbt:00067346). All of these neurons have axons that fasciculate with the medial antennal lobe tract (mALT) and innervate the lateral horn.",
+      "reason_rejected": "The label's CG31676 component is elsewhere associated only with lPNs, so an adPN-lineage assignment cannot be made confidently for this small, table-S2-absent group."
+    },
+    {
+      "fbbt_term": "adult antennal lobe projection neuron lPN",
+      "fbbt_id": "FBbt:00007439",
+      "fbbt_definition": "Adult antennal lobe projection neuron that belongs to the dorsal (Notch OFF) hemilineage of the lateral antennal lobe neuroblast (ALl1) (Lin et al., 2012; Bates et al., 2020). Its cell body is located in the lateral part of the cell body rind of the antennal lobe.",
+      "reason_rejected": "The label's kn component is elsewhere associated only with adPNs, so an lPN-lineage assignment cannot be made confidently for this small, table-S2-absent group."
+    }
+  ],
+  "recommendation": "Low-confidence broad match to the general olfactory projection neuron class only. This 11-cell label is not in Table S2, mixes markers from both PN lineages, and carries a mismatched provenance note - flag strongly for human review; it may be best excluded from the mapping altogether (technical/boundary artefact) rather than assigned any specific FBbt cell-type identity.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

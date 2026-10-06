@@ -1,0 +1,37 @@
+{
+  "cluster_label": "res2_60",
+  "working_definition": "Cortex glia that individually wrap neuronal (and glial) cell bodies in the cell-body rind/cortex of the adult Drosophila brain, forming a trophic/insulating scaffold (lipid transport via apolpp, structural support via fabp) distinct from surface glia and from neuropil-infiltrating astrocyte-like/ensheathing glia. The paper identifies this cluster directly by the marker wrapper (Spindler et al., 2009); the whole-brain dataset does not report a region-specific split.",
+  "searches_performed": [
+    "Cortex_glia",
+    "cortex glial cell",
+    "cortex glia Drosophila",
+    "cell body glial cell",
+    "wrapper glia"
+  ],
+  "best_match": {
+    "fbbt_term": "adult brain cell body glial cell",
+    "fbbt_id": "FBbt:00100501",
+    "fbbt_definition": "Glial cell of the adult that is associated with the cell body rind of the brain. They have multiple lamelliform processes that intercalate in between neurons and wrap neuronal cell bodies (Hartenstein, 2011). They also wrap neuronal processes as they travel across the cell body rind (Kremer et al., 2017).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt uses 'cell body glial cell' as the anatomy-based term for what fly literature commonly calls 'cortex glia' (glia that wrap neuronal cell bodies in the cell-body rind, intercalating between somata and enwrapping crossing neurites) - this matches the report's description of cortex glia point for point (wraps individual somata, cell-body rind/cortex compartment, does not infiltrate synaptic neuropil). No FBbt search for 'cortex glia' returned a differently-named term, confirming 'cell body glial cell' is the corresponding FBbt anatomy class. The 'adult brain' qualifier matches this being a whole-brain (central brain + optic lobe) unresolved pool, the same granularity as the report describes.",
+  "other_candidates": [
+    {
+      "fbbt_term": "cell body glial cell",
+      "fbbt_id": "FBbt:00001297",
+      "fbbt_definition": "Glial cell with a nucleus amongst the neuronal cell bodies in the cell body rind. It is irregularly shaped, with processes that enclose the neuronal cell bodies.",
+      "reason_rejected": "Not adult-stage-specific; FBbt:00100501 (adult brain cell body glial cell) is the more precise adult brain-specific child and equally well supported, so used as best_match instead."
+    },
+    {
+      "fbbt_term": "optic-lobe-associated cortex glial cell",
+      "fbbt_id": "FBbt:00111302",
+      "fbbt_definition": "Cortex/cell-body glial cell specifically associated with the optic lobe.",
+      "reason_rejected": "More specific (optic-lobe-only) than warranted; the cluster is a whole-brain, region-unresolved pool per the report."
+    }
+  ],
+  "recommendation": "Accept FBbt:00100501 (adult brain cell body glial cell) as an exact match for Cortex_glia. High confidence: the FBbt definition of cell-body-rind glia that wrap somata is functionally and anatomically identical to the paper's cortex glia (wrapper+ cells wrapping neuronal cell bodies).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

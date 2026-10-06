@@ -1,0 +1,35 @@
+{
+  "cluster_label": "neuropeptide_Hug",
+  "working_definition": "A 42-cell adult brain population of hugin (Hug)-expressing neurons of the subesophageal zone (SEZ), recovered by the neuropeptide re-clustering in Davie et al. 2018. Hugin neurons are a well-established, anatomically defined neuropeptidergic population comprising several morphologically distinct subtypes (hugin-PC, hugin-VNC, hugin-RG; Melcher and Pankratz, 2005; Schoofs et al., 2014) with roles in feeding suppression and gustatory-to-motor relay. The paper's own main text explicitly names this cluster ('gustatory Hug neurons from the subesophageal ganglion'), confirming the authors recognised it as a known anatomical group. The transcriptomic cluster does not resolve the hugin-PC/VNC/RG subtypes.",
+  "searches_performed": [
+    "hugin neuron",
+    "Hug neuron",
+    "adult Hugin neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "adult Hugin neuron",
+    "fbbt_id": "FBbt:00110924",
+    "fbbt_definition": "Adult neuron that expresses the prepropeptide gene Hugin, with cell bodies in the subesophageal zone; some cells receive input from Dh44 neurons and some are premotor neurons (King et al., 2017).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt does not further split 'adult Hugin neuron' into hugin-PC/VNC/RG subtypes at the adult stage (that subtype resolution exists only for larval Hugin neuron in FBbt), so 'adult Hugin neuron' is the finest FBbt term available at the adult stage and matches the resolution of this transcriptomic cluster exactly -- both are the general SEZ hugin-expressing population, unresolved to projection-target subtype. The paper's main text explicitly and independently identifies this exact population ('Hug neurons from the subesophageal ganglion'), giving high confidence. Adult stage is correct for this whole-adult-brain atlas.",
+  "other_candidates": [
+    {
+      "fbbt_term": "Hugin neuron",
+      "fbbt_id": "FBbt:00110925",
+      "fbbt_definition": "Neuron that expresses the prepropeptide gene Hugin (Melcher and Pankratz, 2005); these neurons have their cell bodies in the subesophageal zone.",
+      "reason_rejected": "Stage-unspecified parent of 'adult Hugin neuron'; the adult-specific term is available and correct for this adult brain atlas, so the parent is less specific than warranted."
+    },
+    {
+      "fbbt_term": "adult Hugin neuron of the corpus allatum",
+      "fbbt_id": "FBbt:00052009",
+      "fbbt_definition": "Adult neuron that expresses Hugin and projects to the ring gland, where it has peptide release sites in the corpus allatum (Mizuno et al., 2021).",
+      "reason_rejected": "A specific named adult Hugin subtype (ring-gland-projecting); this cluster is not resolved to this or any single Hugin subtype and likely pools multiple projection-target subtypes."
+    }
+  ],
+  "recommendation": "Map to FBbt:00110924 'adult Hugin neuron' as an exact match at the correct (adult, class-level) resolution; do not attempt to resolve to hugin-PC/VNC/RG subtypes as these are not distinguished transcriptomically here nor split further for the adult stage in FBbt.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

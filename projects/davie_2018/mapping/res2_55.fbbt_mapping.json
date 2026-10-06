@@ -1,0 +1,22 @@
+{
+  "cluster_label": "res2_55",
+  "working_definition": "Cluster 'Pm4' (GEO label, adult Davie 2018 optic lobe data) annotated by the authors as the single type Pm4. Mapped at face value to the FBbt term for the named type; cluster is composed primarily of cells of this type.",
+  "searches_performed": [
+    "Pm4",
+    "proximal medullary amacrine neuron Pm4",
+    "local FBbt (fbbt-full.obo) lookup by label/synonym (OLS MCP returned 503)"
+  ],
+  "best_match": {
+    "fbbt_term": "proximal medullary amacrine neuron Pm4",
+    "fbbt_id": "FBbt:00111282",
+    "fbbt_definition": "Proximal medullary amacrine neuron that branches at the proximal surface of the medulla. It covers around 10-20 columns with its pre- and post-synapses mostly in layers M8-M9 (Nern et al., 2025). It occupies a central intracolumnar position. It is GABAergic (Davis et al., 2020). There are around 75-85 of these neurons per hemisphere (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' GEO label names the single type Pm4; FBbt has a non-obsolete adult term for it (proximal medullary amacrine neuron Pm4, FBbt:00111282). Taken at face value under the 'composed primarily of' relation.",
+  "other_candidates": [],
+  "recommendation": "Accept as exact match. [Author sources differ: GEO labels this cluster 'Pm4'; Table S2 lists this cluster as Unannotated.]",
+  "new_term_needed": false,
+  "verification_needed": true
+}

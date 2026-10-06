@@ -1,0 +1,36 @@
+{
+  "cluster_label": "Olfactory_projection_neurons",
+  "working_definition": "The residual fraction of Davie et al. 2018 res-2.0 cluster 27 (543 antennal-lobe olfactory projection neurons, identified by tup/otp/C15/hth expression) that GEO metadata records only as unresolved OPN - not assigned to the adPN or lPN developmental lineage, nor to any of the five Li et al. (2017) marker subgroups. Cells relay odor information from antennal-lobe glomeruli to the mushroom body calyx and lateral horn; cholinergic (ChAT/VAChT).",
+  "searches_performed": [
+    "Olfactory_projection_neurons",
+    "olfactory projection neuron",
+    "antennal lobe projection neuron",
+    "OPN"
+  ],
+  "best_match": {
+    "fbbt_term": "adult olfactory projection neuron",
+    "fbbt_id": "FBbt:00051299",
+    "fbbt_definition": "Adult neuron that relays olfactory (smell) information from one or more sensory neuropil regions to one or more higher brain centers.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "This label is explicitly the unresolved remainder of cluster 27 - cells not assigned to any finer lineage or marker group. Its identity IS 'olfactory projection neuron' at the class level; nothing in the report supports resolving it further (no lineage, no marker combination). FBbt:00051299 'adult olfactory projection neuron' captures exactly this level: an adult neuron relaying olfactory information to higher brain centers, matching the report's location (antennal lobe -> mushroom body calyx / lateral horn) and function. Adult-specific term chosen per dataset guidance (whole adult brain, 0-50 days). This is the correct/honest mapping level for a remainder label, not an artificial downgrade.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult antennal lobe projection neuron adPN",
+      "fbbt_id": "FBbt:00007438",
+      "fbbt_definition": "An adult antennal lobe projection neuron that is derived from neuroblast ALad1 (FBbt:00067346). All of these neurons have axons that fasciculate with the medial antennal lobe tract (mALT) and innervate the lateral horn.",
+      "reason_rejected": "Would require assigning this label to the adPN lineage, which the report explicitly states is NOT resolved for this residual fraction."
+    },
+    {
+      "fbbt_term": "adult antennal lobe projection neuron lPN",
+      "fbbt_id": "FBbt:00007439",
+      "fbbt_definition": "Adult antennal lobe projection neuron that belongs to the dorsal (Notch OFF) hemilineage of the lateral antennal lobe neuroblast (ALl1) (Lin et al., 2012; Bates et al., 2020). Its cell body is located in the lateral part of the cell body rind of the antennal lobe.",
+      "reason_rejected": "Would require assigning this label to the lPN lineage, which is likewise unresolved for this residual fraction."
+    }
+  ],
+  "recommendation": "Accept as exact match at the class level; this is a genuine remainder/unresolved group, not a forced generalisation.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

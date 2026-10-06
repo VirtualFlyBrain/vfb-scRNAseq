@@ -1,0 +1,36 @@
+{
+  "cluster_label": "IPC",
+  "working_definition": "Insulin-producing cells (IPCs) of the adult Drosophila brain: a well-established neurosecretory cell type in the pars intercerebralis that produces Ilp2, Ilp3 and Ilp5, identified in Davie et al. 2018 by this canonical Ilp2/Ilp3/Ilp5 co-expression signature, independently recovered both as a res-8.0 literature-marker cluster (cluster 30) and as one of the specific neuropeptide subclusters in the Figure 2K re-clustering. This is one of the most confidently resolved single cell types among the peptidergic subclusters.",
+  "searches_performed": [
+    "IPC",
+    "insulin producing cell",
+    "insulin secreting cell of pars intercerebralis",
+    "adult insulin secreting cell of pars intercerebralis"
+  ],
+  "best_match": {
+    "fbbt_term": "adult insulin secreting cell of pars intercerebralis",
+    "fbbt_id": "FBbt:00110107",
+    "fbbt_definition": "Insulin-producing neurosecretory cell of the adult pars intercerebralis that innervates the corpus cardiacum and corpus allatum; co-expresses Ilp2, Ilp3 and Ilp5 mRNA; approximately 7-9 cells per hemisphere (Broughton et al., 2005; Cao and Brown, 2001; Enell et al., 2010; McKim et al., 2024).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Both the cluster's defining markers (Ilp2, Ilp3, Ilp5 co-expression) and its identity (insulin-producing cells of the pars intercerebralis) match this FBbt term's defining criteria precisely. The paper's own annotation (Brogiolo et al. 2001; Rulifson et al. 2002) independently converges with the classic IPC literature underlying the FBbt term. Same biology under different labels (GEO cluster name 'IPC' vs. FBbt anatomical term) is an exact match per mapping guidance; the adult-stage-qualified FBbt term is appropriate since Davie et al. 2018 profiles adult brains only.",
+  "other_candidates": [
+    {
+      "fbbt_term": "insulin secreting cell of pars intercerebralis",
+      "fbbt_id": "FBbt:00004011",
+      "fbbt_definition": "Insulin-producing neuron with a cell body in the pars intercerebralis, co-expressing Ilp2, Ilp3 and Ilp5; ~7-9 cells per hemisphere.",
+      "reason_rejected": "Stage-unqualified parent of the chosen adult-specific term; the adult variant is more precise for this dataset."
+    },
+    {
+      "fbbt_term": "larval insulin secreting cell of pars intercerebralis",
+      "fbbt_id": "FBbt:00110035",
+      "fbbt_definition": "Insulin-producing neurosecretory cell with its cell body in the larval pars intercerebralis.",
+      "reason_rejected": "Wrong developmental stage; this atlas is adult brain only."
+    }
+  ],
+  "recommendation": "High-confidence exact match; this is one of the cleanest mappings among the peptidergic subclusters.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

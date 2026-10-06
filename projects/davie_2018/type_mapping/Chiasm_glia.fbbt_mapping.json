@@ -1,0 +1,37 @@
+{
+  "cluster_label": "Chiasm_glia",
+  "working_definition": "An optic-lobe-specific glial population associated with the optic chiasmata (crossing fibre tracts connecting lamina, medulla and lobula complex neuropils), distinct from the ensheathing, astrocyte-like, cortex and surface glia found throughout the brain. Newly annotated in this study by transcriptomic mapping to markers from Konstantinides et al. (2018); the paper does not distinguish outer vs. inner chiasm glia for this cluster (86 cells, res-2.0 cluster 82).",
+  "searches_performed": [
+    "Chiasm_glia",
+    "chiasm glial cell",
+    "optic chiasma glial cell",
+    "adult optic chiasma glial cell",
+    "inner outer optic chiasma giant glial cell"
+  ],
+  "best_match": {
+    "fbbt_term": "adult optic chiasma glial cell",
+    "fbbt_id": "FBbt:00100525",
+    "fbbt_definition": "Glial cell of the adult fly that is located in the optic chiasm (Tix et al., 1997). It develops from neuroblast DL1 (CP2) (Viktorin et al., 2013; Ren et al., 2018; Plazaola-Sasieta et al., 2019). Members of this group of glial cells are arranged in rows between successive dorsoventral sheets of intercrossing fibers of the outer and inner chiasmata (Edwards and Meinertzhagen, 2010; Tix et al., 1997).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "The FBbt definition (adult glia located in the optic chiasm, arranged between the outer and inner chiasmata) matches the report's description of chiasm glia as an optic-lobe-specific glial population associated with the optic chiasmata. FBbt does have more specific children ('adult inner optic chiasma giant glial cell' FBbt:00100527 and 'adult outer optic chiasma giant glial cell' FBbt:00100526), but the report explicitly states the paper does not distinguish outer vs. inner chiasm glia for this cluster - so the general 'adult optic chiasma glial cell' parent is the correct, honest resolution level rather than a broad match to an over-general term; it is the specific term this cluster's own granularity supports.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult inner optic chiasma giant glial cell",
+      "fbbt_id": "FBbt:00100527",
+      "fbbt_definition": "Large glial cell of the inner optic chiasm of the adult optic lobe, between the proximal medulla and lobula complex, extending processes into three neighboring neuropil regions (Kremer et al., 2017).",
+      "reason_rejected": "More specific (inner-chiasm-only) than the cluster resolves; the paper does not split inner vs outer chiasm glia for this cluster."
+    },
+    {
+      "fbbt_term": "adult outer optic chiasma giant glial cell",
+      "fbbt_id": "FBbt:00100526",
+      "fbbt_definition": "Large glial cell of the outer optic chiasm of the adult optic lobe, enwrapping fiber bundles at sites of axonal intersection (Tix et al., 1997).",
+      "reason_rejected": "More specific (outer-chiasm-only) than the cluster resolves; same reason as above."
+    }
+  ],
+  "recommendation": "Accept FBbt:00100525 (adult optic chiasma glial cell) as an exact match at the resolution this small (86-cell), marker-mapped cluster supports. Medium confidence reflecting the cluster's small size and reliance on transcriptomic mapping rather than direct literature markers, per the report's own caveat.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

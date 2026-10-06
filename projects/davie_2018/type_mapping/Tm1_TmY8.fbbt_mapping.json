@@ -1,0 +1,36 @@
+{
+  "cluster_label": "Tm1/TmY8",
+  "working_definition": "Tm1/TmY8 is an author-merged label (res-2.0 cluster 45, 325 cells) for two distinct transmedullary neuron types identified purely by regression-mapping against the Konstantinides et al. (2018) optic-lobe atlas, with no marker set separating them. Tm1 is a transmedullary neuron with dendrites in the medulla (L2 input) and axon terminal in lobula layer 1, part of the OFF motion pathway feeding T5. TmY8 is a transmedullary-Y neuron with processes in both medulla and lobula, less thoroughly characterized functionally. Table S2 and GEO agree exactly on the merged label; the merge is intrinsic to the data (no marker-based separation possible), not a curation artifact.",
+  "searches_performed": [
+    "Tm1 neuron",
+    "TmY8 neuron",
+    "transmedullary neuron Tm1",
+    "transmedullary Y neuron TmY8"
+  ],
+  "best_match": {
+    "fbbt_term": "transmedullary neuron",
+    "fbbt_id": "FBbt:00003788",
+    "fbbt_definition": "An intrinsic columnar neuron of the optic lobe whose cell body lies in the distal cortex of the medulla and that projects through the medulla and optic chiasm into the lobula. All neurons arborize in the lobula and most, but not all, in the medulla (Fischbach and Dittrich, 1989).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "Tm1 (FBbt:00003789, a transmedullary neuron) and TmY8 (FBbt:00003826, a transmedullary Y neuron, itself a child of 'transmedullary neuron') share 'transmedullary neuron' as their most specific common ancestor in FBbt. This matches the report's framing exactly: two anatomically distinct types (a classical narrow-field Tm and a wide-field TmY) that this cluster cannot separate because no distinguishing markers were found, only cross-dataset mapping. No FBbt term groups specifically 'Tm1+TmY8'. This is a genuine merged group intrinsic to the data, not an artifact of curation or weak evidence, so a broad match at this level is the correct, honest call.",
+  "other_candidates": [
+    {
+      "fbbt_term": "transmedullary neuron Tm1",
+      "fbbt_id": "FBbt:00003789",
+      "fbbt_definition": "Cholinergic transmedullary neuron with dendrites receiving L2 input in the medulla and axon terminal in lobula layer 1, part of the OFF-pathway motion circuit feeding T5 (Varija Raghu et al., 2011; Shinomiya et al., 2014, 2019).",
+      "reason_rejected": "One of the two merged member types; this cluster cannot resolve Tm1 from TmY8, so this specific term would over-commit."
+    },
+    {
+      "fbbt_term": "transmedullary Y neuron TmY8",
+      "fbbt_id": "FBbt:00003826",
+      "fbbt_definition": "Transmedullary Y wide-field neuron that terminates with bleb-type arborizations in lobula layers 4 and 5, and lobula plate layers 1 and 3, with bleb-type arborizations in medulla layers M6 and M10 and fine arborizations in M1, M2, M4, M5 and M6 (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). It is cholinergic (Konstantinides et al., 2022).",
+      "reason_rejected": "One of the two merged member types; this cluster cannot resolve Tm1 from TmY8, so this specific term would over-commit."
+    }
+  ],
+  "recommendation": "Accept broad match to 'transmedullary neuron' (FBbt:00003788) at high confidence; list Tm1 and TmY8 as constituent member types. Genuine merged group intrinsic to the data, so no verification flag or new-term request is warranted.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

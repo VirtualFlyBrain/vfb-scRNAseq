@@ -1,0 +1,1789 @@
+@prefix BAO: <http://www.bioassayontology.org/bao#BAO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix FBbt: <http://purl.obolibrary.org/obo/FBbt_> .
+@prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
+@prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
+@prefix FlyBase: <http://flybase.org/reports/> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix VFBseq: <http://virtualflybrain.org/reports/VFBseq_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix neo_custom: <http://n2o.neo/custom/> .
+@prefix neo_property: <http://n2o.neo/property/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vfb: <http://virtualflybrain.org/reports/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VFBseq:00000303 a FBcv:0009003 ;
+    rdfs:label "cluster 0 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 4109 ;
+    neo_custom:filtered_gene_count 1916 ;
+    neo_custom:total_gene_count 10808 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000304 a FBcv:0009003 ;
+    rdfs:label "cluster 1 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 4079 ;
+    neo_custom:filtered_gene_count 1739 ;
+    neo_custom:total_gene_count 10746 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000305 a FBcv:0009003 ;
+    rdfs:label "cluster 2 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 2852 ;
+    neo_custom:filtered_gene_count 2225 ;
+    neo_custom:total_gene_count 10515 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000306 a FBcv:0009003 ;
+    rdfs:label "cluster 3 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 2624 ;
+    neo_custom:filtered_gene_count 2060 ;
+    neo_custom:total_gene_count 10322 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000307 a FBcv:0009003 ;
+    rdfs:label "cluster 4 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 2522 ;
+    neo_custom:filtered_gene_count 2093 ;
+    neo_custom:total_gene_count 10316 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000308 a FBcv:0009003 ;
+    rdfs:label "cluster 5 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 2319 ;
+    neo_custom:filtered_gene_count 2686 ;
+    neo_custom:total_gene_count 10628 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000309 a FBcv:0009003 ;
+    rdfs:label "cluster 6 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 1926 ;
+    neo_custom:filtered_gene_count 1529 ;
+    neo_custom:total_gene_count 9404 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000310 a FBcv:0009003 ;
+    rdfs:label "cluster 7 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 1743 ;
+    neo_custom:filtered_gene_count 2067 ;
+    neo_custom:total_gene_count 9857 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000311 a FBcv:0009003 ;
+    rdfs:label "G-KC cluster 8 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 1642 ;
+    neo_custom:filtered_gene_count 1646 ;
+    neo_custom:total_gene_count 9181 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00049828 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000312 a FBcv:0009003 ;
+    rdfs:label "cluster 9 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 1545 ;
+    neo_custom:filtered_gene_count 2037 ;
+    neo_custom:total_gene_count 9743 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000313 a FBcv:0009003 ;
+    rdfs:label "Astrocyte-like cluster 10 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 1422 ;
+    neo_custom:filtered_gene_count 900 ;
+    neo_custom:total_gene_count 9267 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00047841 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000314 a FBcv:0009003 ;
+    rdfs:label "TmY14 cluster 11 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 1400 ;
+    neo_custom:filtered_gene_count 1787 ;
+    neo_custom:total_gene_count 9304 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00111286 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000315 a FBcv:0009003 ;
+    rdfs:label "Pm1/Pm2 cluster 12 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 1164 ;
+    neo_custom:filtered_gene_count 1996 ;
+    neo_custom:total_gene_count 9129 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00003832 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000316 a FBcv:0009003 ;
+    rdfs:label "cluster 13 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 1070 ;
+    neo_custom:filtered_gene_count 2024 ;
+    neo_custom:total_gene_count 9251 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000317 a FBcv:0009003 ;
+    rdfs:label "Ensheathing_glia cluster 14 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 1069 ;
+    neo_custom:filtered_gene_count 1144 ;
+    neo_custom:total_gene_count 9096 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00100504 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000318 a FBcv:0009003 ;
+    rdfs:label "cluster 15 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 1048 ;
+    neo_custom:filtered_gene_count 2061 ;
+    neo_custom:total_gene_count 9327 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000319 a FBcv:0009003 ;
+    rdfs:label "cluster 16 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 986 ;
+    neo_custom:filtered_gene_count 2143 ;
+    neo_custom:total_gene_count 9292 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000320 a FBcv:0009003 ;
+    rdfs:label "Mip cluster 17 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 842 ;
+    neo_custom:filtered_gene_count 1673 ;
+    neo_custom:total_gene_count 8999 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00047527 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000321 a FBcv:0009003 ;
+    rdfs:label "cluster 18 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 780 ;
+    neo_custom:filtered_gene_count 1687 ;
+    neo_custom:total_gene_count 8559 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000322 a FBcv:0009003 ;
+    rdfs:label "cluster 19 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 747 ;
+    neo_custom:filtered_gene_count 1645 ;
+    neo_custom:total_gene_count 8583 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000324 a FBcv:0009003 ;
+    rdfs:label "cluster 21 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 733 ;
+    neo_custom:filtered_gene_count 1789 ;
+    neo_custom:total_gene_count 8556 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000325 a FBcv:0009003 ;
+    rdfs:label "A/B-KC cluster 22 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 688 ;
+    neo_custom:filtered_gene_count 1556 ;
+    neo_custom:total_gene_count 8438 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00100248 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000326 a FBcv:0009003 ;
+    rdfs:label "Hsp cluster 23 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 681 ;
+    neo_custom:filtered_gene_count 3250 ;
+    neo_custom:total_gene_count 9644 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000327 a FBcv:0009003 ;
+    rdfs:label "T4/T5 cluster 24 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 648 ;
+    neo_custom:filtered_gene_count 1523 ;
+    neo_custom:total_gene_count 8451 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00003726 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000328 a FBcv:0009003 ;
+    rdfs:label "cluster 25 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 585 ;
+    neo_custom:filtered_gene_count 2623 ;
+    neo_custom:total_gene_count 9271 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000329 a FBcv:0009003 ;
+    rdfs:label "Mi1 cluster 26 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 562 ;
+    neo_custom:filtered_gene_count 1713 ;
+    neo_custom:total_gene_count 8095 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00003776 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000331 a FBcv:0009003 ;
+    rdfs:label "A/B*-KC cluster 28 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 518 ;
+    neo_custom:filtered_gene_count 1782 ;
+    neo_custom:total_gene_count 8153 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00049834 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000332 a FBcv:0009003 ;
+    rdfs:label "cluster 29 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 516 ;
+    neo_custom:filtered_gene_count 1651 ;
+    neo_custom:total_gene_count 8518 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000333 a FBcv:0009003 ;
+    rdfs:label "cluster 30 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 514 ;
+    neo_custom:filtered_gene_count 2182 ;
+    neo_custom:total_gene_count 8549 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000334 a FBcv:0009003 ;
+    rdfs:label "T2 cluster 31 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 507 ;
+    neo_custom:filtered_gene_count 1405 ;
+    neo_custom:total_gene_count 8132 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00003728 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000335 a FBcv:0009003 ;
+    rdfs:label "cluster 32 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 503 ;
+    neo_custom:filtered_gene_count 4469 ;
+    neo_custom:total_gene_count 10231 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000336 a FBcv:0009003 ;
+    rdfs:label "T3 cluster 33 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 471 ;
+    neo_custom:filtered_gene_count 1403 ;
+    neo_custom:total_gene_count 7951 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00003730 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000337 a FBcv:0009003 ;
+    rdfs:label "cluster 34 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 458 ;
+    neo_custom:filtered_gene_count 2275 ;
+    neo_custom:total_gene_count 8973 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000338 a FBcv:0009003 ;
+    rdfs:label "Ensheathing_glia cluster 35 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 450 ;
+    neo_custom:filtered_gene_count 1518 ;
+    neo_custom:total_gene_count 8725 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00100504 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000339 a FBcv:0009003 ;
+    rdfs:label "Clock cluster 36 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 439 ;
+    neo_custom:filtered_gene_count 2321 ;
+    neo_custom:total_gene_count 8935 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00100163 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000340 a FBcv:0009003 ;
+    rdfs:label "T1 cluster 37 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 435 ;
+    neo_custom:filtered_gene_count 1885 ;
+    neo_custom:total_gene_count 8058 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00003727 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000341 a FBcv:0009003 ;
+    rdfs:label "Serotonergic cluster 38 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 392 ;
+    neo_custom:filtered_gene_count 2163 ;
+    neo_custom:total_gene_count 8587 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00049526 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000342 a FBcv:0009003 ;
+    rdfs:label "Tm5c cluster 39 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 382 ;
+    neo_custom:filtered_gene_count 2295 ;
+    neo_custom:total_gene_count 7944 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00110074 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000343 a FBcv:0009003 ;
+    rdfs:label "cluster 40 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 375 ;
+    neo_custom:filtered_gene_count 1515 ;
+    neo_custom:total_gene_count 7919 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000344 a FBcv:0009003 ;
+    rdfs:label "Tm5ab cluster 41 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 351 ;
+    neo_custom:filtered_gene_count 1285 ;
+    neo_custom:total_gene_count 7549 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00003793 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000346 a FBcv:0009003 ;
+    rdfs:label "Plasmatocytes cluster 43 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 334 ;
+    neo_custom:filtered_gene_count 2208 ;
+    neo_custom:total_gene_count 9348 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00058144 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000347 a FBcv:0009003 ;
+    rdfs:label "cluster 44 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 329 ;
+    neo_custom:filtered_gene_count 2507 ;
+    neo_custom:total_gene_count 8617 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000348 a FBcv:0009003 ;
+    rdfs:label "Tm1/TmY8 cluster 45 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 325 ;
+    neo_custom:filtered_gene_count 1668 ;
+    neo_custom:total_gene_count 8149 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00003788 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000349 a FBcv:0009003 ;
+    rdfs:label "Peptidergic cluster 46 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 325 ;
+    neo_custom:filtered_gene_count 3596 ;
+    neo_custom:total_gene_count 9328 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00058202 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000350 a FBcv:0009003 ;
+    rdfs:label "cluster 47 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 320 ;
+    neo_custom:filtered_gene_count 1969 ;
+    neo_custom:total_gene_count 8074 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000351 a FBcv:0009003 ;
+    rdfs:label "Pm1/Pm2/Pm3 cluster 48 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 316 ;
+    neo_custom:filtered_gene_count 1999 ;
+    neo_custom:total_gene_count 8064 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00003832 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000352 a FBcv:0009003 ;
+    rdfs:label "cluster 49 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 296 ;
+    neo_custom:filtered_gene_count 1405 ;
+    neo_custom:total_gene_count 7582 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000353 a FBcv:0009003 ;
+    rdfs:label "cluster 50 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 286 ;
+    neo_custom:filtered_gene_count 1761 ;
+    neo_custom:total_gene_count 8889 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000354 a FBcv:0009003 ;
+    rdfs:label "cluster 51 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 280 ;
+    neo_custom:filtered_gene_count 1399 ;
+    neo_custom:total_gene_count 7470 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000355 a FBcv:0009003 ;
+    rdfs:label "Dm8/Dm11 cluster 52 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 278 ;
+    neo_custom:filtered_gene_count 1454 ;
+    neo_custom:total_gene_count 7550 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00003767 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000356 a FBcv:0009003 ;
+    rdfs:label "Photoreceptors cluster 53 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 277 ;
+    neo_custom:filtered_gene_count 1891 ;
+    neo_custom:total_gene_count 8544 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00007251 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000357 a FBcv:0009003 ;
+    rdfs:label "cluster 54 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 276 ;
+    neo_custom:filtered_gene_count 1994 ;
+    neo_custom:total_gene_count 8616 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000358 a FBcv:0009003 ;
+    rdfs:label "Pm4 cluster 55 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 271 ;
+    neo_custom:filtered_gene_count 1832 ;
+    neo_custom:total_gene_count 7730 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00111282 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000359 a FBcv:0009003 ;
+    rdfs:label "cluster 56 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 265 ;
+    neo_custom:filtered_gene_count 1777 ;
+    neo_custom:total_gene_count 8572 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000360 a FBcv:0009003 ;
+    rdfs:label "MBON cluster 57 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 259 ;
+    neo_custom:filtered_gene_count 1746 ;
+    neo_custom:total_gene_count 8480 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00047955 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000361 a FBcv:0009003 ;
+    rdfs:label "Lawf1 cluster 58 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 246 ;
+    neo_custom:filtered_gene_count 1797 ;
+    neo_custom:total_gene_count 7513 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00003741 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000362 a FBcv:0009003 ;
+    rdfs:label "cluster 59 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 246 ;
+    neo_custom:filtered_gene_count 1973 ;
+    neo_custom:total_gene_count 8709 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000363 a FBcv:0009003 ;
+    rdfs:label "Cortex_glia cluster 60 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 239 ;
+    neo_custom:filtered_gene_count 1511 ;
+    neo_custom:total_gene_count 8250 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00100501 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000364 a FBcv:0009003 ;
+    rdfs:label "dorsal_Fan-shaped_Body cluster 61 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 232 ;
+    neo_custom:filtered_gene_count 2356 ;
+    neo_custom:total_gene_count 7777 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00049537 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000365 a FBcv:0009003 ;
+    rdfs:label "cluster 62 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 230 ;
+    neo_custom:filtered_gene_count 2085 ;
+    neo_custom:total_gene_count 7814 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000366 a FBcv:0009003 ;
+    rdfs:label "Tm9 cluster 63 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 229 ;
+    neo_custom:filtered_gene_count 1395 ;
+    neo_custom:total_gene_count 7380 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00003797 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000368 a FBcv:0009003 ;
+    rdfs:label "C3 cluster 65 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 219 ;
+    neo_custom:filtered_gene_count 1493 ;
+    neo_custom:total_gene_count 7413 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00003744 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000369 a FBcv:0009003 ;
+    rdfs:label "Subperineurial_glia cluster 66 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 218 ;
+    neo_custom:filtered_gene_count 1710 ;
+    neo_custom:total_gene_count 8787 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00100507 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000370 a FBcv:0009003 ;
+    rdfs:label "cluster 67 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 216 ;
+    neo_custom:filtered_gene_count 1588 ;
+    neo_custom:total_gene_count 7465 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000371 a FBcv:0009003 ;
+    rdfs:label "cluster 68 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 215 ;
+    neo_custom:filtered_gene_count 1734 ;
+    neo_custom:total_gene_count 8708 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000372 a FBcv:0009003 ;
+    rdfs:label "cluster 69 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 205 ;
+    neo_custom:filtered_gene_count 1953 ;
+    neo_custom:total_gene_count 8264 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000373 a FBcv:0009003 ;
+    rdfs:label "Perineurial_glia cluster 70 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 200 ;
+    neo_custom:filtered_gene_count 1604 ;
+    neo_custom:total_gene_count 8060 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00100506 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000374 a FBcv:0009003 ;
+    rdfs:label "cluster 71 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 193 ;
+    neo_custom:filtered_gene_count 1968 ;
+    neo_custom:total_gene_count 8121 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000375 a FBcv:0009003 ;
+    rdfs:label "Lawf2 cluster 72 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 173 ;
+    neo_custom:filtered_gene_count 2002 ;
+    neo_custom:total_gene_count 7808 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00110065 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000376 a FBcv:0009003 ;
+    rdfs:label "Pm3 cluster 73 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 155 ;
+    neo_custom:filtered_gene_count 2515 ;
+    neo_custom:total_gene_count 7533 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00110066 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000377 a FBcv:0009003 ;
+    rdfs:label "Dm9 cluster 74 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 139 ;
+    neo_custom:filtered_gene_count 2327 ;
+    neo_custom:total_gene_count 7336 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00111271 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000378 a FBcv:0009003 ;
+    rdfs:label "cluster 75 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 138 ;
+    neo_custom:filtered_gene_count 2061 ;
+    neo_custom:total_gene_count 8054 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000379 a FBcv:0009003 ;
+    rdfs:label "cluster 76 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 131 ;
+    neo_custom:filtered_gene_count 1653 ;
+    neo_custom:total_gene_count 8052 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000380 a FBcv:0009003 ;
+    rdfs:label "C2 cluster 77 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 127 ;
+    neo_custom:filtered_gene_count 1301 ;
+    neo_custom:total_gene_count 6643 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00003743 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000381 a FBcv:0009003 ;
+    rdfs:label "cluster 78 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 124 ;
+    neo_custom:filtered_gene_count 2818 ;
+    neo_custom:total_gene_count 7411 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000382 a FBcv:0009003 ;
+    rdfs:label "cluster 79 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 117 ;
+    neo_custom:filtered_gene_count 1972 ;
+    neo_custom:total_gene_count 7787 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000383 a FBcv:0009003 ;
+    rdfs:label "Poxn cluster 80 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 99 ;
+    neo_custom:filtered_gene_count 2717 ;
+    neo_custom:total_gene_count 7377 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00052046 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000384 a FBcv:0009003 ;
+    rdfs:label "cluster 81 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 95 ;
+    neo_custom:filtered_gene_count 2208 ;
+    neo_custom:total_gene_count 8314 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000385 a FBcv:0009003 ;
+    rdfs:label "Chiasm_glia cluster 82 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 86 ;
+    neo_custom:filtered_gene_count 1459 ;
+    neo_custom:total_gene_count 7294 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00100525 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000386 a FBcv:0009003 ;
+    rdfs:label "cluster 83 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 84 ;
+    neo_custom:filtered_gene_count 2090 ;
+    neo_custom:total_gene_count 7491 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000387 a FBcv:0009003 ;
+    rdfs:label "cluster 84 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 73 ;
+    neo_custom:filtered_gene_count 2401 ;
+    neo_custom:total_gene_count 7017 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000388 a FBcv:0009003 ;
+    rdfs:label "Perineurial_glia cluster 85 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 59 ;
+    neo_custom:filtered_gene_count 3111 ;
+    neo_custom:total_gene_count 8153 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00100506 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000389 a FBcv:0009003 ;
+    rdfs:label "DN1 cluster 86 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 29 ;
+    neo_custom:filtered_gene_count 3052 ;
+    neo_custom:total_gene_count 6481 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00003629 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000390 a FBcv:0009003 ;
+    rdfs:label "cluster 30 (res-8.0) (Davie 2018)" ;
+    neo_custom:cell_count 555 ;
+    neo_custom:filtered_gene_count 2654 ;
+    neo_custom:total_gene_count 9189 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000297 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000391 a FBcv:0009003 ;
+    rdfs:label "DCN cluster 118 (res-8.0) (Davie 2018)" ;
+    neo_custom:cell_count 98 ;
+    neo_custom:filtered_gene_count 2729 ;
+    neo_custom:total_gene_count 7333 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000297 ;
+    RO:0002473 FBbt:00100486 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000392 a FBcv:0009003 ;
+    rdfs:label "Capa cluster 119 (res-8.0) (Davie 2018)" ;
+    neo_custom:cell_count 95 ;
+    neo_custom:filtered_gene_count 2816 ;
+    neo_custom:total_gene_count 7614 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000297 ;
+    RO:0002473 FBbt:00048012 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000393 a FBcv:0009003 ;
+    rdfs:label "Gr43a cluster 129 (res-8.0) (Davie 2018)" ;
+    neo_custom:cell_count 79 ;
+    neo_custom:filtered_gene_count 3939 ;
+    neo_custom:total_gene_count 8144 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000297 ;
+    RO:0002473 FBbt:00058222 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000394 a FBcv:0009003 ;
+    rdfs:label "CCAP cluster 151 (res-8.0) (Davie 2018)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 3347 ;
+    neo_custom:total_gene_count 4973 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000297 ;
+    RO:0002473 FBbt:00111316 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000395 a FBcv:0009003 ;
+    rdfs:label "Lamina_monopolar cluster (sub-clustering of cluster 20) (Davie 2018)" ;
+    neo_custom:cell_count 307 ;
+    neo_custom:filtered_gene_count 1560 ;
+    neo_custom:total_gene_count 7672 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000298,
+        VFBseq:00000323 ;
+    RO:0002473 FBbt:00003718 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000396 a FBcv:0009003 ;
+    rdfs:label "L4/L5 cluster (sub-clustering of cluster 20) (Davie 2018)" ;
+    neo_custom:cell_count 163 ;
+    neo_custom:filtered_gene_count 1366 ;
+    neo_custom:total_gene_count 7155 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000298,
+        VFBseq:00000323 ;
+    RO:0002473 FBbt:00003718 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000397 a FBcv:0009003 ;
+    rdfs:label "L3 cluster (sub-clustering of cluster 20) (Davie 2018)" ;
+    neo_custom:cell_count 101 ;
+    neo_custom:filtered_gene_count 1423 ;
+    neo_custom:total_gene_count 6633 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000298,
+        VFBseq:00000323 ;
+    RO:0002473 FBbt:00003721 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000398 a FBcv:0009003 ;
+    rdfs:label "L1 cluster (sub-clustering of cluster 20) (Davie 2018)" ;
+    neo_custom:cell_count 84 ;
+    neo_custom:filtered_gene_count 1708 ;
+    neo_custom:total_gene_count 6740 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000298,
+        VFBseq:00000323 ;
+    RO:0002473 FBbt:00003719 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000399 a FBcv:0009003 ;
+    rdfs:label "L2 cluster (sub-clustering of cluster 20) (Davie 2018)" ;
+    neo_custom:cell_count 81 ;
+    neo_custom:filtered_gene_count 1629 ;
+    neo_custom:total_gene_count 6534 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000298,
+        VFBseq:00000323 ;
+    RO:0002473 FBbt:00003720 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000400 a FBcv:0009003 ;
+    rdfs:label "adPN/C15&kn cluster (sub-clustering of cluster 27) (Davie 2018)" ;
+    neo_custom:cell_count 131 ;
+    neo_custom:filtered_gene_count 3595 ;
+    neo_custom:total_gene_count 8092 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000299,
+        VFBseq:00000330 ;
+    RO:0002473 FBbt:00007438 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000401 a FBcv:0009003 ;
+    rdfs:label "adPN cluster (sub-clustering of cluster 27) (Davie 2018)" ;
+    neo_custom:cell_count 107 ;
+    neo_custom:filtered_gene_count 2878 ;
+    neo_custom:total_gene_count 7725 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000299,
+        VFBseq:00000330 ;
+    RO:0002473 FBbt:00007438 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000402 a FBcv:0009003 ;
+    rdfs:label "Olfactory_projection_neurons cluster (sub-clustering of cluster 27) (Davie 2018)" ;
+    neo_custom:cell_count 71 ;
+    neo_custom:filtered_gene_count 2639 ;
+    neo_custom:total_gene_count 7269 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000299,
+        VFBseq:00000330 ;
+    RO:0002473 FBbt:00051299 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000403 a FBcv:0009003 ;
+    rdfs:label "adPN/kn cluster (sub-clustering of cluster 27) (Davie 2018)" ;
+    neo_custom:cell_count 70 ;
+    neo_custom:filtered_gene_count 2987 ;
+    neo_custom:total_gene_count 7278 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000299,
+        VFBseq:00000330 ;
+    RO:0002473 FBbt:00007438 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000404 a FBcv:0009003 ;
+    rdfs:label "lPN/CG31676 cluster (sub-clustering of cluster 27) (Davie 2018)" ;
+    neo_custom:cell_count 52 ;
+    neo_custom:filtered_gene_count 3168 ;
+    neo_custom:total_gene_count 7085 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000299,
+        VFBseq:00000330 ;
+    RO:0002473 FBbt:00007439 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000405 a FBcv:0009003 ;
+    rdfs:label "adPN/C15 cluster (sub-clustering of cluster 27) (Davie 2018)" ;
+    neo_custom:cell_count 46 ;
+    neo_custom:filtered_gene_count 3659 ;
+    neo_custom:total_gene_count 7230 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000299,
+        VFBseq:00000330 ;
+    RO:0002473 FBbt:00007438 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000406 a FBcv:0009003 ;
+    rdfs:label "lPN/unpg cluster (sub-clustering of cluster 27) (Davie 2018)" ;
+    neo_custom:cell_count 41 ;
+    neo_custom:filtered_gene_count 2835 ;
+    neo_custom:total_gene_count 6793 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000299,
+        VFBseq:00000330 ;
+    RO:0002473 FBbt:00007439 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000407 a FBcv:0009003 ;
+    rdfs:label "lPN cluster (sub-clustering of cluster 27) (Davie 2018)" ;
+    neo_custom:cell_count 14 ;
+    neo_custom:filtered_gene_count 3178 ;
+    neo_custom:total_gene_count 5527 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000299,
+        VFBseq:00000330 ;
+    RO:0002473 FBbt:00007439 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000408 a FBcv:0009003 ;
+    rdfs:label "adPN/kn&CG31676 cluster (sub-clustering of cluster 27) (Davie 2018)" ;
+    neo_custom:cell_count 11 ;
+    neo_custom:filtered_gene_count 2344 ;
+    neo_custom:total_gene_count 4848 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000299,
+        VFBseq:00000330 ;
+    RO:0002473 FBbt:00051299 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000409 a FBcv:0009003 ;
+    rdfs:label "PAM cluster (sub-clustering of cluster 42) (Davie 2018)" ;
+    neo_custom:cell_count 222 ;
+    neo_custom:filtered_gene_count 2074 ;
+    neo_custom:total_gene_count 7824 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000300,
+        VFBseq:00000345 ;
+    RO:0002473 FBbt:00100214 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000410 a FBcv:0009003 ;
+    rdfs:label "Dopaminergic cluster (sub-clustering of cluster 42) (Davie 2018)" ;
+    neo_custom:cell_count 125 ;
+    neo_custom:filtered_gene_count 2441 ;
+    neo_custom:total_gene_count 7626 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000300,
+        VFBseq:00000345 ;
+    RO:0002473 FBbt:00058206 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000411 a FBcv:0009003 ;
+    rdfs:label "Tyraminergic cluster (sub-clustering of cluster 64) (Davie 2018)" ;
+    neo_custom:cell_count 122 ;
+    neo_custom:filtered_gene_count 2430 ;
+    neo_custom:total_gene_count 7539 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000301,
+        VFBseq:00000367 ;
+    RO:0002473 FBbt:00058204 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000412 a FBcv:0009003 ;
+    rdfs:label "Octopaminergic cluster (sub-clustering of cluster 64) (Davie 2018)" ;
+    neo_custom:cell_count 76 ;
+    neo_custom:filtered_gene_count 2893 ;
+    neo_custom:total_gene_count 7207 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000301,
+        VFBseq:00000367 ;
+    RO:0002473 FBbt:00058203 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000413 a FBcv:0009003 ;
+    rdfs:label "LNv cluster (neuropeptide re-clustering) (Davie 2018)" ;
+    neo_custom:cell_count 41 ;
+    neo_custom:filtered_gene_count 3587 ;
+    neo_custom:total_gene_count 7349 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000302 ;
+    RO:0002473 FBbt:00004046 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000414 a FBcv:0009003 ;
+    rdfs:label "IPC cluster (neuropeptide re-clustering) (Davie 2018)" ;
+    neo_custom:cell_count 17 ;
+    neo_custom:filtered_gene_count 1905 ;
+    neo_custom:total_gene_count 5274 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000302 ;
+    RO:0002473 FBbt:00110107 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000415 a FBcv:0009003 ;
+    rdfs:label "Capa cluster (neuropeptide re-clustering) (Davie 2018)" ;
+    neo_custom:cell_count 73 ;
+    neo_custom:filtered_gene_count 2897 ;
+    neo_custom:total_gene_count 7384 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000302 ;
+    RO:0002473 FBbt:00048012 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000416 a FBcv:0009003 ;
+    rdfs:label "Hug cluster (neuropeptide re-clustering) (Davie 2018)" ;
+    neo_custom:cell_count 42 ;
+    neo_custom:filtered_gene_count 3645 ;
+    neo_custom:total_gene_count 7273 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000302 ;
+    RO:0002473 FBbt:00110924 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000417 a FBcv:0009003 ;
+    rdfs:label "CCAP cluster (neuropeptide re-clustering) (Davie 2018)" ;
+    neo_custom:cell_count 9 ;
+    neo_custom:filtered_gene_count 3856 ;
+    neo_custom:total_gene_count 5417 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000302 ;
+    RO:0002473 FBbt:00111316 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000418 a FBcv:0009003 ;
+    rdfs:label "AstA/Nplp1 cluster (neuropeptide re-clustering) (Davie 2018)" ;
+    neo_custom:cell_count 83 ;
+    neo_custom:filtered_gene_count 3135 ;
+    neo_custom:total_gene_count 7323 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000302 ;
+    RO:0002473 FBbt:00048142 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000419 a FBcv:0009003 ;
+    rdfs:label "AstA/NPF cluster (neuropeptide re-clustering) (Davie 2018)" ;
+    neo_custom:cell_count 20 ;
+    neo_custom:filtered_gene_count 2536 ;
+    neo_custom:total_gene_count 5994 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000302 ;
+    RO:0002473 FBbt:00048113,
+        FBbt:00048142 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000420 a FBcv:0009003 ;
+    rdfs:label "CCHa1 cluster (neuropeptide re-clustering) (Davie 2018)" ;
+    neo_custom:cell_count 22 ;
+    neo_custom:filtered_gene_count 3160 ;
+    neo_custom:total_gene_count 6936 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000302 ;
+    RO:0002473 FBbt:00048298 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000421 a FBcv:0009003 ;
+    rdfs:label "Crz cluster (neuropeptide re-clustering) (Davie 2018)" ;
+    neo_custom:cell_count 9 ;
+    neo_custom:filtered_gene_count 2780 ;
+    neo_custom:total_gene_count 4470 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000302 ;
+    RO:0002473 FBbt:00051053 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000422 a FBcv:0009003 ;
+    rdfs:label "FMRFa cluster (neuropeptide re-clustering) (Davie 2018)" ;
+    neo_custom:cell_count 44 ;
+    neo_custom:filtered_gene_count 3503 ;
+    neo_custom:total_gene_count 7215 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000302 ;
+    RO:0002473 FBbt:00058202 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000423 a FBcv:0009003 ;
+    rdfs:label "ITP cluster (neuropeptide re-clustering) (Davie 2018)" ;
+    neo_custom:cell_count 25 ;
+    neo_custom:filtered_gene_count 4193 ;
+    neo_custom:total_gene_count 7576 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000302 ;
+    RO:0002473 FBbt:00048313 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000424 a FBcv:0009003 ;
+    rdfs:label "Mip/ITP cluster (neuropeptide re-clustering) (Davie 2018)" ;
+    neo_custom:cell_count 9 ;
+    neo_custom:filtered_gene_count 4637 ;
+    neo_custom:total_gene_count 6019 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000302 ;
+    RO:0002473 FBbt:00047527,
+        FBbt:00048313 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000425 a FBcv:0009003 ;
+    rdfs:label "Mip/OCT cluster (neuropeptide re-clustering) (Davie 2018)" ;
+    neo_custom:cell_count 26 ;
+    neo_custom:filtered_gene_count 2839 ;
+    neo_custom:total_gene_count 6226 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000302 ;
+    RO:0002473 FBbt:00047527 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000426 a FBcv:0009003 ;
+    rdfs:label "Proc/Ms cluster (neuropeptide re-clustering) (Davie 2018)" ;
+    neo_custom:cell_count 71 ;
+    neo_custom:filtered_gene_count 3842 ;
+    neo_custom:total_gene_count 8000 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000302 ;
+    RO:0002473 FBbt:00058028 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000427 a FBcv:0009003 ;
+    rdfs:label "Proc/Gpb5 cluster (neuropeptide re-clustering) (Davie 2018)" ;
+    neo_custom:cell_count 52 ;
+    neo_custom:filtered_gene_count 4087 ;
+    neo_custom:total_gene_count 7535 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000302 ;
+    RO:0002473 FBbt:00058202 ;
+    dcterms:source VFBseq:00000243 .
+
+FlyBase:FBrf0239740 a FBcv:0000212 ;
+    neo_property:nodeLabel "pub" .
+
+VFBseq:00000244 a FBcv:0003024 ;
+    rdfs:label "brain, < 8 Hours, DGRP-551 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000245 ;
+    RO:0002490 FBdv:00007075 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000245 a FBcv:0003025 ;
+    rdfs:label "GSM2867552" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000244 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867552",
+        "SAMN08105415",
+        "SRX3426759" .
+
+VFBseq:00000246 a FBcv:0003024 ;
+    rdfs:label "brain, < 8 Hours, DGRP-551 rep r2 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000247 ;
+    RO:0002490 FBdv:00007075 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000247 a FBcv:0003025 ;
+    rdfs:label "GSM2867553" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000246 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867553",
+        "SAMN08105414",
+        "SRX3426760" .
+
+VFBseq:00000248 a FBcv:0003024 ;
+    rdfs:label "brain, 15 Days, DGRP-551 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000249 ;
+    RO:0002490 FBdv:00007090 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000249 a FBcv:0003025 ;
+    rdfs:label "GSM2867560" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000248 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867560",
+        "SAMN08105407",
+        "SRX3426767" .
+
+VFBseq:00000250 a FBcv:0003024 ;
+    rdfs:label "brain, 1 Day, DGRP-551 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000251 ;
+    RO:0002490 FBdv:00007076 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000251 a FBcv:0003025 ;
+    rdfs:label "GSM2867554" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000250 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867554",
+        "SAMN08105413",
+        "SRX3426761" .
+
+VFBseq:00000252 a FBcv:0003024 ;
+    rdfs:label "brain, 30 Days, DGRP-551 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000253 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000253 a FBcv:0003025 ;
+    rdfs:label "GSM2867561" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000252 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867561",
+        "SAMN08105406",
+        "SRX3426768" .
+
+VFBseq:00000254 a FBcv:0003024 ;
+    rdfs:label "brain, 30 Days, DGRP-551 rep r2 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000255 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000255 a FBcv:0003025 ;
+    rdfs:label "GSM2867562" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000254 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867562",
+        "SAMN08105405",
+        "SRX3426769" .
+
+VFBseq:00000256 a FBcv:0003024 ;
+    rdfs:label "brain, 3 Days, DGRP-551 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000257 ;
+    RO:0002490 FBdv:00007078 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000257 a FBcv:0003025 ;
+    rdfs:label "GSM2867555" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000256 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867555",
+        "SAMN08105412",
+        "SRX3426762" .
+
+VFBseq:00000258 a FBcv:0003024 ;
+    rdfs:label "brain, 3 Days, DGRP-551 rep r2 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000259 ;
+    RO:0002490 FBdv:00007078 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000259 a FBcv:0003025 ;
+    rdfs:label "GSM2867556" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000258 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867556",
+        "SAMN08105411",
+        "SRX3426763" .
+
+VFBseq:00000260 a FBcv:0003024 ;
+    rdfs:label "brain, 50 Days, DGRP-551 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000261 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000261 a FBcv:0003025 ;
+    rdfs:label "GSM2867563" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000260 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867563",
+        "SAMN08105404",
+        "SRX3426770" .
+
+VFBseq:00000262 a FBcv:0003024 ;
+    rdfs:label "brain, 6 Days, DGRP-551 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000263 ;
+    RO:0002490 FBdv:00007081 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000263 a FBcv:0003025 ;
+    rdfs:label "GSM2867557" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000262 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867557",
+        "SAMN08105410",
+        "SRX3426764" .
+
+VFBseq:00000264 a FBcv:0003024 ;
+    rdfs:label "brain, 6 Days, DGRP-551 rep r2 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000265 ;
+    RO:0002490 FBdv:00007081 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000265 a FBcv:0003025 ;
+    rdfs:label "GSM2867558" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000264 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867558",
+        "SAMN08105409",
+        "SRX3426765" .
+
+VFBseq:00000266 a FBcv:0003024 ;
+    rdfs:label "brain, 9 Days, DGRP-551 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000267 ;
+    RO:0002490 FBdv:00007084 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000267 a FBcv:0003025 ;
+    rdfs:label "GSM2867559" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000266 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867559",
+        "SAMN08105408",
+        "SRX3426766" .
+
+VFBseq:00000268 a FBcv:0003024 ;
+    rdfs:label "brain, < 8 Hours, w1118 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000269 ;
+    RO:0002490 FBdv:00007075 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000269 a FBcv:0003025 ;
+    rdfs:label "GSM2867564" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000268 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867564",
+        "SAMN08105403",
+        "SRX3426771" .
+
+VFBseq:00000270 a FBcv:0003024 ;
+    rdfs:label "brain, < 8 Hours, w1118 rep r2 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000271 ;
+    RO:0002490 FBdv:00007075 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000271 a FBcv:0003025 ;
+    rdfs:label "GSM2867565" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000270 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867565",
+        "SAMN08105402",
+        "SRX3426773" .
+
+VFBseq:00000272 a FBcv:0003024 ;
+    rdfs:label "brain, 15 Days, w1118 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000273 ;
+    RO:0002490 FBdv:00007090 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000273 a FBcv:0003025 ;
+    rdfs:label "GSM2867576" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000272 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867576",
+        "SAMN08105391",
+        "SRX3426784" .
+
+VFBseq:00000274 a FBcv:0003024 ;
+    rdfs:label "brain, 1 Day, w1118 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000275 ;
+    RO:0002490 FBdv:00007076 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000275 a FBcv:0003025 ;
+    rdfs:label "GSM2867566" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000274 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867566",
+        "SAMN08105401",
+        "SRX3426774" .
+
+VFBseq:00000276 a FBcv:0003024 ;
+    rdfs:label "brain, 30 Days, w1118 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000277 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000277 a FBcv:0003025 ;
+    rdfs:label "GSM2867577" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000276 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867577",
+        "SAMN08105390",
+        "SRX3426785" .
+
+VFBseq:00000278 a FBcv:0003024 ;
+    rdfs:label "brain, 3 Days, w1118 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000279 ;
+    RO:0002490 FBdv:00007078 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000279 a FBcv:0003025 ;
+    rdfs:label "GSM2867567" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000278 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867567",
+        "SAMN08105400",
+        "SRX3426775" .
+
+VFBseq:00000280 a FBcv:0003024 ;
+    rdfs:label "brain, 3 Days, w1118 rep r2 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000281 ;
+    RO:0002490 FBdv:00007078 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000281 a FBcv:0003025 ;
+    rdfs:label "GSM2867568" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000280 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867568",
+        "SAMN08105399",
+        "SRX3426776" .
+
+VFBseq:00000282 a FBcv:0003024 ;
+    rdfs:label "brain, 3 Days, w1118 rep r3 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000283 ;
+    RO:0002490 FBdv:00007078 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000283 a FBcv:0003025 ;
+    rdfs:label "GSM2867569" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000282 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867569",
+        "SAMN08105398",
+        "SRX3426777" .
+
+VFBseq:00000284 a FBcv:0003024 ;
+    rdfs:label "brain, 6 Days, w1118 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000285 ;
+    RO:0002490 FBdv:00007081 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000285 a FBcv:0003025 ;
+    rdfs:label "GSM2867570" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000284 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867570",
+        "SAMN08105397",
+        "SRX3426778" .
+
+VFBseq:00000286 a FBcv:0003024 ;
+    rdfs:label "brain, 6 Days, w1118 rep r2 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000287 ;
+    RO:0002490 FBdv:00007081 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000287 a FBcv:0003025 ;
+    rdfs:label "GSM2867571" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000286 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867571",
+        "SAMN08105396",
+        "SRX3426779" .
+
+VFBseq:00000288 a FBcv:0003024 ;
+    rdfs:label "brain, 6 Days, w1118 rep r3 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000289 ;
+    RO:0002490 FBdv:00007081 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000289 a FBcv:0003025 ;
+    rdfs:label "GSM2867572" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000288 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867572",
+        "SAMN08105395",
+        "SRX3426780" .
+
+VFBseq:00000290 a FBcv:0003024 ;
+    rdfs:label "brain, 9 Days, w1118 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000291 ;
+    RO:0002490 FBdv:00007084 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000291 a FBcv:0003025 ;
+    rdfs:label "GSM2867573" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000290 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867573",
+        "SAMN08105394",
+        "SRX3426781" .
+
+VFBseq:00000292 a FBcv:0003024 ;
+    rdfs:label "brain, 9 Days, w1118 rep r2 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000293 ;
+    RO:0002490 FBdv:00007084 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000293 a FBcv:0003025 ;
+    rdfs:label "GSM2867574" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000292 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867574",
+        "SAMN08105393",
+        "SRX3426782" .
+
+VFBseq:00000294 a FBcv:0003024 ;
+    rdfs:label "brain, 9 Days, w1118 rep r3 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000295 ;
+    RO:0002490 FBdv:00007084 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000295 a FBcv:0003025 ;
+    rdfs:label "GSM2867575" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000294 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM2867575",
+        "SAMN08105392",
+        "SRX3426783" .
+
+VFBseq:00000300 a FBcv:0009002 ;
+    rdfs:label "Davie 2018 sub-clustering of res-2.0 cluster 42 (dopaminergic neurons)" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000301 a FBcv:0009002 ;
+    rdfs:label "Davie 2018 sub-clustering of res-2.0 cluster 64 (octopaminergic-tyraminergic neurons)" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000345 a FBcv:0009003 ;
+    rdfs:label "Dopaminergic cluster 42 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 347 ;
+    neo_custom:filtered_gene_count 2215 ;
+    neo_custom:total_gene_count 8326 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00058206 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000367 a FBcv:0009003 ;
+    rdfs:label "Octopaminergic-Tyraminergic cluster 64 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 225 ;
+    neo_custom:filtered_gene_count 2660 ;
+    neo_custom:total_gene_count 8062 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00058201 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000297 a FBcv:0009002 ;
+    rdfs:label "Davie 2018 Seurat res-8.0 clustering (clusters annotated in Table S2)" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000298 a FBcv:0009002 ;
+    rdfs:label "Davie 2018 sub-clustering of res-2.0 cluster 20 (lamina monopolar neurons)" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000323 a FBcv:0009003 ;
+    rdfs:label "L1/L2/L3/L4/L5 cluster 20 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 736 ;
+    neo_custom:filtered_gene_count 1518 ;
+    neo_custom:total_gene_count 8533 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00003718 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000299 a FBcv:0009002 ;
+    rdfs:label "Davie 2018 sub-clustering of res-2.0 cluster 27 (olfactory projection neurons)" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000330 a FBcv:0009003 ;
+    rdfs:label "OPN: adPN and lPN cluster 27 (res-2.0) (Davie 2018)" ;
+    neo_custom:cell_count 543 ;
+    neo_custom:filtered_gene_count 3180 ;
+    neo_custom:total_gene_count 9382 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000296 ;
+    RO:0002473 FBbt:00067123 ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000302 a FBcv:0009002 ;
+    rdfs:label "Davie 2018 re-clustering of neuropeptide-expressing cells (Figure 2K)" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000296 a FBcv:0009002 ;
+    rdfs:label "Davie 2018 Seurat res-2.0 clustering of the 57K cells (87 clusters, Table S2)" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000243 .
+
+VFBseq:00000243 a FBcv:0003023 ;
+    rdfs:label "scRNAseq data from Davie (2018)" ;
+    neo_custom:accession "GSE107451" ;
+    neo_custom:filtered_gene_count 6707 ;
+    neo_custom:total_gene_count 14463 ;
+    neo_property:nodeLabel "DataSet" ;
+    IAO:0000115 "A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain" ;
+    OBI:0000312 FBcv:0009000 ;
+    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references FlyBase:FBrf0239740 ;
+    oboInOwl:hasDbXref vfb:GEO .
+

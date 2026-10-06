@@ -1,0 +1,46 @@
+{
+  "cluster_label": "neuropeptide_Mip/ITP",
+  "working_definition": "A very small (n=9) marker co-expression subcluster from Davie et al. 2018's Figure 2K neuropeptide re-clustering, defined solely by co-expression of Mip and ITP transcripts. The 9 cells split ambiguously across four different primary (res-2.0) clusters, have no dedicated marker list or literature reference, and the report concludes this is most likely a transcriptomic co-expression artefact of the small-n subclustering exercise rather than a genuine, anatomically defined neuron population.",
+  "searches_performed": [
+    "Mip/ITP",
+    "Mip ITP neuron",
+    "myoinhibitory peptide ITP co-expression neuron",
+    "peptidergic neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "adult myoinhibitory peptide neuron",
+    "fbbt_id": "FBbt:00047527",
+    "fbbt_definition": "Any adult neuron that expresses Mip (FBgn0036713).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Mip/ITP is one of the authors' named groups from the re-clustering of neuropeptide-expressing cells (Figure 2K), named for co-expression of Mip and ITP. Its cells are therefore both myoinhibitory peptide neurons (FBbt:00047527) and ITP neurons (FBbt:00048313); the cluster is mapped to both as composed primarily of. Broad matches: the group is a subset of each class.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult peptidergic neuron",
+      "fbbt_id": "FBbt:00058202",
+      "fbbt_definition": "Any peptidergic neuron of the adult.",
+      "reason_rejected": "Common parent of the two peptide classes; the authors name both peptides, so the cluster is mapped to both specific classes instead."
+    }
+  ],
+  "recommendation": "Broad match to both FBbt:00047527 adult myoinhibitory peptide neuron and FBbt:00048313 ITP neuron.",
+  "new_term_needed": false,
+  "verification_needed": false,
+  "additional_matches": [
+    {
+      "fbbt_term": "ITP neuron",
+      "fbbt_id": "FBbt:00048313",
+      "fbbt_definition": "Neuron that expresses Ion transport peptide. It is neurosecretory.",
+      "match_type": "broad match",
+      "skos_mapping": "skos:broadMatch",
+      "confidence": "medium"
+    }
+  ],
+  "manual_edit": {
+    "by": "Clare Pilgrim (Clare72)",
+    "date": "2026-10-05",
+    "change": "best_match FBbt:00058202 adult peptidergic neuron (broad, low) -> FBbt:00047527 adult myoinhibitory peptide neuron + additional_matches FBbt:00048313 ITP neuron (both broad, medium)",
+    "reason": "curator: group named for co-expression of Mip and ITP; map to both peptide classes"
+  }
+}

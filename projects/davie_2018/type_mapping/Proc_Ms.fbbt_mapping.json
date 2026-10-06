@@ -1,0 +1,36 @@
+{
+  "cluster_label": "Proc/Ms",
+  "working_definition": "A 71-cell adult brain population co-expressing proctolin (Proc, a locomotor/muscle-modulating neuropeptide) and myosuppressin (Ms, an inhibitor of gut/heart motility and feeding modulator), recovered from the neuropeptide re-clustering in Davie et al. 2018. Unlike the other neuropeptide subclusters in this dataset, these 71 cells are scattered across more than 20 different res-2.0 parent clusters with no single cluster contributing more than ~17%, indicating this label reflects a co-expression signature detected across a heterogeneous mix of underlying transcriptomic states rather than cells drawn from one coherent parent population -- likely a co-expression remainder pooling several distinct Proc+ and/or Ms+ neuron types rather than a single established anatomical cell type.",
+  "searches_performed": [
+    "proctolin neuron",
+    "myosuppressin neuron",
+    "Proc neuron",
+    "Ms neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "Ms neuron",
+    "fbbt_id": "FBbt:00058028",
+    "fbbt_definition": "A neuron expressing the neuropeptide Myosuppressin (Ms); there are several populations of these neurons in various locations of the larval and adult organism (Carlsson et al., 2010; Dickerson et al., 2012).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Proc/Ms is one of the authors' named groups from the re-clustering of neuropeptide-expressing cells (Figure 2K), named for co-expression of Proctolin and Myosuppressin. FBbt has no proctolin-neuron class; its cells are Ms neurons (FBbt:00058028 'Ms neuron'; FBbt has only location-specific adult Ms cells, no general adult class). Broad match: the group is a subset of Ms neurons.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult peptidergic neuron",
+      "fbbt_id": "FBbt:00058202",
+      "fbbt_definition": "Any peptidergic neuron of the adult.",
+      "reason_rejected": "Common parent; the authors name the group for Ms (and Proc), and FBbt has a Ms neuron class."
+    }
+  ],
+  "recommendation": "Broad match to FBbt:00058028 Ms neuron.",
+  "new_term_needed": false,
+  "verification_needed": false,
+  "manual_edit": {
+    "by": "Clare Pilgrim (Clare72)",
+    "date": "2026-10-05",
+    "change": "best_match FBbt:00058202 adult peptidergic neuron (broad, low) -> FBbt:00058028 Ms neuron (broad, medium)",
+    "reason": "curator: group named for Proc and Ms co-expression; FBbt has a Ms neuron class (no proctolin class)"
+  }
+}

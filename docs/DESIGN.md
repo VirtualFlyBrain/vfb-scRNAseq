@@ -107,6 +107,36 @@ of which serves FBbt mapping. Its only reusable kernel (multi-format → AnnData
 `obs` inspection) is already covered by `anndata-zarr-summary` for the obs path.
 Revisit only in the expression-stats phase, and even then lift just the loader.
 
+## General curation rules
+
+Rules that apply to every project (agreed with the curator; the per-project sections
+below record how each was applied).
+
+- **The unit is the authors' cluster.** One row = one cluster the authors defined
+  (it gets a VFBseq id and an FBbt annotation). Clusters are never merged by cell
+  type: two clusters of the same type stay two Clusters with the same FBbt term
+  (unlike the old SCEA loads, which re-analysed and merged by type).
+- **Typing comes from the authors, not from re-analysis.** Map each cluster from what
+  the authors say it is (GEO metadata, paper, supplementary tables). Curators do not
+  overturn or hedge the authors' typing on the basis of their own reading of markers,
+  cell counts, likely contamination or dissection details. Where author sources
+  disagree, the project config decides which is authoritative and the other is
+  recorded as a flag (`verification_needed`).
+- **Relation is *composed primarily of*** (RO:0002473), so not every cell in a cluster
+  need be of the annotated type. A cluster the authors name for two co-expressed
+  markers may be mapped to both classes (`additional_matches`).
+- **No FBbt term → held.** A cluster with no adequate FBbt term is held (no
+  `cell_type`), not given a generic fallback term just to have one.
+  `collate_mapping.py` marks any mapping with a null `best_match` as held.
+- **New FBbt terms from gene expression alone are the exception.** `new_term_needed`
+  records a gap; it is not a queue of requests. Do not request terms defined only by
+  transcriptomic clusters/markers as a matter of course (we do not want thousands of
+  expression-defined terms); any request needs explicit curator sign-off.
+- **Stage belongs on the Sample.** Samples carry their FBdv stage. A Cluster gets a
+  `stage` only when the stage is determined from the cluster's own gene expression
+  (e.g. a cluster the authors identify as a particular developmental stage) — not
+  copied from the samples it was built from, which would be redundant.
+
 ## FBbt mapping & new-term requests
 
 ### Mapping (`map-clusters-to-fbbt` agent)
@@ -185,6 +215,10 @@ are generated with the **Claude Code agentic flow**, not atlas-chat's standalone
 - `local-paper-index` (the genuinely useful, free part of atlas-chat) is installed
   in a sibling clone and the project is **symlinked** in, so the built index and
   generated `reports/` land back in this repo.
+- Reports are **background evidence, not mapping decisions**; `mapping.tsv` is the
+  authoritative copy. `collate_mapping.py` adds a generic `reports/README.md` saying so
+  (template `src/vfb_scrnaseq/templates/reports_README.md`) when a project's reports
+  folder has none; an existing README is never overwritten.
 
 ## Generic pipeline vs per-project config
 
@@ -201,6 +235,33 @@ is read through `src/vfb_scrnaseq/project_config.py`. Config sections:
   - `hold_classes` — classes of undefined meaning, held not mapped (e.g. `C`);
   - `class_anchors` — the broad FBbt term per author class for this tissue
     (e.g. N→`adult optic lobe neuron`, G→`adult optic lobe glial cell`).
+
+  - `hold_unidentified` — hold *every* unidentified cluster (for atlases with no
+    author class, so no broad anchor can be chosen; e.g. Davie 2018).
+- **`sample_build.title_pattern`** — how GSM titles split into set / timepoint /
+  biological replicate (/ technical replicate): the default
+  `set_timepoint_biorep_techrep`, or `regex:` with named groups. GSMs that do not
+  match are out of the project's scope (lets one GEO series contribute a subset).
+- **`sample_build.sex: mixed`** — curator-confirmed pooled-sex samples; the
+  single-valued `sex` slot stays unset without the "check the paper" warning.
+- **`annotations.barcode_column`** — the per-cell metadata column that matches the
+  matrix barcodes (default `barcode`).
+- **`prior_mapping`** — optional TSV of a previous load's FBbt terms per cluster;
+  `collate_mapping.py` adds `prior_fbbt_*` / `prior_agrees` columns as a cross-check.
+  Never an input to the mapping itself.
+- **`annotations.review_columns`** — extra per-cluster fields from
+  `cell_type_annotations.json` shown after the cluster key in `mapping.tsv` (e.g.
+  Davie's clustering, the authors' cluster id, the Table S2 call and any conflict).
+  Re-running `collate_mapping.py` keeps the `reviewed`/`review_notes` already there.
+- **Per-cluster annotation entries** may carry `clustering` (a `sample_build.clusterings`
+  id; entries there may be `{id, name}`), `source_cluster_id` and `unannotated`
+  (held when `hold_unidentified`). **`expression.membership_file`** (barcode→cluster)
+  lets a cell belong to one cluster in each of several clusterings.
+
+Cluster labels are used verbatim in the data but pass through
+`project_config.label_slug` for per-cluster file names (`mapping/<slug>…`,
+`reports/<slug>.md`): `/`→`_`, `*`→`p`, `&`→`+`. Labels already made of
+`[A-Za-z0-9._+-]` are unchanged.
 
 Nothing optic-lobe-specific remains in the shared code: a different atlas ships a
 different `config.yaml` and the `scripts/`/`src/` code is reused untouched.
@@ -229,7 +290,13 @@ re-run would otherwise silently erase. A mapping JSON carries an optional
                  "reason": "curator confirmed the Wnt marker corresponds to bi" }
 ```
 
-Absent = pipeline-generated (agent or placeholder script). Agents/scripts must
+Absent = pipeline-generated (agent or placeholder script).
+
+A mapping may also list **`additional_matches`** (same shape as `best_match`) when the
+authors' name places a cluster in more than one class — e.g. Davie's neuropeptide
+group "Mip/ITP" is *composed primarily of* both myoinhibitory peptide neurons and ITP
+neurons. `build.py` emits every term as `cell_type`; `mapping.tsv` joins them with
+` | `; `verify_mappings.py` checks them all. Agents/scripts must
 **never** set it. `collate_mapping.py` surfaces a `manual_edit` column so overrides
 are visible in `mapping.tsv`, and a re-run should skip/flag clusters carrying it so
 a curator decision is not lost. Git history remains the full diff backstop.
@@ -342,11 +409,15 @@ the paper's FlyBase **`FBrf`** IRI, and a minimal `Publication` entity
 (`id = FlyBase:FBrf…`, `neo_label: pub`) is emitted so the loader attaches the
 `:pub` label.
 
-The FBrf is resolved by `vfb_scrnaseq.pub.resolve_pub`: it **checks the VFB curation
-KB** (`kb.virtualflybrain.org`, by PMID) first so a freshly-curated pub is picked up,
-then falls back to a curator-supplied `source.fbrf` in `config.yaml`. The KB lookup
-degrades gracefully (network/auth errors → fall back, never fail the build). If
-neither resolves, the build warns and leaves the Dataset without a publication link.
+The FBrf is resolved by `vfb_scrnaseq.pub.resolve_pub`, by PMID, in order: the **VFB
+curation KB** (`kb.virtualflybrain.org`, public read-only login `neo4j`/`vfb`) so a
+freshly-curated pub is picked up; then **VFB production** (`pdb.virtualflybrain.org`,
+no credentials), where already-released pubs live (the scRNAseq pubs are in production,
+not the KB); then a curator-supplied `source.fbrf` in `config.yaml`. Each lookup
+degrades gracefully (network/auth errors → next source, never fail the build). If
+none resolves, the build warns and leaves the Dataset without a publication link.
+Env overrides are `VFBSEQ_KB_*` / `VFBSEQ_PDB_URL` — deliberately not `VFB_KB_*`,
+which curators often set for the writable KB.
 
 ## `sex`
 
@@ -413,6 +484,13 @@ the *metadata* (small). NB the `gene` template was fixed for the modern
 `py-horned-owl` backend (quoted/typed literals, `xsd:` prefix); gene fillers are
 `FlyBase:FBgn…` CURIEs.
 
+**TODO — gene id currency.** Gene ids are taken as published in the GEO features
+file, so some are no longer current FlyBase ids: Davie 2018 has 137 secondary FBgns
+(5 of them split) and 1 with no current gene; Kurmangaliyev 2020 has 87 secondary and
+1 withdrawn (FlyBase Chado, 2026-09-23). Expression rows for these won't link to the
+current gene in VFB. To do: map secondary → current FBgns at emission (handling
+merges/splits), as the old repo's `update_FBgns_in_files.py` did.
+
 ## Worked example
 
 `projects/kurmangaliyev_2020/` — Kurmangaliyev et al. 2020, *Drosophila* visual
@@ -461,3 +539,56 @@ machine-readable, carries named types at multiple granularity levels, is the
 *corrected* version (the README documents the T4c/T4d label-swap fix that PDF
 figures may predate), and yields per-cluster cell counts (`cell_number`) directly.
 Either way, mismatches are **flagged for review**, never silently resolved.
+
+## Second project: Davie 2018
+
+`projects/davie_2018/` — Davie et al. 2018, *A Single-Cell Transcriptome Atlas of
+the Aging Drosophila Brain* (Cell; GSE107451, PMID 29909982, FBrf0239740). Already
+in VFB from the old FlyBase/SCEA mechanism (`FBlc0006090`, SCEA `E-CURD-91`,
+59 clusters); rebuilt here from GEO. Curator decisions:
+
+- **Scope: the 57K 10x set only** — the paper's stringently filtered atlas, 26 runs
+  (12 DGRP-551 + 14 w1118, adults 0–50 days). The rest of GSE107451 (157K lenient
+  set, Drop-seq, SMART-seq2/CEL-seq2 on R23E10 cells, bulk) is excluded by the
+  `title_pattern` regex. One GSM = one replicate = one library, so Sample:Assay 1:1.
+- **One row per author cluster, never merged by cell type.** Curators annotate the
+  clusters the authors defined; two clusters of the same type stay two Clusters with
+  the same FBbt term (unlike the old SCEA load, which merged by type). The relation
+  is *composed primarily of* (RO:0002473), so not every cell need be of the type.
+  Seven Clusterings, built by `projects/davie_2018/build_clusters.py`:
+  the 87 res-2.0 clusters (Table S2's "87 initial clusters"); the 5 res-8.0 clusters
+  Table S2 annotates; the authors' sub-clusterings of res-2.0 clusters 20, 27, 42 and
+  64; and the named groups of the neuropeptide re-clustering (Figure 2K) — 125
+  Clusters. res-2.0/res-8.0 membership comes from GEO's `res.2`/`res.8` columns;
+  sub-cluster membership (no id column in GEO) from the authors' per-cell
+  `annotation`. A cell is in one cluster per Clustering, so expression stats are
+  computed per Clustering from a barcode→cluster membership file.
+- **Sub-clusters are *part of* their parent cluster.** The 18 clusters of the four
+  sub-clusterings carry `parent_cluster` (schema slot on `Cluster`, BFO:0000050
+  *part of*, the same predicate as Cluster→Clustering) pointing at the res-2.0
+  cluster the authors re-clustered — nested by construction. res-8.0 clusters and
+  the neuropeptide groups are not given a parent: res-8.0 is an independent
+  resolution (its overlap with res-2.0 is empirical, not an author statement) and the
+  neuropeptide groups draw cells from many res-2.0 clusters.
+- **Typing from the authors, not re-analysis.** Each cluster takes the authors' GEO
+  annotation (a sub-clustered res-2.0 cluster takes its Table S2 parent call). Table
+  S2 is recorded per cluster (`s2_annotation`); where it makes a different call the
+  cluster carries `author_conflict` and `verification_needed` (14 clusters). Mapping
+  takes the authors' type at face value — no downgrading on our own reading of
+  markers, cell counts or contamination; a grouped call ("Pm1/Pm2") maps to the
+  common parent. Type-level mappings live in `type_mapping/` and are copied per
+  cluster into `mapping/`.
+- **Numbered clusters held.** No author class exists, so there is no broad anchor;
+  clusters the authors left numbered are `unannotated` and emitted without an FBbt
+  link (`hold_unidentified: true`).
+- **Fresh VFBseq ids, no FBlc link.** Retiring the old load is handled outside
+  this repo. The old FBbt assignments are kept only as a cross-check
+  (`prior_mapping_FBlc0006090.tsv`, crosswalked to the authors' types by name +
+  cell count).
+- **Sex mixed** (20 female + 20 male brains per run); **stocks** FBst0055026
+  (DGRP-551, BDSC 55026) and FBst0003605 (w[1118], BDSC 3605), from the Key
+  Resources Table via Chado; stages = FBdv "day N of adulthood".
+- Evidence for reports: the open-access JATS full text (PMC6086935) in the local
+  index, plus Tables S2 (annotation method + references per cluster) and S3
+  (markers per res-2.0 cluster) joined per author type in `supp_evidence.json`;
+  reports are per author type (`reports/<type>.md`).

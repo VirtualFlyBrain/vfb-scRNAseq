@@ -1,0 +1,22 @@
+{
+  "cluster_label": "res2_11",
+  "working_definition": "TmY14 is a large (1,399 cells), cleanly matched res-2.0 cluster 11 identified by the authors as 'newly annotated' via regression-mapping against the Konstantinides et al. (2018) optic-lobe atlas, rather than by literature marker genes. TmY neurons are transmedullary-Y columnar neurons of the optic lobe with processes spanning both medulla and lobula (the 'Y' branch morphology distinguishing them from simple Tm neurons). Top markers include VGlut, indicating a glutamatergic identity; Table S2 and GEO agree exactly on the 'TmY14' label with no REVIEW flag.",
+  "searches_performed": [
+    "TmY14 neuron",
+    "transmedullary Y neuron TmY14",
+    "transmedullary Y neuron glutamatergic"
+  ],
+  "best_match": {
+    "fbbt_term": "transmedullary Y neuron TmY14",
+    "fbbt_id": "FBbt:00111286",
+    "fbbt_definition": "Transmedullary Y wide-field neuron that terminates in the lobula and lobula plate (Takemura et al., 2013), with fine arborizations in medulla layers M3-M5 and M8-M10. Some cells have an axon projecting to the central brain, an unusual feature in TmY neurons, but with very few synapses (Matsliah et al., 2024). It is glutamatergic (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "The FBbt definition's glutamatergic neurotransmitter identity (Konstantinides et al., 2022) matches the report's own independent observation of VGlut expression in this cluster's top markers, giving convergent support beyond the label match alone. The label itself is unambiguous (GEO = Table S2, method: mapping to Konstantinides et al. 2018, no REVIEW flag), and the general TmY morphology (medulla+lobula processes) matches the report's description. Confidence is medium rather than high because the specific 'TmY14' identity in this dataset rests solely on cross-dataset transcriptomic mapping (no independent literature markers/driver lines cited by the authors for this cluster specifically), so while the label and neurotransmitter class both check out, subtype-level certainty depends on the external atlas correspondence.",
+  "other_candidates": [],
+  "recommendation": "Accept as exact match at medium confidence; the glutamatergic marker (VGlut) independently corroborates the FBbt definition, but note that the specific TmY14 call rests on mapping to Konstantinides et al. (2018) rather than this paper's own markers.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

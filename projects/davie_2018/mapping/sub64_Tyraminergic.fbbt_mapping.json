@@ -1,0 +1,29 @@
+{
+  "cluster_label": "sub64_Tyraminergic",
+  "working_definition": "Tbh-negative subset of the parent Tdc2(+) cluster (Davie et al. 2018, res-2.0 cluster 64; 122 cells): tyramine-releasing neurons that retain tyramine as end-product neurotransmitter (lacking Tbh, which would convert it to octopamine). Overlaps substantially in distribution with the octopaminergic sister subcluster (shared Tdc2+ lineage); not resolved to any anatomical subtype by the atlas.",
+  "searches_performed": [
+    "tyraminergic neuron",
+    "adult tyraminergic neuron",
+    "Tyraminergic (exact cluster label)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult tyraminergic neuron",
+    "fbbt_id": "FBbt:00058204",
+    "fbbt_definition": "Any tyraminergic neuron of the adult.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "This is a class-level, neurotransmitter-defined cluster (Tbh- subset of Tdc2+ neurons) explicitly not resolved to any anatomical subtype. FBbt:00058204 'adult tyraminergic neuron' is the class-level FBbt term at exactly this resolution, restricted to adult tissue matching the confirmed adult (0-50 day) atlas. Per dataset guidance, remainder/class-level clusters map to the class term as the correct level.",
+  "other_candidates": [
+    {
+      "fbbt_term": "tyraminergic neuron",
+      "fbbt_id": "FBbt:00100397",
+      "fbbt_definition": "Any neuron that is capable of some tyramine secretion, neurotransmission.",
+      "reason_rejected": "Life-stage-unspecified parent; adult-specific FBbt:00058204 better matches the confirmed adult tissue (larval tyraminergic subtypes exist in FBbt but are irrelevant here)."
+    }
+  ],
+  "recommendation": "Accept adult tyraminergic neuron (FBbt:00058204) as the class-level mapping; no individual tyraminergic subtype should be assigned.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

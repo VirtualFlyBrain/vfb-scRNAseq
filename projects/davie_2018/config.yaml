@@ -1,0 +1,127 @@
+# Project config: Davie et al. 2018, single-cell transcriptome atlas of the ageing
+# Drosophila brain. Previously loaded into VFB via the old FlyBase/SCEA mechanism
+# (vfb-scRNAseq-ontology FBlc0006090, SCEA E-CURD-91); rebuilt here from GEO with
+# fresh VFBseq ids (no FBlc link, by curator decision).
+project: davie_2018
+
+source:
+  doi: 10.1016/j.cell.2018.05.057
+  pmid: "29909982"
+  pmcid: PMC6086935
+  # FlyBase reference for the VFB :pub node (fallback if the KB has no PMID match);
+  # the same FBrf the old FBlc0006090 release referenced.
+  fbrf: FBrf0239740
+  title: A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain
+  journal: Cell
+  year: 2018
+  first_author: Davie   # surname; used for entity rdfs:labels (citation form)
+
+organism: Drosophila melanogaster
+
+dataset:
+  site: GEO
+  accession: GSE107451
+  bioproject: PRJNA420091
+  sra_study: SRP125768
+  platform: GPL19132            # Illumina NextSeq 500 (the 10x runs)
+  licence: CC-BY-4.0
+  assay_type: FBcv:0009000      # single-cell RNA-seq
+
+sample_build:
+  # Scope (curator decision): the paper's 57K stringently-filtered 10x atlas only —
+  # 26 runs, 12 DGRP-551 + 14 w1118 (paper: "56,902 (57K) high-quality cells ...
+  # from 26 runs"). GEO titles are "<set>_<age>d_r<rep>" (e.g. DGRP-551_0d_r1);
+  # the regex excludes the rest of the series (Drop-seq, the 157K-only alternative
+  # dissociation runs *_s<N>/_3m/_3f/_SDP, other DGRP lines, SMART-seq2/CEL-seq2).
+  # One GSM = one biological replicate = one 10x library, so Sample:Assay is 1:1.
+  title_pattern: 'regex:(?P<set>DGRP-551|w1118)_(?P<timepoint>\d+d)_(?P<biorep>r\d+)'
+  assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
+  # Mixed sex, curator-confirmed from the paper: each run dissociated "Forty ...
+  # adult brains (20 females and 20 males)". Per-cell sex calls exist in the GEO
+  # metadata but the samples themselves are pooled, so the (single-valued) sex slot
+  # is left unset.
+  sex: mixed
+  # set -> FlyBase stock, from the paper's Key Resources Table, resolved in FlyBase
+  # Chado (stock.uniquename): DGRP-551 = BDSC 55026, w[1118] = BDSC 3605.
+  stock_map:
+    DGRP-551: [FBst0055026]
+    w1118: [FBst0003605]
+  # Keyed on the GEO `age` characteristic. Adults "used at ages 0, 1, 3, 6, 9, 15,
+  # 30 and 50 days old"; day 0 = "< 8 Hours" post-eclosion. NB the old FBlc release
+  # labelled two w1118 samples D14/D29; GEO (and the paper) say 15/30 days.
+  age_map:
+    "< 8 Hours":
+      stage:  { fbdv_id: FBdv:00007075, label: day 0 of adulthood }
+      tissue: { fbbt_id: FBbt:00003624, label: adult brain }
+    "1 Day":
+      stage:  { fbdv_id: FBdv:00007076, label: day 1 of adulthood }
+      tissue: { fbbt_id: FBbt:00003624, label: adult brain }
+    "3 Days":
+      stage:  { fbdv_id: FBdv:00007078, label: day 3 of adulthood }
+      tissue: { fbbt_id: FBbt:00003624, label: adult brain }
+    "6 Days":
+      stage:  { fbdv_id: FBdv:00007081, label: day 6 of adulthood }
+      tissue: { fbbt_id: FBbt:00003624, label: adult brain }
+    "9 Days":
+      stage:  { fbdv_id: FBdv:00007084, label: day 9 of adulthood }
+      tissue: { fbbt_id: FBbt:00003624, label: adult brain }
+    "15 Days":
+      stage:  { fbdv_id: FBdv:00007090, label: day 15 of adulthood }
+      tissue: { fbbt_id: FBbt:00003624, label: adult brain }
+    "30 Days":
+      stage:  { fbdv_id: FBdv:00007105, label: day 30 of adulthood }
+      tissue: { fbbt_id: FBbt:00003624, label: adult brain }
+    "50 Days":
+      stage:  { fbdv_id: FBdv:00007125, label: day 50 of adulthood }
+      tissue: { fbbt_id: FBbt:00003624, label: adult brain }
+  # One Clustering per author analysis (curator decision: rows are the authors'
+  # clusters, never merged by cell type). Built by projects/davie_2018/build_clusters.py.
+  clusterings:
+    - { id: res2, name: "Davie 2018 Seurat res-2.0 clustering of the 57K cells (87 clusters, Table S2)" }
+    - { id: res8, name: "Davie 2018 Seurat res-8.0 clustering (clusters annotated in Table S2)" }
+    - { id: sub20, name: "Davie 2018 sub-clustering of res-2.0 cluster 20 (lamina monopolar neurons)" }
+    - { id: sub27, name: "Davie 2018 sub-clustering of res-2.0 cluster 27 (olfactory projection neurons)" }
+    - { id: sub42, name: "Davie 2018 sub-clustering of res-2.0 cluster 42 (dopaminergic neurons)" }
+    - { id: sub64, name: "Davie 2018 sub-clustering of res-2.0 cluster 64 (octopaminergic-tyraminergic neurons)" }
+    - { id: neuropeptide, name: "Davie 2018 re-clustering of neuropeptide-expressing cells (Figure 2K)" }
+
+# Summary expression statistics. The GEO 57K MEX tarball
+# (GSE107451_DGRP-551_w1118_WholeBrain_57k_..._10X_DGEM_MEX.mtx.tsv.tar.gz) is
+# unpacked into .cache and each file gzipped under these names.
+expression:
+  matrix_file: GSE107451_matrix_57k.mtx.gz
+  features_file: GSE107451_features_57k.tsv.gz
+  barcodes_file: GSE107451_barcodes_57k.tsv.gz
+  normalisation: CPM
+  extent_cutoff: 0.2
+  hide_in_terminfo: "true"
+  # barcode -> cluster for every clustering (a cell is in one cluster per clustering);
+  # written by projects/davie_2018/build_clusters.py
+  membership_file: GSE107451_57k_cluster_membership.tsv.gz
+
+# cell_type_annotations.json (one entry per author cluster) is written by
+# projects/davie_2018/build_clusters.py, not scripts/build_annotations_from_geo.py:
+# res-2.0 / res-8.0 membership from the GEO `res.2` / `res.8` columns, sub-cluster and
+# neuropeptide-group membership from the authors' per-cell `annotation`.
+annotations:
+  source_file: GSE107451_DGRP-551_w1118_WholeBrain_57k_Metadata.tsv.gz
+  subset: 57k
+  label_column: annotation       # authors' final per-cell annotation
+  timepoint_column: Age
+  # shown after the cluster key in mapping.tsv
+  review_columns: [clustering, source_cluster_id, parent_cluster, type, s2_annotation, author_conflict]
+  # `barcode` is the bare 10x barcode (repeats across runs); `new_barcode` carries
+  # the run suffix and matches the matrix barcodes file.
+  barcode_column: new_barcode
+
+# Clusters the authors left numbered are marked `unannotated` in
+# cell_type_annotations.json and HELD unmapped (curator decision; no author class
+# exists from which to take a broad anchor).
+unidentified:
+  rule: none
+  hold_unidentified: true
+
+# The FBbt assignments of the old FlyBase/SCEA load (FBlc0006090), crosswalked to
+# these labels (matched on a cluster's author type); used only to cross-check the new mappings (collate_mapping flags
+# disagreements). Not an input to the mapping itself.
+prior_mapping: prior_mapping_FBlc0006090.tsv

@@ -1,0 +1,36 @@
+{
+  "cluster_label": "res2_8",
+  "working_definition": "Gamma-lobe Kenyon cells (\u03b3-KCs) of the adult mushroom body: intrinsic mushroom body neurons whose axons form the gamma lobe (vertical+medial lobe branch), somata in the Kenyon cell cortex above the calyx, identified in this atlas by sNPF+/trio+ co-expression and a PKA/cAMP-signalling-rich (rut/Pka pathway) marker profile typical of Kenyon cells. This 0-50-day adult brain atlas resolves \u03b3-KCs only at the whole-lobe level, not into finer sub-lobe subtypes.",
+  "searches_performed": [
+    "G-KC",
+    "gamma Kenyon cell",
+    "adult gamma Kenyon cell",
+    "Kenyon cell"
+  ],
+  "best_match": {
+    "fbbt_term": "adult gamma Kenyon cell",
+    "fbbt_id": "FBbt:00049828",
+    "fbbt_definition": "Gamma Kenyon cell of the adult mushroom body. It develops from a larval gamma Kenyon cell that is remodeled during the pupal stage (Lee et al., 1999; Kunz et al., 2012). It expresses sNPF (Johard et al., 2008; Barnstedt et al., 2016; Croset et al., 2018). There are around 700 neurons of this type per hemisphere (Li et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The cluster's discriminating marker (sNPF+, trio+) and lobe assignment (mushroom body gamma lobe, adult brain, class-N intrinsic MB neuron) match FBbt:00049828 'adult gamma Kenyon cell' exactly: same neuropil target (gamma lobe), same adult developmental stage, and the FBbt definition itself cites sNPF expression as a defining marker, matching the paper's own discriminating logic. FBbt further subdivides adult gamma KCs into gamma-main/gamma-dorsal/gamma-s1-4 subtypes (from connectomic studies, e.g. Li et al. 2020), but the report explicitly states the atlas could not resolve any finer subtype within the lobe (subclustering separated cells by technical covariates, not biology), so the whole-lobe adult gamma Kenyon cell term is the correct and complete level of resolution for this cluster.",
+  "other_candidates": [
+    {
+      "fbbt_term": "gamma Kenyon cell",
+      "fbbt_id": "FBbt:00100247",
+      "fbbt_definition": "Mushroom body neuron that innervates the mushroom body vertical and medial lobes in the larva, but is pruned back during early pupal stages to innervate only the gamma lobe in the adult.",
+      "reason_rejected": "Spans larval and adult forms of the gamma Kenyon cell lineage; less specific than the adult-restricted term, and this atlas is adult brain tissue only."
+    },
+    {
+      "fbbt_term": "gamma main Kenyon cell",
+      "fbbt_id": "FBbt:00111061",
+      "fbbt_definition": "A sub-lobe subtype of adult gamma Kenyon cell (connectomic classification).",
+      "reason_rejected": "Finer sub-lobe subtype from connectomic (EM) studies not resolvable from this transcriptomic atlas; report explicitly states no finer subtype resolution was achieved."
+    }
+  ],
+  "recommendation": "Map to FBbt:00049828 'adult gamma Kenyon cell' as an exact match at the correct (whole-lobe) resolution level supported by the data.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

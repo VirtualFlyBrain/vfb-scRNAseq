@@ -70,3 +70,23 @@ def test_per_cluster_counts_and_extent_filter(tmp_path, monkeypatch):
     # only the two above-cutoff cluster x gene rows survive the filter
     kept = {(label, round(extent, 2)) for _iri, label, _fbgn, _sym, _lvl, extent in rows}
     assert kept == {("A", 0.6), ("B", 0.6)}
+
+
+def test_membership_file_overlapping_clusterings(tmp_path, monkeypatch):
+    # a second clustering "sub" splits A into A1 (cells 1-2) and A2 (cells 3-5): each
+    # cell is counted once per clustering, and the A/B results are unchanged
+    cfg = _setup(tmp_path, monkeypatch)
+    mem = "barcode\tcluster\n" + "".join(
+        f"bc{i}\t{'A' if i <= 5 else 'B'}\n" for i in range(1, 11))
+    mem += "".join(f"bc{i}\t{'A1' if i <= 2 else 'A2'}\n" for i in range(1, 6))
+    _write(tmp_path / ".cache" / "mem.tsv.gz", mem)
+    cfg["expression"]["membership_file"] = "mem.tsv.gz"
+    rows, counts, meta = stats.compute_expression("t", cfg)
+    by = {c.label: c for c in counts}
+    assert {k: v.cells for k, v in by.items()} == {"A": 5, "B": 5, "A1": 2, "A2": 3}
+    assert (by["A"].total_gene_count, by["A"].filtered_gene_count) == (2, 1)
+    ext = {(label, sym): round(extent, 3) for _i, label, _f, sym, _l, extent in rows}
+    assert ext[("A1", "sym1")] == 1.0          # g1 in cells 1,2
+    assert ext[("A1", "sym2")] == 0.5          # g2 in cell 1
+    assert ext[("A2", "sym1")] == round(1 / 3, 3)
+    assert meta["n_cells"] == 10               # distinct cells, not memberships

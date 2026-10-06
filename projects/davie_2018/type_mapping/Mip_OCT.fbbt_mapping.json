@@ -1,0 +1,37 @@
+{
+  "cluster_label": "Mip/OCT",
+  "working_definition": "A small (26 cell) neuropeptide-co-expression subcluster, dominant parent res-2.0 cluster 64 ('Octopaminergic-Tyraminergic'), inferred (not directly stated in the paper) to represent a small octopaminergic (Tbh+) subset additionally expressing the neuropeptide Mip (myoinhibitory peptide), recovered via the same neuropeptide-focused re-clustering strategy used for other co-expression subclusters. Not an established named anatomical cell type; identity and location are not independently confirmed by the authors.",
+  "searches_performed": [
+    "octopaminergic neuron",
+    "adult octopaminergic neuron",
+    "Mip neuron",
+    "myoinhibitory peptide neuron",
+    "Mip/OCT (exact cluster label)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult myoinhibitory peptide neuron",
+    "fbbt_id": "FBbt:00047527",
+    "fbbt_definition": "Adult neuron expressing myoinhibitory peptide (Mip).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Mip/OCT is one of the authors' named groups from the re-clustering of neuropeptide-expressing cells (Figure 2K), named by its neuropeptide, Mip. FBbt:00047527 'adult myoinhibitory peptide neuron' (any adult neuron that expresses Mip) is the containing class the authors' name supports; broad match because the group is a subset of Mip neurons (co-expressing 'OCT'), not all of them.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult octopaminergic neuron",
+      "fbbt_id": "FBbt:00058203",
+      "fbbt_definition": "Any octopaminergic neuron of the adult.",
+      "reason_rejected": "The group comes from the authors' re-clustering of neuropeptide-expressing cells and is named for Mip; reading 'OCT' as octopaminergic rests on our inference from where its cells came from."
+    }
+  ],
+  "recommendation": "Broad match to FBbt:00047527 adult myoinhibitory peptide neuron.",
+  "new_term_needed": false,
+  "verification_needed": false,
+  "manual_edit": {
+    "by": "Clare Pilgrim (Clare72)",
+    "date": "2026-10-05",
+    "change": "best_match FBbt:00058203 adult octopaminergic neuron (broad, low) -> FBbt:00047527 adult myoinhibitory peptide neuron (broad, medium)",
+    "reason": "curator: neuropeptide re-clustering group named for Mip; octopaminergic reading was our inference, not the authors' call"
+  }
+}

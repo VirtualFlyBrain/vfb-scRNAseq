@@ -1,0 +1,35 @@
+{
+  "cluster_label": "Dm8/Dm11",
+  "working_definition": "Cluster 'Dm8/Dm11' (GEO label, adult Davie 2018 optic lobe data) annotated by the authors as the grouped call Dm8/Dm11. Mapped at face value to the FBbt term for the named type; cluster is composed primarily of cells of this type.",
+  "searches_performed": [
+    "Dm8/Dm11",
+    "distal medullary amacrine neuron",
+    "local FBbt (fbbt-full.obo) lookup by label/synonym (OLS MCP returned 503)"
+  ],
+  "best_match": {
+    "fbbt_term": "distal medullary amacrine neuron",
+    "fbbt_id": "FBbt:00003767",
+    "fbbt_definition": "An amacrine neuron that is intrinsic to the medulla, whose soma is located in the cortex of the medulla and that branches and arborizes in the distal medulla. These neurons project through the distal surface of the medulla, to form wide (sometimes very wide) terminal arborizations mainly or completely restricted to a single layer of the medulla.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors' call is the grouped Dm8/Dm11; the most specific common parent of Dm8 (FBbt:00013774) and Dm11 (FBbt:00111272) is distal medullary amacrine neuron (FBbt:00003767).",
+  "other_candidates": [
+    {
+      "fbbt_term": "distal medullary amacrine neuron Dm8",
+      "fbbt_id": "FBbt:00013774",
+      "fbbt_definition": "Glutamatergic (Gao et al., 2008; Karuppudurai et al., 2014) distal medullary amacrine neuron that branches extensively in medulla layer M6A (Fischbach and Dittrich, 1989; Takemura et al., 2013; Nern et al., 2015), spanning approximately 16 medulla columns (Karuppudurai et al., 2014), with centrifugal projections back to layer M4 (Takemura et al., 2013; Nern et al., 2015). The highest arbor density and longest distal projection are usually found in one optic column (its 'home column'), near the center of the M6A arborization, with these columns tiling between different individual Dm8 cells, while the rest of the arbor overlaps with other Dm8 cells considerably (Gao et al., 2008; Nern et al., 2015; Kind et al., 2021). In layer M6, it is postsynaptic to several R7 photoreceptor cells and presynaptic to Tm5 (Gao et al., 2008; Takemura et al., 2013; Karuppudurai et al., 2014). The contacts with Tm5 are clustered in one column at the center of the dendritic field of Dm8 (Karuppudurai et al., 2014). It is involved in UV preference (Gao et al., 2008).",
+      "reason_rejected": "Individual member of the authors' grouped Dm8/Dm11 call; the common parent is mapped instead."
+    },
+    {
+      "fbbt_term": "distal medullary amacrine neuron Dm11",
+      "fbbt_id": "FBbt:00111272",
+      "fbbt_definition": "Distal medullary wide-field amacrine neuron whose cell body is located in the dorsal region of the cell body rind of the medulla. Its primary neurite extends beyond M6A layer, and then turns back, forming recurrent, columnar processes from M6A to M1, and into the first optic chiasm. The arbor varies in shape between cells, covering around 9 columns and showing tiling. The terminals of these cells in M6A collectively occupy the whole layer, whereas in the other layers the processes are thin, with each process occupying only one column, and being associated with R7 and R8 photoreceptor axons. There are around 70 Dm11 neurons per hemisphere. They are glutamatergic (Davis et al., 2020).",
+      "reason_rejected": "Individual member of the authors' grouped Dm8/Dm11 call; the common parent is mapped instead."
+    }
+  ],
+  "recommendation": "Accept broad match to the common parent of Dm8 and Dm11.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

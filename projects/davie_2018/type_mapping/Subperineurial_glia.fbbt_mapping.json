@@ -1,0 +1,24 @@
+{
+  "cluster_label": "Subperineurial_glia",
+  "working_definition": "The inner layer of the two-layer surface glia forming the adult Drosophila blood-brain barrier, sealed by moody-dependent septate junctions that block paracellular diffusion, lying internal to the perineurial glia. The paper identifies this cluster by marker moody among the 'surface glia (Indy)' subtypes (Bainton et al. 2005; DeSalvo et al. 2014; Stork et al. 2012). This GEO cluster (res-2.0 cluster 66 only) is internally clean, with no mixing from other res-2.0 clusters.",
+  "searches_performed": [
+    "Subperineurial_glia",
+    "subperineurial glial cell",
+    "adult subperineurial glial cell",
+    "adult brain subperineurial glial cell",
+    "septate junction glia Drosophila"
+  ],
+  "best_match": {
+    "fbbt_term": "adult brain subperineurial glial cell",
+    "fbbt_id": "FBbt:00100507",
+    "fbbt_definition": "Glial cell of the subperineurial glial sheath in the adult brain. These cells are fairly uniform in morphology across the brain, having a large, square and thin shape, giving them a sheet-like appearance (Awasaki et al., 2008, Kremer et al., 2017). Some also have circular protrusions that cap neuronal cell bodies not fully enclosed by cell body glia (Kremer et al., 2017).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The FBbt definition (glia of the subperineurial sheath at the adult brain surface, sheet-like morphology) matches the report's description of subperineurial glia as the inner, septate-junction-sealed surface glia layer of the blood-brain barrier. This cluster is internally clean (single res-2.0 cluster 66, no mixing), unlike the related Perineurial_glia GEO cluster which does contain a minority of true subperineurial cells (res-2.0 cluster 85) - those cells are absent from this cluster, so this cluster's identity assignment is unambiguous.",
+  "other_candidates": [],
+  "recommendation": "Accept FBbt:00100507 (adult brain subperineurial glial cell) as a clean exact match. High confidence: single-source res-2.0 cluster, exact marker (moody) and functional (septate-junction barrier) correspondence with the FBbt definition.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

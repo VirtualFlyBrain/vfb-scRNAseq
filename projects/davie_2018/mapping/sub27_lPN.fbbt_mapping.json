@@ -1,0 +1,36 @@
+{
+  "cluster_label": "sub27_lPN",
+  "working_definition": "Lateral-lineage antennal-lobe olfactory projection neurons within Davie et al. 2018 res-2.0 cluster 27 (14 cells), resolved to the lPN developmental lineage (derived from the lateral neuroblast, mix of uni- and multiglomerular types, projecting via the mACT to lateral horn and mushroom body calyx) but not further resolved into the unpg+ or CG31676+ marker subgroups reported by Li et al. (2017). Cholinergic (ChAT/VAChT), though some lPN subtypes are reported GABAergic elsewhere.",
+  "searches_performed": [
+    "lPN",
+    "lateral antennal lobe projection neuron",
+    "ALl1 lineage projection neuron",
+    "adult antennal lobe projection neuron lPN"
+  ],
+  "best_match": {
+    "fbbt_term": "adult antennal lobe projection neuron lPN",
+    "fbbt_id": "FBbt:00007439",
+    "fbbt_definition": "Adult antennal lobe projection neuron that belongs to the dorsal (Notch OFF) hemilineage of the lateral antennal lobe neuroblast (ALl1) (Lin et al., 2012; Bates et al., 2020). Its cell body is located in the lateral part of the cell body rind of the antennal lobe.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00007439 is defined exactly at the lineage level this cluster occupies: all antennal lobe PNs derived from the lateral neuroblast (ALl1) dorsal hemilineage, matching the report's lPN lineage, lateral cell body position, and mACT axon tract to lateral horn/calyx. Unlike FBbt:00047312 (restricted to uniglomerular lPNs), FBbt:00007439 is not glomerular-pattern restricted, matching the report's note that lPNs include both uni- and multiglomerular types. The cluster carries no unpg/CG31676 marker information, so no finer FBbt term is available or justified.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult uniglomerular antennal lobe projection neuron lPN",
+      "fbbt_id": "FBbt:00047312",
+      "fbbt_definition": "An adult uniglomerular antennal lobe projection neuron that belongs to the dorsal (Notch OFF) hemilineage of neuroblast ALl1 (Lin et al., 2012; Lin et al., 2013; Bates et al., 2020). Most of these neurons have axons that fasciculate with the medial antennal lobe tract (mALT) and innervate the mushroom body calyx (via a collateral) and the lateral horn.",
+      "reason_rejected": "Restricted to uniglomerular lPNs; report states lPNs include multiglomerular types too, so this would be too narrow for the unresolved lineage-level label."
+    },
+    {
+      "fbbt_term": "antennal lobe projection neuron of ALl1 lineage",
+      "fbbt_id": "FBbt:00067362",
+      "fbbt_definition": "Antennal lobe projection neuron that derives from the lateral antennal lobe neuroblast. (Renamed from lPN as this now implies dorsal hemilineage per Bates et al. 2020.)",
+      "reason_rejected": "Broader synonym-shifted label for the same underlying population as FBbt:00007439 in current FBbt nomenclature; FBbt:00007439 remains the directly labelled 'lPN' term and is preferred for clarity, but this is an equally valid alternative in current usage."
+    }
+  ],
+  "recommendation": "Accept as exact match at the lPN lineage level - correct resolution for a lineage-only label, though sample size is very small (14 cells).",
+  "new_term_needed": false,
+  "verification_needed": false
+}
