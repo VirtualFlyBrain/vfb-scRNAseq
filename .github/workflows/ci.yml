@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.14"   # same interpreter the pipeline is developed on
+
+      - name: Install locked environment
+        run: uv sync --locked --extra dev
+
+      - name: Tests
+        run: uv run pytest
+
+      - name: Validate project files (same rules as the Claude Code hooks)
+        run: uv run python scripts/validate_project_files.py
+
+      - name: mapping.tsv up to date with the mapping JSON
+        # TODO: drop the skip once kurmangaliyev_2020 is re-collated (its committed
+        # mapping.tsv predates the current row order).
+        run: uv run python scripts/check_mapping_tsv.py --skip kurmangaliyev_2020

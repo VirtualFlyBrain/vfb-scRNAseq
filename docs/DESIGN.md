@@ -540,6 +540,24 @@ machine-readable, carries named types at multiple granularity levels, is the
 figures may predate), and yields per-cluster cell counts (`cell_number`) directly.
 Either way, mismatches are **flagged for review**, never silently resolved.
 
+## Continuous integration
+
+`.github/workflows/ci.yml` runs on every PR and push to `main` (offline, ~seconds):
+`pytest`; `scripts/validate_project_files.py`, which feeds every committed mapping /
+type_mapping / term-request / provenance / samples file through the same
+`.claude/hooks/check_*.py` validators Claude Code uses on write (hand edits otherwise
+bypass them); and `scripts/check_mapping_tsv.py`, which fails if a `mapping.tsv` no
+longer matches what `collate_mapping.py` would produce (kurmangaliyev_2020 is skipped
+until it is re-collated).
+
+`.github/workflows/fbbt-release-check.yml` runs weekly (and on demand).
+`scripts/check_fbbt_release.py` compares OLS's current FBbt release with the one
+recorded in `checks/fbbt_last_checked.json` and only when it is newer re-verifies
+every project's FBbt terms (current, non-obsolete, label unchanged). On success the
+record is updated and committed by the workflow; on failure the job fails and the
+record is kept, so the next run re-checks. Not run on PRs: it needs OLS, which is
+sometimes unavailable.
+
 ## Second project: Davie 2018
 
 `projects/davie_2018/` — Davie et al. 2018, *A Single-Cell Transcriptome Atlas of
