@@ -43,11 +43,14 @@ Every published entity gets an opaque, registry-backed **`VFBseq_########`** IRI
 `site` / `accession` slots — never used as the IRI. (Identifiers previously came
 from FlyBase; that authority is being dropped.)
 
-## Worked example
+## Projects
 
-`projects/kurmangaliyev_2020/` — Kurmangaliyev et al. 2020, *Drosophila* visual
-system developmental atlas ([GSE156455](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156455),
-PMID 33125872). Cluster labels are curated from the paper / supplementary tables.
+- `projects/kurmangaliyev_2020/` — Kurmangaliyev et al. 2020, *Drosophila* visual
+  system developmental atlas ([GSE156455](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156455),
+  PMID 33125872). Cluster labels are curated from the paper / supplementary tables.
+- `projects/davie_2018/` — Davie et al. 2018, ageing adult brain atlas
+  ([GSE107451](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107451),
+  PMID 29909982), 57K 10x set. Replaces the old FlyBase/SCEA load (FBlc0006090).
 
 ## Layout
 
@@ -61,6 +64,7 @@ src/vfb_scrnaseq/
   emit.py       # entities -> validate + flat RDF (linkml-convert) + OWL (linkml-owl)
 .claude/agents/map-clusters-to-fbbt.md   # FBbt mapper (adapted ontology-term-lookup)
 projects/kurmangaliyev_2020/             # first worked example
+projects/davie_2018/                     # second project (adult brain, ageing)
 id_registry/                             # minted-id registry (JSON)
 ```
 
@@ -83,8 +87,18 @@ uv run python scripts/build_rdf.py                  --project kurmangaliyev_2020
 Cell-type FBbt mapping itself runs as Claude Code subagents (`map-clusters-to-fbbt`)
 against the OLS MCP — see `docs/DESIGN.md`.
 
+## Curation rules (summary)
+
+One row per author cluster (never merged by type); typing from the authors, not
+re-analysis; *composed primarily of*; no FBbt term → held; no routine new-term
+requests from expression alone; stage on Samples, on Clusters only when determined
+from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#general-curation-rules).
+
 ## Status
 
 `ids.py`, `ingest.py`, `build.py`, `emit.py`, and the `scripts/` pipeline are
 implemented; the worked example emits validated RDF (`linkml-convert`) and OWL
-(`linkml-owl`). Expression statistics are a later phase.
+(`linkml-owl`), and expression statistics are computed for both projects.
+
+**TODO:** map secondary/withdrawn FBgns to current genes in the expression output
+(see *Expression statistics* in `docs/DESIGN.md`).
