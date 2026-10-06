@@ -212,9 +212,27 @@ are generated with the **Claude Code agentic flow**, not atlas-chat's standalone
   from free sources: the **local PDF index** (`local-paper-index`, local MiniLM
   embeddings), the **OLS MCP** (FBbt), and **PubMed / Europe PMC** in place of
   ASTA. No `ANTHROPIC_API_KEY` / `ASTA_API_KEY` required.
-- `local-paper-index` (the genuinely useful, free part of atlas-chat) is installed
-  in a sibling clone and the project is **symlinked** in, so the built index and
-  generated `reports/` land back in this repo.
+- `local-paper-index` (the genuinely useful, free part of atlas-chat) is run from a
+  sibling clone of **Atlas-reporter** (atlas-chat's new name,
+  `Cellular-Semantics/Atlas-reporter`), pinned to commit `2acd38e`, with the project
+  **symlinked** into its `projects/`, so the built index and generated `reports/` land
+  back in this repo:
+
+  ```sh
+  git clone https://github.com/Cellular-Semantics/Atlas-reporter.git ~/git/Atlas-reporter
+  cd ~/git/Atlas-reporter && git checkout 2acd38e && uv sync --extra local-index
+  mkdir -p projects && ln -s <this repo>/projects/<name> projects/<name>
+  uv run python scripts/setup_local_index.py add --project <name> --doi <DOI> \
+      --jats paper.xml --role atlas            # or --pdf paper.pdf
+  uv run python scripts/setup_local_index.py search --project <name> --query "..." -k 5
+  ```
+
+  The existing indexes were built with atlas-chat commit `4c90b6c` (cited in the
+  projects' `provenance.json`). That commit survives upstream only on feature
+  branches, but the local-index code (`setup_local_index.py`, the JATS/PDF parsers,
+  `local_snippet_index.py`, `pyproject.toml`) is byte-identical at `2acd38e`, and
+  re-ingesting the Davie paper there reproduced its index exactly (chunks, snippets,
+  embeddings), so nothing built at `4c90b6c` needs regenerating.
 - Reports are **background evidence, not mapping decisions**; `mapping.tsv` is the
   authoritative copy. `collate_mapping.py` adds a generic `reports/README.md` saying so
   (template `src/vfb_scrnaseq/templates/reports_README.md`) when a project's reports
@@ -313,7 +331,7 @@ produce the mappings**, so a result can be re-checked when a source changes:
 - **data_sources** — datasets/publications and the specific files used, with
   `sha256` + byte size for exact reproducibility (GEO metadata file, the PDF);
 - **software** — external code/libraries/services with versions and git commits
-  (atlas-chat commit, sentence-transformers, pymupdf4llm, OLS, Python);
+  (atlas-chat / Atlas-reporter commit, sentence-transformers, pymupdf4llm, OLS, Python);
 - **models** — the mapping/report LLM and the local-index embedding model.
 
 Motivation: ontology releases can rename, re-home, or obsolete terms, so recording
