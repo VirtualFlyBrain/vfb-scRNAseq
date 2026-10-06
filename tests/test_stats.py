@@ -90,3 +90,26 @@ def test_membership_file_overlapping_clusterings(tmp_path, monkeypatch):
     assert ext[("A1", "sym2")] == 0.5          # g2 in cell 1
     assert ext[("A2", "sym1")] == round(1 / 3, 3)
     assert meta["n_cells"] == 10               # distinct cells, not memberships
+
+
+def test_extra_parts_combine_second_matrix(tmp_path, monkeypatch):
+    # a second matrix (same genes) with its own cells/clusters is added as a part;
+    # the main part's results are unchanged and the extra clusters get their prefix
+    cfg = _setup(tmp_path, monkeypatch)
+    cache = tmp_path / ".cache"
+    entries = [(1, 1), (1, 2), (3, 2)]                       # cells e1,e2 in cluster X
+    mtx = "%%MatrixMarket matrix coordinate real general\n%\n"
+    mtx += f"4 2 {len(entries)}\n" + "".join(f"{g} {c} 1\n" for g, c in entries)
+    _write(cache / "m2.mtx.gz", mtx)
+    _write(cache / "b2.tsv.gz", "e1\ne2\n")
+    _write(cache / "md2.tsv.gz", "barcode\tsubtype\ne1\tX\ne2\tX\n")
+    cfg["expression"]["extra_parts"] = [{"matrix_file": "m2.mtx.gz", "features_file": "f.tsv.gz",
+                                         "barcodes_file": "b2.tsv.gz", "metadata_file": "md2.tsv.gz",
+                                         "label_prefix": "early_"}]
+    rows, counts, meta = stats.compute_expression("t", cfg)
+    by = {c.label: c for c in counts}
+    assert set(by) == {"A", "B", "early_X"} and by["early_X"].cells == 2
+    assert (by["A"].total_gene_count, by["A"].filtered_gene_count) == (2, 1)    # main part unchanged
+    ext = {(label, sym): round(extent, 2) for _i, label, _f, sym, _l, extent in rows}
+    assert ext[("early_X", "sym1")] == 1.0 and ext[("early_X", "sym3")] == 0.5
+    assert meta["n_cells"] == 12
