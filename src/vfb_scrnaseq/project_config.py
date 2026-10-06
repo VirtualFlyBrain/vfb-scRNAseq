@@ -68,6 +68,55 @@ def hold_classes(config: dict) -> set[str]:
     return set((config.get("unidentified") or {}).get("hold_classes", []))
 
 
+def held_classifier(project: str, config: dict) -> Callable[[str, str], bool]:
+    """Return ``is_held(label, cls) -> bool``: held clusters are left unmapped.
+
+    A cluster is held if its class is in ``unidentified.hold_classes``, or — when
+    ``unidentified.hold_unidentified`` is true — if it is an unidentified cluster at
+    all (for atlases with no author class to derive a broad anchor from).
+    """
+    unid = config.get("unidentified") or {}
+    held = hold_classes(config)
+    is_unidentified = unidentified_classifier(project, config)
+    hold_all = bool(unid.get("hold_unidentified", False))
+    return lambda label, cls: cls in held or (hold_all and is_unidentified(label, cls))
+
+
+def annotation_kind(project: str, config: dict) -> Callable[[dict], str]:
+    """Return ``kind(annotation) -> 'named' | 'placeholder' | 'held'``.
+
+    An annotation entry may itself say it is ``unannotated`` (the authors left the
+    cluster without a type); with ``unidentified.hold_unidentified`` it is held.
+    Otherwise the label/class rules (``held_classifier`` / ``unidentified_classifier``).
+    """
+    is_held = held_classifier(project, config)
+    is_unidentified = unidentified_classifier(project, config)
+    hold_all = bool((config.get("unidentified") or {}).get("hold_unidentified", False))
+
+    def kind(ann: dict) -> str:
+        label, cls = ann["label"], ann.get("class", "")
+        if ann.get("unannotated"):
+            return "held" if hold_all else "placeholder"
+        if is_held(label, cls):
+            return "held"
+        if is_unidentified(label, cls):
+            return "placeholder"
+        return "named"
+    return kind
+
+
+# Characters allowed verbatim in per-cluster file names; others are substituted.
+# '*' is the prime convention in some atlases (e.g. Davie 2018 "A/B*-KC" = α'/β').
+_SLUG_SUBS = {"/": "_", "*": "p", "&": "+", " ": "_"}
+
+
+def label_slug(label: str) -> str:
+    """File-name-safe stem for a cluster label (mapping/<slug>.fbbt_mapping.json,
+    reports/<slug>.md). Identity for labels already made of [A-Za-z0-9._+-]."""
+    s = "".join(_SLUG_SUBS.get(ch, ch) for ch in label)
+    return re.sub(r"[^A-Za-z0-9._+-]", "_", s)
+
+
 def broad_anchor(project: str, config: dict, cls: str) -> dict | None:
     """Return the broad FBbt anchor {fbbt_id,label,definition} for a cell class."""
     overrides = _load_overrides(project)

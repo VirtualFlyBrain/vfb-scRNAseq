@@ -58,3 +58,31 @@ def test_clusters_have_celltype(entities):
     clusters = _one(entities, "Cluster")
     assert any(c.get("cell_type") for c in clusters)
     assert all(c["id"].startswith("http://virtualflybrain.org/reports/VFBseq_") for c in clusters)
+
+
+def test_subclusters_part_of_parent_cluster(monkeypatch):
+    # Davie 2018: the 18 sub-clusters (sub20/27/42/64) are part of the res-2.0 cluster
+    # the authors re-clustered; res-8.0 and neuropeptide groups get no parent.
+    monkeypatch.setattr(build, "resolve_pub",
+                        lambda pmid=None, doi=None, fallback_fbrf=None:
+                        {"fbrf": fallback_fbrf, "pmid": pmid, "iri": None, "source": "config"})
+    monkeypatch.setattr(build.IDRegistry, "save", lambda self: None)
+    ents = build.build_entities("davie_2018")
+    by_id = {e["id"]: e for e in ents}
+    subs = [e for e in ents if e["type"] == "Cluster" and e.get("parent_cluster")]
+    assert len(subs) == 18
+    assert all(by_id[e["parent_cluster"]]["type"] == "Cluster" for e in subs)
+    assert {by_id[e["parent_cluster"]]["name"].split(" cluster ")[1].split(" ")[0] for e in subs} \
+        == {"20", "27", "42", "64"}
+
+
+def test_additional_matches_emit_multiple_cell_types(monkeypatch):
+    # Davie 2018 Mip/ITP: best_match + additional_matches -> two cell_type terms
+    monkeypatch.setattr(build, "resolve_pub",
+                        lambda pmid=None, doi=None, fallback_fbrf=None:
+                        {"fbrf": fallback_fbrf, "pmid": pmid, "iri": None, "source": "config"})
+    monkeypatch.setattr(build.IDRegistry, "save", lambda self: None)
+    ents = build.build_entities("davie_2018")
+    mip_itp = [e for e in ents if e["type"] == "Cluster" and e["name"].startswith("Mip/ITP")]
+    assert len(mip_itp) == 1
+    assert mip_itp[0]["cell_type"] == ["FBbt:00047527", "FBbt:00048313"]

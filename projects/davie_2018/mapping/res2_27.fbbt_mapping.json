@@ -1,0 +1,43 @@
+{
+  "cluster_label": "res2_27",
+  "working_definition": "Davie 2018 Table S2 res-2.0 cluster 27, annotated by the authors as 'OPN: adPN and lPN' (olfactory projection neurons of the anterodorsal and lateral lineages; literature markers/mapping, Komiyama and Luo 2007; Li et al. 2017); sub-clustered into adPN and lPN groups.",
+  "searches_performed": [
+    "OPN: adPN and lPN",
+    "adult olfactory projection neuron",
+    "adult antennal lobe projection neuron",
+    "adult antennal lobe projection neuron adPN",
+    "adult antennal lobe projection neuron lPN"
+  ],
+  "best_match": {
+    "fbbt_term": "adult antennal lobe projection neuron",
+    "fbbt_id": "FBbt:00067123",
+    "fbbt_definition": "Interneuron whose dendrite innervates the antennal lobe and whose axon innervates some higher brain center - generally the mushroom body calyx and/or the lateral horn.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' call is a group (adPN and lPN). The most specific common FBbt parent is adult antennal lobe projection neuron (FBbt:00067123): OLS hierarchical ancestors of both adPN (FBbt:00007438) and lPN (FBbt:00007439) include it. 'adult olfactory projection neuron' (FBbt:00051299) was NOT found among the ancestors of either, so it is not a valid parent.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult antennal lobe projection neuron adPN",
+      "fbbt_id": "FBbt:00007438",
+      "fbbt_definition": "Adult antennal lobe projection neuron derived from neuroblast ALad1.",
+      "reason_rejected": "Only one of the two lineages named."
+    },
+    {
+      "fbbt_term": "adult antennal lobe projection neuron lPN",
+      "fbbt_id": "FBbt:00007439",
+      "fbbt_definition": "Adult antennal lobe projection neuron of the dorsal hemilineage of ALl1.",
+      "reason_rejected": "Only one of the two lineages named."
+    },
+    {
+      "fbbt_term": "adult olfactory projection neuron",
+      "fbbt_id": "FBbt:00051299",
+      "fbbt_definition": "Adult neuron that relays olfactory information from one or more sensory neuropil regions to one or more higher brain centers.",
+      "reason_rejected": "Not an ancestor of adPN/lPN in OLS; also broader in scope."
+    }
+  ],
+  "recommendation": "Accept broad match to adult antennal lobe projection neuron (FBbt:00067123).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

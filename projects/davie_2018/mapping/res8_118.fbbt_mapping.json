@@ -1,0 +1,43 @@
+{
+  "cluster_label": "res8_118",
+  "working_definition": "Dorsal cluster neurons (DCNs): a small, well-established population (~40 per hemisphere / ~80 per brain) of adult brain neurons expressing atonal (ato) and acj6, first characterised by Hassan et al. (2000) and Srahna et al. (2006). Cell bodies sit dorsal-posterior near the mushroom body calyx; axons cross the midline via the posterior commissure and project to the contralateral lobula/lobula plate. Studied chiefly for Notch-dependent left-right axon-guidance asymmetry; the cluster is cholinergic (VAChT, nAChRalpha5/7). Literature (Wu et al., 2016) identifies these cells with the lobula columnar visual-projection-neuron type LC14.",
+  "searches_performed": [
+    "DCN",
+    "dorsal cluster neuron",
+    "dorsal cluster neurons",
+    "LC14",
+    "lobula columnar neuron LC14"
+  ],
+  "best_match": {
+    "fbbt_term": "lobula columnar neuron LC14",
+    "fbbt_id": "FBbt:00100486",
+    "fbbt_definition": "Lobula columnar neuron with its soma located dorsally in the cell body rind region between the optic lobe and the central brain (Hassan et al., 2000; Otsuna and Ito, 2006). It expresses the transcription factor ato (Hassan et al., 2000; Ozel et al., 2021). It projects from the ipsilateral lobula, along the great commissure and contacts the surface of the contralateral lobula, but does not penetrate into any of its layers (Otsuna and Ito, 2006). Ipsilaterally, all of these neurons form dense, dendrite-like branches that remain in the lobula, but different subtypes have axonal projections reaching only the contralateral lobula or extending to the medulla (Srahna et al., 2006; Langen et al., 2013; Wu et al., 2016). There are approximately 22-68 of these cells per hemisphere and the level of asymmetry between the populations of these neurons in each hemisphere can influence walking behavior (Linneweber et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt does not carry a separate 'dorsal cluster neuron' class; searches for 'DCN' and 'dorsal cluster neuron(s)' return exactly the same 4 LC14-branch terms as searching 'LC14', confirming FBbt has fully merged the DCN literature into the lobula columnar LC14 nomenclature (embedding '(dorsal cluster)' as a parenthetical synonym inside the definitions of FBbt:00100486 and its child terms). FBbt:00100486 'lobula columnar neuron LC14' is defined directly from Hassan et al. 2000 (dorsal soma location between optic lobe and central brain; ato expression) plus Srahna et al. 2006 (contralateral projection via the great commissure to the lobula) - the same two founding papers the report cites for this cluster's identity, with matching defining criteria (ato marker, dorsal soma location, contralateral commissural projection, ~22-68/hemisphere vs. report's ~40/hemisphere, 98 observed). The report's own cross-reference to LC14 (Wu et al., 2016) is corroborated: FBbt treats LC14 and DCN as the same cell type, not distinct concepts. The scRNAseq cluster does not resolve axon-target subtypes (contralateral-lobula-only vs. contralateral-medulla vs. immature), so the whole-population parent term FBbt:00100486 (not a stage/subtype-specific child) is the correct level of granularity, matching the report's single undifferentiated cluster. This is adult data and FBbt:00100486 covers the mature/adult population (its subtype children are the stage/target-specific refinements). Given provenance from the same founding papers with matching criteria, this is classified as an exact match with both new_term_needed and verification_needed set to false.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult contralateral lobula LC14 neuron",
+      "fbbt_id": "FBbt:00052342",
+      "fbbt_definition": "Adult lobula columnar LC14 (dorsal cluster) neuron with a contralateral axon that innervates only the lobula (Langen et al., 2013). There are approximately 11-55 of these cells per hemisphere (Linneweber et al., 2020).",
+      "reason_rejected": "More specific subtype (one of two adult axon-target subtypes) than this cluster resolves; the scRNAseq cluster is not subdivided by axon target, so this is too specific rather than the correct match level."
+    },
+    {
+      "fbbt_term": "adult contralateral medulla LC14 neuron",
+      "fbbt_id": "FBbt:00111749",
+      "fbbt_definition": "Adult lobula columnar LC14 (dorsal cluster) neuron with a thin axonal projection that innervates the contralateral medulla (Otsuna and Ito, 2006; Langen et al., 2013; Wu et al., 2016). There are approximately 6-23 of these cells per hemisphere (Linneweber et al., 2020).",
+      "reason_rejected": "More specific subtype (the other adult axon-target subtype) than this cluster resolves; not distinguished in the scRNAseq data."
+    },
+    {
+      "fbbt_term": "immature lobula columnar neuron LC14",
+      "fbbt_id": "FBbt:00052343",
+      "fbbt_definition": "Immature form of a lobula columnar 14 (dorsal cluster) neuron (Hassan et al., 2000; Zheng et al., 2006). Born in the early larva, extends a neurite to the contralateral hemisphere during larval stages, enters the developing optic lobe late-larval; contralateral axons initially extend into the medulla but most retract prior to eclosion.",
+      "reason_rejected": "Developmental/immature form; Davie et al. 2018 profiles adult brains (0-50 days post-eclosion), so the mature/adult form is appropriate, not the immature larval/pupal form."
+    }
+  ],
+  "recommendation": "Adopt FBbt:00100486 (lobula columnar neuron LC14) as an exact match for the DCN cluster.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

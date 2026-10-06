@@ -1,0 +1,29 @@
+{
+  "cluster_label": "Gr43a",
+  "working_definition": "A 79-cell adult brain population of internal fructose-sensing Gr43a neurons, co-expressing corazonin (Crz), from Davie et al. 2018. This is the best-corroborated neuropeptide subcluster in the paper: the main text explicitly states the authors used res-8.0 to 'identify the fructose-sensing neurons that co-express Gr43a and Crz (Miyamoto and Amrein, 2014)', and Table S2 independently annotates res-8.0 cluster 129 as 'Gr43a neurons' citing the same reference. These neurons act as a hemolymph-fructose sensor located near the pars intercerebralis / corpus cardiaca-adjacent brain region, regulating feeding/satiety-related insulin and corazonin release.",
+  "searches_performed": [
+    "Gr43a neuron",
+    "fructose-sensing neuron",
+    "sugar-sensing neuron brain"
+  ],
+  "best_match": {
+    "fbbt_term": "sugar-sensing neuron of the adult brain",
+    "fbbt_id": "FBbt:00058222",
+    "fbbt_definition": "Chemosensory neuron in the posterior superior lateral protocerebrum that expresses the fructose receptor Gr43a and the sugar receptor Gr64a (Miyamoto et al., 2012; Miyamoto and Amrein, 2014; Fujii et al.).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "This FBbt term was defined from the same source (Miyamoto and Amrein, 2014) and the same defining criteria (Gr43a fructose-sensing, co-expression with corazonin/Crz, adult brain location) that the Davie et al. 2018 paper itself cites for this cluster -- the paper explicitly cross-references the same Miyamoto and Amrein (2014) identification. Per the provenance rule for same-paper-derived subtypes, this counts as an exact match rather than a verification case: the ontology term and this cluster denote the same, independently corroborated cell type (paper's own res-8.0 cluster 129 'Gr43a neurons', matching literature reference). This is the strongest-supported cluster among the neuropeptide subclusters in this dataset.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult corazonin neuron",
+      "fbbt_id": "FBbt:00051053",
+      "fbbt_definition": "Corazonin neuron of the adult; Miyamoto and Amrein (2014) identify 2-4 Gr43a/Gr64a cells plus 4-6 other corazonin cells per hemisphere in the brain.",
+      "reason_rejected": "Broader parent class (all adult corazonin neurons, only some of which co-express Gr43a); the more specific Gr43a/Crz co-expressing sugar-sensing neuron term is the better match to this cluster's defining marker profile."
+    }
+  ],
+  "recommendation": "Map to FBbt:00058222 'sugar-sensing neuron of the adult brain' as a high-confidence exact match: same defining paper (Miyamoto and Amrein 2014), same markers (Gr43a, co-expression with Crz), same brain location, and independent corroboration within Davie et al. 2018 itself via res-8.0 cluster 129.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

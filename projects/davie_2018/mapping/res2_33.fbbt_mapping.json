@@ -1,0 +1,22 @@
+{
+  "cluster_label": "res2_33",
+  "working_definition": "Cluster 'T3' (GEO label, adult Davie 2018 optic lobe data) annotated by the authors as the single type T3. Mapped at face value to the FBbt term for the named type; cluster is composed primarily of cells of this type.",
+  "searches_performed": [
+    "T3",
+    "T3 neuron",
+    "local FBbt (fbbt-full.obo) lookup by label/synonym (OLS MCP returned 503)"
+  ],
+  "best_match": {
+    "fbbt_term": "T3 neuron",
+    "fbbt_id": "FBbt:00003730",
+    "fbbt_definition": "T neuron with its soma posteriorly adjacent to the gap between the medulla and lobula plate and a cell body fiber that projects along the proximal surface of the medulla before branching in the second optic chiasm (Fischbach and Dittrich, 1989; Shinomiya et al., 2019). One branch forms a bushy, fine, terminal arborization in medulla layer M9 and the other forms a terminal arborization in lobula layers 2 and 3 with mix of bleb-type and fine terminal branches (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). It seems to be capable of both glutamatergic and GABAergic neurotransmission.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' GEO label names the single type T3; FBbt has a non-obsolete adult term for it (T3 neuron, FBbt:00003730). Taken at face value under the 'composed primarily of' relation.",
+  "other_candidates": [],
+  "recommendation": "Accept as exact match. [Author sources differ: GEO labels this cluster 'T3'; Table S2 lists this cluster as Unannotated.]",
+  "new_term_needed": false,
+  "verification_needed": true
+}

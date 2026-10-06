@@ -21,6 +21,7 @@ import sys
 from pathlib import Path
 
 from vfb_scrnaseq.ids import IDRegistry
+from vfb_scrnaseq.project_config import label_slug
 from vfb_scrnaseq.pub import resolve_pub
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -147,29 +148,49 @@ def build_entities(project: str) -> list[dict]:
         clustering_iri_by_subset[c["subset"]] = iri(c["vfbseq_id"])
         entities.append({
             "type": "Clustering", "id": iri(c["vfbseq_id"]),
-            "name": f"{d['accession']} {c['subset']} clustering",
+            "name": c.get("name") or f"{d['accession']} {c['subset']} clustering",
             "associated_dataset": dataset_iri,
             "neo_label": "Clustering",
         })
 
-    # --- Clusters (annotated clusters belong to the 'main' clustering) ---
+    # --- Clusters ---
+    # An annotation may name its own clustering (projects with several clusterings,
+    # e.g. Davie 2018); otherwise it belongs to the dataset's annotated subset.
     subset = anns_subset(proj)
     main_clustering = clustering_iri_by_subset.get(subset)
     for ann in anns:
         label = ann["label"]
         cid = reg.mint("Cluster", f"{d['accession']}:{subset}:{label}", label=label)
+        if ann.get("clustering"):
+            clustering = clustering_iri_by_subset[ann["clustering"]]
+            src_id, typ = str(ann.get("source_cluster_id", label)), ann.get("type", label)
+            where = ann.get("clustering_name", ann["clustering"])
+            if ann.get("unannotated") or typ == src_id:
+                name = f"cluster {src_id} ({where}){cite_suffix}" if ann.get("unannotated") \
+                    else f"{typ} cluster ({where}){cite_suffix}"
+            else:
+                name = f"{typ} cluster {src_id} ({where}){cite_suffix}"
+        else:
+            clustering, name = main_clustering, f"{label} cluster{cite_suffix}"
         rec = {
             "type": "Cluster", "id": iri(cid),
-            "name": f"{label} cluster{cite_suffix}",
-            "associated_clustering": main_clustering,
+            "name": name,
+            "associated_clustering": clustering,
             "associated_dataset": dataset_iri,
             "cell_number": ann.get("cell_number"),
             "neo_label": "Cluster",
         }
+        if ann.get("parent_cluster"):
+            # sub-cluster -> the cluster whose cells were re-clustered (part of)
+            rec["parent_cluster"] = iri(reg.mint(
+                "Cluster", f"{d['accession']}:{subset}:{ann['parent_cluster']}",
+                label=ann["parent_cluster"]))
         m = _mapping(proj, label)
         bm = (m or {}).get("best_match") or {}
         if bm.get("fbbt_id"):
-            rec["cell_type"] = [bm["fbbt_id"]]
+            # composed primarily of: the best match plus any additional_matches
+            rec["cell_type"] = [bm["fbbt_id"]] + [
+                a["fbbt_id"] for a in (m.get("additional_matches") or [])]
         if label in clu_counts:
             rec["total_gene_count"] = clu_counts[label]["total_gene_count"]
             rec["filtered_gene_count"] = clu_counts[label]["filtered_gene_count"]
@@ -185,7 +206,7 @@ def anns_subset(proj: Path) -> str:
 
 
 def _mapping(proj: Path, label: str) -> dict | None:
-    f = proj / "mapping" / f"{label}.fbbt_mapping.json"
+    f = proj / "mapping" / f"{label_slug(label)}.fbbt_mapping.json"
     return json.loads(f.read_text()) if f.exists() else None
 
 

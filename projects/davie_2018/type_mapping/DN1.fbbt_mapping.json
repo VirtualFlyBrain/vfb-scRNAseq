@@ -1,0 +1,22 @@
+{
+  "cluster_label": "DN1",
+  "working_definition": "Dorsal clock neuron group 1 (Davie et al. 2018, res-2.0 cluster 86; 29 cells), directly annotated by literature markers/mapping. One of the recognized clock-neuron groups of the Drosophila circadian network, distinct from LNv and from the mixed 'Clock' remainder. Markers (Dh31, CNMa) suggest DN1p-dominance, but the atlas does not split DN1a from DN1p; somata in the dorsal protocerebrum near the pars intercerebralis, integrating light/temperature cues and Pdf input from the LNv.",
+  "searches_performed": [
+    "DN1 dorsal clock neuron",
+    "adult DN period neuron",
+    "DN1 (exact cluster label)"
+  ],
+  "best_match": {
+    "fbbt_term": "DN1 neuron",
+    "fbbt_id": "FBbt:00003629",
+    "fbbt_definition": "DN (dorsal Period-expressing neuron of adult brain) whose cell body is located dorsal to the projections of the s-LNv Pdf neurons. There are about 17 of these per cluster. Can be distinguished from other clock neurons based on expression of glass.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00003629 'DN1 neuron' is defined at exactly the resolution achieved here: the whole DN1 dorsal clock-neuron group of the adult brain, without splitting into DN1a/DN1p. This matches the report's own conclusion that 'DN1' as a parent grouping term is the honest mapping level, with markers (Dh31, CNMa) favouring DN1p-dominance but insufficient evidence to exclude DN1a. Label, location (dorsal, near pars intercerebralis) and clock-circuit role align directly.",
+  "other_candidates": [],
+  "recommendation": "Accept DN1 neuron (FBbt:00003629) as the mapping; do not assign a DN1a- or DN1p-specific term without independent confirmation that one subtype is absent.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

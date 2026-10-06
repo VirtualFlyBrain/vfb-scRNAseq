@@ -1,0 +1,31 @@
+{
+  "cluster_label": "res2_70",
+  "working_definition": "The outermost of the two surface-glia layers forming the adult Drosophila blood-brain barrier, external to subperineurial glia, mediating nutrient exchange/osmoregulation at the brain surface; identified by the paper via marker (Vmat) among the 'surface glia (Indy)' subtypes. The GEO cluster (res-2.0 cluster 70, majority; 200/259 cells) is predominantly this type, but the report flags a genuine minority contamination: 59/259 cells come from res-2.0 cluster 85, which the authors' own Table S2 annotates 'Subperineurial Glia', not perineurial.",
+  "searches_performed": [
+    "Perineurial_glia",
+    "perineurial glial cell",
+    "adult perineurial glial cell",
+    "adult brain perineurial glial cell",
+    "surface glia Drosophila blood-brain barrier"
+  ],
+  "best_match": {
+    "fbbt_term": "adult brain perineurial glial cell",
+    "fbbt_id": "FBbt:00100506",
+    "fbbt_definition": "Small, oblong-shaped glial cell that is part of the (outer) perineurial sheath layer on the surface of the adult brain. It is located on top of the basal glial cell layer that is composed of the subperineurial glial cells.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "The FBbt definition (outer perineurial sheath glial cell sitting on top of the subperineurial layer at the adult brain surface) matches the report's description of perineurial glia as the outermost surface-glia layer of the blood-brain barrier, external to subperineurial glia. The dominant majority of this GEO cluster (200/259 cells, from res-2.0 cluster 70) is cleanly annotated 'Perineurial glia' by the authors and matches this FBbt term exactly. Confidence is downgraded from high to medium (not downgraded to broad match, since the FBbt term itself is correct for the bulk of the cluster) because the report's REVIEW flag documents that a real minority (59/259 cells, ~23%) of this GEO cluster are, by the authors' own S2 annotation, subperineurial glia (res-2.0 cluster 85) rather than perineurial - i.e. the cluster as delivered is not a perfectly pure population.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult brain subperineurial glial cell",
+      "fbbt_id": "FBbt:00100507",
+      "fbbt_definition": "Glial cell of the subperineurial glial sheath in the adult brain. These cells are fairly uniform in morphology across the brain, having a large, square and thin shape, giving them a sheet-like appearance (Awasaki et al., 2008, Kremer et al., 2017).",
+      "reason_rejected": "Not the correct type for the majority of this cluster (perineurial, not subperineurial), but noted here because a genuine minority (59/259 cells, from res-2.0 cluster 85) of this GEO cluster are subperineurial glia by the authors' own Table S2 annotation."
+    }
+  ],
+  "recommendation": "Accept FBbt:00100506 (adult brain perineurial glial cell) as the best match for the bulk of this cluster, but flag for curator review: ~23% of cells (59/259) may be misassigned subperineurial glia per the authors' own S2 annotation (res-2.0 cluster 85). This is a data-quality/purity caveat on an otherwise correct exact-match term, not an ontology gap.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

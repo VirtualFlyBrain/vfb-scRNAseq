@@ -1,0 +1,22 @@
+{
+  "cluster_label": "C2",
+  "working_definition": "Cluster 'C2' (GEO label, adult Davie 2018 optic lobe data) annotated by the authors as the single type C2. Mapped at face value to the FBbt term for the named type; cluster is composed primarily of cells of this type.",
+  "searches_performed": [
+    "C2",
+    "centrifugal neuron C2",
+    "local FBbt (fbbt-full.obo) lookup by label/synonym (OLS MCP returned 503)"
+  ],
+  "best_match": {
+    "fbbt_term": "centrifugal neuron C2",
+    "fbbt_id": "FBbt:00003743",
+    "fbbt_definition": "Adult centrifugal neuron with arborizations in the medulla layers M1, M5/M6, M8 and M10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). In the medulla, it makes reciprocal connections to lamina monopolar neuron L1, and is presynaptic to L2 and L5, as well as medullary intrinsic neuron Mi1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010). There is usually one of these cells per optic column (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' GEO label names the single type C2; FBbt has a non-obsolete adult term for it (centrifugal neuron C2, FBbt:00003743). Taken at face value under the 'composed primarily of' relation.",
+  "other_candidates": [],
+  "recommendation": "Accept as exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,36 @@
+{
+  "cluster_label": "Astrocyte-like",
+  "working_definition": "The main neuropil-infiltrating astrocytic glial subtype of the adult Drosophila brain (central brain + optic lobes), identified by the canonical astrocyte marker alrm plus GABA/glutamate transporters Gat and Eaat1. These glia extend dendritic-like processes into the synaptic neuropil to support synaptic homeostasis and neurotransmitter clearance, analogous to vertebrate astrocytes, and are distinct from surface (perineurial/subperineurial), cortex and ensheathing glia. The whole-brain dataset does not resolve central-brain vs optic-lobe astrocyte-like subpopulations for this cluster.",
+  "searches_performed": [
+    "Astrocyte-like",
+    "astrocyte-like glial cell",
+    "adult astrocyte-like glial cell",
+    "Drosophila astrocyte"
+  ],
+  "best_match": {
+    "fbbt_term": "adult astrocyte-like glial cell",
+    "fbbt_id": "FBbt:00047841",
+    "fbbt_definition": "Neuropil associated glial cell of the adult central nervous system that has a dendritic morphology and elaborates inside the associated synaptic neuropil (Awasaki et al., 2008). Their nuclei are found at synaptic neuropil surfaces and they extend branched filiform or lamelliform processes that pervade the neuropil (Hartenstein, 2011).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The FBbt definition (adult CNS glia with dendritic morphology that elaborates within the synaptic neuropil) matches the report's description of astrocyte-like glia as the main neuropil-infiltrating astrocytic glial cell type of the adult brain, supporting synaptic function and analogous to vertebrate astrocytes. Both are defined at the same level of specificity: FBbt:00047841 is the general adult (brain-wide) astrocyte-like glial cell class, and the report explicitly states the paper does not split this cluster into central-brain vs optic-lobe subpopulations, so the general adult term is the correct level rather than the more specific 'adult central brain astrocyte-like glial cell' (FBbt:00047885) or 'adult optic lobe astrocyte-like glial cell' (FBbt:00049808) children.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult central brain astrocyte-like glial cell",
+      "fbbt_id": "FBbt:00047885",
+      "fbbt_definition": "Astrocyte-like glial cell of the adult central brain.",
+      "reason_rejected": "More specific than warranted; the cluster is a whole-brain (central brain + optic lobe) merged pool not resolved by region."
+    },
+    {
+      "fbbt_term": "adult optic lobe astrocyte-like glial cell",
+      "fbbt_id": "FBbt:00049808",
+      "fbbt_definition": "Astrocyte-like glial cell of the adult optic lobe.",
+      "reason_rejected": "More specific than warranted; same reason as above."
+    }
+  ],
+  "recommendation": "Accept FBbt:00047841 (adult astrocyte-like glial cell) as an exact match. High confidence given exact marker/definition alignment (alrm, Doherty et al. 2009 criteria) and the atlas's own brain-wide, unresolved granularity.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

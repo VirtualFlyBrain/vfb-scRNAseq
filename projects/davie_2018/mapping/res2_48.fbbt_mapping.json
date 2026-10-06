@@ -1,0 +1,43 @@
+{
+  "cluster_label": "res2_48",
+  "working_definition": "A GABAergic (Gad1+, VGAT+) local interneuron cluster from the proximal medulla (Pm family) in the adult optic lobe, representing a three-way merge of the Pm1, Pm2 and Pm3 amacrine neuron types that could not be resolved from each other at this clustering resolution (both Lim3/svp, the Pm1/Pm2 markers, and Vsx1/Vsx2, the Pm3 markers, are co-detected as top markers). Functionally it corresponds to local inhibitory processing in the proximal medulla layers, as described for Pm1, Pm2 and Pm3 individually by Erclik et al. 2017.",
+  "searches_performed": [
+    "Pm1/Pm2/Pm3",
+    "Pm1",
+    "Pm2",
+    "Pm3",
+    "proximal medulla amacrine neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "proximal medullary amacrine neuron",
+    "fbbt_id": "FBbt:00003832",
+    "fbbt_definition": "An amacrine neuron that is intrinsic to the medulla and that branches and arborizes in the proximal medulla. Generally, the soma is located in the cortex adjacent to the medulla and that projects through the proximal surface of the medulla, to form wide (sometimes very wide) terminal arborizations mainly or completely restricted to a single layer of the medulla.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "This cluster is explicitly documented as a coarse, unresolved three-way merge of the Pm1, Pm2 and Pm3 proximal-medulla amacrine neuron types (Vsx1+ Pm3 cells not separable from svp+ Pm1/Pm2 cells at this resolution). FBbt has separate, more specific terms for each named subtype (Pm1 = FBbt:00003833, Pm2 = FBbt:00003835, Pm3 = FBbt:00110066), but none of these individually represents the merged group, and FBbt has no single term denoting the specific 'Pm1+Pm2+Pm3' grouping. The most specific FBbt term that genuinely covers all three cell types as a shared IS-A parent is 'proximal medullary amacrine neuron' (FBbt:00003832), the direct parent of Pm1, Pm2 and Pm3 (and also of other Pm subtypes, e.g. Pm4-Pm13, not represented in this cluster). Its definition (medulla-intrinsic amacrine neuron with soma in adjacent cortex, projecting through the proximal medulla surface to form wide terminal arbors mainly restricted to one layer) matches the report's location (medulla, proximal layers) and general morphology, though it does not itself specify GABAergic identity the way the individual Pm1-3 terms do post-Konstantinides 2022. This is an honest broad match: the FBbt term is a valid, correctly-specific-as-possible parent given the merged/unresolved nature of the cluster, not a downgrade due to label mismatch. Pm1, Pm2 and Pm3 individual terms are listed in other_candidates and rejected because attributing the merged 316-cell cluster to any single one of them would misrepresent the data.",
+  "other_candidates": [
+    {
+      "fbbt_term": "proximal medullary amacrine neuron Pm1",
+      "fbbt_id": "FBbt:00003833",
+      "fbbt_definition": "Proximal medullary wide-field amacrine neuron that branches as it enters the proximal side of the medulla and forms broad terminal arbors, with mixed pre- and post-synaptic terminals, mainly in medulla layer M9 (Fischbach and Dittrich, 1989; Morante and Desplan, 2008). Neurotransmitter determined to be acetylcholine by driver/antibody studies, but scRNAseq (Konstantinides et al., 2022) and EM (Nern et al., 2025) assign it as GABAergic.",
+      "reason_rejected": "This cluster is a merge of Pm1+Pm2+Pm3 (unresolved), so it cannot be mapped to Pm1 alone without misrepresenting the mixed composition; also this specific FBbt subtype was defined from Konstantinides et al. 2022 / classic literature, not from Davie et al. 2018, so no same-source exact-match applies even for a hypothetical pure-Pm1 cluster."
+    },
+    {
+      "fbbt_term": "proximal medullary amacrine neuron Pm2",
+      "fbbt_id": "FBbt:00003835",
+      "fbbt_definition": "Proximal medullary wide-field amacrine neuron that projects along M7 and branches extensively at the M7/M8 boundary with each branch projecting into medulla layer M9 where it forms an arbor with mixed bleb-type and fine terminals (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). GABAergic per scRNAseq (Konstantinides et al., 2022) and lineage.",
+      "reason_rejected": "Same reasoning as Pm1: this cluster is a mixed Pm1+Pm2+Pm3 merge and cannot be attributed to Pm2 alone; the FBbt Pm2 term's defining source is Konstantinides et al. 2022, not Davie et al. 2018."
+    },
+    {
+      "fbbt_term": "proximal medullary amacrine neuron Pm3",
+      "fbbt_id": "FBbt:00110066",
+      "fbbt_definition": "Proximal medullary amacrine neuron that branches at the proximal surface of the medulla, with both branches forming a broad terminal arbor in medulla layer M9. GABAergic (Davis et al., 2020); ~35-40 cells per hemisphere (Nern et al., 2025).",
+      "reason_rejected": "Same reasoning: this merged cluster explicitly could not separate Vsx1+ Pm3 cells from the Pm1/Pm2 population, so Pm3 alone is too specific and would misrepresent this particular GEO cluster (a separate, purer 'Pm3' cluster exists elsewhere in this same atlas, res-2.0 cluster 73)."
+    }
+  ],
+  "recommendation": "Accept broad match to FBbt:00003832 (proximal medullary amacrine neuron) for this merged cluster. Do not force an exact match to Pm1, Pm2 or Pm3 individually given the documented unresolved mixture.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

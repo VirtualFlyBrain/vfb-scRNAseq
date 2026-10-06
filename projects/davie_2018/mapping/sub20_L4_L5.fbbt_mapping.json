@@ -1,0 +1,36 @@
+{
+  "cluster_label": "sub20_L4/L5",
+  "working_definition": "L4/L5 is a joint subcluster of two distinct lamina monopolar interneuron types resolved together by the shared marker bsh, rather than separated individually. L4 is a laterally-projecting columnar neuron connecting neighbouring lamina cartridges for motion detection; L5 relays lamina output to the medulla and receives centrifugal feedback. The cluster represents a mixture of these two types, not a single resolved cell type.",
+  "searches_performed": [
+    "lamina monopolar neuron L4",
+    "lamina monopolar neuron L5",
+    "lamina monopolar neuron L4 L5",
+    "lamina monopolar neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "lamina monopolar neuron",
+    "fbbt_id": "FBbt:00003718",
+    "fbbt_definition": "Monopolar, intrinsic unicolumnar neuron of the adult optic lobe that has its soma in the cell body rind of the lamina and connects the lamina to the medulla (Fischbach and Dittrich, 1989). It has a single major projection that projects along one optic cartridge in the lamina, crosses the first optic chiasm and terminates in the same cartridge in the medulla (Fischbach and Dittrich, 1989).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt has individual terms for lamina monopolar neuron L4 (FBbt:00003722) and L5 (FBbt:00003725), but no single FBbt term denoting the joint 'L4 and L5' grouping the GEO/paper cluster actually represents. Per dataset guidance for merged-group labels, the honest mapping is the most specific common parent -- 'lamina monopolar neuron' (FBbt:00003718), which both L4 and L5 are direct children of -- rather than picking one specific subtype and overstating the resolution this cluster provides. The individual L4 and L5 terms are listed as candidates for reference but rejected as the single best_match because assigning either alone would claim a split the paper's own bsh-based subclustering did not perform.",
+  "other_candidates": [
+    {
+      "fbbt_term": "lamina monopolar neuron L4",
+      "fbbt_id": "FBbt:00003722",
+      "fbbt_definition": "A lamina monopolar neuron that arborizes in the proximal lamina, forms a spreading arbor in medulla layer M2 and a small terminal arbor in M4-M5 that penetrates adjacent columns (Fischbach and Dittrich, 1989; Takemura et al., 2008; Takemura et al., 2011).",
+      "reason_rejected": "One of the two member types pooled in this cluster; the marker (bsh) and evidence in hand do not separate L4 from L5, so calling this cluster L4 alone would overstate resolution."
+    },
+    {
+      "fbbt_term": "lamina monopolar neuron L5",
+      "fbbt_id": "FBbt:00003725",
+      "fbbt_definition": "A lamina monopolar neuron that hardly arborizes at all in the lamina, but forms a branched arborization in medulla layers M1 and M2 and a clump of terminals in M5. In the medulla, it forms strong reciprocal synaptic connections with lamina monopolar neuron L1 (Takemura et al., 2013). It also receives substantial input from L2 and C2 neurons and has many presynapses connecting to medullary intrinsic neurons Mi1 and Mi4, and to transmedullary neuron Tm3a (Takemura et al., 2013). It is a cholinergic neuron (Davis et al., 2020).",
+      "reason_rejected": "The other of the two member types pooled in this cluster; not separately resolved from L4 by the shared bsh marker used here."
+    }
+  ],
+  "recommendation": "Broad-match to 'lamina monopolar neuron' pending possible future subclustering; do not assign a single L4 or L5 term.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

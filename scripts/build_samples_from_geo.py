@@ -2,8 +2,9 @@
 """Build Sample / Assay / Clustering / Dataset metadata for a project from GEO.
 
 Config-driven (see the `sample_build` section of config.yaml). Parses GSM titles
-(`set_timepoint_biorep_techrep`) into biological Samples and their 10x-library
-Assays, attaches FBdv stage + FBbt tissue (per the curated timepoint map),
+(per `sample_build.title_pattern`: `set_timepoint_biorep_techrep` by default, or a
+named-group `regex:`; non-matching GSMs are out of scope) into biological Samples
+and their 10x-library Assays, attaches FBdv stage + FBbt tissue (per the curated timepoint map),
 genotype, and assay method, mints stable VFBseq IDs (idempotent registry), and
 writes projects/<name>/samples.json. GEO/SRA accessions are dbxrefs, never IRIs.
 
@@ -15,9 +16,11 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
+from typing import Callable
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "src"))
@@ -53,6 +56,36 @@ def parse_title(title: str) -> dict | None:
     }
 
 
+def title_parser(pattern: str | None) -> Callable[[str], dict | None]:
+    """Return a GSM-title parser for `sample_build.title_pattern`.
+
+    - ``set_timepoint_biorep_techrep`` (default): underscore-split, see parse_title.
+    - ``regex:<pattern>``: full-match regex with named groups ``set``, ``timepoint``,
+      ``biorep`` and optionally ``techrep``. Without ``techrep`` each GSM is its own
+      biological sample (one library per sample). GSMs whose title does not match
+      are not part of this dataset's scope and are skipped.
+    """
+    if pattern in (None, "set_timepoint_biorep_techrep"):
+        return parse_title
+    if not pattern.startswith("regex:"):
+        raise ValueError(f"unknown sample_build.title_pattern: {pattern!r}")
+    rx = re.compile(pattern[len("regex:"):])
+
+    def parse(title: str) -> dict | None:
+        m = rx.fullmatch(title or "")
+        if not m:
+            return None
+        g = m.groupdict()
+        return {
+            "set": g["set"],
+            "timepoint": g["timepoint"],
+            "biorep": g["biorep"],
+            "techrep": g.get("techrep"),
+            "sample_id": "_".join((g["set"], g["timepoint"], g["biorep"])),
+        }
+    return parse
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--project", required=True)
@@ -69,15 +102,22 @@ def main() -> None:
     dataset_id = reg.mint("Dataset", accession, label=series.title, accession=accession)
 
     # group GSMs into biological samples and libraries (assays)
+    parse = title_parser(sb.get("title_pattern"))
     libraries = []   # (parsed, GeoSample)
     by_sample: dict[str, list] = defaultdict(list)
+    unmatched = []
     for gsm in series.samples:
-        p = parse_title(gsm.title)
+        p = parse(gsm.title)
         if not p:
-            print(f"  WARNING: cannot parse title {gsm.title!r} ({gsm.accession})", file=sys.stderr)
+            unmatched.append(gsm)
             continue
         libraries.append((p, gsm))
         by_sample[p["sample_id"]].append((p, gsm))
+    if unmatched:
+        shown = ", ".join(f"{g.accession} {g.title!r}" for g in unmatched[:5])
+        print(f"  NOTE: {len(unmatched)} GSM(s) do not match sample_build.title_pattern and "
+              f"are out of scope (e.g. {shown}{', ...' if len(unmatched) > 5 else ''})",
+              file=sys.stderr)
 
     # build samples (sorted for stable id minting)
     samples_out, assays_out = [], []
@@ -94,10 +134,13 @@ def main() -> None:
         # Sex: prefer the GEO characteristic; fall back to a curator-confirmed
         # `sample_build.sex` in config (used when GEO carries no sex). If neither is
         # present, leave unset and prompt the curator to check the paper.
+        # `sample_build.sex: mixed` = curator-confirmed pooled-sex sample: left unset
+        # (the schema sex slot is single-valued male/female), without the warning.
         geo_sex = normalize_sex(gsm0.sex_hint)
         cfg_sex = normalize_sex(sb.get("sex"))
+        cfg_mixed = str(sb.get("sex", "")).strip().lower() == "mixed"
         sex = geo_sex or cfg_sex
-        if geo_sex is None and cfg_sex is None:
+        if geo_sex is None and cfg_sex is None and not cfg_mixed:
             print(f"  WARNING: sex not in GEO metadata for sample {sample_id!r} and no "
                   f"`sample_build.sex` in config; CURATOR should check the paper for the "
                   f"sex of the animals and set `sample_build.sex` (sex left unset)",
@@ -111,7 +154,7 @@ def main() -> None:
         assay_vids = []
         for p, gsm in sorted(members, key=lambda m: m[1].accession):
             assay_vid = reg.mint("Assay", f"{accession}:{gsm.accession}",
-                                 label=p["techrep"], accession=gsm.accession)
+                                 label=p["techrep"] or gsm.title, accession=gsm.accession)
             assay_vids.append(assay_vid)
             assays_out.append({
                 "vfbseq_id": assay_vid,
@@ -141,13 +184,16 @@ def main() -> None:
         })
 
     clusterings_out = []
-    for subset in sb.get("clusterings", []):
-        cid = reg.mint("Clustering", f"{accession}:{subset}", label=f"{accession} {subset} clustering")
-        clusterings_out.append({
-            "vfbseq_id": cid,
-            "subset": subset,
-            "associated_dataset": dataset_id,
-        })
+    # entries are a subset name, or {id, name} for a described clustering
+    for entry in sb.get("clusterings", []):
+        subset = entry["id"] if isinstance(entry, dict) else entry
+        name = entry.get("name") if isinstance(entry, dict) else None
+        cid = reg.mint("Clustering", f"{accession}:{subset}",
+                       label=name or f"{accession} {subset} clustering")
+        rec = {"vfbseq_id": cid, "subset": subset, "associated_dataset": dataset_id}
+        if name:
+            rec["name"] = name
+        clusterings_out.append(rec)
 
     out = {
         "dataset": {"vfbseq_id": dataset_id, "accession": accession, "site": site},

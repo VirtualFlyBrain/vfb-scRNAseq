@@ -4,7 +4,8 @@
 Generic across projects. A cluster counts as an unidentified placeholder per the
 project's `unidentified.rule` (config.yaml); it is assigned the broad FBbt anchor
 for its author cell `class` (`unidentified.class_anchors`), as a broad match with
-low confidence. Classes in `unidentified.hold_classes` are held (no placeholder).
+low confidence. Classes in `unidentified.hold_classes` are held (no placeholder),
+as are all unidentified clusters when `unidentified.hold_unidentified` is true.
 All project/tissue specifics live in config.yaml — see vfb_scrnaseq.project_config.
 
 Idempotent: never overwrites an existing mapping file.
@@ -25,10 +26,10 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
 from vfb_scrnaseq.project_config import (  # noqa: E402
+    annotation_kind,
     broad_anchor,
-    hold_classes,
+    label_slug,
     load_config,
-    unidentified_classifier,
 )
 
 
@@ -69,8 +70,7 @@ def main() -> None:
     args = ap.parse_args()
 
     cfg = load_config(args.project)
-    is_unidentified = unidentified_classifier(args.project, cfg)
-    held = hold_classes(cfg)
+    kind_of = annotation_kind(args.project, cfg)
 
     proj = REPO_ROOT / "projects" / args.project
     anns = json.loads((proj / "cell_type_annotations.json").read_text())["annotations"]
@@ -80,9 +80,10 @@ def main() -> None:
     written = skipped_existing = held_n = no_anchor = 0
     for a in anns:
         label, cls = a["label"], a.get("class", "")
-        if not is_unidentified(label, cls):
+        kind = kind_of(a)
+        if kind == "named":
             continue
-        if cls in held:
+        if kind == "held":
             held_n += 1
             continue
         anchor = broad_anchor(args.project, cfg, cls)
@@ -90,7 +91,7 @@ def main() -> None:
             no_anchor += 1
             print(f"  WARNING: no class_anchor for class {cls!r} (cluster {label}); skipped", file=sys.stderr)
             continue
-        out = mdir / f"{label}.fbbt_mapping.json"
+        out = mdir / f"{label_slug(label)}.fbbt_mapping.json"
         if out.exists():
             skipped_existing += 1
             continue

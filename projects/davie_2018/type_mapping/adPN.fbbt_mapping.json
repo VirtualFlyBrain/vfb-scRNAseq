@@ -1,0 +1,30 @@
+{
+  "cluster_label": "adPN",
+  "working_definition": "Anterodorsal-lineage antennal-lobe olfactory projection neurons within Davie et al. 2018 res-2.0 cluster 27, resolved to the adPN developmental lineage (derived from the anterodorsal neuroblast, mostly uniglomerular, projecting via the iACT/mALT to mushroom body calyx and lateral horn) but not further resolved into any Li et al. (2017) marker subgroup (C15+/kn+/C15+kn+). Cholinergic (ChAT/VAChT).",
+  "searches_performed": [
+    "adPN",
+    "anterodorsal projection neuron",
+    "adult antennal lobe projection neuron adPN",
+    "olfactory projection neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "adult antennal lobe projection neuron adPN",
+    "fbbt_id": "FBbt:00007438",
+    "fbbt_definition": "An adult antennal lobe projection neuron that is derived from neuroblast ALad1 (FBbt:00067346). All of these neurons have axons that fasciculate with the medial antennal lobe tract (mALT) and innervate the lateral horn.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00007438 is defined exactly at the lineage level this cluster occupies: all antennal lobe PNs derived from the anterodorsal neuroblast (ALad1), matching the report's description of adPN origin, uniglomerular dendrites, mALT/iACT axon tract, and lateral horn/calyx targets. The cluster carries no finer marker information (C15/kn), so no more specific FBbt term (e.g. individual glomerular adPN types, or the C15+/kn+ subgroup terms, which do not exist in FBbt) can be justified. Same biology as the FBbt lineage class, different naming convention (driver/lineage label vs formal FBbt term) - genuine exact match, not a forced generalisation.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult uniglomerular antennal lobe projection neuron adPN",
+      "fbbt_id": "FBbt:00100368",
+      "fbbt_definition": "An adult uniglomerular antennal lobe projection neuron that is derived from the neuroblast ALad1 (FBbt:00067346). All of these neurons have axons that fasciculate with the medial antennal lobe tract (mALT) and except for V adPN neurons, innervate the mushroom body calyx (via a collateral) and the lateral horn.",
+      "reason_rejected": "Restricted to uniglomerular adPNs only; report notes adPNs are 'mostly' but not exclusively uniglomerular, and this label carries no data narrowing it to that subset specifically. FBbt:00007438 is the safer, unrestricted lineage-level match."
+    }
+  ],
+  "recommendation": "Accept as exact match at the adPN lineage level - this is the correct resolution for a lineage-only label.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

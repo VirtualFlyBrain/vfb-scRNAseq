@@ -1,0 +1,22 @@
+{
+  "cluster_label": "L3",
+  "working_definition": "L3 is lamina monopolar neuron 3, a columnar interneuron of the lamina relaying a sustained, achromatic signal from photoreceptors to medulla layer M3, contributing to both motion-vision channels and the achromatic pathway feeding lobula circuits. It was resolved by regression-model similarity to the Tan et al. (2015) L3 bulk transcriptome.",
+  "searches_performed": [
+    "lamina monopolar neuron L3",
+    "L3 neuron",
+    "lamina monopolar neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "lamina monopolar neuron L3",
+    "fbbt_id": "FBbt:00003721",
+    "fbbt_definition": "Lamina monopolar neuron with short spines that project to one side of the main projection as it extends through the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). It terminates with an arborization in medulla layer M3 (Fischbach and Dittrich, 1989; Kind et al., 2021). In the lamina it is postsynaptic to the outer photoreceptors (R1-R6) (Rivera-Alba et al., 2011). It also receives input from the inner photoreceptors, partly in the first optic chiasm and partly in the medulla (Kind et al., 2021). It forms presynaptic terminals in medulla layer M3 (Takemura et al., 2008), with strong outputs to Mi9 and Tm20 (Takemura et al., 2013). It is a GABAergic neuron (Raghu et al., 2013). There is usually one of these cells per optic column (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00003721 terminates in medulla layer M3 and is postsynaptic to outer photoreceptors R1-R6, matching the report's description of L3 as the sustained, achromatic relay terminating in M3. This is an adult brain atlas and L3 is a well-established, singular cell type not merged with any other type in this cluster, so the mature adult term is the correct level. As with L2, the report flags that the L3 call rests on regression-model similarity rather than a literature marker gene and that Table S3 marker evidence is for the undifferentiated parent cluster; this bears on confidence in the subclustering call, not on the anatomical correctness of the FBbt term once L3 identity is accepted.",
+  "other_candidates": [],
+  "recommendation": "Accept as exact match at high confidence.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

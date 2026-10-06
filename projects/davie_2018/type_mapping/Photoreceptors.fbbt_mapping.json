@@ -1,0 +1,47 @@
+{
+  "cluster_label": "Photoreceptors",
+  "working_definition": "Cluster named by the authors as photoreceptors (ninaC, trp, trpl) in the Davie 2018 adult brain atlas; taken at face value as photoreceptor cells, composed primarily of that type.",
+  "searches_performed": [
+    "photoreceptor cell",
+    "light-sensitive neuron (VFB term info: exact synonym photoreceptor cell)",
+    "rhabdomeric photoreceptor cell"
+  ],
+  "best_match": {
+    "fbbt_term": "rhabdomeric photoreceptor cell",
+    "fbbt_id": "FBbt:00007251",
+    "fbbt_definition": "Photoreceptor cell that contains rhabdomeres.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors identify this cluster as photoreceptors by the phototransduction markers ninaC, trp and trpl (Table S2 res-2.0 cluster 53; top Table S3 markers Arr1, Arr2, ninaE, inaC, inaD, Galphaq), i.e. the rhabdomeric phototransduction machinery. FBbt:00007251 'rhabdomeric photoreceptor cell' is the term for that type: a child of 'light-sensitive neuron' and parent of eye photoreceptor cell, ocellar retinula cell and eyelet photoreceptor cell. The authors name no finer subtype.",
+  "other_candidates": [
+    {
+      "fbbt_term": "light-sensitive neuron",
+      "fbbt_id": "FBbt:00004211",
+      "fbbt_definition": "Sensory neuron that reacts to the presence of light.",
+      "reason_rejected": "Parent of rhabdomeric photoreceptor cell; too broad - also covers non-rhabdomeric light-sensitive neurons."
+    },
+    {
+      "fbbt_term": "eyelet photoreceptor cell",
+      "fbbt_id": "FBbt:00005740",
+      "fbbt_definition": "Cholinergic, rhabdomeric photoreceptor cell of the eyelet (Yasuyama and Meinertzhagen, 1999). It expresses Rh6 and is green light-sensitive (Jean-Guillaume and Kumar, 2022). Its axon terminates in the accessory medulla (Helfrich-Forster et al., 2007). There are four of these cells per eyelet.",
+      "reason_rejected": "Specific photoreceptor subtype not named by the authors"
+    },
+    {
+      "fbbt_term": "ocellar retinula cell",
+      "fbbt_id": "FBbt:00004242",
+      "fbbt_definition": "Photoreceptor cell of an adult ocellus. It expresses the violet-sensitive Rh2 (Jean-Guillaume and Kumar, 2022). Its axons target the corresponding ocellar ganglion (Caldwell et al., 2007).",
+      "reason_rejected": "Specific photoreceptor subtype not named by the authors"
+    }
+  ],
+  "recommendation": "Accept exact match to FBbt:00007251 rhabdomeric photoreceptor cell.",
+  "new_term_needed": false,
+  "verification_needed": false,
+  "manual_edit": {
+    "by": "Clare Pilgrim (Clare72)",
+    "date": "2026-10-05",
+    "change": "best_match FBbt:00004211 light-sensitive neuron -> FBbt:00007251 rhabdomeric photoreceptor cell; confidence medium -> high",
+    "reason": "curator: the authors' markers (ninaC/trp/trpl) define rhabdomeric photoreceptors; light-sensitive neuron is too broad"
+  }
+}

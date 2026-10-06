@@ -1,0 +1,29 @@
+{
+  "cluster_label": "Serotonergic",
+  "working_definition": "Serotonergic (5-HT-producing) neurons of the adult central brain (Davie et al. 2018, Seurat res-2.0 cluster 38; 391 cells), annotated directly by literature markers (Trh, SerT, Vmat, Ddc). This is a neurotransmitter-class-level cluster grouping many morphologically and functionally distinct serotonergic neuron types (contralaterally-projecting neurons, median bundle neurons, mushroom body/antennal lobe/optic lobe innervating neurons) that the atlas does not further resolve.",
+  "searches_performed": [
+    "serotonergic neuron",
+    "adult serotonergic neuron",
+    "Serotonergic (exact cluster label)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult serotonergic neuron",
+    "fbbt_id": "FBbt:00049526",
+    "fbbt_definition": "Any serotonergic neuron of the adult.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The cluster is explicitly a neurotransmitter-class-level grouping (many anatomically distinct serotonergic types merged, per the report's own mapping notes), not a single morphological cell type. FBbt:00049526 'adult serotonergic neuron' is defined at exactly this class level ('any serotonergic neuron of the adult') and covers the adult central brain distribution described (protocerebrum, SEZ, antennal lobe, mushroom body, optic lobe). Since the report itself states the honest mapping level is a broad serotonergic-neuron class term, the class-level FBbt term is the correct (not merely broad) match for this class-level cluster.",
+  "other_candidates": [
+    {
+      "fbbt_term": "serotonergic neuron",
+      "fbbt_id": "FBbt:00005133",
+      "fbbt_definition": "Any neuron that is capable of some serotonin secretion, neurotransmission.",
+      "reason_rejected": "Life-stage-unspecified parent of the adult term; the adult-specific FBbt:00049526 is the more precise match given this is confirmed adult (0-50 day) brain tissue."
+    }
+  ],
+  "recommendation": "Accept adult serotonergic neuron (FBbt:00049526) as the mapping for this class-level cluster; no individual serotonergic subtype should be assigned given the atlas does not resolve them.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

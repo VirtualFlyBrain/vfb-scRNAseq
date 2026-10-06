@@ -11,3 +11,4 @@ functional syntax) stay under `projects/<p>/`.
 | file | project |
 |---|---|
 | vfb_scRNAseq_metadata_kurmangaliyev_2020.owl | kurmangaliyev_2020 |
+| vfb_scRNAseq_metadata_davie_2018.owl | davie_2018 |

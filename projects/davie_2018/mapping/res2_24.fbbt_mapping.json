@@ -1,0 +1,37 @@
+{
+  "cluster_label": "res2_24",
+  "working_definition": "T4/T5 is an author-merged identity (res-2.0 cluster 24, 648 cells) for the direction-selective motion-detecting neurons of the fly optic lobe. T4 dendrites lie in the proximal medulla (M10, ON pathway); T5 dendrites lie in the lobula (Lo1, OFF pathway); both send axons to the lobula plate. Each of T4 and T5 further comprises four anatomically/functionally distinct subtypes (a-d, one per lobula-plate layer/cardinal direction), none of which this transcriptomic resolution separates. Table S2 and GEO agree exactly on the merged 'T4/T5' label (method: mapping; Konstantinides et al. 2018; Pankova and Borst 2016), with markers reflecting a shared motion-detection columnar-neuron program rather than subtype-specific identity.",
+  "searches_performed": [
+    "T4 neuron",
+    "T5 neuron",
+    "T4/T5 neuron",
+    "direction selective neuron",
+    "T neuron optic lobe"
+  ],
+  "best_match": {
+    "fbbt_term": "T neuron",
+    "fbbt_id": "FBbt:00003726",
+    "fbbt_definition": "Intrinsic columnar neuron of the optic lobe that has its cell body in the posterior part of the optic lobe and a cell body fiber that bifurcates in the second optic chiasma (Fischbach and Dittrich, 1989). It has two branches, each targeting a different neuropil adjacent to the second optic chiasma (lobula, lobula plate and medulla).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "T4 (FBbt:00003731) and T5 (FBbt:00003736) are both direct children of 'T neuron' (FBbt:00003726) in FBbt, matching the report's description of two distinct T-type columnar neurons (different input layers/pathways) that this cluster genuinely cannot separate. No FBbt term exists that specifically groups only T4+T5 (e.g. no 'T4/T5 direction-selective neuron' term was found), so the honest, most specific common parent is the general 'T neuron' class. This is a true merged-group case (both Table S2 and GEO agree on the merge; the authors state the four subtypes of each cannot be resolved), so a broad match at this level is the correct call, not a workaround for weak evidence -- both flags are false.",
+  "other_candidates": [
+    {
+      "fbbt_term": "T4 neuron",
+      "fbbt_id": "FBbt:00003731",
+      "fbbt_definition": "T neuron with its cell body posterior to the lobula plate and a cell body fiber that projects through the lobula plate and via the second optic chiasma to medulla layer 10, forming bleb-type arborizations in a single lobula plate layer. It is a cholinergic neuron. There are a large number of these cells, generated from neuroblasts that amplify by symmetric division before generating T4 (and T5).",
+      "reason_rejected": "One of the two merged member types (ON pathway); this cluster cannot resolve T4 from T5, so this specific term would over-commit."
+    },
+    {
+      "fbbt_term": "T5 neuron",
+      "fbbt_id": "FBbt:00003736",
+      "fbbt_definition": "T neuron with its cell body in the lobula plate cell body rind and a cell body fiber that projects through the lobula plate and via the second optic chiasma to lobula layer 1, forming bleb-type arborizations in a single lobula plate layer. It is a cholinergic neuron.",
+      "reason_rejected": "One of the two merged member types (OFF pathway); this cluster cannot resolve T4 from T5, so this specific term would over-commit."
+    }
+  ],
+  "recommendation": "Accept broad match to 'T neuron' (FBbt:00003726) at high confidence; list T4 and T5 (and their a-d subtypes) as the constituent member types in other_candidates/documentation. This is a genuine merged group at multiple levels (T4 vs T5, and 4 subtypes each), not a provenance problem, so no verification flag or new-term request is warranted.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

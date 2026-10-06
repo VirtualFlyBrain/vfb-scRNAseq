@@ -1,0 +1,22 @@
+{
+  "cluster_label": "Tm5c",
+  "working_definition": "Cluster 'Tm5c' (GEO label, adult Davie 2018 optic lobe data) annotated by the authors as the single type Tm5c. Mapped at face value to the FBbt term for the named type; cluster is composed primarily of cells of this type.",
+  "searches_performed": [
+    "Tm5c",
+    "transmedullary neuron Tm5c",
+    "local FBbt (fbbt-full.obo) lookup by label/synonym (OLS MCP returned 503)"
+  ],
+  "best_match": {
+    "fbbt_term": "transmedullary neuron Tm5c",
+    "fbbt_id": "FBbt:00110074",
+    "fbbt_definition": "Transmedullary Tm5 neuron that spans around eight medulla columns with lateral branches expanding out into the M1, M3 and M6 layers from a single vertical dendrite (Kind et al., 2021). It preferentially receives input from R8 (rather than R7) photoreceptor cells, and in most, but not all, cases these cells are selective for yellow (rather than pale) ommatidia (Kind et al., 2021). Its R8 input is mainly in layer M3 and it also receives input from the distal medullary amacrine neuron Dm8 in layer M6 (Karuppudurai et al., 2014). Its axon terminates near the boundary between lobula layers 5 and 6, with some cells having a branch in layer 4 (Kind et al., 2021). It provides input to the lobula intrinsic neuron Li4 via many synapses (Lin et al., 2016). It is a glutamatergic neuron (Gao et al., 2008; Karuppudurai et al., 2014).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' GEO label names the single type Tm5c; FBbt has a non-obsolete adult term for it (transmedullary neuron Tm5c, FBbt:00110074). Taken at face value under the 'composed primarily of' relation.",
+  "other_candidates": [],
+  "recommendation": "Accept as exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,36 @@
+{
+  "cluster_label": "A/B-KC",
+  "working_definition": "Alpha/beta-lobe Kenyon cells (α/β-KCs) of the adult mushroom body: intrinsic mushroom body neurons whose axons bifurcate to form the alpha and beta lobes, identified in this atlas by sNPF+/trio- expression and a PKA/cAMP-signalling-dominated marker profile with serotonergic/dopaminergic receptor expression. These are the last-born Kenyon cells (generated during the pupal stage) and are required for long-term memory consolidation/retrieval. This 0-50-day adult brain atlas resolves α/β-KCs only at the whole-lobe level, not into finer core/surface/posterior subtypes.",
+  "searches_performed": [
+    "A/B-KC",
+    "alpha/beta Kenyon cell",
+    "adult alpha/beta Kenyon cell",
+    "Kenyon cell"
+  ],
+  "best_match": {
+    "fbbt_term": "alpha/beta Kenyon cell",
+    "fbbt_id": "FBbt:00100248",
+    "fbbt_definition": "Mushroom body neuron that bifurcates at the anterior end of the pedunculus and projects into the alpha and beta lobes of the adult mushroom body (Lee et al., 1999). The alpha/beta neurons are the last born of the Kenyon cells, generated during the pupal stage (Lee et al., 1999). ... They are cholinergic neurons (Pankova & Borst, 2017) and they express sNPF (Johard et al., 2008; Barnstedt et al., 2016; Croset et al., 2018). There are around 900-1000 of these cells per hemisphere (Aso et al., 2014; Li et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Unlike gamma and alpha'/beta' Kenyon cells, FBbt has no separate 'larval alpha/beta Kenyon cell' term because alpha/beta KCs are generated only during the pupal stage and exist solely in the adult mushroom body; FBbt:00100248 'alpha/beta Kenyon cell' is therefore already the adult-specific concept, directly parented under 'adult Kenyon cell' and 'sNPF neuron'. Its definition matches the report's discriminating marker (sNPF-positive) and neuropil (alpha/beta lobes) exactly. FBbt further distinguishes core/surface/posterior alpha/beta KC subtypes from connectomic studies, but the report explicitly states this atlas could not resolve any finer subtype (subclustering separated on technical covariates only), so the whole-lobe term is the correct and complete level.",
+  "other_candidates": [
+    {
+      "fbbt_term": "alpha/beta core Kenyon cell",
+      "fbbt_id": "FBbt:00110929",
+      "fbbt_definition": "A sub-lobe subtype of alpha/beta Kenyon cell (connectomic classification).",
+      "reason_rejected": "Finer subtype from connectomic/EM work, not resolvable from this transcriptomic atlas per the report's own subclustering analysis."
+    },
+    {
+      "fbbt_term": "alpha/beta surface Kenyon cell",
+      "fbbt_id": "FBbt:00110930",
+      "fbbt_definition": "A sub-lobe subtype of alpha/beta Kenyon cell (connectomic classification).",
+      "reason_rejected": "Same reason as alpha/beta core Kenyon cell: finer subtype not resolved by this atlas."
+    }
+  ],
+  "recommendation": "Map to FBbt:00100248 'alpha/beta Kenyon cell' as an exact match; this term is inherently adult-specific (alpha/beta KCs only exist in the adult) so no separate 'adult ...' prefixed variant is needed or exists.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

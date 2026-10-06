@@ -1,0 +1,22 @@
+{
+  "cluster_label": "T2",
+  "working_definition": "Cluster 'T2' (GEO label, adult Davie 2018 optic lobe data) annotated by the authors as the single type T2. Mapped at face value to the FBbt term for the named type; cluster is composed primarily of cells of this type.",
+  "searches_performed": [
+    "T2",
+    "T2 neuron",
+    "local FBbt (fbbt-full.obo) lookup by label/synonym (OLS MCP returned 503)"
+  ],
+  "best_match": {
+    "fbbt_term": "T2 neuron",
+    "fbbt_id": "FBbt:00003728",
+    "fbbt_definition": "T neuron with its soma posteriorly adjacent to the gap between the medulla and lobula plate and a cell body fiber that projects along the proximal surface of the medulla before branching in the second optic chiasm (Fischbach and Dittrich, 1989; Shinomiya et al., 2019). One branch projects into a medulla column, where it forms a bushy, fine, arborization in medulla layer M9 and then projects through the rest of the medulla column, forming fine arborizations in M1, M2 and M5. The other branch forms a terminal arborization in lobula layer 3 that is much wider than a single column and has bleb-type terminal branches. It seems to be capable of cholinergic and GABAergic neurotransmission.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' GEO label names the single type T2; FBbt has a non-obsolete adult term for it (T2 neuron, FBbt:00003728). Taken at face value under the 'composed primarily of' relation.",
+  "other_candidates": [],
+  "recommendation": "Accept as exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

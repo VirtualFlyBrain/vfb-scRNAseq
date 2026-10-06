@@ -1,0 +1,24 @@
+{
+  "cluster_label": "sub27_adPN/C15",
+  "working_definition": "\"C15(+) adPNs\": anterodorsal-lineage antennal-lobe olfactory projection neurons (46 cells) within Davie et al. 2018 res-2.0 cluster 27, expressing the homeodomain transcription factor C15, reproducing a Li et al. (2017) SMART-seq2 subcluster. Uniglomerular, projecting via iACT to mushroom body calyx and lateral horn. The report explicitly flags that C15 is a combinatorial transcriptomic marker of uncertain anatomical specificity - not established as marking one single named glomerular PN type.",
+  "searches_performed": [
+    "adPN/C15",
+    "C15(+) adPN",
+    "C15 projection neuron",
+    "adult antennal lobe projection neuron adPN",
+    "C15 antennal lobe"
+  ],
+  "best_match": {
+    "fbbt_term": "adult antennal lobe projection neuron adPN",
+    "fbbt_id": "FBbt:00007438",
+    "fbbt_definition": "An adult antennal lobe projection neuron that is derived from neuroblast ALad1 (FBbt:00067346). All of these neurons have axons that fasciculate with the medial antennal lobe tract (mALT) and innervate the lateral horn.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt has no term built on the C15 marker or citing Li et al. 2017 / Davie et al. 2018 for this specific subgroup (searched directly - no hits). The report itself concludes this is a transcriptomic subgroup of the adPN lineage of uncertain correspondence to a specific glomerular PN type; only 6 of the many PN classes Li et al. (2017) profiled were 'unequivocally mapped' to a known glomerulus, and whether C15(+) adPNs is one of these is not established. The cluster IS-A adult antennal lobe projection neuron adPN (FBbt:00007438) but carries a distinguishing marker (C15) that FBbt does not capture at any level, so this is an honest broad match rather than an exact one.",
+  "other_candidates": [],
+  "recommendation": "Broad-match to the adPN lineage term. Per dataset guidance, do not mint a new term for this marker subgroup since the report cannot confirm it corresponds to a single reproducible glomerular type (rather than a boundary/mixed transcriptomic group); both flags left false.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

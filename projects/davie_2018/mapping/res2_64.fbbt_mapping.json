@@ -1,0 +1,44 @@
+{
+  "cluster_label": "res2_64",
+  "working_definition": "Davie 2018 Table S2 res-2.0 cluster 64, annotated by the authors as 'Octopaminergic-Tyraminergic' (Tdc2+, literature markers); sub-clustered by Tbh into octopaminergic and tyraminergic neurons.",
+  "searches_performed": [
+    "Octopaminergic-Tyraminergic",
+    "octopaminergic neuron",
+    "tyraminergic neuron",
+    "adult aminergic neuron",
+    "Tdc2",
+    "octopaminergic-tyraminergic"
+  ],
+  "best_match": {
+    "fbbt_term": "adult aminergic neuron",
+    "fbbt_id": "FBbt:00058201",
+    "fbbt_definition": "Any aminergic neuron of the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors' call is a group of octopaminergic and tyraminergic neurons. FBbt has no Tdc2 or octopaminergic-tyraminergic grouping term (searches returned only individual octopaminergic/tyraminergic types). Octopaminergic neuron is not a subclass of tyraminergic neuron: OLS ancestors (page size 500) of adult octopaminergic neuron (FBbt:00058203) and adult tyraminergic neuron (FBbt:00058204) share aminergic neuron / adult aminergic neuron (FBbt:00058201) as the most specific common parent; neither lists the other. Adult aminergic neuron is not obsolete.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult octopaminergic neuron",
+      "fbbt_id": "FBbt:00058203",
+      "fbbt_definition": "Any octopaminergic neuron of the adult.",
+      "reason_rejected": "Only one member of the group."
+    },
+    {
+      "fbbt_term": "adult tyraminergic neuron",
+      "fbbt_id": "FBbt:00058204",
+      "fbbt_definition": "Any tyraminergic neuron of the adult.",
+      "reason_rejected": "Only one member of the group."
+    },
+    {
+      "fbbt_term": "aminergic neuron",
+      "fbbt_id": "FBbt:00007368",
+      "fbbt_definition": "Any neuron that releases an amine neurotransmitter (life-stage-unspecified).",
+      "reason_rejected": "Less specific; adult term preferred."
+    }
+  ],
+  "recommendation": "Accept broad match to adult aminergic neuron (FBbt:00058201); consider requesting a Tdc2/octopaminergic-tyraminergic grouping term only if curators want one.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

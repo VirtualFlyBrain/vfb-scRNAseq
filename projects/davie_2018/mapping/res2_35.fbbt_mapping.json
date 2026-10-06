@@ -1,0 +1,36 @@
+{
+  "cluster_label": "res2_35",
+  "working_definition": "Glia that form thin sheaths around neuropil compartments and axon tracts throughout the adult brain (central brain and optic lobe, including tracts near the optic chiasmata), separating them from surrounding structures and implicated in phagocytic clearance of degenerating axons; distinct from the neuropil-infiltrating astrocyte-like glia. This GEO cluster merges two res-2.0 clusters (14 and 35) both annotated 'Ensheathing glia' by the authors via marker mapping to Konstantinides et al. (2018); the paper does not explicitly resolve central-brain vs optic-lobe ensheathing glia at this level.",
+  "searches_performed": [
+    "Ensheathing_glia",
+    "ensheathing glial cell",
+    "adult ensheathing glial cell",
+    "tract ensheathing glia Drosophila"
+  ],
+  "best_match": {
+    "fbbt_term": "adult ensheathing glial cell",
+    "fbbt_id": "FBbt:00100504",
+    "fbbt_definition": "Glial cell of the adult central nervous system that elaborates along the outer surface of its associated neuropil. Glia of this class may also surround neuropil bundles such as commissures or tracts. There are over 1000 of these in the adult central nervous system, some of which are descendants of larval ensheathing glia (Pogodalla et al., 2021).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The FBbt definition (adult CNS glia elaborating along the outer surface of neuropil and surrounding tracts/commissures) matches the report's description of ensheathing glia forming thin sheaths around neuropil compartments and axon tracts. Both are at the same, brain-wide granularity: the report explicitly notes the paper does not state whether central-brain and optic-lobe ensheathing glia are transcriptomically distinguished in this cluster, so the general adult term (rather than 'adult central brain ensheathing glial cell' FBbt:00047886 or 'adult optic lobe ensheathing glial cell' FBbt:00058224) is the honest match.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult central brain ensheathing glial cell",
+      "fbbt_id": "FBbt:00047886",
+      "fbbt_definition": "Ensheathing glial cell of the adult central brain.",
+      "reason_rejected": "More specific than warranted; report states region resolution is unclear for this merged cluster."
+    },
+    {
+      "fbbt_term": "adult optic lobe ensheathing glial cell",
+      "fbbt_id": "FBbt:00058224",
+      "fbbt_definition": "Ensheathing glial cell of the adult optic lobe.",
+      "reason_rejected": "More specific than warranted; same reason as above, though the paper's grouping alongside other newly-annotated optic-lobe types suggests partial optic-lobe association."
+    }
+  ],
+  "recommendation": "Accept FBbt:00100504 (adult ensheathing glial cell) as an exact match. High confidence for the core biology; note for curators that this GEO cluster merges two authors' res-2.0 sub-clusters both called 'Ensheathing glia', with a plausible but unconfirmed optic-lobe bias that FBbt cannot currently resolve from this cluster's data alone.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

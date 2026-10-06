@@ -1,0 +1,22 @@
+{
+  "cluster_label": "Dm9",
+  "working_definition": "Cluster 'Dm9' (GEO label, adult Davie 2018 optic lobe data) annotated by the authors as the single type Dm9. Mapped at face value to the FBbt term for the named type; cluster is composed primarily of cells of this type.",
+  "searches_performed": [
+    "Dm9",
+    "distal medullary amacrine neuron Dm9",
+    "local FBbt (fbbt-full.obo) lookup by label/synonym (OLS MCP returned 503)"
+  ],
+  "best_match": {
+    "fbbt_term": "distal medullary amacrine neuron Dm9",
+    "fbbt_id": "FBbt:00111271",
+    "fbbt_definition": "Distal medullary wide-field amacrine neuron with arbors that span multiple columns in layers M1 and M6A and columnar processes between these two layers. The processes in M2 and M5 occupy a central column position and are closely associated with R7 and R8 photoreceptor axons, covering around 7 columns. There are around 110 Dm9 neurons per hemisphere. They are glutamatergic (Davis et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' GEO label names the single type Dm9; FBbt has a non-obsolete adult term for it (distal medullary amacrine neuron Dm9, FBbt:00111271). Taken at face value under the 'composed primarily of' relation.",
+  "other_candidates": [],
+  "recommendation": "Accept as exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

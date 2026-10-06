@@ -1,0 +1,43 @@
+{
+  "cluster_label": "res2_57",
+  "working_definition": "Mushroom body output neurons (MBONs): extrinsic mushroom body neurons that receive synaptic input from Kenyon cells within specific MB lobe compartments and relay learned valence information to downstream circuits driving approach/avoidance behaviour. This 257-cell cluster is annotated generically as 'MBON' by mapping to a published bulk MBON transcriptome (Crocker et al. 2016), not by identification of an individual named MBON (of the ~20-34 known compartment-specific MBON types); it is a merged/remainder group representing the MBON class as a whole, not resolved to compartment-specific identity.",
+  "searches_performed": [
+    "MBON",
+    "mushroom body output neuron",
+    "adult mushroom body output neuron",
+    "MB output neuron",
+    "extrinsic mushroom body neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "adult mushroom body output neuron",
+    "fbbt_id": "FBbt:00047955",
+    "fbbt_definition": "Adult neuron that receives synaptic input from Kenyon cells in the mushroom body and has presynaptic terminals elsewhere in the central nervous system (Owald et al., 2015; Li et al., 2020). Approximately 10% of adult central brain neurons are downstream targets of MBONs (Li et al., 2020).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "This is a merged/remainder-type cluster per the mapping-brief guidance: the report is explicit that this 257-cell cluster is not resolved to any individual MBON type (there are ~20-34 morphologically/physiologically distinct MBON types per Aso et al. 2014, each with its own FBbt term such as 'mushroom body output neuron 11', 'mushroom body output neuron 23', etc., innervating a specific lobe compartment) but instead represents the class as a whole, identified by similarity-mapping to a bulk MBON reference rather than compartment-specific markers. Per dataset guidance to prefer adult-specific FBbt terms where they exist: FBbt:00047955 'adult mushroom body output neuron' (confirmed current/non-obsolete via OLS) is the adult-restricted version of the generic 'mushroom body output neuron' class, and is the correct parent since this atlas is adult whole-brain tissue. Its definition (adult neuron, KC-input, presynaptic output elsewhere in CNS) matches the report's description of MBON biology precisely at this level. Because no compartment-specific markers were used to resolve this cluster, the honest mapping is this broad, adult-specific parent rather than any individual named MBON.",
+  "other_candidates": [
+    {
+      "fbbt_term": "mushroom body output neuron",
+      "fbbt_id": "FBbt:00047953",
+      "fbbt_definition": "Neuron that receives synaptic input from Kenyon cells in the mushroom body and has presynaptic terminals elsewhere in the central nervous system. It can affect behavioral responses to sensory stimuli.",
+      "reason_rejected": "Stage-unrestricted parent of FBbt:00047955; the adult-specific child term is preferred per dataset guidance and is an equally valid class-level match for this adult atlas."
+    },
+    {
+      "fbbt_term": "mushroom body output neuron 11",
+      "fbbt_id": "FBbt:00100246",
+      "fbbt_definition": "One of the ~20-34 individually identified MBON types (Aso et al., 2014), innervating a specific mushroom body lobe compartment.",
+      "reason_rejected": "Individual named MBON type; the report explicitly states this cluster is not resolved to compartment-specific identity, so no single named MBON subtype can be justified as the match."
+    },
+    {
+      "fbbt_term": "adult typical mushroom body output neuron",
+      "fbbt_id": "FBbt:00049843",
+      "fbbt_definition": "Subclass grouping of adult MBONs with 'typical' morphology (per Aso et al. 2014 classification), as opposed to 'atypical' MBONs.",
+      "reason_rejected": "Report gives no evidence distinguishing typical vs atypical MBON morphology for this cluster; would be an unsupported over-specification."
+    }
+  ],
+  "recommendation": "Map to FBbt:00047955 'adult mushroom body output neuron' as a broad match; this is a merged/unresolved-remainder cluster representing the MBON class in general, correctly mapped at the adult class parent level rather than to any individual named MBON.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,28 @@
+{
+  "cluster_label": "neuropeptide_AstA/Nplp1",
+  "working_definition": "Neuropeptide re-clustering group named by the authors for AstA + Nplp1 co-expression; typed as an AstA-expressing neuron class.",
+  "searches_performed": [
+    "allatostatin A neuron",
+    "AstA Nplp1 neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "allatostatin A neuron",
+    "fbbt_id": "FBbt:00048142",
+    "fbbt_definition": "Any neuron capable of peptide hormone secretion that expresses AstA.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "Name is defined by AstA expression, so the allatostatin A neuron class is the term for what the authors name; Nplp1 has no separate FBbt class. Pm3 not used because typing follows the authors name, not the origin of the cells.",
+  "other_candidates": [
+    {
+      "fbbt_term": "proximal medullary amacrine neuron Pm3",
+      "fbbt_id": "FBbt:00110066",
+      "fbbt_definition": "Proximal medullary amacrine neuron that branches at the proximal surface of the medulla, with both branches forming a broad terminal arbor in medulla layer M9; GABAergic; ~35-40 cells per hemisphere (Davis et al., 2020; Nern et al., 2025).",
+      "reason_rejected": "Typing follows the authors AstA+Nplp1 name, not parent cluster identity"
+    }
+  ],
+  "recommendation": "Accept exact match to allatostatin A neuron.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

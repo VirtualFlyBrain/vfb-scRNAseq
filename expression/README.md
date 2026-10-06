@@ -13,3 +13,4 @@ report, and the counts JSON stay under `projects/<p>/`.
 | file | project |
 |---|---|
 | vfb_scRNAseq_expression_kurmangaliyev_2020.owl.gz | kurmangaliyev_2020 |
+| vfb_scRNAseq_expression_davie_2018.owl.gz | davie_2018 |
