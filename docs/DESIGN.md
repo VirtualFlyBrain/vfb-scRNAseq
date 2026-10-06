@@ -538,7 +538,8 @@ As of FB2026_03: Davie 132 secondary (5 merges), 5 splits, 1 withdrawn; Kurmanga
 86 secondary (3 merges), 1 split, 1 withdrawn; symbols refreshed for every gene. The
 Chado result agreed with FlyBase's `fbgn_annotation_ID_fb_2026_03.tsv` for every
 secondary/withdrawn id. Re-run the script (and the expression build) to move to a
-later FlyBase release.
+later FlyBase release; the weekly release check opens a reminder issue when one is out
+(see *Continuous integration*).
 
 ## Worked example
 
@@ -611,7 +612,17 @@ closed on or before the new release's date is taken to be in that release: the j
 opens a reminder issue in this repo listing the clusters to re-map (with the new term
 ids where the requested labels are found in the release, and the closing reason if not
 "completed"), and marks the request `released` so it is reported once. A request closed
-after the release waits for the next one. Not run on PRs: it needs OLS, which is
+after the release waits for the next one.
+
+It also checks **FlyBase releases** (`scripts/check_flybase_release.py`): if flybase.org
+reports a release newer than the one recorded in the projects' `gene_id_map.tsv`
+headers, it re-classifies each project's input gene ids against FlyBase Chado (the
+committed maps list them, so no GEO files are needed) and, if any id or symbol used by
+the expression output changed, opens an issue with the counts and the commands to run
+(`update_gene_ids.py` → `build_expression.py` → `build_rdf.py`). No change → the
+release is recorded without an issue; Chado unreachable from CI → the issue is opened
+without counts. `checks/flybase_release_check.json` makes each release reported once.
+The full rebuild is not automated (it needs ~1.4 GB of GEO matrices and ROBOT). Not run on PRs: it needs OLS, which is
 sometimes unavailable.
 
 ### 2026-10 regeneration under the general curation rules
