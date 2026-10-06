@@ -17,6 +17,10 @@ need no Chado access:
 Chado records a current gene's own FBgn and each retired FBgn it absorbed as its
 FlyBase dbxrefs (feature_dbxref.is_current true / false).
 
+The FlyBase release is read from the FlyBase homepage ("FB2026_03, released
+September 17, 2026"; the website and Chado are updated together) and recorded in the
+table header with Chado's last-modified date (its data freeze for that release).
+
 Usage:
     uv run python scripts/update_gene_ids.py --project davie_2018 [--release FB2026_03]
 """
@@ -27,7 +31,9 @@ import argparse
 import csv
 import datetime as dt
 import gzip
+import re
 import subprocess
+import urllib.request
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -81,6 +87,18 @@ def chado_lookup(ids: list[str]) -> dict[str, list[tuple[str, str, str]]]:
     return hits
 
 
+def flybase_release() -> str:
+    """'FB2026_03, released September 17, 2026' from the FlyBase homepage ('' if unavailable)."""
+    try:
+        req = urllib.request.Request("https://flybase.org/", headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=60) as r:  # noqa: S310
+            text = r.read().decode("utf-8", "ignore")
+    except OSError:
+        return ""
+    m = re.search(r"(FB\d{4}_\d{2})\s*,\s*released\s+([A-Z][a-z]+ \d{1,2}, \d{4})", text)
+    return f"{m.group(1)}, released {m.group(2)}" if m else ""
+
+
 def chado_last_modified() -> str:
     out = subprocess.run(PSQL + ["-c", "select max(timelastmodified) from feature where uniquename like 'FBgn%'"],
                          capture_output=True, text=True, check=True).stdout.strip()
@@ -105,9 +123,12 @@ def classify(feats: list[tuple[str, str]], hits: dict) -> list[dict]:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--project", required=True)
-    ap.add_argument("--release", default="", help="FlyBase release this Chado reflects, e.g. FB2026_03")
+    ap.add_argument("--release", default="", help="override the FlyBase release read from flybase.org")
     args = ap.parse_args()
 
+    release = args.release or flybase_release()
+    if not release:
+        print("  WARNING: could not read the FlyBase release from flybase.org; pass --release", file=sys.stderr)
     cfg = load_config(args.project)
     feats = features(cfg)
     rows = classify(feats, chado_lookup([f for f, _ in feats]))
@@ -115,7 +136,7 @@ def main() -> None:
     with out.open("w", newline="") as fh:
         fh.write(f"# FlyBase Chado (chado.flybase.org), queried {dt.date.today().isoformat()}; "
                  f"data last modified {chado_last_modified()}"
-                 f"{'; release ' + args.release if args.release else ''}\n")
+                 f"{'; FlyBase ' + release if release else ''}\n")
         w = csv.DictWriter(fh, fieldnames=COLUMNS, delimiter="\t", lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
