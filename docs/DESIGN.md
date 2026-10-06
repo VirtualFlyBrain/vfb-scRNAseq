@@ -516,12 +516,24 @@ the *metadata* (small). NB the `gene` template was fixed for the modern
 `py-horned-owl` backend (quoted/typed literals, `xsd:` prefix); gene fillers are
 `FlyBase:FBgn…` CURIEs.
 
-**TODO — gene id currency.** Gene ids are taken as published in the GEO features
-file, so some are no longer current FlyBase ids: Davie 2018 has 137 secondary FBgns
-(5 of them split) and 1 with no current gene; Kurmangaliyev 2020 has 87 secondary and
-1 withdrawn (FlyBase Chado, 2026-09-23). Expression rows for these won't link to the
-current gene in VFB. To do: map secondary → current FBgns at emission (handling
-merges/splits), as the old repo's `update_FBgns_in_files.py` did.
+**Gene id currency.** Gene ids are published with the data (GEO features file), so
+some are no longer current FlyBase genes. `scripts/update_gene_ids.py` queries FlyBase
+Chado (`psql -h chado.flybase.org -U flybase flybase`; a current gene's FlyBase
+dbxrefs list its own FBgn as current and the retired FBgns it absorbed as non-current)
+and writes a committed `projects/<p>/gene_id_map.tsv`, which the expression build
+applies (`expression.gene_id_map`) as the matrix streams:
+
+- **secondary** id of one current gene → that gene (and its current symbol);
+- **merge** (several input ids → one current gene) → counts summed per cell before
+  extent/level, so a cell expressing both is counted once;
+- **split** (one retired id → several current genes) → dropped, since the reads
+  can't be attributed (curator decision); **withdrawn** → dropped.
+
+As of FB2026_03: Davie 132 secondary (5 merges), 5 splits, 1 withdrawn; Kurmangaliyev
+86 secondary (3 merges), 1 split, 1 withdrawn; symbols refreshed for every gene. The
+Chado result agreed with FlyBase's `fbgn_annotation_ID_fb_2026_03.tsv` for every
+secondary/withdrawn id. Re-run the script (and the expression build) to move to a
+later FlyBase release.
 
 ## Worked example
 
@@ -702,7 +714,8 @@ VFB until the release files are merged, so ids can still change during review.
 8. **Review:** `collate_mapping.py` → `mapping.tsv` (optionally with a `prior_mapping`
    crosswalk to the old load); curator changes are made in the mapping JSON with a
    `manual_edit` block.
-9. **Build:** `build_rdf.py` (mints Cluster ids) → `build_expression.py` →
+9. **Build:** `update_gene_ids.py` (current FlyBase genes) → `build_rdf.py` (mints
+   Cluster ids) → `build_expression.py` →
    `build_rdf.py` again (gene counts) → `verify_mappings.py`.
 10. **Record:** `provenance.json` (ontology versions, files + sha256, software,
     models, curator decisions); add the release files to the `metadata/` and
