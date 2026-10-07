@@ -99,6 +99,18 @@ Deliberate boundaries:
   attach a per-cell metadata file with cluster assignments; `ingest` captures
   those URLs, so they are an authoritative alternative to scraping supp tables.
 
+**ArrayExpress** (`src/vfb_scrnaseq/ingest_arrayexpress.py`,
+`scripts/build_samples_from_arrayexpress.py`) is the non-GEO source: the experiment's
+MAGE-TAB IDF + SDRF are fetched over HTTPS from the BioStudies FTP area (cached in
+`.cache/`) and grouped into Samples and Assays by config — `sample_columns` (the SDRF
+columns that define one biological sample), `assay_column` or `assay_regex` (the
+library / plate), `assay_xrefs` (ENA / BioSamples ids, only when single-valued per
+assay) and curated `sex_map` / `age_map` / `tissue_map` / `stock_map`. `sdrf_corrections`
+records curator fixes to SDRF values that the paper contradicts (applied before grouping;
+the note is kept on each affected Sample as `curation_notes`). It writes the same
+`samples.json` as the GEO builder. A Sample may have several FBbt tissues. The `vfb:ArrayExpress`
+Site node was added to the KB on 2026-10-07.
+
 GEOparse / pysradb are optional swap-ins (e.g. richer SOFT parsing, GSM→SRX/SRR
 resolution) but are **not required**; the stdlib path covers what the schema records.
 
@@ -121,6 +133,11 @@ below record how each was applied).
   (it gets a VFBseq id and an FBbt annotation). Clusters are never merged by cell
   type: two clusters of the same type stay two Clusters with the same FBbt term
   (unlike the old SCEA loads, which re-analysed and merged by type).
+- **Complete sets, not cherry-picking.** Choose which kinds of author analysis to
+  load (e.g. per-tissue 10x vs integrated vs cross-tissue), then load every
+  clustering and every cluster of the chosen kinds — duplicates across technologies
+  included. Relevance to VFB users (e.g. the nervous system) can justify leaving out
+  a whole kind of analysis, never individual clusterings or clusters.
 - **Typing comes from the authors, not from re-analysis.** Map each cluster from what
   the authors say it is (GEO metadata, paper, supplementary tables). Curators do not
   overturn or hedge the authors' typing on the basis of their own reading of markers,
@@ -718,7 +735,8 @@ VFB until the release files are merged, so ids can still change during review.
    the main cluster label must be the authors' cluster, not a merged type). For
    layouts it can't express, a project script writes `cell_type_annotations.json`
    (as `projects/davie_2018/build_clusters.py` does).
-4. **Samples:** `build_samples_from_geo.py` → `samples.json` (GEO-based samples).
+4. **Samples:** `build_samples_from_geo.py` (GEO) or `build_samples_from_arrayexpress.py`
+   (ArrayExpress) → `samples.json`.
 5. **Paper index:** add the paper (JATS if open access, else PDF) with the
    Atlas-reporter clone (`local-paper-index` skill); keep supplementary tables in
    `projects/<name>/supp/` (gitignored).
@@ -740,3 +758,38 @@ VFB until the release files are merged, so ids can still change during review.
     `checks/pending_fbbt_requests.json`.
 12. **Check:** `pytest`, `validate_project_files.py`, `check_mapping_tsv.py`; commit
     in stages on a branch and open a PR (CI runs the same checks).
+
+## Fly Cell Atlas (Li et al. 2022) — in progress
+
+Science 2022, PMID 35239393, FBrf0252876. Raw data only in ArrayExpress
+(E-MTAB-10519 10x, E-MTAB-10628 Smart-seq2); the authors' analyses (annotations with
+author-chosen FBbt ids, Leiden clusterings, counts) are h5ad/loom files at
+flycellatlas.org. Previously in VFB from the SCEA reprocessing (FBlc0003846 / 4307 /
+4785: SCEA's own cell calling, author annotations carried over, split by sex).
+
+Curator decisions (2026-10-07):
+- **Two projects, one per accession:** `li_2022_fca_10x`, `li_2022_fca_ss2`.
+- **Analyses:** the 10x **Stringent** per-tissue analyses (17: 15 dissected tissues +
+  whole head + whole body) and **all** Smart-seq2 per-tissue analyses (17: 15 tissues +
+  dilp2 IPC + Akh CC). Left out: Relaxed (alternative filtering of the same cells),
+  10x+SS2 Integrated (no head/body; mixing technologies would distort expression),
+  cross-tissue (no finer neural/glial types — only hemocytes gained finer groups) and
+  "All" (re-clustering of the same cells).
+- **Unit:** one Cluster per author annotation per tissue analysis. FCA cell types were
+  annotated by consensus across Leiden resolutions 0.8-8 ("a transcriptomic cluster
+  detected at any clustering resolution"), so no single Leiden resolution matches the
+  annotation; the (analysis, annotation) group is the authors' unit.
+- **Samples:** 10x Sample = author sample (SDRF Extract Name = h5ad `sample_id`; 61),
+  Assay = 10x library (160); Smart-seq2 Sample = tissue × sex × genotype × age (31),
+  Assay = sorted plate (35). Tissue and sex follow the authors' SDRF annotation, not
+  the drivers (e.g. oenocytes sorted with PromE800-GAL4 are "thorax" in 10x and
+  "abdominal segment element" in Smart-seq2, as recorded). Samples overlap their
+  tissues: "body" = adult postcephalic region (FBbt:00059181); "male reproductive
+  gland" = accessory gland + ejaculatory duct + ejaculatory bulb. The supplement gives
+  only one stock number (UAS-lamGFP, FBst0007378, fat body and trachea crosses), none for w1118.
+  Fat body age: the SDRF says 3 days, the supplement 5 (all tissues are 5-day adults
+  except male reproductive gland and testis, with stated reasons) — treated as an
+  ArrayExpress error and corrected via `sdrf_corrections` (noted on the Samples).
+- **Mapping:** the authors' FBbt ids as a first pass, upgraded where a better term now
+  exists (adult-specific, or new terms for "Manual Annotation" types).
+- **Expression:** `expression.tsv` committed gzipped (too large otherwise).

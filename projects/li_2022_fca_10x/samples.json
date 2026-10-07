@@ -1,0 +1,4337 @@
+{
+  "dataset": {
+    "vfbseq_id": "VFBseq_00000538",
+    "accession": "E-MTAB-10519",
+    "site": "ArrayExpress"
+  },
+  "samples": [
+    {
+      "vfbseq_id": "VFBseq_00000539",
+      "sample_id": "0ece9e7a__FCA53_Male_oenocyteGFP_adult_5dWT_Jasper_sample1",
+      "label": "thorax, 5 days, male, PromE800-GAL4, UAS-unc84GFP",
+      "tissue_raw": "thorax",
+      "age_raw": "5 days",
+      "genotype": "PromE800-GAL4, UAS-unc84GFP",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003018",
+          "label": "adult thorax"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000540"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000541",
+      "sample_id": "6d9f44c6__FCA46_Female_fatbodyGFP_adult_3dcgGAL4LamGFPT_Jasper_sample1",
+      "label": "fat body, 5 days, female, Cg-GAL4, UAS-lamGFP",
+      "tissue_raw": "fat body",
+      "age_raw": "5 days",
+      "genotype": "Cg-GAL4, UAS-lamGFP",
+      "stock": [
+        "FBst0007378"
+      ],
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003209",
+          "label": "adult fat body"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000542",
+        "VFBseq_00000543",
+        "VFBseq_00000544",
+        "VFBseq_00000545"
+      ],
+      "n_assays": 4,
+      "curation_notes": [
+        "Age corrected from 3 to 5 days (SDRF) per the paper's supplement, which gives 5-day adults for fat body."
+      ]
+    },
+    {
+      "vfbseq_id": "VFBseq_00000546",
+      "sample_id": "6dae9a5c__FCA47_Male_haltere_adult_5dWT_Luo_sample1",
+      "label": "haltere, 5 days, male",
+      "tissue_raw": "haltere",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004783",
+          "label": "haltere"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000547",
+        "VFBseq_00000548",
+        "VFBseq_00000549",
+        "VFBseq_00000550"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000551",
+      "sample_id": "6dbdf10a__FCA48_Female_haltere_adult_5dWT_Luo_sample1",
+      "label": "haltere, 5 days, female",
+      "tissue_raw": "haltere",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004783",
+          "label": "haltere"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000552",
+        "VFBseq_00000553",
+        "VFBseq_00000554",
+        "VFBseq_00000555"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000556",
+      "sample_id": "6debf5fa__FCA51_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample2",
+      "label": "mixed proboscis and maxillary palpus, 5 days, male",
+      "tissue_raw": "mixed proboscis and maxillary palpus",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004535",
+          "label": "proboscis"
+        },
+        {
+          "fbbt_id": "FBbt:00004546",
+          "label": "maxillary palp"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000557",
+        "VFBseq_00000558",
+        "VFBseq_00000559",
+        "VFBseq_00000560"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000561",
+      "sample_id": "6dfb4e9c__FCA52_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample2",
+      "label": "mixed proboscis and maxillary palpus, 5 days, female",
+      "tissue_raw": "mixed proboscis and maxillary palpus",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004535",
+          "label": "proboscis"
+        },
+        {
+          "fbbt_id": "FBbt:00004546",
+          "label": "maxillary palp"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000562",
+        "VFBseq_00000563",
+        "VFBseq_00000564",
+        "VFBseq_00000565"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000566",
+      "sample_id": "6e19fc98__FCA54_Female_oenocyteGFP_adult_5dWT_Jasper_sample1",
+      "label": "thorax, 5 days, female, PromE800-GAL4, UAS-unc84GFP",
+      "tissue_raw": "thorax",
+      "age_raw": "5 days",
+      "genotype": "PromE800-GAL4, UAS-unc84GFP",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003018",
+          "label": "adult thorax"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000567",
+        "VFBseq_00000568",
+        "VFBseq_00000569",
+        "VFBseq_00000570"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000571",
+      "sample_id": "6e294c34__FCA55_Male_antenna_adult_5dWT_Luo_sample2",
+      "label": "antenna, 5 days, male",
+      "tissue_raw": "antenna",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004511",
+          "label": "antenna"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000572",
+        "VFBseq_00000573",
+        "VFBseq_00000574",
+        "VFBseq_00000575"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000576",
+      "sample_id": "6e38a0f8__FCA56_Female_antenna_adult_5dWT_Luo_sample2",
+      "label": "antenna, 5 days, female",
+      "tissue_raw": "antenna",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004511",
+          "label": "antenna"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000577",
+        "VFBseq_00000578",
+        "VFBseq_00000579",
+        "VFBseq_00000580"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000581",
+      "sample_id": "6e47f1ca__FCA57_Male_TracheaGFP_adult_5dWT_Kornberg_sample1",
+      "label": "trachea, 5 days, male, Btl-GAL4, UAS-lamGFP",
+      "tissue_raw": "trachea",
+      "age_raw": "5 days",
+      "genotype": "Btl-GAL4, UAS-lamGFP",
+      "stock": [
+        "FBst0007378"
+      ],
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003037",
+          "label": "adult tracheal system"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000582",
+        "VFBseq_00000583",
+        "VFBseq_00000584",
+        "VFBseq_00000585"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000586",
+      "sample_id": "6e574292__FCA58_Female_TracheaGFP_adult_5dWT_Kornberg_sample1",
+      "label": "trachea, 5 days, female, Btl-GAL4, UAS-lamGFP",
+      "tissue_raw": "trachea",
+      "age_raw": "5 days",
+      "genotype": "Btl-GAL4, UAS-lamGFP",
+      "stock": [
+        "FBst0007378"
+      ],
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003037",
+          "label": "adult tracheal system"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000587",
+        "VFBseq_00000588",
+        "VFBseq_00000589",
+        "VFBseq_00000590"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000591",
+      "sample_id": "6e669170__FCA59_Male_testis_adult_1dWT_Fuller_sample1",
+      "label": "testis, 1 days, male",
+      "tissue_raw": "testis",
+      "age_raw": "1 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007076",
+        "label": "day 1 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004928",
+          "label": "testis"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000592",
+        "VFBseq_00000593",
+        "VFBseq_00000594",
+        "VFBseq_00000595"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000596",
+      "sample_id": "6e75e580__FCA60_Male_testis_adult_1dWT_Fuller_sample2",
+      "label": "testis, 1 days, male",
+      "tissue_raw": "testis",
+      "age_raw": "1 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007076",
+        "label": "day 1 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004928",
+          "label": "testis"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000597",
+        "VFBseq_00000598",
+        "VFBseq_00000599",
+        "VFBseq_00000600"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000601",
+      "sample_id": "6e853dd2__FCA61_Male_testis_adult_1dWT_Fuller_sample3",
+      "label": "testis, 1 days, male",
+      "tissue_raw": "testis",
+      "age_raw": "1 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007076",
+        "label": "day 1 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004928",
+          "label": "testis"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000602",
+        "VFBseq_00000603",
+        "VFBseq_00000604",
+        "VFBseq_00000605"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000606",
+      "sample_id": "6e949598__FCA62_Female_ovary_adult_5dWT_Nystul_All_Nuclei",
+      "label": "ovary, 5 days, female",
+      "tissue_raw": "ovary",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004865",
+          "label": "ovary"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000607",
+        "VFBseq_00000608",
+        "VFBseq_00000609",
+        "VFBseq_00000610"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000611",
+      "sample_id": "6ea3ec82__FCA63_Female_ovary_adult_5dWT_Nystul_Big_Nuclei",
+      "label": "ovary, 5 days, femal",
+      "tissue_raw": "ovary",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004865",
+          "label": "ovary"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000612",
+        "VFBseq_00000613",
+        "VFBseq_00000614",
+        "VFBseq_00000615"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000616",
+      "sample_id": "a31353cc__FCA28_Male_gut_adult_5dWT_OBrien_sample1",
+      "label": "digestive system, 5 days, male",
+      "tissue_raw": "digestive system",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003123",
+          "label": "adult digestive system"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000617",
+        "VFBseq_00000618",
+        "VFBseq_00000619",
+        "VFBseq_00000620"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000621",
+      "sample_id": "a322a764__FCA29_Female_gut_adult_5dWT_OBrien_sample1",
+      "label": "digestive system, 5 days, female",
+      "tissue_raw": "digestive system",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003123",
+          "label": "adult digestive system"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000622",
+        "VFBseq_00000623",
+        "VFBseq_00000624",
+        "VFBseq_00000625"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000626",
+      "sample_id": "a331fc82__FCA30_Male_MalpighianTubule_adult_5d_Perrimon_sample1",
+      "label": "malpighian tubule, 5 days, male, drip-GAL4, UAS-nlsGFP",
+      "tissue_raw": "malpighian tubule",
+      "age_raw": "5 days",
+      "genotype": "drip-GAL4, UAS-nlsGFP",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00005725",
+          "label": "adult Malpighian tubule"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000627",
+        "VFBseq_00000628",
+        "VFBseq_00000629",
+        "VFBseq_00000630"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000631",
+      "sample_id": "a3415132__FCA31_Female_MalpighianTubule_adult_5d_Perrimon_sample1",
+      "label": "malpighian tubule, 5 days, female, drip-GAL4, UAS-nlsGFP",
+      "tissue_raw": "malpighian tubule",
+      "age_raw": "5 days",
+      "genotype": "drip-GAL4, UAS-nlsGFP",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00005725",
+          "label": "adult Malpighian tubule"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000632",
+        "VFBseq_00000633",
+        "VFBseq_00000634",
+        "VFBseq_00000635"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000636",
+      "sample_id": "a350a646__FCA32_Male_bodyWall_adult_5dWT_Jan_sample1",
+      "label": "body wall, 5 days, male",
+      "tissue_raw": "body wall",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00005396",
+          "label": "adult integumentary system"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000637",
+        "VFBseq_00000638",
+        "VFBseq_00000639",
+        "VFBseq_00000640"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000641",
+      "sample_id": "a35ff452__FCA33_Female_bodyWall_adult_5dWT_Jan_sample1",
+      "label": "body wall, 5 days, female",
+      "tissue_raw": "body wall",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00005396",
+          "label": "adult integumentary system"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000642",
+        "VFBseq_00000643",
+        "VFBseq_00000644",
+        "VFBseq_00000645"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000646",
+      "sample_id": "a36f434e__FCA34_Male_heart_adult_5dWT_Bodmer_sample1",
+      "label": "heart, 5 days, male",
+      "tissue_raw": "heart",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003154",
+          "label": "adult heart"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000647",
+        "VFBseq_00000648",
+        "VFBseq_00000649",
+        "VFBseq_00000650"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000651",
+      "sample_id": "a37e98a8__FCA35_Female_heart_adult_5dWT_Bodmer_sample1",
+      "label": "heart, 5 days, female",
+      "tissue_raw": "heart",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003154",
+          "label": "adult heart"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000652",
+        "VFBseq_00000653",
+        "VFBseq_00000654",
+        "VFBseq_00000655"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000656",
+      "sample_id": "a38dee20__FCA36_Male_testisACG_adult_2dWT_Wolfner_sample1",
+      "label": "male reproductive gland, 2 days, male",
+      "tissue_raw": "male reproductive gland",
+      "age_raw": "2 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007077",
+        "label": "day 2 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004959",
+          "label": "male accessory gland"
+        },
+        {
+          "fbbt_id": "FBbt:00004965",
+          "label": "ejaculatory duct"
+        },
+        {
+          "fbbt_id": "FBbt:00004962",
+          "label": "ejaculatory bulb"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000657",
+        "VFBseq_00000658",
+        "VFBseq_00000659",
+        "VFBseq_00000660"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000661",
+      "sample_id": "a39d4366__FCA37_Male_leg_adult_5dWT_Scott_sample1",
+      "label": "leg, 5 days, male",
+      "tissue_raw": "leg",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004640",
+          "label": "leg"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000662",
+        "VFBseq_00000663",
+        "VFBseq_00000664",
+        "VFBseq_00000665"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000666",
+      "sample_id": "a3ac98d4__FCA38_Female_leg_adult_5dWT_Scott_sample1",
+      "label": "leg, 5 days, female",
+      "tissue_raw": "leg",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004640",
+          "label": "leg"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000667",
+        "VFBseq_00000668",
+        "VFBseq_00000669",
+        "VFBseq_00000670"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000671",
+      "sample_id": "a3bbecd0__FCA39_Male_wing_adult_5dWT_Scott_sample1",
+      "label": "wing, 5 days, male",
+      "tissue_raw": "wing",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004729",
+          "label": "wing"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000672",
+        "VFBseq_00000673",
+        "VFBseq_00000674",
+        "VFBseq_00000675"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000676",
+      "sample_id": "a3cb42b6__FCA40_Female_wing_adult_5dWT_Scott_sample1",
+      "label": "wing, 5 days, female",
+      "tissue_raw": "wing",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004729",
+          "label": "wing"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000677",
+        "VFBseq_00000678",
+        "VFBseq_00000679",
+        "VFBseq_00000680"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000681",
+      "sample_id": "a3da986a__FCA41_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample1",
+      "label": "mixed proboscis and maxillary palpus, 5 days, male",
+      "tissue_raw": "mixed proboscis and maxillary palpus",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004535",
+          "label": "proboscis"
+        },
+        {
+          "fbbt_id": "FBbt:00004546",
+          "label": "maxillary palp"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000682",
+        "VFBseq_00000683",
+        "VFBseq_00000684",
+        "VFBseq_00000685"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000686",
+      "sample_id": "a3e9e982__FCA42_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample1",
+      "label": "mixed proboscis and maxillary palpus, 5 days, female",
+      "tissue_raw": "mixed proboscis and maxillary palpus",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004535",
+          "label": "proboscis"
+        },
+        {
+          "fbbt_id": "FBbt:00004546",
+          "label": "maxillary palp"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000687",
+        "VFBseq_00000688",
+        "VFBseq_00000689",
+        "VFBseq_00000690"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000691",
+      "sample_id": "a3f9404e__FCA43_Male_antenna_adult_5dWT_Luo_sample1",
+      "label": "antenna, 5 days, male",
+      "tissue_raw": "antenna",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004511",
+          "label": "antenna"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000692",
+        "VFBseq_00000693",
+        "VFBseq_00000694",
+        "VFBseq_00000695"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000696",
+      "sample_id": "a4088eb4__FCA44_Female_antenna_adult_5dWT_Luo_sample1",
+      "label": "antenna, 5 days, female",
+      "tissue_raw": "antenna",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004511",
+          "label": "antenna"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000697",
+        "VFBseq_00000698",
+        "VFBseq_00000699",
+        "VFBseq_00000700"
+      ],
+      "n_assays": 4
+    },
+    {
+      "vfbseq_id": "VFBseq_00000701",
+      "sample_id": "a417df9a__FCA45_Male_fatbody_adult_3dcgGAL4LamGFP_Jasper_sample1",
+      "label": "fat body, 5 days, male, Cg-GAL4, UAS-lamGFP",
+      "tissue_raw": "fat body",
+      "age_raw": "5 days",
+      "genotype": "Cg-GAL4, UAS-lamGFP",
+      "stock": [
+        "FBst0007378"
+      ],
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003209",
+          "label": "adult fat body"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000702",
+        "VFBseq_00000703",
+        "VFBseq_00000704",
+        "VFBseq_00000705"
+      ],
+      "n_assays": 4,
+      "curation_notes": [
+        "Age corrected from 3 to 5 days (SDRF) per the paper's supplement, which gives 5-day adults for fat body."
+      ]
+    },
+    {
+      "vfbseq_id": "VFBseq_00000706",
+      "sample_id": "d541ae4e__FCA1_MaleFemale_Head",
+      "label": "head, 5 days, mixed",
+      "tissue_raw": "head",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003007",
+          "label": "adult head"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000707"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000708",
+      "sample_id": "d54b72e4__FCA2_MaleFemale_Body",
+      "label": "body, 5 days, mixed",
+      "tissue_raw": "body",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00059181",
+          "label": "adult postcephalic region"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000709"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000710",
+      "sample_id": "d5543d16__FCA3_MaleFemale_Antenna",
+      "label": "antenna, 5 days, mixed",
+      "tissue_raw": "antenna",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00004511",
+          "label": "antenna"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000711"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000712",
+      "sample_id": "d55c64e6__FCA4_Male_Adult_Head1",
+      "label": "head, 5 days, male",
+      "tissue_raw": "head",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003007",
+          "label": "adult head"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000713"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000714",
+      "sample_id": "d5653fbc__FCA5_Male_Adult_Head2",
+      "label": "head, 5 days, male",
+      "tissue_raw": "head",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003007",
+          "label": "adult head"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000715"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000716",
+      "sample_id": "d56d6d0e__FCA6_Male_Adult_Head3",
+      "label": "head, 5 days, male",
+      "tissue_raw": "head",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003007",
+          "label": "adult head"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000717"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000718",
+      "sample_id": "d57550d2__FCA7_Female_Adult_Head1",
+      "label": "head, 5 days, female",
+      "tissue_raw": "head",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003007",
+          "label": "adult head"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000719"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000720",
+      "sample_id": "d57d41fc__FCA8_Female_Adult_Head2",
+      "label": "head, 5 days, female",
+      "tissue_raw": "head",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003007",
+          "label": "adult head"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000721"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000722",
+      "sample_id": "d584e4e8__FCA9_Female_Adult_Head3",
+      "label": "head, 5 days, female",
+      "tissue_raw": "head",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003007",
+          "label": "adult head"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000723"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000724",
+      "sample_id": "f7c048d0__FCA10_Male_head_adult",
+      "label": "head, 5 days, male",
+      "tissue_raw": "head",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003007",
+          "label": "adult head"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000725"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000726",
+      "sample_id": "f7ca8a02__FCA11_Male_head_adult",
+      "label": "head, 5 days, male",
+      "tissue_raw": "head",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003007",
+          "label": "adult head"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000727"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000728",
+      "sample_id": "f7d3b3d4__FCA12_Male_head_adult",
+      "label": "head, 5 days, male",
+      "tissue_raw": "head",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003007",
+          "label": "adult head"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000729"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000730",
+      "sample_id": "f7dc3ba8__FCA13_Female_head_adult",
+      "label": "head, 5 days, female",
+      "tissue_raw": "head",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003007",
+          "label": "adult head"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000731"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000732",
+      "sample_id": "f7e4c476__FCA14_Female_head_adult",
+      "label": "head, 5 days, female",
+      "tissue_raw": "head",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003007",
+          "label": "adult head"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000733"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000734",
+      "sample_id": "f7ed0992__FCA15_Female_head_adult",
+      "label": "head, 5 days, female",
+      "tissue_raw": "head",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003007",
+          "label": "adult head"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000735"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000736",
+      "sample_id": "f7f586bc__FCA16_Male_body_adult",
+      "label": "body, 5 days, male",
+      "tissue_raw": "body",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00059181",
+          "label": "adult postcephalic region"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000737"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000738",
+      "sample_id": "f7fd9b2c__FCA17_Male_body_adult",
+      "label": "body, 5 days, male",
+      "tissue_raw": "body",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00059181",
+          "label": "adult postcephalic region"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000739"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000740",
+      "sample_id": "f8063598__FCA18_Male_body_adult",
+      "label": "body, 5 days, male",
+      "tissue_raw": "body",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00059181",
+          "label": "adult postcephalic region"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000741"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000742",
+      "sample_id": "f80ebbdc__FCA19_Male_body_adult",
+      "label": "body, 5 days, male",
+      "tissue_raw": "body",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00059181",
+          "label": "adult postcephalic region"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000743"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000744",
+      "sample_id": "f817481a__FCA20_Male_body_adult",
+      "label": "body, 5 days, male",
+      "tissue_raw": "body",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00059181",
+          "label": "adult postcephalic region"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000745"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000746",
+      "sample_id": "f82124ca__FCA21_Male_body_adult",
+      "label": "body, 5 days, male",
+      "tissue_raw": "body",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00059181",
+          "label": "adult postcephalic region"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000747"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000748",
+      "sample_id": "f829fffa__FCA22_Female_body_adult",
+      "label": "body, 5 days, female",
+      "tissue_raw": "body",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00059181",
+          "label": "adult postcephalic region"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000749"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000750",
+      "sample_id": "f8328e36__FCA23_Female_body_adult",
+      "label": "body, 5 days, female",
+      "tissue_raw": "body",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00059181",
+          "label": "adult postcephalic region"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000751"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000752",
+      "sample_id": "f83b3be4__FCA24_Female_body_adult",
+      "label": "body, 5 days, female",
+      "tissue_raw": "body",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00059181",
+          "label": "adult postcephalic region"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000753"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000754",
+      "sample_id": "f8438c5e__FCA25_Female_body_adult",
+      "label": "body, 5 days, female",
+      "tissue_raw": "body",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00059181",
+          "label": "adult postcephalic region"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000755"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000756",
+      "sample_id": "f84bfd1c__FCA26_Female_body_adult",
+      "label": "body, 5 days, female",
+      "tissue_raw": "body",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00059181",
+          "label": "adult postcephalic region"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000757"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00000758",
+      "sample_id": "f8548b44__FCA27_Female_body_adult",
+      "label": "body, 5 days, female",
+      "tissue_raw": "body",
+      "age_raw": "5 days",
+      "genotype": "w1118",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00059181",
+          "label": "adult postcephalic region"
+        }
+      ],
+      "associated_dataset": "VFBseq_00000538",
+      "assay_vfbseq_ids": [
+        "VFBseq_00000759"
+      ],
+      "n_assays": 1
+    }
+  ],
+  "assays": [
+    {
+      "vfbseq_id": "VFBseq_00000540",
+      "library_id": "FCA53_Male_oenocyteGFP_adult_5dWT_Jasper_sample1_S1",
+      "accession": "ERX5671946",
+      "dbxrefs": [
+        "ERX5671946",
+        "SAMEA9135853"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000539",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000542",
+      "library_id": "FCA46_Female_fatbodyGFP_adult_3dcgGAL4LamGFPT_Jasper_sample1_S14",
+      "accession": "ERX5671957",
+      "dbxrefs": [
+        "ERX5671957",
+        "SAMEA9135882"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000541",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000543",
+      "library_id": "FCA46_Female_fatbodyGFP_adult_3dcgGAL4LamGFPT_Jasper_sample1_S18",
+      "accession": "ERX5671957",
+      "dbxrefs": [
+        "ERX5671957",
+        "SAMEA9135882"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000541",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000544",
+      "library_id": "FCA46_Female_fatbodyGFP_adult_3dcgGAL4LamGFPT_Jasper_sample1_S19",
+      "accession": "ERX5671957",
+      "dbxrefs": [
+        "ERX5671957",
+        "SAMEA9135882"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000541",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000545",
+      "library_id": "FCA46_Female_fatbodyGFP_adult_3dcgGAL4LamGFPT_Jasper_sample1_S2",
+      "accession": "ERX5671957",
+      "dbxrefs": [
+        "ERX5671957",
+        "SAMEA9135882"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000541",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000547",
+      "library_id": "FCA47_Male_haltere_adult_5dWT_Luo_sample1_S1",
+      "accession": "ERX5671961",
+      "dbxrefs": [
+        "ERX5671961",
+        "SAMEA9135898"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000546",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000548",
+      "library_id": "FCA47_Male_haltere_adult_5dWT_Luo_sample1_S15",
+      "accession": "ERX5671961",
+      "dbxrefs": [
+        "ERX5671961",
+        "SAMEA9135898"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000546",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000549",
+      "library_id": "FCA47_Male_haltere_adult_5dWT_Luo_sample1_S20",
+      "accession": "ERX5671961",
+      "dbxrefs": [
+        "ERX5671961",
+        "SAMEA9135898"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000546",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000550",
+      "library_id": "FCA47_Male_haltere_adult_5dWT_Luo_sample1_S9",
+      "accession": "ERX5671961",
+      "dbxrefs": [
+        "ERX5671961",
+        "SAMEA9135898"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000546",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000552",
+      "library_id": "FCA48_Female_haltere_adult_5dWT_Luo_sample1_S11",
+      "accession": "ERX5671962",
+      "dbxrefs": [
+        "ERX5671962",
+        "SAMEA9135901"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000551",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000553",
+      "library_id": "FCA48_Female_haltere_adult_5dWT_Luo_sample1_S4",
+      "accession": "ERX5671962",
+      "dbxrefs": [
+        "ERX5671962",
+        "SAMEA9135901"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000551",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000554",
+      "library_id": "FCA48_Female_haltere_adult_5dWT_Luo_sample1_S6",
+      "accession": "ERX5671962",
+      "dbxrefs": [
+        "ERX5671962",
+        "SAMEA9135901"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000551",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000555",
+      "library_id": "FCA48_Female_haltere_adult_5dWT_Luo_sample1_S8",
+      "accession": "ERX5671962",
+      "dbxrefs": [
+        "ERX5671962",
+        "SAMEA9135901"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000551",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000557",
+      "library_id": "FCA51_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample2_S24",
+      "accession": "ERX5671973",
+      "dbxrefs": [
+        "ERX5671973",
+        "SAMEA9135946"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000556",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000558",
+      "library_id": "FCA51_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample2_S25",
+      "accession": "ERX5671973",
+      "dbxrefs": [
+        "ERX5671973",
+        "SAMEA9135946"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000556",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000559",
+      "library_id": "FCA51_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample2_S37",
+      "accession": "ERX5671973",
+      "dbxrefs": [
+        "ERX5671973",
+        "SAMEA9135946"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000556",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000560",
+      "library_id": "FCA51_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample2_S40",
+      "accession": "ERX5671973",
+      "dbxrefs": [
+        "ERX5671973",
+        "SAMEA9135946"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000556",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000562",
+      "library_id": "FCA52_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample2_S26",
+      "accession": "ERX5671974",
+      "dbxrefs": [
+        "ERX5671974",
+        "SAMEA9135950"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000561",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000563",
+      "library_id": "FCA52_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample2_S27",
+      "accession": "ERX5671974",
+      "dbxrefs": [
+        "ERX5671974",
+        "SAMEA9135950"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000561",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000564",
+      "library_id": "FCA52_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample2_S32",
+      "accession": "ERX5671974",
+      "dbxrefs": [
+        "ERX5671974",
+        "SAMEA9135950"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000561",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000565",
+      "library_id": "FCA52_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample2_S36",
+      "accession": "ERX5671974",
+      "dbxrefs": [
+        "ERX5671974",
+        "SAMEA9135950"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000561",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000567",
+      "library_id": "FCA54_Female_oenocyteGFP_adult_5dWT_Jasper_sample1_S28",
+      "accession": "ERX5671970",
+      "dbxrefs": [
+        "ERX5671970",
+        "SAMEA9135934"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000566",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000568",
+      "library_id": "FCA54_Female_oenocyteGFP_adult_5dWT_Jasper_sample1_S30",
+      "accession": "ERX5671970",
+      "dbxrefs": [
+        "ERX5671970",
+        "SAMEA9135934"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000566",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000569",
+      "library_id": "FCA54_Female_oenocyteGFP_adult_5dWT_Jasper_sample1_S38",
+      "accession": "ERX5671970",
+      "dbxrefs": [
+        "ERX5671970",
+        "SAMEA9135934"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000566",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000570",
+      "library_id": "FCA54_Female_oenocyteGFP_adult_5dWT_Jasper_sample1_S39",
+      "accession": "ERX5671970",
+      "dbxrefs": [
+        "ERX5671970",
+        "SAMEA9135934"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000566",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000572",
+      "library_id": "FCA55_Male_antenna_adult_5dWT_Luo_sample2_S21",
+      "accession": "ERX5671951",
+      "dbxrefs": [
+        "ERX5671951",
+        "SAMEA9135858"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000571",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000573",
+      "library_id": "FCA55_Male_antenna_adult_5dWT_Luo_sample2_S23",
+      "accession": "ERX5671951",
+      "dbxrefs": [
+        "ERX5671951",
+        "SAMEA9135858"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000571",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000574",
+      "library_id": "FCA55_Male_antenna_adult_5dWT_Luo_sample2_S29",
+      "accession": "ERX5671951",
+      "dbxrefs": [
+        "ERX5671951",
+        "SAMEA9135858"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000571",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000575",
+      "library_id": "FCA55_Male_antenna_adult_5dWT_Luo_sample2_S33",
+      "accession": "ERX5671951",
+      "dbxrefs": [
+        "ERX5671951",
+        "SAMEA9135858"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000571",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000577",
+      "library_id": "FCA56_Female_antenna_adult_5dWT_Luo_sample2_S46",
+      "accession": "ERX5671952",
+      "dbxrefs": [
+        "ERX5671952",
+        "SAMEA9135862"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000576",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000578",
+      "library_id": "FCA56_Female_antenna_adult_5dWT_Luo_sample2_S52",
+      "accession": "ERX5671952",
+      "dbxrefs": [
+        "ERX5671952",
+        "SAMEA9135862"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000576",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000579",
+      "library_id": "FCA56_Female_antenna_adult_5dWT_Luo_sample2_S53",
+      "accession": "ERX5671952",
+      "dbxrefs": [
+        "ERX5671952",
+        "SAMEA9135862"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000576",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000580",
+      "library_id": "FCA56_Female_antenna_adult_5dWT_Luo_sample2_S54",
+      "accession": "ERX5671952",
+      "dbxrefs": [
+        "ERX5671952",
+        "SAMEA9135862"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000576",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000582",
+      "library_id": "FCA57_Male_TracheaGFP_adult_5dWT_Kornberg_sample1_S41",
+      "accession": "ERX5671980",
+      "dbxrefs": [
+        "ERX5671980",
+        "SAMEA9135974"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000581",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000583",
+      "library_id": "FCA57_Male_TracheaGFP_adult_5dWT_Kornberg_sample1_S43",
+      "accession": "ERX5671980",
+      "dbxrefs": [
+        "ERX5671980",
+        "SAMEA9135974"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000581",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000584",
+      "library_id": "FCA57_Male_TracheaGFP_adult_5dWT_Kornberg_sample1_S47",
+      "accession": "ERX5671980",
+      "dbxrefs": [
+        "ERX5671980",
+        "SAMEA9135974"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000581",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000585",
+      "library_id": "FCA57_Male_TracheaGFP_adult_5dWT_Kornberg_sample1_S55",
+      "accession": "ERX5671980",
+      "dbxrefs": [
+        "ERX5671980",
+        "SAMEA9135974"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000581",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000587",
+      "library_id": "FCA58_Female_TracheaGFP_adult_5dWT_Kornberg_sample1_S42",
+      "accession": "ERX5671981",
+      "dbxrefs": [
+        "ERX5671981",
+        "SAMEA9135978"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000586",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000588",
+      "library_id": "FCA58_Female_TracheaGFP_adult_5dWT_Kornberg_sample1_S45",
+      "accession": "ERX5671981",
+      "dbxrefs": [
+        "ERX5671981",
+        "SAMEA9135978"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000586",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000589",
+      "library_id": "FCA58_Female_TracheaGFP_adult_5dWT_Kornberg_sample1_S50",
+      "accession": "ERX5671981",
+      "dbxrefs": [
+        "ERX5671981",
+        "SAMEA9135978"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000586",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000590",
+      "library_id": "FCA58_Female_TracheaGFP_adult_5dWT_Kornberg_sample1_S51",
+      "accession": "ERX5671981",
+      "dbxrefs": [
+        "ERX5671981",
+        "SAMEA9135978"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000586",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000592",
+      "library_id": "FCA59_Male_testis_adult_1dWT_Fuller_sample1_S44",
+      "accession": "ERX5671977",
+      "dbxrefs": [
+        "ERX5671977",
+        "SAMEA9135962"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000591",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000593",
+      "library_id": "FCA59_Male_testis_adult_1dWT_Fuller_sample1_S48",
+      "accession": "ERX5671977",
+      "dbxrefs": [
+        "ERX5671977",
+        "SAMEA9135962"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000591",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000594",
+      "library_id": "FCA59_Male_testis_adult_1dWT_Fuller_sample1_S49",
+      "accession": "ERX5671977",
+      "dbxrefs": [
+        "ERX5671977",
+        "SAMEA9135962"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000591",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000595",
+      "library_id": "FCA59_Male_testis_adult_1dWT_Fuller_sample1_S56",
+      "accession": "ERX5671977",
+      "dbxrefs": [
+        "ERX5671977",
+        "SAMEA9135962"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000591",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000597",
+      "library_id": "FCA60_Male_testis_adult_1dWT_Fuller_sample2_S59",
+      "accession": "ERX5671978",
+      "dbxrefs": [
+        "ERX5671978",
+        "SAMEA9135966"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000596",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000598",
+      "library_id": "FCA60_Male_testis_adult_1dWT_Fuller_sample2_S61",
+      "accession": "ERX5671978",
+      "dbxrefs": [
+        "ERX5671978",
+        "SAMEA9135966"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000596",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000599",
+      "library_id": "FCA60_Male_testis_adult_1dWT_Fuller_sample2_S67",
+      "accession": "ERX5671978",
+      "dbxrefs": [
+        "ERX5671978",
+        "SAMEA9135966"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000596",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000600",
+      "library_id": "FCA60_Male_testis_adult_1dWT_Fuller_sample2_S70",
+      "accession": "ERX5671978",
+      "dbxrefs": [
+        "ERX5671978",
+        "SAMEA9135966"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000596",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000602",
+      "library_id": "FCA61_Male_testis_adult_1dWT_Fuller_sample3_S60",
+      "accession": "ERX5671979",
+      "dbxrefs": [
+        "ERX5671979",
+        "SAMEA9135970"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000601",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000603",
+      "library_id": "FCA61_Male_testis_adult_1dWT_Fuller_sample3_S65",
+      "accession": "ERX5671979",
+      "dbxrefs": [
+        "ERX5671979",
+        "SAMEA9135970"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000601",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000604",
+      "library_id": "FCA61_Male_testis_adult_1dWT_Fuller_sample3_S68",
+      "accession": "ERX5671979",
+      "dbxrefs": [
+        "ERX5671979",
+        "SAMEA9135970"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000601",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000605",
+      "library_id": "FCA61_Male_testis_adult_1dWT_Fuller_sample3_S69",
+      "accession": "ERX5671979",
+      "dbxrefs": [
+        "ERX5671979",
+        "SAMEA9135970"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000601",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000607",
+      "library_id": "FCA62_Female_ovary_adult_5dWT_Nystul_All_Nuclei_S57",
+      "accession": "ERX5671971",
+      "dbxrefs": [
+        "ERX5671971",
+        "SAMEA9135938"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000606",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000608",
+      "library_id": "FCA62_Female_ovary_adult_5dWT_Nystul_All_Nuclei_S58",
+      "accession": "ERX5671971",
+      "dbxrefs": [
+        "ERX5671971",
+        "SAMEA9135938"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000606",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000609",
+      "library_id": "FCA62_Female_ovary_adult_5dWT_Nystul_All_Nuclei_S62",
+      "accession": "ERX5671971",
+      "dbxrefs": [
+        "ERX5671971",
+        "SAMEA9135938"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000606",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000610",
+      "library_id": "FCA62_Female_ovary_adult_5dWT_Nystul_All_Nuclei_S63",
+      "accession": "ERX5671971",
+      "dbxrefs": [
+        "ERX5671971",
+        "SAMEA9135938"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000606",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000612",
+      "library_id": "FCA63_Female_ovary_adult_5dWT_Nystul_Big_Nuclei_S64",
+      "accession": "ERX5671972",
+      "dbxrefs": [
+        "ERX5671972",
+        "SAMEA9135942"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000611",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000613",
+      "library_id": "FCA63_Female_ovary_adult_5dWT_Nystul_Big_Nuclei_S66",
+      "accession": "ERX5671972",
+      "dbxrefs": [
+        "ERX5671972",
+        "SAMEA9135942"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000611",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000614",
+      "library_id": "FCA63_Female_ovary_adult_5dWT_Nystul_Big_Nuclei_S71",
+      "accession": "ERX5671972",
+      "dbxrefs": [
+        "ERX5671972",
+        "SAMEA9135942"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000611",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000615",
+      "library_id": "FCA63_Female_ovary_adult_5dWT_Nystul_Big_Nuclei_S72",
+      "accession": "ERX5671972",
+      "dbxrefs": [
+        "ERX5671972",
+        "SAMEA9135942"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000611",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000617",
+      "library_id": "FCA28_Male_gut_adult_5dWT_OBrien_sample1_S1",
+      "accession": "ERX5671959",
+      "dbxrefs": [
+        "ERX5671959",
+        "SAMEA9135890"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000616",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000618",
+      "library_id": "FCA28_Male_gut_adult_5dWT_OBrien_sample1_S11",
+      "accession": "ERX5671959",
+      "dbxrefs": [
+        "ERX5671959",
+        "SAMEA9135890"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000616",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000619",
+      "library_id": "FCA28_Male_gut_adult_5dWT_OBrien_sample1_S14",
+      "accession": "ERX5671959",
+      "dbxrefs": [
+        "ERX5671959",
+        "SAMEA9135890"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000616",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000620",
+      "library_id": "FCA28_Male_gut_adult_5dWT_OBrien_sample1_S5",
+      "accession": "ERX5671959",
+      "dbxrefs": [
+        "ERX5671959",
+        "SAMEA9135890"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000616",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000622",
+      "library_id": "FCA29_Female_gut_adult_5dWT_OBrien_sample1_S12",
+      "accession": "ERX5671960",
+      "dbxrefs": [
+        "ERX5671960",
+        "SAMEA9135894"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000621",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000623",
+      "library_id": "FCA29_Female_gut_adult_5dWT_OBrien_sample1_S3",
+      "accession": "ERX5671960",
+      "dbxrefs": [
+        "ERX5671960",
+        "SAMEA9135894"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000621",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000624",
+      "library_id": "FCA29_Female_gut_adult_5dWT_OBrien_sample1_S7",
+      "accession": "ERX5671960",
+      "dbxrefs": [
+        "ERX5671960",
+        "SAMEA9135894"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000621",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000625",
+      "library_id": "FCA29_Female_gut_adult_5dWT_OBrien_sample1_S9",
+      "accession": "ERX5671960",
+      "dbxrefs": [
+        "ERX5671960",
+        "SAMEA9135894"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000621",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000627",
+      "library_id": "FCA30_Male_MalpighianTubule_adult_5d_Perrimon_sample1_S10",
+      "accession": "ERX5671968",
+      "dbxrefs": [
+        "ERX5671968",
+        "SAMEA9135926"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000626",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000628",
+      "library_id": "FCA30_Male_MalpighianTubule_adult_5d_Perrimon_sample1_S15",
+      "accession": "ERX5671968",
+      "dbxrefs": [
+        "ERX5671968",
+        "SAMEA9135926"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000626",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000629",
+      "library_id": "FCA30_Male_MalpighianTubule_adult_5d_Perrimon_sample1_S4",
+      "accession": "ERX5671968",
+      "dbxrefs": [
+        "ERX5671968",
+        "SAMEA9135926"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000626",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000630",
+      "library_id": "FCA30_Male_MalpighianTubule_adult_5d_Perrimon_sample1_S8",
+      "accession": "ERX5671968",
+      "dbxrefs": [
+        "ERX5671968",
+        "SAMEA9135926"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000626",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000632",
+      "library_id": "FCA31_Female_MalpighianTubule_adult_5d_Perrimon_sample1_S13",
+      "accession": "ERX5671969",
+      "dbxrefs": [
+        "ERX5671969",
+        "SAMEA9135930"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000631",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000633",
+      "library_id": "FCA31_Female_MalpighianTubule_adult_5d_Perrimon_sample1_S16",
+      "accession": "ERX5671969",
+      "dbxrefs": [
+        "ERX5671969",
+        "SAMEA9135930"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000631",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000634",
+      "library_id": "FCA31_Female_MalpighianTubule_adult_5d_Perrimon_sample1_S2",
+      "accession": "ERX5671969",
+      "dbxrefs": [
+        "ERX5671969",
+        "SAMEA9135930"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000631",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000635",
+      "library_id": "FCA31_Female_MalpighianTubule_adult_5d_Perrimon_sample1_S6",
+      "accession": "ERX5671969",
+      "dbxrefs": [
+        "ERX5671969",
+        "SAMEA9135930"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000631",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000637",
+      "library_id": "FCA32_Male_bodyWall_adult_5dWT_Jan_sample1_S18",
+      "accession": "ERX5671955",
+      "dbxrefs": [
+        "ERX5671955",
+        "SAMEA9135874"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000636",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000638",
+      "library_id": "FCA32_Male_bodyWall_adult_5dWT_Jan_sample1_S21",
+      "accession": "ERX5671955",
+      "dbxrefs": [
+        "ERX5671955",
+        "SAMEA9135874"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000636",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000639",
+      "library_id": "FCA32_Male_bodyWall_adult_5dWT_Jan_sample1_S25",
+      "accession": "ERX5671955",
+      "dbxrefs": [
+        "ERX5671955",
+        "SAMEA9135874"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000636",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000640",
+      "library_id": "FCA32_Male_bodyWall_adult_5dWT_Jan_sample1_S28",
+      "accession": "ERX5671955",
+      "dbxrefs": [
+        "ERX5671955",
+        "SAMEA9135874"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000636",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000642",
+      "library_id": "FCA33_Female_bodyWall_adult_5dWT_Jan_sample1_S17",
+      "accession": "ERX5671956",
+      "dbxrefs": [
+        "ERX5671956",
+        "SAMEA9135878"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000641",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000643",
+      "library_id": "FCA33_Female_bodyWall_adult_5dWT_Jan_sample1_S23",
+      "accession": "ERX5671956",
+      "dbxrefs": [
+        "ERX5671956",
+        "SAMEA9135878"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000641",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000644",
+      "library_id": "FCA33_Female_bodyWall_adult_5dWT_Jan_sample1_S26",
+      "accession": "ERX5671956",
+      "dbxrefs": [
+        "ERX5671956",
+        "SAMEA9135878"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000641",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000645",
+      "library_id": "FCA33_Female_bodyWall_adult_5dWT_Jan_sample1_S30",
+      "accession": "ERX5671956",
+      "dbxrefs": [
+        "ERX5671956",
+        "SAMEA9135878"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000641",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000647",
+      "library_id": "FCA34_Male_heart_adult_5dWT_Bodmer_sample1_S19",
+      "accession": "ERX5671963",
+      "dbxrefs": [
+        "ERX5671963",
+        "SAMEA9135906"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000646",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000648",
+      "library_id": "FCA34_Male_heart_adult_5dWT_Bodmer_sample1_S22",
+      "accession": "ERX5671963",
+      "dbxrefs": [
+        "ERX5671963",
+        "SAMEA9135906"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000646",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000649",
+      "library_id": "FCA34_Male_heart_adult_5dWT_Bodmer_sample1_S27",
+      "accession": "ERX5671963",
+      "dbxrefs": [
+        "ERX5671963",
+        "SAMEA9135906"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000646",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000650",
+      "library_id": "FCA34_Male_heart_adult_5dWT_Bodmer_sample1_S31",
+      "accession": "ERX5671963",
+      "dbxrefs": [
+        "ERX5671963",
+        "SAMEA9135906"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000646",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000652",
+      "library_id": "FCA35_Female_heart_adult_5dWT_Bodmer_sample1_S20",
+      "accession": "ERX5671964",
+      "dbxrefs": [
+        "ERX5671964",
+        "SAMEA9135910"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000651",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000653",
+      "library_id": "FCA35_Female_heart_adult_5dWT_Bodmer_sample1_S24",
+      "accession": "ERX5671964",
+      "dbxrefs": [
+        "ERX5671964",
+        "SAMEA9135910"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000651",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000654",
+      "library_id": "FCA35_Female_heart_adult_5dWT_Bodmer_sample1_S29",
+      "accession": "ERX5671964",
+      "dbxrefs": [
+        "ERX5671964",
+        "SAMEA9135910"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000651",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000655",
+      "library_id": "FCA35_Female_heart_adult_5dWT_Bodmer_sample1_S32",
+      "accession": "ERX5671964",
+      "dbxrefs": [
+        "ERX5671964",
+        "SAMEA9135910"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000651",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000657",
+      "library_id": "FCA36_Male_testisACG_adult_2dWT_Wolfner_sample1_S40",
+      "accession": "ERX5671967",
+      "dbxrefs": [
+        "ERX5671967",
+        "SAMEA9135922"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000656",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000658",
+      "library_id": "FCA36_Male_testisACG_adult_2dWT_Wolfner_sample1_S46",
+      "accession": "ERX5671967",
+      "dbxrefs": [
+        "ERX5671967",
+        "SAMEA9135922"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000656",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000659",
+      "library_id": "FCA36_Male_testisACG_adult_2dWT_Wolfner_sample1_S47",
+      "accession": "ERX5671967",
+      "dbxrefs": [
+        "ERX5671967",
+        "SAMEA9135922"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000656",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000660",
+      "library_id": "FCA36_Male_testisACG_adult_2dWT_Wolfner_sample1_S52",
+      "accession": "ERX5671967",
+      "dbxrefs": [
+        "ERX5671967",
+        "SAMEA9135922"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000656",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000662",
+      "library_id": "FCA37_Male_leg_adult_5dWT_Scott_sample1_S41",
+      "accession": "ERX5671965",
+      "dbxrefs": [
+        "ERX5671965",
+        "SAMEA9135914"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000661",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000663",
+      "library_id": "FCA37_Male_leg_adult_5dWT_Scott_sample1_S44",
+      "accession": "ERX5671965",
+      "dbxrefs": [
+        "ERX5671965",
+        "SAMEA9135914"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000661",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000664",
+      "library_id": "FCA37_Male_leg_adult_5dWT_Scott_sample1_S45",
+      "accession": "ERX5671965",
+      "dbxrefs": [
+        "ERX5671965",
+        "SAMEA9135914"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000661",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000665",
+      "library_id": "FCA37_Male_leg_adult_5dWT_Scott_sample1_S51",
+      "accession": "ERX5671965",
+      "dbxrefs": [
+        "ERX5671965",
+        "SAMEA9135914"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000661",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000667",
+      "library_id": "FCA38_Female_leg_adult_5dWT_Scott_sample1_S33",
+      "accession": "ERX5671966",
+      "dbxrefs": [
+        "ERX5671966",
+        "SAMEA9135918"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000666",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000668",
+      "library_id": "FCA38_Female_leg_adult_5dWT_Scott_sample1_S34",
+      "accession": "ERX5671966",
+      "dbxrefs": [
+        "ERX5671966",
+        "SAMEA9135918"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000666",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000669",
+      "library_id": "FCA38_Female_leg_adult_5dWT_Scott_sample1_S36",
+      "accession": "ERX5671966",
+      "dbxrefs": [
+        "ERX5671966",
+        "SAMEA9135918"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000666",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000670",
+      "library_id": "FCA38_Female_leg_adult_5dWT_Scott_sample1_S48",
+      "accession": "ERX5671966",
+      "dbxrefs": [
+        "ERX5671966",
+        "SAMEA9135918"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000666",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000672",
+      "library_id": "FCA39_Male_wing_adult_5dWT_Scott_sample1_S38",
+      "accession": "ERX5671982",
+      "dbxrefs": [
+        "ERX5671982",
+        "SAMEA9135983"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000671",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000673",
+      "library_id": "FCA39_Male_wing_adult_5dWT_Scott_sample1_S42",
+      "accession": "ERX5671982",
+      "dbxrefs": [
+        "ERX5671982",
+        "SAMEA9135983"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000671",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000674",
+      "library_id": "FCA39_Male_wing_adult_5dWT_Scott_sample1_S43",
+      "accession": "ERX5671982",
+      "dbxrefs": [
+        "ERX5671982",
+        "SAMEA9135983"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000671",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000675",
+      "library_id": "FCA39_Male_wing_adult_5dWT_Scott_sample1_S50",
+      "accession": "ERX5671982",
+      "dbxrefs": [
+        "ERX5671982",
+        "SAMEA9135983"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000671",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000677",
+      "library_id": "FCA40_Female_wing_adult_5dWT_Scott_sample1_S35",
+      "accession": "ERX5671983",
+      "dbxrefs": [
+        "ERX5671983",
+        "SAMEA9135986"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000676",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000678",
+      "library_id": "FCA40_Female_wing_adult_5dWT_Scott_sample1_S37",
+      "accession": "ERX5671983",
+      "dbxrefs": [
+        "ERX5671983",
+        "SAMEA9135986"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000676",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000679",
+      "library_id": "FCA40_Female_wing_adult_5dWT_Scott_sample1_S39",
+      "accession": "ERX5671983",
+      "dbxrefs": [
+        "ERX5671983",
+        "SAMEA9135986"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000676",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000680",
+      "library_id": "FCA40_Female_wing_adult_5dWT_Scott_sample1_S49",
+      "accession": "ERX5671983",
+      "dbxrefs": [
+        "ERX5671983",
+        "SAMEA9135986"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000676",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000682",
+      "library_id": "FCA41_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample1_S53",
+      "accession": "ERX5671975",
+      "dbxrefs": [
+        "ERX5671975",
+        "SAMEA9135954"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000681",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000683",
+      "library_id": "FCA41_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample1_S59",
+      "accession": "ERX5671975",
+      "dbxrefs": [
+        "ERX5671975",
+        "SAMEA9135954"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000681",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000684",
+      "library_id": "FCA41_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample1_S71",
+      "accession": "ERX5671975",
+      "dbxrefs": [
+        "ERX5671975",
+        "SAMEA9135954"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000681",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000685",
+      "library_id": "FCA41_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample1_S72",
+      "accession": "ERX5671975",
+      "dbxrefs": [
+        "ERX5671975",
+        "SAMEA9135954"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000681",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000687",
+      "library_id": "FCA42_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample1_S55",
+      "accession": "ERX5671976",
+      "dbxrefs": [
+        "ERX5671976",
+        "SAMEA9135958"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000686",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000688",
+      "library_id": "FCA42_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample1_S56",
+      "accession": "ERX5671976",
+      "dbxrefs": [
+        "ERX5671976",
+        "SAMEA9135958"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000686",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000689",
+      "library_id": "FCA42_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample1_S57",
+      "accession": "ERX5671976",
+      "dbxrefs": [
+        "ERX5671976",
+        "SAMEA9135958"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000686",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000690",
+      "library_id": "FCA42_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample1_S66",
+      "accession": "ERX5671976",
+      "dbxrefs": [
+        "ERX5671976",
+        "SAMEA9135958"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000686",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000692",
+      "library_id": "FCA43_Male_antenna_adult_5dWT_Luo_sample1_S54",
+      "accession": "ERX5671953",
+      "dbxrefs": [
+        "ERX5671953",
+        "SAMEA9135866"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000691",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000693",
+      "library_id": "FCA43_Male_antenna_adult_5dWT_Luo_sample1_S58",
+      "accession": "ERX5671953",
+      "dbxrefs": [
+        "ERX5671953",
+        "SAMEA9135866"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000691",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000694",
+      "library_id": "FCA43_Male_antenna_adult_5dWT_Luo_sample1_S61",
+      "accession": "ERX5671953",
+      "dbxrefs": [
+        "ERX5671953",
+        "SAMEA9135866"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000691",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000695",
+      "library_id": "FCA43_Male_antenna_adult_5dWT_Luo_sample1_S69",
+      "accession": "ERX5671953",
+      "dbxrefs": [
+        "ERX5671953",
+        "SAMEA9135866"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000691",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000697",
+      "library_id": "FCA44_Female_antenna_adult_5dWT_Luo_sample1_S62",
+      "accession": "ERX5671954",
+      "dbxrefs": [
+        "ERX5671954",
+        "SAMEA9135870"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000696",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000698",
+      "library_id": "FCA44_Female_antenna_adult_5dWT_Luo_sample1_S65",
+      "accession": "ERX5671954",
+      "dbxrefs": [
+        "ERX5671954",
+        "SAMEA9135870"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000696",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000699",
+      "library_id": "FCA44_Female_antenna_adult_5dWT_Luo_sample1_S67",
+      "accession": "ERX5671954",
+      "dbxrefs": [
+        "ERX5671954",
+        "SAMEA9135870"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000696",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000700",
+      "library_id": "FCA44_Female_antenna_adult_5dWT_Luo_sample1_S68",
+      "accession": "ERX5671954",
+      "dbxrefs": [
+        "ERX5671954",
+        "SAMEA9135870"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000696",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000702",
+      "library_id": "FCA45_Male_fatbody_adult_3dcgGAL4LamGFP_Jasper_sample1_S60",
+      "accession": "ERX5671958",
+      "dbxrefs": [
+        "ERX5671958",
+        "SAMEA9135886"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000701",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000703",
+      "library_id": "FCA45_Male_fatbody_adult_3dcgGAL4LamGFP_Jasper_sample1_S63",
+      "accession": "ERX5671958",
+      "dbxrefs": [
+        "ERX5671958",
+        "SAMEA9135886"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000701",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000704",
+      "library_id": "FCA45_Male_fatbody_adult_3dcgGAL4LamGFP_Jasper_sample1_S64",
+      "accession": "ERX5671958",
+      "dbxrefs": [
+        "ERX5671958",
+        "SAMEA9135886"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000701",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000705",
+      "library_id": "FCA45_Male_fatbody_adult_3dcgGAL4LamGFP_Jasper_sample1_S70",
+      "accession": "ERX5671958",
+      "dbxrefs": [
+        "ERX5671958",
+        "SAMEA9135886"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000701",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000707",
+      "library_id": "FCA1_Head_S1",
+      "accession": "ERX5671923",
+      "dbxrefs": [
+        "ERX5671923",
+        "SAMEA9135830"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000706",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000709",
+      "library_id": "FCA2_Body_S2",
+      "accession": "ERX5671934",
+      "dbxrefs": [
+        "ERX5671934",
+        "SAMEA9135841"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000708",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000711",
+      "library_id": "FCA3_Ant_S1",
+      "accession": "ERX5671943",
+      "dbxrefs": [
+        "ERX5671943",
+        "SAMEA9135850"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000710",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000713",
+      "library_id": "FCA4_Male_Adult_Head1_S1",
+      "accession": "ERX5671944",
+      "dbxrefs": [
+        "ERX5671944",
+        "SAMEA9135851"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000712",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000715",
+      "library_id": "FCA5_Male_Adult_Head2_S2",
+      "accession": "ERX5671945",
+      "dbxrefs": [
+        "ERX5671945",
+        "SAMEA9135852"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000714",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000717",
+      "library_id": "FCA6_Male_Adult_Head3_S3",
+      "accession": "ERX5671947",
+      "dbxrefs": [
+        "ERX5671947",
+        "SAMEA9135854"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000716",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000719",
+      "library_id": "FCA7_Female_Adult_Head1_S4",
+      "accession": "ERX5671948",
+      "dbxrefs": [
+        "ERX5671948",
+        "SAMEA9135856"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000718",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000721",
+      "library_id": "FCA8_Female_Adult_Head2_S5",
+      "accession": "ERX5671949",
+      "dbxrefs": [
+        "ERX5671949",
+        "SAMEA9135855"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000720",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000723",
+      "library_id": "FCA9_Female_Adult_Head3_S6",
+      "accession": "ERX5671950",
+      "dbxrefs": [
+        "ERX5671950",
+        "SAMEA9135857"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000722",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000725",
+      "library_id": "FCA10_Male_head_adult_5dWT_Luo_sample4_S1",
+      "accession": "ERX5671924",
+      "dbxrefs": [
+        "ERX5671924",
+        "SAMEA9135831"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000724",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000727",
+      "library_id": "FCA11_Male_head_adult_5dWT_Luo_sample5_S2",
+      "accession": "ERX5671925",
+      "dbxrefs": [
+        "ERX5671925",
+        "SAMEA9135832"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000726",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000729",
+      "library_id": "FCA12_Male_head_adult_5dWT_Luo_sample6_S3",
+      "accession": "ERX5671926",
+      "dbxrefs": [
+        "ERX5671926",
+        "SAMEA9135833"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000728",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000731",
+      "library_id": "FCA13_Female_head_adult_5dWT_Luo_sample4_S4",
+      "accession": "ERX5671927",
+      "dbxrefs": [
+        "ERX5671927",
+        "SAMEA9135834"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000730",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000733",
+      "library_id": "FCA14_Female_head_adult_5dWT_Luo_sample5_S5",
+      "accession": "ERX5671928",
+      "dbxrefs": [
+        "ERX5671928",
+        "SAMEA9135835"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000732",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000735",
+      "library_id": "FCA15_Female_head_adult_5dWT_Luo_sample6_S6",
+      "accession": "ERX5671929",
+      "dbxrefs": [
+        "ERX5671929",
+        "SAMEA9135836"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000734",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000737",
+      "library_id": "FCA16_Male_body_adult_5dWT_Luo_sample1_S7",
+      "accession": "ERX5671930",
+      "dbxrefs": [
+        "ERX5671930",
+        "SAMEA9135837"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000736",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000739",
+      "library_id": "FCA17_Male_body_adult_5dWT_Luo_sample2_S8",
+      "accession": "ERX5671931",
+      "dbxrefs": [
+        "ERX5671931",
+        "SAMEA9135838"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000738",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000741",
+      "library_id": "FCA18_Male_body_adult_5dWT_Luo_sample3_S9",
+      "accession": "ERX5671932",
+      "dbxrefs": [
+        "ERX5671932",
+        "SAMEA9135839"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000740",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000743",
+      "library_id": "FCA19_Male_body_adult_5dWT_Luo_sample4_S10",
+      "accession": "ERX5671933",
+      "dbxrefs": [
+        "ERX5671933",
+        "SAMEA9135840"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000742",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000745",
+      "library_id": "FCA20_Male_body_adult_5dWT_Luo_sample5_S11",
+      "accession": "ERX5671935",
+      "dbxrefs": [
+        "ERX5671935",
+        "SAMEA9135842"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000744",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000747",
+      "library_id": "FCA21_Male_body_adult_5dWT_Luo_sample6_S12",
+      "accession": "ERX5671936",
+      "dbxrefs": [
+        "ERX5671936",
+        "SAMEA9135843"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000746",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000749",
+      "library_id": "FCA22_Female_body_adult_5dWT_Luo_sample1_S13",
+      "accession": "ERX5671937",
+      "dbxrefs": [
+        "ERX5671937",
+        "SAMEA9135844"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000748",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000751",
+      "library_id": "FCA23_Female_body_adult_5dWT_Luo_sample2_S14",
+      "accession": "ERX5671938",
+      "dbxrefs": [
+        "ERX5671938",
+        "SAMEA9135845"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000750",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000753",
+      "library_id": "FCA24_Female_body_adult_5dWT_Luo_sample3_S15",
+      "accession": "ERX5671939",
+      "dbxrefs": [
+        "ERX5671939",
+        "SAMEA9135846"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000752",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000755",
+      "library_id": "FCA25_Female_body_adult_5dWT_Luo_sample4_S16",
+      "accession": "ERX5671940",
+      "dbxrefs": [
+        "ERX5671940",
+        "SAMEA9135847"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000754",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000757",
+      "library_id": "FCA26_Female_body_adult_5dWT_Luo_sample5_S17",
+      "accession": "ERX5671941",
+      "dbxrefs": [
+        "ERX5671941",
+        "SAMEA9135848"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000756",
+      "associated_dataset": "VFBseq_00000538"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000759",
+      "library_id": "FCA27_Female_body_adult_5dWT_Luo_sample6_S18",
+      "accession": "ERX5671942",
+      "dbxrefs": [
+        "ERX5671942",
+        "SAMEA9135849"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00000758",
+      "associated_dataset": "VFBseq_00000538"
+    }
+  ],
+  "clusterings": [
+    {
+      "vfbseq_id": "VFBseq_00000760",
+      "subset": "head",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Head"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000761",
+      "subset": "body",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Body"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000762",
+      "subset": "antenna",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Antenna"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000763",
+      "subset": "body_wall",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Body Wall"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000764",
+      "subset": "fat_body",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Fat Body"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000765",
+      "subset": "gut",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Gut"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000766",
+      "subset": "haltere",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Haltere"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000767",
+      "subset": "heart",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Heart"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000768",
+      "subset": "leg",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Leg"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000769",
+      "subset": "male_reproductive_glands",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Male Reproductive Glands"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000770",
+      "subset": "malpighian_tubule",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Malpighian Tubule"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000771",
+      "subset": "oenocyte",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Oenocyte"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000772",
+      "subset": "ovary",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Ovary"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000773",
+      "subset": "proboscis_and_maxillary_palps",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000774",
+      "subset": "testis",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Testis"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000775",
+      "subset": "trachea",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Trachea"
+    },
+    {
+      "vfbseq_id": "VFBseq_00000776",
+      "subset": "wing",
+      "associated_dataset": "VFBseq_00000538",
+      "name": "Fly Cell Atlas 10x Stringent Wing"
+    }
+  ]
+}
