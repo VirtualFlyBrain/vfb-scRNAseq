@@ -781,7 +781,10 @@ Curator decisions (2026-10-07):
   Assay = 10x library (160); Smart-seq2 Sample = tissue × sex × genotype × age (31),
   Assay = sorted plate (35). Tissue and sex follow the authors' SDRF annotation, not
   the drivers (e.g. oenocytes sorted with PromE800-GAL4 are "thorax" in 10x and
-  "abdominal segment element" in Smart-seq2, as recorded). Stocks not yet resolved.
+  "abdominal segment element" in Smart-seq2, as recorded). Samples overlap their
+  tissues: "body" = adult postcephalic region (FBbt:00059181); "male reproductive
+  gland" = accessory gland + ejaculatory duct + ejaculatory bulb. The supplement gives
+  only one stock number (UAS-lamGFP, FBst0007378, fat body and trachea crosses), none for w1118.
 - **Mapping:** the authors' FBbt ids as a first pass, upgraded where a better term now
   exists (adult-specific, or new terms for "Manual Annotation" types).
 - **Expression:** `expression.tsv` committed gzipped (too large otherwise).
