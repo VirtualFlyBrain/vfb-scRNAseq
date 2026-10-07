@@ -14,6 +14,9 @@ projects/<name>/samples.json. Config-driven (`sample_build` in config.yaml):
                    (ENA experiment, BioSamples); per-cell ids are not listed
   sex_column / sex_map, age_column / age_map, tissue_column / tissue_map,
   genotype_columns / stock_map, assay_method, clusterings
+  sdrf_corrections [{match: {column: value}, set: {column: value}, note}] curator
+                   fixes to SDRF values (e.g. an age contradicted by the paper),
+                   applied before grouping; the note is kept on the affected Samples
 
 Values come from the authors' SDRF annotations (curator decision: tissue and sex
 follow the authors, not inferred from drivers). Minted VFBseq ids are idempotent on
@@ -53,9 +56,28 @@ def single(values: set[str]) -> str | None:
     return vals.pop() if len(vals) == 1 else None
 
 
+def apply_corrections(rows: list[dict], corrections: list[dict]) -> list[dict]:
+    """Copies of the rows with curator `sdrf_corrections` applied; each corrected row
+    carries the notes in `_notes`."""
+    out = []
+    for r in rows:
+        r = dict(r)
+        for c in corrections:
+            if all(r.get(k) == v for k, v in c["match"].items()):
+                r.update(c["set"])
+                r.setdefault("_notes", []).append(c["note"])
+        out.append(r)
+    return out
+
+
 def build(rows: list[dict], sb: dict, accession: str, reg: IDRegistry, dataset_id: str):
     """Group SDRF rows into samples and assays; returns (samples, assays, warnings)."""
     warnings = []
+    rows = apply_corrections(rows, sb.get("sdrf_corrections", []))
+    for c in sb.get("sdrf_corrections", []):
+        if not any(all(r.get(k) == v for k, v in c["set"].items()) and c["note"] in r.get("_notes", [])
+                   for r in rows):
+            warnings.append(f"sdrf_correction matched no rows: {c['match']}")
     by_sample: dict[tuple, list[dict]] = defaultdict(list)
     for r in rows:
         by_sample[tuple(r.get(c, "") for c in sb["sample_columns"])].append(r)
@@ -113,7 +135,8 @@ def build(rows: list[dict], sb: dict, accession: str, reg: IDRegistry, dataset_i
             })
         label_bits = [tissue_raw, f"{age_raw} {sb.get('age_unit', 'days')}" if age_raw else None, sex_raw,
                       genotype if genotype and genotype not in sb.get("wild_type_genotypes", []) else None]
-        samples_out.append({
+        notes = sorted({n for m in members for n in m.get("_notes", [])})
+        rec = {
             "vfbseq_id": sample_vid,
             "sample_id": sample_id,
             "label": ", ".join(b for b in label_bits if b),
@@ -127,7 +150,10 @@ def build(rows: list[dict], sb: dict, accession: str, reg: IDRegistry, dataset_i
             "associated_dataset": dataset_id,
             "assay_vfbseq_ids": assay_vids,
             "n_assays": len(assay_vids),
-        })
+        }
+        if notes:
+            rec["curation_notes"] = notes
+        samples_out.append(rec)
     return samples_out, assays_out, warnings
 
 

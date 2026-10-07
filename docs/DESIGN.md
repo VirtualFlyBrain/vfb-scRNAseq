@@ -105,9 +105,11 @@ MAGE-TAB IDF + SDRF are fetched over HTTPS from the BioStudies FTP area (cached 
 `.cache/`) and grouped into Samples and Assays by config — `sample_columns` (the SDRF
 columns that define one biological sample), `assay_column` or `assay_regex` (the
 library / plate), `assay_xrefs` (ENA / BioSamples ids, only when single-valued per
-assay) and curated `sex_map` / `age_map` / `tissue_map` / `stock_map`. It writes the same
-`samples.json` as the GEO builder. A Sample may have several FBbt tissues. NB VFB has
-no ArrayExpress Site node yet (`vfb:ArrayExpress` is used).
+assay) and curated `sex_map` / `age_map` / `tissue_map` / `stock_map`. `sdrf_corrections`
+records curator fixes to SDRF values that the paper contradicts (applied before grouping;
+the note is kept on each affected Sample as `curation_notes`). It writes the same
+`samples.json` as the GEO builder. A Sample may have several FBbt tissues. The `vfb:ArrayExpress`
+Site node was added to the KB on 2026-10-07.
 
 GEOparse / pysradb are optional swap-ins (e.g. richer SOFT parsing, GSM→SRX/SRR
 resolution) but are **not required**; the stdlib path covers what the schema records.
@@ -785,6 +787,9 @@ Curator decisions (2026-10-07):
   tissues: "body" = adult postcephalic region (FBbt:00059181); "male reproductive
   gland" = accessory gland + ejaculatory duct + ejaculatory bulb. The supplement gives
   only one stock number (UAS-lamGFP, FBst0007378, fat body and trachea crosses), none for w1118.
+  Fat body age: the SDRF says 3 days, the supplement 5 (all tissues are 5-day adults
+  except male reproductive gland and testis, with stated reasons) — treated as an
+  ArrayExpress error and corrected via `sdrf_corrections` (noted on the Samples).
 - **Mapping:** the authors' FBbt ids as a first pass, upgraded where a better term now
   exists (adult-specific, or new terms for "Manual Annotation" types).
 - **Expression:** `expression.tsv` committed gzipped (too large otherwise).

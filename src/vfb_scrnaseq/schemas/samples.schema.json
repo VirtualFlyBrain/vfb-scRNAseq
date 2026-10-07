@@ -56,7 +56,8 @@
                                         { "type": "array", "items": { "$ref": "#/definitions/ont_ref_fbbt" } } ] },
           "associated_dataset": { "$ref": "#/definitions/vfbseq" },
           "assay_vfbseq_ids": { "type": "array", "items": { "$ref": "#/definitions/vfbseq" } },
-          "n_assays": { "type": "integer", "minimum": 0 }
+          "n_assays": { "type": "integer", "minimum": 0 },
+          "curation_notes": { "type": "array", "items": { "type": "string" } }
         }
       }
     },

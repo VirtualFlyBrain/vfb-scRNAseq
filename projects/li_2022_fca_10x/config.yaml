@@ -21,7 +21,7 @@ source:
 organism: Drosophila melanogaster
 
 dataset:
-  site: ArrayExpress            # NB VFB has no ArrayExpress Site node yet (vfb:ArrayExpress)
+  site: ArrayExpress            # vfb:ArrayExpress Site node added to KBW 2026-10-07
   accession: E-MTAB-10519
   licence: CC-BY-4.0
   assay_type: FBcv:0009001      # single-nucleus RNA-Seq
@@ -45,6 +45,14 @@ sample_build:
     "2": { stage: { fbdv_id: "FBdv:00007077", label: "day 2 of adulthood" } }
     "3": { stage: { fbdv_id: "FBdv:00007078", label: "day 3 of adulthood" } }
     "5": { stage: { fbdv_id: "FBdv:00007080", label: "day 5 of adulthood" } }
+  # Curator corrections to the SDRF (2026-10-07). The supplement ("Fly sample
+  # information") gives 5-day adults for every tissue except the male reproductive
+  # gland (2-3 d) and testis (0-1 d), with reasons for those two; the SDRF's 3 days for
+  # fat body is taken to be an ArrayExpress error.
+  sdrf_corrections:
+    - match: { "Characteristics[organism part]": "fat body", "Characteristics[age]": "3" }
+      set: { "Characteristics[age]": "5" }
+      note: "Age corrected from 3 to 5 days (SDRF) per the paper's supplement, which gives 5-day adults for fat body."
   genotype_columns: ['Characteristics[strain]']
   wild_type_genotypes: [w1118, wild type genotype]
   # FlyBase stocks, from the supplement ("Fly sample information"; science.abk2432_sm.pdf,
