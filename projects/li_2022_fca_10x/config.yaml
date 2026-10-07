@@ -107,20 +107,59 @@ sample_build:
       - { fbbt_id: "FBbt:00004546", label: "maxillary palp" }
   # one Clustering per author tissue analysis (10x Stringent, flycellatlas.org)
   clusterings:
-    - { id: head, name: "Fly Cell Atlas 10x Stringent Head" }
-    - { id: body, name: "Fly Cell Atlas 10x Stringent Body" }
-    - { id: antenna, name: "Fly Cell Atlas 10x Stringent Antenna" }
-    - { id: body_wall, name: "Fly Cell Atlas 10x Stringent Body Wall" }
-    - { id: fat_body, name: "Fly Cell Atlas 10x Stringent Fat Body" }
-    - { id: gut, name: "Fly Cell Atlas 10x Stringent Gut" }
-    - { id: haltere, name: "Fly Cell Atlas 10x Stringent Haltere" }
-    - { id: heart, name: "Fly Cell Atlas 10x Stringent Heart" }
-    - { id: leg, name: "Fly Cell Atlas 10x Stringent Leg" }
-    - { id: male_reproductive_glands, name: "Fly Cell Atlas 10x Stringent Male Reproductive Glands" }
-    - { id: malpighian_tubule, name: "Fly Cell Atlas 10x Stringent Malpighian Tubule" }
-    - { id: oenocyte, name: "Fly Cell Atlas 10x Stringent Oenocyte" }
-    - { id: ovary, name: "Fly Cell Atlas 10x Stringent Ovary" }
-    - { id: proboscis_and_maxillary_palps, name: "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps" }
-    - { id: testis, name: "Fly Cell Atlas 10x Stringent Testis" }
-    - { id: trachea, name: "Fly Cell Atlas 10x Stringent Trachea" }
-    - { id: wing, name: "Fly Cell Atlas 10x Stringent Wing" }
+    - { id: head, name: "Fly Cell Atlas 10x Stringent Head",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/LAEybPc2HZnpzKs" }
+    - { id: body, name: "Fly Cell Atlas 10x Stringent Body",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/nXnbWzQnLxTXmMT" }
+    - { id: antenna, name: "Fly Cell Atlas 10x Stringent Antenna",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/jpLWSwcA638yZka" }
+    - { id: body_wall, name: "Fly Cell Atlas 10x Stringent Body Wall",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/sZZMSbcNk4SWtHE" }
+    - { id: fat_body, name: "Fly Cell Atlas 10x Stringent Fat Body",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/zca3Es6MNx9TDsy" }
+    - { id: gut, name: "Fly Cell Atlas 10x Stringent Gut",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/TfX7etSc5NnmFAz" }
+    - { id: haltere, name: "Fly Cell Atlas 10x Stringent Haltere",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/QDtoYjpfQgey5aq" }
+    - { id: heart, name: "Fly Cell Atlas 10x Stringent Heart",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/sCB3bs3Yg5ypaBS" }
+    - { id: leg, name: "Fly Cell Atlas 10x Stringent Leg",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/ofHeNRbZPn52QtT" }
+    - { id: male_reproductive_glands, name: "Fly Cell Atlas 10x Stringent Male Reproductive Glands",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/B4kH5SiLPF24nsC" }
+    - { id: malpighian_tubule, name: "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/qDRy6NqxmqN7SxS" }
+    - { id: oenocyte, name: "Fly Cell Atlas 10x Stringent Oenocyte",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/WdSri425t88B7JA" }
+    - { id: ovary, name: "Fly Cell Atlas 10x Stringent Ovary",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/zgZe3Zsegpn5Bpg" }
+    - { id: proboscis_and_maxillary_palps, name: "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/gGsWF6PRk45Apan" }
+    - { id: testis, name: "Fly Cell Atlas 10x Stringent Testis",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/A2jn7iTEeRgMkc3" }
+    - { id: trachea, name: "Fly Cell Atlas 10x Stringent Trachea",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/j3kQTf5KifXyBYr" }
+    - { id: wing, name: "Fly Cell Atlas 10x Stringent Wing",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/eAD6HL7TaesZ6GM" }
+
+# Author annotations from the per-analysis h5ad files (scripts/fetch_h5ad.py, then
+# scripts/build_annotations_from_h5ad.py). `annotation` is the authors' stringent
+# typing (consensus across Leiden resolutions); `R_annotation` (a transferred
+# relaxed-analysis label) is not used.
+annotation_build:
+  annotation_column: annotation
+  ontology_column: annotation__ontology_id       # author FBbt id, or "Manual Annotation"
+  broad_column: annotation_broad
+  broad_ontology_column: annotation_broad__ontology_id
+  sex_column: sex
+  unannotated_values: [unannotated, artefact]
+
+annotations:
+  # shown after the cluster key in mapping.tsv
+  review_columns: [clustering, source_cluster_id, type, author_ontology_id, author_broad]
+
+# The authors' "unannotated" and "artefact" cells of each analysis are kept as one
+# entry each, flagged `unannotated`, and HELD unmapped.
+unidentified:
+  rule: none
+  hold_unidentified: true
