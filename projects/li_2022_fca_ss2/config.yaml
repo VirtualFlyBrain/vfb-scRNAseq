@@ -1,0 +1,126 @@
+# Fly Cell Atlas (Li et al. 2022). Two ArrayExpress experiments -> two projects
+# (one accession = one Dataset): li_2022_fca_10x (E-MTAB-10519) and
+# li_2022_fca_ss2 (E-MTAB-10628). Previously loaded into VFB from the Single Cell
+# Expression Atlas reprocessing (FBlc0003846 / 4307 / 4785, split by sex); rebuilt
+# here from the authors' own analyses (flycellatlas.org), curator decisions
+# 2026-10-07: 10x Stringent per tissue + Smart-seq2 per tissue (complete sets);
+# relaxed, integrated, cross-tissue and "All" analyses left out; one Cluster per
+# author annotation per tissue analysis; author FBbt ids as a first pass.
+project: li_2022_fca_ss2
+
+source:
+  doi: 10.1126/science.abk2432
+  pmid: "35239393"
+  pmcid: PMC8944923
+  fbrf: FBrf0252876          # VFB production :pub node (resolved by PMID)
+  title: "Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly"
+  journal: Science
+  year: 2022
+  first_author: Li
+
+organism: Drosophila melanogaster
+
+dataset:
+  site: ArrayExpress            # vfb:ArrayExpress Site node added to KBW 2026-10-07
+  accession: E-MTAB-10628
+  licence: CC-BY-4.0
+  assay_type: FBcv:0009001      # single-nucleus RNA-Seq
+
+sample_build:
+  source: arrayexpress
+  # every SDRF source is a single cell, so one biological Sample per tissue x sex x
+  # genotype x age (one sorted batch; 31 samples), curator decision 2026-10-07
+  sample_columns: ['Characteristics[organism part]', 'Characteristics[sex]', 'Characteristics[genotype]',
+  'Characteristics[age]']
+  # one Assay per sorted 384-well plate (parsed from the cell name, e.g. FCA_P43_male_oenocyte_A10);
+  # per-cell BioSamples/ENA ids (one per cell) are not listed
+  assay_regex: { column: Source Name, pattern: '^FCA_(?P<assay>P\d+)_' }
+  assay_xrefs: []
+  assay_method: { fbcv_id: FBcv:0009007, label: Smart-seq2 }
+  sex_column: Characteristics[sex]
+  sex_map: { femal: female }  # SDRF typo; "mixed" leaves sex unset
+  age_column: Characteristics[age]
+  age_unit: days
+  age_map:
+    "1": { stage: { fbdv_id: "FBdv:00007076", label: "day 1 of adulthood" } }
+    "2": { stage: { fbdv_id: "FBdv:00007077", label: "day 2 of adulthood" } }
+    "3": { stage: { fbdv_id: "FBdv:00007078", label: "day 3 of adulthood" } }
+    "5": { stage: { fbdv_id: "FBdv:00007080", label: "day 5 of adulthood" } }
+  # Curator corrections to the SDRF (2026-10-07). The supplement ("Fly sample
+  # information") gives 5-day adults for every tissue except the male reproductive
+  # gland (2-3 d) and testis (0-1 d), with reasons for those two; the SDRF's 3 days for
+  # fat body is taken to be an ArrayExpress error.
+  sdrf_corrections:
+    - match: { "Characteristics[organism part]": "fat body", "Characteristics[age]": "3" }
+      set: { "Characteristics[age]": "5" }
+      note: "Age corrected from 3 to 5 days (SDRF) per the paper's supplement, which gives 5-day adults for fat body."
+  genotype_columns: ['Characteristics[genotype]']
+  wild_type_genotypes: [w1118, wild type genotype]
+  # FlyBase stocks, from the supplement ("Fly sample information"; science.abk2432_sm.pdf,
+  # p4-5). Only UAS-lamGFP has a stock number (BDSC 7378 = FBst0007378, a parental
+  # stock of the fat body and trachea crosses). No stock numbers are given for w1118,
+  # the GAL4 drivers, UAS-nlsGFP or UAS-unc84GFP (the latter from Ref. 48).
+  stock_map:
+    "Cg-GAL4; UAS-lamGFP": [FBst0007378]
+    "Btl-GAL4; UAS-lamGFP": [FBst0007378]
+  tissue_column: Characteristics[organism part]
+  # Organism part -> FBbt, following the authors' SDRF annotation (not the driver).
+  # Samples *overlap* (RO:0002131) these terms, so a sample may contain other
+  # material too (e.g. "body wall" includes muscle and neurons as well as integument).
+  # Curator-reviewed 2026-10-07.
+  tissue_map:
+    "antenna":
+      - { fbbt_id: "FBbt:00004511", label: "antenna" }
+    "body wall":
+      - { fbbt_id: "FBbt:00005396", label: "adult integumentary system" }
+    "fat body":
+      - { fbbt_id: "FBbt:00003209", label: "adult fat body" }
+    "haltere":
+      - { fbbt_id: "FBbt:00004783", label: "haltere" }
+    "head":
+      - { fbbt_id: "FBbt:00003007", label: "adult head" }
+    "heart":
+      - { fbbt_id: "FBbt:00003154", label: "adult heart" }
+    "leg":
+      - { fbbt_id: "FBbt:00004640", label: "leg" }
+    "ovary":
+      - { fbbt_id: "FBbt:00004865", label: "ovary" }
+    "testis":
+      - { fbbt_id: "FBbt:00004928", label: "testis" }
+    "thorax":
+      - { fbbt_id: "FBbt:00003018", label: "adult thorax" }
+    "trachea":
+      - { fbbt_id: "FBbt:00003037", label: "adult tracheal system" }
+    "wing":
+      - { fbbt_id: "FBbt:00004729", label: "wing" }
+    "Malpighian tubule":
+      - { fbbt_id: "FBbt:00005725", label: "adult Malpighian tubule" }
+    "abdominal segment element":
+      - { fbbt_id: "FBbt:00003024", label: "adult abdominal segment" }
+    "gut":
+      - { fbbt_id: "FBbt:00007513", label: "adult gut" }
+    "insect proboscis":
+      - { fbbt_id: "FBbt:00004535", label: "proboscis" }
+    "reproductive gland":  # accessory gland + ejaculatory duct + ejaculatory bulb
+      - { fbbt_id: "FBbt:00004959", label: "male accessory gland" }
+      - { fbbt_id: "FBbt:00004965", label: "ejaculatory duct" }
+      - { fbbt_id: "FBbt:00004962", label: "ejaculatory bulb" }
+  # one Clustering per author tissue analysis (Smart-seq2, flycellatlas.org)
+  clusterings:
+    - { id: antenna, name: "Fly Cell Atlas Smart-seq2 Antenna" }
+    - { id: body_wall, name: "Fly Cell Atlas Smart-seq2 Body Wall" }
+    - { id: fat_body, name: "Fly Cell Atlas Smart-seq2 Fat Body" }
+    - { id: gut, name: "Fly Cell Atlas Smart-seq2 Gut" }
+    - { id: haltere, name: "Fly Cell Atlas Smart-seq2 Haltere" }
+    - { id: heart, name: "Fly Cell Atlas Smart-seq2 Heart" }
+    - { id: leg, name: "Fly Cell Atlas Smart-seq2 Leg" }
+    - { id: male_reproductive_glands, name: "Fly Cell Atlas Smart-seq2 Male Reproductive Glands" }
+    - { id: malpighian_tubule, name: "Fly Cell Atlas Smart-seq2 Malpighian Tubule" }
+    - { id: oenocyte, name: "Fly Cell Atlas Smart-seq2 Oenocyte" }
+    - { id: ovary, name: "Fly Cell Atlas Smart-seq2 Ovary" }
+    - { id: proboscis_and_maxillary_palps, name: "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps" }
+    - { id: testis, name: "Fly Cell Atlas Smart-seq2 Testis" }
+    - { id: trachea, name: "Fly Cell Atlas Smart-seq2 Trachea" }
+    - { id: wing, name: "Fly Cell Atlas Smart-seq2 Wing" }
+    - { id: dilp2IPC, name: "Fly Cell Atlas Smart-seq2 dilp2 IPC (insulin-producing cells)" }
+    - { id: akhCC, name: "Fly Cell Atlas Smart-seq2 Akh CC (corpora cardiaca)" }
