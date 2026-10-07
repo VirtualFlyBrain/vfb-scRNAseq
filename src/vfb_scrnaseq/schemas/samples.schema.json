@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://virtualflybrain.org/schemas/samples.schema.json",
   "title": "Sample / Assay / Clustering metadata",
-  "description": "Per-project Dataset/Sample/Assay/Clustering metadata built from GEO by build_samples_from_geo.py. Minted VFBseq IDs are the entity IRIs; GEO/SRA accessions are cross-references.",
+  "description": "Per-project Dataset/Sample/Assay/Clustering metadata built from GEO (build_samples_from_geo.py) or ArrayExpress (build_samples_from_arrayexpress.py). Minted VFBseq IDs are the entity IRIs; GEO/SRA accessions are cross-references.",
   "type": "object",
   "additionalProperties": false,
   "required": ["dataset", "samples", "assays", "clusterings"],
@@ -41,6 +41,7 @@
         "properties": {
           "vfbseq_id": { "$ref": "#/definitions/vfbseq" },
           "sample_id": { "type": "string" },
+          "label": { "type": "string" },
           "set": { "type": "string" },
           "timepoint": { "type": "string" },
           "biorep": { "type": "string" },
@@ -51,7 +52,8 @@
                                 { "type": "array", "items": { "type": "string", "pattern": "^FBst[0-9]{7}$" } } ] },
           "sex": { "type": ["string", "null"], "enum": ["male", "female", null] },
           "stage": { "oneOf": [ { "type": "null" }, { "$ref": "#/definitions/ont_ref_fbdv" } ] },
-          "sample_tissue": { "oneOf": [ { "type": "null" }, { "$ref": "#/definitions/ont_ref_fbbt" } ] },
+          "sample_tissue": { "oneOf": [ { "type": "null" }, { "$ref": "#/definitions/ont_ref_fbbt" },
+                                        { "type": "array", "items": { "$ref": "#/definitions/ont_ref_fbbt" } } ] },
           "associated_dataset": { "$ref": "#/definitions/vfbseq" },
           "assay_vfbseq_ids": { "type": "array", "items": { "$ref": "#/definitions/vfbseq" } },
           "n_assays": { "type": "integer", "minimum": 0 }
@@ -63,11 +65,13 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["vfbseq_id", "accession", "sample_vfbseq_id", "method"],
+        "required": ["vfbseq_id", "sample_vfbseq_id", "method"],
         "properties": {
           "vfbseq_id": { "$ref": "#/definitions/vfbseq" },
           "library_id": { "type": "string" },
-          "accession": { "type": "string", "pattern": "^GSM[0-9]+$" },
+          "accession": { "type": ["string", "null"], "pattern": "^(GSM|ERX|SRX)[0-9]+$" },
+          "dbxrefs": { "type": "array", "items": { "type": "string" } },
+          "n_sources": { "type": "integer", "minimum": 0 },
           "sra": { "type": ["string", "null"] },
           "biosample": { "type": ["string", "null"] },
           "method": { "$ref": "#/definitions/ont_ref_fbcv" },

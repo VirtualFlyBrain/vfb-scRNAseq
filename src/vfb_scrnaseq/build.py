@@ -99,12 +99,18 @@ def build_entities(project: str) -> list[dict]:
     for s in samples["samples"]:
         # name from ORIGINAL GEO info (tissue/age/strain/replicate), not the FBbt/FBdv
         # mapping (which is not 1:1 — e.g. 48h & 72h both map to 'pharate adult stage').
-        tissue = s.get("tissue_raw") or (s.get("sample_tissue") or {}).get("label") or "sample"
-        age = s.get("age_raw") or s.get("timepoint")
-        parts = [p for p in (tissue, age) if p]
-        if s.get("set"):
-            parts.append(f"{s['set']} rep {s.get('biorep')}" if s.get("biorep") else s["set"])
-        descr = ", ".join(parts)
+        # one or several FBbt tissues per sample (e.g. FCA "mixed proboscis and maxillary palpus")
+        st = s.get("sample_tissue")
+        tissues = st if isinstance(st, list) else ([st] if st else [])
+        if s.get("label"):
+            descr = s["label"]                     # builder-supplied (e.g. ArrayExpress samples)
+        else:
+            tissue = s.get("tissue_raw") or (tissues[0]["label"] if tissues else "sample")
+            age = s.get("age_raw") or s.get("timepoint")
+            parts = [p for p in (tissue, age) if p]
+            if s.get("set"):
+                parts.append(f"{s['set']} rep {s.get('biorep')}" if s.get("biorep") else s["set"])
+            descr = ", ".join(parts)
         rec = {
             "type": "Sample", "id": iri(s["vfbseq_id"]),
             "name": (f"{descr}{cite_suffix}" if descr else s["sample_id"]),
@@ -112,8 +118,8 @@ def build_entities(project: str) -> list[dict]:
             "associated_assay": [iri(a) for a in s["assay_vfbseq_ids"]],
             "neo_label": "Sample",
         }
-        if s.get("sample_tissue"):
-            rec["sample_tissue"] = [s["sample_tissue"]["fbbt_id"]]
+        if tissues:
+            rec["sample_tissue"] = [t["fbbt_id"] for t in tissues]
         if s.get("stage"):
             rec["stage"] = s["stage"]["fbdv_id"]
         if s.get("stock"):
@@ -127,14 +133,15 @@ def build_entities(project: str) -> list[dict]:
 
     # --- Assays ---
     for a in samples["assays"]:
-        xrefs = [a["accession"]]
+        xrefs = [x for x in [a.get("accession")] + a.get("dbxrefs", []) if x]
+        xrefs = list(dict.fromkeys(xrefs))         # de-duplicated, order kept
         if a.get("sra"):
             xrefs.append(a["sra"])
         if a.get("biosample"):
             xrefs.append(a["biosample"])
         entities.append({
             "type": "Assay", "id": iri(a["vfbseq_id"]),
-            "name": a["accession"],
+            "name": a.get("accession") or a.get("library_id"),
             "method": a["method"]["fbcv_id"],
             "associated_sample_for_assay": [iri(a["sample_vfbseq_id"])],
             "associated_dataset": dataset_iri,
