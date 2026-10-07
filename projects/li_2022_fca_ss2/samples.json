@@ -207,18 +207,18 @@
     },
     {
       "vfbseq_id": "VFBseq_00000794",
-      "sample_id": "fat body | female | Cg-GAL4; UAS-lamGFP | 3",
-      "label": "fat body, 3 days, female, Cg-GAL4; UAS-lamGFP",
+      "sample_id": "fat body | female | Cg-GAL4; UAS-lamGFP | 5",
+      "label": "fat body, 5 days, female, Cg-GAL4; UAS-lamGFP",
       "tissue_raw": "fat body",
-      "age_raw": "3 days",
+      "age_raw": "5 days",
       "genotype": "Cg-GAL4; UAS-lamGFP",
       "stock": [
         "FBst0007378"
       ],
       "sex": "female",
       "stage": {
-        "fbdv_id": "FBdv:00007078",
-        "label": "day 3 of adulthood"
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
       },
       "sample_tissue": [
         {
@@ -231,22 +231,25 @@
         "VFBseq_00000795",
         "VFBseq_00000796"
       ],
-      "n_assays": 2
+      "n_assays": 2,
+      "curation_notes": [
+        "Age corrected from 3 to 5 days (SDRF) per the paper's supplement, which gives 5-day adults for fat body."
+      ]
     },
     {
       "vfbseq_id": "VFBseq_00000797",
-      "sample_id": "fat body | male | Cg-GAL4; UAS-lamGFP | 3",
-      "label": "fat body, 3 days, male, Cg-GAL4; UAS-lamGFP",
+      "sample_id": "fat body | male | Cg-GAL4; UAS-lamGFP | 5",
+      "label": "fat body, 5 days, male, Cg-GAL4; UAS-lamGFP",
       "tissue_raw": "fat body",
-      "age_raw": "3 days",
+      "age_raw": "5 days",
       "genotype": "Cg-GAL4; UAS-lamGFP",
       "stock": [
         "FBst0007378"
       ],
       "sex": "male",
       "stage": {
-        "fbdv_id": "FBdv:00007078",
-        "label": "day 3 of adulthood"
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
       },
       "sample_tissue": [
         {
@@ -259,7 +262,10 @@
         "VFBseq_00000798",
         "VFBseq_00000799"
       ],
-      "n_assays": 2
+      "n_assays": 2,
+      "curation_notes": [
+        "Age corrected from 3 to 5 days (SDRF) per the paper's supplement, which gives 5-day adults for fat body."
+      ]
     },
     {
       "vfbseq_id": "VFBseq_00000800",

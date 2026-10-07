@@ -93,3 +93,18 @@ def test_ss2_samples_group_cells_assays_are_plates(tmp_path):
     assert male["n_assays"] == 2                               # plates P1, P2
     p1 = next(a for a in assays if a["library_id"] == "P1")
     assert p1["n_sources"] == 2 and p1["accession"] is None and p1["dbxrefs"] == []   # per-cell ids not listed
+
+
+def test_sdrf_corrections_apply_before_grouping_and_leave_a_note(tmp_path):
+    mod = _builder()
+    rows = _rows_10x()
+    for r in rows[:3]:
+        r["Characteristics[age]"] = "3"                          # FCA47: wrong age in the SDRF
+    sb = dict(SB_COMMON, sample_columns=["Extract Name"], assay_column="Source Name",
+              sdrf_corrections=[{"match": {"Extract Name": "h__FCA47", "Characteristics[age]": "3"},
+                                 "set": {"Characteristics[age]": "5"}, "note": "age per paper"}])
+    reg = IDRegistry.load(tmp_path / "reg.json")
+    samples, _, warnings = mod.build(rows, sb, "E-MTAB-1", reg, "VFBseq_00000001")
+    s47 = samples[0]
+    assert s47["age_raw"] == "5 days" and s47["curation_notes"] == ["age per paper"]
+    assert "curation_notes" not in samples[1] and warnings == []
