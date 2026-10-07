@@ -48,18 +48,22 @@ sample_build:
     "5": { stage: { fbdv_id: "FBdv:00007080", label: "day 5 of adulthood" } }
   genotype_columns: ['Characteristics[genotype]']
   wild_type_genotypes: [w1118, wild type genotype]
-  # FlyBase stocks: not yet resolved. The SDRF gives only genotypes (w1118 and
-  # GAL4 > UAS reporter lines); FlyBase has no stocks curated for FBrf0252876 and
-  # the paper's supplement (methods) could not be fetched automatically. Fill in
-  # from the supplement's fly stock list (BDSC numbers -> FBst via Chado).
-  stock_map: {}
+  # FlyBase stocks, from the supplement ("Fly sample information"; science.abk2432_sm.pdf,
+  # p4-5). Only UAS-lamGFP has a stock number (BDSC 7378 = FBst0007378, a parental
+  # stock of the fat body and trachea crosses). No stock numbers are given for w1118,
+  # the GAL4 drivers, UAS-nlsGFP or UAS-unc84GFP (the latter from Ref. 48).
+  stock_map:
+    "Cg-GAL4; UAS-lamGFP": [FBst0007378]
+    "Btl-GAL4; UAS-lamGFP": [FBst0007378]
   tissue_column: Characteristics[organism part]
   # Organism part -> FBbt, following the authors' SDRF annotation (not the driver).
-  # Entries marked REVIEW are curator judgement calls.
+  # Samples *overlap* (RO:0002131) these terms, so a sample may contain other
+  # material too (e.g. "body wall" includes muscle and neurons as well as integument).
+  # Curator-reviewed 2026-10-07.
   tissue_map:
     "antenna":
       - { fbbt_id: "FBbt:00004511", label: "antenna" }
-    "body wall":  # REVIEW
+    "body wall":
       - { fbbt_id: "FBbt:00005396", label: "adult integumentary system" }
     "fat body":
       - { fbbt_id: "FBbt:00003209", label: "adult fat body" }
@@ -89,8 +93,10 @@ sample_build:
       - { fbbt_id: "FBbt:00007513", label: "adult gut" }
     "insect proboscis":
       - { fbbt_id: "FBbt:00004535", label: "proboscis" }
-    "reproductive gland":  # REVIEW
+    "reproductive gland":  # accessory gland + ejaculatory duct + ejaculatory bulb
       - { fbbt_id: "FBbt:00004959", label: "male accessory gland" }
+      - { fbbt_id: "FBbt:00004965", label: "ejaculatory duct" }
+      - { fbbt_id: "FBbt:00004962", label: "ejaculatory bulb" }
   # one Clustering per author tissue analysis (Smart-seq2, flycellatlas.org)
   clusterings:
     - { id: antenna, name: "Fly Cell Atlas Smart-seq2 Antenna" }
