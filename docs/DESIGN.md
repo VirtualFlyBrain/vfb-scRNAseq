@@ -735,6 +735,12 @@ VFB until the release files are merged, so ids can still change during review.
    the main cluster label must be the authors' cluster, not a merged type). For
    layouts it can't express, a project script writes `cell_type_annotations.json`
    (as `projects/davie_2018/build_clusters.py` does).
+   When the authors publish AnnData files (one per analysis), list each as an
+   `h5ad` URL on its clustering, fetch with `fetch_h5ad.py` (into `.cache/h5ad/`) and
+   build with `build_annotations_from_h5ad.py` (`annotation_build` config: the obs
+   annotation / author ontology id / broad class / sex columns; `unannotated_values`
+   are kept, flagged and held). `ingest_h5ad.read_obs` reads obs with h5py from the
+   old, 0.7 and 0.8+ AnnData layouts.
 4. **Samples:** `build_samples_from_geo.py` (GEO) or `build_samples_from_arrayexpress.py`
    (ArrayExpress) → `samples.json`.
 5. **Paper index:** add the paper (JATS if open access, else PDF) with the
@@ -792,4 +798,14 @@ Curator decisions (2026-10-07):
   ArrayExpress error and corrected via `sdrf_corrections` (noted on the Samples).
 - **Mapping:** the authors' FBbt ids as a first pass, upgraded where a better term now
   exists (adult-specific, or new terms for "Manual Annotation" types).
+- **10x annotations** (`annotation` obs column of each Stringent h5ad; 370 entries,
+  506,660 cells): the author ontology id (FBbt, several FBbt, or "Manual Annotation")
+  is kept as `author_ontology_id` for the mapping step. Each analysis's "unannotated"
+  and "artefact" cells are one held entry each. `R_annotation` (transferred relaxed
+  label) is not used.
+- **Smart-seq2 has no author clusters:** cells were typed one by one by a logistic-
+  regression classifier trained on the 10x annotation (supplement, "Annotating
+  Smart-Seq2 data"); the h5ad/loom carry only `transf_annotation` (235 tissue x label
+  groups, many < 10 cells) and dilp2 IPC / Akh CC carry no annotation at all.
+  How to represent them is awaiting a curator decision.
 - **Expression:** `expression.tsv` committed gzipped (too large otherwise).

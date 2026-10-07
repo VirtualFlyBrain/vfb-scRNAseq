@@ -1,0 +1,5635 @@
+{
+  "source": {
+    "doi": "10.1126/science.abk2432",
+    "title": "Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly"
+  },
+  "dataset": {
+    "accession": "E-MTAB-10519",
+    "label_source": "authors' per-analysis h5ad files (flycellatlas.org), obs `annotation`",
+    "label_level": "author cell type (one entry per annotation, per analysis)",
+    "validate_against": "paper and supplementary tables"
+  },
+  "annotations": [
+    {
+      "label": "head_Johnston organ neuron",
+      "type": "Johnston organ neuron",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "Johnston organ neuron",
+      "cell_number": 541,
+      "author_ontology_id": "FBbt:00100000",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 285,
+        "male": 227,
+        "mix": 29
+      }
+    },
+    {
+      "label": "head_Kenyon cell",
+      "type": "Kenyon cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "Kenyon cell",
+      "cell_number": 116,
+      "author_ontology_id": "FBbt:00003686",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 49,
+        "male": 63,
+        "mix": 4
+      }
+    },
+    {
+      "label": "head_Poxn neuron",
+      "type": "Poxn neuron",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "Poxn neuron",
+      "cell_number": 102,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 46,
+        "male": 54,
+        "mix": 2
+      }
+    },
+    {
+      "label": "head_T neuron T2",
+      "type": "T neuron T2",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "T neuron T2",
+      "cell_number": 604,
+      "author_ontology_id": "FBbt:00003728",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 299,
+        "male": 285,
+        "mix": 20
+      }
+    },
+    {
+      "label": "head_T neuron T2a",
+      "type": "T neuron T2a",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "T neuron T2a",
+      "cell_number": 622,
+      "author_ontology_id": "FBbt:00003729",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 324,
+        "male": 270,
+        "mix": 28
+      }
+    },
+    {
+      "label": "head_T neuron T3",
+      "type": "T neuron T3",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "T neuron T3",
+      "cell_number": 617,
+      "author_ontology_id": "FBbt:00003730",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 314,
+        "male": 270,
+        "mix": 33
+      }
+    },
+    {
+      "label": "head_T neuron T4/T5",
+      "type": "T neuron T4/T5",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "T neuron T4/T5",
+      "cell_number": 376,
+      "author_ontology_id": "FBbt:00003731; FBbt:00003736",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 178,
+        "male": 195,
+        "mix": 3
+      }
+    },
+    {
+      "label": "head_T neuron T4/T5a-b",
+      "type": "T neuron T4/T5a-b",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "T neuron T4/T5a-b",
+      "cell_number": 1525,
+      "author_ontology_id": "FBbt:00003732; FBbt:00003733; FBbt:00003737; FBbt:00003738",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 778,
+        "male": 617,
+        "mix": 130
+      }
+    },
+    {
+      "label": "head_T neuron T4/T5c-d",
+      "type": "T neuron T4/T5c-d",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "T neuron T4/T5c-d",
+      "cell_number": 734,
+      "author_ontology_id": "FBbt:00003734; FBbt:00003735; FBbt:00003739; FBbt:00003740",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 336,
+        "male": 309,
+        "mix": 89
+      }
+    },
+    {
+      "label": "head_adult brain cell body glial cell",
+      "type": "adult brain cell body glial cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "adult brain cell body glial cell",
+      "cell_number": 67,
+      "author_ontology_id": "FBbt:00100501",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 24,
+        "male": 41,
+        "mix": 2
+      }
+    },
+    {
+      "label": "head_adult brain perineurial glial cell",
+      "type": "adult brain perineurial glial cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "adult brain perineurial glial cell",
+      "cell_number": 1640,
+      "author_ontology_id": "FBbt:00100506",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 860,
+        "male": 735,
+        "mix": 45
+      }
+    },
+    {
+      "label": "head_adult fat body",
+      "type": "adult fat body",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 103,
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052",
+      "cells_by_sex": {
+        "female": 54,
+        "male": 45,
+        "mix": 4
+      }
+    },
+    {
+      "label": "head_adult lamina epithelial/marginal glial cell",
+      "type": "adult lamina epithelial/marginal glial cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "adult lamina epithelial/marginal glial cell",
+      "cell_number": 984,
+      "author_ontology_id": "FBbt:00100513; FBbt:00005722",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 513,
+        "male": 434,
+        "mix": 37
+      }
+    },
+    {
+      "label": "head_adult olfactory receptor neuron Gr21a/63a",
+      "type": "adult olfactory receptor neuron Gr21a/63a",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "adult olfactory receptor neuron Gr21a/63a",
+      "cell_number": 6,
+      "author_ontology_id": "FBbt:00067064",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 2,
+        "male": 4
+      }
+    },
+    {
+      "label": "head_adult optic chiasma glial cell",
+      "type": "adult optic chiasma glial cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "adult optic chiasma glial cell",
+      "cell_number": 322,
+      "author_ontology_id": "FBbt:00100525",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 155,
+        "male": 155,
+        "mix": 12
+      }
+    },
+    {
+      "label": "head_adult reticular neuropil associated glial cell",
+      "type": "adult reticular neuropil associated glial cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "adult reticular neuropil associated glial cell",
+      "cell_number": 954,
+      "author_ontology_id": "FBbt:00047841",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 470,
+        "male": 441,
+        "mix": 43
+      }
+    },
+    {
+      "label": "head_alpha'/beta' Kenyon cell",
+      "type": "alpha'/beta' Kenyon cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "alpha'/beta' Kenyon cell",
+      "cell_number": 431,
+      "author_ontology_id": "FBbt:00100249",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 221,
+        "male": 195,
+        "mix": 15
+      }
+    },
+    {
+      "label": "head_alpha/beta Kenyon cell",
+      "type": "alpha/beta Kenyon cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "alpha/beta Kenyon cell",
+      "cell_number": 525,
+      "author_ontology_id": "FBbt:00100248",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 241,
+        "male": 244,
+        "mix": 40
+      }
+    },
+    {
+      "label": "head_antennal lobe projection neuron",
+      "type": "antennal lobe projection neuron",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "antennal lobe projection neuron",
+      "cell_number": 23,
+      "author_ontology_id": "FBbt:00007422",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 7,
+        "male": 16
+      }
+    },
+    {
+      "label": "head_antennal trichoid sensillum at4",
+      "type": "antennal trichoid sensillum at4",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "antennal trichoid sensillum at4",
+      "cell_number": 7,
+      "author_ontology_id": "FBbt:00067010",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 3,
+        "male": 4
+      }
+    },
+    {
+      "label": "head_artefact",
+      "type": "artefact",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "artefact",
+      "cell_number": 216,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "artefact",
+      "author_broad_ontology_id": "artefact",
+      "cells_by_sex": {
+        "female": 94,
+        "male": 116,
+        "mix": 6
+      },
+      "unannotated": true
+    },
+    {
+      "label": "head_auditory sensory neuron",
+      "type": "auditory sensory neuron",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "auditory sensory neuron",
+      "cell_number": 706,
+      "author_ontology_id": "FBbt:00007684",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 345,
+        "male": 342,
+        "mix": 19
+      }
+    },
+    {
+      "label": "head_centrifugal neuron C2",
+      "type": "centrifugal neuron C2",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "centrifugal neuron C2",
+      "cell_number": 506,
+      "author_ontology_id": "FBbt:00003743",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 255,
+        "male": 211,
+        "mix": 40
+      }
+    },
+    {
+      "label": "head_centrifugal neuron C3",
+      "type": "centrifugal neuron C3",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "centrifugal neuron C3",
+      "cell_number": 617,
+      "author_ontology_id": "FBbt:00003744",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 316,
+        "male": 263,
+        "mix": 38
+      }
+    },
+    {
+      "label": "head_columnar neuron T1",
+      "type": "columnar neuron T1",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "columnar neuron T1",
+      "cell_number": 1618,
+      "author_ontology_id": "FBbt:00003727",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 831,
+        "male": 751,
+        "mix": 36
+      }
+    },
+    {
+      "label": "head_cone cell",
+      "type": "cone cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "cone cell",
+      "cell_number": 5397,
+      "author_ontology_id": "FBbt:00004193",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 2612,
+        "male": 2555,
+        "mix": 230
+      }
+    },
+    {
+      "label": "head_distal medullary amacrine neuron Dm10",
+      "type": "distal medullary amacrine neuron Dm10",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "distal medullary amacrine neuron Dm10",
+      "cell_number": 284,
+      "author_ontology_id": "FBbt:00110135",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 154,
+        "male": 122,
+        "mix": 8
+      }
+    },
+    {
+      "label": "head_distal medullary amacrine neuron Dm11",
+      "type": "distal medullary amacrine neuron Dm11",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "distal medullary amacrine neuron Dm11",
+      "cell_number": 4,
+      "author_ontology_id": "FBbt:00111272",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 2,
+        "male": 2
+      }
+    },
+    {
+      "label": "head_distal medullary amacrine neuron Dm12",
+      "type": "distal medullary amacrine neuron Dm12",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "distal medullary amacrine neuron Dm12",
+      "cell_number": 96,
+      "author_ontology_id": "FBbt:00111273",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 51,
+        "male": 42,
+        "mix": 3
+      }
+    },
+    {
+      "label": "head_distal medullary amacrine neuron Dm3",
+      "type": "distal medullary amacrine neuron Dm3",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "distal medullary amacrine neuron Dm3",
+      "cell_number": 305,
+      "author_ontology_id": "FBbt:00003770",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 145,
+        "male": 120,
+        "mix": 40
+      }
+    },
+    {
+      "label": "head_distal medullary amacrine neuron Dm8",
+      "type": "distal medullary amacrine neuron Dm8",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "distal medullary amacrine neuron Dm8",
+      "cell_number": 330,
+      "author_ontology_id": "FBbt:00013774",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 152,
+        "male": 152,
+        "mix": 26
+      }
+    },
+    {
+      "label": "head_distal medullary amacrine neuron Dm9",
+      "type": "distal medullary amacrine neuron Dm9",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "distal medullary amacrine neuron Dm9",
+      "cell_number": 228,
+      "author_ontology_id": "FBbt:00111271",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 95,
+        "male": 129,
+        "mix": 4
+      }
+    },
+    {
+      "label": "head_dopaminergic PAM neuron",
+      "type": "dopaminergic PAM neuron",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "dopaminergic PAM neuron",
+      "cell_number": 288,
+      "author_ontology_id": "FBbt:00100214",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 130,
+        "male": 151,
+        "mix": 7
+      }
+    },
+    {
+      "label": "head_dopaminergic neuron",
+      "type": "dopaminergic neuron",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "dopaminergic neuron",
+      "cell_number": 25,
+      "author_ontology_id": "FBbt:00005131",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 12,
+        "male": 10,
+        "mix": 3
+      }
+    },
+    {
+      "label": "head_dorsal rim area",
+      "type": "dorsal rim area",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "dorsal rim area",
+      "cell_number": 2,
+      "author_ontology_id": "FBbt:00111065",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 1,
+        "male": 1
+      }
+    },
+    {
+      "label": "head_ensheathing glial cell",
+      "type": "ensheathing glial cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "ensheathing glial cell",
+      "cell_number": 1855,
+      "author_ontology_id": "FBbt:00047836",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 959,
+        "male": 842,
+        "mix": 54
+      }
+    },
+    {
+      "label": "head_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 4804,
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 2575,
+        "male": 2010,
+        "mix": 219
+      }
+    },
+    {
+      "label": "head_gamma Kenyon cell",
+      "type": "gamma Kenyon cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "gamma Kenyon cell",
+      "cell_number": 1139,
+      "author_ontology_id": "FBbt:00100247",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 543,
+        "male": 556,
+        "mix": 40
+      }
+    },
+    {
+      "label": "head_hemocyte",
+      "type": "hemocyte",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 352,
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063",
+      "cells_by_sex": {
+        "female": 219,
+        "male": 126,
+        "mix": 7
+      }
+    },
+    {
+      "label": "head_lamina intrinsic amacrine neuron Lai",
+      "type": "lamina intrinsic amacrine neuron Lai",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "lamina intrinsic amacrine neuron Lai",
+      "cell_number": 368,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 174,
+        "male": 188,
+        "mix": 6
+      }
+    },
+    {
+      "label": "head_lamina monopolar neuron L1",
+      "type": "lamina monopolar neuron L1",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "lamina monopolar neuron L1",
+      "cell_number": 906,
+      "author_ontology_id": "FBbt:00003719",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 446,
+        "male": 433,
+        "mix": 27
+      }
+    },
+    {
+      "label": "head_lamina monopolar neuron L2",
+      "type": "lamina monopolar neuron L2",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "lamina monopolar neuron L2",
+      "cell_number": 1238,
+      "author_ontology_id": "FBbt:00003720",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 600,
+        "male": 603,
+        "mix": 35
+      }
+    },
+    {
+      "label": "head_lamina monopolar neuron L3",
+      "type": "lamina monopolar neuron L3",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "lamina monopolar neuron L3",
+      "cell_number": 1047,
+      "author_ontology_id": "FBbt:00003721",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 501,
+        "male": 498,
+        "mix": 48
+      }
+    },
+    {
+      "label": "head_lamina monopolar neuron L4",
+      "type": "lamina monopolar neuron L4",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "lamina monopolar neuron L4",
+      "cell_number": 660,
+      "author_ontology_id": "FBbt:00003722",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 306,
+        "male": 320,
+        "mix": 34
+      }
+    },
+    {
+      "label": "head_lamina monopolar neuron L5",
+      "type": "lamina monopolar neuron L5",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "lamina monopolar neuron L5",
+      "cell_number": 535,
+      "author_ontology_id": "FBbt:00003725",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 286,
+        "male": 230,
+        "mix": 19
+      }
+    },
+    {
+      "label": "head_lamina wide-field 1 neuron",
+      "type": "lamina wide-field 1 neuron",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "lamina wide-field 1 neuron",
+      "cell_number": 181,
+      "author_ontology_id": "FBbt:00003741",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 92,
+        "male": 87,
+        "mix": 2
+      }
+    },
+    {
+      "label": "head_lamina wide-field 2 neuron",
+      "type": "lamina wide-field 2 neuron",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "lamina wide-field 2 neuron",
+      "cell_number": 215,
+      "author_ontology_id": "FBbt:00110065",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 107,
+        "male": 102,
+        "mix": 6
+      }
+    },
+    {
+      "label": "head_lobula columnar neuron LC10",
+      "type": "lobula columnar neuron LC10",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "lobula columnar neuron LC10",
+      "cell_number": 182,
+      "author_ontology_id": "FBbt:00100482",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 82,
+        "male": 93,
+        "mix": 7
+      }
+    },
+    {
+      "label": "head_lobula columnar neuron LC12",
+      "type": "lobula columnar neuron LC12",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "lobula columnar neuron LC12",
+      "cell_number": 69,
+      "author_ontology_id": "FBbt:00100484",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 35,
+        "male": 34
+      }
+    },
+    {
+      "label": "head_lobula columnar neuron LC17",
+      "type": "lobula columnar neuron LC17",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "lobula columnar neuron LC17",
+      "cell_number": 341,
+      "author_ontology_id": "FBbt:00111752",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 156,
+        "male": 176,
+        "mix": 9
+      }
+    },
+    {
+      "label": "head_medullary intrinsic neuron Mi1",
+      "type": "medullary intrinsic neuron Mi1",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "medullary intrinsic neuron Mi1",
+      "cell_number": 1001,
+      "author_ontology_id": "FBbt:00003776",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 495,
+        "male": 483,
+        "mix": 23
+      }
+    },
+    {
+      "label": "head_medullary intrinsic neuron Mi15",
+      "type": "medullary intrinsic neuron Mi15",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "medullary intrinsic neuron Mi15",
+      "cell_number": 282,
+      "author_ontology_id": "FBbt:00111285",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 153,
+        "male": 114,
+        "mix": 15
+      }
+    },
+    {
+      "label": "head_medullary intrinsic neuron Mi4",
+      "type": "medullary intrinsic neuron Mi4",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "medullary intrinsic neuron Mi4",
+      "cell_number": 641,
+      "author_ontology_id": "FBbt:00003779",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 328,
+        "male": 283,
+        "mix": 30
+      }
+    },
+    {
+      "label": "head_medullary intrinsic neuron Mi9",
+      "type": "medullary intrinsic neuron Mi9",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "medullary intrinsic neuron Mi9",
+      "cell_number": 251,
+      "author_ontology_id": "FBbt:00003784",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 130,
+        "male": 106,
+        "mix": 15
+      }
+    },
+    {
+      "label": "head_ocellus retinula cell",
+      "type": "ocellus retinula cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "ocellus retinula cell",
+      "cell_number": 61,
+      "author_ontology_id": "FBbt:00004242",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 43,
+        "male": 18
+      }
+    },
+    {
+      "label": "head_octopaminergic/tyraminergic neuron",
+      "type": "octopaminergic/tyraminergic neuron",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "octopaminergic/tyraminergic neuron",
+      "cell_number": 120,
+      "author_ontology_id": "FBbt:00007364; FBbt:00100397",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 54,
+        "male": 63,
+        "mix": 3
+      }
+    },
+    {
+      "label": "head_olfactory receptor neuron",
+      "type": "olfactory receptor neuron",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "olfactory receptor neuron",
+      "cell_number": 1364,
+      "author_ontology_id": "FBbt:00005926",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 708,
+        "male": 620,
+        "mix": 36
+      }
+    },
+    {
+      "label": "head_optic-lobe-associated cortex glial cell",
+      "type": "optic-lobe-associated cortex glial cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "optic-lobe-associated cortex glial cell",
+      "cell_number": 570,
+      "author_ontology_id": "FBbt:00111302",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 292,
+        "male": 257,
+        "mix": 21
+      }
+    },
+    {
+      "label": "head_outer photoreceptor cell",
+      "type": "outer photoreceptor cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "outer photoreceptor cell",
+      "cell_number": 6010,
+      "author_ontology_id": "FBbt:00006007",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 2828,
+        "male": 3000,
+        "mix": 182
+      }
+    },
+    {
+      "label": "head_pericerebral adult fat mass",
+      "type": "pericerebral adult fat mass",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "pericerebral adult fat mass",
+      "cell_number": 198,
+      "author_ontology_id": "FBbt:00048409",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052",
+      "cells_by_sex": {
+        "female": 110,
+        "male": 78,
+        "mix": 10
+      }
+    },
+    {
+      "label": "head_perineurial glial sheath",
+      "type": "perineurial glial sheath",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "perineurial glial sheath",
+      "cell_number": 6,
+      "author_ontology_id": "FBbt:00007089",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 2,
+        "male": 4
+      }
+    },
+    {
+      "label": "head_photoreceptor cell R7",
+      "type": "photoreceptor cell R7",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "photoreceptor cell R7",
+      "cell_number": 487,
+      "author_ontology_id": "FBbt:00004225",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 214,
+        "male": 238,
+        "mix": 35
+      }
+    },
+    {
+      "label": "head_photoreceptor cell R8",
+      "type": "photoreceptor cell R8",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "photoreceptor cell R8",
+      "cell_number": 1473,
+      "author_ontology_id": "FBbt:00004227",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 700,
+        "male": 733,
+        "mix": 40
+      }
+    },
+    {
+      "label": "head_photoreceptor-like",
+      "type": "photoreceptor-like",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "photoreceptor-like",
+      "cell_number": 117,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 73,
+        "male": 44
+      }
+    },
+    {
+      "label": "head_pigment cell",
+      "type": "pigment cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "pigment cell",
+      "cell_number": 1364,
+      "author_ontology_id": "FBbt:00004230",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "female": 690,
+        "male": 630,
+        "mix": 44
+      }
+    },
+    {
+      "label": "head_proximal medullary amacrine neuron Pm2",
+      "type": "proximal medullary amacrine neuron Pm2",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "proximal medullary amacrine neuron Pm2",
+      "cell_number": 90,
+      "author_ontology_id": "FBbt:00003835",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 42,
+        "male": 47,
+        "mix": 1
+      }
+    },
+    {
+      "label": "head_proximal medullary amacrine neuron Pm4",
+      "type": "proximal medullary amacrine neuron Pm4",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "proximal medullary amacrine neuron Pm4",
+      "cell_number": 71,
+      "author_ontology_id": "FBbt:00111282",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 31,
+        "male": 32,
+        "mix": 8
+      }
+    },
+    {
+      "label": "head_skeletal muscle of head",
+      "type": "skeletal muscle of head",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "skeletal muscle of head",
+      "cell_number": 1579,
+      "author_ontology_id": "FBbt:00003260",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 836,
+        "male": 697,
+        "mix": 46
+      }
+    },
+    {
+      "label": "head_subperineurial glial cell",
+      "type": "subperineurial glial cell",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "subperineurial glial cell",
+      "cell_number": 279,
+      "author_ontology_id": "FBbt:00001258",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 141,
+        "male": 131,
+        "mix": 7
+      }
+    },
+    {
+      "label": "head_transmedullary Y neuron TmY14",
+      "type": "transmedullary Y neuron TmY14",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "transmedullary Y neuron TmY14",
+      "cell_number": 153,
+      "author_ontology_id": "FBbt:00111286",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 69,
+        "male": 76,
+        "mix": 8
+      }
+    },
+    {
+      "label": "head_transmedullary Y neuron TmY4",
+      "type": "transmedullary Y neuron TmY4",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "transmedullary Y neuron TmY4",
+      "cell_number": 135,
+      "author_ontology_id": "FBbt:00003821",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 66,
+        "male": 58,
+        "mix": 11
+      }
+    },
+    {
+      "label": "head_transmedullary Y neuron TmY5a",
+      "type": "transmedullary Y neuron TmY5a",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "transmedullary Y neuron TmY5a",
+      "cell_number": 459,
+      "author_ontology_id": "FBbt:00003823",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 235,
+        "male": 192,
+        "mix": 32
+      }
+    },
+    {
+      "label": "head_transmedullary Y neuron TmY8",
+      "type": "transmedullary Y neuron TmY8",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "transmedullary Y neuron TmY8",
+      "cell_number": 390,
+      "author_ontology_id": "FBbt:00003826",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 205,
+        "male": 163,
+        "mix": 22
+      }
+    },
+    {
+      "label": "head_transmedullary neuron Tm1",
+      "type": "transmedullary neuron Tm1",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "transmedullary neuron Tm1",
+      "cell_number": 957,
+      "author_ontology_id": "FBbt:00003789",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 474,
+        "male": 447,
+        "mix": 36
+      }
+    },
+    {
+      "label": "head_transmedullary neuron Tm2",
+      "type": "transmedullary neuron Tm2",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "transmedullary neuron Tm2",
+      "cell_number": 731,
+      "author_ontology_id": "FBbt:00003790",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 386,
+        "male": 317,
+        "mix": 28
+      }
+    },
+    {
+      "label": "head_transmedullary neuron Tm20",
+      "type": "transmedullary neuron Tm20",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "transmedullary neuron Tm20",
+      "cell_number": 277,
+      "author_ontology_id": "FBbt:00003808",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 129,
+        "male": 121,
+        "mix": 27
+      }
+    },
+    {
+      "label": "head_transmedullary neuron Tm29",
+      "type": "transmedullary neuron Tm29",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "transmedullary neuron Tm29",
+      "cell_number": 115,
+      "author_ontology_id": "FBbt:00049916",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 59,
+        "male": 55,
+        "mix": 1
+      }
+    },
+    {
+      "label": "head_transmedullary neuron Tm3a",
+      "type": "transmedullary neuron Tm3a",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "transmedullary neuron Tm3a",
+      "cell_number": 615,
+      "author_ontology_id": "FBbt:00003791",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 309,
+        "male": 252,
+        "mix": 54
+      }
+    },
+    {
+      "label": "head_transmedullary neuron Tm4",
+      "type": "transmedullary neuron Tm4",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "transmedullary neuron Tm4",
+      "cell_number": 569,
+      "author_ontology_id": "FBbt:00003792",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 305,
+        "male": 241,
+        "mix": 23
+      }
+    },
+    {
+      "label": "head_transmedullary neuron Tm5c",
+      "type": "transmedullary neuron Tm5c",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "transmedullary neuron Tm5c",
+      "cell_number": 169,
+      "author_ontology_id": "FBbt:00110074",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 88,
+        "male": 71,
+        "mix": 10
+      }
+    },
+    {
+      "label": "head_transmedullary neuron Tm9",
+      "type": "transmedullary neuron Tm9",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "transmedullary neuron Tm9",
+      "cell_number": 274,
+      "author_ontology_id": "FBbt:00003797",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 131,
+        "male": 117,
+        "mix": 26
+      }
+    },
+    {
+      "label": "head_unannotated",
+      "type": "unannotated",
+      "clustering": "head",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Head",
+      "source_cluster_id": "unannotated",
+      "cell_number": 44906,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "female": 21344,
+        "male": 21852,
+        "mix": 1710
+      },
+      "unannotated": true
+    },
+    {
+      "label": "body_CNS surface associated glial cell",
+      "type": "CNS surface associated glial cell",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "CNS surface associated glial cell",
+      "cell_number": 71,
+      "author_ontology_id": "FBbt:00001252",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 19,
+        "male": 47,
+        "mix": 5
+      }
+    },
+    {
+      "label": "body_adult fat body",
+      "type": "adult fat body",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 3169,
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052",
+      "cells_by_sex": {
+        "female": 1521,
+        "male": 1597,
+        "mix": 51
+      }
+    },
+    {
+      "label": "body_adult glial cell",
+      "type": "adult glial cell",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "adult glial cell",
+      "cell_number": 1259,
+      "author_ontology_id": "FBbt:00100497",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 528,
+        "male": 699,
+        "mix": 32
+      }
+    },
+    {
+      "label": "body_adult hindgut",
+      "type": "adult hindgut",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "adult hindgut",
+      "cell_number": 348,
+      "author_ontology_id": "FBbt:00003143",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 173,
+        "male": 127,
+        "mix": 48
+      }
+    },
+    {
+      "label": "body_adult oenocyte",
+      "type": "adult oenocyte",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "adult oenocyte",
+      "cell_number": 1202,
+      "author_ontology_id": "FBbt:00003185",
+      "author_broad": "oenocyte",
+      "author_broad_ontology_id": "FBbt:00004995",
+      "cells_by_sex": {
+        "female": 663,
+        "male": 528,
+        "mix": 11
+      }
+    },
+    {
+      "label": "body_adult peripheral nervous system",
+      "type": "adult peripheral nervous system",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "adult peripheral nervous system",
+      "cell_number": 2588,
+      "author_ontology_id": "FBbt:00005892",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 1441,
+        "male": 1069,
+        "mix": 78
+      }
+    },
+    {
+      "label": "body_adult reticular neuropil associated glial cell",
+      "type": "adult reticular neuropil associated glial cell",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "adult reticular neuropil associated glial cell",
+      "cell_number": 278,
+      "author_ontology_id": "FBbt:00047841",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 137,
+        "male": 121,
+        "mix": 20
+      }
+    },
+    {
+      "label": "body_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 1511,
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048",
+      "cells_by_sex": {
+        "female": 894,
+        "male": 527,
+        "mix": 90
+      }
+    },
+    {
+      "label": "body_adult ventral nervous system",
+      "type": "adult ventral nervous system",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "adult ventral nervous system",
+      "cell_number": 9768,
+      "author_ontology_id": "FBbt:00004052",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 5100,
+        "male": 4197,
+        "mix": 471
+      }
+    },
+    {
+      "label": "body_artefact",
+      "type": "artefact",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "artefact",
+      "cell_number": 332,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "artefact",
+      "author_broad_ontology_id": "artefact",
+      "cells_by_sex": {
+        "female": 266,
+        "male": 52,
+        "mix": 14
+      },
+      "unannotated": true
+    },
+    {
+      "label": "body_cell body glial cell",
+      "type": "cell body glial cell",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "cell body glial cell",
+      "cell_number": 775,
+      "author_ontology_id": "FBbt:00001297",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 389,
+        "male": 351,
+        "mix": 35
+      }
+    },
+    {
+      "label": "body_enteroendocrine cell",
+      "type": "enteroendocrine cell",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "enteroendocrine cell",
+      "cell_number": 156,
+      "author_ontology_id": "FBbt:00007038",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 79,
+        "male": 48,
+        "mix": 29
+      }
+    },
+    {
+      "label": "body_eo support cell",
+      "type": "eo support cell",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "eo support cell",
+      "cell_number": 573,
+      "author_ontology_id": "FBbt:00007254",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 275,
+        "male": 280,
+        "mix": 18
+      }
+    },
+    {
+      "label": "body_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 17180,
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 8000,
+        "male": 8259,
+        "mix": 921
+      }
+    },
+    {
+      "label": "body_escort cell",
+      "type": "escort cell",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "escort cell",
+      "cell_number": 311,
+      "author_ontology_id": "FBbt:00006049",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 209,
+        "male": 7,
+        "mix": 95
+      }
+    },
+    {
+      "label": "body_female reproductive system",
+      "type": "female reproductive system",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "female reproductive system",
+      "cell_number": 709,
+      "author_ontology_id": "FBbt:00004864",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 447,
+        "male": 232,
+        "mix": 30
+      }
+    },
+    {
+      "label": "body_follicle cell",
+      "type": "follicle cell",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "follicle cell",
+      "cell_number": 7813,
+      "author_ontology_id": "FBbt:00004904",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 7042,
+        "male": 313,
+        "mix": 458
+      }
+    },
+    {
+      "label": "body_follicle cell St. 9+",
+      "type": "follicle cell St. 9+",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "follicle cell St. 9+",
+      "cell_number": 39,
+      "author_ontology_id": "FBbt:00004904",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 31,
+        "male": 5,
+        "mix": 3
+      }
+    },
+    {
+      "label": "body_germline cell",
+      "type": "germline cell",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "germline cell",
+      "cell_number": 1720,
+      "author_ontology_id": "FBbt:00004860",
+      "author_broad": "female germline cell",
+      "author_broad_ontology_id": "FBbt:00057012",
+      "cells_by_sex": {
+        "female": 1428,
+        "male": 190,
+        "mix": 102
+      }
+    },
+    {
+      "label": "body_gustatory receptor neuron",
+      "type": "gustatory receptor neuron",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "gustatory receptor neuron",
+      "cell_number": 11,
+      "author_ontology_id": "FBbt:00005927",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 6,
+        "male": 5
+      }
+    },
+    {
+      "label": "body_hemocyte",
+      "type": "hemocyte",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 680,
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063",
+      "cells_by_sex": {
+        "female": 390,
+        "male": 227,
+        "mix": 63
+      }
+    },
+    {
+      "label": "body_indirect flight muscle",
+      "type": "indirect flight muscle",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "indirect flight muscle",
+      "cell_number": 6861,
+      "author_ontology_id": "FBbt:00003361",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 4534,
+        "male": 1899,
+        "mix": 428
+      }
+    },
+    {
+      "label": "body_leg muscle motor neuron",
+      "type": "leg muscle motor neuron",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "leg muscle motor neuron",
+      "cell_number": 332,
+      "author_ontology_id": "FBbt:00049568",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 202,
+        "male": 120,
+        "mix": 10
+      }
+    },
+    {
+      "label": "body_leg taste bristle chemosensory neuron",
+      "type": "leg taste bristle chemosensory neuron",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "leg taste bristle chemosensory neuron",
+      "cell_number": 599,
+      "author_ontology_id": "FBbt:00047767",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 306,
+        "male": 274,
+        "mix": 19
+      }
+    },
+    {
+      "label": "body_male accessory gland",
+      "type": "male accessory gland",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "male accessory gland",
+      "cell_number": 338,
+      "author_ontology_id": "FBbt:00004959",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317",
+      "cells_by_sex": {
+        "female": 50,
+        "male": 264,
+        "mix": 24
+      }
+    },
+    {
+      "label": "body_multidendritic neuron",
+      "type": "multidendritic neuron",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "multidendritic neuron",
+      "cell_number": 83,
+      "author_ontology_id": "FBbt:00005209",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 51,
+        "male": 30,
+        "mix": 2
+      }
+    },
+    {
+      "label": "body_muscle cell",
+      "type": "muscle cell",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 28605,
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 19778,
+        "male": 8101,
+        "mix": 726
+      }
+    },
+    {
+      "label": "body_perineurial glial sheath",
+      "type": "perineurial glial sheath",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "perineurial glial sheath",
+      "cell_number": 684,
+      "author_ontology_id": "FBbt:00007089",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 246,
+        "male": 402,
+        "mix": 36
+      }
+    },
+    {
+      "label": "body_polar follicle cell",
+      "type": "polar follicle cell",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "polar follicle cell",
+      "cell_number": 30,
+      "author_ontology_id": "FBbt:00004907",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 28,
+        "mix": 2
+      }
+    },
+    {
+      "label": "body_prefollicle cell/stalk follicle cell",
+      "type": "prefollicle cell/stalk follicle cell",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "prefollicle cell/stalk follicle cell",
+      "cell_number": 107,
+      "author_ontology_id": "FBbt:00047835; FBbt:00004910",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 104,
+        "mix": 3
+      }
+    },
+    {
+      "label": "body_scolopidial neuron",
+      "type": "scolopidial neuron",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "scolopidial neuron",
+      "cell_number": 649,
+      "author_ontology_id": "FBbt:00005222",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 343,
+        "male": 291,
+        "mix": 15
+      }
+    },
+    {
+      "label": "body_spermatocyte",
+      "type": "spermatocyte",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "spermatocyte",
+      "cell_number": 30,
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 27,
+        "mix": 3
+      }
+    },
+    {
+      "label": "body_subperineurial glial cell",
+      "type": "subperineurial glial cell",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "subperineurial glial cell",
+      "cell_number": 382,
+      "author_ontology_id": "FBbt:00001258",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 159,
+        "male": 202,
+        "mix": 21
+      }
+    },
+    {
+      "label": "body_unannotated",
+      "type": "unannotated",
+      "clustering": "body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body",
+      "source_cluster_id": "unannotated",
+      "cell_number": 7733,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "female": 4436,
+        "male": 2801,
+        "mix": 496
+      },
+      "unannotated": true
+    },
+    {
+      "label": "antenna_Johnston organ neuron",
+      "type": "Johnston organ neuron",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "Johnston organ neuron",
+      "cell_number": 3811,
+      "author_ontology_id": "FBbt:00100000",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 1582,
+        "male": 1662,
+        "mix": 567
+      }
+    },
+    {
+      "label": "antenna_adult antenna glial cell",
+      "type": "adult antenna glial cell",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult antenna glial cell",
+      "cell_number": 2303,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 965,
+        "male": 998,
+        "mix": 340
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Gr21a/63a",
+      "type": "adult olfactory receptor neuron Gr21a/63a",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Gr21a/63a",
+      "cell_number": 445,
+      "author_ontology_id": "FBbt:00067064",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 180,
+        "male": 190,
+        "mix": 75
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Ir56a+, Orco-",
+      "type": "adult olfactory receptor neuron Ir56a+, Orco-",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Ir56a+, Orco-",
+      "cell_number": 239,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 76,
+        "male": 108,
+        "mix": 55
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Ir75d",
+      "type": "adult olfactory receptor neuron Ir75d",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Ir75d",
+      "cell_number": 627,
+      "author_ontology_id": "FBbt:00047054",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 231,
+        "male": 292,
+        "mix": 104
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Ir84a, Ir31a, Ir76a, Ir76b, Ir8a, Or35a",
+      "type": "adult olfactory receptor neuron Ir84a, Ir31a, Ir76a, Ir76b, Ir8a, Or35a",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Ir84a, Ir31a, Ir76a, Ir76b, Ir8a, Or35a",
+      "cell_number": 300,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 108,
+        "male": 176,
+        "mix": 16
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or13a",
+      "type": "adult olfactory receptor neuron Or13a",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or13a",
+      "cell_number": 66,
+      "author_ontology_id": "FBbt:00067016",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 23,
+        "male": 24,
+        "mix": 19
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or22a, Or42b, Or59b",
+      "type": "adult olfactory receptor neuron Or22a, Or42b, Or59b",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or22a, Or42b, Or59b",
+      "cell_number": 669,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 285,
+        "male": 287,
+        "mix": 97
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or47a, Or56a and likely other ORN types",
+      "type": "adult olfactory receptor neuron Or47a, Or56a and likely other ORN types",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or47a, Or56a and likely other ORN types",
+      "cell_number": 594,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 270,
+        "male": 228,
+        "mix": 96
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or47b",
+      "type": "adult olfactory receptor neuron Or47b",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or47b",
+      "cell_number": 437,
+      "author_ontology_id": "FBbt:00067056",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 155,
+        "male": 209,
+        "mix": 73
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or65",
+      "type": "adult olfactory receptor neuron Or65",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or65",
+      "cell_number": 373,
+      "author_ontology_id": "FBbt:00067011",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 167,
+        "male": 154,
+        "mix": 52
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or67a and likely other unknown ORN types",
+      "type": "adult olfactory receptor neuron Or67a and likely other unknown ORN types",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or67a and likely other unknown ORN types",
+      "cell_number": 1322,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 489,
+        "male": 553,
+        "mix": 280
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or67d",
+      "type": "adult olfactory receptor neuron Or67d",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or67d",
+      "cell_number": 757,
+      "author_ontology_id": "FBbt:00067031",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 240,
+        "male": 398,
+        "mix": 119
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or85a, Or43b",
+      "type": "adult olfactory receptor neuron Or85a, Or43b",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or85a, Or43b",
+      "cell_number": 161,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 76,
+        "male": 62,
+        "mix": 23
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or88a",
+      "type": "adult olfactory receptor neuron Or88a",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or88a",
+      "cell_number": 539,
+      "author_ontology_id": "FBbt:00067057",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 186,
+        "male": 273,
+        "mix": 80
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or92a",
+      "type": "adult olfactory receptor neuron Or92a",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or92a",
+      "cell_number": 295,
+      "author_ontology_id": "FBbt:00067059",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 126,
+        "male": 119,
+        "mix": 50
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron acid-sensing, Ir64a",
+      "type": "adult olfactory receptor neuron acid-sensing, Ir64a",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron acid-sensing, Ir64a",
+      "cell_number": 106,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 43,
+        "male": 54,
+        "mix": 9
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron acid-sensing, Ir75a/b/c, Ir64a",
+      "type": "adult olfactory receptor neuron acid-sensing, Ir75a/b/c, Ir64a",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron acid-sensing, Ir75a/b/c, Ir64a",
+      "cell_number": 411,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 148,
+        "male": 194,
+        "mix": 69
+      }
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron unknown type, Orco-",
+      "type": "adult olfactory receptor neuron unknown type, Orco-",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron unknown type, Orco-",
+      "cell_number": 204,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 71,
+        "male": 92,
+        "mix": 41
+      }
+    },
+    {
+      "label": "antenna_arista and sacculus thermosensory and hygrosensory neuron Ir21a, Ir40a, Gr28b",
+      "type": "arista and sacculus thermosensory and hygrosensory neuron Ir21a, Ir40a, Gr28b",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "arista and sacculus thermosensory and hygrosensory neuron Ir21a, Ir40a, Gr28b",
+      "cell_number": 2,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "mix": 2
+      }
+    },
+    {
+      "label": "antenna_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 8020,
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 2938,
+        "male": 3050,
+        "mix": 2032
+      }
+    },
+    {
+      "label": "antenna_hemocyte",
+      "type": "hemocyte",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 67,
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063",
+      "cells_by_sex": {
+        "female": 20,
+        "male": 18,
+        "mix": 29
+      }
+    },
+    {
+      "label": "antenna_muscle cell",
+      "type": "muscle cell",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 409,
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 192,
+        "male": 135,
+        "mix": 82
+      }
+    },
+    {
+      "label": "antenna_olfactory receptor neuron, coeloconics",
+      "type": "olfactory receptor neuron, coeloconics",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "olfactory receptor neuron, coeloconics",
+      "cell_number": 393,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 169,
+        "male": 123,
+        "mix": 101
+      }
+    },
+    {
+      "label": "antenna_sacculus/arista neuron",
+      "type": "sacculus/arista neuron",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "sacculus/arista neuron",
+      "cell_number": 455,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 168,
+        "male": 192,
+        "mix": 95
+      }
+    },
+    {
+      "label": "antenna_unannotated",
+      "type": "unannotated",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Antenna",
+      "source_cluster_id": "unannotated",
+      "cell_number": 14249,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "female": 5538,
+        "male": 5995,
+        "mix": 2716
+      },
+      "unannotated": true
+    },
+    {
+      "label": "body_wall_adult fat body",
+      "type": "adult fat body",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 1267,
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052",
+      "cells_by_sex": {
+        "female": 654,
+        "male": 613
+      }
+    },
+    {
+      "label": "body_wall_adult glial cell",
+      "type": "adult glial cell",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "adult glial cell",
+      "cell_number": 201,
+      "author_ontology_id": "FBbt:00100497",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 119,
+        "male": 82
+      }
+    },
+    {
+      "label": "body_wall_adult oenocyte",
+      "type": "adult oenocyte",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "adult oenocyte",
+      "cell_number": 1389,
+      "author_ontology_id": "FBbt:00003185",
+      "author_broad": "oenocyte",
+      "author_broad_ontology_id": "FBbt:00004995",
+      "cells_by_sex": {
+        "female": 646,
+        "male": 743
+      }
+    },
+    {
+      "label": "body_wall_adult peripheral nervous system",
+      "type": "adult peripheral nervous system",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "adult peripheral nervous system",
+      "cell_number": 175,
+      "author_ontology_id": "FBbt:00005892",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 80,
+        "male": 95
+      }
+    },
+    {
+      "label": "body_wall_adult salivary gland",
+      "type": "adult salivary gland",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "adult salivary gland",
+      "cell_number": 24,
+      "author_ontology_id": "FBbt:00003135",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317",
+      "cells_by_sex": {
+        "female": 20,
+        "male": 4
+      }
+    },
+    {
+      "label": "body_wall_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 384,
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048",
+      "cells_by_sex": {
+        "female": 210,
+        "male": 174
+      }
+    },
+    {
+      "label": "body_wall_adult ventral nervous system",
+      "type": "adult ventral nervous system",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "adult ventral nervous system",
+      "cell_number": 543,
+      "author_ontology_id": "FBbt:00004052",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 242,
+        "male": 301
+      }
+    },
+    {
+      "label": "body_wall_epidermal cell of the abdominal posterior compartment",
+      "type": "epidermal cell of the abdominal posterior compartment",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "epidermal cell of the abdominal posterior compartment",
+      "cell_number": 68,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 48,
+        "male": 20
+      }
+    },
+    {
+      "label": "body_wall_epidermal cell that specialized in antimicrobial response",
+      "type": "epidermal cell that specialized in antimicrobial response",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "epidermal cell that specialized in antimicrobial response",
+      "cell_number": 1043,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 915,
+        "male": 128
+      }
+    },
+    {
+      "label": "body_wall_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 2765,
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 1877,
+        "male": 888
+      }
+    },
+    {
+      "label": "body_wall_hemocyte",
+      "type": "hemocyte",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 558,
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063",
+      "cells_by_sex": {
+        "female": 444,
+        "male": 114
+      }
+    },
+    {
+      "label": "body_wall_indirect flight muscle",
+      "type": "indirect flight muscle",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "indirect flight muscle",
+      "cell_number": 1754,
+      "author_ontology_id": "FBbt:00003361",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 1000,
+        "male": 754
+      }
+    },
+    {
+      "label": "body_wall_midgut",
+      "type": "midgut",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "midgut",
+      "cell_number": 80,
+      "author_ontology_id": "FBbt:00005383",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 76,
+        "male": 4
+      }
+    },
+    {
+      "label": "body_wall_muscle cell",
+      "type": "muscle cell",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 4554,
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 2263,
+        "male": 2291
+      }
+    },
+    {
+      "label": "body_wall_ovary cell",
+      "type": "ovary cell",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "ovary cell",
+      "cell_number": 49,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 44,
+        "male": 5
+      }
+    },
+    {
+      "label": "body_wall_tendon cell",
+      "type": "tendon cell",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "tendon cell",
+      "cell_number": 241,
+      "author_ontology_id": "FBbt:00005090",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 136,
+        "male": 105
+      }
+    },
+    {
+      "label": "body_wall_testis",
+      "type": "testis",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "testis",
+      "cell_number": 31,
+      "author_ontology_id": "FBbt:00004928",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "female": 12,
+        "male": 19
+      }
+    },
+    {
+      "label": "body_wall_unannotated",
+      "type": "unannotated",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Body Wall",
+      "source_cluster_id": "unannotated",
+      "cell_number": 1425,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "female": 914,
+        "male": 511
+      },
+      "unannotated": true
+    },
+    {
+      "label": "fat_body_adult alary muscle",
+      "type": "adult alary muscle",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Fat Body",
+      "source_cluster_id": "adult alary muscle",
+      "cell_number": 228,
+      "author_ontology_id": "FBbt:00003545",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 112,
+        "male": 116
+      }
+    },
+    {
+      "label": "fat_body_adult fat body",
+      "type": "adult fat body",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Fat Body",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 16950,
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052",
+      "cells_by_sex": {
+        "female": 10350,
+        "male": 6600
+      }
+    },
+    {
+      "label": "fat_body_adult neuron",
+      "type": "adult neuron",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Fat Body",
+      "source_cluster_id": "adult neuron",
+      "cell_number": 229,
+      "author_ontology_id": "FBbt:00047095",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 24,
+        "male": 205
+      }
+    },
+    {
+      "label": "fat_body_adult oenocyte",
+      "type": "adult oenocyte",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Fat Body",
+      "source_cluster_id": "adult oenocyte",
+      "cell_number": 421,
+      "author_ontology_id": "FBbt:00003185",
+      "author_broad": "oenocyte",
+      "author_broad_ontology_id": "FBbt:00004995",
+      "cells_by_sex": {
+        "female": 226,
+        "male": 195
+      }
+    },
+    {
+      "label": "fat_body_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Fat Body",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 923,
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 425,
+        "male": 498
+      }
+    },
+    {
+      "label": "fat_body_female reproductive system",
+      "type": "female reproductive system",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Fat Body",
+      "source_cluster_id": "female reproductive system",
+      "cell_number": 374,
+      "author_ontology_id": "FBbt:00004864",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 244,
+        "male": 130
+      }
+    },
+    {
+      "label": "fat_body_hemocyte",
+      "type": "hemocyte",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Fat Body",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 3646,
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063",
+      "cells_by_sex": {
+        "female": 1773,
+        "male": 1873
+      }
+    },
+    {
+      "label": "fat_body_male accessory gland",
+      "type": "male accessory gland",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Fat Body",
+      "source_cluster_id": "male accessory gland",
+      "cell_number": 56,
+      "author_ontology_id": "FBbt:00004959",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317",
+      "cells_by_sex": {
+        "male": 56
+      }
+    },
+    {
+      "label": "fat_body_male germline differentiating cell",
+      "type": "male germline differentiating cell",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Fat Body",
+      "source_cluster_id": "male germline differentiating cell",
+      "cell_number": 149,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 149
+      }
+    },
+    {
+      "label": "fat_body_muscle cell",
+      "type": "muscle cell",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Fat Body",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 426,
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 211,
+        "male": 215
+      }
+    },
+    {
+      "label": "fat_body_sensory neuron",
+      "type": "sensory neuron",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Fat Body",
+      "source_cluster_id": "sensory neuron",
+      "cell_number": 58,
+      "author_ontology_id": "FBbt:00005124",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 36,
+        "male": 22
+      }
+    },
+    {
+      "label": "fat_body_testis",
+      "type": "testis",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Fat Body",
+      "source_cluster_id": "testis",
+      "cell_number": 69,
+      "author_ontology_id": "FBbt:00004928",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "male": 69
+      }
+    },
+    {
+      "label": "fat_body_unannotated",
+      "type": "unannotated",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Fat Body",
+      "source_cluster_id": "unannotated",
+      "cell_number": 3397,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "female": 2542,
+        "male": 855
+      },
+      "unannotated": true
+    },
+    {
+      "label": "gut_adult Malpighian tubule",
+      "type": "adult Malpighian tubule",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "adult Malpighian tubule",
+      "cell_number": 37,
+      "author_ontology_id": "FBbt:00005725",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056",
+      "cells_by_sex": {
+        "female": 7,
+        "male": 30
+      }
+    },
+    {
+      "label": "gut_adult differentiating enterocyte",
+      "type": "adult differentiating enterocyte",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "adult differentiating enterocyte",
+      "cell_number": 285,
+      "author_ontology_id": "FBbt:00049281",
+      "author_broad": "somatic precursor cell",
+      "author_broad_ontology_id": "FBbt:00007008",
+      "cells_by_sex": {
+        "female": 105,
+        "male": 180
+      }
+    },
+    {
+      "label": "gut_adult fat body",
+      "type": "adult fat body",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 13,
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052",
+      "cells_by_sex": {
+        "female": 2,
+        "male": 11
+      }
+    },
+    {
+      "label": "gut_adult midgut enterocyte",
+      "type": "adult midgut enterocyte",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "adult midgut enterocyte",
+      "cell_number": 271,
+      "author_ontology_id": "FBbt:00047182",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 116,
+        "male": 155
+      }
+    },
+    {
+      "label": "gut_adult midgut-hindgut hybrid zone",
+      "type": "adult midgut-hindgut hybrid zone",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "adult midgut-hindgut hybrid zone",
+      "cell_number": 276,
+      "author_ontology_id": "FBbt:00047207",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 209,
+        "male": 67
+      }
+    },
+    {
+      "label": "gut_adult pylorus",
+      "type": "adult pylorus",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "adult pylorus",
+      "cell_number": 181,
+      "author_ontology_id": "FBbt:00100784",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 115,
+        "male": 66
+      }
+    },
+    {
+      "label": "gut_antimicrobial peptide-producing cell",
+      "type": "antimicrobial peptide-producing cell",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "antimicrobial peptide-producing cell",
+      "cell_number": 292,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "artefact",
+      "author_broad_ontology_id": "artefact",
+      "cells_by_sex": {
+        "female": 140,
+        "male": 152
+      }
+    },
+    {
+      "label": "gut_cardia (1)",
+      "type": "cardia (1)",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "cardia (1)",
+      "cell_number": 1076,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 712,
+        "male": 364
+      }
+    },
+    {
+      "label": "gut_cardia (2)",
+      "type": "cardia (2)",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "cardia (2)",
+      "cell_number": 298,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 171,
+        "male": 127
+      }
+    },
+    {
+      "label": "gut_copper cell",
+      "type": "copper cell",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "copper cell",
+      "cell_number": 90,
+      "author_ontology_id": "FBbt:00005782",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 10,
+        "male": 80
+      }
+    },
+    {
+      "label": "gut_crop",
+      "type": "crop",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "crop",
+      "cell_number": 4565,
+      "author_ontology_id": "FBbt:00003133",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 2974,
+        "male": 1591
+      }
+    },
+    {
+      "label": "gut_enteroblast",
+      "type": "enteroblast",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "enteroblast",
+      "cell_number": 202,
+      "author_ontology_id": "FBbt:00110205",
+      "author_broad": "somatic precursor cell",
+      "author_broad_ontology_id": "FBbt:00007008",
+      "cells_by_sex": {
+        "female": 107,
+        "male": 95
+      }
+    },
+    {
+      "label": "gut_enterocyte of anterior adult midgut epithelium",
+      "type": "enterocyte of anterior adult midgut epithelium",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "enterocyte of anterior adult midgut epithelium",
+      "cell_number": 745,
+      "author_ontology_id": "FBbt:00049280",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 138,
+        "male": 607
+      }
+    },
+    {
+      "label": "gut_enterocyte of posterior adult midgut epithelium",
+      "type": "enterocyte of posterior adult midgut epithelium",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "enterocyte of posterior adult midgut epithelium",
+      "cell_number": 551,
+      "author_ontology_id": "FBbt:00007037",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 147,
+        "male": 404
+      }
+    },
+    {
+      "label": "gut_enterocyte-like",
+      "type": "enterocyte-like",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "enterocyte-like",
+      "cell_number": 985,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 405,
+        "male": 580
+      }
+    },
+    {
+      "label": "gut_enteroendocrine cell",
+      "type": "enteroendocrine cell",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "enteroendocrine cell",
+      "cell_number": 96,
+      "author_ontology_id": "FBbt:00007038",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 78,
+        "male": 18
+      }
+    },
+    {
+      "label": "gut_intestinal stem cell",
+      "type": "intestinal stem cell",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "intestinal stem cell",
+      "cell_number": 282,
+      "author_ontology_id": "FBbt:00007039",
+      "author_broad": "somatic precursor cell",
+      "author_broad_ontology_id": "FBbt:00007008",
+      "cells_by_sex": {
+        "female": 144,
+        "male": 138
+      }
+    },
+    {
+      "label": "gut_male accessory gland",
+      "type": "male accessory gland",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "male accessory gland",
+      "cell_number": 56,
+      "author_ontology_id": "FBbt:00004959",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317",
+      "cells_by_sex": {
+        "male": 56
+      }
+    },
+    {
+      "label": "gut_midgut large flat cell",
+      "type": "midgut large flat cell",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "midgut large flat cell",
+      "cell_number": 254,
+      "author_ontology_id": "FBbt:00110910",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 53,
+        "male": 201
+      }
+    },
+    {
+      "label": "gut_muscle cell",
+      "type": "muscle cell",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 95,
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 80,
+        "male": 15
+      }
+    },
+    {
+      "label": "gut_unannotated",
+      "type": "unannotated",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "unannotated",
+      "cell_number": 680,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "female": 276,
+        "male": 404
+      },
+      "unannotated": true
+    },
+    {
+      "label": "gut_visceral muscle of the crop",
+      "type": "visceral muscle of the crop",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "visceral muscle of the crop",
+      "cell_number": 197,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 153,
+        "male": 44
+      }
+    },
+    {
+      "label": "gut_visceral muscle of the midgut",
+      "type": "visceral muscle of the midgut",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Gut",
+      "source_cluster_id": "visceral muscle of the midgut",
+      "cell_number": 261,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 196,
+        "male": 65
+      }
+    },
+    {
+      "label": "haltere_adult fat body",
+      "type": "adult fat body",
+      "clustering": "haltere",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Haltere",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 346,
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052",
+      "cells_by_sex": {
+        "female": 81,
+        "male": 265
+      }
+    },
+    {
+      "label": "haltere_adult glial cell",
+      "type": "adult glial cell",
+      "clustering": "haltere",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Haltere",
+      "source_cluster_id": "adult glial cell",
+      "cell_number": 164,
+      "author_ontology_id": "FBbt:00100497",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 90,
+        "male": 74
+      }
+    },
+    {
+      "label": "haltere_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "haltere",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Haltere",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 3511,
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 1927,
+        "male": 1584
+      }
+    },
+    {
+      "label": "haltere_hemocyte",
+      "type": "hemocyte",
+      "clustering": "haltere",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Haltere",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 292,
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063",
+      "cells_by_sex": {
+        "female": 171,
+        "male": 121
+      }
+    },
+    {
+      "label": "haltere_mechanosensory neuron of haltere",
+      "type": "mechanosensory neuron of haltere",
+      "clustering": "haltere",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Haltere",
+      "source_cluster_id": "mechanosensory neuron of haltere",
+      "cell_number": 716,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 295,
+        "male": 421
+      }
+    },
+    {
+      "label": "haltere_muscle cell",
+      "type": "muscle cell",
+      "clustering": "haltere",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Haltere",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 39,
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 20,
+        "male": 19
+      }
+    },
+    {
+      "label": "haltere_neuron of haltere",
+      "type": "neuron of haltere",
+      "clustering": "haltere",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Haltere",
+      "source_cluster_id": "neuron of haltere",
+      "cell_number": 213,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 142,
+        "male": 71
+      }
+    },
+    {
+      "label": "haltere_unannotated",
+      "type": "unannotated",
+      "clustering": "haltere",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Haltere",
+      "source_cluster_id": "unannotated",
+      "cell_number": 1246,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "female": 653,
+        "male": 593
+      },
+      "unannotated": true
+    },
+    {
+      "label": "heart_adult Malpighian tubule",
+      "type": "adult Malpighian tubule",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Heart",
+      "source_cluster_id": "adult Malpighian tubule",
+      "cell_number": 35,
+      "author_ontology_id": "FBbt:00005725",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056",
+      "cells_by_sex": {
+        "female": 28,
+        "male": 7
+      }
+    },
+    {
+      "label": "heart_adult abdominal pericardial cell",
+      "type": "adult abdominal pericardial cell",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Heart",
+      "source_cluster_id": "adult abdominal pericardial cell",
+      "cell_number": 636,
+      "author_ontology_id": "FBbt:00013185",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056",
+      "cells_by_sex": {
+        "female": 328,
+        "male": 308
+      }
+    },
+    {
+      "label": "heart_adult fat body",
+      "type": "adult fat body",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Heart",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 830,
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052",
+      "cells_by_sex": {
+        "female": 205,
+        "male": 625
+      }
+    },
+    {
+      "label": "heart_adult heart ventral longitudinal muscle",
+      "type": "adult heart ventral longitudinal muscle",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Heart",
+      "source_cluster_id": "adult heart ventral longitudinal muscle",
+      "cell_number": 599,
+      "author_ontology_id": "FBbt:00003550",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 216,
+        "male": 383
+      }
+    },
+    {
+      "label": "heart_adult oenocyte",
+      "type": "adult oenocyte",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Heart",
+      "source_cluster_id": "adult oenocyte",
+      "cell_number": 1083,
+      "author_ontology_id": "FBbt:00003185",
+      "author_broad": "oenocyte",
+      "author_broad_ontology_id": "FBbt:00004995",
+      "cells_by_sex": {
+        "female": 568,
+        "male": 515
+      }
+    },
+    {
+      "label": "heart_adult ostium",
+      "type": "adult ostium",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Heart",
+      "source_cluster_id": "adult ostium",
+      "cell_number": 56,
+      "author_ontology_id": "FBbt:00003161",
+      "author_broad": "cardial cell",
+      "author_broad_ontology_id": "FBbt:00007319",
+      "cells_by_sex": {
+        "female": 16,
+        "male": 40
+      }
+    },
+    {
+      "label": "heart_adult peripheral neuron of the heart",
+      "type": "adult peripheral neuron of the heart",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Heart",
+      "source_cluster_id": "adult peripheral neuron of the heart",
+      "cell_number": 309,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 183,
+        "male": 126
+      }
+    },
+    {
+      "label": "heart_adult salivary gland",
+      "type": "adult salivary gland",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Heart",
+      "source_cluster_id": "adult salivary gland",
+      "cell_number": 43,
+      "author_ontology_id": "FBbt:00003135",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317",
+      "cells_by_sex": {
+        "female": 40,
+        "male": 3
+      }
+    },
+    {
+      "label": "heart_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Heart",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 155,
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048",
+      "cells_by_sex": {
+        "female": 56,
+        "male": 99
+      }
+    },
+    {
+      "label": "heart_cardiomyocyte, working adult heart muscle (non-ostia)",
+      "type": "cardiomyocyte, working adult heart muscle (non-ostia)",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Heart",
+      "source_cluster_id": "cardiomyocyte, working adult heart muscle (non-ostia)",
+      "cell_number": 298,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "cardial cell",
+      "author_broad_ontology_id": "FBbt:00007319",
+      "cells_by_sex": {
+        "female": 178,
+        "male": 120
+      }
+    },
+    {
+      "label": "heart_crystal cell",
+      "type": "crystal cell",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Heart",
+      "source_cluster_id": "crystal cell",
+      "cell_number": 162,
+      "author_ontology_id": "FBbt:00001690",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063",
+      "cells_by_sex": {
+        "female": 119,
+        "male": 43
+      }
+    },
+    {
+      "label": "heart_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Heart",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 1944,
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 711,
+        "male": 1233
+      }
+    },
+    {
+      "label": "heart_hemocyte",
+      "type": "hemocyte",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Heart",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 887,
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063",
+      "cells_by_sex": {
+        "female": 589,
+        "male": 298
+      }
+    },
+    {
+      "label": "heart_indirect flight muscle",
+      "type": "indirect flight muscle",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Heart",
+      "source_cluster_id": "indirect flight muscle",
+      "cell_number": 121,
+      "author_ontology_id": "FBbt:00003361",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 34,
+        "male": 87
+      }
+    },
+    {
+      "label": "heart_muscle cell",
+      "type": "muscle cell",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Heart",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 79,
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 53,
+        "male": 26
+      }
+    },
+    {
+      "label": "heart_unannotated",
+      "type": "unannotated",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Heart",
+      "source_cluster_id": "unannotated",
+      "cell_number": 3449,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "female": 1847,
+        "male": 1602
+      },
+      "unannotated": true
+    },
+    {
+      "label": "leg_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Leg",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 97,
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048",
+      "cells_by_sex": {
+        "female": 53,
+        "male": 44
+      }
+    },
+    {
+      "label": "leg_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Leg",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 4894,
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 2577,
+        "male": 2317
+      }
+    },
+    {
+      "label": "leg_gustatory receptor neuron",
+      "type": "gustatory receptor neuron",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Leg",
+      "source_cluster_id": "gustatory receptor neuron",
+      "cell_number": 159,
+      "author_ontology_id": "FBbt:00005927",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 84,
+        "male": 75
+      }
+    },
+    {
+      "label": "leg_hemocyte",
+      "type": "hemocyte",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Leg",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 221,
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063",
+      "cells_by_sex": {
+        "female": 152,
+        "male": 69
+      }
+    },
+    {
+      "label": "leg_mechanosensory neuron",
+      "type": "mechanosensory neuron",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Leg",
+      "source_cluster_id": "mechanosensory neuron",
+      "cell_number": 1026,
+      "author_ontology_id": "FBbt:00005919",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 483,
+        "male": 543
+      }
+    },
+    {
+      "label": "leg_mechanosensory neuron of leg chordotonal organ",
+      "type": "mechanosensory neuron of leg chordotonal organ",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Leg",
+      "source_cluster_id": "mechanosensory neuron of leg chordotonal organ",
+      "cell_number": 211,
+      "author_ontology_id": "FBbt:00048274",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 108,
+        "male": 103
+      }
+    },
+    {
+      "label": "leg_muscle cell",
+      "type": "muscle cell",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Leg",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 5891,
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 2636,
+        "male": 3255
+      }
+    },
+    {
+      "label": "leg_peripheral glial cell",
+      "type": "peripheral glial cell",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Leg",
+      "source_cluster_id": "peripheral glial cell",
+      "cell_number": 450,
+      "author_ontology_id": "FBbt:00001327",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 240,
+        "male": 210
+      }
+    },
+    {
+      "label": "leg_sensory neuron",
+      "type": "sensory neuron",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Leg",
+      "source_cluster_id": "sensory neuron",
+      "cell_number": 117,
+      "author_ontology_id": "FBbt:00005124",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 47,
+        "male": 70
+      }
+    },
+    {
+      "label": "leg_unannotated",
+      "type": "unannotated",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Leg",
+      "source_cluster_id": "unannotated",
+      "cell_number": 1131,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "female": 697,
+        "male": 434
+      },
+      "unannotated": true
+    },
+    {
+      "label": "male_reproductive_glands_adult fat body",
+      "type": "adult fat body",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Male Reproductive Glands",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 59,
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052",
+      "cells_by_sex": {
+        "male": 59
+      }
+    },
+    {
+      "label": "male_reproductive_glands_anterior ejaculatory duct",
+      "type": "anterior ejaculatory duct",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Male Reproductive Glands",
+      "source_cluster_id": "anterior ejaculatory duct",
+      "cell_number": 550,
+      "author_ontology_id": "FBbt:00004967",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "male": 550
+      }
+    },
+    {
+      "label": "male_reproductive_glands_ejaculatory bulb",
+      "type": "ejaculatory bulb",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Male Reproductive Glands",
+      "source_cluster_id": "ejaculatory bulb",
+      "cell_number": 2185,
+      "author_ontology_id": "FBbt:00004962",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317",
+      "cells_by_sex": {
+        "male": 2185
+      }
+    },
+    {
+      "label": "male_reproductive_glands_ejaculatory bulb epithelium",
+      "type": "ejaculatory bulb epithelium",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Male Reproductive Glands",
+      "source_cluster_id": "ejaculatory bulb epithelium",
+      "cell_number": 670,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "male": 670
+      }
+    },
+    {
+      "label": "male_reproductive_glands_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Male Reproductive Glands",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 723,
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "male": 723
+      }
+    },
+    {
+      "label": "male_reproductive_glands_hemocyte",
+      "type": "hemocyte",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Male Reproductive Glands",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 108,
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063",
+      "cells_by_sex": {
+        "male": 108
+      }
+    },
+    {
+      "label": "male_reproductive_glands_male accessory gland main cell",
+      "type": "male accessory gland main cell",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Male Reproductive Glands",
+      "source_cluster_id": "male accessory gland main cell",
+      "cell_number": 7349,
+      "author_ontology_id": "FBbt:00004960",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317",
+      "cells_by_sex": {
+        "male": 7349
+      }
+    },
+    {
+      "label": "male_reproductive_glands_male accessory gland secondary cell",
+      "type": "male accessory gland secondary cell",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Male Reproductive Glands",
+      "source_cluster_id": "male accessory gland secondary cell",
+      "cell_number": 149,
+      "author_ontology_id": "FBbt:00004961",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317",
+      "cells_by_sex": {
+        "male": 149
+      }
+    },
+    {
+      "label": "male_reproductive_glands_male reproductive tract muscle",
+      "type": "male reproductive tract muscle",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Male Reproductive Glands",
+      "source_cluster_id": "male reproductive tract muscle",
+      "cell_number": 210,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "male": 210
+      }
+    },
+    {
+      "label": "male_reproductive_glands_muscle cell",
+      "type": "muscle cell",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Male Reproductive Glands",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 202,
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "male": 202
+      }
+    },
+    {
+      "label": "male_reproductive_glands_secretory cell of the male reproductive tract",
+      "type": "secretory cell of the male reproductive tract",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Male Reproductive Glands",
+      "source_cluster_id": "secretory cell of the male reproductive tract",
+      "cell_number": 250,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "male": 250
+      }
+    },
+    {
+      "label": "male_reproductive_glands_seminal vesicle",
+      "type": "seminal vesicle",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Male Reproductive Glands",
+      "source_cluster_id": "seminal vesicle",
+      "cell_number": 179,
+      "author_ontology_id": "FBbt:00004958",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317",
+      "cells_by_sex": {
+        "male": 179
+      }
+    },
+    {
+      "label": "male_reproductive_glands_spermatid",
+      "type": "spermatid",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Male Reproductive Glands",
+      "source_cluster_id": "spermatid",
+      "cell_number": 434,
+      "author_ontology_id": "FBbt:00004942",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 434
+      }
+    },
+    {
+      "label": "male_reproductive_glands_unannotated",
+      "type": "unannotated",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Male Reproductive Glands",
+      "source_cluster_id": "unannotated",
+      "cell_number": 75,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "male": 75
+      },
+      "unannotated": true
+    },
+    {
+      "label": "malpighian_tubule_adult Malpighian tubule bar-shaped cell of initial segment",
+      "type": "adult Malpighian tubule bar-shaped cell of initial segment",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "adult Malpighian tubule bar-shaped cell of initial segment",
+      "cell_number": 342,
+      "author_ontology_id": "FBbt:00049472",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056",
+      "cells_by_sex": {
+        "female": 206,
+        "male": 136
+      }
+    },
+    {
+      "label": "malpighian_tubule_adult Malpighian tubule principal cell",
+      "type": "adult Malpighian tubule principal cell",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "adult Malpighian tubule principal cell",
+      "cell_number": 2176,
+      "author_ontology_id": "FBbt:00005735",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056",
+      "cells_by_sex": {
+        "female": 679,
+        "male": 1497
+      }
+    },
+    {
+      "label": "malpighian_tubule_adult Malpighian tubule principal cell of initial segment",
+      "type": "adult Malpighian tubule principal cell of initial segment",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "adult Malpighian tubule principal cell of initial segment",
+      "cell_number": 1423,
+      "author_ontology_id": "FBbt:00049474",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056",
+      "cells_by_sex": {
+        "female": 757,
+        "male": 666
+      }
+    },
+    {
+      "label": "malpighian_tubule_adult Malpighian tubule principal cell of lower segment",
+      "type": "adult Malpighian tubule principal cell of lower segment",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "adult Malpighian tubule principal cell of lower segment",
+      "cell_number": 2716,
+      "author_ontology_id": "FBbt:00049477",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056",
+      "cells_by_sex": {
+        "female": 1339,
+        "male": 1377
+      }
+    },
+    {
+      "label": "malpighian_tubule_adult Malpighian tubule principal cell of lower ureter",
+      "type": "adult Malpighian tubule principal cell of lower ureter",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "adult Malpighian tubule principal cell of lower ureter",
+      "cell_number": 290,
+      "author_ontology_id": "FBbt:00049478",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056",
+      "cells_by_sex": {
+        "female": 160,
+        "male": 130
+      }
+    },
+    {
+      "label": "malpighian_tubule_adult Malpighian tubule stellate cell of main segment",
+      "type": "adult Malpighian tubule stellate cell of main segment",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "adult Malpighian tubule stellate cell of main segment",
+      "cell_number": 1613,
+      "author_ontology_id": "FBbt:00047102",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056",
+      "cells_by_sex": {
+        "female": 942,
+        "male": 671
+      }
+    },
+    {
+      "label": "malpighian_tubule_adult fat body",
+      "type": "adult fat body",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 59,
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052",
+      "cells_by_sex": {
+        "female": 25,
+        "male": 34
+      }
+    },
+    {
+      "label": "malpighian_tubule_adult hindgut",
+      "type": "adult hindgut",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "adult hindgut",
+      "cell_number": 38,
+      "author_ontology_id": "FBbt:00003143",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 22,
+        "male": 16
+      }
+    },
+    {
+      "label": "malpighian_tubule_adult hindgut*",
+      "type": "adult hindgut*",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "adult hindgut*",
+      "cell_number": 28,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 19,
+        "male": 9
+      }
+    },
+    {
+      "label": "malpighian_tubule_adult midgut*",
+      "type": "adult midgut*",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "adult midgut*",
+      "cell_number": 64,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 24,
+        "male": 40
+      }
+    },
+    {
+      "label": "malpighian_tubule_adult oenocyte",
+      "type": "adult oenocyte",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "adult oenocyte",
+      "cell_number": 20,
+      "author_ontology_id": "FBbt:00003185",
+      "author_broad": "oenocyte",
+      "author_broad_ontology_id": "FBbt:00004995",
+      "cells_by_sex": {
+        "female": 7,
+        "male": 13
+      }
+    },
+    {
+      "label": "malpighian_tubule_adult renal stem cell",
+      "type": "adult renal stem cell",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "adult renal stem cell",
+      "cell_number": 2271,
+      "author_ontology_id": "FBbt:00110862",
+      "author_broad": "somatic precursor cell",
+      "author_broad_ontology_id": "FBbt:00007008",
+      "cells_by_sex": {
+        "female": 1635,
+        "male": 636
+      }
+    },
+    {
+      "label": "malpighian_tubule_adult salivary gland",
+      "type": "adult salivary gland",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "adult salivary gland",
+      "cell_number": 876,
+      "author_ontology_id": "FBbt:00003135",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317",
+      "cells_by_sex": {
+        "female": 511,
+        "male": 365
+      }
+    },
+    {
+      "label": "malpighian_tubule_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 104,
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048",
+      "cells_by_sex": {
+        "female": 93,
+        "male": 11
+      }
+    },
+    {
+      "label": "malpighian_tubule_artefact",
+      "type": "artefact",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "artefact",
+      "cell_number": 501,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "artefact",
+      "author_broad_ontology_id": "artefact",
+      "cells_by_sex": {
+        "female": 270,
+        "male": 231
+      },
+      "unannotated": true
+    },
+    {
+      "label": "malpighian_tubule_posterior midgut*",
+      "type": "posterior midgut*",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "posterior midgut*",
+      "cell_number": 77,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 53,
+        "male": 24
+      }
+    },
+    {
+      "label": "malpighian_tubule_principal cell*",
+      "type": "principal cell*",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "principal cell*",
+      "cell_number": 633,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 534,
+        "male": 99
+      }
+    },
+    {
+      "label": "malpighian_tubule_unannotated",
+      "type": "unannotated",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "unannotated",
+      "cell_number": 516,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "female": 297,
+        "male": 219
+      },
+      "unannotated": true
+    },
+    {
+      "label": "malpighian_tubule_visceral muscle",
+      "type": "visceral muscle",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Malpighian Tubule",
+      "source_cluster_id": "visceral muscle",
+      "cell_number": 27,
+      "author_ontology_id": "FBbt:00005070",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 16,
+        "male": 11
+      }
+    },
+    {
+      "label": "oenocyte_adult alary muscle",
+      "type": "adult alary muscle",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Oenocyte",
+      "source_cluster_id": "adult alary muscle",
+      "cell_number": 602,
+      "author_ontology_id": "FBbt:00003545",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 174,
+        "male": 428
+      }
+    },
+    {
+      "label": "oenocyte_adult enterocyte",
+      "type": "adult enterocyte",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Oenocyte",
+      "source_cluster_id": "adult enterocyte",
+      "cell_number": 100,
+      "author_ontology_id": "FBbt:00047147",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 65,
+        "male": 35
+      }
+    },
+    {
+      "label": "oenocyte_adult fat body",
+      "type": "adult fat body",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Oenocyte",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 2621,
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052",
+      "cells_by_sex": {
+        "female": 948,
+        "male": 1673
+      }
+    },
+    {
+      "label": "oenocyte_adult heart",
+      "type": "adult heart",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Oenocyte",
+      "source_cluster_id": "adult heart",
+      "cell_number": 20,
+      "author_ontology_id": "FBbt:00003154",
+      "author_broad": "cardial cell",
+      "author_broad_ontology_id": "FBbt:00007319",
+      "cells_by_sex": {
+        "female": 8,
+        "male": 12
+      }
+    },
+    {
+      "label": "oenocyte_adult neuron",
+      "type": "adult neuron",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Oenocyte",
+      "source_cluster_id": "adult neuron",
+      "cell_number": 138,
+      "author_ontology_id": "FBbt:00047095",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 70,
+        "male": 68
+      }
+    },
+    {
+      "label": "oenocyte_adult oenocyte",
+      "type": "adult oenocyte",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Oenocyte",
+      "source_cluster_id": "adult oenocyte",
+      "cell_number": 3749,
+      "author_ontology_id": "FBbt:00003185",
+      "author_broad": "oenocyte",
+      "author_broad_ontology_id": "FBbt:00004995",
+      "cells_by_sex": {
+        "female": 1003,
+        "male": 2746
+      }
+    },
+    {
+      "label": "oenocyte_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Oenocyte",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 207,
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048",
+      "cells_by_sex": {
+        "female": 126,
+        "male": 81
+      }
+    },
+    {
+      "label": "oenocyte_ejaculatory bulb",
+      "type": "ejaculatory bulb",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Oenocyte",
+      "source_cluster_id": "ejaculatory bulb",
+      "cell_number": 108,
+      "author_ontology_id": "FBbt:00004962",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317",
+      "cells_by_sex": {
+        "female": 33,
+        "male": 75
+      }
+    },
+    {
+      "label": "oenocyte_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Oenocyte",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 758,
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 337,
+        "male": 421
+      }
+    },
+    {
+      "label": "oenocyte_hemocyte",
+      "type": "hemocyte",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Oenocyte",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 165,
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063",
+      "cells_by_sex": {
+        "female": 127,
+        "male": 38
+      }
+    },
+    {
+      "label": "oenocyte_muscle cell",
+      "type": "muscle cell",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Oenocyte",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 2284,
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 534,
+        "male": 1750
+      }
+    },
+    {
+      "label": "oenocyte_ovary cell",
+      "type": "ovary cell",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Oenocyte",
+      "source_cluster_id": "ovary cell",
+      "cell_number": 1028,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 583,
+        "male": 445
+      }
+    },
+    {
+      "label": "oenocyte_unannotated",
+      "type": "unannotated",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Oenocyte",
+      "source_cluster_id": "unannotated",
+      "cell_number": 2630,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "female": 982,
+        "male": 1648
+      },
+      "unannotated": true
+    },
+    {
+      "label": "ovary_16-cell germline cyst in germarium region 2a and 2b",
+      "type": "16-cell germline cyst in germarium region 2a and 2b",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "16-cell germline cyst in germarium region 2a and 2b",
+      "cell_number": 628,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female germline cell",
+      "author_broad_ontology_id": "FBbt:00057012",
+      "cells_by_sex": {
+        "female": 628
+      }
+    },
+    {
+      "label": "ovary_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 95,
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048",
+      "cells_by_sex": {
+        "female": 95
+      }
+    },
+    {
+      "label": "ovary_artefact",
+      "type": "artefact",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "artefact",
+      "cell_number": 7918,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "artefact",
+      "author_broad_ontology_id": "artefact",
+      "cells_by_sex": {
+        "female": 7918
+      },
+      "unannotated": true
+    },
+    {
+      "label": "ovary_central main body follicle cell ca. St. 6-8",
+      "type": "central main body follicle cell ca. St. 6-8",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "central main body follicle cell ca. St. 6-8",
+      "cell_number": 2324,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 2324
+      }
+    },
+    {
+      "label": "ovary_choriogenic main body follicle cell St. 12",
+      "type": "choriogenic main body follicle cell St. 12",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "choriogenic main body follicle cell St. 12",
+      "cell_number": 476,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 476
+      }
+    },
+    {
+      "label": "ovary_choriogenic main body follicle cell St. 14",
+      "type": "choriogenic main body follicle cell St. 14",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "choriogenic main body follicle cell St. 14",
+      "cell_number": 277,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 277
+      }
+    },
+    {
+      "label": "ovary_choriogenic main body follicle cell and corpus luteum",
+      "type": "choriogenic main body follicle cell and corpus luteum",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "choriogenic main body follicle cell and corpus luteum",
+      "cell_number": 1444,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 1444
+      }
+    },
+    {
+      "label": "ovary_dorsal appendage forming follicle cell",
+      "type": "dorsal appendage forming follicle cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "dorsal appendage forming follicle cell",
+      "cell_number": 199,
+      "author_ontology_id": "FBbt:00046036",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 199
+      }
+    },
+    {
+      "label": "ovary_escort cell",
+      "type": "escort cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "escort cell",
+      "cell_number": 241,
+      "author_ontology_id": "FBbt:00006049",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 241
+      }
+    },
+    {
+      "label": "ovary_follicle stem cell and prefollicle cell",
+      "type": "follicle stem cell and prefollicle cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "follicle stem cell and prefollicle cell",
+      "cell_number": 339,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "somatic precursor cell",
+      "author_broad_ontology_id": "FBbt:00007008",
+      "cells_by_sex": {
+        "female": 339
+      }
+    },
+    {
+      "label": "ovary_germ cell stage 4 and later",
+      "type": "germ cell stage 4 and later",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "germ cell stage 4 and later",
+      "cell_number": 420,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female germline cell",
+      "author_broad_ontology_id": "FBbt:00057012",
+      "cells_by_sex": {
+        "female": 420
+      }
+    },
+    {
+      "label": "ovary_germline cell, unknown stage",
+      "type": "germline cell, unknown stage",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "germline cell, unknown stage",
+      "cell_number": 150,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female germline cell",
+      "author_broad_ontology_id": "FBbt:00057012",
+      "cells_by_sex": {
+        "female": 150
+      }
+    },
+    {
+      "label": "ovary_main body follicle cell ca. until St. 5",
+      "type": "main body follicle cell ca. until St. 5",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "main body follicle cell ca. until St. 5",
+      "cell_number": 2799,
+      "author_ontology_id": "FBbt:00005402",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 2799
+      }
+    },
+    {
+      "label": "ovary_ovarian sheath muscle",
+      "type": "ovarian sheath muscle",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "ovarian sheath muscle",
+      "cell_number": 315,
+      "author_ontology_id": "FBbt:00003557",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 315
+      }
+    },
+    {
+      "label": "ovary_oviduct",
+      "type": "oviduct",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "oviduct",
+      "cell_number": 580,
+      "author_ontology_id": "FBbt:00004911",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 580
+      }
+    },
+    {
+      "label": "ovary_polar follicle cell",
+      "type": "polar follicle cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "polar follicle cell",
+      "cell_number": 75,
+      "author_ontology_id": "FBbt:00004907",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 75
+      }
+    },
+    {
+      "label": "ovary_post-mitotic endocycling nurse cell",
+      "type": "post-mitotic endocycling nurse cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "post-mitotic endocycling nurse cell",
+      "cell_number": 396,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 396
+      }
+    },
+    {
+      "label": "ovary_post-mitotic germ cell early 16-cell cyst",
+      "type": "post-mitotic germ cell early 16-cell cyst",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "post-mitotic germ cell early 16-cell cyst",
+      "cell_number": 330,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female germline cell",
+      "author_broad_ontology_id": "FBbt:00057012",
+      "cells_by_sex": {
+        "female": 330
+      }
+    },
+    {
+      "label": "ovary_posterior terminal follicle cell ca. St. 5-8",
+      "type": "posterior terminal follicle cell ca. St. 5-8",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "posterior terminal follicle cell ca. St. 5-8",
+      "cell_number": 377,
+      "author_ontology_id": "FBbt:00048554",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 377
+      }
+    },
+    {
+      "label": "ovary_stalk follicle cell",
+      "type": "stalk follicle cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "stalk follicle cell",
+      "cell_number": 173,
+      "author_ontology_id": "FBbt:00004910",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 173
+      }
+    },
+    {
+      "label": "ovary_stretch follicle cell",
+      "type": "stretch follicle cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "stretch follicle cell",
+      "cell_number": 587,
+      "author_ontology_id": "FBbt:00004908",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 587
+      }
+    },
+    {
+      "label": "ovary_unannotated",
+      "type": "unannotated",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "unannotated",
+      "cell_number": 8825,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "female": 8825
+      },
+      "unannotated": true
+    },
+    {
+      "label": "ovary_young germ cell",
+      "type": "young germ cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Ovary",
+      "source_cluster_id": "young germ cell",
+      "cell_number": 2433,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female germline cell",
+      "author_broad_ontology_id": "FBbt:00057012",
+      "cells_by_sex": {
+        "female": 2433
+      }
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_adult esophagus",
+      "type": "adult esophagus",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+      "source_cluster_id": "adult esophagus",
+      "cell_number": 473,
+      "author_ontology_id": "FBbt:00003131",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 276,
+        "male": 197
+      }
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_adult fat body",
+      "type": "adult fat body",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 293,
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052",
+      "cells_by_sex": {
+        "female": 163,
+        "male": 130
+      }
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_adult peripheral nervous system",
+      "type": "adult peripheral nervous system",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+      "source_cluster_id": "adult peripheral nervous system",
+      "cell_number": 2637,
+      "author_ontology_id": "FBbt:00005892",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 140,
+        "male": 2497
+      }
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 305,
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048",
+      "cells_by_sex": {
+        "female": 117,
+        "male": 188
+      }
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_bitter-sensitive labellar taste bristle",
+      "type": "bitter-sensitive labellar taste bristle",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+      "source_cluster_id": "bitter-sensitive labellar taste bristle",
+      "cell_number": 151,
+      "author_ontology_id": "FBbt:00048160",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 82,
+        "male": 69
+      }
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 13315,
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 6987,
+        "male": 6328
+      }
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_gustatory receptor neuron of the labellum",
+      "type": "gustatory receptor neuron of the labellum",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+      "source_cluster_id": "gustatory receptor neuron of the labellum",
+      "cell_number": 365,
+      "author_ontology_id": "FBbt:00110887",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 188,
+        "male": 177
+      }
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_hemocyte",
+      "type": "hemocyte",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 169,
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063",
+      "cells_by_sex": {
+        "female": 101,
+        "male": 68
+      }
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_labral sense organ mechanosensory neuron",
+      "type": "labral sense organ mechanosensory neuron",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+      "source_cluster_id": "labral sense organ mechanosensory neuron",
+      "cell_number": 399,
+      "author_ontology_id": "FBbt:00048035",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 182,
+        "male": 217
+      }
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_maxillary palp olfactory receptor neuron",
+      "type": "maxillary palp olfactory receptor neuron",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+      "source_cluster_id": "maxillary palp olfactory receptor neuron",
+      "cell_number": 742,
+      "author_ontology_id": "FBbt:00007353",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 269,
+        "male": 473
+      }
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_maxillary palpus",
+      "type": "maxillary palpus",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+      "source_cluster_id": "maxillary palpus",
+      "cell_number": 660,
+      "author_ontology_id": "FBbt:00004546",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 271,
+        "male": 389
+      }
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_muscle cell",
+      "type": "muscle cell",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 4367,
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 2982,
+        "male": 1385
+      }
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_peripheral glial cell",
+      "type": "peripheral glial cell",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+      "source_cluster_id": "peripheral glial cell",
+      "cell_number": 635,
+      "author_ontology_id": "FBbt:00001327",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 220,
+        "male": 415
+      }
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_photoreceptor",
+      "type": "photoreceptor",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+      "source_cluster_id": "photoreceptor",
+      "cell_number": 489,
+      "author_ontology_id": "FBbt:00005162",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 76,
+        "male": 413
+      }
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_tormogen cell",
+      "type": "tormogen cell",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+      "source_cluster_id": "tormogen cell",
+      "cell_number": 472,
+      "author_ontology_id": "FBbt:00005171",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124",
+      "cells_by_sex": {
+        "female": 267,
+        "male": 205
+      }
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_unannotated",
+      "type": "unannotated",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
+      "source_cluster_id": "unannotated",
+      "cell_number": 829,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "female": 215,
+        "male": 614
+      },
+      "unannotated": true
+    },
+    {
+      "label": "testis_adult fat body",
+      "type": "adult fat body",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 109,
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052",
+      "cells_by_sex": {
+        "male": 109
+      }
+    },
+    {
+      "label": "testis_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 619,
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048",
+      "cells_by_sex": {
+        "male": 619
+      }
+    },
+    {
+      "label": "testis_cyst cell branch a",
+      "type": "cyst cell branch a",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "cyst cell branch a",
+      "cell_number": 299,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "male": 299
+      }
+    },
+    {
+      "label": "testis_cyst cell branch b",
+      "type": "cyst cell branch b",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "cyst cell branch b",
+      "cell_number": 311,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "male": 311
+      }
+    },
+    {
+      "label": "testis_cyst cell intermediate",
+      "type": "cyst cell intermediate",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "cyst cell intermediate",
+      "cell_number": 1797,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "male": 1797
+      }
+    },
+    {
+      "label": "testis_cyst stem cell",
+      "type": "cyst stem cell",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "cyst stem cell",
+      "cell_number": 344,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "somatic precursor cell",
+      "author_broad_ontology_id": "FBbt:00007008",
+      "cells_by_sex": {
+        "male": 344
+      }
+    },
+    {
+      "label": "testis_early cyst cell 1",
+      "type": "early cyst cell 1",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "early cyst cell 1",
+      "cell_number": 657,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "male": 657
+      }
+    },
+    {
+      "label": "testis_early cyst cell 2",
+      "type": "early cyst cell 2",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "early cyst cell 2",
+      "cell_number": 353,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "male": 353
+      }
+    },
+    {
+      "label": "testis_early elongation stage spermatid",
+      "type": "early elongation stage spermatid",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "early elongation stage spermatid",
+      "cell_number": 6681,
+      "author_ontology_id": "FBbt:00057175",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 6681
+      }
+    },
+    {
+      "label": "testis_early-mid elongation-stage spermatid",
+      "type": "early-mid elongation-stage spermatid",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "early-mid elongation-stage spermatid",
+      "cell_number": 945,
+      "author_ontology_id": "FBbt:00057000",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 945
+      }
+    },
+    {
+      "label": "testis_head cyst cell",
+      "type": "head cyst cell",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "head cyst cell",
+      "cell_number": 1365,
+      "author_ontology_id": "FBbt:00057009",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "male": 1365
+      }
+    },
+    {
+      "label": "testis_hemocyte",
+      "type": "hemocyte",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 800,
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063",
+      "cells_by_sex": {
+        "male": 800
+      }
+    },
+    {
+      "label": "testis_late cyst cell branch a",
+      "type": "late cyst cell branch a",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "late cyst cell branch a",
+      "cell_number": 156,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "male": 156
+      }
+    },
+    {
+      "label": "testis_late cyst cell branch b",
+      "type": "late cyst cell branch b",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "late cyst cell branch b",
+      "cell_number": 316,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "male": 316
+      }
+    },
+    {
+      "label": "testis_late primary spermatocyte",
+      "type": "late primary spermatocyte",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "late primary spermatocyte",
+      "cell_number": 301,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 301
+      }
+    },
+    {
+      "label": "testis_male gonad associated epithelium",
+      "type": "male gonad associated epithelium",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "male gonad associated epithelium",
+      "cell_number": 11063,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "male": 11063
+      }
+    },
+    {
+      "label": "testis_mid-late elongation-stage spermatid",
+      "type": "mid-late elongation-stage spermatid",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "mid-late elongation-stage spermatid",
+      "cell_number": 2228,
+      "author_ontology_id": "FBbt:00057003",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 2228
+      }
+    },
+    {
+      "label": "testis_mid-late proliferating spermatogonia",
+      "type": "mid-late proliferating spermatogonia",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "mid-late proliferating spermatogonia",
+      "cell_number": 401,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 401
+      }
+    },
+    {
+      "label": "testis_muscle cell",
+      "type": "muscle cell",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 3513,
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "male": 3513
+      }
+    },
+    {
+      "label": "testis_pigment cell",
+      "type": "pigment cell",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "pigment cell",
+      "cell_number": 475,
+      "author_ontology_id": "FBbt:00004230",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "male": 475
+      }
+    },
+    {
+      "label": "testis_secretory cell of the male reproductive tract",
+      "type": "secretory cell of the male reproductive tract",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "secretory cell of the male reproductive tract",
+      "cell_number": 117,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "male": 117
+      }
+    },
+    {
+      "label": "testis_spermatid",
+      "type": "spermatid",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "spermatid",
+      "cell_number": 643,
+      "author_ontology_id": "FBbt:00004942",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 643
+      }
+    },
+    {
+      "label": "testis_spermatocyte",
+      "type": "spermatocyte",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "spermatocyte",
+      "cell_number": 3677,
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 3677
+      }
+    },
+    {
+      "label": "testis_spermatocyte 0",
+      "type": "spermatocyte 0",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "spermatocyte 0",
+      "cell_number": 988,
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 988
+      }
+    },
+    {
+      "label": "testis_spermatocyte 1",
+      "type": "spermatocyte 1",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "spermatocyte 1",
+      "cell_number": 582,
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 582
+      }
+    },
+    {
+      "label": "testis_spermatocyte 2",
+      "type": "spermatocyte 2",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "spermatocyte 2",
+      "cell_number": 541,
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 541
+      }
+    },
+    {
+      "label": "testis_spermatocyte 3",
+      "type": "spermatocyte 3",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "spermatocyte 3",
+      "cell_number": 340,
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 340
+      }
+    },
+    {
+      "label": "testis_spermatocyte 4",
+      "type": "spermatocyte 4",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "spermatocyte 4",
+      "cell_number": 146,
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 146
+      }
+    },
+    {
+      "label": "testis_spermatocyte 5",
+      "type": "spermatocyte 5",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "spermatocyte 5",
+      "cell_number": 181,
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 181
+      }
+    },
+    {
+      "label": "testis_spermatocyte 6",
+      "type": "spermatocyte 6",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "spermatocyte 6",
+      "cell_number": 202,
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 202
+      }
+    },
+    {
+      "label": "testis_spermatocyte 7a",
+      "type": "spermatocyte 7a",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "spermatocyte 7a",
+      "cell_number": 593,
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 593
+      }
+    },
+    {
+      "label": "testis_spermatocyte cyst cell branch a",
+      "type": "spermatocyte cyst cell branch a",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "spermatocyte cyst cell branch a",
+      "cell_number": 491,
+      "author_ontology_id": "FBbt:00057004",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "male": 491
+      }
+    },
+    {
+      "label": "testis_spermatocyte cyst cell branch b",
+      "type": "spermatocyte cyst cell branch b",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "spermatocyte cyst cell branch b",
+      "cell_number": 215,
+      "author_ontology_id": "FBbt:00057004",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927",
+      "cells_by_sex": {
+        "male": 215
+      }
+    },
+    {
+      "label": "testis_spermatogonium",
+      "type": "spermatogonium",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "spermatogonium",
+      "cell_number": 709,
+      "author_ontology_id": "FBbt:00004935",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 709
+      }
+    },
+    {
+      "label": "testis_spermatogonium-spermatocyte transition",
+      "type": "spermatogonium-spermatocyte transition",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "spermatogonium-spermatocyte transition",
+      "cell_number": 202,
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011",
+      "cells_by_sex": {
+        "male": 202
+      }
+    },
+    {
+      "label": "testis_unannotated",
+      "type": "unannotated",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Testis",
+      "source_cluster_id": "unannotated",
+      "cell_number": 1094,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "male": 1094
+      },
+      "unannotated": true
+    },
+    {
+      "label": "trachea_adult fat body",
+      "type": "adult fat body",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Trachea",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 61,
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052",
+      "cells_by_sex": {
+        "female": 26,
+        "male": 35
+      }
+    },
+    {
+      "label": "trachea_adult neuron",
+      "type": "adult neuron",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Trachea",
+      "source_cluster_id": "adult neuron",
+      "cell_number": 462,
+      "author_ontology_id": "FBbt:00047095",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106",
+      "cells_by_sex": {
+        "female": 235,
+        "male": 227
+      }
+    },
+    {
+      "label": "trachea_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Trachea",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 9508,
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048",
+      "cells_by_sex": {
+        "female": 5083,
+        "male": 4425
+      }
+    },
+    {
+      "label": "trachea_btl-GAL4 positive female cell, cluster 1, likely to be ovary cell",
+      "type": "btl-GAL4 positive female cell, cluster 1, likely to be ovary cell",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Trachea",
+      "source_cluster_id": "btl-GAL4 positive female cell, cluster 1, likely to be ovary cell",
+      "cell_number": 4598,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 4475,
+        "male": 123
+      }
+    },
+    {
+      "label": "trachea_btl-GAL4 positive female cell, cluster 2, likely to be ovary cell",
+      "type": "btl-GAL4 positive female cell, cluster 2, likely to be ovary cell",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Trachea",
+      "source_cluster_id": "btl-GAL4 positive female cell, cluster 2, likely to be ovary cell",
+      "cell_number": 2250,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 2038,
+        "male": 212
+      }
+    },
+    {
+      "label": "trachea_btl-GAL4 positive female cell, cluster 3, likely to be ovary cell",
+      "type": "btl-GAL4 positive female cell, cluster 3, likely to be ovary cell",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Trachea",
+      "source_cluster_id": "btl-GAL4 positive female cell, cluster 3, likely to be ovary cell",
+      "cell_number": 139,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 126,
+        "male": 13
+      }
+    },
+    {
+      "label": "trachea_btl-GAL4 positive female cell, likely to be ovary cell, sim+",
+      "type": "btl-GAL4 positive female cell, likely to be ovary cell, sim+",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Trachea",
+      "source_cluster_id": "btl-GAL4 positive female cell, likely to be ovary cell, sim+",
+      "cell_number": 2341,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 2334,
+        "male": 7
+      }
+    },
+    {
+      "label": "trachea_btl-GAL4 positive female cell, likely to be ovary cell, sim+, H15+",
+      "type": "btl-GAL4 positive female cell, likely to be ovary cell, sim+, H15+",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Trachea",
+      "source_cluster_id": "btl-GAL4 positive female cell, likely to be ovary cell, sim+, H15+",
+      "cell_number": 1009,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864",
+      "cells_by_sex": {
+        "female": 1007,
+        "male": 2
+      }
+    },
+    {
+      "label": "trachea_eye photoreceptor cell",
+      "type": "eye photoreceptor cell",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Trachea",
+      "source_cluster_id": "eye photoreceptor cell",
+      "cell_number": 40,
+      "author_ontology_id": "FBbt:00006009",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 21,
+        "male": 19
+      }
+    },
+    {
+      "label": "trachea_muscle cell",
+      "type": "muscle cell",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Trachea",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 218,
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 121,
+        "male": 97
+      }
+    },
+    {
+      "label": "trachea_unannotated",
+      "type": "unannotated",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Trachea",
+      "source_cluster_id": "unannotated",
+      "cell_number": 6280,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "female": 4328,
+        "male": 1952
+      },
+      "unannotated": true
+    },
+    {
+      "label": "wing_gustatory receptor neuron",
+      "type": "gustatory receptor neuron",
+      "clustering": "wing",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Wing",
+      "source_cluster_id": "gustatory receptor neuron",
+      "cell_number": 752,
+      "author_ontology_id": "FBbt:00005927",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 205,
+        "male": 547
+      }
+    },
+    {
+      "label": "wing_hemocyte",
+      "type": "hemocyte",
+      "clustering": "wing",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Wing",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 158,
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063",
+      "cells_by_sex": {
+        "female": 84,
+        "male": 74
+      }
+    },
+    {
+      "label": "wing_mechanosensory neuron",
+      "type": "mechanosensory neuron",
+      "clustering": "wing",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Wing",
+      "source_cluster_id": "mechanosensory neuron",
+      "cell_number": 1604,
+      "author_ontology_id": "FBbt:00005919",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 619,
+        "male": 985
+      }
+    },
+    {
+      "label": "wing_muscle cell",
+      "type": "muscle cell",
+      "clustering": "wing",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Wing",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 144,
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074",
+      "cells_by_sex": {
+        "female": 19,
+        "male": 125
+      }
+    },
+    {
+      "label": "wing_nociceptive neuron",
+      "type": "nociceptive neuron",
+      "clustering": "wing",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Wing",
+      "source_cluster_id": "nociceptive neuron",
+      "cell_number": 39,
+      "author_ontology_id": "FBbt:00048471",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 9,
+        "male": 30
+      }
+    },
+    {
+      "label": "wing_peripheral glial cell",
+      "type": "peripheral glial cell",
+      "clustering": "wing",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Wing",
+      "source_cluster_id": "peripheral glial cell",
+      "cell_number": 649,
+      "author_ontology_id": "FBbt:00001327",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144",
+      "cells_by_sex": {
+        "female": 269,
+        "male": 380
+      }
+    },
+    {
+      "label": "wing_pheromone-sensing neuron",
+      "type": "pheromone-sensing neuron",
+      "clustering": "wing",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Wing",
+      "source_cluster_id": "pheromone-sensing neuron",
+      "cell_number": 1020,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124",
+      "cells_by_sex": {
+        "female": 317,
+        "male": 703
+      }
+    },
+    {
+      "label": "wing_unannotated",
+      "type": "unannotated",
+      "clustering": "wing",
+      "clustering_name": "Fly Cell Atlas 10x Stringent Wing",
+      "source_cluster_id": "unannotated",
+      "cell_number": 11523,
+      "author_ontology_id": "unannotated",
+      "author_broad": "unannotated",
+      "author_broad_ontology_id": "unannotated",
+      "cells_by_sex": {
+        "female": 6314,
+        "male": 5209
+      },
+      "unannotated": true
+    }
+  ]
+}
