@@ -172,7 +172,13 @@ def build_entities(project: str) -> list[dict]:
             clustering = clustering_iri_by_subset[ann["clustering"]]
             src_id, typ = str(ann.get("source_cluster_id", label)), ann.get("type", label)
             where = ann.get("clustering_name", ann["clustering"])
-            if ann.get("unannotated") or typ == src_id:
+            if ann.get("membership") == "label_transfer":
+                # cells typed one by one by the authors' classifier, not clustered
+                name = f"{typ} cells, predicted ({where}){cite_suffix}"
+            elif ann.get("membership") == "sorted":
+                # a FACS-sorted population the authors typed as a whole
+                name = f"{typ} cells, sorted ({where}){cite_suffix}"
+            elif ann.get("unannotated") or typ == src_id:
                 name = f"cluster {src_id} ({where}){cite_suffix}" if ann.get("unannotated") \
                     else f"{typ} cluster ({where}){cite_suffix}"
             else:
@@ -187,6 +193,9 @@ def build_entities(project: str) -> list[dict]:
             "cell_number": ann.get("cell_number"),
             "neo_label": "Cluster",
         }
+        title = MEMBERSHIP_TITLES.get(ann.get("membership"))
+        if title:
+            rec["title"] = title.format(type=ann.get("type", label))
         if ann.get("parent_cluster"):
             # sub-cluster -> the cluster whose cells were re-clustered (part of)
             rec["parent_cluster"] = iri(reg.mint(
@@ -205,6 +214,14 @@ def build_entities(project: str) -> list[dict]:
 
     reg.save()
     return entities
+
+
+MEMBERSHIP_TITLES = {
+    "label_transfer": "Cells assigned the type '{type}' by the authors' classifier (label "
+                      "transfer from an annotated analysis), not a transcriptomic cluster.",
+    "sorted": "Cells FACS-sorted by the authors as '{type}' and analysed as a whole; "
+              "typed from the authors' sample description, not a transcriptomic cluster.",
+}
 
 
 def anns_subset(proj: Path) -> str:

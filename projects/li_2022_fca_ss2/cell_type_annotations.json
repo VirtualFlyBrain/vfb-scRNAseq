@@ -1,0 +1,3654 @@
+{
+  "source": {
+    "doi": "10.1126/science.abk2432",
+    "title": "Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly"
+  },
+  "dataset": {
+    "accession": "E-MTAB-10628",
+    "label_source": "authors' per-analysis h5ad files (flycellatlas.org), obs `transf_annotation`",
+    "label_level": "author cell type (one entry per annotation, per analysis)",
+    "validate_against": "paper and supplementary tables"
+  },
+  "annotations": [
+    {
+      "label": "antenna_Johnston organ neuron",
+      "type": "Johnston organ neuron",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "Johnston organ neuron",
+      "cell_number": 37,
+      "cells_by_sex": {
+        "female": 23,
+        "male": 14
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00100000",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_adult antenna glial cell",
+      "type": "adult antenna glial cell",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "adult antenna glial cell",
+      "cell_number": 37,
+      "cells_by_sex": {
+        "female": 21,
+        "male": 16
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144"
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Gr21a/63a",
+      "type": "adult olfactory receptor neuron Gr21a/63a",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Gr21a/63a",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 2,
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00067064",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Ir56a+, Orco-",
+      "type": "adult olfactory receptor neuron Ir56a+, Orco-",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Ir56a+, Orco-",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "female": 2,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Ir75d",
+      "type": "adult olfactory receptor neuron Ir75d",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Ir75d",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00047054",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Ir84a, Ir31a, Ir76a, Ir76b, Ir8a, Or35a",
+      "type": "adult olfactory receptor neuron Ir84a, Ir31a, Ir76a, Ir76b, Ir8a, Or35a",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Ir84a, Ir31a, Ir76a, Ir76b, Ir8a, Or35a",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 3,
+        "male": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or22a, Or42b, Or59b",
+      "type": "adult olfactory receptor neuron Or22a, Or42b, Or59b",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or22a, Or42b, Or59b",
+      "cell_number": 9,
+      "cells_by_sex": {
+        "female": 5,
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or47a, Or56a and likely other ORN types",
+      "type": "adult olfactory receptor neuron Or47a, Or56a and likely other ORN types",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or47a, Or56a and likely other ORN types",
+      "cell_number": 6,
+      "cells_by_sex": {
+        "female": 3,
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or47b",
+      "type": "adult olfactory receptor neuron Or47b",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or47b",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 1,
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00067056",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or65",
+      "type": "adult olfactory receptor neuron Or65",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or65",
+      "cell_number": 6,
+      "cells_by_sex": {
+        "female": 2,
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00067011",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or67a and likely other unknown ORN types",
+      "type": "adult olfactory receptor neuron Or67a and likely other unknown ORN types",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or67a and likely other unknown ORN types",
+      "cell_number": 14,
+      "cells_by_sex": {
+        "female": 8,
+        "male": 6
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or67d",
+      "type": "adult olfactory receptor neuron Or67d",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or67d",
+      "cell_number": 9,
+      "cells_by_sex": {
+        "female": 1,
+        "male": 8
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00067031",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or85a, Or43b",
+      "type": "adult olfactory receptor neuron Or85a, Or43b",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or85a, Or43b",
+      "cell_number": 1,
+      "cells_by_sex": {
+        "female": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or88a",
+      "type": "adult olfactory receptor neuron Or88a",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or88a",
+      "cell_number": 8,
+      "cells_by_sex": {
+        "female": 5,
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00067057",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron Or92a",
+      "type": "adult olfactory receptor neuron Or92a",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron Or92a",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 2,
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00067059",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron acid-sensing, Ir75a/b/c, Ir64a",
+      "type": "adult olfactory receptor neuron acid-sensing, Ir75a/b/c, Ir64a",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron acid-sensing, Ir75a/b/c, Ir64a",
+      "cell_number": 2,
+      "cells_by_sex": {
+        "female": 1,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_adult olfactory receptor neuron unknown type, Orco-",
+      "type": "adult olfactory receptor neuron unknown type, Orco-",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "adult olfactory receptor neuron unknown type, Orco-",
+      "cell_number": 1,
+      "cells_by_sex": {
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 147,
+      "cells_by_sex": {
+        "female": 82,
+        "male": 65
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "antenna_muscle cell",
+      "type": "muscle cell",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 4,
+      "cells_by_sex": {
+        "female": 3,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "antenna_olfactory receptor neuron, coeloconics",
+      "type": "olfactory receptor neuron, coeloconics",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "olfactory receptor neuron, coeloconics",
+      "cell_number": 8,
+      "cells_by_sex": {
+        "female": 3,
+        "male": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "antenna_sacculus/arista neuron",
+      "type": "sacculus/arista neuron",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "sacculus/arista neuron",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "female": 2,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106"
+    },
+    {
+      "label": "antenna_unknown",
+      "type": "unknown",
+      "clustering": "antenna",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Antenna",
+      "source_cluster_id": "unknown",
+      "cell_number": 266,
+      "cells_by_sex": {
+        "female": 169,
+        "male": 97
+      },
+      "unannotated": true
+    },
+    {
+      "label": "body_wall_adult fat body",
+      "type": "adult fat body",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Body Wall",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 12,
+      "cells_by_sex": {
+        "male": 12
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052"
+    },
+    {
+      "label": "body_wall_adult glial cell",
+      "type": "adult glial cell",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Body Wall",
+      "source_cluster_id": "adult glial cell",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "male": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00100497",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144"
+    },
+    {
+      "label": "body_wall_adult oenocyte",
+      "type": "adult oenocyte",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Body Wall",
+      "source_cluster_id": "adult oenocyte",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003185",
+      "author_broad": "oenocyte",
+      "author_broad_ontology_id": "FBbt:00004995"
+    },
+    {
+      "label": "body_wall_adult peripheral nervous system",
+      "type": "adult peripheral nervous system",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Body Wall",
+      "source_cluster_id": "adult peripheral nervous system",
+      "cell_number": 4,
+      "cells_by_sex": {
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005892",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106"
+    },
+    {
+      "label": "body_wall_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Body Wall",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 10,
+      "cells_by_sex": {
+        "male": 10
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048"
+    },
+    {
+      "label": "body_wall_adult ventral nervous system",
+      "type": "adult ventral nervous system",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Body Wall",
+      "source_cluster_id": "adult ventral nervous system",
+      "cell_number": 11,
+      "cells_by_sex": {
+        "male": 11
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004052",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106"
+    },
+    {
+      "label": "body_wall_epidermal cell that specialized in antimicrobial response",
+      "type": "epidermal cell that specialized in antimicrobial response",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Body Wall",
+      "source_cluster_id": "epidermal cell that specialized in antimicrobial response",
+      "cell_number": 11,
+      "cells_by_sex": {
+        "male": 11
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "body_wall_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Body Wall",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 63,
+      "cells_by_sex": {
+        "male": 63
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "body_wall_hemocyte",
+      "type": "hemocyte",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Body Wall",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 4,
+      "cells_by_sex": {
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063"
+    },
+    {
+      "label": "body_wall_indirect flight muscle",
+      "type": "indirect flight muscle",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Body Wall",
+      "source_cluster_id": "indirect flight muscle",
+      "cell_number": 30,
+      "cells_by_sex": {
+        "male": 30
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003361",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "body_wall_midgut",
+      "type": "midgut",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Body Wall",
+      "source_cluster_id": "midgut",
+      "cell_number": 1,
+      "cells_by_sex": {
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005383",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "body_wall_muscle cell",
+      "type": "muscle cell",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Body Wall",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 65,
+      "cells_by_sex": {
+        "male": 65
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "body_wall_tendon cell",
+      "type": "tendon cell",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Body Wall",
+      "source_cluster_id": "tendon cell",
+      "cell_number": 6,
+      "cells_by_sex": {
+        "male": 6
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005090",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "body_wall_unknown",
+      "type": "unknown",
+      "clustering": "body_wall",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Body Wall",
+      "source_cluster_id": "unknown",
+      "cell_number": 24,
+      "cells_by_sex": {
+        "male": 24
+      },
+      "unannotated": true
+    },
+    {
+      "label": "fat_body_adult alary muscle",
+      "type": "adult alary muscle",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Fat Body",
+      "source_cluster_id": "adult alary muscle",
+      "cell_number": 11,
+      "cells_by_sex": {
+        "female": 3,
+        "male": 8
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003545",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "fat_body_adult fat body",
+      "type": "adult fat body",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Fat Body",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 880,
+      "cells_by_sex": {
+        "female": 449,
+        "male": 431
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052"
+    },
+    {
+      "label": "fat_body_adult neuron",
+      "type": "adult neuron",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Fat Body",
+      "source_cluster_id": "adult neuron",
+      "cell_number": 10,
+      "cells_by_sex": {
+        "female": 6,
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00047095",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106"
+    },
+    {
+      "label": "fat_body_adult oenocyte",
+      "type": "adult oenocyte",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Fat Body",
+      "source_cluster_id": "adult oenocyte",
+      "cell_number": 24,
+      "cells_by_sex": {
+        "female": 5,
+        "male": 19
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003185",
+      "author_broad": "oenocyte",
+      "author_broad_ontology_id": "FBbt:00004995"
+    },
+    {
+      "label": "fat_body_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Fat Body",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 53,
+      "cells_by_sex": {
+        "female": 25,
+        "male": 28
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "fat_body_female reproductive system",
+      "type": "female reproductive system",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Fat Body",
+      "source_cluster_id": "female reproductive system",
+      "cell_number": 21,
+      "cells_by_sex": {
+        "female": 9,
+        "male": 12
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004864",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864"
+    },
+    {
+      "label": "fat_body_hemocyte",
+      "type": "hemocyte",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Fat Body",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 178,
+      "cells_by_sex": {
+        "female": 78,
+        "male": 100
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063"
+    },
+    {
+      "label": "fat_body_male accessory gland",
+      "type": "male accessory gland",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Fat Body",
+      "source_cluster_id": "male accessory gland",
+      "cell_number": 6,
+      "cells_by_sex": {
+        "female": 1,
+        "male": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004959",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317"
+    },
+    {
+      "label": "fat_body_male germline differentiating cell",
+      "type": "male germline differentiating cell",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Fat Body",
+      "source_cluster_id": "male germline differentiating cell",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "fat_body_muscle cell",
+      "type": "muscle cell",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Fat Body",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 31,
+      "cells_by_sex": {
+        "female": 11,
+        "male": 20
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "fat_body_sensory neuron",
+      "type": "sensory neuron",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Fat Body",
+      "source_cluster_id": "sensory neuron",
+      "cell_number": 9,
+      "cells_by_sex": {
+        "female": 5,
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005124",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "fat_body_testis",
+      "type": "testis",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Fat Body",
+      "source_cluster_id": "testis",
+      "cell_number": 2,
+      "cells_by_sex": {
+        "female": 1,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004928",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927"
+    },
+    {
+      "label": "fat_body_unknown",
+      "type": "unknown",
+      "clustering": "fat_body",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Fat Body",
+      "source_cluster_id": "unknown",
+      "cell_number": 121,
+      "cells_by_sex": {
+        "female": 63,
+        "male": 58
+      },
+      "unannotated": true
+    },
+    {
+      "label": "gut_adult Malpighian tubule",
+      "type": "adult Malpighian tubule",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "adult Malpighian tubule",
+      "cell_number": 1,
+      "cells_by_sex": {
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005725",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056"
+    },
+    {
+      "label": "gut_adult differentiating enterocyte",
+      "type": "adult differentiating enterocyte",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "adult differentiating enterocyte",
+      "cell_number": 14,
+      "cells_by_sex": {
+        "female": 5,
+        "male": 9
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00049281",
+      "author_broad": "somatic precursor cell",
+      "author_broad_ontology_id": "FBbt:00007008"
+    },
+    {
+      "label": "gut_adult fat body",
+      "type": "adult fat body",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 2,
+      "cells_by_sex": {
+        "female": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052"
+    },
+    {
+      "label": "gut_adult midgut enterocyte",
+      "type": "adult midgut enterocyte",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "adult midgut enterocyte",
+      "cell_number": 11,
+      "cells_by_sex": {
+        "female": 7,
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00047182",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "gut_adult midgut-hindgut hybrid zone",
+      "type": "adult midgut-hindgut hybrid zone",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "adult midgut-hindgut hybrid zone",
+      "cell_number": 18,
+      "cells_by_sex": {
+        "female": 14,
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00047207",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "gut_adult pylorus",
+      "type": "adult pylorus",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "adult pylorus",
+      "cell_number": 10,
+      "cells_by_sex": {
+        "female": 8,
+        "male": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00100784",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "gut_antimicrobial peptide-producing cell",
+      "type": "antimicrobial peptide-producing cell",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "antimicrobial peptide-producing cell",
+      "cell_number": 12,
+      "cells_by_sex": {
+        "female": 6,
+        "male": 6
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "artefact",
+      "author_broad_ontology_id": "artefact"
+    },
+    {
+      "label": "gut_cardia (1)",
+      "type": "cardia (1)",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "cardia (1)",
+      "cell_number": 74,
+      "cells_by_sex": {
+        "female": 38,
+        "male": 36
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "gut_cardia (2)",
+      "type": "cardia (2)",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "cardia (2)",
+      "cell_number": 20,
+      "cells_by_sex": {
+        "female": 12,
+        "male": 8
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "gut_copper cell",
+      "type": "copper cell",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "copper cell",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 1,
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005782",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "gut_crop",
+      "type": "crop",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "crop",
+      "cell_number": 150,
+      "cells_by_sex": {
+        "female": 96,
+        "male": 54
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003133",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "gut_enteroblast",
+      "type": "enteroblast",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "enteroblast",
+      "cell_number": 23,
+      "cells_by_sex": {
+        "female": 9,
+        "male": 14
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00110205",
+      "author_broad": "somatic precursor cell",
+      "author_broad_ontology_id": "FBbt:00007008"
+    },
+    {
+      "label": "gut_enterocyte of anterior adult midgut epithelium",
+      "type": "enterocyte of anterior adult midgut epithelium",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "enterocyte of anterior adult midgut epithelium",
+      "cell_number": 34,
+      "cells_by_sex": {
+        "female": 9,
+        "male": 25
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00049280",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "gut_enterocyte of posterior adult midgut epithelium",
+      "type": "enterocyte of posterior adult midgut epithelium",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "enterocyte of posterior adult midgut epithelium",
+      "cell_number": 29,
+      "cells_by_sex": {
+        "female": 6,
+        "male": 23
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00007037",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "gut_enterocyte-like",
+      "type": "enterocyte-like",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "enterocyte-like",
+      "cell_number": 42,
+      "cells_by_sex": {
+        "female": 19,
+        "male": 23
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "gut_enteroendocrine cell",
+      "type": "enteroendocrine cell",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "enteroendocrine cell",
+      "cell_number": 8,
+      "cells_by_sex": {
+        "female": 6,
+        "male": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00007038",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "gut_intestinal stem cell",
+      "type": "intestinal stem cell",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "intestinal stem cell",
+      "cell_number": 23,
+      "cells_by_sex": {
+        "female": 7,
+        "male": 16
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00007039",
+      "author_broad": "somatic precursor cell",
+      "author_broad_ontology_id": "FBbt:00007008"
+    },
+    {
+      "label": "gut_midgut large flat cell",
+      "type": "midgut large flat cell",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "midgut large flat cell",
+      "cell_number": 10,
+      "cells_by_sex": {
+        "female": 3,
+        "male": 7
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00110910",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "gut_muscle cell",
+      "type": "muscle cell",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 4,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "gut_unknown",
+      "type": "unknown",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "unknown",
+      "cell_number": 80,
+      "cells_by_sex": {
+        "female": 34,
+        "male": 46
+      },
+      "unannotated": true
+    },
+    {
+      "label": "gut_visceral muscle of the crop",
+      "type": "visceral muscle of the crop",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "visceral muscle of the crop",
+      "cell_number": 8,
+      "cells_by_sex": {
+        "female": 6,
+        "male": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "gut_visceral muscle of the midgut",
+      "type": "visceral muscle of the midgut",
+      "clustering": "gut",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Gut",
+      "source_cluster_id": "visceral muscle of the midgut",
+      "cell_number": 15,
+      "cells_by_sex": {
+        "female": 10,
+        "male": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "haltere_adult fat body",
+      "type": "adult fat body",
+      "clustering": "haltere",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Haltere",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052"
+    },
+    {
+      "label": "haltere_adult glial cell",
+      "type": "adult glial cell",
+      "clustering": "haltere",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Haltere",
+      "source_cluster_id": "adult glial cell",
+      "cell_number": 8,
+      "cells_by_sex": {
+        "female": 6,
+        "male": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00100497",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144"
+    },
+    {
+      "label": "haltere_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "haltere",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Haltere",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 136,
+      "cells_by_sex": {
+        "female": 77,
+        "male": 59
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "haltere_hemocyte",
+      "type": "hemocyte",
+      "clustering": "haltere",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Haltere",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 7,
+      "cells_by_sex": {
+        "female": 4,
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063"
+    },
+    {
+      "label": "haltere_mechanosensory neuron of haltere",
+      "type": "mechanosensory neuron of haltere",
+      "clustering": "haltere",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Haltere",
+      "source_cluster_id": "mechanosensory neuron of haltere",
+      "cell_number": 14,
+      "cells_by_sex": {
+        "female": 5,
+        "male": 9
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "haltere_muscle cell",
+      "type": "muscle cell",
+      "clustering": "haltere",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Haltere",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 4,
+      "cells_by_sex": {
+        "female": 2,
+        "male": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "haltere_neuron of haltere",
+      "type": "neuron of haltere",
+      "clustering": "haltere",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Haltere",
+      "source_cluster_id": "neuron of haltere",
+      "cell_number": 9,
+      "cells_by_sex": {
+        "female": 6,
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106"
+    },
+    {
+      "label": "haltere_unknown",
+      "type": "unknown",
+      "clustering": "haltere",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Haltere",
+      "source_cluster_id": "unknown",
+      "cell_number": 82,
+      "cells_by_sex": {
+        "female": 35,
+        "male": 47
+      },
+      "unannotated": true
+    },
+    {
+      "label": "heart_adult abdominal pericardial cell",
+      "type": "adult abdominal pericardial cell",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Heart",
+      "source_cluster_id": "adult abdominal pericardial cell",
+      "cell_number": 22,
+      "cells_by_sex": {
+        "female": 16,
+        "male": 6
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00013185",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056"
+    },
+    {
+      "label": "heart_adult fat body",
+      "type": "adult fat body",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Heart",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 17,
+      "cells_by_sex": {
+        "female": 6,
+        "male": 11
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052"
+    },
+    {
+      "label": "heart_adult heart ventral longitudinal muscle",
+      "type": "adult heart ventral longitudinal muscle",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Heart",
+      "source_cluster_id": "adult heart ventral longitudinal muscle",
+      "cell_number": 23,
+      "cells_by_sex": {
+        "female": 9,
+        "male": 14
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003550",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "heart_adult oenocyte",
+      "type": "adult oenocyte",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Heart",
+      "source_cluster_id": "adult oenocyte",
+      "cell_number": 25,
+      "cells_by_sex": {
+        "female": 17,
+        "male": 8
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003185",
+      "author_broad": "oenocyte",
+      "author_broad_ontology_id": "FBbt:00004995"
+    },
+    {
+      "label": "heart_adult peripheral neuron of the heart",
+      "type": "adult peripheral neuron of the heart",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Heart",
+      "source_cluster_id": "adult peripheral neuron of the heart",
+      "cell_number": 13,
+      "cells_by_sex": {
+        "female": 8,
+        "male": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106"
+    },
+    {
+      "label": "heart_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Heart",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 6,
+      "cells_by_sex": {
+        "female": 5,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048"
+    },
+    {
+      "label": "heart_cardiomyocyte, working adult heart muscle (non-ostia)",
+      "type": "cardiomyocyte, working adult heart muscle (non-ostia)",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Heart",
+      "source_cluster_id": "cardiomyocyte, working adult heart muscle (non-ostia)",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 4,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "cardial cell",
+      "author_broad_ontology_id": "FBbt:00007319"
+    },
+    {
+      "label": "heart_crystal cell",
+      "type": "crystal cell",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Heart",
+      "source_cluster_id": "crystal cell",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 4,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00001690",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063"
+    },
+    {
+      "label": "heart_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Heart",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 76,
+      "cells_by_sex": {
+        "female": 45,
+        "male": 31
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "heart_hemocyte",
+      "type": "hemocyte",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Heart",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 29,
+      "cells_by_sex": {
+        "female": 25,
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063"
+    },
+    {
+      "label": "heart_indirect flight muscle",
+      "type": "indirect flight muscle",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Heart",
+      "source_cluster_id": "indirect flight muscle",
+      "cell_number": 4,
+      "cells_by_sex": {
+        "female": 3,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003361",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "heart_muscle cell",
+      "type": "muscle cell",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Heart",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 12,
+      "cells_by_sex": {
+        "female": 7,
+        "male": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "heart_unknown",
+      "type": "unknown",
+      "clustering": "heart",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Heart",
+      "source_cluster_id": "unknown",
+      "cell_number": 227,
+      "cells_by_sex": {
+        "female": 146,
+        "male": 81
+      },
+      "unannotated": true
+    },
+    {
+      "label": "leg_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Leg",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "female": 1,
+        "male": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048"
+    },
+    {
+      "label": "leg_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Leg",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 316,
+      "cells_by_sex": {
+        "female": 153,
+        "male": 163
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "leg_gustatory receptor neuron",
+      "type": "gustatory receptor neuron",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Leg",
+      "source_cluster_id": "gustatory receptor neuron",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 1,
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005927",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "leg_hemocyte",
+      "type": "hemocyte",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Leg",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 6,
+      "cells_by_sex": {
+        "female": 3,
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063"
+    },
+    {
+      "label": "leg_mechanosensory neuron",
+      "type": "mechanosensory neuron",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Leg",
+      "source_cluster_id": "mechanosensory neuron",
+      "cell_number": 29,
+      "cells_by_sex": {
+        "female": 14,
+        "male": 15
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005919",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "leg_mechanosensory neuron of leg chordotonal organ",
+      "type": "mechanosensory neuron of leg chordotonal organ",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Leg",
+      "source_cluster_id": "mechanosensory neuron of leg chordotonal organ",
+      "cell_number": 9,
+      "cells_by_sex": {
+        "female": 4,
+        "male": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00048274",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "leg_muscle cell",
+      "type": "muscle cell",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Leg",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 147,
+      "cells_by_sex": {
+        "female": 82,
+        "male": 65
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "leg_peripheral glial cell",
+      "type": "peripheral glial cell",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Leg",
+      "source_cluster_id": "peripheral glial cell",
+      "cell_number": 19,
+      "cells_by_sex": {
+        "female": 11,
+        "male": 8
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00001327",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144"
+    },
+    {
+      "label": "leg_sensory neuron",
+      "type": "sensory neuron",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Leg",
+      "source_cluster_id": "sensory neuron",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 3,
+        "male": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005124",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "leg_unknown",
+      "type": "unknown",
+      "clustering": "leg",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Leg",
+      "source_cluster_id": "unknown",
+      "cell_number": 68,
+      "cells_by_sex": {
+        "female": 33,
+        "male": 35
+      },
+      "unannotated": true
+    },
+    {
+      "label": "male_reproductive_glands_adult fat body",
+      "type": "adult fat body",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 2,
+      "cells_by_sex": {
+        "male": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052"
+    },
+    {
+      "label": "male_reproductive_glands_anterior ejaculatory duct",
+      "type": "anterior ejaculatory duct",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
+      "source_cluster_id": "anterior ejaculatory duct",
+      "cell_number": 17,
+      "cells_by_sex": {
+        "male": 17
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004967",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "male_reproductive_glands_ejaculatory bulb",
+      "type": "ejaculatory bulb",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
+      "source_cluster_id": "ejaculatory bulb",
+      "cell_number": 31,
+      "cells_by_sex": {
+        "male": 31
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004962",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317"
+    },
+    {
+      "label": "male_reproductive_glands_ejaculatory bulb epithelium",
+      "type": "ejaculatory bulb epithelium",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
+      "source_cluster_id": "ejaculatory bulb epithelium",
+      "cell_number": 11,
+      "cells_by_sex": {
+        "male": 11
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "male_reproductive_glands_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 16,
+      "cells_by_sex": {
+        "male": 16
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "male_reproductive_glands_hemocyte",
+      "type": "hemocyte",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 1,
+      "cells_by_sex": {
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063"
+    },
+    {
+      "label": "male_reproductive_glands_male accessory gland main cell",
+      "type": "male accessory gland main cell",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
+      "source_cluster_id": "male accessory gland main cell",
+      "cell_number": 131,
+      "cells_by_sex": {
+        "male": 131
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004960",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317"
+    },
+    {
+      "label": "male_reproductive_glands_male accessory gland secondary cell",
+      "type": "male accessory gland secondary cell",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
+      "source_cluster_id": "male accessory gland secondary cell",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "male": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004961",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317"
+    },
+    {
+      "label": "male_reproductive_glands_male reproductive tract muscle",
+      "type": "male reproductive tract muscle",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
+      "source_cluster_id": "male reproductive tract muscle",
+      "cell_number": 8,
+      "cells_by_sex": {
+        "male": 8
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "male_reproductive_glands_muscle cell",
+      "type": "muscle cell",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "male_reproductive_glands_secretory cell of the male reproductive tract",
+      "type": "secretory cell of the male reproductive tract",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
+      "source_cluster_id": "secretory cell of the male reproductive tract",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "male": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927"
+    },
+    {
+      "label": "male_reproductive_glands_seminal vesicle",
+      "type": "seminal vesicle",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
+      "source_cluster_id": "seminal vesicle",
+      "cell_number": 4,
+      "cells_by_sex": {
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004958",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317"
+    },
+    {
+      "label": "male_reproductive_glands_spermatid",
+      "type": "spermatid",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
+      "source_cluster_id": "spermatid",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004942",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "male_reproductive_glands_unknown",
+      "type": "unknown",
+      "clustering": "male_reproductive_glands",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
+      "source_cluster_id": "unknown",
+      "cell_number": 1,
+      "cells_by_sex": {
+        "male": 1
+      },
+      "unannotated": true
+    },
+    {
+      "label": "malpighian_tubule_adult Malpighian tubule bar-shaped cell of initial segment",
+      "type": "adult Malpighian tubule bar-shaped cell of initial segment",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "adult Malpighian tubule bar-shaped cell of initial segment",
+      "cell_number": 9,
+      "cells_by_sex": {
+        "female": 2,
+        "male": 7
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00049472",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056"
+    },
+    {
+      "label": "malpighian_tubule_adult Malpighian tubule principal cell",
+      "type": "adult Malpighian tubule principal cell",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "adult Malpighian tubule principal cell",
+      "cell_number": 38,
+      "cells_by_sex": {
+        "female": 6,
+        "male": 32
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005735",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056"
+    },
+    {
+      "label": "malpighian_tubule_adult Malpighian tubule principal cell of initial segment",
+      "type": "adult Malpighian tubule principal cell of initial segment",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "adult Malpighian tubule principal cell of initial segment",
+      "cell_number": 25,
+      "cells_by_sex": {
+        "female": 6,
+        "male": 19
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00049474",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056"
+    },
+    {
+      "label": "malpighian_tubule_adult Malpighian tubule principal cell of lower segment",
+      "type": "adult Malpighian tubule principal cell of lower segment",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "adult Malpighian tubule principal cell of lower segment",
+      "cell_number": 61,
+      "cells_by_sex": {
+        "female": 29,
+        "male": 32
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00049477",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056"
+    },
+    {
+      "label": "malpighian_tubule_adult Malpighian tubule principal cell of lower ureter",
+      "type": "adult Malpighian tubule principal cell of lower ureter",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "adult Malpighian tubule principal cell of lower ureter",
+      "cell_number": 9,
+      "cells_by_sex": {
+        "female": 3,
+        "male": 6
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00049478",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056"
+    },
+    {
+      "label": "malpighian_tubule_adult Malpighian tubule stellate cell of main segment",
+      "type": "adult Malpighian tubule stellate cell of main segment",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "adult Malpighian tubule stellate cell of main segment",
+      "cell_number": 33,
+      "cells_by_sex": {
+        "female": 10,
+        "male": 23
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00047102",
+      "author_broad": "excretory system",
+      "author_broad_ontology_id": "FBbt:00005056"
+    },
+    {
+      "label": "malpighian_tubule_adult fat body",
+      "type": "adult fat body",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "female": 2,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052"
+    },
+    {
+      "label": "malpighian_tubule_adult hindgut*",
+      "type": "adult hindgut*",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "adult hindgut*",
+      "cell_number": 2,
+      "cells_by_sex": {
+        "female": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "malpighian_tubule_adult midgut*",
+      "type": "adult midgut*",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "adult midgut*",
+      "cell_number": 2,
+      "cells_by_sex": {
+        "female": 1,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "malpighian_tubule_adult renal stem cell",
+      "type": "adult renal stem cell",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "adult renal stem cell",
+      "cell_number": 124,
+      "cells_by_sex": {
+        "female": 55,
+        "male": 69
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00110862",
+      "author_broad": "somatic precursor cell",
+      "author_broad_ontology_id": "FBbt:00007008"
+    },
+    {
+      "label": "malpighian_tubule_adult salivary gland",
+      "type": "adult salivary gland",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "adult salivary gland",
+      "cell_number": 15,
+      "cells_by_sex": {
+        "female": 6,
+        "male": 9
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003135",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317"
+    },
+    {
+      "label": "malpighian_tubule_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 12,
+      "cells_by_sex": {
+        "female": 7,
+        "male": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048"
+    },
+    {
+      "label": "malpighian_tubule_artefact",
+      "type": "artefact",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "artefact",
+      "cell_number": 63,
+      "cells_by_sex": {
+        "female": 19,
+        "male": 44
+      },
+      "unannotated": true,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "artefact",
+      "author_broad_ontology_id": "artefact"
+    },
+    {
+      "label": "malpighian_tubule_posterior midgut*",
+      "type": "posterior midgut*",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "posterior midgut*",
+      "cell_number": 4,
+      "cells_by_sex": {
+        "female": 3,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "malpighian_tubule_principal cell*",
+      "type": "principal cell*",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "principal cell*",
+      "cell_number": 59,
+      "cells_by_sex": {
+        "female": 27,
+        "male": 32
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "malpighian_tubule_unknown",
+      "type": "unknown",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "unknown",
+      "cell_number": 33,
+      "cells_by_sex": {
+        "female": 12,
+        "male": 21
+      },
+      "unannotated": true
+    },
+    {
+      "label": "malpighian_tubule_visceral muscle",
+      "type": "visceral muscle",
+      "clustering": "malpighian_tubule",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+      "source_cluster_id": "visceral muscle",
+      "cell_number": 2,
+      "cells_by_sex": {
+        "female": 1,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005070",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "oenocyte_adult alary muscle",
+      "type": "adult alary muscle",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Oenocyte",
+      "source_cluster_id": "adult alary muscle",
+      "cell_number": 15,
+      "cells_by_sex": {
+        "female": 6,
+        "male": 9
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003545",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "oenocyte_adult enterocyte",
+      "type": "adult enterocyte",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Oenocyte",
+      "source_cluster_id": "adult enterocyte",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "female": 2,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00047147",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "oenocyte_adult fat body",
+      "type": "adult fat body",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Oenocyte",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 59,
+      "cells_by_sex": {
+        "female": 20,
+        "male": 39
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052"
+    },
+    {
+      "label": "oenocyte_adult neuron",
+      "type": "adult neuron",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Oenocyte",
+      "source_cluster_id": "adult neuron",
+      "cell_number": 44,
+      "cells_by_sex": {
+        "female": 30,
+        "male": 14
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00047095",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106"
+    },
+    {
+      "label": "oenocyte_adult oenocyte",
+      "type": "adult oenocyte",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Oenocyte",
+      "source_cluster_id": "adult oenocyte",
+      "cell_number": 73,
+      "cells_by_sex": {
+        "female": 29,
+        "male": 44
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003185",
+      "author_broad": "oenocyte",
+      "author_broad_ontology_id": "FBbt:00004995"
+    },
+    {
+      "label": "oenocyte_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Oenocyte",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 12,
+      "cells_by_sex": {
+        "female": 7,
+        "male": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048"
+    },
+    {
+      "label": "oenocyte_ejaculatory bulb",
+      "type": "ejaculatory bulb",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Oenocyte",
+      "source_cluster_id": "ejaculatory bulb",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "female": 1,
+        "male": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004962",
+      "author_broad": "gland",
+      "author_broad_ontology_id": "FBbt:00100317"
+    },
+    {
+      "label": "oenocyte_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Oenocyte",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 37,
+      "cells_by_sex": {
+        "female": 18,
+        "male": 19
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "oenocyte_hemocyte",
+      "type": "hemocyte",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Oenocyte",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 10,
+      "cells_by_sex": {
+        "female": 7,
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063"
+    },
+    {
+      "label": "oenocyte_muscle cell",
+      "type": "muscle cell",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Oenocyte",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 65,
+      "cells_by_sex": {
+        "female": 33,
+        "male": 32
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "oenocyte_ovary cell",
+      "type": "ovary cell",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Oenocyte",
+      "source_cluster_id": "ovary cell",
+      "cell_number": 49,
+      "cells_by_sex": {
+        "female": 27,
+        "male": 22
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864"
+    },
+    {
+      "label": "oenocyte_unknown",
+      "type": "unknown",
+      "clustering": "oenocyte",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Oenocyte",
+      "source_cluster_id": "unknown",
+      "cell_number": 164,
+      "cells_by_sex": {
+        "female": 90,
+        "male": 74
+      },
+      "unannotated": true
+    },
+    {
+      "label": "ovary_16-cell germline cyst in germarium region 2a and 2b",
+      "type": "16-cell germline cyst in germarium region 2a and 2b",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "16-cell germline cyst in germarium region 2a and 2b",
+      "cell_number": 58,
+      "cells_by_sex": {
+        "female": 58
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female germline cell",
+      "author_broad_ontology_id": "FBbt:00057012"
+    },
+    {
+      "label": "ovary_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048"
+    },
+    {
+      "label": "ovary_artefact",
+      "type": "artefact",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "artefact",
+      "cell_number": 265,
+      "cells_by_sex": {
+        "female": 265
+      },
+      "unannotated": true,
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "artefact",
+      "author_broad_ontology_id": "artefact"
+    },
+    {
+      "label": "ovary_central main body follicle cell ca. St. 6-8",
+      "type": "central main body follicle cell ca. St. 6-8",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "central main body follicle cell ca. St. 6-8",
+      "cell_number": 40,
+      "cells_by_sex": {
+        "female": 40
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864"
+    },
+    {
+      "label": "ovary_choriogenic main body follicle cell St. 12",
+      "type": "choriogenic main body follicle cell St. 12",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "choriogenic main body follicle cell St. 12",
+      "cell_number": 11,
+      "cells_by_sex": {
+        "female": 11
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864"
+    },
+    {
+      "label": "ovary_choriogenic main body follicle cell St. 14",
+      "type": "choriogenic main body follicle cell St. 14",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "choriogenic main body follicle cell St. 14",
+      "cell_number": 6,
+      "cells_by_sex": {
+        "female": 6
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864"
+    },
+    {
+      "label": "ovary_choriogenic main body follicle cell and corpus luteum",
+      "type": "choriogenic main body follicle cell and corpus luteum",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "choriogenic main body follicle cell and corpus luteum",
+      "cell_number": 22,
+      "cells_by_sex": {
+        "female": 22
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864"
+    },
+    {
+      "label": "ovary_dorsal appendage forming follicle cell",
+      "type": "dorsal appendage forming follicle cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "dorsal appendage forming follicle cell",
+      "cell_number": 7,
+      "cells_by_sex": {
+        "female": 7
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00046036",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "ovary_escort cell",
+      "type": "escort cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "escort cell",
+      "cell_number": 16,
+      "cells_by_sex": {
+        "female": 16
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00006049",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864"
+    },
+    {
+      "label": "ovary_follicle stem cell and prefollicle cell",
+      "type": "follicle stem cell and prefollicle cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "follicle stem cell and prefollicle cell",
+      "cell_number": 10,
+      "cells_by_sex": {
+        "female": 10
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "somatic precursor cell",
+      "author_broad_ontology_id": "FBbt:00007008"
+    },
+    {
+      "label": "ovary_germ cell stage 4 and later",
+      "type": "germ cell stage 4 and later",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "germ cell stage 4 and later",
+      "cell_number": 14,
+      "cells_by_sex": {
+        "female": 14
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female germline cell",
+      "author_broad_ontology_id": "FBbt:00057012"
+    },
+    {
+      "label": "ovary_germline cell, unknown stage",
+      "type": "germline cell, unknown stage",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "germline cell, unknown stage",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female germline cell",
+      "author_broad_ontology_id": "FBbt:00057012"
+    },
+    {
+      "label": "ovary_main body follicle cell ca. until St. 5",
+      "type": "main body follicle cell ca. until St. 5",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "main body follicle cell ca. until St. 5",
+      "cell_number": 157,
+      "cells_by_sex": {
+        "female": 157
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005402",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864"
+    },
+    {
+      "label": "ovary_ovarian sheath muscle",
+      "type": "ovarian sheath muscle",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "ovarian sheath muscle",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003557",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "ovary_oviduct",
+      "type": "oviduct",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "oviduct",
+      "cell_number": 7,
+      "cells_by_sex": {
+        "female": 7
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004911",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "ovary_polar follicle cell",
+      "type": "polar follicle cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "polar follicle cell",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "female": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004907",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "ovary_post-mitotic endocycling nurse cell",
+      "type": "post-mitotic endocycling nurse cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "post-mitotic endocycling nurse cell",
+      "cell_number": 8,
+      "cells_by_sex": {
+        "female": 8
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864"
+    },
+    {
+      "label": "ovary_post-mitotic germ cell early 16-cell cyst",
+      "type": "post-mitotic germ cell early 16-cell cyst",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "post-mitotic germ cell early 16-cell cyst",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female germline cell",
+      "author_broad_ontology_id": "FBbt:00057012"
+    },
+    {
+      "label": "ovary_posterior terminal follicle cell ca. St. 5-8",
+      "type": "posterior terminal follicle cell ca. St. 5-8",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "posterior terminal follicle cell ca. St. 5-8",
+      "cell_number": 7,
+      "cells_by_sex": {
+        "female": 7
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00048554",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864"
+    },
+    {
+      "label": "ovary_stalk follicle cell",
+      "type": "stalk follicle cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "stalk follicle cell",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004910",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "ovary_stretch follicle cell",
+      "type": "stretch follicle cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "stretch follicle cell",
+      "cell_number": 21,
+      "cells_by_sex": {
+        "female": 21
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004908",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "ovary_unknown",
+      "type": "unknown",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "unknown",
+      "cell_number": 225,
+      "cells_by_sex": {
+        "female": 225
+      },
+      "unannotated": true
+    },
+    {
+      "label": "ovary_young germ cell",
+      "type": "young germ cell",
+      "clustering": "ovary",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Ovary",
+      "source_cluster_id": "young germ cell",
+      "cell_number": 109,
+      "cells_by_sex": {
+        "female": 109
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female germline cell",
+      "author_broad_ontology_id": "FBbt:00057012"
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_adult esophagus",
+      "type": "adult esophagus",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+      "source_cluster_id": "adult esophagus",
+      "cell_number": 6,
+      "cells_by_sex": {
+        "male": 6
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003131",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_adult fat body",
+      "type": "adult fat body",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "female": 2,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052"
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_adult peripheral nervous system",
+      "type": "adult peripheral nervous system",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+      "source_cluster_id": "adult peripheral nervous system",
+      "cell_number": 62,
+      "cells_by_sex": {
+        "female": 4,
+        "male": 58
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005892",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106"
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 7,
+      "cells_by_sex": {
+        "female": 6,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048"
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_bitter-sensitive labellar taste bristle",
+      "type": "bitter-sensitive labellar taste bristle",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+      "source_cluster_id": "bitter-sensitive labellar taste bristle",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "female": 2,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00048160",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_epithelial cell",
+      "type": "epithelial cell",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+      "source_cluster_id": "epithelial cell",
+      "cell_number": 375,
+      "cells_by_sex": {
+        "female": 200,
+        "male": 175
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00000124",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_gustatory receptor neuron of the labellum",
+      "type": "gustatory receptor neuron of the labellum",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+      "source_cluster_id": "gustatory receptor neuron of the labellum",
+      "cell_number": 7,
+      "cells_by_sex": {
+        "female": 4,
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00110887",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_hemocyte",
+      "type": "hemocyte",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 2,
+      "cells_by_sex": {
+        "female": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063"
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_labral sense organ mechanosensory neuron",
+      "type": "labral sense organ mechanosensory neuron",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+      "source_cluster_id": "labral sense organ mechanosensory neuron",
+      "cell_number": 7,
+      "cells_by_sex": {
+        "female": 2,
+        "male": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00048035",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_maxillary palp olfactory receptor neuron",
+      "type": "maxillary palp olfactory receptor neuron",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+      "source_cluster_id": "maxillary palp olfactory receptor neuron",
+      "cell_number": 11,
+      "cells_by_sex": {
+        "female": 4,
+        "male": 7
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00007353",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_maxillary palpus",
+      "type": "maxillary palpus",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+      "source_cluster_id": "maxillary palpus",
+      "cell_number": 21,
+      "cells_by_sex": {
+        "female": 7,
+        "male": 14
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004546",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_muscle cell",
+      "type": "muscle cell",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 90,
+      "cells_by_sex": {
+        "female": 57,
+        "male": 33
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_peripheral glial cell",
+      "type": "peripheral glial cell",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+      "source_cluster_id": "peripheral glial cell",
+      "cell_number": 18,
+      "cells_by_sex": {
+        "female": 6,
+        "male": 12
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00001327",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144"
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_photoreceptor",
+      "type": "photoreceptor",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+      "source_cluster_id": "photoreceptor",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "female": 1,
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005162",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_tormogen cell",
+      "type": "tormogen cell",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+      "source_cluster_id": "tormogen cell",
+      "cell_number": 6,
+      "cells_by_sex": {
+        "female": 5,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005171",
+      "author_broad": "epithelial cell",
+      "author_broad_ontology_id": "FBbt:00000124"
+    },
+    {
+      "label": "proboscis_and_maxillary_palps_unknown",
+      "type": "unknown",
+      "clustering": "proboscis_and_maxillary_palps",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+      "source_cluster_id": "unknown",
+      "cell_number": 17,
+      "cells_by_sex": {
+        "female": 5,
+        "male": 12
+      },
+      "unannotated": true
+    },
+    {
+      "label": "testis_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "male": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048"
+    },
+    {
+      "label": "testis_cyst cell branch a",
+      "type": "cyst cell branch a",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "cyst cell branch a",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927"
+    },
+    {
+      "label": "testis_cyst cell branch b",
+      "type": "cyst cell branch b",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "cyst cell branch b",
+      "cell_number": 1,
+      "cells_by_sex": {
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927"
+    },
+    {
+      "label": "testis_cyst cell intermediate",
+      "type": "cyst cell intermediate",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "cyst cell intermediate",
+      "cell_number": 17,
+      "cells_by_sex": {
+        "male": 17
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927"
+    },
+    {
+      "label": "testis_cyst stem cell",
+      "type": "cyst stem cell",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "cyst stem cell",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "somatic precursor cell",
+      "author_broad_ontology_id": "FBbt:00007008"
+    },
+    {
+      "label": "testis_early cyst cell 1",
+      "type": "early cyst cell 1",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "early cyst cell 1",
+      "cell_number": 6,
+      "cells_by_sex": {
+        "male": 6
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927"
+    },
+    {
+      "label": "testis_early elongation stage spermatid",
+      "type": "early elongation stage spermatid",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "early elongation stage spermatid",
+      "cell_number": 74,
+      "cells_by_sex": {
+        "male": 74
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00057175",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_early-mid elongation-stage spermatid",
+      "type": "early-mid elongation-stage spermatid",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "early-mid elongation-stage spermatid",
+      "cell_number": 4,
+      "cells_by_sex": {
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00057000",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_head cyst cell",
+      "type": "head cyst cell",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "head cyst cell",
+      "cell_number": 11,
+      "cells_by_sex": {
+        "male": 11
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00057009",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927"
+    },
+    {
+      "label": "testis_hemocyte",
+      "type": "hemocyte",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 6,
+      "cells_by_sex": {
+        "male": 6
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063"
+    },
+    {
+      "label": "testis_late cyst cell branch a",
+      "type": "late cyst cell branch a",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "late cyst cell branch a",
+      "cell_number": 2,
+      "cells_by_sex": {
+        "male": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927"
+    },
+    {
+      "label": "testis_late cyst cell branch b",
+      "type": "late cyst cell branch b",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "late cyst cell branch b",
+      "cell_number": 6,
+      "cells_by_sex": {
+        "male": 6
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927"
+    },
+    {
+      "label": "testis_late primary spermatocyte",
+      "type": "late primary spermatocyte",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "late primary spermatocyte",
+      "cell_number": 2,
+      "cells_by_sex": {
+        "male": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_male gonad associated epithelium",
+      "type": "male gonad associated epithelium",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "male gonad associated epithelium",
+      "cell_number": 85,
+      "cells_by_sex": {
+        "male": 85
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927"
+    },
+    {
+      "label": "testis_mid-late elongation-stage spermatid",
+      "type": "mid-late elongation-stage spermatid",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "mid-late elongation-stage spermatid",
+      "cell_number": 12,
+      "cells_by_sex": {
+        "male": 12
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00057003",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_mid-late proliferating spermatogonia",
+      "type": "mid-late proliferating spermatogonia",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "mid-late proliferating spermatogonia",
+      "cell_number": 5,
+      "cells_by_sex": {
+        "male": 5
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_muscle cell",
+      "type": "muscle cell",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 34,
+      "cells_by_sex": {
+        "male": 34
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "testis_pigment cell",
+      "type": "pigment cell",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "pigment cell",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004230",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927"
+    },
+    {
+      "label": "testis_secretory cell of the male reproductive tract",
+      "type": "secretory cell of the male reproductive tract",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "secretory cell of the male reproductive tract",
+      "cell_number": 1,
+      "cells_by_sex": {
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927"
+    },
+    {
+      "label": "testis_spermatid",
+      "type": "spermatid",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "spermatid",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004942",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_spermatocyte",
+      "type": "spermatocyte",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "spermatocyte",
+      "cell_number": 30,
+      "cells_by_sex": {
+        "male": 30
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_spermatocyte 0",
+      "type": "spermatocyte 0",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "spermatocyte 0",
+      "cell_number": 11,
+      "cells_by_sex": {
+        "male": 11
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_spermatocyte 1",
+      "type": "spermatocyte 1",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "spermatocyte 1",
+      "cell_number": 4,
+      "cells_by_sex": {
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_spermatocyte 2",
+      "type": "spermatocyte 2",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "spermatocyte 2",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_spermatocyte 3",
+      "type": "spermatocyte 3",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "spermatocyte 3",
+      "cell_number": 4,
+      "cells_by_sex": {
+        "male": 4
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_spermatocyte 4",
+      "type": "spermatocyte 4",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "spermatocyte 4",
+      "cell_number": 1,
+      "cells_by_sex": {
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_spermatocyte 5",
+      "type": "spermatocyte 5",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "spermatocyte 5",
+      "cell_number": 6,
+      "cells_by_sex": {
+        "male": 6
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_spermatocyte 6",
+      "type": "spermatocyte 6",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "spermatocyte 6",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_spermatocyte 7a",
+      "type": "spermatocyte 7a",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "spermatocyte 7a",
+      "cell_number": 2,
+      "cells_by_sex": {
+        "male": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_spermatocyte cyst cell branch a",
+      "type": "spermatocyte cyst cell branch a",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "spermatocyte cyst cell branch a",
+      "cell_number": 2,
+      "cells_by_sex": {
+        "male": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00057004",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927"
+    },
+    {
+      "label": "testis_spermatocyte cyst cell branch b",
+      "type": "spermatocyte cyst cell branch b",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "spermatocyte cyst cell branch b",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "male": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00057004",
+      "author_broad": "male reproductive system",
+      "author_broad_ontology_id": "FBbt:00004927"
+    },
+    {
+      "label": "testis_spermatogonium",
+      "type": "spermatogonium",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "spermatogonium",
+      "cell_number": 8,
+      "cells_by_sex": {
+        "male": 8
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004935",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_spermatogonium-spermatocyte transition",
+      "type": "spermatogonium-spermatocyte transition",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "spermatogonium-spermatocyte transition",
+      "cell_number": 2,
+      "cells_by_sex": {
+        "male": 2
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00004936",
+      "author_broad": "male germline cell",
+      "author_broad_ontology_id": "FBbt:00057011"
+    },
+    {
+      "label": "testis_unknown",
+      "type": "unknown",
+      "clustering": "testis",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Testis",
+      "source_cluster_id": "unknown",
+      "cell_number": 12,
+      "cells_by_sex": {
+        "male": 12
+      },
+      "unannotated": true
+    },
+    {
+      "label": "trachea_adult fat body",
+      "type": "adult fat body",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Trachea",
+      "source_cluster_id": "adult fat body",
+      "cell_number": 1,
+      "cells_by_sex": {
+        "female": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00003209",
+      "author_broad": "fat cell",
+      "author_broad_ontology_id": "FBbt:00046052"
+    },
+    {
+      "label": "trachea_adult neuron",
+      "type": "adult neuron",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Trachea",
+      "source_cluster_id": "adult neuron",
+      "cell_number": 25,
+      "cells_by_sex": {
+        "female": 12,
+        "male": 13
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00047095",
+      "author_broad": "neuron",
+      "author_broad_ontology_id": "FBbt:00005106"
+    },
+    {
+      "label": "trachea_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Trachea",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 318,
+      "cells_by_sex": {
+        "female": 116,
+        "male": 202
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005040",
+      "author_broad": "tracheolar cell",
+      "author_broad_ontology_id": "FBbt:00005048"
+    },
+    {
+      "label": "trachea_btl-GAL4 positive female cell, cluster 1, likely to be ovary cell",
+      "type": "btl-GAL4 positive female cell, cluster 1, likely to be ovary cell",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Trachea",
+      "source_cluster_id": "btl-GAL4 positive female cell, cluster 1, likely to be ovary cell",
+      "cell_number": 155,
+      "cells_by_sex": {
+        "female": 84,
+        "male": 71
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864"
+    },
+    {
+      "label": "trachea_btl-GAL4 positive female cell, cluster 2, likely to be ovary cell",
+      "type": "btl-GAL4 positive female cell, cluster 2, likely to be ovary cell",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Trachea",
+      "source_cluster_id": "btl-GAL4 positive female cell, cluster 2, likely to be ovary cell",
+      "cell_number": 48,
+      "cells_by_sex": {
+        "female": 48
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864"
+    },
+    {
+      "label": "trachea_btl-GAL4 positive female cell, likely to be ovary cell, sim+",
+      "type": "btl-GAL4 positive female cell, likely to be ovary cell, sim+",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Trachea",
+      "source_cluster_id": "btl-GAL4 positive female cell, likely to be ovary cell, sim+",
+      "cell_number": 26,
+      "cells_by_sex": {
+        "female": 26
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864"
+    },
+    {
+      "label": "trachea_btl-GAL4 positive female cell, likely to be ovary cell, sim+, H15+",
+      "type": "btl-GAL4 positive female cell, likely to be ovary cell, sim+, H15+",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Trachea",
+      "source_cluster_id": "btl-GAL4 positive female cell, likely to be ovary cell, sim+, H15+",
+      "cell_number": 15,
+      "cells_by_sex": {
+        "female": 15
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "female reproductive system",
+      "author_broad_ontology_id": "FBbt:00004864"
+    },
+    {
+      "label": "trachea_muscle cell",
+      "type": "muscle cell",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Trachea",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 6,
+      "cells_by_sex": {
+        "male": 6
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "trachea_unknown",
+      "type": "unknown",
+      "clustering": "trachea",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Trachea",
+      "source_cluster_id": "unknown",
+      "cell_number": 125,
+      "cells_by_sex": {
+        "female": 78,
+        "male": 47
+      },
+      "unannotated": true
+    },
+    {
+      "label": "wing_gustatory receptor neuron",
+      "type": "gustatory receptor neuron",
+      "clustering": "wing",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Wing",
+      "source_cluster_id": "gustatory receptor neuron",
+      "cell_number": 16,
+      "cells_by_sex": {
+        "female": 8,
+        "male": 8
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005927",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "wing_hemocyte",
+      "type": "hemocyte",
+      "clustering": "wing",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Wing",
+      "source_cluster_id": "hemocyte",
+      "cell_number": 4,
+      "cells_by_sex": {
+        "female": 3,
+        "male": 1
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005063",
+      "author_broad": "hemocyte",
+      "author_broad_ontology_id": "FBbt:00005063"
+    },
+    {
+      "label": "wing_mechanosensory neuron",
+      "type": "mechanosensory neuron",
+      "clustering": "wing",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Wing",
+      "source_cluster_id": "mechanosensory neuron",
+      "cell_number": 24,
+      "cells_by_sex": {
+        "female": 13,
+        "male": 11
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005919",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "wing_muscle cell",
+      "type": "muscle cell",
+      "clustering": "wing",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Wing",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 7,
+      "cells_by_sex": {
+        "female": 1,
+        "male": 6
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00005074",
+      "author_broad": "muscle cell",
+      "author_broad_ontology_id": "FBbt:00005074"
+    },
+    {
+      "label": "wing_nociceptive neuron",
+      "type": "nociceptive neuron",
+      "clustering": "wing",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Wing",
+      "source_cluster_id": "nociceptive neuron",
+      "cell_number": 3,
+      "cells_by_sex": {
+        "female": 3
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00048471",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "wing_peripheral glial cell",
+      "type": "peripheral glial cell",
+      "clustering": "wing",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Wing",
+      "source_cluster_id": "peripheral glial cell",
+      "cell_number": 17,
+      "cells_by_sex": {
+        "female": 11,
+        "male": 6
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "FBbt:00001327",
+      "author_broad": "glial cell",
+      "author_broad_ontology_id": "FBbt:00005144"
+    },
+    {
+      "label": "wing_pheromone-sensing neuron",
+      "type": "pheromone-sensing neuron",
+      "clustering": "wing",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Wing",
+      "source_cluster_id": "pheromone-sensing neuron",
+      "cell_number": 11,
+      "cells_by_sex": {
+        "female": 4,
+        "male": 7
+      },
+      "membership": "label_transfer",
+      "author_ontology_id": "Manual Annotation",
+      "author_broad": "sensory neuron",
+      "author_broad_ontology_id": "FBbt:00005124"
+    },
+    {
+      "label": "wing_unknown",
+      "type": "unknown",
+      "clustering": "wing",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Wing",
+      "source_cluster_id": "unknown",
+      "cell_number": 438,
+      "cells_by_sex": {
+        "female": 270,
+        "male": 168
+      },
+      "unannotated": true
+    },
+    {
+      "label": "dilp2IPC_insulin-producing cell",
+      "type": "insulin-producing cell",
+      "clustering": "dilp2IPC",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 dilp2 IPC (insulin-producing cells)",
+      "source_cluster_id": "insulin-producing cell",
+      "cell_number": 658,
+      "cells_by_sex": {
+        "female": 313,
+        "male": 345
+      },
+      "membership": "sorted"
+    },
+    {
+      "label": "akhCC_corpora cardiaca cell",
+      "type": "corpora cardiaca cell",
+      "clustering": "akhCC",
+      "clustering_name": "Fly Cell Atlas Smart-seq2 Akh CC (corpora cardiaca)",
+      "source_cluster_id": "corpora cardiaca cell",
+      "cell_number": 592,
+      "cells_by_sex": {
+        "female": 241,
+        "male": 351
+      },
+      "membership": "sorted"
+    }
+  ]
+}

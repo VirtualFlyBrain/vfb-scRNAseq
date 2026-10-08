@@ -107,20 +107,59 @@ sample_build:
       - { fbbt_id: "FBbt:00004962", label: "ejaculatory bulb" }
   # one Clustering per author tissue analysis (Smart-seq2, flycellatlas.org)
   clusterings:
-    - { id: antenna, name: "Fly Cell Atlas Smart-seq2 Antenna" }
-    - { id: body_wall, name: "Fly Cell Atlas Smart-seq2 Body Wall" }
-    - { id: fat_body, name: "Fly Cell Atlas Smart-seq2 Fat Body" }
-    - { id: gut, name: "Fly Cell Atlas Smart-seq2 Gut" }
-    - { id: haltere, name: "Fly Cell Atlas Smart-seq2 Haltere" }
-    - { id: heart, name: "Fly Cell Atlas Smart-seq2 Heart" }
-    - { id: leg, name: "Fly Cell Atlas Smart-seq2 Leg" }
-    - { id: male_reproductive_glands, name: "Fly Cell Atlas Smart-seq2 Male Reproductive Glands" }
-    - { id: malpighian_tubule, name: "Fly Cell Atlas Smart-seq2 Malpighian Tubule" }
-    - { id: oenocyte, name: "Fly Cell Atlas Smart-seq2 Oenocyte" }
-    - { id: ovary, name: "Fly Cell Atlas Smart-seq2 Ovary" }
-    - { id: proboscis_and_maxillary_palps, name: "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps" }
-    - { id: testis, name: "Fly Cell Atlas Smart-seq2 Testis" }
-    - { id: trachea, name: "Fly Cell Atlas Smart-seq2 Trachea" }
-    - { id: wing, name: "Fly Cell Atlas Smart-seq2 Wing" }
-    - { id: dilp2IPC, name: "Fly Cell Atlas Smart-seq2 dilp2 IPC (insulin-producing cells)" }
-    - { id: akhCC, name: "Fly Cell Atlas Smart-seq2 Akh CC (corpora cardiaca)" }
+    - { id: antenna, name: "Fly Cell Atlas Smart-seq2 Antenna",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/zgrnHWTHMsS8tA3" }
+    - { id: body_wall, name: "Fly Cell Atlas Smart-seq2 Body Wall",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/zRMAHRwQLc4Z8Sm" }
+    - { id: fat_body, name: "Fly Cell Atlas Smart-seq2 Fat Body",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/WPDTJrAHpmE9sri" }
+    - { id: gut, name: "Fly Cell Atlas Smart-seq2 Gut",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/X3nWFL4z4Yi73s2" }
+    - { id: haltere, name: "Fly Cell Atlas Smart-seq2 Haltere",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/2jY8Y6Q647Y8BKC" }
+    - { id: heart, name: "Fly Cell Atlas Smart-seq2 Heart",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/Dfqb6TbqfwDeKXZ" }
+    - { id: leg, name: "Fly Cell Atlas Smart-seq2 Leg",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/9KLm4CkKxtoaSY5" }
+    - { id: male_reproductive_glands, name: "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/6bdDH2Y2FTNW7nT" }
+    - { id: malpighian_tubule, name: "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/YbB4NgwTsGT2K8o" }
+    - { id: oenocyte, name: "Fly Cell Atlas Smart-seq2 Oenocyte",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/aJX2Lex88FmcwoW" }
+    - { id: ovary, name: "Fly Cell Atlas Smart-seq2 Ovary",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/9kEmXzBnR8nbLpX" }
+    - { id: proboscis_and_maxillary_palps, name: "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/jPdJ7ANYyWD68ea" }
+    - { id: testis, name: "Fly Cell Atlas Smart-seq2 Testis",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/i5NdDtnJp6YFdse" }
+    - { id: trachea, name: "Fly Cell Atlas Smart-seq2 Trachea",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/8ciSzkyps8MWRYY" }
+    - { id: wing, name: "Fly Cell Atlas Smart-seq2 Wing",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/G69367b4grGAWNc" }
+    - { id: dilp2IPC, name: "Fly Cell Atlas Smart-seq2 dilp2 IPC (insulin-producing cells)",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/3EGf7gttGHGLBCw",
+        fixed_annotation: "insulin-producing cell", membership: sorted }
+    - { id: akhCC, name: "Fly Cell Atlas Smart-seq2 Akh CC (corpora cardiaca)",
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/yeQdzQbgY379sgD",
+        fixed_annotation: "corpora cardiaca cell", membership: sorted }
+
+# Smart-seq2 cells were not clustered: the authors typed each cell with a logistic-
+# regression classifier trained on the tissue's 10x annotation, validated with marker
+# genes (supplement, "Annotating Smart-Seq2 data"). Curator decision 2026-10-08: use
+# these predictions, one Cluster per (tissue analysis, predicted type), recorded as
+# label transfer. dilp2 IPC and Akh CC (FACS-sorted, no annotation) are one Cluster
+# each, typed from the authors' sample description.
+annotation_build:
+  annotation_column: transf_annotation
+  sex_column: sex
+  unannotated_values: [unknown, unannotated, artefact]   # "unknown": classifier gave no type
+  membership: label_transfer
+  author_ontology_from: li_2022_fca_10x          # author FBbt ids of the same 10x tissue
+
+annotations:
+  review_columns: [clustering, source_cluster_id, type, membership, author_ontology_id, author_broad]
+
+unidentified:
+  rule: none
+  hold_unidentified: true
