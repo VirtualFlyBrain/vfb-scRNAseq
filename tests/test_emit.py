@@ -63,3 +63,14 @@ def test_sample_sex_and_stock(tmp_path):
     # sex as part_of FBbt organism; stock as is-derived-from FBst
     assert (SA, URIRef(BFO + "0000050"), URIRef("http://purl.obolibrary.org/obo/FBbt_00007011")) in g
     assert (SA, URIRef(BAO + "0095000"), URIRef(FLYBASE + "FBst0005905")) in g
+
+
+def test_cluster_title_is_a_definition(tmp_path):
+    ents = _entities()
+    ents[-1]["title"] = "Cells assigned the type 'x' by the authors' classifier."
+    out = tmp_path / "t.ttl"
+    emit.emit_ttl(ents, out)
+    g = rdflib.Graph(); g.parse(out, format="turtle")
+    iao = URIRef("http://purl.obolibrary.org/obo/IAO_0000115")
+    assert list(g.objects(URIRef(VFB + "VFBseq_00000047"), iao)) == [
+        Literal("Cells assigned the type 'x' by the authors' classifier.")]

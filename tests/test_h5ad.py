@@ -102,3 +102,13 @@ def test_list_valued_author_ontology_ids_are_normalised():
     mod = _builder()
     assert mod._ontology_ids("['FBbt:00003731', 'FBbt:00003736']") == "FBbt:00003731; FBbt:00003736"
     assert mod._ontology_ids("FBbt:00000124") == "FBbt:00000124"
+
+
+def test_membership_is_recorded_except_on_held_entries():
+    mod = _builder()
+    obs = {"_index": ["a", "b"], "transf_annotation": ["neuron", "unknown"]}
+    ab = {"annotation_column": "transf_annotation", "unannotated_values": ["unknown"],
+          "membership": "label_transfer"}
+    by = {a["type"]: a for a in mod.build_clustering(obs, ab, "leg", "Leg", [])}
+    assert by["neuron"]["membership"] == "label_transfer"
+    assert "membership" not in by["unknown"] and by["unknown"]["unannotated"]

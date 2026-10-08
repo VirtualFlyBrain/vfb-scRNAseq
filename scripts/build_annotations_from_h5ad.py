@@ -20,6 +20,17 @@ Config (`annotation_build` in config.yaml):
                           "unannotated", "artefact"): the entry is kept, flagged
                           `unannotated`, and held downstream
 
+  membership              how cells were assigned to the annotation, when not by the
+                          authors clustering them: `label_transfer` (a classifier
+                          trained on another analysis, e.g. FCA Smart-seq2) or
+                          `sorted` (a FACS-sorted population typed as a whole);
+                          recorded on each entry and used for Cluster names/titles
+  author_ontology_from    another project whose entries supply author_ontology_id /
+                          author_broad by (clustering, type) — for transferred labels
+
+A clustering entry may set `fixed_annotation` (+ `membership`): every cell of that
+analysis gets that type (for sorted populations the authors did not annotate).
+
 Labels are `<clustering id>_<annotation>`; `source_cluster_id` is the annotation.
 
 Usage:
@@ -39,7 +50,7 @@ sys.path.insert(0, str(REPO_ROOT / "src"))
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
 from fetch_h5ad import h5ad_path  # noqa: E402
-from vfb_scrnaseq.ingest_h5ad import read_obs  # noqa: E402
+from vfb_scrnaseq.ingest_h5ad import obs_columns, read_obs  # noqa: E402
 from vfb_scrnaseq.project_config import load_config  # noqa: E402
 
 
@@ -62,6 +73,9 @@ def _dominant(counter: Counter) -> tuple[str | None, bool]:
 def build_clustering(obs: dict[str, list], ab: dict, clustering: str, clustering_name: str,
                      warnings: list[str]) -> list[dict]:
     ann_col = ab["annotation_column"]
+    if ann_col not in obs:
+        warnings.append(f"{clustering}: no {ann_col} column")
+        return []
     extra = {k: ab.get(k) for k in ("ontology_column", "broad_column", "broad_ontology_column")}
     sex_col = ab.get("sex_column")
     unannotated = set(ab.get("unannotated_values", []))
@@ -102,6 +116,8 @@ def build_clustering(obs: dict[str, list], ab: dict, clustering: str, clustering
             rec["cells_by_sex"] = dict(sorted(sexes[a].items()))
         if a in unannotated:
             rec["unannotated"] = True
+        elif ab.get("membership"):
+            rec["membership"] = ab["membership"]
         out.append(rec)
     return out
 
@@ -113,8 +129,12 @@ def main() -> None:
     cfg = load_config(args.project)
     ab = cfg["annotation_build"]
     acc = cfg["dataset"]["accession"]
-    cols = [c for c in (ab["annotation_column"], ab.get("ontology_column"), ab.get("broad_column"),
-                        ab.get("broad_ontology_column"), ab.get("sex_column")) if c]
+    wanted = [c for c in (ab["annotation_column"], ab.get("ontology_column"), ab.get("broad_column"),
+                          ab.get("broad_ontology_column"), ab.get("sex_column")) if c]
+    lookup = {}
+    if ab.get("author_ontology_from"):
+        other = REPO_ROOT / "projects" / ab["author_ontology_from"] / "cell_type_annotations.json"
+        lookup = {(a["clustering"], a["type"]): a for a in json.loads(other.read_text())["annotations"]}
 
     annotations, warnings, missing = [], [], []
     for c in cfg["sample_build"]["clusterings"]:
@@ -122,8 +142,21 @@ def main() -> None:
         if not path.exists():
             missing.append(c["id"])
             continue
-        obs = read_obs(path, cols)
-        anns = build_clustering(obs, ab, c["id"], c.get("name", c["id"]), warnings)
+        obs = read_obs(path, [col for col in wanted if col in obs_columns(path)])
+        cab = ab
+        if c.get("fixed_annotation"):
+            obs[ab["annotation_column"]] = [c["fixed_annotation"]] * len(obs["_index"])
+            cab = dict(ab, membership=c.get("membership", ab.get("membership")))
+        anns = build_clustering(obs, cab, c["id"], c.get("name", c["id"]), warnings)
+        if lookup:
+            for a in anns:
+                src = lookup.get((a["clustering"], a["type"]))
+                if src:
+                    for f in ("author_ontology_id", "author_broad", "author_broad_ontology_id"):
+                        if f in src:
+                            a[f] = src[f]
+                elif not c.get("fixed_annotation") and not a.get("unannotated"):
+                    warnings.append(f"{c['id']}/{a['type']}: not in {ab['author_ontology_from']}")
         print(f"  {c['id']}: {len(obs['_index'])} cells, {len(anns)} annotations")
         annotations.extend(anns)
     if missing:
