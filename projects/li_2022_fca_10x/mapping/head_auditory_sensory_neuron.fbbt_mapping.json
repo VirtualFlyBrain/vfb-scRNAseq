@@ -1,0 +1,22 @@
+{
+  "cluster_label": "head_auditory sensory neuron",
+  "working_definition": "Author cell type 'auditory sensory neuron' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00007684 'auditory sensory neuron'. Found in: 10x:head (706 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00007684 (FBbt fbbt/releases/2026-10-01)",
+    "'adult auditory sensory neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'auditory sensory neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "auditory sensory neuron",
+    "fbbt_id": "FBbt:00007684",
+    "fbbt_definition": "Any neuron that is capable of some detection of mechanical stimulus that is part of sensory perception of sound.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00007684 'auditory sensory neuron', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00007684 'auditory sensory neuron', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

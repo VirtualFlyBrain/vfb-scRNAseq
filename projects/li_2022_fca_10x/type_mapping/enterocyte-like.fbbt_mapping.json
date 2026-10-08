@@ -1,0 +1,21 @@
+{
+  "cluster_label": "enterocyte-like",
+  "working_definition": "Enterocyte-resembling epithelial cells of the gut (Li et al. 2022; Manual Annotation, broad class epithelial cell); a remainder-style '-like' group.",
+  "searches_performed": ["enterocyte-like", "enterocyte", "adult enterocyte"],
+  "best_match": {
+    "fbbt_term": "adult enterocyte",
+    "fbbt_id": "FBbt:00047147",
+    "fbbt_definition": "Specialized epithelial cell of the adult gut. A large, polyploid, cuboidal or low-columnar epithelial cell with its nucleus in the middle and a mass of microvilli (brush border) on its apical surface. On its basal side, extensive infoldings of the plasma membrane form a labyrinth which fills the lower half of the cell. It is attached to adjacent enterocytes by smooth septate junctions.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "'-like' remainder call mapped to the class the authors commit to (enterocyte), adult variant; gut region not specified so not narrowed to midgut.",
+  "other_candidates": [
+    {"fbbt_term": "adult midgut enterocyte", "fbbt_id": "FBbt:00047182", "fbbt_definition": "Specialized epithelial cell of the adult midgut.", "reason_rejected": "Authors do not name the midgut."},
+    {"fbbt_term": "enterocyte", "fbbt_id": "FBbt:00007042", "fbbt_definition": "Specialized epithelial cell of the gut.", "reason_rejected": "Adult-specific variant preferred."}
+  ],
+  "recommendation": "Map to FBbt:00047147 (broad).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,20 @@
+{
+  "cluster_label": "bitter-sensitive labellar taste bristle",
+  "working_definition": "Cells (sensory neurons) of bitter-sensitive labellar taste bristles (FCA proboscis); authors' FBbt term is the sensillum structure.",
+  "searches_performed": ["bitter-sensitive labellar taste bristle", "labellar taste bristle neuron bitter"],
+  "best_match": {
+    "fbbt_term": "bitter-sensing neuron of labellar taste bristle",
+    "fbbt_id": "FBbt:00048152",
+    "fbbt_definition": "Gustatory receptor neuron of the labellum that responds to bitter stimuli and innervates a bitter-sensitive (short or intermediate) taste bristle. All of these cells express Gr66a, usually in combination with Gr32a, Gr33a and Gr89a (Weiss et al., 2011). Some of them also respond to high, aversive concentrations of salts (Liman et al., 2014; Freeman and Dahanukar, 2015; Jaeger et al., 2018). A subset also express TRPA1 and respond to hydrogen peroxide (Guntur et al., 2017).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "Authors' term FBbt:00048160 is a sensillum (structure); the cell-level equivalent is the bitter-sensing neuron that innervates it. Cluster cells are sensory neurons.",
+  "other_candidates": [
+    {"fbbt_term": "bitter-sensitive labellar taste bristle", "fbbt_id": "FBbt:00048160", "fbbt_definition": "Labellar taste bristle that is innervated by a neuron that expresses bitter receptors and responds to bitter stimuli.", "reason_rejected": "Authors' structure term; not a cell term."}
+  ],
+  "recommendation": "Use bitter-sensing neuron of labellar taste bristle (FBbt:00048152); curator may confirm the structure-to-neuron reading.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

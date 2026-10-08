@@ -1,0 +1,20 @@
+{
+  "cluster_label": "neuron of haltere",
+  "working_definition": "Remaining (non-mechanosensory-specified) neurons of the adult haltere (FCA haltere); authors gave no FBbt term (Manual Annotation).",
+  "searches_performed": ["neuron of haltere", "haltere neuron", "adult neuron"],
+  "best_match": {
+    "fbbt_term": "adult neuron",
+    "fbbt_id": "FBbt:00047095",
+    "fbbt_definition": "A neuron that is part of the adult nervous system. These can be born during the postembryonic phase of neurogenesis (Lacin and Truman, 2016) or they can develop from larval neurons during the pupal stage (Veverytsa and Allan, 2013).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "low"
+  },
+  "justification": "FBbt has no generic haltere neuron term (only haltere motor neuron and sensillum-specific sensory neurons). Adult neuron is the class level the authors commit to.",
+  "other_candidates": [
+    {"fbbt_term": "adult PNS neuron", "fbbt_id": "FBbt:00059276", "fbbt_definition": "Any neuron that has its soma in the adult peripheral nervous system.", "reason_rejected": "Authors did not state peripheral."}
+  ],
+  "recommendation": "Use adult neuron (FBbt:00047095) as a broad match; curator may prefer to hold.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

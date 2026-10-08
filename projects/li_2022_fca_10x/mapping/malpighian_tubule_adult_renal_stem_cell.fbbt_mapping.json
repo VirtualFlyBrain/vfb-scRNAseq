@@ -1,0 +1,22 @@
+{
+  "cluster_label": "malpighian_tubule_adult renal stem cell",
+  "working_definition": "Author cell type 'adult renal stem cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00110862 'adult renal stem cell'. Found in: 10x:malpighian_tubule (2271 cells), ss2:malpighian_tubule (124 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00110862 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult renal stem cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult renal stem cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult renal stem cell",
+    "fbbt_id": "FBbt:00110862",
+    "fbbt_definition": "Stem cell of the adult Malpighian tubule (Singh et al., 2007). These are small cells occupying a basal position and are only found in the lower tubule and ureter (stem cell zone) (Singh et al., 2007; Wang and Spradling, 2020). They are usually quiescent, but can generate replacement principal cells in response to injury (Wang and Spradling, 2020). Within the stem cell zone, they are more numerous than type I (principal) cells (Wang and Spradling, 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00110862 'adult renal stem cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00110862 'adult renal stem cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

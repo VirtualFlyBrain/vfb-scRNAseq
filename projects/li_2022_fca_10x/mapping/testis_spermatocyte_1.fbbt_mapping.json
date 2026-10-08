@@ -1,0 +1,29 @@
+{
+  "cluster_label": "testis_spermatocyte 1",
+  "working_definition": "Numbered spermatocyte cluster 1 of the adult testis, a transcriptional state along the primary spermatocyte stage; authors' term FBbt:00004936 spermatocyte.",
+  "searches_performed": [
+    "spermatocyte 1",
+    "spermatocyte",
+    "primary spermatocyte"
+  ],
+  "best_match": {
+    "fbbt_term": "spermatocyte",
+    "fbbt_id": "FBbt:00004936",
+    "fbbt_definition": "Male germline cell that is part of the 16-cell spermatocyte cyst. It expresses twine, which regulates the meiotic cycle (Witt et al., 2019).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "Authors' FBbt id kept (not obsolete, cell term, no adult variant). Numbered stage bin with no specific FBbt term, so the cell type is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "primary spermatocyte",
+      "fbbt_id": "FBbt:00005286",
+      "fbbt_definition": "Male germ cells of the 16-cell cyst from the end of the S-phase that precedes meiosis I to the end of meiosis I.",
+      "reason_rejected": "Authors named spermatocyte."
+    }
+  ],
+  "recommendation": "Use spermatocyte (broad).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,22 @@
+{
+  "cluster_label": "head_distal medullary amacrine neuron Dm10",
+  "working_definition": "Author cell type 'distal medullary amacrine neuron Dm10' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00110135 'distal medullary amacrine neuron Dm10'. Found in: 10x:head (284 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00110135 (FBbt fbbt/releases/2026-10-01)",
+    "'adult distal medullary amacrine neuron Dm10' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'distal medullary amacrine neuron Dm10' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "distal medullary amacrine neuron Dm10",
+    "fbbt_id": "FBbt:00110135",
+    "fbbt_definition": "Distal medullary wide-field amacrine neuron whose cell body is located in the cell body rind of the medulla. It has a distinct tri-stratified layer pattern, branching extensively in medulla layers M1, M3B and M5. Its arbor resembles an ellipse, with the long axis aligned with the dorsal-ventral axis, and covering less than 10 columns. The processes in M1 and M3B to M5 are located in an intracolumnar position. There are around 300 Dm10 neurons per hemisphere. They are GABAergic (Davis et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00110135 'distal medullary amacrine neuron Dm10', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00110135 'distal medullary amacrine neuron Dm10', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,22 @@
+{
+  "cluster_label": "body_wall_adult oenocyte",
+  "working_definition": "Author cell type 'adult oenocyte' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00003185 'adult oenocyte'. Found in: 10x:body (1202 cells), 10x:body_wall (1389 cells), 10x:fat_body (421 cells), 10x:heart (1083 cells), 10x:malpighian_tubule (20 cells), 10x:oenocyte (3749 cells), ss2:body_wall (3 cells), ss2:fat_body (24 cells), ss2:heart (25 cells), ss2:oenocyte (73 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00003185 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult oenocyte' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult oenocyte' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult oenocyte",
+    "fbbt_id": "FBbt:00003185",
+    "fbbt_definition": "Large, acidophilic cell found in rows under the epidermis of each abdominal segment. Two dorsal rows run from the heart tube to the spiracle, close to the posterior boundary of the segment. A single, or sometimes split, transverse row is found under each sternite.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00003185 'adult oenocyte', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00003185 'adult oenocyte', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

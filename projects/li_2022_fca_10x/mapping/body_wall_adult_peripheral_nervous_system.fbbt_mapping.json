@@ -1,0 +1,28 @@
+{
+  "cluster_label": "body_wall_adult peripheral nervous system",
+  "working_definition": "Author cell type 'adult peripheral nervous system' of the Fly Cell Atlas (Li et al. 2022; adult body, body wall, proboscis and palps, 5466 cells): neurons of the peripheral nervous system. Authors' term FBbt:00005892 is a system; authors' broad class is neuron.",
+  "searches_performed": [
+    "authors' ontology id FBbt:00005892",
+    "'adult peripheral nervous system neuron' (OLS fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult PNS neuron",
+    "fbbt_id": "FBbt:00059276",
+    "fbbt_definition": "Any neuron that has its soma in the adult peripheral nervous system.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors' term is the system; the cells are its neurons (broad class neuron), for which FBbt has the adult PNS neuron cell term.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult peripheral nervous system",
+      "fbbt_id": "FBbt:00005892",
+      "fbbt_definition": "Peripheral nervous system of the adult.",
+      "reason_rejected": "System, not a cell."
+    }
+  ],
+  "recommendation": "Map to adult PNS neuron.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

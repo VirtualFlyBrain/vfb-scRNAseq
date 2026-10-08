@@ -1,0 +1,22 @@
+{
+  "cluster_label": "adult olfactory receptor neuron Or47a, Or56a and likely other ORN types",
+  "working_definition": "Antennal odorant-receptor ORN cluster with Or47a and Or56a named plus an explicit unresolved remainder of other ORN types (Li et al. 2022 FCA, Manual Annotation).",
+  "searches_performed": ["adult olfactory receptor neuron Or47a, Or56a and likely other ORN types", "adult olfactory receptor neuron Or47a", "adult olfactory receptor neuron Or56a", "adult olfactory receptor neuron"],
+  "best_match": {
+    "fbbt_term": "adult olfactory receptor neuron",
+    "fbbt_id": "FBbt:00007386",
+    "fbbt_definition": "Any olfactory receptor neuron of the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Remainder call: the authors name two types plus unspecified others, so the committed level is the general adult ORN. Or47a (FBbt:00067054) and Or56a (FBbt:00067063) are both basiconic-sensillum ORNs, but the unnamed remainder prevents narrowing to the basiconic parent.",
+  "other_candidates": [
+    {"fbbt_term": "adult olfactory receptor neuron Or47a", "fbbt_id": "FBbt:00067054", "fbbt_definition": "Adult ORN expressing Or47a.", "reason_rejected": "Single named member of a mixed cluster."},
+    {"fbbt_term": "adult olfactory receptor neuron Or56a", "fbbt_id": "FBbt:00067063", "fbbt_definition": "Adult ORN expressing Or56a and Or33a, ab4 sensillum, detects geosmin.", "reason_rejected": "Single named member of a mixed cluster."},
+    {"fbbt_term": "antennal olfactory receptor neuron of basiconic sensillum", "fbbt_id": "FBbt:00049977", "fbbt_definition": "ORN whose dendrite transduces signals from a basiconic antennal sensillum.", "reason_rejected": "Common parent of the two named types only; the remainder types are unknown."}
+  ],
+  "recommendation": "Map broadly to FBbt:00007386 (medium confidence).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

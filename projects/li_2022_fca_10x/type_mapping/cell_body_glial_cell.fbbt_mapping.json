@@ -1,0 +1,29 @@
+{
+  "cluster_label": "cell body glial cell",
+  "working_definition": "Author cell type 'cell body glial cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00001297 'cell body glial cell'. Found in: 10x:body (775 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00001297 (FBbt fbbt/releases/2026-10-01)",
+    "'adult cell body glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'cell body glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult cell body glial cell",
+    "fbbt_id": "FBbt:00059270",
+    "fbbt_definition": "Glial cell of the adult that is associated with the cell body rind of the brain or the ventral nerve cord.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00001297 'cell body glial cell', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00059270 'adult cell body glial cell', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "cell body glial cell",
+      "fbbt_id": "FBbt:00001297",
+      "fbbt_definition": "Glial cell with a nucleus amongst the neuronal cell bodies in the cell body rind. It is irregularly shaped, with processes that enclose the neuronal cell bodies.",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00059270 'adult cell body glial cell' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

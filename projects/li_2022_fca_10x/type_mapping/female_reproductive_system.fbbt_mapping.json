@@ -1,0 +1,13 @@
+{
+  "cluster_label": "female reproductive system",
+  "working_definition": "Group of female reproductive-tract cells in non-ovary analyses; authors' term FBbt:00004864 female reproductive system (organ-system term).",
+  "searches_performed": ["female reproductive system", "cell of female reproductive system", "female reproductive system cell"],
+  "best_match": null,
+  "justification": "The authors' term is an organ-system structure. FBbt has no generic cell-level term for cells of the female reproductive system (only neuron-specific terms), so the cluster is held.",
+  "other_candidates": [
+    {"fbbt_term": "female reproductive system", "fbbt_id": "FBbt:00004864", "fbbt_definition": "Authors' organ-system term.", "reason_rejected": "Organ/system term; not a cell."}
+  ],
+  "recommendation": "Hold; no cell-level term.",
+  "new_term_needed": true,
+  "verification_needed": false
+}

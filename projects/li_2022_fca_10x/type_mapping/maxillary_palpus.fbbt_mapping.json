@@ -1,0 +1,14 @@
+{
+  "cluster_label": "maxillary palpus",
+  "working_definition": "Cells of the adult maxillary palp (FCA proboscis and maxillary palps), mostly sensory neurons; authors' FBbt term is the appendage maxillary palp.",
+  "searches_performed": ["maxillary palpus", "maxillary palp sensory neuron", "maxillary palp olfactory receptor neuron"],
+  "best_match": null,
+  "justification": "Authors' term FBbt:00004546 (maxillary palp) is an appendage, not a cell term. FBbt has no general cell term for maxillary palp cells or sensory neurons; maxillary palp olfactory receptor neuron covers only the olfactory subset and would narrow the authors' call. Held per curation rule B.",
+  "other_candidates": [
+    {"fbbt_term": "maxillary palp", "fbbt_id": "FBbt:00004546", "fbbt_definition": "The paired sensory appendage of the adult maxillary segment, located laterally on the proboscis.", "reason_rejected": "Authors' appendage term; not a cell term."},
+    {"fbbt_term": "maxillary palp olfactory receptor neuron", "fbbt_id": "FBbt:00007353", "fbbt_definition": "Olfactory receptor neuron of the maxillary palp.", "reason_rejected": "Only the olfactory subset of palp cells."}
+  ],
+  "recommendation": "Hold; no adequate cell-level term.",
+  "new_term_needed": true,
+  "verification_needed": false
+}

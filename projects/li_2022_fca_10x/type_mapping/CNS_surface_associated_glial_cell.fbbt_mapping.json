@@ -1,0 +1,22 @@
+{
+  "cluster_label": "CNS surface associated glial cell",
+  "working_definition": "Author cell type 'CNS surface associated glial cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00001252 'CNS surface glial cell'. Found in: 10x:body (71 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00001252 (FBbt fbbt/releases/2026-10-01)",
+    "'adult CNS surface glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'CNS surface associated glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "CNS surface glial cell",
+    "fbbt_id": "FBbt:00001252",
+    "fbbt_definition": "A glial cell that is part of (either layer of) the perineurium at the surface of the central nervous system.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00001252 'CNS surface glial cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00001252 'CNS surface glial cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

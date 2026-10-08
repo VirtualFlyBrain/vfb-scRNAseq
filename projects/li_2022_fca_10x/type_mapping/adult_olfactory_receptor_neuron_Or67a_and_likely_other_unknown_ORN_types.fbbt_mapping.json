@@ -1,0 +1,21 @@
+{
+  "cluster_label": "adult olfactory receptor neuron Or67a and likely other unknown ORN types",
+  "working_definition": "Largest antennal ORN cluster: Or67a named plus likely other unidentified ORN types (Li et al. 2022 FCA, Manual Annotation).",
+  "searches_performed": ["adult olfactory receptor neuron Or67a and likely other unknown ORN types", "adult olfactory receptor neuron Or67a", "adult olfactory receptor neuron"],
+  "best_match": {
+    "fbbt_term": "adult olfactory receptor neuron",
+    "fbbt_id": "FBbt:00007386",
+    "fbbt_definition": "Any olfactory receptor neuron of the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Remainder call: one named class plus unknown others, so effectively a general adult ORN call. Or67a (FBbt:00067020) is a basiconic-sensillum ORN but the remainder is unresolved.",
+  "other_candidates": [
+    {"fbbt_term": "adult olfactory receptor neuron Or67a", "fbbt_id": "FBbt:00067020", "fbbt_definition": "Adult ORN expressing Or67a (basiconic sensillum).", "reason_rejected": "Only one component of a cluster the authors say contains other unknown types."},
+    {"fbbt_term": "immature adult olfactory receptor neuron Or67a", "fbbt_id": "FBbt:00053580", "fbbt_definition": "Immature form of adult ORN Or67a.", "reason_rejected": "Adult data and single-type term."}
+  ],
+  "recommendation": "Map broadly to FBbt:00007386 (medium confidence).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

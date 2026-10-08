@@ -1,0 +1,22 @@
+{
+  "cluster_label": "proximal medullary amacrine neuron Pm2",
+  "working_definition": "Author cell type 'proximal medullary amacrine neuron Pm2' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00003835 'proximal medullary amacrine neuron Pm2'. Found in: 10x:head (90 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00003835 (FBbt fbbt/releases/2026-10-01)",
+    "'adult proximal medullary amacrine neuron Pm2' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'proximal medullary amacrine neuron Pm2' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "proximal medullary amacrine neuron Pm2",
+    "fbbt_id": "FBbt:00003835",
+    "fbbt_definition": "Proximal medullary wide-field amacrine neuron that projects along M7 and branches extensively at the M7/M8 boundary with each branch projecting into medulla layer M9 where it forms an arbor with mixed bleb-type and fine terminals (Morante and Desplan, 2008; Fischbach and Dittrich, 1989).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00003835 'proximal medullary amacrine neuron Pm2', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00003835 'proximal medullary amacrine neuron Pm2', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

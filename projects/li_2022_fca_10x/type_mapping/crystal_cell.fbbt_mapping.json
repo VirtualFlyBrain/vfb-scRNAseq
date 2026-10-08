@@ -1,0 +1,21 @@
+{
+  "cluster_label": "crystal cell",
+  "working_definition": "Crystal cells (melanizing hemocytes) in adult flies (FCA heart); authors cite the embryonic/larval crystal cell term.",
+  "searches_performed": ["crystal cell", "adult crystal cell"],
+  "best_match": {
+    "fbbt_term": "adult crystal cell",
+    "fbbt_id": "FBbt:00058146",
+    "fbbt_definition": "Crystal cell of the adult. Originating from the embryo and the larva, these cells persist in small numbers in the adult (Honti et al., 2014; Gold and Bruckner, 2015).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Data are adult; the adult-specific variant replaces the authors' embryonic/larval crystal cell term.",
+  "other_candidates": [
+    {"fbbt_term": "embryonic/larval crystal cell", "fbbt_id": "FBbt:00001690", "fbbt_definition": "Hemocyte of the embryo and larva.", "reason_rejected": "Larval stage; data are adult."},
+    {"fbbt_term": "crystal cell", "fbbt_id": "FBbt:00058147", "fbbt_definition": "Melanizing hemocyte.", "reason_rejected": "Non-stage-specific; adult variant preferred."}
+  ],
+  "recommendation": "Use adult crystal cell (FBbt:00058146).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

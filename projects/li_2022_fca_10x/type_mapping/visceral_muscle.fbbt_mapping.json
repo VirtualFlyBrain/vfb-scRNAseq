@@ -1,0 +1,29 @@
+{
+  "cluster_label": "visceral muscle",
+  "working_definition": "Author cell type 'visceral muscle' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00005070 'visceral muscle cell'. Found in: 10x:malpighian_tubule (27 cells), ss2:malpighian_tubule (2 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00005070 (FBbt fbbt/releases/2026-10-01)",
+    "'adult visceral muscle cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'visceral muscle' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult visceral muscle cell",
+    "fbbt_id": "FBbt:00003525",
+    "fbbt_definition": "Muscle cell of a visceral muscle of the adult.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00005070 'visceral muscle cell', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00003525 'adult visceral muscle cell', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "visceral muscle cell",
+      "fbbt_id": "FBbt:00005070",
+      "fbbt_definition": "Muscle cell of a muscle that moves the viscera, usually with a peristaltic or compressing function, and has only one or, commonly no attachment to the body wall. Visceral muscles differ from somatic muscles in several respects: adjacent fibers are held together by desmosomes, each fiber is uninucleate and the contractile material is not grouped into fibrils but packs the whole fiber. The visceral musculature comprises musculature of the intestine, reproductive system and circulatory system (Miller, 1950). The circular fibers derive from a bilaterally symmetrical band of mesodermal cells extending continuously throughout most of the germ band. The longitudinal fibers derive from clusters of mesodermal cells which appear during stage 12 at the posterior end of the embryo and migrate anteriorly.",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00003525 'adult visceral muscle cell' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

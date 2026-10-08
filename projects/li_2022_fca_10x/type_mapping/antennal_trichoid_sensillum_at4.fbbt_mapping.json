@@ -1,0 +1,48 @@
+{
+  "cluster_label": "antennal trichoid sensillum at4",
+  "working_definition": "Author cell type 'antennal trichoid sensillum at4' of the Fly Cell Atlas (Li et al. 2022; adult head, 7 sensory neuron nuclei): cells of the at4 trichoid sensillum, i.e. its olfactory receptor neurons (Or47b, Or88a, Or65a/b/c). Authors' term FBbt:00067010 is a sensillum (structure).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00067010",
+    "'antennal trichoid sensillum at4' (OLS fbbt)",
+    "'olfactory receptor neuron at4 sensillum' (OLS fbbt)",
+    "'at4 olfactory receptor neuron' (EBI OLS4 fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "antennal olfactory receptor neuron of trichoid sensillum",
+    "fbbt_id": "FBbt:00049978",
+    "fbbt_definition": "Odorant receptor neuron (ORN) whose dendrite transduces signals from a trichoid antennal sensillum.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors' term is a sensillum structure, so a cell-level term is needed; the authors' broad class for these cells is sensory neuron. The at4 ORNs (Or47b, Or88a, Or65) are all children of antennal olfactory receptor neuron of trichoid sensillum (verified); FBbt has no single 'at4 ORN' class, so this is the most specific common parent.",
+  "other_candidates": [
+    {
+      "fbbt_term": "antennal trichoid sensillum at4",
+      "fbbt_id": "FBbt:00067010",
+      "fbbt_definition": "Olfactory trichoid sensillum of antennal segment 3 that houses the dendrites of ORNs Or47b and Or88a, with a subset additionally housing an ORN Or65a dendrite.",
+      "reason_rejected": "Structure, not a cell; cluster relation requires a cell term."
+    },
+    {
+      "fbbt_term": "adult olfactory receptor neuron Or47b",
+      "fbbt_id": "FBbt:00067056",
+      "fbbt_definition": "Adult ORN that expresses Or47b; dendrite in at4.",
+      "reason_rejected": "One member."
+    },
+    {
+      "fbbt_term": "adult olfactory receptor neuron Or88a",
+      "fbbt_id": "FBbt:00067057",
+      "fbbt_definition": "Adult ORN that expresses Or88a; dendrite in at4.",
+      "reason_rejected": "One member."
+    },
+    {
+      "fbbt_term": "adult olfactory receptor neuron Or65",
+      "fbbt_id": "FBbt:00067011",
+      "fbbt_definition": "Adult ORN that expresses Or65a, Or65b and Or65c; dendrite in at4.",
+      "reason_rejected": "One member."
+    }
+  ],
+  "recommendation": "Broad match to the trichoid ORN class; authors' sensillum term kept in other_candidates.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

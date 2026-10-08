@@ -1,0 +1,28 @@
+{
+  "cluster_label": "dilp2IPC_insulin-producing cell",
+  "working_definition": "dilp2-GAL4-sorted adult insulin-producing cells (Smart-seq2 population) of the pars intercerebralis.",
+  "searches_performed": [
+    "insulin-producing cell",
+    "adult insulin secreting cell of pars intercerebralis"
+  ],
+  "best_match": {
+    "fbbt_term": "adult insulin secreting cell of pars intercerebralis",
+    "fbbt_id": "FBbt:00110107",
+    "fbbt_definition": "Insulin-producing neurosecretory cell of the adult pars intercerebralis that innervates the corpus cardiacum and corpus allatum, and branches before exiting the brain. There are approximately 7-9 of these cells from each hemisphere with their cell bodies clustering in the pars intercerebralis at late pupal stages. These cells co-express Ilp2, Ilp3 and Ilp5 mRNA (Broughton et al., 2005).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Insulin-producing cells = IPCs; adult variant used for adult flies (dilp2-GAL4 sorted).",
+  "other_candidates": [
+    {
+      "fbbt_term": "insulin secreting cell of pars intercerebralis",
+      "fbbt_id": "FBbt:00004011",
+      "fbbt_definition": "Insulin-producing neuron with a cell body in the pars intercerebralis.",
+      "reason_rejected": "Not stage-specific; adult variant preferred."
+    }
+  ],
+  "recommendation": "Use adult insulin secreting cell of pars intercerebralis (FBbt:00110107).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

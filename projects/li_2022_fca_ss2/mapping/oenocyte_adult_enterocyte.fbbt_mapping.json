@@ -1,0 +1,22 @@
+{
+  "cluster_label": "oenocyte_adult enterocyte",
+  "working_definition": "Author cell type 'adult enterocyte' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00047147 'adult enterocyte'. Found in: 10x:oenocyte (100 cells), ss2:oenocyte (3 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00047147 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult enterocyte' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult enterocyte' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult enterocyte",
+    "fbbt_id": "FBbt:00047147",
+    "fbbt_definition": "Specialized epithelial cell of the adult gut. A large, polyploid, cuboidal or low-columnar epithelial cell with its nucleus in the middle and a mass of microvilli (brush border) on its apical surface. On its basal side, extensive infoldings of the plasma membrane form a labyrinth which fills the lower half of the cell. It is attached to adjacent enterocytes by smooth septate junctions.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00047147 'adult enterocyte', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00047147 'adult enterocyte', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,22 @@
+{
+  "cluster_label": "adult olfactory receptor neuron Or65",
+  "working_definition": "Author cell type 'adult olfactory receptor neuron Or65' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00067011 'adult olfactory receptor neuron Or65'. Found in: 10x:antenna (373 cells), ss2:antenna (6 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00067011 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult olfactory receptor neuron Or65' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult olfactory receptor neuron Or65' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult olfactory receptor neuron Or65",
+    "fbbt_id": "FBbt:00067011",
+    "fbbt_definition": "Adult olfactory receptor neuron (ORN) that expresses Or65a, Or65b and Or65c (Benton et al., 2025). Its dendrite transduces signals from an antennal trichoid sensillum at4 (Couto et al., 2005; Grabe et al., 2016) that houses three neurons (Gonzales et al., 2021). It responds to the male pheromone cis-vaccenyl acetate (cVA) (van der Goes et al., 2007). Its axon innervates antennal lobe glomerulus DL3, bilaterally (Benton et al., 2025). It expresses sNPF (Carlsson et al., 2010). It develops from an Nba precursor (Benton et al., 2025). There around 20-40 of these cells on each side (Grabe et al., 2016; Benton et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00067011 'adult olfactory receptor neuron Or65', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00067011 'adult olfactory receptor neuron Or65', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

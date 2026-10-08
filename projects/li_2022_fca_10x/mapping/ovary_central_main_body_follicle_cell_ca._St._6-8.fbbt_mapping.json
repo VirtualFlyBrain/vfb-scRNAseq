@@ -1,0 +1,30 @@
+{
+  "cluster_label": "ovary_central main body follicle cell ca. St. 6-8",
+  "working_definition": "Ovary follicle cells of the central main body region (overlying the oocyte/nurse cells) at roughly egg chamber stages 6-8 in adult female ovaries (Li et al. 2022, Fly Cell Atlas). Authors gave 'Manual Annotation' (no FBbt id).",
+  "searches_performed": [
+    "central main body follicle cell ca. St. 6-8",
+    "main body follicle cell",
+    "central follicle cell",
+    "follicle cell"
+  ],
+  "best_match": {
+    "fbbt_term": "main body follicle cell",
+    "fbbt_id": "FBbt:00005402",
+    "fbbt_definition": "Follicle cell that overlies the oocyte (Wu et al., 2008). Along with the posterior terminal follicle cells they form a columnar epithelium from stage 10, which deposits eggshell components (Wu et al., 2008). These cells are connected to one another by ring canals (Airoldi et al., 2011).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The label names main body follicle cells restricted to a central subregion and approximate stage window; FBbt has no 'central main body follicle cell' or stage-specific main body term, so the cell type main body follicle cell is the most specific adequate ancestor.",
+  "other_candidates": [
+    {
+      "fbbt_term": "follicle cell",
+      "fbbt_id": "FBbt:00004904",
+      "fbbt_definition": "One of the somatic epithelial cells that is either associated with the germline cyst to form an egg chamber or connecting the egg chambers (Jevitt et al., 2020).",
+      "reason_rejected": "Less specific parent; main body follicle cell is available."
+    }
+  ],
+  "recommendation": "Map to main body follicle cell (FBbt:00005402), broad match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

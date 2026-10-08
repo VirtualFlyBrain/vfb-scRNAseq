@@ -1,0 +1,35 @@
+{
+  "cluster_label": "heart_adult salivary gland",
+  "working_definition": "Adult salivary gland cells (mostly in the Malpighian tubule analysis; Li et al. 2022; author term FBbt:00003135; broad class gland).",
+  "searches_performed": [
+    "adult salivary gland",
+    "adult salivary gland cell",
+    "adult salivary gland epithelial cell"
+  ],
+  "best_match": {
+    "fbbt_term": "adult salivary gland epithelial cell",
+    "fbbt_id": "FBbt:00059269",
+    "fbbt_definition": "Any epithelial cell (FBbt:00000124) that is part of some adult salivary gland (FBbt:00003135).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "Organ named; the cell-level equivalent is adult salivary gland epithelial cell (parent of the secretory cell). Gland cells are epithelial.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult salivary gland",
+      "fbbt_id": "FBbt:00003135",
+      "fbbt_definition": "The salivary gland of the adult.",
+      "reason_rejected": "Organ term, not a cell term."
+    },
+    {
+      "fbbt_term": "adult salivary gland secretory cell",
+      "fbbt_id": "FBbt:00058292",
+      "fbbt_definition": "Columnar epithelial cell of the adult salivary gland responsible for producing and secreting the saliva.",
+      "reason_rejected": "Narrower than the authors' organ-level call."
+    }
+  ],
+  "recommendation": "Map to FBbt:00059269.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

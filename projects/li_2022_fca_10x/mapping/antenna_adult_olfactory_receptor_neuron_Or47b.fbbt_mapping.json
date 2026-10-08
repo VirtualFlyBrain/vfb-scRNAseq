@@ -1,0 +1,22 @@
+{
+  "cluster_label": "antenna_adult olfactory receptor neuron Or47b",
+  "working_definition": "Author cell type 'adult olfactory receptor neuron Or47b' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00067056 'adult olfactory receptor neuron Or47b'. Found in: 10x:antenna (437 cells), ss2:antenna (5 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00067056 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult olfactory receptor neuron Or47b' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult olfactory receptor neuron Or47b' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult olfactory receptor neuron Or47b",
+    "fbbt_id": "FBbt:00067056",
+    "fbbt_definition": "Adult olfactory receptor neuron (ORN) that expresses Or47b (Benton et al., 2025). It also expresses fruitless (Yu et al., 2010) and sNPF (Carlsson et al., 2010). It innervates the antennal lobe glomerulus VA1v bilaterally, fasciculating with the antennal lobe commissure (Kaur et al., 2019). Its dendrite transduces signals from antennal trichoid sensillum at4 (Couto et al., 2005; Grabe et al., 2016). It responds to a pheromone secreted by males and females (van der Goes et al., 2007). It develops from an Nab precursor (Benton et al., 2025). There are around 40-50 of these cells on each side (Benton et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00067056 'adult olfactory receptor neuron Or47b', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00067056 'adult olfactory receptor neuron Or47b', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

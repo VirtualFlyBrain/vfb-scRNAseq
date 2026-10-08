@@ -1,0 +1,30 @@
+{
+  "cluster_label": "choriogenic main body follicle cell St. 14",
+  "working_definition": "Main body follicle cells of stage 14 (mature) egg chambers in the adult ovary, engaged in chorion gene expression (Li et al. 2022, Fly Cell Atlas). Authors gave 'Manual Annotation' (no FBbt id).",
+  "searches_performed": [
+    "choriogenic main body follicle cell St. 14",
+    "choriogenic follicle cell",
+    "main body follicle cell",
+    "follicle cell"
+  ],
+  "best_match": {
+    "fbbt_term": "main body follicle cell",
+    "fbbt_id": "FBbt:00005402",
+    "fbbt_definition": "Follicle cell that overlies the oocyte (Wu et al., 2008). Along with the posterior terminal follicle cells they form a columnar epithelium from stage 10, which deposits eggshell components (Wu et al., 2008). These cells are connected to one another by ring canals (Airoldi et al., 2011).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt has no choriogenic or stage-specific main body follicle cell term; the label's cell type is main body follicle cell, with a stage bin (St. 14) that FBbt does not capture as a cell type.",
+  "other_candidates": [
+    {
+      "fbbt_term": "follicle cell",
+      "fbbt_id": "FBbt:00004904",
+      "fbbt_definition": "One of the somatic epithelial cells that is either associated with the germline cyst to form an egg chamber or connecting the egg chambers (Jevitt et al., 2020).",
+      "reason_rejected": "Less specific parent."
+    }
+  ],
+  "recommendation": "Map to main body follicle cell (FBbt:00005402), broad match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

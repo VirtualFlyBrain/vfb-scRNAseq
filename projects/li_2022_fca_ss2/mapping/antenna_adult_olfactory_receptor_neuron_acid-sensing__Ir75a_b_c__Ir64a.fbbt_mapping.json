@@ -1,0 +1,56 @@
+{
+  "cluster_label": "antenna_adult olfactory receptor neuron acid-sensing, Ir75a/b/c, Ir64a",
+  "working_definition": "Acid-sensing IR ORN cluster with Ir75a, Ir75b, Ir75c (coeloconic) and Ir64a (sacculus) neurons (Li et al. 2022 FCA, Manual Annotation).",
+  "searches_performed": [
+    "adult olfactory receptor neuron acid-sensing, Ir75a/b/c, Ir64a",
+    "adult olfactory receptor neuron Ir75a",
+    "adult olfactory receptor neuron Ir75b",
+    "adult olfactory receptor neuron Ir75c",
+    "adult olfactory receptor neuron Ir64a",
+    "adult antennal olfactory receptor neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "adult antennal olfactory receptor neuron",
+    "fbbt_id": "FBbt:00007352",
+    "fbbt_definition": "Odorant receptor neuron (ORN) whose dendrite transduces signals from an antennal sensillum. The axons of these neurons fasciculate in the antennal nerve and innervate the antennal lobe.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Grouped call mixing coeloconic ORNs (Ir75a FBbt:00110013, Ir75b FBbt:00110016, Ir75c FBbt:00051495; parent antennal ORN of coeloconic sensillum) and sacculus-grooved-sensillum ORNs (Ir64a FBbt:00110019). No sensillum-type parent covers both; OLS ancestors confirm adult antennal olfactory receptor neuron is the most specific olfactory common ancestor.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult olfactory receptor neuron Ir75a",
+      "fbbt_id": "FBbt:00110013",
+      "fbbt_definition": "Adult coeloconic ORN expressing Ir75a.",
+      "reason_rejected": "Single member."
+    },
+    {
+      "fbbt_term": "adult olfactory receptor neuron Ir75b",
+      "fbbt_id": "FBbt:00110016",
+      "fbbt_definition": "Adult coeloconic ORN expressing Ir75b.",
+      "reason_rejected": "Single member."
+    },
+    {
+      "fbbt_term": "adult olfactory receptor neuron Ir75c",
+      "fbbt_id": "FBbt:00051495",
+      "fbbt_definition": "Adult coeloconic ORN expressing Ir75c.",
+      "reason_rejected": "Single member."
+    },
+    {
+      "fbbt_term": "adult olfactory receptor neuron Ir64a",
+      "fbbt_id": "FBbt:00110019",
+      "fbbt_definition": "Bilateral ORN expressing Ir64a and Ir8a, sacculus grooved sensillum.",
+      "reason_rejected": "Single member."
+    },
+    {
+      "fbbt_term": "antennal olfactory receptor neuron of coeloconic sensillum",
+      "fbbt_id": "FBbt:00049980",
+      "fbbt_definition": "ORN whose dendrite transduces signals from a coeloconic antennal sensillum.",
+      "reason_rejected": "Not an ancestor of Ir64a."
+    }
+  ],
+  "recommendation": "Map broadly to FBbt:00007352 (medium confidence); members listed in other_candidates.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

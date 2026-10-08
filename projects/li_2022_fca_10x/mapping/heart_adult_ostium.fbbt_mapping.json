@@ -1,0 +1,41 @@
+{
+  "cluster_label": "heart_adult ostium",
+  "working_definition": "Ostial cells of the adult heart (cardiomyocytes forming the ostia, inflow tracts of the dorsal vessel).",
+  "searches_performed": [
+    "adult ostium",
+    "ostium cell",
+    "adult ostial cell"
+  ],
+  "best_match": {
+    "fbbt_term": "adult ostial cell",
+    "fbbt_id": "FBbt:00058283",
+    "fbbt_definition": "Ostial cell of the adult dorsal vessel. There are 20 of these cells per dorsal vessel, forming 5 pairs of ostia along the dorsal vessel. The 4 cells of the posterior-most pair of ostia are embryonic/larval ostial cells that persist in the adult stage; the other 16 cells differentiate during metamorphosis (Lehmacher et al., 2012; Rotstein and Paululat, 2016).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Authors' term (FBbt:00003161 adult ostial pore) is an immaterial space; the label 'adult ostium' denotes the ostium formed by ostial cells, whose cell-level term is adult ostial cell.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult ostial pore",
+      "fbbt_id": "FBbt:00003161",
+      "fbbt_definition": "An obliquely oriented, laterally located slit in the wall of the adult heart.",
+      "reason_rejected": "Authors' term; a pore, not a cell."
+    },
+    {
+      "fbbt_term": "adult ostium",
+      "fbbt_id": "FBbt:00013166",
+      "fbbt_definition": "Any ostium (FBbt:00003166) that overlaps some adult (FBbt:00003004).",
+      "reason_rejected": "Multicellular structure, not a cell."
+    },
+    {
+      "fbbt_term": "ostial cell",
+      "fbbt_id": "FBbt:00058260",
+      "fbbt_definition": "A specialized cardiomyocyte that is part of an ostium in the wall of the dorsal vessel.",
+      "reason_rejected": "Non-stage-specific parent; adult variant preferred."
+    }
+  ],
+  "recommendation": "Use adult ostial cell (FBbt:00058283).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

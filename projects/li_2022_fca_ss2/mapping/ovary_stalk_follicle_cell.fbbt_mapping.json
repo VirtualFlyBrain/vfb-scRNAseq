@@ -1,0 +1,22 @@
+{
+  "cluster_label": "ovary_stalk follicle cell",
+  "working_definition": "Author cell type 'stalk follicle cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00004910 'stalk follicle cell'. Found in: 10x:ovary (173 cells), ss2:ovary (5 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00004910 (FBbt fbbt/releases/2026-10-01)",
+    "'adult stalk follicle cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'stalk follicle cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "stalk follicle cell",
+    "fbbt_id": "FBbt:00004910",
+    "fbbt_definition": "Cell that is part of the stalk connecting adjacent egg chambers in a vitellarium. Each stalk is usually composed of 5-8 interdigitating stalk follicle cells.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00004910 'stalk follicle cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00004910 'stalk follicle cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

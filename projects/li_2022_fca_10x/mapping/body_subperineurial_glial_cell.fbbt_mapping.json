@@ -1,0 +1,29 @@
+{
+  "cluster_label": "body_subperineurial glial cell",
+  "working_definition": "Author cell type 'subperineurial glial cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00001258 'subperineurial glial cell'. Found in: 10x:body (382 cells), 10x:head (279 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00001258 (FBbt fbbt/releases/2026-10-01)",
+    "'adult subperineurial glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'subperineurial glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult subperineurial glial cell",
+    "fbbt_id": "FBbt:00058254",
+    "fbbt_definition": "Any glial cell (FBbt:00005144) that is part of some adult nervous system (FBbt:00003559) and is part of some subperineurial glial sheath (FBbt:00007091).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00001258 'subperineurial glial cell', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00058254 'adult subperineurial glial cell', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "subperineurial glial cell",
+      "fbbt_id": "FBbt:00001258",
+      "fbbt_definition": "Glial cell that forms the subperineurial glial sheath. These cells are polyploid. They increase in size and ploidy as the nervous system grows during development (Kremer et al., 2017).",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00058254 'adult subperineurial glial cell' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

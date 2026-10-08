@@ -1,0 +1,20 @@
+{
+  "cluster_label": "principal cell*",
+  "working_definition": "Dominant Malpighian tubule cluster: principal cells of the adult tubule (Li et al. 2022; Manual Annotation, broad class epithelial cell; asterisk meaning unknown).",
+  "searches_performed": ["principal cell*", "principal cell", "adult Malpighian tubule principal cell"],
+  "best_match": {
+    "fbbt_term": "adult Malpighian tubule principal cell",
+    "fbbt_id": "FBbt:00005735",
+    "fbbt_definition": "Type I (principal) cell of the adult Malpighian tubule. These are found throughout the tubule and outnumber other cell types overall (Singh et al., 2007). They transport cations and organic solutes (Singh et al., 2007).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Principal cells of the adult tubule, no regional qualifier given; the segment-specific children are narrower.",
+  "other_candidates": [
+    {"fbbt_term": "Malpighian tubule Type I cell", "fbbt_id": "FBbt:00005796", "fbbt_definition": "Type I cell of the Malpighian tubules.", "reason_rejected": "Not adult-specific."}
+  ],
+  "recommendation": "Map to FBbt:00005735.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

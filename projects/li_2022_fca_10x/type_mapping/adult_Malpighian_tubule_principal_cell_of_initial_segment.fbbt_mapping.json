@@ -1,0 +1,22 @@
+{
+  "cluster_label": "adult Malpighian tubule principal cell of initial segment",
+  "working_definition": "Author cell type 'adult Malpighian tubule principal cell of initial segment' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00049474 'adult Malpighian tubule principal cell of initial segment'. Found in: 10x:malpighian_tubule (1423 cells), ss2:malpighian_tubule (25 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00049474 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult Malpighian tubule principal cell of initial segment' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult Malpighian tubule principal cell of initial segment' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult Malpighian tubule principal cell of initial segment",
+    "fbbt_id": "FBbt:00049474",
+    "fbbt_definition": "Any Malpighian tubule Type I cell (FBbt:00005796) that is part of some adult initial segment of Malpighian tubule (FBbt:00005729).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00049474 'adult Malpighian tubule principal cell of initial segment', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00049474 'adult Malpighian tubule principal cell of initial segment', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

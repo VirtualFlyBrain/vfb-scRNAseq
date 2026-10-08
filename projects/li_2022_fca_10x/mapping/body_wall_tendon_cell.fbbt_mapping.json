@@ -1,0 +1,29 @@
+{
+  "cluster_label": "body_wall_tendon cell",
+  "working_definition": "Author cell type 'tendon cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00005090 'tendon cell'. Found in: 10x:body_wall (241 cells), ss2:body_wall (6 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00005090 (FBbt fbbt/releases/2026-10-01)",
+    "'adult tendon cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'tendon cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult tendon cell",
+    "fbbt_id": "FBbt:00058016",
+    "fbbt_definition": "Any tendon cell (FBbt:00005090) that overlaps some adult (FBbt:00003004).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00005090 'tendon cell', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00058016 'adult tendon cell', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "tendon cell",
+      "fbbt_id": "FBbt:00005090",
+      "fbbt_definition": "Epidermal cell that forms part of one end a muscle and connects it to an attachment site (Schweitzer et al., 2010). It attaches to a muscle cell via a myotendinous junction composed of hemiadherens junctions and extracellular matrix (Schweitzer et al., 2010). The attachment of the tendon cell to the cuticle relies on interdigitating hemidesmosomes in this cell that are closely associated with tonofibrils embedded in the cuticle.",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00058016 'adult tendon cell' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

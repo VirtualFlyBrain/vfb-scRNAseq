@@ -1,0 +1,29 @@
+{
+  "cluster_label": "heart_adult Malpighian tubule",
+  "working_definition": "Small group (73 cells) labelled with the whole adult Malpighian tubule organ (Li et al. 2022; author term FBbt:00005725), found in gut and heart analyses; cells are tubule cells.",
+  "searches_performed": [
+    "adult Malpighian tubule",
+    "Malpighian tubule cell",
+    "adult specialized Malpighian tubule cell"
+  ],
+  "best_match": {
+    "fbbt_term": "adult specialized Malpighian tubule cell",
+    "fbbt_id": "FBbt:00005733",
+    "fbbt_definition": "Specialized cell of the adult Malpighian tubules.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "low"
+  },
+  "justification": "The authors' term is the organ (not a cell). The most general adult cell-level term for tubule cells in FBbt is adult specialized Malpighian tubule cell (parent of principal, stellate etc.). Tubule stem cells would not be covered, hence low confidence.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult Malpighian tubule",
+      "fbbt_id": "FBbt:00005725",
+      "fbbt_definition": "Malpighian tubule of the adult. It is very similar to that of the larva, except that the initial segment of the anterior tubule is much smaller in the adult.",
+      "reason_rejected": "Organ term, not a cell term."
+    }
+  ],
+  "recommendation": "Map to FBbt:00005733 (broad, low confidence); curator may prefer to hold.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,28 @@
+{
+  "cluster_label": "body_perineurial glial sheath",
+  "working_definition": "Author cell type 'perineurial glial sheath' of the Fly Cell Atlas (Li et al. 2022; adult head and body, 690 cells): perineurial glia. Authors' term FBbt:00007089 is the sheath (layer structure).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00007089",
+    "'adult perineurial glial cell' (OLS fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult perineurial glial cell",
+    "fbbt_id": "FBbt:00058251",
+    "fbbt_definition": "Any glial cell that is part of some adult nervous system and is part of some perineurial glial sheath.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Cell-level, adult equivalent of the authors' sheath term: the glial cells that are part of the perineurial glial sheath in the adult. More specific children (brain, optic lobe, VNC, PNS) are not used because of the no-narrowing-by-tissue rule.",
+  "other_candidates": [
+    {
+      "fbbt_term": "perineurial glial sheath",
+      "fbbt_id": "FBbt:00007089",
+      "fbbt_definition": "The outermost cellular layer of the nervous system.",
+      "reason_rejected": "Structure, not a cell."
+    }
+  ],
+  "recommendation": "Map to adult perineurial glial cell.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

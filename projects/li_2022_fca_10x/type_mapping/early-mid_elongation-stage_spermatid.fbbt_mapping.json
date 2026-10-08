@@ -1,0 +1,22 @@
+{
+  "cluster_label": "early-mid elongation-stage spermatid",
+  "working_definition": "Author cell type 'early-mid elongation-stage spermatid' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00057000 'early-mid elongation-stage spermatid'. Found in: 10x:testis (945 cells), ss2:testis (4 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00057000 (FBbt fbbt/releases/2026-10-01)",
+    "'adult early-mid elongation-stage spermatid' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'early-mid elongation-stage spermatid' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "early-mid elongation-stage spermatid",
+    "fbbt_id": "FBbt:00057000",
+    "fbbt_definition": "An elongating spermatid, 200-500 micrometers in length and in which nuclear shaping has begun. The two parts of the mitochondrial derivative become unequal in size.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00057000 'early-mid elongation-stage spermatid', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00057000 'early-mid elongation-stage spermatid', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

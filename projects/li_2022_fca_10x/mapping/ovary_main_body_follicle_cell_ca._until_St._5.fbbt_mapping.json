@@ -1,0 +1,23 @@
+{
+  "cluster_label": "ovary_main body follicle cell ca. until St. 5",
+  "working_definition": "Main body follicle cells of early egg chambers (up to about stage 5) in the adult ovary (Li et al. 2022, Fly Cell Atlas). Annotated by the authors with FBbt:00005402 'main body follicle cell'.",
+  "searches_performed": [
+    "authors' ontology id FBbt:00005402",
+    "main body follicle cell",
+    "adult main body follicle cell",
+    "follicle cell"
+  ],
+  "best_match": {
+    "fbbt_term": "main body follicle cell",
+    "fbbt_id": "FBbt:00005402",
+    "fbbt_definition": "Follicle cell that overlies the oocyte (Wu et al., 2008). Along with the posterior terminal follicle cells they form a columnar epithelium from stage 10, which deposits eggshell components (Wu et al., 2008). These cells are connected to one another by ring canals (Airoldi et al., 2011).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' own term FBbt:00005402 is current and non-obsolete, with no adult-specific variant or stage-specific child. The label adds an early-stage bin that FBbt does not capture, so the cell type is mapped at the type level (stage bin of the lineage).",
+  "other_candidates": [],
+  "recommendation": "Keep the authors' term main body follicle cell (FBbt:00005402); stage bin so broad match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

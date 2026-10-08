@@ -1,0 +1,29 @@
+{
+  "cluster_label": "leg_mechanosensory neuron",
+  "working_definition": "Author cell type 'mechanosensory neuron' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00005919 'mechanosensory neuron'. Found in: 10x:leg (1026 cells), 10x:wing (1604 cells), ss2:leg (29 cells), ss2:wing (24 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00005919 (FBbt fbbt/releases/2026-10-01)",
+    "'adult mechanosensory neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'mechanosensory neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult mechanosensory neuron",
+    "fbbt_id": "FBbt:00051420",
+    "fbbt_definition": "Any adult neuron that is capable of some detection of mechanical stimulus that is part of sensory perception.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00005919 'mechanosensory neuron', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00051420 'adult mechanosensory neuron', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "mechanosensory neuron",
+      "fbbt_id": "FBbt:00005919",
+      "fbbt_definition": "Any neuron that is capable of some detection of mechanical stimulus that is part of sensory perception.",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00051420 'adult mechanosensory neuron' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

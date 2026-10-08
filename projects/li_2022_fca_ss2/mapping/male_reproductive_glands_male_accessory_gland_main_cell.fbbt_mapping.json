@@ -1,0 +1,22 @@
+{
+  "cluster_label": "male_reproductive_glands_male accessory gland main cell",
+  "working_definition": "Author cell type 'male accessory gland main cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00004960 'male accessory gland main cell'. Found in: 10x:male_reproductive_glands (7349 cells), ss2:male_reproductive_glands (131 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00004960 (FBbt fbbt/releases/2026-10-01)",
+    "'adult male accessory gland main cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'male accessory gland main cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "male accessory gland main cell",
+    "fbbt_id": "FBbt:00004960",
+    "fbbt_definition": "Cell type found in both lobes of the male accessory gland. These cells are flat, hexagonal and binucleate, which secrete their products into the lumen of each lobe. There are approximately 1000 main cells per lobe, interspersed with around 43 secondary cells.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00004960 'male accessory gland main cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00004960 'male accessory gland main cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

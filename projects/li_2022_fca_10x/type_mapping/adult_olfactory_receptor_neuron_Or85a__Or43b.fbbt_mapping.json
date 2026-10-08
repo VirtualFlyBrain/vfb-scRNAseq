@@ -1,0 +1,21 @@
+{
+  "cluster_label": "adult olfactory receptor neuron Or85a, Or43b",
+  "working_definition": "Antennal odorant-receptor ORN cluster grouping Or85a and Or43b neurons (Li et al. 2022 FCA, Manual Annotation).",
+  "searches_performed": ["adult olfactory receptor neuron Or85a, Or43b", "adult olfactory receptor neuron Or85a", "adult olfactory receptor neuron Or43b", "antennal olfactory receptor neuron of basiconic sensillum"],
+  "best_match": {
+    "fbbt_term": "antennal olfactory receptor neuron of basiconic sensillum",
+    "fbbt_id": "FBbt:00049977",
+    "fbbt_definition": "Odorant receptor neuron (ORN) whose dendrite transduces signals from a basiconic antennal sensillum.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Grouped call. OLS parents checked: Or85a (FBbt:00067049) and Or43b (FBbt:00067050) are both direct children of antennal ORN of basiconic sensillum.",
+  "other_candidates": [
+    {"fbbt_term": "adult olfactory receptor neuron Or85a", "fbbt_id": "FBbt:00067049", "fbbt_definition": "Adult ORN expressing Or85a.", "reason_rejected": "Single member."},
+    {"fbbt_term": "adult olfactory receptor neuron Or43b", "fbbt_id": "FBbt:00067050", "fbbt_definition": "Adult ORN expressing Or43b.", "reason_rejected": "Single member."}
+  ],
+  "recommendation": "Map broadly to FBbt:00049977 (medium confidence); members listed in other_candidates.",
+  "new_term_needed": false,
+  "verification_needed": false
+}
