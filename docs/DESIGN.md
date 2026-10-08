@@ -807,5 +807,11 @@ Curator decisions (2026-10-07):
   regression classifier trained on the 10x annotation (supplement, "Annotating
   Smart-Seq2 data"); the h5ad/loom carry only `transf_annotation` (235 tissue x label
   groups, many < 10 cells) and dilp2 IPC / Akh CC carry no annotation at all.
-  How to represent them is awaiting a curator decision.
+  Curator decision (2026-10-08): the predictions are the authors' typing, so each
+  (tissue, predicted type) is a Cluster with `membership: label_transfer` (237 entries
+  in all, 9,892 cells); "unknown" / "artefact" are held. Author FBbt ids are copied
+  from the same 10x tissue (`author_ontology_from`). dilp2 IPC and Akh CC are one
+  Cluster each (`fixed_annotation`, `membership: sorted`), typed from the authors'
+  sample description. Such Clusters are named "<type> cells, predicted / sorted (...)"
+  and carry a `title` (IAO:0000115) saying they are not transcriptomic clusters.
 - **Expression:** `expression.tsv` committed gzipped (too large otherwise).

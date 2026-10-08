@@ -138,6 +138,28 @@ sample_build:
     - { id: wing, name: "Fly Cell Atlas Smart-seq2 Wing",
         h5ad: "https://cloud.flycellatlas.org/index.php/s/G69367b4grGAWNc" }
     - { id: dilp2IPC, name: "Fly Cell Atlas Smart-seq2 dilp2 IPC (insulin-producing cells)",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/3EGf7gttGHGLBCw" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/3EGf7gttGHGLBCw",
+        fixed_annotation: "insulin-producing cell", membership: sorted }
     - { id: akhCC, name: "Fly Cell Atlas Smart-seq2 Akh CC (corpora cardiaca)",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/yeQdzQbgY379sgD" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/yeQdzQbgY379sgD",
+        fixed_annotation: "corpora cardiaca cell", membership: sorted }
+
+# Smart-seq2 cells were not clustered: the authors typed each cell with a logistic-
+# regression classifier trained on the tissue's 10x annotation, validated with marker
+# genes (supplement, "Annotating Smart-Seq2 data"). Curator decision 2026-10-08: use
+# these predictions, one Cluster per (tissue analysis, predicted type), recorded as
+# label transfer. dilp2 IPC and Akh CC (FACS-sorted, no annotation) are one Cluster
+# each, typed from the authors' sample description.
+annotation_build:
+  annotation_column: transf_annotation
+  sex_column: sex
+  unannotated_values: [unknown, unannotated, artefact]   # "unknown": classifier gave no type
+  membership: label_transfer
+  author_ontology_from: li_2022_fca_10x          # author FBbt ids of the same 10x tissue
+
+annotations:
+  review_columns: [clustering, source_cluster_id, type, membership, author_ontology_id, author_broad]
+
+unidentified:
+  rule: none
+  hold_unidentified: true
