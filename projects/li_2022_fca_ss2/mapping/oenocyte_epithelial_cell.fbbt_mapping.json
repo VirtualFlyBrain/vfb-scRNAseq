@@ -1,0 +1,29 @@
+{
+  "cluster_label": "oenocyte_epithelial cell",
+  "working_definition": "Author cell type 'epithelial cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00000124 'epithelial cell'. Found in: 10x:antenna (8020 cells), 10x:body (17180 cells), 10x:body_wall (2765 cells), 10x:fat_body (923 cells), 10x:haltere (3511 cells), 10x:head (4804 cells), 10x:heart (1944 cells), 10x:leg (4894 cells), 10x:male_reproductive_glands (723 cells), 10x:oenocyte (758 cells), 10x:proboscis_and_maxillary_palps (13315 cells), ss2:antenna (147 cells), ss2:body_wall (63 cells), ss2:fat_body (53 cells), ss2:haltere (136 cells), ss2:heart (76 cells), ss2:leg (316 cells), ss2:male_reproductive_glands (16 cells), ss2:oenocyte (37 cells), ss2:proboscis_and_maxillary_palps (375 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00000124 (FBbt fbbt/releases/2026-10-01)",
+    "'adult epithelial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'epithelial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult epithelial cell",
+    "fbbt_id": "FBbt:00058238",
+    "fbbt_definition": "Any epithelial cell of the adult.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00000124 'epithelial cell', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00058238 'adult epithelial cell', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "epithelial cell",
+      "fbbt_id": "FBbt:00000124",
+      "fbbt_definition": "Cell that has as its part a cytoskeleton that allows for tight cell to cell contact and which has apical-basal cell polarity.",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00058238 'adult epithelial cell' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

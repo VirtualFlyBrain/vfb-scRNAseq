@@ -1,0 +1,22 @@
+{
+  "cluster_label": "testis_early elongation stage spermatid",
+  "working_definition": "Author cell type 'early elongation stage spermatid' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00057175 'early elongation stage spermatid'. Found in: 10x:testis (6681 cells), ss2:testis (74 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00057175 (FBbt fbbt/releases/2026-10-01)",
+    "'adult early elongation stage spermatid' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'early elongation stage spermatid' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "early elongation stage spermatid",
+    "fbbt_id": "FBbt:00057175",
+    "fbbt_definition": "A spermatid which has initiated axoneme elongation, but which is relatively short (up to 200 micrometers in length) and retains a round nucleus. The two parts of the mitochondrial derivative are roughly equal in size.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00057175 'early elongation stage spermatid', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00057175 'early elongation stage spermatid', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,29 @@
+{
+  "cluster_label": "head_hemocyte",
+  "working_definition": "Author cell type 'hemocyte' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00005063 'hemocyte'. Found in: 10x:antenna (67 cells), 10x:body (680 cells), 10x:body_wall (558 cells), 10x:fat_body (3646 cells), 10x:haltere (292 cells), 10x:head (352 cells), 10x:heart (887 cells), 10x:leg (221 cells), 10x:male_reproductive_glands (108 cells), 10x:oenocyte (165 cells), 10x:proboscis_and_maxillary_palps (169 cells), 10x:testis (800 cells), 10x:wing (158 cells), ss2:body_wall (4 cells), ss2:fat_body (178 cells), ss2:haltere (7 cells), ss2:heart (29 cells), ss2:leg (6 cells), ss2:male_reproductive_glands (1 cells), ss2:oenocyte (10 cells), ss2:proboscis_and_maxillary_palps (2 cells), ss2:testis (6 cells), ss2:wing (4 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00005063 (FBbt fbbt/releases/2026-10-01)",
+    "'adult hemocyte' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'hemocyte' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult hemocyte",
+    "fbbt_id": "FBbt:00058143",
+    "fbbt_definition": "Hemocyte of the adult organism. These cells all arise during embryonic and larval development and persist through metamorphosis and adult life (Holz et al., 2003; Sanchez Bosch et al., 2019).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00005063 'hemocyte', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00058143 'adult hemocyte', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "hemocyte",
+      "fbbt_id": "FBbt:00005063",
+      "fbbt_definition": "Blood cell of the circulatory system that is involved in the cellular immune response. It expresses Hemese, a pan-hemocyte marker (Tattikota et al., 2020).",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00058143 'adult hemocyte' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

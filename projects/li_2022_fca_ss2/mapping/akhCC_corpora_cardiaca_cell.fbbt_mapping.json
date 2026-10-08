@@ -1,0 +1,28 @@
+{
+  "cluster_label": "akhCC_corpora cardiaca cell",
+  "working_definition": "Akh-GAL4-sorted adult corpora cardiaca cells (Smart-seq2 population), i.e. Akh-producing endocrine cells of the corpus cardiacum.",
+  "searches_performed": [
+    "corpora cardiaca cell",
+    "Akh secreting cell"
+  ],
+  "best_match": {
+    "fbbt_term": "Akh secreting cell",
+    "fbbt_id": "FBbt:00058017",
+    "fbbt_definition": "Peptidergic neuron that secretes the Adipokinetic hormone (Akh). These cells are exclusively found in the corpora cardiaca. They express Akh from late embryos to adult stage (Lee and Park, 2004).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "Sample typed from the Akh-GAL4-sorted population; FBbt has no generic 'corpus cardiacum cell' term, and Akh secreting cells are the corpora cardiaca endocrine cells. No adult-specific variant exists.",
+  "other_candidates": [
+    {
+      "fbbt_term": "endocrine cell of the ring gland",
+      "fbbt_id": "FBbt:00058235",
+      "fbbt_definition": "Endocrine cell of the ring gland.",
+      "reason_rejected": "Broader parent of Akh secreting cell."
+    }
+  ],
+  "recommendation": "Use Akh secreting cell (FBbt:00058017).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

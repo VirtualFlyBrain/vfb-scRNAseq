@@ -1,0 +1,22 @@
+{
+  "cluster_label": "gut_intestinal stem cell",
+  "working_definition": "Author cell type 'intestinal stem cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00007039 'intestinal stem cell'. Found in: 10x:gut (282 cells), ss2:gut (23 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00007039 (FBbt fbbt/releases/2026-10-01)",
+    "'adult intestinal stem cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'intestinal stem cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "intestinal stem cell",
+    "fbbt_id": "FBbt:00007039",
+    "fbbt_definition": "Wedge shaped diploid cell found in scattered clusters in the midgut epithelium. The broad end of the wedge lies on the basement membrane and contains the nucleus. The tapering apex of the cell extends up towards the lumen.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00007039 'intestinal stem cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00007039 'intestinal stem cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

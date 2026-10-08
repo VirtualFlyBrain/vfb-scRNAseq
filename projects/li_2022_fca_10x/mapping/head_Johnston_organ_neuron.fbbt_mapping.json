@@ -1,0 +1,22 @@
+{
+  "cluster_label": "head_Johnston organ neuron",
+  "working_definition": "Author cell type 'Johnston organ neuron' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00100000 'Johnston organ neuron'. Found in: 10x:antenna (3811 cells), 10x:head (541 cells), ss2:antenna (37 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00100000 (FBbt fbbt/releases/2026-10-01)",
+    "'adult Johnston organ neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'Johnston organ neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "Johnston organ neuron",
+    "fbbt_id": "FBbt:00100000",
+    "fbbt_definition": "Scolopidial (mechanosensory) neuron of Johnston's organ (JO). Its axon innervates the ipsilateral antennal mechanosensory and motor center (AMMC). A small number of fibers also innervate the contralateral AMMC via the commissure of JON. Subset of JO neurons extend into the ventral region of the ventrolateral protocerebrum and posterior part of the subesophageal ganglion. They are cholinergic and a subset are glutamatergic (Ishikawa et al., 2017).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00100000 'Johnston organ neuron', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00100000 'Johnston organ neuron', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

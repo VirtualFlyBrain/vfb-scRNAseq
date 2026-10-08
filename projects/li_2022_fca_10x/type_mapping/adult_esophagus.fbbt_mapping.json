@@ -1,0 +1,20 @@
+{
+  "cluster_label": "adult esophagus",
+  "working_definition": "Esophageal epithelial cells of the foregut tube (Li et al. 2022; author term FBbt:00003131 adult esophagus; broad class epithelial cell).",
+  "searches_performed": ["adult esophagus", "adult esophagus epithelial cell"],
+  "best_match": {
+    "fbbt_term": "adult esophagus epithelial cell",
+    "fbbt_id": "FBbt:00058280",
+    "fbbt_definition": "Any epithelial cell (FBbt:00000124) that is part of some adult esophagus epithelium (FBbt:00058279).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "Cell-level equivalent of the authors' organ term.",
+  "other_candidates": [
+    {"fbbt_term": "adult esophagus", "fbbt_id": "FBbt:00003131", "fbbt_definition": "Portion of the adult foregut that extends from the cibarium anteriorly, through the brain to the proventriculus posteriorly.", "reason_rejected": "Organ term, not a cell term."}
+  ],
+  "recommendation": "Map to FBbt:00058280.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

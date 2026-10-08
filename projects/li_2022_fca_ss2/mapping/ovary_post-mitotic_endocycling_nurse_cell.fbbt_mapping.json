@@ -1,0 +1,29 @@
+{
+  "cluster_label": "ovary_post-mitotic endocycling nurse cell",
+  "working_definition": "Nurse cells of the adult ovary that have exited mitosis and are endoreplicating (Li et al. 2022, Manual Annotation).",
+  "searches_performed": [
+    "post-mitotic endocycling nurse cell",
+    "nurse cell",
+    "presumptive nurse cell"
+  ],
+  "best_match": {
+    "fbbt_term": "nurse cell",
+    "fbbt_id": "FBbt:00004878",
+    "fbbt_definition": "One of a group of 15 germ cells that lie anterior to the oocyte within the egg chamber. Their cytoplasm is contiguous with the oocyte via ring canals.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "Nurse cells are post-mitotic and endocycling by nature; the qualifiers describe their state rather than a separate type, and FBbt has no finer stage term.",
+  "other_candidates": [
+    {
+      "fbbt_term": "presumptive nurse cell",
+      "fbbt_id": "FBbt:01004878",
+      "fbbt_definition": "Cyst cell that will develop into a nurse cell.",
+      "reason_rejected": "Pre-differentiation stage; label says nurse cell."
+    }
+  ],
+  "recommendation": "Map to nurse cell.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

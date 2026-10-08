@@ -1,0 +1,24 @@
+{
+  "cluster_label": "adult olfactory receptor neuron Ir84a, Ir31a, Ir76a, Ir76b, Ir8a, Or35a",
+  "working_definition": "Antennal ORN cluster grouped by tuning receptors Ir84a, Ir31a, Ir76a and Or35a plus co-receptors Ir76b and Ir8a (Li et al. 2022 FCA, Manual Annotation).",
+  "searches_performed": ["adult olfactory receptor neuron Ir84a, Ir31a, Ir76a, Ir76b, Ir8a, Or35a", "adult olfactory receptor neuron Ir84a", "adult olfactory receptor neuron Ir31a", "adult olfactory receptor neuron Ir76a", "adult olfactory receptor neuron Or35a", "coeloconic sensillum olfactory receptor neuron"],
+  "best_match": {
+    "fbbt_term": "antennal olfactory receptor neuron of coeloconic sensillum",
+    "fbbt_id": "FBbt:00049980",
+    "fbbt_definition": "Odorant receptor neuron (ORN) whose dendrite transduces signals from a coeloconic antennal sensillum.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Grouped call. Ancestry checked in OLS: Ir84a (FBbt:00110007), Ir31a (FBbt:00110010), Ir76a ac4 (FBbt:00110018) and Or35a (FBbt:00067039) are all descendants of antennal ORN of coeloconic sensillum. Ir76b and Ir8a are co-receptors, not separate types. No adult-specific coeloconic ORN term exists; the members are adult ORNs.",
+  "other_candidates": [
+    {"fbbt_term": "adult olfactory receptor neuron Ir84a", "fbbt_id": "FBbt:00110007", "fbbt_definition": "Adult ORN expressing Ir84a and Ir8a, dendrite in ac4 sensillum.", "reason_rejected": "Single member of the group."},
+    {"fbbt_term": "adult olfactory receptor neuron Ir31a", "fbbt_id": "FBbt:00110010", "fbbt_definition": "Adult ORN expressing Ir31a.", "reason_rejected": "Single member of the group."},
+    {"fbbt_term": "adult olfactory receptor neuron Ir76a ac4", "fbbt_id": "FBbt:00110018", "fbbt_definition": "Adult ORN expressing Ir76a in ac4.", "reason_rejected": "Single member of the group."},
+    {"fbbt_term": "adult olfactory receptor neuron Or35a", "fbbt_id": "FBbt:00067039", "fbbt_definition": "ORN expressing Or35a, dendrite in ac3 sensillum.", "reason_rejected": "Single member of the group."},
+    {"fbbt_term": "adult olfactory receptor neuron", "fbbt_id": "FBbt:00007386", "fbbt_definition": "Any olfactory receptor neuron of the adult.", "reason_rejected": "Less specific than the verified common coeloconic parent."}
+  ],
+  "recommendation": "Map broadly to FBbt:00049980 (medium confidence); members listed in other_candidates.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

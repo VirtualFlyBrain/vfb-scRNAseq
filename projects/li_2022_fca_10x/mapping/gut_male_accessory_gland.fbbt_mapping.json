@@ -1,0 +1,40 @@
+{
+  "cluster_label": "gut_male accessory gland",
+  "working_definition": "Gland cluster labelled with the male accessory gland (authors' term FBbt:00004959, a structure composed of binucleate main and secondary cells), found in body, fat body and gut analyses.",
+  "searches_performed": [
+    "male accessory gland main cell",
+    "semen-secreting cell of the male accessory gland"
+  ],
+  "best_match": {
+    "fbbt_term": "semen-secreting cell of the male accessory gland",
+    "fbbt_id": "FBbt:00058232",
+    "fbbt_definition": "Any semen-secreting cell of the male reproductive system (FBbt:00058293) that is part of some male accessory gland (FBbt:00004959).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors' term is the gland (structure). The cell-level equivalent is the common parent of the gland's two cell types (main cell FBbt:00004960 and secondary cell FBbt:00004961), both direct children of this term.",
+  "other_candidates": [
+    {
+      "fbbt_term": "male accessory gland",
+      "fbbt_id": "FBbt:00004959",
+      "fbbt_definition": "Paired distended tubular accessory gland of the male genitalia which opens into the ejaculatory duct just behind the vas deferens.",
+      "reason_rejected": "Authors' structure term; not a cell type."
+    },
+    {
+      "fbbt_term": "male accessory gland main cell",
+      "fbbt_id": "FBbt:00004960",
+      "fbbt_definition": "Cell type found in both lobes of the male accessory gland; flat, hexagonal, binucleate.",
+      "reason_rejected": "Subtype not named by authors."
+    },
+    {
+      "fbbt_term": "male accessory gland secondary cell",
+      "fbbt_id": "FBbt:00004961",
+      "fbbt_definition": "Cell type at the distal tip of both lobes of the male accessory gland; large, spherical, binucleate.",
+      "reason_rejected": "Subtype not named by authors."
+    }
+  ],
+  "recommendation": "Broad match to the common parent of accessory gland cell types.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,21 @@
+{
+  "cluster_label": "posterior midgut*",
+  "working_definition": "Posterior midgut epithelial cells in the Malpighian tubule analysis (Li et al. 2022; Manual Annotation, broad class epithelial cell).",
+  "searches_performed": ["posterior midgut*", "adult posterior midgut epithelial cell", "adult posterior midgut"],
+  "best_match": {
+    "fbbt_term": "adult midgut epithelial cell",
+    "fbbt_id": "FBbt:00058294",
+    "fbbt_definition": "Any epithelial cell (FBbt:00000124) that is part of some adult midgut epithelium (FBbt:00007026).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt has no general adult posterior midgut epithelial cell term; only cell-type-specific posterior terms (enterocyte, enteroendocrine, ISC), none matching an unresolved regional group. The adult midgut epithelial cell is the most specific true parent.",
+  "other_candidates": [
+    {"fbbt_term": "adult posterior midgut", "fbbt_id": "FBbt:00047155", "fbbt_definition": "Broad subdivision of the midgut; posteriormost of the three traditional sections.", "reason_rejected": "Region term, not a cell term."},
+    {"fbbt_term": "enterocyte of posterior adult midgut epithelium", "fbbt_id": "FBbt:00007037", "fbbt_definition": "A large, polyploid epithelial cell of the adult posterior midgut.", "reason_rejected": "Authors do not name enterocytes."}
+  ],
+  "recommendation": "Map to FBbt:00058294 (broad).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

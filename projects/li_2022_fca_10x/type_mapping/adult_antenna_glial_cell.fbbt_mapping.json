@@ -1,0 +1,14 @@
+{
+  "cluster_label": "adult antenna glial cell",
+  "working_definition": "Glial cells of the adult antenna (Li et al. 2022 FCA, Manual Annotation; broad class glial cell), a single antenna glial type without subtype resolution.",
+  "searches_performed": ["adult antenna glial cell", "antennal glial cell", "adult antennal glial cell", "glial cell of antenna"],
+  "best_match": null,
+  "justification": "FBbt has no term for glia of the antenna as a whole. 'glial cell of adult antennal nerve' denotes nerve glia only, and the antennal lobe glia terms are CNS glia. Generic glial or PNS glial terms would be a fallback rather than the type the authors name, so the cluster is held.",
+  "other_candidates": [
+    {"fbbt_term": "glial cell of adult antennal nerve", "fbbt_id": "FBbt:00100307", "fbbt_definition": "Glial cell of the adult antennal nerve (child of PNS glial cell).", "reason_rejected": "Restricted to the antennal nerve; not the antenna glia named by the authors."},
+    {"fbbt_term": "adult PNS glial cell", "fbbt_id": "FBbt:00058258", "fbbt_definition": "Any PNS glial cell of the adult.", "reason_rejected": "Generic fallback; the authors do not name PNS glia."}
+  ],
+  "recommendation": "No adequate FBbt term; hold the cluster (best_match null). Possible new term: adult antennal glial cell.",
+  "new_term_needed": true,
+  "verification_needed": false
+}

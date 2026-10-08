@@ -1,0 +1,22 @@
+{
+  "cluster_label": "Poxn neuron",
+  "working_definition": "Author cell type 'Poxn neuron' of the Fly Cell Atlas (Li et al. 2022; adult head, 102 cells): a marker-named group of head neurons (Poxn expression) with no author FBbt term (Manual Annotation).",
+  "searches_performed": [
+    "'Poxn neuron' (OLS fbbt)",
+    "'Poxn' (OLS fbbt)",
+    "'Poxn neuron' (EBI OLS4 fbbt)"
+  ],
+  "best_match": null,
+  "justification": "FBbt has no Poxn-expressing neuron class; searches only return unrelated lexical hits. The only available terms are generic (neuron / adult neuron), which would be a forced generic fallback, so the cluster is held.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult neuron",
+      "fbbt_id": "FBbt:00047095",
+      "fbbt_definition": "Any neuron of the adult.",
+      "reason_rejected": "Too generic; generic fallback not allowed."
+    }
+  ],
+  "recommendation": "Hold: no FBbt term for Poxn neuron. Flag only; no term request without curator sign-off.",
+  "new_term_needed": true,
+  "verification_needed": false
+}

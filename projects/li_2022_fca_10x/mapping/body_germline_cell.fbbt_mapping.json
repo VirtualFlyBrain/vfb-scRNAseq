@@ -1,0 +1,22 @@
+{
+  "cluster_label": "body_germline cell",
+  "working_definition": "Author cell type 'germline cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00004860 'germline cell'. Found in: 10x:body (1720 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00004860 (FBbt fbbt/releases/2026-10-01)",
+    "'adult germline cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'germline cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "germline cell",
+    "fbbt_id": "FBbt:00004860",
+    "fbbt_definition": "Cell that can contribute DNA to the next generation. It is or may become a gamete.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00004860 'germline cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00004860 'germline cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,22 @@
+{
+  "cluster_label": "proboscis_and_maxillary_palps_gustatory receptor neuron of the labellum",
+  "working_definition": "Author cell type 'gustatory receptor neuron of the labellum' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00110887 'gustatory receptor neuron of the labellum'. Found in: 10x:proboscis_and_maxillary_palps (365 cells), ss2:proboscis_and_maxillary_palps (7 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00110887 (FBbt fbbt/releases/2026-10-01)",
+    "'adult gustatory receptor neuron of the labellum' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'gustatory receptor neuron of the labellum' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "gustatory receptor neuron of the labellum",
+    "fbbt_id": "FBbt:00110887",
+    "fbbt_definition": "Gustatory receptor neuron that innervates the adult labellum. It projects to distinct regions in the subesophageal zone, which include the anterior maxillary, posterior maxillary and labellar sensory centers, via specific terminal branches.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00110887 'gustatory receptor neuron of the labellum', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00110887 'gustatory receptor neuron of the labellum', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

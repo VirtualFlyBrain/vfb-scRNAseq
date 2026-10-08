@@ -1,0 +1,36 @@
+{
+  "cluster_label": "head_dorsal rim area",
+  "working_definition": "Author cell type 'dorsal rim area' of the Fly Cell Atlas (Li et al. 2022; adult head, 2 sensory neuron nuclei): photoreceptors of the dorsal rim ommatidia of the retina. Authors' term FBbt:00111065 is a retinal region.",
+  "searches_performed": [
+    "authors' ontology id FBbt:00111065",
+    "'dorsal rim area' (OLS fbbt)",
+    "'dorsal rim photoreceptor' (EBI OLS4 fbbt)",
+    "'dorsal margin photoreceptor cell' (EBI OLS4 fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "dorsal margin photoreceptor cell",
+    "fbbt_id": "FBbt:00004207",
+    "fbbt_definition": "Any eye photoreceptor cell (FBbt:00006009) that is part of some dorsal margin ommatidium (FBbt:02000000).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors' term is a region (dorsal part of the retina, a single row of dorsal margin ommatidia); the report states the cells are photoreceptors of the dorsal rim. The cell-level equivalent is dorsal margin photoreceptor cell (photoreceptor part of a dorsal margin ommatidium).",
+  "other_candidates": [
+    {
+      "fbbt_term": "dorsal rim area",
+      "fbbt_id": "FBbt:00111065",
+      "fbbt_definition": "Dorsal part of the retina, consisting of a single row of (dorsal margin) ommatidia.",
+      "reason_rejected": "Structure, not a cell."
+    },
+    {
+      "fbbt_term": "eye photoreceptor cell",
+      "fbbt_id": "FBbt:00006009",
+      "fbbt_definition": "Photoreceptor cell of the compound eye.",
+      "reason_rejected": "Less specific parent."
+    }
+  ],
+  "recommendation": "Map to dorsal margin photoreceptor cell; region term kept as alternative.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

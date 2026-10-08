@@ -1,0 +1,22 @@
+{
+  "cluster_label": "adult glial cell",
+  "working_definition": "Author cell type 'adult glial cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00100497 'adult glial cell'. Found in: 10x:body (1259 cells), 10x:body_wall (201 cells), 10x:haltere (164 cells), ss2:body_wall (5 cells), ss2:haltere (8 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00100497 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult glial cell",
+    "fbbt_id": "FBbt:00100497",
+    "fbbt_definition": "Glial cell that is part of the adult. Subtypes generally tend to tile, minimizing contact with their glial neighbors and maximizing contact with their neuronal compartment (Kremer et al., 2017). They also do not seem to recognize particular neurons or neuropils; sometimes one glial cell has partial coverage of multiple units and multiple glial cells may tile across the same unit (Kremer et al., 2017).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00100497 'adult glial cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00100497 'adult glial cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

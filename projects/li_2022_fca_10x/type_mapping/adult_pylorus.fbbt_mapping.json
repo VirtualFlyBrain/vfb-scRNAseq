@@ -1,0 +1,20 @@
+{
+  "cluster_label": "adult pylorus",
+  "working_definition": "Epithelial cells of the adult pylorus (anterior hindgut, where Malpighian tubules arise) from the gut analysis (Li et al. 2022; author term FBbt:00100784).",
+  "searches_performed": ["adult pylorus", "pylorus cell", "adult hindgut epithelial cell"],
+  "best_match": {
+    "fbbt_term": "adult hindgut epithelial cell",
+    "fbbt_id": "FBbt:00058276",
+    "fbbt_definition": "Any epithelial cell (FBbt:00000124) that is part of some adult hindgut epithelium (FBbt:00047168).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt has no pylorus-specific cell term; the pylorus is the anterior portion of the adult hindgut, so adult hindgut epithelial cell is the most specific cell-level parent.",
+  "other_candidates": [
+    {"fbbt_term": "adult pylorus", "fbbt_id": "FBbt:00100784", "fbbt_definition": "Anterior portion of the adult hindgut. It is a constriction from which the Malpighian tubules arise.", "reason_rejected": "Organ-region term, not a cell term."}
+  ],
+  "recommendation": "Map to FBbt:00058276 (broad).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

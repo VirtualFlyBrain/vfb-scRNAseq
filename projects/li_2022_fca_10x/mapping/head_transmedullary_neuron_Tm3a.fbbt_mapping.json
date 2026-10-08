@@ -1,0 +1,30 @@
+{
+  "cluster_label": "head_transmedullary neuron Tm3a",
+  "working_definition": "Author cell type 'transmedullary neuron Tm3a' of the Fly Cell Atlas (Li et al. 2022; adult head, 615 cells): Tm3 subtype a; authors' term FBbt:00003791 transmedullary neuron Tm3.",
+  "searches_performed": [
+    "authors' ontology id FBbt:00003791",
+    "'transmedullary neuron Tm3' (OLS fbbt)",
+    "'transmedullary neuron Tm3a' (EBI OLS4 fbbt)",
+    "'Tm3a' (EBI OLS4 fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "transmedullary neuron Tm3",
+    "fbbt_id": "FBbt:00003791",
+    "fbbt_definition": "Transmedullary narrow field neuron that terminates in lobula layers 1 and 4 with bleb-like terminal arborizations; fine arborizations in medulla layers M1, M4, M5; receives input from L1, L5 and Mi1 and outputs to T4 neurons.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt has no Tm3a term. Tm3b exists (FBbt:00110071) but as a direct child of transmedullary neuron, not of Tm3; Tm3 is the authors' own term and the correct parent of subtype a.",
+  "other_candidates": [
+    {
+      "fbbt_term": "transmedullary neuron Tm3b",
+      "fbbt_id": "FBbt:00110071",
+      "fbbt_definition": "Tm3 subtype b.",
+      "reason_rejected": "Different subtype (b)."
+    }
+  ],
+  "recommendation": "Broad match to Tm3; no Tm3a term in FBbt.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

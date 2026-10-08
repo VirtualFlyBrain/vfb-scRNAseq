@@ -1,0 +1,48 @@
+{
+  "cluster_label": "head_T neuron T4/T5c-d",
+  "working_definition": "Author cell type 'T neuron T4/T5c-d' of the Fly Cell Atlas (Li et al. 2022; adult head, 734 cells): T4/T5 neurons of subtypes c and d (lobula plate layers 3 and 4); authors' terms T4c, T4d, T5c, T5d.",
+  "searches_performed": [
+    "authors' ontology ids FBbt:00003734, 00003735, 00003739, 00003740",
+    "'T neuron T4/T5c-d' (OLS fbbt)",
+    "'T4 neuron' (OLS fbbt)",
+    "ancestors of T4/T5 subtypes via EBI OLS4"
+  ],
+  "best_match": {
+    "fbbt_term": "T neuron",
+    "fbbt_id": "FBbt:00003726",
+    "fbbt_definition": "Intrinsic columnar neuron of the optic lobe that has its cell body in the posterior part of the optic lobe and a cell body fiber that bifurcates in the second optic chiasma (Fischbach and Dittrich, 1989).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "Grouped call spanning T4c, T4d, T5c, T5d. T4 and T5 are siblings under T neuron and no intermediate class groups c/d subtypes, so T neuron is the most specific common parent.",
+  "other_candidates": [
+    {
+      "fbbt_term": "T4c neuron",
+      "fbbt_id": "FBbt:00003734",
+      "fbbt_definition": "T4 neuron with its lobula plate arbor in layer 3.",
+      "reason_rejected": "Single member."
+    },
+    {
+      "fbbt_term": "T4d neuron",
+      "fbbt_id": "FBbt:00003735",
+      "fbbt_definition": "T4 neuron with its lobula plate arbor in layer 4.",
+      "reason_rejected": "Single member."
+    },
+    {
+      "fbbt_term": "T5c neuron",
+      "fbbt_id": "FBbt:00003739",
+      "fbbt_definition": "T5 neuron with its lobula plate arbor in layer 3.",
+      "reason_rejected": "Single member."
+    },
+    {
+      "fbbt_term": "T5d neuron",
+      "fbbt_id": "FBbt:00003740",
+      "fbbt_definition": "T5 neuron with its lobula plate arbor in layer 4.",
+      "reason_rejected": "Single member."
+    }
+  ],
+  "recommendation": "Broad match to T neuron; four members listed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

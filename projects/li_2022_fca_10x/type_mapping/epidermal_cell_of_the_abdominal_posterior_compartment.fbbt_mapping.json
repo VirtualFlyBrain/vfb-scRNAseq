@@ -1,0 +1,20 @@
+{
+  "cluster_label": "epidermal cell of the abdominal posterior compartment",
+  "working_definition": "Adult abdominal epidermal cells of the posterior compartment (FCA body wall); authors gave no FBbt term (Manual Annotation).",
+  "searches_performed": ["epidermal cell", "adult epidermal cell", "abdominal posterior compartment epidermal cell"],
+  "best_match": {
+    "fbbt_term": "adult epidermal cell",
+    "fbbt_id": "FBbt:00058242",
+    "fbbt_definition": "Any epidermal cell of the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt has no term for posterior-compartment abdominal epidermal cells; adult epidermal cell is the closest valid parent.",
+  "other_candidates": [
+    {"fbbt_term": "epidermal cell", "fbbt_id": "FBbt:00007325", "fbbt_definition": "Any epithelial cell that is part of some epidermis.", "reason_rejected": "Not stage-specific."}
+  ],
+  "recommendation": "Use adult epidermal cell (FBbt:00058242) as a broad match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

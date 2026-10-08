@@ -1,0 +1,20 @@
+{
+  "cluster_label": "olfactory receptor neuron, coeloconics",
+  "working_definition": "Olfactory receptor neurons of antennal coeloconic sensilla, annotated at sensillum-class level without naming receptors (Li et al. 2022 FCA, Manual Annotation).",
+  "searches_performed": ["olfactory receptor neuron, coeloconics", "coeloconic sensillum olfactory receptor neuron", "antennal olfactory receptor neuron of coeloconic sensillum", "olfactory receptor neuron"],
+  "best_match": {
+    "fbbt_term": "antennal olfactory receptor neuron of coeloconic sensillum",
+    "fbbt_id": "FBbt:00049980",
+    "fbbt_definition": "Odorant receptor neuron (ORN) whose dendrite transduces signals from a coeloconic antennal sensillum.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The label names ORNs of coeloconic sensilla, which is exactly this FBbt class. No adult-specific variant exists; the term is already restricted to the antenna.",
+  "other_candidates": [
+    {"fbbt_term": "antennal coeloconic sensillum C3", "fbbt_id": "FBbt:00007346", "fbbt_definition": "Antennal coeloconic sensillum.", "reason_rejected": "Structure, not a cell term."}
+  ],
+  "recommendation": "Map to FBbt:00049980 (high confidence).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

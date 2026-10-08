@@ -1,0 +1,22 @@
+{
+  "cluster_label": "testis_spermatocyte",
+  "working_definition": "Author cell type 'spermatocyte' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00004936 'spermatocyte'. Found in: 10x:body (30 cells), 10x:testis (3677 cells), ss2:testis (30 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00004936 (FBbt fbbt/releases/2026-10-01)",
+    "'adult spermatocyte' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'spermatocyte' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "spermatocyte",
+    "fbbt_id": "FBbt:00004936",
+    "fbbt_definition": "Male germline cell that is part of the 16-cell spermatocyte cyst. It expresses twine, which regulates the meiotic cycle (Witt et al., 2019).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00004936 'spermatocyte', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00004936 'spermatocyte', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

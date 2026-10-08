@@ -1,0 +1,36 @@
+{
+  "cluster_label": "testis_late primary spermatocyte",
+  "working_definition": "Most advanced primary spermatocyte state in the adult testis, before the meiotic divisions; manual annotation (no authors' FBbt id).",
+  "searches_performed": [
+    "late primary spermatocyte",
+    "primary spermatocyte",
+    "mature primary spermatocyte",
+    "spermatocyte"
+  ],
+  "best_match": {
+    "fbbt_term": "primary spermatocyte",
+    "fbbt_id": "FBbt:00005286",
+    "fbbt_definition": "Male germ cells of the 16-cell cyst from the end of the S-phase that precedes meiosis I to the end of meiosis I. This S-phase occurs very early in the 16-cell cyst stage so almost all 16 cell cysts are at the primary spermatocyte stage.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The label names primary spermatocyte with a 'late' stage qualifier. FBbt has 'mature primary spermatocyte' (morphological late, fully grown stage), but the authors' 'late' is a transcriptional cluster state, so equivalence is not assumed; primary spermatocyte is the type named.",
+  "other_candidates": [
+    {
+      "fbbt_term": "mature primary spermatocyte",
+      "fbbt_id": "FBbt:00057169",
+      "fbbt_definition": "Late, fully grown primary spermatocyte with a large central nucleus, blocky in appearance, often with indentations or grooves, containing Y-loops and a prominent nucleolus. The second nuclear membrane is fully formed. It has a highly developed endoplasmic reticulum, with mitochondria between the cisternae.",
+      "reason_rejected": "Morphology-defined stage; equivalence to the authors' late cluster not established."
+    },
+    {
+      "fbbt_term": "spermatocyte",
+      "fbbt_id": "FBbt:00004936",
+      "fbbt_definition": "Male germline cell that is part of the 16-cell spermatocyte cyst. It expresses twine, which regulates the meiotic cycle (Witt et al., 2019).",
+      "reason_rejected": "Less specific than the primary spermatocyte named in the label."
+    }
+  ],
+  "recommendation": "Use primary spermatocyte (broad); curator may prefer mature primary spermatocyte.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

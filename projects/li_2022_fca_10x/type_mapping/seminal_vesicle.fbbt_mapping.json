@@ -1,0 +1,14 @@
+{
+  "cluster_label": "seminal vesicle",
+  "working_definition": "Organ-named cluster of the adult male reproductive tract; authors' term FBbt:00004958 is the seminal vesicle structure (enlarged distal vas deferens).",
+  "searches_performed": ["seminal vesicle epithelium cell", "seminal vesicle", "semen-secreting cell of the male reproductive system"],
+  "best_match": null,
+  "justification": "FBbt has no seminal vesicle cell or epithelial cell term. The only cell class mentioning seminal vesicle cells (semen-secreting cell of the male reproductive system) is a broader secretory class not established as covering all cells of this cluster, so the cluster is held rather than force a fallback.",
+  "other_candidates": [
+    {"fbbt_term": "seminal vesicle", "fbbt_id": "FBbt:00004958", "fbbt_definition": "Enlarged distal region of the vas deferens. It connects the testis, via the testicular duct, to the main region of the vas deferens.", "reason_rejected": "Authors' structure term; not a cell type."},
+    {"fbbt_term": "semen-secreting cell of the male reproductive system", "fbbt_id": "FBbt:00058293", "fbbt_definition": "Any cell of the male reproductive system that contributes to the production and secretion of seminal fluid proteins; includes cells of the seminal vesicles.", "reason_rejected": "Possible fallback but assumes a secretory identity the authors do not state; curator decision."}
+  ],
+  "recommendation": "Hold; a seminal vesicle cell term would be needed (not requested without curator sign-off).",
+  "new_term_needed": true,
+  "verification_needed": false
+}

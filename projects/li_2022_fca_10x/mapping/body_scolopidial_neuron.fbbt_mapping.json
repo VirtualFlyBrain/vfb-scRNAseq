@@ -1,0 +1,29 @@
+{
+  "cluster_label": "body_scolopidial neuron",
+  "working_definition": "Author cell type 'scolopidial neuron' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00005222 'chordotonal neuron'. Found in: 10x:body (649 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00005222 (FBbt fbbt/releases/2026-10-01)",
+    "'adult chordotonal neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'scolopidial neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult chordotonal neuron",
+    "fbbt_id": "FBbt:00058257",
+    "fbbt_definition": "Any adult neuron (FBbt:00047095) that has sensory dendrite in some chordotonal organ (FBbt:00005215).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00005222 'chordotonal neuron', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00058257 'adult chordotonal neuron', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "chordotonal neuron",
+      "fbbt_id": "FBbt:00005222",
+      "fbbt_definition": "Sensory neuron of a chordotonal organ. The tip of its dendrite is associated with a rod-like structure called a scolopale rod.",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00058257 'adult chordotonal neuron' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

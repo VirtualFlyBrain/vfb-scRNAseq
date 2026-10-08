@@ -163,3 +163,7 @@ annotations:
 unidentified:
   rule: none
   hold_unidentified: true
+
+# FBbt mappings are made once per author type (type_mapping/: scripted confirmations
+# from confirm_author_terms.py + map-clusters-to-fbbt agents from reports/) and copied
+# per cluster by scripts/expand_type_mappings.py (also used by li_2022_fca_ss2).

@@ -1,0 +1,22 @@
+{
+  "cluster_label": "proboscis_and_maxillary_palps_maxillary palp olfactory receptor neuron",
+  "working_definition": "Author cell type 'maxillary palp olfactory receptor neuron' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00007353 'maxillary palp olfactory receptor neuron'. Found in: 10x:proboscis_and_maxillary_palps (742 cells), ss2:proboscis_and_maxillary_palps (11 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00007353 (FBbt fbbt/releases/2026-10-01)",
+    "'adult maxillary palp olfactory receptor neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'maxillary palp olfactory receptor neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "maxillary palp olfactory receptor neuron",
+    "fbbt_id": "FBbt:00007353",
+    "fbbt_definition": "Odorant receptor neuron (ORN) whose dendrite transduces signals from a maxillary palp basiconic sensillum. The axons of these neurons fasciculate in the labial nerve and the antenno-subesophageal tract (AST) and innervate the antennal lobe.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00007353 'maxillary palp olfactory receptor neuron', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00007353 'maxillary palp olfactory receptor neuron', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

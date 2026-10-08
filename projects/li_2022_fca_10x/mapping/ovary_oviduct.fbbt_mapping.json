@@ -1,0 +1,28 @@
+{
+  "cluster_label": "ovary_oviduct",
+  "working_definition": "Cells of the female oviduct captured in the ovary dissection; authors' term FBbt:00004911 oviduct (anatomical structure), broad class epithelial cell.",
+  "searches_performed": [
+    "oviduct",
+    "oviduct epithelial cell"
+  ],
+  "best_match": {
+    "fbbt_term": "oviduct epithelial cell",
+    "fbbt_id": "FBbt:00058273",
+    "fbbt_definition": "Epithelial cell of the oviduct. It has convoluted intracellular membranous structures and extensive microvilli, suggestive of a role in secretion (Middleton et al., 2006).",
+    "match_type": "narrow match",
+    "skos_mapping": "skos:narrowMatch",
+    "confidence": "low"
+  },
+  "justification": "The authors' term is the oviduct structure; per cell-level rule the cell-level equivalent is oviduct epithelial cell, supported by the authors' epithelial broad class. It is the only oviduct cell term in FBbt, though the cluster may include other oviduct cells (e.g. muscle).",
+  "other_candidates": [
+    {
+      "fbbt_term": "oviduct",
+      "fbbt_id": "FBbt:00004911",
+      "fbbt_definition": "Authors' structure term (anatomical structure).",
+      "reason_rejected": "Tissue/organ term; not a cell type."
+    }
+  ],
+  "recommendation": "Map to oviduct epithelial cell; curator may prefer to hold if the cluster is not epithelial.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

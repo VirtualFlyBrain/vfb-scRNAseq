@@ -1,0 +1,20 @@
+{
+  "cluster_label": "adult hindgut",
+  "working_definition": "Hindgut epithelial cells (body and Malpighian tubule analyses; Li et al. 2022; author term FBbt:00003143 adult hindgut; broad class epithelial cell).",
+  "searches_performed": ["adult hindgut", "adult hindgut epithelial cell"],
+  "best_match": {
+    "fbbt_term": "adult hindgut epithelial cell",
+    "fbbt_id": "FBbt:00058276",
+    "fbbt_definition": "Any epithelial cell (FBbt:00000124) that is part of some adult hindgut epithelium (FBbt:00047168).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "Authors' term is the organ; cell-level equivalent is adult hindgut epithelial cell.",
+  "other_candidates": [
+    {"fbbt_term": "adult hindgut", "fbbt_id": "FBbt:00003143", "fbbt_definition": "Posterior part of the adult alimentary canal, from the posterior end of the midgut to the rectum.", "reason_rejected": "Organ term, not a cell term."}
+  ],
+  "recommendation": "Map to FBbt:00058276.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

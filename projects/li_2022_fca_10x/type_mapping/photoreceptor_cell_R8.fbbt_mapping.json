@@ -1,0 +1,22 @@
+{
+  "cluster_label": "photoreceptor cell R8",
+  "working_definition": "Author cell type 'photoreceptor cell R8' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00004227 'photoreceptor cell R8'. Found in: 10x:head (1473 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00004227 (FBbt fbbt/releases/2026-10-01)",
+    "'adult photoreceptor cell R8' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'photoreceptor cell R8' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "photoreceptor cell R8",
+    "fbbt_id": "FBbt:00004227",
+    "fbbt_definition": "Inner photoreceptor cell of the ommatidium whose rhabdomere is located proximally, directly below that of R7 (Wernet and Desplan, 2004). It has a single axon that extends through a single column of the lamina without making synapses and crosses the first optic chiasm to reach the medulla (Fischbach and Dittrich, 1989). It forms reciprocal inhibitory histaminergic synapses with the R8 photoreceptor of the same optic column (Schnaitmann et al., 2018), with a large proportion in the first optic chiasm (Kind et al., 2021). It is also cholinergic (Davis et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00004227 'photoreceptor cell R8', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00004227 'photoreceptor cell R8', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

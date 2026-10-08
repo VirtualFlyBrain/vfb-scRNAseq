@@ -1,0 +1,30 @@
+{
+  "cluster_label": "late cyst cell branch b",
+  "working_definition": "Late-stage cyst cells of the adult testis, branch b of a late a/b pair; not described in the paper. Authors had no FBbt term (Manual Annotation).",
+  "searches_performed": [
+    "late cyst cell branch b",
+    "late cyst cell",
+    "cyst cell of testis",
+    "head cyst cell / tail cyst cell"
+  ],
+  "best_match": {
+    "fbbt_term": "cyst cell of testis",
+    "fbbt_id": "FBbt:00004931",
+    "fbbt_definition": "One of a pair of somatic cells that envelope each cyst of developing male germline cells.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "'Late' is a lineage-stage label with no FBbt term; head/tail cyst cells (spermatid stage) are possible but not stated by the authors.",
+  "other_candidates": [
+    {
+      "fbbt_term": "spermatid cyst cell",
+      "fbbt_id": "FBbt:00057008",
+      "fbbt_definition": "Cyst cell of a spermatid cyst.",
+      "reason_rejected": "Authors do not state the spermatid stage; 'late' may equally refer to late spermatocyte stages."
+    }
+  ],
+  "recommendation": "Broad match to cyst cell of testis.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

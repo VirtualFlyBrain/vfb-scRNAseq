@@ -1,0 +1,30 @@
+{
+  "cluster_label": "testis_spermatogonium-spermatocyte transition",
+  "working_definition": "Male germ cells at the transition between late proliferating spermatogonia and early primary spermatocytes in the adult testis; authors assign FBbt:00004936 spermatocyte.",
+  "searches_performed": [
+    "spermatogonium-spermatocyte transition",
+    "spermatocyte",
+    "spermatogonium",
+    "male germline cell"
+  ],
+  "best_match": {
+    "fbbt_term": "spermatocyte",
+    "fbbt_id": "FBbt:00004936",
+    "fbbt_definition": "Male germline cell that is part of the 16-cell spermatocyte cyst. It expresses twine, which regulates the meiotic cycle (Witt et al., 2019).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Authors' FBbt id kept (not obsolete, cell term, no adult variant). The label names a transitional state with no FBbt term; spermatocyte is the authors' committed level.",
+  "other_candidates": [
+    {
+      "fbbt_term": "spermatogonium",
+      "fbbt_id": "FBbt:00004935",
+      "fbbt_definition": "Male germline cell found in the spermatogonial cyst. It specifically expresses bag of marbles (bam), which is required for its differentiation (Witt et al., 2019).",
+      "reason_rejected": "Authors assigned spermatocyte."
+    }
+  ],
+  "recommendation": "Use spermatocyte (broad).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

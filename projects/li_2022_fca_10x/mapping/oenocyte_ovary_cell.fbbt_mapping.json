@@ -1,0 +1,22 @@
+{
+  "cluster_label": "oenocyte_ovary cell",
+  "working_definition": "Ovary-like cells appearing in non-ovary analyses (oenocyte, body wall); Manual Annotation, broad class female reproductive system. An organ-level remainder group.",
+  "searches_performed": [
+    "ovary cell",
+    "cell of ovary",
+    "cell of female reproductive system"
+  ],
+  "best_match": null,
+  "justification": "No generic 'ovary cell' term exists in FBbt; available ovary cell terms are specific (somatic cell of ovariole, ovarian sheath cell, germline types) and none covers the general ovary cell group.",
+  "other_candidates": [
+    {
+      "fbbt_term": "somatic cell of ovariole",
+      "fbbt_id": "FBbt:00006030",
+      "fbbt_definition": "Somatic cell that is part of the ovariole. This does not include the ovarian sheath.",
+      "reason_rejected": "Excludes germline and sheath cells; narrower than 'ovary cell'."
+    }
+  ],
+  "recommendation": "Hold; no adequate term.",
+  "new_term_needed": true,
+  "verification_needed": false
+}

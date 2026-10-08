@@ -1,0 +1,35 @@
+{
+  "cluster_label": "octopaminergic/tyraminergic neuron",
+  "working_definition": "Author cell type 'octopaminergic/tyraminergic neuron' of the Fly Cell Atlas (Li et al. 2022; adult head, 120 cells): neurons using octopamine or tyramine; authors' terms octopaminergic neuron (FBbt:00007364) and tyraminergic neuron (FBbt:00100397).",
+  "searches_performed": [
+    "authors' ontology ids FBbt:00007364, FBbt:00100397",
+    "'adult octopaminergic neuron' (EBI OLS4 fbbt)",
+    "ancestors of adult octopaminergic and adult tyraminergic neuron via EBI OLS4"
+  ],
+  "best_match": {
+    "fbbt_term": "adult aminergic neuron",
+    "fbbt_id": "FBbt:00058201",
+    "fbbt_definition": "Any aminergic neuron of the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Grouped call of two classes. Adult octopaminergic neuron and adult tyraminergic neuron both have adult aminergic neuron as ancestor (verified); it is the most specific common parent and adult-appropriate.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult octopaminergic neuron",
+      "fbbt_id": "FBbt:00058203",
+      "fbbt_definition": "Any octopaminergic neuron of the adult.",
+      "reason_rejected": "One member of the group."
+    },
+    {
+      "fbbt_term": "adult tyraminergic neuron",
+      "fbbt_id": "FBbt:00058204",
+      "fbbt_definition": "Any tyraminergic neuron of the adult.",
+      "reason_rejected": "One member of the group."
+    }
+  ],
+  "recommendation": "Broad match to adult aminergic neuron; members listed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -751,6 +751,9 @@ VFB until the release files are merged, so ids can still change during review.
 7. **Mapping:** dispatch `map-clusters-to-fbbt` subagents (the curation rules are in
    the agent); `assign_placeholders.py` for class-anchored unnamed clusters. Check
    that broad-match parents are true ancestors of the members.
+   When author types recur across clusterings, map once per type into
+   `type_mapping/` and copy per cluster with `expand_type_mappings.py` (config
+   `type_mapping.from` lets a sibling project share them).
 8. **Review:** `collate_mapping.py` → `mapping.tsv` (optionally with a `prior_mapping`
    crosswalk to the old load); curator changes are made in the mapping JSON with a
    `manual_edit` block.
@@ -814,4 +817,14 @@ Curator decisions (2026-10-07):
   Cluster each (`fixed_annotation`, `membership: sorted`), typed from the authors'
   sample description. Such Clusters are named "<type> cells, predicted / sorted (...)"
   and carry a `title` (IAO:0000115) saying they are not transcriptomic clusters.
+- **Mapping (stage 3, FBbt 2026-10-01):** once per author type (252 types) in
+  `li_2022_fca_10x/type_mapping/`, copied to every cluster of both projects by
+  `expand_type_mappings.py`. 135 types with a single current author FBbt cell term were
+  confirmed by script (`confirm_author_terms.py`: the author term, or its 'adult X'
+  variant — 22 upgraded); the other 117 (no author term, several terms, tissue/organ or
+  obsolete terms, stage-qualified labels) got reports and `map-clusters-to-fbbt`
+  agents. Curator rules (2026-10-08): **cell-level terms only** — a tissue/organ author
+  term maps to its cell-level equivalent, else the cluster is held; **no narrowing by
+  dissected tissue** — generic types map at the authors' level in every tissue.
+  13 types are held (no adequate cell term).
 - **Expression:** `expression.tsv` committed gzipped (too large otherwise).

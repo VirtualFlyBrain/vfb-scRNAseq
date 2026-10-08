@@ -1,0 +1,22 @@
+{
+  "cluster_label": "centrifugal neuron C3",
+  "working_definition": "Author cell type 'centrifugal neuron C3' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00003744 'centrifugal neuron C3'. Found in: 10x:head (617 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00003744 (FBbt fbbt/releases/2026-10-01)",
+    "'adult centrifugal neuron C3' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'centrifugal neuron C3' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "centrifugal neuron C3",
+    "fbbt_id": "FBbt:00003744",
+    "fbbt_definition": "Adult centrifugal neuron with arborizations in medulla layers M1-2, M5, and M9-10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). It forms presynapses and postsynapses in the lamina (Morante and Desplan, 2008; Rivera-Alba et al., 2011). In the medulla it is strongly presynaptic to monopolar lamina neuron L2 and columnar neuron T1, and strongly postsynaptic to L1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010). There is usually one of these cells per optic column (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00003744 'centrifugal neuron C3', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00003744 'centrifugal neuron C3', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

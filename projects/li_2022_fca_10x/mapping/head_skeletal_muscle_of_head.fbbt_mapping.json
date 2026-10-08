@@ -1,0 +1,22 @@
+{
+  "cluster_label": "head_skeletal muscle of head",
+  "working_definition": "Author cell type 'skeletal muscle of head' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00003260 'adult somatic muscle cell of head'. Found in: 10x:head (1579 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00003260 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult somatic muscle cell of head' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'skeletal muscle of head' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult somatic muscle cell of head",
+    "fbbt_id": "FBbt:00003260",
+    "fbbt_definition": "Any muscle cell (FBbt:00005074) that is part of some adult somatic muscle of head (FBbt:00058785).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00003260 'adult somatic muscle cell of head', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00003260 'adult somatic muscle cell of head', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

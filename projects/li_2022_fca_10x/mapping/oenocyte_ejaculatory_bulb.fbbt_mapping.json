@@ -1,0 +1,35 @@
+{
+  "cluster_label": "oenocyte_ejaculatory bulb",
+  "working_definition": "Largest male reproductive tract cluster named for the ejaculatory bulb (authors' term FBbt:00004962, a structure); the cells are presumably the secretory columnar epithelial cells of the bulb wall.",
+  "searches_performed": [
+    "ejaculatory bulb",
+    "ejaculatory bulb epithelium",
+    "ejaculatory bulb epithelial cell"
+  ],
+  "best_match": {
+    "fbbt_term": "ejaculatory bulb epithelial cell",
+    "fbbt_id": "FBbt:00058269",
+    "fbbt_definition": "Cell of the epithelium of the ejaculatory bulb. It secretes the male pheromone cis-vaccenyl acetate (cVA) (Guiraudie-Capraz et al., 2007).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors' term is the organ (a structure). The bulb wall is a columnar epithelium, so the cell-level term is the ejaculatory bulb epithelial cell. Marked broad/medium because the organ label could include non-epithelial cells and the same term is also used for the separate 'ejaculatory bulb epithelium' cluster.",
+  "other_candidates": [
+    {
+      "fbbt_term": "ejaculatory bulb",
+      "fbbt_id": "FBbt:00004962",
+      "fbbt_definition": "Bilaterally symmetric structure with two anterior and two posterior lateral lobes... walls consist of a thick columnar epithelium.",
+      "reason_rejected": "Authors' structure term; not a cell type."
+    },
+    {
+      "fbbt_term": "semen-secreting cell of the male reproductive system",
+      "fbbt_id": "FBbt:00058293",
+      "fbbt_definition": "Any cell of the male reproductive system that contributes to the production and secretion of seminal fluid proteins; includes accessory gland, seminal vesicle and ejaculatory bulb cells.",
+      "reason_rejected": "Less specific."
+    }
+  ],
+  "recommendation": "Map to ejaculatory bulb epithelial cell as the cell-level equivalent; curator may wish to note overlap with the 'ejaculatory bulb epithelium' type.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

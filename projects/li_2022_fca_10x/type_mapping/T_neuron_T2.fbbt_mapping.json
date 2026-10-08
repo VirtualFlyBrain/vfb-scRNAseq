@@ -1,0 +1,22 @@
+{
+  "cluster_label": "T neuron T2",
+  "working_definition": "Author cell type 'T neuron T2' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00003728 'T2 neuron'. Found in: 10x:head (604 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00003728 (FBbt fbbt/releases/2026-10-01)",
+    "'adult T2 neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'T neuron T2' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "T2 neuron",
+    "fbbt_id": "FBbt:00003728",
+    "fbbt_definition": "T neuron with its soma posteriorly adjacent to the gap between the medulla and lobula plate and a cell body fiber that projects along the proximal surface of the medulla before branching in the second optic chiasm (Fischbach and Dittrich, 1989; Shinomiya et al., 2019). One branch projects into a medulla column, where it forms a bushy, fine, arborization in medulla layer M9 and then projects through the rest of the medulla column, forming fine arborizations in M1, M2 and M5. The other branch forms a terminal arborization in lobula layer 3 that is much wider than a single column and has bleb-type terminal branches. It seems to be capable of cholinergic and GABAergic neurotransmission.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00003728 'T2 neuron', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00003728 'T2 neuron', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

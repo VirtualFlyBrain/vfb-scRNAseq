@@ -1,0 +1,24 @@
+{
+  "cluster_label": "trachea_btl-GAL4 positive female cell, cluster 3, likely to be ovary cell",
+  "working_definition": "Female cells recovered in the btl-GAL4 trachea sample that the authors judge likely to be ovary cells (Li et al. 2022, Fly Cell Atlas). Authors gave 'Manual Annotation' (no FBbt id); no cell type is named beyond ovary origin.",
+  "searches_performed": [
+    "btl-GAL4 positive female cell, cluster 3, likely to be ovary cell",
+    "ovary cell",
+    "cell of ovary",
+    "female reproductive system cell",
+    "somatic cell of ovariole"
+  ],
+  "best_match": null,
+  "justification": "The authors commit only to 'ovary cell' (uncertain origin). FBbt has no generic cell-level term for a cell of the ovary; somatic cell of ovariole (FBbt:00006030) would exclude germline cells and exceed the authors' commitment, and ovary/ovariole terms are structures, not cells.",
+  "other_candidates": [
+    {
+      "fbbt_term": "somatic cell of ovariole",
+      "fbbt_id": "FBbt:00006030",
+      "fbbt_definition": "Somatic cell that is part of the ovariole. This does not include the ovarian sheath.",
+      "reason_rejected": "Narrower than the authors' 'ovary cell' (excludes germline and sheath cells); would over-commit."
+    }
+  ],
+  "recommendation": "Hold: no adequate cell-level FBbt term for a generic ovary cell.",
+  "new_term_needed": true,
+  "verification_needed": false
+}

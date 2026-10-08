@@ -1,0 +1,22 @@
+{
+  "cluster_label": "lobula columnar neuron LC10",
+  "working_definition": "Author cell type 'lobula columnar neuron LC10' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00100482 'lobula columnar neuron LC10'. Found in: 10x:head (182 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00100482 (FBbt fbbt/releases/2026-10-01)",
+    "'adult lobula columnar neuron LC10' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'lobula columnar neuron LC10' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "lobula columnar neuron LC10",
+    "fbbt_id": "FBbt:00100482",
+    "fbbt_definition": "Lobula columnar neuron whose cell body lies in the dorsal region of the lateral cell body region. Its axon crosses ipsilaterally along the anterior optic tract, projecting to the anterior optic tubercle (AOTU). There are 2 main subtypes, which differ in how they project in the AOTU. For each subtype the relative order of the terminals along the dorsal/ventral axis of the AOTU matches the order along the anterior/posterior axis in the lobula.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00100482 'lobula columnar neuron LC10', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00100482 'lobula columnar neuron LC10', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}
