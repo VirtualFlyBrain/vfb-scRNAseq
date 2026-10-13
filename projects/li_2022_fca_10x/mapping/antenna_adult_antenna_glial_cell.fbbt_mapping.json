@@ -7,7 +7,14 @@
     "adult antennal glial cell",
     "glial cell of antenna"
   ],
-  "best_match": null,
+  "best_match": {
+    "fbbt_term": "adult PNS glial cell",
+    "fbbt_id": "FBbt:00058258",
+    "fbbt_definition": "Any PNS glial cell of the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
   "justification": "FBbt has no term for glia of the antenna as a whole. 'glial cell of adult antennal nerve' denotes nerve glia only, and the antennal lobe glia terms are CNS glia. Generic glial or PNS glial terms would be a fallback rather than the type the authors name, so the cluster is held.",
   "other_candidates": [
     {
@@ -15,15 +22,15 @@
       "fbbt_id": "FBbt:00100307",
       "fbbt_definition": "Glial cell of the adult antennal nerve (child of PNS glial cell).",
       "reason_rejected": "Restricted to the antennal nerve; not the antenna glia named by the authors."
-    },
-    {
-      "fbbt_term": "adult PNS glial cell",
-      "fbbt_id": "FBbt:00058258",
-      "fbbt_definition": "Any PNS glial cell of the adult.",
-      "reason_rejected": "Generic fallback; the authors do not name PNS glia."
     }
   ],
-  "recommendation": "No adequate FBbt term; hold the cluster (best_match null). Possible new term: adult antennal glial cell.",
-  "new_term_needed": true,
-  "verification_needed": false
+  "recommendation": "Curator decision: map to FBbt:00058258 'adult PNS glial cell' (broad match).",
+  "new_term_needed": false,
+  "verification_needed": false,
+  "manual_edit": {
+    "by": "Clare Pilgrim (Clare72)",
+    "date": "2026-10-13",
+    "change": "best_match null (held) -> FBbt:00058258 adult PNS glial cell (broad, medium)",
+    "reason": "curator: map to the broad adult PNS glial cell term rather than hold"
+  }
 }
