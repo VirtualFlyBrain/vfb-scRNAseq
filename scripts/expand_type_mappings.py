@@ -11,9 +11,10 @@ Config (optional, config.yaml):
   type_mapping:
     from: <project>      # take the type mappings from another project (default: own)
 
-A cluster-level file carrying `manual_edit` is never overwritten (curators should
-normally edit the type-level file instead); stale cluster files for labels no longer
-present are removed.
+Curators normally edit the type-level file; its `manual_edit` block is copied to the
+clusters (so mapping.tsv shows it). A cluster-level file whose own `manual_edit`
+differs from its type's (a cluster-specific edit) is never overwritten. Stale cluster
+files for labels no longer present are removed.
 
 Usage:
     uv run python scripts/expand_type_mappings.py --project li_2022_fca_ss2
@@ -43,16 +44,17 @@ def expand(proj: Path, type_dir: Path) -> tuple[int, list[str], list[str]]:
             continue
         dest = mdir / f"{label_slug(a['label'])}.fbbt_mapping.json"
         wanted.add(dest.name)
-        if dest.exists() and "manual_edit" in json.loads(dest.read_text()):
-            kept.append(a["label"])
-            continue
         src = type_dir / f"{label_slug(a.get('type', a['label']))}.fbbt_mapping.json"
-        if not src.exists():
+        m = json.loads(src.read_text()) if src.exists() else None
+        if dest.exists():
+            own = json.loads(dest.read_text()).get("manual_edit")
+            if own and own != (m or {}).get("manual_edit"):
+                kept.append(a["label"])          # cluster-specific curator edit
+                continue
+        if m is None:
             missing.append(f"{a['label']} (type {a.get('type')!r})")
             continue
-        m = json.loads(src.read_text())
         m["cluster_label"] = a["label"]
-        m.pop("manual_edit", None)      # a type-level curator edit is recorded on the type file
         dest.write_text(json.dumps(m, indent=2, ensure_ascii=False) + "\n")
         n += 1
     for stale in mdir.glob("*.fbbt_mapping.json"):
