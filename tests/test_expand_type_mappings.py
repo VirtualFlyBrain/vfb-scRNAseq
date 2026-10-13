@@ -26,11 +26,16 @@ def test_expand_copies_per_cluster_and_keeps_manual_edits(tmp_path):
         {"label": "leg_unannotated", "type": "unannotated", "unannotated": True},
     ]}))
     (tdir / "hemocyte.fbbt_mapping.json").write_text(json.dumps({"cluster_label": "hemocyte", "x": 1}))
+    (tdir / "glia.fbbt_mapping.json").write_text(json.dumps(
+        {"cluster_label": "glia", "manual_edit": {"by": "curator", "reason": "type edit"}}))
     (proj / "mapping" / "leg_hemocyte.fbbt_mapping.json").write_text(
         json.dumps({"cluster_label": "leg_hemocyte", "manual_edit": {"by": "curator"}}))
     (proj / "mapping" / "old_label.fbbt_mapping.json").write_text("{}")
     n, kept, missing = _mod().expand(proj, tdir)
-    assert n == 1 and kept == ["leg_hemocyte"] and missing == ["leg_glia (type 'glia')"]
+    assert n == 2 and kept == ["leg_hemocyte"] and missing == []
+    # a type-level curator edit travels with the copy (and is shown in mapping.tsv)
+    assert json.loads((proj / "mapping" / "leg_glia.fbbt_mapping.json").read_text())["manual_edit"] == \
+        {"by": "curator", "reason": "type edit"}
     assert json.loads((proj / "mapping" / "wing_hemocyte.fbbt_mapping.json").read_text()) == \
         {"cluster_label": "wing_hemocyte", "x": 1}
     assert "manual_edit" in json.loads((proj / "mapping" / "leg_hemocyte.fbbt_mapping.json").read_text())
