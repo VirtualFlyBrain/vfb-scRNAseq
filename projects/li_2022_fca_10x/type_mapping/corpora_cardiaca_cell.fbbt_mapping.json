@@ -1,20 +1,40 @@
 {
   "cluster_label": "corpora cardiaca cell",
   "working_definition": "Akh-GAL4-sorted adult corpora cardiaca cells (Smart-seq2 population), i.e. Akh-producing endocrine cells of the corpus cardiacum.",
-  "searches_performed": ["corpora cardiaca cell", "Akh secreting cell"],
+  "searches_performed": [
+    "corpora cardiaca cell",
+    "Akh secreting cell"
+  ],
   "best_match": {
-    "fbbt_term": "Akh secreting cell",
-    "fbbt_id": "FBbt:00058017",
-    "fbbt_definition": "Peptidergic neuron that secretes the Adipokinetic hormone (Akh). These cells are exclusively found in the corpora cardiaca. They express Akh from late embryos to adult stage (Lee and Park, 2004).",
+    "fbbt_term": "adult Akh secreting cell",
+    "fbbt_id": "FBbt:00058019",
+    "fbbt_definition": "Peptidergic neuron that secretes the glucagon-like Adipokinetic hormone (Akh). There are approximately 23 of these cells, all found in the adult corpus cardiacum. They have projections to the crop (Lee and Park, 2004; Hadjieconomou et al., 2020).",
     "match_type": "exact match",
     "skos_mapping": "skos:exactMatch",
-    "confidence": "medium"
+    "confidence": "high"
   },
   "justification": "Sample typed from the Akh-GAL4-sorted population; FBbt has no generic 'corpus cardiacum cell' term, and Akh secreting cells are the corpora cardiaca endocrine cells. No adult-specific variant exists.",
   "other_candidates": [
-    {"fbbt_term": "endocrine cell of the ring gland", "fbbt_id": "FBbt:00058235", "fbbt_definition": "Endocrine cell of the ring gland.", "reason_rejected": "Broader parent of Akh secreting cell."}
+    {
+      "fbbt_term": "Akh secreting cell",
+      "fbbt_id": "FBbt:00058017",
+      "fbbt_definition": "Peptidergic neuron that secretes the Adipokinetic hormone (Akh). These cells are exclusively found in the corpora cardiaca. They express Akh from late embryos to adult stage (Lee and Park, 2004).",
+      "reason_rejected": "Agent's original best match; replaced by curator (2026-10-13)."
+    },
+    {
+      "fbbt_term": "endocrine cell of the ring gland",
+      "fbbt_id": "FBbt:00058235",
+      "fbbt_definition": "Endocrine cell of the ring gland.",
+      "reason_rejected": "Broader parent of Akh secreting cell."
+    }
   ],
-  "recommendation": "Use Akh secreting cell (FBbt:00058017).",
+  "recommendation": "Curator decision: map to FBbt:00058019 'adult Akh secreting cell' (exact match).",
   "new_term_needed": false,
-  "verification_needed": false
+  "verification_needed": false,
+  "manual_edit": {
+    "by": "Clare Pilgrim (Clare72)",
+    "date": "2026-10-13",
+    "change": "best_match FBbt:00058017 Akh secreting cell (exact, medium) -> FBbt:00058019 adult Akh secreting cell (exact, high)",
+    "reason": "curator: use the adult-specific term (data are adult)"
+  }
 }

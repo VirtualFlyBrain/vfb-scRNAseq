@@ -1,13 +1,35 @@
 {
   "cluster_label": "antimicrobial peptide-producing cell",
   "working_definition": "Gut cluster defined by antimicrobial peptide expression (Li et al. 2022; Manual Annotation, broad class artefact); an expression-state group with no stated anatomical identity.",
-  "searches_performed": ["antimicrobial peptide-producing cell", "antimicrobial peptide producing cell", "AMP expressing cell"],
-  "best_match": null,
+  "searches_performed": [
+    "antimicrobial peptide-producing cell",
+    "antimicrobial peptide producing cell",
+    "AMP expressing cell"
+  ],
+  "best_match": {
+    "fbbt_term": "antimicrobial peptide-producing plasmatocyte",
+    "fbbt_id": "FBbt:00059377",
+    "fbbt_definition": "A plasmatocyte that can secrete antimicrobial peptides in response to a pathogen (Leitao et al., 2020; Tattikota et al., 2020; Csordas et al., 2021).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
   "justification": "FBbt has no antimicrobial-peptide-producing cell term in the gut; the only hit (plasmatocyte) is a hemocyte, unrelated to this gut cluster. No generic fallback is used.",
   "other_candidates": [
-    {"fbbt_term": "plasmatocyte", "fbbt_id": "FBbt:00058145", "fbbt_definition": "Phagocytic hemocyte. These cells represent about 90% of all hemocytes and secrete antimicrobial peptides and opsonins.", "reason_rejected": "Hemocyte; the cluster is from the gut analysis and the authors do not call it a hemocyte."}
+    {
+      "fbbt_term": "plasmatocyte",
+      "fbbt_id": "FBbt:00058145",
+      "fbbt_definition": "Phagocytic hemocyte. These cells represent about 90% of all hemocytes and secrete antimicrobial peptides and opsonins.",
+      "reason_rejected": "Hemocyte; the cluster is from the gut analysis and the authors do not call it a hemocyte."
+    }
   ],
-  "recommendation": "Hold (no adequate term); new term only with curator sign-off.",
-  "new_term_needed": true,
-  "verification_needed": false
+  "recommendation": "Curator decision: map to FBbt:00059377 'antimicrobial peptide-producing plasmatocyte' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false,
+  "manual_edit": {
+    "by": "Clare Pilgrim (Clare72)",
+    "date": "2026-10-13",
+    "change": "best_match null (held) -> FBbt:00059377 antimicrobial peptide-producing plasmatocyte (exact, medium)",
+    "reason": "curator: the authors' antimicrobial peptide-producing cells correspond to FBbt antimicrobial peptide-producing plasmatocyte"
+  }
 }
