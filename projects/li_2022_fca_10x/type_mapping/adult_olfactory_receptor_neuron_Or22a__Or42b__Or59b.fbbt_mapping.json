@@ -1,0 +1,22 @@
+{
+  "cluster_label": "adult olfactory receptor neuron Or22a, Or42b, Or59b",
+  "working_definition": "Antennal odorant-receptor ORN cluster grouping Or22a, Or42b and Or59b neurons (basiconic sensilla ab3, ab1, ab2; Li et al. 2022 FCA, Manual Annotation).",
+  "searches_performed": ["adult olfactory receptor neuron Or22a, Or42b, Or59b", "adult olfactory receptor neuron Or22a", "adult olfactory receptor neuron Or42b", "adult olfactory receptor neuron Or59b", "antennal olfactory receptor neuron of basiconic sensillum"],
+  "best_match": {
+    "fbbt_term": "antennal olfactory receptor neuron of basiconic sensillum",
+    "fbbt_id": "FBbt:00049977",
+    "fbbt_definition": "Odorant receptor neuron (ORN) whose dendrite transduces signals from a basiconic antennal sensillum.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Grouped call. OLS parents checked: Or22 (FBbt:00067025), Or42b (FBbt:00067046) and Or59b (FBbt:00067003) are all direct children of antennal ORN of basiconic sensillum. No adult-specific basiconic ORN term exists.",
+  "other_candidates": [
+    {"fbbt_term": "adult olfactory receptor neuron Or22", "fbbt_id": "FBbt:00067025", "fbbt_definition": "Bilateral ORN expressing Or22a and Or22b, ab3 sensillum, glomerulus DM2.", "reason_rejected": "Single member."},
+    {"fbbt_term": "adult olfactory receptor neuron Or42b", "fbbt_id": "FBbt:00067046", "fbbt_definition": "Adult ORN expressing Or42b.", "reason_rejected": "Single member."},
+    {"fbbt_term": "adult olfactory receptor neuron Or59b", "fbbt_id": "FBbt:00067003", "fbbt_definition": "Adult ORN expressing Or59b.", "reason_rejected": "Single member."}
+  ],
+  "recommendation": "Map broadly to FBbt:00049977 (medium confidence); members listed in other_candidates.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

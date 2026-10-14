@@ -1,0 +1,21 @@
+{
+  "cluster_label": "adult olfactory receptor neuron acid-sensing, Ir64a",
+  "working_definition": "Acid-sensing Ir64a ionotropic-receptor ORNs of the antenna (sacculus), projecting to DC4/DP1m (Li et al. 2022 FCA, Manual Annotation).",
+  "searches_performed": ["adult olfactory receptor neuron acid-sensing, Ir64a", "adult olfactory receptor neuron Ir64a", "adult olfactory receptor neuron Ir64a DC4", "antennal olfactory receptor neuron of grooved sensillum of sacculus"],
+  "best_match": {
+    "fbbt_term": "adult olfactory receptor neuron Ir64a",
+    "fbbt_id": "FBbt:00110019",
+    "fbbt_definition": "Bilateral olfactory receptor neuron that expresses the ionotropic glutamate receptor (Ir) 64a and the co-receptor Ir8a (Benton et al., 2025). There are two subtypes, one that innervates the DC4 glomerulus and one that innervates DP1m (Ai et al., 2010). Its dendrite transduces signals from a grooved sensillum of chamber III of the sacculus (Shanbhag et al., 1995).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "A single named receptor type (Ir64a, acid-sensing), matching the FBbt Ir64a ORN term, which covers both DC4 and DP1m subtypes. The authors do not resolve the subtypes.",
+  "other_candidates": [
+    {"fbbt_term": "adult olfactory receptor neuron Ir64a DC4", "fbbt_id": "FBbt:00111210", "fbbt_definition": "Adult Ir64a ORN innervating DC4, responds to acid and CO2.", "reason_rejected": "Subtype not resolved by the authors."},
+    {"fbbt_term": "adult olfactory receptor neuron Ir64a DP1m", "fbbt_id": "FBbt:00111212", "fbbt_definition": "Adult Ir64a ORN innervating DP1m.", "reason_rejected": "Subtype not resolved by the authors."}
+  ],
+  "recommendation": "Map to FBbt:00110019 (medium confidence).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,30 @@
+{
+  "cluster_label": "early cyst cell 2",
+  "working_definition": "Early post-mitotic (string-negative) cyst cells of the adult testis following CySCs in the authors' trajectory; second of two early clusters. Authors had no FBbt term (Manual Annotation).",
+  "searches_performed": [
+    "early cyst cell 2",
+    "early cyst cell",
+    "cyst cell of testis",
+    "spermatogonial cyst cell"
+  ],
+  "best_match": {
+    "fbbt_term": "cyst cell of testis",
+    "fbbt_id": "FBbt:00004931",
+    "fbbt_definition": "One of a pair of somatic cells that envelope each cyst of developing male germline cells.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "No FBbt term for 'early cyst cell'; the authors do not tie it to the spermatogonial cyst, so the cell type level is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "spermatogonial cyst cell",
+      "fbbt_id": "FBbt:00059172",
+      "fbbt_definition": "A cyst cell that is a part of a spermatogonial cyst.",
+      "reason_rejected": "Plausibly corresponds to early cyst cells but the authors do not state the cyst stage."
+    }
+  ],
+  "recommendation": "Broad match to cyst cell of testis.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

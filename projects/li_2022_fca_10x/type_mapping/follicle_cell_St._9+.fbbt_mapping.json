@@ -1,0 +1,23 @@
+{
+  "cluster_label": "follicle cell St. 9+",
+  "working_definition": "Follicle cells of egg chambers from about stage 9 onward, found in the whole-body 10x analysis of adult flies (Li et al. 2022, Fly Cell Atlas). Annotated by the authors with FBbt:00004904 'follicle cell'.",
+  "searches_performed": [
+    "authors' ontology id FBbt:00004904",
+    "follicle cell",
+    "adult follicle cell",
+    "main body follicle cell"
+  ],
+  "best_match": {
+    "fbbt_term": "follicle cell",
+    "fbbt_id": "FBbt:00004904",
+    "fbbt_definition": "One of the somatic epithelial cells that is either associated with the germline cyst to form an egg chamber or connecting the egg chambers (Jevitt et al., 2020). Some of these cells, particularly main body follicle cells, can form ring canals to connect to one another (Airoldi et al., 2011).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' term follicle cell is current and non-obsolete with no adult-specific variant. The label adds a late-stage bin (St. 9+) not captured by FBbt, so it is a broad match at the cell type level.",
+  "other_candidates": [],
+  "recommendation": "Keep the authors' term follicle cell (FBbt:00004904); stage bin so broad match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

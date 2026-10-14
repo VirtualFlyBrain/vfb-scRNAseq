@@ -1,0 +1,22 @@
+{
+  "cluster_label": "spermatogonium",
+  "working_definition": "Author cell type 'spermatogonium' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00004935 'spermatogonium'. Found in: 10x:testis (709 cells), ss2:testis (8 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00004935 (FBbt fbbt/releases/2026-10-01)",
+    "'adult spermatogonium' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'spermatogonium' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "spermatogonium",
+    "fbbt_id": "FBbt:00004935",
+    "fbbt_definition": "Male germline cell found in the spermatogonial cyst. It specifically expresses bag of marbles (bam), which is required for its differentiation (Witt et al., 2019).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00004935 'spermatogonium', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00004935 'spermatogonium', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

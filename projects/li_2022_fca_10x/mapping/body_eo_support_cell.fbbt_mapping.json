@@ -1,0 +1,22 @@
+{
+  "cluster_label": "body_eo support cell",
+  "working_definition": "Author cell type 'eo support cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00007254 'eo sensory organ accessory cell'. Found in: 10x:body (573 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00007254 (FBbt fbbt/releases/2026-10-01)",
+    "'adult eo sensory organ accessory cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'eo support cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "eo sensory organ accessory cell",
+    "fbbt_id": "FBbt:00007254",
+    "fbbt_definition": "Modified epidermal cell that forms part of an eo-type sensillum and differentiates from the same sensory organ precursor cell as the sensory neuron(s) (Campos-Ortega and Hartenstein, 1997; Chai et al., 2019).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00007254 'eo sensory organ accessory cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00007254 'eo sensory organ accessory cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,22 @@
+{
+  "cluster_label": "proboscis_and_maxillary_palps_labral sense organ mechanosensory neuron",
+  "working_definition": "Author cell type 'labral sense organ mechanosensory neuron' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00048035 'labral sense organ mechanosensory neuron'. Found in: 10x:proboscis_and_maxillary_palps (399 cells), ss2:proboscis_and_maxillary_palps (7 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00048035 (FBbt fbbt/releases/2026-10-01)",
+    "'adult labral sense organ mechanosensory neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'labral sense organ mechanosensory neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "labral sense organ mechanosensory neuron",
+    "fbbt_id": "FBbt:00048035",
+    "fbbt_definition": "Mechanosensory neuron that has a dendrite in a sensillum of the adult labral sense organ.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00048035 'labral sense organ mechanosensory neuron', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00048035 'labral sense organ mechanosensory neuron', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

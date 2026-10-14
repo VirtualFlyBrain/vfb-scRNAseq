@@ -1,0 +1,21 @@
+{
+  "cluster_label": "mechanosensory neuron of haltere",
+  "working_definition": "Mechanosensory sensory neurons of the adult haltere (FCA haltere); authors gave no FBbt term (Manual Annotation).",
+  "searches_performed": ["mechanosensory neuron of haltere", "haltere neuron", "sensory neuron of haltere", "adult mechanosensory neuron"],
+  "best_match": {
+    "fbbt_term": "adult mechanosensory neuron",
+    "fbbt_id": "FBbt:00051420",
+    "fbbt_definition": "Any adult neuron that is capable of some detection of mechanical stimulus that is part of sensory perception.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt has only sensory neuron of haltere campaniform sensillum / capitellum trichoid sensillum subtypes, which do not cover all haltere mechanosensory neurons; adult mechanosensory neuron is the common parent.",
+  "other_candidates": [
+    {"fbbt_term": "sensory neuron of haltere campaniform sensillum", "fbbt_id": "FBbt:00048296", "fbbt_definition": "Sensory neuron that has a dendrite in a campaniform sensillum of the haltere.", "reason_rejected": "Narrower subtype only."},
+    {"fbbt_term": "sensory neuron of haltere capitellum trichoid sensillum", "fbbt_id": "FBbt:00048297", "fbbt_definition": "Sensory neuron that has a dendrite in a capitellum trichoid sensillum.", "reason_rejected": "Narrower subtype only."}
+  ],
+  "recommendation": "Use adult mechanosensory neuron (FBbt:00051420) as a broad match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

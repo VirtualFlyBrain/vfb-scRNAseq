@@ -1,0 +1,22 @@
+{
+  "cluster_label": "head_transmedullary Y neuron TmY5a",
+  "working_definition": "Author cell type 'transmedullary Y neuron TmY5a' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00003823 'transmedullary Y neuron TmY5a'. Found in: 10x:head (459 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00003823 (FBbt fbbt/releases/2026-10-01)",
+    "'adult transmedullary Y neuron TmY5a' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'transmedullary Y neuron TmY5a' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "transmedullary Y neuron TmY5a",
+    "fbbt_id": "FBbt:00003823",
+    "fbbt_definition": "Transmedullary Y narrow field neuron that terminates with both fine and bleb-type arborizations in lobula layers 4, 5 and 6, and in lobula plate layer 3, but only has fine arborizations in lobula plate layer 1. It displays both fine and bleb-type arborizations in medulla layers M6 and M8, and has fine arborizations in medulla layers M2, M3, M4, M5 and M9 (Morante and Desplan, 2008; Fischbach and Dittrich (1989). It is glutamatergic (Davis et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00003823 'transmedullary Y neuron TmY5a', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00003823 'transmedullary Y neuron TmY5a', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

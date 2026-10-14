@@ -1,0 +1,22 @@
+{
+  "cluster_label": "stretch follicle cell",
+  "working_definition": "Author cell type 'stretch follicle cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00004908 'stretch follicle cell'. Found in: 10x:ovary (587 cells), ss2:ovary (21 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00004908 (FBbt fbbt/releases/2026-10-01)",
+    "'adult stretch follicle cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'stretch follicle cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "stretch follicle cell",
+    "fbbt_id": "FBbt:00004908",
+    "fbbt_definition": "Follicle cell of the germarium that migrates posteriorly and covers the nurse cells during stage 9. There are approximately 50 of these follicle cells that flatten to form a squamous domain over the nurse cells.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00004908 'stretch follicle cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00004908 'stretch follicle cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

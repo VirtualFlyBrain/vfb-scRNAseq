@@ -1,0 +1,29 @@
+{
+  "cluster_label": "wing_gustatory receptor neuron",
+  "working_definition": "Author cell type 'gustatory receptor neuron' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00005927 'gustatory receptor neuron'. Found in: 10x:body (11 cells), 10x:leg (159 cells), 10x:wing (752 cells), ss2:leg (5 cells), ss2:wing (16 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00005927 (FBbt fbbt/releases/2026-10-01)",
+    "'adult gustatory receptor neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'gustatory receptor neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult gustatory receptor neuron",
+    "fbbt_id": "FBbt:00058249",
+    "fbbt_definition": "Any adult neuron that is capable of some detection of chemical stimulus that is part of sensory perception of taste.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00005927 'gustatory receptor neuron', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00058249 'adult gustatory receptor neuron', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "gustatory receptor neuron",
+      "fbbt_id": "FBbt:00005927",
+      "fbbt_definition": "Any neuron that is capable of some detection of chemical stimulus that is part of sensory perception of taste.",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00058249 'adult gustatory receptor neuron' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

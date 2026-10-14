@@ -1,0 +1,20 @@
+{
+  "cluster_label": "adult midgut-hindgut hybrid zone",
+  "working_definition": "Epithelial cells of the adult midgut-hindgut hybrid zone from the gut analysis (Li et al. 2022; author term FBbt:00047207, the zone structure).",
+  "searches_performed": ["adult midgut-hindgut hybrid zone", "epithelial cell of the adult midgut-hindgut hybrid zone", "hybrid zone cell"],
+  "best_match": {
+    "fbbt_term": "epithelial cell of the adult midgut-hindgut hybrid zone",
+    "fbbt_id": "FBbt:00058275",
+    "fbbt_definition": "Cell of the adult gut epithelium at the boundary between the midgut and the hindgut. There are approximately 125 of such cells in mature adults (day 4), down from 300 during pupation. They express wingless, along with markers characteristic of both the midgut and the hindgut (Sawyer et al., 2017).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Cell-level equivalent of the authors' zone term; same source (Sawyer et al. 2017) and region.",
+  "other_candidates": [
+    {"fbbt_term": "adult midgut-hindgut hybrid zone", "fbbt_id": "FBbt:00047207", "fbbt_definition": "Ring of small cells between the adult midgut and hindgut that express markers of both regions, as well as wingless (Sawyer et al., 2017).", "reason_rejected": "Authors' term; a structure rather than a cell term."}
+  ],
+  "recommendation": "Map to FBbt:00058275.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,20 @@
+{
+  "cluster_label": "cardiomyocyte, working adult heart muscle (non-ostia)",
+  "working_definition": "Working (non-ostial) cardiomyocytes of the adult heart; authors gave no FBbt term (Manual Annotation).",
+  "searches_performed": ["cardiomyocyte", "adult cardial cell", "ostial cell"],
+  "best_match": {
+    "fbbt_term": "adult cardial cell",
+    "fbbt_id": "FBbt:00058240",
+    "fbbt_definition": "Cell that forms the wall of the adult dorsal vessel. There are 84 of these cells per dorsal vessel (Lehmacher et al., 2012).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt treats cardiomyocytes as cardial cells of the larva and adult (see dorsal vessel wall cell). No specific term for non-ostial working cardial cells exists; adult cardial cell is the parent (it also includes ostial cells, hence broad).",
+  "other_candidates": [
+    {"fbbt_term": "adult ostial cell", "fbbt_id": "FBbt:00058283", "fbbt_definition": "Ostial cell of the adult dorsal vessel.", "reason_rejected": "Explicitly the non-ostia counterpart."}
+  ],
+  "recommendation": "Use adult cardial cell (FBbt:00058240) as a broad match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

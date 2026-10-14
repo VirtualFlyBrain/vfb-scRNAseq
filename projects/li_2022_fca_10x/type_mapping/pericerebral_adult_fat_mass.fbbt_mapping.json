@@ -1,0 +1,21 @@
+{
+  "cluster_label": "pericerebral adult fat mass",
+  "working_definition": "Adult fat cells of the pericerebral fat mass surrounding the brain in the head (FCA head, 5-day adults); authors' FBbt term is the structure adult pericerebral fat mass.",
+  "searches_performed": ["pericerebral adult fat mass", "adult fat cell", "pericerebral fat cell"],
+  "best_match": {
+    "fbbt_term": "adult pericerebral fat cell",
+    "fbbt_id": "FBbt:00058267",
+    "fbbt_definition": "Any fat cell (FBbt:00046052) that is part of some adult pericerebral fat mass (FBbt:00048409).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Authors' term FBbt:00048409 (adult pericerebral fat mass) is a structure; the cell-level equivalent defined as fat cell part of that mass is adult pericerebral fat cell.",
+  "other_candidates": [
+    {"fbbt_term": "adult pericerebral fat mass", "fbbt_id": "FBbt:00048409", "fbbt_definition": "Part of the adult fat body that is found in the head, surrounding the brain.", "reason_rejected": "Authors' structure term; not a cell term."},
+    {"fbbt_term": "adult fat cell", "fbbt_id": "FBbt:00049949", "fbbt_definition": "Fat cell of the adult fat body.", "reason_rejected": "Broader parent."}
+  ],
+  "recommendation": "Use adult pericerebral fat cell (FBbt:00058267).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

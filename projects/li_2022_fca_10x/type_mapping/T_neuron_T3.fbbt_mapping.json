@@ -1,0 +1,22 @@
+{
+  "cluster_label": "T neuron T3",
+  "working_definition": "Author cell type 'T neuron T3' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00003730 'T3 neuron'. Found in: 10x:head (617 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00003730 (FBbt fbbt/releases/2026-10-01)",
+    "'adult T3 neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'T neuron T3' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "T3 neuron",
+    "fbbt_id": "FBbt:00003730",
+    "fbbt_definition": "T neuron with its soma posteriorly adjacent to the gap between the medulla and lobula plate and a cell body fiber that projects along the proximal surface of the medulla before branching in the second optic chiasm (Fischbach and Dittrich, 1989; Shinomiya et al., 2019). One branch forms a bushy, fine, terminal arborization in medulla layer M9 and the other forms a terminal arborization in lobula layers 2 and 3 with mix of bleb-type and fine terminal branches (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). It seems to be capable of both glutamatergic and GABAergic neurotransmission.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00003730 'T3 neuron', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00003730 'T3 neuron', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

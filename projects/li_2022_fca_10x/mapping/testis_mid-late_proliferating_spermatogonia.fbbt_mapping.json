@@ -1,0 +1,30 @@
+{
+  "cluster_label": "testis_mid-late proliferating spermatogonia",
+  "working_definition": "Mitotically amplifying male germ cells (mid-to-late spermatogonial stage) of the adult testis, annotated manually by testis experts; no FBbt id given by the authors.",
+  "searches_performed": [
+    "mid-late proliferating spermatogonia",
+    "spermatogonium",
+    "secondary spermatogonium",
+    "male germline cell"
+  ],
+  "best_match": {
+    "fbbt_term": "spermatogonium",
+    "fbbt_id": "FBbt:00004935",
+    "fbbt_definition": "Male germline cell found in the spermatogonial cyst. It specifically expresses bag of marbles (bam), which is required for its differentiation (Witt et al., 2019).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Stage bin of the spermatogonial lineage; FBbt has no mid-late proliferating stage term, so the cell type spermatogonium is used (broad). Secondary spermatogonium (first 4 mitoses) is a possible finer term but also covers early divisions, so it is not an exact denotation of the authors' mid-late bin.",
+  "other_candidates": [
+    {
+      "fbbt_term": "secondary spermatogonium",
+      "fbbt_id": "FBbt:00005260",
+      "fbbt_definition": "Male germline cell during its first 4 mitoses. The end result of these mitotic divisions is a cyst of 16 primary spermatocytes.",
+      "reason_rejected": "Covers all four transit-amplifying mitoses, not specifically the mid-late bin."
+    }
+  ],
+  "recommendation": "Use spermatogonium (broad).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,29 @@
+{
+  "cluster_label": "body_adult ventral nervous system",
+  "working_definition": "Author cell type 'adult ventral nervous system' of the Fly Cell Atlas (Li et al. 2022; adult body and body wall, 10322 cells): neurons of the ventral nerve cord. Authors' term FBbt:00004052 adult ventral nerve cord is a region; authors' broad class is neuron.",
+  "searches_performed": [
+    "authors' ontology id FBbt:00004052",
+    "'adult ventral nerve cord neuron' (OLS fbbt)",
+    "'adult VNC neuron' (EBI OLS4 fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult VNC neuron",
+    "fbbt_id": "FBbt:00059289",
+    "fbbt_definition": "Any neuron that has its soma located in some adult ventral nerve cord cell body rind.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors' term is a region; the cells are its neurons (broad class neuron), and FBbt has adult VNC neuron as the cell-level equivalent.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult ventral nerve cord",
+      "fbbt_id": "FBbt:00004052",
+      "fbbt_definition": "The region of the adult central nervous system posterior to the brain, containing all thoracic and abdominal neuromeres.",
+      "reason_rejected": "Region, not a cell."
+    }
+  ],
+  "recommendation": "Map to adult VNC neuron.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

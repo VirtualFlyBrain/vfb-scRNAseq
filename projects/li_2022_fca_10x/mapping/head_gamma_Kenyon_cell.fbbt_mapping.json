@@ -1,0 +1,29 @@
+{
+  "cluster_label": "head_gamma Kenyon cell",
+  "working_definition": "Author cell type 'gamma Kenyon cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00100247 'gamma Kenyon cell'. Found in: 10x:head (1139 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00100247 (FBbt fbbt/releases/2026-10-01)",
+    "'adult gamma Kenyon cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'gamma Kenyon cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult gamma Kenyon cell",
+    "fbbt_id": "FBbt:00049828",
+    "fbbt_definition": "Gamma Kenyon cell of the adult mushroom body. It develops from a larval gamma Kenyon cell that is remodeled during the pupal stage (Lee et al., 1999; Kunz et al., 2012). It expresses sNPF (Johard et al., 2008; Barnstedt et al., 2016; Croset et al., 2018). There are around 700 neurons of this type per hemisphere (Li et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00100247 'gamma Kenyon cell', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00049828 'adult gamma Kenyon cell', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "gamma Kenyon cell",
+      "fbbt_id": "FBbt:00100247",
+      "fbbt_definition": "Mushroom body neuron that innervates the mushroom body vertical and medial lobes in the larva, but is pruned back during early pupal stages to innervate only the gamma lobe in the adult (Lee et al., 1999; Awasaki and Ito, 2004; Awasaki et al., 2006; Truman et al., 2023). The gamma neurons are the first born of the Kenyon cells, generated during embryonic and early larval stages (Lee et al., 1999).",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00049828 'adult gamma Kenyon cell' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

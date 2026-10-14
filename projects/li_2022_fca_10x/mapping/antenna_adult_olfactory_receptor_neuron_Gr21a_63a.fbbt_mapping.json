@@ -1,0 +1,22 @@
+{
+  "cluster_label": "antenna_adult olfactory receptor neuron Gr21a/63a",
+  "working_definition": "Author cell type 'adult olfactory receptor neuron Gr21a/63a' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00067064 'adult olfactory receptor neuron Gr21a/63a'. Found in: 10x:antenna (445 cells), 10x:head (6 cells), ss2:antenna (5 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00067064 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult olfactory receptor neuron Gr21a/63a' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult olfactory receptor neuron Gr21a/63a' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult olfactory receptor neuron Gr21a/63a",
+    "fbbt_id": "FBbt:00067064",
+    "fbbt_definition": "Adult unilateral odorant receptor neuron that expresses Gr21a and Gr63a (Couto et al., 2005; Kwon et al., 2007; Kaur et al., 2019; Benton et al., 2025). It responds to CO2 levels (Suh et al., 2004; Kwon et al., 2007). Its dendrite transduces signals from antennal basiconic sensillum ab1 and sends output to antennal glomerulus V (Benton et al., 2025). It develops from an Nbb precursor (Benton et al., 2025). There are around 30-40 of these cells on each side (Grabe et al., 2016; Benton et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00067064 'adult olfactory receptor neuron Gr21a/63a', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00067064 'adult olfactory receptor neuron Gr21a/63a', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

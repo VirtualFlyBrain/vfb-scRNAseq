@@ -1,0 +1,23 @@
+{
+  "cluster_label": "ovary_posterior terminal follicle cell ca. St. 5-8",
+  "working_definition": "Posterior terminal follicle cells of egg chambers at about stages 5-8 in the adult ovary (Li et al. 2022, Fly Cell Atlas). Annotated by the authors with FBbt:00048554 'posterior terminal follicle cell'.",
+  "searches_performed": [
+    "authors' ontology id FBbt:00048554",
+    "posterior terminal follicle cell",
+    "terminal follicle cell",
+    "follicle cell"
+  ],
+  "best_match": {
+    "fbbt_term": "posterior terminal follicle cell",
+    "fbbt_id": "FBbt:00048554",
+    "fbbt_definition": "Follicle cell found relatively close to the posterior polar cells of the egg chamber. They signal back to polarize the oocyte cytoskeleton. Along with the main body (oocyte associated) follicle cells they form a columnar epithelium from stage 10, which deposits eggshell components.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' term FBbt:00048554 is current and non-obsolete; FBbt has no stage-specific child. The label adds a stage window, so the cell type is mapped at the type level (stage bin).",
+  "other_candidates": [],
+  "recommendation": "Keep the authors' term posterior terminal follicle cell (FBbt:00048554); stage bin so broad match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

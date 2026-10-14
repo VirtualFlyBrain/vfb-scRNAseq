@@ -1,0 +1,20 @@
+{
+  "cluster_label": "ejaculatory bulb epithelium",
+  "working_definition": "Epithelial cluster of the adult ejaculatory bulb; authors gave no FBbt id ('Manual Annotation').",
+  "searches_performed": ["ejaculatory bulb epithelium", "ejaculatory bulb epithelial cell", "ejaculatory duct epithelium"],
+  "best_match": {
+    "fbbt_term": "ejaculatory bulb epithelial cell",
+    "fbbt_id": "FBbt:00058269",
+    "fbbt_definition": "Cell of the epithelium of the ejaculatory bulb. It secretes the male pheromone cis-vaccenyl acetate (cVA) (Guiraudie-Capraz et al., 2007).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00058268 'ejaculatory bulb epithelium' is a tissue (label match); the cluster is composed of cells, so the cell-level term, ejaculatory bulb epithelial cell, is used.",
+  "other_candidates": [
+    {"fbbt_term": "ejaculatory bulb epithelium", "fbbt_id": "FBbt:00058268", "fbbt_definition": "A monolayer epithelium forming the wall of the ejaculatory bulb (Guiraudie-Capraz et al., 2007).", "reason_rejected": "Tissue term, not a cell."}
+  ],
+  "recommendation": "Accept ejaculatory bulb epithelial cell.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

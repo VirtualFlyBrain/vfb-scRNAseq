@@ -1,0 +1,22 @@
+{
+  "cluster_label": "gut_enterocyte of posterior adult midgut epithelium",
+  "working_definition": "Author cell type 'enterocyte of posterior adult midgut epithelium' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00007037 'enterocyte of posterior adult midgut epithelium'. Found in: 10x:gut (551 cells), ss2:gut (29 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00007037 (FBbt fbbt/releases/2026-10-01)",
+    "'adult enterocyte of posterior adult midgut epithelium' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'enterocyte of posterior adult midgut epithelium' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "enterocyte of posterior adult midgut epithelium",
+    "fbbt_id": "FBbt:00007037",
+    "fbbt_definition": "A large, polyploid, cuboidal or low-columnar epithelial cell of the adult posterior midgut. It has its nucleus in the middle and a mass of microvilli (brush border) on its apical surface. On its basal side, extensive infoldings of the plasma membrane form a labyrinth which fills the lower half of the cell. It is attached to adjacent enterocytes by smooth septate junctions.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00007037 'enterocyte of posterior adult midgut epithelium', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00007037 'enterocyte of posterior adult midgut epithelium', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

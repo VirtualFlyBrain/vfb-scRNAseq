@@ -1,0 +1,29 @@
+{
+  "cluster_label": "male_reproductive_glands_male reproductive tract muscle",
+  "working_definition": "Muscle cluster of the adult male reproductive tract; authors gave no FBbt id ('Manual Annotation').",
+  "searches_performed": [
+    "male reproductive system muscle",
+    "adult male reproductive system muscle cell",
+    "adult visceral muscle cell"
+  ],
+  "best_match": {
+    "fbbt_term": "adult muscle cell",
+    "fbbt_id": "FBbt:00058230",
+    "fbbt_definition": "Muscle cell of the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt has no male reproductive tract muscle cell term. Adult muscle cell is the committed level that is a true ancestor; visceral subtype is plausible but not stated by the authors.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult visceral muscle cell",
+      "fbbt_id": "FBbt:00003525",
+      "fbbt_definition": "Muscle cell of a visceral muscle of the adult.",
+      "reason_rejected": "More specific than the authors' call; visceral nature not stated."
+    }
+  ],
+  "recommendation": "Broad match to adult muscle cell; a tract-specific muscle term would need a new term.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

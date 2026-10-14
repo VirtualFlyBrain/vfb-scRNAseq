@@ -1,0 +1,29 @@
+{
+  "cluster_label": "photoreceptor-like",
+  "working_definition": "Author cell type 'photoreceptor-like' of the Fly Cell Atlas (Li et al. 2022; adult head, 117 cells): sensory neurons resembling photoreceptors; no author FBbt term (Manual Annotation); no subtype committed.",
+  "searches_performed": [
+    "'photoreceptor-like' (OLS fbbt)",
+    "'photoreceptor cell' (OLS fbbt, EBI OLS4)",
+    "'light-sensitive neuron' (EBI OLS4 fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "light-sensitive neuron",
+    "fbbt_id": "FBbt:00004211",
+    "fbbt_definition": "Sensory neuron that reacts to the presence of light.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Remainder-like call: the authors commit only to the photoreceptor class. FBbt has no native generic 'photoreceptor cell' (only CL:0000210); light-sensitive neuron is the generic FBbt photoreceptor-level cell term and the parent of eye photoreceptor cell.",
+  "other_candidates": [
+    {
+      "fbbt_term": "eye photoreceptor cell",
+      "fbbt_id": "FBbt:00006009",
+      "fbbt_definition": "Photoreceptor cell of the compound eye.",
+      "reason_rejected": "More specific than the authors' commitment (location not stated)."
+    }
+  ],
+  "recommendation": "Broad match to light-sensitive neuron.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

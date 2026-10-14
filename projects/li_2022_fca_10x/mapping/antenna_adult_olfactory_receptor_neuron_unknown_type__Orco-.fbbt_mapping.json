@@ -1,0 +1,29 @@
+{
+  "cluster_label": "antenna_adult olfactory receptor neuron unknown type, Orco-",
+  "working_definition": "Orco-negative antennal olfactory receptor neurons with no receptor identity assigned (Li et al. 2022 FCA, Manual Annotation).",
+  "searches_performed": [
+    "adult olfactory receptor neuron unknown type, Orco-",
+    "adult olfactory receptor neuron",
+    "olfactory receptor neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "adult olfactory receptor neuron",
+    "fbbt_id": "FBbt:00007386",
+    "fbbt_definition": "Any olfactory receptor neuron of the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Remainder call of unspecified adult ORN type; the class term is the level the authors commit to.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult antennal olfactory receptor neuron",
+      "fbbt_id": "FBbt:00007352",
+      "fbbt_definition": "ORN whose dendrite transduces signals from an antennal sensillum.",
+      "reason_rejected": "Would narrow by dissected tissue; label does not name antenna."
+    }
+  ],
+  "recommendation": "Map broadly to FBbt:00007386 (medium confidence).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

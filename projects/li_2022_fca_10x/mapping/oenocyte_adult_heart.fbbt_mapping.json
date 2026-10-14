@@ -1,0 +1,29 @@
+{
+  "cluster_label": "oenocyte_adult heart",
+  "working_definition": "Cells of the adult heart (posterior pulsatile region of the dorsal vessel); in FCA these are cardial cells (wall cells of the heart tube).",
+  "searches_performed": [
+    "adult heart",
+    "adult cardial cell",
+    "ostium cell"
+  ],
+  "best_match": {
+    "fbbt_term": "adult cardial cell",
+    "fbbt_id": "FBbt:00058240",
+    "fbbt_definition": "Cell that forms the wall of the adult dorsal vessel. There are 84 of these cells per dorsal vessel (Lehmacher et al., 2012).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Authors' term FBbt:00003154 (adult heart) is an organ region; FBbt has no 'cell of adult heart' term. Adult cardial cell is the most specific cell term that is a parent of the wall cells of the heart.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult heart",
+      "fbbt_id": "FBbt:00003154",
+      "fbbt_definition": "The caudal, pulsatile region of the adult dorsal vessel.",
+      "reason_rejected": "Authors' organ term; not a cell term."
+    }
+  ],
+  "recommendation": "Use adult cardial cell (FBbt:00058240) as a broad match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

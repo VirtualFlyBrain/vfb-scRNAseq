@@ -1,0 +1,23 @@
+{
+  "cluster_label": "arista and sacculus thermosensory and hygrosensory neuron Ir21a, Ir40a, Gr28b",
+  "working_definition": "Thermosensory and hygrosensory neurons of the arista and sacculus named by Ir21a, Ir40a and Gr28b (Li et al. 2022 FCA, Manual Annotation).",
+  "searches_performed": ["arista and sacculus thermosensory and hygrosensory neuron Ir21a, Ir40a, Gr28b", "adult hygrosensory neuron Ir40a", "adult thermosensory neuron Ir21a", "aristal sensory neuron", "arista neuron thermosensory hygrosensory"],
+  "best_match": {
+    "fbbt_term": "adult antennal lobe receptor neuron",
+    "fbbt_id": "FBbt:00051494",
+    "fbbt_definition": "Sensory neuron of the antenna that detects a stimulus via one or more receptors and projects to the antennal lobe (Schlegel et al., 2021). This includes antennal olfactory, thermosensory and hygrosensory neurons (Schlegel et al., 2021).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Grouped thermo- and hygrosensory call. OLS ancestors verified: adult hygrosensory neuron Ir40a (FBbt:00110990), adult thermosensory neuron Ir21a VP1l (FBbt:00111336) and aristal sensory neuron VP2 (FBbt:00007575, Gr28b thermosensory) all have adult antennal lobe receptor neuron as an ancestor. No shared thermo/hygro class exists.",
+  "other_candidates": [
+    {"fbbt_term": "adult hygrosensory neuron Ir40a", "fbbt_id": "FBbt:00110990", "fbbt_definition": "Adult hygrosensory neuron expressing Ir40a.", "reason_rejected": "Single member."},
+    {"fbbt_term": "adult thermosensory neuron Ir21a VP1l", "fbbt_id": "FBbt:00111336", "fbbt_definition": "Adult thermosensory neuron expressing Ir21a, glomerulus VP1l.", "reason_rejected": "Single member."},
+    {"fbbt_term": "aristal sensory neuron VP2", "fbbt_id": "FBbt:00007575", "fbbt_definition": "Aristal thermosensory neuron projecting to VP2.", "reason_rejected": "Single member; Gr28b link is an inference."},
+    {"fbbt_term": "adult antennal sensory neuron", "fbbt_id": "FBbt:00051173", "fbbt_definition": "Adult sensory neuron that receives sensory input in the antenna.", "reason_rejected": "Less specific common parent."}
+  ],
+  "recommendation": "Map broadly to FBbt:00051494 (medium confidence); only 2 nuclei.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

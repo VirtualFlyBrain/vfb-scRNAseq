@@ -1,0 +1,29 @@
+{
+  "cluster_label": "fat_body_testis",
+  "working_definition": "Organ-name label for cells of testis origin found in fat body and body wall analyses; authors' term FBbt:00004928 testis (an organ).",
+  "searches_performed": [
+    "testis",
+    "cell of testis",
+    "somatic cell of testis",
+    "male germline cell"
+  ],
+  "best_match": null,
+  "justification": "The authors' term is an organ. The only cell-level testis terms are 'somatic cell of testis' (FBbt:00006031), which excludes germline cells, and specific types; there is no generic cell-of-testis term covering both germline and somatic cells. Held per curator rule B.",
+  "other_candidates": [
+    {
+      "fbbt_term": "testis",
+      "fbbt_id": "FBbt:00004928",
+      "fbbt_definition": "Male gonad (authors' structure term).",
+      "reason_rejected": "Organ/structure term; cluster relation requires a cell term."
+    },
+    {
+      "fbbt_term": "somatic cell of testis",
+      "fbbt_id": "FBbt:00006031",
+      "fbbt_definition": "A(n) somatic cell that is part of a(n) testis.",
+      "reason_rejected": "Excludes germline cells, which the label does not exclude."
+    }
+  ],
+  "recommendation": "Hold; no adequate cell-level term.",
+  "new_term_needed": true,
+  "verification_needed": false
+}

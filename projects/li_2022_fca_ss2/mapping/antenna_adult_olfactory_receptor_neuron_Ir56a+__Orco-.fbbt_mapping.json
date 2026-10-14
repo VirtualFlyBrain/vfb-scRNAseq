@@ -1,0 +1,30 @@
+{
+  "cluster_label": "antenna_adult olfactory receptor neuron Ir56a+, Orco-",
+  "working_definition": "Antennal olfactory receptor neurons defined by Ir56a expression and lack of Orco, i.e. a non-Orco ionotropic-receptor ORN population (Li et al. 2022 FCA, Manual Annotation).",
+  "searches_performed": [
+    "adult olfactory receptor neuron Ir56a+, Orco-",
+    "adult olfactory receptor neuron Ir56a",
+    "adult olfactory receptor neuron Ir",
+    "olfactory receptor neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "adult olfactory receptor neuron",
+    "fbbt_id": "FBbt:00007386",
+    "fbbt_definition": "Any olfactory receptor neuron of the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt has no Ir56a ORN term. The label commits to adult olfactory receptor neurons; the antenna dissection is not used to narrow the term.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult antennal olfactory receptor neuron",
+      "fbbt_id": "FBbt:00007352",
+      "fbbt_definition": "Odorant receptor neuron (ORN) whose dendrite transduces signals from an antennal sensillum.",
+      "reason_rejected": "Would narrow by the dissected tissue; label does not name antenna."
+    }
+  ],
+  "recommendation": "Map broadly to FBbt:00007386; no Ir56a ORN term exists.",
+  "new_term_needed": false,
+  "verification_needed": false
+}
