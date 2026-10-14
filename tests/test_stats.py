@@ -136,3 +136,85 @@ def test_gene_id_map_merge_rename_drop(tmp_path, monkeypatch):
     assert ("B", "FBgn0000099", "sym99") in got
     assert not any(f in ("FBgn0000002", "FBgn0000003", "FBgn0000004") for _l, f, _s in got)
     assert meta["n_genes"] == 2                               # new1 + sym99
+
+
+# --- h5ad source ----------------------------------------------------------------------
+
+def _h5ad(path, cpm, genes, annotation=None):
+    """cells x genes CPM -> h5ad with X = log2(CPM + 1) (0.8 layout)."""
+    import h5py
+    import numpy as np
+    s = h5py.string_dtype()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with h5py.File(path, "w") as f:
+        f["X"] = np.log2(np.asarray(cpm, dtype=np.float64) + 1)
+        v = f.create_group("var")
+        v.attrs["_index"] = "_index"
+        v["_index"] = np.array(genes, dtype=object).astype(s)
+        o = f.create_group("obs")
+        o.attrs["_index"] = "_index"
+        o["_index"] = np.array([f"c{i}" for i in range(len(cpm))], dtype=object).astype(s)
+        if annotation is not None:
+            cats = sorted({a for a in annotation if a is not None})
+            g = o.create_group("annotation")
+            g["categories"] = np.array(cats, dtype=object).astype(s)
+            g["codes"] = np.array([cats.index(a) if a is not None else -1 for a in annotation], dtype=np.int8)
+
+
+def _h5ad_setup(tmp_path, monkeypatch, sizes=None):
+    """Clustering a: 4 cells (X, X, Y, none), genes g1 + g2 (both now FBgn1: merged) and
+    g3 (dropped). Clustering b (sorted): 2 cells, gene g4 only (a different gene set)."""
+    import json
+    from vfb_scrnaseq import ingest_h5ad
+    h = tmp_path / ".cache" / "h5ad" / "ACC"
+    _h5ad(h / "a.h5ad", [[5e5, 5e5, 0], [0, 0, 1e6], [1e6, 0, 0], [1e6, 0, 0]],
+          ["g1", "g2", "g3"], ["X", "X", "Y", None])
+    _h5ad(h / "b.h5ad", [[1e6], [1e6]], ["g4"])
+    proj = tmp_path / "projects" / "t"
+    proj.mkdir(parents=True)
+    (proj / "gene_id_map.tsv").write_text(
+        "# test\ninput_fbgn\tinput_symbol\tstatus\tcurrent_fbgn\tcurrent_symbol\n"
+        "FBgn0000001\tg1\tcurrent\tFBgn0000001\tG1\n"
+        "\tg2\tsynonym\tFBgn0000001\tG1\n"
+        "FBgn0000003\tg3\tsplit\t\tFBgn1 a; FBgn2 b\n"
+        "\tg4\tcurrent\tFBgn0000004\tg4\n")
+    sizes = sizes or {"a_X": 2, "a_Y": 1, "b_sorted": 2}
+    (proj / "cell_type_annotations.json").write_text(json.dumps(
+        {"annotations": [{"label": k, "cell_number": v} for k, v in sizes.items()]}))
+    monkeypatch.setattr(stats, "REPO_ROOT", tmp_path)
+    monkeypatch.setattr(ingest_h5ad, "REPO_ROOT", tmp_path)
+    monkeypatch.setattr(stats, "IDRegistry", _FakeReg)
+    return {
+        "dataset": {"accession": "ACC"},
+        "sample_build": {"clusterings": [{"id": "a"}, {"id": "b", "fixed_annotation": "sorted"}]},
+        "annotation_build": {"annotation_column": "annotation"},
+        "expression": {"source": "h5ad", "values": "log2_cpm1", "gene_id_map": "gene_id_map.tsv",
+                       "extent_cutoff": 0.2},
+    }
+
+
+def test_h5ad_expression(tmp_path, monkeypatch):
+    cfg = _h5ad_setup(tmp_path, monkeypatch)
+    rows, counts, meta = stats.compute_expression("t", cfg)
+    got = {(label, fbgn, sym): (lvl, ext) for _i, label, fbgn, sym, lvl, ext in rows}
+    # a_X: only cell c0 expresses G1, via g1 + g2 (merged, counted once, CPM summed)
+    assert got == {("a_X", "FBgn0000001", "G1"): (1e6, 0.5),
+                   ("a_Y", "FBgn0000001", "G1"): (1e6, 1.0),
+                   ("b_sorted", "FBgn0000004", "g4"): (1e6, 1.0)}
+    assert {c.label: c.cells for c in counts} == {"a_X": 2, "a_Y": 1, "b_sorted": 2}
+    assert meta["n_genes"] == 2 and meta["n_cells"] == 5          # unclustered c3 not counted
+
+
+def test_h5ad_wrong_values_transform_is_caught(tmp_path, monkeypatch):
+    import pytest
+    cfg = _h5ad_setup(tmp_path, monkeypatch)
+    cfg["expression"]["values"] = "log1p_cp10k"
+    with pytest.raises(SystemExit, match="CPM totals"):
+        stats.compute_expression("t", cfg)
+
+
+def test_h5ad_cluster_size_must_match_annotations(tmp_path, monkeypatch):
+    import pytest
+    cfg = _h5ad_setup(tmp_path, monkeypatch, sizes={"a_X": 3, "a_Y": 1, "b_sorted": 2})
+    with pytest.raises(SystemExit, match="a_X"):
+        stats.compute_expression("t", cfg)

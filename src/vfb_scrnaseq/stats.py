@@ -8,6 +8,12 @@ Then (FlyBase SOP):
   level  = mean CPM over EXPRESSING cells = 1e6 * sum(count / cell_total) / expressing
 Filter: extent > cutoff (default 0.2, from the old vfb-scRNAseq-ontology repo).
 
+h5ad projects (`expression.source: h5ad`, e.g. the Fly Cell Atlas) store normalised
+values, not counts: one file per Clustering, read in one chunked pass; the values are
+converted back to CPM (`expression.values`: `log1p_cp10k` -> (e^x - 1) x 100,
+`log2_cpm1` -> 2^x - 1) and every cell's CPM total is checked. Files may have different
+gene sets; a gene a file lacks is unexpressed in that file's clusters.
+
 Memory stays low: the only dense accumulators are genes x clusters. Cluster IRIs
 come from the id registry (build must have minted the Cluster ids first).
 """
@@ -16,6 +22,7 @@ from __future__ import annotations
 
 import csv
 import gzip
+import json
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -23,6 +30,7 @@ import numpy as np
 import pandas as pd
 
 from vfb_scrnaseq.ids import IDRegistry
+from vfb_scrnaseq.ingest_h5ad import h5ad_path, iter_matrix, matrix_shape, read_genes, read_obs
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CHUNK = 5_000_000
@@ -58,13 +66,56 @@ def _label_memberships(meta_f: Path, bc_col: str, label_col: str, prefix: str = 
         return {r[bc_col]: [prefix + r[label_col]] for r in csv.DictReader(fh, delimiter="\t")}
 
 
-def load_gene_id_map(path: Path) -> dict[str, tuple[str, str] | None]:
-    """gene_id_map.tsv (scripts/update_gene_ids.py) -> {input fbgn: (current fbgn,
-    current symbol)}, or None for ids to drop (split / withdrawn)."""
+def load_gene_id_map(path: Path, key: str = "input_fbgn") -> dict[str, tuple[str, str] | None]:
+    """gene_id_map.tsv (scripts/update_gene_ids.py) -> {input fbgn (or `key`, e.g.
+    input_symbol for h5ad projects): (current fbgn, current symbol)}, or None for genes
+    to drop (split / withdrawn / unmatched)."""
     with path.open() as fh:
         rows = csv.DictReader((ln for ln in fh if not ln.startswith("#")), delimiter="\t")
-        return {r["input_fbgn"]: ((r["current_fbgn"], r["current_symbol"]) if r["current_fbgn"] else None)
+        return {r[key]: ((r["current_fbgn"], r["current_symbol"]) if r["current_fbgn"] else None)
                 for r in rows}
+
+
+def _remap(keys: list[str], targets: list[tuple[str, str] | None]):
+    """Input genes -> output genes: (fbgn, symbol, remap index per input gene (-1 =
+    dropped), merged flag per output gene)."""
+    fbgn, symbol, idx = [], [], {}
+    remap = np.full(len(keys), -1, dtype=np.int64)
+    for i, tgt in enumerate(targets):
+        if tgt is None:
+            continue
+        if tgt[0] not in idx:
+            idx[tgt[0]] = len(fbgn)
+            fbgn.append(tgt[0])
+            symbol.append(tgt[1])
+        remap[i] = idx[tgt[0]]
+    sources = np.bincount(remap[remap >= 0], minlength=len(fbgn))
+    return fbgn, symbol, remap, sources > 1
+
+
+class _Sums:
+    """Per (gene, cluster) sums of CPM/1e6 over expressing cells (S) and expressing-cell
+    counts (N), with cells assigned to clusters by membership layers (the k-th
+    membership of each cell -> layer k; -1 = none)."""
+
+    def __init__(self, n_genes: int, n_clu: int, layers: np.ndarray):
+        self.n_genes, self.n_clu, self.layers = n_genes, n_clu, layers
+        self.S = np.zeros(n_genes * n_clu, dtype=np.float64)
+        self.N = np.zeros(n_genes * n_clu, dtype=np.int64)
+
+    def add(self, g: np.ndarray, c: np.ndarray, w: np.ndarray) -> None:
+        for lay in self.layers:
+            k = lay[c]
+            keep = k >= 0
+            flat = g[keep] * self.n_clu + k[keep]
+            self.S += np.bincount(flat, weights=w[keep], minlength=self.n_genes * self.n_clu)
+            self.N += np.bincount(flat, minlength=self.n_genes * self.n_clu)
+
+    def add_merged(self, g, c, w, n_cells: int) -> None:
+        """Entries of merged genes: sum per (gene, cell) first, so a cell expressing
+        several input genes of one output gene counts once."""
+        key, inv = np.unique(g.astype(np.int64) * n_cells + c, return_inverse=True)
+        self.add(key // n_cells, key % n_cells, np.bincount(inv, weights=w))
 
 
 def _accumulate(mtx: Path, feats: Path, bcs: Path, memberships: dict[str, list[str]],
@@ -80,24 +131,9 @@ def _accumulate(mtx: Path, feats: Path, bcs: Path, memberships: dict[str, list[s
         rows = [ln.rstrip("\n").split("\t") for ln in fh]
     in_fbgn = [r[0] for r in rows]
     in_symbol = [r[1] if len(r) > 1 else r[0] for r in rows]
-    if gene_map is None:
-        fbgn, symbol = in_fbgn, in_symbol
-        remap = np.arange(len(in_fbgn), dtype=np.int64)
-        merged = np.zeros(len(fbgn), dtype=bool)
-    else:
-        fbgn, symbol, idx = [], [], {}
-        remap = np.full(len(in_fbgn), -1, dtype=np.int64)
-        for i, f in enumerate(in_fbgn):
-            tgt = gene_map.get(f, (f, in_symbol[i]))   # ids not in the map are kept as is
-            if tgt is None:
-                continue
-            if tgt[0] not in idx:
-                idx[tgt[0]] = len(fbgn)
-                fbgn.append(tgt[0])
-                symbol.append(tgt[1])
-            remap[i] = idx[tgt[0]]
-        sources = np.bincount(remap[remap >= 0], minlength=len(fbgn))
-        merged = sources > 1
+    targets = [(f, in_symbol[i]) if gene_map is None else gene_map.get(f, (f, in_symbol[i]))
+               for i, f in enumerate(in_fbgn)]     # ids not in the map are kept as is
+    fbgn, symbol, remap, merged = _remap(in_fbgn, targets)
     with gzip.open(bcs, "rt") as fh:
         barcodes = [ln.strip() for ln in fh]
 
@@ -121,18 +157,7 @@ def _accumulate(mtx: Path, feats: Path, bcs: Path, memberships: dict[str, list[s
     for chunk in _read_chunks(mtx):
         col_total += np.bincount(chunk.c.values - 1, weights=chunk.v.values, minlength=n_cells)
 
-    S = np.zeros(n_genes * n_clu, dtype=np.float64)
-    N = np.zeros(n_genes * n_clu, dtype=np.int64)
-
-    def add(g, c, v):
-        w = v / col_total[c]
-        for lay in layers:
-            k = lay[c]
-            keep = k >= 0
-            flat = g[keep] * n_clu + k[keep]
-            S[:] += np.bincount(flat, weights=w[keep], minlength=n_genes * n_clu)
-            N[:] += np.bincount(flat, minlength=n_genes * n_clu)
-
+    sums = _Sums(n_genes, n_clu, layers)
     held_g, held_c, held_v = [], [], []          # entries of merged genes, summed at the end
     for chunk in _read_chunks(mtx):
         g = remap[chunk.g.values - 1]
@@ -142,16 +167,122 @@ def _accumulate(mtx: Path, feats: Path, bcs: Path, memberships: dict[str, list[s
         g, c, v = g[keep], c[keep], v[keep]
         m = merged[g]
         if m.any():
-            held_g.append(g[m]); held_c.append(c[m]); held_v.append(v[m])
+            held_g.append(g[m]); held_c.append(c[m]); held_v.append(v[m] / col_total[c[m]])
             g, c, v = g[~m], c[~m], v[~m]
-        add(g, c, v)
+        sums.add(g, c, v / col_total[c])
     if held_g:
-        g = np.concatenate(held_g); c = np.concatenate(held_c); v = np.concatenate(held_v)
-        key, inv = np.unique(g.astype(np.int64) * n_cells + c, return_inverse=True)
-        add(key // n_cells, key % n_cells, np.bincount(inv, weights=v))
+        sums.add_merged(np.concatenate(held_g), np.concatenate(held_c), np.concatenate(held_v), n_cells)
+    S, N = sums.S, sums.N
     cells = {b for j, b in enumerate(barcodes) if (layers[:, j] >= 0).any()}
     return {"fbgn": fbgn, "symbol": symbol, "clusters": clusters, "cluster_size": cluster_size,
             "S": S.reshape(n_genes, n_clu), "N": N.reshape(n_genes, n_clu), "cells": cells}
+
+
+TO_CPM = {
+    "log1p_cp10k": lambda x: np.expm1(x) * 100.0,    # log(counts per 10k + 1)
+    "log2_cpm1": lambda x: np.exp2(x) - 1.0,         # log2(CPM + 1)
+}
+
+
+def _accumulate_h5ad(path: Path, labels: list[str | None], values: str,
+                     gene_map: dict[str, tuple[str, str] | None], name: str) -> dict:
+    """One h5ad file: per (gene, cluster) CPM sums over expressing cells, as
+    `_accumulate`. `labels` gives each cell's cluster (None = in none). Genes are keyed
+    by name through `gene_map` (symbol -> current gene); every gene must be in it."""
+    genes, _ids = read_genes(path)
+    missing = [g for g in genes if g not in gene_map]
+    if missing:
+        raise SystemExit(f"{path.name}: {len(missing)} genes not in the gene id map "
+                         f"(re-run scripts/update_gene_ids.py), e.g. {missing[:5]}")
+    fbgn, symbol, remap, merged = _remap(genes, [gene_map[g] for g in genes])
+    n_cells, n_in = matrix_shape(path)
+    if n_in != len(genes) or n_cells != len(labels):
+        raise SystemExit(f"{path.name}: matrix {n_cells}x{n_in} vs {len(labels)} cells, {len(genes)} genes")
+    clusters = sorted({lab for lab in labels if lab is not None})
+    cidx = {c: i for i, c in enumerate(clusters)}
+    layer = np.array([cidx[lab] if lab is not None else -1 for lab in labels], dtype=np.int32)
+    cluster_size = np.bincount(layer[layer >= 0], minlength=len(clusters)).astype(np.int64)
+    to_cpm = TO_CPM[values]
+
+    sums = _Sums(len(fbgn), len(clusters), layer[None, :])
+    cell_total = np.zeros(n_cells, dtype=np.float64)
+    held_g, held_c, held_w = [], [], []
+    for gi, ci, v in iter_matrix(path):
+        w = to_cpm(v)
+        cell_total += np.bincount(ci, weights=w, minlength=n_cells)
+        g = remap[gi]
+        keep = (g >= 0) & (w > 0)
+        g, c, w = g[keep], ci[keep], w[keep] / 1e6
+        m = merged[g]
+        if m.any():
+            held_g.append(g[m]); held_c.append(c[m]); held_w.append(w[m])
+            g, c, w = g[~m], c[~m], w[~m]
+        sums.add(g, c, w)
+    if held_g:
+        sums.add_merged(np.concatenate(held_g), np.concatenate(held_c), np.concatenate(held_w), n_cells)
+    # the conversion is right only if cells' CPM sums to 1e6: never more, and the median
+    # cell at 1e6. Some cells may sum to less where the authors normalised before
+    # dropping genes (e.g. FCA Smart-seq2 dilp2IPC); those values are still CPM.
+    med, lo, hi = np.median(cell_total), cell_total.min(), cell_total.max()
+    if not (0.99e6 <= med <= 1.001e6) or hi > 1.001e6:
+        raise SystemExit(f"{path.name}: per-cell CPM totals median {med:.0f} (range {lo:.0f}-{hi:.0f}), "
+                         f"not 1e6; check expression.values ({values})")
+    note = f"; lowest cell CPM total {lo:.0f} (genes dropped after normalisation)" if lo < 0.95e6 else ""
+    return {"fbgn": fbgn, "symbol": symbol, "clusters": clusters, "cluster_size": cluster_size,
+            "S": sums.S.reshape(len(fbgn), len(clusters)), "N": sums.N.reshape(len(fbgn), len(clusters)),
+            "cells": {f"{name}:{i}" for i in np.flatnonzero(layer >= 0)}, "note": note}
+
+
+def _h5ad_parts(project: str, cfg: dict, gene_map) -> list[dict]:
+    """One part per Clustering h5ad; a cell's cluster is `<clustering>_<annotation>`
+    (or the clustering's `fixed_annotation`), as build_annotations_from_h5ad.py labels
+    them. Cluster sizes are checked against cell_type_annotations.json."""
+    acc = cfg["dataset"]["accession"]
+    col = cfg["annotation_build"]["annotation_column"]
+    proj = REPO_ROOT / "projects" / project
+    expected = {a["label"]: a["cell_number"] for a in
+                json.loads((proj / "cell_type_annotations.json").read_text())["annotations"]}
+    parts = []
+    for c in cfg["sample_build"]["clusterings"]:
+        path = h5ad_path(acc, c["id"])
+        if c.get("fixed_annotation"):
+            n = len(read_obs(path, [])["_index"])
+            labels = [f"{c['id']}_{c['fixed_annotation']}"] * n
+        else:
+            labels = [f"{c['id']}_{a}" if a is not None else None for a in read_obs(path, [col])[col]]
+        part = _accumulate_h5ad(path, labels, cfg["expression"]["values"], gene_map, c["id"])
+        for lab, size in zip(part["clusters"], part["cluster_size"]):
+            if expected.get(lab) != int(size):
+                raise SystemExit(f"{lab}: {size} cells in {path.name}, "
+                                 f"{expected.get(lab)} in cell_type_annotations.json")
+        print(f"    {c['id']}: {len(labels)} cells, {len(part['clusters'])} clusters, "
+              f"{len(part['fbgn'])} genes{part['note']}")
+        parts.append(part)
+    return parts
+
+
+def _union_genes(parts: list[dict]) -> tuple[list[str], list[str], np.ndarray, np.ndarray]:
+    """Combine parts with (possibly) different gene lists: (fbgn, symbol, S, N) over the
+    union of genes, a part's clusters having zero for genes its file lacks."""
+    gidx: dict[str, int] = {}
+    fbgn, symbol = [], []
+    for p in parts:
+        for f, s in zip(p["fbgn"], p["symbol"]):
+            if f not in gidx:
+                gidx[f] = len(fbgn)
+                fbgn.append(f)
+                symbol.append(s)
+    n_clu = sum(len(p["clusters"]) for p in parts)
+    S = np.zeros((len(fbgn), n_clu))
+    N = np.zeros((len(fbgn), n_clu), dtype=np.int64)
+    k = 0
+    for p in parts:
+        rows = np.array([gidx[f] for f in p["fbgn"]], dtype=np.int64)
+        w = len(p["clusters"])
+        S[rows, k:k + w] = p["S"]
+        N[rows, k:k + w] = p["N"]
+        k += w
+    return fbgn, symbol, S, N
 
 
 def compute_expression(project: str, cfg: dict):
@@ -163,11 +294,21 @@ def compute_expression(project: str, cfg: dict):
     meta: dict with n_genes, n_cells, cutoff, normalisation.
     """
     acc = cfg["dataset"]["accession"]
-    subset = cfg["annotations"].get("subset", "main")
-    label_col = cfg["annotations"]["label_column"]
+    subset = (cfg.get("annotations") or {}).get("subset", "main")
     ex = cfg["expression"]
     cutoff = float(ex.get("extent_cutoff", 0.2))
     cache = REPO_ROOT / ".cache"
+    if ex.get("source") == "h5ad":
+        gene_map = load_gene_id_map(REPO_ROOT / "projects" / project / ex["gene_id_map"], key="input_symbol")
+        parts = _h5ad_parts(project, cfg, gene_map)
+    else:
+        parts = _mtx_parts(project, cfg, cache)
+    return _summarise(parts, acc, subset, cutoff, ex)
+
+
+def _mtx_parts(project: str, cfg: dict, cache: Path) -> list[dict]:
+    label_col = cfg["annotations"]["label_column"]
+    ex = cfg["expression"]
 
     # cell -> cluster(s). Default: one cluster per cell from the metadata label column.
     # `expression.membership_file` (barcode<TAB>cluster, in .cache) instead allows a
@@ -196,18 +337,17 @@ def compute_expression(project: str, cfg: dict):
                                 label_col, prefix=part.get("label_prefix", ""))
         parts.append(_accumulate(cache / part["matrix_file"], cache / part["features_file"],
                                  cache / part["barcodes_file"], pm, gene_map))
-    fbgn, symbol = parts[0]["fbgn"], parts[0]["symbol"]
-    for p in parts[1:]:
-        if p["fbgn"] != fbgn:
-            raise SystemExit("expression parts have different feature lists; cannot combine")
+    return parts
+
+
+def _summarise(parts: list[dict], acc: str, subset: str, cutoff: float, ex: dict):
+    fbgn, symbol, S, N = _union_genes(parts)
     n_genes = len(fbgn)
     clusters = [c for p in parts for c in p["clusters"]]
     if len(set(clusters)) != len(clusters):
         raise SystemExit("cluster labels repeat across expression parts; set a label_prefix")
     cidx = {c: i for i, c in enumerate(clusters)}
     cluster_size = np.concatenate([p["cluster_size"] for p in parts])
-    S = np.concatenate([p["S"] for p in parts], axis=1)
-    N = np.concatenate([p["N"] for p in parts], axis=1)
     n_cells = len(set().union(*(p["cells"] for p in parts)))
     with np.errstate(divide="ignore", invalid="ignore"):
         extent = N / cluster_size[None, :]

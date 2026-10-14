@@ -2,7 +2,17 @@
 """Map a project's gene ids to current FlyBase genes -> projects/<p>/gene_id_map.tsv.
 
 Gene ids come from the GEO features file(s) as published, so some are no longer
-current. This queries FlyBase Chado (public read-only:
+current. h5ad projects (`expression.source: h5ad`) are keyed by gene **symbol** (the
+matrix's gene names): a symbol takes the FBgn the authors' files give it (`var` /
+`raw.var` column `ID`, pooled over the project's files and any `expression.gene_ids_from`
+projects) and is then mapped as above; a symbol with no FBgn is looked up by name
+(D. melanogaster genes only):
+
+  current    the current symbol of a gene                -> that gene
+  synonym    no current match; a synonym of exactly one gene -> that gene
+  ambiguous  a synonym of several genes                  -> dropped
+  unmatched  no gene                                     -> dropped
+ This queries FlyBase Chado (public read-only:
 `psql -h chado.flybase.org -U flybase flybase`) once and writes a committed table the
 expression build applies (`expression.gene_id_map`), so builds stay reproducible and
 need no Chado access:
@@ -41,6 +51,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
+from vfb_scrnaseq.ingest_h5ad import h5ad_path, read_genes  # noqa: E402
 from vfb_scrnaseq.project_config import load_config  # noqa: E402
 
 PSQL = ["psql", "-h", "chado.flybase.org", "-U", "flybase", "flybase", "-At", "-F", "\t"]
@@ -64,9 +75,47 @@ union all select u, 'withdrawn', '', '' from ids
 """
 
 
+SYMBOL_QUERY = """
+with s as (select unnest(string_to_array(:'syms', E'\\t')) u),
+dmel as (select organism_id from organism where genus = 'Drosophila' and species = 'melanogaster'),
+genes as (select f.feature_id, f.uniquename, f.name from feature f
+          where not f.is_obsolete and f.uniquename like 'FBgn%'
+            and f.organism_id in (select organism_id from dmel))
+select distinct s.u, 'current', g.uniquename, g.name from s join genes g on g.name = s.u
+union all
+select distinct s.u, 'synonym', g.uniquename, g.name from s
+  join synonym y on y.name = s.u
+  join feature_synonym fs on fs.synonym_id = y.synonym_id
+  join genes g on g.feature_id = fs.feature_id;
+"""
+
+
+def _h5ad_ids(project: str) -> tuple[list[str], dict[str, str]]:
+    """(gene symbols in first-seen order, {symbol: FBgn from the authors' files}) over
+    a project's h5ad files."""
+    cfg = load_config(project)
+    acc = cfg["dataset"]["accession"]
+    order: dict[str, None] = {}
+    ids: dict[str, str] = {}
+    for c in cfg["sample_build"]["clusterings"]:
+        genes, fbgns = read_genes(h5ad_path(acc, c["id"]))
+        for g, f in zip(genes, fbgns):
+            order.setdefault(g)
+            if f:
+                ids.setdefault(g, f)
+    return list(order), ids
+
+
 def features(cfg: dict) -> list[tuple[str, str]]:
-    """(fbgn, symbol) over the project's features files, in first-seen order."""
+    """(fbgn, symbol) over the project's features files (or h5ad genes, fbgn '' when
+    the files give none), in first-seen order."""
     ex = cfg["expression"]
+    if ex.get("source") == "h5ad":
+        symbols, ids = _h5ad_ids(cfg["project"])
+        for other in ex.get("gene_ids_from", []):
+            for g, f in _h5ad_ids(other)[1].items():
+                ids.setdefault(g, f)
+        return [(ids.get(g, ""), g) for g in symbols]
     files = [ex["features_file"]] + [p["features_file"] for p in ex.get("extra_parts", [])]
     seen: dict[str, str] = {}
     for f in files:
@@ -98,6 +147,51 @@ def chado_lookup(ids: list[str]) -> dict[str, list[tuple[str, str, str]]]:
         u, status, cur, sym = line.split("\t")
         hits[u].append((status, cur, sym))
     return hits
+
+
+def chado_symbol_lookup(symbols: list[str]) -> dict[str, list[tuple[str, str, str]]]:
+    """{symbol: [(current|synonym, fbgn, current symbol)]} for D. melanogaster genes."""
+    if not symbols:
+        return {}
+    out = subprocess.run(PSQL + ["-v", "syms=" + "\t".join(symbols)], input=SYMBOL_QUERY,
+                         capture_output=True, text=True, check=True).stdout
+    hits: dict[str, list[tuple[str, str, str]]] = defaultdict(list)
+    for line in out.splitlines():
+        u, how, cur, sym = line.split("\t")
+        hits[u].append((how, cur, sym))
+    return hits
+
+
+def classify_symbols(symbols: list[str], hits: dict) -> list[dict]:
+    rows = []
+    for sym in symbols:
+        h = hits.get(sym, [])
+        cur = sorted({(f, s) for how, f, s in h if how == "current"})
+        syn = sorted({(f, s) for how, f, s in h if how == "synonym"})
+        pick = cur if cur else syn
+        status = ("unmatched" if not pick else "ambiguous" if len(pick) > 1
+                  else "current" if cur else "synonym")
+        keep = status in ("current", "synonym")
+        rows.append({"input_fbgn": "", "input_symbol": sym, "status": status,
+                     "current_fbgn": pick[0][0] if keep else "",
+                     "current_symbol": pick[0][1] if keep else
+                     ("; ".join(f"{f} {s}" for f, s in pick) if status == "ambiguous" else "")})
+    return rows
+
+
+def reclassify(feats: list[tuple[str, str]]) -> list[dict]:
+    """Map rows for (fbgn, symbol) inputs, in input order: by FBgn where given, else by
+    symbol (fbgn '')."""
+    with_id = [(f, g) for f, g in feats if f]
+    by_id = classify(with_id, chado_lookup([f for f, _ in with_id])) if with_id else []
+    no_id = [g for f, g in feats if not f and g]
+    by_symbol = classify_symbols(no_id, chado_symbol_lookup(no_id))
+    out, i, j = [], iter(by_id), iter(by_symbol)
+    for f, g in feats:
+        out.append(next(i) if f else next(j) if g else
+                   {"input_fbgn": "", "input_symbol": "", "status": "unmatched",
+                    "current_fbgn": "", "current_symbol": ""})
+    return out
 
 
 def flybase_release() -> str:
@@ -144,7 +238,7 @@ def main() -> None:
         print("  WARNING: could not read the FlyBase release from flybase.org; pass --release", file=sys.stderr)
     cfg = load_config(args.project)
     feats = features(cfg)
-    rows = classify(feats, chado_lookup([f for f, _ in feats]))
+    rows = reclassify(feats)
     out = REPO_ROOT / "projects" / args.project / "gene_id_map.tsv"
     with out.open("w", newline="") as fh:
         fh.write(f"# FlyBase Chado (chado.flybase.org), queried {dt.date.today().isoformat()}; "

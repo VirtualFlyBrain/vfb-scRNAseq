@@ -3,8 +3,8 @@
 
 Reads the current FlyBase release from flybase.org and the release recorded in each
 `projects/*/gene_id_map.tsv` header. If FlyBase is newer, re-classifies every project's
-input gene ids against FlyBase Chado (the committed map already lists them, so no GEO
-files are needed) and compares with the committed map. If any gene id or symbol used
+input gene ids (or, for h5ad projects, symbols without ids) against FlyBase Chado
+(the committed map already lists them, so no source files are needed) and compares with the committed map. If any gene id or symbol used
 by the expression output has changed, it opens an issue in this repo with the counts
 and the commands to run (`update_gene_ids.py` then `build_expression.py`); if nothing
 changed, it records the release without an issue. If Chado can't be reached, the
@@ -48,16 +48,16 @@ def _output(**kv) -> None:
 
 def compare(old: list[dict], new: list[dict]) -> dict:
     """Changes between a committed map and a re-classification of the same ids."""
-    nb = {r["input_fbgn"]: r for r in new}
+    nb = {(r["input_fbgn"], r["input_symbol"]): r for r in new}
     ids, symbols, examples = 0, 0, []
     for r in old:
-        n = nb.get(r["input_fbgn"])
+        n = nb.get((r["input_fbgn"], r["input_symbol"]))
         if n is None:
             continue
         if (n["status"], n["current_fbgn"]) != (r["status"], r["current_fbgn"]):
             ids += 1
             if len(examples) < 5:
-                examples.append(f"{r['input_fbgn']} ({r['input_symbol']}): {r['status']} "
+                examples.append(f"{r['input_fbgn'] or 'symbol'} ({r['input_symbol']}): {r['status']} "
                                 f"{r['current_fbgn'] or '-'} -> {n['status']} {n['current_fbgn'] or '-'}")
         elif n["current_symbol"] != r["current_symbol"]:
             symbols += 1
@@ -94,8 +94,7 @@ def main() -> int:
             continue
         _, old = ug.read_map(p)
         try:
-            new = ug.classify([(r["input_fbgn"], r["input_symbol"]) for r in old],
-                              ug.chado_lookup([r["input_fbgn"] for r in old]))
+            new = ug.reclassify([(r["input_fbgn"], r["input_symbol"]) for r in old])
         except Exception as e:  # noqa: BLE001 - Chado unreachable / psql missing
             print(f"  {project}: Chado query failed ({type(e).__name__}: {str(e)[:120]})")
             chado_ok = False
@@ -116,7 +115,7 @@ def main() -> int:
                 lines += [f"  - {ex}" for ex in r["examples"]]
         else:
             lines += ["Chado could not be queried from CI, so the number of changed ids is unknown."]
-        lines += ["", "To update (needs `psql` access to chado.flybase.org and the GEO files in `.cache/`):",
+        lines += ["", "To update (needs `psql` access to chado.flybase.org and the source files in `.cache/`):",
                   "```sh"]
         for project in behind:
             lines += [f"uv run python scripts/update_gene_ids.py  --project {project}",
