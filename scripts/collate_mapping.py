@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import datetime
 import json
 import re
 import sys
@@ -61,6 +62,12 @@ def ensure_reports_readme(proj: Path) -> Path | None:
         return None
     readme.write_text(REPORTS_README.read_text())
     return readme
+
+
+def _reviewed(value: str) -> str:
+    """A curator marks a row reviewed with y/yes; record it as the date (ISO) of the
+    collate run that picks it up. Dates and anything else are kept as written."""
+    return datetime.date.today().isoformat() if value.strip().lower() in ("y", "yes") else value
 
 
 def _manual_edit_summary(m: dict) -> str:
@@ -114,7 +121,7 @@ def collate(project: str) -> tuple[list[str], list[dict]]:
             "n_other_candidates": len(m.get("other_candidates", [])),
             "recommendation": " ".join(m.get("recommendation", "").split()),
             "manual_edit": _manual_edit_summary(m),
-            "reviewed": previous.get(label, {}).get("reviewed", ""),
+            "reviewed": _reviewed(previous.get(label, {}).get("reviewed", "")),
             "review_notes": previous.get(label, {}).get("review_notes", ""),
         })
         for c in source_cols:

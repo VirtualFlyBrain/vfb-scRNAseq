@@ -307,7 +307,8 @@ is read through `src/vfb_scrnaseq/project_config.py`. Config sections:
 - **`annotations.review_columns`** — extra per-cluster fields from
   `cell_type_annotations.json` shown after the cluster key in `mapping.tsv` (e.g.
   Davie's clustering, the authors' cluster id, the Table S2 call and any conflict).
-  Re-running `collate_mapping.py` keeps the `reviewed`/`review_notes` already there.
+  Re-running `collate_mapping.py` keeps the `reviewed`/`review_notes` already there;
+  a `reviewed` mark of `y`/`yes` is converted to the date (ISO) of that run.
 - **Per-cluster annotation entries** may carry `clustering` (a `sample_build.clusterings`
   id; entries there may be `{id, name}`), `source_cluster_id` and `unannotated`
   (held when `hold_unidentified`). **`expression.membership_file`** (barcode→cluster)
