@@ -21,7 +21,7 @@ import sys
 from pathlib import Path
 
 from vfb_scrnaseq.ids import IDRegistry
-from vfb_scrnaseq.project_config import label_slug
+from vfb_scrnaseq.project_config import fbbt_mapping
 from vfb_scrnaseq.pub import resolve_pub
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -163,10 +163,15 @@ def build_entities(project: str) -> list[dict]:
     # --- Clusters ---
     # An annotation may name its own clustering (projects with several clusterings,
     # e.g. Davie 2018); otherwise it belongs to the dataset's annotated subset.
+    # Only clusters with an FBbt term are loaded (held ones get no id or entity).
     subset = anns_subset(proj)
     main_clustering = clustering_iri_by_subset.get(subset)
     for ann in anns:
         label = ann["label"]
+        m = fbbt_mapping(proj, label)
+        bm = (m or {}).get("best_match") or {}
+        if not bm.get("fbbt_id"):
+            continue
         cid = reg.mint("Cluster", f"{d['accession']}:{subset}:{label}", label=label)
         if ann.get("clustering"):
             clustering = clustering_iri_by_subset[ann["clustering"]]
@@ -196,17 +201,16 @@ def build_entities(project: str) -> list[dict]:
         title = MEMBERSHIP_TITLES.get(ann.get("membership"))
         if title:
             rec["title"] = title.format(type=ann.get("type", label))
-        if ann.get("parent_cluster"):
-            # sub-cluster -> the cluster whose cells were re-clustered (part of)
+        parent = ann.get("parent_cluster")
+        if parent and ((fbbt_mapping(proj, parent) or {}).get("best_match") or {}).get("fbbt_id"):
+            # sub-cluster -> the cluster whose cells were re-clustered (part of),
+            # when that cluster is loaded
             rec["parent_cluster"] = iri(reg.mint(
                 "Cluster", f"{d['accession']}:{subset}:{ann['parent_cluster']}",
                 label=ann["parent_cluster"]))
-        m = _mapping(proj, label)
-        bm = (m or {}).get("best_match") or {}
-        if bm.get("fbbt_id"):
-            # composed primarily of: the best match plus any additional_matches
-            rec["cell_type"] = [bm["fbbt_id"]] + [
-                a["fbbt_id"] for a in (m.get("additional_matches") or [])]
+        # composed primarily of: the best match plus any additional_matches
+        rec["cell_type"] = [bm["fbbt_id"]] + [
+            a["fbbt_id"] for a in (m.get("additional_matches") or [])]
         if label in clu_counts:
             rec["total_gene_count"] = clu_counts[label]["total_gene_count"]
             rec["filtered_gene_count"] = clu_counts[label]["filtered_gene_count"]
@@ -227,11 +231,6 @@ MEMBERSHIP_TITLES = {
 def anns_subset(proj: Path) -> str:
     cta = json.loads((proj / "cell_type_annotations.json").read_text())
     return cta.get("dataset", {}).get("subset", "main")
-
-
-def _mapping(proj: Path, label: str) -> dict | None:
-    f = proj / "mapping" / f"{label_slug(label)}.fbbt_mapping.json"
-    return json.loads(f.read_text()) if f.exists() else None
 
 
 def _yaml(path: Path) -> dict:

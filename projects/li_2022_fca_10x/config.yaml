@@ -175,11 +175,13 @@ annotations:
   # shown after the cluster key in mapping.tsv
   review_columns: [clustering, source_cluster_id, type, author_ontology_id, author_broad]
 
-# The authors' "unannotated" and "artefact" cells of each analysis are kept as one
-# entry each, flagged `unannotated`, and HELD unmapped.
+# The authors' leftover cells of each analysis ("unannotated"; Smart-seq2 "unknown":
+# the classifier gave no type) and "artefact" cells are one entry each, flagged
+# `unannotated` and held: listed in mapping.tsv with a hold_reason, never loaded.
 unidentified:
   rule: none
   hold_unidentified: true
+  hold_reasons: {unannotated: leftover, artefact: artefact, unknown: unassigned}
 
 # FBbt mappings are made once per author type (type_mapping/: scripted confirmations
 # from confirm_author_terms.py + map-clusters-to-fbbt agents from reports/) and copied

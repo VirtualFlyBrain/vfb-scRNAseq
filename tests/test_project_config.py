@@ -91,3 +91,15 @@ def test_reports_readme_created_once_never_overwritten(tmp_path):
     readme.write_text("project-specific notes\n")
     assert mod.ensure_reports_readme(proj) is None          # existing README kept
     assert readme.read_text() == "project-specific notes\n"
+
+
+def test_hold_reason():
+    from vfb_scrnaseq.project_config import hold_reason
+    cfg = {"unidentified": {"hold_classes": ["C"], "hold_reasons": {"artefact": "artefact"}}}
+    reason = hold_reason("nonexistent_project", cfg)
+    term = {"best_match": {"fbbt_id": "FBbt:00000001"}}
+    assert reason({"label": "a", "type": "artefact", "unannotated": True}, None) == "artefact"
+    assert reason({"label": "n", "type": "13", "unannotated": True}, None) == "untyped"
+    assert reason({"label": "C16", "class": "C"}, {"best_match": None}) == "undefined class"
+    assert reason({"label": "Hsp"}, {"best_match": None}) == "no term"
+    assert reason({"label": "KC"}, term) == ""

@@ -16,78 +16,6 @@
 @prefix vfb: <http://virtualflybrain.org/reports/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-VFBseq:00000303 a FBcv:0009003 ;
-    rdfs:label "cluster 0 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 4109 ;
-    neo_custom:filtered_gene_count 1915 ;
-    neo_custom:total_gene_count 10803 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000304 a FBcv:0009003 ;
-    rdfs:label "cluster 1 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 4079 ;
-    neo_custom:filtered_gene_count 1738 ;
-    neo_custom:total_gene_count 10740 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000305 a FBcv:0009003 ;
-    rdfs:label "cluster 2 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 2852 ;
-    neo_custom:filtered_gene_count 2224 ;
-    neo_custom:total_gene_count 10511 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000306 a FBcv:0009003 ;
-    rdfs:label "cluster 3 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 2624 ;
-    neo_custom:filtered_gene_count 2059 ;
-    neo_custom:total_gene_count 10319 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000307 a FBcv:0009003 ;
-    rdfs:label "cluster 4 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 2522 ;
-    neo_custom:filtered_gene_count 2092 ;
-    neo_custom:total_gene_count 10311 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000308 a FBcv:0009003 ;
-    rdfs:label "cluster 5 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 2319 ;
-    neo_custom:filtered_gene_count 2684 ;
-    neo_custom:total_gene_count 10623 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000309 a FBcv:0009003 ;
-    rdfs:label "cluster 6 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 1926 ;
-    neo_custom:filtered_gene_count 1528 ;
-    neo_custom:total_gene_count 9402 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000310 a FBcv:0009003 ;
-    rdfs:label "cluster 7 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 1743 ;
-    neo_custom:filtered_gene_count 2066 ;
-    neo_custom:total_gene_count 9853 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
 VFBseq:00000311 a FBcv:0009003 ;
     rdfs:label "G-KC cluster 8 (res-2.0) (Davie 2018)" ;
     neo_custom:cell_count 1642 ;
@@ -96,15 +24,6 @@ VFBseq:00000311 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000296 ;
     RO:0002473 FBbt:00049828 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000312 a FBcv:0009003 ;
-    rdfs:label "cluster 9 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 1545 ;
-    neo_custom:filtered_gene_count 2036 ;
-    neo_custom:total_gene_count 9739 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000313 a FBcv:0009003 ;
@@ -137,15 +56,6 @@ VFBseq:00000315 a FBcv:0009003 ;
     RO:0002473 FBbt:00003832 ;
     dcterms:source VFBseq:00000243 .
 
-VFBseq:00000316 a FBcv:0009003 ;
-    rdfs:label "cluster 13 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 1070 ;
-    neo_custom:filtered_gene_count 2022 ;
-    neo_custom:total_gene_count 9247 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
 VFBseq:00000317 a FBcv:0009003 ;
     rdfs:label "Ensheathing_glia cluster 14 (res-2.0) (Davie 2018)" ;
     neo_custom:cell_count 1069 ;
@@ -154,24 +64,6 @@ VFBseq:00000317 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000296 ;
     RO:0002473 FBbt:00100504 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000318 a FBcv:0009003 ;
-    rdfs:label "cluster 15 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 1048 ;
-    neo_custom:filtered_gene_count 2060 ;
-    neo_custom:total_gene_count 9323 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000319 a FBcv:0009003 ;
-    rdfs:label "cluster 16 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 986 ;
-    neo_custom:filtered_gene_count 2142 ;
-    neo_custom:total_gene_count 9290 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000320 a FBcv:0009003 ;
@@ -184,33 +76,6 @@ VFBseq:00000320 a FBcv:0009003 ;
     RO:0002473 FBbt:00047527 ;
     dcterms:source VFBseq:00000243 .
 
-VFBseq:00000321 a FBcv:0009003 ;
-    rdfs:label "cluster 18 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 780 ;
-    neo_custom:filtered_gene_count 1686 ;
-    neo_custom:total_gene_count 8557 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000322 a FBcv:0009003 ;
-    rdfs:label "cluster 19 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 747 ;
-    neo_custom:filtered_gene_count 1644 ;
-    neo_custom:total_gene_count 8580 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000324 a FBcv:0009003 ;
-    rdfs:label "cluster 21 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 733 ;
-    neo_custom:filtered_gene_count 1788 ;
-    neo_custom:total_gene_count 8554 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
 VFBseq:00000325 a FBcv:0009003 ;
     rdfs:label "A/B-KC cluster 22 (res-2.0) (Davie 2018)" ;
     neo_custom:cell_count 688 ;
@@ -221,15 +86,6 @@ VFBseq:00000325 a FBcv:0009003 ;
     RO:0002473 FBbt:00100248 ;
     dcterms:source VFBseq:00000243 .
 
-VFBseq:00000326 a FBcv:0009003 ;
-    rdfs:label "Hsp cluster 23 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 681 ;
-    neo_custom:filtered_gene_count 3248 ;
-    neo_custom:total_gene_count 9639 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
 VFBseq:00000327 a FBcv:0009003 ;
     rdfs:label "T4/T5 cluster 24 (res-2.0) (Davie 2018)" ;
     neo_custom:cell_count 648 ;
@@ -238,15 +94,6 @@ VFBseq:00000327 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000296 ;
     RO:0002473 FBbt:00003726 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000328 a FBcv:0009003 ;
-    rdfs:label "cluster 25 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 585 ;
-    neo_custom:filtered_gene_count 2621 ;
-    neo_custom:total_gene_count 9268 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000329 a FBcv:0009003 ;
@@ -269,24 +116,6 @@ VFBseq:00000331 a FBcv:0009003 ;
     RO:0002473 FBbt:00049834 ;
     dcterms:source VFBseq:00000243 .
 
-VFBseq:00000332 a FBcv:0009003 ;
-    rdfs:label "cluster 29 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 516 ;
-    neo_custom:filtered_gene_count 1650 ;
-    neo_custom:total_gene_count 8515 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000333 a FBcv:0009003 ;
-    rdfs:label "cluster 30 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 514 ;
-    neo_custom:filtered_gene_count 2181 ;
-    neo_custom:total_gene_count 8547 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
 VFBseq:00000334 a FBcv:0009003 ;
     rdfs:label "T2 cluster 31 (res-2.0) (Davie 2018)" ;
     neo_custom:cell_count 507 ;
@@ -297,15 +126,6 @@ VFBseq:00000334 a FBcv:0009003 ;
     RO:0002473 FBbt:00003728 ;
     dcterms:source VFBseq:00000243 .
 
-VFBseq:00000335 a FBcv:0009003 ;
-    rdfs:label "cluster 32 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 503 ;
-    neo_custom:filtered_gene_count 4467 ;
-    neo_custom:total_gene_count 10227 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
 VFBseq:00000336 a FBcv:0009003 ;
     rdfs:label "T3 cluster 33 (res-2.0) (Davie 2018)" ;
     neo_custom:cell_count 471 ;
@@ -314,15 +134,6 @@ VFBseq:00000336 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000296 ;
     RO:0002473 FBbt:00003730 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000337 a FBcv:0009003 ;
-    rdfs:label "cluster 34 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 458 ;
-    neo_custom:filtered_gene_count 2274 ;
-    neo_custom:total_gene_count 8971 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000338 a FBcv:0009003 ;
@@ -375,15 +186,6 @@ VFBseq:00000342 a FBcv:0009003 ;
     RO:0002473 FBbt:00110074 ;
     dcterms:source VFBseq:00000243 .
 
-VFBseq:00000343 a FBcv:0009003 ;
-    rdfs:label "cluster 40 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 375 ;
-    neo_custom:filtered_gene_count 1514 ;
-    neo_custom:total_gene_count 7916 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
 VFBseq:00000344 a FBcv:0009003 ;
     rdfs:label "Tm5ab cluster 41 (res-2.0) (Davie 2018)" ;
     neo_custom:cell_count 351 ;
@@ -402,15 +204,6 @@ VFBseq:00000346 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000296 ;
     RO:0002473 FBbt:00058144 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000347 a FBcv:0009003 ;
-    rdfs:label "cluster 44 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 329 ;
-    neo_custom:filtered_gene_count 2505 ;
-    neo_custom:total_gene_count 8615 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000348 a FBcv:0009003 ;
@@ -433,15 +226,6 @@ VFBseq:00000349 a FBcv:0009003 ;
     RO:0002473 FBbt:00058202 ;
     dcterms:source VFBseq:00000243 .
 
-VFBseq:00000350 a FBcv:0009003 ;
-    rdfs:label "cluster 47 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 320 ;
-    neo_custom:filtered_gene_count 1968 ;
-    neo_custom:total_gene_count 8071 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
 VFBseq:00000351 a FBcv:0009003 ;
     rdfs:label "Pm1/Pm2/Pm3 cluster 48 (res-2.0) (Davie 2018)" ;
     neo_custom:cell_count 316 ;
@@ -450,33 +234,6 @@ VFBseq:00000351 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000296 ;
     RO:0002473 FBbt:00003832 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000352 a FBcv:0009003 ;
-    rdfs:label "cluster 49 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 296 ;
-    neo_custom:filtered_gene_count 1404 ;
-    neo_custom:total_gene_count 7580 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000353 a FBcv:0009003 ;
-    rdfs:label "cluster 50 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 286 ;
-    neo_custom:filtered_gene_count 1760 ;
-    neo_custom:total_gene_count 8885 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000354 a FBcv:0009003 ;
-    rdfs:label "cluster 51 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 280 ;
-    neo_custom:filtered_gene_count 1399 ;
-    neo_custom:total_gene_count 7468 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000355 a FBcv:0009003 ;
@@ -499,15 +256,6 @@ VFBseq:00000356 a FBcv:0009003 ;
     RO:0002473 FBbt:00007251 ;
     dcterms:source VFBseq:00000243 .
 
-VFBseq:00000357 a FBcv:0009003 ;
-    rdfs:label "cluster 54 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 276 ;
-    neo_custom:filtered_gene_count 1993 ;
-    neo_custom:total_gene_count 8613 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
 VFBseq:00000358 a FBcv:0009003 ;
     rdfs:label "Pm4 cluster 55 (res-2.0) (Davie 2018)" ;
     neo_custom:cell_count 271 ;
@@ -516,15 +264,6 @@ VFBseq:00000358 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000296 ;
     RO:0002473 FBbt:00111282 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000359 a FBcv:0009003 ;
-    rdfs:label "cluster 56 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 265 ;
-    neo_custom:filtered_gene_count 1776 ;
-    neo_custom:total_gene_count 8570 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000360 a FBcv:0009003 ;
@@ -547,15 +286,6 @@ VFBseq:00000361 a FBcv:0009003 ;
     RO:0002473 FBbt:00003741 ;
     dcterms:source VFBseq:00000243 .
 
-VFBseq:00000362 a FBcv:0009003 ;
-    rdfs:label "cluster 59 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 246 ;
-    neo_custom:filtered_gene_count 1972 ;
-    neo_custom:total_gene_count 8706 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
 VFBseq:00000363 a FBcv:0009003 ;
     rdfs:label "Cortex_glia cluster 60 (res-2.0) (Davie 2018)" ;
     neo_custom:cell_count 239 ;
@@ -574,15 +304,6 @@ VFBseq:00000364 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000296 ;
     RO:0002473 FBbt:00049537 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000365 a FBcv:0009003 ;
-    rdfs:label "cluster 62 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 230 ;
-    neo_custom:filtered_gene_count 2084 ;
-    neo_custom:total_gene_count 7811 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000366 a FBcv:0009003 ;
@@ -615,33 +336,6 @@ VFBseq:00000369 a FBcv:0009003 ;
     RO:0002473 FBbt:00100507 ;
     dcterms:source VFBseq:00000243 .
 
-VFBseq:00000370 a FBcv:0009003 ;
-    rdfs:label "cluster 67 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 216 ;
-    neo_custom:filtered_gene_count 1587 ;
-    neo_custom:total_gene_count 7463 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000371 a FBcv:0009003 ;
-    rdfs:label "cluster 68 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 215 ;
-    neo_custom:filtered_gene_count 1733 ;
-    neo_custom:total_gene_count 8704 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000372 a FBcv:0009003 ;
-    rdfs:label "cluster 69 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 205 ;
-    neo_custom:filtered_gene_count 1952 ;
-    neo_custom:total_gene_count 8262 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
 VFBseq:00000373 a FBcv:0009003 ;
     rdfs:label "Perineurial_glia cluster 70 (res-2.0) (Davie 2018)" ;
     neo_custom:cell_count 200 ;
@@ -650,15 +344,6 @@ VFBseq:00000373 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000296 ;
     RO:0002473 FBbt:00100506 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000374 a FBcv:0009003 ;
-    rdfs:label "cluster 71 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 193 ;
-    neo_custom:filtered_gene_count 1967 ;
-    neo_custom:total_gene_count 8119 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000375 a FBcv:0009003 ;
@@ -691,24 +376,6 @@ VFBseq:00000377 a FBcv:0009003 ;
     RO:0002473 FBbt:00111271 ;
     dcterms:source VFBseq:00000243 .
 
-VFBseq:00000378 a FBcv:0009003 ;
-    rdfs:label "cluster 75 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 138 ;
-    neo_custom:filtered_gene_count 2059 ;
-    neo_custom:total_gene_count 8052 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000379 a FBcv:0009003 ;
-    rdfs:label "cluster 76 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 131 ;
-    neo_custom:filtered_gene_count 1652 ;
-    neo_custom:total_gene_count 8050 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
 VFBseq:00000380 a FBcv:0009003 ;
     rdfs:label "C2 cluster 77 (res-2.0) (Davie 2018)" ;
     neo_custom:cell_count 127 ;
@@ -717,24 +384,6 @@ VFBseq:00000380 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000296 ;
     RO:0002473 FBbt:00003743 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000381 a FBcv:0009003 ;
-    rdfs:label "cluster 78 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 124 ;
-    neo_custom:filtered_gene_count 2816 ;
-    neo_custom:total_gene_count 7409 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000382 a FBcv:0009003 ;
-    rdfs:label "cluster 79 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 117 ;
-    neo_custom:filtered_gene_count 1971 ;
-    neo_custom:total_gene_count 7784 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000383 a FBcv:0009003 ;
@@ -747,15 +396,6 @@ VFBseq:00000383 a FBcv:0009003 ;
     RO:0002473 FBbt:00052046 ;
     dcterms:source VFBseq:00000243 .
 
-VFBseq:00000384 a FBcv:0009003 ;
-    rdfs:label "cluster 81 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 95 ;
-    neo_custom:filtered_gene_count 2207 ;
-    neo_custom:total_gene_count 8311 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
 VFBseq:00000385 a FBcv:0009003 ;
     rdfs:label "Chiasm_glia cluster 82 (res-2.0) (Davie 2018)" ;
     neo_custom:cell_count 86 ;
@@ -764,24 +404,6 @@ VFBseq:00000385 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000296 ;
     RO:0002473 FBbt:00100525 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000386 a FBcv:0009003 ;
-    rdfs:label "cluster 83 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 84 ;
-    neo_custom:filtered_gene_count 2089 ;
-    neo_custom:total_gene_count 7489 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000387 a FBcv:0009003 ;
-    rdfs:label "cluster 84 (res-2.0) (Davie 2018)" ;
-    neo_custom:cell_count 73 ;
-    neo_custom:filtered_gene_count 2400 ;
-    neo_custom:total_gene_count 7014 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000296 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000388 a FBcv:0009003 ;
@@ -802,15 +424,6 @@ VFBseq:00000389 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000296 ;
     RO:0002473 FBbt:00003629 ;
-    dcterms:source VFBseq:00000243 .
-
-VFBseq:00000390 a FBcv:0009003 ;
-    rdfs:label "cluster 30 (res-8.0) (Davie 2018)" ;
-    neo_custom:cell_count 555 ;
-    neo_custom:filtered_gene_count 2652 ;
-    neo_custom:total_gene_count 9186 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000297 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000391 a FBcv:0009003 ;
@@ -1778,8 +1391,8 @@ VFBseq:00000296 a FBcv:0009002 ;
 VFBseq:00000243 a FBcv:0003023 ;
     rdfs:label "scRNAseq data from Davie (2018)" ;
     neo_custom:accession "GSE107451" ;
-    neo_custom:filtered_gene_count 6704 ;
-    neo_custom:total_gene_count 14456 ;
+    neo_custom:filtered_gene_count 6577 ;
+    neo_custom:total_gene_count 13362 ;
     neo_property:nodeLabel "DataSet" ;
     IAO:0000115 "A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain" ;
     OBI:0000312 FBcv:0009000 ;

@@ -1050,8 +1050,8 @@
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009001"/>
             </Restriction>
         </rdf:type>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15011</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16293</neo_custom:total_gene_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14913</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16276</neo_custom:total_gene_count>
         <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
         <obo:IAO_0000115>Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly</obo:IAO_0000115>
         <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -3297,21 +3297,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001252 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001252">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000844"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">266</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">393</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11163</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster unknown (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001253 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001253">
@@ -3598,21 +3583,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001266 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001266">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000845"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4464</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster unknown (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001267 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001267">
@@ -3723,22 +3693,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001272 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001272">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000846"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2529</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9761</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <obo:IAO_0000115>Cells assigned the type &apos;female reproductive system&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>female reproductive system cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001273 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001273">
@@ -3845,37 +3799,6 @@
         <obo:IAO_0000115>Cells assigned the type &apos;sensory neuron&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>sensory neuron cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001278 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001278">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000846"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5036</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5036</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <obo:IAO_0000115>Cells assigned the type &apos;testis&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>testis cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001279 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001279">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000846"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">121</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1051</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12355</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster unknown (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -4298,21 +4221,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001299 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001299">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000847"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">786</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10377</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster unknown (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001300 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001300">
@@ -4507,21 +4415,6 @@
         <obo:IAO_0000115>Cells assigned the type &apos;neuron of haltere&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>neuron of haltere cells, predicted (Fly Cell Atlas Smart-seq2 Haltere) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001309 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001309">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000848"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">165</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7162</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster unknown (Fly Cell Atlas Smart-seq2 Haltere) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -4790,21 +4683,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001322 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001322">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000849"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">227</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">281</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10181</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster unknown (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001323 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001323">
@@ -4999,21 +4877,6 @@
         <obo:IAO_0000115>Cells assigned the type &apos;sensory neuron&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>sensory neuron cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001332 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001332">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000850"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">322</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6281</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster unknown (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -5260,22 +5123,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001344 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001344">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000851"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2970</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2970</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <obo:IAO_0000115>Cells assigned the type &apos;seminal vesicle&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>seminal vesicle cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001345 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001345">
@@ -5294,21 +5141,6 @@
         <obo:IAO_0000115>Cells assigned the type &apos;spermatid&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>spermatid cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001346 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001346">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000851"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4200</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4200</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster unknown (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -5577,21 +5409,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001359 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001359">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000852"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">317</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6760</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster artefact (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001360 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001360">
@@ -5632,21 +5449,6 @@
         <obo:IAO_0000115>Cells assigned the type &apos;principal cell*&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>principal cell* cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001362 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001362">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000852"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1823</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10315</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster unknown (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -5893,37 +5695,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001374 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001374">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000853"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5752</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <obo:IAO_0000115>Cells assigned the type &apos;ovary cell&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>ovary cell cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001375 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001375">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000853"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">164</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">595</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12324</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster unknown (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001376 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001376">
@@ -5964,21 +5735,6 @@
         <obo:IAO_0000115>Cells assigned the type &apos;adult tracheal cell&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001378 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001378">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000854"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">265</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1427</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10193</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster artefact (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -6385,21 +6141,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001397 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001397">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000854"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">225</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4017</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11761</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster unknown (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001398 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001398">
@@ -6642,22 +6383,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001409 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001409">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000855"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">401</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3289</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <obo:IAO_0000115>Cells assigned the type &apos;maxillary palpus&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>maxillary palpus cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001410 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001410">
@@ -6742,21 +6467,6 @@
         <obo:IAO_0000115>Cells assigned the type &apos;tormogen cell&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>tormogen cell cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001414 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001414">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000855"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">533</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3878</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster unknown (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -7487,21 +7197,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001448 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001448">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000856"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4257</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8761</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster unknown (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001449 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001449">
@@ -7568,70 +7263,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001452 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001452">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000857"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">118</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9387</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <obo:IAO_0000115>Cells assigned the type &apos;btl-GAL4 positive female cell, cluster 1, likely to be ovary cell&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>btl-GAL4 positive female cell, cluster 1, likely to be ovary cell cells, predicted (Fly Cell Atlas Smart-seq2 Trachea) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001453 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001453">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000857"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4724</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9285</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <obo:IAO_0000115>Cells assigned the type &apos;btl-GAL4 positive female cell, cluster 2, likely to be ovary cell&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>btl-GAL4 positive female cell, cluster 2, likely to be ovary cell cells, predicted (Fly Cell Atlas Smart-seq2 Trachea) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001454 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001454">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000857"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3319</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8225</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <obo:IAO_0000115>Cells assigned the type &apos;btl-GAL4 positive female cell, likely to be ovary cell, sim+&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>btl-GAL4 positive female cell, likely to be ovary cell, sim+ cells, predicted (Fly Cell Atlas Smart-seq2 Trachea) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001455 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001455">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000857"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2432</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7207</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <obo:IAO_0000115>Cells assigned the type &apos;btl-GAL4 positive female cell, likely to be ovary cell, sim+, H15+&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>btl-GAL4 positive female cell, likely to be ovary cell, sim+, H15+ cells, predicted (Fly Cell Atlas Smart-seq2 Trachea) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001456 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001456">
@@ -7650,21 +7281,6 @@
         <obo:IAO_0000115>Cells assigned the type &apos;muscle cell&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Trachea) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001457 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001457">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000857"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">125</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1271</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11257</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster unknown (Fly Cell Atlas Smart-seq2 Trachea) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -7819,21 +7435,6 @@
         <obo:IAO_0000115>Cells assigned the type &apos;pheromone-sensing neuron&apos; by the authors&apos; classifier (label transfer from an annotated analysis), not a transcriptomic cluster.</obo:IAO_0000115>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>pheromone-sensing neuron cells, predicted (Fly Cell Atlas Smart-seq2 Wing) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001465 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001465">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000858"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">438</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">421</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10263</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
-        <rdfs:label>cluster unknown (Fly Cell Atlas Smart-seq2 Wing) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 

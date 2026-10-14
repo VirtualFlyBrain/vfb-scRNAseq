@@ -36,15 +36,6 @@ VFBseq:00000862 a FBcv:0009003 ;
     RO:0002473 FBbt:00049825 ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00000863 a FBcv:0009003 ;
-    rdfs:label "Poxn neuron cluster (Fly Cell Atlas 10x Stringent Head) (Li 2022)" ;
-    neo_custom:cell_count 102 ;
-    neo_custom:filtered_gene_count 1129 ;
-    neo_custom:total_gene_count 6662 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000760 ;
-    dcterms:source VFBseq:00000538 .
-
 VFBseq:00000864 a FBcv:0009003 ;
     rdfs:label "T neuron T2 cluster (Fly Cell Atlas 10x Stringent Head) (Li 2022)" ;
     neo_custom:cell_count 604 ;
@@ -213,15 +204,6 @@ VFBseq:00000880 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000760 ;
     RO:0002473 FBbt:00049978 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00000881 a FBcv:0009003 ;
-    rdfs:label "cluster artefact (Fly Cell Atlas 10x Stringent Head) (Li 2022)" ;
-    neo_custom:cell_count 216 ;
-    neo_custom:filtered_gene_count 3850 ;
-    neo_custom:total_gene_count 10346 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000760 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000882 a FBcv:0009003 ;
@@ -824,15 +806,6 @@ VFBseq:00000941 a FBcv:0009003 ;
     RO:0002473 FBbt:00003797 ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00000942 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Head) (Li 2022)" ;
-    neo_custom:cell_count 44906 ;
-    neo_custom:filtered_gene_count 1175 ;
-    neo_custom:total_gene_count 12961 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000760 ;
-    dcterms:source VFBseq:00000538 .
-
 VFBseq:00000943 a FBcv:0009003 ;
     rdfs:label "CNS surface associated glial cell cluster (Fly Cell Atlas 10x Stringent Body) (Li 2022)" ;
     neo_custom:cell_count 71 ;
@@ -923,15 +896,6 @@ VFBseq:00000951 a FBcv:0009003 ;
     RO:0002473 FBbt:00059289 ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00000952 a FBcv:0009003 ;
-    rdfs:label "cluster artefact (Fly Cell Atlas 10x Stringent Body) (Li 2022)" ;
-    neo_custom:cell_count 332 ;
-    neo_custom:filtered_gene_count 495 ;
-    neo_custom:total_gene_count 10637 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000761 ;
-    dcterms:source VFBseq:00000538 .
-
 VFBseq:00000953 a FBcv:0009003 ;
     rdfs:label "cell body glial cell cluster (Fly Cell Atlas 10x Stringent Body) (Li 2022)" ;
     neo_custom:cell_count 775 ;
@@ -980,15 +944,6 @@ VFBseq:00000957 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000761 ;
     RO:0002473 FBbt:00006049 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00000958 a FBcv:0009003 ;
-    rdfs:label "female reproductive system cluster (Fly Cell Atlas 10x Stringent Body) (Li 2022)" ;
-    neo_custom:cell_count 709 ;
-    neo_custom:filtered_gene_count 1177 ;
-    neo_custom:total_gene_count 11653 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000761 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000959 a FBcv:0009003 ;
@@ -1159,15 +1114,6 @@ VFBseq:00000975 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000761 ;
     RO:0002473 FBbt:00058254 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00000976 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Body) (Li 2022)" ;
-    neo_custom:cell_count 7733 ;
-    neo_custom:filtered_gene_count 1023 ;
-    neo_custom:total_gene_count 14689 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000761 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000977 a FBcv:0009003 ;
@@ -1420,15 +1366,6 @@ VFBseq:00001001 a FBcv:0009003 ;
     RO:0002473 FBbt:00051173 ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00001002 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Antenna) (Li 2022)" ;
-    neo_custom:cell_count 14249 ;
-    neo_custom:filtered_gene_count 987 ;
-    neo_custom:total_gene_count 12854 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000762 ;
-    dcterms:source VFBseq:00000538 .
-
 VFBseq:00001003 a FBcv:0009003 ;
     rdfs:label "adult fat body cluster (Fly Cell Atlas 10x Stringent Body Wall) (Li 2022)" ;
     neo_custom:cell_count 1267 ;
@@ -1569,15 +1506,6 @@ VFBseq:00001016 a FBcv:0009003 ;
     RO:0002473 FBbt:00058230 ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00001017 a FBcv:0009003 ;
-    rdfs:label "ovary cell cluster (Fly Cell Atlas 10x Stringent Body Wall) (Li 2022)" ;
-    neo_custom:cell_count 49 ;
-    neo_custom:filtered_gene_count 2832 ;
-    neo_custom:total_gene_count 7794 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000763 ;
-    dcterms:source VFBseq:00000538 .
-
 VFBseq:00001018 a FBcv:0009003 ;
     rdfs:label "tendon cell cluster (Fly Cell Atlas 10x Stringent Body Wall) (Li 2022)" ;
     neo_custom:cell_count 241 ;
@@ -1586,24 +1514,6 @@ VFBseq:00001018 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000763 ;
     RO:0002473 FBbt:00058016 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001019 a FBcv:0009003 ;
-    rdfs:label "testis cluster (Fly Cell Atlas 10x Stringent Body Wall) (Li 2022)" ;
-    neo_custom:cell_count 31 ;
-    neo_custom:filtered_gene_count 773 ;
-    neo_custom:total_gene_count 6180 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000763 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001020 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Body Wall) (Li 2022)" ;
-    neo_custom:cell_count 1425 ;
-    neo_custom:filtered_gene_count 1165 ;
-    neo_custom:total_gene_count 11340 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000763 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00001021 a FBcv:0009003 ;
@@ -1656,15 +1566,6 @@ VFBseq:00001025 a FBcv:0009003 ;
     RO:0002473 FBbt:00058238 ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00001026 a FBcv:0009003 ;
-    rdfs:label "female reproductive system cluster (Fly Cell Atlas 10x Stringent Fat Body) (Li 2022)" ;
-    neo_custom:cell_count 374 ;
-    neo_custom:filtered_gene_count 1675 ;
-    neo_custom:total_gene_count 12220 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000764 ;
-    dcterms:source VFBseq:00000538 .
-
 VFBseq:00001027 a FBcv:0009003 ;
     rdfs:label "hemocyte cluster (Fly Cell Atlas 10x Stringent Fat Body) (Li 2022)" ;
     neo_custom:cell_count 3646 ;
@@ -1713,24 +1614,6 @@ VFBseq:00001031 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000764 ;
     RO:0002473 FBbt:00058244 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001032 a FBcv:0009003 ;
-    rdfs:label "testis cluster (Fly Cell Atlas 10x Stringent Fat Body) (Li 2022)" ;
-    neo_custom:cell_count 69 ;
-    neo_custom:filtered_gene_count 8244 ;
-    neo_custom:total_gene_count 13478 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000764 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001033 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Fat Body) (Li 2022)" ;
-    neo_custom:cell_count 3397 ;
-    neo_custom:filtered_gene_count 1871 ;
-    neo_custom:total_gene_count 14190 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000764 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00001034 a FBcv:0009003 ;
@@ -1933,15 +1816,6 @@ VFBseq:00001053 a FBcv:0009003 ;
     RO:0002473 FBbt:00058230 ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00001054 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Gut) (Li 2022)" ;
-    neo_custom:cell_count 680 ;
-    neo_custom:filtered_gene_count 2702 ;
-    neo_custom:total_gene_count 11958 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000765 ;
-    dcterms:source VFBseq:00000538 .
-
 VFBseq:00001055 a FBcv:0009003 ;
     rdfs:label "visceral muscle of the crop cluster (Fly Cell Atlas 10x Stringent Gut) (Li 2022)" ;
     neo_custom:cell_count 197 ;
@@ -2030,15 +1904,6 @@ VFBseq:00001063 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000766 ;
     RO:0002473 FBbt:00047095 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001064 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Haltere) (Li 2022)" ;
-    neo_custom:cell_count 1246 ;
-    neo_custom:filtered_gene_count 735 ;
-    neo_custom:total_gene_count 11571 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000766 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00001065 a FBcv:0009003 ;
@@ -2191,15 +2056,6 @@ VFBseq:00001079 a FBcv:0009003 ;
     RO:0002473 FBbt:00058230 ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00001080 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Heart) (Li 2022)" ;
-    neo_custom:cell_count 3449 ;
-    neo_custom:filtered_gene_count 2359 ;
-    neo_custom:total_gene_count 12344 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000767 ;
-    dcterms:source VFBseq:00000538 .
-
 VFBseq:00001081 a FBcv:0009003 ;
     rdfs:label "adult tracheal cell cluster (Fly Cell Atlas 10x Stringent Leg) (Li 2022)" ;
     neo_custom:cell_count 97 ;
@@ -2288,15 +2144,6 @@ VFBseq:00001089 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000768 ;
     RO:0002473 FBbt:00058244 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001090 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Leg) (Li 2022)" ;
-    neo_custom:cell_count 1131 ;
-    neo_custom:filtered_gene_count 740 ;
-    neo_custom:total_gene_count 9866 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000768 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00001091 a FBcv:0009003 ;
@@ -2409,15 +2256,6 @@ VFBseq:00001101 a FBcv:0009003 ;
     RO:0002473 FBbt:00058293 ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00001102 a FBcv:0009003 ;
-    rdfs:label "seminal vesicle cluster (Fly Cell Atlas 10x Stringent Male Reproductive Glands) (Li 2022)" ;
-    neo_custom:cell_count 179 ;
-    neo_custom:filtered_gene_count 1694 ;
-    neo_custom:total_gene_count 8471 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000769 ;
-    dcterms:source VFBseq:00000538 .
-
 VFBseq:00001103 a FBcv:0009003 ;
     rdfs:label "spermatid cluster (Fly Cell Atlas 10x Stringent Male Reproductive Glands) (Li 2022)" ;
     neo_custom:cell_count 434 ;
@@ -2426,15 +2264,6 @@ VFBseq:00001103 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000769 ;
     RO:0002473 FBbt:00004942 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001104 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Male Reproductive Glands) (Li 2022)" ;
-    neo_custom:cell_count 75 ;
-    neo_custom:filtered_gene_count 2059 ;
-    neo_custom:total_gene_count 8974 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000769 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00001105 a FBcv:0009003 ;
@@ -2577,15 +2406,6 @@ VFBseq:00001118 a FBcv:0009003 ;
     RO:0002473 FBbt:00005040 ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00001119 a FBcv:0009003 ;
-    rdfs:label "cluster artefact (Fly Cell Atlas 10x Stringent Malpighian Tubule) (Li 2022)" ;
-    neo_custom:cell_count 501 ;
-    neo_custom:filtered_gene_count 601 ;
-    neo_custom:total_gene_count 8981 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000770 ;
-    dcterms:source VFBseq:00000538 .
-
 VFBseq:00001120 a FBcv:0009003 ;
     rdfs:label "posterior midgut* cluster (Fly Cell Atlas 10x Stringent Malpighian Tubule) (Li 2022)" ;
     neo_custom:cell_count 77 ;
@@ -2604,15 +2424,6 @@ VFBseq:00001121 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000770 ;
     RO:0002473 FBbt:00005735 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001122 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Malpighian Tubule) (Li 2022)" ;
-    neo_custom:cell_count 516 ;
-    neo_custom:filtered_gene_count 2445 ;
-    neo_custom:total_gene_count 10328 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000770 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00001123 a FBcv:0009003 ;
@@ -2735,24 +2546,6 @@ VFBseq:00001134 a FBcv:0009003 ;
     RO:0002473 FBbt:00058230 ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00001135 a FBcv:0009003 ;
-    rdfs:label "ovary cell cluster (Fly Cell Atlas 10x Stringent Oenocyte) (Li 2022)" ;
-    neo_custom:cell_count 1028 ;
-    neo_custom:filtered_gene_count 909 ;
-    neo_custom:total_gene_count 12084 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000771 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001136 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Oenocyte) (Li 2022)" ;
-    neo_custom:cell_count 2630 ;
-    neo_custom:filtered_gene_count 993 ;
-    neo_custom:total_gene_count 14211 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000771 ;
-    dcterms:source VFBseq:00000538 .
-
 VFBseq:00001137 a FBcv:0009003 ;
     rdfs:label "16-cell germline cyst in germarium region 2a and 2b cluster (Fly Cell Atlas 10x Stringent Ovary) (Li 2022)" ;
     neo_custom:cell_count 628 ;
@@ -2771,15 +2564,6 @@ VFBseq:00001138 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000772 ;
     RO:0002473 FBbt:00005040 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001139 a FBcv:0009003 ;
-    rdfs:label "cluster artefact (Fly Cell Atlas 10x Stringent Ovary) (Li 2022)" ;
-    neo_custom:cell_count 7918 ;
-    neo_custom:filtered_gene_count 474 ;
-    neo_custom:total_gene_count 10003 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000772 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00001140 a FBcv:0009003 ;
@@ -2963,15 +2747,6 @@ VFBseq:00001157 a FBcv:0009003 ;
     RO:0002473 FBbt:00004908 ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00001158 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Ovary) (Li 2022)" ;
-    neo_custom:cell_count 8825 ;
-    neo_custom:filtered_gene_count 1939 ;
-    neo_custom:total_gene_count 11547 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000772 ;
-    dcterms:source VFBseq:00000538 .
-
 VFBseq:00001159 a FBcv:0009003 ;
     rdfs:label "young germ cell cluster (Fly Cell Atlas 10x Stringent Ovary) (Li 2022)" ;
     neo_custom:cell_count 2433 ;
@@ -3082,15 +2857,6 @@ VFBseq:00001169 a FBcv:0009003 ;
     RO:0002473 FBbt:00007353 ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00001170 a FBcv:0009003 ;
-    rdfs:label "maxillary palpus cluster (Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps) (Li 2022)" ;
-    neo_custom:cell_count 660 ;
-    neo_custom:filtered_gene_count 811 ;
-    neo_custom:total_gene_count 9393 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000773 ;
-    dcterms:source VFBseq:00000538 .
-
 VFBseq:00001171 a FBcv:0009003 ;
     rdfs:label "muscle cell cluster (Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps) (Li 2022)" ;
     neo_custom:cell_count 4367 ;
@@ -3129,15 +2895,6 @@ VFBseq:00001174 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000773 ;
     RO:0002473 FBbt:00005171 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001175 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps) (Li 2022)" ;
-    neo_custom:cell_count 829 ;
-    neo_custom:filtered_gene_count 1042 ;
-    neo_custom:total_gene_count 10690 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000773 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00001176 a FBcv:0009003 ;
@@ -3490,15 +3247,6 @@ VFBseq:00001210 a FBcv:0009003 ;
     RO:0002473 FBbt:00004936 ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00001211 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Testis) (Li 2022)" ;
-    neo_custom:cell_count 1094 ;
-    neo_custom:filtered_gene_count 2120 ;
-    neo_custom:total_gene_count 13821 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000774 ;
-    dcterms:source VFBseq:00000538 .
-
 VFBseq:00001212 a FBcv:0009003 ;
     rdfs:label "adult fat body cluster (Fly Cell Atlas 10x Stringent Trachea) (Li 2022)" ;
     neo_custom:cell_count 61 ;
@@ -3529,51 +3277,6 @@ VFBseq:00001214 a FBcv:0009003 ;
     RO:0002473 FBbt:00005040 ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00001215 a FBcv:0009003 ;
-    rdfs:label "btl-GAL4 positive female cell, cluster 1, likely to be ovary cell cluster (Fly Cell Atlas 10x Stringent Trachea) (Li 2022)" ;
-    neo_custom:cell_count 4598 ;
-    neo_custom:filtered_gene_count 597 ;
-    neo_custom:total_gene_count 10971 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000775 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001216 a FBcv:0009003 ;
-    rdfs:label "btl-GAL4 positive female cell, cluster 2, likely to be ovary cell cluster (Fly Cell Atlas 10x Stringent Trachea) (Li 2022)" ;
-    neo_custom:cell_count 2250 ;
-    neo_custom:filtered_gene_count 4861 ;
-    neo_custom:total_gene_count 11350 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000775 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001217 a FBcv:0009003 ;
-    rdfs:label "btl-GAL4 positive female cell, cluster 3, likely to be ovary cell cluster (Fly Cell Atlas 10x Stringent Trachea) (Li 2022)" ;
-    neo_custom:cell_count 139 ;
-    neo_custom:filtered_gene_count 805 ;
-    neo_custom:total_gene_count 7806 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000775 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001218 a FBcv:0009003 ;
-    rdfs:label "btl-GAL4 positive female cell, likely to be ovary cell, sim+ cluster (Fly Cell Atlas 10x Stringent Trachea) (Li 2022)" ;
-    neo_custom:cell_count 2341 ;
-    neo_custom:filtered_gene_count 1890 ;
-    neo_custom:total_gene_count 11017 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000775 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001219 a FBcv:0009003 ;
-    rdfs:label "btl-GAL4 positive female cell, likely to be ovary cell, sim+, H15+ cluster (Fly Cell Atlas 10x Stringent Trachea) (Li 2022)" ;
-    neo_custom:cell_count 1009 ;
-    neo_custom:filtered_gene_count 1954 ;
-    neo_custom:total_gene_count 10137 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000775 ;
-    dcterms:source VFBseq:00000538 .
-
 VFBseq:00001220 a FBcv:0009003 ;
     rdfs:label "eye photoreceptor cell cluster (Fly Cell Atlas 10x Stringent Trachea) (Li 2022)" ;
     neo_custom:cell_count 40 ;
@@ -3592,15 +3295,6 @@ VFBseq:00001221 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000775 ;
     RO:0002473 FBbt:00058230 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001222 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Trachea) (Li 2022)" ;
-    neo_custom:cell_count 6280 ;
-    neo_custom:filtered_gene_count 1561 ;
-    neo_custom:total_gene_count 14352 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000775 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00001223 a FBcv:0009003 ;
@@ -3671,15 +3365,6 @@ VFBseq:00001229 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00000776 ;
     RO:0002473 FBbt:00058247 ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00001230 a FBcv:0009003 ;
-    rdfs:label "cluster unannotated (Fly Cell Atlas 10x Stringent Wing) (Li 2022)" ;
-    neo_custom:cell_count 11523 ;
-    neo_custom:filtered_gene_count 1201 ;
-    neo_custom:total_gene_count 13310 ;
-    neo_property:nodeLabel "Cluster" ;
-    BFO:0000050 VFBseq:00000776 ;
     dcterms:source VFBseq:00000538 .
 
 FlyBase:FBrf0252876 a FBcv:0000212 ;
@@ -5780,6 +5465,11 @@ VFBseq:00000701 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0095000 FlyBase:FBst0007378 .
 
+VFBseq:00000775 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas 10x Stringent Trachea" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000538 .
+
 VFBseq:00000766 a FBcv:0009002 ;
     rdfs:label "Fly Cell Atlas 10x Stringent Haltere" ;
     neo_property:nodeLabel "Clustering" ;
@@ -5792,11 +5482,6 @@ VFBseq:00000776 a FBcv:0009002 ;
 
 VFBseq:00000768 a FBcv:0009002 ;
     rdfs:label "Fly Cell Atlas 10x Stringent Leg" ;
-    neo_property:nodeLabel "Clustering" ;
-    dcterms:source VFBseq:00000538 .
-
-VFBseq:00000775 a FBcv:0009002 ;
-    rdfs:label "Fly Cell Atlas 10x Stringent Trachea" ;
     neo_property:nodeLabel "Clustering" ;
     dcterms:source VFBseq:00000538 .
 
@@ -5815,11 +5500,6 @@ VFBseq:00000769 a FBcv:0009002 ;
     neo_property:nodeLabel "Clustering" ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00000767 a FBcv:0009002 ;
-    rdfs:label "Fly Cell Atlas 10x Stringent Heart" ;
-    neo_property:nodeLabel "Clustering" ;
-    dcterms:source VFBseq:00000538 .
-
 VFBseq:00000773 a FBcv:0009002 ;
     rdfs:label "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps" ;
     neo_property:nodeLabel "Clustering" ;
@@ -5830,18 +5510,23 @@ VFBseq:00000763 a FBcv:0009002 ;
     neo_property:nodeLabel "Clustering" ;
     dcterms:source VFBseq:00000538 .
 
+VFBseq:00000767 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas 10x Stringent Heart" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000538 .
+
 VFBseq:00000770 a FBcv:0009002 ;
     rdfs:label "Fly Cell Atlas 10x Stringent Malpighian Tubule" ;
     neo_property:nodeLabel "Clustering" ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00000765 a FBcv:0009002 ;
-    rdfs:label "Fly Cell Atlas 10x Stringent Gut" ;
+VFBseq:00000772 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas 10x Stringent Ovary" ;
     neo_property:nodeLabel "Clustering" ;
     dcterms:source VFBseq:00000538 .
 
-VFBseq:00000772 a FBcv:0009002 ;
-    rdfs:label "Fly Cell Atlas 10x Stringent Ovary" ;
+VFBseq:00000765 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas 10x Stringent Gut" ;
     neo_property:nodeLabel "Clustering" ;
     dcterms:source VFBseq:00000538 .
 
@@ -5868,8 +5553,8 @@ VFBseq:00000760 a FBcv:0009002 ;
 VFBseq:00000538 a FBcv:0003023 ;
     rdfs:label "scRNAseq data from Li (2022)" ;
     neo_custom:accession "E-MTAB-10519" ;
-    neo_custom:filtered_gene_count 12747 ;
-    neo_custom:total_gene_count 16363 ;
+    neo_custom:filtered_gene_count 12599 ;
+    neo_custom:total_gene_count 16355 ;
     neo_property:nodeLabel "DataSet" ;
     IAO:0000115 "Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly" ;
     OBI:0000312 FBcv:0009001 ;

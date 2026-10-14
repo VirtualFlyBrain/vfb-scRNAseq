@@ -14,6 +14,9 @@ converted back to CPM (`expression.values`: `log1p_cp10k` -> (e^x - 1) x 100,
 `log2_cpm1` -> 2^x - 1) and every cell's CPM total is checked. Files may have different
 gene sets; a gene a file lacks is unexpressed in that file's clusters.
 
+Only clusters with an FBbt term are summarised (held clusters are not loaded; their
+cells are read but count towards nothing, including the dataset-level gene counts).
+
 Memory stays low: the only dense accumulators are genes x clusters. Cluster IRIs
 come from the id registry (build must have minted the Cluster ids first).
 """
@@ -31,6 +34,7 @@ import pandas as pd
 
 from vfb_scrnaseq.ids import IDRegistry
 from vfb_scrnaseq.ingest_h5ad import h5ad_path, iter_matrix, matrix_shape, read_genes, read_obs
+from vfb_scrnaseq.project_config import mapped_labels
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CHUNK = 5_000_000
@@ -291,7 +295,8 @@ def compute_expression(project: str, cfg: dict):
     rows: list of (cluster_vfbseq_id, cluster_label, fbgn, symbol, level, extent)
           for cluster x gene with extent > cutoff, sorted by (label, fbgn).
     counts: list[ClusterCount] per cluster.
-    meta: dict with n_genes, n_cells, cutoff, normalisation.
+    meta: dict with n_genes, n_cells, cutoff, normalisation, dataset gene counts and
+          the held clusters left out (held_clusters, held_cells).
     """
     acc = cfg["dataset"]["accession"]
     subset = (cfg.get("annotations") or {}).get("subset", "main")
@@ -303,7 +308,7 @@ def compute_expression(project: str, cfg: dict):
         parts = _h5ad_parts(project, cfg, gene_map)
     else:
         parts = _mtx_parts(project, cfg, cache)
-    return _summarise(parts, acc, subset, cutoff, ex)
+    return _summarise(parts, acc, subset, cutoff, ex, mapped_labels(REPO_ROOT / "projects" / project))
 
 
 def _mtx_parts(project: str, cfg: dict, cache: Path) -> list[dict]:
@@ -340,15 +345,24 @@ def _mtx_parts(project: str, cfg: dict, cache: Path) -> list[dict]:
     return parts
 
 
-def _summarise(parts: list[dict], acc: str, subset: str, cutoff: float, ex: dict):
+def _summarise(parts: list[dict], acc: str, subset: str, cutoff: float, ex: dict,
+               keep: set[str] | None = None):
+    """`keep`: labels of the clusters to summarise (default all)."""
     fbgn, symbol, S, N = _union_genes(parts)
     n_genes = len(fbgn)
     clusters = [c for p in parts for c in p["clusters"]]
     if len(set(clusters)) != len(clusters):
         raise SystemExit("cluster labels repeat across expression parts; set a label_prefix")
-    cidx = {c: i for i, c in enumerate(clusters)}
     cluster_size = np.concatenate([p["cluster_size"] for p in parts])
     n_cells = len(set().union(*(p["cells"] for p in parts)))
+    held_clusters = held_cells = 0
+    if keep is not None:
+        cols = [i for i, c in enumerate(clusters) if c in keep]
+        held_clusters = len(clusters) - len(cols)
+        held_cells = int(cluster_size.sum() - cluster_size[cols].sum())
+        clusters = [clusters[i] for i in cols]
+        cluster_size, S, N = cluster_size[cols], S[:, cols], N[:, cols]
+    cidx = {c: i for i, c in enumerate(clusters)}
     with np.errstate(divide="ignore", invalid="ignore"):
         extent = N / cluster_size[None, :]
         level = np.where(N > 0, 1e6 * S / N, 0.0)
@@ -385,5 +399,6 @@ def _summarise(parts: list[dict], acc: str, subset: str, cutoff: float, ex: dict
     meta = {"n_genes": n_genes, "n_cells": n_cells, "cutoff": cutoff,
             "normalisation": ex.get("normalisation", "CPM"),
             "dataset_total_gene_count": dataset_total_gene_count,
-            "dataset_filtered_gene_count": dataset_filtered_gene_count}
+            "dataset_filtered_gene_count": dataset_filtered_gene_count,
+            "held_clusters": held_clusters, "held_cells": held_cells}
     return out_rows, counts, meta

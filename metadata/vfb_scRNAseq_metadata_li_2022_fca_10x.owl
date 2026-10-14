@@ -1542,8 +1542,8 @@
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009001"/>
             </Restriction>
         </rdf:type>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12747</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16363</neo_custom:total_gene_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12599</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16355</neo_custom:total_gene_count>
         <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
         <obo:IAO_0000115>Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly</obo:IAO_0000115>
         <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -6940,21 +6940,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00000863 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000863">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000760"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">102</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1129</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6662</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>Poxn neuron cluster (Fly Cell Atlas 10x Stringent Head) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00000864 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000864">
@@ -7308,21 +7293,6 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>antennal trichoid sensillum at4 cluster (Fly Cell Atlas 10x Stringent Head) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00000881 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000881">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000760"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">216</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3850</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10346</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster artefact (Fly Cell Atlas 10x Stringent Head) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -8587,21 +8557,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00000942 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000942">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000760"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44906</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1175</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12961</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Head) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00000943 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000943">
@@ -8791,21 +8746,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00000952 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000952">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000761"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">332</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">495</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10637</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster artefact (Fly Cell Atlas 10x Stringent Body) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00000953 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000953">
@@ -8907,21 +8847,6 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>escort cell cluster (Fly Cell Atlas 10x Stringent Body) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00000958 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000958">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000761"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">709</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1177</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11653</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>female reproductive system cluster (Fly Cell Atlas 10x Stringent Body) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -9279,21 +9204,6 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>subperineurial glial cell cluster (Fly Cell Atlas 10x Stringent Body) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00000976 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000976">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000761"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7733</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1023</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14689</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Body) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -9823,21 +9733,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001002 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001002">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000762"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14249</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">987</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12854</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Antenna) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001003 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001003">
@@ -10132,21 +10027,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001017 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001017">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000763"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2832</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7794</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>ovary cell cluster (Fly Cell Atlas 10x Stringent Body Wall) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001018 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001018">
@@ -10164,36 +10044,6 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>tendon cell cluster (Fly Cell Atlas 10x Stringent Body Wall) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001019 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001019">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000763"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">773</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6180</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>testis cluster (Fly Cell Atlas 10x Stringent Body Wall) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001020 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001020">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000763"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1425</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1165</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11340</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Body Wall) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -10303,21 +10153,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001026 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001026">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000764"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">374</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1675</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12220</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>female reproductive system cluster (Fly Cell Atlas 10x Stringent Fat Body) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001027 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001027">
@@ -10419,36 +10254,6 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>sensory neuron cluster (Fly Cell Atlas 10x Stringent Fat Body) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001032 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001032">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000764"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8244</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13478</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>testis cluster (Fly Cell Atlas 10x Stringent Fat Body) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001033 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001033">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000764"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3397</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1871</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14190</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Fat Body) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -10873,21 +10678,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001054 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001054">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000765"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">680</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2702</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11958</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Gut) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001055 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001055">
@@ -11073,21 +10863,6 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>neuron of haltere cluster (Fly Cell Atlas 10x Stringent Haltere) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001064 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001064">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000766"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1246</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">735</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11571</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Haltere) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -11407,21 +11182,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001080 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001080">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000767"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3449</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2359</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12344</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Heart) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001081 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001081">
@@ -11607,21 +11367,6 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>sensory neuron cluster (Fly Cell Atlas 10x Stringent Leg) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001090 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001090">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000768"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1131</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">740</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9866</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Leg) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -11857,21 +11602,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001102 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001102">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000769"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">179</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1694</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8471</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>seminal vesicle cluster (Fly Cell Atlas 10x Stringent Male Reproductive Glands) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001103 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001103">
@@ -11889,21 +11619,6 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>spermatid cluster (Fly Cell Atlas 10x Stringent Male Reproductive Glands) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001104 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001104">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000769"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2059</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8974</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Male Reproductive Glands) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -12202,21 +11917,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001119 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001119">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000770"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">501</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">601</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8981</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster artefact (Fly Cell Atlas 10x Stringent Malpighian Tubule) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001120 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001120">
@@ -12255,21 +11955,6 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>principal cell* cluster (Fly Cell Atlas 10x Stringent Malpighian Tubule) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001122 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001122">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000770"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">516</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2445</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10328</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Malpighian Tubule) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -12526,36 +12211,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001135 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001135">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000771"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1028</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">909</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12084</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>ovary cell cluster (Fly Cell Atlas 10x Stringent Oenocyte) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001136 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001136">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000771"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2630</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">993</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14211</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Oenocyte) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001137 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001137">
@@ -12594,21 +12249,6 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>adult tracheal cell cluster (Fly Cell Atlas 10x Stringent Ovary) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001139 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001139">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000772"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7918</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">474</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10003</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster artefact (Fly Cell Atlas 10x Stringent Ovary) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -12997,21 +12637,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001158 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001158">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000772"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8825</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1939</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11547</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Ovary) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001159 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001159">
@@ -13243,21 +12868,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001170 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001170">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000773"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">660</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">811</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9393</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>maxillary palpus cluster (Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001171 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001171">
@@ -13338,21 +12948,6 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>tormogen cell cluster (Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001175 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001175">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000773"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">829</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1042</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10690</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -14092,21 +13687,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001211 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001211">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000774"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1094</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2120</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13821</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Testis) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001212 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001212">
@@ -14170,81 +13750,6 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001215 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001215">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000775"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4598</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">597</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10971</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>btl-GAL4 positive female cell, cluster 1, likely to be ovary cell cluster (Fly Cell Atlas 10x Stringent Trachea) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001216 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001216">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000775"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2250</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4861</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11350</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>btl-GAL4 positive female cell, cluster 2, likely to be ovary cell cluster (Fly Cell Atlas 10x Stringent Trachea) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001217 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001217">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000775"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">139</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">805</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7806</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>btl-GAL4 positive female cell, cluster 3, likely to be ovary cell cluster (Fly Cell Atlas 10x Stringent Trachea) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001218 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001218">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000775"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2341</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1890</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11017</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>btl-GAL4 positive female cell, likely to be ovary cell, sim+ cluster (Fly Cell Atlas 10x Stringent Trachea) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001219 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001219">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000775"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1009</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1954</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10137</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>btl-GAL4 positive female cell, likely to be ovary cell, sim+, H15+ cluster (Fly Cell Atlas 10x Stringent Trachea) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00001220 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001220">
@@ -14283,21 +13788,6 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>muscle cell cluster (Fly Cell Atlas 10x Stringent Trachea) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001222 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001222">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000775"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6280</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1561</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14352</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Trachea) (Li 2022)</rdfs:label>
     </NamedIndividual>
     
 
@@ -14445,21 +13935,6 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>pheromone-sensing neuron cluster (Fly Cell Atlas 10x Stringent Wing) (Li 2022)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00001230 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001230">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000776"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11523</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1201</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13310</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
-        <rdfs:label>cluster unannotated (Fly Cell Atlas 10x Stringent Wing) (Li 2022)</rdfs:label>
     </NamedIndividual>
 </rdf:RDF>
 
