@@ -2,14 +2,17 @@
 """Compute + emit the summary expression data for a project.
 
 Runs vfb_scrnaseq.stats (streaming CPM extent/level, filter extent>cutoff) and writes:
-  - projects/<p>/expression.tsv            filtered rows (committed, diffable)
+  - projects/<p>/expression.tsv            filtered rows (committed, diffable; written
+                                           gzipped, expression.tsv.gz, with
+                                           `expression.gzip_tsv: true` for large datasets)
   - projects/<p>/expression_report.md      per-cluster cell + total/filtered gene counts
   - projects/<p>/expression_counts.json    {label: {total,filtered}} for build.py
   - expression/vfb_scRNAseq_expression_<project>.owl.gz   gzipped OWL (committed,
                                                  loadable; aggregated across projects for VFB)
 
 Requires the Cluster ids to be minted first (run build_rdf.py). The GEO matrix/
-features/barcodes must be in .cache (see config `expression`).
+features/barcodes (or, for `expression.source: h5ad`, the h5ad files from
+scripts/fetch_h5ad.py) must be in .cache (see config `expression`).
 
 Usage:
     uv run python scripts/build_expression.py --project kurmangaliyev_2020
@@ -19,6 +22,8 @@ from __future__ import annotations
 
 import argparse
 import csv
+import gzip
+import io
 import json
 import sys
 from pathlib import Path
@@ -47,9 +52,11 @@ def main() -> None:
           f"{len(rows):,} rows with extent>{meta['cutoff']}")
 
     # 1. filtered expression table (diffable)
-    tsv = proj / "expression.tsv"
-    with tsv.open("w", newline="") as fh:
-        w = csv.writer(fh, delimiter="\t")
+    gz = bool(cfg["expression"].get("gzip_tsv"))
+    tsv = proj / ("expression.tsv.gz" if gz else "expression.tsv")
+    with (gzip.GzipFile(tsv, "wb", mtime=0) if gz else tsv.open("wb")) as raw, \
+            io.TextIOWrapper(raw, encoding="utf-8", newline="") as fh:     # mtime=0: byte-identical rebuilds
+        w = csv.writer(fh, delimiter="\t", lineterminator="\n")
         w.writerow(["cluster_id", "cluster_label", "fbgn", "gene_symbol",
                     "expression_level", "expression_extent"])
         w.writerows(rows)

@@ -112,3 +112,90 @@ def test_membership_is_recorded_except_on_held_entries():
     by = {a["type"]: a for a in mod.build_clustering(obs, ab, "leg", "Leg", [])}
     assert by["neuron"]["membership"] == "label_transfer"
     assert "membership" not in by["unknown"] and by["unknown"]["unannotated"]
+
+
+# --- genes and matrix (expression) -------------------------------------------------
+
+# 3 cells x 4 genes; gene g3 unexpressed
+DENSE = np.array([[1.0, 0, 2.0, 0],
+                  [0, 3.0, 0, 0],
+                  [4.0, 0, 5.0, 0]])
+GENES = ["g0", "g1", "g2", "g3"]
+
+
+def _sparse(dense, by_gene):
+    """(data, indices, indptr) of `dense` as CSC (by_gene) or CSR."""
+    m = dense.T if by_gene else dense
+    data, indices, indptr = [], [], [0]
+    for row in m:
+        nz = np.flatnonzero(row)
+        data += list(row[nz]); indices += list(nz); indptr.append(len(data))
+    return np.array(data, dtype=np.float32), np.array(indices, dtype=np.int32), np.array(indptr)
+
+
+def _old_raw(path):
+    """anndata < 0.7: raw.X (h5sparse CSC) + raw.var compound with categorical ID."""
+    with h5py.File(path, "w") as f:
+        data, idx, ptr = _sparse(DENSE, by_gene=True)
+        g = f.create_group("raw.X")
+        g["data"], g["indices"], g["indptr"] = data, idx, ptr
+        g.attrs["h5sparse_format"] = "csc"
+        g.attrs["h5sparse_shape"] = np.array(DENSE.shape)
+        dt = np.dtype([("index", "S2"), ("ID", "i2")])
+        f["raw.var"] = np.array([(n.encode(), c) for n, c in zip(GENES, [0, 1, -1, 2])], dtype=dt)
+        f["raw.cat/ID_categories"] = np.array([b"FBgn0000001", b"FBgn0000002", b"nan"])
+        f["X"] = DENSE[:, :2]                      # the scaled HVG matrix: not read
+
+
+def _v07_raw(path):
+    """0.7: raw/X CSC; raw/var ID codes whose categories were not saved."""
+    with h5py.File(path, "w") as f:
+        data, idx, ptr = _sparse(DENSE, by_gene=True)
+        x = f.create_group("raw/X")
+        x["data"], x["indices"], x["indptr"] = data, idx, ptr
+        x.attrs["encoding-type"] = "csc_matrix"
+        x.attrs["shape"] = np.array(DENSE.shape)
+        v = f.create_group("raw/var")
+        v.attrs["_index"] = "index"
+        v["index"] = np.array([n.encode() for n in GENES])
+        v["ID"] = np.array([0, 1, 2, 3], dtype=np.int16)
+        f["X"] = DENSE[:, :2]
+
+
+def _csr_x(path):
+    with h5py.File(path, "w") as f:
+        data, idx, ptr = _sparse(DENSE, by_gene=False)
+        x = f.create_group("X")
+        x["data"], x["indices"], x["indptr"] = data, idx, ptr
+        x.attrs["encoding-type"] = "csr_matrix"
+        x.attrs["shape"] = np.array(DENSE.shape)
+        v = f.create_group("var")
+        v.attrs["_index"] = "_index"
+        v["_index"] = np.array(GENES, dtype=object).astype(STR)
+
+
+def _dense_x(path):
+    with h5py.File(path, "w") as f:
+        f["X"] = DENSE.astype(np.float32)
+        v = f.create_group("var")
+        v.attrs["_index"] = "_index"
+        v["_index"] = np.array(GENES, dtype=object).astype(STR)
+
+
+def test_matrix_and_genes_all_layouts(tmp_path):
+    from vfb_scrnaseq.ingest_h5ad import iter_matrix, matrix_shape, read_genes
+    expect_ids = {"_old_raw": ["FBgn0000001", "FBgn0000002", None, None]}
+    for make in (_old_raw, _v07_raw, _csr_x, _dense_x):
+        p = tmp_path / f"{make.__name__}.h5ad"
+        make(p)
+        genes, ids = read_genes(p)
+        assert genes == GENES, make.__name__
+        # ids only where the file gives decodable FBgn ids
+        assert ids == expect_ids.get(make.__name__, [None] * 4), make.__name__
+        assert matrix_shape(p) == DENSE.shape, make.__name__
+        got = np.zeros(DENSE.shape)
+        n = 0
+        for g, c, v in iter_matrix(p, chunk=2):            # small chunks: several blocks
+            got[c, g] += v
+            n += len(v)
+        assert n == np.count_nonzero(DENSE) and np.array_equal(got, DENSE), make.__name__

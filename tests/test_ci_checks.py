@@ -174,3 +174,18 @@ def test_flybase_same_release_does_nothing(tmp_path, monkeypatch):
                            lambda ids: (_ for _ in ()).throw(AssertionError("queried")))
     assert mod.main() == 0 and opened == []
     assert not (tmp_path / "checks" / "flybase_release_check.json").exists()
+
+
+def test_gene_ids_by_symbol(monkeypatch):
+    """h5ad projects: ids where the files give them, else by symbol; rows keep input order."""
+    ug = _script("update_gene_ids")
+    monkeypatch.setattr(ug, "chado_lookup", lambda ids: {"FBgn0000001": [("current", "FBgn0000001", "a")]})
+    monkeypatch.setattr(ug, "chado_symbol_lookup", lambda syms: {
+        "cur": [("current", "FBgn0000002", "cur"), ("synonym", "FBgn0000009", "other")],  # current wins
+        "old": [("synonym", "FBgn0000003", "new")],
+        "amb": [("synonym", "FBgn0000004", "x"), ("synonym", "FBgn0000005", "y")]})
+    rows = ug.reclassify([("", "cur"), ("FBgn0000001", "a"), ("", "old"), ("", "amb"), ("", "gone"), ("", "")])
+    got = [(r["input_symbol"], r["status"], r["current_fbgn"]) for r in rows]
+    assert got == [("cur", "current", "FBgn0000002"), ("a", "current", "FBgn0000001"),
+                   ("old", "synonym", "FBgn0000003"), ("amb", "ambiguous", ""),
+                   ("gone", "unmatched", ""), ("", "unmatched", "")]
