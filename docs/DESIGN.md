@@ -147,9 +147,17 @@ below record how each was applied).
 - **Relation is *composed primarily of*** (RO:0002473), so not every cell in a cluster
   need be of the annotated type. A cluster the authors name for two co-expressed
   markers may be mapped to both classes (`additional_matches`).
-- **No FBbt term → held.** A cluster with no adequate FBbt term is held (no
-  `cell_type`), not given a generic fallback term just to have one.
-  `collate_mapping.py` marks any mapping with a null `best_match` as held.
+- **No FBbt term → held, and not loaded.** A cluster with no adequate FBbt term is
+  held: it is not given a generic fallback term just to have one, and it is left out
+  of the build entirely (no VFBseq id, no Cluster entity, no expression; its cells
+  count towards no gene totals). VFB is organised around cell types, so an untyped
+  cluster adds nothing there (curator decision, 2026-10-14). Held clusters stay in
+  `mapping.tsv` (`kind` held, with a `hold_reason`) so they can be loaded if a term
+  becomes available. `collate_mapping.py` marks any mapping with a null `best_match`
+  as held. Hold reasons: `no term` (an author type with no adequate FBbt term),
+  `untyped` (the authors left the cluster numbered), `undefined class` (a class in
+  `hold_classes`), and per-project values from `unidentified.hold_reasons` (FCA:
+  `leftover`, `artefact`, `unassigned`).
 - **New FBbt terms from gene expression alone are the exception.** `new_term_needed`
   records a gap; it is not a queue of requests. Do not request terms defined only by
   transcriptomic clusters/markers as a matter of course (we do not want thousands of
@@ -281,7 +289,10 @@ is read through `src/vfb_scrnaseq/project_config.py`. Config sections:
     (e.g. N→`adult optic lobe neuron`, G→`adult optic lobe glial cell`).
 
   - `hold_unidentified` — hold *every* unidentified cluster (for atlases with no
-    author class, so no broad anchor can be chosen; e.g. Davie 2018).
+    author class, so no broad anchor can be chosen; e.g. Davie 2018);
+  - `hold_reasons` — `hold_reason` (mapping.tsv) of an `unannotated` entry, by its
+    type (e.g. FCA `{unannotated: leftover, artefact: artefact, unknown: unassigned}`);
+    default `untyped`.
 - **`sample_build.title_pattern`** — how GSM titles split into set / timepoint /
   biological replicate (/ technical replicate): the default
   `set_timepoint_biorep_techrep`, or `regex:` with named groups. GSMs that do not
@@ -683,6 +694,8 @@ clusters span timepoints and genotypes regardless. Added:
   numbered N/G clusters with early anchors (N → *immature adult optic lobe neuron*;
   G → *glial cell*, as FBbt has no immature optic-lobe glia term), 62 held (class `x`
   = unresolved, and class C).
+- **Held clusters not loaded (2026-10-14):** the 74 held clusters (12 main class C,
+  62 early) are left out of the build; 232 Clusters are loaded (184 main, 48 early).
 - **Cross-check against the old FlyBase/SCEA load (FBlc0006237)** during review:
   183 of 184 comparable main clusters agreed (crosswalk since removed).
 
@@ -725,8 +738,9 @@ in VFB from the old FlyBase/SCEA mechanism (`FBlc0006090`, SCEA `E-CURD-91`,
   common parent. Type-level mappings live in `type_mapping/` and are copied per
   cluster into `mapping/`.
 - **Numbered clusters held.** No author class exists, so there is no broad anchor;
-  clusters the authors left numbered are `unannotated` and emitted without an FBbt
-  link (`hold_unidentified: true`).
+  clusters the authors left numbered are `unannotated` and held
+  (`hold_unidentified: true`). With the one named type lacking a term (Hsp), 43
+  clusters are held and not loaded; 82 Clusters are loaded.
 - **Fresh VFBseq ids, no FBlc link.** Retiring the old load is handled outside
   this repo. The old FBbt assignments were used as a cross-check during review
   (crosswalked to the authors' types by name + cell count; since removed).
@@ -761,7 +775,7 @@ VFB until the release files are merged, so ids can still change during review.
    `h5ad` URL on its clustering, fetch with `fetch_h5ad.py` (into `.cache/h5ad/`) and
    build with `build_annotations_from_h5ad.py` (`annotation_build` config: the obs
    annotation / author ontology id / broad class / sex columns; `unannotated_values`
-   are kept, flagged and held). `ingest_h5ad.read_obs` reads obs with h5py from the
+   are kept as one flagged entry per analysis, held and so not loaded). `ingest_h5ad.read_obs` reads obs with h5py from the
    old, 0.7 and 0.8+ AnnData layouts.
 4. **Samples:** `build_samples_from_geo.py` (GEO) or `build_samples_from_arrayexpress.py`
    (ArrayExpress) → `samples.json`.
@@ -826,7 +840,7 @@ Curator decisions (2026-10-07):
 - **10x annotations** (`annotation` obs column of each Stringent h5ad; 370 entries,
   506,660 cells): the author ontology id (FBbt, several FBbt, or "Manual Annotation")
   is kept as `author_ontology_id` for the mapping step. Each analysis's "unannotated"
-  and "artefact" cells are one held entry each. `R_annotation` (transferred relaxed
+  (`leftover`) and "artefact" cells are one held entry each, not loaded. `R_annotation` (transferred relaxed
   label) is not used.
 - **Smart-seq2 has no author clusters:** cells were typed one by one by a logistic-
   regression classifier trained on the 10x annotation (supplement, "Annotating
@@ -834,7 +848,7 @@ Curator decisions (2026-10-07):
   groups, many < 10 cells) and dilp2 IPC / Akh CC carry no annotation at all.
   Curator decision (2026-10-08): the predictions are the authors' typing, so each
   (tissue, predicted type) is a Cluster with `membership: label_transfer` (237 entries
-  in all, 9,892 cells); "unknown" / "artefact" are held. Author FBbt ids are copied
+  in all, 9,892 cells); "unknown" (`unassigned`) / "artefact" are held, not loaded. Author FBbt ids are copied
   from the same 10x tissue (`author_ontology_from`). dilp2 IPC and Akh CC are one
   Cluster each (`fixed_annotation`, `membership: sorted`), typed from the authors'
   sample description. Such Clusters are named "<type> cells, predicted / sorted (...)"
@@ -848,7 +862,7 @@ Curator decisions (2026-10-07):
   agents. Curator rules (2026-10-08): **cell-level terms only** — a tissue/organ author
   term maps to its cell-level equivalent, else the cluster is held; **no narrowing by
   dissected tissue** — generic types map at the authors' level in every tissue.
-  11 types are held (no adequate cell term); 5 curator edits (`manual_edit`).
+  11 types are held (no adequate cell term; not loaded); 5 curator edits (`manual_edit`).
 - **Expression (stage 4):** from the same h5ad files, as CPM. 10x: each file's `raw.X`
   (all retained genes, log(counts per 10k + 1)); the main `X` is scaled HVGs only.
   Smart-seq2: `X` (all genes, log2(CPM + 1)). Genes keyed by symbol: FBgn from the 10x
@@ -856,13 +870,14 @@ Curator decisions (2026-10-07):
   none, so both take the other files' ids), the rest by symbol in Chado (FB2026_03):
   10x 16,270 current, 80 secondary, 15 synonym, 1 split; Smart-seq2 16,203 current,
   79 secondary, 26 synonym, 1 split, 2 unmatched (an unnamed gene and snRNA:U3).
-  Held clusters (unannotated, artefact, unknown) get expression like any other, as in
-  the other datasets. 10x: 16,363 genes × 506,660 cells, 370 clusters, 573,103 rows;
-  Smart-seq2: 16,306 genes × 9,892 cells, 237 clusters, 470,088 rows.
+  Held clusters are not summarised (their cells count towards nothing). 10x: 16,363
+  genes × 506,660 cells, 335 loaded clusters (35 held, 132,493 cells), 512,215 rows;
+  Smart-seq2: 16,306 genes × 9,892 cells, 211 loaded clusters (26 held, 2,552 cells),
+  426,111 rows.
   `expression.tsv.gz` is committed gzipped (too large otherwise).
 - **Build (stage 5):** `build_rdf.py` for both projects (10x: 1 Dataset, 61 Samples,
-  160 Assays, 17 Clusterings, 370 Clusters; Smart-seq2: 31 Samples, 35 Assays, 17
-  Clusterings, 237 Clusters); publication FBrf0252876 from VFB production;
+  160 Assays, 17 Clusterings, 335 Clusters; Smart-seq2: 31 Samples, 35 Assays, 17
+  Clusterings, 211 Clusters; held entries not loaded); publication FBrf0252876 from VFB production;
   `verify_mappings.py` OK (190 and 109 distinct FBbt terms), and every FBbt/FBdv/FBcv
   term on Samples, Assays and the Dataset checked current (FBdv 2026-09-30, FBcv
   2026-10-01). Recorded in each project's `provenance.json`.

@@ -3,6 +3,7 @@
 
 Generic across projects: the named/placeholder/held classification is driven by
 the project's config.yaml (`unidentified` section) via vfb_scrnaseq.project_config.
+Held clusters (no FBbt term) are listed, with a `hold_reason`, but not loaded.
 
 Usage:
     uv run python scripts/collate_mapping.py --project kurmangaliyev_2020
@@ -23,12 +24,13 @@ sys.path.insert(0, str(REPO_ROOT / "src"))
 
 from vfb_scrnaseq.project_config import (  # noqa: E402
     annotation_kind,
+    hold_reason,
     label_slug,
     load_config,
 )
 
 COLUMNS = [
-    "cluster_label", "type", "class", "cell_number", "kind",
+    "cluster_label", "type", "class", "cell_number", "kind", "hold_reason",
     "fbbt_id", "fbbt_label", "match_type", "confidence",
     "new_term_needed", "verification_needed", "n_other_candidates", "recommendation",
     "manual_edit", "reviewed", "review_notes",
@@ -81,6 +83,7 @@ def collate(project: str) -> tuple[list[str], list[dict]]:
     """Return (columns, rows) for a project's mapping.tsv, without writing it."""
     cfg = load_config(project)
     kind_of = annotation_kind(project, cfg)
+    reason_of = hold_reason(project, cfg)
 
     proj = REPO_ROOT / "projects" / project
     anns = json.loads((proj / "cell_type_annotations.json").read_text())["annotations"]
@@ -111,6 +114,7 @@ def collate(project: str) -> tuple[list[str], list[dict]]:
             "class": cls,
             "cell_number": ann.get("cell_number", ""),
             "kind": kind,
+            "hold_reason": reason_of(ann, m),
             # best match first, then any additional_matches, " | "-joined
             "fbbt_id": " | ".join(x.get("fbbt_id", "") for x in [bm] + m.get("additional_matches", []) if x),
             "fbbt_label": " | ".join(x.get("fbbt_term", "") for x in [bm] + m.get("additional_matches", []) if x),

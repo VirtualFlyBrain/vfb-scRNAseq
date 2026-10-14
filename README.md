@@ -50,16 +50,17 @@ from FlyBase; that authority is being dropped.)
 - `projects/kurmangaliyev_2020/` — Kurmangaliyev et al. 2020, *Drosophila* visual
   system developmental atlas ([GSE156455](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156455),
   PMID 33125872): the 24-96h main dataset (196 clusters) and the 0-24h early
-  dataset (110 clusters).
+  dataset (110 clusters); 232 with an FBbt term are loaded.
 - `projects/davie_2018/` — Davie et al. 2018, ageing adult brain atlas
   ([GSE107451](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107451),
-  PMID 29909982), 57K 10x set. Replaces the old FlyBase/SCEA load (FBlc0006090).
+  PMID 29909982), 57K 10x set (125 clusters; 82 with an FBbt term are loaded).
+  Replaces the old FlyBase/SCEA load (FBlc0006090).
 - `projects/li_2022_fca_10x/` and `projects/li_2022_fca_ss2/` — Fly Cell Atlas, Li et
   al. 2022 (PMID 35239393), from ArrayExpress
   ([E-MTAB-10519](https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-10519) 10x,
   [E-MTAB-10628](https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-10628)
-  Smart-seq2) and the authors' per-tissue h5ad analyses: 17 analyses each, one Cluster
-  per author annotation (370 and 237). FBbt mappings are made once per author type and
+  Smart-seq2) and the authors' per-tissue h5ad analyses: 17 analyses each, one entry
+  per author annotation (370 and 237; 335 and 211 with an FBbt term are loaded). FBbt mappings are made once per author type and
   shared. Replaces the old SCEA-based loads (FBlc0003846 / 4307 / 4785).
 
 ## Layout
@@ -119,7 +120,8 @@ against the OLS MCP — see `docs/DESIGN.md`.
 ## Curation rules (summary)
 
 One row per author cluster (never merged by type); typing from the authors, not
-re-analysis; *composed primarily of*; no FBbt term → held; no routine new-term
+re-analysis; *composed primarily of*; no FBbt term → held (listed in `mapping.tsv`
+with a reason, not loaded); no routine new-term
 requests from expression alone; stage on Samples, on Clusters only when determined
 from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#general-curation-rules).
 
