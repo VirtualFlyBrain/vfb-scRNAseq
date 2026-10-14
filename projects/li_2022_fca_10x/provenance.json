@@ -1,0 +1,353 @@
+{
+  "project": "li_2022_fca_10x",
+  "generated_at": "2026-10-14",
+  "people": [
+    {
+      "role": "curator",
+      "name": "Clare Pilgrim",
+      "username": "Clare72",
+      "orcid": "0000-0002-1373-1705"
+    }
+  ],
+  "notes": "Fly Cell Atlas (Li et al. 2022, Science; FBrf0252876), rebuilt from the authors' own per-tissue analyses (flycellatlas.org h5ad) and ArrayExpress (E-MTAB-10519 10x, E-MTAB-10628 Smart-seq2), one project per accession, replacing the old SCEA-based loads (FBlc0003846 / 4307 / 4785, split by sex). Curator decisions 2026-10-07: 10x Stringent per tissue + Smart-seq2 per tissue as complete sets (relaxed, integrated, cross-tissue and 'All' analyses left out); one Cluster per author annotation per tissue analysis. Samples from the ArrayExpress SDRF with curator-reviewed tissue terms (samples *overlap* RO:0002131 the tissue), FBdv stages and stocks from the supplement (only UAS-lamGFP has one: FBst0007378); Smart-seq2 fat body age corrected 3 -> 5 days per the supplement (sdrf_corrections). Mapping (FBbt 2026-10-01) once per author type (252 types, type_mapping/ in li_2022_fca_10x) and copied per cluster: 135 single current author cell terms confirmed by script (22 upgraded to the adult variant), 117 types via reports + map-clusters-to-fbbt subagents. Curator rules 2026-10-08: cell-level terms only (tissue/organ author terms -> cell-level term, else held); no narrowing by dissected tissue. Curator edits (manual_edit, 2026-10-13/14): adult antenna glial cell -> adult PNS glial cell; antimicrobial peptide-producing cell -> antimicrobial peptide-producing plasmatocyte; visceral muscle of the crop -> adult crop circular muscle cell; corpora cardiaca cell -> adult Akh secreting cell; posterior midgut* -> enterocyte of posterior adult midgut epithelium. Types: 175 exact, 65 broad, 1 narrow, 11 held (plus unannotated/artefact/unknown, held). Mapping reviewed by the curator 2026-10-14. No FBbt term requests. Expression (curator 2026-10-14: CPM for all datasets): CPM converted back from the authors' normalised h5ad values, level = mean over expressing cells, extent, filtered extent > 0.2. Genes keyed by symbol, FBgn from the 10x files where given, else by symbol in FlyBase Chado (FB2026_03). All FBbt/FBdv/FBcv terms verified current against the releases listed (2026-10-14). Publication FBrf0252876 resolved from VFB production (pdb). 10x (E-MTAB-10519): 61 Samples, 160 Assays, 17 Clusterings (Stringent per-tissue analyses incl. head and body), 370 Clusters (obs `annotation`; 'unannotated'/'artefact' kept, flagged, held); 336 mapped to 190 distinct FBbt terms. Expression from raw.X (log(counts per 10k + 1) -> CPM): 16,363 genes x 506,660 cells, 573,103 rows; gene ids 16,270 current, 80 secondary, 15 synonym, 1 split dropped (2 merges). Dataset total/filtered gene counts 16,363/12,747.",
+  "pipeline": {
+    "name": "vfb-scrnaseq",
+    "version": "0.0.0",
+    "repo": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
+    "commit": "f81306b (+ stage 5 build outputs)"
+  },
+  "ontologies": [
+    {
+      "id": "FBbt",
+      "name": "Drosophila gross anatomy ontology",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "release_date": "2026-10-01",
+      "accessed_via": "OLS MCP (OLS4) + local fbbt.obo (.cache)",
+      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-10-14"
+    },
+    {
+      "id": "FBdv",
+      "name": "Drosophila developmental ontology",
+      "version": "2026-09-30",
+      "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-09-30/fbdv.owl",
+      "release_date": "2026-09-30",
+      "accessed_via": "OLS4 API",
+      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "accessed_at": "2026-10-14"
+    },
+    {
+      "id": "FBcv",
+      "name": "FlyBase controlled vocabulary",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-10-01/fbcv.owl",
+      "release_date": "2026-10-01",
+      "accessed_via": "OLS4 API",
+      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "accessed_at": "2026-10-14"
+    }
+  ],
+  "data_sources": [
+    {
+      "type": "publication",
+      "id": "10.1126/science.abk2432",
+      "title": "Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly (Li et al. 2022, Science); PMID 35239393; PMC8944923; FBrf0252876",
+      "url": "https://doi.org/10.1126/science.abk2432",
+      "files": [
+        {
+          "name": "supp/PMC8944923.jats.xml (JATS full text, NCBI efetch db=pmc; Europe PMC fullTextXML returned 500)",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=PMC8944923",
+          "sha256": "314b27f189fb3afd781eecfdc4a8595b5f7caeac0be19bd53d22c3285f656a6d",
+          "bytes": 107416,
+          "retrieved_at": "2026-10-08"
+        },
+        {
+          "name": "supp/science.abk2432_sm.pdf (supplementary materials; supplied by the curator)",
+          "url": "https://www.science.org/doi/suppl/10.1126/science.abk2432/suppl_file/science.abk2432_sm.pdf",
+          "sha256": "14d13906a459e3a5f88f504107ba9a832743e88e6e8d563f905e9f671929ece8",
+          "bytes": 47939969,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "supp/science.abk2432_sm.txt (pdftotext of the supplement)",
+          "sha256": "ed74af3e975ce27180cc03412a25ae6da9ea6bcac342967949cb9d0d279fba15",
+          "bytes": 98557,
+          "retrieved_at": "2026-10-08"
+        }
+      ]
+    },
+    {
+      "type": "dataset",
+      "id": "E-MTAB-10519",
+      "title": "ArrayExpress E-MTAB-10519: 10x Genomics single-nucleus RNA-seq (Fly Cell Atlas)",
+      "url": "https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-10519",
+      "retrieved_at": "2026-10-07",
+      "files": [
+        {
+          "name": "E-MTAB-10519.idf.txt",
+          "url": "https://ftp.ebi.ac.uk/biostudies/fire/E-MTAB-/519/E-MTAB-10519/Files/E-MTAB-10519.idf.txt",
+          "sha256": "097cae75a4f71631ceefe8930bd29e0ef214be6828c20d3cd7b33e22c827b323",
+          "bytes": 3538,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "E-MTAB-10519.sdrf.txt",
+          "url": "https://ftp.ebi.ac.uk/biostudies/fire/E-MTAB-/519/E-MTAB-10519/Files/E-MTAB-10519.sdrf.txt",
+          "sha256": "48e59cece8cf64e30a63f922b565273857aea0b51d5bef540494e57dddc69e43",
+          "bytes": 321967,
+          "retrieved_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "type": "dataset",
+      "id": "flycellatlas.org E-MTAB-10519",
+      "title": "Authors' per-tissue AnnData analyses (10x Genomics single-nucleus RNA-seq (Fly Cell Atlas))",
+      "url": "https://flycellatlas.org",
+      "retrieved_at": "2026-10-07",
+      "files": [
+        {
+          "name": "h5ad/head.h5ad (Fly Cell Atlas 10x Stringent Head)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/LAEybPc2HZnpzKs",
+          "sha256": "c97d0a95f9e607dc23dd2fdb2b41ea7fea6493072b2c7b8a960a76a4f8e3575a",
+          "bytes": 2644193366,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "h5ad/body.h5ad (Fly Cell Atlas 10x Stringent Body)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/nXnbWzQnLxTXmMT",
+          "sha256": "b943a9e0cb0e61783ac53134f5f3f9c0d153e72c766e56db215f0ee876e9bab7",
+          "bytes": 2650418358,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "h5ad/antenna.h5ad (Fly Cell Atlas 10x Stringent Antenna)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/jpLWSwcA638yZka",
+          "sha256": "2bce6b3efaf5c1865db8b7147d8baf9f28781ef5dc20409f3b745f5cc8cf140b",
+          "bytes": 740806185,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "h5ad/body_wall.h5ad (Fly Cell Atlas 10x Stringent Body Wall)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/sZZMSbcNk4SWtHE",
+          "sha256": "53fced846f0e26d23abd6052dd76dfb7d286d4e2e5e8d7a7b6b3e1a610c3482a",
+          "bytes": 360485419,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "h5ad/fat_body.h5ad (Fly Cell Atlas 10x Stringent Fat Body)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/zca3Es6MNx9TDsy",
+          "sha256": "a02cd0e0331d58296b515a289d198d7016c6e558b328dcf5baa34c57452b52ab",
+          "bytes": 738525875,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "h5ad/gut.h5ad (Fly Cell Atlas 10x Stringent Gut)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/TfX7etSc5NnmFAz",
+          "sha256": "50c8ae38cde57e7ace4b87ff34e54c6b76bb2312dd294edf6db1c84409537242",
+          "bytes": 354354216,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "h5ad/haltere.h5ad (Fly Cell Atlas 10x Stringent Haltere)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/QDtoYjpfQgey5aq",
+          "sha256": "1e8337c5608424e8da1fad68debb2150df1769a33003d5e76c900a98f981ba77",
+          "bytes": 198908599,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "h5ad/heart.h5ad (Fly Cell Atlas 10x Stringent Heart)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/sCB3bs3Yg5ypaBS",
+          "sha256": "d854faa05dbb91bed5dee4c260b227493433049ba993985da07da44c8a25f3c0",
+          "bytes": 344685976,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "h5ad/leg.h5ad (Fly Cell Atlas 10x Stringent Leg)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/ofHeNRbZPn52QtT",
+          "sha256": "baa104ea7b589dd28ee7c8cb50c3333194d04025827376f294f2a8e0afaaa736",
+          "bytes": 710846335,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "h5ad/male_reproductive_glands.h5ad (Fly Cell Atlas 10x Stringent Male Reproductive Glands)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/B4kH5SiLPF24nsC",
+          "sha256": "ff47342ba3fc7ed5761420571b9c93713cc62d0cea57176cb44ccb4e4c6239bc",
+          "bytes": 393238816,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "h5ad/malpighian_tubule.h5ad (Fly Cell Atlas 10x Stringent Malpighian Tubule)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/qDRy6NqxmqN7SxS",
+          "sha256": "37306030e06fe14fdea74637d0f8fb351b96a78ba517a268a6b633e36bb629e0",
+          "bytes": 411660657,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "h5ad/oenocyte.h5ad (Fly Cell Atlas 10x Stringent Oenocyte)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/WdSri425t88B7JA",
+          "sha256": "88f57d58eaa31ac1261e090b5e100b30d8ed9b9fd55c0251ee18a715541dcd92",
+          "bytes": 468908300,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "h5ad/ovary.h5ad (Fly Cell Atlas 10x Stringent Ovary)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/zgZe3Zsegpn5Bpg",
+          "sha256": "db9126133ed4c0e73231fe23b7987b65b423971d886dc6e4cac63bdaf495ee78",
+          "bytes": 791950594,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "h5ad/proboscis_and_maxillary_palps.h5ad (Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/gGsWF6PRk45Apan",
+          "sha256": "445648771411204bd9c1af82a2739666525da4fcce1727c1444f7b677b6ad86d",
+          "bytes": 556849504,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "h5ad/testis.h5ad (Fly Cell Atlas 10x Stringent Testis)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/A2jn7iTEeRgMkc3",
+          "sha256": "dfaaa2305e4ec03cecc5299cb1ffb0b74b47d9bab6e5a2a884fcbce804a7c98c",
+          "bytes": 1126773266,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "h5ad/trachea.h5ad (Fly Cell Atlas 10x Stringent Trachea)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/j3kQTf5KifXyBYr",
+          "sha256": "bbbf0c1a4e73cb412395bb249c55d8d2b527c4e2666cb140ebfd6f35eb765dee",
+          "bytes": 651243603,
+          "retrieved_at": "2026-10-07"
+        },
+        {
+          "name": "h5ad/wing.h5ad (Fly Cell Atlas 10x Stringent Wing)",
+          "url": "https://cloud.flycellatlas.org/index.php/s/eAD6HL7TaesZ6GM",
+          "sha256": "2560ddba42ef8fbad7c319972422ce8c2c5f624c5a1df855beee7d58541c801a",
+          "bytes": 385323163,
+          "retrieved_at": "2026-10-07"
+        }
+      ]
+    }
+  ],
+  "software": [
+    {
+      "name": "Claude Code",
+      "kind": "tool",
+      "version": "2.1.291-2.1.296",
+      "notes": "Agentic CLI that ran the session (orchestrator) and its subagents; version rose from 2.1.291 to 2.1.296 across stages 1-5."
+    },
+    {
+      "name": "Atlas Reporter (local-paper-index)",
+      "kind": "repository",
+      "repo": "https://github.com/Cellular-Semantics/Atlas-reporter",
+      "commit": "2acd38e",
+      "notes": "Local JATS snippet index of the paper, queried by the report subagents."
+    },
+    {
+      "name": "sentence-transformers",
+      "kind": "library",
+      "version": "5.5.1",
+      "notes": "Local index embeddings."
+    },
+    {
+      "name": "OLS4 (Ontology Lookup Service)",
+      "kind": "service",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "notes": "FBbt search/lookup during mapping (OLS MCP); term verification (verify_mappings.py)."
+    },
+    {
+      "name": "VFB production (neo4j)",
+      "kind": "service",
+      "url": "https://pdb.virtualflybrain.org",
+      "notes": "Publication FBrf0252876 resolved by PMID (vfb_scrnaseq.pub; not in the curation KB)."
+    },
+    {
+      "name": "FlyBase Chado",
+      "kind": "service",
+      "url": "chado.flybase.org",
+      "notes": "Gene ids/symbols -> current genes (update_gene_ids.py), FlyBase FB2026_03 (data last modified 2026-08-29)."
+    },
+    {
+      "name": "Python",
+      "kind": "language",
+      "version": "3.14.3",
+      "notes": "Pipeline environment (uv-managed)."
+    },
+    {
+      "name": "h5py",
+      "kind": "library",
+      "version": "3.16.0",
+      "notes": "Reads the authors' AnnData files (obs, var, matrices) without anndata."
+    },
+    {
+      "name": "numpy",
+      "kind": "library",
+      "version": "2.5.1"
+    },
+    {
+      "name": "pandas",
+      "kind": "library",
+      "version": "3.0.5"
+    },
+    {
+      "name": "PyYAML",
+      "kind": "library",
+      "version": "6.0.3"
+    },
+    {
+      "name": "linkml",
+      "kind": "library",
+      "version": "1.11.1",
+      "notes": "linkml-validate + linkml-convert (flat RDF)."
+    },
+    {
+      "name": "linkml-runtime",
+      "kind": "library",
+      "version": "1.11.1"
+    },
+    {
+      "name": "linkml-owl",
+      "kind": "library",
+      "version": "0.5.0",
+      "notes": "Metadata OWL."
+    },
+    {
+      "name": "rdflib",
+      "kind": "library",
+      "version": "7.6.0"
+    },
+    {
+      "name": "ROBOT",
+      "kind": "tool",
+      "version": "1.9.11",
+      "notes": "OFN -> OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "name": "psql",
+      "kind": "tool",
+      "version": "14.15",
+      "notes": "FlyBase Chado queries."
+    }
+  ],
+  "models": [
+    {
+      "role": "orchestrator",
+      "name": "claude-opus-5-5",
+      "provider": "Anthropic",
+      "version": "Opus 5.5; model id claude-opus-5-5",
+      "notes": "Claude Code main session: ArrayExpress sample builder + sdrf_corrections, h5ad annotation/expression readers, type-level mapping (type_evidence.py, confirm_author_terms.py, expand_type_mappings.py), configs, dispatch of subagents, post-mapping checks, gene id mapping by symbol, builds."
+    },
+    {
+      "role": "mapping-llm",
+      "name": "claude-sonnet",
+      "provider": "Anthropic",
+      "notes": "write-cell-type-report subagents (117 type reports) and map-clusters-to-fbbt subagents (agent frontmatter model: sonnet)."
+    },
+    {
+      "role": "embedding",
+      "name": "sentence-transformers/all-MiniLM-L6-v2",
+      "provider": "sentence-transformers",
+      "notes": "Local paper snippet-index embeddings."
+    }
+  ]
+}
