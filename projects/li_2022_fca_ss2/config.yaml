@@ -144,6 +144,21 @@ sample_build:
         h5ad: "https://cloud.flycellatlas.org/index.php/s/yeQdzQbgY379sgD",
         fixed_annotation: "corpora cardiaca cell", membership: sorted }
 
+# Summary expression (scripts/build_expression.py) from the same h5ad files: `X`
+# holds all genes as log2(CPM + 1), converted back as 2^x - 1; cells count towards
+# their predicted-label (or sorted) group, as in cell_type_annotations.json.
+expression:
+  source: h5ad
+  values: log2_cpm1
+  normalisation: CPM
+  extent_cutoff: 0.2
+  hide_in_terminfo: "true"
+  gzip_tsv: true          # expression.tsv.gz (too large to commit plain)
+  # gene symbol -> current FlyBase gene (scripts/update_gene_ids.py); the Smart-seq2
+  # files carry no ids, so they come from the 10x files, else by symbol
+  gene_id_map: gene_id_map.tsv
+  gene_ids_from: [li_2022_fca_10x]
+
 # Smart-seq2 cells were not clustered: the authors typed each cell with a logistic-
 # regression classifier trained on the tissue's 10x annotation, validated with marker
 # genes (supplement, "Annotating Smart-Seq2 data"). Curator decision 2026-10-08: use
