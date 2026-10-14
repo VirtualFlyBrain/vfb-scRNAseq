@@ -500,15 +500,28 @@ by `vfb_scrnaseq.stats` (`scripts/build_expression.py`). Per cluster × gene:
   **normalisation-invariant, so exact**.
 - `expression_level` = **mean over *expressing cells only*** (Σ / n_expressing),
   NOT over all cells (the detail scanpy's default gets wrong).
-- **Normalisation**: SOP uses the SCEA *Normalised Counts* table; a GEO-raw dataset
-  (one that never went through SCEA) instead replicates the *method* with **CPM**
-  (linear) — `level` cannot be SCEA-identical, but extent is exact.
+- **Normalisation**: SOP uses the SCEA *Normalised Counts* table; we replicate the
+  *method* with **CPM** (linear) for every dataset (curator decision 2026-10-14) —
+  `level` cannot be SCEA-identical, but extent is exact.
 - **Filter**: `extent > 0.2` (from the old repo's `process_metadata.py`);
   `Cluster.total_gene_count` (any expression) vs `filtered_gene_count` (> 0.2).
 
 **Compute**: two chunked streaming passes over the 1 GB 10x `.mtx.gz` (cell totals
 for CPM, then per-cluster×gene sums via `bincount`) — dense accumulators genes×clusters
 only, ~95 s, low memory. The matrix lives in `.cache/` (gitignored).
+
+**h5ad source** (`expression.source: h5ad`; the Fly Cell Atlas): the authors' per-analysis
+files hold *normalised* values, not counts. One file per Clustering is read in one
+chunked pass (`ingest_h5ad.iter_matrix`: dense, CSR or CSC; `raw` when present, as
+the main `X` may be scaled highly-variable genes only), and `expression.values` converts
+back to CPM — `log1p_cp10k` (log(counts per 10k + 1)) → (eˣ − 1) × 100, `log2_cpm1`
+(log2(CPM + 1)) → 2ˣ − 1. The build checks the conversion: the median cell must sum to
+1e6 CPM and none above (cells may sum lower where the authors normalised before dropping
+genes, e.g. FCA Smart-seq2 dilp2IPC; those values are still CPM). A cell's cluster is
+`<clustering>_<annotation>` (or the clustering's `fixed_annotation`), and cluster
+sizes must equal `cell_type_annotations.json`. Files may carry different gene sets; a
+gene a file lacks is unexpressed in its clusters. `expression.gzip_tsv: true` writes
+`expression.tsv.gz` (deterministic gzip) for datasets too large to commit plain.
 
 **Scale & outputs** (worked example: 17,561 genes, 194k cells → **584,710 rows**
 after the filter):
@@ -543,6 +556,13 @@ applies (`expression.gene_id_map`) as the matrix streams. The table header recor
 the FlyBase release (read from the flybase.org homepage, e.g. "FB2026_03, released
 September 17, 2026" — the website and Chado are updated together) and Chado's
 last-modified date (the release's data freeze).
+
+**h5ad projects are keyed by gene symbol** (the matrix's gene names). A symbol takes
+the FBgn given in the authors' files (`var`/`raw.var` column `ID`, pooled over the
+project's files and `expression.gene_ids_from` projects) and is mapped as below; a
+symbol with no FBgn is looked up by name among *D. melanogaster* genes: a current
+symbol → that gene; else a synonym of exactly one gene → that gene; a synonym of
+several genes (**ambiguous**) or of none (**unmatched**) → dropped.
 
 Mapping rules:
 
@@ -731,7 +751,8 @@ VFB until the release files are merged, so ids can still change during review.
    from the paper's Key Resources Table resolved in FlyBase Chado, `age_map` →
    FBdv stage + FBbt tissue, clusterings), `annotations` (label/class/timepoint
    columns, extra clusterings, prefixes), `unidentified` (rule, held classes,
-   class anchors), `expression` (matrix files, extra parts).
+   class anchors), `expression` (matrix files, extra parts; or `source: h5ad` with
+   `values`, `gene_ids_from`, `gzip_tsv`).
 3. **Clusters:** `build_annotations_from_geo.py` (one entry per author cluster;
    the main cluster label must be the authors' cluster, not a merged type). For
    layouts it can't express, a project script writes `cell_type_annotations.json`
@@ -828,4 +849,14 @@ Curator decisions (2026-10-07):
   term maps to its cell-level equivalent, else the cluster is held; **no narrowing by
   dissected tissue** — generic types map at the authors' level in every tissue.
   13 types are held (no adequate cell term).
-- **Expression:** `expression.tsv` committed gzipped (too large otherwise).
+- **Expression (stage 4):** from the same h5ad files, as CPM. 10x: each file's `raw.X`
+  (all retained genes, log(counts per 10k + 1)); the main `X` is scaled HVGs only.
+  Smart-seq2: `X` (all genes, log2(CPM + 1)). Genes keyed by symbol: FBgn from the 10x
+  files' `ID` column (the leg file's raw IDs are undecodable; the Smart-seq2 files have
+  none, so both take the other files' ids), the rest by symbol in Chado (FB2026_03):
+  10x 16,270 current, 80 secondary, 15 synonym, 1 split; Smart-seq2 16,203 current,
+  79 secondary, 26 synonym, 1 split, 2 unmatched (an unnamed gene and snRNA:U3).
+  Held clusters (unannotated, artefact, unknown) get expression like any other, as in
+  the other datasets. 10x: 16,363 genes × 506,660 cells, 370 clusters, 573,103 rows;
+  Smart-seq2: 16,306 genes × 9,892 cells, 237 clusters, 470,088 rows.
+  `expression.tsv.gz` is committed gzipped (too large otherwise).
