@@ -848,7 +848,7 @@ Curator decisions (2026-10-07):
   agents. Curator rules (2026-10-08): **cell-level terms only** — a tissue/organ author
   term maps to its cell-level equivalent, else the cluster is held; **no narrowing by
   dissected tissue** — generic types map at the authors' level in every tissue.
-  13 types are held (no adequate cell term).
+  11 types are held (no adequate cell term); 5 curator edits (`manual_edit`).
 - **Expression (stage 4):** from the same h5ad files, as CPM. 10x: each file's `raw.X`
   (all retained genes, log(counts per 10k + 1)); the main `X` is scaled HVGs only.
   Smart-seq2: `X` (all genes, log2(CPM + 1)). Genes keyed by symbol: FBgn from the 10x
@@ -860,3 +860,9 @@ Curator decisions (2026-10-07):
   the other datasets. 10x: 16,363 genes × 506,660 cells, 370 clusters, 573,103 rows;
   Smart-seq2: 16,306 genes × 9,892 cells, 237 clusters, 470,088 rows.
   `expression.tsv.gz` is committed gzipped (too large otherwise).
+- **Build (stage 5):** `build_rdf.py` for both projects (10x: 1 Dataset, 61 Samples,
+  160 Assays, 17 Clusterings, 370 Clusters; Smart-seq2: 31 Samples, 35 Assays, 17
+  Clusterings, 237 Clusters); publication FBrf0252876 from VFB production;
+  `verify_mappings.py` OK (190 and 109 distinct FBbt terms), and every FBbt/FBdv/FBcv
+  term on Samples, Assays and the Dataset checked current (FBdv 2026-09-30, FBcv
+  2026-10-01). Recorded in each project's `provenance.json`.
