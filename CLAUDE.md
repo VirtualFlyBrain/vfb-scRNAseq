@@ -10,7 +10,8 @@ clusters mapped to FBbt, for loading into Virtual Fly Brain. Read `README.md`, t
 - Type clusters from what the **authors** say (GEO metadata / paper / supp tables);
   do not overturn or hedge their typing from our own reading of the data.
 - Cluster → FBbt is *composed primarily of* (RO:0002473).
-- No adequate FBbt term → the cluster is **held** (no generic fallback).
+- No adequate FBbt term → the cluster is **held** (no generic fallback): listed in
+  `mapping.tsv` with a `hold_reason`, but **not loaded** (no id, entity or expression).
 - New FBbt terms from gene expression alone are the exception. **Never open an FBbt
   term-request issue without explicit curator sign-off**; when one is opened, add it
   to `checks/pending_fbbt_requests.json`.
