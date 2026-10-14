@@ -7,29 +7,35 @@
     "adult posterior midgut"
   ],
   "best_match": {
-    "fbbt_term": "adult midgut epithelial cell",
-    "fbbt_id": "FBbt:00058294",
-    "fbbt_definition": "Any epithelial cell (FBbt:00000124) that is part of some adult midgut epithelium (FBbt:00007026).",
-    "match_type": "broad match",
-    "skos_mapping": "skos:broadMatch",
+    "fbbt_term": "enterocyte of posterior adult midgut epithelium",
+    "fbbt_id": "FBbt:00007037",
+    "fbbt_definition": "A large, polyploid, cuboidal or low-columnar epithelial cell of the adult posterior midgut. It has its nucleus in the middle and a mass of microvilli (brush border) on its apical surface. On its basal side, extensive infoldings of the plasma membrane form a labyrinth which fills the lower half of the cell. It is attached to adjacent enterocytes by smooth septate junctions.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
     "confidence": "medium"
   },
-  "justification": "FBbt has no general adult posterior midgut epithelial cell term; only cell-type-specific posterior terms (enterocyte, enteroendocrine, ISC), none matching an unresolved regional group. The adult midgut epithelial cell is the most specific true parent.",
+  "justification": "FBbt has no general adult posterior midgut epithelial cell term; only cell-type-specific posterior terms (enterocyte, enteroendocrine, ISC). The authors' region-named group is taken by the curator to be posterior midgut enterocytes (the predominant epithelial cell of the posterior midgut).",
   "other_candidates": [
+    {
+      "fbbt_term": "adult midgut epithelial cell",
+      "fbbt_id": "FBbt:00058294",
+      "fbbt_definition": "Any epithelial cell (FBbt:00000124) that is part of some adult midgut epithelium (FBbt:00007026).",
+      "reason_rejected": "Previous best match (broad); curator chose the posterior enterocyte term."
+    },
     {
       "fbbt_term": "adult posterior midgut",
       "fbbt_id": "FBbt:00047155",
       "fbbt_definition": "Broad subdivision of the midgut; posteriormost of the three traditional sections.",
       "reason_rejected": "Region term, not a cell term."
-    },
-    {
-      "fbbt_term": "enterocyte of posterior adult midgut epithelium",
-      "fbbt_id": "FBbt:00007037",
-      "fbbt_definition": "A large, polyploid epithelial cell of the adult posterior midgut.",
-      "reason_rejected": "Authors do not name enterocytes."
     }
   ],
-  "recommendation": "Map to FBbt:00058294 (broad).",
+  "recommendation": "Curator decision: map to FBbt:00007037 'enterocyte of posterior adult midgut epithelium' (exact match).",
   "new_term_needed": false,
-  "verification_needed": false
+  "verification_needed": false,
+  "manual_edit": {
+    "by": "Clare Pilgrim (Clare72)",
+    "date": "2026-10-14",
+    "change": "best_match FBbt:00058294 adult midgut epithelial cell (broad, medium) -> FBbt:00007037 enterocyte of posterior adult midgut epithelium (exact, medium)",
+    "reason": "curator: posterior midgut* = enterocyte of posterior adult midgut epithelium"
+  }
 }
