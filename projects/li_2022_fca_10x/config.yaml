@@ -142,6 +142,23 @@ sample_build:
     - { id: wing, name: "Fly Cell Atlas 10x Stringent Wing",
         h5ad: "https://cloud.flycellatlas.org/index.php/s/eAD6HL7TaesZ6GM" }
 
+# Summary expression (scripts/build_expression.py) from the same h5ad files. Each
+# file's `raw.X` holds all retained genes as log(counts per 10,000 + 1) (the main `X`
+# is scaled, highly variable genes only), converted to CPM as (e^x - 1) x 100; the
+# build checks every cell sums to 1e6. Cells count towards their author annotation
+# (the Cluster label), as in cell_type_annotations.json.
+expression:
+  source: h5ad
+  values: log1p_cp10k
+  normalisation: CPM
+  extent_cutoff: 0.2
+  hide_in_terminfo: "true"
+  gzip_tsv: true          # expression.tsv.gz (too large to commit plain)
+  # gene symbol -> current FlyBase gene (scripts/update_gene_ids.py); ids from the
+  # authors' files where given (also from Smart-seq2), else looked up by symbol
+  gene_id_map: gene_id_map.tsv
+  gene_ids_from: [li_2022_fca_ss2]
+
 # Author annotations from the per-analysis h5ad files (scripts/fetch_h5ad.py, then
 # scripts/build_annotations_from_h5ad.py). `annotation` is the authors' stringent
 # typing (consensus across Leiden resolutions); `R_annotation` (a transferred
