@@ -1,0 +1,47 @@
+{
+  "cluster_label": "choriogenic main body follicle cell and corpus luteum",
+  "working_definition": "A group of adult ovary cells the authors call choriogenic main body follicle cells and corpus luteum (follicle-cell-derived remnants after ovulation) (Li et al. 2022, Fly Cell Atlas). Authors gave 'Manual Annotation' (no FBbt id).",
+  "searches_performed": [
+    "choriogenic main body follicle cell and corpus luteum",
+    "corpus luteum",
+    "corpus luteum cell",
+    "main body follicle cell",
+    "choriogenic follicle cell"
+  ],
+  "best_match": {
+    "fbbt_term": "main body follicle cell",
+    "fbbt_id": "FBbt:00005402",
+    "fbbt_definition": "Follicle cell that overlies the oocyte (Wu et al., 2008). Along with the posterior terminal follicle cells they form a columnar epithelium from stage 10, which deposits eggshell components (Wu et al., 2008). These cells are connected to one another by ring canals (Airoldi et al., 2011).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "additional_matches": [
+    {
+      "fbbt_term": "corpus luteum cell",
+      "fbbt_id": "FBbt:00048551",
+      "fbbt_definition": "Cell of the corpus luteum. These develop from follicle cells that are shed when the egg leaves the ovary, gaining a yellow pigmentation and upregulating ecdysone biosynthetic enzymes (Deady et al., 2015).",
+      "match_type": "broad match",
+      "skos_mapping": "skos:broadMatch",
+      "confidence": "medium"
+    }
+  ],
+  "justification": "Two named classes, each with an FBbt cell term. They share no informative common ancestor (main body follicle cell is a follicle cell / somatic cell of ovariole; corpus luteum cell is only a somatic cell), so both are given: main body follicle cell as primary and corpus luteum cell additional. 'Choriogenic' and the stage restriction are not captured by FBbt. If a single common-parent mapping is preferred, the only true common ancestor is the generic somatic cell (FBbt:00100318).",
+  "other_candidates": [
+    {
+      "fbbt_term": "somatic cell",
+      "fbbt_id": "FBbt:00100318",
+      "fbbt_definition": "Generic somatic cell.",
+      "reason_rejected": "Only true common ancestor of both members, but uninformatively generic."
+    },
+    {
+      "fbbt_term": "corpus luteum",
+      "fbbt_id": "FBbt:00048550",
+      "fbbt_definition": "Structure formed from the follicle cell layer of the egg chamber after the egg has been released from the ovary (Deady et al., 2015).",
+      "reason_rejected": "Multicellular structure, not a cell term."
+    }
+  ],
+  "recommendation": "Map to main body follicle cell (FBbt:00005402) broad, with corpus luteum cell (FBbt:00048551) as additional match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

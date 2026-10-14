@@ -1,0 +1,29 @@
+{
+  "cluster_label": "gut_enteroendocrine cell",
+  "working_definition": "Author cell type 'enteroendocrine cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00007038 'enteroendocrine cell'. Found in: 10x:body (156 cells), 10x:gut (96 cells), ss2:gut (8 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00007038 (FBbt fbbt/releases/2026-10-01)",
+    "'adult enteroendocrine cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'enteroendocrine cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult enteroendocrine cell",
+    "fbbt_id": "FBbt:00047149",
+    "fbbt_definition": "Diploid endocrine cell which is part of the adult midgut epithelium. There are approximately 1100 of these cells in an adult midgut (Chen et al., 2016). They develop from enteroendocrine precursor cells (Chen et al., 2018).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00007038 'enteroendocrine cell', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00047149 'adult enteroendocrine cell', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "enteroendocrine cell",
+      "fbbt_id": "FBbt:00007038",
+      "fbbt_definition": "Diploid endocrine cell which is part of the adult or larval midgut epithelium.",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00047149 'adult enteroendocrine cell' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

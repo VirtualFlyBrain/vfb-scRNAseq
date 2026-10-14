@@ -5,6 +5,7 @@ projects in tmp_path, with the scripts' and project_config's REPO_ROOT pointed t
 """
 
 import csv
+import datetime
 import gzip
 import importlib.util
 import json
@@ -101,7 +102,8 @@ def test_collate_held_order_prior_and_review(tmp_path, monkeypatch):
     (proj / "mapping" / "c_x.fbbt_mapping.json").write_text(json.dumps(_mapping("c_x")))   # no term
     (proj / "prior.tsv").write_text("cluster_label\told_fbbt_id\told_fbbt_label\n"
                                     "c_1\tFBbt:00000001\tx\nc_2\tFBbt:99999999\ty\n")
-    (proj / "mapping.tsv").write_text("cluster_label\treviewed\treview_notes\nc_2\ty\tok\n")
+    (proj / "mapping.tsv").write_text("cluster_label\treviewed\treview_notes\n"
+                                         "c_2\tYes\tok\nc_1\t2026-01-02\t\n")
     mod = _script("collate_mapping")
     monkeypatch.setattr(mod, "REPO_ROOT", tmp_path)
     cols, rows = mod.collate("p")
@@ -111,7 +113,9 @@ def test_collate_held_order_prior_and_review(tmp_path, monkeypatch):
     assert by["c_x"]["kind"] == "held" and by["c_x"]["match_type"] == "HELD"   # no FBbt term -> held
     assert by["c_1"]["prior_agrees"] == "yes" and by["c_2"]["prior_agrees"] == "NO"
     assert by["c_10"]["prior_agrees"] == ""
-    assert (by["c_2"]["reviewed"], by["c_2"]["review_notes"]) == ("y", "ok")      # review kept
+    today = datetime.date.today().isoformat()
+    assert (by["c_2"]["reviewed"], by["c_2"]["review_notes"]) == (today, "ok")    # y/yes -> date
+    assert by["c_1"]["reviewed"] == "2026-01-02"                                  # date kept
 
 
 # --- committed project structure -----------------------------------------------

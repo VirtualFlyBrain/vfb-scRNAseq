@@ -1,0 +1,22 @@
+{
+  "cluster_label": "testis_cyst stem cell",
+  "working_definition": "Somatic stem cells of the adult testis (CySCs), string-expressing, at the root of the cyst cell lineage; the start of the authors' cyst cell trajectory. Authors had no FBbt term (Manual Annotation).",
+  "searches_performed": [
+    "cyst stem cell",
+    "cyst progenitor cell",
+    "CySC (synonym check in local fbbt.obo)"
+  ],
+  "best_match": {
+    "fbbt_term": "cyst progenitor cell",
+    "fbbt_id": "FBbt:00004933",
+    "fbbt_definition": "A somatic stem cell; Mother of cyst cells; Associated with the hub of the germinal center and with male germline stem cells.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00004933 has exact synonyms CySC and somatic cyst stem cell and the related synonym 'cyst stem cell'; same somatic stem cell of the testis giving rise to cyst cells.",
+  "other_candidates": [],
+  "recommendation": "Map to cyst progenitor cell (FBbt:00004933), exact.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

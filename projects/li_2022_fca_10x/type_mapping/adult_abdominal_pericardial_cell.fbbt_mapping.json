@@ -1,0 +1,22 @@
+{
+  "cluster_label": "adult abdominal pericardial cell",
+  "working_definition": "Author cell type 'adult abdominal pericardial cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00013185 'adult abdominal pericardial cell'. Found in: 10x:heart (636 cells), ss2:heart (22 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00013185 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult abdominal pericardial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult abdominal pericardial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult abdominal pericardial cell",
+    "fbbt_id": "FBbt:00013185",
+    "fbbt_definition": "Pericardial cell of the adult abdomen. These are serially arranges in a row of 20-25 on each side of the heart from the first to the 6th segment.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00013185 'adult abdominal pericardial cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00013185 'adult abdominal pericardial cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

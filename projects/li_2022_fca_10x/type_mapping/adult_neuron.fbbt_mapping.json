@@ -1,0 +1,22 @@
+{
+  "cluster_label": "adult neuron",
+  "working_definition": "Author cell type 'adult neuron' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00047095 'adult neuron'. Found in: 10x:fat_body (229 cells), 10x:oenocyte (138 cells), 10x:trachea (462 cells), ss2:fat_body (10 cells), ss2:oenocyte (44 cells), ss2:trachea (25 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00047095 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult neuron",
+    "fbbt_id": "FBbt:00047095",
+    "fbbt_definition": "A neuron that is part of the adult nervous system. These can be born during the postembryonic phase of neurogenesis (Lacin and Truman, 2016) or they can develop from larval neurons during the pupal stage (Veverytsa and Allan, 2013).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00047095 'adult neuron', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00047095 'adult neuron', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,22 @@
+{
+  "cluster_label": "heart_adult tracheal cell",
+  "working_definition": "Author cell type 'adult tracheal cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00005040 'adult tracheocyte'. Found in: 10x:body (1511 cells), 10x:body_wall (384 cells), 10x:heart (155 cells), 10x:leg (97 cells), 10x:malpighian_tubule (104 cells), 10x:oenocyte (207 cells), 10x:ovary (95 cells), 10x:proboscis_and_maxillary_palps (305 cells), 10x:testis (619 cells), 10x:trachea (9508 cells), ss2:body_wall (10 cells), ss2:heart (6 cells), ss2:leg (3 cells), ss2:malpighian_tubule (12 cells), ss2:oenocyte (12 cells), ss2:ovary (5 cells), ss2:proboscis_and_maxillary_palps (7 cells), ss2:testis (5 cells), ss2:trachea (318 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00005040 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult tracheocyte' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult tracheal cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult tracheocyte",
+    "fbbt_id": "FBbt:00005040",
+    "fbbt_definition": "Any tracheocyte of the adult.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00005040 'adult tracheocyte', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00005040 'adult tracheocyte', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

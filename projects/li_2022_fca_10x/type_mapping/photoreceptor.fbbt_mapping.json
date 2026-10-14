@@ -1,0 +1,36 @@
+{
+  "cluster_label": "photoreceptor",
+  "working_definition": "Author cell type 'photoreceptor' of the Fly Cell Atlas (Li et al. 2022; adult proboscis and maxillary palps, 494 cells): generic photoreceptor cells. Authors' term FBbt:00005162 'photoreceptor' is a light-sensitive sense organ (structure).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00005162",
+    "'photoreceptor cell' (OLS fbbt, EBI OLS4)",
+    "'adult photoreceptor' (EBI OLS4 fbbt)",
+    "'light-sensitive neuron' (EBI OLS4 fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "light-sensitive neuron",
+    "fbbt_id": "FBbt:00004211",
+    "fbbt_definition": "Sensory neuron that reacts to the presence of light.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors' term is a sense-organ structure; the cell-level equivalent of a generic photoreceptor is the FBbt light-sensitive neuron (parent of eye photoreceptor cell, ocellar retinula cell, eyelet and Bolwig organ photoreceptors). No narrowing to eye photoreceptor cell, since the authors give no subtype or location.",
+  "other_candidates": [
+    {
+      "fbbt_term": "photoreceptor",
+      "fbbt_id": "FBbt:00005162",
+      "fbbt_definition": "A light sensitive sense organ.",
+      "reason_rejected": "Structure, not a cell."
+    },
+    {
+      "fbbt_term": "eye photoreceptor cell",
+      "fbbt_id": "FBbt:00006009",
+      "fbbt_definition": "Photoreceptor cell of the compound eye.",
+      "reason_rejected": "More specific than the authors' generic label."
+    }
+  ],
+  "recommendation": "Map to light-sensitive neuron.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

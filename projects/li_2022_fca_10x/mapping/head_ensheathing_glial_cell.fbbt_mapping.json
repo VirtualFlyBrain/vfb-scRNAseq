@@ -1,0 +1,29 @@
+{
+  "cluster_label": "head_ensheathing glial cell",
+  "working_definition": "Author cell type 'ensheathing glial cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00047836 'ensheathing glial cell'. Found in: 10x:head (1855 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00047836 (FBbt fbbt/releases/2026-10-01)",
+    "'adult ensheathing glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'ensheathing glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult ensheathing glial cell",
+    "fbbt_id": "FBbt:00100504",
+    "fbbt_definition": "Glial cell of the adult central nervous system that elaborates along the outer surface of its associated neuropil. Glia of this class may also surround neuropil bundles such as commissures or tracts. There are over 1000 of these in the adult central nervous system, some of which are descendants of larval ensheathing glia (Pogodalla et al., 2021).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00047836 'ensheathing glial cell', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00100504 'adult ensheathing glial cell', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "ensheathing glial cell",
+      "fbbt_id": "FBbt:00047836",
+      "fbbt_definition": "Polarized glial cell with a flattened cell body that forms a sheath around the synaptic and tract neuropil regions (Hartenstein, 2011; Pogodalla et al., 2021). They may serve a homologous function to the wrapping glia, which ensheath the peripheral nerves (Kremer et al., 2017).",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00100504 'adult ensheathing glial cell' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

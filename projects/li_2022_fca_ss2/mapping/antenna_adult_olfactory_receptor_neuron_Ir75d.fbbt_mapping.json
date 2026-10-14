@@ -1,0 +1,22 @@
+{
+  "cluster_label": "antenna_adult olfactory receptor neuron Ir75d",
+  "working_definition": "Author cell type 'adult olfactory receptor neuron Ir75d' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00047054 'adult olfactory receptor neuron Ir75d'. Found in: 10x:antenna (627 cells), ss2:antenna (5 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00047054 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult olfactory receptor neuron Ir75d' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult olfactory receptor neuron Ir75d' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult olfactory receptor neuron Ir75d",
+    "fbbt_id": "FBbt:00047054",
+    "fbbt_definition": "Adult olfactory receptor neuron that expresses the Ionotropic receptor (Ir) 75d and the co-receptors Ir76b and Ir25a (Silbering et al., 2011; Benton et al., 2025). It responds to pyrrolidine (Benton et al., 2025). There are three subclasses, which all innervate only the ipsilateral antennal lobe glomerulus VL1, with dendrites transducing signals from different antennal coeloconic sensilla (Silbering et al., 2011; Kaur et al., 2019). They all develop from an Naa precursor (Benton et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00047054 'adult olfactory receptor neuron Ir75d', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00047054 'adult olfactory receptor neuron Ir75d', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

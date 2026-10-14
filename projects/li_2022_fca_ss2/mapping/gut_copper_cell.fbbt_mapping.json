@@ -1,0 +1,29 @@
+{
+  "cluster_label": "gut_copper cell",
+  "working_definition": "Author cell type 'copper cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00005782 'copper cell'. Found in: 10x:gut (90 cells), ss2:gut (5 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00005782 (FBbt fbbt/releases/2026-10-01)",
+    "'adult copper cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'copper cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult copper cell",
+    "fbbt_id": "FBbt:00110908",
+    "fbbt_definition": "Specialized cell of the adult midgut found in the anterior and middle midgut sections of region R3 (R3a and R3b, copper cell region). It secretes acid and accumulates copper. They show a distinct apical invagination, basally located nuclei, numerous mitochondria and a deeply invaginated apical membrane covered with long microvilli. Interstitial cells arch over the apex of the copper cell, forming a narrow channel that connects the apical invagination of the copper cell to the gut lumen. The highly folded area of apicolateral contact between copper and interstitial cells contains smooth septate junctions.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00005782 'copper cell', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00110908 'adult copper cell', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "copper cell",
+      "fbbt_id": "FBbt:00005782",
+      "fbbt_definition": "Large cell in the middle region of the midgut that is cup-shaped with long microvilli. These cells accumulate copper and secrete acid.",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00110908 'adult copper cell' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

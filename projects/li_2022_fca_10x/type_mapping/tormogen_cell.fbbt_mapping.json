@@ -1,0 +1,22 @@
+{
+  "cluster_label": "tormogen cell",
+  "working_definition": "Author cell type 'tormogen cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00005171 'tormogen cell'. Found in: 10x:proboscis_and_maxillary_palps (472 cells), ss2:proboscis_and_maxillary_palps (6 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00005171 (FBbt fbbt/releases/2026-10-01)",
+    "'adult tormogen cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'tormogen cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "tormogen cell",
+    "fbbt_id": "FBbt:00005171",
+    "fbbt_definition": "The eo accessory cell that makes the socket that supports the innervated cuticular sensory structure of an eo-type sensillum.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00005171 'tormogen cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00005171 'tormogen cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

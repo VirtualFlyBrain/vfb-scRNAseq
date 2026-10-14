@@ -1,0 +1,22 @@
+{
+  "cluster_label": "head_outer photoreceptor cell",
+  "working_definition": "Author cell type 'outer photoreceptor cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00006007 'outer photoreceptor cell'. Found in: 10x:head (6010 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00006007 (FBbt fbbt/releases/2026-10-01)",
+    "'adult outer photoreceptor cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'outer photoreceptor cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "outer photoreceptor cell",
+    "fbbt_id": "FBbt:00006007",
+    "fbbt_definition": "An eye photoreceptor cell whose rhabdomere is part of the outer trapezoid of rhabdomeres of each ommatidium. There are six of these per ommatidium. Each has a single axon that projects along a single lamina optic cartridge within which it makes extensive synaptic connections before terminating in the proximal lamina. It is strongly presynaptic to lamina monopolar neurons L1 and L2 and the lamina intrinsic (amacrine) neuron (Rivera-Alba et al., 2011).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00006007 'outer photoreceptor cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00006007 'outer photoreceptor cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

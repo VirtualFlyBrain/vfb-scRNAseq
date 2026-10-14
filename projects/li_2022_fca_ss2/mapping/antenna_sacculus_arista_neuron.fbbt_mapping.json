@@ -1,0 +1,43 @@
+{
+  "cluster_label": "antenna_sacculus/arista neuron",
+  "working_definition": "Neurons of the sacculus or arista of the antenna, annotated coarsely as neuron without receptor detail (Li et al. 2022 FCA, Manual Annotation).",
+  "searches_performed": [
+    "sacculus/arista neuron",
+    "sacculus neuron",
+    "aristal sensory neuron",
+    "adult antennal sensory neuron",
+    "antennal olfactory receptor neuron of grooved sensillum of sacculus"
+  ],
+  "best_match": {
+    "fbbt_term": "adult antennal sensory neuron",
+    "fbbt_id": "FBbt:00051173",
+    "fbbt_definition": "Adult sensory neuron that receives sensory input in the antenna.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Grouped location call (sacculus or arista). OLS ancestors verified: sacculus grooved-sensillum ORNs (Ir64a FBbt:00110019), hygrosensory Ir40a (FBbt:00110990) and aristal sensory neurons (FBbt:00007575) all descend from adult antennal sensory neuron. No sacculus/arista-specific neuron class exists.",
+  "other_candidates": [
+    {
+      "fbbt_term": "antennal olfactory receptor neuron of grooved sensillum of sacculus",
+      "fbbt_id": "FBbt:00051849",
+      "fbbt_definition": "ORN whose dendrite transduces signals from a grooved sensillum of the sacculus.",
+      "reason_rejected": "Sacculus olfactory only; excludes arista."
+    },
+    {
+      "fbbt_term": "aristal sensory neuron VP2",
+      "fbbt_id": "FBbt:00007575",
+      "fbbt_definition": "Aristal sensory neuron projecting to VP2.",
+      "reason_rejected": "Arista only; specific type."
+    },
+    {
+      "fbbt_term": "adult antennal lobe receptor neuron",
+      "fbbt_id": "FBbt:00051494",
+      "fbbt_definition": "Sensory neuron of the antenna that projects to the antennal lobe.",
+      "reason_rejected": "Excludes non-antennal-lobe (e.g. mechanosensory) neurons the cluster may include."
+    }
+  ],
+  "recommendation": "Map broadly to FBbt:00051173 (medium confidence).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

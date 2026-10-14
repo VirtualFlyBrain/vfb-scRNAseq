@@ -1,0 +1,22 @@
+{
+  "cluster_label": "eye photoreceptor cell",
+  "working_definition": "Author cell type 'eye photoreceptor cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00006009 'eye photoreceptor cell'. Found in: 10x:trachea (40 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00006009 (FBbt fbbt/releases/2026-10-01)",
+    "'adult eye photoreceptor cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'eye photoreceptor cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "eye photoreceptor cell",
+    "fbbt_id": "FBbt:00006009",
+    "fbbt_definition": "Photoreceptor cell that forms the core of each ommatidium in the adult eye. Eight of these photoreceptors are arranged in each ommatidial core, bundled like the staves of a barrel. Each has a photosensitive rhabdomere that projects into the barrel cavity and adjacent supporting membrane, the stalk (Wolff and Ready, 1993). Each extends an axon into the optic lobe. Activation of the photoreceptor by light results in depolarization and in histamine release at the synapses of these axons (Sarthy, 1991).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00006009 'eye photoreceptor cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00006009 'eye photoreceptor cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

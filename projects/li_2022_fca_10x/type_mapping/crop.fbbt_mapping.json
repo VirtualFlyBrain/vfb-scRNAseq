@@ -1,0 +1,20 @@
+{
+  "cluster_label": "crop",
+  "working_definition": "Largest gut group (4715 cells): epithelial cells of the crop, the foregut food-storage sac (Li et al. 2022; author term FBbt:00003133 crop; broad class epithelial cell).",
+  "searches_performed": ["crop", "crop epithelial cell", "epithelial cell of crop"],
+  "best_match": {
+    "fbbt_term": "epithelial cell of crop",
+    "fbbt_id": "FBbt:00058263",
+    "fbbt_definition": "Cell of the epithelium lining the adult crop. These cells are of ectodermal origin and produce the cuticular lining of the crop system (Stoffolano Jr and Haselton, 2013).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "Authors' term is the organ; the cell-level equivalent (adult, epithelial class per the authors) is epithelial cell of crop.",
+  "other_candidates": [
+    {"fbbt_term": "crop", "fbbt_id": "FBbt:00003133", "fbbt_definition": "Pedunculate sac evaginating from the adult foregut just before it meets the midgut; stores ingested liquid food.", "reason_rejected": "Organ term, not a cell term."}
+  ],
+  "recommendation": "Map to FBbt:00058263.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,22 @@
+{
+  "cluster_label": "adult optic chiasma glial cell",
+  "working_definition": "Author cell type 'adult optic chiasma glial cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00100525 'adult optic chiasma glial cell'. Found in: 10x:head (322 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00100525 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult optic chiasma glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult optic chiasma glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult optic chiasma glial cell",
+    "fbbt_id": "FBbt:00100525",
+    "fbbt_definition": "Glial cell of the adult fly that is located in the optic chiasm (Tix et al., 1997). It develops from neuroblast DL1 (CP2) (Viktorin et al., 2013; Ren et al., 2018; Plazaola-Sasieta et al., 2019). Members of this group of glial cells are arranged in rows between successive dorsoventral sheets of intercrossing fibers of the outer and inner chiasmata (Edwards and Meinertzhagen, 2010; Tix et al., 1997).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00100525 'adult optic chiasma glial cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00100525 'adult optic chiasma glial cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

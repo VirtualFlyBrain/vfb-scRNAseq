@@ -163,3 +163,9 @@ annotations:
 unidentified:
   rule: none
   hold_unidentified: true
+
+# FBbt mappings are made once per author type in li_2022_fca_10x/type_mapping/ (the
+# Smart-seq2 labels are the 10x types) and copied per cluster by
+# scripts/expand_type_mappings.py.
+type_mapping:
+  from: li_2022_fca_10x

@@ -1,0 +1,29 @@
+{
+  "cluster_label": "malpighian_tubule_adult midgut*",
+  "working_definition": "Unspecified midgut epithelial cells in the Malpighian tubule analysis (Li et al. 2022; Manual Annotation, broad class epithelial cell).",
+  "searches_performed": [
+    "adult midgut*",
+    "adult midgut epithelial cell",
+    "adult midgut"
+  ],
+  "best_match": {
+    "fbbt_term": "adult midgut epithelial cell",
+    "fbbt_id": "FBbt:00058294",
+    "fbbt_definition": "Any epithelial cell (FBbt:00000124) that is part of some adult midgut epithelium (FBbt:00007026).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "Region-named group with no finer type; cell-level equivalent of adult midgut.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult midgut",
+      "fbbt_id": "FBbt:00003138",
+      "fbbt_definition": "The middle region of the adult alimentary canal.",
+      "reason_rejected": "Organ term, not a cell term."
+    }
+  ],
+  "recommendation": "Map to FBbt:00058294.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

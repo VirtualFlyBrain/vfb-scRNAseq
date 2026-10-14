@@ -1,0 +1,36 @@
+{
+  "cluster_label": "ovary_post-mitotic germ cell early 16-cell cyst",
+  "working_definition": "Post-mitotic female germ cells of early 16-cell cysts in the adult ovary (Li et al. 2022, Manual Annotation; broad class female germline cell).",
+  "searches_performed": [
+    "post-mitotic germ cell early 16-cell cyst",
+    "germline cyst cell",
+    "female germline 16-cell cyst",
+    "cyst cell of ovary"
+  ],
+  "best_match": {
+    "fbbt_term": "cyst cell of female germline 16-cell cyst",
+    "fbbt_id": "FBbt:00059160",
+    "fbbt_definition": "One of the 16 cyst cells that make up a female germline 16-cell cyst, resulting from the fourth and last round of cystoblast division (Hinnant et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "Cells of an early 16-cell cyst after the last mitotic division are the cyst cells of the 16-cell cyst; FBbt has no finer 'early'/post-mitotic term.",
+  "other_candidates": [
+    {
+      "fbbt_term": "female germline cell",
+      "fbbt_id": "FBbt:00057012",
+      "fbbt_definition": "Cell that develops into or is itself an egg.",
+      "reason_rejected": "Too broad."
+    },
+    {
+      "fbbt_term": "presumptive nurse cell",
+      "fbbt_id": "FBbt:01004878",
+      "fbbt_definition": "Cyst cell that will develop into a nurse cell. In the 16-cell cyst, these are the 15 cells that do not develop into the oocyte.",
+      "reason_rejected": "Only 15 of 16 cells; label does not distinguish."
+    }
+  ],
+  "recommendation": "Map to FBbt:00059160 (medium confidence).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

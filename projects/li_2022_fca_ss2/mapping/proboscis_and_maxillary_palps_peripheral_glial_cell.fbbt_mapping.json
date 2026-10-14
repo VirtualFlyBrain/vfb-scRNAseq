@@ -1,0 +1,28 @@
+{
+  "cluster_label": "proboscis_and_maxillary_palps_peripheral glial cell",
+  "working_definition": "Author cell type 'peripheral glial cell' of the Fly Cell Atlas (Li et al. 2022; adult leg, wing, proboscis and palps, 1788 cells): glia of the peripheral nervous system. Authors' term FBbt:00001327 is obsolete (replaced by PNS glial cell, FBbt:00001320).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00001327 (obsolete; replaced_by FBbt:00001320)",
+    "'PNS glial cell' (EBI OLS4 fbbt)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult PNS glial cell",
+    "fbbt_id": "FBbt:00058258",
+    "fbbt_definition": "Any PNS glial cell of the adult.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' term is obsolete; its replacement is PNS glial cell, and the data are adult so the adult variant is preferred.",
+  "other_candidates": [
+    {
+      "fbbt_term": "PNS glial cell",
+      "fbbt_id": "FBbt:00001320",
+      "fbbt_definition": "Glial cell that is part of the peripheral nervous system.",
+      "reason_rejected": "Non-adult-specific replacement; adult variant preferred."
+    }
+  ],
+  "recommendation": "Map to adult PNS glial cell.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

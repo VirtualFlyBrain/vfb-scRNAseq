@@ -1,0 +1,22 @@
+{
+  "cluster_label": "head cyst cell",
+  "working_definition": "Author cell type 'head cyst cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00057009 'head cyst cell'. Found in: 10x:testis (1365 cells), ss2:testis (11 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00057009 (FBbt fbbt/releases/2026-10-01)",
+    "'adult head cyst cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'head cyst cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "head cyst cell",
+    "fbbt_id": "FBbt:00057009",
+    "fbbt_definition": "The member of a cyst cell pair that envelopes the head of a developing spermatid.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00057009 'head cyst cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00057009 'head cyst cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

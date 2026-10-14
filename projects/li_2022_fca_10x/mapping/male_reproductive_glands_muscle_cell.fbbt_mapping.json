@@ -1,0 +1,29 @@
+{
+  "cluster_label": "male_reproductive_glands_muscle cell",
+  "working_definition": "Author cell type 'muscle cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00005074 'muscle cell'. Found in: 10x:antenna (409 cells), 10x:body (28605 cells), 10x:body_wall (4554 cells), 10x:fat_body (426 cells), 10x:gut (95 cells), 10x:haltere (39 cells), 10x:heart (79 cells), 10x:leg (5891 cells), 10x:male_reproductive_glands (202 cells), 10x:oenocyte (2284 cells), 10x:proboscis_and_maxillary_palps (4367 cells), 10x:testis (3513 cells), 10x:trachea (218 cells), 10x:wing (144 cells), ss2:antenna (4 cells), ss2:body_wall (65 cells), ss2:fat_body (31 cells), ss2:gut (5 cells), ss2:haltere (4 cells), ss2:heart (12 cells), ss2:leg (147 cells), ss2:male_reproductive_glands (3 cells), ss2:oenocyte (65 cells), ss2:proboscis_and_maxillary_palps (90 cells), ss2:testis (34 cells), ss2:trachea (6 cells), ss2:wing (7 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00005074 (FBbt fbbt/releases/2026-10-01)",
+    "'adult muscle cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'muscle cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult muscle cell",
+    "fbbt_id": "FBbt:00058230",
+    "fbbt_definition": "Any muscle cell of the adult.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00005074 'muscle cell', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00058230 'adult muscle cell', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "muscle cell",
+      "fbbt_id": "FBbt:00005074",
+      "fbbt_definition": "Somatic, contractile cell that makes up a muscle. It is formed by several fusion events between fusion competent myoblasts and one founder cell.",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00058230 'adult muscle cell' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

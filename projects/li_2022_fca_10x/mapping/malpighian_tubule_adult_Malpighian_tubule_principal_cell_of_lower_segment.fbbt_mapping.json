@@ -1,0 +1,22 @@
+{
+  "cluster_label": "malpighian_tubule_adult Malpighian tubule principal cell of lower segment",
+  "working_definition": "Author cell type 'adult Malpighian tubule principal cell of lower segment' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00049477 'adult Malpighian tubule principal cell of lower segment'. Found in: 10x:malpighian_tubule (2716 cells), ss2:malpighian_tubule (61 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00049477 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult Malpighian tubule principal cell of lower segment' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult Malpighian tubule principal cell of lower segment' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult Malpighian tubule principal cell of lower segment",
+    "fbbt_id": "FBbt:00049477",
+    "fbbt_definition": "Any Malpighian tubule Type I cell (FBbt:00005796) that is part of some adult lower segment of Malpighian tubule (FBbt:00047099).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00049477 'adult Malpighian tubule principal cell of lower segment', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00049477 'adult Malpighian tubule principal cell of lower segment', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

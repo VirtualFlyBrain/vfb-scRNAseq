@@ -1,0 +1,22 @@
+{
+  "cluster_label": "alpha/beta Kenyon cell",
+  "working_definition": "Author cell type 'alpha/beta Kenyon cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00100248 'alpha/beta Kenyon cell'. Found in: 10x:head (525 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00100248 (FBbt fbbt/releases/2026-10-01)",
+    "'adult alpha/beta Kenyon cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'alpha/beta Kenyon cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "alpha/beta Kenyon cell",
+    "fbbt_id": "FBbt:00100248",
+    "fbbt_definition": "Mushroom body neuron that bifurcates at the anterior end of the pedunculus and projects into the alpha and beta lobes of the adult mushroom body (Lee et al., 1999). The alpha/beta neurons are the last born of the Kenyon cells, generated during the pupal stage (Lee et al., 1999). In the pedunculus, the alpha/beta neurons occupy the core stratum with the alpha'/beta' neurons in the intermediate stratum and the gamma neurons at the periphery (Tanaka et al., 2008; Li et al., 2020). They are cholinergic neurons (Pankova & Borst, 2017) and they express sNPF (Johard et al., 2008; Barnstedt et al., 2016; Croset et al., 2018). There are around 900-1000 of these cells per hemisphere (Aso et al., 2014; Li et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00100248 'alpha/beta Kenyon cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00100248 'alpha/beta Kenyon cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

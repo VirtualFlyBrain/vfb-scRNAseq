@@ -1,0 +1,20 @@
+{
+  "cluster_label": "pheromone-sensing neuron",
+  "working_definition": "Adult pheromone-sensing sensory neurons (FCA wing); authors gave no FBbt term (Manual Annotation).",
+  "searches_performed": ["pheromone-sensing neuron", "adult pheromone-sensing neuron"],
+  "best_match": {
+    "fbbt_term": "adult pheromone-sensing neuron",
+    "fbbt_id": "FBbt:00058247",
+    "fbbt_definition": "Any adult neuron that is capable of some detection of pheromone that is part of sensory perception.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Label matches; data are adult so the adult variant is used.",
+  "other_candidates": [
+    {"fbbt_term": "pheromone-sensing neuron", "fbbt_id": "FBbt:00058246", "fbbt_definition": "Any neuron that is capable of some detection of pheromone that is part of sensory perception.", "reason_rejected": "Not stage-specific; adult variant preferred."}
+  ],
+  "recommendation": "Use adult pheromone-sensing neuron (FBbt:00058247).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

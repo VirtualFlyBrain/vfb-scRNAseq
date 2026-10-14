@@ -1,0 +1,29 @@
+{
+  "cluster_label": "heart_adult peripheral neuron of the heart",
+  "working_definition": "Peripheral (PNS) neurons associated with the adult heart, from FCA heart; authors gave no FBbt term (Manual Annotation).",
+  "searches_performed": [
+    "adult peripheral neuron of the heart",
+    "adult PNS neuron",
+    "adult neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "adult PNS neuron",
+    "fbbt_id": "FBbt:00059276",
+    "fbbt_definition": "Any neuron that has its soma in the adult peripheral nervous system.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "No FBbt term for heart-associated peripheral neurons; adult PNS neuron is the most specific term matching the label's 'peripheral neuron' at the level the authors commit to.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult neuron",
+      "fbbt_id": "FBbt:00047095",
+      "fbbt_definition": "A neuron that is part of the adult nervous system.",
+      "reason_rejected": "Broader than the authors' 'peripheral neuron'."
+    }
+  ],
+  "recommendation": "Use adult PNS neuron (FBbt:00059276) as a broad match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

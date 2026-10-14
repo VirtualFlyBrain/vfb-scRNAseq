@@ -1,0 +1,22 @@
+{
+  "cluster_label": "medullary intrinsic neuron Mi4",
+  "working_definition": "Author cell type 'medullary intrinsic neuron Mi4' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00003779 'medulla intrinsic neuron Mi4'. Found in: 10x:head (641 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00003779 (FBbt fbbt/releases/2026-10-01)",
+    "'adult medulla intrinsic neuron Mi4' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'medullary intrinsic neuron Mi4' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "medulla intrinsic neuron Mi4",
+    "fbbt_id": "FBbt:00003779",
+    "fbbt_definition": "Medulla intrinsic narrow field neuron with both fine and bleb-type arborizations in medulla layers M1, M2, M3 and M8, but with only fine arborizations in medulla layers M4 and M5, and only bleb-type arborizations in medulla layer M9 (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). It receives input from the lamina monopolar neuron L5 and photoreceptor R8 (Takemura et al., 2013). It is a GABAergic neuron (Takemura et al., 2017). There is usually one of these cells per optic column (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00003779 'medulla intrinsic neuron Mi4', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00003779 'medulla intrinsic neuron Mi4', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

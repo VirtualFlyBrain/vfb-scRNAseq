@@ -1,0 +1,36 @@
+{
+  "cluster_label": "testis_male gonad associated epithelium",
+  "working_definition": "Epithelial cells associated with the male gonad (testis); largest cluster in the adult testis analysis; no markers or description given by the authors. Authors had no FBbt term (Manual Annotation).",
+  "searches_performed": [
+    "male gonad associated epithelium",
+    "testis epithelial cell",
+    "testis sheath epithelial cell",
+    "male gonad epithelium (local fbbt.obo name grep)"
+  ],
+  "best_match": {
+    "fbbt_term": "testis sheath epithelial cell",
+    "fbbt_id": "FBbt:00058261",
+    "fbbt_definition": "Any epithelial cell (FBbt:00000124) that is part of some testis sheath (FBbt:00004955).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "low"
+  },
+  "justification": "Closest cell-level term for the epithelium of the male gonad: an adult epithelial cell and somatic cell of testis (its subclass terminal epithelial cell of testis is also covered). The authors do not specify the epithelium further; the label could in principle include other epithelia in the sample.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult epithelial cell",
+      "fbbt_id": "FBbt:00058238",
+      "fbbt_definition": "Any epithelial cell of the adult.",
+      "reason_rejected": "Loses the male gonad restriction in the label."
+    },
+    {
+      "fbbt_term": "terminal epithelial cell of testis",
+      "fbbt_id": "FBbt:00057014",
+      "fbbt_definition": "Epithelial cell of the terminal epithelium of the testis. These cells engulf the head cyst cell of a spermatid cyst during coiling, so anchoring the head of the coiling spermatid.",
+      "reason_rejected": "Too specific; authors name the whole gonad-associated epithelium."
+    }
+  ],
+  "recommendation": "Map to testis sheath epithelial cell; curator may prefer adult epithelial cell if the cluster is judged broader.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

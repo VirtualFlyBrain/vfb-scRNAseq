@@ -1,0 +1,21 @@
+{
+  "cluster_label": "germ cell stage 4 and later",
+  "working_definition": "Female germline cells (nurse cells and oocyte) of egg chambers from stage 4 onward in the adult ovary (Li et al. 2022, Manual Annotation; broad class female germline cell).",
+  "searches_performed": ["female germline cell", "nurse cell", "oocyte", "germ cell stage 4 and later"],
+  "best_match": {
+    "fbbt_term": "female germline cell",
+    "fbbt_id": "FBbt:00057012",
+    "fbbt_definition": "Cell that develops into or is itself an egg.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Grouped stage-bounded call spanning nurse cells and oocyte; the most specific common parent is female germline cell.",
+  "other_candidates": [
+    {"fbbt_term": "nurse cell", "fbbt_id": "FBbt:00004878", "fbbt_definition": "One of a group of 15 germ cells that lie anterior to the oocyte within the egg chamber.", "reason_rejected": "Covers only part of the group."},
+    {"fbbt_term": "oocyte", "fbbt_id": "FBbt:00004886", "fbbt_definition": "Female germline cell that develops from one of the 16 cyst cells and matures in an egg chamber.", "reason_rejected": "Covers only part of the group."}
+  ],
+  "recommendation": "Broad match to female germline cell.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

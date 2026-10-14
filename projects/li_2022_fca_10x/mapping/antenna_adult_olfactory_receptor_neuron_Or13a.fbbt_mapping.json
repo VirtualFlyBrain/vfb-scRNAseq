@@ -1,0 +1,22 @@
+{
+  "cluster_label": "antenna_adult olfactory receptor neuron Or13a",
+  "working_definition": "Author cell type 'adult olfactory receptor neuron Or13a' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00067016 'adult olfactory receptor neuron Or13a'. Found in: 10x:antenna (66 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00067016 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult olfactory receptor neuron Or13a' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult olfactory receptor neuron Or13a' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult olfactory receptor neuron Or13a",
+    "fbbt_id": "FBbt:00067016",
+    "fbbt_definition": "Adult olfactory receptor neuron (ORN) that expresses Or13a (Benton et al., 2025). Its dendrite transduces signals from antennal basiconic sensillum ab6 and it responds to alcohols (Benton et al., 2025). Its axon innervates antennal lobe glomerulus DC2, bilaterally (Benton et al., 2025). It develops from an Nba precursor (Benton et al., 2025). There are approximately 10 of these cells on each side (Benton et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00067016 'adult olfactory receptor neuron Or13a', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00067016 'adult olfactory receptor neuron Or13a', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

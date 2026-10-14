@@ -1,0 +1,28 @@
+{
+  "cluster_label": "ovary_germline cell, unknown stage",
+  "working_definition": "Female germline cells of the adult ovary that could not be assigned to an oogenesis stage (Li et al. 2022, Manual Annotation; broad class female germline cell).",
+  "searches_performed": [
+    "germline cell, unknown stage",
+    "female germline cell"
+  ],
+  "best_match": {
+    "fbbt_term": "female germline cell",
+    "fbbt_id": "FBbt:00057012",
+    "fbbt_definition": "Cell that develops into or is itself an egg.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "Remainder label: germline cells of unspecified stage map to the class term at the level the authors commit to (female germline cell, from the ovary).",
+  "other_candidates": [
+    {
+      "fbbt_term": "germline cell",
+      "fbbt_id": "FBbt:00004860",
+      "fbbt_definition": "Germline cell (parent class).",
+      "reason_rejected": "Less specific; ovary data are female germline."
+    }
+  ],
+  "recommendation": "Map to female germline cell.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

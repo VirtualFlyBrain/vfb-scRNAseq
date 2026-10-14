@@ -1,0 +1,22 @@
+{
+  "cluster_label": "body_adult reticular neuropil associated glial cell",
+  "working_definition": "Author cell type 'adult reticular neuropil associated glial cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00047841 'adult astrocyte-like glial cell'. Found in: 10x:body (278 cells), 10x:head (954 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00047841 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult astrocyte-like glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult reticular neuropil associated glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult astrocyte-like glial cell",
+    "fbbt_id": "FBbt:00047841",
+    "fbbt_definition": "Neuropil associated glial cell of the adult central nervous system that has a dendritic morphology and elaborates inside the associated synaptic neuropil (Awasaki et al., 2008). Their nuclei are found at synaptic neuropil surfaces and they extend branched filiform or lamelliform processes that pervade the neuropil (Hartenstein, 2011).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00047841 'adult astrocyte-like glial cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00047841 'adult astrocyte-like glial cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

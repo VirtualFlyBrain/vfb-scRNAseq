@@ -1,0 +1,30 @@
+{
+  "cluster_label": "cyst cell branch a",
+  "working_definition": "Cyst cells of the adult testis, branch a of a two-branch pair in the cyst cell lineage; no further stage or marker description. Authors had no FBbt term (Manual Annotation).",
+  "searches_performed": [
+    "cyst cell branch a",
+    "cyst cell",
+    "cyst cell of testis",
+    "spermatogonial cyst cell"
+  ],
+  "best_match": {
+    "fbbt_term": "cyst cell of testis",
+    "fbbt_id": "FBbt:00004931",
+    "fbbt_definition": "One of a pair of somatic cells that envelope each cyst of developing male germline cells.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt has no term for a cyst cell lineage branch; the cell type named is a testis cyst cell, so the generic cyst cell of testis is the level the authors commit to. No adult-specific variant exists.",
+  "other_candidates": [
+    {
+      "fbbt_term": "spermatogonial cyst cell",
+      "fbbt_id": "FBbt:00059172",
+      "fbbt_definition": "A cyst cell that is a part of a spermatogonial cyst.",
+      "reason_rejected": "Stage not stated by the authors for this branch."
+    }
+  ],
+  "recommendation": "Broad match to cyst cell of testis.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

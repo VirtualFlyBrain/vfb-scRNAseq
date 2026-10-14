@@ -7,6 +7,7 @@ committed files so CI enforces the same rules:
 
   projects/*/mapping/*.fbbt_mapping.json        -> check_fbbt_mapping.py
   projects/*/type_mapping/*.fbbt_mapping.json   -> check_fbbt_mapping.py
+  projects/*/reports/*.md                       -> check_report_text.py
   projects/*/**/*fbbt_term_request*.json         -> check_fbbt_term_request.py
   projects/*/provenance.json                    -> check_provenance.py
   projects/*/samples.json                       -> check_samples.py
@@ -31,6 +32,7 @@ CHECKS = [
     ("projects/*/**/*fbbt_term_request*.json", "check_fbbt_term_request.py"),
     ("projects/*/provenance.json", "check_provenance.py"),
     ("projects/*/samples.json", "check_samples.py"),
+    ("projects/*/reports/*.md", "check_report_text.py"),
 ]
 
 
