@@ -21,13 +21,10 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
+from vfb_scrnaseq.ingest_h5ad import h5ad_path  # noqa: E402,F401  (re-exported)
 from vfb_scrnaseq.project_config import load_config  # noqa: E402
 
 _USER_AGENT = "vfb-scrnaseq/0.0 (https://github.com/VirtualFlyBrain)"
-
-
-def h5ad_path(accession: str, clustering_id: str) -> Path:
-    return REPO_ROOT / ".cache" / "h5ad" / accession / f"{clustering_id}.h5ad"
 
 
 def download_url(url: str) -> str:
