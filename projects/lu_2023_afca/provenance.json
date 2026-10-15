@@ -1,0 +1,262 @@
+{
+  "project": "lu_2023_afca",
+  "generated_at": "2026-10-15",
+  "people": [
+    {
+      "role": "curator",
+      "name": "Clare Pilgrim",
+      "username": "Clare72",
+      "orcid": "0000-0002-1373-1705"
+    }
+  ],
+  "notes": "Aging Fly Cell Atlas (Lu et al. 2023, Science; FBrf0256843), rebuilt from GEO GSE218661 and the authors' own head/body AnnData analyses, replacing the old FlyBase/SCEA load FBlc0006422 (scRNAseq_2023_AFCA: per-age re-analyses D30 FBlc0006423, D50 FBlc0006887, D70 FBlc0007347, head and body merged, clusters merged by type, plus female/male sub-datasets) with fresh VFBseq ids. Licence CC-BY-4.0 (curator-confirmed 2026-10-15). Curator decisions 2026-10-15: one Clustering per author analysis (head, body); one Cluster per author `afca_annotation` type over all ages; new general rule — reuse truly identical entities from other studies by VFBseq id (curate the source study first): the 5-day cells are FCA 10x head/body cells (same barcodes and libraries), so the 26 FCA head/body Samples and their Assays are reused from li_2022_fca_10x, linked from the AFCA Clusterings (associated_sample_or_assay_for_clustering), not re-minted. Samples (stage 1): 72 GEO samples = 72 10x libraries (head/body x sex x 30/50/70 d x 6); flies F1 of female W1118 x male Oregon R (no stock numbers given); stage FBdv day 30/50/70 of adulthood; tissue adult head / adult postcephalic region; sex from GEO. Clusters (stage 2): 164 entries (91 head, 73 body; 566,254 cells); held, not loaded: 2 'unannotated' groups (leftover) and 'neuron 1'-'neuron 17' (untyped). Mapping (stage 3, FBbt 2026-10-01): AFCA labels transferred from the FCA (preprint methods), so each type takes the FCA's curator-reviewed type-level mapping (133 by name, 10 _head/_body types by alias); 2 new types via report + map-clusters-to-fbbt: cyst cell -> cyst cell of testis (broad), seminal vesicle & testis epithelia -> adult epithelial cell (broad), accepted by the curator 2026-10-15; held as in the FCA: Poxn neuron, female reproductive system. 143 Clusters mapped, 130 distinct FBbt terms (verify_mappings OK). Review dates: FCA-derived 2026-10-14, new 2026-10-15. Cross-checks: 93 of the old load's 100 FBbt terms reused; fca_5d_conflicts.tsv lists 16 types whose 5-day cells the FCA typed with a different, non-broader term (information only). No FBbt term requests. Expression (stage 4): X (log1p(CP10k), all genes) -> CPM; gene ids from the FCA 10x files by symbol, else Chado (FB2026_03): 15,891 current, 80 secondary, 20 synonym, 1 split dropped (2 merges); 15,989 genes x 566,254 cells, 143 clusters, 133,771 rows (extent > 0.2); Dataset total/filtered gene counts 15,962 / 5,399 (held clusters included). Build (stage 5): 1 Dataset, 72 Samples, 72 Assays, 2 Clusterings, 143 Clusters; every FBbt/FBdv/FBcv term on Samples, Assays and the Dataset checked current in OLS (2026-10-15). Publication FBrf0256843 resolved from VFB production (pdb).",
+  "pipeline": {
+    "name": "vfb-scrnaseq",
+    "version": "0.0.0",
+    "repo": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
+    "commit": "155e777 (+ stage 5 build outputs)"
+  },
+  "ontologies": [
+    {
+      "id": "FBbt",
+      "name": "Drosophila gross anatomy ontology",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "release_date": "2026-10-01",
+      "accessed_via": "OLS MCP (OLS4) + local fbbt.obo (.cache)",
+      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-10-15"
+    },
+    {
+      "id": "FBdv",
+      "name": "Drosophila developmental ontology",
+      "version": "2026-09-30",
+      "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-09-30/fbdv.owl",
+      "release_date": "2026-09-30",
+      "accessed_via": "OLS4 API",
+      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "accessed_at": "2026-10-15"
+    },
+    {
+      "id": "FBcv",
+      "name": "FlyBase controlled vocabulary",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-10-01/fbcv.owl",
+      "release_date": "2026-10-01",
+      "accessed_via": "OLS4 API",
+      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "accessed_at": "2026-10-15"
+    }
+  ],
+  "data_sources": [
+    {
+      "type": "publication",
+      "id": "10.1126/science.adg0934",
+      "title": "Aging Fly Cell Atlas identifies exhaustive aging features at cellular resolution (Lu et al. 2023, Science); PMID 37319212; PMC10829769; FBrf0256843",
+      "url": "https://doi.org/10.1126/science.adg0934",
+      "files": [
+        {
+          "name": "supp/PMC10829769.jats.xml (JATS, NCBI efetch db=pmc; Science's short article only, indexed for the report subagent)",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=PMC10829769",
+          "sha256": "a011d13565fb5f059a74c49fe77506ee09bac282b9a3e38b88fb9fccd54f0306",
+          "bytes": 111642,
+          "retrieved_at": "2026-10-15"
+        }
+      ]
+    },
+    {
+      "type": "publication",
+      "id": "10.1101/2022.12.06.519355",
+      "title": "bioRxiv preprint (v1 full text, read online; not stored: bioRxiv blocked scripted download): methods on AFCA annotation (label transfer from FCA body and individual tissues, manual validation with markers)",
+      "url": "https://www.biorxiv.org/content/10.1101/2022.12.06.519355v1.full-text",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "type": "dataset",
+      "id": "GSE218661",
+      "title": "GEO GSE218661: AFCA single-nucleus RNA-seq, 30/50/70-day head and body (72 GSMs)",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE218661",
+      "retrieved_at": "2026-10-15",
+      "files": [
+        {
+          "name": "h5ad/head.h5ad (GSE218661_adata_head_S_v1.0.h5ad.gz, decompressed)",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218661/suppl/GSE218661_adata_head_S_v1.0.h5ad.gz",
+          "sha256": "99719dafb1300d3f96975792e1f0da3a516ee5e75f54fdf1751414e5b49111e4",
+          "bytes": 1724402624,
+          "retrieved_at": "2026-10-15"
+        },
+        {
+          "name": "h5ad/body.h5ad (GSE218661_adata_body_S_v1.0.h5ad.gz, decompressed)",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218661/suppl/GSE218661_adata_body_S_v1.0.h5ad.gz",
+          "sha256": "29323599fc9d0840af91770a5887b85aabed9cdc6ea739091a92a63f0f18524b",
+          "bytes": 1562924048,
+          "retrieved_at": "2026-10-15"
+        }
+      ]
+    },
+    {
+      "type": "dataset",
+      "id": "li_2022_fca_10x",
+      "title": "Reused entities: FCA 10x head/body Samples and Assays (26 samples), and the FCA type-level FBbt mappings (li_2022_fca_10x/type_mapping/, curator-reviewed 2026-10-14)",
+      "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq/tree/main/projects/li_2022_fca_10x",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "type": "dataset",
+      "id": "FBlc0006422",
+      "title": "Old FlyBase/SCEA load scRNAseq_2023_AFCA (replaced): metadata release files used only as a mapping cross-check",
+      "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq-ontology",
+      "retrieved_at": "2026-10-15",
+      "files": [
+        {
+          "name": "VFB_scRNAseq_FBlc0006423.owl (D30)",
+          "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq-ontology/blob/1120a60/metadata_release_files/VFB_scRNAseq_FBlc0006423.owl",
+          "sha256": "8c2c4f39560e003c2a5d695475eeb3a5ee2c855d182fac01028ac92be02f2845",
+          "bytes": 6149035,
+          "retrieved_at": "2026-10-15"
+        },
+        {
+          "name": "VFB_scRNAseq_FBlc0006887.owl (D50)",
+          "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq-ontology/blob/1120a60/metadata_release_files/VFB_scRNAseq_FBlc0006887.owl",
+          "sha256": "5bc4a4559f53a86b16dbe083a68e81b88942aebe3220978c097d6587af108596",
+          "bytes": 6139006,
+          "retrieved_at": "2026-10-15"
+        },
+        {
+          "name": "VFB_scRNAseq_FBlc0007347.owl (D70)",
+          "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq-ontology/blob/1120a60/metadata_release_files/VFB_scRNAseq_FBlc0007347.owl",
+          "sha256": "54a39ca67e55362c9b2a0a1c6ff235d7ce06f3242d74e44e1c3f5a7d56cd8807",
+          "bytes": 6154454,
+          "retrieved_at": "2026-10-15"
+        }
+      ]
+    }
+  ],
+  "software": [
+    {
+      "name": "Claude Code",
+      "kind": "tool",
+      "version": "2.1.300",
+      "notes": "Agentic CLI that ran the session (orchestrator) and its subagents (AFCA stages 1-5)."
+    },
+    {
+      "name": "Atlas Reporter (local-paper-index)",
+      "kind": "repository",
+      "repo": "https://github.com/Cellular-Semantics/Atlas-reporter",
+      "commit": "2acd38e",
+      "notes": "Local JATS snippet index of the paper, queried by the report subagents."
+    },
+    {
+      "name": "sentence-transformers",
+      "kind": "library",
+      "version": "5.5.1",
+      "notes": "Local index embeddings."
+    },
+    {
+      "name": "OLS4 (Ontology Lookup Service)",
+      "kind": "service",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "notes": "FBbt/FBdv/FBcv search and lookup (OLS MCP) during mapping; term verification (verify_mappings.py, Sample/Assay/Dataset terms)."
+    },
+    {
+      "name": "VFB production (neo4j)",
+      "kind": "service",
+      "url": "https://pdb.virtualflybrain.org",
+      "notes": "Publication FBrf0256843 resolved by PMID (vfb_scrnaseq.pub)."
+    },
+    {
+      "name": "FlyBase Chado",
+      "kind": "service",
+      "url": "chado.flybase.org",
+      "notes": "Gene symbols -> current genes (update_gene_ids.py), FlyBase FB2026_03 (data last modified 2026-08-29)."
+    },
+    {
+      "name": "NCBI GEO",
+      "kind": "service",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE218661",
+      "notes": "Series/Sample SOFT metadata read live by ingest.fetch_series (build_samples_from_geo.py), 2026-10-15."
+    },
+    {
+      "name": "Python",
+      "kind": "language",
+      "version": "3.14.3",
+      "notes": "Pipeline environment (uv-managed)."
+    },
+    {
+      "name": "h5py",
+      "kind": "library",
+      "version": "3.16.0",
+      "notes": "Reads the authors' AnnData files (obs, var, matrices) without anndata."
+    },
+    {
+      "name": "numpy",
+      "kind": "library",
+      "version": "2.5.1"
+    },
+    {
+      "name": "pandas",
+      "kind": "library",
+      "version": "3.0.5"
+    },
+    {
+      "name": "PyYAML",
+      "kind": "library",
+      "version": "6.0.3"
+    },
+    {
+      "name": "linkml",
+      "kind": "library",
+      "version": "1.11.1",
+      "notes": "linkml-validate + linkml-convert (flat RDF)."
+    },
+    {
+      "name": "linkml-runtime",
+      "kind": "library",
+      "version": "1.11.1"
+    },
+    {
+      "name": "linkml-owl",
+      "kind": "library",
+      "version": "0.5.0",
+      "notes": "Metadata OWL."
+    },
+    {
+      "name": "rdflib",
+      "kind": "library",
+      "version": "7.6.0"
+    },
+    {
+      "name": "ROBOT",
+      "kind": "tool",
+      "version": "1.9.11",
+      "notes": "OFN -> OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "name": "psql",
+      "kind": "tool",
+      "version": "14.15",
+      "notes": "FlyBase Chado queries."
+    }
+  ],
+  "models": [
+    {
+      "role": "orchestrator",
+      "name": "claude-opus-5-5",
+      "provider": "Anthropic",
+      "version": "Opus 5.5; model id claude-opus-5-5",
+      "notes": "Claude Code main session: scoping, entity-reuse rule and implementation, GEO sample build, h5ad annotation build, type-level mapping reuse (expand_type_mappings aliases), 5-day cross-check (fca_5d_conflicts.py), old-load cross-check, expression, builds; corrected two agent-paraphrased FBbt definitions to the ontology text."
+    },
+    {
+      "role": "mapping-llm",
+      "name": "claude-sonnet",
+      "provider": "Anthropic",
+      "notes": "write-cell-type-report subagent (2 type reports) and map-clusters-to-fbbt subagents (2 types) (agent frontmatter model: sonnet)."
+    },
+    {
+      "role": "embedding",
+      "name": "sentence-transformers/all-MiniLM-L6-v2",
+      "provider": "sentence-transformers",
+      "notes": "Local paper snippet-index embeddings."
+    }
+  ]
+}
