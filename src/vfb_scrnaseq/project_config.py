@@ -15,6 +15,7 @@ When present, these override the config-driven defaults below.
 from __future__ import annotations
 
 import importlib.util
+import json
 import re
 from pathlib import Path
 from typing import Any, Callable
@@ -105,6 +106,45 @@ def annotation_kind(project: str, config: dict) -> Callable[[dict], str]:
             return "placeholder"
         return "named"
     return kind
+
+
+def hold_reason(project: str, config: dict) -> Callable[[dict, dict], str]:
+    """Return ``reason(annotation, mapping) -> str`` for a cluster with no FBbt term
+    ("" for a mapped one). Held clusters are recorded in mapping.tsv but not loaded.
+
+    - an ``unannotated`` entry: ``unidentified.hold_reasons[<its type>]`` if given
+      (e.g. FCA "artefact" -> artefact, "unannotated" -> leftover), else ``untyped``
+      (the authors left the cluster without a type);
+    - a cluster of a class in ``unidentified.hold_classes``: ``undefined class``;
+    - any other cluster without an FBbt term: ``no term``.
+    """
+    reasons = (config.get("unidentified") or {}).get("hold_reasons") or {}
+    classes = hold_classes(config)
+
+    def reason(ann: dict, mapping: dict) -> str:
+        if ((mapping or {}).get("best_match") or {}).get("fbbt_id"):
+            return ""
+        if ann.get("unannotated"):
+            return reasons.get(ann.get("type", ""), "untyped")
+        if ann.get("class", "") in classes:
+            return "undefined class"
+        return "no term"
+    return reason
+
+
+def fbbt_mapping(proj: Path, label: str) -> dict | None:
+    """A cluster's mapping/<slug>.fbbt_mapping.json, or None."""
+    f = proj / "mapping" / f"{label_slug(label)}.fbbt_mapping.json"
+    return json.loads(f.read_text()) if f.exists() else None
+
+
+def mapped_labels(proj: Path) -> set[str]:
+    """Labels of the clusters that are loaded: those with an FBbt term. Clusters
+    without one (held) stay in mapping.tsv for curation but get no id, entity or
+    expression."""
+    anns = json.loads((proj / "cell_type_annotations.json").read_text())["annotations"]
+    return {a["label"] for a in anns
+            if ((fbbt_mapping(proj, a["label"]) or {}).get("best_match") or {}).get("fbbt_id")}
 
 
 # Characters allowed verbatim in per-cluster file names; others are substituted.

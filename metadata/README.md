@@ -12,3 +12,5 @@ functional syntax) stay under `projects/<p>/`.
 |---|---|
 | vfb_scRNAseq_metadata_kurmangaliyev_2020.owl | kurmangaliyev_2020 |
 | vfb_scRNAseq_metadata_davie_2018.owl | davie_2018 |
+| vfb_scRNAseq_metadata_li_2022_fca_10x.owl | li_2022_fca_10x |
+| vfb_scRNAseq_metadata_li_2022_fca_ss2.owl | li_2022_fca_ss2 |

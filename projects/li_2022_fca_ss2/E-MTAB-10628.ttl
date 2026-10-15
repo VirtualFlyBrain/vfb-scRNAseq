@@ -1,0 +1,2974 @@
+@prefix BAO: <http://www.bioassayontology.org/bao#BAO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix FBbt: <http://purl.obolibrary.org/obo/FBbt_> .
+@prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
+@prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
+@prefix FlyBase: <http://flybase.org/reports/> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix VFBseq: <http://virtualflybrain.org/reports/VFBseq_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix neo_custom: <http://n2o.neo/custom/> .
+@prefix neo_property: <http://n2o.neo/property/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vfb: <http://virtualflybrain.org/reports/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VFBseq:00001231 a FBcv:0009003 ;
+    rdfs:label "Johnston organ neuron cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 37 ;
+    neo_custom:filtered_gene_count 885 ;
+    neo_custom:total_gene_count 6096 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'Johnston organ neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00100000 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001232 a FBcv:0009003 ;
+    rdfs:label "adult antenna glial cell cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 37 ;
+    neo_custom:filtered_gene_count 504 ;
+    neo_custom:total_gene_count 5246 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'adult antenna glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058258 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001233 a FBcv:0009003 ;
+    rdfs:label "adult olfactory receptor neuron Gr21a/63a cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 737 ;
+    neo_custom:total_gene_count 1922 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'adult olfactory receptor neuron Gr21a/63a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00067064 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001234 a FBcv:0009003 ;
+    rdfs:label "adult olfactory receptor neuron Ir56a+, Orco- cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 3789 ;
+    neo_custom:total_gene_count 3789 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'adult olfactory receptor neuron Ir56a+, Orco-' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00007386 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001235 a FBcv:0009003 ;
+    rdfs:label "adult olfactory receptor neuron Ir75d cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 508 ;
+    neo_custom:total_gene_count 1760 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'adult olfactory receptor neuron Ir75d' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00047054 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001236 a FBcv:0009003 ;
+    rdfs:label "adult olfactory receptor neuron Ir84a, Ir31a, Ir76a, Ir76b, Ir8a, Or35a cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 361 ;
+    neo_custom:total_gene_count 1397 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'adult olfactory receptor neuron Ir84a, Ir31a, Ir76a, Ir76b, Ir8a, Or35a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049980 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001237 a FBcv:0009003 ;
+    rdfs:label "adult olfactory receptor neuron Or22a, Or42b, Or59b cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 9 ;
+    neo_custom:filtered_gene_count 1404 ;
+    neo_custom:total_gene_count 3348 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'adult olfactory receptor neuron Or22a, Or42b, Or59b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049977 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001238 a FBcv:0009003 ;
+    rdfs:label "adult olfactory receptor neuron Or47a, Or56a and likely other ORN types cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 693 ;
+    neo_custom:total_gene_count 1988 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'adult olfactory receptor neuron Or47a, Or56a and likely other ORN types' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00007386 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001239 a FBcv:0009003 ;
+    rdfs:label "adult olfactory receptor neuron Or47b cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 641 ;
+    neo_custom:total_gene_count 1906 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'adult olfactory receptor neuron Or47b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00067056 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001240 a FBcv:0009003 ;
+    rdfs:label "adult olfactory receptor neuron Or65 cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 676 ;
+    neo_custom:total_gene_count 2257 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'adult olfactory receptor neuron Or65' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00067011 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001241 a FBcv:0009003 ;
+    rdfs:label "adult olfactory receptor neuron Or67a and likely other unknown ORN types cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 14 ;
+    neo_custom:filtered_gene_count 1017 ;
+    neo_custom:total_gene_count 4366 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'adult olfactory receptor neuron Or67a and likely other unknown ORN types' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00007386 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001242 a FBcv:0009003 ;
+    rdfs:label "adult olfactory receptor neuron Or67d cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 9 ;
+    neo_custom:filtered_gene_count 1264 ;
+    neo_custom:total_gene_count 2776 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'adult olfactory receptor neuron Or67d' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00067031 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001243 a FBcv:0009003 ;
+    rdfs:label "adult olfactory receptor neuron Or85a, Or43b cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 1 ;
+    neo_custom:filtered_gene_count 509 ;
+    neo_custom:total_gene_count 509 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'adult olfactory receptor neuron Or85a, Or43b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049977 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001244 a FBcv:0009003 ;
+    rdfs:label "adult olfactory receptor neuron Or88a cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 8 ;
+    neo_custom:filtered_gene_count 977 ;
+    neo_custom:total_gene_count 2471 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'adult olfactory receptor neuron Or88a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00067057 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001245 a FBcv:0009003 ;
+    rdfs:label "adult olfactory receptor neuron Or92a cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 707 ;
+    neo_custom:total_gene_count 2019 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'adult olfactory receptor neuron Or92a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00067059 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001246 a FBcv:0009003 ;
+    rdfs:label "adult olfactory receptor neuron acid-sensing, Ir75a/b/c, Ir64a cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 2 ;
+    neo_custom:filtered_gene_count 1013 ;
+    neo_custom:total_gene_count 1013 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'adult olfactory receptor neuron acid-sensing, Ir75a/b/c, Ir64a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00007352 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001247 a FBcv:0009003 ;
+    rdfs:label "adult olfactory receptor neuron unknown type, Orco- cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 1 ;
+    neo_custom:filtered_gene_count 412 ;
+    neo_custom:total_gene_count 412 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'adult olfactory receptor neuron unknown type, Orco-' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00007386 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001248 a FBcv:0009003 ;
+    rdfs:label "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 147 ;
+    neo_custom:filtered_gene_count 406 ;
+    neo_custom:total_gene_count 8948 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058238 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001249 a FBcv:0009003 ;
+    rdfs:label "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 4 ;
+    neo_custom:filtered_gene_count 2068 ;
+    neo_custom:total_gene_count 2068 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001250 a FBcv:0009003 ;
+    rdfs:label "olfactory receptor neuron, coeloconics cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 8 ;
+    neo_custom:filtered_gene_count 821 ;
+    neo_custom:total_gene_count 2305 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'olfactory receptor neuron, coeloconics' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049980 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001251 a FBcv:0009003 ;
+    rdfs:label "sacculus/arista neuron cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 1504 ;
+    neo_custom:total_gene_count 1504 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000844 ;
+    IAO:0000115 "Cells assigned the type 'sacculus/arista neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00051173 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001253 a FBcv:0009003 ;
+    rdfs:label "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)" ;
+    neo_custom:cell_count 12 ;
+    neo_custom:filtered_gene_count 125 ;
+    neo_custom:total_gene_count 1869 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000845 ;
+    IAO:0000115 "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049949 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001254 a FBcv:0009003 ;
+    rdfs:label "adult glial cell cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 370 ;
+    neo_custom:total_gene_count 1589 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000845 ;
+    IAO:0000115 "Cells assigned the type 'adult glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00100497 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001255 a FBcv:0009003 ;
+    rdfs:label "adult oenocyte cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 2029 ;
+    neo_custom:total_gene_count 2029 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000845 ;
+    IAO:0000115 "Cells assigned the type 'adult oenocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00003185 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001256 a FBcv:0009003 ;
+    rdfs:label "adult peripheral nervous system cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)" ;
+    neo_custom:cell_count 4 ;
+    neo_custom:filtered_gene_count 1343 ;
+    neo_custom:total_gene_count 1343 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000845 ;
+    IAO:0000115 "Cells assigned the type 'adult peripheral nervous system' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00059276 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001257 a FBcv:0009003 ;
+    rdfs:label "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)" ;
+    neo_custom:cell_count 10 ;
+    neo_custom:filtered_gene_count 670 ;
+    neo_custom:total_gene_count 3356 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000845 ;
+    IAO:0000115 "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005040 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001258 a FBcv:0009003 ;
+    rdfs:label "adult ventral nervous system cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)" ;
+    neo_custom:cell_count 11 ;
+    neo_custom:filtered_gene_count 870 ;
+    neo_custom:total_gene_count 3972 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000845 ;
+    IAO:0000115 "Cells assigned the type 'adult ventral nervous system' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00059289 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001259 a FBcv:0009003 ;
+    rdfs:label "epidermal cell that specialized in antimicrobial response cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)" ;
+    neo_custom:cell_count 11 ;
+    neo_custom:filtered_gene_count 286 ;
+    neo_custom:total_gene_count 2192 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000845 ;
+    IAO:0000115 "Cells assigned the type 'epidermal cell that specialized in antimicrobial response' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058242 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001260 a FBcv:0009003 ;
+    rdfs:label "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)" ;
+    neo_custom:cell_count 63 ;
+    neo_custom:filtered_gene_count 450 ;
+    neo_custom:total_gene_count 6738 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000845 ;
+    IAO:0000115 "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058238 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001261 a FBcv:0009003 ;
+    rdfs:label "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)" ;
+    neo_custom:cell_count 4 ;
+    neo_custom:filtered_gene_count 2252 ;
+    neo_custom:total_gene_count 2252 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000845 ;
+    IAO:0000115 "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058143 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001262 a FBcv:0009003 ;
+    rdfs:label "indirect flight muscle cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)" ;
+    neo_custom:cell_count 30 ;
+    neo_custom:filtered_gene_count 625 ;
+    neo_custom:total_gene_count 5292 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000845 ;
+    IAO:0000115 "Cells assigned the type 'indirect flight muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00003361 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001263 a FBcv:0009003 ;
+    rdfs:label "midgut cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)" ;
+    neo_custom:cell_count 1 ;
+    neo_custom:filtered_gene_count 276 ;
+    neo_custom:total_gene_count 276 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000845 ;
+    IAO:0000115 "Cells assigned the type 'midgut' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058294 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001264 a FBcv:0009003 ;
+    rdfs:label "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)" ;
+    neo_custom:cell_count 65 ;
+    neo_custom:filtered_gene_count 548 ;
+    neo_custom:total_gene_count 7062 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000845 ;
+    IAO:0000115 "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001265 a FBcv:0009003 ;
+    rdfs:label "tendon cell cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 485 ;
+    neo_custom:total_gene_count 1804 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000845 ;
+    IAO:0000115 "Cells assigned the type 'tendon cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058016 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001267 a FBcv:0009003 ;
+    rdfs:label "adult alary muscle cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)" ;
+    neo_custom:cell_count 11 ;
+    neo_custom:filtered_gene_count 1170 ;
+    neo_custom:total_gene_count 4404 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000846 ;
+    IAO:0000115 "Cells assigned the type 'adult alary muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00003545 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001268 a FBcv:0009003 ;
+    rdfs:label "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)" ;
+    neo_custom:cell_count 880 ;
+    neo_custom:filtered_gene_count 1834 ;
+    neo_custom:total_gene_count 14784 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000846 ;
+    IAO:0000115 "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049949 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001269 a FBcv:0009003 ;
+    rdfs:label "adult neuron cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)" ;
+    neo_custom:cell_count 10 ;
+    neo_custom:filtered_gene_count 1762 ;
+    neo_custom:total_gene_count 6205 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000846 ;
+    IAO:0000115 "Cells assigned the type 'adult neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00047095 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001270 a FBcv:0009003 ;
+    rdfs:label "adult oenocyte cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)" ;
+    neo_custom:cell_count 24 ;
+    neo_custom:filtered_gene_count 2376 ;
+    neo_custom:total_gene_count 8450 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000846 ;
+    IAO:0000115 "Cells assigned the type 'adult oenocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00003185 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001271 a FBcv:0009003 ;
+    rdfs:label "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)" ;
+    neo_custom:cell_count 53 ;
+    neo_custom:filtered_gene_count 1443 ;
+    neo_custom:total_gene_count 10033 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000846 ;
+    IAO:0000115 "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058238 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001273 a FBcv:0009003 ;
+    rdfs:label "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)" ;
+    neo_custom:cell_count 178 ;
+    neo_custom:filtered_gene_count 1014 ;
+    neo_custom:total_gene_count 11021 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000846 ;
+    IAO:0000115 "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058143 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001274 a FBcv:0009003 ;
+    rdfs:label "male accessory gland cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 1749 ;
+    neo_custom:total_gene_count 4469 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000846 ;
+    IAO:0000115 "Cells assigned the type 'male accessory gland' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058232 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001275 a FBcv:0009003 ;
+    rdfs:label "male germline differentiating cell cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 3460 ;
+    neo_custom:total_gene_count 3460 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000846 ;
+    IAO:0000115 "Cells assigned the type 'male germline differentiating cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00057011 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001276 a FBcv:0009003 ;
+    rdfs:label "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)" ;
+    neo_custom:cell_count 31 ;
+    neo_custom:filtered_gene_count 2167 ;
+    neo_custom:total_gene_count 10273 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000846 ;
+    IAO:0000115 "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001277 a FBcv:0009003 ;
+    rdfs:label "sensory neuron cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)" ;
+    neo_custom:cell_count 9 ;
+    neo_custom:filtered_gene_count 3833 ;
+    neo_custom:total_gene_count 7271 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000846 ;
+    IAO:0000115 "Cells assigned the type 'sensory neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058244 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001280 a FBcv:0009003 ;
+    rdfs:label "adult Malpighian tubule cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 1 ;
+    neo_custom:filtered_gene_count 1117 ;
+    neo_custom:total_gene_count 1117 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'adult Malpighian tubule' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005733 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001281 a FBcv:0009003 ;
+    rdfs:label "adult differentiating enterocyte cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 14 ;
+    neo_custom:filtered_gene_count 3746 ;
+    neo_custom:total_gene_count 7451 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'adult differentiating enterocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049281 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001282 a FBcv:0009003 ;
+    rdfs:label "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 2 ;
+    neo_custom:filtered_gene_count 2556 ;
+    neo_custom:total_gene_count 2556 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049949 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001283 a FBcv:0009003 ;
+    rdfs:label "adult midgut enterocyte cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 11 ;
+    neo_custom:filtered_gene_count 2899 ;
+    neo_custom:total_gene_count 6655 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'adult midgut enterocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00047182 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001284 a FBcv:0009003 ;
+    rdfs:label "adult midgut-hindgut hybrid zone cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 18 ;
+    neo_custom:filtered_gene_count 1400 ;
+    neo_custom:total_gene_count 5074 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'adult midgut-hindgut hybrid zone' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058275 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001285 a FBcv:0009003 ;
+    rdfs:label "adult pylorus cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 10 ;
+    neo_custom:filtered_gene_count 1931 ;
+    neo_custom:total_gene_count 5055 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'adult pylorus' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058276 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001286 a FBcv:0009003 ;
+    rdfs:label "antimicrobial peptide-producing cell cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 12 ;
+    neo_custom:filtered_gene_count 2028 ;
+    neo_custom:total_gene_count 5296 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'antimicrobial peptide-producing cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00059377 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001287 a FBcv:0009003 ;
+    rdfs:label "cardia (1) cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 74 ;
+    neo_custom:filtered_gene_count 1806 ;
+    neo_custom:total_gene_count 8986 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'cardia (1)' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058282 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001288 a FBcv:0009003 ;
+    rdfs:label "cardia (2) cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 20 ;
+    neo_custom:filtered_gene_count 1649 ;
+    neo_custom:total_gene_count 6078 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'cardia (2)' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058282 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001289 a FBcv:0009003 ;
+    rdfs:label "copper cell cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 2308 ;
+    neo_custom:total_gene_count 4498 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'copper cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00110908 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001290 a FBcv:0009003 ;
+    rdfs:label "crop cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 150 ;
+    neo_custom:filtered_gene_count 1319 ;
+    neo_custom:total_gene_count 10276 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'crop' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058263 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001291 a FBcv:0009003 ;
+    rdfs:label "enteroblast cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 23 ;
+    neo_custom:filtered_gene_count 2047 ;
+    neo_custom:total_gene_count 6999 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'enteroblast' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00110205 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001292 a FBcv:0009003 ;
+    rdfs:label "enterocyte of anterior adult midgut epithelium cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 34 ;
+    neo_custom:filtered_gene_count 3660 ;
+    neo_custom:total_gene_count 9724 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'enterocyte of anterior adult midgut epithelium' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049280 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001293 a FBcv:0009003 ;
+    rdfs:label "enterocyte of posterior adult midgut epithelium cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 29 ;
+    neo_custom:filtered_gene_count 2309 ;
+    neo_custom:total_gene_count 7784 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'enterocyte of posterior adult midgut epithelium' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00007037 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001294 a FBcv:0009003 ;
+    rdfs:label "enterocyte-like cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 42 ;
+    neo_custom:filtered_gene_count 2012 ;
+    neo_custom:total_gene_count 8552 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'enterocyte-like' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00047147 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001295 a FBcv:0009003 ;
+    rdfs:label "enteroendocrine cell cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 8 ;
+    neo_custom:filtered_gene_count 1989 ;
+    neo_custom:total_gene_count 4456 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'enteroendocrine cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00047149 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001296 a FBcv:0009003 ;
+    rdfs:label "intestinal stem cell cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 23 ;
+    neo_custom:filtered_gene_count 1436 ;
+    neo_custom:total_gene_count 6264 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'intestinal stem cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00007039 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001297 a FBcv:0009003 ;
+    rdfs:label "midgut large flat cell cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 10 ;
+    neo_custom:filtered_gene_count 2918 ;
+    neo_custom:total_gene_count 6489 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'midgut large flat cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00110912 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001298 a FBcv:0009003 ;
+    rdfs:label "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 880 ;
+    neo_custom:total_gene_count 2304 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001300 a FBcv:0009003 ;
+    rdfs:label "visceral muscle of the crop cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 8 ;
+    neo_custom:filtered_gene_count 1214 ;
+    neo_custom:total_gene_count 2778 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'visceral muscle of the crop' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00003532 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001301 a FBcv:0009003 ;
+    rdfs:label "visceral muscle of the midgut cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)" ;
+    neo_custom:cell_count 15 ;
+    neo_custom:filtered_gene_count 1028 ;
+    neo_custom:total_gene_count 4261 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000847 ;
+    IAO:0000115 "Cells assigned the type 'visceral muscle of the midgut' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00003534 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001302 a FBcv:0009003 ;
+    rdfs:label "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Haltere) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 1962 ;
+    neo_custom:total_gene_count 1962 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000848 ;
+    IAO:0000115 "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049949 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001303 a FBcv:0009003 ;
+    rdfs:label "adult glial cell cells, predicted (Fly Cell Atlas Smart-seq2 Haltere) (Li 2022)" ;
+    neo_custom:cell_count 8 ;
+    neo_custom:filtered_gene_count 745 ;
+    neo_custom:total_gene_count 2574 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000848 ;
+    IAO:0000115 "Cells assigned the type 'adult glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00100497 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001304 a FBcv:0009003 ;
+    rdfs:label "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Haltere) (Li 2022)" ;
+    neo_custom:cell_count 136 ;
+    neo_custom:filtered_gene_count 276 ;
+    neo_custom:total_gene_count 9501 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000848 ;
+    IAO:0000115 "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058238 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001305 a FBcv:0009003 ;
+    rdfs:label "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Haltere) (Li 2022)" ;
+    neo_custom:cell_count 7 ;
+    neo_custom:filtered_gene_count 556 ;
+    neo_custom:total_gene_count 2022 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000848 ;
+    IAO:0000115 "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058143 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001306 a FBcv:0009003 ;
+    rdfs:label "mechanosensory neuron of haltere cells, predicted (Fly Cell Atlas Smart-seq2 Haltere) (Li 2022)" ;
+    neo_custom:cell_count 14 ;
+    neo_custom:filtered_gene_count 734 ;
+    neo_custom:total_gene_count 3464 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000848 ;
+    IAO:0000115 "Cells assigned the type 'mechanosensory neuron of haltere' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00051420 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001307 a FBcv:0009003 ;
+    rdfs:label "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Haltere) (Li 2022)" ;
+    neo_custom:cell_count 4 ;
+    neo_custom:filtered_gene_count 1705 ;
+    neo_custom:total_gene_count 1705 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000848 ;
+    IAO:0000115 "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001308 a FBcv:0009003 ;
+    rdfs:label "neuron of haltere cells, predicted (Fly Cell Atlas Smart-seq2 Haltere) (Li 2022)" ;
+    neo_custom:cell_count 9 ;
+    neo_custom:filtered_gene_count 870 ;
+    neo_custom:total_gene_count 3001 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000848 ;
+    IAO:0000115 "Cells assigned the type 'neuron of haltere' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00047095 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001310 a FBcv:0009003 ;
+    rdfs:label "adult abdominal pericardial cell cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)" ;
+    neo_custom:cell_count 22 ;
+    neo_custom:filtered_gene_count 184 ;
+    neo_custom:total_gene_count 3704 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000849 ;
+    IAO:0000115 "Cells assigned the type 'adult abdominal pericardial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00013185 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001311 a FBcv:0009003 ;
+    rdfs:label "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)" ;
+    neo_custom:cell_count 17 ;
+    neo_custom:filtered_gene_count 1990 ;
+    neo_custom:total_gene_count 6175 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000849 ;
+    IAO:0000115 "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049949 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001312 a FBcv:0009003 ;
+    rdfs:label "adult heart ventral longitudinal muscle cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)" ;
+    neo_custom:cell_count 23 ;
+    neo_custom:filtered_gene_count 1032 ;
+    neo_custom:total_gene_count 5661 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000849 ;
+    IAO:0000115 "Cells assigned the type 'adult heart ventral longitudinal muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00003550 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001313 a FBcv:0009003 ;
+    rdfs:label "adult oenocyte cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)" ;
+    neo_custom:cell_count 25 ;
+    neo_custom:filtered_gene_count 1476 ;
+    neo_custom:total_gene_count 6603 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000849 ;
+    IAO:0000115 "Cells assigned the type 'adult oenocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00003185 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001314 a FBcv:0009003 ;
+    rdfs:label "adult peripheral neuron of the heart cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)" ;
+    neo_custom:cell_count 13 ;
+    neo_custom:filtered_gene_count 2658 ;
+    neo_custom:total_gene_count 8125 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000849 ;
+    IAO:0000115 "Cells assigned the type 'adult peripheral neuron of the heart' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00059276 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001315 a FBcv:0009003 ;
+    rdfs:label "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 1500 ;
+    neo_custom:total_gene_count 3747 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000849 ;
+    IAO:0000115 "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005040 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001316 a FBcv:0009003 ;
+    rdfs:label "cardiomyocyte, working adult heart muscle (non-ostia) cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 2183 ;
+    neo_custom:total_gene_count 4662 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000849 ;
+    IAO:0000115 "Cells assigned the type 'cardiomyocyte, working adult heart muscle (non-ostia)' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058240 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001317 a FBcv:0009003 ;
+    rdfs:label "crystal cell cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 648 ;
+    neo_custom:total_gene_count 2115 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000849 ;
+    IAO:0000115 "Cells assigned the type 'crystal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058146 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001318 a FBcv:0009003 ;
+    rdfs:label "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)" ;
+    neo_custom:cell_count 76 ;
+    neo_custom:filtered_gene_count 744 ;
+    neo_custom:total_gene_count 8511 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000849 ;
+    IAO:0000115 "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058238 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001319 a FBcv:0009003 ;
+    rdfs:label "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)" ;
+    neo_custom:cell_count 29 ;
+    neo_custom:filtered_gene_count 1171 ;
+    neo_custom:total_gene_count 6087 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000849 ;
+    IAO:0000115 "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058143 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001320 a FBcv:0009003 ;
+    rdfs:label "indirect flight muscle cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)" ;
+    neo_custom:cell_count 4 ;
+    neo_custom:filtered_gene_count 1312 ;
+    neo_custom:total_gene_count 1312 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000849 ;
+    IAO:0000115 "Cells assigned the type 'indirect flight muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00003361 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001321 a FBcv:0009003 ;
+    rdfs:label "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)" ;
+    neo_custom:cell_count 12 ;
+    neo_custom:filtered_gene_count 375 ;
+    neo_custom:total_gene_count 2718 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000849 ;
+    IAO:0000115 "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001323 a FBcv:0009003 ;
+    rdfs:label "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 910 ;
+    neo_custom:total_gene_count 910 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000850 ;
+    IAO:0000115 "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005040 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001324 a FBcv:0009003 ;
+    rdfs:label "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)" ;
+    neo_custom:cell_count 316 ;
+    neo_custom:filtered_gene_count 216 ;
+    neo_custom:total_gene_count 9078 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000850 ;
+    IAO:0000115 "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058238 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001325 a FBcv:0009003 ;
+    rdfs:label "gustatory receptor neuron cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 303 ;
+    neo_custom:total_gene_count 1145 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000850 ;
+    IAO:0000115 "Cells assigned the type 'gustatory receptor neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058249 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001326 a FBcv:0009003 ;
+    rdfs:label "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 530 ;
+    neo_custom:total_gene_count 1691 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000850 ;
+    IAO:0000115 "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058143 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001327 a FBcv:0009003 ;
+    rdfs:label "mechanosensory neuron cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)" ;
+    neo_custom:cell_count 29 ;
+    neo_custom:filtered_gene_count 564 ;
+    neo_custom:total_gene_count 4138 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000850 ;
+    IAO:0000115 "Cells assigned the type 'mechanosensory neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00051420 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001328 a FBcv:0009003 ;
+    rdfs:label "mechanosensory neuron of leg chordotonal organ cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)" ;
+    neo_custom:cell_count 9 ;
+    neo_custom:filtered_gene_count 1059 ;
+    neo_custom:total_gene_count 2605 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000850 ;
+    IAO:0000115 "Cells assigned the type 'mechanosensory neuron of leg chordotonal organ' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00048274 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001329 a FBcv:0009003 ;
+    rdfs:label "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)" ;
+    neo_custom:cell_count 147 ;
+    neo_custom:filtered_gene_count 472 ;
+    neo_custom:total_gene_count 7239 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000850 ;
+    IAO:0000115 "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001330 a FBcv:0009003 ;
+    rdfs:label "peripheral glial cell cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)" ;
+    neo_custom:cell_count 19 ;
+    neo_custom:filtered_gene_count 503 ;
+    neo_custom:total_gene_count 3809 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000850 ;
+    IAO:0000115 "Cells assigned the type 'peripheral glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058258 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001331 a FBcv:0009003 ;
+    rdfs:label "sensory neuron cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 602 ;
+    neo_custom:total_gene_count 1743 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000850 ;
+    IAO:0000115 "Cells assigned the type 'sensory neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058244 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001333 a FBcv:0009003 ;
+    rdfs:label "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)" ;
+    neo_custom:cell_count 2 ;
+    neo_custom:filtered_gene_count 4023 ;
+    neo_custom:total_gene_count 4023 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000851 ;
+    IAO:0000115 "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049949 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001334 a FBcv:0009003 ;
+    rdfs:label "anterior ejaculatory duct cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)" ;
+    neo_custom:cell_count 17 ;
+    neo_custom:filtered_gene_count 2880 ;
+    neo_custom:total_gene_count 7760 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000851 ;
+    IAO:0000115 "Cells assigned the type 'anterior ejaculatory duct' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058271 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001335 a FBcv:0009003 ;
+    rdfs:label "ejaculatory bulb cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)" ;
+    neo_custom:cell_count 31 ;
+    neo_custom:filtered_gene_count 1659 ;
+    neo_custom:total_gene_count 6900 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000851 ;
+    IAO:0000115 "Cells assigned the type 'ejaculatory bulb' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058269 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001336 a FBcv:0009003 ;
+    rdfs:label "ejaculatory bulb epithelium cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)" ;
+    neo_custom:cell_count 11 ;
+    neo_custom:filtered_gene_count 2457 ;
+    neo_custom:total_gene_count 5676 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000851 ;
+    IAO:0000115 "Cells assigned the type 'ejaculatory bulb epithelium' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058269 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001337 a FBcv:0009003 ;
+    rdfs:label "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)" ;
+    neo_custom:cell_count 16 ;
+    neo_custom:filtered_gene_count 1313 ;
+    neo_custom:total_gene_count 5364 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000851 ;
+    IAO:0000115 "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058238 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001338 a FBcv:0009003 ;
+    rdfs:label "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)" ;
+    neo_custom:cell_count 1 ;
+    neo_custom:filtered_gene_count 850 ;
+    neo_custom:total_gene_count 850 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000851 ;
+    IAO:0000115 "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058143 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001339 a FBcv:0009003 ;
+    rdfs:label "male accessory gland main cell cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)" ;
+    neo_custom:cell_count 131 ;
+    neo_custom:filtered_gene_count 1651 ;
+    neo_custom:total_gene_count 9783 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000851 ;
+    IAO:0000115 "Cells assigned the type 'male accessory gland main cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004960 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001340 a FBcv:0009003 ;
+    rdfs:label "male accessory gland secondary cell cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 1364 ;
+    neo_custom:total_gene_count 3399 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000851 ;
+    IAO:0000115 "Cells assigned the type 'male accessory gland secondary cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004961 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001341 a FBcv:0009003 ;
+    rdfs:label "male reproductive tract muscle cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)" ;
+    neo_custom:cell_count 8 ;
+    neo_custom:filtered_gene_count 2427 ;
+    neo_custom:total_gene_count 5086 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000851 ;
+    IAO:0000115 "Cells assigned the type 'male reproductive tract muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001342 a FBcv:0009003 ;
+    rdfs:label "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 1723 ;
+    neo_custom:total_gene_count 1723 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000851 ;
+    IAO:0000115 "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001343 a FBcv:0009003 ;
+    rdfs:label "secretory cell of the male reproductive tract cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 2425 ;
+    neo_custom:total_gene_count 5458 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000851 ;
+    IAO:0000115 "Cells assigned the type 'secretory cell of the male reproductive tract' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058293 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001345 a FBcv:0009003 ;
+    rdfs:label "spermatid cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 2588 ;
+    neo_custom:total_gene_count 2588 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000851 ;
+    IAO:0000115 "Cells assigned the type 'spermatid' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004942 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001347 a FBcv:0009003 ;
+    rdfs:label "adult Malpighian tubule bar-shaped cell of initial segment cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)" ;
+    neo_custom:cell_count 9 ;
+    neo_custom:filtered_gene_count 2810 ;
+    neo_custom:total_gene_count 5644 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000852 ;
+    IAO:0000115 "Cells assigned the type 'adult Malpighian tubule bar-shaped cell of initial segment' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049472 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001348 a FBcv:0009003 ;
+    rdfs:label "adult Malpighian tubule principal cell cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)" ;
+    neo_custom:cell_count 38 ;
+    neo_custom:filtered_gene_count 2948 ;
+    neo_custom:total_gene_count 9970 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000852 ;
+    IAO:0000115 "Cells assigned the type 'adult Malpighian tubule principal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005735 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001349 a FBcv:0009003 ;
+    rdfs:label "adult Malpighian tubule principal cell of initial segment cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)" ;
+    neo_custom:cell_count 25 ;
+    neo_custom:filtered_gene_count 3238 ;
+    neo_custom:total_gene_count 9580 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000852 ;
+    IAO:0000115 "Cells assigned the type 'adult Malpighian tubule principal cell of initial segment' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049474 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001350 a FBcv:0009003 ;
+    rdfs:label "adult Malpighian tubule principal cell of lower segment cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)" ;
+    neo_custom:cell_count 61 ;
+    neo_custom:filtered_gene_count 2960 ;
+    neo_custom:total_gene_count 12775 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000852 ;
+    IAO:0000115 "Cells assigned the type 'adult Malpighian tubule principal cell of lower segment' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049477 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001351 a FBcv:0009003 ;
+    rdfs:label "adult Malpighian tubule principal cell of lower ureter cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)" ;
+    neo_custom:cell_count 9 ;
+    neo_custom:filtered_gene_count 2778 ;
+    neo_custom:total_gene_count 5435 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000852 ;
+    IAO:0000115 "Cells assigned the type 'adult Malpighian tubule principal cell of lower ureter' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049478 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001352 a FBcv:0009003 ;
+    rdfs:label "adult Malpighian tubule stellate cell of main segment cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)" ;
+    neo_custom:cell_count 33 ;
+    neo_custom:filtered_gene_count 2651 ;
+    neo_custom:total_gene_count 10621 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000852 ;
+    IAO:0000115 "Cells assigned the type 'adult Malpighian tubule stellate cell of main segment' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00047102 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001353 a FBcv:0009003 ;
+    rdfs:label "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 2319 ;
+    neo_custom:total_gene_count 2319 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000852 ;
+    IAO:0000115 "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049949 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001354 a FBcv:0009003 ;
+    rdfs:label "adult hindgut* cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)" ;
+    neo_custom:cell_count 2 ;
+    neo_custom:filtered_gene_count 1252 ;
+    neo_custom:total_gene_count 1252 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000852 ;
+    IAO:0000115 "Cells assigned the type 'adult hindgut*' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058276 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001355 a FBcv:0009003 ;
+    rdfs:label "adult midgut* cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)" ;
+    neo_custom:cell_count 2 ;
+    neo_custom:filtered_gene_count 1498 ;
+    neo_custom:total_gene_count 1498 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000852 ;
+    IAO:0000115 "Cells assigned the type 'adult midgut*' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058294 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001356 a FBcv:0009003 ;
+    rdfs:label "adult renal stem cell cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)" ;
+    neo_custom:cell_count 124 ;
+    neo_custom:filtered_gene_count 363 ;
+    neo_custom:total_gene_count 8630 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000852 ;
+    IAO:0000115 "Cells assigned the type 'adult renal stem cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00110862 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001357 a FBcv:0009003 ;
+    rdfs:label "adult salivary gland cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)" ;
+    neo_custom:cell_count 15 ;
+    neo_custom:filtered_gene_count 1669 ;
+    neo_custom:total_gene_count 5986 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000852 ;
+    IAO:0000115 "Cells assigned the type 'adult salivary gland' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00059269 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001358 a FBcv:0009003 ;
+    rdfs:label "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)" ;
+    neo_custom:cell_count 12 ;
+    neo_custom:filtered_gene_count 6246 ;
+    neo_custom:total_gene_count 12134 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000852 ;
+    IAO:0000115 "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005040 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001360 a FBcv:0009003 ;
+    rdfs:label "posterior midgut* cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)" ;
+    neo_custom:cell_count 4 ;
+    neo_custom:filtered_gene_count 3899 ;
+    neo_custom:total_gene_count 3899 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000852 ;
+    IAO:0000115 "Cells assigned the type 'posterior midgut*' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00007037 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001361 a FBcv:0009003 ;
+    rdfs:label "principal cell* cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)" ;
+    neo_custom:cell_count 59 ;
+    neo_custom:filtered_gene_count 629 ;
+    neo_custom:total_gene_count 6072 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000852 ;
+    IAO:0000115 "Cells assigned the type 'principal cell*' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005735 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001363 a FBcv:0009003 ;
+    rdfs:label "visceral muscle cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)" ;
+    neo_custom:cell_count 2 ;
+    neo_custom:filtered_gene_count 1504 ;
+    neo_custom:total_gene_count 1504 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000852 ;
+    IAO:0000115 "Cells assigned the type 'visceral muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00003525 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001364 a FBcv:0009003 ;
+    rdfs:label "adult alary muscle cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)" ;
+    neo_custom:cell_count 15 ;
+    neo_custom:filtered_gene_count 593 ;
+    neo_custom:total_gene_count 4101 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000853 ;
+    IAO:0000115 "Cells assigned the type 'adult alary muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00003545 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001365 a FBcv:0009003 ;
+    rdfs:label "adult enterocyte cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 2290 ;
+    neo_custom:total_gene_count 2290 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000853 ;
+    IAO:0000115 "Cells assigned the type 'adult enterocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00047147 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001366 a FBcv:0009003 ;
+    rdfs:label "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)" ;
+    neo_custom:cell_count 59 ;
+    neo_custom:filtered_gene_count 1095 ;
+    neo_custom:total_gene_count 9748 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000853 ;
+    IAO:0000115 "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049949 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001367 a FBcv:0009003 ;
+    rdfs:label "adult neuron cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)" ;
+    neo_custom:cell_count 44 ;
+    neo_custom:filtered_gene_count 1504 ;
+    neo_custom:total_gene_count 10459 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000853 ;
+    IAO:0000115 "Cells assigned the type 'adult neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00047095 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001368 a FBcv:0009003 ;
+    rdfs:label "adult oenocyte cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)" ;
+    neo_custom:cell_count 73 ;
+    neo_custom:filtered_gene_count 1037 ;
+    neo_custom:total_gene_count 9579 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000853 ;
+    IAO:0000115 "Cells assigned the type 'adult oenocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00003185 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001369 a FBcv:0009003 ;
+    rdfs:label "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)" ;
+    neo_custom:cell_count 12 ;
+    neo_custom:filtered_gene_count 780 ;
+    neo_custom:total_gene_count 3762 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000853 ;
+    IAO:0000115 "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005040 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001370 a FBcv:0009003 ;
+    rdfs:label "ejaculatory bulb cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 2268 ;
+    neo_custom:total_gene_count 2268 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000853 ;
+    IAO:0000115 "Cells assigned the type 'ejaculatory bulb' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058269 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001371 a FBcv:0009003 ;
+    rdfs:label "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)" ;
+    neo_custom:cell_count 37 ;
+    neo_custom:filtered_gene_count 287 ;
+    neo_custom:total_gene_count 5130 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000853 ;
+    IAO:0000115 "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058238 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001372 a FBcv:0009003 ;
+    rdfs:label "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)" ;
+    neo_custom:cell_count 10 ;
+    neo_custom:filtered_gene_count 700 ;
+    neo_custom:total_gene_count 3776 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000853 ;
+    IAO:0000115 "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058143 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001373 a FBcv:0009003 ;
+    rdfs:label "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)" ;
+    neo_custom:cell_count 65 ;
+    neo_custom:filtered_gene_count 497 ;
+    neo_custom:total_gene_count 8758 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000853 ;
+    IAO:0000115 "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001376 a FBcv:0009003 ;
+    rdfs:label "16-cell germline cyst in germarium region 2a and 2b cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 58 ;
+    neo_custom:filtered_gene_count 5290 ;
+    neo_custom:total_gene_count 10147 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type '16-cell germline cyst in germarium region 2a and 2b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00059160 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001377 a FBcv:0009003 ;
+    rdfs:label "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 2334 ;
+    neo_custom:total_gene_count 4926 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005040 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001379 a FBcv:0009003 ;
+    rdfs:label "central main body follicle cell ca. St. 6-8 cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 40 ;
+    neo_custom:filtered_gene_count 2135 ;
+    neo_custom:total_gene_count 8268 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'central main body follicle cell ca. St. 6-8' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005402 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001380 a FBcv:0009003 ;
+    rdfs:label "choriogenic main body follicle cell St. 12 cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 11 ;
+    neo_custom:filtered_gene_count 3150 ;
+    neo_custom:total_gene_count 7914 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'choriogenic main body follicle cell St. 12' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005402 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001381 a FBcv:0009003 ;
+    rdfs:label "choriogenic main body follicle cell St. 14 cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 1952 ;
+    neo_custom:total_gene_count 4043 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'choriogenic main body follicle cell St. 14' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005402 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001382 a FBcv:0009003 ;
+    rdfs:label "choriogenic main body follicle cell and corpus luteum cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 22 ;
+    neo_custom:filtered_gene_count 2224 ;
+    neo_custom:total_gene_count 6642 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'choriogenic main body follicle cell and corpus luteum' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005402,
+        FBbt:00048551 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001383 a FBcv:0009003 ;
+    rdfs:label "dorsal appendage forming follicle cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 7 ;
+    neo_custom:filtered_gene_count 3419 ;
+    neo_custom:total_gene_count 5879 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'dorsal appendage forming follicle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00046036 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001384 a FBcv:0009003 ;
+    rdfs:label "escort cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 16 ;
+    neo_custom:filtered_gene_count 3084 ;
+    neo_custom:total_gene_count 7400 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'escort cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00006049 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001385 a FBcv:0009003 ;
+    rdfs:label "follicle stem cell and prefollicle cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 10 ;
+    neo_custom:filtered_gene_count 3324 ;
+    neo_custom:total_gene_count 6593 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'follicle stem cell and prefollicle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00006030 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001386 a FBcv:0009003 ;
+    rdfs:label "germ cell stage 4 and later cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 14 ;
+    neo_custom:filtered_gene_count 2453 ;
+    neo_custom:total_gene_count 6086 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'germ cell stage 4 and later' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00057012 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001387 a FBcv:0009003 ;
+    rdfs:label "germline cell, unknown stage cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 3625 ;
+    neo_custom:total_gene_count 5613 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'germline cell, unknown stage' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00057012 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001388 a FBcv:0009003 ;
+    rdfs:label "main body follicle cell ca. until St. 5 cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 157 ;
+    neo_custom:filtered_gene_count 457 ;
+    neo_custom:total_gene_count 9891 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'main body follicle cell ca. until St. 5' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005402 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001389 a FBcv:0009003 ;
+    rdfs:label "ovarian sheath muscle cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 3869 ;
+    neo_custom:total_gene_count 6133 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'ovarian sheath muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00003557 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001390 a FBcv:0009003 ;
+    rdfs:label "oviduct cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 7 ;
+    neo_custom:filtered_gene_count 4186 ;
+    neo_custom:total_gene_count 6714 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'oviduct' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058273 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001391 a FBcv:0009003 ;
+    rdfs:label "polar follicle cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 4109 ;
+    neo_custom:total_gene_count 4109 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'polar follicle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004907 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001392 a FBcv:0009003 ;
+    rdfs:label "post-mitotic endocycling nurse cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 8 ;
+    neo_custom:filtered_gene_count 3217 ;
+    neo_custom:total_gene_count 5325 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'post-mitotic endocycling nurse cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004878 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001393 a FBcv:0009003 ;
+    rdfs:label "post-mitotic germ cell early 16-cell cyst cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 1813 ;
+    neo_custom:total_gene_count 4162 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'post-mitotic germ cell early 16-cell cyst' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00059160 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001394 a FBcv:0009003 ;
+    rdfs:label "posterior terminal follicle cell ca. St. 5-8 cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 7 ;
+    neo_custom:filtered_gene_count 4047 ;
+    neo_custom:total_gene_count 6141 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'posterior terminal follicle cell ca. St. 5-8' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00048554 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001395 a FBcv:0009003 ;
+    rdfs:label "stalk follicle cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 3728 ;
+    neo_custom:total_gene_count 6207 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'stalk follicle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004910 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001396 a FBcv:0009003 ;
+    rdfs:label "stretch follicle cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 21 ;
+    neo_custom:filtered_gene_count 3622 ;
+    neo_custom:total_gene_count 7997 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'stretch follicle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004908 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001398 a FBcv:0009003 ;
+    rdfs:label "young germ cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)" ;
+    neo_custom:cell_count 109 ;
+    neo_custom:filtered_gene_count 3740 ;
+    neo_custom:total_gene_count 9272 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000854 ;
+    IAO:0000115 "Cells assigned the type 'young germ cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00057012 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001399 a FBcv:0009003 ;
+    rdfs:label "adult esophagus cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 429 ;
+    neo_custom:total_gene_count 1545 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000855 ;
+    IAO:0000115 "Cells assigned the type 'adult esophagus' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058280 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001400 a FBcv:0009003 ;
+    rdfs:label "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 2539 ;
+    neo_custom:total_gene_count 2539 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000855 ;
+    IAO:0000115 "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049949 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001401 a FBcv:0009003 ;
+    rdfs:label "adult peripheral nervous system cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)" ;
+    neo_custom:cell_count 62 ;
+    neo_custom:filtered_gene_count 576 ;
+    neo_custom:total_gene_count 6134 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000855 ;
+    IAO:0000115 "Cells assigned the type 'adult peripheral nervous system' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00059276 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001402 a FBcv:0009003 ;
+    rdfs:label "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)" ;
+    neo_custom:cell_count 7 ;
+    neo_custom:filtered_gene_count 578 ;
+    neo_custom:total_gene_count 2180 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000855 ;
+    IAO:0000115 "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005040 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001403 a FBcv:0009003 ;
+    rdfs:label "bitter-sensitive labellar taste bristle cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 1177 ;
+    neo_custom:total_gene_count 1177 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000855 ;
+    IAO:0000115 "Cells assigned the type 'bitter-sensitive labellar taste bristle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00048152 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001404 a FBcv:0009003 ;
+    rdfs:label "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)" ;
+    neo_custom:cell_count 375 ;
+    neo_custom:filtered_gene_count 418 ;
+    neo_custom:total_gene_count 11392 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000855 ;
+    IAO:0000115 "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058238 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001405 a FBcv:0009003 ;
+    rdfs:label "gustatory receptor neuron of the labellum cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)" ;
+    neo_custom:cell_count 7 ;
+    neo_custom:filtered_gene_count 851 ;
+    neo_custom:total_gene_count 2321 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000855 ;
+    IAO:0000115 "Cells assigned the type 'gustatory receptor neuron of the labellum' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00110887 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001406 a FBcv:0009003 ;
+    rdfs:label "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)" ;
+    neo_custom:cell_count 2 ;
+    neo_custom:filtered_gene_count 921 ;
+    neo_custom:total_gene_count 921 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000855 ;
+    IAO:0000115 "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058143 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001407 a FBcv:0009003 ;
+    rdfs:label "labral sense organ mechanosensory neuron cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)" ;
+    neo_custom:cell_count 7 ;
+    neo_custom:filtered_gene_count 846 ;
+    neo_custom:total_gene_count 2344 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000855 ;
+    IAO:0000115 "Cells assigned the type 'labral sense organ mechanosensory neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00048035 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001408 a FBcv:0009003 ;
+    rdfs:label "maxillary palp olfactory receptor neuron cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)" ;
+    neo_custom:cell_count 11 ;
+    neo_custom:filtered_gene_count 691 ;
+    neo_custom:total_gene_count 2958 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000855 ;
+    IAO:0000115 "Cells assigned the type 'maxillary palp olfactory receptor neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00007353 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001410 a FBcv:0009003 ;
+    rdfs:label "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)" ;
+    neo_custom:cell_count 90 ;
+    neo_custom:filtered_gene_count 485 ;
+    neo_custom:total_gene_count 7284 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000855 ;
+    IAO:0000115 "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001411 a FBcv:0009003 ;
+    rdfs:label "peripheral glial cell cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)" ;
+    neo_custom:cell_count 18 ;
+    neo_custom:filtered_gene_count 418 ;
+    neo_custom:total_gene_count 3273 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000855 ;
+    IAO:0000115 "Cells assigned the type 'peripheral glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058258 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001412 a FBcv:0009003 ;
+    rdfs:label "photoreceptor cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 708 ;
+    neo_custom:total_gene_count 2088 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000855 ;
+    IAO:0000115 "Cells assigned the type 'photoreceptor' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004211 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001413 a FBcv:0009003 ;
+    rdfs:label "tormogen cell cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 840 ;
+    neo_custom:total_gene_count 2440 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000855 ;
+    IAO:0000115 "Cells assigned the type 'tormogen cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005171 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001415 a FBcv:0009003 ;
+    rdfs:label "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 1451 ;
+    neo_custom:total_gene_count 3585 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005040 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001416 a FBcv:0009003 ;
+    rdfs:label "cyst cell branch a cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 4585 ;
+    neo_custom:total_gene_count 4585 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'cyst cell branch a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004931 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001417 a FBcv:0009003 ;
+    rdfs:label "cyst cell branch b cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 1 ;
+    neo_custom:filtered_gene_count 2589 ;
+    neo_custom:total_gene_count 2589 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'cyst cell branch b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004931 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001418 a FBcv:0009003 ;
+    rdfs:label "cyst cell intermediate cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 17 ;
+    neo_custom:filtered_gene_count 3608 ;
+    neo_custom:total_gene_count 8689 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'cyst cell intermediate' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004931 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001419 a FBcv:0009003 ;
+    rdfs:label "cyst stem cell cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 3471 ;
+    neo_custom:total_gene_count 3471 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'cyst stem cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004933 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001420 a FBcv:0009003 ;
+    rdfs:label "early cyst cell 1 cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 2496 ;
+    neo_custom:total_gene_count 5182 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'early cyst cell 1' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004931 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001421 a FBcv:0009003 ;
+    rdfs:label "early elongation stage spermatid cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 74 ;
+    neo_custom:filtered_gene_count 213 ;
+    neo_custom:total_gene_count 6795 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'early elongation stage spermatid' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00057175 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001422 a FBcv:0009003 ;
+    rdfs:label "early-mid elongation-stage spermatid cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 4 ;
+    neo_custom:filtered_gene_count 5415 ;
+    neo_custom:total_gene_count 5415 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'early-mid elongation-stage spermatid' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00057000 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001423 a FBcv:0009003 ;
+    rdfs:label "head cyst cell cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 11 ;
+    neo_custom:filtered_gene_count 3905 ;
+    neo_custom:total_gene_count 7966 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'head cyst cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00057009 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001424 a FBcv:0009003 ;
+    rdfs:label "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 2596 ;
+    neo_custom:total_gene_count 5315 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058143 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001425 a FBcv:0009003 ;
+    rdfs:label "late cyst cell branch a cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 2 ;
+    neo_custom:filtered_gene_count 4940 ;
+    neo_custom:total_gene_count 4940 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'late cyst cell branch a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004931 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001426 a FBcv:0009003 ;
+    rdfs:label "late cyst cell branch b cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 3440 ;
+    neo_custom:total_gene_count 6109 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'late cyst cell branch b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004931 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001427 a FBcv:0009003 ;
+    rdfs:label "late primary spermatocyte cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 2 ;
+    neo_custom:filtered_gene_count 3924 ;
+    neo_custom:total_gene_count 3924 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'late primary spermatocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005286 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001428 a FBcv:0009003 ;
+    rdfs:label "male gonad associated epithelium cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 85 ;
+    neo_custom:filtered_gene_count 2471 ;
+    neo_custom:total_gene_count 10724 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'male gonad associated epithelium' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058261 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001429 a FBcv:0009003 ;
+    rdfs:label "mid-late elongation-stage spermatid cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 12 ;
+    neo_custom:filtered_gene_count 1767 ;
+    neo_custom:total_gene_count 5838 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'mid-late elongation-stage spermatid' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00057003 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001430 a FBcv:0009003 ;
+    rdfs:label "mid-late proliferating spermatogonia cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 2465 ;
+    neo_custom:total_gene_count 5236 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'mid-late proliferating spermatogonia' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004935 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001431 a FBcv:0009003 ;
+    rdfs:label "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 34 ;
+    neo_custom:filtered_gene_count 1536 ;
+    neo_custom:total_gene_count 7631 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001432 a FBcv:0009003 ;
+    rdfs:label "pigment cell cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 5282 ;
+    neo_custom:total_gene_count 5282 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'pigment cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004230 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001433 a FBcv:0009003 ;
+    rdfs:label "secretory cell of the male reproductive tract cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 1 ;
+    neo_custom:filtered_gene_count 2235 ;
+    neo_custom:total_gene_count 2235 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'secretory cell of the male reproductive tract' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058293 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001434 a FBcv:0009003 ;
+    rdfs:label "spermatid cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 1616 ;
+    neo_custom:total_gene_count 1616 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'spermatid' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004942 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001435 a FBcv:0009003 ;
+    rdfs:label "spermatocyte cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 30 ;
+    neo_custom:filtered_gene_count 7582 ;
+    neo_custom:total_gene_count 12521 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'spermatocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004936 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001436 a FBcv:0009003 ;
+    rdfs:label "spermatocyte 0 cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 11 ;
+    neo_custom:filtered_gene_count 3284 ;
+    neo_custom:total_gene_count 7228 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'spermatocyte 0' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004936 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001437 a FBcv:0009003 ;
+    rdfs:label "spermatocyte 1 cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 4 ;
+    neo_custom:filtered_gene_count 6723 ;
+    neo_custom:total_gene_count 6723 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'spermatocyte 1' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004936 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001438 a FBcv:0009003 ;
+    rdfs:label "spermatocyte 2 cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 7110 ;
+    neo_custom:total_gene_count 7110 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'spermatocyte 2' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004936 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001439 a FBcv:0009003 ;
+    rdfs:label "spermatocyte 3 cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 4 ;
+    neo_custom:filtered_gene_count 9742 ;
+    neo_custom:total_gene_count 9742 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'spermatocyte 3' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004936 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001440 a FBcv:0009003 ;
+    rdfs:label "spermatocyte 4 cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 1 ;
+    neo_custom:filtered_gene_count 5544 ;
+    neo_custom:total_gene_count 5544 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'spermatocyte 4' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004936 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001441 a FBcv:0009003 ;
+    rdfs:label "spermatocyte 5 cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 9500 ;
+    neo_custom:total_gene_count 11268 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'spermatocyte 5' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004936 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001442 a FBcv:0009003 ;
+    rdfs:label "spermatocyte 6 cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 9692 ;
+    neo_custom:total_gene_count 9692 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'spermatocyte 6' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004936 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001443 a FBcv:0009003 ;
+    rdfs:label "spermatocyte 7a cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 2 ;
+    neo_custom:filtered_gene_count 4883 ;
+    neo_custom:total_gene_count 4883 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'spermatocyte 7a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004936 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001444 a FBcv:0009003 ;
+    rdfs:label "spermatocyte cyst cell branch a cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 2 ;
+    neo_custom:filtered_gene_count 4636 ;
+    neo_custom:total_gene_count 4636 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'spermatocyte cyst cell branch a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00057004 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001445 a FBcv:0009003 ;
+    rdfs:label "spermatocyte cyst cell branch b cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 4782 ;
+    neo_custom:total_gene_count 4782 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'spermatocyte cyst cell branch b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00057004 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001446 a FBcv:0009003 ;
+    rdfs:label "spermatogonium cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 8 ;
+    neo_custom:filtered_gene_count 4561 ;
+    neo_custom:total_gene_count 7323 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'spermatogonium' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004935 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001447 a FBcv:0009003 ;
+    rdfs:label "spermatogonium-spermatocyte transition cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)" ;
+    neo_custom:cell_count 2 ;
+    neo_custom:filtered_gene_count 4052 ;
+    neo_custom:total_gene_count 4052 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000856 ;
+    IAO:0000115 "Cells assigned the type 'spermatogonium-spermatocyte transition' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00004936 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001449 a FBcv:0009003 ;
+    rdfs:label "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Trachea) (Li 2022)" ;
+    neo_custom:cell_count 1 ;
+    neo_custom:filtered_gene_count 1070 ;
+    neo_custom:total_gene_count 1070 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000857 ;
+    IAO:0000115 "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00049949 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001450 a FBcv:0009003 ;
+    rdfs:label "adult neuron cells, predicted (Fly Cell Atlas Smart-seq2 Trachea) (Li 2022)" ;
+    neo_custom:cell_count 25 ;
+    neo_custom:filtered_gene_count 1484 ;
+    neo_custom:total_gene_count 8405 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000857 ;
+    IAO:0000115 "Cells assigned the type 'adult neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00047095 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001451 a FBcv:0009003 ;
+    rdfs:label "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Trachea) (Li 2022)" ;
+    neo_custom:cell_count 318 ;
+    neo_custom:filtered_gene_count 724 ;
+    neo_custom:total_gene_count 12149 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000857 ;
+    IAO:0000115 "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00005040 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001456 a FBcv:0009003 ;
+    rdfs:label "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Trachea) (Li 2022)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 687 ;
+    neo_custom:total_gene_count 2274 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000857 ;
+    IAO:0000115 "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001458 a FBcv:0009003 ;
+    rdfs:label "gustatory receptor neuron cells, predicted (Fly Cell Atlas Smart-seq2 Wing) (Li 2022)" ;
+    neo_custom:cell_count 16 ;
+    neo_custom:filtered_gene_count 820 ;
+    neo_custom:total_gene_count 3754 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000858 ;
+    IAO:0000115 "Cells assigned the type 'gustatory receptor neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058249 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001459 a FBcv:0009003 ;
+    rdfs:label "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Wing) (Li 2022)" ;
+    neo_custom:cell_count 4 ;
+    neo_custom:filtered_gene_count 1067 ;
+    neo_custom:total_gene_count 1067 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000858 ;
+    IAO:0000115 "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058143 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001460 a FBcv:0009003 ;
+    rdfs:label "mechanosensory neuron cells, predicted (Fly Cell Atlas Smart-seq2 Wing) (Li 2022)" ;
+    neo_custom:cell_count 24 ;
+    neo_custom:filtered_gene_count 1096 ;
+    neo_custom:total_gene_count 4692 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000858 ;
+    IAO:0000115 "Cells assigned the type 'mechanosensory neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00051420 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001461 a FBcv:0009003 ;
+    rdfs:label "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Wing) (Li 2022)" ;
+    neo_custom:cell_count 7 ;
+    neo_custom:filtered_gene_count 497 ;
+    neo_custom:total_gene_count 1561 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000858 ;
+    IAO:0000115 "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001462 a FBcv:0009003 ;
+    rdfs:label "nociceptive neuron cells, predicted (Fly Cell Atlas Smart-seq2 Wing) (Li 2022)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 1346 ;
+    neo_custom:total_gene_count 1346 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000858 ;
+    IAO:0000115 "Cells assigned the type 'nociceptive neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00048471 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001463 a FBcv:0009003 ;
+    rdfs:label "peripheral glial cell cells, predicted (Fly Cell Atlas Smart-seq2 Wing) (Li 2022)" ;
+    neo_custom:cell_count 17 ;
+    neo_custom:filtered_gene_count 410 ;
+    neo_custom:total_gene_count 2923 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000858 ;
+    IAO:0000115 "Cells assigned the type 'peripheral glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058258 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001464 a FBcv:0009003 ;
+    rdfs:label "pheromone-sensing neuron cells, predicted (Fly Cell Atlas Smart-seq2 Wing) (Li 2022)" ;
+    neo_custom:cell_count 11 ;
+    neo_custom:filtered_gene_count 670 ;
+    neo_custom:total_gene_count 2818 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000858 ;
+    IAO:0000115 "Cells assigned the type 'pheromone-sensing neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058247 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001466 a FBcv:0009003 ;
+    rdfs:label "insulin-producing cell cells, sorted (Fly Cell Atlas Smart-seq2 dilp2 IPC (insulin-producing cells)) (Li 2022)" ;
+    neo_custom:cell_count 658 ;
+    neo_custom:filtered_gene_count 1152 ;
+    neo_custom:total_gene_count 10959 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000859 ;
+    IAO:0000115 "Cells FACS-sorted by the authors as 'insulin-producing cell' and analysed as a whole; typed from the authors' sample description, not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00110107 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00001467 a FBcv:0009003 ;
+    rdfs:label "corpora cardiaca cell cells, sorted (Fly Cell Atlas Smart-seq2 Akh CC (corpora cardiaca)) (Li 2022)" ;
+    neo_custom:cell_count 592 ;
+    neo_custom:filtered_gene_count 997 ;
+    neo_custom:total_gene_count 13354 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00000860 ;
+    IAO:0000115 "Cells FACS-sorted by the authors as 'corpora cardiaca cell' and analysed as a whole; typed from the authors' sample description, not a transcriptomic cluster." ;
+    RO:0002473 FBbt:00058019 ;
+    dcterms:source VFBseq:00000777 .
+
+FlyBase:FBrf0252876 a FBcv:0000212 ;
+    neo_property:nodeLabel "pub" .
+
+VFBseq:00000778 a FBcv:0003024 ;
+    rdfs:label "Malpighian tubule, 5 days, female, drip-GAL4; UAS-nlsGFP (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00005725 ;
+    RO:0002352 VFBseq:00000779 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000779 a FBcv:0003025 ;
+    rdfs:label "P5" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000778 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000780 a FBcv:0003024 ;
+    rdfs:label "Malpighian tubule, 5 days, male, drip-GAL4; UAS-nlsGFP (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00005725 ;
+    RO:0002352 VFBseq:00000781 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000781 a FBcv:0003025 ;
+    rdfs:label "P6" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000780 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000782 a FBcv:0003024 ;
+    rdfs:label "abdominal segment element, 5 days, female, PromE800-GAL4; UAS-unc84GFP (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003024 ;
+    RO:0002352 VFBseq:00000783 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000783 a FBcv:0003025 ;
+    rdfs:label "P45" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000782 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000784 a FBcv:0003024 ;
+    rdfs:label "abdominal segment element, 5 days, male, PromE800-GAL4; UAS-unc84GFP (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003024 ;
+    RO:0002352 VFBseq:00000785 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000785 a FBcv:0003025 ;
+    rdfs:label "P43" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000784 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000786 a FBcv:0003024 ;
+    rdfs:label "antenna, 5 days, female (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00004511 ;
+    RO:0002352 VFBseq:00000787 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000787 a FBcv:0003025 ;
+    rdfs:label "P29" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000786 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000788 a FBcv:0003024 ;
+    rdfs:label "antenna, 5 days, male (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00004511 ;
+    RO:0002352 VFBseq:00000789 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000789 a FBcv:0003025 ;
+    rdfs:label "P27" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000788 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000790 a FBcv:0003024 ;
+    rdfs:label "body wall, 5 days, female (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00005396 ;
+    RO:0002352 VFBseq:00000791 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000791 a FBcv:0003025 ;
+    rdfs:label "P9" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000790 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000792 a FBcv:0003024 ;
+    rdfs:label "body wall, 5 days, male (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00005396 ;
+    RO:0002352 VFBseq:00000793 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000793 a FBcv:0003025 ;
+    rdfs:label "P11" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000792 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000795 a FBcv:0003025 ;
+    rdfs:label "P33" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000794 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000796 a FBcv:0003025 ;
+    rdfs:label "P34" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000794 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000798 a FBcv:0003025 ;
+    rdfs:label "P31" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000797 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000799 a FBcv:0003025 ;
+    rdfs:label "P32" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000797 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000800 a FBcv:0003024 ;
+    rdfs:label "gut, 5 days, female (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00007513 ;
+    RO:0002352 VFBseq:00000801 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000801 a FBcv:0003025 ;
+    rdfs:label "P3" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000800 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000802 a FBcv:0003024 ;
+    rdfs:label "gut, 5 days, male (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00007513 ;
+    RO:0002352 VFBseq:00000803 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000803 a FBcv:0003025 ;
+    rdfs:label "P1" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000802 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000804 a FBcv:0003024 ;
+    rdfs:label "haltere, 5 days, female (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00004783 ;
+    RO:0002352 VFBseq:00000805 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000805 a FBcv:0003025 ;
+    rdfs:label "P37" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000804 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000806 a FBcv:0003024 ;
+    rdfs:label "haltere, 5 days, male (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00004783 ;
+    RO:0002352 VFBseq:00000807 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000807 a FBcv:0003025 ;
+    rdfs:label "P35" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000806 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000808 a FBcv:0003024 ;
+    rdfs:label "head, 5 days, female, dilp2-GAL4; UAS-unc84GFP (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00000809 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000809 a FBcv:0003025 ;
+    rdfs:label "P55" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000808 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000810 a FBcv:0003024 ;
+    rdfs:label "head, 5 days, male, dilp2-GAL4; UAS-unc84GFP (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00000811 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000811 a FBcv:0003025 ;
+    rdfs:label "P57" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000810 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000812 a FBcv:0003024 ;
+    rdfs:label "heart, 5 days, female (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003154 ;
+    RO:0002352 VFBseq:00000813 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000813 a FBcv:0003025 ;
+    rdfs:label "P7" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000812 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000814 a FBcv:0003024 ;
+    rdfs:label "heart, 5 days, male (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003154 ;
+    RO:0002352 VFBseq:00000815 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000815 a FBcv:0003025 ;
+    rdfs:label "P8" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000814 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000816 a FBcv:0003024 ;
+    rdfs:label "insect proboscis, 5 days, female (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00004535 ;
+    RO:0002352 VFBseq:00000817 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000817 a FBcv:0003025 ;
+    rdfs:label "P25" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000816 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000818 a FBcv:0003024 ;
+    rdfs:label "insect proboscis, 5 days, male (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00004535 ;
+    RO:0002352 VFBseq:00000819 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000819 a FBcv:0003025 ;
+    rdfs:label "P23" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000818 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000820 a FBcv:0003024 ;
+    rdfs:label "leg, 5 days, female (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00004640 ;
+    RO:0002352 VFBseq:00000821 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000821 a FBcv:0003025 ;
+    rdfs:label "P17" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000820 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000822 a FBcv:0003024 ;
+    rdfs:label "leg, 5 days, male (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00004640 ;
+    RO:0002352 VFBseq:00000823 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000823 a FBcv:0003025 ;
+    rdfs:label "P15" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000822 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000825 a FBcv:0003025 ;
+    rdfs:label "P53" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000824 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000826 a FBcv:0003025 ;
+    rdfs:label "P59" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000824 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000827 a FBcv:0003025 ;
+    rdfs:label "P60" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000824 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000828 a FBcv:0003024 ;
+    rdfs:label "reproductive gland, 2 days, male (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00004959,
+        FBbt:00004962,
+        FBbt:00004965 ;
+    RO:0002352 VFBseq:00000829 ;
+    RO:0002490 FBdv:00007077 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000829 a FBcv:0003025 ;
+    rdfs:label "P13" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000828 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000830 a FBcv:0003024 ;
+    rdfs:label "testis, 1 days, male (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00004928 ;
+    RO:0002352 VFBseq:00000831 ;
+    RO:0002490 FBdv:00007076 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000831 a FBcv:0003025 ;
+    rdfs:label "P51" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000830 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000832 a FBcv:0003024 ;
+    rdfs:label "thorax, 5 days, female, Akh-GAL4; UAS-unc84GFP (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003018 ;
+    RO:0002352 VFBseq:00000833 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000833 a FBcv:0003025 ;
+    rdfs:label "P56" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000832 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000834 a FBcv:0003024 ;
+    rdfs:label "thorax, 5 days, male, Akh-GAL4; UAS-unc84GFP (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003018 ;
+    RO:0002352 VFBseq:00000835 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000835 a FBcv:0003025 ;
+    rdfs:label "P58" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000834 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000836 a FBcv:0003024 ;
+    rdfs:label "trachea, 5 days, female, Btl-GAL4; UAS-lamGFP (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003037 ;
+    RO:0002352 VFBseq:00000837 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0095000 FlyBase:FBst0007378 .
+
+VFBseq:00000837 a FBcv:0003025 ;
+    rdfs:label "P49" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000836 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000838 a FBcv:0003024 ;
+    rdfs:label "trachea, 5 days, male, Btl-GAL4; UAS-lamGFP (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003037 ;
+    RO:0002352 VFBseq:00000839 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0095000 FlyBase:FBst0007378 .
+
+VFBseq:00000839 a FBcv:0003025 ;
+    rdfs:label "P47" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000838 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000840 a FBcv:0003024 ;
+    rdfs:label "wing, 5 days, female (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00004729 ;
+    RO:0002352 VFBseq:00000841 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000841 a FBcv:0003025 ;
+    rdfs:label "P21" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000840 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000842 a FBcv:0003024 ;
+    rdfs:label "wing, 5 days, male (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00004729 ;
+    RO:0002352 VFBseq:00000843 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000843 a FBcv:0003025 ;
+    rdfs:label "P19" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00000842 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00000859 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 dilp2 IPC (insulin-producing cells)" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000860 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 Akh CC (corpora cardiaca)" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000794 a FBcv:0003024 ;
+    rdfs:label "fat body, 5 days, female, Cg-GAL4; UAS-lamGFP (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003209 ;
+    RO:0002352 VFBseq:00000795,
+        VFBseq:00000796 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0095000 FlyBase:FBst0007378 .
+
+VFBseq:00000797 a FBcv:0003024 ;
+    rdfs:label "fat body, 5 days, male, Cg-GAL4; UAS-lamGFP (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003209 ;
+    RO:0002352 VFBseq:00000798,
+        VFBseq:00000799 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 ;
+    BAO:0095000 FlyBase:FBst0007378 .
+
+VFBseq:00000824 a FBcv:0003024 ;
+    rdfs:label "ovary, 5 days, female (Li 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00004865 ;
+    RO:0002352 VFBseq:00000825,
+        VFBseq:00000826,
+        VFBseq:00000827 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000857 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 Trachea" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000848 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 Haltere" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000858 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 Wing" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000850 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 Leg" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000846 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 Fat Body" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000853 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 Oenocyte" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000849 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 Heart" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000851 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 Male Reproductive Glands" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000845 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 Body Wall" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000855 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000852 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 Malpighian Tubule" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000844 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 Antenna" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000847 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 Gut" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000854 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 Ovary" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000856 a FBcv:0009002 ;
+    rdfs:label "Fly Cell Atlas Smart-seq2 Testis" ;
+    neo_property:nodeLabel "Clustering" ;
+    dcterms:source VFBseq:00000777 .
+
+VFBseq:00000777 a FBcv:0003023 ;
+    rdfs:label "scRNAseq data from Li (2022)" ;
+    neo_custom:accession "E-MTAB-10628" ;
+    neo_custom:filtered_gene_count 15011 ;
+    neo_custom:total_gene_count 16293 ;
+    neo_property:nodeLabel "DataSet" ;
+    IAO:0000115 "Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly" ;
+    OBI:0000312 FBcv:0009001 ;
+    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references FlyBase:FBrf0252876 ;
+    oboInOwl:hasDbXref vfb:ArrayExpress .
+

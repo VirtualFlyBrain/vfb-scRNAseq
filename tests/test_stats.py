@@ -44,6 +44,7 @@ def _setup(tmp_path, monkeypatch):
 
     monkeypatch.setattr(stats, "REPO_ROOT", tmp_path)
     monkeypatch.setattr(stats, "IDRegistry", _FakeReg)
+    monkeypatch.setattr(stats, "mapped_labels", lambda proj: None)   # keep every cluster
     cfg = {
         "dataset": {"accession": "GSETEST"},
         "annotations": {"subset": "main", "label_column": "subtype", "source_file": "md.tsv.gz"},
@@ -58,6 +59,19 @@ def test_dataset_gene_counts_union_not_datasetwide(tmp_path, monkeypatch):
     _, _, meta = stats.compute_expression("t", cfg)
     assert meta["dataset_total_gene_count"] == 3       # g1,g2,g3 expressed (g4 never)
     assert meta["dataset_filtered_gene_count"] == 2     # g1 (A) + g3 (B); g2 max extent 0.2 not > cutoff
+
+
+def test_held_clusters_are_left_out(tmp_path, monkeypatch):
+    """A cluster with no FBbt term (B) is not loaded: no rows or counts of its own,
+    but its genes still count towards the dataset totals (they were detected)."""
+    cfg = _setup(tmp_path, monkeypatch)
+    monkeypatch.setattr(stats, "mapped_labels", lambda proj: {"A"})
+    rows, counts, meta = stats.compute_expression("t", cfg)
+    assert [c.label for c in counts] == ["A"]
+    assert {r[1] for r in rows} == {"A"}
+    assert meta["dataset_total_gene_count"] == 3        # g1,g2 + g3 (only in held B)
+    assert meta["dataset_filtered_gene_count"] == 2     # g1 + g3 (B)
+    assert (meta["held_clusters"], meta["held_cells"]) == (1, 5)
 
 
 def test_per_cluster_counts_and_extent_filter(tmp_path, monkeypatch):
@@ -184,6 +198,7 @@ def _h5ad_setup(tmp_path, monkeypatch, sizes=None):
     monkeypatch.setattr(stats, "REPO_ROOT", tmp_path)
     monkeypatch.setattr(ingest_h5ad, "REPO_ROOT", tmp_path)
     monkeypatch.setattr(stats, "IDRegistry", _FakeReg)
+    monkeypatch.setattr(stats, "mapped_labels", lambda proj: set(sizes))
     return {
         "dataset": {"accession": "ACC"},
         "sample_build": {"clusterings": [{"id": "a"}, {"id": "b", "fixed_annotation": "sorted"}]},

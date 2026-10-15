@@ -111,6 +111,7 @@ def test_collate_held_order_prior_and_review(tmp_path, monkeypatch):
     assert [r["cluster_label"] for r in rows] == ["c_1", "c_2", "c_10", "c_x"]   # mapped first, numeric order
     by = {r["cluster_label"]: r for r in rows}
     assert by["c_x"]["kind"] == "held" and by["c_x"]["match_type"] == "HELD"   # no FBbt term -> held
+    assert by["c_x"]["hold_reason"] == "no term" and by["c_1"]["hold_reason"] == ""
     assert by["c_1"]["prior_agrees"] == "yes" and by["c_2"]["prior_agrees"] == "NO"
     assert by["c_10"]["prior_agrees"] == ""
     today = datetime.date.today().isoformat()

@@ -50,10 +50,18 @@ from FlyBase; that authority is being dropped.)
 - `projects/kurmangaliyev_2020/` — Kurmangaliyev et al. 2020, *Drosophila* visual
   system developmental atlas ([GSE156455](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156455),
   PMID 33125872): the 24-96h main dataset (196 clusters) and the 0-24h early
-  dataset (110 clusters).
+  dataset (110 clusters); 232 with an FBbt term are loaded.
 - `projects/davie_2018/` — Davie et al. 2018, ageing adult brain atlas
   ([GSE107451](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107451),
-  PMID 29909982), 57K 10x set. Replaces the old FlyBase/SCEA load (FBlc0006090).
+  PMID 29909982), 57K 10x set (125 clusters; 82 with an FBbt term are loaded).
+  Replaces the old FlyBase/SCEA load (FBlc0006090).
+- `projects/li_2022_fca_10x/` and `projects/li_2022_fca_ss2/` — Fly Cell Atlas, Li et
+  al. 2022 (PMID 35239393), from ArrayExpress
+  ([E-MTAB-10519](https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-10519) 10x,
+  [E-MTAB-10628](https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-10628)
+  Smart-seq2) and the authors' per-tissue h5ad analyses: 17 analyses each, one entry
+  per author annotation (370 and 237; 335 and 211 with an FBbt term are loaded). FBbt mappings are made once per author type and
+  shared. Replaces the old SCEA-based loads (FBlc0003846 / 4307 / 4785).
 
 ## Layout
 
@@ -66,12 +74,14 @@ src/vfb_scrnaseq/
   emit.py       # entities -> validate + flat RDF (linkml-convert) + OWL (linkml-owl)
   stats.py      # FlyBase-style expression extent/level per cluster x gene
   project_config.py / ingest.py / pub.py   # config knobs, GEO SOFT ingest, :pub lookup
+  ingest_arrayexpress.py / ingest_h5ad.py  # ArrayExpress IDF/SDRF; AnnData obs/var/matrix (h5py)
 scripts/                                 # dataset-agnostic pipeline + CI check scripts
 .claude/agents/map-clusters-to-fbbt.md   # FBbt mapper (curation rules built in)
 .claude/agents/write-cell-type-report.md # per-type background reports
 checks/                                  # weekly FBbt check record + pending term requests
 projects/kurmangaliyev_2020/             # first worked example
 projects/davie_2018/                     # second project (adult brain, ageing)
+projects/li_2022_fca_10x/, li_2022_fca_ss2/  # Fly Cell Atlas (ArrayExpress + h5ad)
 id_registry/                             # minted-id registry (JSON)
 ```
 
@@ -93,6 +103,12 @@ uv run python scripts/build_rdf.py                  --project kurmangaliyev_2020
 uv run python scripts/update_gene_ids.py            --project kurmangaliyev_2020   # needs psql (FlyBase Chado)
 uv run python scripts/build_expression.py           --project kurmangaliyev_2020   # -> expression/*.owl.gz
 
+# ArrayExpress + h5ad projects (e.g. the Fly Cell Atlas) start differently:
+uv run python scripts/build_samples_from_arrayexpress.py --project li_2022_fca_10x
+uv run python scripts/fetch_h5ad.py                      --project li_2022_fca_10x   # -> .cache/h5ad/
+uv run python scripts/build_annotations_from_h5ad.py     --project li_2022_fca_10x
+uv run python scripts/expand_type_mappings.py            --project li_2022_fca_10x   # type_mapping/ -> mapping/
+
 # the CI checks
 uv run python scripts/validate_project_files.py
 uv run python scripts/check_mapping_tsv.py
@@ -104,7 +120,8 @@ against the OLS MCP — see `docs/DESIGN.md`.
 ## Curation rules (summary)
 
 One row per author cluster (never merged by type); typing from the authors, not
-re-analysis; *composed primarily of*; no FBbt term → held; no routine new-term
+re-analysis; *composed primarily of*; no FBbt term → held (listed in `mapping.tsv`
+with a reason, not loaded); no routine new-term
 requests from expression alone; stage on Samples, on Clusters only when determined
 from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#general-curation-rules).
 
