@@ -1009,6 +1009,11 @@ assignments are a mapping cross-check only. Licence CC-BY-4.0. Curator decisions
   the same types; markers in place (Rh3/Rh4 in R7, SP in male accessory gland main
   cells, apolpp in fat body; indirect flight muscle led by bt / sls / Zasp52 / up —
   Act88F is below the cutoff in the FCA cluster too).
+- **Build (stage 5):** `build_rdf.py`: 1 Dataset, 72 Samples, 72 Assays, 2 Clusterings
+  (each linked to its 36 new and 13 reused FCA Samples), 143 Clusters; publication
+  FBrf0256843 from VFB production; `verify_mappings.py` OK (130 FBbt terms); every
+  FBbt/FBdv/FBcv term on Samples, Assays and the Dataset current in OLS (FBdv day 70
+  is `FBdv:0010010`). Recorded in `provenance.json`.
 - **Author files:** `GSE218661_adata_{head,body}_S_v1.0.h5ad` (no `raw`; `X` = all
   15,992 genes as log1p(CP10k), symbols only); a cell's library is in its name
   (`…_AFCA_female_head_30_S1`, or the FCA sample id). Not annotated: 108,647 head /

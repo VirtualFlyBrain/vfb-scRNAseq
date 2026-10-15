@@ -16,3 +16,4 @@ report, and the counts JSON stay under `projects/<p>/`.
 | vfb_scRNAseq_expression_davie_2018.owl.gz | davie_2018 |
 | vfb_scRNAseq_expression_li_2022_fca_10x.owl.gz | li_2022_fca_10x |
 | vfb_scRNAseq_expression_li_2022_fca_ss2.owl.gz | li_2022_fca_ss2 |
+| vfb_scRNAseq_expression_lu_2023_afca.owl.gz | lu_2023_afca |

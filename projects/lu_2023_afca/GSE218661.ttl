@@ -1,0 +1,2939 @@
+@prefix BAO: <http://www.bioassayontology.org/bao#BAO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix FBbt: <http://purl.obolibrary.org/obo/FBbt_> .
+@prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
+@prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
+@prefix FlyBase: <http://flybase.org/reports/> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix VFBseq: <http://virtualflybrain.org/reports/VFBseq_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix neo_custom: <http://n2o.neo/custom/> .
+@prefix neo_property: <http://n2o.neo/property/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vfb: <http://virtualflybrain.org/reports/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VFBseq:00001615 a FBcv:0009003 ;
+    rdfs:label "Johnston organ neuron cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 2483 ;
+    neo_custom:filtered_gene_count 808 ;
+    neo_custom:total_gene_count 11337 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00100000 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001616 a FBcv:0009003 ;
+    rdfs:label "Kenyon cell cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 11 ;
+    neo_custom:filtered_gene_count 1005 ;
+    neo_custom:total_gene_count 2770 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00049825 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001617 a FBcv:0009003 ;
+    rdfs:label "T neuron T2 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1596 ;
+    neo_custom:filtered_gene_count 645 ;
+    neo_custom:total_gene_count 10199 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003728 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001618 a FBcv:0009003 ;
+    rdfs:label "T neuron T2a cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1801 ;
+    neo_custom:filtered_gene_count 640 ;
+    neo_custom:total_gene_count 10322 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003729 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001619 a FBcv:0009003 ;
+    rdfs:label "T neuron T3 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1826 ;
+    neo_custom:filtered_gene_count 573 ;
+    neo_custom:total_gene_count 10229 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003730 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001620 a FBcv:0009003 ;
+    rdfs:label "T neuron T4/T5 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 605 ;
+    neo_custom:filtered_gene_count 739 ;
+    neo_custom:total_gene_count 8925 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003726 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001621 a FBcv:0009003 ;
+    rdfs:label "T neuron T4/T5a-b cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 2530 ;
+    neo_custom:filtered_gene_count 548 ;
+    neo_custom:total_gene_count 10560 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003726 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001622 a FBcv:0009003 ;
+    rdfs:label "T neuron T4/T5c-d cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 2146 ;
+    neo_custom:filtered_gene_count 571 ;
+    neo_custom:total_gene_count 10357 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003726 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001623 a FBcv:0009003 ;
+    rdfs:label "adult brain cell body glial cell cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1095 ;
+    neo_custom:filtered_gene_count 1322 ;
+    neo_custom:total_gene_count 11050 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00100501 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001624 a FBcv:0009003 ;
+    rdfs:label "adult brain perineurial glial cell cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 4723 ;
+    neo_custom:filtered_gene_count 859 ;
+    neo_custom:total_gene_count 12169 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00100506 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001625 a FBcv:0009003 ;
+    rdfs:label "adult fat body_head cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 961 ;
+    neo_custom:filtered_gene_count 746 ;
+    neo_custom:total_gene_count 10287 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00049949 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001626 a FBcv:0009003 ;
+    rdfs:label "adult lamina epithelial/marginal glial cell cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 2776 ;
+    neo_custom:filtered_gene_count 880 ;
+    neo_custom:total_gene_count 11668 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00058264 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001627 a FBcv:0009003 ;
+    rdfs:label "adult optic chiasma glial cell cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1615 ;
+    neo_custom:filtered_gene_count 981 ;
+    neo_custom:total_gene_count 11243 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00100525 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001628 a FBcv:0009003 ;
+    rdfs:label "adult reticular neuropil associated glial cell_head cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 2720 ;
+    neo_custom:filtered_gene_count 872 ;
+    neo_custom:total_gene_count 11656 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00047841 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001629 a FBcv:0009003 ;
+    rdfs:label "alpha'/beta' Kenyon cell cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1234 ;
+    neo_custom:filtered_gene_count 800 ;
+    neo_custom:total_gene_count 10261 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00049834 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001630 a FBcv:0009003 ;
+    rdfs:label "alpha/beta Kenyon cell cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 2200 ;
+    neo_custom:filtered_gene_count 840 ;
+    neo_custom:total_gene_count 10867 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00100248 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001631 a FBcv:0009003 ;
+    rdfs:label "antennal lobe projection neuron cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 342 ;
+    neo_custom:filtered_gene_count 1068 ;
+    neo_custom:total_gene_count 8958 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00067123 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001632 a FBcv:0009003 ;
+    rdfs:label "auditory sensory neuron cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1614 ;
+    neo_custom:filtered_gene_count 1021 ;
+    neo_custom:total_gene_count 11233 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00007684 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001633 a FBcv:0009003 ;
+    rdfs:label "centrifugal neuron C2 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1558 ;
+    neo_custom:filtered_gene_count 615 ;
+    neo_custom:total_gene_count 10197 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003743 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001634 a FBcv:0009003 ;
+    rdfs:label "centrifugal neuron C3 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1732 ;
+    neo_custom:filtered_gene_count 637 ;
+    neo_custom:total_gene_count 10323 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003744 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001635 a FBcv:0009003 ;
+    rdfs:label "columnar neuron T1 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 4216 ;
+    neo_custom:filtered_gene_count 1011 ;
+    neo_custom:total_gene_count 12086 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003727 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001636 a FBcv:0009003 ;
+    rdfs:label "cone cell cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 17669 ;
+    neo_custom:filtered_gene_count 814 ;
+    neo_custom:total_gene_count 13159 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00004193 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001637 a FBcv:0009003 ;
+    rdfs:label "distal medullary amacrine neuron Dm10 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 690 ;
+    neo_custom:filtered_gene_count 622 ;
+    neo_custom:total_gene_count 8988 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00110135 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001638 a FBcv:0009003 ;
+    rdfs:label "distal medullary amacrine neuron Dm12 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 328 ;
+    neo_custom:filtered_gene_count 678 ;
+    neo_custom:total_gene_count 7820 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00111273 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001639 a FBcv:0009003 ;
+    rdfs:label "distal medullary amacrine neuron Dm3 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 956 ;
+    neo_custom:filtered_gene_count 536 ;
+    neo_custom:total_gene_count 9278 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003770 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001640 a FBcv:0009003 ;
+    rdfs:label "distal medullary amacrine neuron Dm8 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1188 ;
+    neo_custom:filtered_gene_count 642 ;
+    neo_custom:total_gene_count 9558 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00013774 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001641 a FBcv:0009003 ;
+    rdfs:label "distal medullary amacrine neuron Dm9 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 571 ;
+    neo_custom:filtered_gene_count 845 ;
+    neo_custom:total_gene_count 9122 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00111271 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001642 a FBcv:0009003 ;
+    rdfs:label "dopaminergic PAM neuron cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 493 ;
+    neo_custom:filtered_gene_count 898 ;
+    neo_custom:total_gene_count 8975 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00100214 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001643 a FBcv:0009003 ;
+    rdfs:label "ensheathing glial cell cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 4619 ;
+    neo_custom:filtered_gene_count 687 ;
+    neo_custom:total_gene_count 11689 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00100504 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001644 a FBcv:0009003 ;
+    rdfs:label "epithelial cell_head cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 14114 ;
+    neo_custom:filtered_gene_count 730 ;
+    neo_custom:total_gene_count 12943 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00058238 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001645 a FBcv:0009003 ;
+    rdfs:label "gamma Kenyon cell cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 2575 ;
+    neo_custom:filtered_gene_count 979 ;
+    neo_custom:total_gene_count 11243 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00049828 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001646 a FBcv:0009003 ;
+    rdfs:label "hemocyte_head cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1285 ;
+    neo_custom:filtered_gene_count 1254 ;
+    neo_custom:total_gene_count 11280 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00058143 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001647 a FBcv:0009003 ;
+    rdfs:label "lamina intrinsic amacrine neuron Lai cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 980 ;
+    neo_custom:filtered_gene_count 802 ;
+    neo_custom:total_gene_count 9873 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003746 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001648 a FBcv:0009003 ;
+    rdfs:label "lamina monopolar neuron L1 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 2554 ;
+    neo_custom:filtered_gene_count 749 ;
+    neo_custom:total_gene_count 11081 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003719 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001649 a FBcv:0009003 ;
+    rdfs:label "lamina monopolar neuron L2 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 3414 ;
+    neo_custom:filtered_gene_count 905 ;
+    neo_custom:total_gene_count 11596 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003720 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001650 a FBcv:0009003 ;
+    rdfs:label "lamina monopolar neuron L3 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 2543 ;
+    neo_custom:filtered_gene_count 711 ;
+    neo_custom:total_gene_count 10876 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003721 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001651 a FBcv:0009003 ;
+    rdfs:label "lamina monopolar neuron L4 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1596 ;
+    neo_custom:filtered_gene_count 563 ;
+    neo_custom:total_gene_count 10206 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003722 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001652 a FBcv:0009003 ;
+    rdfs:label "lamina monopolar neuron L5 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1497 ;
+    neo_custom:filtered_gene_count 578 ;
+    neo_custom:total_gene_count 10014 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003725 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001653 a FBcv:0009003 ;
+    rdfs:label "lamina wide-field 1 neuron cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 547 ;
+    neo_custom:filtered_gene_count 806 ;
+    neo_custom:total_gene_count 9080 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003741 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001654 a FBcv:0009003 ;
+    rdfs:label "lamina wide-field 2 neuron cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 563 ;
+    neo_custom:filtered_gene_count 828 ;
+    neo_custom:total_gene_count 9089 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00110065 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001655 a FBcv:0009003 ;
+    rdfs:label "lobula columnar neuron LC10 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 600 ;
+    neo_custom:filtered_gene_count 815 ;
+    neo_custom:total_gene_count 9103 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00100482 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001656 a FBcv:0009003 ;
+    rdfs:label "lobula columnar neuron LC12 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 41 ;
+    neo_custom:filtered_gene_count 964 ;
+    neo_custom:total_gene_count 4704 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00100484 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001657 a FBcv:0009003 ;
+    rdfs:label "lobula columnar neuron LC17 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 526 ;
+    neo_custom:filtered_gene_count 756 ;
+    neo_custom:total_gene_count 8776 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00111752 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001658 a FBcv:0009003 ;
+    rdfs:label "medullary intrinsic neuron Mi1 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 2681 ;
+    neo_custom:filtered_gene_count 855 ;
+    neo_custom:total_gene_count 11113 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003776 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001659 a FBcv:0009003 ;
+    rdfs:label "medullary intrinsic neuron Mi15 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 603 ;
+    neo_custom:filtered_gene_count 575 ;
+    neo_custom:total_gene_count 8614 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00111285 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001660 a FBcv:0009003 ;
+    rdfs:label "medullary intrinsic neuron Mi4 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 2196 ;
+    neo_custom:filtered_gene_count 712 ;
+    neo_custom:total_gene_count 10709 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003779 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001661 a FBcv:0009003 ;
+    rdfs:label "medullary intrinsic neuron Mi9 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 863 ;
+    neo_custom:filtered_gene_count 580 ;
+    neo_custom:total_gene_count 8883 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003784 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001662 a FBcv:0009003 ;
+    rdfs:label "ocellus retinula cell cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 283 ;
+    neo_custom:filtered_gene_count 929 ;
+    neo_custom:total_gene_count 8081 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00004242 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001663 a FBcv:0009003 ;
+    rdfs:label "octopaminergic/tyraminergic neuron cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 94 ;
+    neo_custom:filtered_gene_count 1158 ;
+    neo_custom:total_gene_count 6664 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00058201 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001664 a FBcv:0009003 ;
+    rdfs:label "olfactory receptor neuron cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 5415 ;
+    neo_custom:filtered_gene_count 1011 ;
+    neo_custom:total_gene_count 12422 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00007386 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001665 a FBcv:0009003 ;
+    rdfs:label "optic-lobe-associated cortex glial cell cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1485 ;
+    neo_custom:filtered_gene_count 1032 ;
+    neo_custom:total_gene_count 11080 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00111302 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001666 a FBcv:0009003 ;
+    rdfs:label "outer photoreceptor cell cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 21239 ;
+    neo_custom:filtered_gene_count 1112 ;
+    neo_custom:total_gene_count 13391 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00006007 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001667 a FBcv:0009003 ;
+    rdfs:label "pericerebral adult fat mass cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 4140 ;
+    neo_custom:filtered_gene_count 1631 ;
+    neo_custom:total_gene_count 12602 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00058267 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001668 a FBcv:0009003 ;
+    rdfs:label "photoreceptor cell R7 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 2092 ;
+    neo_custom:filtered_gene_count 801 ;
+    neo_custom:total_gene_count 10838 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00004225 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001669 a FBcv:0009003 ;
+    rdfs:label "photoreceptor cell R8 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 3108 ;
+    neo_custom:filtered_gene_count 845 ;
+    neo_custom:total_gene_count 11342 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00004227 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001670 a FBcv:0009003 ;
+    rdfs:label "pigment cell cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 4100 ;
+    neo_custom:filtered_gene_count 631 ;
+    neo_custom:total_gene_count 11420 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00004230 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001671 a FBcv:0009003 ;
+    rdfs:label "proximal medullary amacrine neuron Pm2 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 323 ;
+    neo_custom:filtered_gene_count 840 ;
+    neo_custom:total_gene_count 8306 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003835 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001672 a FBcv:0009003 ;
+    rdfs:label "proximal medullary amacrine neuron Pm4 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 252 ;
+    neo_custom:filtered_gene_count 911 ;
+    neo_custom:total_gene_count 8122 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00111282 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001673 a FBcv:0009003 ;
+    rdfs:label "skeletal muscle of head cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 7765 ;
+    neo_custom:filtered_gene_count 992 ;
+    neo_custom:total_gene_count 12991 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003260 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001674 a FBcv:0009003 ;
+    rdfs:label "subperineurial glial cell_head cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 993 ;
+    neo_custom:filtered_gene_count 1001 ;
+    neo_custom:total_gene_count 10760 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00058254 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001675 a FBcv:0009003 ;
+    rdfs:label "transmedullary Y neuron TmY14 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 664 ;
+    neo_custom:filtered_gene_count 774 ;
+    neo_custom:total_gene_count 9225 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00111286 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001676 a FBcv:0009003 ;
+    rdfs:label "transmedullary Y neuron TmY4 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 526 ;
+    neo_custom:filtered_gene_count 633 ;
+    neo_custom:total_gene_count 8444 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003821 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001677 a FBcv:0009003 ;
+    rdfs:label "transmedullary Y neuron TmY5a cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1431 ;
+    neo_custom:filtered_gene_count 662 ;
+    neo_custom:total_gene_count 9868 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003823 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001678 a FBcv:0009003 ;
+    rdfs:label "transmedullary Y neuron TmY8 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1010 ;
+    neo_custom:filtered_gene_count 623 ;
+    neo_custom:total_gene_count 9551 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003826 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001679 a FBcv:0009003 ;
+    rdfs:label "transmedullary neuron Tm1 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 2454 ;
+    neo_custom:filtered_gene_count 754 ;
+    neo_custom:total_gene_count 10836 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003789 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001680 a FBcv:0009003 ;
+    rdfs:label "transmedullary neuron Tm2 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1957 ;
+    neo_custom:filtered_gene_count 726 ;
+    neo_custom:total_gene_count 10523 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003790 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001681 a FBcv:0009003 ;
+    rdfs:label "transmedullary neuron Tm20 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 913 ;
+    neo_custom:filtered_gene_count 698 ;
+    neo_custom:total_gene_count 9273 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003808 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001682 a FBcv:0009003 ;
+    rdfs:label "transmedullary neuron Tm29 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 342 ;
+    neo_custom:filtered_gene_count 1091 ;
+    neo_custom:total_gene_count 8898 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00049916 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001683 a FBcv:0009003 ;
+    rdfs:label "transmedullary neuron Tm3a cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 2019 ;
+    neo_custom:filtered_gene_count 628 ;
+    neo_custom:total_gene_count 10321 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003791 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001684 a FBcv:0009003 ;
+    rdfs:label "transmedullary neuron Tm4 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1158 ;
+    neo_custom:filtered_gene_count 637 ;
+    neo_custom:total_gene_count 9481 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003792 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001685 a FBcv:0009003 ;
+    rdfs:label "transmedullary neuron Tm5c cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 459 ;
+    neo_custom:filtered_gene_count 583 ;
+    neo_custom:total_gene_count 8169 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00110074 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001686 a FBcv:0009003 ;
+    rdfs:label "transmedullary neuron Tm9 cluster (Aging Fly Cell Atlas head) (Lu 2023)" ;
+    neo_custom:cell_count 1193 ;
+    neo_custom:filtered_gene_count 579 ;
+    neo_custom:total_gene_count 9709 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001613 ;
+    RO:0002473 FBbt:00003797 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001687 a FBcv:0009003 ;
+    rdfs:label "16-cell germline cyst in germarium region 2a and 2b cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 532 ;
+    neo_custom:filtered_gene_count 1627 ;
+    neo_custom:total_gene_count 10651 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00059160 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001688 a FBcv:0009003 ;
+    rdfs:label "CNS surface associated glial cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 212 ;
+    neo_custom:filtered_gene_count 496 ;
+    neo_custom:total_gene_count 7004 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00001252 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001689 a FBcv:0009003 ;
+    rdfs:label "adult Malpighian tubule principal cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 47 ;
+    neo_custom:filtered_gene_count 564 ;
+    neo_custom:total_gene_count 5289 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00005735 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001690 a FBcv:0009003 ;
+    rdfs:label "adult Malpighian tubule principal cell of initial segment cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 70 ;
+    neo_custom:filtered_gene_count 729 ;
+    neo_custom:total_gene_count 6680 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00049474 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001691 a FBcv:0009003 ;
+    rdfs:label "adult Malpighian tubule principal cell of lower segment cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 52 ;
+    neo_custom:filtered_gene_count 1146 ;
+    neo_custom:total_gene_count 5795 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00049477 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001692 a FBcv:0009003 ;
+    rdfs:label "adult Malpighian tubule principal cell of lower ureter cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 35 ;
+    neo_custom:filtered_gene_count 1516 ;
+    neo_custom:total_gene_count 5910 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00049478 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001693 a FBcv:0009003 ;
+    rdfs:label "adult Malpighian tubule stellate cell of main segment cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 10 ;
+    neo_custom:filtered_gene_count 1399 ;
+    neo_custom:total_gene_count 4083 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00047102 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001694 a FBcv:0009003 ;
+    rdfs:label "adult alary muscle cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 2737 ;
+    neo_custom:filtered_gene_count 707 ;
+    neo_custom:total_gene_count 12062 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00003545 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001695 a FBcv:0009003 ;
+    rdfs:label "adult differentiating enterocyte cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 72 ;
+    neo_custom:filtered_gene_count 2299 ;
+    neo_custom:total_gene_count 8620 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00049281 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001696 a FBcv:0009003 ;
+    rdfs:label "adult fat body_body cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 31378 ;
+    neo_custom:filtered_gene_count 1435 ;
+    neo_custom:total_gene_count 14770 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00049949 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001697 a FBcv:0009003 ;
+    rdfs:label "adult glial cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 2173 ;
+    neo_custom:filtered_gene_count 597 ;
+    neo_custom:total_gene_count 12214 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00100497 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001698 a FBcv:0009003 ;
+    rdfs:label "adult heart ventral longitudinal muscle cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 112 ;
+    neo_custom:filtered_gene_count 827 ;
+    neo_custom:total_gene_count 6495 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00003550 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001699 a FBcv:0009003 ;
+    rdfs:label "adult hindgut cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 715 ;
+    neo_custom:filtered_gene_count 1513 ;
+    neo_custom:total_gene_count 11559 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058276 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001700 a FBcv:0009003 ;
+    rdfs:label "adult midgut enterocyte cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 99 ;
+    neo_custom:filtered_gene_count 1175 ;
+    neo_custom:total_gene_count 8165 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00047182 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001701 a FBcv:0009003 ;
+    rdfs:label "adult midgut-hindgut hybrid zone cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 582 ;
+    neo_custom:filtered_gene_count 748 ;
+    neo_custom:total_gene_count 9646 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058275 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001702 a FBcv:0009003 ;
+    rdfs:label "adult oenocyte cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 5937 ;
+    neo_custom:filtered_gene_count 1148 ;
+    neo_custom:total_gene_count 13564 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00003185 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001703 a FBcv:0009003 ;
+    rdfs:label "adult peripheral nervous system cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 5958 ;
+    neo_custom:filtered_gene_count 813 ;
+    neo_custom:total_gene_count 13638 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00059276 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001704 a FBcv:0009003 ;
+    rdfs:label "adult reticular neuropil associated glial cell_body cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 540 ;
+    neo_custom:filtered_gene_count 464 ;
+    neo_custom:total_gene_count 9533 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00047841 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001705 a FBcv:0009003 ;
+    rdfs:label "adult salivary gland cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 587 ;
+    neo_custom:filtered_gene_count 1426 ;
+    neo_custom:total_gene_count 10371 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00059269 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001706 a FBcv:0009003 ;
+    rdfs:label "adult tracheal cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 7033 ;
+    neo_custom:filtered_gene_count 751 ;
+    neo_custom:total_gene_count 13784 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00005040 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001707 a FBcv:0009003 ;
+    rdfs:label "adult ventral nervous system cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 22631 ;
+    neo_custom:filtered_gene_count 1163 ;
+    neo_custom:total_gene_count 14934 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00059289 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001708 a FBcv:0009003 ;
+    rdfs:label "anterior ejaculatory duct cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 189 ;
+    neo_custom:filtered_gene_count 1371 ;
+    neo_custom:total_gene_count 8755 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058271 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001709 a FBcv:0009003 ;
+    rdfs:label "antimicrobial peptide-producing cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 106 ;
+    neo_custom:filtered_gene_count 1348 ;
+    neo_custom:total_gene_count 7387 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00059377 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001710 a FBcv:0009003 ;
+    rdfs:label "cardia (1) cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 1064 ;
+    neo_custom:filtered_gene_count 1347 ;
+    neo_custom:total_gene_count 10771 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058282 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001711 a FBcv:0009003 ;
+    rdfs:label "cardia (2) cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 60 ;
+    neo_custom:filtered_gene_count 1181 ;
+    neo_custom:total_gene_count 6091 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058282 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001712 a FBcv:0009003 ;
+    rdfs:label "cardiomyocyte, working adult heart muscle (non-ostia) cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 34 ;
+    neo_custom:filtered_gene_count 1585 ;
+    neo_custom:total_gene_count 5709 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058240 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001713 a FBcv:0009003 ;
+    rdfs:label "cell body glial cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 2347 ;
+    neo_custom:filtered_gene_count 770 ;
+    neo_custom:total_gene_count 12378 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00059270 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001714 a FBcv:0009003 ;
+    rdfs:label "copper cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 153 ;
+    neo_custom:filtered_gene_count 1148 ;
+    neo_custom:total_gene_count 8267 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00110908 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001715 a FBcv:0009003 ;
+    rdfs:label "crop cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 6283 ;
+    neo_custom:filtered_gene_count 957 ;
+    neo_custom:total_gene_count 13560 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058263 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001716 a FBcv:0009003 ;
+    rdfs:label "cyst cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 201 ;
+    neo_custom:filtered_gene_count 869 ;
+    neo_custom:total_gene_count 9406 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00004931 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001717 a FBcv:0009003 ;
+    rdfs:label "ejaculatory bulb cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 1401 ;
+    neo_custom:filtered_gene_count 1403 ;
+    neo_custom:total_gene_count 11966 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058269 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001718 a FBcv:0009003 ;
+    rdfs:label "ejaculatory bulb epithelium cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 549 ;
+    neo_custom:filtered_gene_count 1434 ;
+    neo_custom:total_gene_count 10612 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058269 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001719 a FBcv:0009003 ;
+    rdfs:label "enteroblast cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 2417 ;
+    neo_custom:filtered_gene_count 1158 ;
+    neo_custom:total_gene_count 12286 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00110205 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001720 a FBcv:0009003 ;
+    rdfs:label "enterocyte of anterior adult midgut epithelium cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 182 ;
+    neo_custom:filtered_gene_count 1790 ;
+    neo_custom:total_gene_count 8858 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00049280 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001721 a FBcv:0009003 ;
+    rdfs:label "enterocyte of posterior adult midgut epithelium cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 752 ;
+    neo_custom:filtered_gene_count 1872 ;
+    neo_custom:total_gene_count 11487 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00007037 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001722 a FBcv:0009003 ;
+    rdfs:label "enterocyte-like cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 261 ;
+    neo_custom:filtered_gene_count 1373 ;
+    neo_custom:total_gene_count 8954 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00047147 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001723 a FBcv:0009003 ;
+    rdfs:label "enteroendocrine cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 557 ;
+    neo_custom:filtered_gene_count 849 ;
+    neo_custom:total_gene_count 10225 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00047149 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001724 a FBcv:0009003 ;
+    rdfs:label "eo support cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 2474 ;
+    neo_custom:filtered_gene_count 604 ;
+    neo_custom:total_gene_count 11985 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00007254 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001725 a FBcv:0009003 ;
+    rdfs:label "epidermal cell that specialized in antimicrobial response cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 99 ;
+    neo_custom:filtered_gene_count 645 ;
+    neo_custom:total_gene_count 7282 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058242 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001726 a FBcv:0009003 ;
+    rdfs:label "epithelial cell_body cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 44094 ;
+    neo_custom:filtered_gene_count 611 ;
+    neo_custom:total_gene_count 14985 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058238 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001727 a FBcv:0009003 ;
+    rdfs:label "escort cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 756 ;
+    neo_custom:filtered_gene_count 1155 ;
+    neo_custom:total_gene_count 10370 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00006049 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001728 a FBcv:0009003 ;
+    rdfs:label "follicle cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 25738 ;
+    neo_custom:filtered_gene_count 989 ;
+    neo_custom:total_gene_count 14007 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00004904 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001729 a FBcv:0009003 ;
+    rdfs:label "follicle stem cell and prefollicle cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 430 ;
+    neo_custom:filtered_gene_count 880 ;
+    neo_custom:total_gene_count 8482 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00006030 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001730 a FBcv:0009003 ;
+    rdfs:label "germline cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 3824 ;
+    neo_custom:filtered_gene_count 1181 ;
+    neo_custom:total_gene_count 12217 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00004860 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001731 a FBcv:0009003 ;
+    rdfs:label "gustatory receptor neuron cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 701 ;
+    neo_custom:filtered_gene_count 730 ;
+    neo_custom:total_gene_count 9932 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058249 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001732 a FBcv:0009003 ;
+    rdfs:label "hemocyte_body cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 3027 ;
+    neo_custom:filtered_gene_count 909 ;
+    neo_custom:total_gene_count 12716 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058143 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001733 a FBcv:0009003 ;
+    rdfs:label "indirect flight muscle cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 18057 ;
+    neo_custom:filtered_gene_count 612 ;
+    neo_custom:total_gene_count 14492 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00003361 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001734 a FBcv:0009003 ;
+    rdfs:label "intestinal stem cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 2158 ;
+    neo_custom:filtered_gene_count 878 ;
+    neo_custom:total_gene_count 12024 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00007039 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001735 a FBcv:0009003 ;
+    rdfs:label "leg muscle motor neuron cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 359 ;
+    neo_custom:filtered_gene_count 1618 ;
+    neo_custom:total_gene_count 10484 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00049568 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001736 a FBcv:0009003 ;
+    rdfs:label "male accessory gland main cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 2015 ;
+    neo_custom:filtered_gene_count 1622 ;
+    neo_custom:total_gene_count 12993 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00004960 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001737 a FBcv:0009003 ;
+    rdfs:label "male accessory gland secondary cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 20 ;
+    neo_custom:filtered_gene_count 1092 ;
+    neo_custom:total_gene_count 4294 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00004961 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001738 a FBcv:0009003 ;
+    rdfs:label "mechanosensory neuron of haltere cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 645 ;
+    neo_custom:filtered_gene_count 870 ;
+    neo_custom:total_gene_count 10298 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00051420 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001739 a FBcv:0009003 ;
+    rdfs:label "midgut large flat cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 73 ;
+    neo_custom:filtered_gene_count 2056 ;
+    neo_custom:total_gene_count 7956 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00110912 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001740 a FBcv:0009003 ;
+    rdfs:label "multidendritic neuron cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 263 ;
+    neo_custom:filtered_gene_count 1154 ;
+    neo_custom:total_gene_count 9490 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00048284 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001741 a FBcv:0009003 ;
+    rdfs:label "muscle cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 54592 ;
+    neo_custom:filtered_gene_count 624 ;
+    neo_custom:total_gene_count 15078 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001742 a FBcv:0009003 ;
+    rdfs:label "oviduct cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 1517 ;
+    neo_custom:filtered_gene_count 1080 ;
+    neo_custom:total_gene_count 11096 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058273 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001743 a FBcv:0009003 ;
+    rdfs:label "perineurial glial sheath cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 2228 ;
+    neo_custom:filtered_gene_count 560 ;
+    neo_custom:total_gene_count 12254 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058251 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001744 a FBcv:0009003 ;
+    rdfs:label "pheromone-sensing neuron cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 675 ;
+    neo_custom:filtered_gene_count 756 ;
+    neo_custom:total_gene_count 10036 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058247 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001745 a FBcv:0009003 ;
+    rdfs:label "polar follicle cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 304 ;
+    neo_custom:filtered_gene_count 1113 ;
+    neo_custom:total_gene_count 8887 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00004907 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001746 a FBcv:0009003 ;
+    rdfs:label "posterior midgut* cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 117 ;
+    neo_custom:filtered_gene_count 1362 ;
+    neo_custom:total_gene_count 7312 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00007037 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001747 a FBcv:0009003 ;
+    rdfs:label "prefollicle cell/stalk follicle cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 275 ;
+    neo_custom:filtered_gene_count 1164 ;
+    neo_custom:total_gene_count 9266 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00006030 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001748 a FBcv:0009003 ;
+    rdfs:label "principal cell* cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 131 ;
+    neo_custom:filtered_gene_count 466 ;
+    neo_custom:total_gene_count 7574 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00005735 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001749 a FBcv:0009003 ;
+    rdfs:label "scolopidial neuron cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 1306 ;
+    neo_custom:filtered_gene_count 894 ;
+    neo_custom:total_gene_count 11689 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058257 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001750 a FBcv:0009003 ;
+    rdfs:label "seminal vesicle & testis epithelia cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 635 ;
+    neo_custom:filtered_gene_count 1214 ;
+    neo_custom:total_gene_count 11178 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058238 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001751 a FBcv:0009003 ;
+    rdfs:label "spermatid cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 131 ;
+    neo_custom:filtered_gene_count 334 ;
+    neo_custom:total_gene_count 8160 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00004942 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001752 a FBcv:0009003 ;
+    rdfs:label "spermatocyte cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 90 ;
+    neo_custom:filtered_gene_count 909 ;
+    neo_custom:total_gene_count 10260 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00004936 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001753 a FBcv:0009003 ;
+    rdfs:label "stalk follicle cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 293 ;
+    neo_custom:filtered_gene_count 681 ;
+    neo_custom:total_gene_count 7628 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00004910 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001754 a FBcv:0009003 ;
+    rdfs:label "subperineurial glial cell_body cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 1451 ;
+    neo_custom:filtered_gene_count 608 ;
+    neo_custom:total_gene_count 11529 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00058254 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001755 a FBcv:0009003 ;
+    rdfs:label "visceral muscle of the crop cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 764 ;
+    neo_custom:filtered_gene_count 836 ;
+    neo_custom:total_gene_count 10606 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00003532 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001756 a FBcv:0009003 ;
+    rdfs:label "visceral muscle of the midgut cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 1256 ;
+    neo_custom:filtered_gene_count 1134 ;
+    neo_custom:total_gene_count 11482 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00003534 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001757 a FBcv:0009003 ;
+    rdfs:label "young germ cell cluster (Aging Fly Cell Atlas body) (Lu 2023)" ;
+    neo_custom:cell_count 224 ;
+    neo_custom:filtered_gene_count 1085 ;
+    neo_custom:total_gene_count 8582 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00001614 ;
+    RO:0002473 FBbt:00057012 ;
+    dcterms:source VFBseq:00001468 .
+
+FlyBase:FBrf0256843 a FBcv:0000212 ;
+    neo_property:nodeLabel "pub" .
+
+VFBseq:00001470 a FBcv:0003025 ;
+    rdfs:label "body, 30d, Female rep S1, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001469 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754252",
+        "SAMN31853267",
+        "SRX18367270" .
+
+VFBseq:00001472 a FBcv:0003025 ;
+    rdfs:label "body, 30d, Female rep S2, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001471 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754253",
+        "SAMN31853269",
+        "SRX18367271" .
+
+VFBseq:00001474 a FBcv:0003025 ;
+    rdfs:label "body, 30d, Female rep S3, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001473 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754254",
+        "SAMN31853270",
+        "SRX18367272" .
+
+VFBseq:00001476 a FBcv:0003025 ;
+    rdfs:label "body, 30d, Female rep S4, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001475 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754255",
+        "SAMN31853272",
+        "SRX18367273" .
+
+VFBseq:00001478 a FBcv:0003025 ;
+    rdfs:label "body, 30d, Female rep S5, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001477 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754256",
+        "SAMN31853295",
+        "SRX18367274" .
+
+VFBseq:00001480 a FBcv:0003025 ;
+    rdfs:label "body, 30d, Female rep S6, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001479 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754257",
+        "SAMN31853296",
+        "SRX18367275" .
+
+VFBseq:00001482 a FBcv:0003025 ;
+    rdfs:label "body, 50d, Female rep S1, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001481 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754276",
+        "SAMN31853315",
+        "SRX18367294" .
+
+VFBseq:00001484 a FBcv:0003025 ;
+    rdfs:label "body, 50d, Female rep S2, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001483 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754277",
+        "SAMN31853316",
+        "SRX18367295" .
+
+VFBseq:00001486 a FBcv:0003025 ;
+    rdfs:label "body, 50d, Female rep S3, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001485 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754278",
+        "SAMN31853317",
+        "SRX18367296" .
+
+VFBseq:00001488 a FBcv:0003025 ;
+    rdfs:label "body, 50d, Female rep S4, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001487 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754279",
+        "SAMN31853318",
+        "SRX18367297" .
+
+VFBseq:00001490 a FBcv:0003025 ;
+    rdfs:label "body, 50d, Female rep S5, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001489 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754280",
+        "SAMN31853319",
+        "SRX18367298" .
+
+VFBseq:00001492 a FBcv:0003025 ;
+    rdfs:label "body, 50d, Female rep S6, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001491 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754281",
+        "SAMN31853320",
+        "SRX18367299" .
+
+VFBseq:00001494 a FBcv:0003025 ;
+    rdfs:label "body, 70d, Female rep S1, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001493 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754300",
+        "SAMN31853255",
+        "SRX18367318" .
+
+VFBseq:00001496 a FBcv:0003025 ;
+    rdfs:label "body, 70d, Female rep S2, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001495 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754301",
+        "SAMN31853256",
+        "SRX18367319" .
+
+VFBseq:00001498 a FBcv:0003025 ;
+    rdfs:label "body, 70d, Female rep S3, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001497 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754302",
+        "SAMN31853258",
+        "SRX18367320" .
+
+VFBseq:00001500 a FBcv:0003025 ;
+    rdfs:label "body, 70d, Female rep S4, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001499 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754303",
+        "SAMN31853259",
+        "SRX18367321" .
+
+VFBseq:00001502 a FBcv:0003025 ;
+    rdfs:label "body, 70d, Female rep S5, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001501 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754304",
+        "SAMN31853261",
+        "SRX18367322" .
+
+VFBseq:00001504 a FBcv:0003025 ;
+    rdfs:label "body, 70d, Female rep S6, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001503 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754305",
+        "SAMN31853262",
+        "SRX18367323" .
+
+VFBseq:00001506 a FBcv:0003025 ;
+    rdfs:label "head, 30d, Female rep S1, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001505 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754246",
+        "SAMN31853290",
+        "SRX18367264" .
+
+VFBseq:00001508 a FBcv:0003025 ;
+    rdfs:label "head, 30d, Female rep S2, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001507 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754247",
+        "SAMN31853292",
+        "SRX18367265" .
+
+VFBseq:00001510 a FBcv:0003025 ;
+    rdfs:label "head, 30d, Female rep S3, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001509 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754248",
+        "SAMN31853293",
+        "SRX18367266" .
+
+VFBseq:00001512 a FBcv:0003025 ;
+    rdfs:label "head, 30d, Female rep S4, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001511 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754249",
+        "SAMN31853263",
+        "SRX18367267" .
+
+VFBseq:00001514 a FBcv:0003025 ;
+    rdfs:label "head, 30d, Female rep S5, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001513 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754250",
+        "SAMN31853265",
+        "SRX18367268" .
+
+VFBseq:00001516 a FBcv:0003025 ;
+    rdfs:label "head, 30d, Female rep S6, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001515 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754251",
+        "SAMN31853266",
+        "SRX18367269" .
+
+VFBseq:00001518 a FBcv:0003025 ;
+    rdfs:label "head, 50d, Female rep S1, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001517 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754270",
+        "SAMN31853309",
+        "SRX18367288" .
+
+VFBseq:00001520 a FBcv:0003025 ;
+    rdfs:label "head, 50d, Female rep S2, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001519 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754271",
+        "SAMN31853310",
+        "SRX18367289" .
+
+VFBseq:00001522 a FBcv:0003025 ;
+    rdfs:label "head, 50d, Female rep S3, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001521 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754272",
+        "SAMN31853311",
+        "SRX18367290" .
+
+VFBseq:00001524 a FBcv:0003025 ;
+    rdfs:label "head, 50d, Female rep S4, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001523 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754273",
+        "SAMN31853312",
+        "SRX18367291" .
+
+VFBseq:00001526 a FBcv:0003025 ;
+    rdfs:label "head, 50d, Female rep S5, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001525 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754274",
+        "SAMN31853313",
+        "SRX18367292" .
+
+VFBseq:00001528 a FBcv:0003025 ;
+    rdfs:label "head, 50d, Female rep S6, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001527 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754275",
+        "SAMN31853314",
+        "SRX18367293" .
+
+VFBseq:00001530 a FBcv:0003025 ;
+    rdfs:label "head, 70d, Female rep S1, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001529 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754294",
+        "SAMN31853241",
+        "SRX18367312" .
+
+VFBseq:00001532 a FBcv:0003025 ;
+    rdfs:label "head, 70d, Female rep S2, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001531 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754295",
+        "SAMN31853248",
+        "SRX18367313" .
+
+VFBseq:00001534 a FBcv:0003025 ;
+    rdfs:label "head, 70d, Female rep S3, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001533 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754296",
+        "SAMN31853249",
+        "SRX18367314" .
+
+VFBseq:00001536 a FBcv:0003025 ;
+    rdfs:label "head, 70d, Female rep S4, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001535 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754297",
+        "SAMN31853251",
+        "SRX18367315" .
+
+VFBseq:00001538 a FBcv:0003025 ;
+    rdfs:label "head, 70d, Female rep S5, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001537 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754298",
+        "SAMN31853252",
+        "SRX18367316" .
+
+VFBseq:00001540 a FBcv:0003025 ;
+    rdfs:label "head, 70d, Female rep S6, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001539 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754299",
+        "SAMN31853254",
+        "SRX18367317" .
+
+VFBseq:00001542 a FBcv:0003025 ;
+    rdfs:label "body, 30d, Male rep S1, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001541 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754240",
+        "SAMN31853282",
+        "SRX18367258" .
+
+VFBseq:00001544 a FBcv:0003025 ;
+    rdfs:label "body, 30d, Male rep S2, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001543 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754241",
+        "SAMN31853283",
+        "SRX18367259" .
+
+VFBseq:00001546 a FBcv:0003025 ;
+    rdfs:label "body, 30d, Male rep S3, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001545 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754242",
+        "SAMN31853285",
+        "SRX18367260" .
+
+VFBseq:00001548 a FBcv:0003025 ;
+    rdfs:label "body, 30d, Male rep S4, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001547 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754243",
+        "SAMN31853286",
+        "SRX18367261" .
+
+VFBseq:00001550 a FBcv:0003025 ;
+    rdfs:label "body, 30d, Male rep S5, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001549 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754244",
+        "SAMN31853288",
+        "SRX18367262" .
+
+VFBseq:00001552 a FBcv:0003025 ;
+    rdfs:label "body, 30d, Male rep S6, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001551 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754245",
+        "SAMN31853289",
+        "SRX18367263" .
+
+VFBseq:00001554 a FBcv:0003025 ;
+    rdfs:label "body, 50d, Male rep S1, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001553 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754264",
+        "SAMN31853303",
+        "SRX18367282" .
+
+VFBseq:00001556 a FBcv:0003025 ;
+    rdfs:label "body, 50d, Male rep S2, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001555 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754265",
+        "SAMN31853304",
+        "SRX18367283" .
+
+VFBseq:00001558 a FBcv:0003025 ;
+    rdfs:label "body, 50d, Male rep S3, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001557 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754266",
+        "SAMN31853305",
+        "SRX18367284" .
+
+VFBseq:00001560 a FBcv:0003025 ;
+    rdfs:label "body, 50d, Male rep S4, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001559 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754267",
+        "SAMN31853306",
+        "SRX18367285" .
+
+VFBseq:00001562 a FBcv:0003025 ;
+    rdfs:label "body, 50d, Male rep S5, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001561 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754268",
+        "SAMN31853307",
+        "SRX18367286" .
+
+VFBseq:00001564 a FBcv:0003025 ;
+    rdfs:label "body, 50d, Male rep S6, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001563 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754269",
+        "SAMN31853308",
+        "SRX18367287" .
+
+VFBseq:00001566 a FBcv:0003025 ;
+    rdfs:label "body, 70d, Male rep S1, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001565 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754288",
+        "SAMN31853238",
+        "SRX18367306" .
+
+VFBseq:00001568 a FBcv:0003025 ;
+    rdfs:label "body, 70d, Male rep S2, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001567 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754289",
+        "SAMN31853239",
+        "SRX18367307" .
+
+VFBseq:00001570 a FBcv:0003025 ;
+    rdfs:label "body, 70d, Male rep S3, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001569 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754290",
+        "SAMN31853242",
+        "SRX18367308" .
+
+VFBseq:00001572 a FBcv:0003025 ;
+    rdfs:label "body, 70d, Male rep S4, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001571 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754291",
+        "SAMN31853244",
+        "SRX18367309" .
+
+VFBseq:00001574 a FBcv:0003025 ;
+    rdfs:label "body, 70d, Male rep S5, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001573 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754292",
+        "SAMN31853245",
+        "SRX18367310" .
+
+VFBseq:00001576 a FBcv:0003025 ;
+    rdfs:label "body, 70d, Male rep S6, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001575 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754293",
+        "SAMN31853246",
+        "SRX18367311" .
+
+VFBseq:00001578 a FBcv:0003025 ;
+    rdfs:label "head, 30d, Male rep S1, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001577 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754234",
+        "SAMN31853274",
+        "SRX18367252" .
+
+VFBseq:00001580 a FBcv:0003025 ;
+    rdfs:label "head, 30d, Male rep S2, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001579 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754235",
+        "SAMN31853275",
+        "SRX18367253" .
+
+VFBseq:00001582 a FBcv:0003025 ;
+    rdfs:label "head, 30d, Male rep S3, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001581 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754236",
+        "SAMN31853276",
+        "SRX18367254" .
+
+VFBseq:00001584 a FBcv:0003025 ;
+    rdfs:label "head, 30d, Male rep S4, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001583 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754237",
+        "SAMN31853277",
+        "SRX18367255" .
+
+VFBseq:00001586 a FBcv:0003025 ;
+    rdfs:label "head, 30d, Male rep S5, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001585 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754238",
+        "SAMN31853279",
+        "SRX18367256" .
+
+VFBseq:00001588 a FBcv:0003025 ;
+    rdfs:label "head, 30d, Male rep S6, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001587 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754239",
+        "SAMN31853281",
+        "SRX18367257" .
+
+VFBseq:00001590 a FBcv:0003025 ;
+    rdfs:label "head, 50d, Male rep S1, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001589 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754258",
+        "SAMN31853297",
+        "SRX18367276" .
+
+VFBseq:00001592 a FBcv:0003025 ;
+    rdfs:label "head, 50d, Male rep S2, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001591 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754259",
+        "SAMN31853298",
+        "SRX18367277" .
+
+VFBseq:00001594 a FBcv:0003025 ;
+    rdfs:label "head, 50d, Male rep S3, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001593 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754260",
+        "SAMN31853299",
+        "SRX18367278" .
+
+VFBseq:00001596 a FBcv:0003025 ;
+    rdfs:label "head, 50d, Male rep S4, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001595 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754261",
+        "SAMN31853300",
+        "SRX18367279" .
+
+VFBseq:00001598 a FBcv:0003025 ;
+    rdfs:label "head, 50d, Male rep S5, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001597 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754262",
+        "SAMN31853301",
+        "SRX18367280" .
+
+VFBseq:00001600 a FBcv:0003025 ;
+    rdfs:label "head, 50d, Male rep S6, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001599 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754263",
+        "SAMN31853302",
+        "SRX18367281" .
+
+VFBseq:00001602 a FBcv:0003025 ;
+    rdfs:label "head, 70d, Male rep S1, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001601 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754282",
+        "SAMN31853321",
+        "SRX18367300" .
+
+VFBseq:00001604 a FBcv:0003025 ;
+    rdfs:label "head, 70d, Male rep S2, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001603 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754283",
+        "SAMN31853322",
+        "SRX18367301" .
+
+VFBseq:00001606 a FBcv:0003025 ;
+    rdfs:label "head, 70d, Male rep S3, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001605 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754284",
+        "SAMN31853323",
+        "SRX18367302" .
+
+VFBseq:00001608 a FBcv:0003025 ;
+    rdfs:label "head, 70d, Male rep S4, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001607 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754285",
+        "SAMN31853324",
+        "SRX18367303" .
+
+VFBseq:00001610 a FBcv:0003025 ;
+    rdfs:label "head, 70d, Male rep S5, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001609 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754286",
+        "SAMN31853234",
+        "SRX18367304" .
+
+VFBseq:00001612 a FBcv:0003025 ;
+    rdfs:label "head, 70d, Male rep S6, 10x library (Lu 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00001611 ;
+    dcterms:source VFBseq:00001468 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM6754287",
+        "SAMN31853236",
+        "SRX18367305" .
+
+VFBseq:00001469 a FBcv:0003024 ;
+    rdfs:label "body, 30d, Female rep S1 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001470 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001471 a FBcv:0003024 ;
+    rdfs:label "body, 30d, Female rep S2 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001472 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001473 a FBcv:0003024 ;
+    rdfs:label "body, 30d, Female rep S3 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001474 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001475 a FBcv:0003024 ;
+    rdfs:label "body, 30d, Female rep S4 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001476 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001477 a FBcv:0003024 ;
+    rdfs:label "body, 30d, Female rep S5 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001478 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001479 a FBcv:0003024 ;
+    rdfs:label "body, 30d, Female rep S6 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001480 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001481 a FBcv:0003024 ;
+    rdfs:label "body, 50d, Female rep S1 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001482 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001483 a FBcv:0003024 ;
+    rdfs:label "body, 50d, Female rep S2 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001484 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001485 a FBcv:0003024 ;
+    rdfs:label "body, 50d, Female rep S3 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001486 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001487 a FBcv:0003024 ;
+    rdfs:label "body, 50d, Female rep S4 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001488 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001489 a FBcv:0003024 ;
+    rdfs:label "body, 50d, Female rep S5 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001490 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001491 a FBcv:0003024 ;
+    rdfs:label "body, 50d, Female rep S6 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001492 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001493 a FBcv:0003024 ;
+    rdfs:label "body, 70d, Female rep S1 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001494 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001495 a FBcv:0003024 ;
+    rdfs:label "body, 70d, Female rep S2 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001496 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001497 a FBcv:0003024 ;
+    rdfs:label "body, 70d, Female rep S3 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001498 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001499 a FBcv:0003024 ;
+    rdfs:label "body, 70d, Female rep S4 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001500 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001501 a FBcv:0003024 ;
+    rdfs:label "body, 70d, Female rep S5 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001502 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001503 a FBcv:0003024 ;
+    rdfs:label "body, 70d, Female rep S6 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001504 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001505 a FBcv:0003024 ;
+    rdfs:label "head, 30d, Female rep S1 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001506 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001507 a FBcv:0003024 ;
+    rdfs:label "head, 30d, Female rep S2 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001508 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001509 a FBcv:0003024 ;
+    rdfs:label "head, 30d, Female rep S3 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001510 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001511 a FBcv:0003024 ;
+    rdfs:label "head, 30d, Female rep S4 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001512 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001513 a FBcv:0003024 ;
+    rdfs:label "head, 30d, Female rep S5 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001514 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001515 a FBcv:0003024 ;
+    rdfs:label "head, 30d, Female rep S6 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001516 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001517 a FBcv:0003024 ;
+    rdfs:label "head, 50d, Female rep S1 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001518 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001519 a FBcv:0003024 ;
+    rdfs:label "head, 50d, Female rep S2 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001520 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001521 a FBcv:0003024 ;
+    rdfs:label "head, 50d, Female rep S3 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001522 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001523 a FBcv:0003024 ;
+    rdfs:label "head, 50d, Female rep S4 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001524 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001525 a FBcv:0003024 ;
+    rdfs:label "head, 50d, Female rep S5 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001526 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001527 a FBcv:0003024 ;
+    rdfs:label "head, 50d, Female rep S6 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001528 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001529 a FBcv:0003024 ;
+    rdfs:label "head, 70d, Female rep S1 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001530 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001531 a FBcv:0003024 ;
+    rdfs:label "head, 70d, Female rep S2 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001532 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001533 a FBcv:0003024 ;
+    rdfs:label "head, 70d, Female rep S3 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001534 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001535 a FBcv:0003024 ;
+    rdfs:label "head, 70d, Female rep S4 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001536 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001537 a FBcv:0003024 ;
+    rdfs:label "head, 70d, Female rep S5 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001538 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001539 a FBcv:0003024 ;
+    rdfs:label "head, 70d, Female rep S6 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001540 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001541 a FBcv:0003024 ;
+    rdfs:label "body, 30d, Male rep S1 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001542 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001543 a FBcv:0003024 ;
+    rdfs:label "body, 30d, Male rep S2 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001544 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001545 a FBcv:0003024 ;
+    rdfs:label "body, 30d, Male rep S3 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001546 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001547 a FBcv:0003024 ;
+    rdfs:label "body, 30d, Male rep S4 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001548 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001549 a FBcv:0003024 ;
+    rdfs:label "body, 30d, Male rep S5 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001550 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001551 a FBcv:0003024 ;
+    rdfs:label "body, 30d, Male rep S6 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001552 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001553 a FBcv:0003024 ;
+    rdfs:label "body, 50d, Male rep S1 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001554 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001555 a FBcv:0003024 ;
+    rdfs:label "body, 50d, Male rep S2 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001556 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001557 a FBcv:0003024 ;
+    rdfs:label "body, 50d, Male rep S3 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001558 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001559 a FBcv:0003024 ;
+    rdfs:label "body, 50d, Male rep S4 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001560 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001561 a FBcv:0003024 ;
+    rdfs:label "body, 50d, Male rep S5 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001562 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001563 a FBcv:0003024 ;
+    rdfs:label "body, 50d, Male rep S6 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001564 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001565 a FBcv:0003024 ;
+    rdfs:label "body, 70d, Male rep S1 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001566 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001567 a FBcv:0003024 ;
+    rdfs:label "body, 70d, Male rep S2 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001568 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001569 a FBcv:0003024 ;
+    rdfs:label "body, 70d, Male rep S3 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001570 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001571 a FBcv:0003024 ;
+    rdfs:label "body, 70d, Male rep S4 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001572 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001573 a FBcv:0003024 ;
+    rdfs:label "body, 70d, Male rep S5 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001574 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001575 a FBcv:0003024 ;
+    rdfs:label "body, 70d, Male rep S6 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00059181 ;
+    RO:0002352 VFBseq:00001576 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001577 a FBcv:0003024 ;
+    rdfs:label "head, 30d, Male rep S1 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001578 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001579 a FBcv:0003024 ;
+    rdfs:label "head, 30d, Male rep S2 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001580 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001581 a FBcv:0003024 ;
+    rdfs:label "head, 30d, Male rep S3 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001582 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001583 a FBcv:0003024 ;
+    rdfs:label "head, 30d, Male rep S4 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001584 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001585 a FBcv:0003024 ;
+    rdfs:label "head, 30d, Male rep S5 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001586 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001587 a FBcv:0003024 ;
+    rdfs:label "head, 30d, Male rep S6 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001588 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001589 a FBcv:0003024 ;
+    rdfs:label "head, 50d, Male rep S1 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001590 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001591 a FBcv:0003024 ;
+    rdfs:label "head, 50d, Male rep S2 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001592 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001593 a FBcv:0003024 ;
+    rdfs:label "head, 50d, Male rep S3 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001594 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001595 a FBcv:0003024 ;
+    rdfs:label "head, 50d, Male rep S4 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001596 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001597 a FBcv:0003024 ;
+    rdfs:label "head, 50d, Male rep S5 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001598 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001599 a FBcv:0003024 ;
+    rdfs:label "head, 50d, Male rep S6 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001600 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001601 a FBcv:0003024 ;
+    rdfs:label "head, 70d, Male rep S1 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001602 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001603 a FBcv:0003024 ;
+    rdfs:label "head, 70d, Male rep S2 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001604 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001605 a FBcv:0003024 ;
+    rdfs:label "head, 70d, Male rep S3 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001606 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001607 a FBcv:0003024 ;
+    rdfs:label "head, 70d, Male rep S4 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001608 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001609 a FBcv:0003024 ;
+    rdfs:label "head, 70d, Male rep S5 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001610 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001611 a FBcv:0003024 ;
+    rdfs:label "head, 70d, Male rep S6 (Lu 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003007 ;
+    RO:0002352 VFBseq:00001612 ;
+    RO:0002490 FBdv:0010010 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001614 a FBcv:0009002 ;
+    rdfs:label "Aging Fly Cell Atlas body" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00000708,
+        VFBseq:00000736,
+        VFBseq:00000738,
+        VFBseq:00000740,
+        VFBseq:00000742,
+        VFBseq:00000744,
+        VFBseq:00000746,
+        VFBseq:00000748,
+        VFBseq:00000750,
+        VFBseq:00000752,
+        VFBseq:00000754,
+        VFBseq:00000756,
+        VFBseq:00000758,
+        VFBseq:00001469,
+        VFBseq:00001471,
+        VFBseq:00001473,
+        VFBseq:00001475,
+        VFBseq:00001477,
+        VFBseq:00001479,
+        VFBseq:00001481,
+        VFBseq:00001483,
+        VFBseq:00001485,
+        VFBseq:00001487,
+        VFBseq:00001489,
+        VFBseq:00001491,
+        VFBseq:00001493,
+        VFBseq:00001495,
+        VFBseq:00001497,
+        VFBseq:00001499,
+        VFBseq:00001501,
+        VFBseq:00001503,
+        VFBseq:00001541,
+        VFBseq:00001543,
+        VFBseq:00001545,
+        VFBseq:00001547,
+        VFBseq:00001549,
+        VFBseq:00001551,
+        VFBseq:00001553,
+        VFBseq:00001555,
+        VFBseq:00001557,
+        VFBseq:00001559,
+        VFBseq:00001561,
+        VFBseq:00001563,
+        VFBseq:00001565,
+        VFBseq:00001567,
+        VFBseq:00001569,
+        VFBseq:00001571,
+        VFBseq:00001573,
+        VFBseq:00001575 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001613 a FBcv:0009002 ;
+    rdfs:label "Aging Fly Cell Atlas head" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00000706,
+        VFBseq:00000712,
+        VFBseq:00000714,
+        VFBseq:00000716,
+        VFBseq:00000718,
+        VFBseq:00000720,
+        VFBseq:00000722,
+        VFBseq:00000724,
+        VFBseq:00000726,
+        VFBseq:00000728,
+        VFBseq:00000730,
+        VFBseq:00000732,
+        VFBseq:00000734,
+        VFBseq:00001505,
+        VFBseq:00001507,
+        VFBseq:00001509,
+        VFBseq:00001511,
+        VFBseq:00001513,
+        VFBseq:00001515,
+        VFBseq:00001517,
+        VFBseq:00001519,
+        VFBseq:00001521,
+        VFBseq:00001523,
+        VFBseq:00001525,
+        VFBseq:00001527,
+        VFBseq:00001529,
+        VFBseq:00001531,
+        VFBseq:00001533,
+        VFBseq:00001535,
+        VFBseq:00001537,
+        VFBseq:00001539,
+        VFBseq:00001577,
+        VFBseq:00001579,
+        VFBseq:00001581,
+        VFBseq:00001583,
+        VFBseq:00001585,
+        VFBseq:00001587,
+        VFBseq:00001589,
+        VFBseq:00001591,
+        VFBseq:00001593,
+        VFBseq:00001595,
+        VFBseq:00001597,
+        VFBseq:00001599,
+        VFBseq:00001601,
+        VFBseq:00001603,
+        VFBseq:00001605,
+        VFBseq:00001607,
+        VFBseq:00001609,
+        VFBseq:00001611 ;
+    dcterms:source VFBseq:00001468 .
+
+VFBseq:00001468 a FBcv:0003023 ;
+    rdfs:label "scRNAseq data from Lu (2023)" ;
+    neo_custom:accession "GSE218661" ;
+    neo_custom:filtered_gene_count 5399 ;
+    neo_custom:total_gene_count 15962 ;
+    neo_property:nodeLabel "DataSet" ;
+    IAO:0000115 "Aging Fly Cell Atlas identifies exhaustive aging features at cellular resolution" ;
+    OBI:0000312 FBcv:0009001 ;
+    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references FlyBase:FBrf0256843 ;
+    oboInOwl:hasDbXref vfb:GEO .
+
