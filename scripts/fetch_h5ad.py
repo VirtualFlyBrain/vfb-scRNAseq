@@ -5,7 +5,9 @@ Each `sample_build.clusterings` entry in config.yaml may carry an `h5ad` URL (on
 author analysis = one Clustering). Files go to `.cache/h5ad/<accession>/<id>.h5ad`
 (gitignored); existing complete files are skipped and partial ones resumed (HTTP
 range requests). Nextcloud share links (`.../index.php/s/<token>`) are fetched via
-their `/download` endpoint.
+their `/download` endpoint. A gzipped file (URL ending `.gz`, e.g. GEO supplementary
+files) is downloaded next to the target and decompressed; the .gz is then removed, so
+an existing decompressed file counts as done.
 
 Usage:
     uv run python scripts/fetch_h5ad.py --project li_2022_fca_10x [--only head body]
@@ -14,6 +16,8 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import gzip
+import shutil
 import sys
 import urllib.request
 from pathlib import Path
@@ -61,6 +65,24 @@ def fetch(url: str, dest: Path) -> None:
     print(f"  fetched {dest.name} ({got / 1e6:.0f} MB)")
 
 
+def fetch_any(url: str, dest: Path) -> None:
+    """fetch(), decompressing a .gz download into `dest`."""
+    if not url.endswith(".gz"):
+        fetch(url, dest)
+        return
+    gz = dest.with_name(dest.name + ".gz")
+    if dest.exists() and not gz.exists():
+        print(f"  ok      {dest.name} ({dest.stat().st_size / 1e6:.0f} MB, decompressed)")
+        return
+    fetch(url, gz)
+    tmp = dest.with_name(dest.name + ".part")
+    with gzip.open(gz, "rb") as src, open(tmp, "wb") as out:
+        shutil.copyfileobj(src, out, 1 << 22)
+    tmp.replace(dest)
+    gz.unlink()
+    print(f"  decompressed {dest.name} ({dest.stat().st_size / 1e6:.0f} MB)")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--project", required=True)
@@ -73,7 +95,7 @@ def main() -> None:
         if not isinstance(c, dict) or not c.get("h5ad") or (args.only and c["id"] not in args.only):
             continue
         try:
-            fetch(c["h5ad"], h5ad_path(acc, c["id"]))
+            fetch_any(c["h5ad"], h5ad_path(acc, c["id"]))
         except Exception as e:  # noqa: BLE001 - report and carry on with the rest
             failed.append(c["id"])
             print(f"  FAILED  {c['id']}: {e}", file=sys.stderr)
