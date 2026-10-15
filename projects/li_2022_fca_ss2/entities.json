@@ -1,0 +1,4209 @@
+[
+  {
+    "type": "Publication",
+    "id": "FlyBase:FBrf0252876",
+    "neo_label": "pub"
+  },
+  {
+    "type": "Dataset",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "name": "scRNAseq data from Li (2022)",
+    "title": "Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly",
+    "accession": "E-MTAB-10628",
+    "neo_label": "DataSet",
+    "site": "vfb:ArrayExpress",
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "assay_type": "FBcv:0009001",
+    "total_gene_count": 16293,
+    "filtered_gene_count": 15011,
+    "publication": "FlyBase:FBrf0252876"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000778",
+    "name": "Malpighian tubule, 5 days, female, drip-GAL4; UAS-nlsGFP (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000779"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00005725"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000780",
+    "name": "Malpighian tubule, 5 days, male, drip-GAL4; UAS-nlsGFP (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000781"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00005725"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000782",
+    "name": "abdominal segment element, 5 days, female, PromE800-GAL4; UAS-unc84GFP (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000783"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003024"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000784",
+    "name": "abdominal segment element, 5 days, male, PromE800-GAL4; UAS-unc84GFP (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000785"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003024"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000786",
+    "name": "antenna, 5 days, female (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000787"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004511"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000788",
+    "name": "antenna, 5 days, male (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000789"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004511"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000790",
+    "name": "body wall, 5 days, female (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000791"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00005396"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000792",
+    "name": "body wall, 5 days, male (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000793"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00005396"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000794",
+    "name": "fat body, 5 days, female, Cg-GAL4; UAS-lamGFP (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000795",
+      "http://virtualflybrain.org/reports/VFBseq_00000796"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003209"
+    ],
+    "stage": "FBdv:00007080",
+    "stock": [
+      "FlyBase:FBst0007378"
+    ],
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000797",
+    "name": "fat body, 5 days, male, Cg-GAL4; UAS-lamGFP (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000798",
+      "http://virtualflybrain.org/reports/VFBseq_00000799"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003209"
+    ],
+    "stage": "FBdv:00007080",
+    "stock": [
+      "FlyBase:FBst0007378"
+    ],
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000800",
+    "name": "gut, 5 days, female (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000801"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00007513"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000802",
+    "name": "gut, 5 days, male (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000803"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00007513"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000804",
+    "name": "haltere, 5 days, female (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000805"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004783"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000806",
+    "name": "haltere, 5 days, male (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000807"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004783"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000808",
+    "name": "head, 5 days, female, dilp2-GAL4; UAS-unc84GFP (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000809"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000810",
+    "name": "head, 5 days, male, dilp2-GAL4; UAS-unc84GFP (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000811"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000812",
+    "name": "heart, 5 days, female (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000813"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003154"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000814",
+    "name": "heart, 5 days, male (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000815"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003154"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000816",
+    "name": "insect proboscis, 5 days, female (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000817"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004535"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000818",
+    "name": "insect proboscis, 5 days, male (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000819"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004535"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000820",
+    "name": "leg, 5 days, female (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000821"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004640"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000822",
+    "name": "leg, 5 days, male (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000823"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004640"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000824",
+    "name": "ovary, 5 days, female (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000825",
+      "http://virtualflybrain.org/reports/VFBseq_00000826",
+      "http://virtualflybrain.org/reports/VFBseq_00000827"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004865"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000828",
+    "name": "reproductive gland, 2 days, male (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000829"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004959",
+      "FBbt:00004965",
+      "FBbt:00004962"
+    ],
+    "stage": "FBdv:00007077",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000830",
+    "name": "testis, 1 days, male (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000831"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004928"
+    ],
+    "stage": "FBdv:00007076",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000832",
+    "name": "thorax, 5 days, female, Akh-GAL4; UAS-unc84GFP (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000833"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003018"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000834",
+    "name": "thorax, 5 days, male, Akh-GAL4; UAS-unc84GFP (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000835"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003018"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000836",
+    "name": "trachea, 5 days, female, Btl-GAL4; UAS-lamGFP (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000837"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003037"
+    ],
+    "stage": "FBdv:00007080",
+    "stock": [
+      "FlyBase:FBst0007378"
+    ],
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000838",
+    "name": "trachea, 5 days, male, Btl-GAL4; UAS-lamGFP (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000839"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003037"
+    ],
+    "stage": "FBdv:00007080",
+    "stock": [
+      "FlyBase:FBst0007378"
+    ],
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000840",
+    "name": "wing, 5 days, female (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000841"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004729"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000842",
+    "name": "wing, 5 days, male (Li 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000843"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004729"
+    ],
+    "stage": "FBdv:00007080",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000779",
+    "name": "P5",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000778"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000781",
+    "name": "P6",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000780"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000783",
+    "name": "P45",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000782"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000785",
+    "name": "P43",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000784"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000787",
+    "name": "P29",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000786"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000789",
+    "name": "P27",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000788"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000791",
+    "name": "P9",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000790"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000793",
+    "name": "P11",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000792"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000795",
+    "name": "P33",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000794"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000796",
+    "name": "P34",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000794"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000798",
+    "name": "P31",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000797"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000799",
+    "name": "P32",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000797"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000801",
+    "name": "P3",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000800"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000803",
+    "name": "P1",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000802"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000805",
+    "name": "P37",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000804"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000807",
+    "name": "P35",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000806"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000809",
+    "name": "P55",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000808"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000811",
+    "name": "P57",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000810"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000813",
+    "name": "P7",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000812"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000815",
+    "name": "P8",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000814"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000817",
+    "name": "P25",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000816"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000819",
+    "name": "P23",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000818"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000821",
+    "name": "P17",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000820"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000823",
+    "name": "P15",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000822"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000825",
+    "name": "P53",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000824"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000826",
+    "name": "P59",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000824"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000827",
+    "name": "P60",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000824"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000829",
+    "name": "P13",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000828"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000831",
+    "name": "P51",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000830"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000833",
+    "name": "P56",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000832"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000835",
+    "name": "P58",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000834"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000837",
+    "name": "P49",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000836"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000839",
+    "name": "P47",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000838"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000841",
+    "name": "P21",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000840"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000843",
+    "name": "P19",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00000842"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "name": "Fly Cell Atlas Smart-seq2 Antenna",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000845",
+    "name": "Fly Cell Atlas Smart-seq2 Body Wall",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000846",
+    "name": "Fly Cell Atlas Smart-seq2 Fat Body",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "name": "Fly Cell Atlas Smart-seq2 Gut",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000848",
+    "name": "Fly Cell Atlas Smart-seq2 Haltere",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000849",
+    "name": "Fly Cell Atlas Smart-seq2 Heart",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000850",
+    "name": "Fly Cell Atlas Smart-seq2 Leg",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000851",
+    "name": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000852",
+    "name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000853",
+    "name": "Fly Cell Atlas Smart-seq2 Oenocyte",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "name": "Fly Cell Atlas Smart-seq2 Ovary",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000855",
+    "name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "name": "Fly Cell Atlas Smart-seq2 Testis",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000857",
+    "name": "Fly Cell Atlas Smart-seq2 Trachea",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000858",
+    "name": "Fly Cell Atlas Smart-seq2 Wing",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000859",
+    "name": "Fly Cell Atlas Smart-seq2 dilp2 IPC (insulin-producing cells)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00000860",
+    "name": "Fly Cell Atlas Smart-seq2 Akh CC (corpora cardiaca)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "neo_label": "Clustering"
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001231",
+    "name": "Johnston organ neuron cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 37,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'Johnston organ neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00100000"
+    ],
+    "total_gene_count": 6096,
+    "filtered_gene_count": 885
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001232",
+    "name": "adult antenna glial cell cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 37,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult antenna glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058258"
+    ],
+    "total_gene_count": 5246,
+    "filtered_gene_count": 504
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001233",
+    "name": "adult olfactory receptor neuron Gr21a/63a cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult olfactory receptor neuron Gr21a/63a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00067064"
+    ],
+    "total_gene_count": 1922,
+    "filtered_gene_count": 737
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001234",
+    "name": "adult olfactory receptor neuron Ir56a+, Orco- cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult olfactory receptor neuron Ir56a+, Orco-' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00007386"
+    ],
+    "total_gene_count": 3789,
+    "filtered_gene_count": 3789
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001235",
+    "name": "adult olfactory receptor neuron Ir75d cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult olfactory receptor neuron Ir75d' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00047054"
+    ],
+    "total_gene_count": 1760,
+    "filtered_gene_count": 508
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001236",
+    "name": "adult olfactory receptor neuron Ir84a, Ir31a, Ir76a, Ir76b, Ir8a, Or35a cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult olfactory receptor neuron Ir84a, Ir31a, Ir76a, Ir76b, Ir8a, Or35a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049980"
+    ],
+    "total_gene_count": 1397,
+    "filtered_gene_count": 361
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001237",
+    "name": "adult olfactory receptor neuron Or22a, Or42b, Or59b cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 9,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult olfactory receptor neuron Or22a, Or42b, Or59b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049977"
+    ],
+    "total_gene_count": 3348,
+    "filtered_gene_count": 1404
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001238",
+    "name": "adult olfactory receptor neuron Or47a, Or56a and likely other ORN types cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult olfactory receptor neuron Or47a, Or56a and likely other ORN types' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00007386"
+    ],
+    "total_gene_count": 1988,
+    "filtered_gene_count": 693
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001239",
+    "name": "adult olfactory receptor neuron Or47b cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult olfactory receptor neuron Or47b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00067056"
+    ],
+    "total_gene_count": 1906,
+    "filtered_gene_count": 641
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001240",
+    "name": "adult olfactory receptor neuron Or65 cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult olfactory receptor neuron Or65' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00067011"
+    ],
+    "total_gene_count": 2257,
+    "filtered_gene_count": 676
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001241",
+    "name": "adult olfactory receptor neuron Or67a and likely other unknown ORN types cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 14,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult olfactory receptor neuron Or67a and likely other unknown ORN types' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00007386"
+    ],
+    "total_gene_count": 4366,
+    "filtered_gene_count": 1017
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001242",
+    "name": "adult olfactory receptor neuron Or67d cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 9,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult olfactory receptor neuron Or67d' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00067031"
+    ],
+    "total_gene_count": 2776,
+    "filtered_gene_count": 1264
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001243",
+    "name": "adult olfactory receptor neuron Or85a, Or43b cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 1,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult olfactory receptor neuron Or85a, Or43b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049977"
+    ],
+    "total_gene_count": 509,
+    "filtered_gene_count": 509
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001244",
+    "name": "adult olfactory receptor neuron Or88a cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 8,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult olfactory receptor neuron Or88a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00067057"
+    ],
+    "total_gene_count": 2471,
+    "filtered_gene_count": 977
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001245",
+    "name": "adult olfactory receptor neuron Or92a cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult olfactory receptor neuron Or92a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00067059"
+    ],
+    "total_gene_count": 2019,
+    "filtered_gene_count": 707
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001246",
+    "name": "adult olfactory receptor neuron acid-sensing, Ir75a/b/c, Ir64a cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 2,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult olfactory receptor neuron acid-sensing, Ir75a/b/c, Ir64a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00007352"
+    ],
+    "total_gene_count": 1013,
+    "filtered_gene_count": 1013
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001247",
+    "name": "adult olfactory receptor neuron unknown type, Orco- cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 1,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult olfactory receptor neuron unknown type, Orco-' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00007386"
+    ],
+    "total_gene_count": 412,
+    "filtered_gene_count": 412
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001248",
+    "name": "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 147,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058238"
+    ],
+    "total_gene_count": 8948,
+    "filtered_gene_count": 406
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001249",
+    "name": "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 4,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 2068,
+    "filtered_gene_count": 2068
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001250",
+    "name": "olfactory receptor neuron, coeloconics cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 8,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'olfactory receptor neuron, coeloconics' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049980"
+    ],
+    "total_gene_count": 2305,
+    "filtered_gene_count": 821
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001251",
+    "name": "sacculus/arista neuron cells, predicted (Fly Cell Atlas Smart-seq2 Antenna) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'sacculus/arista neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00051173"
+    ],
+    "total_gene_count": 1504,
+    "filtered_gene_count": 1504
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001253",
+    "name": "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 12,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049949"
+    ],
+    "total_gene_count": 1869,
+    "filtered_gene_count": 125
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001254",
+    "name": "adult glial cell cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00100497"
+    ],
+    "total_gene_count": 1589,
+    "filtered_gene_count": 370
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001255",
+    "name": "adult oenocyte cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult oenocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00003185"
+    ],
+    "total_gene_count": 2029,
+    "filtered_gene_count": 2029
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001256",
+    "name": "adult peripheral nervous system cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 4,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult peripheral nervous system' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00059276"
+    ],
+    "total_gene_count": 1343,
+    "filtered_gene_count": 1343
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001257",
+    "name": "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 10,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005040"
+    ],
+    "total_gene_count": 3356,
+    "filtered_gene_count": 670
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001258",
+    "name": "adult ventral nervous system cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 11,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult ventral nervous system' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00059289"
+    ],
+    "total_gene_count": 3972,
+    "filtered_gene_count": 870
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001259",
+    "name": "epidermal cell that specialized in antimicrobial response cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 11,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'epidermal cell that specialized in antimicrobial response' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058242"
+    ],
+    "total_gene_count": 2192,
+    "filtered_gene_count": 286
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001260",
+    "name": "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 63,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058238"
+    ],
+    "total_gene_count": 6738,
+    "filtered_gene_count": 450
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001261",
+    "name": "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 4,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058143"
+    ],
+    "total_gene_count": 2252,
+    "filtered_gene_count": 2252
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001262",
+    "name": "indirect flight muscle cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 30,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'indirect flight muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00003361"
+    ],
+    "total_gene_count": 5292,
+    "filtered_gene_count": 625
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001263",
+    "name": "midgut cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 1,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'midgut' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058294"
+    ],
+    "total_gene_count": 276,
+    "filtered_gene_count": 276
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001264",
+    "name": "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 65,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 7062,
+    "filtered_gene_count": 548
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001265",
+    "name": "tendon cell cells, predicted (Fly Cell Atlas Smart-seq2 Body Wall) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'tendon cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058016"
+    ],
+    "total_gene_count": 1804,
+    "filtered_gene_count": 485
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001267",
+    "name": "adult alary muscle cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 11,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult alary muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00003545"
+    ],
+    "total_gene_count": 4404,
+    "filtered_gene_count": 1170
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001268",
+    "name": "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 880,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049949"
+    ],
+    "total_gene_count": 14784,
+    "filtered_gene_count": 1834
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001269",
+    "name": "adult neuron cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 10,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00047095"
+    ],
+    "total_gene_count": 6205,
+    "filtered_gene_count": 1762
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001270",
+    "name": "adult oenocyte cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 24,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult oenocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00003185"
+    ],
+    "total_gene_count": 8450,
+    "filtered_gene_count": 2376
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001271",
+    "name": "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 53,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058238"
+    ],
+    "total_gene_count": 10033,
+    "filtered_gene_count": 1443
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001273",
+    "name": "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 178,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058143"
+    ],
+    "total_gene_count": 11021,
+    "filtered_gene_count": 1014
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001274",
+    "name": "male accessory gland cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'male accessory gland' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058232"
+    ],
+    "total_gene_count": 4469,
+    "filtered_gene_count": 1749
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001275",
+    "name": "male germline differentiating cell cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'male germline differentiating cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00057011"
+    ],
+    "total_gene_count": 3460,
+    "filtered_gene_count": 3460
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001276",
+    "name": "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 31,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 10273,
+    "filtered_gene_count": 2167
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001277",
+    "name": "sensory neuron cells, predicted (Fly Cell Atlas Smart-seq2 Fat Body) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 9,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'sensory neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058244"
+    ],
+    "total_gene_count": 7271,
+    "filtered_gene_count": 3833
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001280",
+    "name": "adult Malpighian tubule cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 1,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult Malpighian tubule' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005733"
+    ],
+    "total_gene_count": 1117,
+    "filtered_gene_count": 1117
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001281",
+    "name": "adult differentiating enterocyte cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 14,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult differentiating enterocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049281"
+    ],
+    "total_gene_count": 7451,
+    "filtered_gene_count": 3746
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001282",
+    "name": "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 2,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049949"
+    ],
+    "total_gene_count": 2556,
+    "filtered_gene_count": 2556
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001283",
+    "name": "adult midgut enterocyte cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 11,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult midgut enterocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00047182"
+    ],
+    "total_gene_count": 6655,
+    "filtered_gene_count": 2899
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001284",
+    "name": "adult midgut-hindgut hybrid zone cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 18,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult midgut-hindgut hybrid zone' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058275"
+    ],
+    "total_gene_count": 5074,
+    "filtered_gene_count": 1400
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001285",
+    "name": "adult pylorus cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 10,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult pylorus' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058276"
+    ],
+    "total_gene_count": 5055,
+    "filtered_gene_count": 1931
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001286",
+    "name": "antimicrobial peptide-producing cell cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 12,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'antimicrobial peptide-producing cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00059377"
+    ],
+    "total_gene_count": 5296,
+    "filtered_gene_count": 2028
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001287",
+    "name": "cardia (1) cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 74,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'cardia (1)' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058282"
+    ],
+    "total_gene_count": 8986,
+    "filtered_gene_count": 1806
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001288",
+    "name": "cardia (2) cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 20,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'cardia (2)' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058282"
+    ],
+    "total_gene_count": 6078,
+    "filtered_gene_count": 1649
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001289",
+    "name": "copper cell cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'copper cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00110908"
+    ],
+    "total_gene_count": 4498,
+    "filtered_gene_count": 2308
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001290",
+    "name": "crop cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 150,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'crop' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058263"
+    ],
+    "total_gene_count": 10276,
+    "filtered_gene_count": 1319
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001291",
+    "name": "enteroblast cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 23,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'enteroblast' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00110205"
+    ],
+    "total_gene_count": 6999,
+    "filtered_gene_count": 2047
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001292",
+    "name": "enterocyte of anterior adult midgut epithelium cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 34,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'enterocyte of anterior adult midgut epithelium' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049280"
+    ],
+    "total_gene_count": 9724,
+    "filtered_gene_count": 3660
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001293",
+    "name": "enterocyte of posterior adult midgut epithelium cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 29,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'enterocyte of posterior adult midgut epithelium' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00007037"
+    ],
+    "total_gene_count": 7784,
+    "filtered_gene_count": 2309
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001294",
+    "name": "enterocyte-like cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 42,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'enterocyte-like' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00047147"
+    ],
+    "total_gene_count": 8552,
+    "filtered_gene_count": 2012
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001295",
+    "name": "enteroendocrine cell cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 8,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'enteroendocrine cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00047149"
+    ],
+    "total_gene_count": 4456,
+    "filtered_gene_count": 1989
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001296",
+    "name": "intestinal stem cell cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 23,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'intestinal stem cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00007039"
+    ],
+    "total_gene_count": 6264,
+    "filtered_gene_count": 1436
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001297",
+    "name": "midgut large flat cell cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 10,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'midgut large flat cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00110912"
+    ],
+    "total_gene_count": 6489,
+    "filtered_gene_count": 2918
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001298",
+    "name": "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 2304,
+    "filtered_gene_count": 880
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001300",
+    "name": "visceral muscle of the crop cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 8,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'visceral muscle of the crop' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00003532"
+    ],
+    "total_gene_count": 2778,
+    "filtered_gene_count": 1214
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001301",
+    "name": "visceral muscle of the midgut cells, predicted (Fly Cell Atlas Smart-seq2 Gut) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 15,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'visceral muscle of the midgut' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00003534"
+    ],
+    "total_gene_count": 4261,
+    "filtered_gene_count": 1028
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001302",
+    "name": "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Haltere) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000848",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049949"
+    ],
+    "total_gene_count": 1962,
+    "filtered_gene_count": 1962
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001303",
+    "name": "adult glial cell cells, predicted (Fly Cell Atlas Smart-seq2 Haltere) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000848",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 8,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00100497"
+    ],
+    "total_gene_count": 2574,
+    "filtered_gene_count": 745
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001304",
+    "name": "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Haltere) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000848",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 136,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058238"
+    ],
+    "total_gene_count": 9501,
+    "filtered_gene_count": 276
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001305",
+    "name": "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Haltere) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000848",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 7,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058143"
+    ],
+    "total_gene_count": 2022,
+    "filtered_gene_count": 556
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001306",
+    "name": "mechanosensory neuron of haltere cells, predicted (Fly Cell Atlas Smart-seq2 Haltere) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000848",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 14,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'mechanosensory neuron of haltere' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00051420"
+    ],
+    "total_gene_count": 3464,
+    "filtered_gene_count": 734
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001307",
+    "name": "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Haltere) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000848",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 4,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 1705,
+    "filtered_gene_count": 1705
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001308",
+    "name": "neuron of haltere cells, predicted (Fly Cell Atlas Smart-seq2 Haltere) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000848",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 9,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'neuron of haltere' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00047095"
+    ],
+    "total_gene_count": 3001,
+    "filtered_gene_count": 870
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001310",
+    "name": "adult abdominal pericardial cell cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 22,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult abdominal pericardial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00013185"
+    ],
+    "total_gene_count": 3704,
+    "filtered_gene_count": 184
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001311",
+    "name": "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 17,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049949"
+    ],
+    "total_gene_count": 6175,
+    "filtered_gene_count": 1990
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001312",
+    "name": "adult heart ventral longitudinal muscle cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 23,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult heart ventral longitudinal muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00003550"
+    ],
+    "total_gene_count": 5661,
+    "filtered_gene_count": 1032
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001313",
+    "name": "adult oenocyte cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 25,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult oenocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00003185"
+    ],
+    "total_gene_count": 6603,
+    "filtered_gene_count": 1476
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001314",
+    "name": "adult peripheral neuron of the heart cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 13,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult peripheral neuron of the heart' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00059276"
+    ],
+    "total_gene_count": 8125,
+    "filtered_gene_count": 2658
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001315",
+    "name": "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005040"
+    ],
+    "total_gene_count": 3747,
+    "filtered_gene_count": 1500
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001316",
+    "name": "cardiomyocyte, working adult heart muscle (non-ostia) cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'cardiomyocyte, working adult heart muscle (non-ostia)' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058240"
+    ],
+    "total_gene_count": 4662,
+    "filtered_gene_count": 2183
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001317",
+    "name": "crystal cell cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'crystal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058146"
+    ],
+    "total_gene_count": 2115,
+    "filtered_gene_count": 648
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001318",
+    "name": "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 76,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058238"
+    ],
+    "total_gene_count": 8511,
+    "filtered_gene_count": 744
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001319",
+    "name": "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 29,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058143"
+    ],
+    "total_gene_count": 6087,
+    "filtered_gene_count": 1171
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001320",
+    "name": "indirect flight muscle cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 4,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'indirect flight muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00003361"
+    ],
+    "total_gene_count": 1312,
+    "filtered_gene_count": 1312
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001321",
+    "name": "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Heart) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 12,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 2718,
+    "filtered_gene_count": 375
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001323",
+    "name": "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005040"
+    ],
+    "total_gene_count": 910,
+    "filtered_gene_count": 910
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001324",
+    "name": "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 316,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058238"
+    ],
+    "total_gene_count": 9078,
+    "filtered_gene_count": 216
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001325",
+    "name": "gustatory receptor neuron cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'gustatory receptor neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058249"
+    ],
+    "total_gene_count": 1145,
+    "filtered_gene_count": 303
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001326",
+    "name": "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058143"
+    ],
+    "total_gene_count": 1691,
+    "filtered_gene_count": 530
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001327",
+    "name": "mechanosensory neuron cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 29,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'mechanosensory neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00051420"
+    ],
+    "total_gene_count": 4138,
+    "filtered_gene_count": 564
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001328",
+    "name": "mechanosensory neuron of leg chordotonal organ cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 9,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'mechanosensory neuron of leg chordotonal organ' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00048274"
+    ],
+    "total_gene_count": 2605,
+    "filtered_gene_count": 1059
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001329",
+    "name": "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 147,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 7239,
+    "filtered_gene_count": 472
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001330",
+    "name": "peripheral glial cell cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 19,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'peripheral glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058258"
+    ],
+    "total_gene_count": 3809,
+    "filtered_gene_count": 503
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001331",
+    "name": "sensory neuron cells, predicted (Fly Cell Atlas Smart-seq2 Leg) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'sensory neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058244"
+    ],
+    "total_gene_count": 1743,
+    "filtered_gene_count": 602
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001333",
+    "name": "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 2,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049949"
+    ],
+    "total_gene_count": 4023,
+    "filtered_gene_count": 4023
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001334",
+    "name": "anterior ejaculatory duct cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 17,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'anterior ejaculatory duct' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058271"
+    ],
+    "total_gene_count": 7760,
+    "filtered_gene_count": 2880
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001335",
+    "name": "ejaculatory bulb cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 31,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'ejaculatory bulb' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058269"
+    ],
+    "total_gene_count": 6900,
+    "filtered_gene_count": 1659
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001336",
+    "name": "ejaculatory bulb epithelium cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 11,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'ejaculatory bulb epithelium' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058269"
+    ],
+    "total_gene_count": 5676,
+    "filtered_gene_count": 2457
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001337",
+    "name": "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 16,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058238"
+    ],
+    "total_gene_count": 5364,
+    "filtered_gene_count": 1313
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001338",
+    "name": "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 1,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058143"
+    ],
+    "total_gene_count": 850,
+    "filtered_gene_count": 850
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001339",
+    "name": "male accessory gland main cell cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 131,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'male accessory gland main cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004960"
+    ],
+    "total_gene_count": 9783,
+    "filtered_gene_count": 1651
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001340",
+    "name": "male accessory gland secondary cell cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'male accessory gland secondary cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004961"
+    ],
+    "total_gene_count": 3399,
+    "filtered_gene_count": 1364
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001341",
+    "name": "male reproductive tract muscle cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 8,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'male reproductive tract muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 5086,
+    "filtered_gene_count": 2427
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001342",
+    "name": "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 1723,
+    "filtered_gene_count": 1723
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001343",
+    "name": "secretory cell of the male reproductive tract cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'secretory cell of the male reproductive tract' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058293"
+    ],
+    "total_gene_count": 5458,
+    "filtered_gene_count": 2425
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001345",
+    "name": "spermatid cells, predicted (Fly Cell Atlas Smart-seq2 Male Reproductive Glands) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'spermatid' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004942"
+    ],
+    "total_gene_count": 2588,
+    "filtered_gene_count": 2588
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001347",
+    "name": "adult Malpighian tubule bar-shaped cell of initial segment cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 9,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult Malpighian tubule bar-shaped cell of initial segment' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049472"
+    ],
+    "total_gene_count": 5644,
+    "filtered_gene_count": 2810
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001348",
+    "name": "adult Malpighian tubule principal cell cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 38,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult Malpighian tubule principal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005735"
+    ],
+    "total_gene_count": 9970,
+    "filtered_gene_count": 2948
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001349",
+    "name": "adult Malpighian tubule principal cell of initial segment cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 25,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult Malpighian tubule principal cell of initial segment' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049474"
+    ],
+    "total_gene_count": 9580,
+    "filtered_gene_count": 3238
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001350",
+    "name": "adult Malpighian tubule principal cell of lower segment cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 61,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult Malpighian tubule principal cell of lower segment' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049477"
+    ],
+    "total_gene_count": 12775,
+    "filtered_gene_count": 2960
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001351",
+    "name": "adult Malpighian tubule principal cell of lower ureter cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 9,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult Malpighian tubule principal cell of lower ureter' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049478"
+    ],
+    "total_gene_count": 5435,
+    "filtered_gene_count": 2778
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001352",
+    "name": "adult Malpighian tubule stellate cell of main segment cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 33,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult Malpighian tubule stellate cell of main segment' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00047102"
+    ],
+    "total_gene_count": 10621,
+    "filtered_gene_count": 2651
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001353",
+    "name": "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049949"
+    ],
+    "total_gene_count": 2319,
+    "filtered_gene_count": 2319
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001354",
+    "name": "adult hindgut* cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 2,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult hindgut*' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058276"
+    ],
+    "total_gene_count": 1252,
+    "filtered_gene_count": 1252
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001355",
+    "name": "adult midgut* cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 2,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult midgut*' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058294"
+    ],
+    "total_gene_count": 1498,
+    "filtered_gene_count": 1498
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001356",
+    "name": "adult renal stem cell cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 124,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult renal stem cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00110862"
+    ],
+    "total_gene_count": 8630,
+    "filtered_gene_count": 363
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001357",
+    "name": "adult salivary gland cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 15,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult salivary gland' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00059269"
+    ],
+    "total_gene_count": 5986,
+    "filtered_gene_count": 1669
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001358",
+    "name": "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 12,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005040"
+    ],
+    "total_gene_count": 12134,
+    "filtered_gene_count": 6246
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001360",
+    "name": "posterior midgut* cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 4,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'posterior midgut*' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00007037"
+    ],
+    "total_gene_count": 3899,
+    "filtered_gene_count": 3899
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001361",
+    "name": "principal cell* cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 59,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'principal cell*' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005735"
+    ],
+    "total_gene_count": 6072,
+    "filtered_gene_count": 629
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001363",
+    "name": "visceral muscle cells, predicted (Fly Cell Atlas Smart-seq2 Malpighian Tubule) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 2,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'visceral muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00003525"
+    ],
+    "total_gene_count": 1504,
+    "filtered_gene_count": 1504
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001364",
+    "name": "adult alary muscle cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 15,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult alary muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00003545"
+    ],
+    "total_gene_count": 4101,
+    "filtered_gene_count": 593
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001365",
+    "name": "adult enterocyte cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult enterocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00047147"
+    ],
+    "total_gene_count": 2290,
+    "filtered_gene_count": 2290
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001366",
+    "name": "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 59,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049949"
+    ],
+    "total_gene_count": 9748,
+    "filtered_gene_count": 1095
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001367",
+    "name": "adult neuron cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 44,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00047095"
+    ],
+    "total_gene_count": 10459,
+    "filtered_gene_count": 1504
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001368",
+    "name": "adult oenocyte cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 73,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult oenocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00003185"
+    ],
+    "total_gene_count": 9579,
+    "filtered_gene_count": 1037
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001369",
+    "name": "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 12,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005040"
+    ],
+    "total_gene_count": 3762,
+    "filtered_gene_count": 780
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001370",
+    "name": "ejaculatory bulb cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'ejaculatory bulb' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058269"
+    ],
+    "total_gene_count": 2268,
+    "filtered_gene_count": 2268
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001371",
+    "name": "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 37,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058238"
+    ],
+    "total_gene_count": 5130,
+    "filtered_gene_count": 287
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001372",
+    "name": "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 10,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058143"
+    ],
+    "total_gene_count": 3776,
+    "filtered_gene_count": 700
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001373",
+    "name": "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Oenocyte) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 65,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 8758,
+    "filtered_gene_count": 497
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001376",
+    "name": "16-cell germline cyst in germarium region 2a and 2b cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 58,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type '16-cell germline cyst in germarium region 2a and 2b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00059160"
+    ],
+    "total_gene_count": 10147,
+    "filtered_gene_count": 5290
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001377",
+    "name": "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005040"
+    ],
+    "total_gene_count": 4926,
+    "filtered_gene_count": 2334
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001379",
+    "name": "central main body follicle cell ca. St. 6-8 cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 40,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'central main body follicle cell ca. St. 6-8' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005402"
+    ],
+    "total_gene_count": 8268,
+    "filtered_gene_count": 2135
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001380",
+    "name": "choriogenic main body follicle cell St. 12 cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 11,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'choriogenic main body follicle cell St. 12' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005402"
+    ],
+    "total_gene_count": 7914,
+    "filtered_gene_count": 3150
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001381",
+    "name": "choriogenic main body follicle cell St. 14 cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'choriogenic main body follicle cell St. 14' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005402"
+    ],
+    "total_gene_count": 4043,
+    "filtered_gene_count": 1952
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001382",
+    "name": "choriogenic main body follicle cell and corpus luteum cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 22,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'choriogenic main body follicle cell and corpus luteum' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005402",
+      "FBbt:00048551"
+    ],
+    "total_gene_count": 6642,
+    "filtered_gene_count": 2224
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001383",
+    "name": "dorsal appendage forming follicle cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 7,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'dorsal appendage forming follicle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00046036"
+    ],
+    "total_gene_count": 5879,
+    "filtered_gene_count": 3419
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001384",
+    "name": "escort cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 16,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'escort cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00006049"
+    ],
+    "total_gene_count": 7400,
+    "filtered_gene_count": 3084
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001385",
+    "name": "follicle stem cell and prefollicle cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 10,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'follicle stem cell and prefollicle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00006030"
+    ],
+    "total_gene_count": 6593,
+    "filtered_gene_count": 3324
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001386",
+    "name": "germ cell stage 4 and later cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 14,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'germ cell stage 4 and later' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00057012"
+    ],
+    "total_gene_count": 6086,
+    "filtered_gene_count": 2453
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001387",
+    "name": "germline cell, unknown stage cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'germline cell, unknown stage' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00057012"
+    ],
+    "total_gene_count": 5613,
+    "filtered_gene_count": 3625
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001388",
+    "name": "main body follicle cell ca. until St. 5 cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 157,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'main body follicle cell ca. until St. 5' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005402"
+    ],
+    "total_gene_count": 9891,
+    "filtered_gene_count": 457
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001389",
+    "name": "ovarian sheath muscle cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'ovarian sheath muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00003557"
+    ],
+    "total_gene_count": 6133,
+    "filtered_gene_count": 3869
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001390",
+    "name": "oviduct cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 7,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'oviduct' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058273"
+    ],
+    "total_gene_count": 6714,
+    "filtered_gene_count": 4186
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001391",
+    "name": "polar follicle cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'polar follicle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004907"
+    ],
+    "total_gene_count": 4109,
+    "filtered_gene_count": 4109
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001392",
+    "name": "post-mitotic endocycling nurse cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 8,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'post-mitotic endocycling nurse cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004878"
+    ],
+    "total_gene_count": 5325,
+    "filtered_gene_count": 3217
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001393",
+    "name": "post-mitotic germ cell early 16-cell cyst cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'post-mitotic germ cell early 16-cell cyst' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00059160"
+    ],
+    "total_gene_count": 4162,
+    "filtered_gene_count": 1813
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001394",
+    "name": "posterior terminal follicle cell ca. St. 5-8 cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 7,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'posterior terminal follicle cell ca. St. 5-8' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00048554"
+    ],
+    "total_gene_count": 6141,
+    "filtered_gene_count": 4047
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001395",
+    "name": "stalk follicle cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'stalk follicle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004910"
+    ],
+    "total_gene_count": 6207,
+    "filtered_gene_count": 3728
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001396",
+    "name": "stretch follicle cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 21,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'stretch follicle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004908"
+    ],
+    "total_gene_count": 7997,
+    "filtered_gene_count": 3622
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001398",
+    "name": "young germ cell cells, predicted (Fly Cell Atlas Smart-seq2 Ovary) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 109,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'young germ cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00057012"
+    ],
+    "total_gene_count": 9272,
+    "filtered_gene_count": 3740
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001399",
+    "name": "adult esophagus cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult esophagus' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058280"
+    ],
+    "total_gene_count": 1545,
+    "filtered_gene_count": 429
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001400",
+    "name": "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049949"
+    ],
+    "total_gene_count": 2539,
+    "filtered_gene_count": 2539
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001401",
+    "name": "adult peripheral nervous system cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 62,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult peripheral nervous system' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00059276"
+    ],
+    "total_gene_count": 6134,
+    "filtered_gene_count": 576
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001402",
+    "name": "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 7,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005040"
+    ],
+    "total_gene_count": 2180,
+    "filtered_gene_count": 578
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001403",
+    "name": "bitter-sensitive labellar taste bristle cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'bitter-sensitive labellar taste bristle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00048152"
+    ],
+    "total_gene_count": 1177,
+    "filtered_gene_count": 1177
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001404",
+    "name": "epithelial cell cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 375,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058238"
+    ],
+    "total_gene_count": 11392,
+    "filtered_gene_count": 418
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001405",
+    "name": "gustatory receptor neuron of the labellum cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 7,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'gustatory receptor neuron of the labellum' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00110887"
+    ],
+    "total_gene_count": 2321,
+    "filtered_gene_count": 851
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001406",
+    "name": "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 2,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058143"
+    ],
+    "total_gene_count": 921,
+    "filtered_gene_count": 921
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001407",
+    "name": "labral sense organ mechanosensory neuron cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 7,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'labral sense organ mechanosensory neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00048035"
+    ],
+    "total_gene_count": 2344,
+    "filtered_gene_count": 846
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001408",
+    "name": "maxillary palp olfactory receptor neuron cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 11,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'maxillary palp olfactory receptor neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00007353"
+    ],
+    "total_gene_count": 2958,
+    "filtered_gene_count": 691
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001410",
+    "name": "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 90,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 7284,
+    "filtered_gene_count": 485
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001411",
+    "name": "peripheral glial cell cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 18,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'peripheral glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058258"
+    ],
+    "total_gene_count": 3273,
+    "filtered_gene_count": 418
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001412",
+    "name": "photoreceptor cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'photoreceptor' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004211"
+    ],
+    "total_gene_count": 2088,
+    "filtered_gene_count": 708
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001413",
+    "name": "tormogen cell cells, predicted (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'tormogen cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005171"
+    ],
+    "total_gene_count": 2440,
+    "filtered_gene_count": 840
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001415",
+    "name": "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005040"
+    ],
+    "total_gene_count": 3585,
+    "filtered_gene_count": 1451
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001416",
+    "name": "cyst cell branch a cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'cyst cell branch a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004931"
+    ],
+    "total_gene_count": 4585,
+    "filtered_gene_count": 4585
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001417",
+    "name": "cyst cell branch b cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 1,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'cyst cell branch b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004931"
+    ],
+    "total_gene_count": 2589,
+    "filtered_gene_count": 2589
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001418",
+    "name": "cyst cell intermediate cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 17,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'cyst cell intermediate' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004931"
+    ],
+    "total_gene_count": 8689,
+    "filtered_gene_count": 3608
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001419",
+    "name": "cyst stem cell cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'cyst stem cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004933"
+    ],
+    "total_gene_count": 3471,
+    "filtered_gene_count": 3471
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001420",
+    "name": "early cyst cell 1 cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'early cyst cell 1' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004931"
+    ],
+    "total_gene_count": 5182,
+    "filtered_gene_count": 2496
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001421",
+    "name": "early elongation stage spermatid cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 74,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'early elongation stage spermatid' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00057175"
+    ],
+    "total_gene_count": 6795,
+    "filtered_gene_count": 213
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001422",
+    "name": "early-mid elongation-stage spermatid cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 4,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'early-mid elongation-stage spermatid' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00057000"
+    ],
+    "total_gene_count": 5415,
+    "filtered_gene_count": 5415
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001423",
+    "name": "head cyst cell cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 11,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'head cyst cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00057009"
+    ],
+    "total_gene_count": 7966,
+    "filtered_gene_count": 3905
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001424",
+    "name": "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058143"
+    ],
+    "total_gene_count": 5315,
+    "filtered_gene_count": 2596
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001425",
+    "name": "late cyst cell branch a cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 2,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'late cyst cell branch a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004931"
+    ],
+    "total_gene_count": 4940,
+    "filtered_gene_count": 4940
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001426",
+    "name": "late cyst cell branch b cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'late cyst cell branch b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004931"
+    ],
+    "total_gene_count": 6109,
+    "filtered_gene_count": 3440
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001427",
+    "name": "late primary spermatocyte cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 2,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'late primary spermatocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005286"
+    ],
+    "total_gene_count": 3924,
+    "filtered_gene_count": 3924
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001428",
+    "name": "male gonad associated epithelium cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 85,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'male gonad associated epithelium' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058261"
+    ],
+    "total_gene_count": 10724,
+    "filtered_gene_count": 2471
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001429",
+    "name": "mid-late elongation-stage spermatid cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 12,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'mid-late elongation-stage spermatid' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00057003"
+    ],
+    "total_gene_count": 5838,
+    "filtered_gene_count": 1767
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001430",
+    "name": "mid-late proliferating spermatogonia cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'mid-late proliferating spermatogonia' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004935"
+    ],
+    "total_gene_count": 5236,
+    "filtered_gene_count": 2465
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001431",
+    "name": "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 34,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 7631,
+    "filtered_gene_count": 1536
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001432",
+    "name": "pigment cell cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'pigment cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004230"
+    ],
+    "total_gene_count": 5282,
+    "filtered_gene_count": 5282
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001433",
+    "name": "secretory cell of the male reproductive tract cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 1,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'secretory cell of the male reproductive tract' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058293"
+    ],
+    "total_gene_count": 2235,
+    "filtered_gene_count": 2235
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001434",
+    "name": "spermatid cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'spermatid' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004942"
+    ],
+    "total_gene_count": 1616,
+    "filtered_gene_count": 1616
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001435",
+    "name": "spermatocyte cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 30,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'spermatocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004936"
+    ],
+    "total_gene_count": 12521,
+    "filtered_gene_count": 7582
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001436",
+    "name": "spermatocyte 0 cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 11,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'spermatocyte 0' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004936"
+    ],
+    "total_gene_count": 7228,
+    "filtered_gene_count": 3284
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001437",
+    "name": "spermatocyte 1 cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 4,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'spermatocyte 1' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004936"
+    ],
+    "total_gene_count": 6723,
+    "filtered_gene_count": 6723
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001438",
+    "name": "spermatocyte 2 cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'spermatocyte 2' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004936"
+    ],
+    "total_gene_count": 7110,
+    "filtered_gene_count": 7110
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001439",
+    "name": "spermatocyte 3 cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 4,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'spermatocyte 3' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004936"
+    ],
+    "total_gene_count": 9742,
+    "filtered_gene_count": 9742
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001440",
+    "name": "spermatocyte 4 cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 1,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'spermatocyte 4' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004936"
+    ],
+    "total_gene_count": 5544,
+    "filtered_gene_count": 5544
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001441",
+    "name": "spermatocyte 5 cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'spermatocyte 5' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004936"
+    ],
+    "total_gene_count": 11268,
+    "filtered_gene_count": 9500
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001442",
+    "name": "spermatocyte 6 cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'spermatocyte 6' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004936"
+    ],
+    "total_gene_count": 9692,
+    "filtered_gene_count": 9692
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001443",
+    "name": "spermatocyte 7a cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 2,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'spermatocyte 7a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004936"
+    ],
+    "total_gene_count": 4883,
+    "filtered_gene_count": 4883
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001444",
+    "name": "spermatocyte cyst cell branch a cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 2,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'spermatocyte cyst cell branch a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00057004"
+    ],
+    "total_gene_count": 4636,
+    "filtered_gene_count": 4636
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001445",
+    "name": "spermatocyte cyst cell branch b cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'spermatocyte cyst cell branch b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00057004"
+    ],
+    "total_gene_count": 4782,
+    "filtered_gene_count": 4782
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001446",
+    "name": "spermatogonium cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 8,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'spermatogonium' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004935"
+    ],
+    "total_gene_count": 7323,
+    "filtered_gene_count": 4561
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001447",
+    "name": "spermatogonium-spermatocyte transition cells, predicted (Fly Cell Atlas Smart-seq2 Testis) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 2,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'spermatogonium-spermatocyte transition' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00004936"
+    ],
+    "total_gene_count": 4052,
+    "filtered_gene_count": 4052
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001449",
+    "name": "adult fat body cells, predicted (Fly Cell Atlas Smart-seq2 Trachea) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000857",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 1,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00049949"
+    ],
+    "total_gene_count": 1070,
+    "filtered_gene_count": 1070
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001450",
+    "name": "adult neuron cells, predicted (Fly Cell Atlas Smart-seq2 Trachea) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000857",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 25,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00047095"
+    ],
+    "total_gene_count": 8405,
+    "filtered_gene_count": 1484
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001451",
+    "name": "adult tracheal cell cells, predicted (Fly Cell Atlas Smart-seq2 Trachea) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000857",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 318,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00005040"
+    ],
+    "total_gene_count": 12149,
+    "filtered_gene_count": 724
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001456",
+    "name": "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Trachea) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000857",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 2274,
+    "filtered_gene_count": 687
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001458",
+    "name": "gustatory receptor neuron cells, predicted (Fly Cell Atlas Smart-seq2 Wing) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000858",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 16,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'gustatory receptor neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058249"
+    ],
+    "total_gene_count": 3754,
+    "filtered_gene_count": 820
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001459",
+    "name": "hemocyte cells, predicted (Fly Cell Atlas Smart-seq2 Wing) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000858",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 4,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058143"
+    ],
+    "total_gene_count": 1067,
+    "filtered_gene_count": 1067
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001460",
+    "name": "mechanosensory neuron cells, predicted (Fly Cell Atlas Smart-seq2 Wing) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000858",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 24,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'mechanosensory neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00051420"
+    ],
+    "total_gene_count": 4692,
+    "filtered_gene_count": 1096
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001461",
+    "name": "muscle cell cells, predicted (Fly Cell Atlas Smart-seq2 Wing) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000858",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 7,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 1561,
+    "filtered_gene_count": 497
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001462",
+    "name": "nociceptive neuron cells, predicted (Fly Cell Atlas Smart-seq2 Wing) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000858",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'nociceptive neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00048471"
+    ],
+    "total_gene_count": 1346,
+    "filtered_gene_count": 1346
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001463",
+    "name": "peripheral glial cell cells, predicted (Fly Cell Atlas Smart-seq2 Wing) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000858",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 17,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'peripheral glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058258"
+    ],
+    "total_gene_count": 2923,
+    "filtered_gene_count": 410
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001464",
+    "name": "pheromone-sensing neuron cells, predicted (Fly Cell Atlas Smart-seq2 Wing) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000858",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 11,
+    "neo_label": "Cluster",
+    "title": "Cells assigned the type 'pheromone-sensing neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058247"
+    ],
+    "total_gene_count": 2818,
+    "filtered_gene_count": 670
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001466",
+    "name": "insulin-producing cell cells, sorted (Fly Cell Atlas Smart-seq2 dilp2 IPC (insulin-producing cells)) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000859",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 658,
+    "neo_label": "Cluster",
+    "title": "Cells FACS-sorted by the authors as 'insulin-producing cell' and analysed as a whole; typed from the authors' sample description, not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00110107"
+    ],
+    "total_gene_count": 10959,
+    "filtered_gene_count": 1152
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001467",
+    "name": "corpora cardiaca cell cells, sorted (Fly Cell Atlas Smart-seq2 Akh CC (corpora cardiaca)) (Li 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000860",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
+    "cell_number": 592,
+    "neo_label": "Cluster",
+    "title": "Cells FACS-sorted by the authors as 'corpora cardiaca cell' and analysed as a whole; typed from the authors' sample description, not a transcriptomic cluster.",
+    "cell_type": [
+      "FBbt:00058019"
+    ],
+    "total_gene_count": 13354,
+    "filtered_gene_count": 997
+  }
+]

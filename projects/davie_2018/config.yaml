@@ -119,7 +119,7 @@ annotations:
 
 # Clusters the authors left numbered are marked `unannotated` in
 # cell_type_annotations.json and HELD unmapped (curator decision; no author class
-# exists from which to take a broad anchor).
+# exists from which to take a broad anchor): listed in mapping.tsv, never loaded.
 unidentified:
   rule: none
   hold_unidentified: true

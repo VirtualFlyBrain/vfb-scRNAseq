@@ -50,6 +50,8 @@ def main() -> None:
     rows, counts, meta = compute_expression(args.project, cfg)
     print(f"  {meta['n_genes']} genes, {meta['n_cells']} cells, {len(counts)} clusters; "
           f"{len(rows):,} rows with extent>{meta['cutoff']}")
+    if meta.get("held_clusters"):
+        print(f"  left out {meta['held_clusters']} held clusters ({meta['held_cells']} cells)")
 
     # 1. filtered expression table (diffable)
     gz = bool(cfg["expression"].get("gzip_tsv"))
@@ -69,6 +71,9 @@ def main() -> None:
         fh.write(f"- normalisation: **{meta['normalisation']}**; extent filter: **> {meta['cutoff']}**\n")
         fh.write(f"- {meta['n_genes']} genes x {meta['n_cells']} cells; {len(counts)} clusters; "
                  f"{len(rows):,} filtered rows\n")
+        if meta.get("held_clusters"):
+            fh.write(f"- not loaded: {meta['held_clusters']} held clusters (no FBbt term), "
+                     f"{meta['held_cells']} cells\n")
         fh.write(f"- dataset-level: total_gene_count **{meta['dataset_total_gene_count']}**, "
                  f"filtered_gene_count **{meta['dataset_filtered_gene_count']}**\n\n")
         fh.write("| cluster | cells | total_gene_count | filtered_gene_count |\n")

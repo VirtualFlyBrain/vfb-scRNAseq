@@ -175,9 +175,13 @@ annotation_build:
 annotations:
   review_columns: [clustering, source_cluster_id, type, membership, author_ontology_id, author_broad]
 
+# "unknown" (the classifier gave no type), "unannotated" and "artefact" cells are one
+# entry each, flagged `unannotated` and held: listed in mapping.tsv with a
+# hold_reason, never loaded.
 unidentified:
   rule: none
   hold_unidentified: true
+  hold_reasons: {unannotated: leftover, artefact: artefact, unknown: unassigned}
 
 # FBbt mappings are made once per author type in li_2022_fca_10x/type_mapping/ (the
 # Smart-seq2 labels are the 10x types) and copied per cluster by
