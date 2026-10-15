@@ -1,6 +1,7 @@
 {
   "project": "li_2022_fca_ss2",
-  "generated_at": "2026-10-14",
+  "created_at": "2026-10-14",
+  "updated_at": "2026-10-15",
   "summary": "Fly Cell Atlas Smart-seq2 data (Li et al. 2022, Science), rebuilt from ArrayExpress E-MTAB-10628 and the authors' own per-tissue Smart-seq2 AnnData analyses (flycellatlas.org), replacing the old SCEA-based FCA loads with fresh VFBseq ids; the 10x data (E-MTAB-10519) is the separate project li_2022_fca_10x. 31 Samples (tissue x sex x genotype x age) and 35 Assays (384-well plates) from the ArrayExpress SDRF; 17 Clusterings, one per author tissue analysis, whose groups are the authors' label-transfer predictions (and two FACS-sorted groups) rather than transcriptomic clusters. 237 author groups, 211 mapped to FBbt (via the type-level mappings shared with li_2022_fca_10x) and loaded, 26 held. Summary expression for the loaded Clusters as CPM (16,306 genes x 9,892 cells; 426,111 cluster x gene rows with extent > 0.2).",
   "decisions": [
     {
@@ -63,7 +64,22 @@
     {
       "date": "2026-10-14",
       "check": "verify_mappings.py and OLS lookups: every FBbt, FBdv and FBcv term used looked up against the releases listed (FBbt 2026-10-01, FBdv 2026-09-30, FBcv 2026-10-01).",
-      "result": "All terms current."
+      "result": "All terms current: 109 distinct FBbt terms in the mappings; the FBbt/FBdv/FBcv terms on Samples, Assays and the Dataset (shared with li_2022_fca_10x: 30 in all) current."
+    },
+    {
+      "date": "2026-10-14",
+      "check": "CPM conversion of the authors' X (log2(CPM + 1) -> CPM): per-cell CPM totals must have a median within 0.99e6-1.001e6 and none above 1.001e6, in every analysis.",
+      "result": "Passed for all 17 analyses. In dilp2IPC some cells sum to less (lowest about 595,000 CPM) because the authors dropped 5,337 genes after normalising; the values are still CPM, so the check uses the median rather than every cell."
+    },
+    {
+      "date": "2026-10-14",
+      "check": "Cluster sizes read from the h5ad files compared with cell_type_annotations.json (enforced by the expression build).",
+      "result": "All equal."
+    },
+    {
+      "date": "2026-10-14",
+      "check": "Marker spot checks in the expression output.",
+      "result": "Ilp2 in the dilp2 insulin-producing cells (extent 0.73), Akh in the Akh corpora cardiaca cells (0.24), SP in male accessory gland main cells (0.95), fzo in late primary spermatocytes (0.50). Re-confirmed 2026-10-15 against the current expression.tsv.gz."
     }
   ],
   "people": [

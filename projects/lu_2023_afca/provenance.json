@@ -1,6 +1,7 @@
 {
   "project": "lu_2023_afca",
-  "generated_at": "2026-10-15",
+  "created_at": "2026-10-15",
+  "updated_at": "2026-10-15",
   "summary": "Aging Fly Cell Atlas (Lu et al. 2023, Science), rebuilt from GEO GSE218661 and the authors' own head and body AnnData analyses, replacing the old FlyBase/SCEA load FBlc0006422 with fresh VFBseq ids. Single-nucleus 10x data from whole head and body, male and female, at 30, 50 and 70 days (72 new Samples/Assays), co-analysed by the authors with the Fly Cell Atlas 5-day head and body samples, which are reused from li_2022_fca_10x. Two Clusterings (head, body) with one Cluster per author cell type over all ages: 164 author types, 143 mapped to FBbt and loaded, 21 held. Summary expression for the loaded Clusters as CPM (15,989 genes x 566,254 cells; 133,771 cluster x gene rows with extent > 0.2).",
   "decisions": [
     {
@@ -135,7 +136,11 @@
       "id": "10.1126/science.adg0934",
       "type": "publication",
       "label": "Aging Fly Cell Atlas identifies exhaustive aging features at cellular resolution",
-      "xrefs": ["PMID:37319212", "PMCID:PMC10829769", "FlyBase:FBrf0256843"],
+      "xrefs": [
+        "PMID:37319212",
+        "PMCID:PMC10829769",
+        "FlyBase:FBrf0256843"
+      ],
       "description": "Lu et al. 2023, Science. Indexed locally for the report subagent; the PMC full text is Science's short article only.",
       "url": "https://doi.org/10.1126/science.adg0934",
       "files": [
@@ -161,7 +166,10 @@
       "id": "GSE218661",
       "type": "dataset",
       "label": "Aging Fly Cell Atlas Identifies Exhaustive Aging Features at Cellular Resolution",
-      "xrefs": ["BioProject:PRJNA904763", "SRA:SRP409514"],
+      "xrefs": [
+        "BioProject:PRJNA904763",
+        "SRA:SRP409514"
+      ],
       "description": "GEO series: 72 single-nucleus 10x libraries (head and body, male and female, 30/50/70 days, 6 each). Sample metadata read live (SOFT); the authors' head and body AnnData files are its supplementary files.",
       "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE218661",
       "accessed_at": "2026-10-15",
@@ -283,17 +291,78 @@
       "accessed_at": "2026-10-15",
       "description": "Series and Sample SOFT metadata read by ingest.fetch_series (build_samples_from_geo.py)."
     },
-    { "id": "python", "type": "language", "label": "Python", "version": "3.14.3", "description": "Pipeline environment (uv-managed)." },
-    { "id": "h5py", "type": "library", "label": "h5py", "version": "3.16.0", "description": "Reads the authors' AnnData files (obs, var, matrices) without anndata." },
-    { "id": "numpy", "type": "library", "label": "numpy", "version": "2.5.1" },
-    { "id": "pandas", "type": "library", "label": "pandas", "version": "3.0.5" },
-    { "id": "pyyaml", "type": "library", "label": "PyYAML", "version": "6.0.3" },
-    { "id": "linkml", "type": "library", "label": "linkml", "version": "1.11.1", "description": "linkml-validate and linkml-convert (flat RDF)." },
-    { "id": "linkml-runtime", "type": "library", "label": "linkml-runtime", "version": "1.11.1" },
-    { "id": "linkml-owl", "type": "library", "label": "linkml-owl", "version": "0.5.0", "description": "Metadata OWL." },
-    { "id": "rdflib", "type": "library", "label": "rdflib", "version": "7.6.0" },
-    { "id": "robot", "type": "tool", "label": "ROBOT", "version": "1.9.11", "description": "OFN to OWL/XML conversion (metadata and expression OWL)." },
-    { "id": "psql", "type": "tool", "label": "psql", "version": "14.15", "description": "FlyBase Chado queries." }
+    {
+      "id": "python",
+      "type": "language",
+      "label": "Python",
+      "version": "3.14.3",
+      "description": "Pipeline environment (uv-managed)."
+    },
+    {
+      "id": "h5py",
+      "type": "library",
+      "label": "h5py",
+      "version": "3.16.0",
+      "description": "Reads the authors' AnnData files (obs, var, matrices) without anndata."
+    },
+    {
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
+      "version": "2.5.1"
+    },
+    {
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
+      "version": "3.0.5"
+    },
+    {
+      "id": "pyyaml",
+      "type": "library",
+      "label": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
+      "version": "1.11.1",
+      "description": "linkml-validate and linkml-convert (flat RDF)."
+    },
+    {
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
+      "version": "1.11.1"
+    },
+    {
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
+      "version": "0.5.0",
+      "description": "Metadata OWL."
+    },
+    {
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
+      "version": "1.9.11",
+      "description": "OFN to OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "id": "psql",
+      "type": "tool",
+      "label": "psql",
+      "version": "14.15",
+      "description": "FlyBase Chado queries."
+    }
   ],
   "models": [
     {

@@ -18,7 +18,7 @@ from pathlib import Path
 
 SCHEMA_PATH = Path("src/vfb_scrnaseq/schemas/provenance.schema.json")
 
-REQUIRED_TOP = {"project", "generated_at", "summary", "pipeline", "ontologies", "data_sources", "software"}
+REQUIRED_TOP = {"project", "created_at", "updated_at", "summary", "pipeline", "ontologies", "data_sources", "software"}
 
 
 def main() -> int:

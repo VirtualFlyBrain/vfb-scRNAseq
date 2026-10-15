@@ -398,6 +398,8 @@ Each project records a `provenance.json` (schema:
 `check_provenance.py` hook): what the build was made from and how, so a result can
 be understood, reproduced and re-checked when a source changes.
 
+- **created_at / updated_at** — the date of the first build and of the latest change;
+  what changed in between is in the dated decisions and checks;
 - **summary** — a short paragraph: what the project is, what was built, from what;
 - **decisions** — dated `{date, by, decision}` entries in date order, `by` being
   `curator` (decided or approved by the curator) or `pipeline` (a method or build

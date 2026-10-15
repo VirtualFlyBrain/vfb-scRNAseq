@@ -5,7 +5,7 @@
   "description": "Per-project record of what a build was made from and how: the curator decisions, and the exact versions of the ontologies, data sources, software and models used, so results are reproducible and can be re-checked when a source changes (e.g. an FBbt release renames a term). One provenance.json per project. Every entry uses the same field names: `id` is an identifier only (DOI, accession, CURIE, model id, or a short slug), `label` a short human-readable name or title, `type` the kind of thing from the section's list, `description` free text on how or why it was used, `accessed_at` the date it was retrieved or queried.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["project", "generated_at", "summary", "pipeline", "ontologies", "data_sources", "software"],
+  "required": ["project", "created_at", "updated_at", "summary", "pipeline", "ontologies", "data_sources", "software"],
   "definitions": {
     "date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}" },
     "id": {
@@ -31,7 +31,8 @@
   },
   "properties": {
     "project": { "type": "string", "description": "Project directory name this provenance applies to." },
-    "generated_at": { "$ref": "#/definitions/date", "description": "ISO 8601 date (or datetime) this record was produced." },
+    "created_at": { "$ref": "#/definitions/date", "description": "ISO 8601 date the project was first built and this record produced." },
+    "updated_at": { "$ref": "#/definitions/date", "description": "ISO 8601 date of the latest change to the project or this record; what changed since created_at is in the dated decisions and checks." },
     "summary": { "type": "string", "description": "A short paragraph: what the project is, what was built, and from what." },
     "decisions": {
       "type": "array",
