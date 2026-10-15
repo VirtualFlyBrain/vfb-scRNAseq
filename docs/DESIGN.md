@@ -424,6 +424,16 @@ Beyond the cluster→FBbt layer, the rest of the schema is populated from GEO
   unset only when genuinely unknown (see the *sex* note below).
 - **`Assay.method`:** the sequencing method as an FBcv term (e.g. `FBcv:0009008`
   "10x sequencing"), from `sample_build`.
+- **Labels.** A Sample's label is its raw tissue, age, sex/genotype and replicate (plus
+  the authors' sample id where samples are otherwise alike: `sample_label_id`, e.g.
+  FCA "FCA4"). An Assay's label is its Sample's plus what the assay is
+  (`sample_build.assay_label`: `unit`, optional `pattern` on the library id and
+  `of_total`), e.g. "optic lobes, 24h APF, W1118 rep A, 10x lane 1 of 4
+  (Kurmangaliyev 2020)" (the paper: 4 Chromium lanes per W1118 sample, one GSM each),
+  "brain, 15 Days, DGRP-551 rep r1, 10x library (Davie 2018)", "…, FCA46, 10x library
+  S14 (Li 2022)", "…, Smart-seq2 plate P5 (Li 2022)". Accessions stay as dbxrefs
+  (`xref_library_id` adds the full library id where the label shortens it). Sample and
+  Assay labels are unique within a project (tested).
 - **`Clustering`:** one per clustering analysis in the dataset, each linked to its
   dataset (and, where the link is 1:1, the samples/assays that fed it).
 

@@ -3371,7 +3371,7 @@ FlyBase:FBrf0252876 a FBcv:0000212 ;
     neo_property:nodeLabel "pub" .
 
 VFBseq:00000539 a FBcv:0003024 ;
-    rdfs:label "thorax, 5 days, male, PromE800-GAL4, UAS-unc84GFP (Li 2022)" ;
+    rdfs:label "thorax, 5 days, male, PromE800-GAL4, UAS-unc84GFP, FCA53 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00003018 ;
@@ -3380,1204 +3380,1337 @@ VFBseq:00000539 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000540 a FBcv:0003025 ;
-    rdfs:label "ERX5671946" ;
+    rdfs:label "thorax, 5 days, male, PromE800-GAL4, UAS-unc84GFP, FCA53, 10x library S1 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000539 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671946",
+        "FCA53_Male_oenocyteGFP_adult_5dWT_Jasper_sample1_S1",
         "SAMEA9135853" .
 
 VFBseq:00000542 a FBcv:0003025 ;
-    rdfs:label "ERX5671957" ;
+    rdfs:label "fat body, 5 days, female, Cg-GAL4, UAS-lamGFP, FCA46, 10x library S14 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000541 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671957",
+        "FCA46_Female_fatbodyGFP_adult_3dcgGAL4LamGFPT_Jasper_sample1_S14",
         "SAMEA9135882" .
 
 VFBseq:00000543 a FBcv:0003025 ;
-    rdfs:label "ERX5671957" ;
+    rdfs:label "fat body, 5 days, female, Cg-GAL4, UAS-lamGFP, FCA46, 10x library S18 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000541 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671957",
+        "FCA46_Female_fatbodyGFP_adult_3dcgGAL4LamGFPT_Jasper_sample1_S18",
         "SAMEA9135882" .
 
 VFBseq:00000544 a FBcv:0003025 ;
-    rdfs:label "ERX5671957" ;
+    rdfs:label "fat body, 5 days, female, Cg-GAL4, UAS-lamGFP, FCA46, 10x library S19 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000541 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671957",
+        "FCA46_Female_fatbodyGFP_adult_3dcgGAL4LamGFPT_Jasper_sample1_S19",
         "SAMEA9135882" .
 
 VFBseq:00000545 a FBcv:0003025 ;
-    rdfs:label "ERX5671957" ;
+    rdfs:label "fat body, 5 days, female, Cg-GAL4, UAS-lamGFP, FCA46, 10x library S2 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000541 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671957",
+        "FCA46_Female_fatbodyGFP_adult_3dcgGAL4LamGFPT_Jasper_sample1_S2",
         "SAMEA9135882" .
 
 VFBseq:00000547 a FBcv:0003025 ;
-    rdfs:label "ERX5671961" ;
+    rdfs:label "haltere, 5 days, male, FCA47, 10x library S1 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000546 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671961",
+        "FCA47_Male_haltere_adult_5dWT_Luo_sample1_S1",
         "SAMEA9135898" .
 
 VFBseq:00000548 a FBcv:0003025 ;
-    rdfs:label "ERX5671961" ;
+    rdfs:label "haltere, 5 days, male, FCA47, 10x library S15 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000546 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671961",
+        "FCA47_Male_haltere_adult_5dWT_Luo_sample1_S15",
         "SAMEA9135898" .
 
 VFBseq:00000549 a FBcv:0003025 ;
-    rdfs:label "ERX5671961" ;
+    rdfs:label "haltere, 5 days, male, FCA47, 10x library S20 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000546 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671961",
+        "FCA47_Male_haltere_adult_5dWT_Luo_sample1_S20",
         "SAMEA9135898" .
 
 VFBseq:00000550 a FBcv:0003025 ;
-    rdfs:label "ERX5671961" ;
+    rdfs:label "haltere, 5 days, male, FCA47, 10x library S9 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000546 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671961",
+        "FCA47_Male_haltere_adult_5dWT_Luo_sample1_S9",
         "SAMEA9135898" .
 
 VFBseq:00000552 a FBcv:0003025 ;
-    rdfs:label "ERX5671962" ;
+    rdfs:label "haltere, 5 days, female, FCA48, 10x library S11 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000551 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671962",
+        "FCA48_Female_haltere_adult_5dWT_Luo_sample1_S11",
         "SAMEA9135901" .
 
 VFBseq:00000553 a FBcv:0003025 ;
-    rdfs:label "ERX5671962" ;
+    rdfs:label "haltere, 5 days, female, FCA48, 10x library S4 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000551 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671962",
+        "FCA48_Female_haltere_adult_5dWT_Luo_sample1_S4",
         "SAMEA9135901" .
 
 VFBseq:00000554 a FBcv:0003025 ;
-    rdfs:label "ERX5671962" ;
+    rdfs:label "haltere, 5 days, female, FCA48, 10x library S6 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000551 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671962",
+        "FCA48_Female_haltere_adult_5dWT_Luo_sample1_S6",
         "SAMEA9135901" .
 
 VFBseq:00000555 a FBcv:0003025 ;
-    rdfs:label "ERX5671962" ;
+    rdfs:label "haltere, 5 days, female, FCA48, 10x library S8 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000551 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671962",
+        "FCA48_Female_haltere_adult_5dWT_Luo_sample1_S8",
         "SAMEA9135901" .
 
 VFBseq:00000557 a FBcv:0003025 ;
-    rdfs:label "ERX5671973" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, male, FCA51, 10x library S24 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000556 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671973",
+        "FCA51_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample2_S24",
         "SAMEA9135946" .
 
 VFBseq:00000558 a FBcv:0003025 ;
-    rdfs:label "ERX5671973" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, male, FCA51, 10x library S25 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000556 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671973",
+        "FCA51_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample2_S25",
         "SAMEA9135946" .
 
 VFBseq:00000559 a FBcv:0003025 ;
-    rdfs:label "ERX5671973" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, male, FCA51, 10x library S37 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000556 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671973",
+        "FCA51_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample2_S37",
         "SAMEA9135946" .
 
 VFBseq:00000560 a FBcv:0003025 ;
-    rdfs:label "ERX5671973" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, male, FCA51, 10x library S40 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000556 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671973",
+        "FCA51_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample2_S40",
         "SAMEA9135946" .
 
 VFBseq:00000562 a FBcv:0003025 ;
-    rdfs:label "ERX5671974" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, female, FCA52, 10x library S26 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000561 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671974",
+        "FCA52_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample2_S26",
         "SAMEA9135950" .
 
 VFBseq:00000563 a FBcv:0003025 ;
-    rdfs:label "ERX5671974" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, female, FCA52, 10x library S27 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000561 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671974",
+        "FCA52_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample2_S27",
         "SAMEA9135950" .
 
 VFBseq:00000564 a FBcv:0003025 ;
-    rdfs:label "ERX5671974" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, female, FCA52, 10x library S32 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000561 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671974",
+        "FCA52_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample2_S32",
         "SAMEA9135950" .
 
 VFBseq:00000565 a FBcv:0003025 ;
-    rdfs:label "ERX5671974" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, female, FCA52, 10x library S36 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000561 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671974",
+        "FCA52_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample2_S36",
         "SAMEA9135950" .
 
 VFBseq:00000567 a FBcv:0003025 ;
-    rdfs:label "ERX5671970" ;
+    rdfs:label "thorax, 5 days, female, PromE800-GAL4, UAS-unc84GFP, FCA54, 10x library S28 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000566 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671970",
+        "FCA54_Female_oenocyteGFP_adult_5dWT_Jasper_sample1_S28",
         "SAMEA9135934" .
 
 VFBseq:00000568 a FBcv:0003025 ;
-    rdfs:label "ERX5671970" ;
+    rdfs:label "thorax, 5 days, female, PromE800-GAL4, UAS-unc84GFP, FCA54, 10x library S30 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000566 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671970",
+        "FCA54_Female_oenocyteGFP_adult_5dWT_Jasper_sample1_S30",
         "SAMEA9135934" .
 
 VFBseq:00000569 a FBcv:0003025 ;
-    rdfs:label "ERX5671970" ;
+    rdfs:label "thorax, 5 days, female, PromE800-GAL4, UAS-unc84GFP, FCA54, 10x library S38 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000566 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671970",
+        "FCA54_Female_oenocyteGFP_adult_5dWT_Jasper_sample1_S38",
         "SAMEA9135934" .
 
 VFBseq:00000570 a FBcv:0003025 ;
-    rdfs:label "ERX5671970" ;
+    rdfs:label "thorax, 5 days, female, PromE800-GAL4, UAS-unc84GFP, FCA54, 10x library S39 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000566 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671970",
+        "FCA54_Female_oenocyteGFP_adult_5dWT_Jasper_sample1_S39",
         "SAMEA9135934" .
 
 VFBseq:00000572 a FBcv:0003025 ;
-    rdfs:label "ERX5671951" ;
+    rdfs:label "antenna, 5 days, male, FCA55, 10x library S21 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000571 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671951",
+        "FCA55_Male_antenna_adult_5dWT_Luo_sample2_S21",
         "SAMEA9135858" .
 
 VFBseq:00000573 a FBcv:0003025 ;
-    rdfs:label "ERX5671951" ;
+    rdfs:label "antenna, 5 days, male, FCA55, 10x library S23 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000571 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671951",
+        "FCA55_Male_antenna_adult_5dWT_Luo_sample2_S23",
         "SAMEA9135858" .
 
 VFBseq:00000574 a FBcv:0003025 ;
-    rdfs:label "ERX5671951" ;
+    rdfs:label "antenna, 5 days, male, FCA55, 10x library S29 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000571 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671951",
+        "FCA55_Male_antenna_adult_5dWT_Luo_sample2_S29",
         "SAMEA9135858" .
 
 VFBseq:00000575 a FBcv:0003025 ;
-    rdfs:label "ERX5671951" ;
+    rdfs:label "antenna, 5 days, male, FCA55, 10x library S33 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000571 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671951",
+        "FCA55_Male_antenna_adult_5dWT_Luo_sample2_S33",
         "SAMEA9135858" .
 
 VFBseq:00000577 a FBcv:0003025 ;
-    rdfs:label "ERX5671952" ;
+    rdfs:label "antenna, 5 days, female, FCA56, 10x library S46 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000576 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671952",
+        "FCA56_Female_antenna_adult_5dWT_Luo_sample2_S46",
         "SAMEA9135862" .
 
 VFBseq:00000578 a FBcv:0003025 ;
-    rdfs:label "ERX5671952" ;
+    rdfs:label "antenna, 5 days, female, FCA56, 10x library S52 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000576 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671952",
+        "FCA56_Female_antenna_adult_5dWT_Luo_sample2_S52",
         "SAMEA9135862" .
 
 VFBseq:00000579 a FBcv:0003025 ;
-    rdfs:label "ERX5671952" ;
+    rdfs:label "antenna, 5 days, female, FCA56, 10x library S53 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000576 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671952",
+        "FCA56_Female_antenna_adult_5dWT_Luo_sample2_S53",
         "SAMEA9135862" .
 
 VFBseq:00000580 a FBcv:0003025 ;
-    rdfs:label "ERX5671952" ;
+    rdfs:label "antenna, 5 days, female, FCA56, 10x library S54 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000576 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671952",
+        "FCA56_Female_antenna_adult_5dWT_Luo_sample2_S54",
         "SAMEA9135862" .
 
 VFBseq:00000582 a FBcv:0003025 ;
-    rdfs:label "ERX5671980" ;
+    rdfs:label "trachea, 5 days, male, Btl-GAL4, UAS-lamGFP, FCA57, 10x library S41 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000581 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671980",
+        "FCA57_Male_TracheaGFP_adult_5dWT_Kornberg_sample1_S41",
         "SAMEA9135974" .
 
 VFBseq:00000583 a FBcv:0003025 ;
-    rdfs:label "ERX5671980" ;
+    rdfs:label "trachea, 5 days, male, Btl-GAL4, UAS-lamGFP, FCA57, 10x library S43 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000581 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671980",
+        "FCA57_Male_TracheaGFP_adult_5dWT_Kornberg_sample1_S43",
         "SAMEA9135974" .
 
 VFBseq:00000584 a FBcv:0003025 ;
-    rdfs:label "ERX5671980" ;
+    rdfs:label "trachea, 5 days, male, Btl-GAL4, UAS-lamGFP, FCA57, 10x library S47 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000581 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671980",
+        "FCA57_Male_TracheaGFP_adult_5dWT_Kornberg_sample1_S47",
         "SAMEA9135974" .
 
 VFBseq:00000585 a FBcv:0003025 ;
-    rdfs:label "ERX5671980" ;
+    rdfs:label "trachea, 5 days, male, Btl-GAL4, UAS-lamGFP, FCA57, 10x library S55 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000581 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671980",
+        "FCA57_Male_TracheaGFP_adult_5dWT_Kornberg_sample1_S55",
         "SAMEA9135974" .
 
 VFBseq:00000587 a FBcv:0003025 ;
-    rdfs:label "ERX5671981" ;
+    rdfs:label "trachea, 5 days, female, Btl-GAL4, UAS-lamGFP, FCA58, 10x library S42 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000586 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671981",
+        "FCA58_Female_TracheaGFP_adult_5dWT_Kornberg_sample1_S42",
         "SAMEA9135978" .
 
 VFBseq:00000588 a FBcv:0003025 ;
-    rdfs:label "ERX5671981" ;
+    rdfs:label "trachea, 5 days, female, Btl-GAL4, UAS-lamGFP, FCA58, 10x library S45 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000586 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671981",
+        "FCA58_Female_TracheaGFP_adult_5dWT_Kornberg_sample1_S45",
         "SAMEA9135978" .
 
 VFBseq:00000589 a FBcv:0003025 ;
-    rdfs:label "ERX5671981" ;
+    rdfs:label "trachea, 5 days, female, Btl-GAL4, UAS-lamGFP, FCA58, 10x library S50 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000586 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671981",
+        "FCA58_Female_TracheaGFP_adult_5dWT_Kornberg_sample1_S50",
         "SAMEA9135978" .
 
 VFBseq:00000590 a FBcv:0003025 ;
-    rdfs:label "ERX5671981" ;
+    rdfs:label "trachea, 5 days, female, Btl-GAL4, UAS-lamGFP, FCA58, 10x library S51 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000586 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671981",
+        "FCA58_Female_TracheaGFP_adult_5dWT_Kornberg_sample1_S51",
         "SAMEA9135978" .
 
 VFBseq:00000592 a FBcv:0003025 ;
-    rdfs:label "ERX5671977" ;
+    rdfs:label "testis, 1 days, male, FCA59, 10x library S44 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000591 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671977",
+        "FCA59_Male_testis_adult_1dWT_Fuller_sample1_S44",
         "SAMEA9135962" .
 
 VFBseq:00000593 a FBcv:0003025 ;
-    rdfs:label "ERX5671977" ;
+    rdfs:label "testis, 1 days, male, FCA59, 10x library S48 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000591 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671977",
+        "FCA59_Male_testis_adult_1dWT_Fuller_sample1_S48",
         "SAMEA9135962" .
 
 VFBseq:00000594 a FBcv:0003025 ;
-    rdfs:label "ERX5671977" ;
+    rdfs:label "testis, 1 days, male, FCA59, 10x library S49 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000591 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671977",
+        "FCA59_Male_testis_adult_1dWT_Fuller_sample1_S49",
         "SAMEA9135962" .
 
 VFBseq:00000595 a FBcv:0003025 ;
-    rdfs:label "ERX5671977" ;
+    rdfs:label "testis, 1 days, male, FCA59, 10x library S56 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000591 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671977",
+        "FCA59_Male_testis_adult_1dWT_Fuller_sample1_S56",
         "SAMEA9135962" .
 
 VFBseq:00000597 a FBcv:0003025 ;
-    rdfs:label "ERX5671978" ;
+    rdfs:label "testis, 1 days, male, FCA60, 10x library S59 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000596 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671978",
+        "FCA60_Male_testis_adult_1dWT_Fuller_sample2_S59",
         "SAMEA9135966" .
 
 VFBseq:00000598 a FBcv:0003025 ;
-    rdfs:label "ERX5671978" ;
+    rdfs:label "testis, 1 days, male, FCA60, 10x library S61 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000596 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671978",
+        "FCA60_Male_testis_adult_1dWT_Fuller_sample2_S61",
         "SAMEA9135966" .
 
 VFBseq:00000599 a FBcv:0003025 ;
-    rdfs:label "ERX5671978" ;
+    rdfs:label "testis, 1 days, male, FCA60, 10x library S67 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000596 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671978",
+        "FCA60_Male_testis_adult_1dWT_Fuller_sample2_S67",
         "SAMEA9135966" .
 
 VFBseq:00000600 a FBcv:0003025 ;
-    rdfs:label "ERX5671978" ;
+    rdfs:label "testis, 1 days, male, FCA60, 10x library S70 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000596 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671978",
+        "FCA60_Male_testis_adult_1dWT_Fuller_sample2_S70",
         "SAMEA9135966" .
 
 VFBseq:00000602 a FBcv:0003025 ;
-    rdfs:label "ERX5671979" ;
+    rdfs:label "testis, 1 days, male, FCA61, 10x library S60 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000601 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671979",
+        "FCA61_Male_testis_adult_1dWT_Fuller_sample3_S60",
         "SAMEA9135970" .
 
 VFBseq:00000603 a FBcv:0003025 ;
-    rdfs:label "ERX5671979" ;
+    rdfs:label "testis, 1 days, male, FCA61, 10x library S65 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000601 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671979",
+        "FCA61_Male_testis_adult_1dWT_Fuller_sample3_S65",
         "SAMEA9135970" .
 
 VFBseq:00000604 a FBcv:0003025 ;
-    rdfs:label "ERX5671979" ;
+    rdfs:label "testis, 1 days, male, FCA61, 10x library S68 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000601 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671979",
+        "FCA61_Male_testis_adult_1dWT_Fuller_sample3_S68",
         "SAMEA9135970" .
 
 VFBseq:00000605 a FBcv:0003025 ;
-    rdfs:label "ERX5671979" ;
+    rdfs:label "testis, 1 days, male, FCA61, 10x library S69 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000601 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671979",
+        "FCA61_Male_testis_adult_1dWT_Fuller_sample3_S69",
         "SAMEA9135970" .
 
 VFBseq:00000607 a FBcv:0003025 ;
-    rdfs:label "ERX5671971" ;
+    rdfs:label "ovary, 5 days, female, FCA62, 10x library S57 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000606 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671971",
+        "FCA62_Female_ovary_adult_5dWT_Nystul_All_Nuclei_S57",
         "SAMEA9135938" .
 
 VFBseq:00000608 a FBcv:0003025 ;
-    rdfs:label "ERX5671971" ;
+    rdfs:label "ovary, 5 days, female, FCA62, 10x library S58 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000606 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671971",
+        "FCA62_Female_ovary_adult_5dWT_Nystul_All_Nuclei_S58",
         "SAMEA9135938" .
 
 VFBseq:00000609 a FBcv:0003025 ;
-    rdfs:label "ERX5671971" ;
+    rdfs:label "ovary, 5 days, female, FCA62, 10x library S62 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000606 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671971",
+        "FCA62_Female_ovary_adult_5dWT_Nystul_All_Nuclei_S62",
         "SAMEA9135938" .
 
 VFBseq:00000610 a FBcv:0003025 ;
-    rdfs:label "ERX5671971" ;
+    rdfs:label "ovary, 5 days, female, FCA62, 10x library S63 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000606 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671971",
+        "FCA62_Female_ovary_adult_5dWT_Nystul_All_Nuclei_S63",
         "SAMEA9135938" .
 
 VFBseq:00000612 a FBcv:0003025 ;
-    rdfs:label "ERX5671972" ;
+    rdfs:label "ovary, 5 days, femal, FCA63, 10x library S64 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000611 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671972",
+        "FCA63_Female_ovary_adult_5dWT_Nystul_Big_Nuclei_S64",
         "SAMEA9135942" .
 
 VFBseq:00000613 a FBcv:0003025 ;
-    rdfs:label "ERX5671972" ;
+    rdfs:label "ovary, 5 days, femal, FCA63, 10x library S66 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000611 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671972",
+        "FCA63_Female_ovary_adult_5dWT_Nystul_Big_Nuclei_S66",
         "SAMEA9135942" .
 
 VFBseq:00000614 a FBcv:0003025 ;
-    rdfs:label "ERX5671972" ;
+    rdfs:label "ovary, 5 days, femal, FCA63, 10x library S71 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000611 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671972",
+        "FCA63_Female_ovary_adult_5dWT_Nystul_Big_Nuclei_S71",
         "SAMEA9135942" .
 
 VFBseq:00000615 a FBcv:0003025 ;
-    rdfs:label "ERX5671972" ;
+    rdfs:label "ovary, 5 days, femal, FCA63, 10x library S72 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000611 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671972",
+        "FCA63_Female_ovary_adult_5dWT_Nystul_Big_Nuclei_S72",
         "SAMEA9135942" .
 
 VFBseq:00000617 a FBcv:0003025 ;
-    rdfs:label "ERX5671959" ;
+    rdfs:label "digestive system, 5 days, male, FCA28, 10x library S1 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000616 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671959",
+        "FCA28_Male_gut_adult_5dWT_OBrien_sample1_S1",
         "SAMEA9135890" .
 
 VFBseq:00000618 a FBcv:0003025 ;
-    rdfs:label "ERX5671959" ;
+    rdfs:label "digestive system, 5 days, male, FCA28, 10x library S11 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000616 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671959",
+        "FCA28_Male_gut_adult_5dWT_OBrien_sample1_S11",
         "SAMEA9135890" .
 
 VFBseq:00000619 a FBcv:0003025 ;
-    rdfs:label "ERX5671959" ;
+    rdfs:label "digestive system, 5 days, male, FCA28, 10x library S14 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000616 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671959",
+        "FCA28_Male_gut_adult_5dWT_OBrien_sample1_S14",
         "SAMEA9135890" .
 
 VFBseq:00000620 a FBcv:0003025 ;
-    rdfs:label "ERX5671959" ;
+    rdfs:label "digestive system, 5 days, male, FCA28, 10x library S5 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000616 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671959",
+        "FCA28_Male_gut_adult_5dWT_OBrien_sample1_S5",
         "SAMEA9135890" .
 
 VFBseq:00000622 a FBcv:0003025 ;
-    rdfs:label "ERX5671960" ;
+    rdfs:label "digestive system, 5 days, female, FCA29, 10x library S12 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000621 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671960",
+        "FCA29_Female_gut_adult_5dWT_OBrien_sample1_S12",
         "SAMEA9135894" .
 
 VFBseq:00000623 a FBcv:0003025 ;
-    rdfs:label "ERX5671960" ;
+    rdfs:label "digestive system, 5 days, female, FCA29, 10x library S3 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000621 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671960",
+        "FCA29_Female_gut_adult_5dWT_OBrien_sample1_S3",
         "SAMEA9135894" .
 
 VFBseq:00000624 a FBcv:0003025 ;
-    rdfs:label "ERX5671960" ;
+    rdfs:label "digestive system, 5 days, female, FCA29, 10x library S7 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000621 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671960",
+        "FCA29_Female_gut_adult_5dWT_OBrien_sample1_S7",
         "SAMEA9135894" .
 
 VFBseq:00000625 a FBcv:0003025 ;
-    rdfs:label "ERX5671960" ;
+    rdfs:label "digestive system, 5 days, female, FCA29, 10x library S9 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000621 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671960",
+        "FCA29_Female_gut_adult_5dWT_OBrien_sample1_S9",
         "SAMEA9135894" .
 
 VFBseq:00000627 a FBcv:0003025 ;
-    rdfs:label "ERX5671968" ;
+    rdfs:label "malpighian tubule, 5 days, male, drip-GAL4, UAS-nlsGFP, FCA30, 10x library S10 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000626 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671968",
+        "FCA30_Male_MalpighianTubule_adult_5d_Perrimon_sample1_S10",
         "SAMEA9135926" .
 
 VFBseq:00000628 a FBcv:0003025 ;
-    rdfs:label "ERX5671968" ;
+    rdfs:label "malpighian tubule, 5 days, male, drip-GAL4, UAS-nlsGFP, FCA30, 10x library S15 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000626 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671968",
+        "FCA30_Male_MalpighianTubule_adult_5d_Perrimon_sample1_S15",
         "SAMEA9135926" .
 
 VFBseq:00000629 a FBcv:0003025 ;
-    rdfs:label "ERX5671968" ;
+    rdfs:label "malpighian tubule, 5 days, male, drip-GAL4, UAS-nlsGFP, FCA30, 10x library S4 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000626 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671968",
+        "FCA30_Male_MalpighianTubule_adult_5d_Perrimon_sample1_S4",
         "SAMEA9135926" .
 
 VFBseq:00000630 a FBcv:0003025 ;
-    rdfs:label "ERX5671968" ;
+    rdfs:label "malpighian tubule, 5 days, male, drip-GAL4, UAS-nlsGFP, FCA30, 10x library S8 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000626 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671968",
+        "FCA30_Male_MalpighianTubule_adult_5d_Perrimon_sample1_S8",
         "SAMEA9135926" .
 
 VFBseq:00000632 a FBcv:0003025 ;
-    rdfs:label "ERX5671969" ;
+    rdfs:label "malpighian tubule, 5 days, female, drip-GAL4, UAS-nlsGFP, FCA31, 10x library S13 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000631 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671969",
+        "FCA31_Female_MalpighianTubule_adult_5d_Perrimon_sample1_S13",
         "SAMEA9135930" .
 
 VFBseq:00000633 a FBcv:0003025 ;
-    rdfs:label "ERX5671969" ;
+    rdfs:label "malpighian tubule, 5 days, female, drip-GAL4, UAS-nlsGFP, FCA31, 10x library S16 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000631 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671969",
+        "FCA31_Female_MalpighianTubule_adult_5d_Perrimon_sample1_S16",
         "SAMEA9135930" .
 
 VFBseq:00000634 a FBcv:0003025 ;
-    rdfs:label "ERX5671969" ;
+    rdfs:label "malpighian tubule, 5 days, female, drip-GAL4, UAS-nlsGFP, FCA31, 10x library S2 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000631 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671969",
+        "FCA31_Female_MalpighianTubule_adult_5d_Perrimon_sample1_S2",
         "SAMEA9135930" .
 
 VFBseq:00000635 a FBcv:0003025 ;
-    rdfs:label "ERX5671969" ;
+    rdfs:label "malpighian tubule, 5 days, female, drip-GAL4, UAS-nlsGFP, FCA31, 10x library S6 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000631 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671969",
+        "FCA31_Female_MalpighianTubule_adult_5d_Perrimon_sample1_S6",
         "SAMEA9135930" .
 
 VFBseq:00000637 a FBcv:0003025 ;
-    rdfs:label "ERX5671955" ;
+    rdfs:label "body wall, 5 days, male, FCA32, 10x library S18 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000636 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671955",
+        "FCA32_Male_bodyWall_adult_5dWT_Jan_sample1_S18",
         "SAMEA9135874" .
 
 VFBseq:00000638 a FBcv:0003025 ;
-    rdfs:label "ERX5671955" ;
+    rdfs:label "body wall, 5 days, male, FCA32, 10x library S21 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000636 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671955",
+        "FCA32_Male_bodyWall_adult_5dWT_Jan_sample1_S21",
         "SAMEA9135874" .
 
 VFBseq:00000639 a FBcv:0003025 ;
-    rdfs:label "ERX5671955" ;
+    rdfs:label "body wall, 5 days, male, FCA32, 10x library S25 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000636 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671955",
+        "FCA32_Male_bodyWall_adult_5dWT_Jan_sample1_S25",
         "SAMEA9135874" .
 
 VFBseq:00000640 a FBcv:0003025 ;
-    rdfs:label "ERX5671955" ;
+    rdfs:label "body wall, 5 days, male, FCA32, 10x library S28 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000636 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671955",
+        "FCA32_Male_bodyWall_adult_5dWT_Jan_sample1_S28",
         "SAMEA9135874" .
 
 VFBseq:00000642 a FBcv:0003025 ;
-    rdfs:label "ERX5671956" ;
+    rdfs:label "body wall, 5 days, female, FCA33, 10x library S17 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000641 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671956",
+        "FCA33_Female_bodyWall_adult_5dWT_Jan_sample1_S17",
         "SAMEA9135878" .
 
 VFBseq:00000643 a FBcv:0003025 ;
-    rdfs:label "ERX5671956" ;
+    rdfs:label "body wall, 5 days, female, FCA33, 10x library S23 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000641 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671956",
+        "FCA33_Female_bodyWall_adult_5dWT_Jan_sample1_S23",
         "SAMEA9135878" .
 
 VFBseq:00000644 a FBcv:0003025 ;
-    rdfs:label "ERX5671956" ;
+    rdfs:label "body wall, 5 days, female, FCA33, 10x library S26 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000641 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671956",
+        "FCA33_Female_bodyWall_adult_5dWT_Jan_sample1_S26",
         "SAMEA9135878" .
 
 VFBseq:00000645 a FBcv:0003025 ;
-    rdfs:label "ERX5671956" ;
+    rdfs:label "body wall, 5 days, female, FCA33, 10x library S30 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000641 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671956",
+        "FCA33_Female_bodyWall_adult_5dWT_Jan_sample1_S30",
         "SAMEA9135878" .
 
 VFBseq:00000647 a FBcv:0003025 ;
-    rdfs:label "ERX5671963" ;
+    rdfs:label "heart, 5 days, male, FCA34, 10x library S19 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000646 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671963",
+        "FCA34_Male_heart_adult_5dWT_Bodmer_sample1_S19",
         "SAMEA9135906" .
 
 VFBseq:00000648 a FBcv:0003025 ;
-    rdfs:label "ERX5671963" ;
+    rdfs:label "heart, 5 days, male, FCA34, 10x library S22 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000646 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671963",
+        "FCA34_Male_heart_adult_5dWT_Bodmer_sample1_S22",
         "SAMEA9135906" .
 
 VFBseq:00000649 a FBcv:0003025 ;
-    rdfs:label "ERX5671963" ;
+    rdfs:label "heart, 5 days, male, FCA34, 10x library S27 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000646 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671963",
+        "FCA34_Male_heart_adult_5dWT_Bodmer_sample1_S27",
         "SAMEA9135906" .
 
 VFBseq:00000650 a FBcv:0003025 ;
-    rdfs:label "ERX5671963" ;
+    rdfs:label "heart, 5 days, male, FCA34, 10x library S31 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000646 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671963",
+        "FCA34_Male_heart_adult_5dWT_Bodmer_sample1_S31",
         "SAMEA9135906" .
 
 VFBseq:00000652 a FBcv:0003025 ;
-    rdfs:label "ERX5671964" ;
+    rdfs:label "heart, 5 days, female, FCA35, 10x library S20 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000651 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671964",
+        "FCA35_Female_heart_adult_5dWT_Bodmer_sample1_S20",
         "SAMEA9135910" .
 
 VFBseq:00000653 a FBcv:0003025 ;
-    rdfs:label "ERX5671964" ;
+    rdfs:label "heart, 5 days, female, FCA35, 10x library S24 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000651 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671964",
+        "FCA35_Female_heart_adult_5dWT_Bodmer_sample1_S24",
         "SAMEA9135910" .
 
 VFBseq:00000654 a FBcv:0003025 ;
-    rdfs:label "ERX5671964" ;
+    rdfs:label "heart, 5 days, female, FCA35, 10x library S29 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000651 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671964",
+        "FCA35_Female_heart_adult_5dWT_Bodmer_sample1_S29",
         "SAMEA9135910" .
 
 VFBseq:00000655 a FBcv:0003025 ;
-    rdfs:label "ERX5671964" ;
+    rdfs:label "heart, 5 days, female, FCA35, 10x library S32 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000651 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671964",
+        "FCA35_Female_heart_adult_5dWT_Bodmer_sample1_S32",
         "SAMEA9135910" .
 
 VFBseq:00000657 a FBcv:0003025 ;
-    rdfs:label "ERX5671967" ;
+    rdfs:label "male reproductive gland, 2 days, male, FCA36, 10x library S40 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000656 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671967",
+        "FCA36_Male_testisACG_adult_2dWT_Wolfner_sample1_S40",
         "SAMEA9135922" .
 
 VFBseq:00000658 a FBcv:0003025 ;
-    rdfs:label "ERX5671967" ;
+    rdfs:label "male reproductive gland, 2 days, male, FCA36, 10x library S46 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000656 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671967",
+        "FCA36_Male_testisACG_adult_2dWT_Wolfner_sample1_S46",
         "SAMEA9135922" .
 
 VFBseq:00000659 a FBcv:0003025 ;
-    rdfs:label "ERX5671967" ;
+    rdfs:label "male reproductive gland, 2 days, male, FCA36, 10x library S47 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000656 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671967",
+        "FCA36_Male_testisACG_adult_2dWT_Wolfner_sample1_S47",
         "SAMEA9135922" .
 
 VFBseq:00000660 a FBcv:0003025 ;
-    rdfs:label "ERX5671967" ;
+    rdfs:label "male reproductive gland, 2 days, male, FCA36, 10x library S52 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000656 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671967",
+        "FCA36_Male_testisACG_adult_2dWT_Wolfner_sample1_S52",
         "SAMEA9135922" .
 
 VFBseq:00000662 a FBcv:0003025 ;
-    rdfs:label "ERX5671965" ;
+    rdfs:label "leg, 5 days, male, FCA37, 10x library S41 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000661 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671965",
+        "FCA37_Male_leg_adult_5dWT_Scott_sample1_S41",
         "SAMEA9135914" .
 
 VFBseq:00000663 a FBcv:0003025 ;
-    rdfs:label "ERX5671965" ;
+    rdfs:label "leg, 5 days, male, FCA37, 10x library S44 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000661 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671965",
+        "FCA37_Male_leg_adult_5dWT_Scott_sample1_S44",
         "SAMEA9135914" .
 
 VFBseq:00000664 a FBcv:0003025 ;
-    rdfs:label "ERX5671965" ;
+    rdfs:label "leg, 5 days, male, FCA37, 10x library S45 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000661 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671965",
+        "FCA37_Male_leg_adult_5dWT_Scott_sample1_S45",
         "SAMEA9135914" .
 
 VFBseq:00000665 a FBcv:0003025 ;
-    rdfs:label "ERX5671965" ;
+    rdfs:label "leg, 5 days, male, FCA37, 10x library S51 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000661 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671965",
+        "FCA37_Male_leg_adult_5dWT_Scott_sample1_S51",
         "SAMEA9135914" .
 
 VFBseq:00000667 a FBcv:0003025 ;
-    rdfs:label "ERX5671966" ;
+    rdfs:label "leg, 5 days, female, FCA38, 10x library S33 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000666 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671966",
+        "FCA38_Female_leg_adult_5dWT_Scott_sample1_S33",
         "SAMEA9135918" .
 
 VFBseq:00000668 a FBcv:0003025 ;
-    rdfs:label "ERX5671966" ;
+    rdfs:label "leg, 5 days, female, FCA38, 10x library S34 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000666 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671966",
+        "FCA38_Female_leg_adult_5dWT_Scott_sample1_S34",
         "SAMEA9135918" .
 
 VFBseq:00000669 a FBcv:0003025 ;
-    rdfs:label "ERX5671966" ;
+    rdfs:label "leg, 5 days, female, FCA38, 10x library S36 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000666 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671966",
+        "FCA38_Female_leg_adult_5dWT_Scott_sample1_S36",
         "SAMEA9135918" .
 
 VFBseq:00000670 a FBcv:0003025 ;
-    rdfs:label "ERX5671966" ;
+    rdfs:label "leg, 5 days, female, FCA38, 10x library S48 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000666 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671966",
+        "FCA38_Female_leg_adult_5dWT_Scott_sample1_S48",
         "SAMEA9135918" .
 
 VFBseq:00000672 a FBcv:0003025 ;
-    rdfs:label "ERX5671982" ;
+    rdfs:label "wing, 5 days, male, FCA39, 10x library S38 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000671 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671982",
+        "FCA39_Male_wing_adult_5dWT_Scott_sample1_S38",
         "SAMEA9135983" .
 
 VFBseq:00000673 a FBcv:0003025 ;
-    rdfs:label "ERX5671982" ;
+    rdfs:label "wing, 5 days, male, FCA39, 10x library S42 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000671 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671982",
+        "FCA39_Male_wing_adult_5dWT_Scott_sample1_S42",
         "SAMEA9135983" .
 
 VFBseq:00000674 a FBcv:0003025 ;
-    rdfs:label "ERX5671982" ;
+    rdfs:label "wing, 5 days, male, FCA39, 10x library S43 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000671 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671982",
+        "FCA39_Male_wing_adult_5dWT_Scott_sample1_S43",
         "SAMEA9135983" .
 
 VFBseq:00000675 a FBcv:0003025 ;
-    rdfs:label "ERX5671982" ;
+    rdfs:label "wing, 5 days, male, FCA39, 10x library S50 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000671 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671982",
+        "FCA39_Male_wing_adult_5dWT_Scott_sample1_S50",
         "SAMEA9135983" .
 
 VFBseq:00000677 a FBcv:0003025 ;
-    rdfs:label "ERX5671983" ;
+    rdfs:label "wing, 5 days, female, FCA40, 10x library S35 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000676 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671983",
+        "FCA40_Female_wing_adult_5dWT_Scott_sample1_S35",
         "SAMEA9135986" .
 
 VFBseq:00000678 a FBcv:0003025 ;
-    rdfs:label "ERX5671983" ;
+    rdfs:label "wing, 5 days, female, FCA40, 10x library S37 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000676 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671983",
+        "FCA40_Female_wing_adult_5dWT_Scott_sample1_S37",
         "SAMEA9135986" .
 
 VFBseq:00000679 a FBcv:0003025 ;
-    rdfs:label "ERX5671983" ;
+    rdfs:label "wing, 5 days, female, FCA40, 10x library S39 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000676 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671983",
+        "FCA40_Female_wing_adult_5dWT_Scott_sample1_S39",
         "SAMEA9135986" .
 
 VFBseq:00000680 a FBcv:0003025 ;
-    rdfs:label "ERX5671983" ;
+    rdfs:label "wing, 5 days, female, FCA40, 10x library S49 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000676 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671983",
+        "FCA40_Female_wing_adult_5dWT_Scott_sample1_S49",
         "SAMEA9135986" .
 
 VFBseq:00000682 a FBcv:0003025 ;
-    rdfs:label "ERX5671975" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, male, FCA41, 10x library S53 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000681 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671975",
+        "FCA41_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample1_S53",
         "SAMEA9135954" .
 
 VFBseq:00000683 a FBcv:0003025 ;
-    rdfs:label "ERX5671975" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, male, FCA41, 10x library S59 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000681 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671975",
+        "FCA41_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample1_S59",
         "SAMEA9135954" .
 
 VFBseq:00000684 a FBcv:0003025 ;
-    rdfs:label "ERX5671975" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, male, FCA41, 10x library S71 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000681 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671975",
+        "FCA41_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample1_S71",
         "SAMEA9135954" .
 
 VFBseq:00000685 a FBcv:0003025 ;
-    rdfs:label "ERX5671975" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, male, FCA41, 10x library S72 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000681 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671975",
+        "FCA41_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample1_S72",
         "SAMEA9135954" .
 
 VFBseq:00000687 a FBcv:0003025 ;
-    rdfs:label "ERX5671976" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, female, FCA42, 10x library S55 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000686 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671976",
+        "FCA42_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample1_S55",
         "SAMEA9135958" .
 
 VFBseq:00000688 a FBcv:0003025 ;
-    rdfs:label "ERX5671976" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, female, FCA42, 10x library S56 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000686 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671976",
+        "FCA42_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample1_S56",
         "SAMEA9135958" .
 
 VFBseq:00000689 a FBcv:0003025 ;
-    rdfs:label "ERX5671976" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, female, FCA42, 10x library S57 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000686 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671976",
+        "FCA42_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample1_S57",
         "SAMEA9135958" .
 
 VFBseq:00000690 a FBcv:0003025 ;
-    rdfs:label "ERX5671976" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, female, FCA42, 10x library S66 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000686 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671976",
+        "FCA42_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample1_S66",
         "SAMEA9135958" .
 
 VFBseq:00000692 a FBcv:0003025 ;
-    rdfs:label "ERX5671953" ;
+    rdfs:label "antenna, 5 days, male, FCA43, 10x library S54 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000691 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671953",
+        "FCA43_Male_antenna_adult_5dWT_Luo_sample1_S54",
         "SAMEA9135866" .
 
 VFBseq:00000693 a FBcv:0003025 ;
-    rdfs:label "ERX5671953" ;
+    rdfs:label "antenna, 5 days, male, FCA43, 10x library S58 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000691 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671953",
+        "FCA43_Male_antenna_adult_5dWT_Luo_sample1_S58",
         "SAMEA9135866" .
 
 VFBseq:00000694 a FBcv:0003025 ;
-    rdfs:label "ERX5671953" ;
+    rdfs:label "antenna, 5 days, male, FCA43, 10x library S61 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000691 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671953",
+        "FCA43_Male_antenna_adult_5dWT_Luo_sample1_S61",
         "SAMEA9135866" .
 
 VFBseq:00000695 a FBcv:0003025 ;
-    rdfs:label "ERX5671953" ;
+    rdfs:label "antenna, 5 days, male, FCA43, 10x library S69 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000691 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671953",
+        "FCA43_Male_antenna_adult_5dWT_Luo_sample1_S69",
         "SAMEA9135866" .
 
 VFBseq:00000697 a FBcv:0003025 ;
-    rdfs:label "ERX5671954" ;
+    rdfs:label "antenna, 5 days, female, FCA44, 10x library S62 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000696 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671954",
+        "FCA44_Female_antenna_adult_5dWT_Luo_sample1_S62",
         "SAMEA9135870" .
 
 VFBseq:00000698 a FBcv:0003025 ;
-    rdfs:label "ERX5671954" ;
+    rdfs:label "antenna, 5 days, female, FCA44, 10x library S65 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000696 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671954",
+        "FCA44_Female_antenna_adult_5dWT_Luo_sample1_S65",
         "SAMEA9135870" .
 
 VFBseq:00000699 a FBcv:0003025 ;
-    rdfs:label "ERX5671954" ;
+    rdfs:label "antenna, 5 days, female, FCA44, 10x library S67 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000696 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671954",
+        "FCA44_Female_antenna_adult_5dWT_Luo_sample1_S67",
         "SAMEA9135870" .
 
 VFBseq:00000700 a FBcv:0003025 ;
-    rdfs:label "ERX5671954" ;
+    rdfs:label "antenna, 5 days, female, FCA44, 10x library S68 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000696 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671954",
+        "FCA44_Female_antenna_adult_5dWT_Luo_sample1_S68",
         "SAMEA9135870" .
 
 VFBseq:00000702 a FBcv:0003025 ;
-    rdfs:label "ERX5671958" ;
+    rdfs:label "fat body, 5 days, male, Cg-GAL4, UAS-lamGFP, FCA45, 10x library S60 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000701 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671958",
+        "FCA45_Male_fatbody_adult_3dcgGAL4LamGFP_Jasper_sample1_S60",
         "SAMEA9135886" .
 
 VFBseq:00000703 a FBcv:0003025 ;
-    rdfs:label "ERX5671958" ;
+    rdfs:label "fat body, 5 days, male, Cg-GAL4, UAS-lamGFP, FCA45, 10x library S63 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000701 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671958",
+        "FCA45_Male_fatbody_adult_3dcgGAL4LamGFP_Jasper_sample1_S63",
         "SAMEA9135886" .
 
 VFBseq:00000704 a FBcv:0003025 ;
-    rdfs:label "ERX5671958" ;
+    rdfs:label "fat body, 5 days, male, Cg-GAL4, UAS-lamGFP, FCA45, 10x library S64 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000701 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671958",
+        "FCA45_Male_fatbody_adult_3dcgGAL4LamGFP_Jasper_sample1_S64",
         "SAMEA9135886" .
 
 VFBseq:00000705 a FBcv:0003025 ;
-    rdfs:label "ERX5671958" ;
+    rdfs:label "fat body, 5 days, male, Cg-GAL4, UAS-lamGFP, FCA45, 10x library S70 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000701 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671958",
+        "FCA45_Male_fatbody_adult_3dcgGAL4LamGFP_Jasper_sample1_S70",
         "SAMEA9135886" .
 
 VFBseq:00000706 a FBcv:0003024 ;
-    rdfs:label "head, 5 days, mixed (Li 2022)" ;
+    rdfs:label "head, 5 days, mixed, FCA1 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     RO:0002131 FBbt:00003007 ;
     RO:0002352 VFBseq:00000707 ;
@@ -4585,16 +4718,17 @@ VFBseq:00000706 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000707 a FBcv:0003025 ;
-    rdfs:label "ERX5671923" ;
+    rdfs:label "head, 5 days, mixed, FCA1, 10x library S1 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000706 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671923",
+        "FCA1_Head_S1",
         "SAMEA9135830" .
 
 VFBseq:00000708 a FBcv:0003024 ;
-    rdfs:label "body, 5 days, mixed (Li 2022)" ;
+    rdfs:label "body, 5 days, mixed, FCA2 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     RO:0002131 FBbt:00059181 ;
     RO:0002352 VFBseq:00000709 ;
@@ -4602,16 +4736,17 @@ VFBseq:00000708 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000709 a FBcv:0003025 ;
-    rdfs:label "ERX5671934" ;
+    rdfs:label "body, 5 days, mixed, FCA2, 10x library S2 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000708 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671934",
+        "FCA2_Body_S2",
         "SAMEA9135841" .
 
 VFBseq:00000710 a FBcv:0003024 ;
-    rdfs:label "antenna, 5 days, mixed (Li 2022)" ;
+    rdfs:label "antenna, 5 days, mixed, FCA3 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     RO:0002131 FBbt:00004511 ;
     RO:0002352 VFBseq:00000711 ;
@@ -4619,16 +4754,17 @@ VFBseq:00000710 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000711 a FBcv:0003025 ;
-    rdfs:label "ERX5671943" ;
+    rdfs:label "antenna, 5 days, mixed, FCA3, 10x library S1 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000710 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671943",
+        "FCA3_Ant_S1",
         "SAMEA9135850" .
 
 VFBseq:00000712 a FBcv:0003024 ;
-    rdfs:label "head, 5 days, male (Li 2022)" ;
+    rdfs:label "head, 5 days, male, FCA4 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00003007 ;
@@ -4637,16 +4773,17 @@ VFBseq:00000712 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000713 a FBcv:0003025 ;
-    rdfs:label "ERX5671944" ;
+    rdfs:label "head, 5 days, male, FCA4, 10x library S1 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000712 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671944",
+        "FCA4_Male_Adult_Head1_S1",
         "SAMEA9135851" .
 
 VFBseq:00000714 a FBcv:0003024 ;
-    rdfs:label "head, 5 days, male (Li 2022)" ;
+    rdfs:label "head, 5 days, male, FCA5 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00003007 ;
@@ -4655,16 +4792,17 @@ VFBseq:00000714 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000715 a FBcv:0003025 ;
-    rdfs:label "ERX5671945" ;
+    rdfs:label "head, 5 days, male, FCA5, 10x library S2 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000714 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671945",
+        "FCA5_Male_Adult_Head2_S2",
         "SAMEA9135852" .
 
 VFBseq:00000716 a FBcv:0003024 ;
-    rdfs:label "head, 5 days, male (Li 2022)" ;
+    rdfs:label "head, 5 days, male, FCA6 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00003007 ;
@@ -4673,16 +4811,17 @@ VFBseq:00000716 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000717 a FBcv:0003025 ;
-    rdfs:label "ERX5671947" ;
+    rdfs:label "head, 5 days, male, FCA6, 10x library S3 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000716 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671947",
+        "FCA6_Male_Adult_Head3_S3",
         "SAMEA9135854" .
 
 VFBseq:00000718 a FBcv:0003024 ;
-    rdfs:label "head, 5 days, female (Li 2022)" ;
+    rdfs:label "head, 5 days, female, FCA7 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00003007 ;
@@ -4691,16 +4830,17 @@ VFBseq:00000718 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000719 a FBcv:0003025 ;
-    rdfs:label "ERX5671948" ;
+    rdfs:label "head, 5 days, female, FCA7, 10x library S4 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000718 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671948",
+        "FCA7_Female_Adult_Head1_S4",
         "SAMEA9135856" .
 
 VFBseq:00000720 a FBcv:0003024 ;
-    rdfs:label "head, 5 days, female (Li 2022)" ;
+    rdfs:label "head, 5 days, female, FCA8 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00003007 ;
@@ -4709,16 +4849,17 @@ VFBseq:00000720 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000721 a FBcv:0003025 ;
-    rdfs:label "ERX5671949" ;
+    rdfs:label "head, 5 days, female, FCA8, 10x library S5 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000720 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671949",
+        "FCA8_Female_Adult_Head2_S5",
         "SAMEA9135855" .
 
 VFBseq:00000722 a FBcv:0003024 ;
-    rdfs:label "head, 5 days, female (Li 2022)" ;
+    rdfs:label "head, 5 days, female, FCA9 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00003007 ;
@@ -4727,16 +4868,17 @@ VFBseq:00000722 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000723 a FBcv:0003025 ;
-    rdfs:label "ERX5671950" ;
+    rdfs:label "head, 5 days, female, FCA9, 10x library S6 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000722 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671950",
+        "FCA9_Female_Adult_Head3_S6",
         "SAMEA9135857" .
 
 VFBseq:00000724 a FBcv:0003024 ;
-    rdfs:label "head, 5 days, male (Li 2022)" ;
+    rdfs:label "head, 5 days, male, FCA10 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00003007 ;
@@ -4745,16 +4887,17 @@ VFBseq:00000724 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000725 a FBcv:0003025 ;
-    rdfs:label "ERX5671924" ;
+    rdfs:label "head, 5 days, male, FCA10, 10x library S1 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000724 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671924",
+        "FCA10_Male_head_adult_5dWT_Luo_sample4_S1",
         "SAMEA9135831" .
 
 VFBseq:00000726 a FBcv:0003024 ;
-    rdfs:label "head, 5 days, male (Li 2022)" ;
+    rdfs:label "head, 5 days, male, FCA11 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00003007 ;
@@ -4763,16 +4906,17 @@ VFBseq:00000726 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000727 a FBcv:0003025 ;
-    rdfs:label "ERX5671925" ;
+    rdfs:label "head, 5 days, male, FCA11, 10x library S2 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000726 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671925",
+        "FCA11_Male_head_adult_5dWT_Luo_sample5_S2",
         "SAMEA9135832" .
 
 VFBseq:00000728 a FBcv:0003024 ;
-    rdfs:label "head, 5 days, male (Li 2022)" ;
+    rdfs:label "head, 5 days, male, FCA12 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00003007 ;
@@ -4781,16 +4925,17 @@ VFBseq:00000728 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000729 a FBcv:0003025 ;
-    rdfs:label "ERX5671926" ;
+    rdfs:label "head, 5 days, male, FCA12, 10x library S3 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000728 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671926",
+        "FCA12_Male_head_adult_5dWT_Luo_sample6_S3",
         "SAMEA9135833" .
 
 VFBseq:00000730 a FBcv:0003024 ;
-    rdfs:label "head, 5 days, female (Li 2022)" ;
+    rdfs:label "head, 5 days, female, FCA13 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00003007 ;
@@ -4799,16 +4944,17 @@ VFBseq:00000730 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000731 a FBcv:0003025 ;
-    rdfs:label "ERX5671927" ;
+    rdfs:label "head, 5 days, female, FCA13, 10x library S4 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000730 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671927",
+        "FCA13_Female_head_adult_5dWT_Luo_sample4_S4",
         "SAMEA9135834" .
 
 VFBseq:00000732 a FBcv:0003024 ;
-    rdfs:label "head, 5 days, female (Li 2022)" ;
+    rdfs:label "head, 5 days, female, FCA14 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00003007 ;
@@ -4817,16 +4963,17 @@ VFBseq:00000732 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000733 a FBcv:0003025 ;
-    rdfs:label "ERX5671928" ;
+    rdfs:label "head, 5 days, female, FCA14, 10x library S5 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000732 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671928",
+        "FCA14_Female_head_adult_5dWT_Luo_sample5_S5",
         "SAMEA9135835" .
 
 VFBseq:00000734 a FBcv:0003024 ;
-    rdfs:label "head, 5 days, female (Li 2022)" ;
+    rdfs:label "head, 5 days, female, FCA15 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00003007 ;
@@ -4835,16 +4982,17 @@ VFBseq:00000734 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000735 a FBcv:0003025 ;
-    rdfs:label "ERX5671929" ;
+    rdfs:label "head, 5 days, female, FCA15, 10x library S6 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000734 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671929",
+        "FCA15_Female_head_adult_5dWT_Luo_sample6_S6",
         "SAMEA9135836" .
 
 VFBseq:00000736 a FBcv:0003024 ;
-    rdfs:label "body, 5 days, male (Li 2022)" ;
+    rdfs:label "body, 5 days, male, FCA16 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00059181 ;
@@ -4853,16 +5001,17 @@ VFBseq:00000736 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000737 a FBcv:0003025 ;
-    rdfs:label "ERX5671930" ;
+    rdfs:label "body, 5 days, male, FCA16, 10x library S7 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000736 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671930",
+        "FCA16_Male_body_adult_5dWT_Luo_sample1_S7",
         "SAMEA9135837" .
 
 VFBseq:00000738 a FBcv:0003024 ;
-    rdfs:label "body, 5 days, male (Li 2022)" ;
+    rdfs:label "body, 5 days, male, FCA17 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00059181 ;
@@ -4871,16 +5020,17 @@ VFBseq:00000738 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000739 a FBcv:0003025 ;
-    rdfs:label "ERX5671931" ;
+    rdfs:label "body, 5 days, male, FCA17, 10x library S8 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000738 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671931",
+        "FCA17_Male_body_adult_5dWT_Luo_sample2_S8",
         "SAMEA9135838" .
 
 VFBseq:00000740 a FBcv:0003024 ;
-    rdfs:label "body, 5 days, male (Li 2022)" ;
+    rdfs:label "body, 5 days, male, FCA18 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00059181 ;
@@ -4889,16 +5039,17 @@ VFBseq:00000740 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000741 a FBcv:0003025 ;
-    rdfs:label "ERX5671932" ;
+    rdfs:label "body, 5 days, male, FCA18, 10x library S9 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000740 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671932",
+        "FCA18_Male_body_adult_5dWT_Luo_sample3_S9",
         "SAMEA9135839" .
 
 VFBseq:00000742 a FBcv:0003024 ;
-    rdfs:label "body, 5 days, male (Li 2022)" ;
+    rdfs:label "body, 5 days, male, FCA19 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00059181 ;
@@ -4907,16 +5058,17 @@ VFBseq:00000742 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000743 a FBcv:0003025 ;
-    rdfs:label "ERX5671933" ;
+    rdfs:label "body, 5 days, male, FCA19, 10x library S10 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000742 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671933",
+        "FCA19_Male_body_adult_5dWT_Luo_sample4_S10",
         "SAMEA9135840" .
 
 VFBseq:00000744 a FBcv:0003024 ;
-    rdfs:label "body, 5 days, male (Li 2022)" ;
+    rdfs:label "body, 5 days, male, FCA20 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00059181 ;
@@ -4925,16 +5077,17 @@ VFBseq:00000744 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000745 a FBcv:0003025 ;
-    rdfs:label "ERX5671935" ;
+    rdfs:label "body, 5 days, male, FCA20, 10x library S11 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000744 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671935",
+        "FCA20_Male_body_adult_5dWT_Luo_sample5_S11",
         "SAMEA9135842" .
 
 VFBseq:00000746 a FBcv:0003024 ;
-    rdfs:label "body, 5 days, male (Li 2022)" ;
+    rdfs:label "body, 5 days, male, FCA21 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00059181 ;
@@ -4943,16 +5096,17 @@ VFBseq:00000746 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000747 a FBcv:0003025 ;
-    rdfs:label "ERX5671936" ;
+    rdfs:label "body, 5 days, male, FCA21, 10x library S12 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000746 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671936",
+        "FCA21_Male_body_adult_5dWT_Luo_sample6_S12",
         "SAMEA9135843" .
 
 VFBseq:00000748 a FBcv:0003024 ;
-    rdfs:label "body, 5 days, female (Li 2022)" ;
+    rdfs:label "body, 5 days, female, FCA22 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00059181 ;
@@ -4961,16 +5115,17 @@ VFBseq:00000748 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000749 a FBcv:0003025 ;
-    rdfs:label "ERX5671937" ;
+    rdfs:label "body, 5 days, female, FCA22, 10x library S13 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000748 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671937",
+        "FCA22_Female_body_adult_5dWT_Luo_sample1_S13",
         "SAMEA9135844" .
 
 VFBseq:00000750 a FBcv:0003024 ;
-    rdfs:label "body, 5 days, female (Li 2022)" ;
+    rdfs:label "body, 5 days, female, FCA23 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00059181 ;
@@ -4979,16 +5134,17 @@ VFBseq:00000750 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000751 a FBcv:0003025 ;
-    rdfs:label "ERX5671938" ;
+    rdfs:label "body, 5 days, female, FCA23, 10x library S14 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000750 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671938",
+        "FCA23_Female_body_adult_5dWT_Luo_sample2_S14",
         "SAMEA9135845" .
 
 VFBseq:00000752 a FBcv:0003024 ;
-    rdfs:label "body, 5 days, female (Li 2022)" ;
+    rdfs:label "body, 5 days, female, FCA24 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00059181 ;
@@ -4997,16 +5153,17 @@ VFBseq:00000752 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000753 a FBcv:0003025 ;
-    rdfs:label "ERX5671939" ;
+    rdfs:label "body, 5 days, female, FCA24, 10x library S15 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000752 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671939",
+        "FCA24_Female_body_adult_5dWT_Luo_sample3_S15",
         "SAMEA9135846" .
 
 VFBseq:00000754 a FBcv:0003024 ;
-    rdfs:label "body, 5 days, female (Li 2022)" ;
+    rdfs:label "body, 5 days, female, FCA25 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00059181 ;
@@ -5015,16 +5172,17 @@ VFBseq:00000754 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000755 a FBcv:0003025 ;
-    rdfs:label "ERX5671940" ;
+    rdfs:label "body, 5 days, female, FCA25, 10x library S16 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000754 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671940",
+        "FCA25_Female_body_adult_5dWT_Luo_sample4_S16",
         "SAMEA9135847" .
 
 VFBseq:00000756 a FBcv:0003024 ;
-    rdfs:label "body, 5 days, female (Li 2022)" ;
+    rdfs:label "body, 5 days, female, FCA26 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00059181 ;
@@ -5033,16 +5191,17 @@ VFBseq:00000756 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000757 a FBcv:0003025 ;
-    rdfs:label "ERX5671941" ;
+    rdfs:label "body, 5 days, female, FCA26, 10x library S17 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000756 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671941",
+        "FCA26_Female_body_adult_5dWT_Luo_sample5_S17",
         "SAMEA9135848" .
 
 VFBseq:00000758 a FBcv:0003024 ;
-    rdfs:label "body, 5 days, female (Li 2022)" ;
+    rdfs:label "body, 5 days, female, FCA27 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00059181 ;
@@ -5051,16 +5210,17 @@ VFBseq:00000758 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000759 a FBcv:0003025 ;
-    rdfs:label "ERX5671942" ;
+    rdfs:label "body, 5 days, female, FCA27, 10x library S18 (Li 2022)" ;
     neo_property:nodeLabel "Assay" ;
     RO:0002233 VFBseq:00000758 ;
     dcterms:source VFBseq:00000538 ;
     BAO:0000212 FBcv:0009008 ;
     oboInOwl:hasDbXref "ERX5671942",
+        "FCA27_Female_body_adult_5dWT_Luo_sample6_S18",
         "SAMEA9135849" .
 
 VFBseq:00000541 a FBcv:0003024 ;
-    rdfs:label "fat body, 5 days, female, Cg-GAL4, UAS-lamGFP (Li 2022)" ;
+    rdfs:label "fat body, 5 days, female, Cg-GAL4, UAS-lamGFP, FCA46 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00003209 ;
@@ -5073,7 +5233,7 @@ VFBseq:00000541 a FBcv:0003024 ;
     BAO:0095000 FlyBase:FBst0007378 .
 
 VFBseq:00000546 a FBcv:0003024 ;
-    rdfs:label "haltere, 5 days, male (Li 2022)" ;
+    rdfs:label "haltere, 5 days, male, FCA47 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00004783 ;
@@ -5085,7 +5245,7 @@ VFBseq:00000546 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000551 a FBcv:0003024 ;
-    rdfs:label "haltere, 5 days, female (Li 2022)" ;
+    rdfs:label "haltere, 5 days, female, FCA48 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00004783 ;
@@ -5097,7 +5257,7 @@ VFBseq:00000551 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000556 a FBcv:0003024 ;
-    rdfs:label "mixed proboscis and maxillary palpus, 5 days, male (Li 2022)" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, male, FCA51 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00004535,
@@ -5110,7 +5270,7 @@ VFBseq:00000556 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000561 a FBcv:0003024 ;
-    rdfs:label "mixed proboscis and maxillary palpus, 5 days, female (Li 2022)" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, female, FCA52 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00004535,
@@ -5123,7 +5283,7 @@ VFBseq:00000561 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000566 a FBcv:0003024 ;
-    rdfs:label "thorax, 5 days, female, PromE800-GAL4, UAS-unc84GFP (Li 2022)" ;
+    rdfs:label "thorax, 5 days, female, PromE800-GAL4, UAS-unc84GFP, FCA54 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00003018 ;
@@ -5135,7 +5295,7 @@ VFBseq:00000566 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000571 a FBcv:0003024 ;
-    rdfs:label "antenna, 5 days, male (Li 2022)" ;
+    rdfs:label "antenna, 5 days, male, FCA55 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00004511 ;
@@ -5147,7 +5307,7 @@ VFBseq:00000571 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000576 a FBcv:0003024 ;
-    rdfs:label "antenna, 5 days, female (Li 2022)" ;
+    rdfs:label "antenna, 5 days, female, FCA56 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00004511 ;
@@ -5159,7 +5319,7 @@ VFBseq:00000576 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000581 a FBcv:0003024 ;
-    rdfs:label "trachea, 5 days, male, Btl-GAL4, UAS-lamGFP (Li 2022)" ;
+    rdfs:label "trachea, 5 days, male, Btl-GAL4, UAS-lamGFP, FCA57 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00003037 ;
@@ -5172,7 +5332,7 @@ VFBseq:00000581 a FBcv:0003024 ;
     BAO:0095000 FlyBase:FBst0007378 .
 
 VFBseq:00000586 a FBcv:0003024 ;
-    rdfs:label "trachea, 5 days, female, Btl-GAL4, UAS-lamGFP (Li 2022)" ;
+    rdfs:label "trachea, 5 days, female, Btl-GAL4, UAS-lamGFP, FCA58 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00003037 ;
@@ -5185,7 +5345,7 @@ VFBseq:00000586 a FBcv:0003024 ;
     BAO:0095000 FlyBase:FBst0007378 .
 
 VFBseq:00000591 a FBcv:0003024 ;
-    rdfs:label "testis, 1 days, male (Li 2022)" ;
+    rdfs:label "testis, 1 days, male, FCA59 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00004928 ;
@@ -5197,7 +5357,7 @@ VFBseq:00000591 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000596 a FBcv:0003024 ;
-    rdfs:label "testis, 1 days, male (Li 2022)" ;
+    rdfs:label "testis, 1 days, male, FCA60 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00004928 ;
@@ -5209,7 +5369,7 @@ VFBseq:00000596 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000601 a FBcv:0003024 ;
-    rdfs:label "testis, 1 days, male (Li 2022)" ;
+    rdfs:label "testis, 1 days, male, FCA61 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00004928 ;
@@ -5221,7 +5381,7 @@ VFBseq:00000601 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000606 a FBcv:0003024 ;
-    rdfs:label "ovary, 5 days, female (Li 2022)" ;
+    rdfs:label "ovary, 5 days, female, FCA62 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00004865 ;
@@ -5233,7 +5393,7 @@ VFBseq:00000606 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000611 a FBcv:0003024 ;
-    rdfs:label "ovary, 5 days, femal (Li 2022)" ;
+    rdfs:label "ovary, 5 days, femal, FCA63 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00004865 ;
@@ -5245,7 +5405,7 @@ VFBseq:00000611 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000616 a FBcv:0003024 ;
-    rdfs:label "digestive system, 5 days, male (Li 2022)" ;
+    rdfs:label "digestive system, 5 days, male, FCA28 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00003123 ;
@@ -5257,7 +5417,7 @@ VFBseq:00000616 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000621 a FBcv:0003024 ;
-    rdfs:label "digestive system, 5 days, female (Li 2022)" ;
+    rdfs:label "digestive system, 5 days, female, FCA29 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00003123 ;
@@ -5269,7 +5429,7 @@ VFBseq:00000621 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000626 a FBcv:0003024 ;
-    rdfs:label "malpighian tubule, 5 days, male, drip-GAL4, UAS-nlsGFP (Li 2022)" ;
+    rdfs:label "malpighian tubule, 5 days, male, drip-GAL4, UAS-nlsGFP, FCA30 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00005725 ;
@@ -5281,7 +5441,7 @@ VFBseq:00000626 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000631 a FBcv:0003024 ;
-    rdfs:label "malpighian tubule, 5 days, female, drip-GAL4, UAS-nlsGFP (Li 2022)" ;
+    rdfs:label "malpighian tubule, 5 days, female, drip-GAL4, UAS-nlsGFP, FCA31 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00005725 ;
@@ -5293,7 +5453,7 @@ VFBseq:00000631 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000636 a FBcv:0003024 ;
-    rdfs:label "body wall, 5 days, male (Li 2022)" ;
+    rdfs:label "body wall, 5 days, male, FCA32 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00005396 ;
@@ -5305,7 +5465,7 @@ VFBseq:00000636 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000641 a FBcv:0003024 ;
-    rdfs:label "body wall, 5 days, female (Li 2022)" ;
+    rdfs:label "body wall, 5 days, female, FCA33 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00005396 ;
@@ -5317,7 +5477,7 @@ VFBseq:00000641 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000646 a FBcv:0003024 ;
-    rdfs:label "heart, 5 days, male (Li 2022)" ;
+    rdfs:label "heart, 5 days, male, FCA34 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00003154 ;
@@ -5329,7 +5489,7 @@ VFBseq:00000646 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000651 a FBcv:0003024 ;
-    rdfs:label "heart, 5 days, female (Li 2022)" ;
+    rdfs:label "heart, 5 days, female, FCA35 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00003154 ;
@@ -5341,7 +5501,7 @@ VFBseq:00000651 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000656 a FBcv:0003024 ;
-    rdfs:label "male reproductive gland, 2 days, male (Li 2022)" ;
+    rdfs:label "male reproductive gland, 2 days, male, FCA36 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00004959,
@@ -5355,7 +5515,7 @@ VFBseq:00000656 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000661 a FBcv:0003024 ;
-    rdfs:label "leg, 5 days, male (Li 2022)" ;
+    rdfs:label "leg, 5 days, male, FCA37 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00004640 ;
@@ -5367,7 +5527,7 @@ VFBseq:00000661 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000666 a FBcv:0003024 ;
-    rdfs:label "leg, 5 days, female (Li 2022)" ;
+    rdfs:label "leg, 5 days, female, FCA38 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00004640 ;
@@ -5379,7 +5539,7 @@ VFBseq:00000666 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000671 a FBcv:0003024 ;
-    rdfs:label "wing, 5 days, male (Li 2022)" ;
+    rdfs:label "wing, 5 days, male, FCA39 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00004729 ;
@@ -5391,7 +5551,7 @@ VFBseq:00000671 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000676 a FBcv:0003024 ;
-    rdfs:label "wing, 5 days, female (Li 2022)" ;
+    rdfs:label "wing, 5 days, female, FCA40 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00004729 ;
@@ -5403,7 +5563,7 @@ VFBseq:00000676 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000681 a FBcv:0003024 ;
-    rdfs:label "mixed proboscis and maxillary palpus, 5 days, male (Li 2022)" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, male, FCA41 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00004535,
@@ -5416,7 +5576,7 @@ VFBseq:00000681 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000686 a FBcv:0003024 ;
-    rdfs:label "mixed proboscis and maxillary palpus, 5 days, female (Li 2022)" ;
+    rdfs:label "mixed proboscis and maxillary palpus, 5 days, female, FCA42 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00004535,
@@ -5429,7 +5589,7 @@ VFBseq:00000686 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000691 a FBcv:0003024 ;
-    rdfs:label "antenna, 5 days, male (Li 2022)" ;
+    rdfs:label "antenna, 5 days, male, FCA43 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00004511 ;
@@ -5441,7 +5601,7 @@ VFBseq:00000691 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000696 a FBcv:0003024 ;
-    rdfs:label "antenna, 5 days, female (Li 2022)" ;
+    rdfs:label "antenna, 5 days, female, FCA44 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
     RO:0002131 FBbt:00004511 ;
@@ -5453,7 +5613,7 @@ VFBseq:00000696 a FBcv:0003024 ;
     dcterms:source VFBseq:00000538 .
 
 VFBseq:00000701 a FBcv:0003024 ;
-    rdfs:label "fat body, 5 days, male, Cg-GAL4, UAS-lamGFP (Li 2022)" ;
+    rdfs:label "fat body, 5 days, male, Cg-GAL4, UAS-lamGFP, FCA45 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
     RO:0002131 FBbt:00003209 ;

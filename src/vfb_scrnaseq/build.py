@@ -96,6 +96,7 @@ def build_entities(project: str) -> list[dict]:
     entities.append(dataset)
 
     # --- Samples ---
+    sample_descr: dict[str, str] = {}              # sample VFBseq id -> description (Assay names)
     for s in samples["samples"]:
         # name from ORIGINAL GEO info (tissue/age/strain/replicate), not the FBbt/FBdv
         # mapping (which is not 1:1 — e.g. 48h & 72h both map to 'pharate adult stage').
@@ -111,6 +112,7 @@ def build_entities(project: str) -> list[dict]:
             if s.get("set"):
                 parts.append(f"{s['set']} rep {s.get('biorep')}" if s.get("biorep") else s["set"])
             descr = ", ".join(parts)
+        sample_descr[s["vfbseq_id"]] = descr
         rec = {
             "type": "Sample", "id": iri(s["vfbseq_id"]),
             "name": (f"{descr}{cite_suffix}" if descr else s["sample_id"]),
@@ -132,8 +134,12 @@ def build_entities(project: str) -> list[dict]:
         entities.append(rec)
 
     # --- Assays ---
+    assay_name = _assay_namer(cfg, samples["assays"], sample_descr, cite_suffix)
+    sb_cfg = cfg.get("sample_build") or {}
     for a in samples["assays"]:
         xrefs = [x for x in [a.get("accession")] + a.get("dbxrefs", []) if x]
+        if (sb_cfg.get("assay_label") or {}).get("xref_library_id") and a.get("library_id"):
+            xrefs.append(a["library_id"])          # the source's own library id (name shortens it)
         xrefs = list(dict.fromkeys(xrefs))         # de-duplicated, order kept
         if a.get("sra"):
             xrefs.append(a["sra"])
@@ -141,7 +147,7 @@ def build_entities(project: str) -> list[dict]:
             xrefs.append(a["biosample"])
         entities.append({
             "type": "Assay", "id": iri(a["vfbseq_id"]),
-            "name": a.get("accession") or a.get("library_id"),
+            "name": assay_name(a),
             "method": a["method"]["fbcv_id"],
             "associated_sample_for_assay": [iri(a["sample_vfbseq_id"])],
             "associated_dataset": dataset_iri,
@@ -226,6 +232,40 @@ MEMBERSHIP_TITLES = {
     "sorted": "Cells FACS-sorted by the authors as '{type}' and analysed as a whole; "
               "typed from the authors' sample description, not a transcriptomic cluster.",
 }
+
+
+def _assay_namer(cfg: dict, assays: list[dict], sample_descr: dict[str, str], cite_suffix: str):
+    """Return ``name(assay)``: its Sample's description plus what the assay is, from
+    `sample_build.assay_label` in config:
+
+      unit      e.g. "10x lane", "10x library", "Smart-seq2 plate"
+      pattern   optional regex on the library id; group 1 numbers the assay
+                (e.g. "_(\\d+)$" -> "10x lane 1"); without it, the unit alone
+      of_total  true -> "... of <assays of that Sample>" (e.g. "10x lane 1 of 8")
+      xref_library_id  true -> the full library id is also kept as a dbxref
+
+    Without `assay_label` the accession (or library id) is the name, as before."""
+    import re
+    al = (cfg.get("sample_build") or {}).get("assay_label")
+    if not al:
+        return lambda a: a.get("accession") or a.get("library_id")
+    pat = re.compile(al["pattern"]) if al.get("pattern") else None
+    n_by_sample: dict[str, int] = {}
+    for a in assays:
+        n_by_sample[a["sample_vfbseq_id"]] = n_by_sample.get(a["sample_vfbseq_id"], 0) + 1
+
+    def name(a: dict) -> str:
+        what = al["unit"]
+        if pat:
+            m = pat.search(a.get("library_id") or "")
+            if not m:
+                raise ValueError(f"assay_label.pattern {al['pattern']!r} does not match "
+                                 f"library id {a.get('library_id')!r}")
+            what += f" {m.group(1)}"
+            if al.get("of_total"):
+                what += f" of {n_by_sample[a['sample_vfbseq_id']]}"
+        return f"{sample_descr[a['sample_vfbseq_id']]}, {what}{cite_suffix}"
+    return name
 
 
 def anns_subset(proj: Path) -> str:

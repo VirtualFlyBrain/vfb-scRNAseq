@@ -36,6 +36,7 @@ sample_build:
   # One GSM = one biological replicate = one 10x library, so Sample:Assay is 1:1.
   title_pattern: 'regex:(?P<set>DGRP-551|w1118)_(?P<timepoint>\d+d)_(?P<biorep>r\d+)'
   assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
+  assay_label: { unit: 10x library }       # one library (GSM / run) per Sample
   # Mixed sex, curator-confirmed from the paper: each run dissociated "Forty ...
   # adult brains (20 females and 20 males)". Per-cell sex calls exist in the GEO
   # metadata but the samples themselves are pooled, so the (single-valued) sex slot
