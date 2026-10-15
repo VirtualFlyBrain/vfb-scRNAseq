@@ -144,8 +144,9 @@ classes:
     attributes:
       associated_sample_or_assay_for_clustering:
         slot_uri: BFO:0000051
-        description: Sample or Assay (VFBseq id) that the Clustering uses.
+        description: Sample(s) or Assay(s) (VFBseq ids) that the Clustering uses, including any reused from another dataset.
         range: Class
+        multivalued: true
         annotations:
           owl: ObjectPropertyAssertion
     slots:

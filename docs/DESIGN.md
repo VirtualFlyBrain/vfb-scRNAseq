@@ -171,6 +171,17 @@ below record how each was applied).
   records a gap; it is not a queue of requests. Do not request terms defined only by
   transcriptomic clusters/markers as a matter of course (we do not want thousands of
   expression-defined terms); any request needs explicit curator sign-off.
+- **Reuse entities that are truly identical; curate the source study first.** When a
+  study reuses another study's material — the same flies/dissections (Samples) or the
+  same sequencing libraries (Assays), e.g. the Aging Fly Cell Atlas re-analysing the
+  FCA's 5-day head and body libraries — its build references the existing entities by
+  their VFBseq ids instead of minting duplicates. The reused entities stay owned by
+  (and are emitted only by) the project that first curated them; the reusing project
+  links to them from its own Clusterings (`associated_sample_or_assay_for_clustering`).
+  Only identical entities are reused: a re-analysis is a new Clustering with new
+  Clusters, even over the same cells. If the source study has not been curated yet,
+  the build stops and tells the curator, with the suggestion to curate that study
+  first (so the shared Samples/Assays get their ids, labels and metadata there).
 - **Stage belongs on the Sample.** Samples carry their FBdv stage. A Cluster gets a
   `stage` only when the stage is determined from the cluster's own gene expression
   (e.g. a cluster the authors identify as a particular developmental stage) — not
@@ -795,13 +806,16 @@ VFB until the release files are merged, so ids can still change during review.
 2. **`projects/<name>/config.yaml`:** `source` (DOI, PMID, FBrf fallback),
    `dataset` (GEO / BioProject / SRA, or ArrayExpress), `sample_build` (GEO: title
    pattern, sex, stocks from the paper's Key Resources Table resolved in FlyBase
-   Chado, `age_map` → FBdv stage + FBbt tissue, clusterings; ArrayExpress: also
+   Chado, `age_map` → FBdv stage + FBbt tissue, `tissue_map` when one series has
+   several tissues, clusterings (`sample_tissue_raw` links a clustering to the
+   samples of that tissue); ArrayExpress: also
    `sample_columns`, `assay_column` / `assay_regex`, `sex_column` / `sex_map`,
    `sdrf_corrections`), `annotation_build` (h5ad obs columns,
    `unannotated_values`), `annotations` (label/class/timepoint
    columns, extra clusterings, prefixes), `unidentified` (rule, held classes, hold reasons,
    class anchors), `expression` (matrix files, extra parts; or `source: h5ad` with
-   `values`, `gene_ids_from`, `gzip_tsv`).
+   `values`, `gene_ids_from`, `gzip_tsv`), and `reuse` (Samples/Assays reused by
+   VFBseq id from an already-curated project; see *General curation rules*).
 3. **Clusters:** `build_annotations_from_geo.py` (one entry per author cluster;
    the main cluster label must be the authors' cluster, not a merged type). For
    layouts it can't express, a project script writes `cell_type_annotations.json`
@@ -917,3 +931,36 @@ Curator decisions (2026-10-07):
   `verify_mappings.py` OK (190 and 109 distinct FBbt terms), and every FBbt/FBdv/FBcv
   term on Samples, Assays and the Dataset checked current (FBdv 2026-09-30, FBcv
   2026-10-01). Recorded in each project's `provenance.json`.
+
+## Aging Fly Cell Atlas (Lu et al. 2023)
+
+Science 2023, PMID 37319212, FBrf0256843; GEO GSE218661 (`lu_2023_afca`). Whole head
+and body, male and female, single-nucleus 10x, flies F1 of female W1118 × male Oregon R
+(no stock numbers given). Curator decisions 2026-10-15.
+
+- **New vs reused data.** GEO holds the new 30/50/70-day data: 72 GSMs (head/body ×
+  sex × age × 6), each its own sample with one 10x library (the paper: "each age group
+  had 12 samples with 6 females and 6 males"; heads and bodies processed separately).
+  The 5-day data are the FCA's ("5d samples are from the FCA"): every 5-day cell in the
+  authors' h5ad files is an FCA 10x Stringent Head / Body cell (same barcode and
+  library, 100,311 head + 96,594 body; the files even carry the FCA annotation,
+  identical to ours). So the 26 FCA head/body Samples (FCA1, FCA4–15; FCA2, FCA16–27)
+  and their Assays are **reused** from `li_2022_fca_10x` by VFBseq id (config `reuse`),
+  not re-minted — the first use of the entity-reuse rule.
+- **Clusterings / Clusters are new.** The authors co-clustered the new ages with the
+  5-day cells and re-annotated them all (`afca_annotation`: 91 head, 73 body types),
+  so AFCA head and body are new Clusterings whose Clusters are the authors' types
+  over all ages (not split by age; age stays on the Samples). The annotation differs
+  from the FCA's for 23% of head / 36% of body 5-day cells (renamed with a tissue
+  suffix, split, newly typed, a few moved), so a 5-day cell is in one FCA and one AFCA
+  cluster. Each Clustering links (`associated_sample_or_assay_for_clustering`) to its
+  36 new and 13 reused Samples.
+- **Samples (stage 1):** `build_samples_from_geo.py` — 72 Samples / 72 Assays; stage
+  day 30 / 50 / 70 of adulthood (FBdv:00007105 / 00007125 / 0010010); tissue head →
+  *adult head*, body → *adult postcephalic region* (as for the FCA); sex from GEO.
+- **Author files:** `GSE218661_adata_{head,body}_S_v1.0.h5ad` (no `raw`; `X` = all
+  15,992 genes as log1p(CP10k), symbols only); a cell's library is in its name
+  (`…_AFCA_female_head_30_S1`, or the FCA sample id). Not annotated: 108,647 head /
+  6,250 body cells ("unannotated"); 17 numbered head types "neuron 1"–"neuron 17"
+  (new in the paper, unnamed).
+
