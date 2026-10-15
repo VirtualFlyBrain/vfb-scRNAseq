@@ -70,9 +70,9 @@ from FlyBase; that authority is being dropped.)
 - `projects/lu_2023_afca/` — Aging Fly Cell Atlas, Lu et al. 2023 (PMID 37319212;
   [GSE218661](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE218661)): head and
   body at 30/50/70 days, co-analysed with the FCA's 5-day head/body samples (reused
-  from `li_2022_fca_10x`, not duplicated). Replaces the old FlyBase/SCEA load
-  (FBlc0006422: per-age FBlc0006423 / 6887 / 7347 and their sex sub-datasets). In
-  progress.
+  from `li_2022_fca_10x`, not duplicated): 164 author types over all ages, 143 with an
+  FBbt term loaded. Replaces the old FlyBase/SCEA load (FBlc0006422: per-age
+  FBlc0006423 / 6887 / 7347 and their sex sub-datasets).
 
 ## Layout
 
@@ -99,6 +99,7 @@ checks/                                  # FBbt / FlyBase release-check records 
 projects/kurmangaliyev_2020/             # first worked example (visual system development)
 projects/davie_2018/                     # adult brain, ageing
 projects/li_2022_fca_10x/, li_2022_fca_ss2/  # Fly Cell Atlas (ArrayExpress + h5ad)
+projects/lu_2023_afca/                   # Aging Fly Cell Atlas (GEO + h5ad; reuses FCA samples)
 metadata/                                # VFB-loadable metadata OWL, one per project
 expression/                              # VFB-loadable expression OWL (.owl.gz), one per project
 id_registry/                             # minted-id registry (JSON)
@@ -153,7 +154,7 @@ from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#genera
 
 ## Status
 
-All four projects are curated and built: every mapped cluster has been reviewed (bar
+All five projects are curated and built: every mapped cluster has been reviewed (bar
 three Kurmangaliyev early clusters awaiting FBbt #2216, below), and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the
@@ -164,6 +165,6 @@ an issue when a FlyBase release changes a gene id in use, and reminds when a pen
 FBbt term request is closed (`checks/`).
 
 Outstanding, outside this repo: loading the OWL into VFB, and retiring the old loads
-these replace (FBlc0006090, FBlc0003846 / 4307 / 4785). One FBbt request is pending
+these replace (FBlc0006090, FBlc0003846 / 4307 / 4785, FBlc0006422). One FBbt request is pending
 ([#2216](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2216),
 immature T2 / T2a / T3 neurons; see `checks/pending_fbbt_requests.json`).
