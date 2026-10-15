@@ -395,16 +395,31 @@ a curator decision is not lost. Git history remains the full diff backstop.
 
 Each project records a `provenance.json` (schema:
 `src/vfb_scrnaseq/schemas/provenance.schema.json`, validated by the
-`check_provenance.py` hook) capturing the exact versions of **everything used to
-produce the mappings**, so a result can be re-checked when a source changes:
+`check_provenance.py` hook): what the build was made from and how, so a result can
+be understood, reproduced and re-checked when a source changes.
 
-- **ontologies** — id, version + `version_iri`, how/when accessed (e.g. FBbt
-  `2026-06-11` via OLS MCP);
-- **data_sources** — datasets/publications and the specific files used, with
-  `sha256` + byte size for exact reproducibility (GEO metadata file, the PDF);
-- **software** — external code/libraries/services with versions and git commits
-  (atlas-chat / Atlas-reporter commit, sentence-transformers, pymupdf4llm, OLS, Python);
-- **models** — the mapping/report LLM and the local-index embedding model.
+- **summary** — a short paragraph: what the project is, what was built, from what;
+- **decisions** — dated `{date, by, decision}` entries in date order, `by` being
+  `curator` (decided or approved by the curator) or `pipeline` (a method or build
+  choice); general rules that shaped the project are included with their own dates;
+- **checks** — dated `{date, check, result}` verifications (FBbt term currency,
+  cross-checks against earlier loads, marker spot checks, conversion checks);
+- **people**, **pipeline** (repo, plain `commit`, `uncommitted_changes`);
+- **ontologies** — id, version + `version_iri`, how and when accessed;
+- **data_sources** — publications, preprints, archive datasets, the authors' own
+  files, previous loads (`previous_load`, e.g. an FBlc) and other projects of this
+  repo whose entities or mappings are reused (`project`), with the specific files
+  used (`path`, `sha256` + byte size);
+- **software** — tools, libraries, services (with versions: e.g. FlyBase Chado with
+  its FlyBase release) and repositories (with commits);
+- **models** — the orchestrating, mapping/report and embedding models.
+
+Every entry uses the same field names: `id` is an identifier only (DOI, accession,
+CURIE, model id, or a short slug such as `flybase-chado`), `label` a short name or
+title, `type` the kind of thing from the section's list, `description` free text on
+how or why it was used, `xrefs` other identifiers of the same thing as CURIEs
+(`PMID:`, `PMCID:`, `FlyBase:FBrf…`), and `accessed_at` the date it was retrieved or
+queried.
 
 Motivation: ontology releases can rename, re-home, or obsolete terms, so recording
 the FBbt `version_iri` makes it explicit which release a mapping was made against,

@@ -18,7 +18,7 @@ from pathlib import Path
 
 SCHEMA_PATH = Path("src/vfb_scrnaseq/schemas/provenance.schema.json")
 
-REQUIRED_TOP = {"project", "generated_at", "pipeline", "ontologies", "data_sources", "software"}
+REQUIRED_TOP = {"project", "generated_at", "summary", "pipeline", "ontologies", "data_sources", "software"}
 
 
 def main() -> int:
@@ -79,8 +79,8 @@ def _validate_inline(data: dict) -> list[str]:
             errors.append(f"'{key}' must be a list")
     if "pipeline" in data:
         p = data["pipeline"]
-        if not isinstance(p, dict) or "name" not in p or "version" not in p:
-            errors.append("'pipeline' must be an object with 'name' and 'version'")
+        if not isinstance(p, dict) or not {"id", "url", "commit"} <= set(p):
+            errors.append("'pipeline' must be an object with 'id', 'url' and 'commit'")
     return errors
 
 
