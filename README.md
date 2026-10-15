@@ -70,7 +70,8 @@ from FlyBase; that authority is being dropped.)
 - `projects/lu_2023_afca/` — Aging Fly Cell Atlas, Lu et al. 2023 (PMID 37319212;
   [GSE218661](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE218661)): head and
   body at 30/50/70 days, co-analysed with the FCA's 5-day head/body samples (reused
-  from `li_2022_fca_10x`, not duplicated). In progress.
+  from `li_2022_fca_10x`, not duplicated). Replaces the old FlyBase/SCEA load
+  (FBlc0006422). In progress.
 
 ## Layout
 

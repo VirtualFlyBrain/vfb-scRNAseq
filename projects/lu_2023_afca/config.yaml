@@ -2,7 +2,9 @@
 # transcriptomes of whole head and body, male and female, at 5, 30, 50 and 70 days.
 # The 30/50/70-day data are new (GEO GSE218661, 72 libraries); the 5-day data are the
 # Fly Cell Atlas head and body samples (Li et al. 2022), co-clustered and re-annotated
-# with the new ages ("5d samples are from the FCA"). Curator decisions 2026-10-15:
+# with the new ages ("5d samples are from the FCA"). Previously loaded into VFB via the
+# old FlyBase/SCEA mechanism (FBlc0006422); rebuilt here from GEO and the authors' own
+# analyses with fresh VFBseq ids. Curator decisions 2026-10-15:
 # one Clustering per author analysis (head, body), one Cluster per author
 # `afca_annotation` type over all ages; the FCA's 5-day Samples/Assays are reused by
 # VFBseq id (general rule: reuse identical entities), not duplicated.
@@ -26,7 +28,7 @@ dataset:
   bioproject: PRJNA904763
   sra_study: SRP409514
   platform: GPL25244            # Illumina NovaSeq 6000
-  licence: CC-BY-4.0
+  licence: CC-BY-4.0            # curator-confirmed 2026-10-15
   assay_type: FBcv:0009001      # single-nucleus RNA-Seq
 
 sample_build:
