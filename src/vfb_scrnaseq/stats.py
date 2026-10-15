@@ -15,7 +15,8 @@ converted back to CPM (`expression.values`: `log1p_cp10k` -> (e^x - 1) x 100,
 gene sets; a gene a file lacks is unexpressed in that file's clusters.
 
 Only clusters with an FBbt term are summarised (held clusters are not loaded; their
-cells are read but count towards nothing, including the dataset-level gene counts).
+cells still count towards the dataset-level gene counts, which measure what the
+experiment detected).
 
 Memory stays low: the only dense accumulators are genes x clusters. Cluster IRIs
 come from the id registry (build must have minted the Cluster ids first).
@@ -355,6 +356,16 @@ def _summarise(parts: list[dict], acc: str, subset: str, cutoff: float, ex: dict
         raise SystemExit("cluster labels repeat across expression parts; set a label_prefix")
     cluster_size = np.concatenate([p["cluster_size"] for p in parts])
     n_cells = len(set().union(*(p["cells"] for p in parts)))
+    # dataset-level gene counts, matching the old repo's get_gene_counts: distinct
+    # genes over the per-cluster x gene expression (union across clusters, NOT a
+    # dataset-wide extent). total = genes expressed in any cluster; filtered = genes
+    # with extent > cutoff in at least one cluster. Over ALL clusters, held ones
+    # included: the genes were detected whether or not their cluster is loaded.
+    with np.errstate(divide="ignore", invalid="ignore"):
+        all_extent = N / cluster_size[None, :]
+    dataset_total_gene_count = int((N > 0).any(axis=1).sum())
+    dataset_filtered_gene_count = int((all_extent > cutoff).any(axis=1).sum())
+
     held_clusters = held_cells = 0
     if keep is not None:
         cols = [i for i, c in enumerate(clusters) if c in keep]
@@ -388,13 +399,6 @@ def _summarise(parts: list[dict], acc: str, subset: str, cutoff: float, ex: dict
                            int((N[:, k] > 0).sum()), int((extent[:, k] > cutoff).sum()))
               for lab, k in cidx.items()]
     counts.sort(key=lambda c: c.label)
-
-    # dataset-level gene counts, matching the old repo's get_gene_counts: distinct
-    # genes over the per-cluster x gene expression (union across clusters, NOT a
-    # dataset-wide extent). total = genes expressed in any cluster; filtered = genes
-    # with extent > cutoff in at least one cluster (== distinct genes in expression.tsv).
-    dataset_total_gene_count = int((N > 0).any(axis=1).sum())
-    dataset_filtered_gene_count = int((extent > cutoff).any(axis=1).sum())
 
     meta = {"n_genes": n_genes, "n_cells": n_cells, "cutoff": cutoff,
             "normalisation": ex.get("normalisation", "CPM"),
