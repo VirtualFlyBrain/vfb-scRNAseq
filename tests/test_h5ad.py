@@ -199,3 +199,75 @@ def test_matrix_and_genes_all_layouts(tmp_path):
             got[c, g] += v
             n += len(v)
         assert n == np.count_nonzero(DENSE) and np.array_equal(got, DENSE), make.__name__
+
+
+# --- lossless compression of cached files (vfb_scrnaseq.h5ad_compress, fetch_h5ad) ----
+
+def _v07_with_refs(path):
+    """AnnData 0.7 style: a categorical column points at its categories via an
+    object-reference attribute; plus a sparse X large enough to be compressed."""
+    _v07(path)
+    with h5py.File(path, "a") as f:
+        f["obs/annotation"].attrs["categories"] = f["obs/__categories/annotation"].ref
+        x = f.create_group("X")
+        x.attrs["encoding-type"] = "csr_matrix"
+        x.attrs["shape"] = np.array([3, 2000])
+        x["data"] = np.linspace(0, 1, 3000, dtype=np.float32)
+        x["indices"] = np.tile(np.arange(1000, dtype=np.int32), 3)
+        x["indptr"] = np.array([0, 1000, 2000, 3000], dtype=np.int64)
+
+
+def test_compress_roundtrip_all_layouts(tmp_path):
+    from vfb_scrnaseq.h5ad_compress import compress, is_compressed
+    from vfb_scrnaseq.ingest_h5ad import iter_matrix
+    for make in (_old, _v07_with_refs, _v08):
+        src, dst = tmp_path / f"{make.__name__}.h5ad", tmp_path / f"{make.__name__}.gz.h5ad"
+        make(src)
+        compress(src, dst)
+        assert is_compressed(dst)
+        assert read_obs(dst, ["annotation", "n_genes"]) == read_obs(src, ["annotation", "n_genes"])
+        if make is _v07_with_refs:
+            assert not is_compressed(src)
+            with h5py.File(dst) as f:      # the reference now points inside the new file
+                assert f[f["obs/annotation"].attrs["categories"]].name == "/obs/__categories/annotation"
+            got = [np.concatenate(p) for p in zip(*iter_matrix(dst, use_raw=False))]
+            want = [np.concatenate(p) for p in zip(*iter_matrix(src, use_raw=False))]
+            assert all(np.array_equal(a, b) for a, b in zip(got, want))
+
+
+def test_compress_mismatch_is_caught(tmp_path, monkeypatch):
+    import pytest
+    from vfb_scrnaseq import h5ad_compress as hc
+    src, dst = tmp_path / "a.h5ad", tmp_path / "b.h5ad"
+    _v07_with_refs(src)
+    real = hc._copy
+
+    def corrupt(s, d, refs):
+        real(s, d, refs)
+        if "X" in d:
+            d["X/data"][0] = 99.0
+    monkeypatch.setattr(hc, "_copy", corrupt)
+    with pytest.raises(hc.CompressionMismatch, match="X/data"):
+        hc.compress(src, dst)
+    assert not dst.exists()
+
+
+def test_fetch_compresses_downloads(tmp_path):
+    import gzip
+    import shutil
+    sys.path.insert(0, str(REPO / "scripts"))
+    spec = importlib.util.spec_from_file_location("fetch_h5ad", REPO / "scripts" / "fetch_h5ad.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    from vfb_scrnaseq.h5ad_compress import is_compressed
+    src = tmp_path / "remote.h5ad"
+    _v07_with_refs(src)
+    with open(src, "rb") as a, gzip.open(tmp_path / "remote.h5ad.gz", "wb") as b:
+        shutil.copyfileobj(a, b)
+    for url, name in ((src.as_uri(), "plain.h5ad"), ((tmp_path / "remote.h5ad.gz").as_uri(), "gz.h5ad")):
+        dest = tmp_path / "cache" / name
+        mod.fetch_any(url, dest)
+        assert dest.exists() and is_compressed(dest)
+        assert read_obs(dest, ["annotation"]) == read_obs(src, ["annotation"])
+        assert not list(dest.parent.glob(name + ".*"))       # no leftover temp files
+        mod.fetch_any(url, dest)                              # done: not fetched again
