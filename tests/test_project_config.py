@@ -127,3 +127,13 @@ def test_reused_samples_and_clustering_links(tmp_path, monkeypatch):
     assert pc.clustering_samples({"id": "h", "sample_tissue_raw": "head"}, own, reused) == \
         ["VFBseq_00000010", "VFBseq_00000001"]
     assert pc.clustering_samples("main", own, reused) == []
+
+
+def test_hold_reason_untyped_by_rule_and_pending():
+    from vfb_scrnaseq.project_config import hold_reason
+    cfg = {"unidentified": {"rule": r"regex:neuron \d+", "hold_unidentified": True}}
+    reason = hold_reason("nonexistent_project", cfg)
+    assert reason({"label": "head_neuron 5", "source_cluster_id": "neuron 5"}, None) == "untyped"
+    assert reason({"label": "head_Kenyon cell", "source_cluster_id": "Kenyon cell"}, None) == ""
+    assert reason({"label": "head_Kenyon cell", "source_cluster_id": "Kenyon cell"},
+                  {"best_match": None}) == "no term"

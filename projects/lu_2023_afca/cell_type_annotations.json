@@ -1,0 +1,3900 @@
+{
+  "source": {
+    "doi": "10.1126/science.adg0934",
+    "title": "Aging Fly Cell Atlas identifies exhaustive aging features at cellular resolution"
+  },
+  "dataset": {
+    "accession": "GSE218661",
+    "label_source": "authors' AnnData files (GEO GSE218661 supplementary), obs `afca_annotation`",
+    "label_level": "author cell type (one entry per annotation, per analysis)",
+    "validate_against": "paper and supplementary tables"
+  },
+  "annotations": [
+    {
+      "label": "head_Johnston organ neuron",
+      "type": "Johnston organ neuron",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "Johnston organ neuron",
+      "cell_number": 2483,
+      "author_broad": "sensory neuron",
+      "cells_by_sex": {
+        "female": 1311,
+        "male": 1141,
+        "mix": 31
+      },
+      "cells_by_age": {
+        "5": 530,
+        "30": 601,
+        "50": 805,
+        "70": 547
+      },
+      "cells_by_dataset": {
+        "FCA": 530,
+        "AFCA": 1953
+      }
+    },
+    {
+      "label": "head_Kenyon cell",
+      "type": "Kenyon cell",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "Kenyon cell",
+      "cell_number": 11,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 6,
+        "male": 5
+      },
+      "cells_by_age": {
+        "5": 4,
+        "30": 3,
+        "50": 2,
+        "70": 2
+      },
+      "cells_by_dataset": {
+        "FCA": 4,
+        "AFCA": 7
+      }
+    },
+    {
+      "label": "head_Poxn neuron",
+      "type": "Poxn neuron",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "Poxn neuron",
+      "cell_number": 521,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 265,
+        "male": 253,
+        "mix": 3
+      },
+      "cells_by_age": {
+        "5": 158,
+        "30": 141,
+        "50": 122,
+        "70": 100
+      },
+      "cells_by_dataset": {
+        "FCA": 158,
+        "AFCA": 363
+      }
+    },
+    {
+      "label": "head_T neuron T2",
+      "type": "T neuron T2",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "T neuron T2",
+      "cell_number": 1596,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 868,
+        "male": 707,
+        "mix": 21
+      },
+      "cells_by_age": {
+        "5": 708,
+        "30": 268,
+        "50": 370,
+        "70": 250
+      },
+      "cells_by_dataset": {
+        "FCA": 708,
+        "AFCA": 888
+      }
+    },
+    {
+      "label": "head_T neuron T2a",
+      "type": "T neuron T2a",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "T neuron T2a",
+      "cell_number": 1801,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 986,
+        "male": 786,
+        "mix": 29
+      },
+      "cells_by_age": {
+        "5": 714,
+        "30": 283,
+        "50": 501,
+        "70": 303
+      },
+      "cells_by_dataset": {
+        "FCA": 714,
+        "AFCA": 1087
+      }
+    },
+    {
+      "label": "head_T neuron T3",
+      "type": "T neuron T3",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "T neuron T3",
+      "cell_number": 1826,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 1025,
+        "male": 765,
+        "mix": 36
+      },
+      "cells_by_age": {
+        "5": 677,
+        "30": 276,
+        "50": 524,
+        "70": 349
+      },
+      "cells_by_dataset": {
+        "FCA": 677,
+        "AFCA": 1149
+      }
+    },
+    {
+      "label": "head_T neuron T4/T5",
+      "type": "T neuron T4/T5",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "T neuron T4/T5",
+      "cell_number": 605,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 304,
+        "male": 294,
+        "mix": 7
+      },
+      "cells_by_age": {
+        "5": 261,
+        "30": 107,
+        "50": 143,
+        "70": 94
+      },
+      "cells_by_dataset": {
+        "FCA": 261,
+        "AFCA": 344
+      }
+    },
+    {
+      "label": "head_T neuron T4/T5a-b",
+      "type": "T neuron T4/T5a-b",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "T neuron T4/T5a-b",
+      "cell_number": 2530,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 1369,
+        "male": 1049,
+        "mix": 112
+      },
+      "cells_by_age": {
+        "5": 1210,
+        "30": 358,
+        "50": 590,
+        "70": 372
+      },
+      "cells_by_dataset": {
+        "FCA": 1210,
+        "AFCA": 1320
+      }
+    },
+    {
+      "label": "head_T neuron T4/T5c-d",
+      "type": "T neuron T4/T5c-d",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "T neuron T4/T5c-d",
+      "cell_number": 2146,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 1144,
+        "male": 876,
+        "mix": 126
+      },
+      "cells_by_age": {
+        "5": 1040,
+        "30": 325,
+        "50": 494,
+        "70": 287
+      },
+      "cells_by_dataset": {
+        "FCA": 1040,
+        "AFCA": 1106
+      }
+    },
+    {
+      "label": "head_adult brain cell body glial cell",
+      "type": "adult brain cell body glial cell",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "adult brain cell body glial cell",
+      "cell_number": 1095,
+      "author_broad": "glial cell",
+      "cells_by_sex": {
+        "female": 596,
+        "male": 497,
+        "mix": 2
+      },
+      "cells_by_age": {
+        "5": 102,
+        "30": 423,
+        "50": 277,
+        "70": 293
+      },
+      "cells_by_dataset": {
+        "FCA": 102,
+        "AFCA": 993
+      }
+    },
+    {
+      "label": "head_adult brain perineurial glial cell",
+      "type": "adult brain perineurial glial cell",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "adult brain perineurial glial cell",
+      "cell_number": 4723,
+      "author_broad": "glial cell",
+      "cells_by_sex": {
+        "female": 2407,
+        "male": 2275,
+        "mix": 41
+      },
+      "cells_by_age": {
+        "5": 1580,
+        "30": 954,
+        "50": 1272,
+        "70": 917
+      },
+      "cells_by_dataset": {
+        "FCA": 1580,
+        "AFCA": 3143
+      }
+    },
+    {
+      "label": "head_adult fat body_head",
+      "type": "adult fat body_head",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "adult fat body_head",
+      "cell_number": 961,
+      "author_broad": "fat cell",
+      "cells_by_sex": {
+        "female": 758,
+        "male": 197,
+        "mix": 6
+      },
+      "cells_by_age": {
+        "5": 115,
+        "30": 265,
+        "50": 313,
+        "70": 268
+      },
+      "cells_by_dataset": {
+        "FCA": 115,
+        "AFCA": 846
+      }
+    },
+    {
+      "label": "head_adult lamina epithelial/marginal glial cell",
+      "type": "adult lamina epithelial/marginal glial cell",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "adult lamina epithelial/marginal glial cell",
+      "cell_number": 2776,
+      "author_broad": "glial cell",
+      "cells_by_sex": {
+        "female": 1469,
+        "male": 1278,
+        "mix": 29
+      },
+      "cells_by_age": {
+        "5": 971,
+        "30": 542,
+        "50": 735,
+        "70": 528
+      },
+      "cells_by_dataset": {
+        "FCA": 971,
+        "AFCA": 1805
+      }
+    },
+    {
+      "label": "head_adult optic chiasma glial cell",
+      "type": "adult optic chiasma glial cell",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "adult optic chiasma glial cell",
+      "cell_number": 1615,
+      "author_broad": "glial cell",
+      "cells_by_sex": {
+        "female": 889,
+        "male": 716,
+        "mix": 10
+      },
+      "cells_by_age": {
+        "5": 453,
+        "30": 337,
+        "50": 485,
+        "70": 340
+      },
+      "cells_by_dataset": {
+        "FCA": 453,
+        "AFCA": 1162
+      }
+    },
+    {
+      "label": "head_adult reticular neuropil associated glial cell_head",
+      "type": "adult reticular neuropil associated glial cell_head",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "adult reticular neuropil associated glial cell_head",
+      "cell_number": 2720,
+      "author_broad": "glial cell",
+      "cells_by_sex": {
+        "female": 1313,
+        "male": 1364,
+        "mix": 43
+      },
+      "cells_by_age": {
+        "5": 692,
+        "30": 526,
+        "50": 849,
+        "70": 653
+      },
+      "cells_by_dataset": {
+        "FCA": 692,
+        "AFCA": 2028
+      }
+    },
+    {
+      "label": "head_alpha'/beta' Kenyon cell",
+      "type": "alpha'/beta' Kenyon cell",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "alpha'/beta' Kenyon cell",
+      "cell_number": 1234,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 586,
+        "male": 635,
+        "mix": 13
+      },
+      "cells_by_age": {
+        "5": 489,
+        "30": 253,
+        "50": 289,
+        "70": 203
+      },
+      "cells_by_dataset": {
+        "FCA": 489,
+        "AFCA": 745
+      }
+    },
+    {
+      "label": "head_alpha/beta Kenyon cell",
+      "type": "alpha/beta Kenyon cell",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "alpha/beta Kenyon cell",
+      "cell_number": 2200,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 1068,
+        "male": 1085,
+        "mix": 47
+      },
+      "cells_by_age": {
+        "5": 738,
+        "30": 477,
+        "50": 601,
+        "70": 384
+      },
+      "cells_by_dataset": {
+        "FCA": 738,
+        "AFCA": 1462
+      }
+    },
+    {
+      "label": "head_antennal lobe projection neuron",
+      "type": "antennal lobe projection neuron",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "antennal lobe projection neuron",
+      "cell_number": 342,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 149,
+        "male": 189,
+        "mix": 4
+      },
+      "cells_by_age": {
+        "5": 116,
+        "30": 94,
+        "50": 64,
+        "70": 68
+      },
+      "cells_by_dataset": {
+        "FCA": 116,
+        "AFCA": 226
+      }
+    },
+    {
+      "label": "head_auditory sensory neuron",
+      "type": "auditory sensory neuron",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "auditory sensory neuron",
+      "cell_number": 1614,
+      "author_broad": "sensory neuron",
+      "cells_by_sex": {
+        "female": 771,
+        "male": 827,
+        "mix": 16
+      },
+      "cells_by_age": {
+        "5": 584,
+        "30": 346,
+        "50": 380,
+        "70": 304
+      },
+      "cells_by_dataset": {
+        "FCA": 584,
+        "AFCA": 1030
+      }
+    },
+    {
+      "label": "head_centrifugal neuron C2",
+      "type": "centrifugal neuron C2",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "centrifugal neuron C2",
+      "cell_number": 1558,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 859,
+        "male": 656,
+        "mix": 43
+      },
+      "cells_by_age": {
+        "5": 579,
+        "30": 244,
+        "50": 424,
+        "70": 311
+      },
+      "cells_by_dataset": {
+        "FCA": 579,
+        "AFCA": 979
+      }
+    },
+    {
+      "label": "head_centrifugal neuron C3",
+      "type": "centrifugal neuron C3",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "centrifugal neuron C3",
+      "cell_number": 1732,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 1003,
+        "male": 689,
+        "mix": 40
+      },
+      "cells_by_age": {
+        "5": 658,
+        "30": 289,
+        "50": 485,
+        "70": 300
+      },
+      "cells_by_dataset": {
+        "FCA": 658,
+        "AFCA": 1074
+      }
+    },
+    {
+      "label": "head_columnar neuron T1",
+      "type": "columnar neuron T1",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "columnar neuron T1",
+      "cell_number": 4216,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 2084,
+        "male": 2095,
+        "mix": 37
+      },
+      "cells_by_age": {
+        "5": 1805,
+        "30": 871,
+        "50": 843,
+        "70": 697
+      },
+      "cells_by_dataset": {
+        "FCA": 1805,
+        "AFCA": 2411
+      }
+    },
+    {
+      "label": "head_cone cell",
+      "type": "cone cell",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "cone cell",
+      "cell_number": 17669,
+      "author_broad": "sensory neuron",
+      "cells_by_sex": {
+        "female": 8490,
+        "male": 8958,
+        "mix": 221
+      },
+      "cells_by_age": {
+        "5": 5100,
+        "30": 3563,
+        "50": 5180,
+        "70": 3826
+      },
+      "cells_by_dataset": {
+        "FCA": 5100,
+        "AFCA": 12569
+      }
+    },
+    {
+      "label": "head_distal medullary amacrine neuron Dm10",
+      "type": "distal medullary amacrine neuron Dm10",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "distal medullary amacrine neuron Dm10",
+      "cell_number": 690,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 393,
+        "male": 288,
+        "mix": 9
+      },
+      "cells_by_age": {
+        "5": 302,
+        "30": 100,
+        "50": 179,
+        "70": 109
+      },
+      "cells_by_dataset": {
+        "FCA": 302,
+        "AFCA": 388
+      }
+    },
+    {
+      "label": "head_distal medullary amacrine neuron Dm12",
+      "type": "distal medullary amacrine neuron Dm12",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "distal medullary amacrine neuron Dm12",
+      "cell_number": 328,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 176,
+        "male": 148,
+        "mix": 4
+      },
+      "cells_by_age": {
+        "5": 135,
+        "30": 52,
+        "50": 81,
+        "70": 60
+      },
+      "cells_by_dataset": {
+        "FCA": 135,
+        "AFCA": 193
+      }
+    },
+    {
+      "label": "head_distal medullary amacrine neuron Dm3",
+      "type": "distal medullary amacrine neuron Dm3",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "distal medullary amacrine neuron Dm3",
+      "cell_number": 956,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 425,
+        "male": 491,
+        "mix": 40
+      },
+      "cells_by_age": {
+        "5": 355,
+        "30": 110,
+        "50": 310,
+        "70": 181
+      },
+      "cells_by_dataset": {
+        "FCA": 355,
+        "AFCA": 601
+      }
+    },
+    {
+      "label": "head_distal medullary amacrine neuron Dm8",
+      "type": "distal medullary amacrine neuron Dm8",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "distal medullary amacrine neuron Dm8",
+      "cell_number": 1188,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 599,
+        "male": 561,
+        "mix": 28
+      },
+      "cells_by_age": {
+        "5": 365,
+        "30": 204,
+        "50": 358,
+        "70": 261
+      },
+      "cells_by_dataset": {
+        "FCA": 365,
+        "AFCA": 823
+      }
+    },
+    {
+      "label": "head_distal medullary amacrine neuron Dm9",
+      "type": "distal medullary amacrine neuron Dm9",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "distal medullary amacrine neuron Dm9",
+      "cell_number": 571,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 260,
+        "male": 306,
+        "mix": 5
+      },
+      "cells_by_age": {
+        "5": 244,
+        "30": 117,
+        "50": 128,
+        "70": 82
+      },
+      "cells_by_dataset": {
+        "FCA": 244,
+        "AFCA": 327
+      }
+    },
+    {
+      "label": "head_dopaminergic PAM neuron",
+      "type": "dopaminergic PAM neuron",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "dopaminergic PAM neuron",
+      "cell_number": 493,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 247,
+        "male": 243,
+        "mix": 3
+      },
+      "cells_by_age": {
+        "5": 178,
+        "30": 129,
+        "50": 111,
+        "70": 75
+      },
+      "cells_by_dataset": {
+        "FCA": 178,
+        "AFCA": 315
+      }
+    },
+    {
+      "label": "head_ensheathing glial cell",
+      "type": "ensheathing glial cell",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "ensheathing glial cell",
+      "cell_number": 4619,
+      "author_broad": "glial cell",
+      "cells_by_sex": {
+        "female": 2381,
+        "male": 2188,
+        "mix": 50
+      },
+      "cells_by_age": {
+        "5": 1384,
+        "30": 961,
+        "50": 1343,
+        "70": 931
+      },
+      "cells_by_dataset": {
+        "FCA": 1384,
+        "AFCA": 3235
+      }
+    },
+    {
+      "label": "head_epithelial cell_head",
+      "type": "epithelial cell_head",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "epithelial cell_head",
+      "cell_number": 14114,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 7116,
+        "male": 6762,
+        "mix": 236
+      },
+      "cells_by_age": {
+        "5": 5522,
+        "30": 1921,
+        "50": 3504,
+        "70": 3167
+      },
+      "cells_by_dataset": {
+        "FCA": 5522,
+        "AFCA": 8592
+      }
+    },
+    {
+      "label": "head_gamma Kenyon cell",
+      "type": "gamma Kenyon cell",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "gamma Kenyon cell",
+      "cell_number": 2575,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 1206,
+        "male": 1328,
+        "mix": 41
+      },
+      "cells_by_age": {
+        "5": 966,
+        "30": 590,
+        "50": 596,
+        "70": 423
+      },
+      "cells_by_dataset": {
+        "FCA": 966,
+        "AFCA": 1609
+      }
+    },
+    {
+      "label": "head_hemocyte_head",
+      "type": "hemocyte_head",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "hemocyte_head",
+      "cell_number": 1285,
+      "author_broad": "hemocyte",
+      "cells_by_sex": {
+        "female": 780,
+        "male": 498,
+        "mix": 7
+      },
+      "cells_by_age": {
+        "5": 223,
+        "30": 382,
+        "50": 393,
+        "70": 287
+      },
+      "cells_by_dataset": {
+        "FCA": 223,
+        "AFCA": 1062
+      }
+    },
+    {
+      "label": "head_lamina intrinsic amacrine neuron Lai",
+      "type": "lamina intrinsic amacrine neuron Lai",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "lamina intrinsic amacrine neuron Lai",
+      "cell_number": 980,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 474,
+        "male": 499,
+        "mix": 7
+      },
+      "cells_by_age": {
+        "5": 432,
+        "30": 191,
+        "50": 215,
+        "70": 142
+      },
+      "cells_by_dataset": {
+        "FCA": 432,
+        "AFCA": 548
+      }
+    },
+    {
+      "label": "head_lamina monopolar neuron L1",
+      "type": "lamina monopolar neuron L1",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "lamina monopolar neuron L1",
+      "cell_number": 2554,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 1343,
+        "male": 1183,
+        "mix": 28
+      },
+      "cells_by_age": {
+        "5": 990,
+        "30": 495,
+        "50": 662,
+        "70": 407
+      },
+      "cells_by_dataset": {
+        "FCA": 990,
+        "AFCA": 1564
+      }
+    },
+    {
+      "label": "head_lamina monopolar neuron L2",
+      "type": "lamina monopolar neuron L2",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "lamina monopolar neuron L2",
+      "cell_number": 3414,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 1721,
+        "male": 1659,
+        "mix": 34
+      },
+      "cells_by_age": {
+        "5": 1301,
+        "30": 753,
+        "50": 775,
+        "70": 585
+      },
+      "cells_by_dataset": {
+        "FCA": 1301,
+        "AFCA": 2113
+      }
+    },
+    {
+      "label": "head_lamina monopolar neuron L3",
+      "type": "lamina monopolar neuron L3",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "lamina monopolar neuron L3",
+      "cell_number": 2543,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 1298,
+        "male": 1196,
+        "mix": 49
+      },
+      "cells_by_age": {
+        "5": 1089,
+        "30": 465,
+        "50": 631,
+        "70": 358
+      },
+      "cells_by_dataset": {
+        "FCA": 1089,
+        "AFCA": 1454
+      }
+    },
+    {
+      "label": "head_lamina monopolar neuron L4",
+      "type": "lamina monopolar neuron L4",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "lamina monopolar neuron L4",
+      "cell_number": 1596,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 868,
+        "male": 694,
+        "mix": 34
+      },
+      "cells_by_age": {
+        "5": 664,
+        "30": 312,
+        "50": 423,
+        "70": 197
+      },
+      "cells_by_dataset": {
+        "FCA": 664,
+        "AFCA": 932
+      }
+    },
+    {
+      "label": "head_lamina monopolar neuron L5",
+      "type": "lamina monopolar neuron L5",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "lamina monopolar neuron L5",
+      "cell_number": 1497,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 935,
+        "male": 543,
+        "mix": 19
+      },
+      "cells_by_age": {
+        "5": 601,
+        "30": 272,
+        "50": 354,
+        "70": 270
+      },
+      "cells_by_dataset": {
+        "FCA": 601,
+        "AFCA": 896
+      }
+    },
+    {
+      "label": "head_lamina wide-field 1 neuron",
+      "type": "lamina wide-field 1 neuron",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "lamina wide-field 1 neuron",
+      "cell_number": 547,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 267,
+        "male": 277,
+        "mix": 3
+      },
+      "cells_by_age": {
+        "5": 211,
+        "30": 125,
+        "50": 132,
+        "70": 79
+      },
+      "cells_by_dataset": {
+        "FCA": 211,
+        "AFCA": 336
+      }
+    },
+    {
+      "label": "head_lamina wide-field 2 neuron",
+      "type": "lamina wide-field 2 neuron",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "lamina wide-field 2 neuron",
+      "cell_number": 563,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 310,
+        "male": 246,
+        "mix": 7
+      },
+      "cells_by_age": {
+        "5": 222,
+        "30": 127,
+        "50": 128,
+        "70": 86
+      },
+      "cells_by_dataset": {
+        "FCA": 222,
+        "AFCA": 341
+      }
+    },
+    {
+      "label": "head_lobula columnar neuron LC10",
+      "type": "lobula columnar neuron LC10",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "lobula columnar neuron LC10",
+      "cell_number": 600,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 262,
+        "male": 325,
+        "mix": 13
+      },
+      "cells_by_age": {
+        "5": 208,
+        "30": 126,
+        "50": 171,
+        "70": 95
+      },
+      "cells_by_dataset": {
+        "FCA": 208,
+        "AFCA": 392
+      }
+    },
+    {
+      "label": "head_lobula columnar neuron LC12",
+      "type": "lobula columnar neuron LC12",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "lobula columnar neuron LC12",
+      "cell_number": 41,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 22,
+        "male": 19
+      },
+      "cells_by_age": {
+        "5": 17,
+        "30": 10,
+        "50": 6,
+        "70": 8
+      },
+      "cells_by_dataset": {
+        "FCA": 17,
+        "AFCA": 24
+      }
+    },
+    {
+      "label": "head_lobula columnar neuron LC17",
+      "type": "lobula columnar neuron LC17",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "lobula columnar neuron LC17",
+      "cell_number": 526,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 272,
+        "male": 252,
+        "mix": 2
+      },
+      "cells_by_age": {
+        "5": 158,
+        "30": 129,
+        "50": 138,
+        "70": 101
+      },
+      "cells_by_dataset": {
+        "FCA": 158,
+        "AFCA": 368
+      }
+    },
+    {
+      "label": "head_medullary intrinsic neuron Mi1",
+      "type": "medullary intrinsic neuron Mi1",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "medullary intrinsic neuron Mi1",
+      "cell_number": 2681,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 1390,
+        "male": 1268,
+        "mix": 23
+      },
+      "cells_by_age": {
+        "5": 1049,
+        "30": 554,
+        "50": 621,
+        "70": 457
+      },
+      "cells_by_dataset": {
+        "FCA": 1049,
+        "AFCA": 1632
+      }
+    },
+    {
+      "label": "head_medullary intrinsic neuron Mi15",
+      "type": "medullary intrinsic neuron Mi15",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "medullary intrinsic neuron Mi15",
+      "cell_number": 603,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 356,
+        "male": 229,
+        "mix": 18
+      },
+      "cells_by_age": {
+        "5": 219,
+        "30": 73,
+        "50": 187,
+        "70": 124
+      },
+      "cells_by_dataset": {
+        "FCA": 219,
+        "AFCA": 384
+      }
+    },
+    {
+      "label": "head_medullary intrinsic neuron Mi4",
+      "type": "medullary intrinsic neuron Mi4",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "medullary intrinsic neuron Mi4",
+      "cell_number": 2196,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 1215,
+        "male": 949,
+        "mix": 32
+      },
+      "cells_by_age": {
+        "5": 747,
+        "30": 413,
+        "50": 622,
+        "70": 414
+      },
+      "cells_by_dataset": {
+        "FCA": 747,
+        "AFCA": 1449
+      }
+    },
+    {
+      "label": "head_medullary intrinsic neuron Mi9",
+      "type": "medullary intrinsic neuron Mi9",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "medullary intrinsic neuron Mi9",
+      "cell_number": 863,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 457,
+        "male": 383,
+        "mix": 23
+      },
+      "cells_by_age": {
+        "5": 448,
+        "30": 130,
+        "50": 203,
+        "70": 82
+      },
+      "cells_by_dataset": {
+        "FCA": 448,
+        "AFCA": 415
+      }
+    },
+    {
+      "label": "head_neuron 1",
+      "type": "neuron 1",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 1",
+      "cell_number": 1064,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 528,
+        "male": 505,
+        "mix": 31
+      },
+      "cells_by_age": {
+        "5": 373,
+        "30": 170,
+        "50": 318,
+        "70": 203
+      },
+      "cells_by_dataset": {
+        "FCA": 373,
+        "AFCA": 691
+      }
+    },
+    {
+      "label": "head_neuron 10",
+      "type": "neuron 10",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 10",
+      "cell_number": 470,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 236,
+        "male": 229,
+        "mix": 5
+      },
+      "cells_by_age": {
+        "5": 169,
+        "30": 110,
+        "50": 116,
+        "70": 75
+      },
+      "cells_by_dataset": {
+        "FCA": 169,
+        "AFCA": 301
+      }
+    },
+    {
+      "label": "head_neuron 11",
+      "type": "neuron 11",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 11",
+      "cell_number": 399,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 206,
+        "male": 187,
+        "mix": 6
+      },
+      "cells_by_age": {
+        "5": 154,
+        "30": 79,
+        "50": 96,
+        "70": 70
+      },
+      "cells_by_dataset": {
+        "FCA": 154,
+        "AFCA": 245
+      }
+    },
+    {
+      "label": "head_neuron 12",
+      "type": "neuron 12",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 12",
+      "cell_number": 378,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 197,
+        "male": 177,
+        "mix": 4
+      },
+      "cells_by_age": {
+        "5": 131,
+        "30": 70,
+        "50": 112,
+        "70": 65
+      },
+      "cells_by_dataset": {
+        "FCA": 131,
+        "AFCA": 247
+      }
+    },
+    {
+      "label": "head_neuron 13",
+      "type": "neuron 13",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 13",
+      "cell_number": 343,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 157,
+        "male": 182,
+        "mix": 4
+      },
+      "cells_by_age": {
+        "5": 119,
+        "30": 68,
+        "50": 109,
+        "70": 47
+      },
+      "cells_by_dataset": {
+        "FCA": 119,
+        "AFCA": 224
+      }
+    },
+    {
+      "label": "head_neuron 14",
+      "type": "neuron 14",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 14",
+      "cell_number": 329,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 172,
+        "male": 153,
+        "mix": 4
+      },
+      "cells_by_age": {
+        "5": 108,
+        "30": 78,
+        "50": 82,
+        "70": 61
+      },
+      "cells_by_dataset": {
+        "FCA": 108,
+        "AFCA": 221
+      }
+    },
+    {
+      "label": "head_neuron 15",
+      "type": "neuron 15",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 15",
+      "cell_number": 274,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 138,
+        "male": 126,
+        "mix": 10
+      },
+      "cells_by_age": {
+        "5": 106,
+        "30": 55,
+        "50": 78,
+        "70": 35
+      },
+      "cells_by_dataset": {
+        "FCA": 106,
+        "AFCA": 168
+      }
+    },
+    {
+      "label": "head_neuron 16",
+      "type": "neuron 16",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 16",
+      "cell_number": 274,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 132,
+        "male": 140,
+        "mix": 2
+      },
+      "cells_by_age": {
+        "5": 95,
+        "30": 54,
+        "50": 75,
+        "70": 50
+      },
+      "cells_by_dataset": {
+        "FCA": 95,
+        "AFCA": 179
+      }
+    },
+    {
+      "label": "head_neuron 17",
+      "type": "neuron 17",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 17",
+      "cell_number": 233,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 117,
+        "male": 115,
+        "mix": 1
+      },
+      "cells_by_age": {
+        "5": 69,
+        "30": 42,
+        "50": 74,
+        "70": 48
+      },
+      "cells_by_dataset": {
+        "FCA": 69,
+        "AFCA": 164
+      }
+    },
+    {
+      "label": "head_neuron 2",
+      "type": "neuron 2",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 2",
+      "cell_number": 1057,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 590,
+        "male": 440,
+        "mix": 27
+      },
+      "cells_by_age": {
+        "5": 404,
+        "30": 184,
+        "50": 301,
+        "70": 168
+      },
+      "cells_by_dataset": {
+        "FCA": 404,
+        "AFCA": 653
+      }
+    },
+    {
+      "label": "head_neuron 3",
+      "type": "neuron 3",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 3",
+      "cell_number": 967,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 494,
+        "male": 454,
+        "mix": 19
+      },
+      "cells_by_age": {
+        "5": 355,
+        "30": 178,
+        "50": 258,
+        "70": 176
+      },
+      "cells_by_dataset": {
+        "FCA": 355,
+        "AFCA": 612
+      }
+    },
+    {
+      "label": "head_neuron 4",
+      "type": "neuron 4",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 4",
+      "cell_number": 837,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 465,
+        "male": 364,
+        "mix": 8
+      },
+      "cells_by_age": {
+        "5": 325,
+        "30": 153,
+        "50": 222,
+        "70": 137
+      },
+      "cells_by_dataset": {
+        "FCA": 325,
+        "AFCA": 512
+      }
+    },
+    {
+      "label": "head_neuron 5",
+      "type": "neuron 5",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 5",
+      "cell_number": 762,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 403,
+        "male": 333,
+        "mix": 26
+      },
+      "cells_by_age": {
+        "5": 292,
+        "30": 113,
+        "50": 222,
+        "70": 135
+      },
+      "cells_by_dataset": {
+        "FCA": 292,
+        "AFCA": 470
+      }
+    },
+    {
+      "label": "head_neuron 6",
+      "type": "neuron 6",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 6",
+      "cell_number": 695,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 384,
+        "male": 287,
+        "mix": 24
+      },
+      "cells_by_age": {
+        "5": 288,
+        "30": 93,
+        "50": 199,
+        "70": 115
+      },
+      "cells_by_dataset": {
+        "FCA": 288,
+        "AFCA": 407
+      }
+    },
+    {
+      "label": "head_neuron 7",
+      "type": "neuron 7",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 7",
+      "cell_number": 666,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 351,
+        "male": 274,
+        "mix": 41
+      },
+      "cells_by_age": {
+        "5": 329,
+        "30": 93,
+        "50": 167,
+        "70": 77
+      },
+      "cells_by_dataset": {
+        "FCA": 329,
+        "AFCA": 337
+      }
+    },
+    {
+      "label": "head_neuron 8",
+      "type": "neuron 8",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 8",
+      "cell_number": 631,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 306,
+        "male": 313,
+        "mix": 12
+      },
+      "cells_by_age": {
+        "5": 216,
+        "30": 91,
+        "50": 207,
+        "70": 117
+      },
+      "cells_by_dataset": {
+        "FCA": 216,
+        "AFCA": 415
+      }
+    },
+    {
+      "label": "head_neuron 9",
+      "type": "neuron 9",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "neuron 9",
+      "cell_number": 543,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 256,
+        "male": 281,
+        "mix": 6
+      },
+      "cells_by_age": {
+        "5": 205,
+        "30": 133,
+        "50": 125,
+        "70": 80
+      },
+      "cells_by_dataset": {
+        "FCA": 205,
+        "AFCA": 338
+      }
+    },
+    {
+      "label": "head_ocellus retinula cell",
+      "type": "ocellus retinula cell",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "ocellus retinula cell",
+      "cell_number": 283,
+      "author_broad": "sensory neuron",
+      "cells_by_sex": {
+        "female": 141,
+        "male": 137,
+        "mix": 5
+      },
+      "cells_by_age": {
+        "5": 57,
+        "30": 87,
+        "50": 105,
+        "70": 34
+      },
+      "cells_by_dataset": {
+        "FCA": 57,
+        "AFCA": 226
+      }
+    },
+    {
+      "label": "head_octopaminergic/tyraminergic neuron",
+      "type": "octopaminergic/tyraminergic neuron",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "octopaminergic/tyraminergic neuron",
+      "cell_number": 94,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 47,
+        "male": 47
+      },
+      "cells_by_age": {
+        "5": 38,
+        "30": 18,
+        "50": 24,
+        "70": 14
+      },
+      "cells_by_dataset": {
+        "FCA": 38,
+        "AFCA": 56
+      }
+    },
+    {
+      "label": "head_olfactory receptor neuron",
+      "type": "olfactory receptor neuron",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "olfactory receptor neuron",
+      "cell_number": 5415,
+      "author_broad": "sensory neuron",
+      "cells_by_sex": {
+        "female": 2729,
+        "male": 2643,
+        "mix": 43
+      },
+      "cells_by_age": {
+        "5": 1871,
+        "30": 1189,
+        "50": 1436,
+        "70": 919
+      },
+      "cells_by_dataset": {
+        "FCA": 1871,
+        "AFCA": 3544
+      }
+    },
+    {
+      "label": "head_optic-lobe-associated cortex glial cell",
+      "type": "optic-lobe-associated cortex glial cell",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "optic-lobe-associated cortex glial cell",
+      "cell_number": 1485,
+      "author_broad": "glial cell",
+      "cells_by_sex": {
+        "female": 713,
+        "male": 752,
+        "mix": 20
+      },
+      "cells_by_age": {
+        "5": 544,
+        "30": 311,
+        "50": 339,
+        "70": 291
+      },
+      "cells_by_dataset": {
+        "FCA": 544,
+        "AFCA": 941
+      }
+    },
+    {
+      "label": "head_outer photoreceptor cell",
+      "type": "outer photoreceptor cell",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "outer photoreceptor cell",
+      "cell_number": 21239,
+      "author_broad": "sensory neuron",
+      "cells_by_sex": {
+        "female": 9733,
+        "male": 11317,
+        "mix": 189
+      },
+      "cells_by_age": {
+        "5": 7202,
+        "30": 6295,
+        "50": 4087,
+        "70": 3655
+      },
+      "cells_by_dataset": {
+        "FCA": 7202,
+        "AFCA": 14037
+      }
+    },
+    {
+      "label": "head_pericerebral adult fat mass",
+      "type": "pericerebral adult fat mass",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "pericerebral adult fat mass",
+      "cell_number": 4140,
+      "author_broad": "fat cell",
+      "cells_by_sex": {
+        "female": 3113,
+        "male": 1016,
+        "mix": 11
+      },
+      "cells_by_age": {
+        "5": 305,
+        "30": 1594,
+        "50": 867,
+        "70": 1374
+      },
+      "cells_by_dataset": {
+        "FCA": 305,
+        "AFCA": 3835
+      }
+    },
+    {
+      "label": "head_photoreceptor cell R7",
+      "type": "photoreceptor cell R7",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "photoreceptor cell R7",
+      "cell_number": 2092,
+      "author_broad": "sensory neuron",
+      "cells_by_sex": {
+        "female": 1004,
+        "male": 1052,
+        "mix": 36
+      },
+      "cells_by_age": {
+        "5": 754,
+        "30": 491,
+        "50": 537,
+        "70": 310
+      },
+      "cells_by_dataset": {
+        "FCA": 754,
+        "AFCA": 1338
+      }
+    },
+    {
+      "label": "head_photoreceptor cell R8",
+      "type": "photoreceptor cell R8",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "photoreceptor cell R8",
+      "cell_number": 3108,
+      "author_broad": "sensory neuron",
+      "cells_by_sex": {
+        "female": 1415,
+        "male": 1656,
+        "mix": 37
+      },
+      "cells_by_age": {
+        "5": 1102,
+        "30": 768,
+        "50": 776,
+        "70": 462
+      },
+      "cells_by_dataset": {
+        "FCA": 1102,
+        "AFCA": 2006
+      }
+    },
+    {
+      "label": "head_pigment cell",
+      "type": "pigment cell",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "pigment cell",
+      "cell_number": 4100,
+      "author_broad": "glial cell",
+      "cells_by_sex": {
+        "female": 2187,
+        "male": 1868,
+        "mix": 45
+      },
+      "cells_by_age": {
+        "5": 1227,
+        "30": 670,
+        "50": 1310,
+        "70": 893
+      },
+      "cells_by_dataset": {
+        "FCA": 1227,
+        "AFCA": 2873
+      }
+    },
+    {
+      "label": "head_proximal medullary amacrine neuron Pm2",
+      "type": "proximal medullary amacrine neuron Pm2",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "proximal medullary amacrine neuron Pm2",
+      "cell_number": 323,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 157,
+        "male": 165,
+        "mix": 1
+      },
+      "cells_by_age": {
+        "5": 116,
+        "30": 67,
+        "50": 75,
+        "70": 65
+      },
+      "cells_by_dataset": {
+        "FCA": 116,
+        "AFCA": 207
+      }
+    },
+    {
+      "label": "head_proximal medullary amacrine neuron Pm4",
+      "type": "proximal medullary amacrine neuron Pm4",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "proximal medullary amacrine neuron Pm4",
+      "cell_number": 252,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 116,
+        "male": 135,
+        "mix": 1
+      },
+      "cells_by_age": {
+        "5": 85,
+        "30": 58,
+        "50": 56,
+        "70": 53
+      },
+      "cells_by_dataset": {
+        "FCA": 85,
+        "AFCA": 167
+      }
+    },
+    {
+      "label": "head_skeletal muscle of head",
+      "type": "skeletal muscle of head",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "skeletal muscle of head",
+      "cell_number": 7765,
+      "author_broad": "muscle cell",
+      "cells_by_sex": {
+        "female": 4183,
+        "male": 3538,
+        "mix": 44
+      },
+      "cells_by_age": {
+        "5": 1407,
+        "30": 1510,
+        "50": 2531,
+        "70": 2317
+      },
+      "cells_by_dataset": {
+        "FCA": 1407,
+        "AFCA": 6358
+      }
+    },
+    {
+      "label": "head_subperineurial glial cell_head",
+      "type": "subperineurial glial cell_head",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "subperineurial glial cell_head",
+      "cell_number": 993,
+      "author_broad": "glial cell",
+      "cells_by_sex": {
+        "female": 517,
+        "male": 474,
+        "mix": 2
+      },
+      "cells_by_age": {
+        "5": 120,
+        "30": 251,
+        "50": 344,
+        "70": 278
+      },
+      "cells_by_dataset": {
+        "FCA": 120,
+        "AFCA": 873
+      }
+    },
+    {
+      "label": "head_transmedullary Y neuron TmY14",
+      "type": "transmedullary Y neuron TmY14",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "transmedullary Y neuron TmY14",
+      "cell_number": 664,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 339,
+        "male": 316,
+        "mix": 9
+      },
+      "cells_by_age": {
+        "5": 235,
+        "30": 148,
+        "50": 157,
+        "70": 124
+      },
+      "cells_by_dataset": {
+        "FCA": 235,
+        "AFCA": 429
+      }
+    },
+    {
+      "label": "head_transmedullary Y neuron TmY4",
+      "type": "transmedullary Y neuron TmY4",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "transmedullary Y neuron TmY4",
+      "cell_number": 526,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 273,
+        "male": 238,
+        "mix": 15
+      },
+      "cells_by_age": {
+        "5": 190,
+        "30": 87,
+        "50": 147,
+        "70": 102
+      },
+      "cells_by_dataset": {
+        "FCA": 190,
+        "AFCA": 336
+      }
+    },
+    {
+      "label": "head_transmedullary Y neuron TmY5a",
+      "type": "transmedullary Y neuron TmY5a",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "transmedullary Y neuron TmY5a",
+      "cell_number": 1431,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 787,
+        "male": 613,
+        "mix": 31
+      },
+      "cells_by_age": {
+        "5": 482,
+        "30": 227,
+        "50": 451,
+        "70": 271
+      },
+      "cells_by_dataset": {
+        "FCA": 482,
+        "AFCA": 949
+      }
+    },
+    {
+      "label": "head_transmedullary Y neuron TmY8",
+      "type": "transmedullary Y neuron TmY8",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "transmedullary Y neuron TmY8",
+      "cell_number": 1010,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 545,
+        "male": 440,
+        "mix": 25
+      },
+      "cells_by_age": {
+        "5": 432,
+        "30": 139,
+        "50": 272,
+        "70": 167
+      },
+      "cells_by_dataset": {
+        "FCA": 432,
+        "AFCA": 578
+      }
+    },
+    {
+      "label": "head_transmedullary neuron Tm1",
+      "type": "transmedullary neuron Tm1",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "transmedullary neuron Tm1",
+      "cell_number": 2454,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 1306,
+        "male": 1114,
+        "mix": 34
+      },
+      "cells_by_age": {
+        "5": 1024,
+        "30": 456,
+        "50": 605,
+        "70": 369
+      },
+      "cells_by_dataset": {
+        "FCA": 1024,
+        "AFCA": 1430
+      }
+    },
+    {
+      "label": "head_transmedullary neuron Tm2",
+      "type": "transmedullary neuron Tm2",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "transmedullary neuron Tm2",
+      "cell_number": 1957,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 1088,
+        "male": 839,
+        "mix": 30
+      },
+      "cells_by_age": {
+        "5": 850,
+        "30": 335,
+        "50": 487,
+        "70": 285
+      },
+      "cells_by_dataset": {
+        "FCA": 850,
+        "AFCA": 1107
+      }
+    },
+    {
+      "label": "head_transmedullary neuron Tm20",
+      "type": "transmedullary neuron Tm20",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "transmedullary neuron Tm20",
+      "cell_number": 913,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 475,
+        "male": 397,
+        "mix": 41
+      },
+      "cells_by_age": {
+        "5": 407,
+        "30": 145,
+        "50": 220,
+        "70": 141
+      },
+      "cells_by_dataset": {
+        "FCA": 407,
+        "AFCA": 506
+      }
+    },
+    {
+      "label": "head_transmedullary neuron Tm29",
+      "type": "transmedullary neuron Tm29",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "transmedullary neuron Tm29",
+      "cell_number": 342,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 158,
+        "male": 184
+      },
+      "cells_by_age": {
+        "5": 139,
+        "30": 91,
+        "50": 74,
+        "70": 38
+      },
+      "cells_by_dataset": {
+        "FCA": 139,
+        "AFCA": 203
+      }
+    },
+    {
+      "label": "head_transmedullary neuron Tm3a",
+      "type": "transmedullary neuron Tm3a",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "transmedullary neuron Tm3a",
+      "cell_number": 2019,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 1080,
+        "male": 883,
+        "mix": 56
+      },
+      "cells_by_age": {
+        "5": 708,
+        "30": 380,
+        "50": 574,
+        "70": 357
+      },
+      "cells_by_dataset": {
+        "FCA": 708,
+        "AFCA": 1311
+      }
+    },
+    {
+      "label": "head_transmedullary neuron Tm4",
+      "type": "transmedullary neuron Tm4",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "transmedullary neuron Tm4",
+      "cell_number": 1158,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 648,
+        "male": 484,
+        "mix": 26
+      },
+      "cells_by_age": {
+        "5": 531,
+        "30": 175,
+        "50": 313,
+        "70": 139
+      },
+      "cells_by_dataset": {
+        "FCA": 531,
+        "AFCA": 627
+      }
+    },
+    {
+      "label": "head_transmedullary neuron Tm5c",
+      "type": "transmedullary neuron Tm5c",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "transmedullary neuron Tm5c",
+      "cell_number": 459,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 237,
+        "male": 212,
+        "mix": 10
+      },
+      "cells_by_age": {
+        "5": 185,
+        "30": 68,
+        "50": 133,
+        "70": 73
+      },
+      "cells_by_dataset": {
+        "FCA": 185,
+        "AFCA": 274
+      }
+    },
+    {
+      "label": "head_transmedullary neuron Tm9",
+      "type": "transmedullary neuron Tm9",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "transmedullary neuron Tm9",
+      "cell_number": 1193,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 673,
+        "male": 483,
+        "mix": 37
+      },
+      "cells_by_age": {
+        "5": 438,
+        "30": 199,
+        "50": 341,
+        "70": 215
+      },
+      "cells_by_dataset": {
+        "FCA": 438,
+        "AFCA": 755
+      }
+    },
+    {
+      "label": "head_unannotated",
+      "type": "unannotated",
+      "clustering": "head",
+      "clustering_name": "Aging Fly Cell Atlas head",
+      "source_cluster_id": "unannotated",
+      "cell_number": 108647,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 52168,
+        "male": 55082,
+        "mix": 1397
+      },
+      "cells_by_age": {
+        "5": 38810,
+        "30": 23998,
+        "50": 26534,
+        "70": 19305
+      },
+      "cells_by_dataset": {
+        "FCA": 38810,
+        "AFCA": 69837
+      },
+      "unannotated": true
+    },
+    {
+      "label": "body_16-cell germline cyst in germarium region 2a and 2b",
+      "type": "16-cell germline cyst in germarium region 2a and 2b",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "16-cell germline cyst in germarium region 2a and 2b",
+      "cell_number": 532,
+      "author_broad": "female germline cell",
+      "cells_by_sex": {
+        "female": 532
+      },
+      "cells_by_age": {
+        "5": 91,
+        "30": 82,
+        "50": 128,
+        "70": 231
+      },
+      "cells_by_dataset": {
+        "FCA": 91,
+        "AFCA": 441
+      }
+    },
+    {
+      "label": "body_CNS surface associated glial cell",
+      "type": "CNS surface associated glial cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "CNS surface associated glial cell",
+      "cell_number": 212,
+      "author_broad": "glial cell",
+      "cells_by_sex": {
+        "female": 35,
+        "male": 173,
+        "mix": 4
+      },
+      "cells_by_age": {
+        "5": 50,
+        "30": 83,
+        "50": 48,
+        "70": 31
+      },
+      "cells_by_dataset": {
+        "FCA": 50,
+        "AFCA": 162
+      }
+    },
+    {
+      "label": "body_adult Malpighian tubule principal cell",
+      "type": "adult Malpighian tubule principal cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult Malpighian tubule principal cell",
+      "cell_number": 47,
+      "author_broad": "excretory system",
+      "cells_by_sex": {
+        "female": 20,
+        "male": 27
+      },
+      "cells_by_age": {
+        "5": 8,
+        "30": 11,
+        "50": 10,
+        "70": 18
+      },
+      "cells_by_dataset": {
+        "FCA": 8,
+        "AFCA": 39
+      }
+    },
+    {
+      "label": "body_adult Malpighian tubule principal cell of initial segment",
+      "type": "adult Malpighian tubule principal cell of initial segment",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult Malpighian tubule principal cell of initial segment",
+      "cell_number": 70,
+      "author_broad": "excretory system",
+      "cells_by_sex": {
+        "female": 31,
+        "male": 39
+      },
+      "cells_by_age": {
+        "5": 23,
+        "30": 12,
+        "50": 15,
+        "70": 20
+      },
+      "cells_by_dataset": {
+        "FCA": 23,
+        "AFCA": 47
+      }
+    },
+    {
+      "label": "body_adult Malpighian tubule principal cell of lower segment",
+      "type": "adult Malpighian tubule principal cell of lower segment",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult Malpighian tubule principal cell of lower segment",
+      "cell_number": 52,
+      "author_broad": "excretory system",
+      "cells_by_sex": {
+        "female": 40,
+        "male": 10,
+        "mix": 2
+      },
+      "cells_by_age": {
+        "5": 6,
+        "30": 27,
+        "50": 9,
+        "70": 10
+      },
+      "cells_by_dataset": {
+        "FCA": 6,
+        "AFCA": 46
+      }
+    },
+    {
+      "label": "body_adult Malpighian tubule principal cell of lower ureter",
+      "type": "adult Malpighian tubule principal cell of lower ureter",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult Malpighian tubule principal cell of lower ureter",
+      "cell_number": 35,
+      "author_broad": "excretory system",
+      "cells_by_sex": {
+        "female": 13,
+        "male": 22
+      },
+      "cells_by_age": {
+        "5": 4,
+        "30": 23,
+        "50": 6,
+        "70": 2
+      },
+      "cells_by_dataset": {
+        "FCA": 4,
+        "AFCA": 31
+      }
+    },
+    {
+      "label": "body_adult Malpighian tubule stellate cell of main segment",
+      "type": "adult Malpighian tubule stellate cell of main segment",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult Malpighian tubule stellate cell of main segment",
+      "cell_number": 10,
+      "author_broad": "excretory system",
+      "cells_by_sex": {
+        "female": 4,
+        "male": 6
+      },
+      "cells_by_age": {
+        "5": 2,
+        "30": 2,
+        "50": 2,
+        "70": 4
+      },
+      "cells_by_dataset": {
+        "FCA": 2,
+        "AFCA": 8
+      }
+    },
+    {
+      "label": "body_adult alary muscle",
+      "type": "adult alary muscle",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult alary muscle",
+      "cell_number": 2737,
+      "author_broad": "muscle cell",
+      "cells_by_sex": {
+        "female": 730,
+        "male": 1976,
+        "mix": 31
+      },
+      "cells_by_age": {
+        "5": 402,
+        "30": 1499,
+        "50": 474,
+        "70": 362
+      },
+      "cells_by_dataset": {
+        "FCA": 402,
+        "AFCA": 2335
+      }
+    },
+    {
+      "label": "body_adult differentiating enterocyte",
+      "type": "adult differentiating enterocyte",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult differentiating enterocyte",
+      "cell_number": 72,
+      "author_broad": "somatic precursor cell",
+      "cells_by_sex": {
+        "female": 48,
+        "male": 24
+      },
+      "cells_by_age": {
+        "5": 34,
+        "30": 7,
+        "70": 31
+      },
+      "cells_by_dataset": {
+        "FCA": 34,
+        "AFCA": 38
+      }
+    },
+    {
+      "label": "body_adult fat body_body",
+      "type": "adult fat body_body",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult fat body_body",
+      "cell_number": 31378,
+      "author_broad": "fat cell",
+      "cells_by_sex": {
+        "female": 19857,
+        "male": 11454,
+        "mix": 67
+      },
+      "cells_by_age": {
+        "5": 2770,
+        "30": 13158,
+        "50": 8932,
+        "70": 6518
+      },
+      "cells_by_dataset": {
+        "FCA": 2770,
+        "AFCA": 28608
+      }
+    },
+    {
+      "label": "body_adult glial cell",
+      "type": "adult glial cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult glial cell",
+      "cell_number": 2173,
+      "author_broad": "glial cell",
+      "cells_by_sex": {
+        "female": 723,
+        "male": 1430,
+        "mix": 20
+      },
+      "cells_by_age": {
+        "5": 849,
+        "30": 642,
+        "50": 282,
+        "70": 400
+      },
+      "cells_by_dataset": {
+        "FCA": 849,
+        "AFCA": 1324
+      }
+    },
+    {
+      "label": "body_adult heart ventral longitudinal muscle",
+      "type": "adult heart ventral longitudinal muscle",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult heart ventral longitudinal muscle",
+      "cell_number": 112,
+      "author_broad": "muscle cell",
+      "cells_by_sex": {
+        "female": 41,
+        "male": 71
+      },
+      "cells_by_age": {
+        "5": 37,
+        "30": 44,
+        "50": 20,
+        "70": 11
+      },
+      "cells_by_dataset": {
+        "FCA": 37,
+        "AFCA": 75
+      }
+    },
+    {
+      "label": "body_adult hindgut",
+      "type": "adult hindgut",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult hindgut",
+      "cell_number": 715,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 401,
+        "male": 282,
+        "mix": 32
+      },
+      "cells_by_age": {
+        "5": 234,
+        "30": 157,
+        "50": 178,
+        "70": 146
+      },
+      "cells_by_dataset": {
+        "FCA": 234,
+        "AFCA": 481
+      }
+    },
+    {
+      "label": "body_adult midgut enterocyte",
+      "type": "adult midgut enterocyte",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult midgut enterocyte",
+      "cell_number": 99,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 75,
+        "male": 22,
+        "mix": 2
+      },
+      "cells_by_age": {
+        "5": 12,
+        "30": 32,
+        "50": 12,
+        "70": 43
+      },
+      "cells_by_dataset": {
+        "FCA": 12,
+        "AFCA": 87
+      }
+    },
+    {
+      "label": "body_adult midgut-hindgut hybrid zone",
+      "type": "adult midgut-hindgut hybrid zone",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult midgut-hindgut hybrid zone",
+      "cell_number": 582,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 283,
+        "male": 293,
+        "mix": 6
+      },
+      "cells_by_age": {
+        "5": 218,
+        "30": 198,
+        "50": 51,
+        "70": 115
+      },
+      "cells_by_dataset": {
+        "FCA": 218,
+        "AFCA": 364
+      }
+    },
+    {
+      "label": "body_adult oenocyte",
+      "type": "adult oenocyte",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult oenocyte",
+      "cell_number": 5937,
+      "author_broad": "oenocyte",
+      "cells_by_sex": {
+        "female": 4113,
+        "male": 1812,
+        "mix": 12
+      },
+      "cells_by_age": {
+        "5": 1093,
+        "30": 1647,
+        "50": 1710,
+        "70": 1487
+      },
+      "cells_by_dataset": {
+        "FCA": 1093,
+        "AFCA": 4844
+      }
+    },
+    {
+      "label": "body_adult peripheral nervous system",
+      "type": "adult peripheral nervous system",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult peripheral nervous system",
+      "cell_number": 5958,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 2483,
+        "male": 3406,
+        "mix": 69
+      },
+      "cells_by_age": {
+        "5": 2618,
+        "30": 1665,
+        "50": 737,
+        "70": 938
+      },
+      "cells_by_dataset": {
+        "FCA": 2618,
+        "AFCA": 3340
+      }
+    },
+    {
+      "label": "body_adult reticular neuropil associated glial cell_body",
+      "type": "adult reticular neuropil associated glial cell_body",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult reticular neuropil associated glial cell_body",
+      "cell_number": 540,
+      "author_broad": "glial cell",
+      "cells_by_sex": {
+        "female": 130,
+        "male": 391,
+        "mix": 19
+      },
+      "cells_by_age": {
+        "5": 158,
+        "30": 293,
+        "50": 29,
+        "70": 60
+      },
+      "cells_by_dataset": {
+        "FCA": 158,
+        "AFCA": 382
+      }
+    },
+    {
+      "label": "body_adult salivary gland",
+      "type": "adult salivary gland",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult salivary gland",
+      "cell_number": 587,
+      "author_broad": "gland",
+      "cells_by_sex": {
+        "female": 477,
+        "male": 106,
+        "mix": 4
+      },
+      "cells_by_age": {
+        "5": 56,
+        "30": 259,
+        "50": 135,
+        "70": 137
+      },
+      "cells_by_dataset": {
+        "FCA": 56,
+        "AFCA": 531
+      }
+    },
+    {
+      "label": "body_adult tracheal cell",
+      "type": "adult tracheal cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult tracheal cell",
+      "cell_number": 7033,
+      "author_broad": "tracheal cell",
+      "cells_by_sex": {
+        "female": 3178,
+        "male": 3761,
+        "mix": 94
+      },
+      "cells_by_age": {
+        "5": 1248,
+        "30": 2349,
+        "50": 1410,
+        "70": 2026
+      },
+      "cells_by_dataset": {
+        "FCA": 1248,
+        "AFCA": 5785
+      }
+    },
+    {
+      "label": "body_adult ventral nervous system",
+      "type": "adult ventral nervous system",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "adult ventral nervous system",
+      "cell_number": 22631,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 10675,
+        "male": 11497,
+        "mix": 459
+      },
+      "cells_by_age": {
+        "5": 9977,
+        "30": 5728,
+        "50": 3472,
+        "70": 3454
+      },
+      "cells_by_dataset": {
+        "FCA": 9977,
+        "AFCA": 12654
+      }
+    },
+    {
+      "label": "body_anterior ejaculatory duct",
+      "type": "anterior ejaculatory duct",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "anterior ejaculatory duct",
+      "cell_number": 189,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "male": 189
+      },
+      "cells_by_age": {
+        "5": 41,
+        "30": 67,
+        "50": 58,
+        "70": 23
+      },
+      "cells_by_dataset": {
+        "FCA": 41,
+        "AFCA": 148
+      }
+    },
+    {
+      "label": "body_antimicrobial peptide-producing cell",
+      "type": "antimicrobial peptide-producing cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "antimicrobial peptide-producing cell",
+      "cell_number": 106,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 70,
+        "male": 34,
+        "mix": 2
+      },
+      "cells_by_age": {
+        "5": 17,
+        "30": 44,
+        "50": 26,
+        "70": 19
+      },
+      "cells_by_dataset": {
+        "FCA": 17,
+        "AFCA": 89
+      }
+    },
+    {
+      "label": "body_cardia (1)",
+      "type": "cardia (1)",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "cardia (1)",
+      "cell_number": 1064,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 810,
+        "male": 252,
+        "mix": 2
+      },
+      "cells_by_age": {
+        "5": 44,
+        "30": 397,
+        "50": 323,
+        "70": 300
+      },
+      "cells_by_dataset": {
+        "FCA": 44,
+        "AFCA": 1020
+      }
+    },
+    {
+      "label": "body_cardia (2)",
+      "type": "cardia (2)",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "cardia (2)",
+      "cell_number": 60,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 28,
+        "male": 32
+      },
+      "cells_by_age": {
+        "5": 17,
+        "30": 18,
+        "50": 10,
+        "70": 15
+      },
+      "cells_by_dataset": {
+        "FCA": 17,
+        "AFCA": 43
+      }
+    },
+    {
+      "label": "body_cardiomyocyte, working adult heart muscle (non-ostia)",
+      "type": "cardiomyocyte, working adult heart muscle (non-ostia)",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "cardiomyocyte, working adult heart muscle (non-ostia)",
+      "cell_number": 34,
+      "author_broad": "cardial cell",
+      "cells_by_sex": {
+        "female": 16,
+        "male": 18
+      },
+      "cells_by_age": {
+        "5": 9,
+        "30": 14,
+        "50": 9,
+        "70": 2
+      },
+      "cells_by_dataset": {
+        "FCA": 9,
+        "AFCA": 25
+      }
+    },
+    {
+      "label": "body_cell body glial cell",
+      "type": "cell body glial cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "cell body glial cell",
+      "cell_number": 2347,
+      "author_broad": "glial cell",
+      "cells_by_sex": {
+        "female": 991,
+        "male": 1315,
+        "mix": 41
+      },
+      "cells_by_age": {
+        "5": 805,
+        "30": 652,
+        "50": 357,
+        "70": 533
+      },
+      "cells_by_dataset": {
+        "FCA": 805,
+        "AFCA": 1542
+      }
+    },
+    {
+      "label": "body_copper cell",
+      "type": "copper cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "copper cell",
+      "cell_number": 153,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 105,
+        "male": 44,
+        "mix": 4
+      },
+      "cells_by_age": {
+        "5": 48,
+        "30": 64,
+        "50": 29,
+        "70": 12
+      },
+      "cells_by_dataset": {
+        "FCA": 48,
+        "AFCA": 105
+      }
+    },
+    {
+      "label": "body_crop",
+      "type": "crop",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "crop",
+      "cell_number": 6283,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 3169,
+        "male": 3057,
+        "mix": 57
+      },
+      "cells_by_age": {
+        "5": 1108,
+        "30": 2319,
+        "50": 1341,
+        "70": 1515
+      },
+      "cells_by_dataset": {
+        "FCA": 1108,
+        "AFCA": 5175
+      }
+    },
+    {
+      "label": "body_cyst cell",
+      "type": "cyst cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "cyst cell",
+      "cell_number": 201,
+      "author_broad": "male reproductive system",
+      "cells_by_sex": {
+        "male": 201
+      },
+      "cells_by_age": {
+        "5": 69,
+        "30": 60,
+        "50": 26,
+        "70": 46
+      },
+      "cells_by_dataset": {
+        "FCA": 69,
+        "AFCA": 132
+      }
+    },
+    {
+      "label": "body_ejaculatory bulb",
+      "type": "ejaculatory bulb",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "ejaculatory bulb",
+      "cell_number": 1401,
+      "author_broad": "gland",
+      "cells_by_sex": {
+        "male": 1401
+      },
+      "cells_by_age": {
+        "5": 258,
+        "30": 645,
+        "50": 373,
+        "70": 125
+      },
+      "cells_by_dataset": {
+        "FCA": 258,
+        "AFCA": 1143
+      }
+    },
+    {
+      "label": "body_ejaculatory bulb epithelium",
+      "type": "ejaculatory bulb epithelium",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "ejaculatory bulb epithelium",
+      "cell_number": 549,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "male": 549
+      },
+      "cells_by_age": {
+        "5": 104,
+        "30": 232,
+        "50": 157,
+        "70": 56
+      },
+      "cells_by_dataset": {
+        "FCA": 104,
+        "AFCA": 445
+      }
+    },
+    {
+      "label": "body_enteroblast",
+      "type": "enteroblast",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "enteroblast",
+      "cell_number": 2417,
+      "author_broad": "somatic precursor cell",
+      "cells_by_sex": {
+        "female": 1699,
+        "male": 705,
+        "mix": 13
+      },
+      "cells_by_age": {
+        "5": 260,
+        "30": 721,
+        "50": 675,
+        "70": 761
+      },
+      "cells_by_dataset": {
+        "FCA": 260,
+        "AFCA": 2157
+      }
+    },
+    {
+      "label": "body_enterocyte of anterior adult midgut epithelium",
+      "type": "enterocyte of anterior adult midgut epithelium",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "enterocyte of anterior adult midgut epithelium",
+      "cell_number": 182,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 155,
+        "male": 27
+      },
+      "cells_by_age": {
+        "5": 23,
+        "30": 112,
+        "50": 38,
+        "70": 9
+      },
+      "cells_by_dataset": {
+        "FCA": 23,
+        "AFCA": 159
+      }
+    },
+    {
+      "label": "body_enterocyte of posterior adult midgut epithelium",
+      "type": "enterocyte of posterior adult midgut epithelium",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "enterocyte of posterior adult midgut epithelium",
+      "cell_number": 752,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 605,
+        "male": 146,
+        "mix": 1
+      },
+      "cells_by_age": {
+        "5": 178,
+        "30": 393,
+        "50": 141,
+        "70": 40
+      },
+      "cells_by_dataset": {
+        "FCA": 178,
+        "AFCA": 574
+      }
+    },
+    {
+      "label": "body_enterocyte-like",
+      "type": "enterocyte-like",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "enterocyte-like",
+      "cell_number": 261,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 167,
+        "male": 92,
+        "mix": 2
+      },
+      "cells_by_age": {
+        "5": 41,
+        "30": 133,
+        "50": 49,
+        "70": 38
+      },
+      "cells_by_dataset": {
+        "FCA": 41,
+        "AFCA": 220
+      }
+    },
+    {
+      "label": "body_enteroendocrine cell",
+      "type": "enteroendocrine cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "enteroendocrine cell",
+      "cell_number": 557,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 393,
+        "male": 136,
+        "mix": 28
+      },
+      "cells_by_age": {
+        "5": 103,
+        "30": 87,
+        "50": 90,
+        "70": 277
+      },
+      "cells_by_dataset": {
+        "FCA": 103,
+        "AFCA": 454
+      }
+    },
+    {
+      "label": "body_eo support cell",
+      "type": "eo support cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "eo support cell",
+      "cell_number": 2474,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 780,
+        "male": 1669,
+        "mix": 25
+      },
+      "cells_by_age": {
+        "5": 432,
+        "30": 1039,
+        "50": 415,
+        "70": 588
+      },
+      "cells_by_dataset": {
+        "FCA": 432,
+        "AFCA": 2042
+      }
+    },
+    {
+      "label": "body_epidermal cell that specialized in antimicrobial response",
+      "type": "epidermal cell that specialized in antimicrobial response",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "epidermal cell that specialized in antimicrobial response",
+      "cell_number": 99,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 24,
+        "male": 67,
+        "mix": 8
+      },
+      "cells_by_age": {
+        "5": 36,
+        "30": 28,
+        "50": 8,
+        "70": 27
+      },
+      "cells_by_dataset": {
+        "FCA": 36,
+        "AFCA": 63
+      }
+    },
+    {
+      "label": "body_epithelial cell_body",
+      "type": "epithelial cell_body",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "epithelial cell_body",
+      "cell_number": 44094,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 17184,
+        "male": 25794,
+        "mix": 1116
+      },
+      "cells_by_age": {
+        "5": 19479,
+        "30": 10646,
+        "50": 5034,
+        "70": 8935
+      },
+      "cells_by_dataset": {
+        "FCA": 19479,
+        "AFCA": 24615
+      }
+    },
+    {
+      "label": "body_escort cell",
+      "type": "escort cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "escort cell",
+      "cell_number": 756,
+      "author_broad": "female reproductive system",
+      "cells_by_sex": {
+        "female": 756
+      },
+      "cells_by_age": {
+        "5": 376,
+        "30": 103,
+        "50": 99,
+        "70": 178
+      },
+      "cells_by_dataset": {
+        "FCA": 376,
+        "AFCA": 380
+      }
+    },
+    {
+      "label": "body_female reproductive system",
+      "type": "female reproductive system",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "female reproductive system",
+      "cell_number": 1233,
+      "author_broad": "male reproductive system",
+      "cells_by_sex": {
+        "female": 1219,
+        "mix": 14
+      },
+      "cells_by_age": {
+        "5": 340,
+        "30": 259,
+        "50": 256,
+        "70": 378
+      },
+      "cells_by_dataset": {
+        "FCA": 340,
+        "AFCA": 893
+      }
+    },
+    {
+      "label": "body_follicle cell",
+      "type": "follicle cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "follicle cell",
+      "cell_number": 25738,
+      "author_broad": "female reproductive system",
+      "cells_by_sex": {
+        "female": 25251,
+        "mix": 487
+      },
+      "cells_by_age": {
+        "5": 8122,
+        "30": 5826,
+        "50": 5853,
+        "70": 5937
+      },
+      "cells_by_dataset": {
+        "FCA": 8122,
+        "AFCA": 17616
+      }
+    },
+    {
+      "label": "body_follicle stem cell and prefollicle cell",
+      "type": "follicle stem cell and prefollicle cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "follicle stem cell and prefollicle cell",
+      "cell_number": 430,
+      "author_broad": "female reproductive system",
+      "cells_by_sex": {
+        "female": 430
+      },
+      "cells_by_age": {
+        "5": 5,
+        "30": 94,
+        "50": 124,
+        "70": 207
+      },
+      "cells_by_dataset": {
+        "FCA": 5,
+        "AFCA": 425
+      }
+    },
+    {
+      "label": "body_germline cell",
+      "type": "germline cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "germline cell",
+      "cell_number": 3824,
+      "author_broad": "female germline cell",
+      "cells_by_sex": {
+        "female": 3824
+      },
+      "cells_by_age": {
+        "5": 2227,
+        "30": 452,
+        "50": 435,
+        "70": 710
+      },
+      "cells_by_dataset": {
+        "FCA": 2227,
+        "AFCA": 1597
+      }
+    },
+    {
+      "label": "body_gustatory receptor neuron",
+      "type": "gustatory receptor neuron",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "gustatory receptor neuron",
+      "cell_number": 701,
+      "author_broad": "sensory neuron",
+      "cells_by_sex": {
+        "female": 260,
+        "male": 435,
+        "mix": 6
+      },
+      "cells_by_age": {
+        "5": 261,
+        "30": 210,
+        "50": 100,
+        "70": 130
+      },
+      "cells_by_dataset": {
+        "FCA": 261,
+        "AFCA": 440
+      }
+    },
+    {
+      "label": "body_hemocyte_body",
+      "type": "hemocyte_body",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "hemocyte_body",
+      "cell_number": 3027,
+      "author_broad": "hemocyte",
+      "cells_by_sex": {
+        "female": 1561,
+        "male": 1401,
+        "mix": 65
+      },
+      "cells_by_age": {
+        "5": 625,
+        "30": 1121,
+        "50": 597,
+        "70": 684
+      },
+      "cells_by_dataset": {
+        "FCA": 625,
+        "AFCA": 2402
+      }
+    },
+    {
+      "label": "body_indirect flight muscle",
+      "type": "indirect flight muscle",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "indirect flight muscle",
+      "cell_number": 18057,
+      "author_broad": "muscle cell",
+      "cells_by_sex": {
+        "female": 6512,
+        "male": 11113,
+        "mix": 432
+      },
+      "cells_by_age": {
+        "5": 7008,
+        "30": 9401,
+        "50": 773,
+        "70": 875
+      },
+      "cells_by_dataset": {
+        "FCA": 7008,
+        "AFCA": 11049
+      }
+    },
+    {
+      "label": "body_intestinal stem cell",
+      "type": "intestinal stem cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "intestinal stem cell",
+      "cell_number": 2158,
+      "author_broad": "somatic precursor cell",
+      "cells_by_sex": {
+        "female": 1386,
+        "male": 746,
+        "mix": 26
+      },
+      "cells_by_age": {
+        "5": 280,
+        "30": 627,
+        "50": 438,
+        "70": 813
+      },
+      "cells_by_dataset": {
+        "FCA": 280,
+        "AFCA": 1878
+      }
+    },
+    {
+      "label": "body_leg muscle motor neuron",
+      "type": "leg muscle motor neuron",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "leg muscle motor neuron",
+      "cell_number": 359,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 206,
+        "male": 149,
+        "mix": 4
+      },
+      "cells_by_age": {
+        "5": 164,
+        "30": 65,
+        "50": 66,
+        "70": 64
+      },
+      "cells_by_dataset": {
+        "FCA": 164,
+        "AFCA": 195
+      }
+    },
+    {
+      "label": "body_male accessory gland main cell",
+      "type": "male accessory gland main cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "male accessory gland main cell",
+      "cell_number": 2015,
+      "author_broad": "gland",
+      "cells_by_sex": {
+        "male": 2015
+      },
+      "cells_by_age": {
+        "5": 233,
+        "30": 920,
+        "50": 637,
+        "70": 225
+      },
+      "cells_by_dataset": {
+        "FCA": 233,
+        "AFCA": 1782
+      }
+    },
+    {
+      "label": "body_male accessory gland secondary cell",
+      "type": "male accessory gland secondary cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "male accessory gland secondary cell",
+      "cell_number": 20,
+      "author_broad": "gland",
+      "cells_by_sex": {
+        "male": 20
+      },
+      "cells_by_age": {
+        "5": 2,
+        "30": 2,
+        "50": 8,
+        "70": 8
+      },
+      "cells_by_dataset": {
+        "FCA": 2,
+        "AFCA": 18
+      }
+    },
+    {
+      "label": "body_mechanosensory neuron of haltere",
+      "type": "mechanosensory neuron of haltere",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "mechanosensory neuron of haltere",
+      "cell_number": 645,
+      "author_broad": "sensory neuron",
+      "cells_by_sex": {
+        "female": 316,
+        "male": 319,
+        "mix": 10
+      },
+      "cells_by_age": {
+        "5": 165,
+        "30": 207,
+        "50": 137,
+        "70": 136
+      },
+      "cells_by_dataset": {
+        "FCA": 165,
+        "AFCA": 480
+      }
+    },
+    {
+      "label": "body_midgut large flat cell",
+      "type": "midgut large flat cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "midgut large flat cell",
+      "cell_number": 73,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 57,
+        "male": 16
+      },
+      "cells_by_age": {
+        "5": 17,
+        "30": 30,
+        "50": 21,
+        "70": 5
+      },
+      "cells_by_dataset": {
+        "FCA": 17,
+        "AFCA": 56
+      }
+    },
+    {
+      "label": "body_multidendritic neuron",
+      "type": "multidendritic neuron",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "multidendritic neuron",
+      "cell_number": 263,
+      "author_broad": "CNS neuron",
+      "cells_by_sex": {
+        "female": 101,
+        "male": 109,
+        "mix": 53
+      },
+      "cells_by_age": {
+        "5": 142,
+        "30": 52,
+        "50": 42,
+        "70": 27
+      },
+      "cells_by_dataset": {
+        "FCA": 142,
+        "AFCA": 121
+      }
+    },
+    {
+      "label": "body_muscle cell",
+      "type": "muscle cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "muscle cell",
+      "cell_number": 54592,
+      "author_broad": "muscle cell",
+      "cells_by_sex": {
+        "female": 27747,
+        "male": 26148,
+        "mix": 697
+      },
+      "cells_by_age": {
+        "5": 28249,
+        "30": 14522,
+        "50": 5675,
+        "70": 6146
+      },
+      "cells_by_dataset": {
+        "FCA": 28249,
+        "AFCA": 26343
+      }
+    },
+    {
+      "label": "body_oviduct",
+      "type": "oviduct",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "oviduct",
+      "cell_number": 1517,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 1517
+      },
+      "cells_by_age": {
+        "5": 257,
+        "30": 411,
+        "50": 326,
+        "70": 523
+      },
+      "cells_by_dataset": {
+        "FCA": 257,
+        "AFCA": 1260
+      }
+    },
+    {
+      "label": "body_perineurial glial sheath",
+      "type": "perineurial glial sheath",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "perineurial glial sheath",
+      "cell_number": 2228,
+      "author_broad": "glial cell",
+      "cells_by_sex": {
+        "female": 632,
+        "male": 1549,
+        "mix": 47
+      },
+      "cells_by_age": {
+        "5": 593,
+        "30": 746,
+        "50": 334,
+        "70": 555
+      },
+      "cells_by_dataset": {
+        "FCA": 593,
+        "AFCA": 1635
+      }
+    },
+    {
+      "label": "body_pheromone-sensing neuron",
+      "type": "pheromone-sensing neuron",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "pheromone-sensing neuron",
+      "cell_number": 675,
+      "author_broad": "sensory neuron",
+      "cells_by_sex": {
+        "female": 250,
+        "male": 422,
+        "mix": 3
+      },
+      "cells_by_age": {
+        "5": 255,
+        "30": 210,
+        "50": 101,
+        "70": 109
+      },
+      "cells_by_dataset": {
+        "FCA": 255,
+        "AFCA": 420
+      }
+    },
+    {
+      "label": "body_polar follicle cell",
+      "type": "polar follicle cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "polar follicle cell",
+      "cell_number": 304,
+      "author_broad": "female reproductive system",
+      "cells_by_sex": {
+        "female": 304
+      },
+      "cells_by_age": {
+        "5": 48,
+        "30": 99,
+        "50": 84,
+        "70": 73
+      },
+      "cells_by_dataset": {
+        "FCA": 48,
+        "AFCA": 256
+      }
+    },
+    {
+      "label": "body_posterior midgut*",
+      "type": "posterior midgut*",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "posterior midgut*",
+      "cell_number": 117,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 77,
+        "male": 37,
+        "mix": 3
+      },
+      "cells_by_age": {
+        "5": 9,
+        "30": 70,
+        "50": 30,
+        "70": 8
+      },
+      "cells_by_dataset": {
+        "FCA": 9,
+        "AFCA": 108
+      }
+    },
+    {
+      "label": "body_prefollicle cell/stalk follicle cell",
+      "type": "prefollicle cell/stalk follicle cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "prefollicle cell/stalk follicle cell",
+      "cell_number": 275,
+      "author_broad": "female reproductive system",
+      "cells_by_sex": {
+        "female": 246,
+        "mix": 29
+      },
+      "cells_by_age": {
+        "5": 107,
+        "30": 30,
+        "50": 48,
+        "70": 90
+      },
+      "cells_by_dataset": {
+        "FCA": 107,
+        "AFCA": 168
+      }
+    },
+    {
+      "label": "body_principal cell*",
+      "type": "principal cell*",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "principal cell*",
+      "cell_number": 131,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 41,
+        "male": 80,
+        "mix": 10
+      },
+      "cells_by_age": {
+        "5": 59,
+        "30": 25,
+        "50": 16,
+        "70": 31
+      },
+      "cells_by_dataset": {
+        "FCA": 59,
+        "AFCA": 72
+      }
+    },
+    {
+      "label": "body_scolopidial neuron",
+      "type": "scolopidial neuron",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "scolopidial neuron",
+      "cell_number": 1306,
+      "author_broad": "sensory neuron",
+      "cells_by_sex": {
+        "female": 587,
+        "male": 708,
+        "mix": 11
+      },
+      "cells_by_age": {
+        "5": 522,
+        "30": 360,
+        "50": 213,
+        "70": 211
+      },
+      "cells_by_dataset": {
+        "FCA": 522,
+        "AFCA": 784
+      }
+    },
+    {
+      "label": "body_seminal vesicle & testis epithelia",
+      "type": "seminal vesicle & testis epithelia",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "seminal vesicle & testis epithelia",
+      "cell_number": 635,
+      "author_broad": "male reproductive system",
+      "cells_by_sex": {
+        "male": 635
+      },
+      "cells_by_age": {
+        "5": 127,
+        "30": 204,
+        "50": 183,
+        "70": 121
+      },
+      "cells_by_dataset": {
+        "FCA": 127,
+        "AFCA": 508
+      }
+    },
+    {
+      "label": "body_spermatid",
+      "type": "spermatid",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "spermatid",
+      "cell_number": 131,
+      "author_broad": "male germline cell",
+      "cells_by_sex": {
+        "male": 131
+      },
+      "cells_by_age": {
+        "5": 41,
+        "30": 34,
+        "50": 26,
+        "70": 30
+      },
+      "cells_by_dataset": {
+        "FCA": 41,
+        "AFCA": 90
+      }
+    },
+    {
+      "label": "body_spermatocyte",
+      "type": "spermatocyte",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "spermatocyte",
+      "cell_number": 90,
+      "author_broad": "male germline cell",
+      "cells_by_sex": {
+        "male": 90
+      },
+      "cells_by_age": {
+        "5": 25,
+        "30": 19,
+        "50": 20,
+        "70": 26
+      },
+      "cells_by_dataset": {
+        "FCA": 25,
+        "AFCA": 65
+      }
+    },
+    {
+      "label": "body_stalk follicle cell",
+      "type": "stalk follicle cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "stalk follicle cell",
+      "cell_number": 293,
+      "author_broad": "female reproductive system",
+      "cells_by_sex": {
+        "female": 293
+      },
+      "cells_by_age": {
+        "5": 33,
+        "30": 44,
+        "50": 63,
+        "70": 153
+      },
+      "cells_by_dataset": {
+        "FCA": 33,
+        "AFCA": 260
+      }
+    },
+    {
+      "label": "body_subperineurial glial cell_body",
+      "type": "subperineurial glial cell_body",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "subperineurial glial cell_body",
+      "cell_number": 1451,
+      "author_broad": "glial cell",
+      "cells_by_sex": {
+        "female": 440,
+        "male": 991,
+        "mix": 20
+      },
+      "cells_by_age": {
+        "5": 333,
+        "30": 445,
+        "50": 279,
+        "70": 394
+      },
+      "cells_by_dataset": {
+        "FCA": 333,
+        "AFCA": 1118
+      }
+    },
+    {
+      "label": "body_unannotated",
+      "type": "unannotated",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "unannotated",
+      "cell_number": 6250,
+      "author_broad": "epithelial cell",
+      "cells_by_sex": {
+        "female": 2835,
+        "male": 3114,
+        "mix": 301
+      },
+      "cells_by_age": {
+        "5": 2281,
+        "30": 1584,
+        "50": 1004,
+        "70": 1381
+      },
+      "cells_by_dataset": {
+        "FCA": 2281,
+        "AFCA": 3969
+      },
+      "unannotated": true
+    },
+    {
+      "label": "body_visceral muscle of the crop",
+      "type": "visceral muscle of the crop",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "visceral muscle of the crop",
+      "cell_number": 764,
+      "author_broad": "muscle cell",
+      "cells_by_sex": {
+        "female": 345,
+        "male": 415,
+        "mix": 4
+      },
+      "cells_by_age": {
+        "5": 405,
+        "30": 203,
+        "50": 89,
+        "70": 67
+      },
+      "cells_by_dataset": {
+        "FCA": 405,
+        "AFCA": 359
+      }
+    },
+    {
+      "label": "body_visceral muscle of the midgut",
+      "type": "visceral muscle of the midgut",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "visceral muscle of the midgut",
+      "cell_number": 1256,
+      "author_broad": "muscle cell",
+      "cells_by_sex": {
+        "female": 547,
+        "male": 706,
+        "mix": 3
+      },
+      "cells_by_age": {
+        "5": 297,
+        "30": 474,
+        "50": 258,
+        "70": 227
+      },
+      "cells_by_dataset": {
+        "FCA": 297,
+        "AFCA": 959
+      }
+    },
+    {
+      "label": "body_young germ cell",
+      "type": "young germ cell",
+      "clustering": "body",
+      "clustering_name": "Aging Fly Cell Atlas body",
+      "source_cluster_id": "young germ cell",
+      "cell_number": 224,
+      "author_broad": "female germline cell",
+      "cells_by_sex": {
+        "female": 224
+      },
+      "cells_by_age": {
+        "5": 24,
+        "30": 58,
+        "50": 66,
+        "70": 76
+      },
+      "cells_by_dataset": {
+        "FCA": 24,
+        "AFCA": 200
+      }
+    }
+  ]
+}

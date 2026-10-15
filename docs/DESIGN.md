@@ -963,6 +963,15 @@ assignments are a mapping cross-check only. Licence CC-BY-4.0. Curator decisions
 - **Samples (stage 1):** `build_samples_from_geo.py` — 72 Samples / 72 Assays; stage
   day 30 / 50 / 70 of adulthood (FBdv:00007105 / 00007125 / 0010010); tissue head →
   *adult head*, body → *adult postcephalic region* (as for the FCA); sex from GEO.
+- **Clusters (stage 2):** `build_annotations_from_h5ad.py` (files fetched gzipped from
+  GEO by `fetch_h5ad.py` and decompressed): one entry per `afca_annotation` type per
+  analysis over all ages, 164 in all (91 head, 73 body; 566,254 cells), with the
+  authors' broad class and cell counts by sex, age and source (`count_columns`: FCA
+  5-day vs AFCA). Held (listed, not loaded): the two "unannotated" groups (`leftover`;
+  108,647 head and 6,250 body cells) and "neuron 1"–"neuron 17" (`untyped`, via
+  `unidentified.rule`). 145 named types to map; 143 share a name with an FCA type
+  (10 of them with a `_head`/`_body` suffix), new: "cyst cell", "seminal vesicle &
+  testis epithelia".
 - **Author files:** `GSE218661_adata_{head,body}_S_v1.0.h5ad` (no `raw`; `X` = all
   15,992 genes as log1p(CP10k), symbols only); a cell's library is in its name
   (`…_AFCA_female_head_30_S1`, or the FCA sample id). Not annotated: 108,647 head /
