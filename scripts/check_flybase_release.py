@@ -6,7 +6,7 @@ Reads the current FlyBase release from flybase.org and the release recorded in e
 input gene ids (or, for h5ad projects, symbols without ids) against FlyBase Chado
 (the committed map already lists them, so no source files are needed) and compares with the committed map. If any gene id or symbol used
 by the expression output has changed, it opens an issue in this repo with the counts
-and the commands to run (`update_gene_ids.py` then `build_expression.py`); if nothing
+and the commands to run (`update_gene_ids.py`, `build_expression.py`, `build_rdf.py`); if nothing
 changed, it records the release without an issue. If Chado can't be reached, the
 issue is still opened, without counts.
 

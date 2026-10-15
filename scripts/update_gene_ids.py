@@ -2,17 +2,7 @@
 """Map a project's gene ids to current FlyBase genes -> projects/<p>/gene_id_map.tsv.
 
 Gene ids come from the GEO features file(s) as published, so some are no longer
-current. h5ad projects (`expression.source: h5ad`) are keyed by gene **symbol** (the
-matrix's gene names): a symbol takes the FBgn the authors' files give it (`var` /
-`raw.var` column `ID`, pooled over the project's files and any `expression.gene_ids_from`
-projects) and is then mapped as above; a symbol with no FBgn is looked up by name
-(D. melanogaster genes only):
-
-  current    the current symbol of a gene                -> that gene
-  synonym    no current match; a synonym of exactly one gene -> that gene
-  ambiguous  a synonym of several genes                  -> dropped
-  unmatched  no gene                                     -> dropped
- This queries FlyBase Chado (public read-only:
+current. This queries FlyBase Chado (public read-only:
 `psql -h chado.flybase.org -U flybase flybase`) once and writes a committed table the
 expression build applies (`expression.gene_id_map`), so builds stay reproducible and
 need no Chado access:
@@ -23,6 +13,17 @@ need no Chado access:
   split      a retired id of more than one current gene  -> dropped (reads can't be
              attributed to the new genes; curator decision 2026-10-06)
   withdrawn  no current gene                             -> dropped
+
+h5ad projects (`expression.source: h5ad`) are keyed by gene **symbol** (the
+matrix's gene names): a symbol takes the FBgn the authors' files give it (`var` /
+`raw.var` column `ID`, pooled over the project's files and any `expression.gene_ids_from`
+projects) and is then mapped as above; a symbol with no FBgn is looked up by name
+(D. melanogaster genes only):
+
+  current    the current symbol of a gene                -> that gene
+  synonym    no current match; a synonym of exactly one gene -> that gene
+  ambiguous  a synonym of several genes                  -> dropped
+  unmatched  no gene                                     -> dropped
 
 Chado records a current gene's own FBgn and each retired FBgn it absorbed as its
 FlyBase dbxrefs (feature_dbxref.is_current true / false).

@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 """Verify every assigned FBbt term against the current FBbt release (via OLS).
 
-For each mapping/*.fbbt_mapping.json best_match (and placeholder anchors), look up
+For each mapping/*.fbbt_mapping.json best_match and additional_matches (and
+placeholder anchors), look up
 the recorded fbbt_id in the live OLS FBbt and confirm it is (a) found, (b) not
 obsolete, and (c) still carries the label we recorded. Catches ontology drift —
 renamed/obsoleted/re-IDed terms — deterministically, so a mapping set can be
