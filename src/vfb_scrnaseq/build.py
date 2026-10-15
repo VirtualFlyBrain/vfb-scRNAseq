@@ -10,8 +10,8 @@ Object-valued slots carry CURIEs (FBbt:..., FBcv:...) or full IRIs (VFBseq
 entities, DOI, licence); literal slots carry plain strings/ints. emit.py decides
 IRI-vs-literal from the schema slot range, so build.py just supplies values.
 
-Usage:
-    python scripts/build.py --project kurmangaliyev_2020   # thin CLI wrapper
+Usage (via the CLI wrapper):
+    uv run python scripts/build_rdf.py --project kurmangaliyev_2020
 """
 
 from __future__ import annotations

@@ -10,7 +10,7 @@ name: FBbt and FlyBase release check
 # It also checks flybase.org for a FlyBase release newer than the one in the
 # projects' gene_id_map.tsv files and, if any gene id or symbol used by the
 # expression output changed (re-checked against FlyBase Chado), opens an issue to
-# run scripts/update_gene_ids.py + build_expression.py.
+# run scripts/update_gene_ids.py, build_expression.py and build_rdf.py.
 
 on:
   schedule:

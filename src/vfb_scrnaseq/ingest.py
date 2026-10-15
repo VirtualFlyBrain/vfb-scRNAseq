@@ -2,8 +2,8 @@
 
 This module retrieves *metadata only* — the Series/Sample structure, accessions,
 characteristics (stage/sex/strain), platform, SRA/BioProject relations, and
-supplementary-file URLs. It never downloads the expression matrix; that is a
-later (expression-stats) concern.
+supplementary-file URLs. It never downloads the expression matrix; that is read
+by ``vfb_scrnaseq.stats``.
 
 Source of truth is GEO's SOFT text endpoint (the same content GEOparse parses
 from the FTP ``*_family.soft.gz``), fetched over plain HTTP with no auth:

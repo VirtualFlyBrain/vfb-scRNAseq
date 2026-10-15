@@ -1,3 +1,5 @@
+"""VFBseq id minting: format, idempotence on natural keys, registry round trip."""
+
 from vfb_scrnaseq.ids import IDRegistry, _format_id
 
 

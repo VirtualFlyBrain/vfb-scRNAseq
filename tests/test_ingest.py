@@ -1,3 +1,5 @@
+"""GEO SOFT ingest: parsing a trimmed fixture, and the SOFT URL. Offline."""
+
 from vfb_scrnaseq.ingest import parse_soft, soft_url
 
 # A trimmed SOFT fixture in GEO's text format (shape mirrors GSE156455).
