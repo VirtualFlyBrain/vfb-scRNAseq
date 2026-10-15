@@ -1,353 +1,487 @@
 {
   "project": "li_2022_fca_ss2",
-  "generated_at": "2026-10-14",
-  "people": [
+  "created_at": "2026-10-14",
+  "updated_at": "2026-10-15",
+  "summary": "Fly Cell Atlas Smart-seq2 data (Li et al. 2022, Science), rebuilt from ArrayExpress E-MTAB-10628 and the authors' own per-tissue Smart-seq2 AnnData analyses (flycellatlas.org), replacing the old SCEA-based FCA loads with fresh VFBseq ids; the 10x data (E-MTAB-10519) is the separate project li_2022_fca_10x. 31 Samples (tissue x sex x genotype x age) and 35 Assays (384-well plates) from the ArrayExpress SDRF; 17 Clusterings, one per author tissue analysis, whose groups are the authors' label-transfer predictions (and two FACS-sorted groups) rather than transcriptomic clusters. 237 author groups, 211 mapped to FBbt (via the type-level mappings shared with li_2022_fca_10x) and loaded, 26 held. Summary expression for the loaded Clusters as CPM (16,306 genes x 9,892 cells; 426,111 cluster x gene rows with extent > 0.2).",
+  "decisions": [
     {
-      "role": "curator",
-      "name": "Clare Pilgrim",
-      "username": "Clare72",
-      "orcid": "0000-0002-1373-1705"
+      "date": "2026-10-07",
+      "by": "curator",
+      "decision": "Rebuild the Fly Cell Atlas from the authors' own per-tissue analyses (flycellatlas.org h5ad) and ArrayExpress, one project per accession (E-MTAB-10519 10x, E-MTAB-10628 Smart-seq2), replacing the old SCEA-based loads (FBlc0003846 / 4307 / 4785, split by sex) with fresh VFBseq ids."
+    },
+    {
+      "date": "2026-10-07",
+      "by": "curator",
+      "decision": "Load complete sets: the 10x Stringent per-tissue analyses and the Smart-seq2 per-tissue analyses (relaxed, integrated, cross-tissue and 'All' analyses left out), with one Cluster per author annotation per tissue analysis."
+    },
+    {
+      "date": "2026-10-07",
+      "by": "curator",
+      "decision": "Samples from the ArrayExpress SDRF with curator-reviewed tissue terms (Samples overlap, RO:0002131, the tissue); FBdv stages and stocks from the supplement (only UAS-lamGFP has one: FBst0007378). Smart-seq2 fat body age corrected from 3 to 5 days per the supplement (sdrf_corrections)."
+    },
+    {
+      "date": "2026-10-08",
+      "by": "curator",
+      "decision": "The Smart-seq2 analyses carry only the authors' classifier labels (transf_annotation, label transfer from the 10x annotation): load the predicted-label groups with membership label_transfer, titled as not transcriptomic clusters. The dilp2 IPC and Akh CC analyses are FACS-sorted groups (fixed_annotation, membership sorted)."
+    },
+    {
+      "date": "2026-10-08",
+      "by": "curator",
+      "decision": "Map to cell-level FBbt terms only (a tissue or organ author term maps to its cell-level equivalent, else the type is held), and never narrow a generic type by the dissected tissue."
+    },
+    {
+      "date": "2026-10-08",
+      "by": "pipeline",
+      "decision": "FBbt (2026-10-01) mapping made once per author type across both FCA projects (252 types, type_mapping/ in li_2022_fca_10x) and copied to each cluster: 135 types with a single current author cell term confirmed by script (22 upgraded to the adult variant), 117 types via cell-type reports and map-clusters-to-fbbt subagents. Here 211 groups map to 109 distinct FBbt terms."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Mappings reviewed by the curator, including the curator's edits (manual_edit, 2026-10-13/14), which are recorded with the shared type mappings in li_2022_fca_10x; 5 of the loaded Clusters here carry such an edit. No FBbt term requests."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Clusters with no FBbt term are held: listed in mapping.tsv with a hold_reason but not loaded (no VFBseq id, Cluster entity or expression rows; ids minted before this decision were removed from the registry and are never reused). Their cells still count towards the Dataset's total/filtered gene counts, which measure what the experiment detected. Here 26 held (15 'unknown' = unassigned, 2 'artefact', 9 author types with no FBbt term); 211 Clusters loaded."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Summary expression is computed as CPM for every dataset, including ones whose authors ship normalised values (converted back to CPM)."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "pipeline",
+      "decision": "Expression from the authors' X (log2(CPM + 1)) converted back to CPM; level is the mean CPM over expressing cells, extent the fraction of expressing cells, rows kept with extent > 0.2. In dilp2IPC the authors dropped genes after normalising, so some cells sum to < 1e6 CPM. Genes are keyed by symbol: the FBgn from the 10x files where given, else looked up by symbol in FlyBase Chado (FB2026_03): 16,203 current, 79 secondary, 26 synonym; 1 split and 2 unmatched dropped."
+    },
+    {
+      "date": "2026-10-15",
+      "by": "curator",
+      "decision": "Assays labelled \"<Sample>, Smart-seq2 plate <plate>\" (previously the accession or library id); ids unchanged."
     }
   ],
-  "notes": "Fly Cell Atlas (Li et al. 2022, Science; FBrf0252876), rebuilt from the authors' own per-tissue analyses (flycellatlas.org h5ad) and ArrayExpress (E-MTAB-10519 10x, E-MTAB-10628 Smart-seq2), one project per accession, replacing the old SCEA-based loads (FBlc0003846 / 4307 / 4785, split by sex). Curator decisions 2026-10-07: 10x Stringent per tissue + Smart-seq2 per tissue as complete sets (relaxed, integrated, cross-tissue and 'All' analyses left out); one Cluster per author annotation per tissue analysis. Samples from the ArrayExpress SDRF with curator-reviewed tissue terms (samples *overlap* RO:0002131 the tissue), FBdv stages and stocks from the supplement (only UAS-lamGFP has one: FBst0007378); Smart-seq2 fat body age corrected 3 -> 5 days per the supplement (sdrf_corrections). Mapping (FBbt 2026-10-01) once per author type (252 types, type_mapping/ in li_2022_fca_10x) and copied per cluster: 135 single current author cell terms confirmed by script (22 upgraded to the adult variant), 117 types via reports + map-clusters-to-fbbt subagents. Curator rules 2026-10-08: cell-level terms only (tissue/organ author terms -> cell-level term, else held); no narrowing by dissected tissue. Curator edits (manual_edit, 2026-10-13/14): adult antenna glial cell -> adult PNS glial cell; antimicrobial peptide-producing cell -> antimicrobial peptide-producing plasmatocyte; visceral muscle of the crop -> adult crop circular muscle cell; corpora cardiaca cell -> adult Akh secreting cell; posterior midgut* -> enterocyte of posterior adult midgut epithelium. Types: 175 exact, 65 broad, 1 narrow, 11 held (plus unannotated/artefact/unknown, held). Mapping reviewed by the curator 2026-10-14. No FBbt term requests. Expression (curator 2026-10-14: CPM for all datasets): CPM converted back from the authors' normalised h5ad values, level = mean over expressing cells, extent, filtered extent > 0.2. Genes keyed by symbol, FBgn from the 10x files where given, else by symbol in FlyBase Chado (FB2026_03). All FBbt/FBdv/FBcv terms verified current against the releases listed (2026-10-14). Publication FBrf0252876 resolved from VFB production (pdb). Smart-seq2 (E-MTAB-10628): 31 Samples (tissue x sex x genotype x age), 35 Assays (384-well plates), 17 Clusterings, 237 Clusters. The Smart-seq2 analyses carry only the authors' classifier labels (`transf_annotation`, label transfer from the 10x annotation; curator decision 2026-10-08: load the predicted-label groups, membership label_transfer, titled as not transcriptomic clusters); dilp2 IPC and Akh CC are FACS-sorted groups (fixed_annotation, membership sorted). Mappings shared with li_2022_fca_10x (type_mapping.from); 212 mapped to 109 distinct FBbt terms; 'unknown' groups held. Expression from X (log2(CPM + 1) -> CPM): 16,306 genes x 9,892 cells, 470,088 rows (dilp2IPC: authors dropped genes after normalising, some cells sum < 1e6 CPM); gene ids 16,203 current, 79 secondary, 26 synonym, 1 split + 2 unmatched dropped. Dataset total/filtered gene counts 16,293/15,011. 2026-10-14 (curator decision): clusters with no FBbt term (held) are no longer loaded - listed in mapping.tsv with a hold_reason, but given no VFBseq id (previously minted ids removed from the registry, never reused), no Cluster entity and no expression rows (their cells still count towards the Dataset's total/filtered gene counts, which measure what the experiment detected); 26 held entries (15 'unknown' = unassigned, 2 'artefact', 9 author types with no FBbt term) left out; 211 Clusters loaded; expression 426,111 rows (dataset total/filtered gene counts 16,293 / 15,011, unchanged). 2026-10-15: Assays named \"<Sample>, Smart-seq2 plate <plate>\" (previously the accession or library id); ids unchanged.",
+  "checks": [
+    {
+      "date": "2026-10-14",
+      "check": "verify_mappings.py and OLS lookups: every FBbt, FBdv and FBcv term used looked up against the releases listed (FBbt 2026-10-01, FBdv 2026-09-30, FBcv 2026-10-01).",
+      "result": "All terms current: 109 distinct FBbt terms in the mappings; the FBbt/FBdv/FBcv terms on Samples, Assays and the Dataset (shared with li_2022_fca_10x: 30 in all) current."
+    },
+    {
+      "date": "2026-10-14",
+      "check": "CPM conversion of the authors' X (log2(CPM + 1) -> CPM): per-cell CPM totals must have a median within 0.99e6-1.001e6 and none above 1.001e6, in every analysis.",
+      "result": "Passed for all 17 analyses. In dilp2IPC some cells sum to less (lowest about 595,000 CPM) because the authors dropped 5,337 genes after normalising; the values are still CPM, so the check uses the median rather than every cell."
+    },
+    {
+      "date": "2026-10-14",
+      "check": "Cluster sizes read from the h5ad files compared with cell_type_annotations.json (enforced by the expression build).",
+      "result": "All equal."
+    },
+    {
+      "date": "2026-10-14",
+      "check": "Marker spot checks in the expression output.",
+      "result": "Ilp2 in the dilp2 insulin-producing cells (extent 0.73), Akh in the Akh corpora cardiaca cells (0.24), SP in male accessory gland main cells (0.95), fzo in late primary spermatocytes (0.50). Re-confirmed 2026-10-15 against the current expression.tsv.gz."
+    }
+  ],
+  "people": [
+    {
+      "id": "ORCID:0000-0002-1373-1705",
+      "label": "Clare Pilgrim",
+      "role": "curator",
+      "username": "Clare72"
+    }
+  ],
   "pipeline": {
-    "name": "vfb-scrnaseq",
+    "id": "vfb-scrnaseq",
+    "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
     "version": "0.0.0",
-    "repo": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
-    "commit": "f81306b (+ stage 5 build outputs)"
+    "commit": "f81306b",
+    "uncommitted_changes": true
   },
   "ontologies": [
     {
       "id": "FBbt",
-      "name": "Drosophila gross anatomy ontology",
+      "label": "Drosophila gross anatomy ontology",
       "version": "2026-10-01",
       "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
-      "release_date": "2026-10-01",
-      "accessed_via": "OLS MCP (OLS4) + local fbbt.obo (.cache)",
-      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
       "accessed_at": "2026-10-14"
     },
     {
       "id": "FBdv",
-      "name": "Drosophila developmental ontology",
+      "label": "Drosophila developmental ontology",
       "version": "2026-09-30",
       "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-09-30/fbdv.owl",
-      "release_date": "2026-09-30",
       "accessed_via": "OLS4 API",
-      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
       "accessed_at": "2026-10-14"
     },
     {
       "id": "FBcv",
-      "name": "FlyBase controlled vocabulary",
+      "label": "FlyBase controlled vocabulary",
       "version": "2026-10-01",
       "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-10-01/fbcv.owl",
-      "release_date": "2026-10-01",
       "accessed_via": "OLS4 API",
-      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
       "accessed_at": "2026-10-14"
     }
   ],
   "data_sources": [
     {
-      "type": "publication",
       "id": "10.1126/science.abk2432",
-      "title": "Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly (Li et al. 2022, Science); PMID 35239393; PMC8944923; FBrf0252876",
+      "type": "publication",
+      "label": "Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly",
+      "xrefs": [
+        "PMID:35239393",
+        "PMCID:PMC8944923",
+        "FlyBase:FBrf0252876"
+      ],
+      "description": "Li et al. 2022, Science. Full text and supplement indexed locally for the report subagents.",
       "url": "https://doi.org/10.1126/science.abk2432",
       "files": [
         {
-          "name": "supp/PMC8944923.jats.xml (JATS full text, NCBI efetch db=pmc; Europe PMC fullTextXML returned 500)",
+          "path": "supp/PMC8944923.jats.xml",
+          "description": "JATS full text, NCBI efetch (db=pmc); Europe PMC fullTextXML returned 500.",
           "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=PMC8944923",
           "sha256": "314b27f189fb3afd781eecfdc4a8595b5f7caeac0be19bd53d22c3285f656a6d",
           "bytes": 107416,
-          "retrieved_at": "2026-10-08"
+          "accessed_at": "2026-10-08"
         },
         {
-          "name": "supp/science.abk2432_sm.pdf (supplementary materials; supplied by the curator)",
+          "path": "supp/science.abk2432_sm.pdf",
+          "description": "Supplementary materials; supplied by the curator.",
           "url": "https://www.science.org/doi/suppl/10.1126/science.abk2432/suppl_file/science.abk2432_sm.pdf",
           "sha256": "14d13906a459e3a5f88f504107ba9a832743e88e6e8d563f905e9f671929ece8",
           "bytes": 47939969,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "supp/science.abk2432_sm.txt (pdftotext of the supplement)",
+          "path": "supp/science.abk2432_sm.txt",
+          "description": "pdftotext of the supplement.",
           "sha256": "ed74af3e975ce27180cc03412a25ae6da9ea6bcac342967949cb9d0d279fba15",
           "bytes": 98557,
-          "retrieved_at": "2026-10-08"
+          "accessed_at": "2026-10-08"
         }
       ]
     },
     {
-      "type": "dataset",
       "id": "E-MTAB-10628",
-      "title": "ArrayExpress E-MTAB-10628: Smart-seq2 single-nucleus RNA-seq (Fly Cell Atlas)",
+      "type": "dataset",
+      "label": "Smart-seq2 single-nucleus RNA-seq (Fly Cell Atlas)",
+      "description": "ArrayExpress series; Samples and Assays built from its SDRF (with the curator's sdrf_corrections).",
       "url": "https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-10628",
-      "retrieved_at": "2026-10-07",
+      "accessed_at": "2026-10-07",
       "files": [
         {
-          "name": "E-MTAB-10628.idf.txt",
+          "path": "E-MTAB-10628.idf.txt",
           "url": "https://ftp.ebi.ac.uk/biostudies/fire/E-MTAB-/628/E-MTAB-10628/Files/E-MTAB-10628.idf.txt",
           "sha256": "50a8ec23700a716f51f7c993ce67e293896b4ef059e17d502cca8ec108dfe94e",
           "bytes": 16515,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "E-MTAB-10628.sdrf.txt",
+          "path": "E-MTAB-10628.sdrf.txt",
           "url": "https://ftp.ebi.ac.uk/biostudies/fire/E-MTAB-/628/E-MTAB-10628/Files/E-MTAB-10628.sdrf.txt",
           "sha256": "a3ec083db36bb1bef096d9b238418bd9cd8fd0e999b1d6b841c69f9a17e5689a",
           "bytes": 19311215,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         }
       ]
     },
     {
-      "type": "dataset",
-      "id": "flycellatlas.org E-MTAB-10628",
-      "title": "Authors' per-tissue AnnData analyses (Smart-seq2 single-nucleus RNA-seq (Fly Cell Atlas))",
+      "id": "flycellatlas-ss2",
+      "type": "author_files",
+      "label": "Fly Cell Atlas Smart-seq2 per-tissue AnnData analyses",
+      "description": "The authors' per-tissue Smart-seq2 analyses (E-MTAB-10628) from flycellatlas.org: annotations (transf_annotation, fixed_annotation) and expression.",
       "url": "https://flycellatlas.org",
-      "retrieved_at": "2026-10-07",
+      "accessed_at": "2026-10-07",
       "files": [
         {
-          "name": "h5ad/antenna.h5ad (Fly Cell Atlas Smart-seq2 Antenna)",
+          "path": "h5ad/antenna.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 Antenna. Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/zgrnHWTHMsS8tA3",
           "sha256": "78df88c2e17a888e703fc474e3628d969b0fd49e96fc0bd1b3994b0cda532eb0",
           "bytes": 77227972,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "h5ad/body_wall.h5ad (Fly Cell Atlas Smart-seq2 Body Wall)",
+          "path": "h5ad/body_wall.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 Body Wall. Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/zRMAHRwQLc4Z8Sm",
           "sha256": "29acda1e15da24cdd1ad6d50df08a23fc86dc02d8d2788b1d7e84ddbcdee6fa4",
           "bytes": 29562008,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "h5ad/fat_body.h5ad (Fly Cell Atlas Smart-seq2 Fat Body)",
+          "path": "h5ad/fat_body.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 Fat Body. Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/WPDTJrAHpmE9sri",
           "sha256": "c9f113a7319c7d5207b16afc82262a7c90f0fe6940122bd2c4c964fac4cd045b",
           "bytes": 114538250,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "h5ad/gut.h5ad (Fly Cell Atlas Smart-seq2 Gut)",
+          "path": "h5ad/gut.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 Gut. Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/X3nWFL4z4Yi73s2",
           "sha256": "aafc816b5918129337dafe8fe733287669e28104135f3c7510f1765114e1265c",
           "bytes": 48710940,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "h5ad/haltere.h5ad (Fly Cell Atlas Smart-seq2 Haltere)",
+          "path": "h5ad/haltere.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 Haltere. Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/2jY8Y6Q647Y8BKC",
           "sha256": "8a25d3630f60f61fc463c7de65af66fcf54e5c8c9305e6f2f474a8ac01275f43",
           "bytes": 17934852,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "h5ad/heart.h5ad (Fly Cell Atlas Smart-seq2 Heart)",
+          "path": "h5ad/heart.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 Heart. Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/Dfqb6TbqfwDeKXZ",
           "sha256": "39d23ba27e1904733574112318a57330d2ed1ed8872fe9a30139db75c3d4f664",
           "bytes": 38820560,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "h5ad/leg.h5ad (Fly Cell Atlas Smart-seq2 Leg)",
+          "path": "h5ad/leg.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 Leg. Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/9KLm4CkKxtoaSY5",
           "sha256": "5ac0edc4129f33ae28333b35c91d2fc51858eac5e9439d55bf5c1e4ec81c13be",
           "bytes": 51391648,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "h5ad/male_reproductive_glands.h5ad (Fly Cell Atlas Smart-seq2 Male Reproductive Glands)",
+          "path": "h5ad/male_reproductive_glands.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands. Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/6bdDH2Y2FTNW7nT",
           "sha256": "dc3b284644bcb7e2e7b1f201c650b223220b3957a27aeb3817e7c61161e9359d",
           "bytes": 26305324,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "h5ad/malpighian_tubule.h5ad (Fly Cell Atlas Smart-seq2 Malpighian Tubule)",
+          "path": "h5ad/malpighian_tubule.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 Malpighian Tubule. Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/YbB4NgwTsGT2K8o",
           "sha256": "fc0b5678e3f534027a606b65cfea7fe4803faed2199cc4612cb92a9adb3130a7",
           "bytes": 43742540,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "h5ad/oenocyte.h5ad (Fly Cell Atlas Smart-seq2 Oenocyte)",
+          "path": "h5ad/oenocyte.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 Oenocyte. Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/aJX2Lex88FmcwoW",
           "sha256": "16c6b16bb53e6340e8923a0fd377029bb368259ac9e2368c5ae9014433f51c59",
           "bytes": 47061580,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "h5ad/ovary.h5ad (Fly Cell Atlas Smart-seq2 Ovary)",
+          "path": "h5ad/ovary.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 Ovary. Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/9kEmXzBnR8nbLpX",
           "sha256": "e7c8fb1ea021ebc2aa7ad3a7c80f3999a59d14158a1f3784813cabe97c2905a1",
           "bytes": 97235346,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "h5ad/proboscis_and_maxillary_palps.h5ad (Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps)",
+          "path": "h5ad/proboscis_and_maxillary_palps.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps. Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/jPdJ7ANYyWD68ea",
           "sha256": "5dd5357e24597d473f74777ac6241eaa28f2d4a760db6fbe4e3e8b62ffcb62e5",
           "bytes": 66322404,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "h5ad/testis.h5ad (Fly Cell Atlas Smart-seq2 Testis)",
+          "path": "h5ad/testis.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 Testis. Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/i5NdDtnJp6YFdse",
           "sha256": "3f90d6e6cb96bfcffa2fa753b7cd0be96850492c926c186c6354af0920312489",
           "bytes": 69188300,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "h5ad/trachea.h5ad (Fly Cell Atlas Smart-seq2 Trachea)",
+          "path": "h5ad/trachea.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 Trachea. Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/8ciSzkyps8MWRYY",
           "sha256": "a29704cb51d62feff569432058c00f866958272cf42a1e898e9cfecbcf212165",
           "bytes": 73210848,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "h5ad/wing.h5ad (Fly Cell Atlas Smart-seq2 Wing)",
+          "path": "h5ad/wing.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 Wing. Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/G69367b4grGAWNc",
           "sha256": "0bc597b5a7ed48fbad47e767791f70253775377679cf50ec0265c43c769ec851",
           "bytes": 47045956,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "h5ad/dilp2IPC.h5ad (Fly Cell Atlas Smart-seq2 dilp2 IPC (insulin-producing cells))",
+          "path": "h5ad/dilp2IPC.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 dilp2 IPC (insulin-producing cells). Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/3EGf7gttGHGLBCw",
           "sha256": "bc2e653c39b1297e01db3d5b3147dba3ae96c4b30ac928b83af42942b1216cb0",
           "bytes": 29385928,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         },
         {
-          "name": "h5ad/akhCC.h5ad (Fly Cell Atlas Smart-seq2 Akh CC (corpora cardiaca))",
+          "path": "h5ad/akhCC.h5ad",
+          "description": "Fly Cell Atlas Smart-seq2 Akh CC (corpora cardiaca). Checksum of the file as downloaded, before HDF5 recompression in the cache.",
           "url": "https://cloud.flycellatlas.org/index.php/s/yeQdzQbgY379sgD",
           "sha256": "67ed80b724b4a5aab135a337533129343b6ca5ad5082cebc53b870bba34be3c5",
           "bytes": 39351600,
-          "retrieved_at": "2026-10-07"
+          "accessed_at": "2026-10-07"
         }
       ]
+    },
+    {
+      "id": "li_2022_fca_10x",
+      "type": "project",
+      "label": "Fly Cell Atlas 10x (this repo)",
+      "description": "Reused: the type-level FBbt mappings shared by both FCA projects (type_mapping/, with the curator's edits; curator-reviewed 2026-10-14), and FBgn ids from the 10x files for gene symbols.",
+      "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq/tree/main/projects/li_2022_fca_10x",
+      "accessed_at": "2026-10-14"
     }
   ],
   "software": [
     {
-      "name": "Claude Code",
-      "kind": "tool",
+      "id": "claude-code",
+      "type": "tool",
+      "label": "Claude Code",
       "version": "2.1.291-2.1.296",
-      "notes": "Agentic CLI that ran the session (orchestrator) and its subagents; version rose from 2.1.291 to 2.1.296 across stages 1-5."
+      "description": "Agentic CLI that ran the session (orchestrator) and its subagents; version rose from 2.1.291 to 2.1.296 across stages 1-5."
     },
     {
-      "name": "Atlas Reporter (local-paper-index)",
-      "kind": "repository",
-      "repo": "https://github.com/Cellular-Semantics/Atlas-reporter",
+      "id": "atlas-reporter",
+      "type": "repository",
+      "label": "Atlas Reporter (local-paper-index)",
+      "url": "https://github.com/Cellular-Semantics/Atlas-reporter",
       "commit": "2acd38e",
-      "notes": "Local JATS snippet index of the paper, queried by the report subagents."
+      "description": "Local JATS snippet index of the paper, queried by the report subagents."
     },
     {
-      "name": "sentence-transformers",
-      "kind": "library",
+      "id": "sentence-transformers",
+      "type": "library",
+      "label": "sentence-transformers",
       "version": "5.5.1",
-      "notes": "Local index embeddings."
+      "description": "Local paper index embeddings."
     },
     {
-      "name": "OLS4 (Ontology Lookup Service)",
-      "kind": "service",
+      "id": "ols4",
+      "type": "service",
+      "label": "OLS4 (Ontology Lookup Service)",
       "url": "https://www.ebi.ac.uk/ols4",
-      "notes": "FBbt search/lookup during mapping (OLS MCP); term verification (verify_mappings.py)."
+      "description": "FBbt search and lookup during mapping (OLS MCP), and term verification (verify_mappings.py)."
     },
     {
-      "name": "VFB production (neo4j)",
-      "kind": "service",
+      "id": "vfb-pdb",
+      "type": "service",
+      "label": "VFB production (neo4j)",
       "url": "https://pdb.virtualflybrain.org",
-      "notes": "Publication FBrf0252876 resolved by PMID (vfb_scrnaseq.pub; not in the curation KB)."
+      "description": "Publication FBrf0252876 resolved by PMID (vfb_scrnaseq.pub; not in the curation KB)."
     },
     {
-      "name": "FlyBase Chado",
-      "kind": "service",
-      "url": "chado.flybase.org",
-      "notes": "Gene ids/symbols -> current genes (update_gene_ids.py), FlyBase FB2026_03 (data last modified 2026-08-29)."
+      "id": "flybase-chado",
+      "type": "service",
+      "label": "FlyBase Chado",
+      "version": "FB2026_03 (data last modified 2026-08-29)",
+      "url": "https://chado.flybase.org",
+      "description": "Gene ids and symbols mapped to current FlyBase genes (update_gene_ids.py)."
     },
     {
-      "name": "Python",
-      "kind": "language",
+      "id": "python",
+      "type": "language",
+      "label": "Python",
       "version": "3.14.3",
-      "notes": "Pipeline environment (uv-managed)."
+      "description": "Pipeline environment (uv-managed)."
     },
     {
-      "name": "h5py",
-      "kind": "library",
+      "id": "h5py",
+      "type": "library",
+      "label": "h5py",
       "version": "3.16.0",
-      "notes": "Reads the authors' AnnData files (obs, var, matrices) without anndata."
+      "description": "Reads the authors' AnnData files (obs, var, matrices) without anndata."
     },
     {
-      "name": "numpy",
-      "kind": "library",
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
       "version": "2.5.1"
     },
     {
-      "name": "pandas",
-      "kind": "library",
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
       "version": "3.0.5"
     },
     {
-      "name": "PyYAML",
-      "kind": "library",
+      "id": "pyyaml",
+      "type": "library",
+      "label": "PyYAML",
       "version": "6.0.3"
     },
     {
-      "name": "linkml",
-      "kind": "library",
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
       "version": "1.11.1",
-      "notes": "linkml-validate + linkml-convert (flat RDF)."
+      "description": "linkml-validate and linkml-convert (flat RDF)."
     },
     {
-      "name": "linkml-runtime",
-      "kind": "library",
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
       "version": "1.11.1"
     },
     {
-      "name": "linkml-owl",
-      "kind": "library",
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
       "version": "0.5.0",
-      "notes": "Metadata OWL."
+      "description": "Metadata OWL."
     },
     {
-      "name": "rdflib",
-      "kind": "library",
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
       "version": "7.6.0"
     },
     {
-      "name": "ROBOT",
-      "kind": "tool",
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
       "version": "1.9.11",
-      "notes": "OFN -> OWL/XML conversion (metadata and expression OWL)."
+      "description": "OFN to OWL/XML conversion (metadata and expression OWL)."
     },
     {
-      "name": "psql",
-      "kind": "tool",
+      "id": "psql",
+      "type": "tool",
+      "label": "psql",
       "version": "14.15",
-      "notes": "FlyBase Chado queries."
+      "description": "FlyBase Chado queries."
     }
   ],
   "models": [
     {
+      "id": "claude-opus-5-5",
       "role": "orchestrator",
-      "name": "claude-opus-5-5",
+      "label": "Claude Opus 5.5",
       "provider": "Anthropic",
-      "version": "Opus 5.5; model id claude-opus-5-5",
-      "notes": "Claude Code main session: ArrayExpress sample builder + sdrf_corrections, h5ad annotation/expression readers, type-level mapping (type_evidence.py, confirm_author_terms.py, expand_type_mappings.py), configs, dispatch of subagents, post-mapping checks, gene id mapping by symbol, builds."
+      "description": "Main Claude Code session: ArrayExpress sample builder and sdrf_corrections, h5ad annotation and expression readers, type-level mapping (type_evidence.py, confirm_author_terms.py, expand_type_mappings.py), configs, dispatch of subagents, post-mapping checks, gene id mapping by symbol, builds."
     },
     {
+      "id": "claude-sonnet",
       "role": "mapping-llm",
-      "name": "claude-sonnet",
+      "label": "Claude Sonnet (agent default)",
       "provider": "Anthropic",
-      "notes": "write-cell-type-report subagents (117 type reports) and map-clusters-to-fbbt subagents (agent frontmatter model: sonnet)."
+      "description": "write-cell-type-report subagents (117 type reports) and map-clusters-to-fbbt subagents, per the agent frontmatter (model: sonnet)."
     },
     {
+      "id": "sentence-transformers/all-MiniLM-L6-v2",
       "role": "embedding",
-      "name": "sentence-transformers/all-MiniLM-L6-v2",
+      "label": "all-MiniLM-L6-v2",
       "provider": "sentence-transformers",
-      "notes": "Local paper snippet-index embeddings."
+      "description": "Local paper snippet-index embeddings."
     }
   ]
 }

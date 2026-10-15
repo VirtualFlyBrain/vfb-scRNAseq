@@ -1,134 +1,170 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://virtualflybrain.org/schemas/provenance.schema.json",
-  "title": "Mapping provenance / version metadata",
-  "description": "Per-project record of the exact versions of everything used to produce the mappings — ontologies, data sources, software, and models — so results are reproducible and can be re-checked when a source changes (e.g. an FBbt release renames a term). One provenance.json per project.",
+  "title": "Project provenance",
+  "description": "Per-project record of what a build was made from and how: the curator decisions, and the exact versions of the ontologies, data sources, software and models used, so results are reproducible and can be re-checked when a source changes (e.g. an FBbt release renames a term). One provenance.json per project. Every entry uses the same field names: `id` is an identifier only (DOI, accession, CURIE, model id, or a short slug), `label` a short human-readable name or title, `type` the kind of thing from the section's list, `description` free text on how or why it was used, `accessed_at` the date it was retrieved or queried.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["project", "generated_at", "pipeline", "ontologies", "data_sources", "software"],
+  "required": ["project", "created_at", "updated_at", "summary", "pipeline", "ontologies", "data_sources", "software"],
+  "definitions": {
+    "date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}" },
+    "id": {
+      "type": "string",
+      "pattern": "^\\S+$",
+      "description": "An identifier, not a name: DOI, accession (GSE, E-MTAB, FBlc, ...), CURIE, model id, or a short slug (e.g. flybase-chado). No spaces."
+    },
+    "label": { "type": "string", "description": "Short human-readable name or title; no notes." },
+    "description": { "type": "string", "description": "Free text: what it is, or how / why it was used." },
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path"],
+      "properties": {
+        "path": { "type": "string", "pattern": "^\\S+$", "description": "File name or path as stored (relative to the project or .cache)." },
+        "description": { "$ref": "#/definitions/description" },
+        "url": { "type": "string", "format": "uri" },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "bytes": { "type": "integer", "minimum": 0 },
+        "accessed_at": { "$ref": "#/definitions/date" }
+      }
+    }
+  },
   "properties": {
-    "project": {
-      "type": "string",
-      "description": "Project directory name this provenance applies to."
-    },
-    "notes": {
-      "type": "string",
-      "description": "Free-text provenance notes, e.g. verification/reproduction status."
-    },
-    "people": {
+    "project": { "type": "string", "description": "Project directory name this provenance applies to." },
+    "created_at": { "$ref": "#/definitions/date", "description": "ISO 8601 date the project was first built and this record produced." },
+    "updated_at": { "$ref": "#/definitions/date", "description": "ISO 8601 date of the latest change to the project or this record; what changed since created_at is in the dated decisions and checks." },
+    "summary": { "type": "string", "description": "A short paragraph: what the project is, what was built, and from what." },
+    "decisions": {
       "type": "array",
-      "description": "Humans responsible for the mappings (curator, reviewer, contact).",
+      "description": "Curation and build decisions, in date order: the choices a reader needs in order to understand or reproduce the result.",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["role"],
+        "required": ["date", "by", "decision"],
         "properties": {
-          "role": { "type": "string", "description": "e.g. curator, reviewer, contact." },
-          "name": { "type": "string" },
-          "username": { "type": "string", "description": "Handle, e.g. GitHub username." },
-          "orcid": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]$" }
+          "date": { "$ref": "#/definitions/date" },
+          "by": { "enum": ["curator", "pipeline"], "description": "curator: decided or approved by the curator; pipeline: a build/method choice made in the pipeline." },
+          "decision": { "type": "string" }
         }
       }
     },
-    "generated_at": {
-      "type": "string",
-      "description": "ISO 8601 date or datetime when this provenance record was produced.",
-      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}"
+    "checks": {
+      "type": "array",
+      "description": "Verifications run on the result (term currency, cross-checks, marker spot checks), with their outcome.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["date", "check", "result"],
+        "properties": {
+          "date": { "$ref": "#/definitions/date" },
+          "check": { "type": "string", "description": "What was checked, and how." },
+          "result": { "type": "string" }
+        }
+      }
+    },
+    "people": {
+      "type": "array",
+      "description": "Humans responsible (curator, reviewer, contact).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role", "label"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^ORCID:[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]$" },
+          "label": { "type": "string", "description": "The person's name." },
+          "role": { "type": "string", "description": "e.g. curator, reviewer, contact." },
+          "username": { "type": "string", "description": "Handle, e.g. GitHub username." }
+        }
+      }
     },
     "pipeline": {
       "type": "object",
-      "description": "The code in THIS repo that produced the mappings.",
+      "description": "The code in THIS repo that produced the outputs.",
       "additionalProperties": false,
-      "required": ["name", "version"],
+      "required": ["id", "url", "commit"],
       "properties": {
-        "name": { "type": "string" },
-        "version": { "type": "string", "description": "Package version and/or human label." },
-        "repo": { "type": "string", "format": "uri" },
-        "commit": { "type": "string", "description": "Git commit SHA (full or abbreviated)." }
+        "id": { "$ref": "#/definitions/id" },
+        "url": { "type": "string", "format": "uri" },
+        "version": { "type": "string" },
+        "commit": { "type": "string", "pattern": "^[0-9a-f]{7,40}$", "description": "Git commit the build ran from." },
+        "uncommitted_changes": { "type": "boolean", "description": "True if the build also included changes not yet committed at that commit (e.g. the outputs being added)." }
       }
     },
     "ontologies": {
       "type": "array",
-      "description": "Every ontology consulted for mapping (FBbt, FBdv, FBcv, RO, ...).",
+      "description": "Every ontology consulted (FBbt, FBdv, FBcv, ...).",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["id", "accessed_via"],
+        "required": ["id", "label", "accessed_at"],
         "properties": {
-          "id": { "type": "string", "description": "Ontology short id, e.g. FBbt, FBdv, RO." },
-          "name": { "type": "string" },
-          "version": { "type": "string", "description": "Release version string or date (e.g. 2026-05-12)." },
-          "version_iri": { "type": "string", "format": "uri", "description": "owl:versionIRI of the release used." },
-          "release_date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
-          "accessed_via": { "type": "string", "description": "How it was queried, e.g. 'OLS MCP', 'OBO PURL', 'ROBOT', 'OAK'." },
-          "accessed_url": { "type": "string", "format": "uri" },
-          "accessed_at": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}" }
+          "id": { "$ref": "#/definitions/id", "description": "Ontology short id, e.g. FBbt." },
+          "label": { "$ref": "#/definitions/label" },
+          "version": { "type": "string", "description": "Release version (usually a date)." },
+          "version_iri": { "type": "string", "format": "uri" },
+          "accessed_via": { "type": "string", "description": "How it was queried, e.g. OLS4 API, OLS MCP, local OBO file." },
+          "url": { "type": "string", "format": "uri" },
+          "accessed_at": { "$ref": "#/definitions/date" },
+          "description": { "$ref": "#/definitions/description" }
         }
       }
     },
     "data_sources": {
       "type": "array",
-      "description": "Datasets, publications, and individual files the mapping/annotation was built from.",
+      "description": "Publications, datasets and earlier loads the project was built from, with the specific files used.",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["type", "id"],
+        "required": ["id", "type", "label"],
         "properties": {
-          "type": { "enum": ["dataset", "publication", "file", "other"] },
-          "id": { "type": "string", "description": "Accession (GSE.../PMID/DOI) or identifier." },
-          "title": { "type": "string" },
+          "id": { "$ref": "#/definitions/id" },
+          "type": {
+            "enum": ["publication", "preprint", "dataset", "author_files", "previous_load", "project"],
+            "description": "publication / preprint (paper, by DOI); dataset (an archive accession: GEO, ArrayExpress); author_files (the authors' own analysis files); previous_load (an earlier VFB/FlyBase load of the dataset, e.g. an FBlc); project (another project in this repo whose entities or mappings are reused)."
+          },
+          "label": { "$ref": "#/definitions/label" },
+          "xrefs": { "type": "array", "items": { "type": "string", "pattern": "^\\S+$" }, "description": "Other identifiers for the same thing, as CURIEs (PMID:, PMCID:, FlyBase:FBrf...)." },
+          "description": { "$ref": "#/definitions/description" },
           "url": { "type": "string", "format": "uri" },
-          "retrieved_at": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}" },
-          "files": {
-            "type": "array",
-            "description": "Specific files used, with checksums for exact reproducibility.",
-            "items": {
-              "type": "object",
-              "additionalProperties": false,
-              "required": ["name"],
-              "properties": {
-                "name": { "type": "string" },
-                "url": { "type": "string", "format": "uri" },
-                "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
-                "bytes": { "type": "integer", "minimum": 0 },
-                "retrieved_at": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}" }
-              }
-            }
-          }
+          "version": { "type": "string" },
+          "accessed_at": { "$ref": "#/definitions/date" },
+          "files": { "type": "array", "items": { "$ref": "#/definitions/file" } }
         }
       }
     },
     "software": {
       "type": "array",
-      "description": "External code, libraries, services and tools used in the pipeline.",
+      "description": "Tools, libraries, services and code repositories used.",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["name", "kind"],
+        "required": ["id", "type", "label"],
         "properties": {
-          "name": { "type": "string" },
-          "kind": { "enum": ["library", "service", "repository", "cli", "tool", "language"] },
+          "id": { "$ref": "#/definitions/id" },
+          "type": { "enum": ["tool", "library", "service", "repository", "language"] },
+          "label": { "$ref": "#/definitions/label" },
           "version": { "type": "string" },
-          "repo": { "type": "string", "format": "uri" },
-          "commit": { "type": "string", "description": "Git commit SHA where applicable." },
           "url": { "type": "string", "format": "uri" },
-          "notes": { "type": "string" }
+          "commit": { "type": "string", "pattern": "^[0-9a-f]{7,40}$" },
+          "accessed_at": { "$ref": "#/definitions/date" },
+          "description": { "$ref": "#/definitions/description" }
         }
       }
     },
     "models": {
       "type": "array",
-      "description": "ML/LLM models used (the mapping LLM, the local-index embedding model, etc.).",
+      "description": "ML/LLM models used.",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["role", "name"],
+        "required": ["id", "role", "label"],
         "properties": {
+          "id": { "$ref": "#/definitions/id", "description": "Model id, e.g. claude-opus-5-5." },
           "role": { "enum": ["orchestrator", "mapping-llm", "report-llm", "embedding", "other"] },
-          "name": { "type": "string", "description": "Model identifier." },
+          "label": { "$ref": "#/definitions/label" },
           "provider": { "type": "string" },
           "version": { "type": "string" },
-          "notes": { "type": "string" }
+          "description": { "$ref": "#/definitions/description" }
         }
       }
     }
