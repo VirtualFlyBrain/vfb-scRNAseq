@@ -1,0 +1,4371 @@
+[
+  {
+    "type": "Publication",
+    "id": "FlyBase:FBrf0256843",
+    "neo_label": "pub"
+  },
+  {
+    "type": "Dataset",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "name": "scRNAseq data from Lu (2023)",
+    "title": "Aging Fly Cell Atlas identifies exhaustive aging features at cellular resolution",
+    "accession": "GSE218661",
+    "neo_label": "DataSet",
+    "site": "vfb:GEO",
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "assay_type": "FBcv:0009001",
+    "total_gene_count": 15962,
+    "filtered_gene_count": 5399,
+    "publication": "FlyBase:FBrf0256843"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001469",
+    "name": "body, 30d, Female rep S1 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001470"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001471",
+    "name": "body, 30d, Female rep S2 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001472"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001473",
+    "name": "body, 30d, Female rep S3 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001474"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001475",
+    "name": "body, 30d, Female rep S4 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001476"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001477",
+    "name": "body, 30d, Female rep S5 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001478"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001479",
+    "name": "body, 30d, Female rep S6 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001480"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001481",
+    "name": "body, 50d, Female rep S1 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001482"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001483",
+    "name": "body, 50d, Female rep S2 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001484"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001485",
+    "name": "body, 50d, Female rep S3 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001486"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001487",
+    "name": "body, 50d, Female rep S4 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001488"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001489",
+    "name": "body, 50d, Female rep S5 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001490"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001491",
+    "name": "body, 50d, Female rep S6 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001492"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001493",
+    "name": "body, 70d, Female rep S1 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001494"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001495",
+    "name": "body, 70d, Female rep S2 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001496"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001497",
+    "name": "body, 70d, Female rep S3 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001498"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001499",
+    "name": "body, 70d, Female rep S4 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001500"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001501",
+    "name": "body, 70d, Female rep S5 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001502"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001503",
+    "name": "body, 70d, Female rep S6 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001504"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001505",
+    "name": "head, 30d, Female rep S1 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001506"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001507",
+    "name": "head, 30d, Female rep S2 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001508"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001509",
+    "name": "head, 30d, Female rep S3 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001510"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001511",
+    "name": "head, 30d, Female rep S4 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001512"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001513",
+    "name": "head, 30d, Female rep S5 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001514"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001515",
+    "name": "head, 30d, Female rep S6 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001516"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001517",
+    "name": "head, 50d, Female rep S1 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001518"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001519",
+    "name": "head, 50d, Female rep S2 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001520"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001521",
+    "name": "head, 50d, Female rep S3 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001522"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001523",
+    "name": "head, 50d, Female rep S4 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001524"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001525",
+    "name": "head, 50d, Female rep S5 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001526"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001527",
+    "name": "head, 50d, Female rep S6 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001528"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001529",
+    "name": "head, 70d, Female rep S1 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001530"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001531",
+    "name": "head, 70d, Female rep S2 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001532"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001533",
+    "name": "head, 70d, Female rep S3 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001534"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001535",
+    "name": "head, 70d, Female rep S4 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001536"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001537",
+    "name": "head, 70d, Female rep S5 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001538"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001539",
+    "name": "head, 70d, Female rep S6 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001540"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001541",
+    "name": "body, 30d, Male rep S1 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001542"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001543",
+    "name": "body, 30d, Male rep S2 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001544"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001545",
+    "name": "body, 30d, Male rep S3 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001546"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001547",
+    "name": "body, 30d, Male rep S4 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001548"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001549",
+    "name": "body, 30d, Male rep S5 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001550"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001551",
+    "name": "body, 30d, Male rep S6 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001552"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001553",
+    "name": "body, 50d, Male rep S1 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001554"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001555",
+    "name": "body, 50d, Male rep S2 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001556"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001557",
+    "name": "body, 50d, Male rep S3 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001558"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001559",
+    "name": "body, 50d, Male rep S4 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001560"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001561",
+    "name": "body, 50d, Male rep S5 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001562"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001563",
+    "name": "body, 50d, Male rep S6 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001564"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001565",
+    "name": "body, 70d, Male rep S1 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001566"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001567",
+    "name": "body, 70d, Male rep S2 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001568"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001569",
+    "name": "body, 70d, Male rep S3 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001570"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001571",
+    "name": "body, 70d, Male rep S4 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001572"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001573",
+    "name": "body, 70d, Male rep S5 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001574"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001575",
+    "name": "body, 70d, Male rep S6 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001576"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00059181"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001577",
+    "name": "head, 30d, Male rep S1 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001578"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001579",
+    "name": "head, 30d, Male rep S2 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001580"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001581",
+    "name": "head, 30d, Male rep S3 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001582"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001583",
+    "name": "head, 30d, Male rep S4 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001584"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001585",
+    "name": "head, 30d, Male rep S5 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001586"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001587",
+    "name": "head, 30d, Male rep S6 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001588"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007105",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001589",
+    "name": "head, 50d, Male rep S1 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001590"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001591",
+    "name": "head, 50d, Male rep S2 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001592"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001593",
+    "name": "head, 50d, Male rep S3 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001594"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001595",
+    "name": "head, 50d, Male rep S4 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001596"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001597",
+    "name": "head, 50d, Male rep S5 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001598"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001599",
+    "name": "head, 50d, Male rep S6 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001600"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:00007125",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001601",
+    "name": "head, 70d, Male rep S1 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001602"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001603",
+    "name": "head, 70d, Male rep S2 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001604"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001605",
+    "name": "head, 70d, Male rep S3 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001606"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001607",
+    "name": "head, 70d, Male rep S4 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001608"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001609",
+    "name": "head, 70d, Male rep S5 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001610"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001611",
+    "name": "head, 70d, Male rep S6 (Lu 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001612"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003007"
+    ],
+    "stage": "FBdv:0010010",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001470",
+    "name": "body, 30d, Female rep S1, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001469"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754252",
+      "SRX18367270",
+      "SAMN31853267"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001472",
+    "name": "body, 30d, Female rep S2, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001471"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754253",
+      "SRX18367271",
+      "SAMN31853269"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001474",
+    "name": "body, 30d, Female rep S3, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001473"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754254",
+      "SRX18367272",
+      "SAMN31853270"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001476",
+    "name": "body, 30d, Female rep S4, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001475"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754255",
+      "SRX18367273",
+      "SAMN31853272"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001478",
+    "name": "body, 30d, Female rep S5, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001477"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754256",
+      "SRX18367274",
+      "SAMN31853295"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001480",
+    "name": "body, 30d, Female rep S6, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001479"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754257",
+      "SRX18367275",
+      "SAMN31853296"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001482",
+    "name": "body, 50d, Female rep S1, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001481"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754276",
+      "SRX18367294",
+      "SAMN31853315"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001484",
+    "name": "body, 50d, Female rep S2, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001483"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754277",
+      "SRX18367295",
+      "SAMN31853316"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001486",
+    "name": "body, 50d, Female rep S3, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001485"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754278",
+      "SRX18367296",
+      "SAMN31853317"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001488",
+    "name": "body, 50d, Female rep S4, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001487"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754279",
+      "SRX18367297",
+      "SAMN31853318"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001490",
+    "name": "body, 50d, Female rep S5, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001489"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754280",
+      "SRX18367298",
+      "SAMN31853319"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001492",
+    "name": "body, 50d, Female rep S6, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001491"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754281",
+      "SRX18367299",
+      "SAMN31853320"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001494",
+    "name": "body, 70d, Female rep S1, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001493"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754300",
+      "SRX18367318",
+      "SAMN31853255"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001496",
+    "name": "body, 70d, Female rep S2, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001495"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754301",
+      "SRX18367319",
+      "SAMN31853256"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001498",
+    "name": "body, 70d, Female rep S3, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001497"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754302",
+      "SRX18367320",
+      "SAMN31853258"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001500",
+    "name": "body, 70d, Female rep S4, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001499"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754303",
+      "SRX18367321",
+      "SAMN31853259"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001502",
+    "name": "body, 70d, Female rep S5, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001501"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754304",
+      "SRX18367322",
+      "SAMN31853261"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001504",
+    "name": "body, 70d, Female rep S6, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001503"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754305",
+      "SRX18367323",
+      "SAMN31853262"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001506",
+    "name": "head, 30d, Female rep S1, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001505"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754246",
+      "SRX18367264",
+      "SAMN31853290"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001508",
+    "name": "head, 30d, Female rep S2, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001507"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754247",
+      "SRX18367265",
+      "SAMN31853292"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001510",
+    "name": "head, 30d, Female rep S3, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001509"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754248",
+      "SRX18367266",
+      "SAMN31853293"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001512",
+    "name": "head, 30d, Female rep S4, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001511"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754249",
+      "SRX18367267",
+      "SAMN31853263"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001514",
+    "name": "head, 30d, Female rep S5, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001513"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754250",
+      "SRX18367268",
+      "SAMN31853265"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001516",
+    "name": "head, 30d, Female rep S6, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001515"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754251",
+      "SRX18367269",
+      "SAMN31853266"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001518",
+    "name": "head, 50d, Female rep S1, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001517"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754270",
+      "SRX18367288",
+      "SAMN31853309"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001520",
+    "name": "head, 50d, Female rep S2, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001519"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754271",
+      "SRX18367289",
+      "SAMN31853310"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001522",
+    "name": "head, 50d, Female rep S3, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001521"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754272",
+      "SRX18367290",
+      "SAMN31853311"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001524",
+    "name": "head, 50d, Female rep S4, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001523"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754273",
+      "SRX18367291",
+      "SAMN31853312"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001526",
+    "name": "head, 50d, Female rep S5, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001525"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754274",
+      "SRX18367292",
+      "SAMN31853313"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001528",
+    "name": "head, 50d, Female rep S6, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001527"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754275",
+      "SRX18367293",
+      "SAMN31853314"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001530",
+    "name": "head, 70d, Female rep S1, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001529"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754294",
+      "SRX18367312",
+      "SAMN31853241"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001532",
+    "name": "head, 70d, Female rep S2, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001531"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754295",
+      "SRX18367313",
+      "SAMN31853248"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001534",
+    "name": "head, 70d, Female rep S3, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001533"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754296",
+      "SRX18367314",
+      "SAMN31853249"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001536",
+    "name": "head, 70d, Female rep S4, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001535"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754297",
+      "SRX18367315",
+      "SAMN31853251"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001538",
+    "name": "head, 70d, Female rep S5, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001537"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754298",
+      "SRX18367316",
+      "SAMN31853252"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001540",
+    "name": "head, 70d, Female rep S6, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001539"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754299",
+      "SRX18367317",
+      "SAMN31853254"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001542",
+    "name": "body, 30d, Male rep S1, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001541"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754240",
+      "SRX18367258",
+      "SAMN31853282"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001544",
+    "name": "body, 30d, Male rep S2, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001543"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754241",
+      "SRX18367259",
+      "SAMN31853283"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001546",
+    "name": "body, 30d, Male rep S3, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001545"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754242",
+      "SRX18367260",
+      "SAMN31853285"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001548",
+    "name": "body, 30d, Male rep S4, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001547"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754243",
+      "SRX18367261",
+      "SAMN31853286"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001550",
+    "name": "body, 30d, Male rep S5, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001549"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754244",
+      "SRX18367262",
+      "SAMN31853288"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001552",
+    "name": "body, 30d, Male rep S6, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001551"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754245",
+      "SRX18367263",
+      "SAMN31853289"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001554",
+    "name": "body, 50d, Male rep S1, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001553"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754264",
+      "SRX18367282",
+      "SAMN31853303"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001556",
+    "name": "body, 50d, Male rep S2, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001555"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754265",
+      "SRX18367283",
+      "SAMN31853304"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001558",
+    "name": "body, 50d, Male rep S3, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001557"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754266",
+      "SRX18367284",
+      "SAMN31853305"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001560",
+    "name": "body, 50d, Male rep S4, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001559"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754267",
+      "SRX18367285",
+      "SAMN31853306"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001562",
+    "name": "body, 50d, Male rep S5, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001561"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754268",
+      "SRX18367286",
+      "SAMN31853307"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001564",
+    "name": "body, 50d, Male rep S6, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001563"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754269",
+      "SRX18367287",
+      "SAMN31853308"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001566",
+    "name": "body, 70d, Male rep S1, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001565"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754288",
+      "SRX18367306",
+      "SAMN31853238"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001568",
+    "name": "body, 70d, Male rep S2, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001567"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754289",
+      "SRX18367307",
+      "SAMN31853239"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001570",
+    "name": "body, 70d, Male rep S3, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001569"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754290",
+      "SRX18367308",
+      "SAMN31853242"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001572",
+    "name": "body, 70d, Male rep S4, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001571"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754291",
+      "SRX18367309",
+      "SAMN31853244"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001574",
+    "name": "body, 70d, Male rep S5, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001573"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754292",
+      "SRX18367310",
+      "SAMN31853245"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001576",
+    "name": "body, 70d, Male rep S6, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001575"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754293",
+      "SRX18367311",
+      "SAMN31853246"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001578",
+    "name": "head, 30d, Male rep S1, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001577"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754234",
+      "SRX18367252",
+      "SAMN31853274"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001580",
+    "name": "head, 30d, Male rep S2, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001579"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754235",
+      "SRX18367253",
+      "SAMN31853275"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001582",
+    "name": "head, 30d, Male rep S3, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001581"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754236",
+      "SRX18367254",
+      "SAMN31853276"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001584",
+    "name": "head, 30d, Male rep S4, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001583"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754237",
+      "SRX18367255",
+      "SAMN31853277"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001586",
+    "name": "head, 30d, Male rep S5, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001585"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754238",
+      "SRX18367256",
+      "SAMN31853279"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001588",
+    "name": "head, 30d, Male rep S6, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001587"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754239",
+      "SRX18367257",
+      "SAMN31853281"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001590",
+    "name": "head, 50d, Male rep S1, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001589"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754258",
+      "SRX18367276",
+      "SAMN31853297"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001592",
+    "name": "head, 50d, Male rep S2, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001591"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754259",
+      "SRX18367277",
+      "SAMN31853298"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001594",
+    "name": "head, 50d, Male rep S3, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001593"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754260",
+      "SRX18367278",
+      "SAMN31853299"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001596",
+    "name": "head, 50d, Male rep S4, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001595"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754261",
+      "SRX18367279",
+      "SAMN31853300"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001598",
+    "name": "head, 50d, Male rep S5, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001597"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754262",
+      "SRX18367280",
+      "SAMN31853301"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001600",
+    "name": "head, 50d, Male rep S6, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001599"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754263",
+      "SRX18367281",
+      "SAMN31853302"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001602",
+    "name": "head, 70d, Male rep S1, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001601"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754282",
+      "SRX18367300",
+      "SAMN31853321"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001604",
+    "name": "head, 70d, Male rep S2, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001603"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754283",
+      "SRX18367301",
+      "SAMN31853322"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001606",
+    "name": "head, 70d, Male rep S3, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001605"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754284",
+      "SRX18367302",
+      "SAMN31853323"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001608",
+    "name": "head, 70d, Male rep S4, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001607"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754285",
+      "SRX18367303",
+      "SAMN31853324"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001610",
+    "name": "head, 70d, Male rep S5, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001609"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754286",
+      "SRX18367304",
+      "SAMN31853234"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001612",
+    "name": "head, 70d, Male rep S6, 10x library (Lu 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00001611"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "dbxref": [
+      "GSM6754287",
+      "SRX18367305",
+      "SAMN31853236"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "name": "Aging Fly Cell Atlas head",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00001505",
+      "http://virtualflybrain.org/reports/VFBseq_00001507",
+      "http://virtualflybrain.org/reports/VFBseq_00001509",
+      "http://virtualflybrain.org/reports/VFBseq_00001511",
+      "http://virtualflybrain.org/reports/VFBseq_00001513",
+      "http://virtualflybrain.org/reports/VFBseq_00001515",
+      "http://virtualflybrain.org/reports/VFBseq_00001517",
+      "http://virtualflybrain.org/reports/VFBseq_00001519",
+      "http://virtualflybrain.org/reports/VFBseq_00001521",
+      "http://virtualflybrain.org/reports/VFBseq_00001523",
+      "http://virtualflybrain.org/reports/VFBseq_00001525",
+      "http://virtualflybrain.org/reports/VFBseq_00001527",
+      "http://virtualflybrain.org/reports/VFBseq_00001529",
+      "http://virtualflybrain.org/reports/VFBseq_00001531",
+      "http://virtualflybrain.org/reports/VFBseq_00001533",
+      "http://virtualflybrain.org/reports/VFBseq_00001535",
+      "http://virtualflybrain.org/reports/VFBseq_00001537",
+      "http://virtualflybrain.org/reports/VFBseq_00001539",
+      "http://virtualflybrain.org/reports/VFBseq_00001577",
+      "http://virtualflybrain.org/reports/VFBseq_00001579",
+      "http://virtualflybrain.org/reports/VFBseq_00001581",
+      "http://virtualflybrain.org/reports/VFBseq_00001583",
+      "http://virtualflybrain.org/reports/VFBseq_00001585",
+      "http://virtualflybrain.org/reports/VFBseq_00001587",
+      "http://virtualflybrain.org/reports/VFBseq_00001589",
+      "http://virtualflybrain.org/reports/VFBseq_00001591",
+      "http://virtualflybrain.org/reports/VFBseq_00001593",
+      "http://virtualflybrain.org/reports/VFBseq_00001595",
+      "http://virtualflybrain.org/reports/VFBseq_00001597",
+      "http://virtualflybrain.org/reports/VFBseq_00001599",
+      "http://virtualflybrain.org/reports/VFBseq_00001601",
+      "http://virtualflybrain.org/reports/VFBseq_00001603",
+      "http://virtualflybrain.org/reports/VFBseq_00001605",
+      "http://virtualflybrain.org/reports/VFBseq_00001607",
+      "http://virtualflybrain.org/reports/VFBseq_00001609",
+      "http://virtualflybrain.org/reports/VFBseq_00001611",
+      "http://virtualflybrain.org/reports/VFBseq_00000706",
+      "http://virtualflybrain.org/reports/VFBseq_00000712",
+      "http://virtualflybrain.org/reports/VFBseq_00000714",
+      "http://virtualflybrain.org/reports/VFBseq_00000716",
+      "http://virtualflybrain.org/reports/VFBseq_00000718",
+      "http://virtualflybrain.org/reports/VFBseq_00000720",
+      "http://virtualflybrain.org/reports/VFBseq_00000722",
+      "http://virtualflybrain.org/reports/VFBseq_00000724",
+      "http://virtualflybrain.org/reports/VFBseq_00000726",
+      "http://virtualflybrain.org/reports/VFBseq_00000728",
+      "http://virtualflybrain.org/reports/VFBseq_00000730",
+      "http://virtualflybrain.org/reports/VFBseq_00000732",
+      "http://virtualflybrain.org/reports/VFBseq_00000734"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "name": "Aging Fly Cell Atlas body",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00001469",
+      "http://virtualflybrain.org/reports/VFBseq_00001471",
+      "http://virtualflybrain.org/reports/VFBseq_00001473",
+      "http://virtualflybrain.org/reports/VFBseq_00001475",
+      "http://virtualflybrain.org/reports/VFBseq_00001477",
+      "http://virtualflybrain.org/reports/VFBseq_00001479",
+      "http://virtualflybrain.org/reports/VFBseq_00001481",
+      "http://virtualflybrain.org/reports/VFBseq_00001483",
+      "http://virtualflybrain.org/reports/VFBseq_00001485",
+      "http://virtualflybrain.org/reports/VFBseq_00001487",
+      "http://virtualflybrain.org/reports/VFBseq_00001489",
+      "http://virtualflybrain.org/reports/VFBseq_00001491",
+      "http://virtualflybrain.org/reports/VFBseq_00001493",
+      "http://virtualflybrain.org/reports/VFBseq_00001495",
+      "http://virtualflybrain.org/reports/VFBseq_00001497",
+      "http://virtualflybrain.org/reports/VFBseq_00001499",
+      "http://virtualflybrain.org/reports/VFBseq_00001501",
+      "http://virtualflybrain.org/reports/VFBseq_00001503",
+      "http://virtualflybrain.org/reports/VFBseq_00001541",
+      "http://virtualflybrain.org/reports/VFBseq_00001543",
+      "http://virtualflybrain.org/reports/VFBseq_00001545",
+      "http://virtualflybrain.org/reports/VFBseq_00001547",
+      "http://virtualflybrain.org/reports/VFBseq_00001549",
+      "http://virtualflybrain.org/reports/VFBseq_00001551",
+      "http://virtualflybrain.org/reports/VFBseq_00001553",
+      "http://virtualflybrain.org/reports/VFBseq_00001555",
+      "http://virtualflybrain.org/reports/VFBseq_00001557",
+      "http://virtualflybrain.org/reports/VFBseq_00001559",
+      "http://virtualflybrain.org/reports/VFBseq_00001561",
+      "http://virtualflybrain.org/reports/VFBseq_00001563",
+      "http://virtualflybrain.org/reports/VFBseq_00001565",
+      "http://virtualflybrain.org/reports/VFBseq_00001567",
+      "http://virtualflybrain.org/reports/VFBseq_00001569",
+      "http://virtualflybrain.org/reports/VFBseq_00001571",
+      "http://virtualflybrain.org/reports/VFBseq_00001573",
+      "http://virtualflybrain.org/reports/VFBseq_00001575",
+      "http://virtualflybrain.org/reports/VFBseq_00000708",
+      "http://virtualflybrain.org/reports/VFBseq_00000736",
+      "http://virtualflybrain.org/reports/VFBseq_00000738",
+      "http://virtualflybrain.org/reports/VFBseq_00000740",
+      "http://virtualflybrain.org/reports/VFBseq_00000742",
+      "http://virtualflybrain.org/reports/VFBseq_00000744",
+      "http://virtualflybrain.org/reports/VFBseq_00000746",
+      "http://virtualflybrain.org/reports/VFBseq_00000748",
+      "http://virtualflybrain.org/reports/VFBseq_00000750",
+      "http://virtualflybrain.org/reports/VFBseq_00000752",
+      "http://virtualflybrain.org/reports/VFBseq_00000754",
+      "http://virtualflybrain.org/reports/VFBseq_00000756",
+      "http://virtualflybrain.org/reports/VFBseq_00000758"
+    ]
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001615",
+    "name": "Johnston organ neuron cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2483,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100000"
+    ],
+    "total_gene_count": 11337,
+    "filtered_gene_count": 808
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001616",
+    "name": "Kenyon cell cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 11,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049825"
+    ],
+    "total_gene_count": 2770,
+    "filtered_gene_count": 1005
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001617",
+    "name": "T neuron T2 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1596,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003728"
+    ],
+    "total_gene_count": 10199,
+    "filtered_gene_count": 645
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001618",
+    "name": "T neuron T2a cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1801,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003729"
+    ],
+    "total_gene_count": 10322,
+    "filtered_gene_count": 640
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001619",
+    "name": "T neuron T3 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1826,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003730"
+    ],
+    "total_gene_count": 10229,
+    "filtered_gene_count": 573
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001620",
+    "name": "T neuron T4/T5 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 605,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003726"
+    ],
+    "total_gene_count": 8925,
+    "filtered_gene_count": 739
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001621",
+    "name": "T neuron T4/T5a-b cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2530,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003726"
+    ],
+    "total_gene_count": 10560,
+    "filtered_gene_count": 548
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001622",
+    "name": "T neuron T4/T5c-d cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2146,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003726"
+    ],
+    "total_gene_count": 10357,
+    "filtered_gene_count": 571
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001623",
+    "name": "adult brain cell body glial cell cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1095,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100501"
+    ],
+    "total_gene_count": 11050,
+    "filtered_gene_count": 1322
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001624",
+    "name": "adult brain perineurial glial cell cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 4723,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100506"
+    ],
+    "total_gene_count": 12169,
+    "filtered_gene_count": 859
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001625",
+    "name": "adult fat body_head cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 961,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049949"
+    ],
+    "total_gene_count": 10287,
+    "filtered_gene_count": 746
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001626",
+    "name": "adult lamina epithelial/marginal glial cell cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2776,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058264"
+    ],
+    "total_gene_count": 11668,
+    "filtered_gene_count": 880
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001627",
+    "name": "adult optic chiasma glial cell cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1615,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100525"
+    ],
+    "total_gene_count": 11243,
+    "filtered_gene_count": 981
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001628",
+    "name": "adult reticular neuropil associated glial cell_head cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2720,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047841"
+    ],
+    "total_gene_count": 11656,
+    "filtered_gene_count": 872
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001629",
+    "name": "alpha'/beta' Kenyon cell cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1234,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049834"
+    ],
+    "total_gene_count": 10261,
+    "filtered_gene_count": 800
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001630",
+    "name": "alpha/beta Kenyon cell cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2200,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100248"
+    ],
+    "total_gene_count": 10867,
+    "filtered_gene_count": 840
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001631",
+    "name": "antennal lobe projection neuron cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 342,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067123"
+    ],
+    "total_gene_count": 8958,
+    "filtered_gene_count": 1068
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001632",
+    "name": "auditory sensory neuron cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1614,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007684"
+    ],
+    "total_gene_count": 11233,
+    "filtered_gene_count": 1021
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001633",
+    "name": "centrifugal neuron C2 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1558,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003743"
+    ],
+    "total_gene_count": 10197,
+    "filtered_gene_count": 615
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001634",
+    "name": "centrifugal neuron C3 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1732,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003744"
+    ],
+    "total_gene_count": 10323,
+    "filtered_gene_count": 637
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001635",
+    "name": "columnar neuron T1 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 4216,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003727"
+    ],
+    "total_gene_count": 12086,
+    "filtered_gene_count": 1011
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001636",
+    "name": "cone cell cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 17669,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004193"
+    ],
+    "total_gene_count": 13159,
+    "filtered_gene_count": 814
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001637",
+    "name": "distal medullary amacrine neuron Dm10 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 690,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00110135"
+    ],
+    "total_gene_count": 8988,
+    "filtered_gene_count": 622
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001638",
+    "name": "distal medullary amacrine neuron Dm12 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 328,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111273"
+    ],
+    "total_gene_count": 7820,
+    "filtered_gene_count": 678
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001639",
+    "name": "distal medullary amacrine neuron Dm3 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 956,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003770"
+    ],
+    "total_gene_count": 9278,
+    "filtered_gene_count": 536
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001640",
+    "name": "distal medullary amacrine neuron Dm8 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1188,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00013774"
+    ],
+    "total_gene_count": 9558,
+    "filtered_gene_count": 642
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001641",
+    "name": "distal medullary amacrine neuron Dm9 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 571,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111271"
+    ],
+    "total_gene_count": 9122,
+    "filtered_gene_count": 845
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001642",
+    "name": "dopaminergic PAM neuron cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 493,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100214"
+    ],
+    "total_gene_count": 8975,
+    "filtered_gene_count": 898
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001643",
+    "name": "ensheathing glial cell cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 4619,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100504"
+    ],
+    "total_gene_count": 11689,
+    "filtered_gene_count": 687
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001644",
+    "name": "epithelial cell_head cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 14114,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058238"
+    ],
+    "total_gene_count": 12943,
+    "filtered_gene_count": 730
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001645",
+    "name": "gamma Kenyon cell cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2575,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049828"
+    ],
+    "total_gene_count": 11243,
+    "filtered_gene_count": 979
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001646",
+    "name": "hemocyte_head cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1285,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058143"
+    ],
+    "total_gene_count": 11280,
+    "filtered_gene_count": 1254
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001647",
+    "name": "lamina intrinsic amacrine neuron Lai cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 980,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003746"
+    ],
+    "total_gene_count": 9873,
+    "filtered_gene_count": 802
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001648",
+    "name": "lamina monopolar neuron L1 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2554,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003719"
+    ],
+    "total_gene_count": 11081,
+    "filtered_gene_count": 749
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001649",
+    "name": "lamina monopolar neuron L2 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 3414,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003720"
+    ],
+    "total_gene_count": 11596,
+    "filtered_gene_count": 905
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001650",
+    "name": "lamina monopolar neuron L3 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2543,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003721"
+    ],
+    "total_gene_count": 10876,
+    "filtered_gene_count": 711
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001651",
+    "name": "lamina monopolar neuron L4 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1596,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003722"
+    ],
+    "total_gene_count": 10206,
+    "filtered_gene_count": 563
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001652",
+    "name": "lamina monopolar neuron L5 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1497,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003725"
+    ],
+    "total_gene_count": 10014,
+    "filtered_gene_count": 578
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001653",
+    "name": "lamina wide-field 1 neuron cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 547,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003741"
+    ],
+    "total_gene_count": 9080,
+    "filtered_gene_count": 806
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001654",
+    "name": "lamina wide-field 2 neuron cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 563,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00110065"
+    ],
+    "total_gene_count": 9089,
+    "filtered_gene_count": 828
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001655",
+    "name": "lobula columnar neuron LC10 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 600,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100482"
+    ],
+    "total_gene_count": 9103,
+    "filtered_gene_count": 815
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001656",
+    "name": "lobula columnar neuron LC12 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 41,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100484"
+    ],
+    "total_gene_count": 4704,
+    "filtered_gene_count": 964
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001657",
+    "name": "lobula columnar neuron LC17 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 526,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111752"
+    ],
+    "total_gene_count": 8776,
+    "filtered_gene_count": 756
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001658",
+    "name": "medullary intrinsic neuron Mi1 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2681,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003776"
+    ],
+    "total_gene_count": 11113,
+    "filtered_gene_count": 855
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001659",
+    "name": "medullary intrinsic neuron Mi15 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 603,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111285"
+    ],
+    "total_gene_count": 8614,
+    "filtered_gene_count": 575
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001660",
+    "name": "medullary intrinsic neuron Mi4 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2196,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003779"
+    ],
+    "total_gene_count": 10709,
+    "filtered_gene_count": 712
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001661",
+    "name": "medullary intrinsic neuron Mi9 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 863,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003784"
+    ],
+    "total_gene_count": 8883,
+    "filtered_gene_count": 580
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001662",
+    "name": "ocellus retinula cell cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 283,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004242"
+    ],
+    "total_gene_count": 8081,
+    "filtered_gene_count": 929
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001663",
+    "name": "octopaminergic/tyraminergic neuron cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 94,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058201"
+    ],
+    "total_gene_count": 6664,
+    "filtered_gene_count": 1158
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001664",
+    "name": "olfactory receptor neuron cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 5415,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007386"
+    ],
+    "total_gene_count": 12422,
+    "filtered_gene_count": 1011
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001665",
+    "name": "optic-lobe-associated cortex glial cell cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1485,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111302"
+    ],
+    "total_gene_count": 11080,
+    "filtered_gene_count": 1032
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001666",
+    "name": "outer photoreceptor cell cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 21239,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00006007"
+    ],
+    "total_gene_count": 13391,
+    "filtered_gene_count": 1112
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001667",
+    "name": "pericerebral adult fat mass cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 4140,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058267"
+    ],
+    "total_gene_count": 12602,
+    "filtered_gene_count": 1631
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001668",
+    "name": "photoreceptor cell R7 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2092,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004225"
+    ],
+    "total_gene_count": 10838,
+    "filtered_gene_count": 801
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001669",
+    "name": "photoreceptor cell R8 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 3108,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004227"
+    ],
+    "total_gene_count": 11342,
+    "filtered_gene_count": 845
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001670",
+    "name": "pigment cell cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 4100,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004230"
+    ],
+    "total_gene_count": 11420,
+    "filtered_gene_count": 631
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001671",
+    "name": "proximal medullary amacrine neuron Pm2 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 323,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003835"
+    ],
+    "total_gene_count": 8306,
+    "filtered_gene_count": 840
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001672",
+    "name": "proximal medullary amacrine neuron Pm4 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 252,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111282"
+    ],
+    "total_gene_count": 8122,
+    "filtered_gene_count": 911
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001673",
+    "name": "skeletal muscle of head cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 7765,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003260"
+    ],
+    "total_gene_count": 12991,
+    "filtered_gene_count": 992
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001674",
+    "name": "subperineurial glial cell_head cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 993,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058254"
+    ],
+    "total_gene_count": 10760,
+    "filtered_gene_count": 1001
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001675",
+    "name": "transmedullary Y neuron TmY14 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 664,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111286"
+    ],
+    "total_gene_count": 9225,
+    "filtered_gene_count": 774
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001676",
+    "name": "transmedullary Y neuron TmY4 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 526,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003821"
+    ],
+    "total_gene_count": 8444,
+    "filtered_gene_count": 633
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001677",
+    "name": "transmedullary Y neuron TmY5a cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1431,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003823"
+    ],
+    "total_gene_count": 9868,
+    "filtered_gene_count": 662
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001678",
+    "name": "transmedullary Y neuron TmY8 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1010,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003826"
+    ],
+    "total_gene_count": 9551,
+    "filtered_gene_count": 623
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001679",
+    "name": "transmedullary neuron Tm1 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2454,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003789"
+    ],
+    "total_gene_count": 10836,
+    "filtered_gene_count": 754
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001680",
+    "name": "transmedullary neuron Tm2 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1957,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003790"
+    ],
+    "total_gene_count": 10523,
+    "filtered_gene_count": 726
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001681",
+    "name": "transmedullary neuron Tm20 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 913,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003808"
+    ],
+    "total_gene_count": 9273,
+    "filtered_gene_count": 698
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001682",
+    "name": "transmedullary neuron Tm29 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 342,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049916"
+    ],
+    "total_gene_count": 8898,
+    "filtered_gene_count": 1091
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001683",
+    "name": "transmedullary neuron Tm3a cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2019,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003791"
+    ],
+    "total_gene_count": 10321,
+    "filtered_gene_count": 628
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001684",
+    "name": "transmedullary neuron Tm4 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1158,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003792"
+    ],
+    "total_gene_count": 9481,
+    "filtered_gene_count": 637
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001685",
+    "name": "transmedullary neuron Tm5c cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 459,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00110074"
+    ],
+    "total_gene_count": 8169,
+    "filtered_gene_count": 583
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001686",
+    "name": "transmedullary neuron Tm9 cluster (Aging Fly Cell Atlas head) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001613",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1193,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003797"
+    ],
+    "total_gene_count": 9709,
+    "filtered_gene_count": 579
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001687",
+    "name": "16-cell germline cyst in germarium region 2a and 2b cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 532,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059160"
+    ],
+    "total_gene_count": 10651,
+    "filtered_gene_count": 1627
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001688",
+    "name": "CNS surface associated glial cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 212,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001252"
+    ],
+    "total_gene_count": 7004,
+    "filtered_gene_count": 496
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001689",
+    "name": "adult Malpighian tubule principal cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 47,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005735"
+    ],
+    "total_gene_count": 5289,
+    "filtered_gene_count": 564
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001690",
+    "name": "adult Malpighian tubule principal cell of initial segment cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 70,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049474"
+    ],
+    "total_gene_count": 6680,
+    "filtered_gene_count": 729
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001691",
+    "name": "adult Malpighian tubule principal cell of lower segment cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 52,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049477"
+    ],
+    "total_gene_count": 5795,
+    "filtered_gene_count": 1146
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001692",
+    "name": "adult Malpighian tubule principal cell of lower ureter cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 35,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049478"
+    ],
+    "total_gene_count": 5910,
+    "filtered_gene_count": 1516
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001693",
+    "name": "adult Malpighian tubule stellate cell of main segment cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 10,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047102"
+    ],
+    "total_gene_count": 4083,
+    "filtered_gene_count": 1399
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001694",
+    "name": "adult alary muscle cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2737,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003545"
+    ],
+    "total_gene_count": 12062,
+    "filtered_gene_count": 707
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001695",
+    "name": "adult differentiating enterocyte cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 72,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049281"
+    ],
+    "total_gene_count": 8620,
+    "filtered_gene_count": 2299
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001696",
+    "name": "adult fat body_body cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 31378,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049949"
+    ],
+    "total_gene_count": 14770,
+    "filtered_gene_count": 1435
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001697",
+    "name": "adult glial cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2173,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100497"
+    ],
+    "total_gene_count": 12214,
+    "filtered_gene_count": 597
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001698",
+    "name": "adult heart ventral longitudinal muscle cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 112,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003550"
+    ],
+    "total_gene_count": 6495,
+    "filtered_gene_count": 827
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001699",
+    "name": "adult hindgut cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 715,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058276"
+    ],
+    "total_gene_count": 11559,
+    "filtered_gene_count": 1513
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001700",
+    "name": "adult midgut enterocyte cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 99,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047182"
+    ],
+    "total_gene_count": 8165,
+    "filtered_gene_count": 1175
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001701",
+    "name": "adult midgut-hindgut hybrid zone cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 582,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058275"
+    ],
+    "total_gene_count": 9646,
+    "filtered_gene_count": 748
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001702",
+    "name": "adult oenocyte cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 5937,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003185"
+    ],
+    "total_gene_count": 13564,
+    "filtered_gene_count": 1148
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001703",
+    "name": "adult peripheral nervous system cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 5958,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059276"
+    ],
+    "total_gene_count": 13638,
+    "filtered_gene_count": 813
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001704",
+    "name": "adult reticular neuropil associated glial cell_body cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 540,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047841"
+    ],
+    "total_gene_count": 9533,
+    "filtered_gene_count": 464
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001705",
+    "name": "adult salivary gland cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 587,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059269"
+    ],
+    "total_gene_count": 10371,
+    "filtered_gene_count": 1426
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001706",
+    "name": "adult tracheal cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 7033,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005040"
+    ],
+    "total_gene_count": 13784,
+    "filtered_gene_count": 751
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001707",
+    "name": "adult ventral nervous system cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 22631,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059289"
+    ],
+    "total_gene_count": 14934,
+    "filtered_gene_count": 1163
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001708",
+    "name": "anterior ejaculatory duct cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 189,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058271"
+    ],
+    "total_gene_count": 8755,
+    "filtered_gene_count": 1371
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001709",
+    "name": "antimicrobial peptide-producing cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 106,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059377"
+    ],
+    "total_gene_count": 7387,
+    "filtered_gene_count": 1348
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001710",
+    "name": "cardia (1) cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1064,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058282"
+    ],
+    "total_gene_count": 10771,
+    "filtered_gene_count": 1347
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001711",
+    "name": "cardia (2) cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 60,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058282"
+    ],
+    "total_gene_count": 6091,
+    "filtered_gene_count": 1181
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001712",
+    "name": "cardiomyocyte, working adult heart muscle (non-ostia) cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 34,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058240"
+    ],
+    "total_gene_count": 5709,
+    "filtered_gene_count": 1585
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001713",
+    "name": "cell body glial cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2347,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059270"
+    ],
+    "total_gene_count": 12378,
+    "filtered_gene_count": 770
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001714",
+    "name": "copper cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 153,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00110908"
+    ],
+    "total_gene_count": 8267,
+    "filtered_gene_count": 1148
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001715",
+    "name": "crop cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 6283,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058263"
+    ],
+    "total_gene_count": 13560,
+    "filtered_gene_count": 957
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001716",
+    "name": "cyst cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 201,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004931"
+    ],
+    "total_gene_count": 9406,
+    "filtered_gene_count": 869
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001717",
+    "name": "ejaculatory bulb cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1401,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058269"
+    ],
+    "total_gene_count": 11966,
+    "filtered_gene_count": 1403
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001718",
+    "name": "ejaculatory bulb epithelium cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 549,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058269"
+    ],
+    "total_gene_count": 10612,
+    "filtered_gene_count": 1434
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001719",
+    "name": "enteroblast cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2417,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00110205"
+    ],
+    "total_gene_count": 12286,
+    "filtered_gene_count": 1158
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001720",
+    "name": "enterocyte of anterior adult midgut epithelium cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 182,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049280"
+    ],
+    "total_gene_count": 8858,
+    "filtered_gene_count": 1790
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001721",
+    "name": "enterocyte of posterior adult midgut epithelium cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 752,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007037"
+    ],
+    "total_gene_count": 11487,
+    "filtered_gene_count": 1872
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001722",
+    "name": "enterocyte-like cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 261,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047147"
+    ],
+    "total_gene_count": 8954,
+    "filtered_gene_count": 1373
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001723",
+    "name": "enteroendocrine cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 557,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047149"
+    ],
+    "total_gene_count": 10225,
+    "filtered_gene_count": 849
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001724",
+    "name": "eo support cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2474,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007254"
+    ],
+    "total_gene_count": 11985,
+    "filtered_gene_count": 604
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001725",
+    "name": "epidermal cell that specialized in antimicrobial response cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 99,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058242"
+    ],
+    "total_gene_count": 7282,
+    "filtered_gene_count": 645
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001726",
+    "name": "epithelial cell_body cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 44094,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058238"
+    ],
+    "total_gene_count": 14985,
+    "filtered_gene_count": 611
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001727",
+    "name": "escort cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 756,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00006049"
+    ],
+    "total_gene_count": 10370,
+    "filtered_gene_count": 1155
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001728",
+    "name": "follicle cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 25738,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004904"
+    ],
+    "total_gene_count": 14007,
+    "filtered_gene_count": 989
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001729",
+    "name": "follicle stem cell and prefollicle cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 430,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00006030"
+    ],
+    "total_gene_count": 8482,
+    "filtered_gene_count": 880
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001730",
+    "name": "germline cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 3824,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004860"
+    ],
+    "total_gene_count": 12217,
+    "filtered_gene_count": 1181
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001731",
+    "name": "gustatory receptor neuron cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 701,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058249"
+    ],
+    "total_gene_count": 9932,
+    "filtered_gene_count": 730
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001732",
+    "name": "hemocyte_body cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 3027,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058143"
+    ],
+    "total_gene_count": 12716,
+    "filtered_gene_count": 909
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001733",
+    "name": "indirect flight muscle cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 18057,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003361"
+    ],
+    "total_gene_count": 14492,
+    "filtered_gene_count": 612
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001734",
+    "name": "intestinal stem cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2158,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007039"
+    ],
+    "total_gene_count": 12024,
+    "filtered_gene_count": 878
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001735",
+    "name": "leg muscle motor neuron cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 359,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049568"
+    ],
+    "total_gene_count": 10484,
+    "filtered_gene_count": 1618
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001736",
+    "name": "male accessory gland main cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2015,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004960"
+    ],
+    "total_gene_count": 12993,
+    "filtered_gene_count": 1622
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001737",
+    "name": "male accessory gland secondary cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 20,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004961"
+    ],
+    "total_gene_count": 4294,
+    "filtered_gene_count": 1092
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001738",
+    "name": "mechanosensory neuron of haltere cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 645,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051420"
+    ],
+    "total_gene_count": 10298,
+    "filtered_gene_count": 870
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001739",
+    "name": "midgut large flat cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 73,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00110912"
+    ],
+    "total_gene_count": 7956,
+    "filtered_gene_count": 2056
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001740",
+    "name": "multidendritic neuron cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 263,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048284"
+    ],
+    "total_gene_count": 9490,
+    "filtered_gene_count": 1154
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001741",
+    "name": "muscle cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 54592,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 15078,
+    "filtered_gene_count": 624
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001742",
+    "name": "oviduct cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1517,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058273"
+    ],
+    "total_gene_count": 11096,
+    "filtered_gene_count": 1080
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001743",
+    "name": "perineurial glial sheath cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 2228,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058251"
+    ],
+    "total_gene_count": 12254,
+    "filtered_gene_count": 560
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001744",
+    "name": "pheromone-sensing neuron cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 675,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058247"
+    ],
+    "total_gene_count": 10036,
+    "filtered_gene_count": 756
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001745",
+    "name": "polar follicle cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 304,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004907"
+    ],
+    "total_gene_count": 8887,
+    "filtered_gene_count": 1113
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001746",
+    "name": "posterior midgut* cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 117,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007037"
+    ],
+    "total_gene_count": 7312,
+    "filtered_gene_count": 1362
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001747",
+    "name": "prefollicle cell/stalk follicle cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 275,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00006030"
+    ],
+    "total_gene_count": 9266,
+    "filtered_gene_count": 1164
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001748",
+    "name": "principal cell* cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 131,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005735"
+    ],
+    "total_gene_count": 7574,
+    "filtered_gene_count": 466
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001749",
+    "name": "scolopidial neuron cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1306,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058257"
+    ],
+    "total_gene_count": 11689,
+    "filtered_gene_count": 894
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001750",
+    "name": "seminal vesicle & testis epithelia cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 635,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058238"
+    ],
+    "total_gene_count": 11178,
+    "filtered_gene_count": 1214
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001751",
+    "name": "spermatid cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 131,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004942"
+    ],
+    "total_gene_count": 8160,
+    "filtered_gene_count": 334
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001752",
+    "name": "spermatocyte cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 90,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004936"
+    ],
+    "total_gene_count": 10260,
+    "filtered_gene_count": 909
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001753",
+    "name": "stalk follicle cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 293,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004910"
+    ],
+    "total_gene_count": 7628,
+    "filtered_gene_count": 681
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001754",
+    "name": "subperineurial glial cell_body cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1451,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058254"
+    ],
+    "total_gene_count": 11529,
+    "filtered_gene_count": 608
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001755",
+    "name": "visceral muscle of the crop cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 764,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003532"
+    ],
+    "total_gene_count": 10606,
+    "filtered_gene_count": 836
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001756",
+    "name": "visceral muscle of the midgut cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 1256,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003534"
+    ],
+    "total_gene_count": 11482,
+    "filtered_gene_count": 1134
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00001757",
+    "name": "young germ cell cluster (Aging Fly Cell Atlas body) (Lu 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00001614",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00001468",
+    "cell_number": 224,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00057012"
+    ],
+    "total_gene_count": 8582,
+    "filtered_gene_count": 1085
+  }
+]
