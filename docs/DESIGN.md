@@ -936,7 +936,8 @@ Curator decisions (2026-10-07):
 
 Science 2023, PMID 37319212, FBrf0256843; GEO GSE218661 (`lu_2023_afca`). Whole head
 and body, male and female, single-nucleus 10x, flies F1 of female W1118 × male Oregon R
-(no stock numbers given). Curator decisions 2026-10-15.
+(no stock numbers given). Replaces the old FlyBase/SCEA load FBlc0006422 (fresh
+VFBseq ids); licence CC-BY-4.0. Curator decisions 2026-10-15.
 
 - **New vs reused data.** GEO holds the new 30/50/70-day data: 72 GSMs (head/body ×
   sex × age × 6), each its own sample with one 10x library (the paper: "each age group
