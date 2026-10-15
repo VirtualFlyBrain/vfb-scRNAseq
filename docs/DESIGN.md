@@ -997,6 +997,18 @@ assignments are a mapping cross-check only. Licence CC-BY-4.0. Curator decisions
   whose 5-day cells the FCA called LC17, and R7 vs R8). Information for review only:
   the AFCA label is the authors' typing for these clusters. Most other differences
   are expected — the FCA head/body calls were coarser ("muscle cell", unannotated).
+- **Expression (stage 4):** from `X` of the same files (log1p(CP10k), all genes, no
+  `raw`) → CPM, as for the FCA 10x. Gene ids: symbols only in the AFCA files, so ids
+  from the FCA 10x files' `ID` column (`gene_ids_from`), else Chado by symbol
+  (FB2026_03): 15,891 current, 80 secondary, 20 synonym, 1 split; none unmatched.
+  15,989 genes × 566,254 cells; 143 Clusters, 133,771 rows (extent > 0.2); held entries
+  left out (126,573 cells) but counted in the Dataset's gene counts (total 15,962,
+  filtered 5,399). A reused FCA 5-day cell counts towards its AFCA cluster here, as
+  the authors grouped it (and towards its FCA cluster in `li_2022_fca_10x`). Checks:
+  per-cluster filtered gene counts close to (mostly a little below) the FCA's for
+  the same types; markers in place (Rh3/Rh4 in R7, SP in male accessory gland main
+  cells, apolpp in fat body; indirect flight muscle led by bt / sls / Zasp52 / up —
+  Act88F is below the cutoff in the FCA cluster too).
 - **Author files:** `GSE218661_adata_{head,body}_S_v1.0.h5ad` (no `raw`; `X` = all
   15,992 genes as log1p(CP10k), symbols only); a cell's library is in its name
   (`…_AFCA_female_head_30_S1`, or the FCA sample id). Not annotated: 108,647 head /
