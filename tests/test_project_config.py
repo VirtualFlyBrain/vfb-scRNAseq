@@ -103,3 +103,27 @@ def test_hold_reason():
     assert reason({"label": "C16", "class": "C"}, {"best_match": None}) == "undefined class"
     assert reason({"label": "Hsp"}, {"best_match": None}) == "no term"
     assert reason({"label": "KC"}, term) == ""
+
+
+def test_reused_samples_and_clustering_links(tmp_path, monkeypatch):
+    import json
+    import pytest
+    from vfb_scrnaseq import project_config as pc
+    monkeypatch.setattr(pc, "REPO_ROOT", tmp_path)
+    cfg = {"_project": "new", "reuse": [{"from_project": "src", "samples": ["s1"]}]}
+    with pytest.raises(pc.SourceNotCurated, match="curate src first"):      # not curated yet
+        pc.reused_samples(cfg)
+    (tmp_path / "projects" / "src").mkdir(parents=True)
+    (tmp_path / "projects" / "src" / "samples.json").write_text(json.dumps({"samples": [
+        {"vfbseq_id": "VFBseq_00000001", "sample_id": "s1", "tissue_raw": "head",
+         "assay_vfbseq_ids": ["VFBseq_00000002"]}]}))
+    reused = pc.reused_samples(cfg)
+    assert reused == [{"vfbseq_id": "VFBseq_00000001", "sample_id": "s1", "from_project": "src",
+                       "tissue_raw": "head", "assay_vfbseq_ids": ["VFBseq_00000002"]}]
+    with pytest.raises(pc.SourceNotCurated, match="not found"):
+        pc.reused_samples({"reuse": [{"from_project": "src", "samples": ["s9"]}]})
+    own = [{"vfbseq_id": "VFBseq_00000010", "tissue_raw": "head"},
+           {"vfbseq_id": "VFBseq_00000011", "tissue_raw": "body"}]
+    assert pc.clustering_samples({"id": "h", "sample_tissue_raw": "head"}, own, reused) == \
+        ["VFBseq_00000010", "VFBseq_00000001"]
+    assert pc.clustering_samples("main", own, reused) == []

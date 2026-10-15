@@ -42,7 +42,7 @@ sys.path.insert(0, str(REPO_ROOT / "src"))
 
 from vfb_scrnaseq.ids import IDRegistry  # noqa: E402
 from vfb_scrnaseq.ingest_arrayexpress import fetch_experiment  # noqa: E402
-from vfb_scrnaseq.project_config import load_config  # noqa: E402
+from vfb_scrnaseq.project_config import clustering_samples, load_config, reused_samples  # noqa: E402
 
 
 def assay_key(row: dict, sb: dict) -> str | None:
@@ -175,6 +175,7 @@ def main() -> None:
     accession = cfg["dataset"]["accession"]
     site = cfg["dataset"].get("site", "ArrayExpress")
 
+    reused = reused_samples(cfg)        # stops first if a source study is not curated yet
     idf, rows = fetch_experiment(accession)
     reg = IDRegistry.load(REPO_ROOT / "id_registry" / "registry.json")
     title = (idf.get("Investigation Title") or [accession])[0]
@@ -192,6 +193,9 @@ def main() -> None:
         rec = {"vfbseq_id": cid, "subset": subset, "associated_dataset": dataset_id}
         if name:
             rec["name"] = name
+        used = clustering_samples(entry, samples_out, reused)
+        if used:
+            rec["samples"] = used
         clusterings_out.append(rec)
 
     out = {
@@ -200,11 +204,14 @@ def main() -> None:
         "assays": assays_out,
         "clusterings": clusterings_out,
     }
+    if reused:
+        out["reused_samples"] = reused
     out_path = REPO_ROOT / "projects" / args.project / "samples.json"
     out_path.write_text(json.dumps(out, indent=2) + "\n")
     reg.save()
     print(f"wrote {len(samples_out)} samples, {len(assays_out)} assays, "
-          f"{len(clusterings_out)} clusterings -> {out_path}")
+          f"{len(clusterings_out)} clusterings"
+          f"{f', {len(reused)} reused samples' if reused else ''} -> {out_path}")
 
 
 if __name__ == "__main__":

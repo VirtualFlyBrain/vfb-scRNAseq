@@ -16,6 +16,9 @@ clusters mapped to FBbt, for loading into Virtual Fly Brain. Read `README.md`, t
   term-request issue without explicit curator sign-off**; when one is opened, add it
   to `checks/pending_fbbt_requests.json`.
 - Stage goes on Samples; on a Cluster only if determined from its own expression.
+- Reuse identical Samples/Assays from another study by their existing VFBseq ids
+  (never mint duplicates); if that study isn't curated yet, tell the curator and
+  suggest curating it first.
 
 ## Conventions
 

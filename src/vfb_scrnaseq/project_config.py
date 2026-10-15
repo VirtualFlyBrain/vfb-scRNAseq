@@ -173,3 +173,53 @@ def broad_anchor(project: str, config: dict, cls: str, clustering: str | None = 
     unid = config.get("unidentified") or {}
     per = (unid.get("clustering_class_anchors") or {}).get(clustering or "", {})
     return per.get(cls) or unid.get("class_anchors", {}).get(cls)
+
+
+class SourceNotCurated(SystemExit):
+    """A project reuses entities from a study that has not been curated yet."""
+
+
+def reused_samples(config: dict) -> list[dict]:
+    """Samples (and their Assays) this project reuses from other, already-curated
+    projects (``reuse`` in config.yaml), as records for samples.json::
+
+        reuse:
+          - from_project: li_2022_fca_10x
+            note: "5-day head/body samples re-analysed with the new ages"
+            samples: [d541ae4e__FCA1_MaleFemale_Head, ...]   # source sample_id values
+
+    Identical entities are referenced by their existing VFBseq ids, never re-minted
+    (general curation rule). Stops with a message for the curator if the source study
+    has not been curated (no samples.json) or lacks a listed sample: curate it first.
+    """
+    out = []
+    for entry in config.get("reuse") or []:
+        src = entry["from_project"]
+        sfile = project_dir(src) / "samples.json"
+        if not sfile.exists():
+            raise SourceNotCurated(
+                f"{config.get('_project')}: reuses samples from {src!r}, which has not been "
+                f"curated yet (no projects/{src}/samples.json). CURATOR: curate {src} first, "
+                f"so the shared Samples/Assays get their ids and metadata there.")
+        by_id = {s["sample_id"]: s for s in json.loads(sfile.read_text())["samples"]}
+        missing = [sid for sid in entry["samples"] if sid not in by_id]
+        if missing:
+            raise SourceNotCurated(
+                f"{config.get('_project')}: samples not found in {src} (curate them there "
+                f"first): {missing}")
+        for sid in entry["samples"]:
+            s = by_id[sid]
+            out.append({"vfbseq_id": s["vfbseq_id"], "sample_id": sid, "from_project": src,
+                        "tissue_raw": s.get("tissue_raw"),
+                        "assay_vfbseq_ids": s["assay_vfbseq_ids"]})
+    return out
+
+
+def clustering_samples(entry: dict, own: list[dict], reused: list[dict]) -> list[str]:
+    """VFBseq ids of the Samples a clustering uses: with ``sample_tissue_raw`` in its
+    `sample_build.clusterings` entry, the own and reused samples of that raw tissue;
+    otherwise none recorded."""
+    tissue = entry.get("sample_tissue_raw") if isinstance(entry, dict) else None
+    if not tissue:
+        return []
+    return [s["vfbseq_id"] for s in own + reused if s.get("tissue_raw") == tissue]
