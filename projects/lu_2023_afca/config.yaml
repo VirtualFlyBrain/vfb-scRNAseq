@@ -56,8 +56,14 @@ sample_build:
   # One Clustering per author analysis (the GEO h5ad files), each using the new
   # samples of its tissue plus the reused FCA 5-day samples of that tissue.
   clusterings:
-    - { id: head, name: Aging Fly Cell Atlas head, sample_tissue_raw: head }
-    - { id: body, name: Aging Fly Cell Atlas body, sample_tissue_raw: body }
+    - id: head
+      name: Aging Fly Cell Atlas head
+      sample_tissue_raw: head
+      h5ad: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218661/suppl/GSE218661_adata_head_S_v1.0.h5ad.gz
+    - id: body
+      name: Aging Fly Cell Atlas body
+      sample_tissue_raw: body
+      h5ad: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218661/suppl/GSE218661_adata_body_S_v1.0.h5ad.gz
 
 # The 5-day cells are the FCA 10x Stringent Head / Body cells (same barcodes and
 # libraries), so their Samples and Assays are reused from li_2022_fca_10x by VFBseq id.
@@ -91,3 +97,28 @@ reuse:
       - f8438c5e__FCA25_Female_body_adult
       - f84bfd1c__FCA26_Female_body_adult
       - f8548b44__FCA27_Female_body_adult
+
+# Clusters (scripts/build_annotations_from_h5ad.py): one entry per author
+# `afca_annotation` type per analysis, over all ages (5-day FCA cells included).
+# Labels are `<head|body>_<type>`. The authors' broad class is kept for mapping;
+# per-sex, per-age and per-source (FCA 5-day vs AFCA) cell counts are recorded.
+annotation_build:
+  annotation_column: afca_annotation
+  broad_column: afca_annotation_broad
+  sex_column: sex
+  count_columns: [age, dataset]
+  unannotated_values: [unannotated]
+  label_source: "authors' AnnData files (GEO GSE218661 supplementary)"
+
+annotations:
+  # shown after the cluster key in mapping.tsv
+  review_columns: [clustering, source_cluster_id, type, author_broad]
+
+# "unannotated" cells of each analysis are one entry, flagged `unannotated` and held
+# (leftover). The 17 numbered head types "neuron 1"-"neuron 17" (new in the paper,
+# not named) are held as untyped. Held entries are listed in mapping.tsv, not loaded.
+unidentified:
+  rule: 'regex:neuron \d+'
+  hold_unidentified: true
+  hold_reasons: {unannotated: leftover}
+

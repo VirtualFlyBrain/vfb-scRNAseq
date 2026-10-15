@@ -16,6 +16,10 @@ Config (`annotation_build` in config.yaml):
   broad_column            obs column with the author's broad class (optional)
   broad_ontology_column   ... and its ontology id (optional)
   sex_column              obs column for per-sex cell counts (optional)
+  count_columns           further obs columns for per-value cell counts, written as
+                          `cells_by_<column>` (optional; e.g. [age, dataset])
+  label_source            where the annotation comes from, for the output header
+                          (default: the FCA's flycellatlas.org files)
   unannotated_values      annotation values that are not a cell type (e.g.
                           "unannotated", "artefact"): the entry is kept, flagged
                           `unannotated`, and held (in mapping.tsv, not loaded)
@@ -78,11 +82,13 @@ def build_clustering(obs: dict[str, list], ab: dict, clustering: str, clustering
         return []
     extra = {k: ab.get(k) for k in ("ontology_column", "broad_column", "broad_ontology_column")}
     sex_col = ab.get("sex_column")
+    count_cols = [c for c in ab.get("count_columns", []) if c in obs]
     unannotated = set(ab.get("unannotated_values", []))
 
     cells: Counter[str] = Counter()
     carried: dict[str, dict[str, Counter]] = defaultdict(lambda: defaultdict(Counter))
     sexes: dict[str, Counter] = defaultdict(Counter)
+    counts: dict[str, dict[str, Counter]] = defaultdict(lambda: defaultdict(Counter))
     for i, a in enumerate(obs[ann_col]):
         if a is None:
             warnings.append(f"{clustering}: cell {obs['_index'][i]} has no {ann_col}")
@@ -93,6 +99,8 @@ def build_clustering(obs: dict[str, list], ab: dict, clustering: str, clustering
                 carried[a][key][obs[col][i]] += 1
         if sex_col:
             sexes[a][obs[sex_col][i]] += 1
+        for col in count_cols:
+            counts[a][col][str(obs[col][i])] += 1
 
     out = []
     for a in sorted(cells):
@@ -114,6 +122,9 @@ def build_clustering(obs: dict[str, list], ab: dict, clustering: str, clustering
                                     f"{dict(carried[a][key])}")
         if sex_col:
             rec["cells_by_sex"] = dict(sorted(sexes[a].items()))
+        for col in count_cols:
+            rec[f"cells_by_{col}"] = dict(sorted(counts[a][col].items(),
+                                                 key=lambda kv: (len(kv[0]), kv[0])))
         if a in unannotated:
             rec["unannotated"] = True
         elif ab.get("membership"):
@@ -130,7 +141,8 @@ def main() -> None:
     ab = cfg["annotation_build"]
     acc = cfg["dataset"]["accession"]
     wanted = [c for c in (ab["annotation_column"], ab.get("ontology_column"), ab.get("broad_column"),
-                          ab.get("broad_ontology_column"), ab.get("sex_column")) if c]
+                          ab.get("broad_ontology_column"), ab.get("sex_column"),
+                          *ab.get("count_columns", [])) if c]
     lookup = {}
     if ab.get("author_ontology_from"):
         other = REPO_ROOT / "projects" / ab["author_ontology_from"] / "cell_type_annotations.json"
@@ -168,8 +180,8 @@ def main() -> None:
         "source": {"doi": cfg["source"]["doi"], "title": cfg["source"].get("title")},
         "dataset": {
             "accession": acc,
-            "label_source": "authors' per-analysis h5ad files (flycellatlas.org), obs "
-                            f"`{ab['annotation_column']}`",
+            "label_source": ab.get("label_source", "authors' per-analysis h5ad files (flycellatlas.org)")
+                            + f", obs `{ab['annotation_column']}`",
             "label_level": "author cell type (one entry per annotation, per analysis)",
             "validate_against": "paper and supplementary tables",
         },
