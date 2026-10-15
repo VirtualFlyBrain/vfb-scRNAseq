@@ -1,0 +1,36 @@
+{
+  "cluster_label": "head_adult lamina epithelial/marginal glial cell",
+  "working_definition": "Author cell type 'adult lamina epithelial/marginal glial cell' of the Fly Cell Atlas (Li et al. 2022; adult head, 984 cells): lamina glia, grouped call of epithelial and marginal glial cells; authors' terms FBbt:00100513 and FBbt:00005722.",
+  "searches_performed": [
+    "authors' ontology ids FBbt:00100513, FBbt:00005722",
+    "'adult lamina epithelial glial cell' (OLS fbbt)",
+    "'adult lamina glial cell' (EBI OLS4 fbbt)",
+    "ancestors of both members via EBI OLS4"
+  ],
+  "best_match": {
+    "fbbt_term": "adult lamina neuropil associated glial cell",
+    "fbbt_id": "FBbt:00058264",
+    "fbbt_definition": "Glial cell located in the lamina neuropil (Kremer et al., 2017).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Grouped call. Both adult lamina epithelial glial cell and adult lamina marginal glial cell have adult lamina neuropil associated glial cell as an ancestor (verified), and it is the most specific common parent.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult lamina epithelial glial cell",
+      "fbbt_id": "FBbt:00100513",
+      "fbbt_definition": "Astrocyte-like (reticular) glial cell of the adult lamina.",
+      "reason_rejected": "One member of the group."
+    },
+    {
+      "fbbt_term": "adult lamina marginal glial cell",
+      "fbbt_id": "FBbt:00005722",
+      "fbbt_definition": "Specialized ensheathing glial cell of the lamina.",
+      "reason_rejected": "One member of the group."
+    }
+  ],
+  "recommendation": "Broad match to the common parent; members listed.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

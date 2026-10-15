@@ -1,0 +1,29 @@
+{
+  "cluster_label": "body_epidermal cell that specialized in antimicrobial response",
+  "working_definition": "Adult epidermal cells specialised in antimicrobial peptide response (FCA body wall); authors gave no FBbt term (Manual Annotation).",
+  "searches_performed": [
+    "epidermal cell",
+    "adult epidermal cell",
+    "antimicrobial epidermal cell"
+  ],
+  "best_match": {
+    "fbbt_term": "adult epidermal cell",
+    "fbbt_id": "FBbt:00058242",
+    "fbbt_definition": "Any epidermal cell of the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "No FBbt term for an antimicrobial-specialised epidermal cell; adult epidermal cell is the valid parent.",
+  "other_candidates": [
+    {
+      "fbbt_term": "epidermal cell",
+      "fbbt_id": "FBbt:00007325",
+      "fbbt_definition": "Any epithelial cell that is part of some epidermis.",
+      "reason_rejected": "Not stage-specific."
+    }
+  ],
+  "recommendation": "Use adult epidermal cell (FBbt:00058242) as a broad match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

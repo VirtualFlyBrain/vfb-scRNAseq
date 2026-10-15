@@ -1,0 +1,22 @@
+{
+  "cluster_label": "body_adult heart ventral longitudinal muscle",
+  "working_definition": "Author cell type 'adult heart ventral longitudinal muscle' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00003550 'adult heart ventral longitudinal muscle cell'. Found in: 10x:heart (599 cells), ss2:heart (23 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00003550 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult heart ventral longitudinal muscle cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult heart ventral longitudinal muscle' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult heart ventral longitudinal muscle cell",
+    "fbbt_id": "FBbt:00003550",
+    "fbbt_definition": "Muscle cell of the longitudinal muscle of the adult heart that spreads over the outer layer of the ventral side of this organ.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00003550 'adult heart ventral longitudinal muscle cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00003550 'adult heart ventral longitudinal muscle cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

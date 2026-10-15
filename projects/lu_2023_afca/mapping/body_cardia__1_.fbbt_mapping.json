@@ -1,0 +1,30 @@
+{
+  "cluster_label": "body_cardia (1)",
+  "working_definition": "Epithelial cells of the cardia (proventriculus) region from the gut analysis, one of two numbered cardia clusters (Li et al. 2022; Manual Annotation).",
+  "searches_performed": [
+    "cardia (1)",
+    "cardia cell",
+    "adult proventriculus epithelial cell",
+    "proventriculus cell"
+  ],
+  "best_match": {
+    "fbbt_term": "adult proventriculus epithelial cell",
+    "fbbt_id": "FBbt:00058282",
+    "fbbt_definition": "Cell of the epithelium lining the adult proventriculus. These cells varies in height from low cuboidal in the inner layer to tall columnar in parts of the intermediate and outer layers (King, 1988).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The cardia is the proventriculus; the authors' cluster is a subset of its epithelial cells, which FBbt covers with adult proventriculus epithelial cell (zone-specific children exist, but the authors do not name a zone).",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult midgut cell of proventriculus",
+      "fbbt_id": "FBbt:00049283",
+      "fbbt_definition": "Cell of the adult proventriculus that is part of the midgut (King, 1988); express Pgant4 (Hung et al., 2020).",
+      "reason_rejected": "Only the midgut-derived part of the cardia; authors name the whole cardia."
+    }
+  ],
+  "recommendation": "Map to FBbt:00058282 (broad).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

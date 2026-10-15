@@ -838,7 +838,9 @@ VFB until the release files are merged, so ids can still change during review.
    that broad-match parents are true ancestors of the members.
    When author types recur across clusterings, map once per type into
    `type_mapping/` and copy per cluster with `expand_type_mappings.py` (config
-   `type_mapping.from` lets a sibling project share them).
+   `type_mapping.from` lets another project share them, the project's own
+   `type_mapping/` taking precedence; `type_mapping.aliases` maps a type to its name
+   in that project, e.g. AFCA "epithelial cell_head" → FCA "epithelial cell").
 8. **Review:** `collate_mapping.py` → `mapping.tsv` (optionally with a `prior_mapping`
    crosswalk to the old load); curator changes are made in the mapping JSON with a
    `manual_edit` block.
@@ -972,6 +974,29 @@ assignments are a mapping cross-check only. Licence CC-BY-4.0. Curator decisions
   `unidentified.rule`). 145 named types to map; 143 share a name with an FCA type
   (10 of them with a `_head`/`_body` suffix), new: "cyst cell", "seminal vesicle &
   testis epithelia".
+- **Mapping (stage 3, FBbt 2026-10-01).** The AFCA labels were transferred from the
+  FCA's annotations (preprint methods: from "the body and individual tissues (e.g.,
+  gut, wing, leg, testis, ovary, fat body etc)", then checked against markers), so
+  each AFCA type takes the FCA's curator-reviewed type-level mapping by name
+  (`type_mapping.from: li_2022_fca_10x`): 133 by the same name, 10 `_head`/`_body`
+  types by alias to the FCA type (no narrowing by dissected tissue). The two types
+  the FCA lacks got reports (`reports/`; the PMC text is only Science's short article,
+  so the preprint methods were used) and agent mappings in `lu_2023_afca/type_mapping/`:
+  "cyst cell" → *cyst cell of testis* (broad; a grouped call over the FCA testis
+  cyst-cell stages) and "seminal vesicle & testis epithelia" → *adult epithelial cell*
+  (broad; FBbt has no cell-level term for seminal vesicle epithelium — the FCA held
+  "seminal vesicle"). 143 Clusters mapped (130 distinct FBbt terms, all current); held:
+  the FCA's no-term types "Poxn neuron" and "female reproductive system", plus the 17
+  untyped and 2 leftover entries.
+- **Cross-checks.** (1) The old load's terms: 93 of its 100 FBbt terms are used here;
+  the 7 others are granularity or newer-term differences (e.g. old *antennal lobe
+  projection neuron* vs the adult term now used; generic "neurons"). (2) The 5-day
+  cells: where the FCA head/body analysis called an AFCA type's 5-day cells something
+  with a different, non-broader FBbt term (≥ 20% of them), listed in
+  `fca_5d_conflicts.tsv` (`fca_5d_conflicts.py`; 16 types, e.g. AFCA "T neuron T4/T5"
+  whose 5-day cells the FCA called LC17, and R7 vs R8). Information for review only:
+  the AFCA label is the authors' typing for these clusters. Most other differences
+  are expected — the FCA head/body calls were coarser ("muscle cell", unannotated).
 - **Author files:** `GSE218661_adata_{head,body}_S_v1.0.h5ad` (no `raw`; `X` = all
   15,992 genes as log1p(CP10k), symbols only); a cell's library is in its name
   (`…_AFCA_female_head_30_S1`, or the FCA sample id). Not annotated: 108,647 head /

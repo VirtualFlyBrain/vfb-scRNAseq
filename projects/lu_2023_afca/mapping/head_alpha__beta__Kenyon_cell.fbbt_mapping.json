@@ -1,0 +1,29 @@
+{
+  "cluster_label": "head_alpha'/beta' Kenyon cell",
+  "working_definition": "Author cell type 'alpha'/beta' Kenyon cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00100249 'alpha'/beta' Kenyon cell'. Found in: 10x:head (431 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00100249 (FBbt fbbt/releases/2026-10-01)",
+    "'adult alpha'/beta' Kenyon cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'alpha'/beta' Kenyon cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult alpha'/beta' Kenyon cell",
+    "fbbt_id": "FBbt:00049834",
+    "fbbt_definition": "Mushroom body neuron of the adult that bifurcates at the anterior end of the pedunculus, projecting into the mushroom body alpha'-lobe and beta'-lobe (Lee et al., 1999; Tanaka et al., 2008). It develops from a larval alpha'/beta' Kenyon cell with little alteration during metamorphosis (Lee et al., 1999). In the pedunculus, the alpha' and beta' neurons occupy an intermediate stratum between the gamma axons at the periphery and the alpha/beta neurons at the core (Tanaka et al., 2008; Li et al., 2020). Most arborize in the main calyx, with a subset arborizing in the lateral accessory calyx (Marin et al., 2020). There is a total of around 340 of these cells per hemisphere (Li et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00100249 'alpha'/beta' Kenyon cell', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00049834 'adult alpha'/beta' Kenyon cell', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "alpha'/beta' Kenyon cell",
+      "fbbt_id": "FBbt:00100249",
+      "fbbt_definition": "Mushroom body neuron that is born during the late-larval stage, after the gamma neurons (Lee et al., 1999). Its axon bifurcates at the anterior end of the pedunculus, projecting into the medial and vertical lobes (Lee et al., 1999). During the pupal stage, it remains largely the same and forms the alpha'/beta' lobes of the adult (Lee et al., 1999).",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00049834 'adult alpha'/beta' Kenyon cell' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

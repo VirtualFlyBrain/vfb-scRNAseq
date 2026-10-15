@@ -1,0 +1,22 @@
+{
+  "cluster_label": "head_transmedullary Y neuron TmY4",
+  "working_definition": "Author cell type 'transmedullary Y neuron TmY4' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00003821 'transmedullary Y neuron TmY4'. Found in: 10x:head (135 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00003821 (FBbt fbbt/releases/2026-10-01)",
+    "'adult transmedullary Y neuron TmY4' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'transmedullary Y neuron TmY4' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "transmedullary Y neuron TmY4",
+    "fbbt_id": "FBbt:00003821",
+    "fbbt_definition": "Transmedullary Y wide-field neuron that terminates with both fine and bleb-type arborizations in lobula layer 4 and in lobula plate layers 2, 3 and 4, but shows only fine arborizations in lobula plate layer 1. It displays both fine and bleb-type arborizations in medulla layer M8, but has only fine arborizations in medulla layer M3 and M4 (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). It is cholinergic (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00003821 'transmedullary Y neuron TmY4', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00003821 'transmedullary Y neuron TmY4', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

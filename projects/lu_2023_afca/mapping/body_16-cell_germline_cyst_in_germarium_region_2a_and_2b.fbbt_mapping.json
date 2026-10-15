@@ -1,0 +1,36 @@
+{
+  "cluster_label": "body_16-cell germline cyst in germarium region 2a and 2b",
+  "working_definition": "Female germline cyst cells of the 16-cell stage in germarium regions 2a/2b of the adult ovary (Li et al. 2022, Manual Annotation; broad class female germline cell).",
+  "searches_performed": [
+    "16-cell germline cyst in germarium region 2a and 2b",
+    "germline cyst cell",
+    "female germline 16-cell cyst",
+    "cyst cell of ovary"
+  ],
+  "best_match": {
+    "fbbt_term": "cyst cell of female germline 16-cell cyst",
+    "fbbt_id": "FBbt:00059160",
+    "fbbt_definition": "One of the 16 cyst cells that make up a female germline 16-cell cyst, resulting from the fourth and last round of cystoblast division (Hinnant et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "The label names the 16-cell germline cyst in the germarium; the cluster is composed of its cyst cells, which FBbt has as a specific cell term. The region qualifier is a location detail not captured by the term.",
+  "other_candidates": [
+    {
+      "fbbt_term": "female germline 16-cell cyst",
+      "fbbt_id": "FBbt:00048534",
+      "fbbt_definition": "Cyst composed of 16 cyst cells following the division of each cyst cell in an 8-cell cyst.",
+      "reason_rejected": "Multicellular structure, not a cell term."
+    },
+    {
+      "fbbt_term": "female germline cell",
+      "fbbt_id": "FBbt:00057012",
+      "fbbt_definition": "Cell that develops into or is itself an egg.",
+      "reason_rejected": "Too broad; a specific cell term exists."
+    }
+  ],
+  "recommendation": "Map to FBbt:00059160 (medium confidence).",
+  "new_term_needed": false,
+  "verification_needed": false
+}
