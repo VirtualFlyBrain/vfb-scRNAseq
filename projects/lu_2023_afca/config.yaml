@@ -98,6 +98,24 @@ reuse:
       - f84bfd1c__FCA26_Female_body_adult
       - f8548b44__FCA27_Female_body_adult
 
+# Summary expression (scripts/build_expression.py) from the same h5ad files: no `raw`;
+# `X` holds all 15,992 genes as log(counts per 10,000 + 1) (every cell sums to 1e4),
+# converted to CPM as (e^x - 1) x 100, as for the FCA 10x. Clusters are the authors'
+# types over all ages, so a reused FCA 5-day cell counts towards its AFCA cluster
+# here (and towards its FCA cluster in li_2022_fca_10x).
+expression:
+  source: h5ad
+  values: log1p_cp10k
+  normalisation: CPM
+  extent_cutoff: 0.2
+  hide_in_terminfo: "true"
+  gzip_tsv: true          # expression.tsv.gz (too large to commit plain)
+  # gene symbol -> current FlyBase gene (scripts/update_gene_ids.py). The AFCA files
+  # carry symbols only: ids come from the FCA 10x files' `ID` column for the same
+  # symbols, else are looked up by symbol in Chado.
+  gene_id_map: gene_id_map.tsv
+  gene_ids_from: [li_2022_fca_10x]
+
 # Clusters (scripts/build_annotations_from_h5ad.py): one entry per author
 # `afca_annotation` type per analysis, over all ages (5-day FCA cells included).
 # Labels are `<head|body>_<type>`. The authors' broad class is kept for mapping;
