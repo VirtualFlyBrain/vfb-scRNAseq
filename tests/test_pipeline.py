@@ -158,3 +158,26 @@ def test_mapping_files_match_cluster_labels():
             m = json.loads(f.read_text())
             assert m["cluster_label"] in labels, (project, f.name)
             assert f.name == project_config.label_slug(m["cluster_label"]) + ".fbbt_mapping.json"
+
+
+def test_sample_and_assay_names_unique():
+    """Sample and Assay labels are unique within each project (Assay labels are the
+    Sample's plus the lane / library / plate, `sample_build.assay_label`)."""
+    for ent_file in sorted((REPO / "projects").glob("*/entities.json")):
+        ents = json.loads(ent_file.read_text())
+        for t in ("Sample", "Assay"):
+            names = [e["name"] for e in ents if e["type"] == t]
+            dups = sorted({n for n in names if names.count(n) > 1})
+            assert not dups, f"{ent_file.parent.name}: duplicate {t} names {dups[:3]}"
+
+
+def test_assay_namer():
+    from vfb_scrnaseq.build import _assay_namer
+    assays = [{"library_id": f"W_24h_A_{i}", "sample_vfbseq_id": "S1"} for i in (1, 2)]
+    descr = {"S1": "optic lobes, 24h APF, W rep A"}
+    cfg = {"sample_build": {"assay_label": {"unit": "10x lane", "pattern": r"_(\d+)$", "of_total": True}}}
+    name = _assay_namer(cfg, assays, descr, " (X 2020)")
+    assert name(assays[1]) == "optic lobes, 24h APF, W rep A, 10x lane 2 of 2 (X 2020)"
+    cfg = {"sample_build": {"assay_label": {"unit": "10x library"}}}
+    assert _assay_namer(cfg, assays, descr, "")(assays[0]) == "optic lobes, 24h APF, W rep A, 10x library"
+    assert _assay_namer({}, [{"accession": "GSM1"}], {}, "")({"accession": "GSM1"}) == "GSM1"
