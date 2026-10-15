@@ -821,7 +821,7 @@ VFB until the release files are merged, so ids can still change during review.
    layouts it can't express, a project script writes `cell_type_annotations.json`
    (as `projects/davie_2018/build_clusters.py` does).
    When the authors publish AnnData files (one per analysis), list each as an
-   `h5ad` URL on its clustering, fetch with `fetch_h5ad.py` (into `.cache/h5ad/`) and
+   `h5ad` URL on its clustering, fetch with `fetch_h5ad.py` (into `.cache/h5ad/`; gzipped downloads are decompressed, and files the authors stored uncompressed are recompressed with HDF5's own gzip filter — lossless, verified dataset by dataset, read transparently by h5py — `--compress-existing` for files already cached) and
    build with `build_annotations_from_h5ad.py` (`annotation_build` config: the obs
    annotation / author ontology id / broad class / sex columns; `unannotated_values`
    are kept as one flagged entry per analysis, held and so not loaded). `ingest_h5ad.read_obs` reads obs with h5py from the
