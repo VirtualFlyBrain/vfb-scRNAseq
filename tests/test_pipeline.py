@@ -181,3 +181,12 @@ def test_assay_namer():
     cfg = {"sample_build": {"assay_label": {"unit": "10x library"}}}
     assert _assay_namer(cfg, assays, descr, "")(assays[0]) == "optic lobes, 24h APF, W rep A, 10x library"
     assert _assay_namer({}, [{"accession": "GSM1"}], {}, "")({"accession": "GSM1"}) == "GSM1"
+
+
+def test_geo_title_regex_extra_groups_join_sample_id():
+    mod = _script("build_samples_from_geo")
+    parse = mod.title_parser(r"regex:(?P<set>Male|Female)_(?P<tissue>head|body)_adult_"
+                             r"(?P<timepoint>\d+d)WT_Hongjie_(?P<biorep>S\d+)_S\d+")
+    p = parse("Female_body_adult_30dWT_Hongjie_S1_S1")
+    assert p["sample_id"] == "Female_body_30d_S1" and p["set"] == "Female" and p["techrep"] is None
+    assert parse("Female_wing_adult_30dWT_Hongjie_S1_S1") is None
