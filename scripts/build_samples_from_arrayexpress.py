@@ -12,6 +12,8 @@ projects/<name>/samples.json. Config-driven (`sample_build` in config.yaml):
                    plate parsed from the cell name)
   assay_xrefs      SDRF columns recorded as Assay dbxrefs when single-valued per assay
                    (ENA experiment, BioSamples); per-cell ids are not listed
+  sample_label_id  regex on the sample id; group 1 (the authors' sample id, e.g.
+                   FCA4) is added to the Sample label, to tell like samples apart
   sex_column / sex_map, age_column / age_map, tissue_column / tissue_map,
   genotype_columns / stock_map, assay_method, clusterings
   sdrf_corrections [{match: {column: value}, set: {column: value}, note}] curator
@@ -135,6 +137,12 @@ def build(rows: list[dict], sb: dict, accession: str, reg: IDRegistry, dataset_i
             })
         label_bits = [tissue_raw, f"{age_raw} {sb.get('age_unit', 'days')}" if age_raw else None, sex_raw,
                       genotype if genotype and genotype not in sb.get("wild_type_genotypes", []) else None]
+        if sb.get("sample_label_id"):
+            # the authors' own sample id, to tell apart samples that are otherwise alike
+            m = re.search(sb["sample_label_id"], sample_id)
+            if not m:
+                raise SystemExit(f"sample_label_id {sb['sample_label_id']!r} does not match {sample_id!r}")
+            label_bits.append(m.group(1))
         notes = sorted({n for m in members for n in m.get("_notes", [])})
         rec = {
             "vfbseq_id": sample_vid,

@@ -37,6 +37,7 @@ sample_build:
   assay_regex: { column: Source Name, pattern: '^FCA_(?P<assay>P\d+)_' }
   assay_xrefs: []
   assay_method: { fbcv_id: FBcv:0009007, label: Smart-seq2 }
+  assay_label: { unit: Smart-seq2 plate, pattern: '^(.+)$' }
   sex_column: Characteristics[sex]
   sex_map: { femal: female }  # SDRF typo; "mixed" leaves sex unset
   age_column: Characteristics[age]
