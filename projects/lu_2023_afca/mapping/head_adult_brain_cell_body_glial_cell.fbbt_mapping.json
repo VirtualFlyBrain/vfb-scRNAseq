@@ -1,0 +1,22 @@
+{
+  "cluster_label": "head_adult brain cell body glial cell",
+  "working_definition": "Author cell type 'adult brain cell body glial cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00100501 'adult brain cell body glial cell'. Found in: 10x:head (67 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00100501 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult brain cell body glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult brain cell body glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult brain cell body glial cell",
+    "fbbt_id": "FBbt:00100501",
+    "fbbt_definition": "Glial cell of the adult that is associated with the cell body rind of the brain. They have multiple lamelliform processes that intercalate in between neurons and wrap neuronal cell bodies (Hartenstein, 2011). They also wrap neuronal processes as they travel across the cell body rind (Kremer et al., 2017).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00100501 'adult brain cell body glial cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00100501 'adult brain cell body glial cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

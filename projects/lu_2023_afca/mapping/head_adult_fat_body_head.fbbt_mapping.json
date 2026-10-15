@@ -1,0 +1,28 @@
+{
+  "cluster_label": "head_adult fat body_head",
+  "working_definition": "Fat cells of the adult fat body (FCA, adult flies, found across many tissues); authors' FBbt term is the tissue adult fat body.",
+  "searches_performed": [
+    "adult fat body",
+    "adult fat cell"
+  ],
+  "best_match": {
+    "fbbt_term": "adult fat cell",
+    "fbbt_id": "FBbt:00049949",
+    "fbbt_definition": "Fat cell of the adult fat body. These cells are derived from cells of the larval body wall and adepithelial cells associated with imaginal discs (Hoshizaki et al., 1995; Musselman and Kuhnlein, 2018). Fully-differentiated adult fat cells are found from around 3-4 days after eclosion (Aguila et al., 2007). Unlike the larval fat cells, they are diploid (Musselman and Kuhnlein, 2018).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Authors' term FBbt:00003209 is a tissue; the cell-level equivalent is adult fat cell, the principal cell type of the adult fat body.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult fat body",
+      "fbbt_id": "FBbt:00003209",
+      "fbbt_definition": "Fat body of the adult.",
+      "reason_rejected": "Authors' tissue term; not a cell term."
+    }
+  ],
+  "recommendation": "Use adult fat cell (FBbt:00049949).",
+  "new_term_needed": false,
+  "verification_needed": false
+}
