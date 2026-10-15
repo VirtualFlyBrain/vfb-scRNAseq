@@ -1,0 +1,36 @@
+{
+  "cluster_label": "body_follicle stem cell and prefollicle cell",
+  "working_definition": "Germarium somatic cells: follicle stem cells and their prefollicle cell progeny in the adult ovary (Li et al. 2022, Fly Cell Atlas). Authors gave 'Manual Annotation' (no FBbt id); broad class somatic precursor cell.",
+  "searches_performed": [
+    "follicle stem cell and prefollicle cell",
+    "follicle stem cell",
+    "prefollicle cell",
+    "somatic cell of ovariole"
+  ],
+  "best_match": {
+    "fbbt_term": "somatic cell of ovariole",
+    "fbbt_id": "FBbt:00006030",
+    "fbbt_definition": "Somatic cell that is part of the ovariole. This does not include the ovarian sheath.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Grouped call of two types. Both follicle stem cell (FBbt:00004903) and prefollicle cell (FBbt:00047835) have somatic cell of ovariole as a direct parent (verified via OLS); the follicle stem cell is also a somatic stem cell, and prefollicle is not a follicle cell, so somatic cell of ovariole is the most specific common ancestor.",
+  "other_candidates": [
+    {
+      "fbbt_term": "follicle stem cell",
+      "fbbt_id": "FBbt:00004903",
+      "fbbt_definition": "Stem cell from which the follicle cells that envelop the germline cyst derive. There are two follicle stem cells in each germarium.",
+      "reason_rejected": "Group member; not a parent of prefollicle cell."
+    },
+    {
+      "fbbt_term": "prefollicle cell",
+      "fbbt_id": "FBbt:00047835",
+      "fbbt_definition": "Somatic cell of the germarium that differentiates from a follicle stem cell and can differentiate into a follicle cell.",
+      "reason_rejected": "Group member; not a parent of follicle stem cell."
+    }
+  ],
+  "recommendation": "Map to somatic cell of ovariole (FBbt:00006030), broad match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

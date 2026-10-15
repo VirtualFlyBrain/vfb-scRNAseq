@@ -1,0 +1,42 @@
+{
+  "cluster_label": "body_young germ cell",
+  "working_definition": "Early female germline cells of the adult ovary preceding the 16-cell cyst stages (germline stem cells, cystoblasts, early cysts) (Li et al. 2022, Manual Annotation; broad class female germline cell).",
+  "searches_performed": [
+    "young germ cell",
+    "female germline cell",
+    "female germline stem cell",
+    "cystoblast"
+  ],
+  "best_match": {
+    "fbbt_term": "female germline cell",
+    "fbbt_id": "FBbt:00057012",
+    "fbbt_definition": "Cell that develops into or is itself an egg.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Grouped early-stage call spanning GSC, cystoblast and early cyst cells; most specific common parent is female germline cell.",
+  "other_candidates": [
+    {
+      "fbbt_term": "female germline stem cell",
+      "fbbt_id": "FBbt:00004873",
+      "fbbt_definition": "Female germline cell and stem cell from which all other female germline cells develop.",
+      "reason_rejected": "Only one member."
+    },
+    {
+      "fbbt_term": "cystoblast",
+      "fbbt_id": "FBbt:00004876",
+      "fbbt_definition": "Female germline cell which is the daughter of a female germline stem cell.",
+      "reason_rejected": "Only one member."
+    },
+    {
+      "fbbt_term": "cyst cell of ovary",
+      "fbbt_id": "FBbt:00004877",
+      "fbbt_definition": "Female germline cell born during the four rounds of cystoblast division until the presumptive oocyte enters meiosis.",
+      "reason_rejected": "Excludes GSC and cystoblast."
+    }
+  ],
+  "recommendation": "Broad match to female germline cell.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

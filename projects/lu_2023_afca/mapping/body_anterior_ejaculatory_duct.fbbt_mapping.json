@@ -1,0 +1,29 @@
+{
+  "cluster_label": "body_anterior ejaculatory duct",
+  "working_definition": "Epithelial cluster of the anterior ejaculatory duct of the adult male reproductive tract; authors' term FBbt:00004967 is the duct structure, whose wall is a single layer of epithelial cells.",
+  "searches_performed": [
+    "anterior ejaculatory duct",
+    "ejaculatory duct epithelium",
+    "ejaculatory duct epithelial cell"
+  ],
+  "best_match": {
+    "fbbt_term": "ejaculatory duct epithelial cell",
+    "fbbt_id": "FBbt:00058271",
+    "fbbt_definition": "Cell of the epithelium of the ejaculatory duct. It secretes antimicrobial peptides such as Drosomycin and Andropin (Samakovlis et al., 1991; Ferrandon et al., 1998).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors' term is a structure (duct), not a cell. The cell-level equivalent is the duct epithelial cell; FBbt has no anterior-specific epithelial cell term, and this term covers anterior and posterior ducts, so broad match. It is an adult epithelial cell.",
+  "other_candidates": [
+    {
+      "fbbt_term": "anterior ejaculatory duct",
+      "fbbt_id": "FBbt:00004967",
+      "fbbt_definition": "Duct that connects the vasa deferentia and accessory glands to the ejaculatory bulb in the male adult genitalia.",
+      "reason_rejected": "Authors' structure term; not a cell type."
+    }
+  ],
+  "recommendation": "Use ejaculatory duct epithelial cell as a broad match to the cell-level equivalent of the authors' structure term.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

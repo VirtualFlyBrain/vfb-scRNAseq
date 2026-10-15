@@ -1,0 +1,22 @@
+{
+  "cluster_label": "head_ocellus retinula cell",
+  "working_definition": "Author cell type 'ocellus retinula cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00004242 'ocellar retinula cell'. Found in: 10x:head (61 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00004242 (FBbt fbbt/releases/2026-10-01)",
+    "'adult ocellar retinula cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'ocellus retinula cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "ocellar retinula cell",
+    "fbbt_id": "FBbt:00004242",
+    "fbbt_definition": "Photoreceptor cell of an adult ocellus. It expresses the violet-sensitive Rh2 (Jean-Guillaume and Kumar, 2022). Its axons are found proximal to its nucleus, and they target their corresponding ocellar ganglion (Caldwell et al., 2007). The lateral ocelli each have around 100 photoreceptor cells, whereas the medial one has around 75 (Dorkenwald et al., 2024). Some of these cells directly target the lobula or lobula plate (Jean-Guillaume and Kumar, 2022). These cells aid flight stabilization and augment the phototactic response (Jean-Guillaume and Kumar, 2022). They form simpler circuits with fewer connections before reaching the central brain, resulting in faster transmission of information (Jean-Guillaume and Kumar, 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00004242 'ocellar retinula cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00004242 'ocellar retinula cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

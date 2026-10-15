@@ -1,0 +1,22 @@
+{
+  "cluster_label": "head_cone cell",
+  "working_definition": "Author cell type 'cone cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00004193 'cone cell'. Found in: 10x:head (5397 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00004193 (FBbt fbbt/releases/2026-10-01)",
+    "'adult cone cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'cone cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "cone cell",
+    "fbbt_id": "FBbt:00004193",
+    "fbbt_definition": "A cell type of the ommatidium. Each ommatidium contains four cone cells. The four cell bodies form a plate that is the floor of the pseudocone and the roof of the rhabdomere chamber. The surface facing the pseudocone is covered with small papillae that secrete lens materials. The lower surface, facing the photoreceptors, makes numerous hemi-desmosomes with the extracellular cap above the rhabdomeres. Each cone cell extends a thin process, the inter-retinular fiber, between the photoreceptors to the base of the ommatidium where it makes a foot. The four cone cell feet make a plug at the base of the rhabdomere chamber. Cone cells contain coarse ommochrome pigment granules.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00004193 'cone cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00004193 'cone cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

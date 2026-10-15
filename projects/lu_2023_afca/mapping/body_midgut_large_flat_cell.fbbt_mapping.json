@@ -1,0 +1,29 @@
+{
+  "cluster_label": "body_midgut large flat cell",
+  "working_definition": "Author cell type 'midgut large flat cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00110910 'midgut large flat cell'. Found in: 10x:gut (254 cells), ss2:gut (10 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00110910 (FBbt fbbt/releases/2026-10-01)",
+    "'adult midgut large flat cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'midgut large flat cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult midgut large flat cell",
+    "fbbt_id": "FBbt:00110912",
+    "fbbt_definition": "Large flat cell of the adult midgut region R3c. It is located posteriorly to the copper cell region.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00110910 'midgut large flat cell', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00110912 'adult midgut large flat cell', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "midgut large flat cell",
+      "fbbt_id": "FBbt:00110910",
+      "fbbt_definition": "Large flat cell of the middle midgut, located posteriorly to the copper cell region. It has a large nuclei.",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00110912 'adult midgut large flat cell' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

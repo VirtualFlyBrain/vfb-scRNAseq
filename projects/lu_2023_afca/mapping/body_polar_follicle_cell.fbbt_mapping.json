@@ -1,0 +1,22 @@
+{
+  "cluster_label": "body_polar follicle cell",
+  "working_definition": "Author cell type 'polar follicle cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00004907 'polar follicle cell'. Found in: 10x:body (30 cells), 10x:ovary (75 cells), ss2:ovary (3 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00004907 (FBbt fbbt/releases/2026-10-01)",
+    "'adult polar follicle cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'polar follicle cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "polar follicle cell",
+    "fbbt_id": "FBbt:00004907",
+    "fbbt_definition": "Follicle cell at the anterior or posterior pole of the egg chamber. Initially they are found in clusters of 3-8 per pole, then excess cells undergo apoptosis during stages 2-5, leaving 2 per cluster.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00004907 'polar follicle cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00004907 'polar follicle cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

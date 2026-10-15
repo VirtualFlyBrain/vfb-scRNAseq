@@ -1,0 +1,22 @@
+{
+  "cluster_label": "body_adult differentiating enterocyte",
+  "working_definition": "Author cell type 'adult differentiating enterocyte' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00049281 'adult differentiating enterocyte'. Found in: 10x:gut (285 cells), ss2:gut (14 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00049281 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult differentiating enterocyte' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'adult differentiating enterocyte' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult differentiating enterocyte",
+    "fbbt_id": "FBbt:00049281",
+    "fbbt_definition": "Cell of the adult midgut epithelium that is in an intermediate state of differentiation between enteroblast and enterocyte (Hung et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00049281 'adult differentiating enterocyte', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00049281 'adult differentiating enterocyte', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

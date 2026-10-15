@@ -1,0 +1,22 @@
+{
+  "cluster_label": "body_male accessory gland secondary cell",
+  "working_definition": "Author cell type 'male accessory gland secondary cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00004961 'male accessory gland secondary cell'. Found in: 10x:male_reproductive_glands (149 cells), ss2:male_reproductive_glands (5 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00004961 (FBbt fbbt/releases/2026-10-01)",
+    "'adult male accessory gland secondary cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'male accessory gland secondary cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "male accessory gland secondary cell",
+    "fbbt_id": "FBbt:00004961",
+    "fbbt_definition": "Cell type found in at the distal tip of both lobes of the male accessory gland. These cells are large, spherical and binucleate with large vacuoles. There are approximately 43 secondary cells interspersed with around 1000 main cells per lobe.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00004961 'male accessory gland secondary cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00004961 'male accessory gland secondary cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

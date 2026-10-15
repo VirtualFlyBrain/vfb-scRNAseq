@@ -1,0 +1,22 @@
+{
+  "cluster_label": "body_indirect flight muscle",
+  "working_definition": "Author cell type 'indirect flight muscle' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00003361 'indirect flight muscle cell'. Found in: 10x:body (6861 cells), 10x:body_wall (1754 cells), 10x:heart (121 cells), ss2:body_wall (30 cells), ss2:heart (4 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00003361 (FBbt fbbt/releases/2026-10-01)",
+    "'adult indirect flight muscle cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'indirect flight muscle' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "indirect flight muscle cell",
+    "fbbt_id": "FBbt:00003361",
+    "fbbt_definition": "Any muscle cell (FBbt:00005074) that is part of some indirect flight muscle (FBbt:00058882).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00003361 'indirect flight muscle cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00003361 'indirect flight muscle cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

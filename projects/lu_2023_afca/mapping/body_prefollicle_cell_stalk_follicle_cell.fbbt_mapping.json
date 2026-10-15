@@ -1,0 +1,36 @@
+{
+  "cluster_label": "body_prefollicle cell/stalk follicle cell",
+  "working_definition": "A grouped call of prefollicle cells and stalk follicle cells in the whole-body 10x analysis of adult flies (Li et al. 2022, Fly Cell Atlas). Authors gave FBbt:00004910 stalk follicle cell and FBbt:00047835 prefollicle cell.",
+  "searches_performed": [
+    "authors' ontology ids FBbt:00004910, FBbt:00047835",
+    "prefollicle cell",
+    "stalk follicle cell",
+    "somatic cell of ovariole"
+  ],
+  "best_match": {
+    "fbbt_term": "somatic cell of ovariole",
+    "fbbt_id": "FBbt:00006030",
+    "fbbt_definition": "Somatic cell that is part of the ovariole. This does not include the ovarian sheath.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Grouped call. Prefollicle cell (direct child of somatic cell of ovariole) is not a follicle cell, while stalk follicle cell is a follicle cell, itself under somatic cell of ovariole (verified via OLS ancestors). Somatic cell of ovariole is therefore the most specific common ancestor.",
+  "other_candidates": [
+    {
+      "fbbt_term": "stalk follicle cell",
+      "fbbt_id": "FBbt:00004910",
+      "fbbt_definition": "Cell that is part of the stalk connecting adjacent egg chambers in a vitellarium. Each stalk is usually composed of 5-8 interdigitating stalk follicle cells.",
+      "reason_rejected": "Group member; not a parent of prefollicle cell."
+    },
+    {
+      "fbbt_term": "prefollicle cell",
+      "fbbt_id": "FBbt:00047835",
+      "fbbt_definition": "Somatic cell of the germarium that differentiates from a follicle stem cell and can differentiate into a follicle cell.",
+      "reason_rejected": "Group member; not a parent of stalk follicle cell."
+    }
+  ],
+  "recommendation": "Map to somatic cell of ovariole (FBbt:00006030), broad match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

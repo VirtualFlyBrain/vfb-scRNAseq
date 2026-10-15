@@ -1,0 +1,22 @@
+{
+  "cluster_label": "body_escort cell",
+  "working_definition": "Author cell type 'escort cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00006049 'escort cell'. Found in: 10x:body (311 cells), 10x:ovary (241 cells), ss2:ovary (16 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00006049 (FBbt fbbt/releases/2026-10-01)",
+    "'adult escort cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'escort cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "escort cell",
+    "fbbt_id": "FBbt:00006049",
+    "fbbt_definition": "Somatic cell type with squamous morphology found in regions 1 and 2a of the germarium. These cells send out thin cytoplasmic processes which envelop cystoblasts and cysts for several days prior to follicle cell formation. Their extensions move posteriorly with developing cystoblasts, while the cell bodies are stable and do not cross the 2a/2b boundary in the germarium. More posteriorly located escort cells have a higher rate of apoptosis.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00006049 'escort cell', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00006049 'escort cell', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

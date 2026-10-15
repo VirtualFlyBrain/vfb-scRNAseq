@@ -1,0 +1,22 @@
+{
+  "cluster_label": "head_dopaminergic PAM neuron",
+  "working_definition": "Author cell type 'dopaminergic PAM neuron' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00100214 'adult dopaminergic PAM neuron'. Found in: 10x:head (288 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00100214 (FBbt fbbt/releases/2026-10-01)",
+    "'adult adult dopaminergic PAM neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'dopaminergic PAM neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult dopaminergic PAM neuron",
+    "fbbt_id": "FBbt:00100214",
+    "fbbt_definition": "A dopaminergic neuron whose cell body is located in a cluster of approximately 100 cell bodies in the cortex of the anterior inferior medial protocerebrum of the adult brain (Mao and Davis, 2009). There are multiple subtypes, of which most (but not all) target the medial lobe (Li et al., 2020). They all follow a mushroom body commissure to the contralateral mushroom body (Li et al., 2020). They are secondary neurons, with some belonging to the CREa1A (BAMd1A) hemilineage and some belonging to the CREa2A (DALcm1A) hemilineage (Lee et al., 2020; Truman et al., 2023).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00100214 'adult dopaminergic PAM neuron', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00100214 'adult dopaminergic PAM neuron', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

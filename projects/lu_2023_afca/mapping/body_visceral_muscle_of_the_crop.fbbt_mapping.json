@@ -1,0 +1,42 @@
+{
+  "cluster_label": "body_visceral muscle of the crop",
+  "working_definition": "Visceral muscle cells of the crop from the gut analysis (Li et al. 2022; Manual Annotation, broad class muscle cell).",
+  "searches_performed": [
+    "visceral muscle of the crop",
+    "crop muscle cell",
+    "adult crop longitudinal muscle cell",
+    "visceral muscle cell"
+  ],
+  "best_match": {
+    "fbbt_term": "adult crop circular muscle cell",
+    "fbbt_id": "FBbt:00003532",
+    "fbbt_definition": "Cell that is part of the circular muscle fibers of the adult crop. In the stalk, it consists of wide bands 1.5um thick and 3-7um wide. In the sac, thick muscle fibers extend around the base of each lobe, converging posteriorly, and the distended portions of the wall are covered with a plexus of branched and interlacing fibers 1-3um thick.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt only has adult crop circular muscle cell (a child of foregut muscle cell and adult visceral muscle cell); no term covers all crop visceral muscle. Foregut muscle cell is the most specific true parent of crop muscle cells (the crop is adult-only, so the non-adult-specific parent is acceptable).",
+  "other_candidates": [
+    {
+      "fbbt_term": "foregut muscle cell",
+      "fbbt_id": "FBbt:00058266",
+      "fbbt_definition": "Any visceral muscle cell (FBbt:00005070) that is part of some foregut.",
+      "reason_rejected": "Agent's original best match; replaced by curator (2026-10-13)."
+    },
+    {
+      "fbbt_term": "adult visceral muscle cell",
+      "fbbt_id": "FBbt:00003525",
+      "fbbt_definition": "Muscle cell of a visceral muscle of the adult.",
+      "reason_rejected": "Less specific than foregut muscle cell."
+    }
+  ],
+  "recommendation": "Curator decision: map to FBbt:00003532 'adult crop circular muscle cell' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false,
+  "manual_edit": {
+    "by": "Clare Pilgrim (Clare72)",
+    "date": "2026-10-13",
+    "change": "best_match FBbt:00058266 foregut muscle cell (broad, low) -> FBbt:00003532 adult crop circular muscle cell (exact, medium)",
+    "reason": "curator: visceral muscle of the crop = adult crop circular muscle cell"
+  }
+}

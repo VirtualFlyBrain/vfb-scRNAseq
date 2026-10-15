@@ -1,0 +1,29 @@
+{
+  "cluster_label": "head_Kenyon cell",
+  "working_definition": "Author cell type 'Kenyon cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00003686 'Kenyon cell'. Found in: 10x:head (116 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00003686 (FBbt fbbt/releases/2026-10-01)",
+    "'adult Kenyon cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'Kenyon cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult Kenyon cell",
+    "fbbt_id": "FBbt:00049825",
+    "fbbt_definition": "Kenyon cell of the adult mushroom body. It has its soma in the mushroom body cell body rind (above the calyx) and has dendrites in the main calyx and/or an accessory calyx (Lee et al., 1999; Aso et al., 2014). There are three main subtypes that project their axons to the gamma lobe, the alpha and beta lobes, and the alpha' and beta' lobes (Lee et al., 1999; Aso et al., 2014). All three subtypes are cholinergic (Barnstedt et al., 2016; Croset et al., 2018). In the pedunculus, the Kenyon cell axons are organized by birth order, with gamma neuron axons more peripheral and the last-born (alpha/beta) neurons in the center (Li et al., 2020). There are close to 2000 Kenyon cells per adult mushroom body (Li et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00003686 'Kenyon cell', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00049825 'adult Kenyon cell', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "Kenyon cell",
+      "fbbt_id": "FBbt:00003686",
+      "fbbt_definition": "Intrinsic neuron of the mushroom body. They have tightly-packed cell bodies, situated in the rind above the calyx of the mushroom body (Ito et al., 1997). Four short fascicles, one per lineage, extend from the cell bodies of the Kenyon cells into the calyx (Ito et al., 1997). These 4 smaller fascicles converge in the calyx where they arborize and form pre- and post-synaptic terminals (Christiansen et al., 2011), with different Kenyon cells receiving input in different calyx regions/accessory calyces (Tanaka et al., 2008). They emerge from the calyx as a thick axon bundle referred to as the peduncle that bifurcates to innervate the dorsal and medial lobes of the mushroom body (Tanaka et al., 2008).",
+      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00049825 'adult Kenyon cell' (adult variant of the authors' term), exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}
