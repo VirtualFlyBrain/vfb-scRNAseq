@@ -149,8 +149,9 @@ below record how each was applied).
   markers may be mapped to both classes (`additional_matches`).
 - **No FBbt term → held, and not loaded.** A cluster with no adequate FBbt term is
   held: it is not given a generic fallback term just to have one, and it is left out
-  of the build entirely (no VFBseq id, no Cluster entity, no expression; its cells
-  count towards no gene totals). VFB is organised around cell types, so an untyped
+  of the build entirely (no VFBseq id, no Cluster entity, no expression rows). Its
+  cells still count towards the Dataset's total/filtered gene counts, which measure
+  what the experiment detected. VFB is organised around cell types, so an untyped
   cluster adds nothing there (curator decision, 2026-10-14). Held clusters stay in
   `mapping.tsv` (`kind` held, with a `hold_reason`) so they can be loaded if a term
   becomes available. `collate_mapping.py` marks any mapping with a null `best_match`
@@ -870,7 +871,8 @@ Curator decisions (2026-10-07):
   none, so both take the other files' ids), the rest by symbol in Chado (FB2026_03):
   10x 16,270 current, 80 secondary, 15 synonym, 1 split; Smart-seq2 16,203 current,
   79 secondary, 26 synonym, 1 split, 2 unmatched (an unnamed gene and snRNA:U3).
-  Held clusters are not summarised (their cells count towards nothing). 10x: 16,363
+  Held clusters get no expression rows; their cells still count towards the
+  dataset-level gene counts. 10x: 16,363
   genes × 506,660 cells, 335 loaded clusters (35 held, 132,493 cells), 512,215 rows;
   Smart-seq2: 16,306 genes × 9,892 cells, 211 loaded clusters (26 held, 2,552 cells),
   426,111 rows.

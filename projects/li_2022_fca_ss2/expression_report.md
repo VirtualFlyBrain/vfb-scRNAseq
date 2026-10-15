@@ -3,7 +3,7 @@
 - normalisation: **CPM**; extent filter: **> 0.2**
 - 16306 genes x 9892 cells; 211 clusters; 426,111 filtered rows
 - not loaded: 26 held clusters (no FBbt term), 2552 cells
-- dataset-level: total_gene_count **16276**, filtered_gene_count **14913**
+- dataset-level: total_gene_count **16293**, filtered_gene_count **15011**
 
 | cluster | cells | total_gene_count | filtered_gene_count |
 |---|---|---|---|

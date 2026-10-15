@@ -62,15 +62,15 @@ def test_dataset_gene_counts_union_not_datasetwide(tmp_path, monkeypatch):
 
 
 def test_held_clusters_are_left_out(tmp_path, monkeypatch):
-    """A cluster with no FBbt term (B) is not loaded: no rows, no counts, and its
-    genes do not count towards the dataset totals."""
+    """A cluster with no FBbt term (B) is not loaded: no rows or counts of its own,
+    but its genes still count towards the dataset totals (they were detected)."""
     cfg = _setup(tmp_path, monkeypatch)
     monkeypatch.setattr(stats, "mapped_labels", lambda proj: {"A"})
     rows, counts, meta = stats.compute_expression("t", cfg)
     assert [c.label for c in counts] == ["A"]
     assert {r[1] for r in rows} == {"A"}
-    assert meta["dataset_total_gene_count"] == 2        # g1,g2 (g3 only in B)
-    assert meta["dataset_filtered_gene_count"] == 1     # g1
+    assert meta["dataset_total_gene_count"] == 3        # g1,g2 + g3 (only in held B)
+    assert meta["dataset_filtered_gene_count"] == 2     # g1 + g3 (B)
     assert (meta["held_clusters"], meta["held_cells"]) == (1, 5)
 
 
