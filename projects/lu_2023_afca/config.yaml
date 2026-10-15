@@ -1,0 +1,87 @@
+# Aging Fly Cell Atlas (Lu et al. 2023, Science; FBrf0256843): single-nucleus
+# transcriptomes of whole head and body, male and female, at 5, 30, 50 and 70 days.
+# The 30/50/70-day data are new (GEO GSE218661, 72 libraries); the 5-day data are the
+# Fly Cell Atlas head and body samples (Li et al. 2022), co-clustered and re-annotated
+# with the new ages ("5d samples are from the FCA"). Curator decisions 2026-10-15:
+# one Clustering per author analysis (head, body), one Cluster per author
+# `afca_annotation` type over all ages; the FCA's 5-day Samples/Assays are reused by
+# VFBseq id (general rule: reuse identical entities), not duplicated.
+project: lu_2023_afca
+
+source:
+  doi: 10.1126/science.adg0934
+  pmid: "37319212"
+  pmcid: PMC10829769
+  fbrf: FBrf0256843          # VFB production :pub node (resolved by PMID)
+  title: "Aging Fly Cell Atlas identifies exhaustive aging features at cellular resolution"
+  journal: Science
+  year: 2023
+  first_author: Lu
+
+organism: Drosophila melanogaster
+
+dataset:
+  site: GEO
+  accession: GSE218661
+  bioproject: PRJNA904763
+  sra_study: SRP409514
+  platform: GPL25244            # Illumina NovaSeq 6000
+  licence: CC-BY-4.0
+  assay_type: FBcv:0009001      # single-nucleus RNA-Seq
+
+sample_build:
+  # GSM titles are "<Sex>_<tissue>_adult_<age>WT_Hongjie_S<n>_S<index>". Each GSM is
+  # its own sample with one 10x library (paper: "each age group had 12 samples with 6
+  # females and 6 males"; heads and bodies processed separately), so Sample:Assay 1:1.
+  title_pattern: 'regex:(?P<set>Male|Female)_(?P<tissue>head|body)_adult_(?P<timepoint>\d+d)WT_Hongjie_(?P<biorep>S\d+)_S\d+'
+  assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
+  assay_label: { unit: 10x library }
+  # Sex from GEO (Sex: Male / Female). Flies: "wild-type F1 flies from the cross
+  # between female W1118 and male Oregon R (OreR)" (GEO strain W1118/OreR); the paper
+  # gives no stock numbers, so no FlyBase stock is linked.
+  age_map:
+    "30d": { stage: { fbdv_id: FBdv:00007105, label: day 30 of adulthood } }
+    "50d": { stage: { fbdv_id: FBdv:00007125, label: day 50 of adulthood } }
+    "70d": { stage: { fbdv_id: FBdv:0010010, label: day 70 of adulthood } }
+  # GEO tissue -> FBbt, as for the FCA's head / body samples
+  tissue_map:
+    head: { fbbt_id: FBbt:00003007, label: adult head }
+    body: { fbbt_id: FBbt:00059181, label: adult postcephalic region }   # whole fly minus head
+  # One Clustering per author analysis (the GEO h5ad files), each using the new
+  # samples of its tissue plus the reused FCA 5-day samples of that tissue.
+  clusterings:
+    - { id: head, name: Aging Fly Cell Atlas head, sample_tissue_raw: head }
+    - { id: body, name: Aging Fly Cell Atlas body, sample_tissue_raw: body }
+
+# The 5-day cells are the FCA 10x Stringent Head / Body cells (same barcodes and
+# libraries), so their Samples and Assays are reused from li_2022_fca_10x by VFBseq id.
+reuse:
+  - from_project: li_2022_fca_10x
+    note: "FCA 5-day head and body samples, co-clustered and re-annotated with the new ages"
+    samples:
+      - d541ae4e__FCA1_MaleFemale_Head
+      - d55c64e6__FCA4_Male_Adult_Head1
+      - d5653fbc__FCA5_Male_Adult_Head2
+      - d56d6d0e__FCA6_Male_Adult_Head3
+      - d57550d2__FCA7_Female_Adult_Head1
+      - d57d41fc__FCA8_Female_Adult_Head2
+      - d584e4e8__FCA9_Female_Adult_Head3
+      - f7c048d0__FCA10_Male_head_adult
+      - f7ca8a02__FCA11_Male_head_adult
+      - f7d3b3d4__FCA12_Male_head_adult
+      - f7dc3ba8__FCA13_Female_head_adult
+      - f7e4c476__FCA14_Female_head_adult
+      - f7ed0992__FCA15_Female_head_adult
+      - d54b72e4__FCA2_MaleFemale_Body
+      - f7f586bc__FCA16_Male_body_adult
+      - f7fd9b2c__FCA17_Male_body_adult
+      - f8063598__FCA18_Male_body_adult
+      - f80ebbdc__FCA19_Male_body_adult
+      - f817481a__FCA20_Male_body_adult
+      - f82124ca__FCA21_Male_body_adult
+      - f829fffa__FCA22_Female_body_adult
+      - f8328e36__FCA23_Female_body_adult
+      - f83b3be4__FCA24_Female_body_adult
+      - f8438c5e__FCA25_Female_body_adult
+      - f84bfd1c__FCA26_Female_body_adult
+      - f8548b44__FCA27_Female_body_adult

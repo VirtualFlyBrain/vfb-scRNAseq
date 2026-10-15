@@ -27,7 +27,11 @@ sys.path.insert(0, str(REPO_ROOT / "src"))
 
 from vfb_scrnaseq.ids import IDRegistry  # noqa: E402
 from vfb_scrnaseq.ingest import fetch_series  # noqa: E402
-from vfb_scrnaseq.project_config import load_config  # noqa: E402
+from vfb_scrnaseq.project_config import (  # noqa: E402
+    clustering_samples,
+    load_config,
+    reused_samples,
+)
 
 
 def normalize_sex(raw: str | None) -> str | None:
@@ -62,7 +66,8 @@ def title_parser(pattern: str | None) -> Callable[[str], dict | None]:
     - ``set_timepoint_biorep_techrep`` (default): underscore-split, see parse_title.
     - ``regex:<pattern>``: full-match regex with named groups ``set``, ``timepoint``,
       ``biorep`` and optionally ``techrep``. Without ``techrep`` each GSM is its own
-      biological sample (one library per sample). GSMs whose title does not match
+      biological sample (one library per sample). Any further named groups (e.g.
+      ``tissue``) also go into the sample id, after ``set``. GSMs whose title does not match
       are not part of this dataset's scope and are skipped.
     """
     if pattern in (None, "set_timepoint_biorep_techrep"):
@@ -76,12 +81,13 @@ def title_parser(pattern: str | None) -> Callable[[str], dict | None]:
         if not m:
             return None
         g = m.groupdict()
+        extra = [v for k, v in g.items() if k not in ("set", "timepoint", "biorep", "techrep")]
         return {
             "set": g["set"],
             "timepoint": g["timepoint"],
             "biorep": g["biorep"],
             "techrep": g.get("techrep"),
-            "sample_id": "_".join((g["set"], g["timepoint"], g["biorep"])),
+            "sample_id": "_".join((g["set"], *extra, g["timepoint"], g["biorep"])),
         }
     return parse
 
@@ -96,6 +102,7 @@ def main() -> None:
     accession = cfg["dataset"]["accession"]
     site = cfg["dataset"].get("site", "GEO")
 
+    reused = reused_samples(cfg)        # stops first if a source study is not curated yet
     series = fetch_series(accession)
     reg = IDRegistry.load(REPO_ROOT / "id_registry" / "registry.json")
 
@@ -177,7 +184,10 @@ def main() -> None:
             "stock": sb.get("stock_map", {}).get(p0["set"]),  # FlyBase FBst ref(s)
             "sex": sex,
             "stage": tp.get("stage"),
-            "sample_tissue": tp.get("tissue"),
+            # `sample_build.tissue_map` (keyed on the GEO tissue characteristic) when
+            # one series covers several tissues at each age; else the age_map tissue
+            "sample_tissue": sb.get("tissue_map", {}).get(gsm0.characteristic("tissue"),
+                                                          tp.get("tissue")),
             "associated_dataset": dataset_id,
             "assay_vfbseq_ids": assay_vids,
             "n_assays": len(assay_vids),
@@ -193,6 +203,9 @@ def main() -> None:
         rec = {"vfbseq_id": cid, "subset": subset, "associated_dataset": dataset_id}
         if name:
             rec["name"] = name
+        used = clustering_samples(entry, samples_out, reused)
+        if used:
+            rec["samples"] = used
         clusterings_out.append(rec)
 
     out = {
@@ -201,11 +214,14 @@ def main() -> None:
         "assays": assays_out,
         "clusterings": clusterings_out,
     }
+    if reused:
+        out["reused_samples"] = reused
     out_path = REPO_ROOT / "projects" / args.project / "samples.json"
     out_path.write_text(json.dumps(out, indent=2) + "\n")
     reg.save()
     print(f"wrote {len(samples_out)} samples, {len(assays_out)} assays, "
-          f"{len(clusterings_out)} clusterings -> {out_path}")
+          f"{len(clusterings_out)} clusterings"
+          f"{f', {len(reused)} reused samples' if reused else ''} -> {out_path}")
 
 
 if __name__ == "__main__":
