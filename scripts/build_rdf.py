@@ -2,7 +2,9 @@
 """Assemble entities and emit RDF/TTL for a project.
 
 Runs vfb_scrnaseq.build (-> entities.json, minting Cluster IDs) then
-vfb_scrnaseq.emit (-> <accession>.ttl), driven by the LinkML schema.
+vfb_scrnaseq.emit, driven by the LinkML schema: flat RDF (<accession>.ttl), OWL
+(<accession>.ofn) and its RDF/XML conversion via ROBOT
+(metadata/vfb_scRNAseq_metadata_<project>.owl). `--format owl|ttl|both` (default both).
 
 Usage:
     uv run python scripts/build_rdf.py --project kurmangaliyev_2020

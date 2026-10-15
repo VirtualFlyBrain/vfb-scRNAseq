@@ -51,9 +51,15 @@ The repo's general curation rules (`docs/DESIGN.md` → *General curation rules*
 
 ## Input
 
-1. **report_path**: Path to the cluster's cell type report markdown file
-2. **cluster_label**: The cluster name to map
+1. **report_path**: Path to the cluster's (or author type's) cell type report markdown file
+2. **cluster_label**: The cluster name to map (or the author type, for type-level mapping)
 3. **output_path**: Path to write the JSON result
+
+Where an atlas's author types recur across clusterings (e.g. Davie 2018, the Fly Cell
+Atlas), mapping is done once per author **type** into
+`type_mapping/<type>.fbbt_mapping.json` and copied to each cluster by the pipeline
+(`expand_type_mappings.py`, or a project script such as
+`projects/davie_2018/build_clusters.py`).
 
 ## Procedure
 
@@ -173,7 +179,7 @@ is pipeline-generated, so it must omit `manual_edit` entirely.
   a match; a different label with a matching definition IS.
 - **Check for obsolescence**: never return an obsolete FBbt term.
 - **Developmental stage — do NOT assume "adult".** Many fly atlases are
-  *developmental* (e.g. Kurmangaliyev is pupal 24-96h APF + adult). FBbt has
+  *developmental* (e.g. Kurmangaliyev is pupal 0-96h APF: an early 0-24h dataset and a 24-96h main dataset). FBbt has
   distinct **`immature X neuron`** terms for developing forms. Choose mature vs
   immature by the cluster's actual developmental stage, not by assumption:
   - integrated/late clusters spanning to ~adult → the mature form (resolved identity);

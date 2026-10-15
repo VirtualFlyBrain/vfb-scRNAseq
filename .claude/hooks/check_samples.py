@@ -2,7 +2,7 @@
 """Claude Code hook: validate samples.json against its JSON Schema.
 
 PostToolUse hook for Writes to a file named ``samples.json`` (output of
-build_samples_from_geo.py). Validates against
+build_samples_from_geo.py or build_samples_from_arrayexpress.py). Validates against
 ``src/vfb_scrnaseq/schemas/samples.schema.json``.
 
 Exit codes:

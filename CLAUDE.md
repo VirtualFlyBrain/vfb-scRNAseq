@@ -27,10 +27,13 @@ clusters mapped to FBbt, for loading into Virtual Fly Brain. Read `README.md`, t
 - Mapping JSON is written with the Write tool so `.claude/hooks/check_fbbt_mapping.py`
   validates it. Agents never set `manual_edit`; it records a curator's hand edit.
 - After changing mappings, re-run `scripts/collate_mapping.py` (CI fails on a stale
-  `mapping.tsv`).
+  `mapping.tsv`). Where mappings are made per author type (`type_mapping/`), first
+  copy them to `mapping/` (`scripts/expand_type_mappings.py`, or Davie's
+  `projects/davie_2018/build_clusters.py`).
 - VFBseq ids come from `id_registry/registry.json` (idempotent on natural keys).
   GEO/SRA accessions are xrefs, never IRIs.
-- Large inputs (GEO matrices/metadata) go in `.cache/` (gitignored); paper full text
+- Large inputs (GEO matrices/metadata, ArrayExpress SDRFs, h5ad files) go in `.cache/`
+  (gitignored); paper full text
   and supplementary tables stay out of git.
 - The paper index runs from a sibling Atlas-reporter clone pinned to `2acd38e`
   (`local-paper-index` skill).

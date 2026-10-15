@@ -7,19 +7,20 @@ decisions that would otherwise only live in a maintainer's head.
 ## Purpose
 
 Produce RDF metadata for *Drosophila* single-cell RNA-seq data: dataset / sample
-/ cluster annotations, linking clusters to **FBbt** anatomy terms, plus (a later
-phase) summary expression statistics computed the FlyBase way.
+/ cluster annotations, linking clusters to **FBbt** anatomy terms, plus summary
+expression statistics (extent and level per cluster × gene) computed the FlyBase way.
 
 ## Architecture
 
 Built on the [atlas-chat](https://github.com/Cellular-Semantics/atlas-chat)
 template (literature-grounded, quote-validated cell type reports). The repo's
-`.claude/` already carries adapted atlas-chat agents, hooks, and commands.
+`.claude/` carries adapted atlas-chat agents and hooks, plus skills
+(`local-paper-index`, `anndata-zarr-summary`).
 
 **Two schemas, two jobs** — the key structural decision:
 
 - **Working / annotation format** — `projects/<id>/cell_type_annotations.json`
-  (atlas-chat shape; JSON Schema → Pydantic). Where curation happens: cluster
+  (atlas-chat shape). Where curation happens: cluster
   labels, generated literature reports, and the proposed FBbt mapping.
 - **Publishing format** — `src/vfb_scrnaseq/schema/VFB_scRNAseq_schema.yaml`
   (LinkML). The RDF target: `Dataset / Sample / Assay / Clustering / Cluster`,
@@ -29,24 +30,30 @@ template (literature-grounded, quote-validated cell type reports). The repo's
 
 ### Schema master copy & deprecation
 
-`VFB_scRNAseq_schema.yaml` here is the **new master copy**, imported verbatim
-from `VirtualFlyBrain/vfb-scRNAseq-ontology`. That repo will be **deprecated**
-once this one is running. The schema is kept verbatim for now so the migration
-diff stays clean; planned edits (e.g. the `VFBseq` prefix, dropping the FlyBase
-`id` guidance) are tracked as follow-ups.
+`VFB_scRNAseq_schema.yaml` here is the **new master copy**, imported from
+`VirtualFlyBrain/vfb-scRNAseq-ontology` and extended here since (the `VFBseq`
+prefix, stock, sex, site, `parent_cluster`, gene-count and expression slots). That
+repo will be **deprecated** once this one is running. Remaining clean-up: legacy
+FlyBase / TSV-loader wording in some slot descriptions.
 
 ### Pipeline (cell-type-annotation focus)
 
 ```
 project config (+ project script for bespoke clusterings)
-  -> cell_type_annotations.json   (build_annotations_from_geo.py: one entry per author cluster)
-  -> samples.json                 (build_samples_from_geo.py: Samples / Assays / Clusterings)
+  -> cell_type_annotations.json   (build_annotations_from_geo.py, or from the authors' AnnData
+                                   files: fetch_h5ad.py + build_annotations_from_h5ad.py;
+                                   one entry per author cluster)
+  -> samples.json                 (build_samples_from_geo.py / build_samples_from_arrayexpress.py:
+                                   Samples / Assays / Clusterings)
   -> per-type reports             (write-cell-type-report agent; Atlas-reporter paper index)
-  -> FBbt mapping JSON            (map-clusters-to-fbbt agent via OLS; assign_placeholders.py)
+  -> FBbt mapping JSON            (map-clusters-to-fbbt agent via OLS; assign_placeholders.py;
+                                   type-level mappings copied per cluster by expand_type_mappings.py)
   -> mapping.tsv + human review   (collate_mapping.py)
   -> entities -> metadata OWL/TTL (build_rdf.py: linkml-validate / -convert / linkml-owl)
-  -> expression stats + OWL       (build_expression.py)
-  -> CI                           (tests, file validation, mapping.tsv freshness, weekly FBbt check)
+  -> current FlyBase gene ids     (update_gene_ids.py)
+  -> expression stats + OWL       (build_expression.py, then build_rdf.py again for gene counts)
+  -> CI                           (tests, file validation, mapping.tsv freshness, weekly
+                                   FBbt / FlyBase release check)
 ```
 
 See *Adding a new dataset* (end of this document) for the step-by-step checklist.
@@ -88,8 +95,8 @@ is split from the network call so it is unit-tested against a fixture.
 
 Deliberate boundaries:
 
-- **Metadata only — never the expression matrix.** The matrix is an
-  expression-stats-phase concern. (Same philosophy as the `anndata-zarr-summary`
+- **Metadata only — never the expression matrix.** The matrix is read only by
+  `stats.py` (`build_expression.py`). (Same philosophy as the `anndata-zarr-summary`
   skill, which reads `obs/` only.)
 - **Raw characteristics in, ontology mapping out.** `ingest` surfaces GEO's raw
   strings (`stage_hint`, `sex_hint`, `characteristic(...)`); mapping them onto
@@ -122,7 +129,8 @@ The upstream `Cellular-Semantics/claude-skills` `retrieve-dataset` skill was
 Allen/CL taxonomies), pulling the `annotation-transfer` CLI plus R/Seurat — none
 of which serves FBbt mapping. Its only reusable kernel (multi-format → AnnData +
 `obs` inspection) is already covered by `anndata-zarr-summary` for the obs path.
-Revisit only in the expression-stats phase, and even then lift just the loader.
+It was not needed for expression either: the authors' AnnData files are read
+directly with h5py (`ingest_h5ad.py`).
 
 ## General curation rules
 
@@ -275,8 +283,9 @@ are generated with the **Claude Code agentic flow**, not atlas-chat's standalone
 
 ## Generic pipeline vs per-project config
 
-The scripts in `scripts/` (`build_annotations_from_geo.py`,
-`assign_placeholders.py`, `collate_mapping.py`) are **dataset-agnostic drivers**.
+The scripts in `scripts/` (e.g. `build_annotations_from_geo.py`,
+`build_annotations_from_h5ad.py`, `assign_placeholders.py`, `expand_type_mappings.py`,
+`collate_mapping.py`, `build_expression.py`) are **dataset-agnostic drivers**.
 All project/tissue-specific knowledge lives in `projects/<name>/config.yaml` and
 is read through `src/vfb_scrnaseq/project_config.py`. Config sections:
 
@@ -341,9 +350,11 @@ defaults. So the common cases are declarative, and the rare oddball overrides in
 its own folder — never in the shared pipeline.
 
 **Source adapters** are a separate axis: `build_annotations_from_geo.py` is the
-GEO ingester; a non-GEO source (h5ad `obs`, CELLxGENE) would be a sibling script
-emitting the same `cell_type_annotations.json`, with the config/placeholder/collate
-layers downstream unchanged.
+GEO ingester and `build_annotations_from_h5ad.py` (with
+`build_samples_from_arrayexpress.py` for samples) the AnnData / ArrayExpress one;
+both emit the same `cell_type_annotations.json`, with the config/placeholder/collate
+layers downstream unchanged. Another source (e.g. CELLxGENE) would be a further
+sibling script.
 
 ## Recording manual edits to mappings
 
@@ -409,7 +420,7 @@ Beyond the cluster→FBbt layer, the rest of the schema is populated from GEO
   sample-level `stage`/`tissue` capture the gradient, and the cell-type mapping weighs
   developmental stage (integrated/late clusters → mature form; early-stage-specific →
   immature form) rather than assuming the adult form.
-- **`sex`:** set from GEO where present, else curator-confirmed from the paper;
+- **`sex`:** set from GEO / the ArrayExpress SDRF where present, else curator-confirmed from the paper;
   unset only when genuinely unknown (see the *sex* note below).
 - **`Assay.method`:** the sequencing method as an FBcv term (e.g. `FBcv:0009008`
   "10x sequencing"), from `sample_build`.
@@ -441,13 +452,14 @@ the same schema + `Container` data, no custom triple code):
   which honours the schema's `owl.fstring`/`owl.template` annotations →
   `ClassAssertion(ObjectSomeValuesFrom(R Term) {id})` existential restrictions,
   `ObjectPropertyAssertion`s, `AnnotationAssertion`s, and (expression phase) the
-  annotated `expresses some gene` axioms. This is the **VFB-pipeline-compatible**
+  This is the **VFB-pipeline-compatible**
   output → `projects/<name>/<accession>.ofn`.
 - **Flat RDF** (`--format ttl`) via **`linkml-convert`**, which uses `slot_uri`/
   `class_uri` only — simpler generic RDF (ontology-term links are plain triples,
   no OWL restrictions), Container node stripped → `<accession>.ttl`.
 - **OWL/XML** — the `.ofn` is then converted to RDF/XML with **`robot convert`** →
-  `<accession>.owl` (lossless; round-trip verified). ROBOT is an external Java tool,
+  `metadata/vfb_scRNAseq_metadata_<project>.owl` (lossless; round-trip verified).
+  (The expression axioms are not emitted here: see *Emission* under expression.) ROBOT is an external Java tool,
   not a pip/uv dep, so this step is skipped with a warning if `robot` isn't on PATH.
 
 Both are preceded by **`linkml-validate`** (types, ranges, required slots, rejects
@@ -484,7 +496,8 @@ which curators often set for the writable KB.
 ## `sex`
 
 Modelled as `part of some <FBbt organism>` (female = FBbt:00007011, male =
-FBbt:00007004). `build_samples_from_geo.py` takes sex from the GEO characteristic,
+FBbt:00007004). `build_samples_from_geo.py` takes sex from the GEO characteristic
+(`build_samples_from_arrayexpress.py`: from the SDRF via `sex_column` / `sex_map`),
 falls back to a curator-confirmed `sample_build.sex` in config, and **warns the
 curator to check the paper** when neither is present — so an unannotated dataset is
 never silently left sexless.
@@ -517,6 +530,9 @@ by `vfb_scrnaseq.stats` (`scripts/build_expression.py`). Per cluster × gene:
   `level` cannot be SCEA-identical, but extent is exact.
 - **Filter**: `extent > 0.2` (from the old repo's `process_metadata.py`);
   `Cluster.total_gene_count` (any expression) vs `filtered_gene_count` (> 0.2).
+  The Dataset's counts are genes with any expression / extent > 0.2 in at least one
+  cluster, held clusters included (they measure what the experiment detected), so
+  the filtered count can exceed the distinct genes in `expression.tsv`.
 
 **Compute**: two chunked streaming passes over the 1 GB 10x `.mtx.gz` (cell totals
 for CPM, then per-cluster×gene sums via `bincount`) — dense accumulators genes×clusters
@@ -535,13 +551,15 @@ sizes must equal `cell_type_annotations.json`. Files may carry different gene se
 gene a file lacks is unexpressed in its clusters. `expression.gzip_tsv: true` writes
 `expression.tsv.gz` (deterministic gzip) for datasets too large to commit plain.
 
-**Scale & outputs** (worked example: 17,561 genes, 194k cells → **584,710 rows**
-after the filter):
-- `projects/<p>/expression.tsv` — filtered rows, plain/diffable, **committed** (~32 MB).
+**Scale & outputs** (Kurmangaliyev, main + early: 17,556 genes, 209k cells → **686,568
+rows** after the filter):
+- `projects/<p>/expression.tsv` — filtered rows, plain/diffable, **committed** (~40 MB;
+  `expression.tsv.gz` with `gzip_tsv`).
 - `projects/<p>/expression_report.md` — per-cluster cells + total/filtered gene counts.
 - `expression/vfb_scRNAseq_expression_<project>.owl.gz` — **committed, loadable**
-  (~13.5 MB; 584,710 annotated `expresses` axioms).
-- `total/filtered_gene_count` also set on the `Cluster` entities in the metadata OWL.
+  (~16 MB; one annotated `expresses` axiom per row).
+- `total/filtered_gene_count` also set on the `Cluster` and `Dataset` entities in the
+  metadata OWL.
 
 **Release layout.** The VFB-loadable OWL is aggregated across projects in two
 top-level folders so the loader picks them up from one place (mirrors the old
@@ -585,7 +603,8 @@ Mapping rules:
   can't be attributed (curator decision); **withdrawn** → dropped.
 
 As of FB2026_03: Davie 132 secondary (5 merges), 5 splits, 1 withdrawn; Kurmangaliyev
-86 secondary (3 merges), 1 split, 1 withdrawn; symbols refreshed for every gene. The
+86 secondary (3 merges), 1 split, 1 withdrawn; symbols refreshed for every gene (FCA:
+see *Fly Cell Atlas*, expression). The
 Chado result agreed with FlyBase's `fbgn_annotation_ID_fb_2026_03.tsv` for every
 secondary/withdrawn id. Re-run the script (and the expression build) to move to a
 later FlyBase release; the weekly release check opens a reminder issue when one is out
@@ -606,8 +625,8 @@ Structure confirmed by `ingest.fetch_series("GSE156455")`:
 
 - **36 samples**, each with `BioSample` (SAMN…) and `SRA` (SRX…) resolved;
   platform `GPL25244`, BioProject `PRJNA658010`, SRA study `SRP278058`.
-- **Sparse characteristics:** only `tissue` (optic lobes) and `age` — **no sex**,
-  so the schema `sex` slot is unset/mixed for this dataset.
+- **Sparse characteristics:** only `tissue` (optic lobes) and `age` — **no sex** in
+  GEO; set to female from the paper (`sample_build.sex`).
 - **Stages are APF time windows** (`0-96h`, `24h`, `48h`, `72h`, `96h APF`) →
   map to FBdv pupal stages.
 - **Two sub-datasets, `early` and `main`**, in the supplementary files:
@@ -618,7 +637,8 @@ Structure confirmed by `ingest.fetch_series("GSE156455")`:
   `type` (187 in `main`), `subtype` (196 in `main`). The `early` subset is mostly
   provisional `x*` clusters.
 
-**First annotation pass (decided):** scope = **`main`** subset only; granularity =
+**First annotation pass** (since extended: the `early` dataset was added in the
+2026-10 regeneration below, 306 entries in all): scope = **`main`** subset only; granularity =
 **`subtype`** (the finest resolved identity; `type`/`class` retained as grouping).
 `scripts/build_annotations_from_geo.py` derives
 `projects/kurmangaliyev_2020/cell_type_annotations.json` from the GEO metadata —
@@ -672,7 +692,8 @@ the expression output changed, opens an issue with the counts and the commands t
 (`update_gene_ids.py` → `build_expression.py` → `build_rdf.py`). No change → the
 release is recorded without an issue; Chado unreachable from CI → the issue is opened
 without counts. `checks/flybase_release_check.json` makes each release reported once.
-The full rebuild is not automated (it needs ~1.4 GB of GEO matrices and ROBOT). Not run on PRs: it needs OLS, which is
+The full rebuild is not automated (it needs the GEO matrices / h5ad files and ROBOT).
+(`checks/flybase_release_check.json` is created on the first FlyBase release check.) Not run on PRs: it needs OLS, which is
 sometimes unavailable.
 
 ### 2026-10 regeneration under the general curation rules
@@ -762,10 +783,13 @@ VFB until the release files are merged, so ids can still change during review.
    which author clusterings, where the authors' cluster labels live (GEO metadata,
    supplementary tables), whether the dataset was in the old FlyBase/SCEA load.
 2. **`projects/<name>/config.yaml`:** `source` (DOI, PMID, FBrf fallback),
-   `dataset` (GEO / BioProject / SRA), `sample_build` (title pattern, sex, stocks
-   from the paper's Key Resources Table resolved in FlyBase Chado, `age_map` →
-   FBdv stage + FBbt tissue, clusterings), `annotations` (label/class/timepoint
-   columns, extra clusterings, prefixes), `unidentified` (rule, held classes,
+   `dataset` (GEO / BioProject / SRA, or ArrayExpress), `sample_build` (GEO: title
+   pattern, sex, stocks from the paper's Key Resources Table resolved in FlyBase
+   Chado, `age_map` → FBdv stage + FBbt tissue, clusterings; ArrayExpress: also
+   `sample_columns`, `assay_column` / `assay_regex`, `sex_column` / `sex_map`,
+   `sdrf_corrections`), `annotation_build` (h5ad obs columns,
+   `unannotated_values`), `annotations` (label/class/timepoint
+   columns, extra clusterings, prefixes), `unidentified` (rule, held classes, hold reasons,
    class anchors), `expression` (matrix files, extra parts; or `source: h5ad` with
    `values`, `gene_ids_from`, `gzip_tsv`).
 3. **Clusters:** `build_annotations_from_geo.py` (one entry per author cluster;
@@ -805,7 +829,7 @@ VFB until the release files are merged, so ids can still change during review.
 12. **Check:** `pytest`, `validate_project_files.py`, `check_mapping_tsv.py`; commit
     in stages on a branch and open a PR (CI runs the same checks).
 
-## Fly Cell Atlas (Li et al. 2022) — in progress
+## Fly Cell Atlas (Li et al. 2022)
 
 Science 2022, PMID 35239393, FBrf0252876. Raw data only in ArrayExpress
 (E-MTAB-10519 10x, E-MTAB-10628 Smart-seq2); the authors' analyses (annotations with

@@ -1,6 +1,7 @@
 """Expression stats on a tiny synthetic 10x matrix: guards the gene-count
 definitions (dataset total = expressed in any cluster; dataset filtered = union of
-extent > cutoff across clusters, NOT a dataset-wide extent) and the extent filter.
+extent > cutoff across clusters, NOT a dataset-wide extent; held clusters included),
+the extent filter, and leaving held clusters out of the per-cluster output.
 
 4 genes x 10 cells, clusters A (cells 1-5) and B (cells 6-10):
   g1: cells 1,2,3 (A: 3/5=0.6) + 6 (B: 1/5=0.2)   -> filtered in A only
