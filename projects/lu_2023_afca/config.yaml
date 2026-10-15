@@ -3,8 +3,12 @@
 # The 30/50/70-day data are new (GEO GSE218661, 72 libraries); the 5-day data are the
 # Fly Cell Atlas head and body samples (Li et al. 2022), co-clustered and re-annotated
 # with the new ages ("5d samples are from the FCA"). Previously loaded into VFB via the
-# old FlyBase/SCEA mechanism (FBlc0006422); rebuilt here from GEO and the authors' own
-# analyses with fresh VFBseq ids. Curator decisions 2026-10-15:
+# old FlyBase/SCEA mechanism as FBlc0006422 (scRNAseq_2023_AFCA): one re-analysis per
+# age, head and body merged, clusters merged by type — D30 FBlc0006423, D50
+# FBlc0006887, D70 FBlc0007347, each with female / male sub-datasets (FBlc0006424 /
+# 0006611, 0006888 / 0007071, 0007348 / 0007532). Rebuilt here from GEO and the
+# authors' own analyses with fresh VFBseq ids; the old type-level FBbt assignments
+# (vfb-scRNAseq-ontology metadata_release_files) serve only as a mapping cross-check. Curator decisions 2026-10-15:
 # one Clustering per author analysis (head, body), one Cluster per author
 # `afca_annotation` type over all ages; the FCA's 5-day Samples/Assays are reused by
 # VFBseq id (general rule: reuse identical entities), not duplicated.
