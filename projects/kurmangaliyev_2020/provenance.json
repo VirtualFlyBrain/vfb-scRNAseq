@@ -1,245 +1,374 @@
 {
   "project": "kurmangaliyev_2020",
-  "generated_at": "2026-10-06",
-  "people": [
+  "created_at": "2026-06-19",
+  "updated_at": "2026-10-15",
+  "summary": "Optic lobe single-cell RNAseq across pupal development (Kurmangaliyev et al. 2020, Neuron), built from GEO GSE156455: the authors' cell metadata and raw 10x matrices for their main and separately clustered early (0-24h APF) datasets. Samples and Assays from GEO (7 female biological samples, 36 10x-library Assays) with FBdv stages and FBbt tissue, and FlyBase stocks linked. Two Clusterings (main, early) with one Cluster per author cluster: 196 main clusters (184 mapped to FBbt, 12 held) and 110 early clusters (48 mapped, 62 held), so 232 Clusters loaded. Summary expression for the loaded Clusters as CPM from the raw counts (686,568 cluster x gene rows with extent > 0.2; dataset total/filtered gene counts 15,751 / 7,473).",
+  "decisions": [
     {
-      "role": "curator",
-      "name": "Clare Pilgrim",
-      "username": "Clare72",
-      "orcid": "0000-0002-1373-1705"
+      "date": "2026-06-26",
+      "by": "pipeline",
+      "decision": "Sample, Assay and Clustering layer built from GEO: one Assay per 10x library (one GSM per Chromium lane), FBdv stages and FBbt tissue per a curated timepoint map. Sample sex set to female, from the paper (not annotated in GEO)."
+    },
+    {
+      "date": "2026-08-03",
+      "by": "pipeline",
+      "decision": "Expression summary stats computed from the raw 10x matrix: CPM-normalised mean over expressing cells (level) and the fraction of expressing cells (extent), rows kept with extent > 0.2 (expression.tsv and GSE156455_expression.owl.gz). Total/filtered gene counts on each Cluster, and dataset-level total/filtered gene counts on the Dataset (union across clusters, matching the old repo's get_gene_counts)."
+    },
+    {
+      "date": "2026-09-23",
+      "by": "pipeline",
+      "decision": "FlyBase stock refs (FBst) for each sample resolved from FlyBase Chado and linked via BAO:0095000 'is derived from'; no free-text genotype slot."
+    },
+    {
+      "date": "2026-10-06",
+      "by": "pipeline",
+      "decision": "Main-dataset clusters of author class C held (class undefined): 12 clusters."
+    },
+    {
+      "date": "2026-10-06",
+      "by": "pipeline",
+      "decision": "Dataset carries site vfb:GEO (VFB Site node) with the GSE accession as the dbxref annotation."
+    },
+    {
+      "date": "2026-10-06",
+      "by": "pipeline",
+      "decision": "Publication linked to the VFB :pub node FBrf0247594: first checked in the VFB curation KB by PMID (config fallback used, as it is not yet in the KB); now resolved from VFB production (pdb)."
+    },
+    {
+      "date": "2026-10-06",
+      "by": "curator",
+      "decision": "Regeneration under the general curation rules (one row per author cluster). The main dataset already had one row per author cluster (the 196 subtype populations of the authors' clustering; `type` only groups them), so its clusters, mappings and ids are unchanged."
+    },
+    {
+      "date": "2026-10-06",
+      "by": "curator",
+      "decision": "Added the authors' separately clustered EARLY dataset (0-24h APF, GSE156455_metadata_early / matrix_early) as Clusters of the existing 'early' Clustering: 110 clusters labelled early_<cluster>. Main clusters relabelled main_<cluster>, with registry keys renamed so ids are unchanged."
+    },
+    {
+      "date": "2026-10-06",
+      "by": "pipeline",
+      "decision": "Early-cluster mapping: 28 named clusters mapped by map-clusters-to-fbbt subagents to immature FBbt terms (e.g. immature lamina monopolar neuron L1); 20 numbered N/G clusters given stage-appropriate anchors (N: immature adult optic lobe neuron FBbt:00053539; G: glial cell FBbt:00005144, as FBbt has no immature optic-lobe glia term); 62 held (58 class x, unresolved; 4 class C)."
+    },
+    {
+      "date": "2026-10-06",
+      "by": "pipeline",
+      "decision": "Gene ids mapped to current FlyBase genes (FB2026_03, FlyBase Chado; gene_id_map.tsv via scripts/update_gene_ids.py): 86 secondary ids to the current gene (3 merges, counts summed per cell), 1 split id and 1 withdrawn id (snRNA:U3) dropped, symbols refreshed. Dataset total/filtered gene counts 15,751 / 7,473."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Clusters with no FBbt term (held) are no longer loaded: listed in mapping.tsv with a hold_reason, but given no VFBseq id (previously minted ids removed from the registry, never reused), no Cluster entity and no expression rows. Their cells still count towards the Dataset's total/filtered gene counts, which measure what the experiment detected. Here 74 held clusters (12 main class C; 62 early: 58 class x, 4 class C) left out; expression 686,568 rows, dataset gene counts unchanged."
+    },
+    {
+      "date": "2026-10-15",
+      "by": "curator",
+      "decision": "Assays named \"<Sample>, 10x lane <n> of <N>\" (paper Methods: 4 Chromium lanes per W1118 sample, 8 per DGRP sample; one GSM per lane), previously the accession or library id; ids unchanged."
     }
   ],
-  "notes": "All 62 distinct FBbt terms across 184 mapped clusters verified current/non-obsolete/label-match against FBbt 2026-06-11 via scripts/verify_mappings.py. Deterministic steps (annotations, 124 placeholders, collate) reproduce byte-identically from current code; the 8 pilot clusters were re-run under current agent guidance with 0 changes in FBbt assignment/match-type/flags. 12 class-C clusters held (class undefined). Sample/Assay/Clustering layer built from GEO (7 biological samples, 36 10x-library assays, 2 clusterings) with FBdv stages + FBbt tissue per curated timepoint map; FBdv 2026-04-02, FBcv 2026-04-03. Expression summary stats computed from the raw 10x matrix: CPM-normalised mean over expressing cells (level) + extent, filtered extent>0.2 -> 584,710 cluster x gene rows (expression.tsv + GSE156455_expression.owl.gz); total/filtered gene counts on each Cluster, and dataset-level total/filtered gene counts on the Dataset (union across clusters, matching the old repo's get_gene_counts). Sample sex set to female (from the paper; not annotated in GEO). FlyBase stock refs (FBst) for each sample resolved from FlyBase Chado and linked via BAO:0095000 'is derived from'; no free-text genotype slot. Publication linked to the VFB :pub node FBrf0247594 (checked in the VFB curation KB by PMID; config fallback used as it is not yet in the KB). Dataset carries site vfb:GEO (VFB Site node) with the GSE accession as the dbxref annotation. 2026-10-06 regeneration under the general curation rules: the main dataset already had one row per author cluster (the 196 subtype populations of the authors' clustering; `type` only groups them), so its clusters, mappings and ids are unchanged. Added the authors' separately clustered EARLY dataset (0-24h APF, GSE156455_metadata_early / matrix_early) as Clusters of the existing 'early' Clustering: 110 clusters labelled early_<cluster> (main clusters relabelled main_<cluster>, registry keys renamed so ids are unchanged) (28 named, mapped by map-clusters-to-fbbt subagents to immature FBbt terms, e.g. immature lamina monopolar neuron L1; 20 numbered N/G with stage-appropriate anchors - N: immature adult optic lobe neuron FBbt:00053539, G: glial cell FBbt:00005144 as FBbt has no immature optic-lobe glia term; 62 held: 58 class x (unresolved) + 4 class C). Old FlyBase/SCEA load FBlc0006237 crosswalked as a cross-check (prior_mapping_FBlc0006237.tsv): 183 of 184 comparable main clusters agree (R184 placeholder anchor eye photoreceptor cell vs old light-sensitive neuron). All 88 FBbt terms verified current against FBbt 2026-10-01. Expression recomputed for main + early (main rows byte-identical; 901,382 rows total; dataset total/filtered gene counts 15,754/7,473). Publication FBrf0247594 now resolved from VFB production (pdb). Gene ids mapped to current FlyBase genes (FB2026_03, FlyBase Chado; gene_id_map.tsv via scripts/update_gene_ids.py): 86 secondary ids -> current gene (3 merges, counts summed per cell), 1 split id and 1 withdrawn id (snRNA:U3) dropped, symbols refreshed; 901,382 expression rows; dataset total/filtered gene counts 15,751/7,473. 2026-10-14 (curator decision): clusters with no FBbt term (held) are no longer loaded - listed in mapping.tsv with a hold_reason, but given no VFBseq id (previously minted ids removed from the registry, never reused), no Cluster entity and no expression rows (their cells still count towards the Dataset's total/filtered gene counts, which measure what the experiment detected); 74 held clusters (12 main class C; 62 early: 58 class x, 4 class C) left out; 232 Clusters loaded (184 main, 48 early); expression 686,568 rows (dataset total/filtered gene counts 15,751 / 7,473, unchanged). 2026-10-15: Assays named \"<Sample>, 10x lane <n> of <N>\" (paper Methods: 4 Chromium lanes per W1118 sample, 8 per DGRP sample; one GSM per lane) (previously the accession or library id); ids unchanged.",
+  "checks": [
+    {
+      "date": "2026-10-06",
+      "check": "scripts/verify_mappings.py: all distinct FBbt terms across the 184 mapped main clusters looked up against FBbt 2026-06-11 (initial build).",
+      "result": "All 62 terms current, not obsolete, labels match."
+    },
+    {
+      "date": "2026-10-06",
+      "check": "Reproducibility: deterministic steps (annotations, 124 placeholders, collate) re-run from current code; the 8 pilot clusters re-run under current agent guidance.",
+      "result": "Deterministic outputs reproduce byte-identically; 0 changes in FBbt assignment, match type or flags for the pilot clusters."
+    },
+    {
+      "date": "2026-10-06",
+      "check": "Local paper index: the Davie paper re-ingested at Atlas-reporter commit 2acd38e (local-index code byte-identical to atlas-chat 4c90b6c).",
+      "result": "Index reproduced exactly, so this provenance is reproducible from 2acd38e."
+    },
+    {
+      "date": "2026-10-06",
+      "check": "Cross-check against the old FlyBase/SCEA load FBlc0006237: its cluster mappings crosswalked to the main clusters (prior_mapping_FBlc0006237.tsv).",
+      "result": "183 of 184 comparable main clusters agree; R184 differs (placeholder anchor eye photoreceptor cell vs old light-sensitive neuron)."
+    },
+    {
+      "date": "2026-10-06",
+      "check": "All FBbt terms in the main and early mappings verified against FBbt 2026-10-01.",
+      "result": "All 88 terms current."
+    },
+    {
+      "date": "2026-10-06",
+      "check": "Expression recomputed for main + early and compared with the previous main-only output.",
+      "result": "Main rows byte-identical; 901,382 rows total (before held clusters were dropped)."
+    }
+  ],
+  "people": [
+    {
+      "id": "ORCID:0000-0002-1373-1705",
+      "label": "Clare Pilgrim",
+      "role": "curator",
+      "username": "Clare72"
+    }
+  ],
   "pipeline": {
-    "name": "vfb-scrnaseq",
+    "id": "vfb-scrnaseq",
+    "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
     "version": "0.0.0",
-    "repo": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
     "commit": "fe0853c"
   },
   "ontologies": [
     {
       "id": "FBbt",
-      "name": "Drosophila gross anatomy ontology",
+      "label": "Drosophila gross anatomy ontology",
       "version": "2026-10-01",
       "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
-      "release_date": "2026-10-01",
       "accessed_via": "OLS MCP (OLS4)",
-      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
-      "accessed_at": "2026-10-06"
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-10-06",
+      "description": "The initial main-cluster mappings were verified against FBbt 2026-06-11."
     },
     {
       "id": "FBdv",
-      "name": "Drosophila developmental ontology",
+      "label": "Drosophila developmental ontology",
       "version": "2026-04-02",
       "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-04-02/fbdv.owl",
-      "release_date": "2026-04-02",
       "accessed_via": "OLS4 API",
-      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
       "accessed_at": "2026-06-19"
     },
     {
       "id": "FBcv",
-      "name": "FlyBase controlled vocabulary",
+      "label": "FlyBase controlled vocabulary",
       "version": "2026-04-03",
       "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-04-03/fbcv.owl",
-      "release_date": "2026-04-03",
       "accessed_via": "OLS4 API",
-      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
       "accessed_at": "2026-06-19"
     },
     {
       "id": "BAO",
-      "name": "BioAssay Ontology",
+      "label": "BioAssay Ontology",
       "accessed_via": "OLS MCP (OLS4)",
-      "accessed_url": "https://www.ebi.ac.uk/ols4/api/ontologies/bao",
-      "accessed_at": "2026-09-23"
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/bao",
+      "accessed_at": "2026-09-23",
+      "description": "BAO:0095000 'is derived from' (Sample to FlyBase stock)."
     }
   ],
   "data_sources": [
     {
-      "type": "publication",
       "id": "10.1016/j.neuron.2020.10.006",
-      "title": "Transcriptional Programs of Circuit Assembly in the Drosophila Visual System (Kurmangaliyev et al. 2020); PMID 33125872",
+      "type": "publication",
+      "label": "Transcriptional Programs of Circuit Assembly in the Drosophila Visual System",
+      "xrefs": [
+        "PMID:33125872",
+        "FlyBase:FBrf0247594"
+      ],
+      "description": "Kurmangaliyev et al. 2020. PDF indexed locally (local-paper-index) for the cluster reports.",
       "url": "https://doi.org/10.1016/j.neuron.2020.10.006",
       "files": [
         {
-          "name": "Kurmangaliyev2020.pdf",
+          "path": "Kurmangaliyev2020.pdf",
           "sha256": "70caf4e65f85d739ffeaaa4500fe74920bc8c69e3bc8b8f1384ecd36a96ad5ab",
           "bytes": 11379261,
-          "retrieved_at": "2026-06-15"
+          "accessed_at": "2026-06-15"
         }
       ]
     },
     {
-      "type": "dataset",
       "id": "GSE156455",
-      "title": "GEO series: optic lobe scRNA-seq across pupal development (main + early subsets)",
+      "type": "dataset",
+      "label": "Optic lobe scRNA-seq across pupal development",
+      "description": "GEO series, with the authors' main and early subsets as supplementary metadata and 10x matrix files.",
       "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156455",
-      "retrieved_at": "2026-06-16",
+      "accessed_at": "2026-06-16",
       "files": [
         {
-          "name": "GSE156455_metadata_main.tsv.gz",
+          "path": "GSE156455_metadata_main.tsv.gz",
+          "description": "Cell metadata, main dataset.",
           "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE156nnn/GSE156455/suppl/GSE156455_metadata_main.tsv.gz",
           "sha256": "a312e1ef40819ff0d988cb0de00231fa5fbae3ddd3befd90b05031140c24f2c1",
           "bytes": 2098986,
-          "retrieved_at": "2026-06-16"
+          "accessed_at": "2026-06-16"
         },
         {
-          "name": "GSE156455_matrix_main.mtx.gz",
+          "path": "GSE156455_matrix_main.mtx.gz",
+          "description": "Raw 10x count matrix, main dataset.",
           "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE156nnn/GSE156455/suppl/GSE156455_matrix_main.mtx.gz",
           "sha256": "e34a0728501cb8a40713b24c861f261fe293900cf113ab92f2ed522791b5f81e",
           "bytes": 1054537791,
-          "retrieved_at": "2026-07-31"
+          "accessed_at": "2026-07-31"
         },
         {
-          "name": "GSE156455_metadata_early.tsv.gz",
+          "path": "GSE156455_metadata_early.tsv.gz",
+          "description": "Cell metadata, early dataset (0-24h APF).",
           "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE156nnn/GSE156455/suppl/GSE156455_metadata_early.tsv.gz",
-          "retrieved_at": "2026-10-06",
           "sha256": "e01230c01278d7491e65d54b49157bede03c2627503f45fe5ccb5caa3ac1c63f",
-          "bytes": 314718
+          "bytes": 314718,
+          "accessed_at": "2026-10-06"
         },
         {
-          "name": "GSE156455_matrix_early.mtx.gz",
+          "path": "GSE156455_matrix_early.mtx.gz",
+          "description": "Raw 10x count matrix, early dataset (0-24h APF).",
           "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE156nnn/GSE156455/suppl/GSE156455_matrix_early.mtx.gz",
-          "retrieved_at": "2026-10-06",
           "sha256": "32c46f2eebb4e50aea149485b5cfb0486cf1ffd4ad85e9afa16a02c031916fe2",
-          "bytes": 159343027
+          "bytes": 159343027,
+          "accessed_at": "2026-10-06"
         }
       ]
     },
     {
-      "type": "other",
-      "id": "FlyBase Chado",
-      "title": "FlyBase Chado public PostgreSQL (psql -h chado.flybase.org -U flybase flybase) — source of the FlyBase stock ids (FBst) for the sample strains, cross-checked against the paper's Key Resources Table",
-      "url": "https://chado.flybase.org",
-      "retrieved_at": "2026-09-23"
-    },
-    {
-      "type": "other",
-      "id": "FlyBase FB2026_03 gene ids",
-      "title": "FlyBase FB2026_03 (released 2026-09-17, per flybase.org; Chado data last modified 2026-08-29 = the FB2026_03 data freeze): current/secondary FBgn mapping for the expression gene ids from FlyBase Chado (chado.flybase.org), cross-checked against fbgn_annotation_ID_fb_2026_03.tsv",
-      "url": "https://chado.flybase.org",
-      "retrieved_at": "2026-10-06"
+      "id": "FBlc0006237",
+      "type": "previous_load",
+      "label": "FlyBase/SCEA load FBlc0006237",
+      "description": "Old FlyBase/SCEA load of this dataset, crosswalked as a mapping cross-check only (prior_mapping_FBlc0006237.tsv)."
     }
   ],
   "software": [
     {
-      "name": "atlas-chat / Atlas Reporter (local-paper-index)",
-      "kind": "repository",
-      "repo": "https://github.com/Cellular-Semantics/Atlas-chat",
+      "id": "claude-code",
+      "type": "tool",
+      "label": "Claude Code",
+      "version": "2.1.280",
+      "description": "Harness orchestrating the agentic pipeline (main session + map-clusters-to-fbbt subagents)."
+    },
+    {
+      "id": "atlas-chat",
+      "type": "repository",
+      "label": "atlas-chat / Atlas Reporter (local-paper-index)",
+      "url": "https://github.com/Cellular-Semantics/Atlas-chat",
       "commit": "4c90b6c",
-      "notes": "Used only for building/querying the local PDF snippet index (local-paper-index). Local-index code is byte-identical at Atlas-reporter (atlas-chat renamed) commit 2acd38e on main (https://github.com/Cellular-Semantics/Atlas-reporter), where 4c90b6c is no longer on main; re-ingesting the Davie paper at 2acd38e reproduced the index exactly (checked 2026-10-06), so this provenance remains reproducible from 2acd38e."
+      "description": "Used only for building/querying the local PDF snippet index (local-paper-index). Local-index code is byte-identical at Atlas-reporter (atlas-chat renamed) commit 2acd38e on main (https://github.com/Cellular-Semantics/Atlas-reporter), where 4c90b6c is no longer on main; re-ingesting the Davie paper at 2acd38e reproduced the index exactly (checked 2026-10-06), so this provenance remains reproducible from 2acd38e."
     },
     {
-      "name": "sentence-transformers",
-      "kind": "library",
+      "id": "sentence-transformers",
+      "type": "library",
+      "label": "sentence-transformers",
       "version": "5.5.1",
-      "notes": "Local index embeddings."
+      "description": "Local index embeddings."
     },
     {
-      "name": "pymupdf4llm",
-      "kind": "library",
+      "id": "pymupdf4llm",
+      "type": "library",
+      "label": "pymupdf4llm",
       "version": "1.27.2.3",
-      "notes": "PDF text extraction for the local index."
+      "description": "PDF text extraction for the local index."
     },
     {
-      "name": "OLS4 (Ontology Lookup Service)",
-      "kind": "service",
+      "id": "ols4",
+      "type": "service",
+      "label": "OLS4 (Ontology Lookup Service)",
       "url": "https://www.ebi.ac.uk/ols4",
-      "notes": "FBbt term search/lookup during mapping (via OLS MCP)."
+      "description": "FBbt term search/lookup during mapping (via OLS MCP)."
     },
     {
-      "name": "VFB curation KB (neo4j)",
-      "kind": "service",
+      "id": "vfb-kb",
+      "type": "service",
+      "label": "VFB curation KB (neo4j)",
       "url": "https://kb.virtualflybrain.org",
-      "notes": "Queried by vfb_scrnaseq.pub to resolve the publication FBrf (:pub node, matched by PMID) and to confirm the GEO Site node; config fallback used when a pub is not present in the KB."
+      "description": "Queried by vfb_scrnaseq.pub to resolve the publication FBrf (:pub node, matched by PMID) and to confirm the GEO Site node; config fallback used when a pub is not present in the KB."
     },
     {
-      "name": "Python",
-      "kind": "language",
+      "id": "vfb-pdb",
+      "type": "service",
+      "label": "VFB production (neo4j)",
+      "description": "Publication FBrf0247594 resolved from VFB production (pdb) at the 2026-10-06 regeneration.",
+      "url": "https://pdb.virtualflybrain.org"
+    },
+    {
+      "id": "flybase-chado",
+      "type": "service",
+      "label": "FlyBase Chado",
+      "version": "FB2026_03 (released 2026-09-17, per flybase.org; Chado data last modified 2026-08-29 = the FB2026_03 data freeze)",
+      "url": "https://chado.flybase.org",
+      "accessed_at": "2026-10-06",
+      "description": "Public PostgreSQL (psql -h chado.flybase.org -U flybase flybase). Source of the FlyBase stock ids (FBst) for the sample strains, cross-checked against the paper's Key Resources Table (accessed 2026-09-23); and of the current/secondary FBgn mapping for the expression gene ids (update_gene_ids.py), cross-checked against fbgn_annotation_ID_fb_2026_03.tsv (accessed 2026-10-06)."
+    },
+    {
+      "id": "python",
+      "type": "language",
+      "label": "Python",
       "version": "3.14.3",
-      "notes": "atlas-chat / local-index environment (uv-managed)."
+      "description": "atlas-chat / local-index environment (uv-managed)."
     },
     {
-      "name": "linkml",
-      "kind": "library",
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
       "version": "1.11.1",
-      "notes": "linkml-validate (data conformance) + linkml-convert (flat RDF/TTL) driven by the schema tree_root Container."
+      "description": "linkml-validate (data conformance) + linkml-convert (flat RDF/TTL) driven by the schema tree_root Container."
     },
     {
-      "name": "linkml-owl",
-      "kind": "library",
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
       "version": "0.5.0",
-      "notes": "linkml-data2owl: OWL emission honouring the schema owl.fstring/owl.template annotations (ClassAssertions, ObjectSomeValuesFrom restrictions) — VFB-pipeline-compatible."
+      "description": "linkml-data2owl: OWL emission honouring the schema owl.fstring/owl.template annotations (ClassAssertions, ObjectSomeValuesFrom restrictions) — VFB-pipeline-compatible."
     },
     {
-      "name": "funowl",
-      "kind": "library",
+      "id": "funowl",
+      "type": "library",
+      "label": "funowl",
       "version": "0.2.3",
-      "notes": "OWL functional-syntax construction (used by linkml-owl)."
+      "description": "OWL functional-syntax construction (used by linkml-owl)."
     },
     {
-      "name": "ROBOT",
-      "kind": "tool",
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
       "version": "1.9.8",
-      "notes": "robot convert: OWL functional syntax (.ofn) -> OWL/XML (.owl). External Java tool, not a pip/uv dependency."
+      "description": "robot convert: OWL functional syntax (.ofn) -> OWL/XML (.owl). External Java tool, not a pip/uv dependency."
     },
     {
-      "name": "linkml-runtime",
-      "kind": "library",
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
       "version": "1.11.1"
     },
     {
-      "name": "rdflib",
-      "kind": "library",
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
       "version": "7.1.1",
-      "notes": "Turtle (de)serialization + stripping the Container index node from the flat RDF."
+      "description": "Turtle (de)serialization + stripping the Container index node from the flat RDF."
     },
     {
-      "name": "pandas",
-      "kind": "library",
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
       "version": "3.0.5",
-      "notes": "Chunked streaming of the 10x MatrixMarket for expression stats."
+      "description": "Chunked streaming of the 10x MatrixMarket for expression stats."
     },
     {
-      "name": "numpy",
-      "kind": "library",
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
       "version": "2.5.1",
-      "notes": "CPM normalisation + per-cluster extent/level accumulation (bincount)."
-    },
-    {
-      "name": "Claude Code",
-      "kind": "cli",
-      "version": "2.1.280",
-      "notes": "Harness orchestrating the agentic pipeline (main session + map-clusters-to-fbbt subagents)."
+      "description": "CPM normalisation + per-cluster extent/level accumulation (bincount)."
     }
   ],
   "models": [
     {
+      "id": "claude-opus-4-8",
       "role": "orchestrator",
-      "name": "claude-opus-4-8",
+      "label": "Claude Opus 4.8 (1M context)",
       "provider": "Anthropic",
-      "version": "Opus 4.8 (1M context); model id claude-opus-4-8[1m]",
-      "notes": "Claude Code main session that drove the pipeline: dispatched the mapping subagents, authored the deterministic scripts (build_annotations/assign_placeholders/collate/verify) and the initial pilot reports, and made the curation/design decisions."
+      "description": "Model id claude-opus-4-8[1m]. Claude Code main session that drove the pipeline: dispatched the mapping subagents, authored the deterministic scripts (build_annotations/assign_placeholders/collate/verify) and the initial pilot reports, and proposed the curation and design choices (decided by the curator)."
     },
     {
+      "id": "claude-sonnet",
       "role": "mapping-llm",
-      "name": "claude-sonnet",
+      "label": "Claude Sonnet (agent default)",
       "provider": "Anthropic",
-      "notes": "map-clusters-to-fbbt Claude Code subagent (agent frontmatter model: sonnet); also synthesised most per-cluster reports."
+      "description": "map-clusters-to-fbbt Claude Code subagent (agent frontmatter model: sonnet); also synthesised most per-cluster reports."
     },
     {
+      "id": "sentence-transformers/all-MiniLM-L6-v2",
       "role": "embedding",
-      "name": "sentence-transformers/all-MiniLM-L6-v2",
+      "label": "all-MiniLM-L6-v2",
       "provider": "sentence-transformers",
-      "notes": "Local PDF snippet-index embeddings."
+      "description": "Local PDF snippet-index embeddings."
     },
     {
+      "id": "claude-opus-5-5",
       "role": "other",
-      "name": "claude-opus-5-5",
+      "label": "Claude Opus 5.5",
       "provider": "Anthropic",
-      "version": "Opus 5.5; model id claude-opus-5-5",
-      "notes": "Orchestrator of the 2026-10-06 regeneration (early-dataset addition, crosswalk, rebuild); dispatched the early-cluster mapping subagents."
+      "description": "Orchestrator of the 2026-10-06 regeneration (early-dataset addition, crosswalk, rebuild); dispatched the early-cluster mapping subagents."
     }
   ]
 }
