@@ -116,11 +116,16 @@ def hold_reason(project: str, config: dict) -> Callable[[dict, dict], str]:
     - an ``unannotated`` entry: ``unidentified.hold_reasons[<its type>]`` if given
       (e.g. FCA "artefact" -> artefact, "unannotated" -> leftover), else ``untyped``
       (the authors left the cluster without a type);
+    - a cluster the ``unidentified.rule`` identifies as unnamed (e.g. AFCA "neuron 5")
+      when ``hold_unidentified``: ``untyped``;
     - a cluster of a class in ``unidentified.hold_classes``: ``undefined class``;
-    - any other cluster without an FBbt term: ``no term``.
+    - any other cluster whose mapping has no FBbt term: ``no term`` ("" while it has
+      no mapping yet).
     """
     reasons = (config.get("unidentified") or {}).get("hold_reasons") or {}
     classes = hold_classes(config)
+    hold_all = bool((config.get("unidentified") or {}).get("hold_unidentified", False))
+    is_unidentified = unidentified_classifier(project, config)
 
     def reason(ann: dict, mapping: dict) -> str:
         if ((mapping or {}).get("best_match") or {}).get("fbbt_id"):
@@ -129,7 +134,9 @@ def hold_reason(project: str, config: dict) -> Callable[[dict, dict], str]:
             return reasons.get(ann.get("type", ""), "untyped")
         if ann.get("class", "") in classes:
             return "undefined class"
-        return "no term"
+        if hold_all and is_unidentified(ann.get("source_cluster_id", ann["label"]), ann.get("class", "")):
+            return "untyped"
+        return "no term" if mapping else ""          # no mapping yet: pending, not held
     return reason
 
 
