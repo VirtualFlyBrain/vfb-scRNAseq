@@ -22,7 +22,13 @@ Snippets emitted by the corpus are ASTA-shape, so `_summarize_snippets` / `valid
 
 ## When to invoke
 
-- Atlas setup: after `anndata-zarr-summary` has produced `cell_type_annotations.json` + `label_provenance.json`, run the discover → review → ingest flow to build the corpus.
+In this repo every project so far indexes just its own paper (`add … --role atlas`,
+then `search`); `cell_type_annotations.json` comes from `build_annotations_from_geo.py`
+/ `build_annotations_from_h5ad.py` or a project script, and no project has a
+`label_provenance.json`. The subatlas flow below is the upstream (Atlas-reporter) one,
+for atlases built from several studies.
+
+- Atlas setup (upstream): after `anndata-zarr-summary` has produced `cell_type_annotations.json` + `label_provenance.json`, run the discover → review → ingest flow to build the corpus.
 - Adding a new subatlas paper: when fan-out logs a `needs_pdf` warning, download the publisher PDF and run `add --pdf …`.
 
 ## Flow

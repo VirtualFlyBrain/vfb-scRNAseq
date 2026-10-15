@@ -56,7 +56,7 @@ classes:
           owl.fstring: AnnotationAssertion( dc:references {id} {V} )
       licence:
         slot_uri: dc:licence
-        description: Licence for the Dataset (all CC-BY 4.0 for scExpressionAtlas).
+        description: Licence for the Dataset.
         range: Thing
         annotations:
           owl.fstring: AnnotationAssertion( dc:licence {id} {V} )
@@ -68,7 +68,7 @@ classes:
           owl.fstring: ClassAssertion( ObjectSomeValuesFrom( OBI:0000312 {V} ) {id} )
       site:
         slot_uri: oboInOwl:hasDbXref
-        description: VFB site node curie. The site must be created in VFB and added to the dictionary in ../scripts/process_site_data.py to successfully map from FB data.
+        description: VFB site node curie (e.g. vfb:GEO, vfb:ArrayExpress). The site must exist in VFB; the Dataset's accession is recorded as a dbxref to it.
         range: Thing
         annotations:
           owl.fstring: AnnotationAssertion(
@@ -91,14 +91,14 @@ classes:
     attributes:
       sample_tissue:
         slot_uri: RO:0002131
-        description: Tissue(s) (FBbt IDs) in the sample. Multiple IDs should be separated with '|' or in different rows. Maps as an overlaps relationship rather than part_of due to imprecision of dissection.
+        description: Tissue(s) (FBbt IDs) in the sample. Maps as an overlaps relationship rather than part_of due to imprecision of dissection.
         range: Thing
         annotations:
           owl.fstring: ClassAssertion( ObjectSomeValuesFrom( RO:0002131 {V} ) {id} )
         multivalued: true
       associated_assay:
         slot_uri: RO:0002352
-        description: Assay(s) that use this sample. Multiple IDs should be separated with '|' or in different rows.
+        description: Assay(s) that use this sample (VFBseq ids).
         range: Assay
         annotations:
           owl: ObjectPropertyAssertion
@@ -126,7 +126,7 @@ classes:
         multivalued: false
       associated_sample_for_assay:
         slot_uri: RO:0002233
-        description: Input sample(s) for the scRNAseq assay. Multiple IDs should be separated with '|' or in different rows.
+        description: Input sample(s) for the scRNAseq assay (VFBseq ids).
         range: Sample
         annotations:
           owl: ObjectPropertyAssertion
@@ -144,7 +144,7 @@ classes:
     attributes:
       associated_sample_or_assay_for_clustering:
         slot_uri: BFO:0000051
-        description: Sample or Assay (FBlc ID) that the Clustering uses.
+        description: Sample or Assay (VFBseq id) that the Clustering uses.
         range: Class
         annotations:
           owl: ObjectPropertyAssertion
@@ -160,7 +160,7 @@ classes:
     attributes:
       associated_clustering:
         slot_uri: BFO:0000050
-        description: Clustering (FBlc ID) that the Cluster belongs to.
+        description: Clustering (VFBseq id) that the Cluster belongs to.
         range: Clustering
         annotations:
           owl: ObjectPropertyAssertion
@@ -182,7 +182,7 @@ classes:
           owl: AnnotationProperty
       cell_type:
         slot_uri: RO:0002473
-        description: Anatomy (FBbt IDs) for the Cluster. Multiple IDs should be separated with '|'.
+        description: Anatomy (FBbt IDs) the Cluster is composed primarily of.
         range: Thing
         multivalued: true
         annotations:
@@ -206,7 +206,7 @@ classes:
       owl: NamedIndividual
     attributes:
       pub_dataset:
-        description: DataSet for the publication - created and used in tsv processing - not incorporated into ontology.
+        description: DataSet for the publication (legacy; not incorporated into the ontology).
     slots:
       - neo_label
 
@@ -226,7 +226,7 @@ classes:
 # slots can be used as attributes that can be shared by multiple classes
 slots:
   id:
-    description: Identifier for the entity. FlyBase identifiers should be prefixed with 'FlyBase:'.
+    description: Identifier for the entity, a VFBseq IRI (FlyBase CURIEs, prefixed 'FlyBase:', only for publications, stocks and genes).
     identifier: true
     range: uriorcurie
     required: true
@@ -244,7 +244,7 @@ slots:
     recommended: true
   associated_dataset:
     slot_uri: dc:source
-    description: Dataset (FBlc ID) that the Sample or Cluster belongs to.
+    description: Dataset (VFBseq id) that the Sample or Cluster belongs to.
     range: Dataset
     annotations:
       owl.fstring: AnnotationAssertion( dc:source {id} {V} )
@@ -290,7 +290,7 @@ slots:
       owl: AnnotationProperty
   gene:
     slot_uri: RO:0002292
-    description: A gene (FBgn ID) that is expressed by the entity. Max one gene per tsv row alongside its expression_level, expression_extent (for scRNAseq clusters) and hide_in_terminfo (=true).
+    description: A gene (FBgn ID) that is expressed by the entity, with its expression_level, expression_extent (for scRNAseq clusters) and hide_in_terminfo (=true).
     range: Thing
     annotations:
       owl.template: |-
@@ -316,13 +316,13 @@ slots:
     range: float
   total_gene_count:
     slot_uri: neo_custom:total_gene_count
-    description: Total number of distinct genes associated with the entity before filtering by extent.
+    description: Total number of distinct genes associated with the entity before filtering by extent (for a Dataset, over all its clusters, including held clusters that are not loaded).
     annotations:
       owl: AnnotationProperty
     range: integer
   filtered_gene_count:
     slot_uri: neo_custom:filtered_gene_count
-    description: Total number of distinct genes associated with the entity after filtering by extent.
+    description: Total number of distinct genes associated with the entity after filtering by extent (for a Dataset, over all its clusters, including held clusters that are not loaded).
     annotations:
       owl: AnnotationProperty
     range: integer

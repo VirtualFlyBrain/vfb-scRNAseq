@@ -18,7 +18,7 @@ Config (`annotation_build` in config.yaml):
   sex_column              obs column for per-sex cell counts (optional)
   unannotated_values      annotation values that are not a cell type (e.g.
                           "unannotated", "artefact"): the entry is kept, flagged
-                          `unannotated`, and held downstream
+                          `unannotated`, and held (in mapping.tsv, not loaded)
 
   membership              how cells were assigned to the annotation, when not by the
                           authors clustering them: `label_transfer` (a classifier

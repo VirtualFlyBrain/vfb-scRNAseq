@@ -4,10 +4,13 @@ Rather than hand-building triples, this drives the LinkML CLIs against a
 ``tree_root`` Container instance of the entities:
   - ``linkml-validate`` — checks the data conforms to the schema (types, ranges,
     required slots, and rejects unknown slots) → our validation pass;
-  - ``linkml-convert -t ttl`` — emits RDF using the schema's slot_uri/class_uri.
+  - ``linkml-convert -t ttl`` — emits RDF using the schema's slot_uri/class_uri
+    (``emit_ttl``; the Container index node, a tree_root artefact, is stripped);
+  - ``linkml-data2owl`` — OWL functional syntax from the schema's owl annotations
+    (``emit_owl``), converted to RDF/XML with ROBOT (``to_owlxml``).
 
-The only post-processing is stripping the Container index node (a tree_root
-artefact) so the output is just the domain entities.
+``emit_expression_owl`` renders the expression axioms directly from the schema's
+gene template (too many for linkml-owl), then ROBOT-converts and gzips them.
 """
 
 from __future__ import annotations

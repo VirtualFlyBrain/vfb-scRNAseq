@@ -1,4 +1,5 @@
-"""The CI check scripts: mapping.tsv freshness and the FBbt-release gate. Offline."""
+"""The CI check scripts: mapping.tsv freshness, the FBbt- and FlyBase-release checks,
+and gene ids by symbol (h5ad projects). Offline."""
 
 import importlib.util
 import json

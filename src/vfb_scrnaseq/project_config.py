@@ -1,9 +1,10 @@
 """Load per-project config and expose the project-specific knobs the generic
 pipeline scripts need, so the scripts in ``scripts/`` stay dataset-agnostic.
 
-All Kurmangaliyev/optic-lobe specifics live in ``projects/<name>/config.yaml``
-(column mapping, the unidentified-cluster rule, class->FBbt broad anchors,
-held classes). For logic that config can't express, a project may ship an
+All project-specific knowledge lives in ``projects/<name>/config.yaml`` (column
+mapping, the unidentified-cluster rule, class->FBbt broad anchors, held classes,
+``hold_unidentified`` and ``hold_reasons``; the builders also read e.g.
+``annotation_build``, ``type_mapping`` and ``expression``). For logic that config can't express, a project may ship an
 **escape hatch** module ``projects/<name>/project.py`` defining any of:
 
     def is_unidentified(label: str, cls: str, config: dict) -> bool: ...

@@ -18,7 +18,7 @@ Typing (curator decision): the authors' GEO annotation is authoritative; Table S
 recorded alongside, and where S2 makes a different call the cluster is flagged
 (`author_conflict`, -> verification_needed). A res-2.0 cluster the authors sub-
 clustered takes its S2 parent call (GEO only names the sub-clusters). Clusters the
-authors left numbered are `unannotated` (held, no FBbt link).
+authors left numbered are `unannotated` (held: listed in mapping.tsv, not loaded).
 
 Writes
   cell_type_annotations.json                         one entry per cluster

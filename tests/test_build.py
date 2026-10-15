@@ -1,4 +1,4 @@
-"""build_entities on the real worked-example project: checks the assembled records
+"""build_entities on the real projects (Kurmangaliyev, Davie): checks the assembled records
 carry the recently-wired fields (dataset site/publication/gene counts, sample
 sex/stock CURIEs, a Publication :pub node, cluster cell_type). Offline and
 side-effect-free: the KB pub lookup and the registry save are stubbed out.
