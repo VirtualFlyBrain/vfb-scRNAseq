@@ -1,0 +1,22 @@
+{
+  "cluster_label": "head_medullary intrinsic neuron Mi15",
+  "working_definition": "Author cell type 'medullary intrinsic neuron Mi15' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00111285 'medulla intrinsic neuron Mi15'. Found in: 10x:head (282 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00111285 (FBbt fbbt/releases/2026-10-01)",
+    "'adult medulla intrinsic neuron Mi15' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'medullary intrinsic neuron Mi15' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "medulla intrinsic neuron Mi15",
+    "fbbt_id": "FBbt:00111285",
+    "fbbt_definition": "Medulla intrinsic unicolumnar neuron whose primary neurite splits in the M1 layer, sending vertical branches as far as the M7 layer (Takemura et al., 2013; Takemura et al., 2015; Kind et al., 2021). A process also extends from the distal medulla into the first optic chiasma, where it receives around half of its photoreceptor input (Kind et al., 2021). In central columns, these cells selectively receive input from R8, rather than R7 photoreceptors, but selectivity is not maintained in Mi15 cells of the dorsal rim area (Kind et al., 2021). It seems to be both cholinergic and dopaminergic (Davis et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00111285 'medulla intrinsic neuron Mi15', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00111285 'medulla intrinsic neuron Mi15', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

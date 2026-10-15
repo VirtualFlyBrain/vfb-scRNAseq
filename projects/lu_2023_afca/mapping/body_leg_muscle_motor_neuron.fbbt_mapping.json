@@ -1,0 +1,22 @@
+{
+  "cluster_label": "body_leg muscle motor neuron",
+  "working_definition": "Author cell type 'leg muscle motor neuron' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00049568 'leg muscle motor neuron'. Found in: 10x:body (332 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00049568 (FBbt fbbt/releases/2026-10-01)",
+    "'adult leg muscle motor neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'leg muscle motor neuron' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "leg muscle motor neuron",
+    "fbbt_id": "FBbt:00049568",
+    "fbbt_definition": "Any motor neuron (FBbt:00005123) that sends synaptic output to some muscle cell of adult leg muscle (FBbt:00053106).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00049568 'leg muscle motor neuron', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00049568 'leg muscle motor neuron', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

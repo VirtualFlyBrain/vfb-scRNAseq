@@ -1,0 +1,22 @@
+{
+  "cluster_label": "head_columnar neuron T1",
+  "working_definition": "Author cell type 'columnar neuron T1' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00003727 'columnar neuron T1'. Found in: 10x:head (1618 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00003727 (FBbt fbbt/releases/2026-10-01)",
+    "'adult columnar neuron T1' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'columnar neuron T1' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "columnar neuron T1",
+    "fbbt_id": "FBbt:00003727",
+    "fbbt_definition": "An intrinsic columnar neuron whose cell body lies in the cortex of the medulla. The fiber of the T1 cell body branches at the medulla surface to form a T-shaped linking fiber between a bush-like arborization in the distal part of a medulla column (M1 and M2), and a bundle of climbing fibers in the equivalent column of the lamina (Fischbach and Dittrich, 1989). Synaptic connections in the lamina are exclusively postsynaptic and include a large number of connections from lamina intrinsic (amacrine) neurons (Meinertzhagen and O'Neil, 1991; Rivera-Alba et al., 2011). In the medulla, it is strongly synapsed by centrifugal neuron C3 in medulla layer M2 and lamina monopolar neuron L2 (Takemura et al., 2008; Takemura et al., 2013). There is usually one of these cells per optic column (Nern et al., 2025).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00003727 'columnar neuron T1', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00003727 'columnar neuron T1', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

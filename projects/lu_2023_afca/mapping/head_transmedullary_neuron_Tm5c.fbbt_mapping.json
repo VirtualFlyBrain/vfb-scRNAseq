@@ -1,0 +1,22 @@
+{
+  "cluster_label": "head_transmedullary neuron Tm5c",
+  "working_definition": "Author cell type 'transmedullary neuron Tm5c' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00110074 'transmedullary neuron Tm5c'. Found in: 10x:head (169 cells).",
+  "searches_performed": [
+    "authors' ontology id FBbt:00110074 (FBbt fbbt/releases/2026-10-01)",
+    "'adult transmedullary neuron Tm5c' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'transmedullary neuron Tm5c' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "transmedullary neuron Tm5c",
+    "fbbt_id": "FBbt:00110074",
+    "fbbt_definition": "Transmedullary Tm5 neuron that spans around eight medulla columns with lateral branches expanding out into the M1, M3 and M6 layers from a single vertical dendrite (Kind et al., 2021). It preferentially receives input from R8 (rather than R7) photoreceptor cells, and in most, but not all, cases these cells are selective for yellow (rather than pale) ommatidia (Kind et al., 2021). Its R8 input is mainly in layer M3 and it also receives input from the distal medullary amacrine neuron Dm8 in layer M6 (Karuppudurai et al., 2014). Its axon terminates near the boundary between lobula layers 5 and 6, with some cells having a branch in layer 4 (Kind et al., 2021). It provides input to the lobula intrinsic neuron Li4 via many synapses (Lin et al., 2016). It is a glutamatergic neuron (Gao et al., 2008; Karuppudurai et al., 2014).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors annotated this type with FBbt:00110074 'transmedullary neuron Tm5c', a current (non-obsolete) FBbt cell term; FBbt has no adult-specific variant of it. The authors' typing is taken at face value.",
+  "other_candidates": [],
+  "recommendation": "Map to the authors' term FBbt:00110074 'transmedullary neuron Tm5c', exact match.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

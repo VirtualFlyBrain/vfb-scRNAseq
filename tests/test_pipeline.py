@@ -190,3 +190,29 @@ def test_geo_title_regex_extra_groups_join_sample_id():
     p = parse("Female_body_adult_30dWT_Hongjie_S1_S1")
     assert p["sample_id"] == "Female_body_30d_S1" and p["set"] == "Female" and p["techrep"] is None
     assert parse("Female_wing_adult_30dWT_Hongjie_S1_S1") is None
+
+
+def test_expand_type_mappings_own_dir_aliases_and_held(tmp_path):
+    mod = _script("expand_type_mappings")
+    proj, other = tmp_path / "p", tmp_path / "src" / "type_mapping"
+    (proj / "type_mapping").mkdir(parents=True)
+    other.mkdir(parents=True)
+
+    def m(label, fb):
+        return json.dumps({"cluster_label": label, "best_match": {"fbbt_id": fb}})
+    (other / "epithelial_cell.fbbt_mapping.json").write_text(m("epithelial cell", "FBbt:00000001"))
+    (other / "cyst_cell.fbbt_mapping.json").write_text(m("cyst cell", "FBbt:00000002"))
+    (proj / "type_mapping" / "cyst_cell.fbbt_mapping.json").write_text(m("cyst cell", "FBbt:00000003"))
+    anns = [{"label": "h_epithelial cell_head", "type": "epithelial cell_head"},
+            {"label": "b_cyst cell", "type": "cyst cell"},
+            {"label": "h_neuron 5", "type": "neuron 5"},
+            {"label": "h_unannotated", "type": "unannotated", "unannotated": True}]
+    (proj / "cell_type_annotations.json").write_text(json.dumps({"annotations": anns}))
+    held = lambda a: a.get("unannotated") or a["type"].startswith("neuron ")  # noqa: E731
+    n, kept, missing = mod.expand(proj, [proj / "type_mapping", other],
+                                  {"epithelial cell_head": "epithelial cell"}, held)
+    assert (n, kept, missing) == (2, [], [])
+    got = {p.name: json.loads(p.read_text()) for p in (proj / "mapping").glob("*.json")}
+    assert got["h_epithelial_cell_head.fbbt_mapping.json"]["best_match"]["fbbt_id"] == "FBbt:00000001"
+    assert got["b_cyst_cell.fbbt_mapping.json"]["best_match"]["fbbt_id"] == "FBbt:00000003"  # own first
+    assert got["b_cyst_cell.fbbt_mapping.json"]["cluster_label"] == "b_cyst cell"

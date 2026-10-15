@@ -1,0 +1,48 @@
+{
+  "cluster_label": "body_seminal vesicle & testis epithelia",
+  "working_definition": "Grouped AFCA call for adult male epithelial cells of the seminal vesicle and the testis (testis sheath epithelium), male reproductive system, ages 5-70d. The authors name epithelia of two organs together, so the target is a cell-level epithelial parent covering both.",
+  "searches_performed": [
+    "seminal vesicle",
+    "testis epithelial cell",
+    "male reproductive system epithelial cell",
+    "adult epithelial cell"
+  ],
+  "best_match": {
+    "fbbt_term": "adult epithelial cell",
+    "fbbt_id": "FBbt:00058238",
+    "fbbt_definition": "Any epithelial cell of the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt has no cell-level term for seminal vesicle epithelial cells (only the organ 'seminal vesicle' FBbt:00004958 and the semen-secreting cell of the seminal vesicle FBbt:00059170, which is a secretory cell not an epithelium call). The testis side has 'testis sheath epithelial cell' FBbt:00058261, a child of 'adult epithelial cell'. The most specific cell-level true ancestor covering both epithelia is therefore 'adult epithelial cell' (adult data), which matches the level the authors named (epithelia). No tissue or organ term is used.",
+  "other_candidates": [
+    {
+      "fbbt_term": "testis sheath epithelial cell",
+      "fbbt_id": "FBbt:00058261",
+      "fbbt_definition": "Any epithelial cell (FBbt:00000124) that is part of some testis sheath (FBbt:00004955).",
+      "reason_rejected": "Covers only the testis half of the grouped call (FCA 'male gonad associated epithelium' mapping); seminal vesicle epithelium is not part of the testis sheath."
+    },
+    {
+      "fbbt_term": "semen-secreting cell of the seminal vesicle",
+      "fbbt_id": "FBbt:00059170",
+      "fbbt_definition": "Any semen-secreting cell of the male reproductive system (FBbt:00058293) that is part of some seminal vesicle (FBbt:00004958).",
+      "reason_rejected": "Secretory cell type, not an epithelial parent; does not cover testis epithelia."
+    },
+    {
+      "fbbt_term": "epithelial cell",
+      "fbbt_id": "FBbt:00000124",
+      "fbbt_definition": "Cell that has as its part a cytoskeleton that allows for tight cell to cell contact and which has apical-basal cell polarity.",
+      "reason_rejected": "Valid but less specific than the adult-specific variant; data are adult."
+    },
+    {
+      "fbbt_term": "seminal vesicle",
+      "fbbt_id": "FBbt:00004958",
+      "fbbt_definition": "Enlarged distal region of the vas deferens. It connects the testis, via the testicular duct, to the main region of the vas deferens. The seminal vesicles taper into the twisted narrow portions of the vasa deferentia, which in turn opens into the anterior ejaculatory duct.",
+      "reason_rejected": "Organ/tissue term, not cell level."
+    }
+  ],
+  "recommendation": "Accept the broad match to adult epithelial cell (FBbt:00058238) as the common cell-level parent of seminal vesicle and testis epithelia. Curator may prefer to hold if a generic epithelial parent is judged too broad.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

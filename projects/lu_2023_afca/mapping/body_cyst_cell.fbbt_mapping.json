@@ -1,0 +1,49 @@
+{
+  "cluster_label": "body_cyst cell",
+  "working_definition": "Testis somatic cyst cells of the adult male body, as a single grouped AFCA type covering the FCA testis cyst-cell stages (cyst stem cell, early/intermediate/late cyst cells, spermatocyte cyst cells, head cyst cell). Cyst cells enclose germline cysts during spermatogenesis. Authors' broad class: male reproductive system.",
+  "searches_performed": [
+    "cyst cell",
+    "cyst cell of testis",
+    "spermatocyte cyst cell",
+    "cyst progenitor cell",
+    "somatic cell of testis"
+  ],
+  "best_match": {
+    "fbbt_term": "cyst cell of testis",
+    "fbbt_id": "FBbt:00004931",
+    "fbbt_definition": "One of a pair of somatic cells that envelope each cyst of developing male germline cells.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors' label 'cyst cell' is a grouped call over the testis somatic cyst-cell stages. 'cyst cell of testis' is the common parent of the stage-specific cyst-cell terms (spermatocyte cyst cell FBbt:00057004, spermatogonial cyst cell FBbt:00059172, spermatid cyst cell FBbt:00057008, head cyst cell FBbt:00057009) and matches the level the authors named, consistent with the curator-reviewed FCA mappings. The cyst stem cell member maps to 'cyst progenitor cell' (FBbt:00004933), which is not a child of 'cyst cell of testis' (its parents are gonadal somatic stem cell and somatic cell of testis). The cell-level term that strictly covers every member would be 'somatic cell of testis', but that is broader than the type the authors named.",
+  "other_candidates": [
+    {
+      "fbbt_term": "somatic cell of testis",
+      "fbbt_id": "FBbt:00006031",
+      "fbbt_definition": "A(n) somatic cell that is part of a(n) testis.",
+      "reason_rejected": "Broader than the type the authors named ('cyst cell'); cyst stem cells are a minor member of the group."
+    },
+    {
+      "fbbt_term": "cyst progenitor cell",
+      "fbbt_id": "FBbt:00004933",
+      "fbbt_definition": "A somatic stem cell; Mother of cyst cells; Associated with the hub of the germinal center and with male germline stem cells.",
+      "reason_rejected": "Covers only the cyst stem cell member, not the cyst-cell stages."
+    },
+    {
+      "fbbt_term": "spermatocyte cyst cell",
+      "fbbt_id": "FBbt:00057004",
+      "fbbt_definition": "A cyst cell which is part of a spermatocyte cyst.",
+      "reason_rejected": "Single stage; the AFCA label groups all cyst-cell stages."
+    },
+    {
+      "fbbt_term": "head cyst cell",
+      "fbbt_id": "FBbt:00057009",
+      "fbbt_definition": "The member of a cyst cell pair that envelopes the head of a developing spermatid.",
+      "reason_rejected": "Single subtype; the AFCA label groups all cyst-cell stages."
+    }
+  ],
+  "recommendation": "Map to FBbt:00004931 'cyst cell of testis' as a broad match for the grouped AFCA cyst cell type. The cyst stem cell member (FBbt:00004933) falls outside this term but is a minor part of the group; the relation is composed primarily of.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

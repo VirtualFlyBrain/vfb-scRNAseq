@@ -1,0 +1,29 @@
+{
+  "cluster_label": "body_visceral muscle of the midgut",
+  "working_definition": "Visceral muscle cells of the adult midgut from the gut analysis (Li et al. 2022; Manual Annotation, broad class muscle cell).",
+  "searches_performed": [
+    "visceral muscle of the midgut",
+    "adult midgut muscle cell",
+    "visceral muscle"
+  ],
+  "best_match": {
+    "fbbt_term": "adult midgut muscle cell",
+    "fbbt_id": "FBbt:00003534",
+    "fbbt_definition": "Muscle cell of a muscle of the adult midgut, surrounding the epithelium (Miller, 1950).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Label names the location (midgut) and adult data; FBbt has this adult midgut muscle cell term.",
+  "other_candidates": [
+    {
+      "fbbt_term": "midgut muscle cell",
+      "fbbt_id": "FBbt:00058265",
+      "fbbt_definition": "Any visceral muscle cell that is part of some midgut.",
+      "reason_rejected": "Adult-specific variant preferred."
+    }
+  ],
+  "recommendation": "Map to FBbt:00003534.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

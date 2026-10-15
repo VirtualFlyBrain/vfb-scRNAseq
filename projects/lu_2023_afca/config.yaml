@@ -122,3 +122,22 @@ unidentified:
   hold_unidentified: true
   hold_reasons: {unannotated: leftover}
 
+
+# FBbt mappings: the AFCA labels were transferred from the FCA's annotations, so each
+# type takes the FCA's type-level mapping (li_2022_fca_10x/type_mapping/, curator-
+# reviewed), copied per cluster by scripts/expand_type_mappings.py. The `_head` /
+# `_body` types are the FCA type of that name (no narrowing by dissected tissue).
+# Types the FCA lacks are mapped here, in lu_2023_afca/type_mapping/.
+type_mapping:
+  from: li_2022_fca_10x
+  aliases:
+    adult fat body_head: adult fat body
+    adult fat body_body: adult fat body
+    adult reticular neuropil associated glial cell_head: adult reticular neuropil associated glial cell
+    adult reticular neuropil associated glial cell_body: adult reticular neuropil associated glial cell
+    epithelial cell_head: epithelial cell
+    epithelial cell_body: epithelial cell
+    hemocyte_head: hemocyte
+    hemocyte_body: hemocyte
+    subperineurial glial cell_head: subperineurial glial cell
+    subperineurial glial cell_body: subperineurial glial cell
