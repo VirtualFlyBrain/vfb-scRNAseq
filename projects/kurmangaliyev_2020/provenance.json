@@ -1,6 +1,7 @@
 {
   "project": "kurmangaliyev_2020",
-  "generated_at": "2026-10-06",
+  "created_at": "2026-06-19",
+  "updated_at": "2026-10-15",
   "summary": "Optic lobe single-cell RNAseq across pupal development (Kurmangaliyev et al. 2020, Neuron), built from GEO GSE156455: the authors' cell metadata and raw 10x matrices for their main and separately clustered early (0-24h APF) datasets. Samples and Assays from GEO (7 female biological samples, 36 10x-library Assays) with FBdv stages and FBbt tissue, and FlyBase stocks linked. Two Clusterings (main, early) with one Cluster per author cluster: 196 main clusters (184 mapped to FBbt, 12 held) and 110 early clusters (48 mapped, 62 held), so 232 Clusters loaded. Summary expression for the loaded Clusters as CPM from the raw counts (686,568 cluster x gene rows with extent > 0.2; dataset total/filtered gene counts 15,751 / 7,473).",
   "decisions": [
     {

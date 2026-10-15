@@ -1,6 +1,7 @@
 {
   "project": "li_2022_fca_10x",
-  "generated_at": "2026-10-14",
+  "created_at": "2026-10-14",
+  "updated_at": "2026-10-15",
   "summary": "Fly Cell Atlas 10x (Li et al. 2022, Science), rebuilt from ArrayExpress E-MTAB-10519 and the authors' own per-tissue 10x Stringent AnnData analyses (flycellatlas.org), replacing the old SCEA-based loads FBlc0003846, FBlc0004307 and FBlc0004785 (split by sex); the Smart-seq2 data (E-MTAB-10628) are a separate project, li_2022_fca_ss2. Single-nucleus 10x data from 15 tissues plus whole head and body (61 Samples, 160 Assays). 17 Clusterings, one per author analysis, with one Cluster per author annotation: 370 clusters, 335 mapped to 190 distinct FBbt terms and loaded, 35 held. Summary expression for the loaded Clusters as CPM (16,363 genes x 506,660 cells; 512,215 cluster x gene rows with extent > 0.2).",
   "decisions": [
     {
@@ -88,7 +89,22 @@
     {
       "date": "2026-10-14",
       "check": "verify_mappings.py and OLS lookups: every FBbt, FBdv and FBcv term used checked against the releases listed (FBbt 2026-10-01, FBdv 2026-09-30, FBcv 2026-10-01).",
-      "result": "All terms current."
+      "result": "All terms current: 190 distinct FBbt terms in the mappings; the FBbt/FBdv/FBcv terms on Samples, Assays and the Dataset (shared with li_2022_fca_ss2: 30 in all) current."
+    },
+    {
+      "date": "2026-10-14",
+      "check": "CPM conversion of the authors' raw.X (log(counts per 10,000 + 1) -> CPM): per-cell CPM totals must have a median within 0.99e6-1.001e6 and none above 1.001e6, in every analysis.",
+      "result": "Passed for all 17 analyses."
+    },
+    {
+      "date": "2026-10-14",
+      "check": "Cluster sizes read from the h5ad files compared with cell_type_annotations.json (enforced by the expression build).",
+      "result": "All equal."
+    },
+    {
+      "date": "2026-10-14",
+      "check": "Marker spot checks in the expression output.",
+      "result": "ey and Pka-C1 in Kenyon cells (head Kenyon cell extent 0.59 / 0.73), SP in male accessory gland main cells (0.70), fzo in late primary spermatocytes (0.54). Re-confirmed 2026-10-15 against the current expression.tsv.gz."
     }
   ],
   "people": [
@@ -140,7 +156,11 @@
       "id": "10.1126/science.abk2432",
       "type": "publication",
       "label": "Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly",
-      "xrefs": ["PMID:35239393", "PMCID:PMC8944923", "FlyBase:FBrf0252876"],
+      "xrefs": [
+        "PMID:35239393",
+        "PMCID:PMC8944923",
+        "FlyBase:FBrf0252876"
+      ],
       "description": "Li et al. 2022, Science. Indexed locally for the report subagents; the supplement gives the sample ages and stocks.",
       "url": "https://doi.org/10.1126/science.abk2432",
       "files": [
@@ -387,17 +407,78 @@
       "url": "https://chado.flybase.org",
       "description": "Gene ids and symbols mapped to current FlyBase genes (update_gene_ids.py)."
     },
-    { "id": "python", "type": "language", "label": "Python", "version": "3.14.3", "description": "Pipeline environment (uv-managed)." },
-    { "id": "h5py", "type": "library", "label": "h5py", "version": "3.16.0", "description": "Reads the authors' AnnData files (obs, var, matrices) without anndata." },
-    { "id": "numpy", "type": "library", "label": "numpy", "version": "2.5.1" },
-    { "id": "pandas", "type": "library", "label": "pandas", "version": "3.0.5" },
-    { "id": "pyyaml", "type": "library", "label": "PyYAML", "version": "6.0.3" },
-    { "id": "linkml", "type": "library", "label": "linkml", "version": "1.11.1", "description": "linkml-validate and linkml-convert (flat RDF)." },
-    { "id": "linkml-runtime", "type": "library", "label": "linkml-runtime", "version": "1.11.1" },
-    { "id": "linkml-owl", "type": "library", "label": "linkml-owl", "version": "0.5.0", "description": "Metadata OWL." },
-    { "id": "rdflib", "type": "library", "label": "rdflib", "version": "7.6.0" },
-    { "id": "robot", "type": "tool", "label": "ROBOT", "version": "1.9.11", "description": "OFN to OWL/XML conversion (metadata and expression OWL)." },
-    { "id": "psql", "type": "tool", "label": "psql", "version": "14.15", "description": "FlyBase Chado queries." }
+    {
+      "id": "python",
+      "type": "language",
+      "label": "Python",
+      "version": "3.14.3",
+      "description": "Pipeline environment (uv-managed)."
+    },
+    {
+      "id": "h5py",
+      "type": "library",
+      "label": "h5py",
+      "version": "3.16.0",
+      "description": "Reads the authors' AnnData files (obs, var, matrices) without anndata."
+    },
+    {
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
+      "version": "2.5.1"
+    },
+    {
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
+      "version": "3.0.5"
+    },
+    {
+      "id": "pyyaml",
+      "type": "library",
+      "label": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
+      "version": "1.11.1",
+      "description": "linkml-validate and linkml-convert (flat RDF)."
+    },
+    {
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
+      "version": "1.11.1"
+    },
+    {
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
+      "version": "0.5.0",
+      "description": "Metadata OWL."
+    },
+    {
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
+      "version": "1.9.11",
+      "description": "OFN to OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "id": "psql",
+      "type": "tool",
+      "label": "psql",
+      "version": "14.15",
+      "description": "FlyBase Chado queries."
+    }
   ],
   "models": [
     {
