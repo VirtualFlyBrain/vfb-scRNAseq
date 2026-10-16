@@ -160,9 +160,8 @@ from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#genera
 
 ## Status
 
-All six projects are curated and built. Every mapped cluster has been reviewed, except
-three Kurmangaliyev early clusters awaiting FBbt #2216 (below) and the Özel 2021
-mappings, which await curator review; and
+All six projects are curated and built. Every mapped cluster has been reviewed (bar
+three Kurmangaliyev early clusters awaiting FBbt #2216, below), and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the
 expression output are mapped to current FlyBase genes (`scripts/update_gene_ids.py`;
