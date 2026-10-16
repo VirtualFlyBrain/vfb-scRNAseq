@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P40_163",
+  "working_definition": "Author type 'Pm1' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'Pm1' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature proximal medullary amacrine neuron Pm1",
+    "fbbt_id": "FBbt:00052321",
+    "fbbt_definition": "Immature form of the proximal medullary amacrine neuron Pm1 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hth temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "'Pm1' is FBbt:00003833 'proximal medullary amacrine neuron Pm1'; at P15-P40 the cells are developing, so its immature form FBbt:00052321 (curator: immature terms up to the pupal stage).",
+  "other_candidates": [
+    {
+      "fbbt_term": "proximal medullary amacrine neuron Pm1",
+      "fbbt_id": "FBbt:00003833",
+      "fbbt_definition": "Proximal medullary wide-field amacrine neuron that branches as it enters the proximal side of the medulla and forms broad terminal arbors, with mixed pre- and post-synaptic terminals, mainly in medulla layer M9 (Fischbach and Dittrich, 1989; Morante and Desplan, 2008).",
+      "reason_rejected": "Mature form; used from the pharate adult stage."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052321 'immature proximal medullary amacrine neuron Pm1' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

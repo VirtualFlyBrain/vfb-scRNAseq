@@ -1,0 +1,27 @@
+{
+  "cluster_label": "C2",
+  "working_definition": "Author type 'C2' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'C2' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature optic lobe centrifugal columnar neuron",
+    "fbbt_id": "FBbt:00053275",
+    "fbbt_definition": "Immature form of a centrifugal columnar neuron (Konstantinides et al., 2022).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "'C2' is FBbt:00003743 'centrifugal neuron C2', which has no immature form in FBbt; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so the most specific ancestor with an immature form is used: FBbt:00053275 'immature optic lobe centrifugal columnar neuron' (as for Kurmangaliyev 2020 early clusters).",
+  "other_candidates": [
+    {
+      "fbbt_term": "centrifugal neuron C2",
+      "fbbt_id": "FBbt:00003743",
+      "fbbt_definition": "Adult centrifugal neuron with arborizations in the medulla layers M1, M5/M6, M8 and M10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). In the medulla, it makes reciprocal connections to lamina monopolar neuron L1, and is presynaptic to L2 and L5, as well as medullary intrinsic neuron Mi1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010). There is usually one of these cells per optic column (Nern et al., 2025).",
+      "reason_rejected": "Mature form, used from the pharate adult stage; no immature form in FBbt."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053275 'immature optic lobe centrifugal columnar neuron' (broad match).",
+  "new_term_needed": true,
+  "verification_needed": false
+}

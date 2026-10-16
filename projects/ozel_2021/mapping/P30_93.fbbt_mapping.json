@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P30_93",
+  "working_definition": "Author type 'LC10c' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'LC10c' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature lobula columnar neuron",
+    "fbbt_id": "FBbt:00053273",
+    "fbbt_definition": "Immature form of a lobula columnar neuron (Konstantinides et al., 2022).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "'LC10c' is FBbt:00111746 'lobula columnar neuron LC10c', which has no immature form in FBbt; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so the most specific ancestor with an immature form is used: FBbt:00053273 'immature lobula columnar neuron' (as for Kurmangaliyev 2020 early clusters).",
+  "other_candidates": [
+    {
+      "fbbt_term": "lobula columnar neuron LC10c",
+      "fbbt_id": "FBbt:00111746",
+      "fbbt_definition": "Subtype of lobula columnar neuron LC10A. It has its main arbors in lobula layer 5B, some branches in 6 and some processes reaching into 5A. It projects to the most lateral of the dorsal optic glomeruli of the PVLP, ventral to LC16. There are around 70 cells of this type.",
+      "reason_rejected": "Mature form, used from the pharate adult stage; no immature form in FBbt."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053273 'immature lobula columnar neuron' (broad match).",
+  "new_term_needed": true,
+  "verification_needed": true
+}

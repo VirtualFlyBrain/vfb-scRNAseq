@@ -1,0 +1,36 @@
+{
+  "cluster_label": "Im10",
+  "working_definition": "P15 'tail' of differentiating neurons attached to the T4/T5 clusters; the authors' call is 'probably immature T4/T5 neurons'.",
+  "searches_performed": [
+    "Im10",
+    "immature T4",
+    "immature T5",
+    "immature T neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "immature T neuron",
+    "fbbt_id": "FBbt:00059279",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T neuron (Hormann et al., 2020).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Unsplit T4/T5 call: immature T4 (FBbt:00052257) and immature T5 (FBbt:00052258) are both is_a immature T neuron, the most specific common parent. Verification flagged because of the authors' 'probably' hedge.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature T4 neuron",
+      "fbbt_id": "FBbt:00052257",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T4 neuron (Hormann et al., 2020). It is generated from a neuroblast that amplifies by symmetric division (type III) before generating the T4 (and T5) neurons (Mora et al., 2018). During its development, it first projects its axon to the appropriate lobula plate layer, then forms its dendrites in medulla layer 10 (Hormann et al., 2020).",
+      "reason_rejected": "Member only."
+    },
+    {
+      "fbbt_term": "immature T5 neuron",
+      "fbbt_id": "FBbt:00052258",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T5 neuron (Hormann et al., 2020). It is generated from a neuroblast that amplifies by symmetric division (type III) before generating the T5 (and T4) neurons (Mora et al., 2018). During its development, it first projects its axon to the appropriate lobula plate layer, then forms its dendrites in lobula layer 1 (Hormann et al., 2020).",
+      "reason_rejected": "Member only."
+    }
+  ],
+  "recommendation": "Broad match to immature T neuron; members T4, T5.",
+  "new_term_needed": false,
+  "verification_needed": true
+}

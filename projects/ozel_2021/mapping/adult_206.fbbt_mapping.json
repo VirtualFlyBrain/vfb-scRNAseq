@@ -1,0 +1,20 @@
+{
+  "cluster_label": "adult_206",
+  "working_definition": "Author type 'G11' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'adult optic lobe glial cell' (FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "adult optic lobe glial cell",
+    "fbbt_id": "FBbt:00100517",
+    "fbbt_definition": "Glial cell of the adult that is associated with the optic lobe.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "A glial identity the authors left numbered (G11); class glia. The dissection is the optic lobe only, so adult optic lobe glial cell is exact for the class (curator rule: narrow by dissected tissue where exact).",
+  "other_candidates": [],
+  "recommendation": "Map to FBbt:00100517 'adult optic lobe glial cell' (broad match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P40_66",
+  "working_definition": "Author type 'LLPC1' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'LLPC1' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature adult optic lobe neuron",
+    "fbbt_id": "FBbt:00053539",
+    "fbbt_definition": "Immature neuron that develops from an optic neuroblast and will become an adult optic lobe neuron.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "'LLPC1' is FBbt:00058227 'lobula-lobula plate columnar neuron LLPC1', which has no immature form in FBbt; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so the most specific ancestor with an immature form is used: FBbt:00053539 'immature adult optic lobe neuron' (as for Kurmangaliyev 2020 early clusters).",
+  "other_candidates": [
+    {
+      "fbbt_term": "lobula-lobula plate columnar neuron LLPC1",
+      "fbbt_id": "FBbt:00058227",
+      "fbbt_definition": "Lobula-lobula plate columnar neuron that receives input from around 5-10 columns of lobula layer 4 and around 10 columns of lobula plate layer 1, with additional postsynapses in lobula plate layers 2-3 (Isaacson, 2019; Davis et al., 2020; Nern et al., 2025). It remains ipsilateral and sends output to the posterior lateral protocerebrum (Dorkenwald et al., 2024; Schlegel et al., 2024). It is highly sensitive to front-to-back motion on the ipsilateral eye (Isaacson, 2019). It is cholinergic (Davis et al., 2020). There are around 100-120 of these cells on each side (Nern et al., 2025).",
+      "reason_rejected": "Mature form, used from the pharate adult stage; no immature form in FBbt."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053539 'immature adult optic lobe neuron' (broad match).",
+  "new_term_needed": true,
+  "verification_needed": false
+}

@@ -1,0 +1,37 @@
+{
+  "cluster_label": "TEe",
+  "working_definition": "TEe ('early'): the third transient extrinsic (TE) neuron cluster alongside TEv and TEd, regarded by the authors as younger, differentiating bsh+/hth- TE neurons attached to both TEv and TEd on UMAP (P15 and P30); the Supplementary Table 1 wording is hedged ('could be differentiating TEs').",
+  "searches_performed": [
+    "TEe",
+    "transient extrinsic neuron",
+    "TE neuron",
+    "immature transient extrinsic neuron",
+    "dorsal/ventral transient extrinsic neuron of pupal optic lobe"
+  ],
+  "best_match": {
+    "fbbt_term": "transient extrinsic neuron of pupal optic lobe",
+    "fbbt_id": "FBbt:00058013",
+    "fbbt_definition": "An extrinsic neuron of the optic lobe that is only present during pupal development. The projections of these neurons wrap the dorsal and ventral edges of all optic lobe neuropils except the lamina. They originate from progenitors at the tips of the outer proliferation centre and are cleared by apoptosis during late pupal stages. They specifically express dimmed (FBgn0023091) and portabella (FBgn0043005) (Ozel et al., 2021).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "TEe is neither the dorsal nor ventral TE type; the common parent of FBbt:00058014 (TEv) and FBbt:00058015 (TEd) is FBbt:00058013, which is the TE neuron class defined from this paper. There is no immature TE term. Verification flagged because the authors hedge ('could be differentiating TEs').",
+  "other_candidates": [
+    {
+      "fbbt_term": "ventral transient extrinsic neuron of pupal optic lobe",
+      "fbbt_id": "FBbt:00058014",
+      "fbbt_definition": "A transient extrinsic neuron whose cell body is located on the ventral side of the optic lobe. It expresses Wnt4 (FBgn0010453) (Ozel et al., 2021).",
+      "reason_rejected": "TEv is a separate author type."
+    },
+    {
+      "fbbt_term": "dorsal transient extrinsic neuron of pupal optic lobe",
+      "fbbt_id": "FBbt:00058015",
+      "fbbt_definition": "A transient extrinsic neuron whose cell body is located on the dorsal side of the optic lobe. It expresses Wnt10 (FBgn0031903) (Ozel et al., 2021).",
+      "reason_rejected": "TEd is a separate author type."
+    }
+  ],
+  "recommendation": "Broad match to FBbt:00058013 transient extrinsic neuron of pupal optic lobe; flag for verification (authors' hedge).",
+  "new_term_needed": false,
+  "verification_needed": true
+}

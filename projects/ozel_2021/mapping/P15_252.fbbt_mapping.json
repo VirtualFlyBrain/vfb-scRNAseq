@@ -1,0 +1,29 @@
+{
+  "cluster_label": "P15_252",
+  "working_definition": "Authors' state call at P15 (Özel et al. 2021): neurons with no clear identity expressing high levels of apoptotic markers (grim, rpr, skl), likely dying shortly after birth from the asymmetric division of a GMC. It names no neuron class or type.",
+  "searches_performed": [
+    "Apop",
+    "apoptotic neuron",
+    "immature neuron",
+    "dying neuron / apoptotic cell"
+  ],
+  "best_match": null,
+  "justification": "The authors' call is a cell-state (apoptotic, undifferentiated neurons of no identifiable type). FBbt has no term for an apoptotic or doomed optic lobe neuron; the only honest terms ('immature neuron' FBbt:00051424, 'immature adult optic lobe neuron' FBbt:00053539) are generic neuron-level terms, and clusters that can only be typed as neuron are held under the curator rule.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature neuron",
+      "fbbt_id": "FBbt:00051424",
+      "fbbt_definition": "Neuron that is in a transient, immature, state between birth and its first mature morphology.",
+      "reason_rejected": "Generic neuron-level term; no fallback to a generic neuron term (held)."
+    },
+    {
+      "fbbt_term": "immature adult optic lobe neuron",
+      "fbbt_id": "FBbt:00053539",
+      "fbbt_definition": "Immature neuron that develops from an optic neuroblast and will become an adult optic lobe neuron.",
+      "reason_rejected": "Still generic; the authors state the cells have no clear identity and are expected to die rather than become adult optic lobe neurons."
+    }
+  ],
+  "recommendation": "Hold: no adequate cell-level FBbt term for an apoptotic, identity-less neuron state.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

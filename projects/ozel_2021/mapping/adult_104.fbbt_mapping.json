@@ -1,0 +1,36 @@
+{
+  "cluster_label": "adult_104",
+  "working_definition": "Transmedullary neuron cluster combining Tm5a and Tm5b, identified by transcriptome match; optic lobe, medulla to lobula.",
+  "searches_performed": [
+    "Tm5ab",
+    "transmedullary neuron Tm5",
+    "transmedullary neuron Tm5a",
+    "transmedullary neuron Tm5b"
+  ],
+  "best_match": {
+    "fbbt_term": "transmedullary neuron Tm5",
+    "fbbt_id": "FBbt:00003793",
+    "fbbt_definition": "Transmedullary neuron that terminates in lobula layer 5 with bleb-type arborizations. It displays fine arborizations in medulla layers M3 and M6 and other, depending on the subtype. It has bleb-type terminals in layers M6 and M8. It has three subtypes.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "Grouped call Tm5a + Tm5b. FBbt:00110072 (Tm5a) and FBbt:00110073 (Tm5b) are both is_a transmedullary neuron Tm5 (FBbt:00003793), the most specific common ancestor (the third subtype Tm5c is not in the group).",
+  "other_candidates": [
+    {
+      "fbbt_term": "transmedullary neuron Tm5a",
+      "fbbt_id": "FBbt:00110072",
+      "fbbt_definition": "Transmedullary Tm5 neuron that is centered on a single yellow column in the medulla and arborizes in the M3, M6 and M8 layers, reaching some neighboring columns laterally (Kind et al., 2021). It selectively receives input from the R7 (and not R8) photoreceptor of its central column (Kind et al., 2021). Its axon terminates in lobula layer 5B after a characteristic reversal of direction (Kind et al., 2021). It provides input to the lobula intrinsic neuron Li4 via many synapses, and also to the lobula tangential neuron LT11 (Lin et al., 2016). It is a cholinergic neuron (Karuppudurai et al., 2014).",
+      "reason_rejected": "Group member; the cluster combines Tm5a and Tm5b."
+    },
+    {
+      "fbbt_term": "transmedullary neuron Tm5b",
+      "fbbt_id": "FBbt:00110073",
+      "fbbt_definition": "Transmedullary Tm5 neuron that extends two or three vertical main dendritic branches in the medulla, spanning around five columns, from which branches spread laterally into layers M3, M6 and M8 (Kind et al., 2021). It receives most of its inner (R7/R8) photoreceptor input from the R7 photoreceptors of pale ommatidia (Kind et al., 2021). Its axon innervates lobula layer 5 (Kind et al., 2021). It provides input to the lobula intrinsic neuron Li4 via many synapses (Lin et al., 2016). It is a cholinergic neuron (Karuppudurai et al., 2014).",
+      "reason_rejected": "Group member; the cluster combines Tm5a and Tm5b."
+    }
+  ],
+  "recommendation": "Map to FBbt:00003793 'transmedullary neuron Tm5' (broad match; members Tm5a, Tm5b).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

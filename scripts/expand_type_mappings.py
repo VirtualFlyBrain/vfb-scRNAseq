@@ -14,6 +14,8 @@ Config (optional, config.yaml):
                          # own type_mapping/ is searched first, when it has one)
     aliases:             # this project's type -> the type it is in `from` (e.g. an AFCA
       <type>: <type>     # "epithelial cell_head" is the FCA "epithelial cell")
+    clustering_dirs:     # clusterings whose types are mapped in a subfolder of the own
+      <clustering>: <dir>  # type_mapping/ (e.g. immature-stage mappings: P15: immature)
 
 Curators normally edit the type-level file; its `manual_edit` block is copied to the
 clusters (so mapping.tsv shows it). A cluster-level file whose own `manual_edit`
@@ -49,7 +51,7 @@ def _type_mapping(typ: str, type_dirs: list[Path], aliases: dict[str, str], own:
 
 
 def expand(proj: Path, type_dirs: list[Path] | Path, aliases: dict[str, str] | None = None,
-           is_held=None) -> tuple[int, list[str], list[str]]:
+           is_held=None, clustering_dirs: dict[str, str] | None = None) -> tuple[int, list[str], list[str]]:
     """Returns (n written, labels kept for manual_edit, (label, type) pairs missing)."""
     type_dirs = [type_dirs] if isinstance(type_dirs, Path) else type_dirs
     aliases = aliases or {}
@@ -63,7 +65,9 @@ def expand(proj: Path, type_dirs: list[Path] | Path, aliases: dict[str, str] | N
             continue
         dest = mdir / f"{label_slug(a['label'])}.fbbt_mapping.json"
         wanted.add(dest.name)
-        m = _type_mapping(a.get("type", a["label"]), type_dirs, aliases, proj / "type_mapping")
+        sub = (clustering_dirs or {}).get(a.get("clustering"))
+        dirs = [proj / "type_mapping" / sub] if sub else type_dirs
+        m = _type_mapping(a.get("type", a["label"]), dirs, aliases, proj / "type_mapping")
         if dest.exists():
             own = json.loads(dest.read_text()).get("manual_edit")
             if own and own != (m or {}).get("manual_edit"):
@@ -93,7 +97,7 @@ def main() -> None:
         type_dirs.append(REPO_ROOT / "projects" / tm["from"] / "type_mapping")
     kind = annotation_kind(args.project, cfg)
     n, kept, missing = expand(REPO_ROOT / "projects" / args.project, type_dirs,
-                              tm.get("aliases"), lambda a: kind(a) == "held")
+                              tm.get("aliases"), lambda a: kind(a) == "held", tm.get("clustering_dirs"))
     print(f"{args.project}: wrote {n} cluster mappings from "
           f"{', '.join(str(d.relative_to(REPO_ROOT)) for d in type_dirs)}")
     if kept:

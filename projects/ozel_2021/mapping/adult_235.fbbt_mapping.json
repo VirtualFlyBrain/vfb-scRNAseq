@@ -1,0 +1,49 @@
+{
+  "cluster_label": "adult_235",
+  "working_definition": "Combined T4/T5 subtypes c and d (T4c, T4d, T5c, T5d): directionally selective motion-detecting neurons of the optic lobe, with T4 dendrites in the medulla and T5 dendrites in the lobula and axons to the lobula plate.",
+  "searches_performed": [
+    "T4-5c/d",
+    "T4 neuron",
+    "T5 neuron",
+    "T4c neuron / T4d neuron / T5c neuron / T5d neuron",
+    "T neuron (common parent, checked in local fbbt.obo release 2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "T neuron",
+    "fbbt_id": "FBbt:00003726",
+    "fbbt_definition": "Intrinsic columnar neuron of the optic lobe that has its cell body in the posterior part of the optic lobe and a cell body fiber that bifurcates in the second optic chiasma (Fischbach and Dittrich, 1989). It has two branches, each targeting a different neuropil adjacent to the second optic chiasma (lobula, lobula plate and medulla) (Fischbach and Dittrich, 1989).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The group spans T4c, T4d, T5c and T5d. T4 neuron (FBbt:00003731) and T5 neuron (FBbt:00003736) are both is_a T neuron (FBbt:00003726), the most specific common ancestor of all four members; no FBbt term groups subtypes c/d across T4 and T5. Mature terms for pharate-adult and adult stages.",
+  "other_candidates": [
+    {
+      "fbbt_term": "T4c neuron",
+      "fbbt_id": "FBbt:00003734",
+      "fbbt_definition": "T4 neuron with its lobula plate arbor in layer 3 (Fischbach and Dittrich, 1989). It responds to motion in an upwards direction (Henning et al., 2022).",
+      "reason_rejected": "Group member."
+    },
+    {
+      "fbbt_term": "T4d neuron",
+      "fbbt_id": "FBbt:00003735",
+      "fbbt_definition": "T4 neuron with its lobula plate arbor in layer 4 (Fischbach and Dittrich, 1989). It responds to motion in a downwards direction (Henning et al., 2022).",
+      "reason_rejected": "Group member."
+    },
+    {
+      "fbbt_term": "T5c neuron",
+      "fbbt_id": "FBbt:00003739",
+      "fbbt_definition": "T5 neuron with its lobula plate arbor in layer 3 (Fischbach and Dittrich, 1989). It responds to motion in an upwards direction (Henning et al., 2022).",
+      "reason_rejected": "Group member."
+    },
+    {
+      "fbbt_term": "T5d neuron",
+      "fbbt_id": "FBbt:00003740",
+      "fbbt_definition": "T5 neuron with its lobula plate arbor in layer 4 (Fischbach and Dittrich, 1989). It responds to motion in a downwards direction (Henning et al., 2022).",
+      "reason_rejected": "Group member."
+    }
+  ],
+  "recommendation": "Map to FBbt:00003726 'T neuron' (broad match; members T4c, T4d, T5c, T5d).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

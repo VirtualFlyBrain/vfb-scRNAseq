@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P15_226",
+  "working_definition": "Author type 'Dm3b' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'Dm3b' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature distal medullary amacrine neuron Dm3b",
+    "fbbt_id": "FBbt:00052312",
+    "fbbt_definition": "Immature form of the distal medullary amacrine neuron Dm3b (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "'Dm3b' is FBbt:00052304 'distal medullary amacrine neuron Dm3b'; at P15-P40 the cells are developing, so its immature form FBbt:00052312 (curator: immature terms up to the pupal stage).",
+  "other_candidates": [
+    {
+      "fbbt_term": "distal medullary amacrine neuron Dm3b",
+      "fbbt_id": "FBbt:00052304",
+      "fbbt_definition": "Dm3 neuron with posterior-dorsally oriented dendrites (Ozel et al., 2021). It can be distinguished from Dm3a based on its expression of bi (Ozel et al., 2021).",
+      "reason_rejected": "Mature form; used from the pharate adult stage."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052312 'immature distal medullary amacrine neuron Dm3b' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

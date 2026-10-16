@@ -1,0 +1,30 @@
+{
+  "cluster_label": "P15_253",
+  "working_definition": "One of three P15 optic lobe clusters identified by the authors as ganglion mother cells (dpn-, ase+), the transient progenitor between a neuroblast and two daughter neurons or glia.",
+  "searches_performed": [
+    "GMC1",
+    "ganglion mother cell",
+    "optic lobe ganglion mother cell",
+    "GMC"
+  ],
+  "best_match": {
+    "fbbt_term": "ganglion mother cell",
+    "fbbt_id": "FBbt:00005149",
+    "fbbt_definition": "Daughter cell formed through asymmetric division of a neuroblast, typically generating two postmitotic neurons.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors call the cluster ganglion mother cells; FBbt has the generic ganglion mother cell term and no optic-lobe-specific or larval/pupal-specific GMC term (only embryonic and named embryonic/VNC GMCs, and type I/II GMC).",
+  "other_candidates": [
+    {
+      "fbbt_term": "type I ganglion mother cell",
+      "fbbt_id": "FBbt:00059277",
+      "fbbt_definition": "A ganglion mother cell that is born of a type I neuroblast (Marques et al., 2023).",
+      "reason_rejected": "Authors do not specify neuroblast type."
+    }
+  ],
+  "recommendation": "Map to FBbt:00005149 ganglion mother cell (exact).",
+  "new_term_needed": false,
+  "verification_needed": false
+}
