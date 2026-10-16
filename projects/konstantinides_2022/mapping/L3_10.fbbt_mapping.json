@@ -1,0 +1,29 @@
+{
+  "cluster_label": "L3_10",
+  "working_definition": "Ganglion mother cells (ase+) of the wandering third instar larval optic lobe, the daughters of optic neuroblasts that each divide to give two neurons.",
+  "searches_performed": [
+    "ganglion mother cell",
+    "GMC",
+    "optic lobe ganglion mother cell"
+  ],
+  "best_match": {
+    "fbbt_term": "ganglion mother cell",
+    "fbbt_id": "FBbt:00005149",
+    "fbbt_definition": "Daughter cell formed through asymmetric division of a neuroblast, typically generating two postmitotic neurons.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors name the cluster ganglion mother cells. FBbt has the generic ganglion mother cell term; its subtypes are embryonic/named embryonic lineage GMCs and type II GMC, none optic-lobe or larval-optic specific. Same mapping as the Ozel 2021 GMC1 type.",
+  "other_candidates": [
+    {
+      "fbbt_term": "type II ganglion mother cell",
+      "fbbt_id": "FBbt:00059278",
+      "fbbt_definition": "A ganglion mother cell that is born indirectly from a type II neuroblast. It is distinguished from type I ganglion mother cell by the expression of Sp1 (Marques et al., 2023).",
+      "reason_rejected": "Type II neuroblast lineage specific; not what the authors name."
+    }
+  ],
+  "recommendation": "Map to FBbt:00005149 ganglion mother cell (exact).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

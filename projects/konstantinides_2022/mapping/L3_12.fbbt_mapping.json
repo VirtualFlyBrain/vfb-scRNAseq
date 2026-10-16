@@ -1,0 +1,41 @@
+{
+  "cluster_label": "L3_12",
+  "working_definition": "Grouped author type 'Tm1/Tm2/Tm4/Tm6 neuron' (L3_12) of the Konstantinides et al. 2022 wandering L3 optic lobe atlas: medulla-class transmedullary neurons Tm1, Tm2, Tm4 and Tm6 not resolved from one another.",
+  "searches_performed": [
+    "'Tm1/Tm2/Tm4/Tm6 neuron'",
+    "'immature transmedullary neuron'",
+    "'immature transmedullary neuron Tm6'"
+  ],
+  "best_match": {
+    "fbbt_term": "immature transmedullary neuron",
+    "fbbt_id": "FBbt:00053274",
+    "fbbt_definition": "Immature form of a transmedullary neuron (Konstantinides et al., 2022).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "Grouped call: immature Tm1 (FBbt:00052325), Tm2 (FBbt:00052326) and Tm4 (FBbt:00052330) are all children of immature transmedullary neuron; no immature Tm6 term exists, and Tm6 is a transmedullary neuron, so this is the most specific common parent.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature transmedullary neuron Tm1",
+      "fbbt_id": "FBbt:00052325",
+      "fbbt_definition": "Immature form of the transmedullary neuron Tm1 (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Hth/Opa temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Group member only."
+    },
+    {
+      "fbbt_term": "immature transmedullary neuron Tm2",
+      "fbbt_id": "FBbt:00052326",
+      "fbbt_definition": "Immature form of the transmedullary neuron Tm2 (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Hth/Opa temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Group member only."
+    },
+    {
+      "fbbt_term": "immature transmedullary neuron Tm4",
+      "fbbt_id": "FBbt:00052330",
+      "fbbt_definition": "Immature form of the transmedullary neuron Tm4 (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Hth/Opa temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Group member only."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053274 'immature transmedullary neuron' (broad match); members Tm1, Tm2, Tm4 (immature terms listed) and Tm6 (no immature term).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

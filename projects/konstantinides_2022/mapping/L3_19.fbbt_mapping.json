@@ -1,0 +1,42 @@
+{
+  "cluster_label": "L3_19",
+  "working_definition": "Neuroblasts (dpn+, ase+) of the wandering third instar larval optic lobe, derived from the neuroepithelium, that divide asymmetrically to produce ganglion mother cells and medulla/lobula plate neurons.",
+  "searches_performed": [
+    "larval optic neuroblast",
+    "optic neuroblast",
+    "neuroblast",
+    "medulla forming neuroblast"
+  ],
+  "best_match": {
+    "fbbt_term": "larval optic neuroblast",
+    "fbbt_id": "FBbt:00110571",
+    "fbbt_definition": "Neuroblast that delaminates from the optic lobe neuroepithelium during the larval stage (Egger et al., 2007). It generates secondary (adult-specific) optic lobe neurons via asymmetric division (Egger et al., 2007).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors name unsubdivided neuroblasts from larval optic lobes; larval optic neuroblast is exact for label plus tissue and stage (it delaminates from the optic neuroepithelium in the larva and makes adult optic lobe neurons). Not narrowed to medulla forming neuroblast because the authors' label does not say so (the set also includes a lobula plate-class cluster).",
+  "other_candidates": [
+    {
+      "fbbt_term": "optic neuroblast",
+      "fbbt_id": "FBbt:00052344",
+      "fbbt_definition": "Neuroblast that generates neurons of the optic lobe. It arises from the optic lobe neuroepithelium, with some delaminating during the embryonic stage and others delaminating during the larval stage (Hakes et al., 2018).",
+      "reason_rejected": "Parent of larval optic neuroblast; less specific than the larval tissue and stage make exact."
+    },
+    {
+      "fbbt_term": "medulla forming neuroblast",
+      "fbbt_id": "FBbt:00001938",
+      "fbbt_definition": "Can be distinguished from other optic lobe neuroblasts based on expression of dpn and ase (Konstantinides et al., 2022).\nA neuroblast that is the precursor of the medulla. The neuroblasts that give rise to the outer medulla neurons are located in the medial edge of the larval outer optic anlage, whereas the neuroblasts that give rise to the inner medulla neurons are located in the larval inner optic anlage.",
+      "reason_rejected": "More specific than the authors' label 'neuroblasts'."
+    },
+    {
+      "fbbt_term": "neuroblast",
+      "fbbt_id": "FBbt:00005146",
+      "fbbt_definition": "Precursor of the central nervous system that derives from the neurogenic region of the ectoderm or the mesectoderm (Doe, 1992; Schmid et al., 1999; Crews, 2019). It produces neurons and/or glia (Doe, 1992; Beckervordersandforth et al., 2008). Neuroblasts may also divide during adult life to regenerate the adult brain (Fernandez-Hernandez et al., 2013).",
+      "reason_rejected": "Too generic; optic-lobe larval term exists."
+    }
+  ],
+  "recommendation": "Map to FBbt:00110571 larval optic neuroblast (exact).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

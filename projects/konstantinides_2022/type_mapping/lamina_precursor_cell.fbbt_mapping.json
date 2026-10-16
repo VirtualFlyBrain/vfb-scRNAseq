@@ -1,0 +1,29 @@
+{
+  "cluster_label": "lamina precursor cell",
+  "working_definition": "Lamina precursor cells (LPCs) of the wandering third instar larval optic lobe, the progenitors at the lateral edge of the outer proliferation center that give rise to lamina neurons.",
+  "searches_performed": [
+    "lamina precursor cell",
+    "LPC",
+    "lamina forming neuroblast"
+  ],
+  "best_match": {
+    "fbbt_term": "lamina forming neuroblast",
+    "fbbt_id": "FBbt:00001942",
+    "fbbt_definition": "A neuroblast that is the precursor of the lamina. The neuroblasts that give rise to the lamina neurons are located in the lateral edge of the larval outer optic anlage.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt carries 'lamina precursor cell' and 'LPC' as exact synonyms of 'lamina forming neuroblast', the only lamina-precursor term, and its definition (larval outer optic anlage, lateral edge, precursor of lamina neurons) fits the larval LPCs. Same mapping as Ozel 2021 LPC; here the larval stage matches the term's definition.",
+  "other_candidates": [
+    {
+      "fbbt_term": "outer optic anlage neuroblast",
+      "fbbt_id": "FBbt:00007418",
+      "fbbt_definition": "A neuroblast that is located in the larval outer optic anlage and that will give rise the to neurons of the adult lamina and outer medulla. It develops from a neuroepithelial cell in the medial region of the outer optic anlage. Neuroblasts in the medial edge give rise to the outer medulla neurons, whereas neuroblasts at the lateral edge give rise to lamina neurons.",
+      "reason_rejected": "Parent of lamina forming neuroblast; less specific."
+    }
+  ],
+  "recommendation": "Map to FBbt:00001942 lamina forming neuroblast (exact, via the lamina precursor cell synonym).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

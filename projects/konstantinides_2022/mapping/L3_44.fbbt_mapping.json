@@ -1,0 +1,35 @@
+{
+  "cluster_label": "L3_44",
+  "working_definition": "Glial cells (repo+) of the wandering third instar larval optic lobe; the authors do not subdivide them by glial subtype.",
+  "searches_performed": [
+    "glial cell",
+    "larval glial cell",
+    "larval optic lobe glial cell"
+  ],
+  "best_match": {
+    "fbbt_term": "larval glial cell",
+    "fbbt_id": "FBbt:00001251",
+    "fbbt_definition": "Glial cell of the late embryo/larva.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors label the clusters simply 'glial cell'; the tissue is larval optic lobe. FBbt has no general larval optic lobe glial cell term (only a larval optic lobe A-subperineurial glial cell, flagged as possibly non-existent, and larval medulla/marginal glial subtypes), so the stage-appropriate generic larval glial cell is exact for label plus stage and not narrowed further.",
+  "other_candidates": [
+    {
+      "fbbt_term": "glial cell",
+      "fbbt_id": "FBbt:00005144",
+      "fbbt_definition": "A supporting cell of the nervous system.",
+      "reason_rejected": "Not stage-specific; larval term exists."
+    },
+    {
+      "fbbt_term": "larval medulla glial cell",
+      "fbbt_id": "FBbt:00053297",
+      "fbbt_definition": "Larval glial cell that arises from the DL1 neuroblast and migrates to the optic anlage, where it differentiates into a more specific glial cell type in the vicinity of the developing medulla (Plazaola-Sasieta et al., 2019).",
+      "reason_rejected": "A specific subtype; authors do not subdivide their glia."
+    }
+  ],
+  "recommendation": "Map to FBbt:00001251 larval glial cell (exact).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

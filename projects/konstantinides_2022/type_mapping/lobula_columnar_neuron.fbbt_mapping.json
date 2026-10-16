@@ -1,0 +1,28 @@
+{
+  "cluster_label": "lobula columnar neuron",
+  "working_definition": "Author type 'lobula columnar neuron' (L3_80) of the Konstantinides et al. 2022 wandering L3 larval optic lobe atlas: developing lobula columnar (LC) neurons (Fig 1c labels LC4).",
+  "searches_performed": [
+    "lobula columnar neuron",
+    "immature lobula columnar neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "immature lobula columnar neuron",
+    "fbbt_id": "FBbt:00053273",
+    "fbbt_definition": "Immature form of a lobula columnar neuron (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Wandering L3 data, so the immature form; FBbt:00053273 was defined from Konstantinides et al. 2022 itself, so it is the exact match for the authors' lobula columnar neuron type.",
+  "other_candidates": [
+    {
+      "fbbt_term": "lobula columnar neuron",
+      "fbbt_id": "FBbt:00003870",
+      "fbbt_definition": "Adult optic lobe columnar neuron whose dendrites are in the lobula and whose axons project to the central brain.",
+      "reason_rejected": "Mature adult form; larval cells are immature."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053273 'immature lobula columnar neuron' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

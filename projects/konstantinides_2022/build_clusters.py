@@ -18,7 +18,8 @@ the L3 cells by library (BioSample -> GSM title "rep <n>" -> Lib<n>) and barcode
   source_cluster_id  n
   cells_by_library   cells per library (`orig.ident`)
   unannotated        True for a cluster the authors left unlabelled ("unannonated N",
-                     sic) or with no SCEA label (L3_0, not in SCEA)
+                     sic) or with no SCEA label (L3_0, not in SCEA), and for the author
+                     types the curator holds (config `held_types`)
 
 Usage:
     uv run python projects/konstantinides_2022/build_clusters.py
@@ -76,6 +77,7 @@ def scea_labels() -> dict[str, str]:
 def main() -> None:
     cfg = yaml.safe_load((PROJ / "config.yaml").read_text())
     (clustering,) = cfg["sample_build"]["clusterings"]
+    held = set(cfg.get("held_types") or {})
     fetch_scea()
     labels = scea_labels()
     with gzip.open(CACHE / "metadata.tsv.gz", "rt") as fh:
@@ -109,6 +111,8 @@ def main() -> None:
             if UNLABELLED.fullmatch(label):
                 rec["type"] = f"L3_{num}"
                 rec["unannotated"] = True
+            elif rec["type"] in held:
+                rec["unannotated"] = True           # curator-held type
         else:
             rec["type"] = f"L3_{num}"
             rec["unannotated"] = True               # not in SCEA (no author label)
@@ -128,7 +132,7 @@ def main() -> None:
     (PROJ / "cell_type_annotations.json").write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")
     held = [a["label"] for a in anns if a.get("unannotated")]
     low = [(a["label"], a["author_label_share"]) for a in anns if a.get("author_label_share", 1) < 0.9]
-    print(f"wrote {len(anns)} clusters; {len(held)} unlabelled {held}; label share < 0.9: {low}")
+    print(f"wrote {len(anns)} clusters; {len(held)} held (unlabelled or held types) {held}; label share < 0.9: {low}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,42 @@
+{
+  "cluster_label": "Lai/Dm9 neuron",
+  "working_definition": "Grouped author type 'Lai/Dm9 neuron' (L3_82) of the Konstantinides et al. 2022 wandering L3 optic lobe atlas: medulla-class lamina intrinsic neurons (Lai) and distal medullary amacrine neurons Dm9, not resolved from one another.",
+  "searches_performed": [
+    "'Lai/Dm9 neuron'",
+    "'immature lamina intrinsic neuron'",
+    "'immature distal medullary amacrine neuron Dm9'",
+    "'immature adult optic lobe intrinsic neuron'"
+  ],
+  "best_match": {
+    "fbbt_term": "immature adult optic lobe intrinsic neuron",
+    "fbbt_id": "FBbt:00053540",
+    "fbbt_definition": "Immature neuron that will have its synapses restricted to the optic lobe in the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Immature Lai (FBbt:00052316) is not under immature distal medullary amacrine neuron, and Dm9 (FBbt:00052315) is not under a lamina-specific parent, so the most specific anatomical common parent is immature adult optic lobe intrinsic neuron, which is more specific than immature adult optic lobe neuron (FBbt:00053539). Both also share the non-anatomical parent Notch OFF hemilineage secondary neuron.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature lamina intrinsic neuron",
+      "fbbt_id": "FBbt:00052316",
+      "fbbt_definition": "Immature form of the lamina intrinsic neuron (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hbn/Opa/Slp temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Group member only."
+    },
+    {
+      "fbbt_term": "immature distal medullary amacrine neuron Dm9",
+      "fbbt_id": "FBbt:00052315",
+      "fbbt_definition": "Immature form of the distal medullary amacrine neuron Dm9 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hbn/Opa/Slp temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Group member only."
+    },
+    {
+      "fbbt_term": "Notch OFF hemilineage secondary neuron",
+      "fbbt_id": "FBbt:00049542",
+      "fbbt_definition": "Secondary neuron belonging to a hemilineage that does not have active Notch signaling.",
+      "reason_rejected": "Common parent but not optic-lobe specific and not an immature term."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053540 'immature adult optic lobe intrinsic neuron' (broad match); members Lai and Dm9.",
+  "new_term_needed": false,
+  "verification_needed": false
+}
