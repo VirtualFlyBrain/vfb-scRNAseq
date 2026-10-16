@@ -98,6 +98,12 @@ def sample_age(gsm, sb: dict) -> str | None:
     return gsm.stage_hint or sb.get("age")
 
 
+def sample_stock(parsed: dict, sb: dict) -> list[str] | None:
+    """FlyBase stock(s) of a sample: per strain/genotype group (`stock_map`), else the
+    stock(s) common to every sample (`sample_build.stock`)."""
+    return sb.get("stock_map", {}).get(parsed.get("set")) or sb.get("stock")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--project", required=True)
@@ -193,7 +199,7 @@ def main() -> None:
             "biorep": p0["biorep"],
             "tissue_raw": gsm0.characteristic("tissue"),   # original GEO characteristics
             "age_raw": age_raw,
-            "stock": sb.get("stock_map", {}).get(p0["set"]),  # FlyBase FBst ref(s)
+            "stock": sample_stock(p0, sb),                # FlyBase FBst ref(s)
             "sex": sex,
             "stage": tp.get("stage"),
             # `sample_build.tissue_map` (keyed on the GEO tissue characteristic) when
