@@ -1316,4 +1316,11 @@ licence CC-BY-4.0. Curator decisions 2026-10-16.
   gene counts total 13,286, filtered 3,874. Markers as in the paper: *dac* in the a/b
   subtypes, *bi* (omb) in c/d, *grn* in b/c, *TfAP-2* in T4 only, *SoxN* / *Sox102F* in
   all.
+- **Build (stage 5):** `build_rdf.py`: 1 Dataset, 10 Samples (each `has_genotype some`
+  FBco0000215), 10 Assays, 5 Clusterings (each linked to its stage's two samples), 40
+  Clusters, named "<subtype> neuron cluster (<clustering>)" (the authors' per-stage
+  clusters have no numbers, so the subtype label is the cluster id); publication
+  FBrf0245647 from VFB production; `verify_mappings.py` OK (16 FBbt terms); the 8 FBbt /
+  FBdv / FBcv terms on Samples, Assays and the Dataset current in OLS. Recorded in
+  `provenance.json`.
 

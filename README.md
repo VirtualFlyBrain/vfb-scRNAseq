@@ -74,8 +74,10 @@ from FlyBase; that authority is being dropped.)
   the pupal stage). Replaces the old FlyBase/SCEA load (FBlc0005659).
 - `projects/hormann_2020/` — Hörmann et al. 2020, T4/T5 neurons through pupal
   development (PMID 32238425; [GSE147987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987)):
-  FACS-sorted T4/T5 neurons at five pupal stages, the authors' 8 subtype clusters per
-  stage. Replaces the old FlyBase/SCEA load (FBlc0006305). In progress.
+  FACS-sorted T4/T5 neurons at five pupal stages, one Clustering per stage of the
+  authors' 8 subtype clusters (from their labels in the Single Cell Expression Atlas):
+  all 40 loaded (immature subtype terms to the pupal stage); samples linked to the
+  split-GAL4 genotype (FBco). Replaces the old FlyBase/SCEA load (FBlc0006305).
 - `projects/konstantinides_2022/` — Konstantinides et al. 2022, larval optic lobe
   atlas (PMID 35388222; [GSE167266](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE167266)):
   wandering L3 optic lobes, one Clustering of the authors' 95 L3 clusters, typed from the
@@ -172,7 +174,7 @@ from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#genera
 
 ## Status
 
-All seven projects are curated and built. Every mapped cluster has been reviewed (bar
+All eight projects are curated and built. Every mapped cluster has been reviewed (bar
 three Kurmangaliyev early clusters awaiting FBbt #2216, below), and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the
@@ -184,7 +186,7 @@ FBbt term request is closed (`checks/`).
 
 Outstanding, outside this repo: loading the OWL into VFB, and retiring the old loads
 these replace (FBlc0006090, FBlc0003846 / 4307 / 4785, FBlc0006422, FBlc0005659,
-FBlc0006404).
+FBlc0006404, FBlc0006305).
 Pending FBbt requests, tracked with the clusters waiting on them in
 `checks/pending_fbbt_requests.json`:
 [#2216](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2216)
