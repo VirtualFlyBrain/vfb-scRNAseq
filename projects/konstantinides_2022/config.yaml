@@ -55,7 +55,7 @@ sample_build:
   tissue_labels:
     "embryonic/larval optic lobe": larval optic lobe
   clusterings:
-    - { id: L3, name: "Konstantinides 2022 L3 optic lobe clusters" }
+    - { id: L3, name: "Konstantinides 2022 L3 optic lobe clusters", sample_age: "wandering third instar larva" }
 
 # Clusters (projects/konstantinides_2022/build_clusters.py, from the R export in
 # .cache/konstantinides/ and the SCEA E-GEOD-167266 experiment design): one entry per L3

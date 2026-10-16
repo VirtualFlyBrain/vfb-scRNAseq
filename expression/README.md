@@ -18,3 +18,4 @@ report, and the counts JSON stay under `projects/<p>/`.
 | vfb_scRNAseq_expression_li_2022_fca_ss2.owl.gz | li_2022_fca_ss2 |
 | vfb_scRNAseq_expression_lu_2023_afca.owl.gz | lu_2023_afca |
 | vfb_scRNAseq_expression_ozel_2021.owl.gz | ozel_2021 |
+| vfb_scRNAseq_expression_konstantinides_2022.owl.gz | konstantinides_2022 |
