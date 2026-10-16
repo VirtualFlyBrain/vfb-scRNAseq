@@ -841,7 +841,7 @@ VFB until the release files are merged, so ids can still change during review.
    several tissues, clusterings (`sample_tissue_raw` / `sample_age` link a clustering
    to the samples of that tissue / age; the title regex's `set` group is optional;
    `title_stages` for a more specific stage recorded in GSM titles; `tissue_labels` for
-   the tissue shown in Sample labels); ArrayExpress: also
+   the tissue shown in Sample labels; `age` for the paper's age when GEO records none); ArrayExpress: also
    `sample_columns`, `assay_column` / `assay_regex`, `sex_column` / `sex_map`,
    `sdrf_corrections`), `annotation_build` (h5ad obs columns,
    `unannotated_values`), `annotations` (label/class/timepoint
@@ -1179,3 +1179,29 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-16.
   FBbt / FBdv / FBcv terms on Samples, Assays and the Dataset current in OLS. Recorded in
   `provenance.json`.
 
+## Konstantinides 2022 (larval optic lobe)
+
+Nature 2022, PMID 35388222, FBrf0253187; GEO GSE167266 (`konstantinides_2022`).
+Single-cell 10x of wandering third instar larval optic lobes (male and female
+Canton-S). Replaces the old FlyBase/SCEA load FBlc0006404 (SCEA E-GEOD-167266, 14
+clusters merged by type) with fresh VFBseq ids; licence CC-BY-4.0. Curator decisions
+2026-10-16.
+
+- **Data.** One Seurat object on GEO (`OL.L3_P15_merged.rds`): the 49,893 L3 cells of
+  the 10 libraries plus 19,226 Özel 2021 P15 cells used for comparison (those are
+  `ozel_2021`'s and are not loaded here). The L3 cells carry the authors' L3 clusters
+  (`integrated_snn_res.2` = `Nikos_Neset_ID2`, L3_0-L3_94; 150 dims, resolution 2 — the
+  clustering the paper cites: Mi1 "an immature (cluster 23) and a mature cluster
+  (cluster 53)") and a neuropil class per cluster (`Neuropil`; `3_Figure1.R` in the
+  authors' GitHub, NikosKonst/larva_scSeq2022).
+- **Cluster typing (curator).** The paper and figures name only a few L3 clusters; the
+  per-cluster key is the authors' labels as given to SCEA (E-GEOD-167266 experiment
+  design, "inferred cell type - authors labels", numbered by L3 cluster, e.g. "glial cell
+  44"), matched to the L3 clusters by barcode. The old load merged these by type and
+  typed the 41 "medulla neuron" clusters as *medulla forming neuroblast* (SCEA ontology
+  labels); its assignments are a cross-check only.
+- **Samples (stage 1):** `build_samples_from_geo.py`: 10 Samples / 10 Assays, each GSM
+  one 10x library ("10 libraries (biological replicates)"). GEO records no age, so the
+  paper's (`sample_build.age`): wandering third instar larvae, *wandering third instar
+  larval stage*; tissue *embryonic/larval optic lobe* (labels: "larval optic lobe").
+  Pooled sex (unset). No stock number is given for Canton-S. One Clustering (L3).
