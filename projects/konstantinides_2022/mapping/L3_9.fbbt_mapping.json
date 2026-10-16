@@ -8,20 +8,20 @@
     "medulla forming neuroblast"
   ],
   "best_match": {
-    "fbbt_term": "larval optic neuroblast",
-    "fbbt_id": "FBbt:00110571",
-    "fbbt_definition": "Neuroblast that delaminates from the optic lobe neuroepithelium during the larval stage (Egger et al., 2007). It generates secondary (adult-specific) optic lobe neurons via asymmetric division (Egger et al., 2007).",
+    "fbbt_term": "optic neuroblast",
+    "fbbt_id": "FBbt:00052344",
+    "fbbt_definition": "Neuroblast that generates neurons of the optic lobe. It arises from the optic lobe neuroepithelium, with some delaminating during the embryonic stage and others delaminating during the larval stage (Hakes et al., 2018).",
     "match_type": "exact match",
     "skos_mapping": "skos:exactMatch",
-    "confidence": "medium"
+    "confidence": "high"
   },
-  "justification": "The authors name unsubdivided neuroblasts from larval optic lobes; larval optic neuroblast is exact for label plus tissue and stage (it delaminates from the optic neuroepithelium in the larva and makes adult optic lobe neurons). Not narrowed to medulla forming neuroblast because the authors' label does not say so (the set also includes a lobula plate-class cluster).",
+  "justification": "The authors name unsubdivided neuroblasts of the optic lobe; optic neuroblast is exact for label plus tissue. Not narrowed to larval optic neuroblast (curator 2026-10-16): optic neuroblasts delaminate during the embryonic or the larval stage, and the paper does not say which these are (neuroblasts in a wandering L3 optic lobe may be either). Not narrowed to medulla forming neuroblast because the authors' label does not say so (the set also includes a lobula plate-class cluster).",
   "other_candidates": [
     {
-      "fbbt_term": "optic neuroblast",
-      "fbbt_id": "FBbt:00052344",
-      "fbbt_definition": "Neuroblast that generates neurons of the optic lobe. It arises from the optic lobe neuroepithelium, with some delaminating during the embryonic stage and others delaminating during the larval stage (Hakes et al., 2018).",
-      "reason_rejected": "Parent of larval optic neuroblast; less specific than the larval tissue and stage make exact."
+      "fbbt_term": "larval optic neuroblast",
+      "fbbt_id": "FBbt:00110571",
+      "fbbt_definition": "Neuroblast that delaminates from the optic lobe neuroepithelium during the larval stage (Egger et al., 2007). It generates secondary (adult-specific) optic lobe neurons via asymmetric division (Egger et al., 2007).",
+      "reason_rejected": "Defined by delamination during the larval stage; the paper does not say when these neuroblasts delaminated (curator 2026-10-16)."
     },
     {
       "fbbt_term": "medulla forming neuroblast",
@@ -33,10 +33,10 @@
       "fbbt_term": "neuroblast",
       "fbbt_id": "FBbt:00005146",
       "fbbt_definition": "Precursor of the central nervous system that derives from the neurogenic region of the ectoderm or the mesectoderm (Doe, 1992; Schmid et al., 1999; Crews, 2019). It produces neurons and/or glia (Doe, 1992; Beckervordersandforth et al., 2008). Neuroblasts may also divide during adult life to regenerate the adult brain (Fernandez-Hernandez et al., 2013).",
-      "reason_rejected": "Too generic; optic-lobe larval term exists."
+      "reason_rejected": "Too generic; the optic lobe term is exact."
     }
   ],
-  "recommendation": "Map to FBbt:00110571 larval optic neuroblast (exact).",
+  "recommendation": "Map to FBbt:00052344 optic neuroblast (exact).",
   "new_term_needed": false,
   "verification_needed": false
 }
