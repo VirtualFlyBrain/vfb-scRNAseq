@@ -838,8 +838,10 @@ VFB until the release files are merged, so ids can still change during review.
    `dataset` (GEO / BioProject / SRA, or ArrayExpress), `sample_build` (GEO: title
    pattern, sex, stocks from the paper's Key Resources Table resolved in FlyBase
    Chado, `age_map` → FBdv stage + FBbt tissue, `tissue_map` when one series has
-   several tissues, clusterings (`sample_tissue_raw` links a clustering to the
-   samples of that tissue); ArrayExpress: also
+   several tissues, clusterings (`sample_tissue_raw` / `sample_age` link a clustering
+   to the samples of that tissue / age; the title regex's `set` group is optional;
+   `title_stages` for a more specific stage recorded in GSM titles; `tissue_labels` for
+   the tissue shown in Sample labels); ArrayExpress: also
    `sample_columns`, `assay_column` / `assay_regex`, `sex_column` / `sex_map`,
    `sdrf_corrections`), `annotation_build` (h5ad obs columns,
    `unannotated_values`), `annotations` (label/class/timepoint
@@ -1054,4 +1056,42 @@ assignments are a mapping cross-check only. Licence CC-BY-4.0. Curator decisions
   (`…_AFCA_female_head_30_S1`, or the FCA sample id). Not annotated: 108,647 head /
   6,250 body cells ("unannotated"); 17 numbered head types "neuron 1"–"neuron 17"
   (new in the paper, unnamed).
+
+## Özel 2021 (optic lobe developmental atlas)
+
+Nature 2021, PMID 33149298, FBrf0247762; GEO GSE142787 (`ozel_2021`). Single-cell 10x
+of female Canton-S optic lobes at five pupal stages and in 1-3-day adults. Replaces the
+old FlyBase/SCEA load FBlc0005659 (SCEA E-CURD-134, 66 merged clusters) with fresh
+VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-16.
+
+- **Data.** The authors' processed data are Seurat v3 objects, one per stage (P15,
+  P30, P40, P50, P70, adult; ~8 GB compressed) plus an adult-male side analysis
+  (not loaded; issue #21). GEO has no per-library matrices. The objects hold raw counts
+  (`RNA@counts`) and per-cell metadata: the library, the stage's own unsupervised
+  clusters, neural-network predictions and `FinalIdents` (each cell's final identity
+  as an adult cluster number). The numbers are named in Supplementary Table 1
+  (Nature MOESM4: 261 numbers; 141 named, 7 less confident `*`, 120 numbered only, low
+  quality "LQ", 16 merged away). They are read with R (Homebrew `r`; base R reads the
+  objects without Seurat) and exported once to `.cache`.
+- **Scope (curator).** One Clustering per stage, one Cluster per final identity present
+  at that stage (the per-stage unsupervised clusterings are an intermediate step; the
+  adult-male analysis is a side analysis). Numbered identities held (`untyped`), LQ held
+  (`artefact`); numbered glia (G01, G02, ...) mapped to a glial anchor (*adult optic lobe
+  glial cell* for adult; pupal term to be chosen at mapping), as the optic-lobe-only
+  dissection makes it exact; less-confident names (`*`) mapped and flagged
+  `verification_needed`.
+- **Samples (stage 1):** `build_samples_from_geo.py`: 38 Samples / 38 Assays, each GSM
+  one 10x library (paper: 15 adult, 5 each P15/P30/P70, 4 each P40/P50). Stages: the
+  authors' Pxx is % of pupal development at 25 C, i.e. ~hours APF of the 100 h FBdv pupal
+  period, each inside one Bainbridge & Bownes stage by the FBdv definitions: P15 to
+  *pupal stage P5* (12.2-18.7 h APF), P30 to *P6* (18.7-32.4 h), P40 to *P7* (32.4-44.3
+  h), P50 to *pharate adult stage P8* (44.3-56.6 h), P70 to *P9* (56.6-74.5 h); adults
+  ("1-3 days old", all past tanning) to *mature adult stage*, or to *day 1* / *day 3 of
+  adulthood* where the authors give the age in the GSM title (`title_stages`; 3 and 4
+  libraries; curator 2026-10-16). Tissue as for Kurmangaliyev:
+  *embryonic/larval optic lobe* to the pupal stage (P5-P7), *adult optic lobe* from the
+  pharate adult stage. Sample labels show the pupal tissue as "optic lobe" (GEO's
+  "P70 optic lobe" repeats the stage; `tissue_labels`), replicate ids as in GEO. Sex from GEO (female; 2 adult libraries pooled-sex, unset). No
+  stock number is given for Canton-S. Each stage Clustering links its samples
+  (`sample_age`).
 

@@ -223,10 +223,13 @@ def reused_samples(config: dict) -> list[dict]:
 
 
 def clustering_samples(entry: dict, own: list[dict], reused: list[dict]) -> list[str]:
-    """VFBseq ids of the Samples a clustering uses: with ``sample_tissue_raw`` in its
-    `sample_build.clusterings` entry, the own and reused samples of that raw tissue;
-    otherwise none recorded."""
-    tissue = entry.get("sample_tissue_raw") if isinstance(entry, dict) else None
-    if not tissue:
+    """VFBseq ids of the Samples a clustering uses, from its `sample_build.clusterings`
+    entry: ``sample_tissue_raw`` and/or ``sample_age`` select the own and reused samples
+    with that raw tissue / age; with neither, none are recorded."""
+    if not isinstance(entry, dict):
         return []
-    return [s["vfbseq_id"] for s in own + reused if s.get("tissue_raw") == tissue]
+    tissue, age = entry.get("sample_tissue_raw"), entry.get("sample_age")
+    if not (tissue or age):
+        return []
+    return [s["vfbseq_id"] for s in own + reused
+            if (not tissue or s.get("tissue_raw") == tissue) and (not age or s.get("age_raw") == age)]
