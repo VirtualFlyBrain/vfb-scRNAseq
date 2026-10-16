@@ -1205,3 +1205,15 @@ clusters merged by type) with fresh VFBseq ids; licence CC-BY-4.0. Curator decis
   paper's (`sample_build.age`): wandering third instar larvae, *wandering third instar
   larval stage*; tissue *embryonic/larval optic lobe* (labels: "larval optic lobe").
   Pooled sex (unset). No stock number is given for Canton-S. One Clustering (L3).
+- **Clusters (stage 2):** `projects/konstantinides_2022/export_seurat.R` exports the
+  object once (Homebrew R, base R + `Matrix`; ~1 min) to `.cache/konstantinides/`: the
+  cell metadata of all 69,119 cells and the raw counts of the 49,893 L3 cells (11,590
+  genes, the authors' filtered set). `projects/konstantinides_2022/build_clusters.py`
+  fetches the SCEA experiment design and SDRF (cached in `.cache/konstantinides/scea/`),
+  matches its per-cell author labels to the L3 cells (BioSample -> GSM "rep n" -> `Lib<n>`,
+  plus barcode; 45,392 L3 cells labelled) and writes one entry per L3 cluster: type = the
+  label of most of its cells without the cluster number (every cluster >= 90% one label),
+  with the label as given, its share and the authors' neuropil class. 95 entries, 23 author
+  types (33 "medulla neuron", 14 "central brain neuron", 8 GMC, 8 glia, 5 neuroblasts, 4
+  neuroepithelium, ...). Held as `untyped`: "unannonated" (sic) L3_2, L3_3, L3_88, and
+  L3_0 (1,647 cells, no SCEA label).
