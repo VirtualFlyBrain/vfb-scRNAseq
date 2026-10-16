@@ -1,0 +1,27 @@
+{
+  "cluster_label": "Tm20",
+  "working_definition": "Author type 'Tm20' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'Tm20' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature transmedullary neuron Tm20",
+    "fbbt_id": "FBbt:00052327",
+    "fbbt_definition": "Immature form of the transmedullary neuron Tm20 (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Hbn/Opa/Slp temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "'Tm20' is FBbt:00003808 'transmedullary neuron Tm20'; at P15-P40 the cells are developing, so its immature form FBbt:00052327 (curator: immature terms up to the pupal stage).",
+  "other_candidates": [
+    {
+      "fbbt_term": "transmedullary neuron Tm20",
+      "fbbt_id": "FBbt:00003808",
+      "fbbt_definition": "Transmedullary neuron that has dendritic arborization in medulla layers M1-M3, as well as presynaptic sites in M8 (Fischbach and Dittrich, 1989; Gao et al., 2008). In the medulla, it spans just one column (Kind et al., 2021), and receives input from lamina monopolar neuron L3 (Takemura et al., 2013) and an R8 photoreceptor (Kind et al., 2021). Its axon follows the anterior edge of its cognate medulla column (Ting et al., 2014), then crosses the second optic chiasma and projects to lobula layer 5 (Fischbach and Dittrich, 1989; Gao et al., 2008). It provides input to the lobula intrinsic neuron Li4 via many synapses (Lin et al., 2016). It is a cholinergic neuron (Gao et al., 2008). There is usually one of these cells per optic column (Nern et al., 2025).",
+      "reason_rejected": "Mature form; used from the pharate adult stage."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052327 'immature transmedullary neuron Tm20' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

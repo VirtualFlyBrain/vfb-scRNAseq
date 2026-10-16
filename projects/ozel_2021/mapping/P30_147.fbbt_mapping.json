@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P30_147",
+  "working_definition": "Author type 'LC4' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'LC4' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature lobula columnar neuron",
+    "fbbt_id": "FBbt:00053273",
+    "fbbt_definition": "Immature form of a lobula columnar neuron (Konstantinides et al., 2022).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "'LC4' is FBbt:00003874 'lobula columnar neuron LC4', which has no immature form in FBbt; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so the most specific ancestor with an immature form is used: FBbt:00053273 'immature lobula columnar neuron' (as for Kurmangaliyev 2020 early clusters).",
+  "other_candidates": [
+    {
+      "fbbt_term": "lobula columnar neuron LC4",
+      "fbbt_id": "FBbt:00003874",
+      "fbbt_definition": "Lobula columnar neuron whose cell body is in an extended region of the lateral cell body rind (Wu et al., 2016). It has its main dendritic arbors in lobula layers 2 and 4 (Wu et al., 2016; Tanaka and Clark, 2022). Its arbors span approximately 40 optic columns, overlapping with other LC4 cells (Wu et al., 2016). It projects to an optic glomerulus in the PVLP that is medial to the one from LC12 and ventral to LPLC2 and LPLC1 (Wu et al., 2016). There are an estimated 66 neurons of this type (Wu et al., 2016). It has been reported as being both glutamatergic (Raghu and Borst, 2011) and cholinergic (Davis et al., 2020).",
+      "reason_rejected": "Mature form, used from the pharate adult stage; no immature form in FBbt."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053273 'immature lobula columnar neuron' (broad match).",
+  "new_term_needed": true,
+  "verification_needed": false
+}

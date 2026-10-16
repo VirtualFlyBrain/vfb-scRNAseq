@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P15_98",
+  "working_definition": "Identity 98 of the Özel et al. 2021 optic lobe atlas, left numbered by the authors; their Supplementary Table 1 comment: 'Very likely to be a LC cell: second best match for LC16.' Pupal stages P15, P30, P40 (developing neurons).",
+  "searches_performed": [
+    "immature lobula columnar neuron (FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature lobula columnar neuron",
+    "fbbt_id": "FBbt:00053273",
+    "fbbt_definition": "Immature form of a lobula columnar neuron (Konstantinides et al., 2022).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors call the identity 'very likely' an LC (lobula columnar) neuron; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so the immature form of lobula columnar neuron. Flagged for verification (probable call).",
+  "other_candidates": [
+    {
+      "fbbt_term": "lobula columnar neuron",
+      "fbbt_id": "FBbt:00003870",
+      "fbbt_definition": "An extrinsic columnar neuron that innervates the lobula.",
+      "reason_rejected": "Mature form; used from the pharate adult stage."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053273 'immature lobula columnar neuron' (broad, medium; flagged: the authors' call is probable).",
+  "new_term_needed": false,
+  "verification_needed": true
+}

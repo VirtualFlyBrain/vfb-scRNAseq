@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P40_27",
+  "working_definition": "Author type 'LC14' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'LC14' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature lobula columnar neuron LC14",
+    "fbbt_id": "FBbt:00052343",
+    "fbbt_definition": "Immature form of a lobula columnar 14 (dorsal cluster) neuron (Hassan et al., 2000; Zheng et al., 2006). It is born in the early larva and extends a neurite to the contralateral hemisphere during the larval stage, but does not enter the developing optic lobe until the late larval stage (Hassan et al., 2000; Zheng et al., 2006; Langen et al., 2013). Initially, all the contralateral axons extend into the medulla, but most retract back to the lobula prior to eclosion, leaving around one third of these neurons innervating the medulla (Langen et al., 2013). There are approximately 22-68 of these cells per hemisphere, with no correlation between the number of medulla-targeting cells and total number, or the number of cells in each hemisphere in the same organism (Langen et al., 2013; Linneweber et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "'LC14' is FBbt:00100486 'lobula columnar neuron LC14'; at P15-P40 the cells are developing, so its immature form FBbt:00052343 (curator: immature terms up to the pupal stage).",
+  "other_candidates": [
+    {
+      "fbbt_term": "lobula columnar neuron LC14",
+      "fbbt_id": "FBbt:00100486",
+      "fbbt_definition": "Lobula columnar neuron with its soma located dorsally in the cell body rind region between the optic lobe and the central brain (Hassan et al., 2000; Otsuna and Ito, 2006). It expresses the transcription factor ato (Hassan et al., 2000; Ozel et al., 2021). It projects from the ipsilateral lobula, along the great commissure and contacts the surface of the contralateral lobula, but does not penetrate into any of its layers (Otsuna and Ito, 2006). Ipsilaterally, all of these neurons form dense, dendrite-like branches that remain in the lobula, but different subtypes have axonal projections reaching only the contralateral lobula or extending to the medulla (Srahna et al., 2006; Langen et al., 2013; Wu et al., 2016). There are approximately 22-68 of these cells per hemisphere and the level of asymmetry between the populations of these neurons in each hemisphere can influence walking behavior (Linneweber et al., 2020).",
+      "reason_rejected": "Mature form; used from the pharate adult stage."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052343 'immature lobula columnar neuron LC14' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

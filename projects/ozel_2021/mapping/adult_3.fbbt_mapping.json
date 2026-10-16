@@ -1,0 +1,30 @@
+{
+  "cluster_label": "adult_3",
+  "working_definition": "Photoreceptor cluster of the Özel et al. 2021 optic lobe atlas (PR = photoreceptors, not protocerebrum); the authors state it contains photoreceptor cells R1 to R8 as a mixed, unresolved group. Retina cells carried into the optic lobe dissection; axons project to lamina (R1-R6) and medulla (R7, R8).",
+  "searches_performed": [
+    "PR",
+    "photoreceptor cell",
+    "eye photoreceptor cell",
+    "photoreceptor cell R1 ... R8 (local fbbt.obo release 2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "eye photoreceptor cell",
+    "fbbt_id": "FBbt:00006009",
+    "fbbt_definition": "Photoreceptor cell that forms the core of each ommatidium in the adult eye. Eight of these photoreceptors are arranged in each ommatidial core, bundled like the staves of a barrel. Each has a photosensitive rhabdomere that projects into the barrel cavity and adjacent supporting membrane, the stalk (Wolff and Ready, 1993). Each extends an axon into the optic lobe. Activation of the photoreceptor by light results in depolarization and in histamine release at the synapses of these axons (Sarthy, 1991).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' PR cluster pools photoreceptors R1-R8 without resolving subtypes, so the common parent of all eight is the right level. FBbt:00006009 is the class of which photoreceptor cells R1-R8 are subtypes (outer R1-R6 via outer photoreceptor cell, R7/R8 via inner photoreceptor cell). It is a cell-level term and the stages (P50, P70, adult) are mature.",
+  "other_candidates": [
+    {
+      "fbbt_term": "photoreceptor cell R8",
+      "fbbt_id": "FBbt:00004227",
+      "fbbt_definition": "Inner photoreceptor cell of the ommatidium whose rhabdomere is located proximally, directly below that of R7 (Wernet and Desplan, 2004). It has a single axon that extends through a single column of the lamina without making synapses and crosses the first optic chiasm to reach the medulla (Fischbach and Dittrich, 1989). It forms reciprocal inhibitory histaminergic synapses with the R8 photoreceptor of the same optic column (Schnaitmann et al., 2018), with a large proportion in the first optic chiasm (Kind et al., 2021). It is also cholinergic (Davis et al., 2020).",
+      "reason_rejected": "Single subtype; the cluster pools R1-R8."
+    }
+  ],
+  "recommendation": "Map to FBbt:00006009 'eye photoreceptor cell' (broad match for the pooled R1-R8 group).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

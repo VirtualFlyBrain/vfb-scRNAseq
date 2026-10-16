@@ -1,0 +1,43 @@
+{
+  "cluster_label": "Im09",
+  "working_definition": "P15 'tail' attached to GMC1 (tSNE) and GMC1/T4/T5 (UMAP); the authors' call is 'probably very immature T4/T5, possibly including GMCs'.",
+  "searches_performed": [
+    "Im09",
+    "immature T4",
+    "immature T5",
+    "immature T neuron",
+    "ganglion mother cell"
+  ],
+  "best_match": {
+    "fbbt_term": "immature T neuron",
+    "fbbt_id": "FBbt:00059279",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T neuron (Hormann et al., 2020).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Grouped T4/T5 call: immature T4 (FBbt:00052257) and immature T5 (FBbt:00052258) are both is_a immature T neuron. The authors hedge ('probably', 'possibly including GMCs'), so verification is flagged; GMC (FBbt:00005149) noted as a possible admixture.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature T4 neuron",
+      "fbbt_id": "FBbt:00052257",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T4 neuron (Hormann et al., 2020). It is generated from a neuroblast that amplifies by symmetric division (type III) before generating the T4 (and T5) neurons (Mora et al., 2018). During its development, it first projects its axon to the appropriate lobula plate layer, then forms its dendrites in medulla layer 10 (Hormann et al., 2020).",
+      "reason_rejected": "Member only."
+    },
+    {
+      "fbbt_term": "immature T5 neuron",
+      "fbbt_id": "FBbt:00052258",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T5 neuron (Hormann et al., 2020). It is generated from a neuroblast that amplifies by symmetric division (type III) before generating the T5 (and T4) neurons (Mora et al., 2018). During its development, it first projects its axon to the appropriate lobula plate layer, then forms its dendrites in lobula layer 1 (Hormann et al., 2020).",
+      "reason_rejected": "Member only."
+    },
+    {
+      "fbbt_term": "ganglion mother cell",
+      "fbbt_id": "FBbt:00005149",
+      "fbbt_definition": "Daughter cell formed through asymmetric division of a neuroblast, typically generating two postmitotic neurons.",
+      "reason_rejected": "Only a possible admixture per the authors; the primary call is immature T4/T5."
+    }
+  ],
+  "recommendation": "Broad match to immature T neuron; members T4, T5 (possibly with GMCs).",
+  "new_term_needed": false,
+  "verification_needed": true
+}

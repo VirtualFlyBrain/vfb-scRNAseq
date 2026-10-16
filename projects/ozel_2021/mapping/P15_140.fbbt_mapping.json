@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P15_140",
+  "working_definition": "Author type 'Tm1' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'Tm1' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature transmedullary neuron Tm1",
+    "fbbt_id": "FBbt:00052325",
+    "fbbt_definition": "Immature form of the transmedullary neuron Tm1 (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Hth/Opa temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "'Tm1' is FBbt:00003789 'transmedullary neuron Tm1'; at P15-P40 the cells are developing, so its immature form FBbt:00052325 (curator: immature terms up to the pupal stage).",
+  "other_candidates": [
+    {
+      "fbbt_term": "transmedullary neuron Tm1",
+      "fbbt_id": "FBbt:00003789",
+      "fbbt_definition": "Transmedullary narrow field neuron that terminates in lobula layer 1 with a bleb-type terminal arborization and that has fine arborizations in medulla layer M2 and bleb-type arborizations in M3 and M9 (Fischbach and Dittrich, 1989; Takemura et al., 2011). In the medulla, it receives strong synaptic input from lamina monopolar neuron L2 (Takemura et al., 2011; Takemura et al., 2013). It outputs onto T5 neurons (Shinomiya et al., 2019). It is a cholinergic neuron (Varija Raghu et al., 2011; Shinomiya et al., 2014). There is usually one of these cells per optic column (Nern et al., 2025).",
+      "reason_rejected": "Mature form; used from the pharate adult stage."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052325 'immature transmedullary neuron Tm1' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

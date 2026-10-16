@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P40_111",
+  "working_definition": "Author type 'LC17' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'LC17' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature lobula columnar neuron",
+    "fbbt_id": "FBbt:00053273",
+    "fbbt_definition": "Immature form of a lobula columnar neuron (Konstantinides et al., 2022).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "'LC17' is FBbt:00111752 'lobula columnar neuron LC17', which has no immature form in FBbt; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so the most specific ancestor with an immature form is used: FBbt:00053273 'immature lobula columnar neuron' (as for Kurmangaliyev 2020 early clusters).",
+  "other_candidates": [
+    {
+      "fbbt_term": "lobula columnar neuron LC17",
+      "fbbt_id": "FBbt:00111752",
+      "fbbt_definition": "Lobula columnar neuron whose cell body lies in the anterior area of the lateral cell body rind (Wu et al., 2016). It has its denser dendritic arbors in the boundary between lobula layers 2/3, where most of its synapses are found, and some diffuse branches near 3/4 and 5B (Wu et al., 2016; Tanaka and Clark, 2022). Its arbors span approximately 30 optic columns, overlapping with other LC17 cells (Wu et al., 2016). It projects to the most lateral of the ventral optic glomeruli of the PVLP (Wu et al., 2016). There are around 181 cells of this type (Wu et al., 2016).",
+      "reason_rejected": "Mature form, used from the pharate adult stage; no immature form in FBbt."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053273 'immature lobula columnar neuron' (broad match).",
+  "new_term_needed": true,
+  "verification_needed": true
+}

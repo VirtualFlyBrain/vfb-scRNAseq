@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P15_126",
+  "working_definition": "Author type 'Tm3' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'Tm3' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature transmedullary neuron Tm3",
+    "fbbt_id": "FBbt:00052329",
+    "fbbt_definition": "Immature form of the transmedullary neuron Tm3 (Tm3a) (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Erm/Ey temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "'Tm3' is FBbt:00003791 'transmedullary neuron Tm3'; at P15-P40 the cells are developing, so its immature form FBbt:00052329 (curator: immature terms up to the pupal stage).",
+  "other_candidates": [
+    {
+      "fbbt_term": "transmedullary neuron Tm3",
+      "fbbt_id": "FBbt:00003791",
+      "fbbt_definition": "Transmedullary narrow field neuron that terminates in lobula layers 1 and 4 with bleb-like terminal arborizations. It has fine arborizations in medulla layers M1, M4, and M5, and has bleb-type arborization in medulla layers M1, M4, M9 and M10 (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). Pre-synaptic terminals are present mainly in medulla layers M9-M10, but also in all other layers where neurites extend laterally (Pankova and Borst, 2017). It receives input from lamina monopolar neuron L1 and L5 and medullary intrinsic neuron Mi1 and it outputs to T4 neurons (Takemura et al., 2013). It seems to be capable of both cholinergic (Pankova & Borst, 2017) and GABAergic (Raghu et al., 2013) neurotransmission.",
+      "reason_rejected": "Mature form; used from the pharate adult stage."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052329 'immature transmedullary neuron Tm3' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

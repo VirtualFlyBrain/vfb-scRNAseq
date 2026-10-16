@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P15_1",
+  "working_definition": "Author type 'T1' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'T1' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature columnar neuron T1",
+    "fbbt_id": "FBbt:00052324",
+    "fbbt_definition": "Immature form of the columnar neuron T1 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the D/BarHI temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "'T1' is FBbt:00003727 'columnar neuron T1'; at P15-P40 the cells are developing, so its immature form FBbt:00052324 (curator: immature terms up to the pupal stage).",
+  "other_candidates": [
+    {
+      "fbbt_term": "columnar neuron T1",
+      "fbbt_id": "FBbt:00003727",
+      "fbbt_definition": "An intrinsic columnar neuron whose cell body lies in the cortex of the medulla. The fiber of the T1 cell body branches at the medulla surface to form a T-shaped linking fiber between a bush-like arborization in the distal part of a medulla column (M1 and M2), and a bundle of climbing fibers in the equivalent column of the lamina (Fischbach and Dittrich, 1989). Synaptic connections in the lamina are exclusively postsynaptic and include a large number of connections from lamina intrinsic (amacrine) neurons (Meinertzhagen and O'Neil, 1991; Rivera-Alba et al., 2011). In the medulla, it is strongly synapsed by centrifugal neuron C3 in medulla layer M2 and lamina monopolar neuron L2 (Takemura et al., 2008; Takemura et al., 2013). There is usually one of these cells per optic column (Nern et al., 2025).",
+      "reason_rejected": "Mature form; used from the pharate adult stage."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052324 'immature columnar neuron T1' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -235,3 +235,17 @@ def test_tissue_labels_shorten_sample_labels(tmp_path, monkeypatch):
     tissue = (cfg["sample_build"]["tissue_labels"]).get(s["tissue_raw"], s["tissue_raw"])
     assert ", ".join([tissue, s["age_raw"], f"rep {s['biorep']}"]) == "optic lobe, P70%, rep 5"
     assert "tissue_labels" in open(b.__file__).read()
+
+
+def test_expand_type_mappings_clustering_dirs(tmp_path):
+    mod = _script("expand_type_mappings")
+    proj = tmp_path / "p"
+    (proj / "type_mapping" / "immature").mkdir(parents=True)
+    for d, fb in ((proj / "type_mapping", "FBbt:00000001"), (proj / "type_mapping" / "immature", "FBbt:00000002")):
+        (d / "L1.fbbt_mapping.json").write_text(json.dumps({"cluster_label": "L1", "best_match": {"fbbt_id": fb}}))
+    anns = [{"label": "P15_1", "type": "L1", "clustering": "P15"}, {"label": "adult_1", "type": "L1", "clustering": "adult"}]
+    (proj / "cell_type_annotations.json").write_text(json.dumps({"annotations": anns}))
+    n, _, missing = mod.expand(proj, [proj / "type_mapping"], {}, None, {"P15": "immature"})
+    assert (n, missing) == (2, [])
+    got = {p.stem: json.loads(p.read_text())["best_match"]["fbbt_id"] for p in (proj / "mapping").glob("*.json")}
+    assert got == {"P15_1.fbbt_mapping": "FBbt:00000002", "adult_1.fbbt_mapping": "FBbt:00000001"}

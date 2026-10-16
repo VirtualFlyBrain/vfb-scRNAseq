@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P15_118",
+  "working_definition": "Author type 'Tm2' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'Tm2' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature transmedullary neuron Tm2",
+    "fbbt_id": "FBbt:00052326",
+    "fbbt_definition": "Immature form of the transmedullary neuron Tm2 (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Hth/Opa temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "'Tm2' is FBbt:00003790 'transmedullary neuron Tm2'; at P15-P40 the cells are developing, so its immature form FBbt:00052326 (curator: immature terms up to the pupal stage).",
+  "other_candidates": [
+    {
+      "fbbt_term": "transmedullary neuron Tm2",
+      "fbbt_id": "FBbt:00003790",
+      "fbbt_definition": "Transmedullary narrow field neuron that has its main dendritic arborization in medulla layer M2 (Ting et al., 2014), where it receives input from lamina monopolar neuron L2 (Takemura et al., 2011), and additional postsynaptic terminals in M4-M5, where it receives input from lamina monopolar neuron L4 (Takemura et al., 2011). It has presynaptic terminals in layers M3, M4 and M9 (Fischbach and Dittrich, 1989; Takemura et al., 2011). Its axon follows the posterior edge of its cognate medulla column (Ting et al., 2014), then crosses the second optic chiasma to terminate in lobula layers 1 and 2 (Fischbach and Dittrich, 1989). In layer 1 it outputs to T5 neurons (Shinomiya et al., 2014). It is a cholinergic neuron (Varija Raghu et al., 2011; Gao et al., 2008; Takemura et al., 2011). There is usually one of these cells per optic column (Nern et al., 2025).",
+      "reason_rejected": "Mature form; used from the pharate adult stage."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052326 'immature transmedullary neuron Tm2' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}
