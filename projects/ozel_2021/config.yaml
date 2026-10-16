@@ -89,5 +89,27 @@ sample_build:
     - { id: P30, name: "Özel 2021 P30 optic lobe identities", sample_age: "P30%" }
     - { id: P40, name: "Özel 2021 P40 optic lobe identities", sample_age: "P40%" }
     - { id: P50, name: "Özel 2021 P50 optic lobe identities", sample_age: "P50%" }
+    # the authors' P50-only split of T4/T5 (234, 235) into T4a-d / T5a-d (261-268)
+    - { id: P50_T45, name: "Özel 2021 P50 T4/T5 subtypes", sample_age: "P50%" }
     - { id: P70, name: "Özel 2021 P70 optic lobe identities", sample_age: "P70%" }
     - { id: adult, name: "Özel 2021 adult optic lobe identities", sample_age: "1-3 days old" }
+
+# Clusters (projects/ozel_2021/build_clusters.py, from the R exports in .cache/ozel/):
+# one entry per final identity per stage, named from Supplementary Table 1.
+annotations:
+  review_columns: [clustering, source_cluster_id, type, author_confidence]
+
+# Held (listed in mapping.tsv, not loaded): identities the authors left numbered
+# (untyped), low-quality identities (artefact) and identity 0, cells given no final
+# identity (unassigned).
+unidentified:
+  rule: none
+  hold_unidentified: true
+  hold_reasons:
+    "0": unassigned
+    LQ: artefact
+    G/LQ1: artefact
+    G/LQ2: artefact
+    G/LQ3: artefact
+    G/LQ4: artefact
+    G16/LQ: artefact
