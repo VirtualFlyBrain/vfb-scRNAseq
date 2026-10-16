@@ -1,0 +1,21 @@
+{
+  "cluster_label": "P70_98",
+  "working_definition": "Identity 98 of the Özel et al. 2021 optic lobe atlas, left numbered by the authors; their Supplementary Table 1 comment: 'Very likely to be a LC cell: second best match for LC16.' Pharate adult (P50, P70) and adult stages.",
+  "searches_performed": [
+    "lobula columnar neuron (FBbt fbbt/releases/2026-10-01)",
+    "lobula columnar neuron LC16 (FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "lobula columnar neuron",
+    "fbbt_id": "FBbt:00003870",
+    "fbbt_definition": "An extrinsic columnar neuron that innervates the lobula.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors call the identity 'very likely' an LC (lobula columnar) neuron without naming the type ('second best match for LC16' only); curator rule 2026-10-16: map numbered identities with a probable type in the authors' comment unless it points to low quality. Broad match at the level the authors named; flagged for verification.",
+  "other_candidates": [],
+  "recommendation": "Map to FBbt:00003870 'lobula columnar neuron' (broad, medium; flagged: the authors' call is probable).",
+  "new_term_needed": false,
+  "verification_needed": true
+}

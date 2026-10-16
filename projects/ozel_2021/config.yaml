@@ -99,6 +99,14 @@ sample_build:
 annotations:
   review_columns: [clustering, source_cluster_id, type, author_confidence, author_note]
 
+# Numbered identities with a probable type in the authors' Supplementary Table 1
+# comment (curator 2026-10-16: map them, unless the comment points to low quality):
+# typed as given here, flagged author_confidence 'probable (author comment)'.
+probable_identities:
+  "93": { type: LC10c, basis: "likely to be LC10c (see main text)" }
+  "98": { type: LC neuron, basis: "Very likely to be a LC cell: second best match for LC16." }
+  "112": { type: Kenyon cell, basis: "best match for all kenyon cells ... could be contaminating kenyon cells from the central brain" }
+
 # Held (listed in mapping.tsv, not loaded): identities the authors left numbered
 # (untyped), low-quality identities (artefact) and identity 0, cells given no final
 # identity (unassigned).
