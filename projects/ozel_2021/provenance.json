@@ -83,6 +83,11 @@
       "date": "2026-10-16",
       "by": "pipeline",
       "decision": "Expression from the raw UMI counts as CPM over each cell's own counts (adult main part, pupal extra parts; at P50 a T4/T5 cell is in its identity and its subtype); level the mean CPM over expressing cells, extent the fraction expressing, rows kept with extent > 0.2. Genes keyed by symbol: the FBgn other projects' source files give the symbol, else Chado by symbol (FB2026_03), an old symbol shared by several genes going to the one the literature overwhelmingly uses it for (>= 10 publications and >= 5x the next), else dropped."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "All 522 mapped entries reviewed by the curator (mapping.tsv `reviewed`); held entries are not reviewed, as they are not loaded."
     }
   ],
   "checks": [
