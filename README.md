@@ -69,8 +69,9 @@ from FlyBase; that authority is being dropped.)
   loads (FBlc0003846 / 4307 / 4785).
 - `projects/ozel_2021/` — Özel et al. 2021, optic lobe developmental atlas (PMID
   33149298; [GSE142787](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE142787)):
-  five pupal stages and adult. Replaces the old FlyBase/SCEA load (FBlc0005659). In
-  progress.
+  five pupal stages and adult, one Clustering per stage (plus the authors' P50 T4/T5
+  subtypes): 1,238 author identities, 522 with an FBbt term loaded (immature terms to
+  the pupal stage). Replaces the old FlyBase/SCEA load (FBlc0005659).
 - `projects/lu_2023_afca/` — Aging Fly Cell Atlas, Lu et al. 2023 (PMID 37319212;
   [GSE218661](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE218661)): head and
   body at 30/50/70 days, co-analysed with the FCA's 5-day head/body samples (reused
@@ -104,6 +105,7 @@ projects/kurmangaliyev_2020/             # first worked example (visual system d
 projects/davie_2018/                     # adult brain, ageing
 projects/li_2022_fca_10x/, li_2022_fca_ss2/  # Fly Cell Atlas (ArrayExpress + h5ad)
 projects/lu_2023_afca/                   # Aging Fly Cell Atlas (GEO + h5ad; reuses FCA samples)
+projects/ozel_2021/                      # optic lobe developmental atlas (GEO + Seurat objects via R)
 metadata/                                # VFB-loadable metadata OWL, one per project
 expression/                              # VFB-loadable expression OWL (.owl.gz), one per project
 id_registry/                             # minted-id registry (JSON)
@@ -158,8 +160,9 @@ from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#genera
 
 ## Status
 
-All five projects are curated and built: every mapped cluster has been reviewed (bar
-three Kurmangaliyev early clusters awaiting FBbt #2216, below), and
+All six projects are curated and built. Every mapped cluster has been reviewed, except
+three Kurmangaliyev early clusters awaiting FBbt #2216 (below) and the Özel 2021
+mappings, which await curator review; and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the
 expression output are mapped to current FlyBase genes (`scripts/update_gene_ids.py`;
@@ -169,6 +172,12 @@ an issue when a FlyBase release changes a gene id in use, and reminds when a pen
 FBbt term request is closed (`checks/`).
 
 Outstanding, outside this repo: loading the OWL into VFB, and retiring the old loads
-these replace (FBlc0006090, FBlc0003846 / 4307 / 4785, FBlc0006422). One FBbt request is pending
-([#2216](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2216),
-immature T2 / T2a / T3 neurons; see `checks/pending_fbbt_requests.json`).
+these replace (FBlc0006090, FBlc0003846 / 4307 / 4785, FBlc0006422, FBlc0005659).
+Pending FBbt requests, tracked with the clusters waiting on them in
+`checks/pending_fbbt_requests.json`:
+[#2216](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2216)
+(immature T2 / T2a / T3 neurons; Kurmangaliyev and Özel),
+[#2219](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2219)
+(19 immature optic lobe neuron types; Özel), and the FBbt review of adult fat terms
+([#2218](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2218);
+FCA and AFCA fat mappings to revisit).
