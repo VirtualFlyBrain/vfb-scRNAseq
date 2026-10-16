@@ -1306,4 +1306,14 @@ licence CC-BY-4.0. Curator decisions 2026-10-16.
   h APF (`type_mapping/immature/`), *T4a neuron* ... *T5d neuron* from 48 h APF
   (`type_mapping/`). All 40 clusters mapped and loaded. The old load used the mature
   terms at every stage.
+- **Expression (stage 4):** the GEO filtered 10x matrices (raw UMI counts) side by side
+  in one matrix (`projects/hormann_2020/combine_matrices.py`: 72,871 cells, cells named
+  `<GSM title>_<barcode>`; each author cluster spans its stage's two libraries), cell ->
+  cluster from `build_clusters.py`'s memberships (`expression.membership_file`; the
+  authors' 43,986 labelled cells). Features are Ensembl 97 FBgn ids: 17,630 current, 119
+  secondary, 3 split dropped, 5 merges; the 4 transgene features (GFP, GAL4 AD / DBD,
+  pBPGw) dropped. CPM, extent > 0.2: 17,744 genes; 40 clusters, 105,521 rows; Dataset
+  gene counts total 13,286, filtered 3,874. Markers as in the paper: *dac* in the a/b
+  subtypes, *bi* (omb) in c/d, *grn* in b/c, *TfAP-2* in T4 only, *SoxN* / *Sox102F* in
+  all.
 

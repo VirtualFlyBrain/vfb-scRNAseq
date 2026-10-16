@@ -313,7 +313,7 @@ def compute_expression(project: str, cfg: dict):
 
 
 def _mtx_parts(project: str, cfg: dict, cache: Path) -> list[dict]:
-    label_col = cfg["annotations"]["label_column"]
+    label_col = cfg["annotations"].get("label_column")    # not needed with a membership_file
     ex = cfg["expression"]
 
     # cell -> cluster(s). Default: one cluster per cell from the metadata label column.
