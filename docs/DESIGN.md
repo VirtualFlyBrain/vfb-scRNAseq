@@ -1223,10 +1223,10 @@ clusters merged by type) with fresh VFBseq ids; licence CC-BY-4.0. Curator decis
   agents, the Özel immature choices reused); wandering L3, so immature neuron terms, larval
   progenitor terms. 75 clusters loaded under 16 terms: "medulla neuron" (33) to
   *immature adult optic lobe neuron* (broad; curator 2026-10-16), GMC to *ganglion mother
-  cell*, "neuroblasts" to *larval optic neuroblast*, "neuroepithelium" to *optic lobe
+  cell*, "neuroblasts" to *optic neuroblast* (not *larval optic neuroblast*: the paper does not say whether they delaminated in the embryo or the larva; curator 2026-10-16), "neuroepithelium" to *optic lobe
   neuroepithelial cell*, "lamina precursor cell" to *lamina forming neuroblast* (FBbt
   exact synonym from this paper), glia to *larval glial cell* (no larval optic lobe glial
   term), Mi1 (L3_23 and L3_53) to *immature medulla intrinsic neuron Mi1*, grouped calls
   (T4/T5, T2/T2a/T3, C2/C3, Tm1/2/4/6, Dm8/11, Lai/Dm9, lamina neuron) to the immature
   common parent. "C/T cell progenitor" L3_15 is held (`no term`: nothing in FBbt for
-  progenitors of C/T neurons; no request made).
+  progenitors of C/T neurons; the paper does not describe it further, and *inner optic anlage neuroblast* would commit to "neuroblast"; curator 2026-10-16; no request made).
