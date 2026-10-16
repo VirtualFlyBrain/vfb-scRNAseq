@@ -1,0 +1,35 @@
+{
+  "cluster_label": "L3_68",
+  "working_definition": "Unresolved medulla neurons derived from the outer proliferation center in the wandering third instar larval optic lobe (33 clusters), immature secondary neurons that will become adult optic lobe neurons.",
+  "searches_performed": [
+    "immature adult optic lobe neuron",
+    "medulla neuron",
+    "adult optic lobe neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "immature adult optic lobe neuron",
+    "fbbt_id": "FBbt:00053539",
+    "fbbt_definition": "Immature neuron that develops from an optic neuroblast and will become an adult optic lobe neuron.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Curator decision: the wandering larval stage calls for an immature neuron term, and the unresolved medulla neurons are mapped to immature adult optic lobe neuron as a broad match. Medulla-specific immature neuron terms were not used because the authors' label does not resolve cell types.",
+  "other_candidates": [
+    {
+      "fbbt_term": "adult optic lobe neuron",
+      "fbbt_id": "FBbt:00003702",
+      "fbbt_definition": "Neuron that has its cell body in the adult optic lobe. These neurons develop from neuroblasts of the larval optic anlage (Hofbauer and Campos-Ortega, 1990).",
+      "reason_rejected": "Mature form; the larval cells are immature."
+    },
+    {
+      "fbbt_term": "immature adult optic lobe intrinsic neuron",
+      "fbbt_id": "FBbt:00053540",
+      "fbbt_definition": "Immature neuron that will have its synapses restricted to the optic lobe in the adult.",
+      "reason_rejected": "Assumes intrinsic neurons only; the medulla neuron label is unresolved."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053539 immature adult optic lobe neuron (broad), per curator decision.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

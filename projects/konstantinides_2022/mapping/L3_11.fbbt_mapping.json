@@ -1,0 +1,36 @@
+{
+  "cluster_label": "L3_11",
+  "working_definition": "Author type 'immature T4/T5' (L3_11, L3_48; lobula plate class) of the Konstantinides et al. 2022 wandering L3 larval optic lobe atlas: newly born, immature T4/T5 neurons of the inner proliferation center lineage.",
+  "searches_performed": [
+    "immature T4/T5",
+    "immature T4 neuron",
+    "immature T5 neuron",
+    "immature T neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "immature T neuron",
+    "fbbt_id": "FBbt:00059279",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T neuron (Hormann et al., 2020).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Authors name immature T4/T5 (grouped). FBbt has immature T4 and immature T5 but no combined term; the most specific common parent is immature T neuron (also covers T2/T3, hence broad).",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature T4 neuron",
+      "fbbt_id": "FBbt:00052257",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T4 neuron (Hormann et al., 2020).",
+      "reason_rejected": "Covers only the T4 half of the grouped type."
+    },
+    {
+      "fbbt_term": "immature T5 neuron",
+      "fbbt_id": "FBbt:00052258",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T5 neuron (Hormann et al., 2020).",
+      "reason_rejected": "Covers only the T5 half of the grouped type."
+    }
+  ],
+  "recommendation": "Map to FBbt:00059279 'immature T neuron' (broad match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

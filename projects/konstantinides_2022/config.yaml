@@ -70,6 +70,14 @@ annotations:
   label_prefix: L3_
 
 # Held (listed in mapping.tsv, not loaded): clusters with no author label — "unannonated
-# N" (sic; L3_2, L3_3, L3_88) and L3_0 (not in SCEA) — as untyped.
+# N" (sic; L3_2, L3_3, L3_88) and L3_0 (not in SCEA) — as untyped; and the author types
+# in `held_types` (curator 2026-10-16): "central brain neuron" (could only be typed as
+# neuron) and "apoptotic cell" (no FBbt term; a cell state).
+held_types:
+  central brain neuron: untyped
+  apoptotic cell: artefact
 unidentified:
   rule: none
+  hold_reasons:
+    central brain neuron: untyped
+    apoptotic cell: artefact

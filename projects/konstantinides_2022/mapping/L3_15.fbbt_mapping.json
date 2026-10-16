@@ -1,0 +1,29 @@
+{
+  "cluster_label": "L3_15",
+  "working_definition": "Progenitors of the C (centrifugal) and T (transmedullary/translobula) neuron types, derived from the inner proliferation center of the larval optic lobe (single cluster L3_15, neuropil class unknown central brain).",
+  "searches_performed": [
+    "C/T cell progenitor",
+    "C/T neuron progenitor",
+    "inner proliferation center progenitor",
+    "inner optic anlage neuroblast"
+  ],
+  "best_match": null,
+  "justification": "FBbt has no term for progenitors of C and T neurons. Inner optic anlage neuroblast (FBbt:00001955) is a neuroblast and the authors' cells are IPC-derived progenitors of C/T neurons, not the neuroblasts themselves; intermediate neuronal progenitor is type II neuroblast specific; the generic somatic precursor cell parent is not an adequate fallback. Held per curation rules.",
+  "other_candidates": [
+    {
+      "fbbt_term": "inner optic anlage neuroblast",
+      "fbbt_id": "FBbt:00001955",
+      "fbbt_definition": "A neuroblast located in the larval inner optic anlage that will give rise to the adult inner medulla, lobula and lobula plate neurons. It develops from a neuroepithelial cell in the medial region of the inner optic anlage.",
+      "reason_rejected": "A neuroblast, not the C/T progenitor the authors name; not restricted to C/T output."
+    },
+    {
+      "fbbt_term": "intermediate neuronal progenitor",
+      "fbbt_id": "FBbt:00100738",
+      "fbbt_definition": "It expresses asense and deadpan, but loses expression of pointed as it matures (Walsh and Doe, 2017).\nProgeny of a type II neuroblast that can divide asymmetrically to generate ganglion mother cells (GMCs) and maintain itself (Bayraktar et al., 2010, Viktorin et al., 2011). Each GMC cell further divides to produce a pair of neurons, glia or mixed neuronal/glial progeny (Bayraktar et al., 2010, Viktorin et al., 2011). Each progenitor produces approximately 6 GMCs (Walsh and Doe, 2017).",
+      "reason_rejected": "Type II neuroblast lineage specific; unrelated to the optic lobe IPC."
+    }
+  ],
+  "recommendation": "No adequate FBbt term; hold the cluster. No term request without curator sign-off.",
+  "new_term_needed": true,
+  "verification_needed": false
+}
