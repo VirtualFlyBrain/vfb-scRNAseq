@@ -1094,4 +1094,18 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-16.
   "P70 optic lobe" repeats the stage; `tissue_labels`), replicate ids as in GEO. Sex from GEO (female; 2 adult libraries pooled-sex, unset). No
   stock number is given for Canton-S. Each stage Clustering links its samples
   (`sample_age`).
+- **Clusters (stage 2):** `projects/ozel_2021/export_seurat.R` exports each stage's
+  object once (Homebrew R; base R reads the objects, `Matrix` the counts; ~1 min per
+  stage, <= 3 GB memory) to `.cache/ozel/<stage>/` (raw-count MatrixMarket, symbol
+  features, barcodes, the authors' cell metadata). `projects/ozel_2021/build_clusters.py`
+  then writes one entry per final identity per stage, named from Supplementary Table 1:
+  1,238 entries — P15 217, P30 202, P40 201, P50 203, P70 207, adult 200 (109,743 adult
+  cells, as in the paper), and 8 in a seventh Clustering, the authors' P50-only split of
+  T4/T5 identities 234 / 235 into T4a-d / T5a-d (261-268; `FinalIdents.T45separate`;
+  each a `parent_cluster` sub-cluster of 234 or 235; curator 2026-10-16). Held: 668
+  numbered identities (`untyped`), 21 low-quality LQ / G/LQ (`artefact`) and identity 0
+  in each stage (cells given no final identity, not in the table; median classifier
+  confidence 0.50 vs 0.94; `unassigned`). 543 named entries (110 types) to map, 6-7 per
+  stage less confident (`*`); numbered glia G01-G17 carry `class: glia`. The objects hold
+  the authors' filtered genes (11,099-12,028 per stage).
 
