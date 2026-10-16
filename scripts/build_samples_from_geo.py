@@ -92,6 +92,12 @@ def title_parser(pattern: str | None) -> Callable[[str], dict | None]:
     return parse
 
 
+def sample_age(gsm, sb: dict) -> str | None:
+    """The GEO age characteristic, else a curator-confirmed `sample_build.age` (from the
+    paper) when GEO records none."""
+    return gsm.stage_hint or sb.get("age")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--project", required=True)
@@ -132,7 +138,7 @@ def main() -> None:
         members = by_sample[sample_id]
         p0 = members[0][0]
         gsm0 = members[0][1]  # original GEO characteristics (consistent within a sample)
-        age_raw = gsm0.stage_hint
+        age_raw = sample_age(gsm0, sb)
         tp = dict(sb["age_map"].get(age_raw, {}))
         # `sample_build.title_stages`: [{pattern, stage}] — a more specific stage the
         # authors recorded in the GSM title (e.g. "Adult_1d_..." within a "1-3 days" age)
@@ -186,7 +192,7 @@ def main() -> None:
             "timepoint": p0["timepoint"],
             "biorep": p0["biorep"],
             "tissue_raw": gsm0.characteristic("tissue"),   # original GEO characteristics
-            "age_raw": gsm0.stage_hint,
+            "age_raw": age_raw,
             "stock": sb.get("stock_map", {}).get(p0["set"]),  # FlyBase FBst ref(s)
             "sex": sex,
             "stage": tp.get("stage"),
