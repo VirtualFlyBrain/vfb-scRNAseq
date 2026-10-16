@@ -1,0 +1,58 @@
+# Konstantinides et al. 2022 (Nature; FBrf0253187): single-cell 10x atlas of the
+# wandering third instar larval optic lobe (GEO GSE167266, 10 libraries; male and
+# female Canton-S). The authors' Seurat object (OL.L3_P15_merged.rds) also holds the
+# Özel et al. 2021 P15 cells for comparison; those are Özel's (ozel_2021) and are not
+# part of the L3 clustering, so they are not loaded here. Previously loaded into VFB
+# via the old FlyBase/SCEA mechanism as FBlc0006404 (scRNAseq_2022_Konstantinides;
+# SCEA E-GEOD-167266, 14 clusters merged by type); rebuilt here with fresh VFBseq ids.
+# Curator decisions 2026-10-16: one Clustering, the authors' L3 clusters (Seurat
+# integrated_snn_res.2, 150 dims, resolution 2: L3_0-L3_94; the clustering the paper
+# cites, e.g. "an immature (cluster 23) and a mature cluster (cluster 53)" of Mi1);
+# clusters typed from the authors' labels as given to SCEA ("inferred cell type -
+# authors labels", one per cluster, e.g. "glial cell 44").
+project: konstantinides_2022
+
+source:
+  doi: 10.1038/s41586-022-04564-w
+  pmid: "35388222"
+  pmcid: PMC9074256
+  fbrf: FBrf0253187          # VFB production :pub node (resolved by PMID)
+  title: "A complete temporal transcription factor series in the fly visual system"
+  journal: Nature
+  year: 2022
+  first_author: Konstantinides
+
+organism: Drosophila melanogaster
+
+dataset:
+  site: GEO
+  accession: GSE167266
+  bioproject: PRJNA704024
+  sra_study: SRP307551
+  platform: GPL25244            # Illumina NovaSeq 6000
+  licence: CC-BY-4.0
+  assay_type: FBcv:0009000      # single-cell RNA-seq
+
+sample_build:
+  # GSM titles are "wild type third instar larval optic lobe rep <n>". Each GSM is one
+  # 10x library (paper: "We prepared 10 libraries (biological replicates)", Chromium
+  # 3' v2, target 7,000 cells per experiment), so Sample:Assay 1:1.
+  title_pattern: 'regex:wild type third instar larval optic lobe (?P<timepoint>rep) (?P<biorep>\d+)'
+  assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
+  assay_label: { unit: 10x library }
+  # Paper: "The developing central nervous system from male and female flies was
+  # dissected from Canton-S wandering third instar larvae" (pooled sex: left unset).
+  # No stock number is given, so no FlyBase stock is linked.
+  sex: mixed
+  # GEO records no age (only strain), so the age is the paper's.
+  age: wandering third instar larva
+  age_map:
+    "wandering third instar larva":
+      stage:  { fbdv_id: FBdv:00005341, label: wandering third instar larval stage }
+      tissue: { fbbt_id: FBbt:00001930, label: embryonic/larval optic lobe }
+  # Sample labels: GEO gives no tissue, so the label shows the FBbt tissue, as
+  # "larval optic lobe".
+  tissue_labels:
+    "embryonic/larval optic lobe": larval optic lobe
+  clusterings:
+    - { id: L3, name: "Konstantinides 2022 L3 optic lobe clusters" }

@@ -249,3 +249,13 @@ def test_expand_type_mappings_clustering_dirs(tmp_path):
     assert (n, missing) == (2, [])
     got = {p.stem: json.loads(p.read_text())["best_match"]["fbbt_id"] for p in (proj / "mapping").glob("*.json")}
     assert got == {"P15_1.fbbt_mapping": "FBbt:00000002", "adult_1.fbbt_mapping": "FBbt:00000001"}
+
+
+def test_geo_sample_age_falls_back_to_config():
+    """`sample_build.age` is used only when GEO records no age."""
+    from types import SimpleNamespace
+    mod = _script("build_samples_from_geo")
+    sb = {"age": "wandering third instar larva"}
+    assert mod.sample_age(SimpleNamespace(stage_hint=None), sb) == "wandering third instar larva"
+    assert mod.sample_age(SimpleNamespace(stage_hint="P70%"), sb) == "P70%"
+    assert mod.sample_age(SimpleNamespace(stage_hint=None), {}) is None
