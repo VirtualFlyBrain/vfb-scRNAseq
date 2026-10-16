@@ -74,8 +74,10 @@ from FlyBase; that authority is being dropped.)
   the pupal stage). Replaces the old FlyBase/SCEA load (FBlc0005659).
 - `projects/konstantinides_2022/` — Konstantinides et al. 2022, larval optic lobe
   atlas (PMID 35388222; [GSE167266](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE167266)):
-  wandering L3 optic lobes, the authors' 95 L3 clusters. Replaces the old FlyBase/SCEA
-  load (FBlc0006404). In progress.
+  wandering L3 optic lobes, one Clustering of the authors' 95 L3 clusters, typed from the
+  authors' labels in the Single Cell Expression Atlas; 75 with an FBbt term loaded
+  (immature neuron and larval progenitor terms). Replaces the old FlyBase/SCEA load
+  (FBlc0006404).
 - `projects/lu_2023_afca/` — Aging Fly Cell Atlas, Lu et al. 2023 (PMID 37319212;
   [GSE218661](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE218661)): head and
   body at 30/50/70 days, co-analysed with the FCA's 5-day head/body samples (reused
@@ -165,7 +167,7 @@ from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#genera
 
 ## Status
 
-All six projects are curated and built. Every mapped cluster has been reviewed (bar
+All seven projects are curated and built. Every mapped cluster has been reviewed (bar
 three Kurmangaliyev early clusters awaiting FBbt #2216, below), and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the
@@ -176,7 +178,8 @@ an issue when a FlyBase release changes a gene id in use, and reminds when a pen
 FBbt term request is closed (`checks/`).
 
 Outstanding, outside this repo: loading the OWL into VFB, and retiring the old loads
-these replace (FBlc0006090, FBlc0003846 / 4307 / 4785, FBlc0006422, FBlc0005659).
+these replace (FBlc0006090, FBlc0003846 / 4307 / 4785, FBlc0006422, FBlc0005659,
+FBlc0006404).
 Pending FBbt requests, tracked with the clusters waiting on them in
 `checks/pending_fbbt_requests.json`:
 [#2216](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2216)

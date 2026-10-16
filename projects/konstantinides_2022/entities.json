@@ -1,0 +1,1390 @@
+[
+  {
+    "type": "Publication",
+    "id": "FlyBase:FBrf0253187",
+    "neo_label": "pub"
+  },
+  {
+    "type": "Dataset",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "name": "scRNAseq data from Konstantinides (2022)",
+    "title": "A complete temporal transcription factor series in the fly visual system",
+    "accession": "GSE167266",
+    "neo_label": "DataSet",
+    "site": "vfb:GEO",
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "assay_type": "FBcv:0009000",
+    "total_gene_count": 10698,
+    "filtered_gene_count": 7154,
+    "publication": "FlyBase:FBrf0253187"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002365",
+    "name": "larval optic lobe, wandering third instar larva, rep 1 (Konstantinides 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002366"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00001930"
+    ],
+    "stage": "FBdv:00005341"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002367",
+    "name": "larval optic lobe, wandering third instar larva, rep 10 (Konstantinides 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002368"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00001930"
+    ],
+    "stage": "FBdv:00005341"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002369",
+    "name": "larval optic lobe, wandering third instar larva, rep 2 (Konstantinides 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002370"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00001930"
+    ],
+    "stage": "FBdv:00005341"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002371",
+    "name": "larval optic lobe, wandering third instar larva, rep 3 (Konstantinides 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002372"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00001930"
+    ],
+    "stage": "FBdv:00005341"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002373",
+    "name": "larval optic lobe, wandering third instar larva, rep 4 (Konstantinides 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002374"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00001930"
+    ],
+    "stage": "FBdv:00005341"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002375",
+    "name": "larval optic lobe, wandering third instar larva, rep 5 (Konstantinides 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002376"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00001930"
+    ],
+    "stage": "FBdv:00005341"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002377",
+    "name": "larval optic lobe, wandering third instar larva, rep 6 (Konstantinides 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002378"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00001930"
+    ],
+    "stage": "FBdv:00005341"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002379",
+    "name": "larval optic lobe, wandering third instar larva, rep 7 (Konstantinides 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002380"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00001930"
+    ],
+    "stage": "FBdv:00005341"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002381",
+    "name": "larval optic lobe, wandering third instar larva, rep 8 (Konstantinides 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002382"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00001930"
+    ],
+    "stage": "FBdv:00005341"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002383",
+    "name": "larval optic lobe, wandering third instar larva, rep 9 (Konstantinides 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002384"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00001930"
+    ],
+    "stage": "FBdv:00005341"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002366",
+    "name": "larval optic lobe, wandering third instar larva, rep 1, 10x library (Konstantinides 2022)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002365"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "dbxref": [
+      "GSM5100583",
+      "SRX10151332",
+      "SAMN18028258"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002368",
+    "name": "larval optic lobe, wandering third instar larva, rep 10, 10x library (Konstantinides 2022)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002367"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "dbxref": [
+      "GSM5100592",
+      "SRX10151341",
+      "SAMN18028248"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002370",
+    "name": "larval optic lobe, wandering third instar larva, rep 2, 10x library (Konstantinides 2022)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002369"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "dbxref": [
+      "GSM5100584",
+      "SRX10151333",
+      "SAMN18028257"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002372",
+    "name": "larval optic lobe, wandering third instar larva, rep 3, 10x library (Konstantinides 2022)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002371"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "dbxref": [
+      "GSM5100585",
+      "SRX10151334",
+      "SAMN18028256"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002374",
+    "name": "larval optic lobe, wandering third instar larva, rep 4, 10x library (Konstantinides 2022)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002373"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "dbxref": [
+      "GSM5100586",
+      "SRX10151335",
+      "SAMN18028255"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002376",
+    "name": "larval optic lobe, wandering third instar larva, rep 5, 10x library (Konstantinides 2022)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002375"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "dbxref": [
+      "GSM5100587",
+      "SRX10151336",
+      "SAMN18028254"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002378",
+    "name": "larval optic lobe, wandering third instar larva, rep 6, 10x library (Konstantinides 2022)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002377"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "dbxref": [
+      "GSM5100588",
+      "SRX10151337",
+      "SAMN18028253"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002380",
+    "name": "larval optic lobe, wandering third instar larva, rep 7, 10x library (Konstantinides 2022)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002379"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "dbxref": [
+      "GSM5100589",
+      "SRX10151338",
+      "SAMN18028251"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002382",
+    "name": "larval optic lobe, wandering third instar larva, rep 8, 10x library (Konstantinides 2022)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002381"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "dbxref": [
+      "GSM5100590",
+      "SRX10151339",
+      "SAMN18028250"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002384",
+    "name": "larval optic lobe, wandering third instar larva, rep 9, 10x library (Konstantinides 2022)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002383"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "dbxref": [
+      "GSM5100591",
+      "SRX10151340",
+      "SAMN18028249"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "name": "Konstantinides 2022 L3 optic lobe clusters",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002365",
+      "http://virtualflybrain.org/reports/VFBseq_00002367",
+      "http://virtualflybrain.org/reports/VFBseq_00002369",
+      "http://virtualflybrain.org/reports/VFBseq_00002371",
+      "http://virtualflybrain.org/reports/VFBseq_00002373",
+      "http://virtualflybrain.org/reports/VFBseq_00002375",
+      "http://virtualflybrain.org/reports/VFBseq_00002377",
+      "http://virtualflybrain.org/reports/VFBseq_00002379",
+      "http://virtualflybrain.org/reports/VFBseq_00002381",
+      "http://virtualflybrain.org/reports/VFBseq_00002383"
+    ]
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002386",
+    "name": "ganglion mother cell cluster 1 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 1457,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005149"
+    ],
+    "total_gene_count": 8671,
+    "filtered_gene_count": 2796
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002387",
+    "name": "lamina precursor cell cluster 5 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 1170,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001942"
+    ],
+    "total_gene_count": 8614,
+    "filtered_gene_count": 2995
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002388",
+    "name": "neuroepithelium cluster 6 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 1095,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111738"
+    ],
+    "total_gene_count": 9267,
+    "filtered_gene_count": 5470
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002389",
+    "name": "ganglion mother cell cluster 7 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 1094,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005149"
+    ],
+    "total_gene_count": 8222,
+    "filtered_gene_count": 1861
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002390",
+    "name": "T4/T5 neuron cluster 8 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 1074,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059279"
+    ],
+    "total_gene_count": 8385,
+    "filtered_gene_count": 2243
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002391",
+    "name": "neuroblasts cluster 9 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 1057,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052344"
+    ],
+    "total_gene_count": 9198,
+    "filtered_gene_count": 5190
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002392",
+    "name": "ganglion mother cell cluster 10 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 949,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005149"
+    ],
+    "total_gene_count": 8363,
+    "filtered_gene_count": 3037
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002393",
+    "name": "immature T4/T5 cluster 11 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 947,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059279"
+    ],
+    "total_gene_count": 8368,
+    "filtered_gene_count": 2760
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002394",
+    "name": "Tm1/Tm2/Tm4/Tm6 neuron cluster 12 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 927,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053274"
+    ],
+    "total_gene_count": 8060,
+    "filtered_gene_count": 1940
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002395",
+    "name": "medulla neuron cluster 13 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 916,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 8241,
+    "filtered_gene_count": 2088
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002396",
+    "name": "medulla neuron cluster 14 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 914,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 8407,
+    "filtered_gene_count": 2357
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002397",
+    "name": "ganglion mother cell cluster 16 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 897,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005149"
+    ],
+    "total_gene_count": 7964,
+    "filtered_gene_count": 1567
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002398",
+    "name": "neuroepithelium cluster 17 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 859,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111738"
+    ],
+    "total_gene_count": 8115,
+    "filtered_gene_count": 797
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002399",
+    "name": "neuroblasts cluster 19 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 791,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052344"
+    ],
+    "total_gene_count": 8123,
+    "filtered_gene_count": 2276
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002400",
+    "name": "ganglion mother cell cluster 20 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 783,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005149"
+    ],
+    "total_gene_count": 7997,
+    "filtered_gene_count": 1884
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002401",
+    "name": "medulla neuron cluster 21 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 783,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7952,
+    "filtered_gene_count": 1730
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002402",
+    "name": "neuroepithelium cluster 22 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 773,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111738"
+    ],
+    "total_gene_count": 7809,
+    "filtered_gene_count": 816
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002403",
+    "name": "immature Mi1 neuron cluster 23 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 768,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052317"
+    ],
+    "total_gene_count": 8134,
+    "filtered_gene_count": 2212
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002404",
+    "name": "medulla neuron cluster 24 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 740,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 8066,
+    "filtered_gene_count": 2086
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002405",
+    "name": "T1 neuron cluster 25 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 736,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052324"
+    ],
+    "total_gene_count": 7929,
+    "filtered_gene_count": 1672
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002406",
+    "name": "medulla neuron cluster 27 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 674,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7831,
+    "filtered_gene_count": 1787
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002407",
+    "name": "medulla neuron cluster 28 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 662,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7859,
+    "filtered_gene_count": 1868
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002408",
+    "name": "medulla neuron cluster 29 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 650,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7568,
+    "filtered_gene_count": 577
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002409",
+    "name": "medulla neuron cluster 30 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 650,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7827,
+    "filtered_gene_count": 1668
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002410",
+    "name": "medulla neuron cluster 31 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 647,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 8114,
+    "filtered_gene_count": 2529
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002411",
+    "name": "medulla neuron cluster 32 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 591,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7878,
+    "filtered_gene_count": 1939
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002412",
+    "name": "medulla neuron cluster 33 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 589,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 8149,
+    "filtered_gene_count": 2762
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002413",
+    "name": "medulla neuron cluster 34 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 582,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7768,
+    "filtered_gene_count": 1836
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002414",
+    "name": "centrifugal neuron C2/C3 cluster 35 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 579,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053275"
+    ],
+    "total_gene_count": 8175,
+    "filtered_gene_count": 2488
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002415",
+    "name": "medulla neuron cluster 36 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 578,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7939,
+    "filtered_gene_count": 594
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002416",
+    "name": "neuroblasts cluster 37 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 565,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052344"
+    ],
+    "total_gene_count": 8573,
+    "filtered_gene_count": 4447
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002417",
+    "name": "Tm9 neuron cluster 38 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 560,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052333"
+    ],
+    "total_gene_count": 7716,
+    "filtered_gene_count": 1698
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002418",
+    "name": "medulla neuron cluster 40 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 521,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7836,
+    "filtered_gene_count": 2147
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002419",
+    "name": "medulla neuron cluster 42 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 490,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7566,
+    "filtered_gene_count": 1650
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002420",
+    "name": "ganglion mother cell cluster 43 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 487,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005149"
+    ],
+    "total_gene_count": 7616,
+    "filtered_gene_count": 2049
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002421",
+    "name": "glial cell cluster 44 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 477,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001251"
+    ],
+    "total_gene_count": 8052,
+    "filtered_gene_count": 2606
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002422",
+    "name": "glial cell cluster 45 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 468,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001251"
+    ],
+    "total_gene_count": 8282,
+    "filtered_gene_count": 3203
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002423",
+    "name": "medulla neuron cluster 46 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 445,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7539,
+    "filtered_gene_count": 1644
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002424",
+    "name": "medulla neuron cluster 47 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 444,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7569,
+    "filtered_gene_count": 1724
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002425",
+    "name": "immature T4/T5 cluster 48 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 435,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059279"
+    ],
+    "total_gene_count": 7726,
+    "filtered_gene_count": 1954
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002426",
+    "name": "lamina wide-field neuron cluster 49 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 417,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053540"
+    ],
+    "total_gene_count": 8208,
+    "filtered_gene_count": 3148
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002427",
+    "name": "medulla neuron cluster 52 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 399,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7526,
+    "filtered_gene_count": 1827
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002428",
+    "name": "Mi1 neuron cluster 53 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 391,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052317"
+    ],
+    "total_gene_count": 7485,
+    "filtered_gene_count": 1786
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002429",
+    "name": "Dm8/Dm11 neuron cluster 54 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 385,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053272"
+    ],
+    "total_gene_count": 7498,
+    "filtered_gene_count": 1664
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002430",
+    "name": "T2/T2a/T3 neuron cluster 55 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 385,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059279"
+    ],
+    "total_gene_count": 7676,
+    "filtered_gene_count": 2114
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002431",
+    "name": "glial cell cluster 56 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 379,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001251"
+    ],
+    "total_gene_count": 7942,
+    "filtered_gene_count": 1903
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002432",
+    "name": "lamina precursor cell cluster 57 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 371,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001942"
+    ],
+    "total_gene_count": 7972,
+    "filtered_gene_count": 3845
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002433",
+    "name": "ganglion mother cell cluster 58 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 347,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005149"
+    ],
+    "total_gene_count": 7758,
+    "filtered_gene_count": 3157
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002434",
+    "name": "medulla neuron cluster 59 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 337,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7574,
+    "filtered_gene_count": 1932
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002435",
+    "name": "medulla neuron cluster 60 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 334,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7361,
+    "filtered_gene_count": 1643
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002436",
+    "name": "neuroblasts cluster 61 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 309,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052344"
+    ],
+    "total_gene_count": 8347,
+    "filtered_gene_count": 5181
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002437",
+    "name": "medulla neuron cluster 62 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 301,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7263,
+    "filtered_gene_count": 1653
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002438",
+    "name": "glial cell cluster 63 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 301,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001251"
+    ],
+    "total_gene_count": 8203,
+    "filtered_gene_count": 4190
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002439",
+    "name": "lamina neuron cluster 65 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 285,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053355"
+    ],
+    "total_gene_count": 8080,
+    "filtered_gene_count": 3430
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002440",
+    "name": "neuroepithelium cluster 66 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 284,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111738"
+    ],
+    "total_gene_count": 8260,
+    "filtered_gene_count": 5216
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002441",
+    "name": "glial cell cluster 67 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 279,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001251"
+    ],
+    "total_gene_count": 8067,
+    "filtered_gene_count": 3199
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002442",
+    "name": "medulla neuron cluster 68 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 276,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7538,
+    "filtered_gene_count": 2351
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002443",
+    "name": "ganglion mother cell cluster 69 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 275,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005149"
+    ],
+    "total_gene_count": 7136,
+    "filtered_gene_count": 1887
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002444",
+    "name": "medulla neuron cluster 70 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 275,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7504,
+    "filtered_gene_count": 2351
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002445",
+    "name": "medulla neuron cluster 71 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 274,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7437,
+    "filtered_gene_count": 1829
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002446",
+    "name": "medulla neuron cluster 72 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 262,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7170,
+    "filtered_gene_count": 1727
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002447",
+    "name": "medulla neuron cluster 73 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 259,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7806,
+    "filtered_gene_count": 2899
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002448",
+    "name": "neuroblasts cluster 74 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 257,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052344"
+    ],
+    "total_gene_count": 8092,
+    "filtered_gene_count": 4224
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002449",
+    "name": "medulla neuron cluster 75 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 234,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7749,
+    "filtered_gene_count": 3288
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002450",
+    "name": "medulla neuron cluster 76 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 199,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7385,
+    "filtered_gene_count": 2522
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002451",
+    "name": "medulla neuron cluster 78 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 184,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 6963,
+    "filtered_gene_count": 2029
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002452",
+    "name": "lobula columnar neuron cluster 80 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 164,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053273"
+    ],
+    "total_gene_count": 7456,
+    "filtered_gene_count": 2991
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002453",
+    "name": "medulla neuron cluster 81 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 159,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7244,
+    "filtered_gene_count": 2683
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002454",
+    "name": "Lai/Dm9 neuron cluster 82 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 154,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053540"
+    ],
+    "total_gene_count": 7140,
+    "filtered_gene_count": 2577
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002455",
+    "name": "medulla neuron cluster 84 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 125,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 7219,
+    "filtered_gene_count": 2864
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002456",
+    "name": "glial cell cluster 85 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 120,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001251"
+    ],
+    "total_gene_count": 7919,
+    "filtered_gene_count": 3812
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002457",
+    "name": "medulla neuron cluster 86 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 119,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 6912,
+    "filtered_gene_count": 2427
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002458",
+    "name": "glial cell cluster 87 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 107,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001251"
+    ],
+    "total_gene_count": 7569,
+    "filtered_gene_count": 5094
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002459",
+    "name": "glial cell cluster 91 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 65,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001251"
+    ],
+    "total_gene_count": 6579,
+    "filtered_gene_count": 1043
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002460",
+    "name": "medulla neuron cluster 94 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002385",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002364",
+    "cell_number": 37,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053539"
+    ],
+    "total_gene_count": 6199,
+    "filtered_gene_count": 2713
+  }
+]
