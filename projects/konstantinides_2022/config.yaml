@@ -56,3 +56,20 @@ sample_build:
     "embryonic/larval optic lobe": larval optic lobe
   clusterings:
     - { id: L3, name: "Konstantinides 2022 L3 optic lobe clusters" }
+
+# Clusters (projects/konstantinides_2022/build_clusters.py, from the R export in
+# .cache/konstantinides/ and the SCEA E-GEOD-167266 experiment design): one entry per L3
+# cluster, typed from the authors' SCEA label (cluster number dropped, so mappings are
+# made once per author type).
+annotations:
+  review_columns: [clustering, source_cluster_id, type, author_label, author_label_share, author_neuropil]
+  # cell -> cluster for the expression build (the R export)
+  source_file: konstantinides/metadata.tsv.gz
+  barcode_column: barcode
+  label_column: integrated_snn_res.2
+  label_prefix: L3_
+
+# Held (listed in mapping.tsv, not loaded): clusters with no author label — "unannonated
+# N" (sic; L3_2, L3_3, L3_88) and L3_0 (not in SCEA) — as untyped.
+unidentified:
+  rule: none
