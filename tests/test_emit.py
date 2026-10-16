@@ -27,7 +27,8 @@ def _entities():
         {"type": "Publication", "id": "FlyBase:FBrf0247594", "neo_label": "pub"},
         {"type": "Sample", "id": str(SA), "name": "sample", "associated_dataset": str(DS),
          "neo_label": "Sample", "sample_tissue": ["FBbt:00003701"], "stage": "FBdv:00007001",
-         "sex": "FBbt:00007011", "stock": ["FlyBase:FBst0005905"]},
+         "sex": "FBbt:00007011", "stock": ["FlyBase:FBst0005905"],
+         "genotype_includes": ["FlyBase:FBco0000215"]},
         {"type": "Cluster", "id": str(URIRef(VFB + "VFBseq_00000047")), "name": "cl",
          "associated_dataset": str(DS), "cell_number": 100, "neo_label": "Cluster",
          "cell_type": ["FBbt:00003791"], "total_gene_count": 11538, "filtered_gene_count": 2536},
@@ -63,6 +64,9 @@ def test_sample_sex_and_stock(tmp_path):
     # sex as part_of FBbt organism; stock as is-derived-from FBst
     assert (SA, URIRef(BFO + "0000050"), URIRef("http://purl.obolibrary.org/obo/FBbt_00007011")) in g
     assert (SA, URIRef(BAO + "0095000"), URIRef(FLYBASE + "FBst0005905")) in g
+    # genetic entities in the genotype: GENO has_genotype
+    assert (SA, URIRef("http://purl.obolibrary.org/obo/GENO_0000222"),
+            URIRef(FLYBASE + "FBco0000215")) in g
 
 
 def test_cluster_title_is_a_definition(tmp_path):

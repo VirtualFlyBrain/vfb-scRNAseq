@@ -40,11 +40,13 @@ sample_build:
   assay_label: { unit: 10x library }
   # Paper: "At pupal stages, female and male brains were analysed" (pooled: unset).
   sex: mixed
-  # The driver line: SS00324-splitGal4 (R59E08-AD attP40; R42F06-DBD attP2), BDSC 86858
-  # = FBst0086858 (FlyBase Chado: w[1118]; R59E08-p65.AD attP40; R42F06-GAL4.DBD attP2);
-  # it was crossed to UAS-mCD8::GFP, for which no stock is given, so only the driver is
-  # linked (curator 2026-10-16).
-  stock: [FBst0086858]
+  # Genotype (curator 2026-10-16): the animals were SS00324-splitGal4 > UAS-mCD8::GFP
+  # (a cross), so the Samples link the genetic entity rather than a stock (a stock would
+  # be only half the genotype): the split-GAL4 combination FBco0000215
+  # (ScerGAL4[DBD.R42F06]∩HsapRELA[AD.R59E08], R59E08-AD attP40; R42F06-DBD attP2),
+  # via GENO has_genotype. The paper does not identify the UAS-mCD8::GFP insertion, so the
+  # effector is not linked. (The driver's stock is BDSC 86858 = FBst0086858.)
+  genotype_includes: [FBco0000215]
   # GEO stage -> FBdv, by the Bainbridge & Bownes stage definitions (flies raised at
   # 25 C; FBdv pupal period 100 h), as for Özel 2021. Tissue: whole brains were
   # dissected (then T4/T5 sorted): brain to the pupal stage (P6, P7), adult brain from
