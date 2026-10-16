@@ -1,0 +1,29 @@
+{
+  "cluster_label": "P15_241",
+  "working_definition": "P15 'tail' of differentiating neurons attached to the Tm9 cluster; the authors' call is 'probably immature Tm9 neurons'.",
+  "searches_performed": [
+    "Im02",
+    "immature Tm9",
+    "immature transmedullary neuron Tm9"
+  ],
+  "best_match": {
+    "fbbt_term": "immature transmedullary neuron Tm9",
+    "fbbt_id": "FBbt:00052333",
+    "fbbt_definition": "Immature form of the transmedullary neuron Tm9 (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Erm/Ey temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "Immature form of the single named type Tm9. Confidence medium and verification flagged because of the authors' 'probably' hedge.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature transmedullary neuron",
+      "fbbt_id": "FBbt:00053274",
+      "fbbt_definition": "Immature form of a transmedullary neuron (Konstantinides et al., 2022).",
+      "reason_rejected": "Broader than the named type."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052333 immature transmedullary neuron Tm9 (exact), flagged for the authors' hedge.",
+  "new_term_needed": false,
+  "verification_needed": true
+}

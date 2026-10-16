@@ -1,0 +1,29 @@
+{
+  "cluster_label": "P15_250",
+  "working_definition": "P15 'tail' of differentiating neurons mostly attached to the Dm3 cluster; the authors' call is 'probably mostly immature Dm3 neurons'.",
+  "searches_performed": [
+    "Im11",
+    "immature Dm3",
+    "immature distal medullary amacrine neuron Dm3"
+  ],
+  "best_match": {
+    "fbbt_term": "immature distal medullary amacrine neuron Dm3",
+    "fbbt_id": "FBbt:00052310",
+    "fbbt_definition": "Immature form of the distal medullary amacrine neuron Dm3 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Slp/D temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "Immature form of the single named type Dm3 (parent of immature Dm3a and Dm3b). Verification flagged because of the authors' 'probably mostly' hedge.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature distal medullary amacrine neuron Dm3a",
+      "fbbt_id": "FBbt:00052311",
+      "fbbt_definition": "Immature form of the distal medullary amacrine neuron Dm3a (Konstantinides et al., 2022).",
+      "reason_rejected": "Authors do not split Dm3 in this call."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052310 immature Dm3 (exact), flagged for the authors' hedge.",
+  "new_term_needed": false,
+  "verification_needed": true
+}

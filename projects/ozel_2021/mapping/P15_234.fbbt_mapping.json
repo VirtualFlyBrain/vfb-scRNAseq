@@ -1,0 +1,61 @@
+{
+  "cluster_label": "P15_234",
+  "working_definition": "Author grouped type T4-5a/b (T4a, T4b, T5a and T5b together) of the Özel et al. 2021 optic lobe atlas, at the developing pupal stages P15/P30/P40 (~15-40 h APF), where cells are immature T neurons.",
+  "searches_performed": [
+    "'T4-5a/b' (exact label, FBbt 2026-10-01)",
+    "'immature T4 neuron' / 'immature T5 neuron'",
+    "'immature T4a neuron', 'immature T4b neuron', 'immature T5a neuron', 'immature T5b neuron'",
+    "'immature T neuron'",
+    "ancestor walk of immature T4a/T4b/T5a/T5b"
+  ],
+  "best_match": {
+    "fbbt_term": "immature T neuron",
+    "fbbt_id": "FBbt:00059279",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T neuron (Hormann et al., 2020).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The group spans T4 and T5 subtypes (a and b), so the most specific common immature parent is immature T neuron (FBbt:00059279); immature T4 neuron and immature T5 neuron are each parents of only half of the members, and there is no immature T4/T5 grouping term below immature T neuron.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature T4a neuron",
+      "fbbt_id": "FBbt:00052263",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T4a neuron (Hormann et al., 2020). Early during its development, it projects its axon to lobula plate layer 1 (Hormann et al., 2020).",
+      "reason_rejected": "Single member of the group."
+    },
+    {
+      "fbbt_term": "immature T4b neuron",
+      "fbbt_id": "FBbt:00052264",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T4b neuron (Hormann et al., 2020). Early during its development, it projects its axon to lobula plate layer 2 (Hormann et al., 2020).",
+      "reason_rejected": "Single member of the group."
+    },
+    {
+      "fbbt_term": "immature T5a neuron",
+      "fbbt_id": "FBbt:00052259",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T5a neuron (Hormann et al., 2020). Early during its development, it projects its axon to lobula plate layer 1 (Hormann et al., 2020).",
+      "reason_rejected": "Single member of the group."
+    },
+    {
+      "fbbt_term": "immature T5b neuron",
+      "fbbt_id": "FBbt:00052260",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T5b neuron (Hormann et al., 2020). Early during its development, it projects its axon to lobula plate layer 2 (Hormann et al., 2020).",
+      "reason_rejected": "Single member of the group."
+    },
+    {
+      "fbbt_term": "immature T4 neuron",
+      "fbbt_id": "FBbt:00052257",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T4 neuron (Hormann et al., 2020). It is generated from a neuroblast that amplifies by symmetric division (type III) before generating the T4 (and T5) neurons (Mora et al., 2018). During its development, it first projects its axon to the appropriate lobula plate layer, then forms its dendrites in medulla layer 10 (Hormann et al., 2020).",
+      "reason_rejected": "Parent of T4a/T4b only, not of T5a/T5b."
+    },
+    {
+      "fbbt_term": "immature T5 neuron",
+      "fbbt_id": "FBbt:00052258",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T5 neuron (Hormann et al., 2020). It is generated from a neuroblast that amplifies by symmetric division (type III) before generating the T5 (and T4) neurons (Mora et al., 2018). During its development, it first projects its axon to the appropriate lobula plate layer, then forms its dendrites in lobula layer 1 (Hormann et al., 2020).",
+      "reason_rejected": "Parent of T5a/T5b only, not of T4a/T4b."
+    }
+  ],
+  "recommendation": "Broad match to FBbt:00059279 'immature T neuron' (common parent of immature T4a/T4b/T5a/T5b).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

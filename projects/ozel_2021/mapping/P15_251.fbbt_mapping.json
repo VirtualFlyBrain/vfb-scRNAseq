@@ -1,0 +1,37 @@
+{
+  "cluster_label": "P15_251",
+  "working_definition": "P15 cluster containing cells from classes 31 (Mi15), 128 (Dm2), 129 and 138; the authors' call is 'probably immature neurons of classes 31 (Mi15)/128 (Dm2)/129/138' (no tail described).",
+  "searches_performed": [
+    "Im12",
+    "immature Mi15",
+    "immature Dm2",
+    "immature adult optic lobe neuron",
+    "immature adult optic lobe intrinsic neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "immature adult optic lobe neuron",
+    "fbbt_id": "FBbt:00053539",
+    "fbbt_definition": "Immature neuron that develops from an optic neuroblast and will become an adult optic lobe neuron.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Immature Mi15 (FBbt:00052318) and immature Dm2 (FBbt:00052309) are both immature adult optic lobe neurons; classes 129 and 138 are unnamed, so the optic-lobe-neuron level is the safe common parent. Verification flagged because of the authors' 'probably' hedge.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature medulla intrinsic neuron Mi15",
+      "fbbt_id": "FBbt:00052318",
+      "fbbt_definition": "Immature form of the medullary intrinsic neuron Mi15 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the D/BarHI temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Member only."
+    },
+    {
+      "fbbt_term": "immature distal medullary amacrine neuron Dm2",
+      "fbbt_id": "FBbt:00052309",
+      "fbbt_definition": "Immature form of the distal medullary amacrine neuron Dm2 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the D/BarHI temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Member only."
+    }
+  ],
+  "recommendation": "Broad match to immature adult optic lobe neuron; members Mi15, Dm2 and two unnamed classes.",
+  "new_term_needed": false,
+  "verification_needed": true
+}

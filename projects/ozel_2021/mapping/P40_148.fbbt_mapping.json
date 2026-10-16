@@ -1,0 +1,38 @@
+{
+  "cluster_label": "P40_148",
+  "working_definition": "Author type LPLC1 (lobula plate-lobula columnar neuron type 1) of the Özel et al. 2021 optic lobe atlas, at the developing pupal stages P15/P30/P40 (~15-40 h APF), where cells are immature neurons.",
+  "searches_performed": [
+    "'LPLC1' (exact label / synonym, FBbt 2026-10-01)",
+    "'immature lobula plate-lobula columnar neuron LPLC1'",
+    "'immature lobula plate-lobula columnar neuron'",
+    "'immature lobula complex columnar neuron'",
+    "'immature lobula columnar neuron'",
+    "'immature adult optic lobe neuron'",
+    "ancestor walk of FBbt:00111762 for any immature counterpart"
+  ],
+  "best_match": null,
+  "justification": "FBbt has no immature form of LPLC1 or of any of its ancestors. The immature lobula columnar neuron (FBbt:00053273) is not an ancestor: LPLC is a lobula complex columnar neuron, a sibling of lobula columnar (LC) neurons, not a subclass. LPLC1 is also not a descendant of adult optic lobe neuron (it has its soma in the lateral brain cell body rind and projects to the central brain), so immature adult optic lobe neuron (FBbt:00053539) is not a true ancestor either. The only immature ancestor is the generic immature neuron, which is too broad and is not used. No adequate immature term exists, so the cluster is held and the gap recorded.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature lobula columnar neuron",
+      "fbbt_id": "FBbt:00053273",
+      "fbbt_definition": "Immature form of a lobula columnar neuron (Konstantinides et al., 2022).",
+      "reason_rejected": "Not an ancestor of LPLC1: LPLC is a lobula complex columnar neuron, not a lobula columnar (LC) neuron."
+    },
+    {
+      "fbbt_term": "immature adult optic lobe neuron",
+      "fbbt_id": "FBbt:00053539",
+      "fbbt_definition": "Immature neuron that develops from an optic neuroblast and will become an adult optic lobe neuron.",
+      "reason_rejected": "LPLC1 (lobula plate-lobula columnar neuron LPLC1, FBbt:00111762) is not a subclass of adult optic lobe neuron, so this is not a true ancestor."
+    },
+    {
+      "fbbt_term": "lobula plate-lobula columnar neuron LPLC1",
+      "fbbt_id": "FBbt:00111762",
+      "fbbt_definition": "Lobula plate-lobula columnar neuron whose cell body lies in the dorsal area of the lateral cell body rind (Wu et al., 2016). Its processes extend the full depth of the lobula plate, being sparser in layer 1 (Wu et al., 2016). In the lobula, its main dendritic arbors are in layers 2-5B (Wu et al., 2016; Tanaka and Clark, 2022). Presynaptic sites are observed in the boundary of lobula layers 3/4 (Wu et al., 2016). Its arbors span approximately 25 lobula optic columns, overlapping with other LPLC1 cells (Wu et al., 2016). It projects to a posterior optic glomerulus of the PVLP, at the boundary with the PLP (Wu et al., 2016). There are around 62 cells of this type (Wu et al., 2016). They are cholinergic (Davis et al., 2020).",
+      "reason_rejected": "Mature term; the stage is developing (P15-P40), which takes immature terms."
+    }
+  ],
+  "recommendation": "Hold: no immature FBbt term for LPLC1 or a true ancestor (other than the too-broad immature neuron). Gap recorded; no request made.",
+  "new_term_needed": true,
+  "verification_needed": false
+}

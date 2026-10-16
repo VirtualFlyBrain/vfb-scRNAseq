@@ -1,0 +1,30 @@
+{
+  "cluster_label": "P15_257",
+  "working_definition": "Lamina precursor cells at P15 (gcm2, gcm, eya, so, upd), the progenitors progressively converted into lamina monopolar neurons; the authors caveat that the cluster may include some committed glial precursors and some neuroblasts (low dpn).",
+  "searches_performed": [
+    "LPC",
+    "lamina precursor cell",
+    "lamina forming neuroblast",
+    "lamina neuroblast"
+  ],
+  "best_match": {
+    "fbbt_term": "lamina forming neuroblast",
+    "fbbt_id": "FBbt:00001942",
+    "fbbt_definition": "A neuroblast that is the precursor of the lamina. The neuroblasts that give rise to the lamina neurons are located in the lateral edge of the larval outer optic anlage.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt carries 'lamina precursor cell' and 'LPC' as EXACT synonyms of 'lamina forming neuroblast', the only lamina-precursor term. Flagged for verification because the term is defined as a neuroblast of the larval outer anlage whereas the authors' P15 LPCs are described as progenitors converted into lamina neurons and may include glial precursors.",
+  "other_candidates": [
+    {
+      "fbbt_term": "optic neuroblast",
+      "fbbt_id": "FBbt:00052344",
+      "fbbt_definition": "Neuroblast that generates neurons of the optic lobe. It arises from the optic lobe neuroepithelium, with some delaminating during the embryonic stage and others delaminating during the larval stage (Hakes et al., 2018).",
+      "reason_rejected": "Less specific than the lamina-specific term."
+    }
+  ],
+  "recommendation": "Map to FBbt:00001942 lamina forming neuroblast (exact via LPC synonym); curator to confirm equivalence given the authors' hedge.",
+  "new_term_needed": false,
+  "verification_needed": true
+}

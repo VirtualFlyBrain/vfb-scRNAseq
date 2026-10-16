@@ -1,0 +1,27 @@
+{
+  "cluster_label": "L1",
+  "working_definition": "Author type 'L1' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'L1' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature lamina monopolar neuron L1",
+    "fbbt_id": "FBbt:00053356",
+    "fbbt_definition": "Immature neuron that will develop into an adult lamina monopolar neuron L1.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "'L1' is FBbt:00003719 'lamina monopolar neuron L1'; at P15-P40 the cells are developing, so its immature form FBbt:00053356 (curator: immature terms up to the pupal stage).",
+  "other_candidates": [
+    {
+      "fbbt_term": "lamina monopolar neuron L1",
+      "fbbt_id": "FBbt:00003719",
+      "fbbt_definition": "Lamina monopolar neuron that has short collaterals projecting radially from the main projection in the lamina and arborization in medulla layers M1 and M5 (Fischbach and Dittrich, 1989; Kind et al., 2021). In the lamina, these short collaterals are strongly postsynaptic to the terminals of photoreceptors R1-6 (Rivera-Alba et al., 2011). In the medulla, it makes strong reciprocal synaptic connections with lamina monopolar cell L5 and centrifugal neuron C2, as well as substantial output synapses to C3, Mi1 and Tm3 cells (Takemura et al., 2013). It is also electrically synapsed to lamina monopolar neuron L2 (Joesch et al., 2010). It is a glutamatergic neuron (Gao et al., 2008; Takemura et al., 2011). There is usually one of these cells per optic column (Nern et al., 2025).",
+      "reason_rejected": "Mature form; used from the pharate adult stage."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053356 'immature lamina monopolar neuron L1' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

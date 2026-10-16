@@ -1,0 +1,44 @@
+{
+  "cluster_label": "P15_243",
+  "working_definition": "P15 'tail' of differentiating neurons attached to Tm3 (tSNE) and Tm3, TmY3 and TmY8 (UMAP); the authors' call is 'probably immature Tm3, Tmy3 and TmY8 neurons'.",
+  "searches_performed": [
+    "Im04",
+    "immature Tm3",
+    "immature TmY3",
+    "immature TmY8",
+    "immature transmedullary neuron",
+    "immature transmedullary Y neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "immature transmedullary neuron",
+    "fbbt_id": "FBbt:00053274",
+    "fbbt_definition": "Immature form of a transmedullary neuron (Konstantinides et al., 2022).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Grouped call. Immature Tm3 (FBbt:00052329) is_a immature transmedullary neuron, and immature transmedullary Y neuron (FBbt:00053542, parent of immature TmY3 and TmY8) is_a immature transmedullary neuron, so it is the most specific common parent. Verification flagged because of the authors' 'probably' hedge.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature transmedullary neuron Tm3",
+      "fbbt_id": "FBbt:00052329",
+      "fbbt_definition": "Immature form of the transmedullary neuron Tm3 (Tm3a) (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Erm/Ey temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Member of the group only."
+    },
+    {
+      "fbbt_term": "immature transmedullary Y neuron TmY3",
+      "fbbt_id": "FBbt:00052337",
+      "fbbt_definition": "Immature form of the transmedullary Y neuron TmY3 (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Erm/Ey temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Member of the group only."
+    },
+    {
+      "fbbt_term": "immature transmedullary Y neuron TmY8",
+      "fbbt_id": "FBbt:00052340",
+      "fbbt_definition": "Immature form of the transmedullary Y neuron TmY8 (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Erm/Ey temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Member of the group only."
+    }
+  ],
+  "recommendation": "Broad match to immature transmedullary neuron; members Tm3, TmY3, TmY8.",
+  "new_term_needed": false,
+  "verification_needed": true
+}

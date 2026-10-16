@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P40_128",
+  "working_definition": "Author type 'Dm2' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'Dm2' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature distal medullary amacrine neuron Dm2",
+    "fbbt_id": "FBbt:00052309",
+    "fbbt_definition": "Immature form of the distal medullary amacrine neuron Dm2 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the D/BarHI temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "'Dm2' is FBbt:00003769 'distal medullary amacrine neuron Dm2'; at P15-P40 the cells are developing, so its immature form FBbt:00052309 (curator: immature terms up to the pupal stage).",
+  "other_candidates": [
+    {
+      "fbbt_term": "distal medullary amacrine neuron Dm2",
+      "fbbt_id": "FBbt:00003769",
+      "fbbt_definition": "Distal medullary wide-field amacrine neuron whose cell body is located in the cell body rind of the medulla. It terminates with a small bushy arbor with mixed terminal morphology in layers M3-M6B. The arbors in M6B extend into neighboring columns on the dorsal side. The small arbors cover 2 columns in M6 and one in the other layers. It is cholinergic (Konstantinides et al., 2022).",
+      "reason_rejected": "Mature form; used from the pharate adult stage."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052309 'immature distal medullary amacrine neuron Dm2' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

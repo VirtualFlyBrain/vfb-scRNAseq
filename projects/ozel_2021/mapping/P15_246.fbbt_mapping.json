@@ -1,0 +1,43 @@
+{
+  "cluster_label": "P15_246",
+  "working_definition": "P15 'tail' of differentiating neurons attached to the Tm1/Tm2/Tm4/62 clusters; the authors' call is 'probably immature Tm neurons'.",
+  "searches_performed": [
+    "Im07",
+    "immature Tm1",
+    "immature Tm2",
+    "immature Tm4",
+    "immature transmedullary neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "immature transmedullary neuron",
+    "fbbt_id": "FBbt:00053274",
+    "fbbt_definition": "Immature form of a transmedullary neuron (Konstantinides et al., 2022).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors call 'probably immature Tm neurons'; immature Tm1, Tm2 and Tm4 (FBbt:00052325, 00052326, 00052330) are all is_a immature transmedullary neuron. Verification flagged because of the authors' hedge.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature transmedullary neuron Tm1",
+      "fbbt_id": "FBbt:00052325",
+      "fbbt_definition": "Immature form of the transmedullary neuron Tm1 (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Hth/Opa temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Member only."
+    },
+    {
+      "fbbt_term": "immature transmedullary neuron Tm2",
+      "fbbt_id": "FBbt:00052326",
+      "fbbt_definition": "Immature form of the transmedullary neuron Tm2 (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Hth/Opa temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Member only."
+    },
+    {
+      "fbbt_term": "immature transmedullary neuron Tm4",
+      "fbbt_id": "FBbt:00052330",
+      "fbbt_definition": "Immature form of the transmedullary neuron Tm4 (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Hth/Opa temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Member only."
+    }
+  ],
+  "recommendation": "Broad match to immature transmedullary neuron; members Tm1, Tm2, Tm4 (and cluster 62).",
+  "new_term_needed": false,
+  "verification_needed": true
+}

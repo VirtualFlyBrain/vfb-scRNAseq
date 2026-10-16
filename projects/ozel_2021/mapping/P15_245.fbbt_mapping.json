@@ -1,0 +1,36 @@
+{
+  "cluster_label": "P15_245",
+  "working_definition": "P15 'tail' attached to Tm29/TmY5a clusters (cells of P15 cluster 88 not classified as Tm29); the authors' call is 'probably immature Tm29/TmY5a neurons'.",
+  "searches_performed": [
+    "Im06",
+    "immature Tm29",
+    "immature TmY5a",
+    "immature transmedullary neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "immature transmedullary neuron",
+    "fbbt_id": "FBbt:00053274",
+    "fbbt_definition": "Immature form of a transmedullary neuron (Konstantinides et al., 2022).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Grouped call. Immature Tm29 (FBbt:00052328) is_a immature transmedullary neuron; immature transmedullary Y neuron (parent of immature TmY5a) is_a immature transmedullary neuron. Verification flagged because of the authors' 'probably' hedge.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature transmedullary neuron Tm29",
+      "fbbt_id": "FBbt:00052328",
+      "fbbt_definition": "Immature form of the transmedullary neuron Tm29 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Erm/Ey temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Member only."
+    },
+    {
+      "fbbt_term": "immature transmedullary Y neuron TmY5a",
+      "fbbt_id": "FBbt:00052339",
+      "fbbt_definition": "Immature form of the transmedullary Y neuron TmY5a (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Erm/Ey temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Member only."
+    }
+  ],
+  "recommendation": "Broad match to immature transmedullary neuron; members Tm29, TmY5a.",
+  "new_term_needed": false,
+  "verification_needed": true
+}

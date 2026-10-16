@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P15_72",
+  "working_definition": "Author type 'LPC1' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'LPC1' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature adult optic lobe neuron",
+    "fbbt_id": "FBbt:00053539",
+    "fbbt_definition": "Immature neuron that develops from an optic neuroblast and will become an adult optic lobe neuron.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "'LPC1' is FBbt:00111767 'lobula plate columnar neuron LPC1', which has no immature form in FBbt; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so the most specific ancestor with an immature form is used: FBbt:00053539 'immature adult optic lobe neuron' (as for Kurmangaliyev 2020 early clusters).",
+  "other_candidates": [
+    {
+      "fbbt_term": "lobula plate columnar neuron LPC1",
+      "fbbt_id": "FBbt:00111767",
+      "fbbt_definition": "Lobula plate columnar neuron that has its main dendritic arborization in lobula plate layer 2 and receives input from T4b and T5b neurons (Shinomiya et al., 2022). It projects to a small glomerulus in the posterior region of the optic glomeruli of the PVLP, posterior to LC4 and ventral to LPLC3. It is cholinergic (Davis et al., 2020).",
+      "reason_rejected": "Mature form, used from the pharate adult stage; no immature form in FBbt."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053539 'immature adult optic lobe neuron' (broad match).",
+  "new_term_needed": true,
+  "verification_needed": false
+}

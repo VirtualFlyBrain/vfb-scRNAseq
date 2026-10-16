@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P40_77",
+  "working_definition": "Author type 'LC10a' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'LC10a' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature lobula columnar neuron",
+    "fbbt_id": "FBbt:00053273",
+    "fbbt_definition": "Immature form of a lobula columnar neuron (Konstantinides et al., 2022).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "'LC10a' is FBbt:00111747 'lobula columnar neuron LC10a', which has no immature form in FBbt; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so the most specific ancestor with an immature form is used: FBbt:00053273 'immature lobula columnar neuron' (as for Kurmangaliyev 2020 early clusters).",
+  "other_candidates": [
+    {
+      "fbbt_term": "lobula columnar neuron LC10a",
+      "fbbt_id": "FBbt:00111747",
+      "fbbt_definition": "Subtype of lobula columnar neuron LC10B. It has its main arbors in lobula layers 3, 4 and 5B, with some processes extending into layer 2 and some branches in layers 5 and 6. Presynaptic sites are observed in layer 3. It is a cholinergic neuron (Davis et al., 2020). It is involved in the detection of fly-sized objects and its sensitivity increases during male courtship or female aggression (Schretter et al., 2025).",
+      "reason_rejected": "Mature form, used from the pharate adult stage; no immature form in FBbt."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053273 'immature lobula columnar neuron' (broad match).",
+  "new_term_needed": true,
+  "verification_needed": false
+}

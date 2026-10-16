@@ -112,4 +112,17 @@ unidentified:
     G/LQ2: artefact
     G/LQ3: artefact
     G/LQ4: artefact
+    G/LQ1 (in pupae): artefact
     G16/LQ: artefact
+
+# FBbt mappings, once per author type, in two sets (curator 2026-10-16: immature terms
+# up to the pupal stage, mature from the pharate adult stage): type_mapping/ for P50,
+# P70, adult and P50_T45; type_mapping/immature/ for P15, P30, P40. Written by
+# projects/ozel_2021/confirm_terms.py where no judgement is needed, else by
+# map-clusters-to-fbbt agents from reports/; copied per cluster by
+# scripts/expand_type_mappings.py.
+type_mapping:
+  clustering_dirs:
+    P15: immature
+    P30: immature
+    P40: immature

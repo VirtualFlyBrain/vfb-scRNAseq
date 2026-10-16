@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P40_55",
+  "working_definition": "Author type 'Tm29' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'Tm29' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature transmedullary neuron Tm29",
+    "fbbt_id": "FBbt:00052328",
+    "fbbt_definition": "Immature form of the transmedullary neuron Tm29 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Erm/Ey temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "'Tm29' is FBbt:00049916 'transmedullary neuron Tm29'; at P15-P40 the cells are developing, so its immature form FBbt:00052328 (curator: immature terms up to the pupal stage).",
+  "other_candidates": [
+    {
+      "fbbt_term": "transmedullary neuron Tm29",
+      "fbbt_id": "FBbt:00049916",
+      "fbbt_definition": "Transmedullary neuron that receives most of its input in around 5 columns of medulla layer M6, where it also has a small number of presynapses (Nern et al., 2025). It also has a small amount of arborization in the rest of M3-M8 (Nern et al., 2025). It crosses the second optic chiasm and has mixed pre- and post-synapses in around 3 columns of lobula layer 5B (Nern et al., 2025). It is glutamatergic (Davis et al., 2020). There are around 170-270 of these cells per hemisphere (Nern et al., 2025).",
+      "reason_rejected": "Mature form; used from the pharate adult stage."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052328 'immature transmedullary neuron Tm29' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P15_100",
+  "working_definition": "Author type 'LC16' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'LC16' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature lobula columnar neuron",
+    "fbbt_id": "FBbt:00053273",
+    "fbbt_definition": "Immature form of a lobula columnar neuron (Konstantinides et al., 2022).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "'LC16' is FBbt:00111751 'lobula columnar neuron LC16', which has no immature form in FBbt; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so the most specific ancestor with an immature form is used: FBbt:00053273 'immature lobula columnar neuron' (as for Kurmangaliyev 2020 early clusters).",
+  "other_candidates": [
+    {
+      "fbbt_term": "lobula columnar neuron LC16",
+      "fbbt_id": "FBbt:00111751",
+      "fbbt_definition": "Lobula columnar neuron whose cell body lies in the ventral area of the lateral cell body rind (Wu et al., 2016). It has its main dendritic arbors in lobula layers 3-5B, with most synapses in layer 5B (Wu et al., 2016; Tanaka and Clark, 2022). Presynaptic sites are observed in layers 4 and 5B (Wu et al., 2016). Its arbors span approximately 30 optic columns, overlapping with other LC16 cells (Wu et al., 2016). It projects to a dorsal optic glomerulus of the PVLP (Wu et al., 2016). There are around 96 cells of this type (Wu et al., 2016). They are cholinergic (Davis et al., 2020).",
+      "reason_rejected": "Mature form, used from the pharate adult stage; no immature form in FBbt."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053273 'immature lobula columnar neuron' (broad match).",
+  "new_term_needed": true,
+  "verification_needed": false
+}

@@ -1,0 +1,37 @@
+{
+  "cluster_label": "P15_244",
+  "working_definition": "P15 'tail' of differentiating neurons attached to Mi4 and Mi9 (tSNE; on UMAP partly Mi4, partly separate); the authors' call is 'probably immature Mi4, Mi9, and other neurons'.",
+  "searches_performed": [
+    "Im05",
+    "immature Mi4",
+    "immature Mi9",
+    "immature medulla intrinsic neuron",
+    "immature adult optic lobe neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "immature adult optic lobe neuron",
+    "fbbt_id": "FBbt:00053539",
+    "fbbt_definition": "Immature neuron that develops from an optic neuroblast and will become an adult optic lobe neuron.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Immature Mi4 (FBbt:00052319) and Mi9 (FBbt:00052320) are both immature adult optic lobe neurons; FBbt has no generic 'immature medulla intrinsic neuron', and the authors add unspecified 'other neurons' of the optic lobe, so this is the most specific safe common parent. Verification flagged because of the authors' hedge.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature medulla intrinsic neuron Mi4",
+      "fbbt_id": "FBbt:00052319",
+      "fbbt_definition": "Immature form of the medullary intrinsic neuron Mi4 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hth/Opa temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Member only."
+    },
+    {
+      "fbbt_term": "immature medulla intrinsic neuron Mi9",
+      "fbbt_id": "FBbt:00052320",
+      "fbbt_definition": "Immature form of the medullary intrinsic neuron Mi9 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Opa/Erm temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Member only."
+    }
+  ],
+  "recommendation": "Broad match to immature adult optic lobe neuron; members Mi4, Mi9 and other neurons.",
+  "new_term_needed": false,
+  "verification_needed": true
+}

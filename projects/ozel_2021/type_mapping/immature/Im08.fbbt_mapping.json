@@ -1,0 +1,30 @@
+{
+  "cluster_label": "Im08",
+  "working_definition": "P15 'tail' of differentiating neurons attached to the T2/T3/60 (probably T2a) clusters; the authors' call is 'probably immature T2/T2a/T3 neurons'.",
+  "searches_performed": [
+    "Im08",
+    "immature T2",
+    "immature T3",
+    "immature T neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "immature T neuron",
+    "fbbt_id": "FBbt:00059279",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T neuron (Hormann et al., 2020).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt has no immature T2, T2a or T3 terms. T2 (FBbt:00003728), T2a (FBbt:00003729) and T3 (FBbt:00003730) are all T neurons, and 'immature T neuron' is the precursor of an adult T neuron. Verification flagged because of the authors' 'probably' hedge.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature adult optic lobe neuron",
+      "fbbt_id": "FBbt:00053539",
+      "fbbt_definition": "Immature neuron that develops from an optic neuroblast and will become an adult optic lobe neuron.",
+      "reason_rejected": "Less specific than immature T neuron."
+    }
+  ],
+  "recommendation": "Broad match to immature T neuron; members T2, T2a, T3.",
+  "new_term_needed": false,
+  "verification_needed": true
+}
