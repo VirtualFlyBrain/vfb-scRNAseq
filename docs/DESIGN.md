@@ -1216,4 +1216,17 @@ clusters merged by type) with fresh VFBseq ids; licence CC-BY-4.0. Curator decis
   with the label as given, its share and the authors' neuropil class. 95 entries, 23 author
   types (33 "medulla neuron", 14 "central brain neuron", 8 GMC, 8 glia, 5 neuroblasts, 4
   neuroepithelium, ...). Held as `untyped`: "unannonated" (sic) L3_2, L3_3, L3_88, and
-  L3_0 (1,647 cells, no SCEA label).
+  L3_0 (1,647 cells, no SCEA label); curator-held author types (`held_types`): the 14
+  "central brain neuron" clusters (`untyped`: could only be typed as neuron) and
+  "apoptotic cell" L3_41 (`artefact`).
+- **FBbt mapping (stage 3):** once per author type (`type_mapping/`, map-clusters-to-fbbt
+  agents, the Özel immature choices reused); wandering L3, so immature neuron terms, larval
+  progenitor terms. 75 clusters loaded under 16 terms: "medulla neuron" (33) to
+  *immature adult optic lobe neuron* (broad; curator 2026-10-16), GMC to *ganglion mother
+  cell*, "neuroblasts" to *larval optic neuroblast*, "neuroepithelium" to *optic lobe
+  neuroepithelial cell*, "lamina precursor cell" to *lamina forming neuroblast* (FBbt
+  exact synonym from this paper), glia to *larval glial cell* (no larval optic lobe glial
+  term), Mi1 (L3_23 and L3_53) to *immature medulla intrinsic neuron Mi1*, grouped calls
+  (T4/T5, T2/T2a/T3, C2/C3, Tm1/2/4/6, Dm8/11, Lai/Dm9, lamina neuron) to the immature
+  common parent. "C/T cell progenitor" L3_15 is held (`no term`: nothing in FBbt for
+  progenitors of C/T neurons; no request made).

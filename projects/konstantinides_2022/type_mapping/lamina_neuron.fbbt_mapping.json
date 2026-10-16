@@ -1,0 +1,37 @@
+{
+  "cluster_label": "lamina neuron",
+  "working_definition": "Author type 'lamina neuron' (L3_65, lamina class) of the Konstantinides et al. 2022 wandering L3 larval optic lobe atlas: differentiating lamina neurons, the lamina monopolar neurons L1-L5 labelled in Fig 1c.",
+  "searches_performed": [
+    "lamina neuron",
+    "immature lamina neuron",
+    "immature lamina monopolar neuron",
+    "immature lamina monopolar neuron L1",
+    "lamina monopolar neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "immature lamina monopolar neuron",
+    "fbbt_id": "FBbt:00053355",
+    "fbbt_definition": "Immature neuron that will develop into an adult lamina monopolar neuron.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Per curator context the lamina neurons are L1-L5 lamina monopolar neurons (grouped, unresolved). FBbt has immature L1-L5 terms (FBbt:00053356-00053360) whose common parent is immature lamina monopolar neuron; broad because the type spans L1-L5.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature lamina monopolar neuron L1",
+      "fbbt_id": "FBbt:00053356",
+      "fbbt_definition": "Immature neuron that will develop into an adult lamina monopolar neuron L1.",
+      "reason_rejected": "Single member; the type groups L1-L5 (also immature L2 FBbt:00053357, L3 FBbt:00053358, L4 FBbt:00053359, L5 FBbt:00053360)."
+    },
+    {
+      "fbbt_term": "immature adult optic lobe intrinsic neuron",
+      "fbbt_id": "FBbt:00053540",
+      "fbbt_definition": "Immature neuron that will have its synapses restricted to the optic lobe in the adult.",
+      "reason_rejected": "Less specific than immature lamina monopolar neuron."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053355 'immature lamina monopolar neuron' (broad match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

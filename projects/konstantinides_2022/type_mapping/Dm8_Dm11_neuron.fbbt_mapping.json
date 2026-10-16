@@ -1,0 +1,36 @@
+{
+  "cluster_label": "Dm8/Dm11 neuron",
+  "working_definition": "Grouped author type 'Dm8/Dm11 neuron' (L3_54) of the Konstantinides et al. 2022 wandering L3 optic lobe atlas: medulla-class distal medullary amacrine neurons Dm8 and Dm11 not resolved from one another.",
+  "searches_performed": [
+    "'Dm8/Dm11 neuron'",
+    "'immature distal medullary amacrine neuron'",
+    "'immature distal medullary amacrine neuron Dm8'",
+    "'immature distal medullary amacrine neuron Dm11'"
+  ],
+  "best_match": {
+    "fbbt_term": "immature distal medullary amacrine neuron",
+    "fbbt_id": "FBbt:00053272",
+    "fbbt_definition": "Immature form of a distal medullary amacrine neuron (Konstantinides et al., 2022).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "Grouped call: immature Dm8 (FBbt:00052314) and immature Dm11 (FBbt:00052307) share the parent immature distal medullary amacrine neuron (both parents confirmed in OLS), the most specific common parent.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature distal medullary amacrine neuron Dm8",
+      "fbbt_id": "FBbt:00052314",
+      "fbbt_definition": "Immature form of the distal medullary amacrine neuron Dm8 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hbn/Opa/Slp temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Group member only."
+    },
+    {
+      "fbbt_term": "immature distal medullary amacrine neuron Dm11",
+      "fbbt_id": "FBbt:00052307",
+      "fbbt_definition": "Immature form of the distal medullary amacrine neuron Dm11 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hbn/Opa/Slp temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Group member only."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053272 'immature distal medullary amacrine neuron' (broad match); members Dm8 and Dm11.",
+  "new_term_needed": false,
+  "verification_needed": false
+}
