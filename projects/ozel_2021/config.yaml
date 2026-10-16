@@ -48,8 +48,9 @@ sample_build:
   # "selected at P0 (white pupae) and maintained at 25°C until the required stage"),
   # i.e. ~hours APF of the 100 h pupal period (FBdv: eclosion at 100 h APF), each
   # within one Bainbridge & Bownes stage by the FBdv definitions. Adults are "1-3 days
-  # old" ("dissected within 3 days of eclosion"); FBdv has no 1-3 day term, so adult
-  # stage. Tissue: optic lobe, as for Kurmangaliyev 2020 — embryonic/larval optic lobe up
+  # old" ("dissected within 3 days of eclosion"): all past tanning, so mature adult
+  # stage, or the day the authors give in the GSM title (Adult_1d_* / Adult_3d_*; curator
+  # 2026-10-16). Tissue: optic lobe, as for Kurmangaliyev 2020 — embryonic/larval optic lobe up
   # to the pupal stage (P5-P7), adult optic lobe from the pharate adult stage (P8).
   age_map:
     "P15%":
@@ -68,8 +69,19 @@ sample_build:
       stage:  { fbdv_id: FBdv:00005356, label: pharate adult stage P9 }  # 56.6-74.5 h APF
       tissue: { fbbt_id: FBbt:00003701, label: adult optic lobe }
     "1-3 days old":
-      stage:  { fbdv_id: FBdv:00005369, label: adult stage }
+      stage:  { fbdv_id: FBdv:00007026, label: mature adult stage }
       tissue: { fbbt_id: FBbt:00003701, label: adult optic lobe }
+  title_stages:
+    - { pattern: '^Adult_1d_', stage: { fbdv_id: FBdv:00007076, label: day 1 of adulthood } }
+    - { pattern: '^Adult_3d_', stage: { fbdv_id: FBdv:00007078, label: day 3 of adulthood } }
+  # Sample labels: GEO's pupal tissue values repeat the stage ("P70 optic lobe", age
+  # "P70%"), so the label shows the tissue as "optic lobe".
+  tissue_labels:
+    "P15 optic lobe": optic lobe
+    "P30 optic lobe": optic lobe
+    "P40 optic lobe": optic lobe
+    "P50 optic lobe": optic lobe
+    "P70 optic lobe": optic lobe
   # One Clustering per stage: the authors' final identities at that stage (Seurat
   # `FinalIdents`), linked to that stage's samples.
   clusterings:

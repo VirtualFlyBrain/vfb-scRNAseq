@@ -839,7 +839,9 @@ VFB until the release files are merged, so ids can still change during review.
    pattern, sex, stocks from the paper's Key Resources Table resolved in FlyBase
    Chado, `age_map` → FBdv stage + FBbt tissue, `tissue_map` when one series has
    several tissues, clusterings (`sample_tissue_raw` / `sample_age` link a clustering
-   to the samples of that tissue / age; the title regex's `set` group is optional); ArrayExpress: also
+   to the samples of that tissue / age; the title regex's `set` group is optional;
+   `title_stages` for a more specific stage recorded in GSM titles; `tissue_labels` for
+   the tissue shown in Sample labels); ArrayExpress: also
    `sample_columns`, `assay_column` / `assay_regex`, `sex_column` / `sex_map`,
    `sdrf_corrections`), `annotation_build` (h5ad obs columns,
    `unannotated_values`), `annotations` (label/class/timepoint
@@ -1084,9 +1086,12 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-16.
   period, each inside one Bainbridge & Bownes stage by the FBdv definitions: P15 to
   *pupal stage P5* (12.2-18.7 h APF), P30 to *P6* (18.7-32.4 h), P40 to *P7* (32.4-44.3
   h), P50 to *pharate adult stage P8* (44.3-56.6 h), P70 to *P9* (56.6-74.5 h); adults
-  ("1-3 days old"; no FBdv range term) to *adult stage*. Tissue as for Kurmangaliyev:
+  ("1-3 days old", all past tanning) to *mature adult stage*, or to *day 1* / *day 3 of
+  adulthood* where the authors give the age in the GSM title (`title_stages`; 3 and 4
+  libraries; curator 2026-10-16). Tissue as for Kurmangaliyev:
   *embryonic/larval optic lobe* to the pupal stage (P5-P7), *adult optic lobe* from the
-  pharate adult stage. Sex from GEO (female; 2 adult libraries pooled-sex, unset). No
+  pharate adult stage. Sample labels show the pupal tissue as "optic lobe" (GEO's
+  "P70 optic lobe" repeats the stage; `tissue_labels`), replicate ids as in GEO. Sex from GEO (female; 2 adult libraries pooled-sex, unset). No
   stock number is given for Canton-S. Each stage Clustering links its samples
   (`sample_age`).
 
