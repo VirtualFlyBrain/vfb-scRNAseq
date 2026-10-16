@@ -1293,3 +1293,11 @@ licence CC-BY-4.0. Curator decisions 2026-10-16.
   so no stock; curator): the split-GAL4 combination SS00324 = FBco0000215
   (`genotype_includes`, GENO has_genotype); the UAS-mCD8::GFP insertion is not
   identified in the paper, so not linked. Each stage Clustering links its two samples.
+- **Clusters (stage 2):** `projects/hormann_2020/build_clusters.py` fetches the SCEA
+  experiment design and SDRF (cached in `.cache/hormann/scea/`), takes each labelled
+  cell's subtype from its label and its stage from its library (BioSample -> GSM title)
+  and writes one entry per stage x subtype: 40 entries (8 per stage), 43,986 cells (all
+  in the GEO matrices), cell numbers identical to the old load's. No clusters held. It
+  also writes `.cache/hormann/memberships.tsv.gz` (cell -> cluster) for the expression
+  build.
+
