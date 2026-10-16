@@ -1,0 +1,31 @@
+{
+  "cluster_label": "P15_240",
+  "working_definition": "P15 'tail' of differentiating neurons attached to the C2/C3 clusters; the authors' call is 'probably immature C2/C3 neurons'.",
+  "searches_performed": [
+    "Im01",
+    "immature C2",
+    "immature C3",
+    "immature centrifugal neuron",
+    "immature optic lobe centrifugal columnar neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "immature optic lobe centrifugal columnar neuron",
+    "fbbt_id": "FBbt:00053275",
+    "fbbt_definition": "Immature form of a centrifugal columnar neuron (Konstantinides et al., 2022).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt has no immature C2 or C3 terms. Both mature C2 (FBbt:00003743) and C3 (FBbt:00003744) are optic lobe centrifugal columnar neurons, so the immature form of that class is the most specific common immature parent. Authors hedge ('probably'), hence verification flagged.",
+  "other_candidates": [
+    {
+      "fbbt_term": "centrifugal neuron C2",
+      "fbbt_id": "FBbt:00003743",
+      "fbbt_definition": "Adult centrifugal neuron with arborizations in the medulla layers M1, M5/M6, M8 and M10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). In the medulla, it makes reciprocal connections to lamina monopolar neuron L1, and is presynaptic to L2 and L5, as well as medullary intrinsic neuron Mi1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010). There is usually one of these cells per optic column (Nern et al., 2025).",
+      "reason_rejected": "Mature adult term; no immature C2 exists."
+    }
+  ],
+  "recommendation": "Broad match to immature optic lobe centrifugal columnar neuron; members C2, C3.",
+  "new_term_needed": false,
+  "verification_needed": true
+}

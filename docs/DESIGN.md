@@ -1108,4 +1108,31 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-16.
   confidence 0.50 vs 0.94; `unassigned`). 543 named entries (110 types) to map, 6-7 per
   stage less confident (`*`); numbered glia G01-G17 carry `class: glia`. The objects hold
   the authors' filtered genes (11,099-12,028 per stage).
+- **Mapping (stage 3, FBbt 2026-10-01).** Two type-level sets (curator 2026-10-16:
+  immature FBbt terms up to the pupal stage P15-P40, mature from the pharate adult
+  stage): `type_mapping/` (P50, P70, adult, P50_T45) and `type_mapping/immature/`
+  (`type_mapping.clustering_dirs`). `projects/ozel_2021/confirm_terms.py` writes those
+  needing no judgement (159): a type whose name is the exact label / EXACT synonym of
+  one FBbt neuron term (abbreviations that mean something else here — LPC, NB, PR —
+  excluded); its 'immature X' where FBbt has one, else the most specific ancestor with
+  an immature form (broad, `new_term_needed`); TEd / TEv (pupal terms from this paper);
+  numbered glia G01-G17 → *adult optic lobe glial cell* (mature; exact for an optic-lobe
+  dissection) / *glial cell* (immature; no immature optic lobe glia term). 36 type
+  mappings by map-clusters-to-fbbt agents from reports (`reports/`, from the paper
+  index and Supplementary Table 1 comments): developmental types (NB → *optic
+  neuroblast*, GMC1-3 → *ganglion mother cell*, LPC → *lamina forming neuroblast*
+  (synonym "lamina precursor cell"), Im01-12 → the immature form of the types the
+  authors attach them to, hedged so `verification_needed`), grouped calls (T4-5a/b,
+  T4-5c/d → *T neuron* / *immature T neuron*; Tm5ab → *Tm5*), PR → *eye photoreceptor
+  cell* / *eye photoreceptor precursor cell*, Tm9d / Tm9v → *Tm9a* / *Tm9b* (FBbt lists
+  Tm9d / Tm9v as their exact synonyms, sourced from this paper). Held for lack of a
+  term: Apop (the authors' state call for apoptotic cells of no identity) and LPLC1 /
+  LPLC2 at P15-P40 (FBbt has no immature LPLC term, and LPLC is not under *adult optic
+  lobe neuron*, so the only immature ancestor is *immature neuron*). Result: 508 of
+  1,238 entries mapped (127 FBbt terms, all current); 52 `verification_needed`.
+- **Cross-checks.** 53 of 55 types shared with Kurmangaliyev 2020 (main) map alike;
+  the two others, Dm3a / Dm3b, have their own FBbt terms now but are *Dm3* in
+  Kurmangaliyev. The old load FBlc0005659 agrees on all 49 types matched by name; it
+  names five types (LC10c, LC9, Dm15, Mt8, LPi3-4) that Supplementary Table 1 leaves
+  numbered or does not use (identity 93 is noted "likely to be LC10c" but left numbered).
 

@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P30_31",
+  "working_definition": "Author type 'Mi15' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'Mi15' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature medulla intrinsic neuron Mi15",
+    "fbbt_id": "FBbt:00052318",
+    "fbbt_definition": "Immature form of the medullary intrinsic neuron Mi15 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the D/BarHI temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "'Mi15' is FBbt:00111285 'medulla intrinsic neuron Mi15'; at P15-P40 the cells are developing, so its immature form FBbt:00052318 (curator: immature terms up to the pupal stage).",
+  "other_candidates": [
+    {
+      "fbbt_term": "medulla intrinsic neuron Mi15",
+      "fbbt_id": "FBbt:00111285",
+      "fbbt_definition": "Medulla intrinsic unicolumnar neuron whose primary neurite splits in the M1 layer, sending vertical branches as far as the M7 layer (Takemura et al., 2013; Takemura et al., 2015; Kind et al., 2021). A process also extends from the distal medulla into the first optic chiasma, where it receives around half of its photoreceptor input (Kind et al., 2021). In central columns, these cells selectively receive input from R8, rather than R7 photoreceptors, but selectivity is not maintained in Mi15 cells of the dorsal rim area (Kind et al., 2021). It seems to be both cholinergic and dopaminergic (Davis et al., 2020).",
+      "reason_rejected": "Mature form; used from the pharate adult stage."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052318 'immature medulla intrinsic neuron Mi15' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

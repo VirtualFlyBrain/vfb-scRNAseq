@@ -1,0 +1,27 @@
+{
+  "cluster_label": "Dm4",
+  "working_definition": "Author type 'Dm4' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'Dm4' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature distal medullary amacrine neuron Dm4",
+    "fbbt_id": "FBbt:00052313",
+    "fbbt_definition": "Immature form of the distal medullary amacrine neuron Dm4 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hbn/Opa/Slp temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "'Dm4' is FBbt:00003771 'distal medullary amacrine neuron Dm4'; at P15-P40 the cells are developing, so its immature form FBbt:00052313 (curator: immature terms up to the pupal stage).",
+  "other_candidates": [
+    {
+      "fbbt_term": "distal medullary amacrine neuron Dm4",
+      "fbbt_id": "FBbt:00003771",
+      "fbbt_definition": "Distal medullary wide-field amacrine neuron whose cell body is located in the anterior region of the cell body rind of the medulla. The main neurite extends into M6, and then turns back to arborize in the boundary between M5 and M6, and in M3B, with mixed morphology arborizations. The arbor varies in shape between cells, covering around 21 columns, but with these areas tiling. It is located in a central position in the column, surrounded by the terminal of photoreceptors R7 and R8, with the cell boundaries following the column boundaries. There are around 40 Dm4 neurons per hemisphere. They are glutamatergic (Davis et al., 2020).",
+      "reason_rejected": "Mature form; used from the pharate adult stage."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052313 'immature distal medullary amacrine neuron Dm4' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

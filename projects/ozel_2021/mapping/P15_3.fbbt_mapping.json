@@ -1,0 +1,37 @@
+{
+  "cluster_label": "P15_3",
+  "working_definition": "Author type PR (photoreceptors R1-R8, unseparated) of the Özel et al. 2021 optic lobe atlas, at the developing pupal stages P15/P30/P40 (~15-40 h APF); retina photoreceptors captured with the optic lobe, still developing.",
+  "searches_performed": [
+    "'PR' (exact label, FBbt 2026-10-01)",
+    "'immature photoreceptor'",
+    "'photoreceptor precursor cell'",
+    "'developing photoreceptor'",
+    "'eye photoreceptor precursor cell'"
+  ],
+  "best_match": {
+    "fbbt_term": "eye photoreceptor precursor cell",
+    "fbbt_id": "FBbt:00048002",
+    "fbbt_definition": "Immature neuron of the eye disc that will develop into one of the photoreceptors (R1-R8) of the adult eye.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt:00048002 (synonyms 'developing photoreceptor', 'immature eye photoreceptor') is the immature class covering R1-R8, matching the unseparated R1-R8 cluster at developing stages. It is the only immature photoreceptor class that is not a single-subtype term (R1-R8 precursor terms are per subtype). Medium confidence because its definition is framed around the eye disc, whereas P15-P40 cells are pupal retina photoreceptors.",
+  "other_candidates": [
+    {
+      "fbbt_term": "eye photoreceptor cell",
+      "fbbt_id": "FBbt:00006009",
+      "fbbt_definition": "Photoreceptor cell that forms the core of each ommatidium in the adult eye. Eight of these photoreceptors are arranged in each ommatidial core, bundled like the staves of a barrel. Each has a photosensitive rhabdomere that projects into the barrel cavity and adjacent supporting membrane, the stalk (Wolff and Ready, 1993). Each extends an axon into the optic lobe. Activation of the photoreceptor by light results in depolarization and in histamine release at the synapses of these axons (Sarthy, 1991).",
+      "reason_rejected": "Mature term; the stage is developing (P15-P40), which takes immature terms."
+    },
+    {
+      "fbbt_term": "photoreceptor R7 precursor cell",
+      "fbbt_id": "FBbt:00048009",
+      "fbbt_definition": "Immature neuron of the eye disc that will develop into a photoreceptor cell R7 of the adult eye. It forms during the second mitotic wave and joins the precursor cells of the five-cell ommatidial precursor cluster to form the eight-cell ommatidial precursor cluster.",
+      "reason_rejected": "Single-subtype precursor; the cluster is a mixed R1-R8 group."
+    }
+  ],
+  "recommendation": "Map to FBbt:00048002 'eye photoreceptor precursor cell' (immature R1-R8 class); curator may confirm the eye-disc framing is acceptable for pupal stages.",
+  "new_term_needed": false,
+  "verification_needed": false
+}

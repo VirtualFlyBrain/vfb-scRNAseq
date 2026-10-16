@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P30_15",
+  "working_definition": "Author type 'Dm10' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'Dm10' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature distal medullary amacrine neuron Dm10",
+    "fbbt_id": "FBbt:00052306",
+    "fbbt_definition": "Immature form of the distal medullary amacrine neuron Dm10 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Ey/Hbn temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "'Dm10' is FBbt:00110135 'distal medullary amacrine neuron Dm10'; at P15-P40 the cells are developing, so its immature form FBbt:00052306 (curator: immature terms up to the pupal stage).",
+  "other_candidates": [
+    {
+      "fbbt_term": "distal medullary amacrine neuron Dm10",
+      "fbbt_id": "FBbt:00110135",
+      "fbbt_definition": "Distal medullary wide-field amacrine neuron whose cell body is located in the cell body rind of the medulla. It has a distinct tri-stratified layer pattern, branching extensively in medulla layers M1, M3B and M5. Its arbor resembles an ellipse, with the long axis aligned with the dorsal-ventral axis, and covering less than 10 columns. The processes in M1 and M3B to M5 are located in an intracolumnar position. There are around 300 Dm10 neurons per hemisphere. They are GABAergic (Davis et al., 2020).",
+      "reason_rejected": "Mature form; used from the pharate adult stage."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052306 'immature distal medullary amacrine neuron Dm10' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

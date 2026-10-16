@@ -1,0 +1,36 @@
+{
+  "cluster_label": "P15_256",
+  "working_definition": "Optic lobe neuroblasts at P15 (dpn+, ase+, mira+), neural stem cells of the IPC/OPC that divide asymmetrically to self-renew and produce GMCs; the authors note they are probably dying (grim+).",
+  "searches_performed": [
+    "NB",
+    "neuroblast",
+    "optic lobe neuroblast",
+    "optic neuroblast"
+  ],
+  "best_match": {
+    "fbbt_term": "optic neuroblast",
+    "fbbt_id": "FBbt:00052344",
+    "fbbt_definition": "Neuroblast that generates neurons of the optic lobe. It arises from the optic lobe neuroepithelium, with some delaminating during the embryonic stage and others delaminating during the larval stage (Hakes et al., 2018).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "The dissection is optic lobe only and the authors name neuroblasts, not subdivided by IPC/OPC lineage; 'optic neuroblast' is the optic-lobe-specific neuroblast term without lineage restriction. The term is defined for embryonic/larval stages, with no pupal-specific optic neuroblast term.",
+  "other_candidates": [
+    {
+      "fbbt_term": "neuroblast",
+      "fbbt_id": "FBbt:00005146",
+      "fbbt_definition": "Precursor of the central nervous system that derives from the neurogenic region of the ectoderm or the mesectoderm (Doe, 1992; Schmid et al., 1999; Crews, 2019). It produces neurons and/or glia (Doe, 1992; Beckervordersandforth et al., 2008). Neuroblasts may also divide during adult life to regenerate the adult brain (Fernandez-Hernandez et al., 2013).",
+      "reason_rejected": "Too generic; an optic-lobe-specific term exists."
+    },
+    {
+      "fbbt_term": "larval optic neuroblast",
+      "fbbt_id": "FBbt:00110571",
+      "fbbt_definition": "Neuroblast that delaminates from the optic lobe neuroepithelium during the larval stage (Egger et al., 2007). It generates secondary (adult-specific) optic lobe neurons via asymmetric division (Egger et al., 2007).",
+      "reason_rejected": "Stage-specific (larval); authors' cells are P15 pupal."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052344 optic neuroblast (exact).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

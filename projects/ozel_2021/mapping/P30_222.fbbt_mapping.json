@@ -1,0 +1,27 @@
+{
+  "cluster_label": "P30_222",
+  "working_definition": "Author type 'LC6' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'LC6' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature lobula columnar neuron",
+    "fbbt_id": "FBbt:00053273",
+    "fbbt_definition": "Immature form of a lobula columnar neuron (Konstantinides et al., 2022).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "'LC6' is FBbt:00003876 'lobula columnar neuron LC6', which has no immature form in FBbt; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so the most specific ancestor with an immature form is used: FBbt:00053273 'immature lobula columnar neuron' (as for Kurmangaliyev 2020 early clusters).",
+  "other_candidates": [
+    {
+      "fbbt_term": "lobula columnar neuron LC6",
+      "fbbt_id": "FBbt:00003876",
+      "fbbt_definition": "Extrinsic lobula columnar neuron whose cell body is in the dorsal lateral cell body rind (Wu et al., 2016). It has its main dendritic arbors in lobula layers 4 and 5B (Wu et al., 2016), with most synapses concentrated in layer 5B (Tanaka and Clark, 2022). There is also some evidence of presynaptic sites in layers 4 and 5B (Wu et al., 2016). Its arbors span approximately 30 optic columns, overlapping with other LC6 cells (Wu et al., 2016). It fasciculates in the anterior optic tract, fasciculating with LC9 (Otsuna and Ito, 2006), and innervates an optic glomerulus in the dorsolateral PVLP, ventral to the one from LC16 (Wu et al., 2016; Morimoto et al., 2020). There are around 60 of these cells per hemisphere and they are cholinergic (Morimoto et al., 2020).",
+      "reason_rejected": "Mature form, used from the pharate adult stage; no immature form in FBbt."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053273 'immature lobula columnar neuron' (broad match).",
+  "new_term_needed": true,
+  "verification_needed": false
+}

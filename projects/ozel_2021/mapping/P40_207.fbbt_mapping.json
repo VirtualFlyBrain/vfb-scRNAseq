@@ -1,0 +1,20 @@
+{
+  "cluster_label": "P40_207",
+  "working_definition": "Author type 'G12' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'glial cell' (FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "glial cell",
+    "fbbt_id": "FBbt:00005144",
+    "fbbt_definition": "A supporting cell of the nervous system.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "A glial identity the authors left numbered (G12); class glia. FBbt has no immature or pupal optic lobe glia term; the stage-neutral glial cell is used (as for Kurmangaliyev 2020 early glia).",
+  "other_candidates": [],
+  "recommendation": "Map to FBbt:00005144 'glial cell' (broad match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,27 @@
+{
+  "cluster_label": "T2a",
+  "working_definition": "Author type 'T2a' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
+  "searches_performed": [
+    "'T2a' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+  ],
+  "best_match": {
+    "fbbt_term": "immature T neuron",
+    "fbbt_id": "FBbt:00059279",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T neuron (Hormann et al., 2020).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "'T2a' is FBbt:00003729 'T2a neuron', which has no immature form in FBbt; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so the most specific ancestor with an immature form is used: FBbt:00059279 'immature T neuron' (as for Kurmangaliyev 2020 early clusters).",
+  "other_candidates": [
+    {
+      "fbbt_term": "T2a neuron",
+      "fbbt_id": "FBbt:00003729",
+      "fbbt_definition": "T neuron with its soma posteriorly adjacent to the gap between the medulla and lobula plate and a cell body fiber that projects along the proximal surface of the medulla before branching in the second optic chiasm (Fischbach and Dittrich, 1989; Shinomiya et al., 2019). One branch projects into a medulla column, where it forms a bushy, fine, arborization in medulla layer M9 and then projects through the rest of the medulla column, bifurcating in medulla layer M5 and forming fine arbors throughout layers M1-4. The other branch forms a terminal arborization in lobula layer 3 that is much wider than a single column and has bleb-type terminal branches.",
+      "reason_rejected": "Mature form, used from the pharate adult stage; no immature form in FBbt."
+    }
+  ],
+  "recommendation": "Map to FBbt:00059279 'immature T neuron' (broad match).",
+  "new_term_needed": true,
+  "verification_needed": false
+}

@@ -1,0 +1,38 @@
+{
+  "cluster_label": "P40_104",
+  "working_definition": "Author grouped type Tm5ab (transmedullary neurons Tm5a plus Tm5b) of the Özel et al. 2021 optic lobe atlas, at the developing pupal stages P15/P30/P40 (~15-40 h APF), where cells are immature neurons.",
+  "searches_performed": [
+    "'Tm5ab' (exact label, FBbt 2026-10-01)",
+    "'immature transmedullary neuron Tm5'",
+    "'immature transmedullary neuron Tm5a'",
+    "'immature transmedullary neuron Tm5b'",
+    "'immature transmedullary neuron'",
+    "ancestor walk of Tm5a/Tm5b for immature counterparts"
+  ],
+  "best_match": {
+    "fbbt_term": "immature transmedullary neuron",
+    "fbbt_id": "FBbt:00053274",
+    "fbbt_definition": "Immature form of a transmedullary neuron (Konstantinides et al., 2022).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The group is Tm5a + Tm5b, whose common mature parent is transmedullary neuron Tm5 (FBbt:00003793). FBbt has no immature Tm5 or immature Tm5a term (only immature Tm5b and Tm5c), so the most specific immature true ancestor of both is immature transmedullary neuron. The gap is recorded.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature transmedullary neuron Tm5b",
+      "fbbt_id": "FBbt:00052331",
+      "fbbt_definition": "Immature form of the transmedullary neuron Tm5b (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Hbn/Opa/Slp temporal window (Konstantinides et al., 2022).",
+      "reason_rejected": "Only one of the two members (Tm5a has no immature term)."
+    },
+    {
+      "fbbt_term": "transmedullary neuron Tm5",
+      "fbbt_id": "FBbt:00003793",
+      "fbbt_definition": "Transmedullary neuron that terminates in lobula layer 5 with bleb-type arborizations. It displays fine arborizations in medulla layers M3 and M6 and other, depending on the subtype. It has bleb-type terminals in layers M6 and M8. It has three subtypes.",
+      "reason_rejected": "Mature term; the stage is developing (P15-P40), which takes immature terms."
+    }
+  ],
+  "recommendation": "Broad match to FBbt:00053274 'immature transmedullary neuron'; gap (no immature Tm5 / Tm5a term) recorded, no request made.",
+  "new_term_needed": true,
+  "verification_needed": false
+}

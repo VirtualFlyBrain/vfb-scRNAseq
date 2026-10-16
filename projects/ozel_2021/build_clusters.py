@@ -59,7 +59,13 @@ def author_names() -> dict[str, str]:
 
 
 def is_low_quality(name: str) -> bool:
-    return bool(re.search(r"(^|/)LQ\d*$", name))
+    return bool(re.search(r"(^|/)LQ\d*( \(in pupae\))?$", name))
+
+
+def is_numbered(name: str, num: str) -> bool:
+    """Left numbered by the authors: the number itself, or a number with a letter
+    suffix for its parts (e.g. 88a / 88b)."""
+    return not name or name == num or bool(re.fullmatch(r"\d+[a-z]?", name))
 
 
 def main() -> None:
@@ -95,7 +101,7 @@ def main() -> None:
             if num == "0":
                 rec["type"] = "0"
                 rec["unannotated"] = True            # no final identity
-            elif not name or name == num or is_low_quality(name):
+            elif is_numbered(name, num) or is_low_quality(name):
                 rec["unannotated"] = True            # left numbered, or low quality
             anns.append(rec)
     # P50 T4/T5 subtypes: identities that FinalIdents.T45separate adds

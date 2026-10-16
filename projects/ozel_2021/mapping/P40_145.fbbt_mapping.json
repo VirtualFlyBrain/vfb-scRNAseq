@@ -1,0 +1,29 @@
+{
+  "cluster_label": "P40_145",
+  "working_definition": "Author type Lai (lamina intrinsic neuron) of the Özel et al. 2021 optic lobe atlas, at the developing pupal stages P15/P30/P40 (~15-40 h APF), where cells are immature neurons.",
+  "searches_performed": [
+    "'Lai' (exact label / synonym, FBbt 2026-10-01)",
+    "'immature lamina intrinsic neuron'",
+    "'immature lamina neuron'"
+  ],
+  "best_match": {
+    "fbbt_term": "immature lamina intrinsic neuron",
+    "fbbt_id": "FBbt:00052316",
+    "fbbt_definition": "Immature form of the lamina intrinsic neuron (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hbn/Opa/Slp temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "FBbt:00052316 develops into lamina intrinsic neuron Lai (FBbt:00003746), the mature type; it is the immature form for the developing stages of this dataset.",
+  "other_candidates": [
+    {
+      "fbbt_term": "lamina intrinsic neuron Lai",
+      "fbbt_id": "FBbt:00003746",
+      "fbbt_definition": "Intrinsic amacrine neuron of the lamina with arborizations spanning the proximal and distal lamina, whose cell body lies proximal to the lamina (Fischbach and Dittrich, 1989; Meinertzhagen and Sorra, 2001). It has extensive arborizations and forms a substantial number of presynaptic terminals with columnar neuron T1 and epithelial glia (Rivera-Alba et al., 2011). It receives strong input from each of photoreceptors R1-R6, and from lamina wide-field cells (Rivera-Alba et al., 2011). It is a glutamatergic neuron (Davis et al., 2020). There are approximately 210 of these cells on each side (Nern et al., 2025).",
+      "reason_rejected": "Mature term; the stage is developing (P15-P40), which takes immature terms."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052316 'immature lamina intrinsic neuron' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,23 @@
+{
+  "cluster_label": "P15_255",
+  "working_definition": "One of three P15 optic lobe clusters identified by the authors as ganglion mother cells (dpn-, ase+); the authors add that it likely contains some immature neurons (only some cells express ase; lies between GMCs and immature neurons on UMAP).",
+  "searches_performed": [
+    "GMC3",
+    "ganglion mother cell",
+    "optic lobe ganglion mother cell",
+    "GMC"
+  ],
+  "best_match": {
+    "fbbt_term": "ganglion mother cell",
+    "fbbt_id": "FBbt:00005149",
+    "fbbt_definition": "Daughter cell formed through asymmetric division of a neuroblast, typically generating two postmitotic neurons.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "medium"
+  },
+  "justification": "The authors call the cluster ganglion mother cells; FBbt has the generic ganglion mother cell term and no optic-lobe-specific GMC term. Flagged for verification because the authors themselves hedge that it likely contains some immature neurons.",
+  "other_candidates": [],
+  "recommendation": "Map to FBbt:00005149 ganglion mother cell (exact); verification flagged because of the authors' hedge.",
+  "new_term_needed": false,
+  "verification_needed": true
+}
