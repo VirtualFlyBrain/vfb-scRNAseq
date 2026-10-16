@@ -1173,4 +1173,9 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-16.
   *ninaE*; Mi1 *hth*; L1 *svp*; G01 *repo*; Dm3b's *bi* is below the cut-off in adults.
   A cell total that counted cells once across parts undercounted where barcodes repeat
   between matrices (fixed 2026-10-16: Kurmangaliyev has 222,360 cells, not 208,976).
+- **Build (stage 5):** `build_rdf.py`: 1 Dataset, 38 Samples, 38 Assays, 7 Clusterings
+  (each linked to its stage's samples), 522 Clusters (8 sub-clusters); publication
+  FBrf0247762 from VFB production; `verify_mappings.py` OK (130 FBbt terms); the 13
+  FBbt / FBdv / FBcv terms on Samples, Assays and the Dataset current in OLS. Recorded in
+  `provenance.json`.
 
