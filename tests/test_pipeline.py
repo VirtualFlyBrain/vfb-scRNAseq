@@ -259,3 +259,13 @@ def test_geo_sample_age_falls_back_to_config():
     assert mod.sample_age(SimpleNamespace(stage_hint=None), sb) == "wandering third instar larva"
     assert mod.sample_age(SimpleNamespace(stage_hint="P70%"), sb) == "P70%"
     assert mod.sample_age(SimpleNamespace(stage_hint=None), {}) is None
+
+
+def test_geo_sample_stock_falls_back_to_config():
+    """`sample_build.stock` gives every sample its stock when the sample's group has no
+    `stock_map` entry."""
+    mod = _script("build_samples_from_geo")
+    assert mod.sample_stock({"set": None}, {"stock": ["FBst0086858"]}) == ["FBst0086858"]
+    sb = {"stock_map": {"W1118": ["FBst0005905"]}, "stock": ["FBst0000001"]}
+    assert mod.sample_stock({"set": "W1118"}, sb) == ["FBst0005905"]
+    assert mod.sample_stock({"set": None}, {}) is None
