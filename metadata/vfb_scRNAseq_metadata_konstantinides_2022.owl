@@ -1,0 +1,2422 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:RO="http://purl.obolibrary.org/obo/RO_"
+     xmlns:dc="http://purl.org/dc/terms/"
+     xmlns:BAO="http://www.bioassayontology.org/bao#BAO_"
+     xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
+     xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
+     xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vfb="http://virtualflybrain.org/reports/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:FBbt="http://purl.obolibrary.org/obo/FBbt_"
+     xmlns:FBcv="http://purl.obolibrary.org/obo/FBcv_"
+     xmlns:FBdv="http://purl.obolibrary.org/obo/FBdv_"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:VFBseq="http://virtualflybrain.org/reports/VFBseq_"
+     xmlns:linkml="https://w3id.org/linkml/"
+     xmlns:FlyBase="http://flybase.org/reports/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:neo_custom="http://n2o.neo/custom/"
+     xmlns:neo_property="http://n2o.neo/property/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://n2o.neo/custom/accession -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/custom/accession"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_count -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/custom/cell_count"/>
+    
+
+
+    <!-- http://n2o.neo/custom/filtered_gene_count -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/custom/filtered_gene_count"/>
+    
+
+
+    <!-- http://n2o.neo/custom/total_gene_count -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/custom/total_gene_count"/>
+    
+
+
+    <!-- http://n2o.neo/property/nodeLabel -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/property/nodeLabel"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/licence -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/licence"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/references"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002352 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002352"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002473"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002490 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002490"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000212 -->
+
+    <ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000212"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001251 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001251"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001930 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001930"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001942 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001942"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00005149 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005149"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00052317 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00052317"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00052324 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00052324"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00052333 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00052333"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00052344 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00052344"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00053272 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00053272"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00053273 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00053273"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00053274 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00053274"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00053275 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00053275"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00053355 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00053355"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00053539 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00053540 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00053540"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059279 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059279"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111738 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111738"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003023 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003024 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003025 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009000 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009002 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009003 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009008 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00005341 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005341"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://flybase.org/reports/FBrf0253187 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBrf0253187">
+        <neo_property:nodeLabel>pub</neo_property:nodeLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002364 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002364">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009000"/>
+            </Restriction>
+        </rdf:type>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7154</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10698</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
+        <obo:IAO_0000115>A complete temporal transcription factor series in the fly visual system</obo:IAO_0000115>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dc:references rdf:resource="http://flybase.org/reports/FBrf0253187"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>scRNAseq data from Konstantinides (2022)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSE167266</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002365 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002365">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001930"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005341"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002366"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 1 (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002366 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002366">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002365"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <oboInOwl:hasDbXref>GSM5100583</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SAMN18028258</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SRX10151332</oboInOwl:hasDbXref>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 1, 10x library (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002367 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002367">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001930"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005341"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002368"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 10 (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002368 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002368">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002367"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <oboInOwl:hasDbXref>GSM5100592</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SAMN18028248</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SRX10151341</oboInOwl:hasDbXref>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 10, 10x library (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002369 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002369">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001930"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005341"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002370"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 2 (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002370 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002370">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002369"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <oboInOwl:hasDbXref>GSM5100584</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SAMN18028257</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SRX10151333</oboInOwl:hasDbXref>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 2, 10x library (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002371 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002371">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001930"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005341"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002372"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 3 (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002372 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002372">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002371"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <oboInOwl:hasDbXref>GSM5100585</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SAMN18028256</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SRX10151334</oboInOwl:hasDbXref>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 3, 10x library (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002373 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002373">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001930"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005341"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002374"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 4 (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002374 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002374">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002373"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <oboInOwl:hasDbXref>GSM5100586</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SAMN18028255</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SRX10151335</oboInOwl:hasDbXref>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 4, 10x library (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002375 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002375">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001930"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005341"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002376"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 5 (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002376 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002376">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002375"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <oboInOwl:hasDbXref>GSM5100587</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SAMN18028254</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SRX10151336</oboInOwl:hasDbXref>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 5, 10x library (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002377 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002377">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001930"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005341"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002378"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 6 (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002378 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002378">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002377"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <oboInOwl:hasDbXref>GSM5100588</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SAMN18028253</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SRX10151337</oboInOwl:hasDbXref>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 6, 10x library (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002379 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002379">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001930"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005341"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002380"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 7 (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002380 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002380">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002379"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <oboInOwl:hasDbXref>GSM5100589</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SAMN18028251</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SRX10151338</oboInOwl:hasDbXref>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 7, 10x library (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002381 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002381">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001930"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005341"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002382"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 8 (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002382 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002382">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002381"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <oboInOwl:hasDbXref>GSM5100590</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SAMN18028250</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SRX10151339</oboInOwl:hasDbXref>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 8, 10x library (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002383 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002383">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001930"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005341"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002384"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 9 (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002384 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002384">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002383"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <oboInOwl:hasDbXref>GSM5100591</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SAMN18028249</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SRX10151340</oboInOwl:hasDbXref>
+        <rdfs:label>larval optic lobe, wandering third instar larva, rep 9, 10x library (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002385 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002385">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002365"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002367"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002369"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002371"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002373"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002375"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002377"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002379"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002381"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002383"/>
+        <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>Konstantinides 2022 L3 optic lobe clusters</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002386 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002386">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005149"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1457</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2796</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8671</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>ganglion mother cell cluster 1 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002387 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002387">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001942"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1170</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2995</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8614</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>lamina precursor cell cluster 5 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002388 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002388">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111738"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1095</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5470</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9267</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>neuroepithelium cluster 6 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002389 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002389">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005149"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1094</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1861</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8222</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>ganglion mother cell cluster 7 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002390 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002390">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059279"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1074</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2243</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8385</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>T4/T5 neuron cluster 8 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002391 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002391">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052344"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1057</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5190</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9198</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>neuroblasts cluster 9 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002392 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002392">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005149"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">949</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3037</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8363</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>ganglion mother cell cluster 10 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002393 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002393">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059279"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">947</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2760</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8368</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>immature T4/T5 cluster 11 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002394 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002394">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053274"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">927</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1940</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8060</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>Tm1/Tm2/Tm4/Tm6 neuron cluster 12 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002395 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002395">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">916</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2088</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8241</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 13 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002396 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002396">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">914</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2357</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8407</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 14 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002397 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002397">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005149"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">897</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1567</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7964</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>ganglion mother cell cluster 16 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002398 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002398">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111738"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">859</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">797</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8115</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>neuroepithelium cluster 17 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002399 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002399">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052344"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">791</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2276</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8123</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>neuroblasts cluster 19 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002400 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002400">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005149"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">783</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1884</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7997</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>ganglion mother cell cluster 20 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002401 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002401">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">783</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1730</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7952</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 21 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002402 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002402">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111738"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">773</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">816</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7809</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>neuroepithelium cluster 22 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002403 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002403">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052317"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">768</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2212</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8134</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>immature Mi1 neuron cluster 23 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002404 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002404">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">740</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2086</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8066</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 24 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002405 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002405">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052324"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">736</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1672</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7929</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>T1 neuron cluster 25 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002406 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002406">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">674</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1787</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7831</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 27 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002407 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002407">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">662</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1868</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7859</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 28 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002408 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002408">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">650</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">577</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7568</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 29 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002409 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002409">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">650</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1668</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7827</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 30 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002410 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002410">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">647</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2529</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8114</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 31 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002411 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002411">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">591</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1939</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7878</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 32 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002412 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002412">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">589</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2762</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8149</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 33 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002413 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002413">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">582</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1836</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7768</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 34 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002414 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002414">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053275"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">579</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2488</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8175</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>centrifugal neuron C2/C3 cluster 35 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002415 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002415">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">578</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">594</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7939</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 36 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002416 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002416">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052344"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">565</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4447</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8573</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>neuroblasts cluster 37 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002417 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002417">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052333"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">560</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1698</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7716</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>Tm9 neuron cluster 38 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002418 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002418">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">521</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2147</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7836</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 40 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002419 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002419">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">490</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1650</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7566</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 42 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002420 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002420">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005149"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">487</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2049</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7616</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>ganglion mother cell cluster 43 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002421 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002421">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001251"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">477</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2606</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8052</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>glial cell cluster 44 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002422 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002422">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001251"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">468</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3203</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8282</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>glial cell cluster 45 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002423 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002423">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">445</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1644</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7539</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 46 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002424 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002424">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">444</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1724</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7569</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 47 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002425 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002425">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059279"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">435</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1954</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7726</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>immature T4/T5 cluster 48 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002426 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002426">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053540"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">417</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3148</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8208</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>lamina wide-field neuron cluster 49 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002427 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002427">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">399</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1827</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7526</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 52 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002428 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002428">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052317"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">391</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1786</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7485</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>Mi1 neuron cluster 53 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002429 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002429">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053272"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">385</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1664</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7498</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>Dm8/Dm11 neuron cluster 54 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002430 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002430">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059279"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">385</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2114</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7676</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>T2/T2a/T3 neuron cluster 55 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002431 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002431">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001251"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">379</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1903</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7942</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>glial cell cluster 56 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002432 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002432">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001942"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">371</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3845</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7972</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>lamina precursor cell cluster 57 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002433 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002433">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005149"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">347</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3157</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7758</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>ganglion mother cell cluster 58 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002434 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002434">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">337</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1932</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7574</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 59 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002435 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002435">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">334</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1643</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7361</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 60 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002436 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002436">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052344"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">309</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5181</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8347</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>neuroblasts cluster 61 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002437 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002437">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">301</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1653</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7263</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 62 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002438 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002438">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001251"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">301</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4190</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8203</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>glial cell cluster 63 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002439 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002439">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053355"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">285</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3430</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8080</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>lamina neuron cluster 65 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002440 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002440">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111738"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">284</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5216</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8260</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>neuroepithelium cluster 66 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002441 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002441">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001251"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">279</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3199</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8067</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>glial cell cluster 67 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002442 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002442">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">276</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2351</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7538</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 68 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002443 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002443">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005149"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">275</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1887</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7136</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>ganglion mother cell cluster 69 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002444 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002444">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">275</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2351</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7504</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 70 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002445 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002445">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">274</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1829</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7437</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 71 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002446 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002446">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">262</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1727</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7170</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 72 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002447 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002447">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">259</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2899</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7806</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 73 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002448 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002448">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052344"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">257</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4224</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8092</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>neuroblasts cluster 74 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002449 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002449">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">234</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3288</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7749</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 75 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002450 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002450">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">199</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2522</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7385</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 76 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002451 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002451">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">184</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2029</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6963</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 78 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002452 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002452">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053273"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">164</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2991</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7456</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>lobula columnar neuron cluster 80 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002453 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002453">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">159</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2683</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7244</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 81 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002454 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002454">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053540"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">154</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2577</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7140</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>Lai/Dm9 neuron cluster 82 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002455 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002455">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">125</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2864</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7219</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 84 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002456 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002456">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001251"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3812</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7919</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>glial cell cluster 85 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002457 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002457">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">119</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2427</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6912</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 86 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002458 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002458">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001251"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">107</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5094</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7569</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>glial cell cluster 87 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002459 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002459">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001251"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1043</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6579</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>glial cell cluster 91 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002460 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002460">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002385"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2713</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6199</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
+        <rdfs:label>medulla neuron cluster 94 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)</rdfs:label>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+

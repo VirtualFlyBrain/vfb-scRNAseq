@@ -1,0 +1,978 @@
+@prefix BAO: <http://www.bioassayontology.org/bao#BAO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix FBbt: <http://purl.obolibrary.org/obo/FBbt_> .
+@prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
+@prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
+@prefix FlyBase: <http://flybase.org/reports/> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix VFBseq: <http://virtualflybrain.org/reports/VFBseq_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix neo_custom: <http://n2o.neo/custom/> .
+@prefix neo_property: <http://n2o.neo/property/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vfb: <http://virtualflybrain.org/reports/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VFBseq:00002386 a FBcv:0009003 ;
+    rdfs:label "ganglion mother cell cluster 1 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 1457 ;
+    neo_custom:filtered_gene_count 2796 ;
+    neo_custom:total_gene_count 8671 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00005149 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002387 a FBcv:0009003 ;
+    rdfs:label "lamina precursor cell cluster 5 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 1170 ;
+    neo_custom:filtered_gene_count 2995 ;
+    neo_custom:total_gene_count 8614 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00001942 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002388 a FBcv:0009003 ;
+    rdfs:label "neuroepithelium cluster 6 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 1095 ;
+    neo_custom:filtered_gene_count 5470 ;
+    neo_custom:total_gene_count 9267 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00111738 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002389 a FBcv:0009003 ;
+    rdfs:label "ganglion mother cell cluster 7 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 1094 ;
+    neo_custom:filtered_gene_count 1861 ;
+    neo_custom:total_gene_count 8222 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00005149 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002390 a FBcv:0009003 ;
+    rdfs:label "T4/T5 neuron cluster 8 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 1074 ;
+    neo_custom:filtered_gene_count 2243 ;
+    neo_custom:total_gene_count 8385 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00059279 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002391 a FBcv:0009003 ;
+    rdfs:label "neuroblasts cluster 9 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 1057 ;
+    neo_custom:filtered_gene_count 5190 ;
+    neo_custom:total_gene_count 9198 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00052344 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002392 a FBcv:0009003 ;
+    rdfs:label "ganglion mother cell cluster 10 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 949 ;
+    neo_custom:filtered_gene_count 3037 ;
+    neo_custom:total_gene_count 8363 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00005149 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002393 a FBcv:0009003 ;
+    rdfs:label "immature T4/T5 cluster 11 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 947 ;
+    neo_custom:filtered_gene_count 2760 ;
+    neo_custom:total_gene_count 8368 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00059279 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002394 a FBcv:0009003 ;
+    rdfs:label "Tm1/Tm2/Tm4/Tm6 neuron cluster 12 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 927 ;
+    neo_custom:filtered_gene_count 1940 ;
+    neo_custom:total_gene_count 8060 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053274 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002395 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 13 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 916 ;
+    neo_custom:filtered_gene_count 2088 ;
+    neo_custom:total_gene_count 8241 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002396 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 14 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 914 ;
+    neo_custom:filtered_gene_count 2357 ;
+    neo_custom:total_gene_count 8407 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002397 a FBcv:0009003 ;
+    rdfs:label "ganglion mother cell cluster 16 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 897 ;
+    neo_custom:filtered_gene_count 1567 ;
+    neo_custom:total_gene_count 7964 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00005149 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002398 a FBcv:0009003 ;
+    rdfs:label "neuroepithelium cluster 17 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 859 ;
+    neo_custom:filtered_gene_count 797 ;
+    neo_custom:total_gene_count 8115 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00111738 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002399 a FBcv:0009003 ;
+    rdfs:label "neuroblasts cluster 19 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 791 ;
+    neo_custom:filtered_gene_count 2276 ;
+    neo_custom:total_gene_count 8123 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00052344 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002400 a FBcv:0009003 ;
+    rdfs:label "ganglion mother cell cluster 20 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 783 ;
+    neo_custom:filtered_gene_count 1884 ;
+    neo_custom:total_gene_count 7997 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00005149 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002401 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 21 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 783 ;
+    neo_custom:filtered_gene_count 1730 ;
+    neo_custom:total_gene_count 7952 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002402 a FBcv:0009003 ;
+    rdfs:label "neuroepithelium cluster 22 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 773 ;
+    neo_custom:filtered_gene_count 816 ;
+    neo_custom:total_gene_count 7809 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00111738 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002403 a FBcv:0009003 ;
+    rdfs:label "immature Mi1 neuron cluster 23 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 768 ;
+    neo_custom:filtered_gene_count 2212 ;
+    neo_custom:total_gene_count 8134 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00052317 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002404 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 24 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 740 ;
+    neo_custom:filtered_gene_count 2086 ;
+    neo_custom:total_gene_count 8066 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002405 a FBcv:0009003 ;
+    rdfs:label "T1 neuron cluster 25 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 736 ;
+    neo_custom:filtered_gene_count 1672 ;
+    neo_custom:total_gene_count 7929 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00052324 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002406 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 27 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 674 ;
+    neo_custom:filtered_gene_count 1787 ;
+    neo_custom:total_gene_count 7831 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002407 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 28 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 662 ;
+    neo_custom:filtered_gene_count 1868 ;
+    neo_custom:total_gene_count 7859 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002408 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 29 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 650 ;
+    neo_custom:filtered_gene_count 577 ;
+    neo_custom:total_gene_count 7568 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002409 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 30 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 650 ;
+    neo_custom:filtered_gene_count 1668 ;
+    neo_custom:total_gene_count 7827 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002410 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 31 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 647 ;
+    neo_custom:filtered_gene_count 2529 ;
+    neo_custom:total_gene_count 8114 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002411 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 32 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 591 ;
+    neo_custom:filtered_gene_count 1939 ;
+    neo_custom:total_gene_count 7878 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002412 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 33 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 589 ;
+    neo_custom:filtered_gene_count 2762 ;
+    neo_custom:total_gene_count 8149 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002413 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 34 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 582 ;
+    neo_custom:filtered_gene_count 1836 ;
+    neo_custom:total_gene_count 7768 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002414 a FBcv:0009003 ;
+    rdfs:label "centrifugal neuron C2/C3 cluster 35 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 579 ;
+    neo_custom:filtered_gene_count 2488 ;
+    neo_custom:total_gene_count 8175 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053275 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002415 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 36 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 578 ;
+    neo_custom:filtered_gene_count 594 ;
+    neo_custom:total_gene_count 7939 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002416 a FBcv:0009003 ;
+    rdfs:label "neuroblasts cluster 37 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 565 ;
+    neo_custom:filtered_gene_count 4447 ;
+    neo_custom:total_gene_count 8573 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00052344 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002417 a FBcv:0009003 ;
+    rdfs:label "Tm9 neuron cluster 38 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 560 ;
+    neo_custom:filtered_gene_count 1698 ;
+    neo_custom:total_gene_count 7716 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00052333 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002418 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 40 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 521 ;
+    neo_custom:filtered_gene_count 2147 ;
+    neo_custom:total_gene_count 7836 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002419 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 42 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 490 ;
+    neo_custom:filtered_gene_count 1650 ;
+    neo_custom:total_gene_count 7566 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002420 a FBcv:0009003 ;
+    rdfs:label "ganglion mother cell cluster 43 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 487 ;
+    neo_custom:filtered_gene_count 2049 ;
+    neo_custom:total_gene_count 7616 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00005149 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002421 a FBcv:0009003 ;
+    rdfs:label "glial cell cluster 44 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 477 ;
+    neo_custom:filtered_gene_count 2606 ;
+    neo_custom:total_gene_count 8052 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00001251 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002422 a FBcv:0009003 ;
+    rdfs:label "glial cell cluster 45 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 468 ;
+    neo_custom:filtered_gene_count 3203 ;
+    neo_custom:total_gene_count 8282 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00001251 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002423 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 46 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 445 ;
+    neo_custom:filtered_gene_count 1644 ;
+    neo_custom:total_gene_count 7539 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002424 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 47 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 444 ;
+    neo_custom:filtered_gene_count 1724 ;
+    neo_custom:total_gene_count 7569 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002425 a FBcv:0009003 ;
+    rdfs:label "immature T4/T5 cluster 48 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 435 ;
+    neo_custom:filtered_gene_count 1954 ;
+    neo_custom:total_gene_count 7726 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00059279 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002426 a FBcv:0009003 ;
+    rdfs:label "lamina wide-field neuron cluster 49 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 417 ;
+    neo_custom:filtered_gene_count 3148 ;
+    neo_custom:total_gene_count 8208 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053540 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002427 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 52 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 399 ;
+    neo_custom:filtered_gene_count 1827 ;
+    neo_custom:total_gene_count 7526 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002428 a FBcv:0009003 ;
+    rdfs:label "Mi1 neuron cluster 53 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 391 ;
+    neo_custom:filtered_gene_count 1786 ;
+    neo_custom:total_gene_count 7485 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00052317 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002429 a FBcv:0009003 ;
+    rdfs:label "Dm8/Dm11 neuron cluster 54 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 385 ;
+    neo_custom:filtered_gene_count 1664 ;
+    neo_custom:total_gene_count 7498 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053272 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002430 a FBcv:0009003 ;
+    rdfs:label "T2/T2a/T3 neuron cluster 55 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 385 ;
+    neo_custom:filtered_gene_count 2114 ;
+    neo_custom:total_gene_count 7676 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00059279 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002431 a FBcv:0009003 ;
+    rdfs:label "glial cell cluster 56 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 379 ;
+    neo_custom:filtered_gene_count 1903 ;
+    neo_custom:total_gene_count 7942 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00001251 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002432 a FBcv:0009003 ;
+    rdfs:label "lamina precursor cell cluster 57 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 371 ;
+    neo_custom:filtered_gene_count 3845 ;
+    neo_custom:total_gene_count 7972 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00001942 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002433 a FBcv:0009003 ;
+    rdfs:label "ganglion mother cell cluster 58 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 347 ;
+    neo_custom:filtered_gene_count 3157 ;
+    neo_custom:total_gene_count 7758 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00005149 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002434 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 59 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 337 ;
+    neo_custom:filtered_gene_count 1932 ;
+    neo_custom:total_gene_count 7574 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002435 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 60 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 334 ;
+    neo_custom:filtered_gene_count 1643 ;
+    neo_custom:total_gene_count 7361 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002436 a FBcv:0009003 ;
+    rdfs:label "neuroblasts cluster 61 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 309 ;
+    neo_custom:filtered_gene_count 5181 ;
+    neo_custom:total_gene_count 8347 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00052344 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002437 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 62 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 301 ;
+    neo_custom:filtered_gene_count 1653 ;
+    neo_custom:total_gene_count 7263 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002438 a FBcv:0009003 ;
+    rdfs:label "glial cell cluster 63 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 301 ;
+    neo_custom:filtered_gene_count 4190 ;
+    neo_custom:total_gene_count 8203 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00001251 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002439 a FBcv:0009003 ;
+    rdfs:label "lamina neuron cluster 65 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 285 ;
+    neo_custom:filtered_gene_count 3430 ;
+    neo_custom:total_gene_count 8080 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053355 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002440 a FBcv:0009003 ;
+    rdfs:label "neuroepithelium cluster 66 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 284 ;
+    neo_custom:filtered_gene_count 5216 ;
+    neo_custom:total_gene_count 8260 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00111738 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002441 a FBcv:0009003 ;
+    rdfs:label "glial cell cluster 67 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 279 ;
+    neo_custom:filtered_gene_count 3199 ;
+    neo_custom:total_gene_count 8067 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00001251 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002442 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 68 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 276 ;
+    neo_custom:filtered_gene_count 2351 ;
+    neo_custom:total_gene_count 7538 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002443 a FBcv:0009003 ;
+    rdfs:label "ganglion mother cell cluster 69 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 275 ;
+    neo_custom:filtered_gene_count 1887 ;
+    neo_custom:total_gene_count 7136 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00005149 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002444 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 70 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 275 ;
+    neo_custom:filtered_gene_count 2351 ;
+    neo_custom:total_gene_count 7504 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002445 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 71 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 274 ;
+    neo_custom:filtered_gene_count 1829 ;
+    neo_custom:total_gene_count 7437 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002446 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 72 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 262 ;
+    neo_custom:filtered_gene_count 1727 ;
+    neo_custom:total_gene_count 7170 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002447 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 73 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 259 ;
+    neo_custom:filtered_gene_count 2899 ;
+    neo_custom:total_gene_count 7806 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002448 a FBcv:0009003 ;
+    rdfs:label "neuroblasts cluster 74 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 257 ;
+    neo_custom:filtered_gene_count 4224 ;
+    neo_custom:total_gene_count 8092 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00052344 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002449 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 75 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 234 ;
+    neo_custom:filtered_gene_count 3288 ;
+    neo_custom:total_gene_count 7749 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002450 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 76 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 199 ;
+    neo_custom:filtered_gene_count 2522 ;
+    neo_custom:total_gene_count 7385 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002451 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 78 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 184 ;
+    neo_custom:filtered_gene_count 2029 ;
+    neo_custom:total_gene_count 6963 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002452 a FBcv:0009003 ;
+    rdfs:label "lobula columnar neuron cluster 80 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 164 ;
+    neo_custom:filtered_gene_count 2991 ;
+    neo_custom:total_gene_count 7456 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053273 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002453 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 81 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 159 ;
+    neo_custom:filtered_gene_count 2683 ;
+    neo_custom:total_gene_count 7244 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002454 a FBcv:0009003 ;
+    rdfs:label "Lai/Dm9 neuron cluster 82 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 154 ;
+    neo_custom:filtered_gene_count 2577 ;
+    neo_custom:total_gene_count 7140 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053540 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002455 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 84 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 125 ;
+    neo_custom:filtered_gene_count 2864 ;
+    neo_custom:total_gene_count 7219 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002456 a FBcv:0009003 ;
+    rdfs:label "glial cell cluster 85 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 120 ;
+    neo_custom:filtered_gene_count 3812 ;
+    neo_custom:total_gene_count 7919 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00001251 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002457 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 86 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 119 ;
+    neo_custom:filtered_gene_count 2427 ;
+    neo_custom:total_gene_count 6912 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002458 a FBcv:0009003 ;
+    rdfs:label "glial cell cluster 87 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 107 ;
+    neo_custom:filtered_gene_count 5094 ;
+    neo_custom:total_gene_count 7569 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00001251 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002459 a FBcv:0009003 ;
+    rdfs:label "glial cell cluster 91 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 65 ;
+    neo_custom:filtered_gene_count 1043 ;
+    neo_custom:total_gene_count 6579 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00001251 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002460 a FBcv:0009003 ;
+    rdfs:label "medulla neuron cluster 94 (Konstantinides 2022 L3 optic lobe clusters) (Konstantinides 2022)" ;
+    neo_custom:cell_count 37 ;
+    neo_custom:filtered_gene_count 2713 ;
+    neo_custom:total_gene_count 6199 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002385 ;
+    RO:0002473 FBbt:00053539 ;
+    dcterms:source VFBseq:00002364 .
+
+FlyBase:FBrf0253187 a FBcv:0000212 ;
+    neo_property:nodeLabel "pub" .
+
+VFBseq:00002366 a FBcv:0003025 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 1, 10x library (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002365 ;
+    dcterms:source VFBseq:00002364 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM5100583",
+        "SAMN18028258",
+        "SRX10151332" .
+
+VFBseq:00002368 a FBcv:0003025 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 10, 10x library (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002367 ;
+    dcterms:source VFBseq:00002364 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM5100592",
+        "SAMN18028248",
+        "SRX10151341" .
+
+VFBseq:00002370 a FBcv:0003025 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 2, 10x library (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002369 ;
+    dcterms:source VFBseq:00002364 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM5100584",
+        "SAMN18028257",
+        "SRX10151333" .
+
+VFBseq:00002372 a FBcv:0003025 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 3, 10x library (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002371 ;
+    dcterms:source VFBseq:00002364 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM5100585",
+        "SAMN18028256",
+        "SRX10151334" .
+
+VFBseq:00002374 a FBcv:0003025 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 4, 10x library (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002373 ;
+    dcterms:source VFBseq:00002364 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM5100586",
+        "SAMN18028255",
+        "SRX10151335" .
+
+VFBseq:00002376 a FBcv:0003025 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 5, 10x library (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002375 ;
+    dcterms:source VFBseq:00002364 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM5100587",
+        "SAMN18028254",
+        "SRX10151336" .
+
+VFBseq:00002378 a FBcv:0003025 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 6, 10x library (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002377 ;
+    dcterms:source VFBseq:00002364 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM5100588",
+        "SAMN18028253",
+        "SRX10151337" .
+
+VFBseq:00002380 a FBcv:0003025 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 7, 10x library (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002379 ;
+    dcterms:source VFBseq:00002364 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM5100589",
+        "SAMN18028251",
+        "SRX10151338" .
+
+VFBseq:00002382 a FBcv:0003025 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 8, 10x library (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002381 ;
+    dcterms:source VFBseq:00002364 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM5100590",
+        "SAMN18028250",
+        "SRX10151339" .
+
+VFBseq:00002384 a FBcv:0003025 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 9, 10x library (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002383 ;
+    dcterms:source VFBseq:00002364 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM5100591",
+        "SAMN18028249",
+        "SRX10151340" .
+
+VFBseq:00002365 a FBcv:0003024 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 1 (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00001930 ;
+    RO:0002352 VFBseq:00002366 ;
+    RO:0002490 FBdv:00005341 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002367 a FBcv:0003024 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 10 (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00001930 ;
+    RO:0002352 VFBseq:00002368 ;
+    RO:0002490 FBdv:00005341 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002369 a FBcv:0003024 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 2 (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00001930 ;
+    RO:0002352 VFBseq:00002370 ;
+    RO:0002490 FBdv:00005341 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002371 a FBcv:0003024 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 3 (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00001930 ;
+    RO:0002352 VFBseq:00002372 ;
+    RO:0002490 FBdv:00005341 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002373 a FBcv:0003024 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 4 (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00001930 ;
+    RO:0002352 VFBseq:00002374 ;
+    RO:0002490 FBdv:00005341 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002375 a FBcv:0003024 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 5 (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00001930 ;
+    RO:0002352 VFBseq:00002376 ;
+    RO:0002490 FBdv:00005341 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002377 a FBcv:0003024 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 6 (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00001930 ;
+    RO:0002352 VFBseq:00002378 ;
+    RO:0002490 FBdv:00005341 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002379 a FBcv:0003024 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 7 (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00001930 ;
+    RO:0002352 VFBseq:00002380 ;
+    RO:0002490 FBdv:00005341 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002381 a FBcv:0003024 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 8 (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00001930 ;
+    RO:0002352 VFBseq:00002382 ;
+    RO:0002490 FBdv:00005341 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002383 a FBcv:0003024 ;
+    rdfs:label "larval optic lobe, wandering third instar larva, rep 9 (Konstantinides 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00001930 ;
+    RO:0002352 VFBseq:00002384 ;
+    RO:0002490 FBdv:00005341 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002385 a FBcv:0009002 ;
+    rdfs:label "Konstantinides 2022 L3 optic lobe clusters" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002365,
+        VFBseq:00002367,
+        VFBseq:00002369,
+        VFBseq:00002371,
+        VFBseq:00002373,
+        VFBseq:00002375,
+        VFBseq:00002377,
+        VFBseq:00002379,
+        VFBseq:00002381,
+        VFBseq:00002383 ;
+    dcterms:source VFBseq:00002364 .
+
+VFBseq:00002364 a FBcv:0003023 ;
+    rdfs:label "scRNAseq data from Konstantinides (2022)" ;
+    neo_custom:accession "GSE167266" ;
+    neo_custom:filtered_gene_count 7154 ;
+    neo_custom:total_gene_count 10698 ;
+    neo_property:nodeLabel "DataSet" ;
+    IAO:0000115 "A complete temporal transcription factor series in the fly visual system" ;
+    OBI:0000312 FBcv:0009000 ;
+    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references FlyBase:FBrf0253187 ;
+    oboInOwl:hasDbXref vfb:GEO .
+

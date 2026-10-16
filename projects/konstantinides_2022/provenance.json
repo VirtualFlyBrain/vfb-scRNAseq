@@ -1,0 +1,451 @@
+{
+  "project": "konstantinides_2022",
+  "created_at": "2026-10-16",
+  "updated_at": "2026-10-16",
+  "summary": "Konstantinides et al. 2022 (Nature), the wandering third instar larval optic lobe atlas, rebuilt from GEO GSE167266 and the authors' Seurat object, replacing the old FlyBase/SCEA load FBlc0006404 (14 clusters merged by type) with fresh VFBseq ids. Single-cell 10x data from male and female Canton-S optic lobes: 10 Samples / Assays. One Clustering, the authors' 95 L3 clusters (Seurat resolution 2), typed from the authors' labels as given to the Single Cell Expression Atlas (E-GEOD-167266): 75 mapped to FBbt (immature neuron terms, larval progenitor terms) and loaded, 20 held. Summary expression as CPM from the authors' raw counts (11,552 genes x 49,893 cells; 186,146 cluster x gene rows with extent > 0.2).",
+  "decisions": [
+    {
+      "date": "2026-10-08",
+      "by": "curator",
+      "decision": "Map to cell-level FBbt terms only (a tissue or organ author term maps to its cell-level equivalent, else the type is held)."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Clusters with no FBbt term are held: listed in mapping.tsv with a hold_reason but not loaded (no VFBseq id, entity or expression rows). Their cells still count towards the Dataset's gene counts."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Summary expression is computed as CPM for every dataset."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Narrow a generic type by the dissected tissue only where the tissue makes the tissue-specific FBbt term exact; hold clusters that could only be typed as cell or neuron (or stage-specific versions); load glia under a glial-cell term."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Replace the old FlyBase/SCEA load FBlc0006404 (SCEA E-GEOD-167266, 14 clusters merged by type) with fresh VFBseq ids; its FBbt assignments are a cross-check only. Licence CC-BY-4.0."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "One Clustering, the authors' L3 clusters (integrated_snn_res.2, L3_0-L3_94), one Cluster per L3 cluster. The Özel 2021 P15 cells in the authors' object are not part of the L3 clustering and are not loaded or reused here."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Type the L3 clusters from the authors' labels as given to SCEA ('inferred cell type - authors labels', numbered by L3 cluster), since the paper and figures name only a few clusters."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Load the 33 'medulla neuron' clusters as immature adult optic lobe neuron (broad); hold the 14 'central brain neuron' clusters (untyped: could only be typed as neuron), 'apoptotic cell' L3_41 (artefact) and 'C/T cell progenitor' L3_15 (no term: not described further in the paper; inner optic anlage neuroblast would commit to 'neuroblast'; no request)."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Map the 'neuroblasts' clusters to optic neuroblast, not larval optic neuroblast: the paper does not say whether they delaminated in the embryo or the larva."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "pipeline",
+      "decision": "Samples from GEO: each GSM is one sample with one 10x library (paper: 10 libraries, biological replicates). GEO records no age, so the paper's (sample_build.age): wandering third instar larval stage; tissue embryonic/larval optic lobe (labels 'larval optic lobe'); pooled sex (unset); no stock number for Canton-S."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "pipeline",
+      "decision": "The authors' Seurat object is read with base R and exported once (export_seurat.R: cell metadata of all cells, raw counts of the L3 cells); build_clusters.py matches the SCEA per-cell author labels to the L3 cells by library (BioSample -> GSM 'rep n' -> Lib<n>) and barcode and types each cluster by its majority label (every cluster >= 90% one label). Unlabelled clusters ('unannonated', sic, and L3_0, not in SCEA) held as untyped."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "pipeline",
+      "decision": "Type mappings once per author type (21 types) by map-clusters-to-fbbt subagents, reusing the Özel immature choices; wandering L3, so immature neuron terms ('immature X', else the immature common parent, broad) and larval progenitor terms. The grouped T2/T2a/T3 cluster maps to immature T neuron and does not wait on FBbt #2216."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "pipeline",
+      "decision": "Expression from the raw UMI counts as CPM over each cell's own counts; level the mean CPM over expressing cells, extent the fraction expressing, rows kept with extent > 0.2; gene symbols mapped to current FlyBase genes by symbol (gene_ids_from the other projects' inputs), 31 ambiguous or split symbols dropped."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "All 75 mapped clusters reviewed by the curator (mapping.tsv `reviewed`); held clusters are not reviewed, as they are not loaded."
+    }
+  ],
+  "checks": [
+    {
+      "date": "2026-10-16",
+      "check": "verify_mappings.py: every FBbt term in the mappings looked up in OLS (FBbt 2026-10-01).",
+      "result": "16 terms current, not obsolete, labels match."
+    },
+    {
+      "date": "2026-10-16",
+      "check": "FBbt, FBdv and FBcv terms on the Samples, Assays and Dataset looked up in OLS.",
+      "result": "All 4 terms current (embryonic/larval optic lobe, wandering third instar larval stage, single-cell RNA-Seq, 10x sequencing)."
+    },
+    {
+      "date": "2026-10-16",
+      "check": "Mapping definitions compared with the FBbt 2026-10-01 release text.",
+      "result": "All verbatim."
+    },
+    {
+      "date": "2026-10-16",
+      "check": "SCEA author labels against the authors' L3 clusters (barcode match) and the paper.",
+      "result": "45,392 of 49,893 L3 cells labelled; every labelled cluster >= 90% one label; consistent with the paper (L3_23 immature Mi1 and L3_53 Mi1, ED Fig 9) and the authors' scripts (cluster 9 neuroblasts; 1, 10, 19 GMCs)."
+    },
+    {
+      "date": "2026-10-16",
+      "check": "Cross-check against the old load FBlc0006404 (VFB production), by author label.",
+      "result": "Agrees for GMC, neuroepithelium, neuroblasts (optic neuroblast), LPC, Mi1, T1, Tm9, Tm1/2/4/6, Dm8/11, C2/C3, LC and the T neuron groups; differs where the old load typed the 'medulla neuron' clusters as medulla forming neuroblast and the 'lamina neuron' cluster as lamina forming neuroblast, and glia (CNS glial cell, here larval glial cell); the old load left out central brain neurons, Lai/Dm9 and the lamina wide-field neuron."
+    },
+    {
+      "date": "2026-10-16",
+      "check": "Marker spot checks in the expression output.",
+      "result": "repo in the glia; dpn in NE / NB / GMC; bsh in the two Mi1 clusters (and the lamina neuron cluster); acj6 in T4/T5 and the lobula plate types."
+    },
+    {
+      "date": "2026-10-16",
+      "check": "Export and cell numbers against GEO and the paper.",
+      "result": "49,893 L3 cells in 10 libraries, as on GEO; 69,119 cells in the object (19,226 Özel P15)."
+    }
+  ],
+  "people": [
+    {
+      "id": "ORCID:0000-0002-1373-1705",
+      "label": "Clare Pilgrim",
+      "role": "curator",
+      "username": "Clare72"
+    }
+  ],
+  "pipeline": {
+    "id": "vfb-scrnaseq",
+    "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
+    "version": "0.0.0",
+    "commit": "4eb0872",
+    "uncommitted_changes": true
+  },
+  "ontologies": [
+    {
+      "id": "FBbt",
+      "label": "Drosophila gross anatomy ontology",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBdv",
+      "label": "Drosophila developmental ontology",
+      "version": "2026-09-30",
+      "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-09-30/fbdv.owl",
+      "accessed_via": "OLS4 API; local fbdv.obo in .cache (stage definitions)",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBcv",
+      "label": "FlyBase controlled vocabulary",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-10-01/fbcv.owl",
+      "accessed_via": "OLS4 API",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "accessed_at": "2026-10-16"
+    }
+  ],
+  "data_sources": [
+    {
+      "id": "10.1038/s41586-022-04564-w",
+      "type": "publication",
+      "label": "A complete temporal transcription factor series in the fly visual system",
+      "xrefs": [
+        "PMID:35388222",
+        "PMCID:PMC9074256",
+        "FlyBase:FBrf0253187"
+      ],
+      "description": "Konstantinides et al. 2022, Nature. Full text, Supplementary Table 1 (P15 medulla types; not a cluster key) and figures read for the cluster typing.",
+      "url": "https://doi.org/10.1038/s41586-022-04564-w",
+      "files": [
+        {
+          "path": "supp/PMC9074256.jats.xml",
+          "description": "JATS full text, NCBI efetch (db=pmc).",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=PMC9074256",
+          "sha256": "c1a93a3716e86bf1cef820d85ee453c505b579d417196c2f1d848f9a90b0f32b",
+          "bytes": 158035,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "supp/41586_2022_4564_MOESM3_ESM.xlsx",
+          "description": "Supplementary Table 1 (P15 medulla cell types: tTFs, temporal windows, Notch status), Nature ESM.",
+          "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-022-04564-w/MediaObjects/41586_2022_4564_MOESM3_ESM.xlsx",
+          "sha256": "c6dbe9f5328b8ccf31e148b68bab316d237809fa0a56792aa2c5096dee510c06",
+          "bytes": 21227,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "supp/Fig1_main.png",
+          "description": "Figure 1 (UMAP regions and labelled neuron groups).",
+          "url": "https://www.nature.com/articles/s41586-022-04564-w/figures/1",
+          "sha256": "1c1b8b54023bacf1667c1b7c29ab99f762b692d50240bbf3c3f1affba95dd971",
+          "bytes": 1151517,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "supp/Fig6.jpg",
+          "description": "Extended Data Fig 2 (cell type markers, neuropils).",
+          "url": "https://media.springernature.com/full/springer-static/esm/art%3A10.1038%2Fs41586-022-04564-w/MediaObjects/41586_2022_4564_Fig6_ESM.jpg",
+          "sha256": "7dc99efbcf264fcbb8e5cc3553fbbdf1662880331a15d2835f68dcadae0cd7be",
+          "bytes": 506613,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "supp/Fig12.jpg",
+          "description": "Extended Data Fig 8 (medulla clusters tree).",
+          "url": "https://media.springernature.com/full/springer-static/esm/art%3A10.1038%2Fs41586-022-04564-w/MediaObjects/41586_2022_4564_Fig12_ESM.jpg",
+          "sha256": "71dd64d3ab2d63fc94c4b137fb450017cc382993dd45e1b775e7462ab562d483",
+          "bytes": 779131,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "supp/Fig13.jpg",
+          "description": "Extended Data Fig 9 (Mi1 clusters L3_23 / L3_53).",
+          "url": "https://media.springernature.com/full/springer-static/esm/art%3A10.1038%2Fs41586-022-04564-w/MediaObjects/41586_2022_4564_Fig13_ESM.jpg",
+          "sha256": "8de9c2f80f05baa880f4ec7478adada3d2f6777639294ddcc3428a18ba74c871",
+          "bytes": 184544,
+          "accessed_at": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "GSE167266",
+      "type": "dataset",
+      "label": "A comprehensive series of temporal transcription factors in the fly visual system",
+      "xrefs": [
+        "BioProject:PRJNA704024",
+        "SRA:SRP307551"
+      ],
+      "description": "GEO series: 10 single-cell 10x libraries from wandering L3 optic lobes. Sample metadata read live (SOFT); the authors' Seurat object (L3 + Özel P15 cells) is its supplementary file (checksum as downloaded and decompressed).",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE167266",
+      "accessed_at": "2026-10-16",
+      "files": [
+        {
+          "path": "konstantinides/OL.L3_P15_merged.rds",
+          "description": "The authors' Seurat object (decompressed).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE167nnn/GSE167266/suppl/GSE167266_OL.L3_P15_merged.rds.gz",
+          "sha256": "cbe93a6f3197755d6de7fee7c8bbce3ecbaf1f466d15184083f31eb217bd4430",
+          "bytes": 1469974896,
+          "accessed_at": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "E-GEOD-167266",
+      "type": "dataset",
+      "label": "A comprehensive series of temporal transcription factors in the fly visual system (SCEA)",
+      "xrefs": [
+        "GEO:GSE167266"
+      ],
+      "description": "EMBL-EBI Single Cell Expression Atlas experiment: its experiment design gives each cell the authors' label ('inferred cell type - authors labels'), the source of the cluster types; its SDRF maps BioSamples to the GEO libraries.",
+      "url": "https://www.ebi.ac.uk/gxa/sc/experiments/E-GEOD-167266",
+      "accessed_at": "2026-10-16",
+      "files": [
+        {
+          "path": "konstantinides/scea/design.tsv",
+          "description": "Experiment design (per-cell labels).",
+          "url": "https://www.ebi.ac.uk/gxa/sc/experiment/E-GEOD-167266/download?fileType=experiment-design&accessKey=",
+          "sha256": "a71d7f9d5398192b45ff9c62d6cc4e5061a8ec61493cf4e9520290c9605af8cd",
+          "bytes": 19410301,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "konstantinides/scea/E-GEOD-167266.sdrf.txt",
+          "description": "MAGE-TAB SDRF (BioSample to GSM title).",
+          "url": "https://www.ebi.ac.uk/gxa/sc/experiment/E-GEOD-167266/download/zip?fileType=experiment-metadata&accessKey=",
+          "sha256": "21dd70dc95d370f7231a4a8d3903c83c1906fd6a0d4729c9e54ed6b1e4116075",
+          "bytes": 65556,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "konstantinides/scea/E-GEOD-167266.idf.txt",
+          "description": "MAGE-TAB IDF.",
+          "url": "https://www.ebi.ac.uk/gxa/sc/experiment/E-GEOD-167266/download/zip?fileType=experiment-metadata&accessKey=",
+          "sha256": "c7818cfa1c60b33fc4ed7d5b5e205635b62f1d893dbbb367eaa746e9d1bfc7c8",
+          "bytes": 5734,
+          "accessed_at": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "NikosKonst/larva_scSeq2022",
+      "type": "author_files",
+      "label": "The authors' analysis scripts (GitHub)",
+      "description": "R scripts of the paper's analyses: the neuropil classes (3_Figure1.R), the NE / NB / GMC notes (1a_subsetting_NE_and_progenitors.R) and the Mi1 clusters (6_Figure6_S10.R); read for the cluster typing (at commit 375e7da).",
+      "url": "https://github.com/NikosKonst/larva_scSeq2022",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "ozel_2021",
+      "type": "project",
+      "label": "Özel 2021 (this repo)",
+      "description": "Its immature type mappings reused for the same types; its gene id map (with Kurmangaliyev 2020, Davie 2018, FCA 10x and AFCA) supplies FBgn ids for symbols (gene_ids_from).",
+      "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq/tree/main/projects/ozel_2021",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBlc0006404",
+      "type": "previous_load",
+      "label": "scRNAseq_2022_Konstantinides",
+      "description": "The old FlyBase/SCEA load this project replaces (SCEA E-GEOD-167266; 14 clusters merged by type, read from VFB production); used only as a mapping cross-check.",
+      "url": "https://virtualflybrain.org/reports/FBlc0006404",
+      "accessed_at": "2026-10-16"
+    }
+  ],
+  "software": [
+    {
+      "id": "claude-code",
+      "type": "tool",
+      "label": "Claude Code",
+      "version": "2.1.300",
+      "description": "Agentic CLI that ran the session (orchestrator) and its subagents, stages 1-5."
+    },
+    {
+      "id": "r",
+      "type": "language",
+      "label": "R",
+      "version": "4.6.1",
+      "description": "Reads the authors' Seurat object (base R, Homebrew; Seurat not installed) for export_seurat.R."
+    },
+    {
+      "id": "r-matrix",
+      "type": "library",
+      "label": "Matrix (R)",
+      "version": "1.7.5",
+      "description": "dgCMatrix counts and MatrixMarket export."
+    },
+    {
+      "id": "ols4",
+      "type": "service",
+      "label": "OLS4 (Ontology Lookup Service)",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "accessed_at": "2026-10-16",
+      "description": "FBbt / FBdv / FBcv lookup during mapping (OLS MCP) and term verification."
+    },
+    {
+      "id": "vfb-pdb",
+      "type": "service",
+      "label": "VFB production (neo4j)",
+      "url": "https://pdb.virtualflybrain.org",
+      "accessed_at": "2026-10-16",
+      "description": "Publication FBrf0253187 resolved by PMID (vfb_scrnaseq.pub); the old load FBlc0006404 read for the cross-check."
+    },
+    {
+      "id": "flybase-chado",
+      "type": "service",
+      "label": "FlyBase Chado",
+      "version": "FB2026_03 (data last modified 2026-08-29)",
+      "url": "https://chado.flybase.org",
+      "accessed_at": "2026-10-16",
+      "description": "Gene symbols mapped to current FlyBase genes (update_gene_ids.py), incl. synonym publication counts for ambiguous old symbols."
+    },
+    {
+      "id": "ncbi-geo",
+      "type": "service",
+      "label": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/",
+      "accessed_at": "2026-10-16",
+      "description": "Series and Sample SOFT metadata read by ingest.fetch_series (build_samples_from_geo.py)."
+    },
+    {
+      "id": "scea",
+      "type": "service",
+      "label": "EMBL-EBI Single Cell Expression Atlas",
+      "url": "https://www.ebi.ac.uk/gxa/sc/experiments/E-GEOD-167266",
+      "accessed_at": "2026-10-16",
+      "description": "Experiment design (per-cell 'inferred cell type - authors labels') and MAGE-TAB of E-GEOD-167266, fetched by build_clusters.py."
+    },
+    {
+      "id": "python",
+      "type": "language",
+      "label": "Python",
+      "version": "3.14.3",
+      "description": "Pipeline environment (uv-managed)."
+    },
+    {
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
+      "version": "2.5.1"
+    },
+    {
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
+      "version": "3.0.5"
+    },
+    {
+      "id": "pyyaml",
+      "type": "library",
+      "label": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
+      "version": "1.11.1",
+      "description": "linkml-validate and linkml-convert (flat RDF)."
+    },
+    {
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
+      "version": "1.11.1"
+    },
+    {
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
+      "version": "0.5.0",
+      "description": "Metadata OWL."
+    },
+    {
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
+      "version": "1.9.11",
+      "description": "OFN to OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "id": "psql",
+      "type": "tool",
+      "label": "psql",
+      "version": "14.15",
+      "description": "FlyBase Chado queries."
+    }
+  ],
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "role": "orchestrator",
+      "label": "Claude Opus 5.5",
+      "provider": "Anthropic",
+      "description": "Main Claude Code session: scoping (paper, figures, authors' scripts, the old load and SCEA), R export, sample and cluster builds, checks and corrections of agent output (T2/T2a/T3 new-term flag), expression and builds."
+    },
+    {
+      "id": "claude-sonnet",
+      "role": "mapping-llm",
+      "label": "Claude Sonnet (agent default)",
+      "provider": "Anthropic",
+      "description": "map-clusters-to-fbbt subagents (3 agents, 21 type mappings), per the agent frontmatter (model: sonnet); no per-type reports (a shared context file of the authors' evidence and the curator decisions)."
+    }
+  ]
+}

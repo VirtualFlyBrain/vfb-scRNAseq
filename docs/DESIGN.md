@@ -1239,4 +1239,7 @@ clusters merged by type) with fresh VFBseq ids; licence CC-BY-4.0. Curator decis
   counted in the Dataset gene counts (total 10,698, filtered 7,154). The authors' marker
   genes check out (repo in the glia, dpn in NE/NB/GMC, bsh in the two Mi1 clusters, acj6
   in T4/T5 and the lobula plate types).
-
+- **Build (stage 5):** `build_rdf.py`: 1 Dataset, 10 Samples, 10 Assays, 1 Clustering
+  (linked to the 10 samples, `sample_age`), 75 Clusters; publication FBrf0253187 from VFB
+  production; `verify_mappings.py` OK (16 FBbt terms); the 4 FBbt / FBdv / FBcv terms on
+  Samples, Assays and the Dataset current in OLS. Recorded in `provenance.json`.
