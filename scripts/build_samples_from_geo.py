@@ -200,6 +200,9 @@ def main() -> None:
             "tissue_raw": gsm0.characteristic("tissue"),   # original GEO characteristics
             "age_raw": age_raw,
             "stock": sample_stock(p0, sb),                # FlyBase FBst ref(s)
+            # FlyBase genetic entities in the animals' genotype (crosses: e.g. the split-GAL4
+            # combination FBco), common to every sample
+            "genotype_includes": sb.get("genotype_includes"),
             "sex": sex,
             "stage": tp.get("stage"),
             # `sample_build.tissue_map` (keyed on the GEO tissue characteristic) when
@@ -212,6 +215,8 @@ def main() -> None:
         })
         if samples_out[-1]["set"] is None:
             del samples_out[-1]["set"]                 # no strain/genotype group in the titles
+        if samples_out[-1]["genotype_includes"] is None:
+            del samples_out[-1]["genotype_includes"]   # recorded only where curated
 
     clusterings_out = []
     # entries are a subset name, or {id, name} for a described clustering

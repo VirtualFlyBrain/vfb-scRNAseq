@@ -11,6 +11,7 @@ prefixes:
   BAO: http://www.bioassayontology.org/bao#BAO_
   RO: http://purl.obolibrary.org/obo/RO_
   BFO: http://purl.obolibrary.org/obo/BFO_
+  GENO: http://purl.obolibrary.org/obo/GENO_
   linkml: https://w3id.org/linkml/
   FlyBase: http://flybase.org/reports/
   rdfs: http://www.w3.org/2000/01/rdf-schema#
@@ -108,6 +109,7 @@ classes:
       - associated_dataset
       - sex
       - stock
+      - genotype_includes
       - dbxref
       - neo_label
 
@@ -278,6 +280,20 @@ slots:
     multivalued: true
     annotations:
       owl.fstring: ObjectPropertyAssertion( BAO:0095000 {id} {V} )
+  genotype_includes:
+    slot_uri: GENO:0000222
+    description: >-
+      FlyBase genetic entities in the genotype of the animals the Sample was taken
+      from (FlyBase:FBco / FBal / FBtp / FBti), via GENO 'has_genotype' (GENO:0000222,
+      which covers organism-derived entities such as biospecimens and any genetic
+      variation component of a genotype). For samples from crosses (e.g. a split-GAL4
+      driver x effector), where a single stock is only part of the genotype; `stock` is
+      used for samples taken from a defined stock or strain. The entities are classes
+      in VFB, so the link is a class expression (has_genotype some X).
+    range: uriorcurie
+    multivalued: true
+    annotations:
+      owl.fstring: ClassAssertion( ObjectSomeValuesFrom( GENO:0000222 {V} ) {id} )
   dbxref:
     slot_uri: oboInOwl:hasDbXref
     description: Cross-reference accession(s) for the entity (e.g. GEO GSM, SRA SRX/SRP, BioSample SAMN). Not an IRI for the entity.
