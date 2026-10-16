@@ -94,3 +94,20 @@ type_mapping:
   clustering_dirs:
     24h: immature
     36h: immature
+
+# Summary expression (scripts/build_expression.py) from the GEO filtered 10x matrices
+# (raw UMI counts), the ten libraries side by side (combine_matrices.py; cells named
+# <GSM title>_<barcode>), cell -> cluster from build_clusters.py's memberships (the
+# authors' labelled cells only), as CPM over each cell's own counts. Features are
+# Ensembl 97 FBgn ids (plus the GFP / GAL4 transgenes, which have none), mapped to
+# current FlyBase genes.
+expression:
+  matrix_file: hormann/combined/matrix.mtx.gz
+  features_file: hormann/combined/features.tsv.gz
+  barcodes_file: hormann/combined/barcodes.tsv.gz
+  membership_file: hormann/memberships.tsv.gz
+  normalisation: CPM
+  extent_cutoff: 0.2
+  hide_in_terminfo: "true"
+  gzip_tsv: true
+  gene_id_map: gene_id_map.tsv
