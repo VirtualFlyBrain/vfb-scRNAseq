@@ -196,6 +196,11 @@ below record how each was applied).
   Clusters, even over the same cells. If the source study has not been curated yet,
   the build stops and tells the curator, with the suggestion to curate that study
   first (so the shared Samples/Assays get their ids, labels and metadata there).
+- **Stock for a strain, genetic entities for a cross** (curator decision 2026-10-16).
+  Samples taken from a defined stock or strain link the FlyBase stock (`stock`);
+  samples from a cross (e.g. split-GAL4 > UAS effector) link the genetic entities in the
+  genotype instead (`genotype_includes`, GENO:0000222 has_genotype: FBco / FBal / FBtp /
+  FBti), as a stock would be only part of the genotype. See *Stock*.
 - **Stage belongs on the Sample.** Samples carry their FBdv stage. A Cluster gets a
   `stage` only when the stage is determined from the cluster's own gene expression
   (e.g. a cluster the authors identify as a particular developmental stage) — not
@@ -568,6 +573,20 @@ avoids `RO:0001000` derives_from's strict "source ceases to exist" clause, which
 wrong for a persistent stock. Emitted as an IRI object in flat RDF (`BAO:0095000` →
 FBst IRI) and as `ObjectPropertyAssertion(BAO:0095000 …)` in OWL.
 
+**Genotype (`genotype_includes`).** A stock link fits samples taken from a defined stock
+or strain (Canton-S, w1118, DGRP lines). Samples from a **cross** (e.g. a split-GAL4
+driver x a UAS effector) instead link the FlyBase **genetic entities** in the animals'
+genotype (curator 2026-10-16): the split-GAL4 combination (FBco), and alleles /
+transgenic constructs / insertions (FBal / FBtp / FBti) where the paper identifies them,
+via GENO **`GENO:0000222` has_genotype** ("a relationship that holds between a biological
+entity and some level of genetic variation present in its genome", covering biospecimens
+and any genetic variation component of a genotype). These entities are classes in VFB
+(e.g. FBco0000215 is an *intersectional expression pattern* with `has_hemidriver` edges
+to its FBal hemidrivers), so the link is a class expression:
+`ClassAssertion(ObjectSomeValuesFrom(GENO:0000222 FlyBase:FBco…) <Sample>)`. Config:
+`sample_build.genotype_includes` (common to every sample). The driver's own stock is not
+linked as well: it would be only half the genotype.
+
 ## Expression statistics
 
 Computed **the way FlyBase did** (fuzzy-onions `summarise_expression`; FlyBase SOP)
@@ -841,7 +860,8 @@ VFB until the release files are merged, so ids can still change during review.
    several tissues, clusterings (`sample_tissue_raw` / `sample_age` link a clustering
    to the samples of that tissue / age; the title regex's `set` group is optional;
    `title_stages` for a more specific stage recorded in GSM titles; `tissue_labels` for
-   the tissue shown in Sample labels; `age` for the paper's age when GEO records none); ArrayExpress: also
+   the tissue shown in Sample labels; `age` for the paper's age when GEO records none; `stock` for a stock common to every
+   sample, or `genotype_includes` for the genetic entities of a cross); ArrayExpress: also
    `sample_columns`, `assay_column` / `assay_regex`, `sex_column` / `sex_map`,
    `sdrf_corrections`), `annotation_build` (h5ad obs columns,
    `unannotated_values`), `annotations` (label/class/timepoint
@@ -1243,3 +1263,33 @@ clusters merged by type) with fresh VFBseq ids; licence CC-BY-4.0. Curator decis
   (linked to the 10 samples, `sample_age`), 75 Clusters; publication FBrf0253187 from VFB
   production; `verify_mappings.py` OK (16 FBbt terms); the 4 FBbt / FBdv / FBcv terms on
   Samples, Assays and the Dataset current in OLS. Recorded in `provenance.json`.
+
+## Hörmann 2020 (T4/T5 neurons, pupal development)
+
+Development 2020, PMID 32238425, FBrf0245647; GEO GSE147987 (`hormann_2020`).
+Single-cell 10x of GFP+ T4/T5 neurons FACS-sorted from the brains of
+SS00324-splitGal4 > UAS-mCD8::GFP pupae (male and female), at 24, 36, 48, 60 and 72 h
+APF. Replaces the old FlyBase/SCEA load FBlc0006305 (SCEA E-GEOD-147987; 5 stage
+clusterings x 8 subtypes, all mapped to mature T4a-d / T5a-d) with fresh VFBseq ids;
+licence CC-BY-4.0. Curator decisions 2026-10-16.
+
+- **Data.** GEO has a filtered 10x matrix per library; no cluster labels, and the
+  authors' GitHub (borstlab/TF_code_paper) holds only image-analysis code. The authors'
+  labels are in SCEA E-GEOD-147987 ("inferred cell type - authors labels", ~44K cells,
+  the paper's "~44 K high-quality cells"), e.g. "T4a neuron 0": the subtype the authors
+  assigned the cell's cluster at its stage ("For each developmental stage, we manually
+  assigned clusters ... all eight single cell clusters to four T4 and four T5
+  subtypes"), then a number 0-8 that appears to be the cross-stage integrated clustering
+  (Fig 3D, a check of the per-stage assignment; not loaded).
+- **Scope (curator).** One Clustering per stage, one Cluster per author cluster (stage x
+  subtype: 40). Immature subtype terms at 24 and 36 h APF, mature from 48 h (pharate
+  adult).
+- **Samples (stage 1):** `build_samples_from_geo.py`: 10 Samples / 10 Assays, each GSM one
+  10x library (two replicates per stage). Stages by the Bainbridge & Bownes FBdv
+  definitions (25 C), as for Özel: 24 h *pupal stage P6*, 36 h *P7*, 48 h *pharate adult
+  stage P8*, 60 and 72 h *P9*. Tissue: whole brains were dissected, so *brain* to the pupal
+  stage and *adult brain* from the pharate adult stage (curator); labels show GEO's
+  "T4/T5 neurons" as "FACS-sorted T4/T5 neurons". Pooled sex (unset). Genotype (a cross,
+  so no stock; curator): the split-GAL4 combination SS00324 = FBco0000215
+  (`genotype_includes`, GENO has_genotype); the UAS-mCD8::GFP insertion is not
+  identified in the paper, so not linked. Each stage Clustering links its two samples.
