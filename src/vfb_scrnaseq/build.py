@@ -111,6 +111,8 @@ def build_entities(project: str) -> list[dict]:
             parts = [p for p in (tissue, age) if p]
             if s.get("set"):
                 parts.append(f"{s['set']} rep {s.get('biorep')}" if s.get("biorep") else s["set"])
+            elif s.get("biorep"):
+                parts.append(f"rep {s['biorep']}")
             descr = ", ".join(parts)
         sample_descr[s["vfbseq_id"]] = descr
         rec = {

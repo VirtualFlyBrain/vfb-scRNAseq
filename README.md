@@ -67,6 +67,10 @@ from FlyBase; that authority is being dropped.)
   per author annotation (370 and 237; 335 and 211 with an FBbt term are loaded).
   FBbt mappings are made once per author type and shared. Replaces the old SCEA-based
   loads (FBlc0003846 / 4307 / 4785).
+- `projects/ozel_2021/` — Özel et al. 2021, optic lobe developmental atlas (PMID
+  33149298; [GSE142787](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE142787)):
+  five pupal stages and adult. Replaces the old FlyBase/SCEA load (FBlc0005659). In
+  progress.
 - `projects/lu_2023_afca/` — Aging Fly Cell Atlas, Lu et al. 2023 (PMID 37319212;
   [GSE218661](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE218661)): head and
   body at 30/50/70 days, co-analysed with the FCA's 5-day head/body samples (reused

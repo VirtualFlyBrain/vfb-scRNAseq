@@ -216,3 +216,12 @@ def test_expand_type_mappings_own_dir_aliases_and_held(tmp_path):
     assert got["h_epithelial_cell_head.fbbt_mapping.json"]["best_match"]["fbbt_id"] == "FBbt:00000001"
     assert got["b_cyst_cell.fbbt_mapping.json"]["best_match"]["fbbt_id"] == "FBbt:00000003"  # own first
     assert got["b_cyst_cell.fbbt_mapping.json"]["cluster_label"] == "b_cyst cell"
+
+
+def test_geo_title_regex_without_set_group():
+    mod = _script("build_samples_from_geo")
+    parse = mod.title_parser(r"regex:(?P<timepoint>Adult|P\d+)[_-]?(?P<biorep>[^_-].*?)_scRNAseq")
+    assert parse("P70-5_scRNAseq")["sample_id"] == "P70_5"
+    assert parse("Adult1_scRNAseq")["sample_id"] == "Adult_1"
+    p = parse("Adult_1d_F_3rd_scRNAseq")
+    assert (p["set"], p["timepoint"], p["biorep"]) == (None, "Adult", "1d_F_3rd")
