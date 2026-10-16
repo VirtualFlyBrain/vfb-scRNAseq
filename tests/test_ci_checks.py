@@ -202,3 +202,12 @@ def test_pending_review_issue_opens_revisit_reminder(tmp_path, monkeypatch):
     assert title.startswith("Revisit mappings") and "review adult fat terms" in title
     assert "head_adult fat body" in body and "Requested terms" not in body
     assert json.loads(pend.read_text())[0]["status"] == "released"
+
+
+def test_symbol_majority_tiebreak():
+    mod = _script("update_gene_ids")
+    hits = {"Cha": [("synonym", "FBgn0000303", "ChAT", 41), ("synonym", "FBgn0000302", "cha", 2)],
+            "Cry": [("synonym", "FBgn0005664", "Crys", 6), ("synonym", "FBgn0025680", "cry", 4)]}
+    rows = {r["input_symbol"]: r for r in mod.classify_symbols(["Cha", "Cry"], hits)}
+    assert (rows["Cha"]["status"], rows["Cha"]["current_fbgn"]) == ("synonym", "FBgn0000303")
+    assert rows["Cry"]["status"] == "ambiguous" and rows["Cry"]["current_fbgn"] == ""
