@@ -14,6 +14,9 @@ release, any request whose FBbt issue was closed on or before the release date i
 assumed to be in that release: a reminder issue is opened in this repo listing the
 clusters to re-map (with the new term ids where the requested labels are found in
 the release), and the request is marked `released` so it is reported only once.
+An entry with `"kind": "review"` is an FBbt issue we are waiting on but did not
+request (e.g. a review of a group of terms): its reminder lists the mappings to
+revisit instead of requested terms.
 
 Usage:
     uv run python scripts/check_fbbt_release.py [--force]
@@ -104,6 +107,23 @@ def check_pending(release: dict, dry_run: bool = False) -> bool:
         closed = dt.datetime.fromisoformat(issue["closed_at"].replace("Z", "+00:00"))
         if closed >= release_end:
             print(f"  request {req['fbbt_issue']}: closed {issue['closed_at']}, after FBbt {release['version']}; next release")
+            continue
+        if req.get("kind") == "review":
+            # an FBbt issue we are waiting on (not our term request): revisit mappings
+            lines = [f"FBbt issue {issue['html_url']} ({req.get('topic', 'review')}) was closed on "
+                     f"{issue['closed_at'][:10]}, before FBbt release {release['version']} "
+                     f"({release['version_iri']}).", "", "**Mappings to revisit:**"]
+            lines += [f"- `{proj}`: " + ", ".join(f"`{c}`" for c in clusters)
+                      for proj, clusters in req["clusters"].items()]
+            lines += ["", f"Why: {req.get('reason', '')}".rstrip(),
+                      "", "_Opened automatically by the weekly FBbt release check._"]
+            title = f"Revisit mappings: FBbt {release['version']} closes {req['fbbt_issue']} ({req.get('topic', 'review')})"
+            url = open_issue(title, "\n".join(lines), dry_run)
+            print(f"  review {req['fbbt_issue']}: closed before FBbt {release['version']} -> {url}")
+            if not dry_run:
+                req.update(status="released", fbbt_release=release["version"], reminder_issue=url,
+                           closed_at=issue["closed_at"])
+                changed = True
             continue
         terms = {lab: find_term(lab) for lab in req["labels"]}
         lines = [f"FBbt request {issue['html_url']} was closed on {issue['closed_at'][:10]}"

@@ -1,20 +1,27 @@
 {
   "cluster_label": "head_adult fat body",
-  "working_definition": "Fat cells of the adult fat body (FCA, adult flies, found across many tissues); authors' FBbt term is the tissue adult fat body.",
+  "working_definition": "Fat cells of the adult fat body in the FCA head analysis (adult flies); authors' FBbt term is the tissue adult fat body. In the head, the fat body is the pericerebral fat mass.",
   "searches_performed": [
     "adult fat body",
-    "adult fat cell"
+    "adult fat cell",
+    "adult pericerebral fat cell"
   ],
   "best_match": {
-    "fbbt_term": "adult fat cell",
-    "fbbt_id": "FBbt:00049949",
-    "fbbt_definition": "Fat cell of the adult fat body. These cells are derived from cells of the larval body wall and adepithelial cells associated with imaginal discs (Hoshizaki et al., 1995; Musselman and Kuhnlein, 2018). Fully-differentiated adult fat cells are found from around 3-4 days after eclosion (Aguila et al., 2007). Unlike the larval fat cells, they are diploid (Musselman and Kuhnlein, 2018).",
+    "fbbt_term": "adult pericerebral fat cell",
+    "fbbt_id": "FBbt:00058267",
+    "fbbt_definition": "Any fat cell (FBbt:00046052) that is part of some adult pericerebral fat mass (FBbt:00048409).",
     "match_type": "exact match",
     "skos_mapping": "skos:exactMatch",
     "confidence": "high"
   },
-  "justification": "Authors' term FBbt:00003209 is a tissue; the cell-level equivalent is adult fat cell, the principal cell type of the adult fat body.",
+  "justification": "Authors' term FBbt:00003209 is a tissue; the cell-level equivalent is a fat cell. The cluster comes from the head analysis, and head fat is exactly the pericerebral fat mass, so the tissue-specific term is exact here (curator rule: narrow by dissected tissue only where the tissue implies the term exactly).",
   "other_candidates": [
+    {
+      "fbbt_term": "adult fat cell",
+      "fbbt_id": "FBbt:00049949",
+      "fbbt_definition": "Fat cell of the adult fat body. These cells are derived from cells of the larval body wall and adepithelial cells associated with imaginal discs (Hoshizaki et al., 1995; Musselman and Kuhnlein, 2018). Fully-differentiated adult fat cells are found from around 3-4 days after eclosion (Aguila et al., 2007). Unlike the larval fat cells, they are diploid (Musselman and Kuhnlein, 2018).",
+      "reason_rejected": "Correct but less specific: in the head analysis the fat cells are pericerebral (type-level mapping for 'adult fat body' in other tissues)."
+    },
     {
       "fbbt_term": "adult fat body",
       "fbbt_id": "FBbt:00003209",
@@ -22,7 +29,13 @@
       "reason_rejected": "Authors' tissue term; not a cell term."
     }
   ],
-  "recommendation": "Use adult fat cell (FBbt:00049949).",
+  "recommendation": "Use adult pericerebral fat cell (FBbt:00058267) for the head analysis. Revisit when FBbt issue #2218 (review adult fat terms) is resolved and released.",
   "new_term_needed": false,
-  "verification_needed": false
+  "verification_needed": false,
+  "manual_edit": {
+    "by": "Clare Pilgrim (Clare72)",
+    "date": "2026-10-16",
+    "change": "best_match FBbt:00049949 adult fat cell -> FBbt:00058267 adult pericerebral fat cell (head analysis only)",
+    "reason": "curator: narrow by dissected tissue where exact; head fat is exactly pericerebral"
+  }
 }

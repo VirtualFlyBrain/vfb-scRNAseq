@@ -1,7 +1,7 @@
 {
   "project": "li_2022_fca_10x",
   "created_at": "2026-10-14",
-  "updated_at": "2026-10-15",
+  "updated_at": "2026-10-16",
   "summary": "Fly Cell Atlas 10x (Li et al. 2022, Science), rebuilt from ArrayExpress E-MTAB-10519 and the authors' own per-tissue 10x Stringent AnnData analyses (flycellatlas.org), replacing the old SCEA-based loads FBlc0003846, FBlc0004307 and FBlc0004785 (split by sex); the Smart-seq2 data (E-MTAB-10628) are a separate project, li_2022_fca_ss2. Single-nucleus 10x data from 15 tissues plus whole head and body (61 Samples, 160 Assays). 17 Clusterings, one per author analysis, with one Cluster per author annotation: 370 clusters, 335 mapped to 190 distinct FBbt terms and loaded, 35 held. Summary expression for the loaded Clusters as CPM (16,363 genes x 506,660 cells; 512,215 cluster x gene rows with extent > 0.2).",
   "decisions": [
     {
@@ -83,6 +83,16 @@
       "date": "2026-10-15",
       "by": "curator",
       "decision": "Sample labels gain the authors' sample number (FCA4 ...), as 9 groups of Samples were otherwise alike; Assays are labelled '<Sample>, 10x library <S-index>', with the full library id kept as a dbxref (previously the label was the accession or library id). Ids unchanged."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Narrow by dissected tissue only where the tissue makes the term exact (refines the 2026-10-08 rule): head 'adult fat body' -> adult pericerebral fat cell (head fat is exactly the pericerebral fat mass) and body 'cell body glial cell' -> adult VNC cell body glial cell (cell body glia are CNS-only); recorded as cluster-level curator edits. Head perineurial/subperineurial glia and body fat stay generic (not exact). Reviewed 2026-10-16."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Revisit the fat mappings (adult fat cell, adult pericerebral fat cell) when FBbt issue #2218 (review adult fat terms) is fixed and released; tracked in checks/pending_fbbt_requests.json."
     }
   ],
   "checks": [

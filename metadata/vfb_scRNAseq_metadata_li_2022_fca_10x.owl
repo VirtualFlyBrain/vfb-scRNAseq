@@ -1213,15 +1213,15 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/FBbt_00059270 -->
-
-    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059270"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/FBbt_00059276 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059276"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059288 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059288"/>
     
 
 
@@ -7275,7 +7275,7 @@
         <rdf:type>
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049949"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058267"/>
             </Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000760"/>
@@ -8913,7 +8913,7 @@
         <rdf:type>
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059270"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059288"/>
             </Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000761"/>

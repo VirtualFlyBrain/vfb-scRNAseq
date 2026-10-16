@@ -16,5 +16,49 @@
     "reason": "early-dataset (0-24h APF) T2, T2a, T3 clusters currently mapped to immature T neuron (FBbt:00059279)",
     "opened": "2026-10-06",
     "status": "pending"
+  },
+  {
+    "fbbt_issue": "FlyBase/drosophila-anatomy-developmental-ontology#2218",
+    "kind": "review",
+    "topic": "review adult fat terms",
+    "labels": [],
+    "clusters": {
+      "li_2022_fca_10x": [
+        "body_adult fat body",
+        "body_wall_adult fat body",
+        "fat_body_adult fat body",
+        "gut_adult fat body",
+        "haltere_adult fat body",
+        "head_adult fat body",
+        "head_pericerebral adult fat mass",
+        "heart_adult fat body",
+        "male_reproductive_glands_adult fat body",
+        "malpighian_tubule_adult fat body",
+        "oenocyte_adult fat body",
+        "proboscis_and_maxillary_palps_adult fat body",
+        "testis_adult fat body",
+        "trachea_adult fat body"
+      ],
+      "li_2022_fca_ss2": [
+        "body_wall_adult fat body",
+        "fat_body_adult fat body",
+        "gut_adult fat body",
+        "haltere_adult fat body",
+        "heart_adult fat body",
+        "male_reproductive_glands_adult fat body",
+        "malpighian_tubule_adult fat body",
+        "oenocyte_adult fat body",
+        "proboscis_and_maxillary_palps_adult fat body",
+        "trachea_adult fat body"
+      ],
+      "lu_2023_afca": [
+        "body_adult fat body_body",
+        "head_adult fat body_head",
+        "head_pericerebral adult fat mass"
+      ]
+    },
+    "reason": "Curator (2026-10-16): the FBbt fat body / fat cell terms may need review; revisit the fat mappings (adult fat cell, and adult pericerebral fat cell for head analyses) when #2218 is fixed and released.",
+    "opened": "2026-10-16",
+    "status": "pending"
   }
 ]

@@ -167,6 +167,20 @@ below record how each was applied).
   `untyped` (the authors left the cluster numbered), `undefined class` (a class in
   `hold_classes`), and per-project values from `unidentified.hold_reasons` (FCA:
   `leftover`, `artefact`, `unassigned`).
+- **Dissected tissue narrows a type only where it implies the term exactly** (curator
+  decision 2026-10-16). A generic type is mapped at the authors' level in every tissue,
+  unless the dissected tissue makes a tissue-specific FBbt term exact: head fat is the
+  pericerebral fat mass (*adult pericerebral fat cell*); cell body glia are CNS-only
+  (cell body rind), so head = brain and body = VNC cell body glia; a brain-only or
+  optic-lobe-only dissection makes *adult brain …* / *adult optic lobe …* terms exact
+  (Davie, Kurmangaliyev). Not exact, so not narrowed: head perineurial /
+  subperineurial glia (the head has PNS too), body fat (thorax and abdomen) and body
+  surface glia. Such cluster-specific narrowings are recorded as curator edits
+  (`manual_edit`) on the cluster's mapping file, which `expand_type_mappings.py` keeps.
+- **Too-broad terms are held** (curator decision 2026-10-16). A cluster that could only
+  be typed as *cell* or *neuron* (or a stage-specific version) is held; one of a known
+  class with a more specific broad term, e.g. glia (*adult glial cell*, *adult optic
+  lobe glial cell*), is mapped to it and loaded.
 - **New FBbt terms from gene expression alone are the exception.** `new_term_needed`
   records a gap; it is not a queue of requests. Do not request terms defined only by
   transcriptomic clusters/markers as a matter of course (we do not want thousands of
@@ -929,7 +943,11 @@ Curator decisions (2026-10-07):
   obsolete terms, stage-qualified labels) got reports and `map-clusters-to-fbbt`
   agents. Curator rules (2026-10-08): **cell-level terms only** — a tissue/organ author
   term maps to its cell-level equivalent, else the cluster is held; **no narrowing by
-  dissected tissue** — generic types map at the authors' level in every tissue.
+  dissected tissue** — generic types map at the authors' level in every tissue (refined
+  2026-10-16: narrowed where the tissue makes the term exact — head fat body → *adult
+  pericerebral fat cell*, body cell body glia → *adult VNC cell body glial cell*; the fat
+  mappings are to be revisited once FBbt #2218, a review of the adult fat terms, is
+  released, tracked in `checks/pending_fbbt_requests.json`).
   11 types are held (no adequate cell term; not loaded); 5 curator edits (`manual_edit`).
 - **Expression (stage 4):** from the same h5ad files, as CPM. 10x: each file's `raw.X`
   (all retained genes, log(counts per 10k + 1)); the main `X` is scaled HVGs only.

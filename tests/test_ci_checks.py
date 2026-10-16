@@ -190,3 +190,15 @@ def test_gene_ids_by_symbol(monkeypatch):
     assert got == [("cur", "current", "FBgn0000002"), ("a", "current", "FBgn0000001"),
                    ("old", "synonym", "FBgn0000003"), ("amb", "ambiguous", ""),
                    ("gone", "unmatched", ""), ("", "unmatched", "")]
+
+
+def test_pending_review_issue_opens_revisit_reminder(tmp_path, monkeypatch):
+    issue = {"state": "closed", "state_reason": "completed", "closed_at": "2026-10-20T10:00:00Z", "html_url": "u"}
+    mod, pend, opened, rel = _pending(tmp_path, monkeypatch, issue)
+    pend.write_text(json.dumps([{"fbbt_issue": "FlyBase/x#2218", "kind": "review", "topic": "review adult fat terms",
+                                 "labels": [], "clusters": {"proj": ["head_adult fat body"]}, "status": "pending"}]))
+    assert mod.check_pending(rel) is True
+    title, body = opened[0]
+    assert title.startswith("Revisit mappings") and "review adult fat terms" in title
+    assert "head_adult fat body" in body and "Requested terms" not in body
+    assert json.loads(pend.read_text())[0]["status"] == "released"

@@ -1,7 +1,7 @@
 {
   "project": "lu_2023_afca",
   "created_at": "2026-10-15",
-  "updated_at": "2026-10-15",
+  "updated_at": "2026-10-16",
   "summary": "Aging Fly Cell Atlas (Lu et al. 2023, Science), rebuilt from GEO GSE218661 and the authors' own head and body AnnData analyses, replacing the old FlyBase/SCEA load FBlc0006422 with fresh VFBseq ids. Single-nucleus 10x data from whole head and body, male and female, at 30, 50 and 70 days (72 new Samples/Assays), co-analysed by the authors with the Fly Cell Atlas 5-day head and body samples, which are reused from li_2022_fca_10x. Two Clusterings (head, body) with one Cluster per author cell type over all ages: 164 author types, 143 mapped to FBbt and loaded, 21 held. Summary expression for the loaded Clusters as CPM (15,989 genes x 566,254 cells; 133,771 cluster x gene rows with extent > 0.2).",
   "decisions": [
     {
@@ -58,6 +58,16 @@
       "date": "2026-10-15",
       "by": "pipeline",
       "decision": "Expression from the authors' X (log(counts per 10,000 + 1), all genes) converted to CPM; level is the mean CPM over expressing cells, extent the fraction of expressing cells, rows kept with extent > 0.2. A reused FCA 5-day cell counts towards its AFCA cluster, as the authors grouped it. Genes are keyed by symbol: the FBgn from the FCA 10x files for the same symbol, else looked up in FlyBase Chado (FB2026_03); 1 split id dropped, 2 merges."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Narrow by dissected tissue only where the tissue makes the term exact: head 'adult fat body_head' -> adult pericerebral fat cell and body 'cell body glial cell' -> adult VNC cell body glial cell; recorded as cluster-level curator edits. Reviewed 2026-10-16. Clusters that could only be typed as 'neuron' ('neuron 1'-'neuron 17', Poxn neuron) stay held."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Revisit the fat mappings when FBbt issue #2218 (review adult fat terms) is fixed and released; tracked in checks/pending_fbbt_requests.json."
     }
   ],
   "checks": [
