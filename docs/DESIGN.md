@@ -1230,3 +1230,13 @@ clusters merged by type) with fresh VFBseq ids; licence CC-BY-4.0. Curator decis
   (T4/T5, T2/T2a/T3, C2/C3, Tm1/2/4/6, Dm8/11, Lai/Dm9, lamina neuron) to the immature
   common parent. "C/T cell progenitor" L3_15 is held (`no term`: nothing in FBbt for
   progenitors of C/T neurons; the paper does not describe it further, and *inner optic anlage neuroblast* would commit to "neuroblast"; curator 2026-10-16; no request made).
+- **Expression (stage 4):** from the authors' raw counts of the L3 cells (the
+  `export_seurat.R` export; 11,590 genes, symbols only, so `features_keyed_by: symbol`
+  with `gene_ids_from` the other projects' inputs): 10,772 current, 697 synonyms, 90
+  secondary ids, 31 dropped (28 ambiguous symbols, mostly the same ones as for Özel, and 3
+  split genes), 7 merges. CPM, extent > 0.2: 11,552 genes x 49,893 cells; 75 loaded
+  clusters, 186,146 rows; 20 held clusters (11,020 cells) left out of the rows but
+  counted in the Dataset gene counts (total 10,698, filtered 7,154). The authors' marker
+  genes check out (repo in the glia, dpn in NE/NB/GMC, bsh in the two Mi1 clusters, acj6
+  in T4/T5 and the lobula plate types).
+
