@@ -83,6 +83,11 @@
       "date": "2026-10-16",
       "by": "pipeline",
       "decision": "Expression from the raw UMI counts as CPM over each cell's own counts (adult main part, pupal extra parts; at P50 a T4/T5 cell is in its identity and its subtype); level the mean CPM over expressing cells, extent the fraction expressing, rows kept with extent > 0.2. Genes keyed by symbol: the FBgn other projects' source files give the symbol, else Chado by symbol (FB2026_03), an old symbol shared by several genes going to the one the literature overwhelmingly uses it for (>= 10 publications and >= 5x the next), else dropped."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "All 522 mapped entries reviewed by the curator (mapping.tsv `reviewed`); held entries are not reviewed, as they are not loaded."
     }
   ],
   "checks": [
@@ -171,7 +176,11 @@
       "id": "10.1038/s41586-020-2879-3",
       "type": "publication",
       "label": "Neuronal diversity and convergence in a visual system developmental atlas",
-      "xrefs": ["PMID:33149298", "PMCID:PMC7790857", "FlyBase:FBrf0247762"],
+      "xrefs": [
+        "PMID:33149298",
+        "PMCID:PMC7790857",
+        "FlyBase:FBrf0247762"
+      ],
       "description": "Özel et al. 2021, Nature. Full text indexed locally for the report subagents; Supplementary Table 1 (cluster numbers, names and annotation comments) is the source of the cluster names.",
       "url": "https://doi.org/10.1038/s41586-020-2879-3",
       "files": [
@@ -197,17 +206,56 @@
       "id": "GSE142787",
       "type": "dataset",
       "label": "Neuronal diversity and convergence in a visual system developmental atlas (scRNA-seq)",
-      "xrefs": ["BioProject:PRJNA598342", "SRA:SRP239181"],
+      "xrefs": [
+        "BioProject:PRJNA598342",
+        "SRA:SRP239181"
+      ],
       "description": "GEO series: 38 single-cell 10x libraries from optic lobes (15 adult, 23 pupal). Sample metadata read live (SOFT); the authors' per-stage Seurat objects are its supplementary files (checksums of the .rds files as downloaded and decompressed).",
       "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE142787",
       "accessed_at": "2026-10-16",
       "files": [
-        { "path": "ozel/Adult.rds", "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142787/suppl/GSE142787_Adult.rds.gz", "sha256": "bd79e0fe063bd99458fea1df7bbebaa30c857062e800f72510bc23ed33f1df86", "bytes": 3810889268, "accessed_at": "2026-10-16" },
-        { "path": "ozel/P15.rds", "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142787/suppl/GSE142787_P15.rds.gz", "sha256": "4e759c5cd4f207a05d19d46a9445b539a4689a2d660f8a344e0308ca41f6cbb5", "bytes": 907353419, "accessed_at": "2026-10-16" },
-        { "path": "ozel/P30.rds", "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142787/suppl/GSE142787_P30.rds.gz", "sha256": "ac20abf4e9e6d2a53930c26d411229f0d5f5049287d965fd0a8a971d682de1cd", "bytes": 990555598, "accessed_at": "2026-10-16" },
-        { "path": "ozel/P40.rds", "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142787/suppl/GSE142787_P40.rds.gz", "sha256": "2bf7f146decb729a20e55942e273fb074d5186d0091cc9706e2e744e0a9fc88f", "bytes": 632170261, "accessed_at": "2026-10-16" },
-        { "path": "ozel/P50.rds", "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142787/suppl/GSE142787_P50.rds.gz", "sha256": "ee7b9d318374fdb6a784171e450cd36285ceebc7f2718bfe5bf620a0f156ded9", "bytes": 812949866, "accessed_at": "2026-10-16" },
-        { "path": "ozel/P70.rds", "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142787/suppl/GSE142787_P70.rds.gz", "sha256": "be129067c8a23c80701c35cbb849ad2e4a07af32d6388fa3df6420369f089ddf", "bytes": 1206032758, "accessed_at": "2026-10-16" }
+        {
+          "path": "ozel/Adult.rds",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142787/suppl/GSE142787_Adult.rds.gz",
+          "sha256": "bd79e0fe063bd99458fea1df7bbebaa30c857062e800f72510bc23ed33f1df86",
+          "bytes": 3810889268,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "ozel/P15.rds",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142787/suppl/GSE142787_P15.rds.gz",
+          "sha256": "4e759c5cd4f207a05d19d46a9445b539a4689a2d660f8a344e0308ca41f6cbb5",
+          "bytes": 907353419,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "ozel/P30.rds",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142787/suppl/GSE142787_P30.rds.gz",
+          "sha256": "ac20abf4e9e6d2a53930c26d411229f0d5f5049287d965fd0a8a971d682de1cd",
+          "bytes": 990555598,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "ozel/P40.rds",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142787/suppl/GSE142787_P40.rds.gz",
+          "sha256": "2bf7f146decb729a20e55942e273fb074d5186d0091cc9706e2e744e0a9fc88f",
+          "bytes": 632170261,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "ozel/P50.rds",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142787/suppl/GSE142787_P50.rds.gz",
+          "sha256": "ee7b9d318374fdb6a784171e450cd36285ceebc7f2718bfe5bf620a0f156ded9",
+          "bytes": 812949866,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "ozel/P70.rds",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142787/suppl/GSE142787_P70.rds.gz",
+          "sha256": "be129067c8a23c80701c35cbb849ad2e4a07af32d6388fa3df6420369f089ddf",
+          "bytes": 1206032758,
+          "accessed_at": "2026-10-16"
+        }
       ]
     },
     {
@@ -237,26 +285,147 @@
     }
   ],
   "software": [
-    { "id": "claude-code", "type": "tool", "label": "Claude Code", "version": "2.1.300", "description": "Agentic CLI that ran the session (orchestrator) and its subagents, stages 1-5." },
-    { "id": "r", "type": "language", "label": "R", "version": "4.6.1", "description": "Reads the authors' Seurat objects (base R, Homebrew; Seurat not installed) for export_seurat.R." },
-    { "id": "r-matrix", "type": "library", "label": "Matrix (R)", "version": "1.7.5", "description": "dgCMatrix counts and MatrixMarket export." },
-    { "id": "openpyxl", "type": "library", "label": "openpyxl", "version": "3.1.5", "description": "Reads Supplementary Table 1 (build_clusters.py)." },
-    { "id": "atlas-reporter", "type": "repository", "label": "Atlas Reporter (local-paper-index)", "url": "https://github.com/Cellular-Semantics/Atlas-reporter", "commit": "2acd38e", "description": "Local JATS snippet index of the paper, queried by the report subagents." },
-    { "id": "sentence-transformers", "type": "library", "label": "sentence-transformers", "version": "5.5.1", "description": "Local paper index embeddings." },
-    { "id": "ols4", "type": "service", "label": "OLS4 (Ontology Lookup Service)", "url": "https://www.ebi.ac.uk/ols4", "accessed_at": "2026-10-16", "description": "FBbt / FBdv / FBcv lookup during mapping (OLS MCP) and term verification." },
-    { "id": "vfb-pdb", "type": "service", "label": "VFB production (neo4j)", "url": "https://pdb.virtualflybrain.org", "accessed_at": "2026-10-16", "description": "Publication FBrf0247762 resolved by PMID (vfb_scrnaseq.pub)." },
-    { "id": "flybase-chado", "type": "service", "label": "FlyBase Chado", "version": "FB2026_03 (data last modified 2026-08-29)", "url": "https://chado.flybase.org", "accessed_at": "2026-10-16", "description": "Gene symbols mapped to current FlyBase genes (update_gene_ids.py), incl. synonym publication counts for ambiguous old symbols." },
-    { "id": "ncbi-geo", "type": "service", "label": "NCBI GEO", "url": "https://www.ncbi.nlm.nih.gov/geo/", "accessed_at": "2026-10-16", "description": "Series and Sample SOFT metadata read by ingest.fetch_series (build_samples_from_geo.py)." },
-    { "id": "python", "type": "language", "label": "Python", "version": "3.14.3", "description": "Pipeline environment (uv-managed)." },
-    { "id": "numpy", "type": "library", "label": "numpy", "version": "2.5.1" },
-    { "id": "pandas", "type": "library", "label": "pandas", "version": "3.0.5" },
-    { "id": "pyyaml", "type": "library", "label": "PyYAML", "version": "6.0.3" },
-    { "id": "linkml", "type": "library", "label": "linkml", "version": "1.11.1", "description": "linkml-validate and linkml-convert (flat RDF)." },
-    { "id": "linkml-runtime", "type": "library", "label": "linkml-runtime", "version": "1.11.1" },
-    { "id": "linkml-owl", "type": "library", "label": "linkml-owl", "version": "0.5.0", "description": "Metadata OWL." },
-    { "id": "rdflib", "type": "library", "label": "rdflib", "version": "7.6.0" },
-    { "id": "robot", "type": "tool", "label": "ROBOT", "version": "1.9.11", "description": "OFN to OWL/XML conversion (metadata and expression OWL)." },
-    { "id": "psql", "type": "tool", "label": "psql", "version": "14.15", "description": "FlyBase Chado queries." }
+    {
+      "id": "claude-code",
+      "type": "tool",
+      "label": "Claude Code",
+      "version": "2.1.300",
+      "description": "Agentic CLI that ran the session (orchestrator) and its subagents, stages 1-5."
+    },
+    {
+      "id": "r",
+      "type": "language",
+      "label": "R",
+      "version": "4.6.1",
+      "description": "Reads the authors' Seurat objects (base R, Homebrew; Seurat not installed) for export_seurat.R."
+    },
+    {
+      "id": "r-matrix",
+      "type": "library",
+      "label": "Matrix (R)",
+      "version": "1.7.5",
+      "description": "dgCMatrix counts and MatrixMarket export."
+    },
+    {
+      "id": "openpyxl",
+      "type": "library",
+      "label": "openpyxl",
+      "version": "3.1.5",
+      "description": "Reads Supplementary Table 1 (build_clusters.py)."
+    },
+    {
+      "id": "atlas-reporter",
+      "type": "repository",
+      "label": "Atlas Reporter (local-paper-index)",
+      "url": "https://github.com/Cellular-Semantics/Atlas-reporter",
+      "commit": "2acd38e",
+      "description": "Local JATS snippet index of the paper, queried by the report subagents."
+    },
+    {
+      "id": "sentence-transformers",
+      "type": "library",
+      "label": "sentence-transformers",
+      "version": "5.5.1",
+      "description": "Local paper index embeddings."
+    },
+    {
+      "id": "ols4",
+      "type": "service",
+      "label": "OLS4 (Ontology Lookup Service)",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "accessed_at": "2026-10-16",
+      "description": "FBbt / FBdv / FBcv lookup during mapping (OLS MCP) and term verification."
+    },
+    {
+      "id": "vfb-pdb",
+      "type": "service",
+      "label": "VFB production (neo4j)",
+      "url": "https://pdb.virtualflybrain.org",
+      "accessed_at": "2026-10-16",
+      "description": "Publication FBrf0247762 resolved by PMID (vfb_scrnaseq.pub)."
+    },
+    {
+      "id": "flybase-chado",
+      "type": "service",
+      "label": "FlyBase Chado",
+      "version": "FB2026_03 (data last modified 2026-08-29)",
+      "url": "https://chado.flybase.org",
+      "accessed_at": "2026-10-16",
+      "description": "Gene symbols mapped to current FlyBase genes (update_gene_ids.py), incl. synonym publication counts for ambiguous old symbols."
+    },
+    {
+      "id": "ncbi-geo",
+      "type": "service",
+      "label": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/",
+      "accessed_at": "2026-10-16",
+      "description": "Series and Sample SOFT metadata read by ingest.fetch_series (build_samples_from_geo.py)."
+    },
+    {
+      "id": "python",
+      "type": "language",
+      "label": "Python",
+      "version": "3.14.3",
+      "description": "Pipeline environment (uv-managed)."
+    },
+    {
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
+      "version": "2.5.1"
+    },
+    {
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
+      "version": "3.0.5"
+    },
+    {
+      "id": "pyyaml",
+      "type": "library",
+      "label": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
+      "version": "1.11.1",
+      "description": "linkml-validate and linkml-convert (flat RDF)."
+    },
+    {
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
+      "version": "1.11.1"
+    },
+    {
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
+      "version": "0.5.0",
+      "description": "Metadata OWL."
+    },
+    {
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
+      "version": "1.9.11",
+      "description": "OFN to OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "id": "psql",
+      "type": "tool",
+      "label": "psql",
+      "version": "14.15",
+      "description": "FlyBase Chado queries."
+    }
   ],
   "models": [
     {
