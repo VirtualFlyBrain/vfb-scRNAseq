@@ -82,12 +82,13 @@ dmel as (select organism_id from organism where genus = 'Drosophila' and species
 genes as (select f.feature_id, f.uniquename, f.name from feature f
           where not f.is_obsolete and f.uniquename like 'FBgn%'
             and f.organism_id in (select organism_id from dmel))
-select distinct s.u, 'current', g.uniquename, g.name from s join genes g on g.name = s.u
+select distinct s.u, 'current', g.uniquename, g.name, 0 from s join genes g on g.name = s.u
 union all
-select distinct s.u, 'synonym', g.uniquename, g.name from s
+select s.u, 'synonym', g.uniquename, g.name, count(distinct fs.pub_id) from s
   join synonym y on y.name = s.u
   join feature_synonym fs on fs.synonym_id = y.synonym_id
-  join genes g on g.feature_id = fs.feature_id;
+  join genes g on g.feature_id = fs.feature_id
+  group by s.u, g.uniquename, g.name;
 """
 
 
@@ -107,6 +108,19 @@ def _h5ad_ids(project: str) -> tuple[list[str], dict[str, str]]:
     return list(order), ids
 
 
+def _input_ids(projects: list[str]) -> dict[str, str]:
+    """{input symbol: input FBgn} pooled over other projects' committed gene_id_map.tsv
+    (the ids their source files gave each symbol); a symbol given different ids by
+    different projects is left out."""
+    seen: dict[str, set[str]] = defaultdict(set)
+    for other in projects:
+        _, rows = read_map(REPO_ROOT / "projects" / other / "gene_id_map.tsv")
+        for r in rows:
+            if r["input_fbgn"] and r["input_symbol"]:
+                seen[r["input_symbol"]].add(r["input_fbgn"])
+    return {s: next(iter(f)) for s, f in seen.items() if len(f) == 1}
+
+
 def features(cfg: dict) -> list[tuple[str, str]]:
     """(fbgn, symbol) over the project's features files (or h5ad genes, fbgn '' when
     the files give none), in first-seen order."""
@@ -124,6 +138,13 @@ def features(cfg: dict) -> list[tuple[str, str]]:
             for ln in fh:
                 r = ln.rstrip("\n").split("\t")
                 seen.setdefault(r[0], r[1] if len(r) > 1 else r[0])
+    if ex.get("features_keyed_by") == "symbol":
+        # features files that carry gene symbols only (e.g. exported from Seurat
+        # objects): the FBgn another project's input files give the symbol
+        # (`expression.gene_ids_from`; symbols the projects disagree on skipped), else
+        # looked up by symbol, as for h5ad projects
+        ids = _input_ids(ex.get("gene_ids_from", []))
+        return [(ids.get(sym, ""), sym) for sym in seen]
     return list(seen.items())
 
 
@@ -150,25 +171,45 @@ def chado_lookup(ids: list[str]) -> dict[str, list[tuple[str, str, str]]]:
     return hits
 
 
-def chado_symbol_lookup(symbols: list[str]) -> dict[str, list[tuple[str, str, str]]]:
-    """{symbol: [(current|synonym, fbgn, current symbol)]} for D. melanogaster genes."""
+def chado_symbol_lookup(symbols: list[str]) -> dict[str, list[tuple]]:
+    """{symbol: [(current|synonym, fbgn, current symbol, publications using the
+    synonym for that gene)]} for D. melanogaster genes."""
     if not symbols:
         return {}
     out = subprocess.run(PSQL + ["-v", "syms=" + "\t".join(symbols)], input=SYMBOL_QUERY,
                          capture_output=True, text=True, check=True).stdout
-    hits: dict[str, list[tuple[str, str, str]]] = defaultdict(list)
+    hits: dict[str, list[tuple]] = defaultdict(list)
     for line in out.splitlines():
-        u, how, cur, sym = line.split("\t")
-        hits[u].append((how, cur, sym))
+        u, how, cur, sym, pubs = line.split("\t")
+        hits[u].append((how, cur, sym, int(pubs)))
     return hits
+
+
+MAJORITY_MIN_PUBS, MAJORITY_RATIO = 10, 5
+
+
+def _majority(syn: list[tuple], pubs: dict) -> list[tuple]:
+    """An old symbol that is a synonym of several genes is taken as the one gene that
+    the literature overwhelmingly uses it for (>= MAJORITY_MIN_PUBS publications and
+    >= MAJORITY_RATIO times the next gene) — e.g. 'Cha' for ChAT (41 vs 2); otherwise
+    left ambiguous."""
+    ranked = sorted(syn, key=lambda fs: -pubs.get(fs, 0))
+    top, nxt = pubs.get(ranked[0], 0), pubs.get(ranked[1], 0)
+    return [ranked[0]] if top >= MAJORITY_MIN_PUBS and top >= MAJORITY_RATIO * max(nxt, 1) else syn
 
 
 def classify_symbols(symbols: list[str], hits: dict) -> list[dict]:
     rows = []
     for sym in symbols:
         h = hits.get(sym, [])
-        cur = sorted({(f, s) for how, f, s in h if how == "current"})
-        syn = sorted({(f, s) for how, f, s in h if how == "synonym"})
+        cur = sorted({(x[1], x[2]) for x in h if x[0] == "current"})
+        syn = sorted({(x[1], x[2]) for x in h if x[0] == "synonym"})
+        pubs: dict = defaultdict(int)
+        for x in h:
+            if x[0] == "synonym" and len(x) > 3:
+                pubs[(x[1], x[2])] += x[3]
+        if not cur and len(syn) > 1:
+            syn = _majority(syn, pubs)
         pick = cur if cur else syn
         status = ("unmatched" if not pick else "ambiguous" if len(pick) > 1
                   else "current" if cur else "synonym")
