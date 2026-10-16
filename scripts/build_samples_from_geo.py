@@ -133,7 +133,13 @@ def main() -> None:
         p0 = members[0][0]
         gsm0 = members[0][1]  # original GEO characteristics (consistent within a sample)
         age_raw = gsm0.stage_hint
-        tp = sb["age_map"].get(age_raw, {})
+        tp = dict(sb["age_map"].get(age_raw, {}))
+        # `sample_build.title_stages`: [{pattern, stage}] — a more specific stage the
+        # authors recorded in the GSM title (e.g. "Adult_1d_..." within a "1-3 days" age)
+        for ts in sb.get("title_stages", []):
+            if re.search(ts["pattern"], gsm0.title or ""):
+                tp["stage"] = ts["stage"]
+                break
         if not tp:
             print(f"  WARNING: no age_map entry for age {age_raw!r} (sample {sample_id}); "
                   f"stage/tissue left unset", file=sys.stderr)

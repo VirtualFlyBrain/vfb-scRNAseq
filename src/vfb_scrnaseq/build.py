@@ -107,6 +107,9 @@ def build_entities(project: str) -> list[dict]:
             descr = s["label"]                     # builder-supplied (e.g. ArrayExpress samples)
         else:
             tissue = s.get("tissue_raw") or (tissues[0]["label"] if tissues else "sample")
+            # `sample_build.tissue_labels`: display name for a raw tissue, e.g. GEO
+            # "P70 optic lobe" -> "optic lobe" when the stage is already in the label
+            tissue = ((cfg.get("sample_build") or {}).get("tissue_labels") or {}).get(tissue, tissue)
             age = s.get("age_raw") or s.get("timepoint")
             parts = [p for p in (tissue, age) if p]
             if s.get("set"):

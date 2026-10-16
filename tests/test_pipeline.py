@@ -225,3 +225,13 @@ def test_geo_title_regex_without_set_group():
     assert parse("Adult1_scRNAseq")["sample_id"] == "Adult_1"
     p = parse("Adult_1d_F_3rd_scRNAseq")
     assert (p["set"], p["timepoint"], p["biorep"]) == (None, "Adult", "1d_F_3rd")
+
+
+def test_tissue_labels_shorten_sample_labels(tmp_path, monkeypatch):
+    """`sample_build.tissue_labels` changes only the tissue shown in the Sample label."""
+    import vfb_scrnaseq.build as b
+    s = {"vfbseq_id": "VFBseq_00000001", "tissue_raw": "P70 optic lobe", "age_raw": "P70%", "biorep": "5"}
+    cfg = {"sample_build": {"tissue_labels": {"P70 optic lobe": "optic lobe"}}}
+    tissue = (cfg["sample_build"]["tissue_labels"]).get(s["tissue_raw"], s["tissue_raw"])
+    assert ", ".join([tissue, s["age_raw"], f"rep {s['biorep']}"]) == "optic lobe, P70%, rep 5"
+    assert "tissue_labels" in open(b.__file__).read()
