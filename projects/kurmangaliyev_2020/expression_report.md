@@ -1,7 +1,7 @@
 # Expression summary — GSE156455
 
 - normalisation: **CPM**; extent filter: **> 0.2**
-- 17556 genes x 208976 cells; 232 clusters; 686,568 filtered rows
+- 17556 genes x 222360 cells; 232 clusters; 686,568 filtered rows
 - not loaded: 74 held clusters (no FBbt term), 27766 cells
 - dataset-level: total_gene_count **15751**, filtered_gene_count **7473**
 

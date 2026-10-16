@@ -330,17 +330,26 @@ def _mtx_parts(project: str, cfg: dict, cache: Path) -> list[dict]:
         memberships = _label_memberships(cache / cfg["annotations"]["source_file"],
                                          cfg["annotations"].get("barcode_column", "barcode"),
                                          label_col, prefix=cfg["annotations"].get("label_prefix", ""))
-    # current FlyBase gene ids (`expression.gene_id_map`, from scripts/update_gene_ids.py)
-    gene_map = (load_gene_id_map(REPO_ROOT / "projects" / project / ex["gene_id_map"])
+    # current FlyBase gene ids (`expression.gene_id_map`, from scripts/update_gene_ids.py);
+    # keyed by symbol when the features files carry symbols only
+    # (`expression.features_keyed_by: symbol`)
+    key = "input_symbol" if ex.get("features_keyed_by") == "symbol" else "input_fbgn"
+    gene_map = (load_gene_id_map(REPO_ROOT / "projects" / project / ex["gene_id_map"], key=key)
                 if ex.get("gene_id_map") else None)
     parts = [_accumulate(cache / ex["matrix_file"], cache / ex["features_file"],
                          cache / ex["barcodes_file"], memberships, gene_map)]
     # further matrices (`expression.extra_parts`, e.g. a separately clustered early
     # dataset): same genes, own cells; cluster labels get the part's label_prefix
     for part in ex.get("extra_parts", []):
-        pm = _label_memberships(cache / part["metadata_file"],
-                                cfg["annotations"].get("barcode_column", "barcode"),
-                                label_col, prefix=part.get("label_prefix", ""))
+        if part.get("membership_file"):     # barcode<TAB>cluster: overlapping clusterings
+            pm = {}
+            with gzip.open(cache / part["membership_file"], "rt") as fh:
+                for r in csv.DictReader(fh, delimiter="\t"):
+                    pm.setdefault(r["barcode"], []).append(r["cluster"])
+        else:
+            pm = _label_memberships(cache / part["metadata_file"],
+                                    cfg["annotations"].get("barcode_column", "barcode"),
+                                    label_col, prefix=part.get("label_prefix", ""))
         parts.append(_accumulate(cache / part["matrix_file"], cache / part["features_file"],
                                  cache / part["barcodes_file"], pm, gene_map))
     return parts
@@ -355,7 +364,9 @@ def _summarise(parts: list[dict], acc: str, subset: str, cutoff: float, ex: dict
     if len(set(clusters)) != len(clusters):
         raise SystemExit("cluster labels repeat across expression parts; set a label_prefix")
     cluster_size = np.concatenate([p["cluster_size"] for p in parts])
-    n_cells = len(set().union(*(p["cells"] for p in parts)))
+    # distinct cells within a part (a cell may be in several of its clusters); parts are
+    # separate matrices, so their cells add up even where barcodes repeat between them
+    n_cells = sum(len(p["cells"]) for p in parts)
     # dataset-level gene counts, matching the old repo's get_gene_counts: distinct
     # genes over the per-cluster x gene expression (union across clusters, NOT a
     # dataset-wide extent). total = genes expressed in any cluster; filtered = genes

@@ -94,10 +94,41 @@ sample_build:
     - { id: P70, name: "Özel 2021 P70 optic lobe identities", sample_age: "P70%" }
     - { id: adult, name: "Özel 2021 adult optic lobe identities", sample_age: "1-3 days old" }
 
+# Summary expression (scripts/build_expression.py) from the authors' raw UMI counts
+# (RNA@counts of the Seurat objects, exported by export_seurat.R), as CPM over each
+# cell's own counts: the adult matrix is the main part, each pupal stage an extra part
+# (labels <stage>_<identity>). At P50 a T4/T5 cell is in its P50 identity and also in
+# its subtype (memberships.tsv.gz, written by build_clusters.py). The objects carry
+# gene symbols only, so the gene id map is keyed by symbol (looked up in FlyBase Chado).
+expression:
+  matrix_file: ozel/Adult/matrix.mtx.gz
+  features_file: ozel/Adult/features.tsv.gz
+  barcodes_file: ozel/Adult/barcodes.tsv.gz
+  features_keyed_by: symbol
+  extra_parts:
+    - { matrix_file: ozel/P15/matrix.mtx.gz, features_file: ozel/P15/features.tsv.gz, barcodes_file: ozel/P15/barcodes.tsv.gz, metadata_file: ozel/P15/metadata.tsv.gz, label_prefix: P15_ }
+    - { matrix_file: ozel/P30/matrix.mtx.gz, features_file: ozel/P30/features.tsv.gz, barcodes_file: ozel/P30/barcodes.tsv.gz, metadata_file: ozel/P30/metadata.tsv.gz, label_prefix: P30_ }
+    - { matrix_file: ozel/P40/matrix.mtx.gz, features_file: ozel/P40/features.tsv.gz, barcodes_file: ozel/P40/barcodes.tsv.gz, metadata_file: ozel/P40/metadata.tsv.gz, label_prefix: P40_ }
+    - { matrix_file: ozel/P50/matrix.mtx.gz, features_file: ozel/P50/features.tsv.gz, barcodes_file: ozel/P50/barcodes.tsv.gz, membership_file: ozel/P50/memberships.tsv.gz }
+    - { matrix_file: ozel/P70/matrix.mtx.gz, features_file: ozel/P70/features.tsv.gz, barcodes_file: ozel/P70/barcodes.tsv.gz, metadata_file: ozel/P70/metadata.tsv.gz, label_prefix: P70_ }
+  normalisation: CPM
+  extent_cutoff: 0.2
+  hide_in_terminfo: "true"
+  gzip_tsv: true
+  gene_id_map: gene_id_map.tsv
+  # FBgn for a symbol from the source files of other projects (same-era references),
+  # else by symbol in Chado
+  gene_ids_from: [kurmangaliyev_2020, davie_2018, li_2022_fca_10x, lu_2023_afca]
+
 # Clusters (projects/ozel_2021/build_clusters.py, from the R exports in .cache/ozel/):
 # one entry per final identity per stage, named from Supplementary Table 1.
 annotations:
   review_columns: [clustering, source_cluster_id, type, author_confidence, author_note]
+  # cell -> identity for the expression build (the R exports, .cache/ozel/<stage>/)
+  source_file: ozel/Adult/metadata.tsv.gz
+  barcode_column: barcode
+  label_column: FinalIdents
+  label_prefix: adult_
 
 # Numbered identities with a probable type in the authors' Supplementary Table 1
 # comment (curator 2026-10-16: map them, unless the comment points to low quality):
