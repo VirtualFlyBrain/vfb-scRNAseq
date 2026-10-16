@@ -1,0 +1,36 @@
+{
+  "cluster_label": "L3_49",
+  "working_definition": "Author type 'lamina wide-field neuron' (L3_49, lamina_wide_field class; neuropil list names Lawf1 and Lawf2) of the Konstantinides et al. 2022 wandering L3 larval optic lobe atlas: developing lamina wide-field (Lawf) neurons.",
+  "searches_performed": [
+    "lamina wide-field neuron",
+    "immature lamina wide-field neuron",
+    "immature adult optic lobe intrinsic neuron",
+    "immature adult optic lobe neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "immature adult optic lobe intrinsic neuron",
+    "fbbt_id": "FBbt:00053540",
+    "fbbt_definition": "Immature neuron that will have its synapses restricted to the optic lobe in the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "FBbt has lamina wide-field neuron (FBbt:00059323, an adult optic lobe intrinsic columnar neuron) but no immature form. At wandering L3 the cells are immature, so the immature form of the nearest parent is used: immature adult optic lobe intrinsic neuron, as for Ozel 2021 immature Lawf1/Lawf2.",
+  "other_candidates": [
+    {
+      "fbbt_term": "lamina wide-field neuron",
+      "fbbt_id": "FBbt:00059323",
+      "fbbt_definition": "An intrinsic columnar neuron of the visual system whose cell body is located in the medulla cortex and that has a main projection making wide-field arborizations in the lamina. It expresses the transcription factor Fer2 (Ozel et al., 2021) and is cholinergic (Davis et al., 2020).",
+      "reason_rejected": "Mature adult form; larval cells are immature."
+    },
+    {
+      "fbbt_term": "immature adult optic lobe neuron",
+      "fbbt_id": "FBbt:00053539",
+      "fbbt_definition": "Immature neuron that develops from an optic neuroblast and will become an adult optic lobe neuron.",
+      "reason_rejected": "Less specific than the intrinsic neuron parent."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053540 'immature adult optic lobe intrinsic neuron' (broad match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

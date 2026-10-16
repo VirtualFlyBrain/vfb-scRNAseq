@@ -1,0 +1,29 @@
+{
+  "cluster_label": "L3_22",
+  "working_definition": "Neuroepithelial cells (shg+, dpn+) of the larval optic lobe proliferation centers that divide symmetrically and give rise to optic neuroblasts.",
+  "searches_performed": [
+    "neuroepithelium",
+    "optic lobe neuroepithelial cell",
+    "neuroepithelial cell optic"
+  ],
+  "best_match": {
+    "fbbt_term": "optic lobe neuroepithelial cell",
+    "fbbt_id": "FBbt:00111738",
+    "fbbt_definition": "Symmetrically-dividing stem cell with epithelial properties and a columnar morphology that is a precursor to an optic neuroblast (Egger et al., 2007). These cells increase in number by symmetric divisions during embryonic and larval development (Egger et al., 2007). A small number differentiate into optic neuroblasts during the embryonic stage, while the remainder enter G0 quiescence prior to larval hatching (Hakes et al., 2018). Divisions resume in the first instar (Hakes et al., 2018), followed by differentiation to neuroblasts mainly during the third instar stage (Yasugi et al., 2008).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' neuroepithelium cluster is the cell population of the optic lobe neuroepithelium in a cell-level dataset, and the tissue (larval optic lobe) makes the optic lobe neuroepithelial cell term exact; its definition covers third instar neuroepithelial cells differentiating into neuroblasts.",
+  "other_candidates": [
+    {
+      "fbbt_term": "larval outer optic anlage",
+      "fbbt_id": "FBbt:00001933",
+      "fbbt_definition": "'proliferation center' synonyms usually used for later stages of development (Ngo et al., 2017 - FBrf0236058).\nThe lateral, outer layer of the larval optic lobe. It consists of neuroepithelial cells (and later of proliferating neuroblasts) that will give rise to the neurons of the adult lamina and outer medulla. By the late first instar, it is dome shaped and perforated at its center by a pore, through which axons of the optic stalk pass (Meinertzhagen and Hanson, 1993). Some of these axons form synapses in the larval optic neuropil, which is largely within this pore (Sprecher et al., 2011). It becomes distinguished from the inner optic anlage during the second half of the first instar period (Meinertzhagen and Hanson, 1993). In the third instar, neuroepithelial cells in the medial region give rise to neuroblasts that divide asymmetrically to generate the adult optic lobe neurons. This anlage is patterned by expression of Optix and Vsx1 in complementary regions (Gold and Brand, 2014).",
+      "reason_rejected": "A tissue/anlage, not a cell type."
+    }
+  ],
+  "recommendation": "Map to FBbt:00111738 optic lobe neuroepithelial cell (exact).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,37 @@
+{
+  "cluster_label": "L3_35",
+  "working_definition": "Author type 'centrifugal neuron C2/C3' (L3_35, lobula plate class) of the Konstantinides et al. 2022 wandering L3 larval optic lobe atlas: IPC-derived C2/C3 centrifugal neurons, unresolved.",
+  "searches_performed": [
+    "centrifugal neuron C2/C3",
+    "immature centrifugal neuron",
+    "immature optic lobe centrifugal columnar neuron",
+    "centrifugal neuron C2",
+    "centrifugal neuron C3"
+  ],
+  "best_match": {
+    "fbbt_term": "immature optic lobe centrifugal columnar neuron",
+    "fbbt_id": "FBbt:00053275",
+    "fbbt_definition": "Immature form of a centrifugal columnar neuron (Konstantinides et al., 2022).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "Grouped call (C2, C3). FBbt has no immature C2/C3 terms; the immature centrifugal columnar neuron term (defined from Konstantinides 2022) is the most specific immature common parent, as used for Ozel 2021 immature C2 and C3.",
+  "other_candidates": [
+    {
+      "fbbt_term": "centrifugal neuron C2",
+      "fbbt_id": "FBbt:00003743",
+      "fbbt_definition": "Adult centrifugal neuron with arborizations in the medulla layers M1, M5/M6, M8 and M10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). In the medulla, it makes reciprocal connections to lamina monopolar neuron L1, and is presynaptic to L2 and L5, as well as medullary intrinsic neuron Mi1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010). There is usually one of these cells per optic column (Nern et al., 2025).",
+      "reason_rejected": "Mature adult form and only one member of the group."
+    },
+    {
+      "fbbt_term": "centrifugal neuron C3",
+      "fbbt_id": "FBbt:00003744",
+      "fbbt_definition": "Adult centrifugal neuron with arborizations in medulla layers M1-2, M5, and M9-10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). It forms presynapses and postsynapses in the lamina (Morante and Desplan, 2008; Rivera-Alba et al., 2011). In the medulla it is strongly presynaptic to monopolar lamina neuron L2 and columnar neuron T1, and strongly postsynaptic to L1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010). There is usually one of these cells per optic column (Nern et al., 2025).",
+      "reason_rejected": "Mature adult form and only one member of the group."
+    }
+  ],
+  "recommendation": "Map to FBbt:00053275 'immature optic lobe centrifugal columnar neuron' (broad match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

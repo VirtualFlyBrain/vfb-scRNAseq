@@ -1,0 +1,35 @@
+{
+  "cluster_label": "L3_38",
+  "working_definition": "Author type 'Tm9 neuron' (L3_38) of the Konstantinides et al. 2022 wandering L3 optic lobe atlas: medulla-class Tm9 neurons, not split into dorsal/ventral subtypes.",
+  "searches_performed": [
+    "'Tm9 neuron'",
+    "'immature transmedullary neuron Tm9'",
+    "'immature transmedullary neuron'"
+  ],
+  "best_match": {
+    "fbbt_term": "immature transmedullary neuron Tm9",
+    "fbbt_id": "FBbt:00052333",
+    "fbbt_definition": "Immature form of the transmedullary neuron Tm9 (Konstantinides et al., 2022). It is a Notch ON hemilineage secondary neuron, born from a medulla forming neuroblast during the Erm/Ey temporal window (Konstantinides et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors name a single unsplit Tm9 type; the immature Tm9 parent (defined from Konstantinides et al. 2022) is exact, with the Tm9a/Tm9b immature subtypes as children.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature transmedullary neuron Tm9a",
+      "fbbt_id": "FBbt:00052334",
+      "fbbt_definition": "Immature form of the transmedullary neuron Tm9a (Konstantinides et al., 2022).",
+      "reason_rejected": "Subtype; the authors do not split Tm9 at L3."
+    },
+    {
+      "fbbt_term": "immature transmedullary neuron Tm9b",
+      "fbbt_id": "FBbt:00052335",
+      "fbbt_definition": "Immature form of the transmedullary neuron Tm9b (Konstantinides et al., 2022).",
+      "reason_rejected": "Subtype; the authors do not split Tm9 at L3."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052333 'immature transmedullary neuron Tm9' (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}
