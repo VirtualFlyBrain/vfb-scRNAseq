@@ -130,6 +130,20 @@ def test_extra_parts_combine_second_matrix(tmp_path, monkeypatch):
     assert meta["n_cells"] == 12
 
 
+def test_cells_add_up_across_parts_even_with_repeated_barcodes(tmp_path, monkeypatch):
+    # a second matrix whose barcodes repeat the main part's: its cells are still counted
+    cfg = _setup(tmp_path, monkeypatch)
+    cache = tmp_path / ".cache"
+    _write(cache / "m2.mtx.gz", "%%MatrixMarket matrix coordinate real general\n%\n4 2 1\n1 1 1\n")
+    _write(cache / "b2.tsv.gz", "bc1\nbc2\n")
+    _write(cache / "md2.tsv.gz", "barcode\tsubtype\nbc1\tX\nbc2\tX\n")
+    cfg["expression"]["extra_parts"] = [{"matrix_file": "m2.mtx.gz", "features_file": "f.tsv.gz",
+                                         "barcodes_file": "b2.tsv.gz", "metadata_file": "md2.tsv.gz",
+                                         "label_prefix": "early_"}]
+    _, _, meta = stats.compute_expression("t", cfg)
+    assert meta["n_cells"] == 12
+
+
 def test_gene_id_map_merge_rename_drop(tmp_path, monkeypatch):
     # g2 is a retired id of g1 (merge: cell 1 expresses both and must count once),
     # g3 is renamed to a current id, g4 is dropped (split/withdrawn)

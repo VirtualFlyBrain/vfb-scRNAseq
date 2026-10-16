@@ -603,7 +603,7 @@ sizes must equal `cell_type_annotations.json`. Files may carry different gene se
 gene a file lacks is unexpressed in its clusters. `expression.gzip_tsv: true` writes
 `expression.tsv.gz` (deterministic gzip) for datasets too large to commit plain.
 
-**Scale & outputs** (Kurmangaliyev, main + early: 17,556 genes, 209k cells → **686,568
+**Scale & outputs** (Kurmangaliyev, main + early: 17,556 genes, 222k cells → **686,568
 rows** after the filter):
 - `projects/<p>/expression.tsv` — filtered rows, plain/diffable, **committed** (~40 MB;
   `expression.tsv.gz` with `gzip_tsv`).
@@ -1154,4 +1154,23 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-16.
   with Özel's is not established). The old load FBlc0005659 agrees on all 49 types matched by name; it
   names five types (LC10c, LC9, Dm15, Mt8, LPi3-4) that Supplementary Table 1 leaves
   numbered or does not use (identity 93 is noted "likely to be LC10c" but left numbered).
+- **Expression (stage 4).** From the authors' raw UMI counts (`RNA@counts`, exported per
+  stage by `export_seurat.R`) as CPM over each cell's own counts: the adult matrix is
+  the main part and each pupal stage an extra part (labels `<stage>_<identity>`); at P50
+  a T4/T5 cell is in its P50 identity and its subtype (a per-part `membership_file`,
+  written by `build_clusters.py`). The objects carry gene symbols only
+  (`expression.features_keyed_by: symbol`): a symbol takes the FBgn other projects'
+  source files give it (`gene_ids_from`: Kurmangaliyev, Davie, FCA 10x, AFCA; symbols
+  they disagree on skipped), else is looked up by symbol in Chado (FB2026_03), where an
+  old symbol that is a synonym of several genes goes to the one the literature
+  overwhelmingly uses it for (>= 10 publications and >= 5x the next gene, e.g. *Cha* →
+  *ChAT*, 41 vs 2), else is dropped: 12,451 current, 727 synonym, 94 secondary, 30
+  ambiguous and 4 split dropped. 13,265 genes x 275,683 cells; 522 clusters, 1,211,693
+  rows (extent > 0.2); held entries left out (109,291 cells) but counted in the
+  Dataset's gene counts (total 13,262, filtered 8,138). Checks: Tm9d *Wnt10* (0.84) /
+  Tm9v *Wnt4* (0.40), each without the other (as FBbt defines Tm9a / Tm9b); identity 112
+  *ey* / *Pka-C1* / *prt* (Kenyon cells); NB *dpn* / *ase* / *mira*; LPC *gcm* / *eya*; PR
+  *ninaE*; Mi1 *hth*; L1 *svp*; G01 *repo*; Dm3b's *bi* is below the cut-off in adults.
+  A cell total that counted cells once across parts undercounted where barcodes repeat
+  between matrices (fixed 2026-10-16: Kurmangaliyev has 222,360 cells, not 208,976).
 

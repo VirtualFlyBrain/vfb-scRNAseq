@@ -137,6 +137,14 @@ def main() -> None:
         if n not in main_ids:
             parent.setdefault(n, Counter())[r["FinalIdents"]] += 1
             libs.setdefault(n, Counter())[r["orig.ident"]] += 1
+    # memberships for the expression build: a P50 cell is in its P50 identity and, for the
+    # T4/T5 cells, also in its subtype (barcode<TAB>cluster, .cache/ozel/P50/memberships.tsv.gz)
+    with gzip.open(CACHE / STAGE_FILES[stage] / "memberships.tsv.gz", "wt") as fh:
+        fh.write("barcode\tcluster\n")
+        for r in rows:
+            fh.write(f"{r['barcode']}\t{stage}_{r['FinalIdents']}\n")
+            if r[col] not in main_ids:
+                fh.write(f"{r['barcode']}\t{sub}_{r[col]}\n")
     for num in sorted(parent, key=int):
         given = table.get(num)
         if given is None:
