@@ -1,7 +1,7 @@
 {
   "project": "davie_2018",
   "created_at": "2026-10-06",
-  "updated_at": "2026-10-15",
+  "updated_at": "2026-10-16",
   "summary": "Adult Drosophila brain atlas across ageing (Davie et al. 2018, Cell), rebuilt from GEO GSE107451 to replace the old FlyBase/SCEA load FBlc0006090 (E-CURD-91) with fresh VFBseq ids. Scope is the paper's 57K stringently filtered 10x set: 26 Samples/Assays (12 DGRP-551, 14 w1118; adult brains 0-50 days). Seven Clusterings with one Cluster per author cluster (125): 87 at resolution 2.0 (Table S2), 5 S2-annotated at resolution 8.0, 18 sub-clusters of resolution-2.0 clusters 20/27/42/64, and 15 neuropeptide re-clustering groups; 82 mapped to FBbt and loaded, 43 held. Summary expression for the loaded Clusters as CPM from the 10x count matrix (194,453 cluster x gene rows with extent > 0.2; dataset total/filtered gene counts 14,456 / 6,704).",
   "decisions": [
     {
@@ -88,6 +88,11 @@
       "date": "2026-10-15",
       "by": "curator",
       "decision": "Assays named \"<Sample>, 10x library\" (one library per Sample), previously the accession or library id; ids unchanged."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Narrow by dissected tissue only where the tissue makes the term exact: the brain-only dissection makes the existing 'adult brain ...' glia terms (cell body, perineurial, subperineurial glia) exact, so they are kept. Clusters that could only be typed as 'cell' or 'neuron' stay held."
     }
   ],
   "checks": [

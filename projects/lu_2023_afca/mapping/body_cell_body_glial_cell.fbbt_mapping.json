@@ -1,29 +1,35 @@
 {
   "cluster_label": "body_cell body glial cell",
-  "working_definition": "Author cell type 'cell body glial cell' of the Fly Cell Atlas (Li et al. 2022; adult flies), annotated by the authors with FBbt:00001297 'cell body glial cell'. Found in: 10x:body (775 cells).",
+  "working_definition": "Author cell type 'cell body glial cell' of the Aging Fly Cell Atlas body analysis (Lu et al. 2023; whole fly minus head; adult flies 5-70 days; 2,347 cells), the FCA type of that name (FBbt:00001297). Cell body glia are part of the CNS cell body rind, and the only CNS in the body is the ventral nerve cord.",
   "searches_performed": [
     "authors' ontology id FBbt:00001297 (FBbt fbbt/releases/2026-10-01)",
     "'adult cell body glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
-    "'cell body glial cell' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+    "'adult VNC cell body glial cell' (FBbt fbbt/releases/2026-10-01)"
   ],
   "best_match": {
-    "fbbt_term": "adult cell body glial cell",
-    "fbbt_id": "FBbt:00059270",
-    "fbbt_definition": "Glial cell of the adult that is associated with the cell body rind of the brain or the ventral nerve cord.",
+    "fbbt_term": "adult VNC cell body glial cell",
+    "fbbt_id": "FBbt:00059288",
+    "fbbt_definition": "Any glial cell (FBbt:00005144) that is part of some adult ventral nerve cord cell body rind (FBbt:00111082).",
     "match_type": "exact match",
     "skos_mapping": "skos:exactMatch",
     "confidence": "high"
   },
-  "justification": "The authors annotated this type with FBbt:00001297 'cell body glial cell', a current FBbt cell term. FBbt has the adult-specific variant FBbt:00059270 'adult cell body glial cell', which denotes the same cells in the adult; the data are from adult flies, so the adult term is used.",
+  "justification": "The AFCA label is the FCA type 'cell body glial cell' (FBbt:00001297); the data are adult, and cell body glia are restricted to the CNS cell body rind, so in the body analysis (no brain) they are exactly the adult VNC cell body glia (curator rule: narrow by dissected tissue only where the tissue implies the term exactly).",
   "other_candidates": [
     {
-      "fbbt_term": "cell body glial cell",
-      "fbbt_id": "FBbt:00001297",
-      "fbbt_definition": "Glial cell with a nucleus amongst the neuronal cell bodies in the cell body rind. It is irregularly shaped, with processes that enclose the neuronal cell bodies.",
-      "reason_rejected": "The authors' term; FBbt has the adult-specific variant, preferred because the data are from adult flies (curation rule 4)."
+      "fbbt_term": "adult cell body glial cell",
+      "fbbt_id": "FBbt:00059270",
+      "fbbt_definition": "Glial cell of the adult that is associated with the cell body rind of the brain or the ventral nerve cord.",
+      "reason_rejected": "Correct but less specific: in the body analysis only the VNC cell body rind is present (FCA type-level mapping)."
     }
   ],
-  "recommendation": "Map to FBbt:00059270 'adult cell body glial cell' (adult variant of the authors' term), exact match.",
+  "recommendation": "Map to FBbt:00059288 'adult VNC cell body glial cell' for the body analysis, exact match.",
   "new_term_needed": false,
-  "verification_needed": false
+  "verification_needed": false,
+  "manual_edit": {
+    "by": "Clare Pilgrim (Clare72)",
+    "date": "2026-10-16",
+    "change": "best_match FBbt:00059270 adult cell body glial cell -> FBbt:00059288 adult VNC cell body glial cell (body analysis only)",
+    "reason": "curator: narrow by dissected tissue where exact; cell body glia are CNS-only (cell body rind), so body = VNC"
+  }
 }
