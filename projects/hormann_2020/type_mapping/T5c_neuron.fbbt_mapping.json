@@ -1,0 +1,28 @@
+{
+  "cluster_label": "T5c neuron",
+  "working_definition": "T5c neurons of Hörmann et al. 2020: one of the authors' eight clusters at each stage, assigned to subtype T5c by marker genes; FACS-sorted T4/T5 neurons, 48-72 h APF (pharate adult).",
+  "searches_performed": [
+    "T5c neuron",
+    "immature T5c neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "T5c neuron",
+    "fbbt_id": "FBbt:00003739",
+    "fbbt_definition": "T5 neuron with its lobula plate arbor in layer 3 (Fischbach and Dittrich, 1989). It responds to motion in an upwards direction (Henning et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors assign the cluster to subtype T5c; FBbt has the mature term for it, as the stage requires.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature T5c neuron",
+      "fbbt_id": "FBbt:00052261",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T5c neuron (Hormann et al., 2020). Early during its development, it projects its axon to lobula plate layer 3 (Hormann et al., 2020).",
+      "reason_rejected": "Immature form; at the pharate adult stage the mature term is used (curator)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00003739 T5c neuron (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

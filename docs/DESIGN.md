@@ -1300,4 +1300,10 @@ licence CC-BY-4.0. Curator decisions 2026-10-16.
   in the GEO matrices), cell numbers identical to the old load's. No clusters held. It
   also writes `.cache/hormann/memberships.tsv.gz` (cell -> cluster) for the expression
   build.
+- **FBbt mapping (stage 3):** `projects/hormann_2020/write_type_mappings.py` writes the
+  16 type mappings (no judgement needed: one exact FBbt term per subtype, read from OLS):
+  *immature T4a neuron* ... *immature T5d neuron* (defined from this paper) at 24 and 36
+  h APF (`type_mapping/immature/`), *T4a neuron* ... *T5d neuron* from 48 h APF
+  (`type_mapping/`). All 40 clusters mapped and loaded. The old load used the mature
+  terms at every stage.
 
