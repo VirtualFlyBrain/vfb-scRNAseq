@@ -1,0 +1,612 @@
+{
+  "project": "hormann_2020",
+  "created_at": "2026-10-16",
+  "updated_at": "2026-10-16",
+  "summary": "Hörmann et al. 2020 (Development), single-cell 10x of FACS-sorted T4/T5 neurons at five pupal stages (24, 36, 48, 60, 72 h APF), rebuilt from GEO GSE147987 and the authors' per-cell labels in the Single Cell Expression Atlas (E-GEOD-147987), replacing the old FlyBase/SCEA load FBlc0006305 with fresh VFBseq ids. 10 Samples / Assays (two replicate libraries per stage), linked to the split-GAL4 combination FBco0000215 via GENO has_genotype. Five Clusterings (one per stage), one Cluster per author cluster (8 per stage, each one T4/T5 subtype): 40, all mapped to FBbt (immature subtype terms at 24 and 36 h APF, mature from 48 h) and loaded. Summary expression as CPM from the GEO raw counts (17,744 genes x 43,986 cells; 105,521 cluster x gene rows with extent > 0.2).",
+  "decisions": [
+    {
+      "date": "2026-10-08",
+      "by": "curator",
+      "decision": "Map to cell-level FBbt terms only (a tissue or organ author term maps to its cell-level equivalent, else the type is held)."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Clusters with no FBbt term are held: listed in mapping.tsv with a hold_reason but not loaded (no VFBseq id, entity or expression rows). Their cells still count towards the Dataset's gene counts."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Summary expression is computed as CPM for every dataset."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Narrow a generic type by the dissected tissue only where the tissue makes the tissue-specific FBbt term exact; hold clusters that could only be typed as cell or neuron (or stage-specific versions); load glia under a glial-cell term."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Replace the old FlyBase/SCEA load FBlc0006305 (SCEA E-GEOD-147987; 5 stage clusterings x 8 subtypes, all mapped to mature terms) with fresh VFBseq ids; its assignments are a cross-check only. Licence CC-BY-4.0."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "One Clustering per stage, one Cluster per author cluster (stage x subtype, from the authors' per-cell labels in SCEA); the cross-stage integrated clustering (Fig 3D, apparently the label's trailing number) is not loaded."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Stages by the Bainbridge & Bownes FBdv definitions (24 h P6, 36 h P7, 48 h P8, 60 and 72 h P9); Sample tissue brain to the pupal stage, adult brain from the pharate adult stage (whole brains dissected, T4/T5 sorted)."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Samples from a cross link the genetic entities in the genotype, not a stock (GENO:0000222 has_genotype; new genotype_includes slot): here the split-GAL4 combination SS00324 = FBco0000215; the UAS-mCD8::GFP insertion is not identified in the paper, so not linked. Samples from a defined stock or strain keep the stock link."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Immature subtype terms up to the pupal stage (24, 36 h APF), mature from the pharate adult stage (48-72 h APF), as for Özel 2021."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "pipeline",
+      "decision": "Samples from GEO: each GSM one sample with one 10x library (two replicates per stage); pooled sex (unset)."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "pipeline",
+      "decision": "Clusters: build_clusters.py takes each SCEA-labelled cell's subtype from its label and its stage from its library (BioSample -> GSM title); the authors give the per-stage clusters no numbers, so the subtype label is the cluster id. Type mappings by write_type_mappings.py (no judgement needed: one exact FBbt term per subtype, from OLS)."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "pipeline",
+      "decision": "Expression from the GEO filtered 10x matrices (raw UMI counts) combined side by side (combine_matrices.py), cell -> cluster from the memberships (the authors' labelled cells), CPM over each cell's own counts; level the mean CPM over expressing cells, extent the fraction expressing, rows kept with extent > 0.2; Ensembl 97 FBgn ids mapped to current FlyBase genes, transgene features dropped."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "All 40 mapped clusters reviewed by the curator (mapping.tsv `reviewed`)."
+    }
+  ],
+  "checks": [
+    {
+      "date": "2026-10-16",
+      "check": "verify_mappings.py: every FBbt term in the mappings looked up in OLS (FBbt 2026-10-01).",
+      "result": "16 terms current, not obsolete, labels match."
+    },
+    {
+      "date": "2026-10-16",
+      "check": "FBbt, FBdv and FBcv terms on the Samples, Assays and Dataset looked up in OLS.",
+      "result": "All 8 terms current (pupal stage P6, P7, pharate adult stage P8, P9, brain, adult brain, single-cell RNA-Seq, 10x sequencing)."
+    },
+    {
+      "date": "2026-10-16",
+      "check": "FBco0000215 looked up in VFB production.",
+      "result": "Present, as the class ScerGAL4[DBD.R42F06]∩HsapRELA[AD.R59E08] (intersectional expression pattern) with IRI http://flybase.org/reports/FBco0000215."
+    },
+    {
+      "date": "2026-10-16",
+      "check": "SCEA author labels against the paper and the GEO matrices.",
+      "result": "43,986 cells labelled (the paper's ~44K high-quality cells), all in the GEO matrices; 8 subtypes at each of the 5 stages, as in the paper."
+    },
+    {
+      "date": "2026-10-16",
+      "check": "Cross-check against the old load FBlc0006305 (VFB production).",
+      "result": "The same 40 clusters with identical cell numbers; the old load mapped all to mature terms (here immature at 24 and 36 h APF)."
+    },
+    {
+      "date": "2026-10-16",
+      "check": "Marker spot checks in the expression output.",
+      "result": "dac in the a/b subtypes and bi (omb) in c/d (the pairs the authors assign by), grn in b/c, TfAP-2 in T4 only, SoxN / Sox102F in all clusters."
+    }
+  ],
+  "people": [
+    {
+      "id": "ORCID:0000-0002-1373-1705",
+      "label": "Clare Pilgrim",
+      "role": "curator",
+      "username": "Clare72"
+    }
+  ],
+  "pipeline": {
+    "id": "vfb-scrnaseq",
+    "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
+    "version": "0.0.0",
+    "commit": "b531e44",
+    "uncommitted_changes": true
+  },
+  "ontologies": [
+    {
+      "id": "FBbt",
+      "label": "Drosophila gross anatomy ontology",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBdv",
+      "label": "Drosophila developmental ontology",
+      "version": "2026-09-30",
+      "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-09-30/fbdv.owl",
+      "accessed_via": "OLS4 API; local fbdv.obo in .cache (stage definitions)",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBcv",
+      "label": "FlyBase controlled vocabulary",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-10-01/fbcv.owl",
+      "accessed_via": "OLS4 API",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "accessed_at": "2026-10-16"
+    }
+  ],
+  "data_sources": [
+    {
+      "id": "10.1242/dev.186296",
+      "type": "publication",
+      "label": "A combinatorial code of transcription factors specifies subtypes of visual motion-sensing neurons in Drosophila",
+      "xrefs": [
+        "PMID:32238425",
+        "PMCID:PMC7240302",
+        "FlyBase:FBrf0245647"
+      ],
+      "description": "Hörmann et al. 2020, Development. Full text read for the samples (stages, genotype, sorting) and the cluster scheme (8 clusters per stage, each assigned to a subtype).",
+      "url": "https://doi.org/10.1242/dev.186296",
+      "files": [
+        {
+          "path": "supp/PMC7240302.jats.xml",
+          "description": "JATS full text, NCBI efetch (db=pmc).",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=PMC7240302",
+          "sha256": "09051b987b92831ed17cd658c61af37c3505cbf774a5b74f87cfffa2447b8fef",
+          "bytes": 156977,
+          "accessed_at": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "GSE147987",
+      "type": "dataset",
+      "label": "A combinatorial code of transcription factors specifies subtypes of visual motion-sensing neurons in Drosophila",
+      "xrefs": [
+        "BioProject:PRJNA622762",
+        "SRA:SRP255018"
+      ],
+      "description": "GEO series: 10 single-cell 10x libraries of FACS-sorted T4/T5 neurons (24-72 h APF, two per stage). Sample metadata read live (SOFT); the per-library filtered matrices (barcodes, features, matrix) are the expression input.",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987",
+      "accessed_at": "2026-10-16",
+      "files": [
+        {
+          "path": "hormann/geo/GSM4451487_24h_APF_1_barcodes.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451487/suppl/GSM4451487_24h_APF_1_barcodes.tsv.gz",
+          "sha256": "422ee6c094ade775e709f4fd4d8441d20f949dc1c2eb91ff24807736039a61bb",
+          "bytes": 25800,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451487_24h_APF_1_features.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451487/suppl/GSM4451487_24h_APF_1_features.tsv.gz",
+          "sha256": "3bff531cee7ff9e0cb278f9d670cd3d4c4fe75ccd822f2d52a81dc84553e74fa",
+          "bytes": 150799,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451487_24h_APF_1_matrix.mtx.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451487/suppl/GSM4451487_24h_APF_1_matrix.mtx.gz",
+          "sha256": "ea4f83e8a8cceb306d4f0614f716511dcc92ed64ec7b29c79f281d7c3feeee43",
+          "bytes": 30978128,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451488_24h_APF_2_barcodes.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451488/suppl/GSM4451488_24h_APF_2_barcodes.tsv.gz",
+          "sha256": "a888f6b1a4132ae6ad78f055723806f75a56375a3d51215e0c070f4d60efbb2c",
+          "bytes": 66921,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451488_24h_APF_2_features.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451488/suppl/GSM4451488_24h_APF_2_features.tsv.gz",
+          "sha256": "be781a1c0af3ec9f73f94c8b615917068bfad363fbe265e8abed46ed6ae5ced2",
+          "bytes": 150799,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451488_24h_APF_2_matrix.mtx.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451488/suppl/GSM4451488_24h_APF_2_matrix.mtx.gz",
+          "sha256": "7aca4bbf988c66b8e674d842a4644690eefd770c10ff47f36133fa68d1485a0d",
+          "bytes": 78576738,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451489_36h_APF_1_barcodes.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451489/suppl/GSM4451489_36h_APF_1_barcodes.tsv.gz",
+          "sha256": "649d2b324d4067b7d53b9ea01ee9faab7d1c2473c6e8b52224e1668226394d77",
+          "bytes": 14349,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451489_36h_APF_1_features.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451489/suppl/GSM4451489_36h_APF_1_features.tsv.gz",
+          "sha256": "c5115ed5ceafd6d1e988841bcb5f3ad53be5e75c8c096799fc059c15d0c2c1b5",
+          "bytes": 150799,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451489_36h_APF_1_matrix.mtx.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451489/suppl/GSM4451489_36h_APF_1_matrix.mtx.gz",
+          "sha256": "fb9c91fecee27eb80cb16e91fb39a0febb8da6d0d5f8b6389d8f3b9a5ffc9cac",
+          "bytes": 13888741,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451490_36h_APF_2_barcodes.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451490/suppl/GSM4451490_36h_APF_2_barcodes.tsv.gz",
+          "sha256": "d77e9ee7b66c28bda96b13c54256ce057d7deba195e396e521746c717f70e2f7",
+          "bytes": 67403,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451490_36h_APF_2_features.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451490/suppl/GSM4451490_36h_APF_2_features.tsv.gz",
+          "sha256": "a33f00ce207dbfc502afe4287406de3aa7d46f078399d11748be1830a59c31e0",
+          "bytes": 150799,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451490_36h_APF_2_matrix.mtx.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451490/suppl/GSM4451490_36h_APF_2_matrix.mtx.gz",
+          "sha256": "04480c04681a8031807b5f2b06cfa7533957ba899c342d9f2e528a77a352df17",
+          "bytes": 69246161,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451491_48h_APF_1_barcodes.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451491/suppl/GSM4451491_48h_APF_1_barcodes.tsv.gz",
+          "sha256": "4a3d72ef122b964214f3671cf0015a7fb1abb35c39002172adc70ca64e5039ee",
+          "bytes": 25225,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451491_48h_APF_1_features.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451491/suppl/GSM4451491_48h_APF_1_features.tsv.gz",
+          "sha256": "61a92d57d765a556ebda5c2400746e03985e3c7a1b24fe64e76d303463090e8f",
+          "bytes": 150799,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451491_48h_APF_1_matrix.mtx.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451491/suppl/GSM4451491_48h_APF_1_matrix.mtx.gz",
+          "sha256": "2f1ffeff493c3ee445d5fdae02efe037896785a5b160c2e19b75b78c23b9ac17",
+          "bytes": 30248487,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451492_48h_APF_2_barcodes.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451492/suppl/GSM4451492_48h_APF_2_barcodes.tsv.gz",
+          "sha256": "bf3389ac4798975744e7aee3b988ba03eea6d20ec5e4a9a1cd0ab6761f837a89",
+          "bytes": 55104,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451492_48h_APF_2_features.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451492/suppl/GSM4451492_48h_APF_2_features.tsv.gz",
+          "sha256": "b2538a22bf7746388b1e4dcc435a305874ff226f0073d765296c7026bdf59b38",
+          "bytes": 150799,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451492_48h_APF_2_matrix.mtx.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451492/suppl/GSM4451492_48h_APF_2_matrix.mtx.gz",
+          "sha256": "f55302fb92bbf1be379adb94d5b9ba90b8697eb1edf346cd44b03462d66973cb",
+          "bytes": 67386314,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451493_60h_APF_1_barcodes.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451493/suppl/GSM4451493_60h_APF_1_barcodes.tsv.gz",
+          "sha256": "50a6482d3b63fd52b344215f798f606f7f75abb7ef77de653a1c880184f4d1b2",
+          "bytes": 22456,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451493_60h_APF_1_features.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451493/suppl/GSM4451493_60h_APF_1_features.tsv.gz",
+          "sha256": "496788c1bacdd9d2a28722f32c2ceed8be0380f1ec0bc0ca43566a001469df7d",
+          "bytes": 150799,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451493_60h_APF_1_matrix.mtx.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451493/suppl/GSM4451493_60h_APF_1_matrix.mtx.gz",
+          "sha256": "3dfbf9de01a27e6964a1977a00375cc064c13d67103c5e385ab8329aa0b08156",
+          "bytes": 26583914,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451494_60h_APF_2_barcodes.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451494/suppl/GSM4451494_60h_APF_2_barcodes.tsv.gz",
+          "sha256": "584485393cbc0dae9c53779f01eb9a9c3907b29e87d8d411a68d9974d1a4e1a4",
+          "bytes": 21036,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451494_60h_APF_2_features.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451494/suppl/GSM4451494_60h_APF_2_features.tsv.gz",
+          "sha256": "cdd1cad96ded4df6729a6f7b9afe10ff2dd0d6be4a89192b72662a1eaa01e3ef",
+          "bytes": 150799,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451494_60h_APF_2_matrix.mtx.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451494/suppl/GSM4451494_60h_APF_2_matrix.mtx.gz",
+          "sha256": "9ccb01ca9359ad9530716a828afe597f878972d982eed781ba7c5f3823a462e6",
+          "bytes": 21752327,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451495_72h_APF_1_barcodes.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451495/suppl/GSM4451495_72h_APF_1_barcodes.tsv.gz",
+          "sha256": "3554feded36bc28254de333fe8e901755c728e2fd3585d5007996c4960381b7a",
+          "bytes": 25679,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451495_72h_APF_1_features.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451495/suppl/GSM4451495_72h_APF_1_features.tsv.gz",
+          "sha256": "374f973aa6d7b7f8631e61e2260ef19e790d87c6c092687586dae5b083a79400",
+          "bytes": 150799,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451495_72h_APF_1_matrix.mtx.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451495/suppl/GSM4451495_72h_APF_1_matrix.mtx.gz",
+          "sha256": "cc3f758310765a2ad44857a82b20b91a7eb1b553761644cf02451878f6a3e64e",
+          "bytes": 19693049,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451496_72h_APF_2_barcodes.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451496/suppl/GSM4451496_72h_APF_2_barcodes.tsv.gz",
+          "sha256": "ec4605979b9298f2ee78ad4f74b241c40db82125988d8a4710d302ebe21db88e",
+          "bytes": 50569,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451496_72h_APF_2_features.tsv.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451496/suppl/GSM4451496_72h_APF_2_features.tsv.gz",
+          "sha256": "ecc398a760748bc44d5750768d906ab723834ba860f492c4a15b601a3e35ba93",
+          "bytes": 150799,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/geo/GSM4451496_72h_APF_2_matrix.mtx.gz",
+          "description": "GEO sample supplementary file (filtered 10x matrix).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4451nnn/GSM4451496/suppl/GSM4451496_72h_APF_2_matrix.mtx.gz",
+          "sha256": "04998f49370f58ed2000ba5f0c4a9a14a4593839b45a6b37079bf2ee0892afb5",
+          "bytes": 52948051,
+          "accessed_at": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "E-GEOD-147987",
+      "type": "dataset",
+      "label": "A combinatorial code of transcription factors specifies subtypes of visual motion-sensing neurons in Drosophila (SCEA)",
+      "xrefs": [
+        "GEO:GSE147987"
+      ],
+      "description": "EMBL-EBI Single Cell Expression Atlas experiment: its experiment design gives each cell the authors' label ('inferred cell type - authors labels'), the source of the clusters; its SDRF maps BioSamples to the GEO libraries.",
+      "url": "https://www.ebi.ac.uk/gxa/sc/experiments/E-GEOD-147987",
+      "accessed_at": "2026-10-16",
+      "files": [
+        {
+          "path": "hormann/scea/design.tsv",
+          "description": "Experiment design (per-cell labels).",
+          "url": "https://www.ebi.ac.uk/gxa/sc/experiment/E-GEOD-147987/download?fileType=experiment-design&accessKey=",
+          "sha256": "a4d36a853dc27f3fa37abc19f07634c609216ed6c2a7b453741585c7e8844865",
+          "bytes": 30544370,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/scea/E-GEOD-147987.sdrf.txt",
+          "description": "MAGE-TAB SDRF (BioSample to GSM title).",
+          "url": "https://www.ebi.ac.uk/gxa/sc/experiment/E-GEOD-147987/download/zip?fileType=experiment-metadata&accessKey=",
+          "sha256": "d7bffe8eadecb8e144e6ea65a9de8bd72a326648f0e4d7b9fd9fa5bca0b9c8fe",
+          "bytes": 115868,
+          "accessed_at": "2026-10-16"
+        },
+        {
+          "path": "hormann/scea/E-GEOD-147987.idf.txt",
+          "description": "MAGE-TAB IDF.",
+          "url": "https://www.ebi.ac.uk/gxa/sc/experiment/E-GEOD-147987/download/zip?fileType=experiment-metadata&accessKey=",
+          "sha256": "c7b3b16da7b9933a625d816b1e941c3d657d60b0034fb23697faff0d2dbc7991",
+          "bytes": 4794,
+          "accessed_at": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "borstlab/TF_code_paper",
+      "type": "author_files",
+      "label": "The authors' code (GitHub)",
+      "description": "Checked for the scRNAseq analysis: it holds only the dendrite-orientation image analysis (at commit bee2c47), so the cluster labels come from SCEA.",
+      "url": "https://github.com/borstlab/TF_code_paper",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "ozel_2021",
+      "type": "project",
+      "label": "Özel 2021 (this repo)",
+      "description": "Its stage scheme (Bainbridge & Bownes FBdv stages; immature terms to the pupal stage) followed.",
+      "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq/tree/main/projects/ozel_2021",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBlc0006305",
+      "type": "previous_load",
+      "label": "scRNAseq_2020_Hormann",
+      "description": "The old FlyBase/SCEA load this project replaces (SCEA E-GEOD-147987; 40 clusters, all mature terms, read from VFB production); used only as a cross-check.",
+      "url": "https://virtualflybrain.org/reports/FBlc0006305",
+      "accessed_at": "2026-10-16"
+    }
+  ],
+  "software": [
+    {
+      "id": "claude-code",
+      "type": "tool",
+      "label": "Claude Code",
+      "version": "2.1.300",
+      "description": "Agentic CLI that ran the session (orchestrator), stages 1-5."
+    },
+    {
+      "id": "ols4",
+      "type": "service",
+      "label": "OLS4 (Ontology Lookup Service)",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "accessed_at": "2026-10-16",
+      "description": "FBbt / FBdv / FBcv lookup during mapping (OLS MCP) and term verification."
+    },
+    {
+      "id": "vfb-pdb",
+      "type": "service",
+      "label": "VFB production (neo4j)",
+      "url": "https://pdb.virtualflybrain.org",
+      "accessed_at": "2026-10-16",
+      "description": "Publication FBrf0245647 resolved by PMID (vfb_scrnaseq.pub); the old load FBlc0006305 and the split combination FBco0000215 read."
+    },
+    {
+      "id": "flybase-chado",
+      "type": "service",
+      "label": "FlyBase Chado",
+      "version": "FB2026_03 (data last modified 2026-08-29)",
+      "url": "https://chado.flybase.org",
+      "accessed_at": "2026-10-16",
+      "description": "Gene ids mapped to current FlyBase genes (update_gene_ids.py); the driver stock (BDSC 86858) looked up."
+    },
+    {
+      "id": "ncbi-geo",
+      "type": "service",
+      "label": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/",
+      "accessed_at": "2026-10-16",
+      "description": "Series and Sample SOFT metadata read by ingest.fetch_series (build_samples_from_geo.py)."
+    },
+    {
+      "id": "scea",
+      "type": "service",
+      "label": "EMBL-EBI Single Cell Expression Atlas",
+      "url": "https://www.ebi.ac.uk/gxa/sc/experiments/E-GEOD-147987",
+      "accessed_at": "2026-10-16",
+      "description": "Experiment design (per-cell 'inferred cell type - authors labels') and MAGE-TAB of E-GEOD-147987, fetched by build_clusters.py."
+    },
+    {
+      "id": "python",
+      "type": "language",
+      "label": "Python",
+      "version": "3.14.3",
+      "description": "Pipeline environment (uv-managed)."
+    },
+    {
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
+      "version": "2.5.1"
+    },
+    {
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
+      "version": "3.0.5"
+    },
+    {
+      "id": "pyyaml",
+      "type": "library",
+      "label": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
+      "version": "1.11.1",
+      "description": "linkml-validate and linkml-convert (flat RDF)."
+    },
+    {
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
+      "version": "1.11.1"
+    },
+    {
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
+      "version": "0.5.0",
+      "description": "Metadata OWL."
+    },
+    {
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
+      "version": "1.9.11",
+      "description": "OFN to OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "id": "psql",
+      "type": "tool",
+      "label": "psql",
+      "version": "14.15",
+      "description": "FlyBase Chado queries."
+    }
+  ],
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "role": "orchestrator",
+      "label": "Claude Opus 5.5",
+      "provider": "Anthropic",
+      "description": "Main Claude Code session: scoping (paper, GEO, SCEA, the old load), the genotype modelling (with the curator), sample and cluster builds, the type-mapping and matrix-combining scripts, checks, expression and builds. No subagents."
+    }
+  ]
+}
