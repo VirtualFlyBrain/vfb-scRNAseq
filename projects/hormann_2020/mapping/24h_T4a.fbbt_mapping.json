@@ -1,0 +1,28 @@
+{
+  "cluster_label": "24h_T4a",
+  "working_definition": "T4a neurons of Hörmann et al. 2020: one of the authors' eight clusters at each stage, assigned to subtype T4a by marker genes; FACS-sorted T4/T5 neurons, 24 and 36 h APF (pupal).",
+  "searches_performed": [
+    "T4a neuron",
+    "immature T4a neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "immature T4a neuron",
+    "fbbt_id": "FBbt:00052263",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T4a neuron (Hormann et al., 2020). Early during its development, it projects its axon to lobula plate layer 1 (Hormann et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors assign the cluster to subtype T4a; FBbt has the immature term for it (defined from this paper), as the stage requires.",
+  "other_candidates": [
+    {
+      "fbbt_term": "T4a neuron",
+      "fbbt_id": "FBbt:00003732",
+      "fbbt_definition": "T4 neuron with its lobula plate arbor in layer 1 (Fischbach and Dittrich, 1989). It responds to motion in a diagonal front-to-back direction (Henning et al., 2022).",
+      "reason_rejected": "Mature form; up to the pupal stage the immature term is used (curator)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052263 immature T4a neuron (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

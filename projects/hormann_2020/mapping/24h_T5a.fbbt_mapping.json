@@ -1,0 +1,28 @@
+{
+  "cluster_label": "24h_T5a",
+  "working_definition": "T5a neurons of Hörmann et al. 2020: one of the authors' eight clusters at each stage, assigned to subtype T5a by marker genes; FACS-sorted T4/T5 neurons, 24 and 36 h APF (pupal).",
+  "searches_performed": [
+    "T5a neuron",
+    "immature T5a neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "immature T5a neuron",
+    "fbbt_id": "FBbt:00052259",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T5a neuron (Hormann et al., 2020). Early during its development, it projects its axon to lobula plate layer 1 (Hormann et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors assign the cluster to subtype T5a; FBbt has the immature term for it (defined from this paper), as the stage requires.",
+  "other_candidates": [
+    {
+      "fbbt_term": "T5a neuron",
+      "fbbt_id": "FBbt:00003737",
+      "fbbt_definition": "T5 neuron with its lobula plate arbor in layer 1 (Fischbach and Dittrich, 1989). It responds to motion in a diagonal front-to-back direction (Henning et al., 2022).",
+      "reason_rejected": "Mature form; up to the pupal stage the immature term is used (curator)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00052259 immature T5a neuron (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -1,0 +1,28 @@
+{
+  "cluster_label": "60h_T4b",
+  "working_definition": "T4b neurons of Hörmann et al. 2020: one of the authors' eight clusters at each stage, assigned to subtype T4b by marker genes; FACS-sorted T4/T5 neurons, 48-72 h APF (pharate adult).",
+  "searches_performed": [
+    "T4b neuron",
+    "immature T4b neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "T4b neuron",
+    "fbbt_id": "FBbt:00003733",
+    "fbbt_definition": "T4 neuron with its lobula plate arbor in layer 2 (Fischbach and Dittrich, 1989). It responds to motion in a diagonal back-to-front direction (Henning et al., 2022).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors assign the cluster to subtype T4b; FBbt has the mature term for it, as the stage requires.",
+  "other_candidates": [
+    {
+      "fbbt_term": "immature T4b neuron",
+      "fbbt_id": "FBbt:00052264",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T4b neuron (Hormann et al., 2020). Early during its development, it projects its axon to lobula plate layer 2 (Hormann et al., 2020).",
+      "reason_rejected": "Immature form; at the pharate adult stage the mature term is used (curator)."
+    }
+  ],
+  "recommendation": "Map to FBbt:00003733 T4b neuron (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}
