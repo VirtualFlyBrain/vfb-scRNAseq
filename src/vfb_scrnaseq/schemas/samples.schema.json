@@ -50,6 +50,8 @@
           "genotype": { "type": ["string", "null"] },
           "stock": { "oneOf": [ { "type": "null" },
                                 { "type": "array", "items": { "type": "string", "pattern": "^FBst[0-9]{7}$" } } ] },
+          "genotype_includes": { "oneOf": [ { "type": "null" },
+                                { "type": "array", "items": { "type": "string", "pattern": "^FB(co|al|tp|ti)[0-9]{7}$" } } ] },
           "sex": { "type": ["string", "null"], "enum": ["male", "female", null] },
           "stage": { "oneOf": [ { "type": "null" }, { "$ref": "#/definitions/ont_ref_fbdv" } ] },
           "sample_tissue": { "oneOf": [ { "type": "null" }, { "$ref": "#/definitions/ont_ref_fbbt" },

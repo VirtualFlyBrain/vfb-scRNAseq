@@ -1,0 +1,80 @@
+# Hörmann et al. 2020 (Development; FBrf0245647): single-cell 10x of T4/T5 neurons
+# during pupal development (GEO GSE147987, 10 libraries: 24, 36, 48, 60 and 72 h APF,
+# two replicates each). Brains of SS00324-splitGal4 > UAS-mCD8::GFP pupae were
+# dissociated and the GFP+ T4/T5 cells FACS-sorted. Previously loaded into VFB via the
+# old FlyBase/SCEA mechanism as FBlc0006305 (scRNAseq_2020_Hormann; SCEA E-GEOD-147987,
+# 5 stage clusterings x 8 subtypes, all mapped to mature terms); rebuilt here with
+# fresh VFBseq ids. Curator decisions 2026-10-16: one Clustering per stage, one Cluster
+# per author cluster (the authors' 8 clusters per stage, each assigned to one of the
+# subtypes T4a-d / T5a-d); cell membership from the authors' labels as given to SCEA
+# ("inferred cell type - authors labels", e.g. "T4a neuron 0": the subtype, then a
+# number that appears to be the cross-stage integrated cluster of Fig 3D, not loaded).
+project: hormann_2020
+
+source:
+  doi: 10.1242/dev.186296
+  pmid: "32238425"
+  pmcid: PMC7240302
+  fbrf: FBrf0245647          # VFB production :pub node (resolved by PMID)
+  title: "A combinatorial code of transcription factors specifies subtypes of visual motion-sensing neurons in Drosophila"
+  journal: Development
+  year: 2020
+  first_author: Hörmann
+
+organism: Drosophila melanogaster
+
+dataset:
+  site: GEO
+  accession: GSE147987
+  bioproject: PRJNA622762
+  sra_study: SRP255018
+  platform: GPL19132            # Illumina NextSeq 500
+  licence: CC-BY-4.0
+  assay_type: FBcv:0009000      # single-cell RNA-seq
+
+sample_build:
+  # GSM titles are "<n>h_APF_<rep>". Each GSM is one 10x library ("Two biological
+  # replicates were obtained for each developmental stage"), so Sample:Assay 1:1.
+  title_pattern: 'regex:(?P<timepoint>\d+h)_APF_(?P<biorep>\d+)'
+  assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
+  assay_label: { unit: 10x library }
+  # Paper: "At pupal stages, female and male brains were analysed" (pooled: unset).
+  sex: mixed
+  # Genotype (curator 2026-10-16): the animals were SS00324-splitGal4 > UAS-mCD8::GFP
+  # (a cross), so the Samples link the genetic entity rather than a stock (a stock would
+  # be only half the genotype): the split-GAL4 combination FBco0000215
+  # (ScerGAL4[DBD.R42F06]∩HsapRELA[AD.R59E08], R59E08-AD attP40; R42F06-DBD attP2),
+  # via GENO has_genotype. The paper does not identify the UAS-mCD8::GFP insertion, so the
+  # effector is not linked. (The driver's stock is BDSC 86858 = FBst0086858.)
+  genotype_includes: [FBco0000215]
+  # GEO stage -> FBdv, by the Bainbridge & Bownes stage definitions (flies raised at
+  # 25 C; FBdv pupal period 100 h), as for Özel 2021. Tissue: whole brains were
+  # dissected (then T4/T5 sorted): brain to the pupal stage (P6, P7), adult brain from
+  # the pharate adult stage (P8; curator 2026-10-16).
+  age_map:
+    "24 hours after pupa formation":
+      stage:  { fbdv_id: FBdv:00005353, label: pupal stage P6 }          # 18.7-32.4 h APF
+      tissue: { fbbt_id: FBbt:00005095, label: brain }
+    "36 hours after pupa formation":
+      stage:  { fbdv_id: FBdv:00005354, label: pupal stage P7 }          # 32.4-44.3 h APF
+      tissue: { fbbt_id: FBbt:00005095, label: brain }
+    "48 hours after pupa formation":
+      stage:  { fbdv_id: FBdv:00005355, label: pharate adult stage P8 }  # 44.3-56.6 h APF
+      tissue: { fbbt_id: FBbt:00003624, label: adult brain }
+    "60 hours after pupa formation":
+      stage:  { fbdv_id: FBdv:00005356, label: pharate adult stage P9 }  # 56.6-74.5 h APF
+      tissue: { fbbt_id: FBbt:00003624, label: adult brain }
+    "72 hours after pupa formation":
+      stage:  { fbdv_id: FBdv:00005356, label: pharate adult stage P9 }  # 56.6-74.5 h APF
+      tissue: { fbbt_id: FBbt:00003624, label: adult brain }
+  # Sample labels: GEO's tissue is the sorted cells
+  tissue_labels:
+    "T4/T5 neurons": FACS-sorted T4/T5 neurons
+  # One Clustering per stage: the authors' 8 clusters at that stage, linked to that
+  # stage's samples.
+  clusterings:
+    - { id: "24h", name: "Hörmann 2020 24 h APF T4/T5 clusters", sample_age: "24 hours after pupa formation" }
+    - { id: "36h", name: "Hörmann 2020 36 h APF T4/T5 clusters", sample_age: "36 hours after pupa formation" }
+    - { id: "48h", name: "Hörmann 2020 48 h APF T4/T5 clusters", sample_age: "48 hours after pupa formation" }
+    - { id: "60h", name: "Hörmann 2020 60 h APF T4/T5 clusters", sample_age: "60 hours after pupa formation" }
+    - { id: "72h", name: "Hörmann 2020 72 h APF T4/T5 clusters", sample_age: "72 hours after pupa formation" }

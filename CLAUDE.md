@@ -19,6 +19,9 @@ clusters mapped to FBbt, for loading into Virtual Fly Brain. Read `README.md`, t
 - Narrow a generic type by the dissected tissue only where the tissue makes the
   tissue-specific FBbt term exact; hold clusters that could only be typed as *cell* or
   *neuron*.
+- Samples from a defined stock/strain link the FlyBase stock (`stock`); samples from a
+  cross (e.g. split-GAL4 > UAS) link the genetic entities instead (`genotype_includes`,
+  GENO:0000222: FBco / FBal / FBtp / FBti).
 - Reuse identical Samples/Assays from another study by their existing VFBseq ids
   (never mint duplicates); if that study isn't curated yet, tell the curator and
   suggest curating it first.
