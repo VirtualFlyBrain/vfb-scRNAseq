@@ -97,7 +97,7 @@ sample_build:
 # Clusters (projects/ozel_2021/build_clusters.py, from the R exports in .cache/ozel/):
 # one entry per final identity per stage, named from Supplementary Table 1.
 annotations:
-  review_columns: [clustering, source_cluster_id, type, author_confidence]
+  review_columns: [clustering, source_cluster_id, type, author_confidence, author_note]
 
 # Held (listed in mapping.tsv, not loaded): identities the authors left numbered
 # (untyped), low-quality identities (artefact) and identity 0, cells given no final

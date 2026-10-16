@@ -1128,11 +1128,20 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-16.
   Tm9d / Tm9v as their exact synonyms, sourced from this paper). Held for lack of a
   term: Apop (the authors' state call for apoptotic cells of no identity) and LPLC1 /
   LPLC2 at P15-P40 (FBbt has no immature LPLC term, and LPLC is not under *adult optic
-  lobe neuron*, so the only immature ancestor is *immature neuron*). Result: 508 of
-  1,238 entries mapped (127 FBbt terms, all current); 52 `verification_needed`.
+  lobe neuron*, so the only immature ancestor is *immature neuron*; held until the
+  terms exist, curator 2026-10-16). Result: 508 of 1,238 entries mapped (127 FBbt terms,
+  all current); 52 `verification_needed`. Each entry carries the authors' table
+  comment (`author_note`, a review column) — the basis of calls such as Im02 "probably
+  immature Tm9 neurons".
+- **Pending FBbt terms (curator 2026-10-16).** The P15-P40 T2 / T2a / T3 clusters wait
+  on #2216 (requested for Kurmangaliyev), and the other immature types FBbt lacks
+  (C2, C3, LC4, LC6, LC10a/b/d, LC12, LC16, LC17, LLPC1, LPC1, LPLC1, LPLC2, Lawf1,
+  Lawf2, Tm5 / Tm5a) were requested in FBbt #2219; both are tracked in
+  `checks/pending_fbbt_requests.json` (the weekly check reminds when released).
 - **Cross-checks.** 53 of 55 types shared with Kurmangaliyev 2020 (main) map alike;
-  the two others, Dm3a / Dm3b, have their own FBbt terms now but are *Dm3* in
-  Kurmangaliyev. The old load FBlc0005659 agrees on all 49 types matched by name; it
+  the two others are Dm3a / Dm3b: FBbt's *Dm3a* / *Dm3b* are defined from this paper,
+  so they are exact here, while Kurmangaliyev keeps *Dm3* (equivalence of its Dm3a / b
+  with Özel's is not established). The old load FBlc0005659 agrees on all 49 types matched by name; it
   names five types (LC10c, LC9, Dm15, Mt8, LPi3-4) that Supplementary Table 1 leaves
   numbered or does not use (identity 93 is noted "likely to be LC10c" but left numbered).
 
