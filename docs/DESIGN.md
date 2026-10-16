@@ -1133,6 +1133,16 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-16.
   all current); 52 `verification_needed`. Each entry carries the authors' table
   comment (`author_note`, a review column) — the basis of calls such as Im02 "probably
   immature Tm9 neurons".
+- **Probable identities from the authors' comments (curator 2026-10-16).** Numbered
+  identities whose Supplementary Table 1 comment gives a probable type are mapped,
+  unless the comment points to low quality (config `probable_identities`; entries
+  flagged `author_confidence: probable (author comment)` and `verification_needed`):
+  93 "likely to be LC10c" → *lobula columnar neuron LC10c* (immature stages: *immature
+  lobula columnar neuron*); 98 "Very likely to be a LC cell" → *lobula columnar neuron*
+  / *immature lobula columnar neuron*; 112 "best match for all kenyon cells ... likely
+  good quality" (P70, adult) → *adult Kenyon cell*. Not mapped: 5 and 48 ("might be"
+  only), 102 ("could correspond to multiplets"), and those with low-quality features
+  (38, 85, 120, G/LQ). 522 of 1,238 entries now mapped (130 FBbt terms).
 - **Pending FBbt terms (curator 2026-10-16).** The P15-P40 T2 / T2a / T3 clusters wait
   on #2216 (requested for Kurmangaliyev), and the other immature types FBbt lacks
   (C2, C3, LC4, LC6, LC10a/b/d, LC12, LC16, LC17, LLPC1, LPC1, LPLC1, LPLC2, Lawf1,

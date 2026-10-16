@@ -14,7 +14,10 @@ intermediate step.
   author_confidence 'less confident' where the table marks the name with '*'
   class             'glia' for the numbered glial identities (G01, G02, ...)
   unannotated       True for identities the authors left numbered, low-quality ('LQ')
-                    identities, and identity 0 (cells given no final identity)
+                    identities, and identity 0 (cells given no final identity) — except
+                    numbered identities whose table comment gives a probable type
+                    (config `probable_identities`, curator-listed): typed as given, with
+                    author_confidence 'probable (author comment)'
   cells_by_library  cells per library (`orig.ident`)
   author_note       the table's annotation comment for the identity at that stage (the
                     adult comment for the adult, else the pupal one; either as fallback) —
@@ -84,6 +87,7 @@ def main() -> None:
     cfg = yaml.safe_load((PROJ / "config.yaml").read_text())
     names = {c["id"]: c["name"] for c in cfg["sample_build"]["clusterings"]}
     table, notes = author_names()
+    probable = {str(k): v for k, v in (cfg.get("probable_identities") or {}).items()}
     anns, unknown = [], set()
     for stage, folder in STAGE_FILES.items():
         with gzip.open(CACHE / folder / "metadata.tsv.gz", "rt") as fh:
@@ -112,7 +116,10 @@ def main() -> None:
                 rec["author_note"] = note_for(notes, num, stage)
             if re.fullmatch(r"G\d+[a-z]*", name):
                 rec["class"] = "glia"
-            if num == "0":
+            if num in probable:
+                rec["type"] = probable[num]["type"]
+                rec["author_confidence"] = "probable (author comment)"
+            elif num == "0":
                 rec["type"] = "0"
                 rec["unannotated"] = True            # no final identity
             elif is_numbered(name, num) or is_low_quality(name):

@@ -47,6 +47,8 @@ TRANSIENT = {"TEd", "TEv"}
 # (LPC: lamina precursor cell, not lobula plate columnar neuron; NB: neuroblast; PR:
 # photoreceptor, not protocerebrum): always judged by the agents
 AMBIGUOUS = {"LPC", "NB", "PR"}
+# mapped by hand (the adult variant of a stage-neutral term): not rewritten here
+HAND = {"Kenyon cell"}
 RELEASE = "FBbt fbbt/releases/2026-10-01"
 
 
@@ -148,7 +150,7 @@ def main() -> None:
                        "is used (as for Kurmangaliyev 2020 early glia)."),
                     searches=[f"'{lab}' ({RELEASE})"])
             continue
-        if typ in AMBIGUOUS:
+        if typ in AMBIGUOUS or typ in HAND:
             continue
         hits = [t for t in by_exact.get(typ, ()) if is_neuron(t)]
         if len(hits) != 1:
