@@ -13,7 +13,7 @@ give its author cluster: one entry per stage x subtype.
   label              <stage>_<subtype> (e.g. 24h_T4a)
   type               the subtype as the authors label it (e.g. "T4a neuron")
   clustering         the stage (24h, 36h, 48h, 60h, 72h)
-  source_cluster_id  the subtype (the authors give the per-stage clusters no numbers)
+  source_cluster_id  the subtype label (the authors give the per-stage clusters no numbers)
   cells_by_library   cells per GEO library (GSM title)
 
 Also writes .cache/hormann/memberships.tsv.gz (cell<TAB>cluster, cells named
@@ -85,7 +85,7 @@ def main() -> None:
             "type": types[label],
             "clustering": stage,
             "clustering_name": names[stage],
-            "source_cluster_id": subtype,
+            "source_cluster_id": types[label],     # no cluster numbers: the subtype
             "cell_number": len(cells[label]),
             "cells_by_library": dict(sorted(libs.items())),
         })

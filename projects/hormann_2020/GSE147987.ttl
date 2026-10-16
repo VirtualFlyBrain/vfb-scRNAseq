@@ -1,0 +1,659 @@
+@prefix BAO: <http://www.bioassayontology.org/bao#BAO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix FBbt: <http://purl.obolibrary.org/obo/FBbt_> .
+@prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
+@prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
+@prefix FlyBase: <http://flybase.org/reports/> .
+@prefix GENO: <http://purl.obolibrary.org/obo/GENO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix VFBseq: <http://virtualflybrain.org/reports/VFBseq_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix neo_custom: <http://n2o.neo/custom/> .
+@prefix neo_property: <http://n2o.neo/property/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vfb: <http://virtualflybrain.org/reports/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VFBseq:00002487 a FBcv:0009003 ;
+    rdfs:label "T4a neuron cluster (Hörmann 2020 24 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1802 ;
+    neo_custom:filtered_gene_count 3021 ;
+    neo_custom:total_gene_count 9584 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002482 ;
+    RO:0002473 FBbt:00052263 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002488 a FBcv:0009003 ;
+    rdfs:label "T4b neuron cluster (Hörmann 2020 24 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1447 ;
+    neo_custom:filtered_gene_count 3004 ;
+    neo_custom:total_gene_count 9310 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002482 ;
+    RO:0002473 FBbt:00052264 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002489 a FBcv:0009003 ;
+    rdfs:label "T4c neuron cluster (Hörmann 2020 24 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1376 ;
+    neo_custom:filtered_gene_count 2977 ;
+    neo_custom:total_gene_count 9251 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002482 ;
+    RO:0002473 FBbt:00052265 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002490 a FBcv:0009003 ;
+    rdfs:label "T4d neuron cluster (Hörmann 2020 24 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1561 ;
+    neo_custom:filtered_gene_count 3009 ;
+    neo_custom:total_gene_count 9431 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002482 ;
+    RO:0002473 FBbt:00052266 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002491 a FBcv:0009003 ;
+    rdfs:label "T5a neuron cluster (Hörmann 2020 24 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1084 ;
+    neo_custom:filtered_gene_count 2992 ;
+    neo_custom:total_gene_count 9061 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002482 ;
+    RO:0002473 FBbt:00052259 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002492 a FBcv:0009003 ;
+    rdfs:label "T5b neuron cluster (Hörmann 2020 24 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1061 ;
+    neo_custom:filtered_gene_count 2974 ;
+    neo_custom:total_gene_count 9028 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002482 ;
+    RO:0002473 FBbt:00052260 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002493 a FBcv:0009003 ;
+    rdfs:label "T5c neuron cluster (Hörmann 2020 24 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 748 ;
+    neo_custom:filtered_gene_count 2951 ;
+    neo_custom:total_gene_count 8596 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002482 ;
+    RO:0002473 FBbt:00052261 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002494 a FBcv:0009003 ;
+    rdfs:label "T5d neuron cluster (Hörmann 2020 24 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 841 ;
+    neo_custom:filtered_gene_count 2913 ;
+    neo_custom:total_gene_count 8722 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002482 ;
+    RO:0002473 FBbt:00052262 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002495 a FBcv:0009003 ;
+    rdfs:label "T4a neuron cluster (Hörmann 2020 36 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 818 ;
+    neo_custom:filtered_gene_count 2607 ;
+    neo_custom:total_gene_count 8597 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002483 ;
+    RO:0002473 FBbt:00052263 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002496 a FBcv:0009003 ;
+    rdfs:label "T4b neuron cluster (Hörmann 2020 36 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 840 ;
+    neo_custom:filtered_gene_count 2527 ;
+    neo_custom:total_gene_count 8530 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002483 ;
+    RO:0002473 FBbt:00052264 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002497 a FBcv:0009003 ;
+    rdfs:label "T4c neuron cluster (Hörmann 2020 36 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 996 ;
+    neo_custom:filtered_gene_count 2542 ;
+    neo_custom:total_gene_count 8809 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002483 ;
+    RO:0002473 FBbt:00052265 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002498 a FBcv:0009003 ;
+    rdfs:label "T4d neuron cluster (Hörmann 2020 36 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 823 ;
+    neo_custom:filtered_gene_count 2577 ;
+    neo_custom:total_gene_count 8515 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002483 ;
+    RO:0002473 FBbt:00052266 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002499 a FBcv:0009003 ;
+    rdfs:label "T5a neuron cluster (Hörmann 2020 36 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 855 ;
+    neo_custom:filtered_gene_count 2607 ;
+    neo_custom:total_gene_count 8633 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002483 ;
+    RO:0002473 FBbt:00052259 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002500 a FBcv:0009003 ;
+    rdfs:label "T5b neuron cluster (Hörmann 2020 36 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 851 ;
+    neo_custom:filtered_gene_count 2599 ;
+    neo_custom:total_gene_count 8620 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002483 ;
+    RO:0002473 FBbt:00052260 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002501 a FBcv:0009003 ;
+    rdfs:label "T5c neuron cluster (Hörmann 2020 36 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 656 ;
+    neo_custom:filtered_gene_count 2593 ;
+    neo_custom:total_gene_count 8329 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002483 ;
+    RO:0002473 FBbt:00052261 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002502 a FBcv:0009003 ;
+    rdfs:label "T5d neuron cluster (Hörmann 2020 36 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 728 ;
+    neo_custom:filtered_gene_count 2574 ;
+    neo_custom:total_gene_count 8496 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002483 ;
+    RO:0002473 FBbt:00052262 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002503 a FBcv:0009003 ;
+    rdfs:label "T4a neuron cluster (Hörmann 2020 48 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1346 ;
+    neo_custom:filtered_gene_count 2793 ;
+    neo_custom:total_gene_count 9224 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002484 ;
+    RO:0002473 FBbt:00003732 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002504 a FBcv:0009003 ;
+    rdfs:label "T4b neuron cluster (Hörmann 2020 48 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1352 ;
+    neo_custom:filtered_gene_count 2801 ;
+    neo_custom:total_gene_count 9156 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002484 ;
+    RO:0002473 FBbt:00003733 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002505 a FBcv:0009003 ;
+    rdfs:label "T4c neuron cluster (Hörmann 2020 48 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1601 ;
+    neo_custom:filtered_gene_count 2722 ;
+    neo_custom:total_gene_count 9333 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002484 ;
+    RO:0002473 FBbt:00003734 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002506 a FBcv:0009003 ;
+    rdfs:label "T4d neuron cluster (Hörmann 2020 48 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1321 ;
+    neo_custom:filtered_gene_count 2786 ;
+    neo_custom:total_gene_count 9208 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002484 ;
+    RO:0002473 FBbt:00003735 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002507 a FBcv:0009003 ;
+    rdfs:label "T5a neuron cluster (Hörmann 2020 48 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1358 ;
+    neo_custom:filtered_gene_count 2778 ;
+    neo_custom:total_gene_count 9031 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002484 ;
+    RO:0002473 FBbt:00003737 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002508 a FBcv:0009003 ;
+    rdfs:label "T5b neuron cluster (Hörmann 2020 48 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1366 ;
+    neo_custom:filtered_gene_count 2772 ;
+    neo_custom:total_gene_count 9013 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002484 ;
+    RO:0002473 FBbt:00003738 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002509 a FBcv:0009003 ;
+    rdfs:label "T5c neuron cluster (Hörmann 2020 48 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1231 ;
+    neo_custom:filtered_gene_count 2766 ;
+    neo_custom:total_gene_count 8999 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002484 ;
+    RO:0002473 FBbt:00003739 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002510 a FBcv:0009003 ;
+    rdfs:label "T5d neuron cluster (Hörmann 2020 48 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1158 ;
+    neo_custom:filtered_gene_count 2733 ;
+    neo_custom:total_gene_count 8952 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002484 ;
+    RO:0002473 FBbt:00003740 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002511 a FBcv:0009003 ;
+    rdfs:label "T4a neuron cluster (Hörmann 2020 60 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 610 ;
+    neo_custom:filtered_gene_count 2789 ;
+    neo_custom:total_gene_count 8574 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002485 ;
+    RO:0002473 FBbt:00003732 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002512 a FBcv:0009003 ;
+    rdfs:label "T4b neuron cluster (Hörmann 2020 60 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 622 ;
+    neo_custom:filtered_gene_count 2821 ;
+    neo_custom:total_gene_count 8620 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002485 ;
+    RO:0002473 FBbt:00003733 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002513 a FBcv:0009003 ;
+    rdfs:label "T4c neuron cluster (Hörmann 2020 60 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 518 ;
+    neo_custom:filtered_gene_count 2847 ;
+    neo_custom:total_gene_count 8328 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002485 ;
+    RO:0002473 FBbt:00003734 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002514 a FBcv:0009003 ;
+    rdfs:label "T4d neuron cluster (Hörmann 2020 60 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 527 ;
+    neo_custom:filtered_gene_count 2843 ;
+    neo_custom:total_gene_count 8411 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002485 ;
+    RO:0002473 FBbt:00003735 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002515 a FBcv:0009003 ;
+    rdfs:label "T5a neuron cluster (Hörmann 2020 60 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 690 ;
+    neo_custom:filtered_gene_count 2846 ;
+    neo_custom:total_gene_count 8505 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002485 ;
+    RO:0002473 FBbt:00003737 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002516 a FBcv:0009003 ;
+    rdfs:label "T5b neuron cluster (Hörmann 2020 60 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 900 ;
+    neo_custom:filtered_gene_count 2873 ;
+    neo_custom:total_gene_count 8740 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002485 ;
+    RO:0002473 FBbt:00003738 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002517 a FBcv:0009003 ;
+    rdfs:label "T5c neuron cluster (Hörmann 2020 60 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 628 ;
+    neo_custom:filtered_gene_count 2873 ;
+    neo_custom:total_gene_count 8415 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002485 ;
+    RO:0002473 FBbt:00003739 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002518 a FBcv:0009003 ;
+    rdfs:label "T5d neuron cluster (Hörmann 2020 60 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 556 ;
+    neo_custom:filtered_gene_count 2834 ;
+    neo_custom:total_gene_count 8244 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002485 ;
+    RO:0002473 FBbt:00003740 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002519 a FBcv:0009003 ;
+    rdfs:label "T4a neuron cluster (Hörmann 2020 72 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1665 ;
+    neo_custom:filtered_gene_count 1941 ;
+    neo_custom:total_gene_count 8776 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002486 ;
+    RO:0002473 FBbt:00003732 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002520 a FBcv:0009003 ;
+    rdfs:label "T4b neuron cluster (Hörmann 2020 72 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1554 ;
+    neo_custom:filtered_gene_count 2007 ;
+    neo_custom:total_gene_count 8754 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002486 ;
+    RO:0002473 FBbt:00003733 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002521 a FBcv:0009003 ;
+    rdfs:label "T4c neuron cluster (Hörmann 2020 72 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1290 ;
+    neo_custom:filtered_gene_count 2060 ;
+    neo_custom:total_gene_count 8607 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002486 ;
+    RO:0002473 FBbt:00003734 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002522 a FBcv:0009003 ;
+    rdfs:label "T4d neuron cluster (Hörmann 2020 72 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1378 ;
+    neo_custom:filtered_gene_count 2042 ;
+    neo_custom:total_gene_count 8636 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002486 ;
+    RO:0002473 FBbt:00003735 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002523 a FBcv:0009003 ;
+    rdfs:label "T5a neuron cluster (Hörmann 2020 72 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1527 ;
+    neo_custom:filtered_gene_count 2005 ;
+    neo_custom:total_gene_count 8563 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002486 ;
+    RO:0002473 FBbt:00003737 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002524 a FBcv:0009003 ;
+    rdfs:label "T5b neuron cluster (Hörmann 2020 72 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1650 ;
+    neo_custom:filtered_gene_count 2001 ;
+    neo_custom:total_gene_count 8709 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002486 ;
+    RO:0002473 FBbt:00003738 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002525 a FBcv:0009003 ;
+    rdfs:label "T5c neuron cluster (Hörmann 2020 72 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1400 ;
+    neo_custom:filtered_gene_count 2055 ;
+    neo_custom:total_gene_count 8513 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002486 ;
+    RO:0002473 FBbt:00003739 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002526 a FBcv:0009003 ;
+    rdfs:label "T5d neuron cluster (Hörmann 2020 72 h APF T4/T5 clusters) (Hörmann 2020)" ;
+    neo_custom:cell_count 1251 ;
+    neo_custom:filtered_gene_count 2066 ;
+    neo_custom:total_gene_count 8414 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002486 ;
+    RO:0002473 FBbt:00003740 ;
+    dcterms:source VFBseq:00002461 .
+
+FlyBase:FBrf0245647 a FBcv:0000212 ;
+    neo_property:nodeLabel "pub" .
+
+VFBseq:00002463 a FBcv:0003025 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 24 hours after pupa formation, rep 1, 10x library (Hörmann 2020)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002462 ;
+    dcterms:source VFBseq:00002461 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM4451487",
+        "SAMN14525933",
+        "SRX8047499" .
+
+VFBseq:00002465 a FBcv:0003025 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 24 hours after pupa formation, rep 2, 10x library (Hörmann 2020)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002464 ;
+    dcterms:source VFBseq:00002461 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM4451488",
+        "SAMN14525932",
+        "SRX8047500" .
+
+VFBseq:00002467 a FBcv:0003025 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 36 hours after pupa formation, rep 1, 10x library (Hörmann 2020)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002466 ;
+    dcterms:source VFBseq:00002461 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM4451489",
+        "SAMN14525931",
+        "SRX8047501" .
+
+VFBseq:00002469 a FBcv:0003025 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 36 hours after pupa formation, rep 2, 10x library (Hörmann 2020)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002468 ;
+    dcterms:source VFBseq:00002461 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM4451490",
+        "SAMN14525930",
+        "SRX8047502" .
+
+VFBseq:00002471 a FBcv:0003025 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 48 hours after pupa formation, rep 1, 10x library (Hörmann 2020)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002470 ;
+    dcterms:source VFBseq:00002461 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM4451491",
+        "SAMN14525929",
+        "SRX8047503" .
+
+VFBseq:00002473 a FBcv:0003025 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 48 hours after pupa formation, rep 2, 10x library (Hörmann 2020)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002472 ;
+    dcterms:source VFBseq:00002461 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM4451492",
+        "SAMN14525928",
+        "SRX8047504" .
+
+VFBseq:00002475 a FBcv:0003025 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 60 hours after pupa formation, rep 1, 10x library (Hörmann 2020)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002474 ;
+    dcterms:source VFBseq:00002461 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM4451493",
+        "SAMN14525927",
+        "SRX8047505" .
+
+VFBseq:00002477 a FBcv:0003025 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 60 hours after pupa formation, rep 2, 10x library (Hörmann 2020)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002476 ;
+    dcterms:source VFBseq:00002461 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM4451494",
+        "SAMN14525926",
+        "SRX8047506" .
+
+VFBseq:00002479 a FBcv:0003025 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 72 hours after pupa formation, rep 1, 10x library (Hörmann 2020)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002478 ;
+    dcterms:source VFBseq:00002461 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM4451495",
+        "SAMN14525925",
+        "SRX8047507" .
+
+VFBseq:00002481 a FBcv:0003025 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 72 hours after pupa formation, rep 2, 10x library (Hörmann 2020)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002480 ;
+    dcterms:source VFBseq:00002461 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM4451496",
+        "SAMN14525924",
+        "SRX8047508" .
+
+VFBseq:00002462 a FBcv:0003024 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 24 hours after pupa formation, rep 1 (Hörmann 2020)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBco0000215 ;
+    RO:0002131 FBbt:00005095 ;
+    RO:0002352 VFBseq:00002463 ;
+    RO:0002490 FBdv:00005353 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002464 a FBcv:0003024 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 24 hours after pupa formation, rep 2 (Hörmann 2020)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBco0000215 ;
+    RO:0002131 FBbt:00005095 ;
+    RO:0002352 VFBseq:00002465 ;
+    RO:0002490 FBdv:00005353 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002466 a FBcv:0003024 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 36 hours after pupa formation, rep 1 (Hörmann 2020)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBco0000215 ;
+    RO:0002131 FBbt:00005095 ;
+    RO:0002352 VFBseq:00002467 ;
+    RO:0002490 FBdv:00005354 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002468 a FBcv:0003024 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 36 hours after pupa formation, rep 2 (Hörmann 2020)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBco0000215 ;
+    RO:0002131 FBbt:00005095 ;
+    RO:0002352 VFBseq:00002469 ;
+    RO:0002490 FBdv:00005354 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002470 a FBcv:0003024 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 48 hours after pupa formation, rep 1 (Hörmann 2020)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBco0000215 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00002471 ;
+    RO:0002490 FBdv:00005355 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002472 a FBcv:0003024 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 48 hours after pupa formation, rep 2 (Hörmann 2020)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBco0000215 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00002473 ;
+    RO:0002490 FBdv:00005355 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002474 a FBcv:0003024 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 60 hours after pupa formation, rep 1 (Hörmann 2020)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBco0000215 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00002475 ;
+    RO:0002490 FBdv:00005356 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002476 a FBcv:0003024 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 60 hours after pupa formation, rep 2 (Hörmann 2020)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBco0000215 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00002477 ;
+    RO:0002490 FBdv:00005356 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002478 a FBcv:0003024 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 72 hours after pupa formation, rep 1 (Hörmann 2020)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBco0000215 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00002479 ;
+    RO:0002490 FBdv:00005356 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002480 a FBcv:0003024 ;
+    rdfs:label "FACS-sorted T4/T5 neurons, 72 hours after pupa formation, rep 2 (Hörmann 2020)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBco0000215 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00002481 ;
+    RO:0002490 FBdv:00005356 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002482 a FBcv:0009002 ;
+    rdfs:label "Hörmann 2020 24 h APF T4/T5 clusters" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002462,
+        VFBseq:00002464 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002483 a FBcv:0009002 ;
+    rdfs:label "Hörmann 2020 36 h APF T4/T5 clusters" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002466,
+        VFBseq:00002468 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002484 a FBcv:0009002 ;
+    rdfs:label "Hörmann 2020 48 h APF T4/T5 clusters" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002470,
+        VFBseq:00002472 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002485 a FBcv:0009002 ;
+    rdfs:label "Hörmann 2020 60 h APF T4/T5 clusters" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002474,
+        VFBseq:00002476 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002486 a FBcv:0009002 ;
+    rdfs:label "Hörmann 2020 72 h APF T4/T5 clusters" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002478,
+        VFBseq:00002480 ;
+    dcterms:source VFBseq:00002461 .
+
+VFBseq:00002461 a FBcv:0003023 ;
+    rdfs:label "scRNAseq data from Hörmann (2020)" ;
+    neo_custom:accession "GSE147987" ;
+    neo_custom:filtered_gene_count 3874 ;
+    neo_custom:total_gene_count 13286 ;
+    neo_property:nodeLabel "DataSet" ;
+    IAO:0000115 "A combinatorial code of transcription factors specifies subtypes of visual motion-sensing neurons in Drosophila" ;
+    OBI:0000312 FBcv:0009000 ;
+    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references FlyBase:FBrf0245647 ;
+    oboInOwl:hasDbXref vfb:GEO .
+
