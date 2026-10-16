@@ -1,0 +1,81 @@
+# Özel et al. 2021 (Nature; FBrf0247762): single-cell 10x atlas of the
+# Drosophila optic lobe through pupal development and in the adult (GEO GSE142787,
+# 38 libraries; female Canton-S, 2 adult libraries pooled-sex). Previously loaded into
+# VFB via the old FlyBase/SCEA mechanism as FBlc0005659 (SCEA E-CURD-134, 66 merged
+# clusters); rebuilt here from GEO and the authors' own Seurat objects with fresh VFBseq
+# ids. Curator decisions 2026-10-16: one Clustering per stage (P15, P30, P40, P50, P70,
+# adult), one Cluster per final identity (the authors' adult cluster numbers, named
+# in Supplementary Table 1); numbered clusters held (untyped) and low-quality (LQ)
+# clusters held (artefact); numbered glia mapped to a glial anchor; less-confident
+# names (*) mapped and flagged verification_needed. The per-stage unsupervised
+# clusterings and the adult-male side analysis are not loaded (issue #21).
+project: ozel_2021
+
+source:
+  doi: 10.1038/s41586-020-2879-3
+  pmid: "33149298"
+  pmcid: PMC7790857
+  fbrf: FBrf0247762          # VFB production :pub node (resolved by PMID)
+  title: "Neuronal diversity and convergence in a visual system developmental atlas"
+  journal: Nature
+  year: 2021
+  first_author: Özel
+
+organism: Drosophila melanogaster
+
+dataset:
+  site: GEO
+  accession: GSE142787
+  bioproject: PRJNA598342
+  sra_study: SRP239181
+  platform: GPL22106            # Illumina NextSeq 500 (the paper: NextSeq 550)
+  licence: CC-BY-4.0
+  assay_type: FBcv:0009000      # single-cell RNA-seq
+
+sample_build:
+  # GSM titles are "<stage>[_-]<library>_scRNAseq" (Adult1, Adult_1d_F_3rd, P70-5, ...).
+  # Each GSM is one 10x library from its own dissection (paper: "15 libraries from adult
+  # brains, 5 libraries each from P15, P30 and P70 brains and 4 libraries each from P40
+  # and P50 brains", target 7,000 cells per experiment), so Sample:Assay 1:1.
+  title_pattern: 'regex:(?P<timepoint>Adult|P\d+)[_-]?(?P<biorep>[^_-].*?)_scRNAseq'
+  assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
+  assay_label: { unit: 10x library }
+  # Sex from GEO: female, except 2 adult libraries "pooled male and female" (left unset;
+  # `mixed` suppresses the missing-sex warning for those). Flies: female Canton-S; no
+  # stock number is given, so no FlyBase stock is linked.
+  sex: mixed
+  # GEO age -> FBdv. Pupal stages are % of pupal development at 25 C (paper: pupae
+  # "selected at P0 (white pupae) and maintained at 25°C until the required stage"),
+  # i.e. ~hours APF of the 100 h pupal period (FBdv: eclosion at 100 h APF), each
+  # within one Bainbridge & Bownes stage by the FBdv definitions. Adults are "1-3 days
+  # old" ("dissected within 3 days of eclosion"); FBdv has no 1-3 day term, so adult
+  # stage. Tissue: optic lobe, as for Kurmangaliyev 2020 — embryonic/larval optic lobe up
+  # to the pupal stage (P5-P7), adult optic lobe from the pharate adult stage (P8).
+  age_map:
+    "P15%":
+      stage:  { fbdv_id: FBdv:00005350, label: pupal stage P5 }          # 12.2-18.7 h APF
+      tissue: { fbbt_id: FBbt:00001930, label: embryonic/larval optic lobe }
+    "P30%":
+      stage:  { fbdv_id: FBdv:00005353, label: pupal stage P6 }          # 18.7-32.4 h APF
+      tissue: { fbbt_id: FBbt:00001930, label: embryonic/larval optic lobe }
+    "P40%":
+      stage:  { fbdv_id: FBdv:00005354, label: pupal stage P7 }          # 32.4-44.3 h APF
+      tissue: { fbbt_id: FBbt:00001930, label: embryonic/larval optic lobe }
+    "P50%":
+      stage:  { fbdv_id: FBdv:00005355, label: pharate adult stage P8 }  # 44.3-56.6 h APF
+      tissue: { fbbt_id: FBbt:00003701, label: adult optic lobe }
+    "P70%":
+      stage:  { fbdv_id: FBdv:00005356, label: pharate adult stage P9 }  # 56.6-74.5 h APF
+      tissue: { fbbt_id: FBbt:00003701, label: adult optic lobe }
+    "1-3 days old":
+      stage:  { fbdv_id: FBdv:00005369, label: adult stage }
+      tissue: { fbbt_id: FBbt:00003701, label: adult optic lobe }
+  # One Clustering per stage: the authors' final identities at that stage (Seurat
+  # `FinalIdents`), linked to that stage's samples.
+  clusterings:
+    - { id: P15, name: "Özel 2021 P15 optic lobe identities", sample_age: "P15%" }
+    - { id: P30, name: "Özel 2021 P30 optic lobe identities", sample_age: "P30%" }
+    - { id: P40, name: "Özel 2021 P40 optic lobe identities", sample_age: "P40%" }
+    - { id: P50, name: "Özel 2021 P50 optic lobe identities", sample_age: "P50%" }
+    - { id: P70, name: "Özel 2021 P70 optic lobe identities", sample_age: "P70%" }
+    - { id: adult, name: "Özel 2021 adult optic lobe identities", sample_age: "1-3 days old" }

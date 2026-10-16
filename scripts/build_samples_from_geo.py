@@ -64,8 +64,8 @@ def title_parser(pattern: str | None) -> Callable[[str], dict | None]:
     """Return a GSM-title parser for `sample_build.title_pattern`.
 
     - ``set_timepoint_biorep_techrep`` (default): underscore-split, see parse_title.
-    - ``regex:<pattern>``: full-match regex with named groups ``set``, ``timepoint``,
-      ``biorep`` and optionally ``techrep``. Without ``techrep`` each GSM is its own
+    - ``regex:<pattern>``: full-match regex with named groups ``timepoint`` and
+      ``biorep``, and optionally ``set`` (strain/genotype group) and ``techrep``. Without ``techrep`` each GSM is its own
       biological sample (one library per sample). Any further named groups (e.g.
       ``tissue``) also go into the sample id, after ``set``. GSMs whose title does not match
       are not part of this dataset's scope and are skipped.
@@ -83,11 +83,11 @@ def title_parser(pattern: str | None) -> Callable[[str], dict | None]:
         g = m.groupdict()
         extra = [v for k, v in g.items() if k not in ("set", "timepoint", "biorep", "techrep")]
         return {
-            "set": g["set"],
+            "set": g.get("set"),
             "timepoint": g["timepoint"],
             "biorep": g["biorep"],
             "techrep": g.get("techrep"),
-            "sample_id": "_".join((g["set"], *extra, g["timepoint"], g["biorep"])),
+            "sample_id": "_".join(v for v in (g.get("set"), *extra, g["timepoint"], g["biorep"]) if v),
         }
     return parse
 
@@ -192,6 +192,8 @@ def main() -> None:
             "assay_vfbseq_ids": assay_vids,
             "n_assays": len(assay_vids),
         })
+        if samples_out[-1]["set"] is None:
+            del samples_out[-1]["set"]                 # no strain/genotype group in the titles
 
     clusterings_out = []
     # entries are a subset name, or {id, name} for a described clustering

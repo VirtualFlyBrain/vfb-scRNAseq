@@ -137,3 +137,12 @@ def test_hold_reason_untyped_by_rule_and_pending():
     assert reason({"label": "head_Kenyon cell", "source_cluster_id": "Kenyon cell"}, None) == ""
     assert reason({"label": "head_Kenyon cell", "source_cluster_id": "Kenyon cell"},
                   {"best_match": None}) == "no term"
+
+
+def test_clustering_samples_by_age():
+    from vfb_scrnaseq.project_config import clustering_samples
+    own = [{"vfbseq_id": "VFBseq_00000001", "age_raw": "P15%", "tissue_raw": "OL"},
+           {"vfbseq_id": "VFBseq_00000002", "age_raw": "P30%", "tissue_raw": "OL"}]
+    assert clustering_samples({"id": "P15", "sample_age": "P15%"}, own, []) == ["VFBseq_00000001"]
+    assert clustering_samples({"id": "x", "sample_age": "P30%", "sample_tissue_raw": "OL"}, own, []) == ["VFBseq_00000002"]
+    assert clustering_samples({"id": "x"}, own, []) == []
