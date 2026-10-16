@@ -81,3 +81,21 @@ unidentified:
   hold_reasons:
     central brain neuron: untyped
     apoptotic cell: artefact
+
+# Summary expression (scripts/build_expression.py) from the authors' raw UMI counts of
+# the L3 cells (RNA@counts of the Seurat object, exported by export_seurat.R), as CPM
+# over each cell's own counts. The object carries gene symbols only, so the gene id map
+# is keyed by symbol (looked up in FlyBase Chado).
+expression:
+  matrix_file: konstantinides/L3/matrix.mtx.gz
+  features_file: konstantinides/L3/features.tsv.gz
+  barcodes_file: konstantinides/L3/barcodes.tsv.gz
+  features_keyed_by: symbol
+  normalisation: CPM
+  extent_cutoff: 0.2
+  hide_in_terminfo: "true"
+  gzip_tsv: true
+  gene_id_map: gene_id_map.tsv
+  # FBgn for a symbol from the source files of other projects (same-era references),
+  # else by symbol in Chado
+  gene_ids_from: [kurmangaliyev_2020, davie_2018, li_2022_fca_10x, lu_2023_afca, ozel_2021]
