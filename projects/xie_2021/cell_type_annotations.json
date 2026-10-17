@@ -1,0 +1,1428 @@
+{
+  "source": {
+    "doi": "10.7554/eLife.63450",
+    "title": "Temporal evolution of single-cell transcriptomes of Drosophila olfactory projection neurons"
+  },
+  "dataset": {
+    "accession": "GSE161228",
+    "label_source": "authors' annotated h5ads on GEO (GSE161228): obs `PN_type` per cell and `stage`, main pan-PN and knot analyses",
+    "label_level": "author type per analysis and stage",
+    "validate_against": "paper, Figures 2, 5-6"
+  },
+  "annotations": [
+    {
+      "label": "main_0h_APL",
+      "type": "APL",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "APL",
+      "cell_number": 1,
+      "cells_by_sample": {
+        "0h_VT033006": 1
+      }
+    },
+    {
+      "label": "main_0h_D",
+      "type": "D",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "D",
+      "cell_number": 71,
+      "cells_by_sample": {
+        "0h_VT033006": 71
+      }
+    },
+    {
+      "label": "main_0h_DA1_fru+",
+      "type": "DA1_fru+",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "DA1_fru+",
+      "cell_number": 55,
+      "cells_by_sample": {
+        "0h_VT033006": 55
+      }
+    },
+    {
+      "label": "main_0h_DA1_fru-",
+      "type": "DA1_fru-",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "DA1_fru-",
+      "cell_number": 66,
+      "cells_by_sample": {
+        "0h_VT033006": 66
+      }
+    },
+    {
+      "label": "main_0h_DA4l",
+      "type": "DA4l",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "DA4l",
+      "cell_number": 23,
+      "cells_by_sample": {
+        "0h_VT033006": 23
+      }
+    },
+    {
+      "label": "main_0h_DC2",
+      "type": "DC2",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "DC2",
+      "cell_number": 24,
+      "cells_by_sample": {
+        "0h_VT033006": 24
+      }
+    },
+    {
+      "label": "main_0h_DC3",
+      "type": "DC3",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "DC3",
+      "cell_number": 36,
+      "cells_by_sample": {
+        "0h_VT033006": 36
+      }
+    },
+    {
+      "label": "main_0h_DL1",
+      "type": "DL1",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "DL1",
+      "cell_number": 20,
+      "cells_by_sample": {
+        "0h_VT033006": 20
+      }
+    },
+    {
+      "label": "main_0h_DL3",
+      "type": "DL3",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "DL3",
+      "cell_number": 75,
+      "cells_by_sample": {
+        "0h_VT033006": 75
+      }
+    },
+    {
+      "label": "main_0h_DM2",
+      "type": "DM2",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "DM2",
+      "cell_number": 21,
+      "cells_by_sample": {
+        "0h_VT033006": 21
+      }
+    },
+    {
+      "label": "main_0h_MARS_5",
+      "type": "MARS_5",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "MARS_5",
+      "cell_number": 22,
+      "cells_by_sample": {
+        "0h_VT033006": 22
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_0h_MARS_7",
+      "type": "MARS_7",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "MARS_7",
+      "cell_number": 24,
+      "cells_by_sample": {
+        "0h_VT033006": 24
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_0h_MARS_9",
+      "type": "MARS_9",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "MARS_9",
+      "cell_number": 46,
+      "cells_by_sample": {
+        "0h_VT033006": 46
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_0h_unassigned",
+      "type": "unassigned",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "unassigned",
+      "cell_number": 356,
+      "cells_by_sample": {
+        "0h_VT033006": 356
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_0h_VA1d",
+      "type": "VA1d",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "VA1d",
+      "cell_number": 51,
+      "cells_by_sample": {
+        "0h_VT033006": 51
+      }
+    },
+    {
+      "label": "main_0h_VA1v",
+      "type": "VA1v",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "VA1v",
+      "cell_number": 22,
+      "cells_by_sample": {
+        "0h_VT033006": 22
+      }
+    },
+    {
+      "label": "main_0h_VA5",
+      "type": "VA5",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "VA5",
+      "cell_number": 49,
+      "cells_by_sample": {
+        "0h_VT033006": 49
+      }
+    },
+    {
+      "label": "main_0h_VA6",
+      "type": "VA6",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "VA6",
+      "cell_number": 69,
+      "cells_by_sample": {
+        "0h_VT033006": 69
+      }
+    },
+    {
+      "label": "main_0h_VC2",
+      "type": "VC2",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "VC2",
+      "cell_number": 16,
+      "cells_by_sample": {
+        "0h_VT033006": 16
+      }
+    },
+    {
+      "label": "main_0h_VM2",
+      "type": "VM2",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "VM2",
+      "cell_number": 38,
+      "cells_by_sample": {
+        "0h_VT033006": 38
+      }
+    },
+    {
+      "label": "main_0h_VM7 or VM5v #1",
+      "type": "VM7 or VM5v #1",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "VM7 or VM5v #1",
+      "cell_number": 35,
+      "cells_by_sample": {
+        "0h_VT033006": 35
+      }
+    },
+    {
+      "label": "main_0h_VM7 or VM5v #2",
+      "type": "VM7 or VM5v #2",
+      "clustering": "main_0h",
+      "clustering_name": "Xie 2021 PN types (0 h APF)",
+      "source_cluster_id": "VM7 or VM5v #2",
+      "cell_number": 38,
+      "cells_by_sample": {
+        "0h_VT033006": 38
+      }
+    },
+    {
+      "label": "main_24h_APL",
+      "type": "APL",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "APL",
+      "cell_number": 32,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 14,
+        "li_2017:exp3_GH146_24hAPF": 7,
+        "li_2017:exp5_GH146_24hAPF": 7,
+        "li_2017:exp6_GH146_24hAPF": 4
+      }
+    },
+    {
+      "label": "main_24h_D",
+      "type": "D",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "D",
+      "cell_number": 53,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 16,
+        "li_2017:exp2_GH146_24hAPF": 1,
+        "li_2017:exp3_GH146_24hAPF": 15,
+        "li_2017:exp5_GH146_24hAPF": 8,
+        "li_2017:exp6_GH146_24hAPF": 13
+      }
+    },
+    {
+      "label": "main_24h_DA1_fru+",
+      "type": "DA1_fru+",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "DA1_fru+",
+      "cell_number": 112,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 36,
+        "li_2017:exp3_GH146_24hAPF": 37,
+        "li_2017:exp5_GH146_24hAPF": 21,
+        "li_2017:exp6_GH146_24hAPF": 18
+      }
+    },
+    {
+      "label": "main_24h_DA1_fru-",
+      "type": "DA1_fru-",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "DA1_fru-",
+      "cell_number": 21,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 5,
+        "li_2017:exp3_GH146_24hAPF": 9,
+        "li_2017:exp5_GH146_24hAPF": 5,
+        "li_2017:exp6_GH146_24hAPF": 2
+      }
+    },
+    {
+      "label": "main_24h_DA3",
+      "type": "DA3",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "DA3",
+      "cell_number": 3,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 1,
+        "li_2017:exp3_GH146_24hAPF": 2
+      }
+    },
+    {
+      "label": "main_24h_DA4l",
+      "type": "DA4l",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "DA4l",
+      "cell_number": 6,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 4,
+        "li_2017:exp3_GH146_24hAPF": 2
+      }
+    },
+    {
+      "label": "main_24h_DC2",
+      "type": "DC2",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "DC2",
+      "cell_number": 26,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 11,
+        "li_2017:exp3_GH146_24hAPF": 9,
+        "li_2017:exp5_GH146_24hAPF": 3,
+        "li_2017:exp6_GH146_24hAPF": 3
+      }
+    },
+    {
+      "label": "main_24h_DC3",
+      "type": "DC3",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "DC3",
+      "cell_number": 32,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 11,
+        "li_2017:exp2_GH146_24hAPF": 2,
+        "li_2017:exp3_GH146_24hAPF": 8,
+        "li_2017:exp5_GH146_24hAPF": 6,
+        "li_2017:exp6_GH146_24hAPF": 5
+      }
+    },
+    {
+      "label": "main_24h_DL1",
+      "type": "DL1",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "DL1",
+      "cell_number": 27,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 10,
+        "li_2017:exp2_GH146_24hAPF": 3,
+        "li_2017:exp3_GH146_24hAPF": 9,
+        "li_2017:exp5_GH146_24hAPF": 4,
+        "li_2017:exp6_GH146_24hAPF": 1
+      }
+    },
+    {
+      "label": "main_24h_DL3",
+      "type": "DL3",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "DL3",
+      "cell_number": 29,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 7,
+        "li_2017:exp3_GH146_24hAPF": 12,
+        "li_2017:exp5_GH146_24hAPF": 4,
+        "li_2017:exp6_GH146_24hAPF": 6
+      }
+    },
+    {
+      "label": "main_24h_DM2",
+      "type": "DM2",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "DM2",
+      "cell_number": 17,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 7,
+        "li_2017:exp2_GH146_24hAPF": 2,
+        "li_2017:exp3_GH146_24hAPF": 8
+      }
+    },
+    {
+      "label": "main_24h_DM6",
+      "type": "DM6",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "DM6",
+      "cell_number": 50,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 22,
+        "li_2017:exp2_GH146_24hAPF": 3,
+        "li_2017:exp3_GH146_24hAPF": 13,
+        "li_2017:exp5_GH146_24hAPF": 6,
+        "li_2017:exp6_GH146_24hAPF": 6
+      }
+    },
+    {
+      "label": "main_24h_MARS_19",
+      "type": "MARS_19",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "MARS_19",
+      "cell_number": 12,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 1,
+        "li_2017:exp2_GH146_24hAPF": 1,
+        "li_2017:exp3_GH146_24hAPF": 10
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_24h_MARS_2",
+      "type": "MARS_2",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "MARS_2",
+      "cell_number": 33,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 9,
+        "li_2017:exp2_GH146_24hAPF": 1,
+        "li_2017:exp3_GH146_24hAPF": 10,
+        "li_2017:exp5_GH146_24hAPF": 8,
+        "li_2017:exp6_GH146_24hAPF": 5
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_24h_MARS_25",
+      "type": "MARS_25",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "MARS_25",
+      "cell_number": 17,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 8,
+        "li_2017:exp3_GH146_24hAPF": 4,
+        "li_2017:exp5_GH146_24hAPF": 3,
+        "li_2017:exp6_GH146_24hAPF": 2
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_24h_MARS_27",
+      "type": "MARS_27",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "MARS_27",
+      "cell_number": 10,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 3,
+        "li_2017:exp5_GH146_24hAPF": 3,
+        "li_2017:exp6_GH146_24hAPF": 4
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_24h_MARS_5",
+      "type": "MARS_5",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "MARS_5",
+      "cell_number": 5,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 2,
+        "li_2017:exp5_GH146_24hAPF": 1,
+        "li_2017:exp6_GH146_24hAPF": 2
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_24h_MARS_7",
+      "type": "MARS_7",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "MARS_7",
+      "cell_number": 22,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 4,
+        "li_2017:exp2_GH146_24hAPF": 1,
+        "li_2017:exp3_GH146_24hAPF": 9,
+        "li_2017:exp5_GH146_24hAPF": 5,
+        "li_2017:exp6_GH146_24hAPF": 3
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_24h_MARS_9",
+      "type": "MARS_9",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "MARS_9",
+      "cell_number": 56,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 18,
+        "li_2017:exp2_GH146_24hAPF": 2,
+        "li_2017:exp3_GH146_24hAPF": 14,
+        "li_2017:exp5_GH146_24hAPF": 10,
+        "li_2017:exp6_GH146_24hAPF": 12
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_24h_unassigned",
+      "type": "unassigned",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "unassigned",
+      "cell_number": 14,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 3,
+        "li_2017:exp2_GH146_24hAPF": 3,
+        "li_2017:exp3_GH146_24hAPF": 4,
+        "li_2017:exp5_GH146_24hAPF": 2,
+        "li_2017:exp6_GH146_24hAPF": 2
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_24h_VA1d",
+      "type": "VA1d",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "VA1d",
+      "cell_number": 35,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 9,
+        "li_2017:exp3_GH146_24hAPF": 8,
+        "li_2017:exp5_GH146_24hAPF": 4,
+        "li_2017:exp6_GH146_24hAPF": 14
+      }
+    },
+    {
+      "label": "main_24h_VA1v",
+      "type": "VA1v",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "VA1v",
+      "cell_number": 93,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 30,
+        "li_2017:exp2_GH146_24hAPF": 8,
+        "li_2017:exp3_GH146_24hAPF": 22,
+        "li_2017:exp5_GH146_24hAPF": 17,
+        "li_2017:exp6_GH146_24hAPF": 16
+      }
+    },
+    {
+      "label": "main_24h_VA2",
+      "type": "VA2",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "VA2",
+      "cell_number": 10,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 1,
+        "li_2017:exp2_GH146_24hAPF": 2,
+        "li_2017:exp3_GH146_24hAPF": 5,
+        "li_2017:exp6_GH146_24hAPF": 2
+      }
+    },
+    {
+      "label": "main_24h_VA5",
+      "type": "VA5",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "VA5",
+      "cell_number": 26,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 6,
+        "li_2017:exp3_GH146_24hAPF": 8,
+        "li_2017:exp5_GH146_24hAPF": 6,
+        "li_2017:exp6_GH146_24hAPF": 6
+      }
+    },
+    {
+      "label": "main_24h_VA6",
+      "type": "VA6",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "VA6",
+      "cell_number": 25,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 11,
+        "li_2017:exp2_GH146_24hAPF": 2,
+        "li_2017:exp3_GH146_24hAPF": 11,
+        "li_2017:exp6_GH146_24hAPF": 1
+      }
+    },
+    {
+      "label": "main_24h_VC2",
+      "type": "VC2",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "VC2",
+      "cell_number": 24,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 13,
+        "li_2017:exp3_GH146_24hAPF": 11
+      }
+    },
+    {
+      "label": "main_24h_VM2",
+      "type": "VM2",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "VM2",
+      "cell_number": 43,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 14,
+        "li_2017:exp2_GH146_24hAPF": 1,
+        "li_2017:exp3_GH146_24hAPF": 15,
+        "li_2017:exp5_GH146_24hAPF": 6,
+        "li_2017:exp6_GH146_24hAPF": 7
+      }
+    },
+    {
+      "label": "main_24h_VM7 or VM5v #1",
+      "type": "VM7 or VM5v #1",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "VM7 or VM5v #1",
+      "cell_number": 52,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 15,
+        "li_2017:exp2_GH146_24hAPF": 2,
+        "li_2017:exp3_GH146_24hAPF": 19,
+        "li_2017:exp5_GH146_24hAPF": 5,
+        "li_2017:exp6_GH146_24hAPF": 11
+      }
+    },
+    {
+      "label": "main_24h_VM7 or VM5v #2",
+      "type": "VM7 or VM5v #2",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "VM7 or VM5v #2",
+      "cell_number": 50,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 20,
+        "li_2017:exp2_GH146_24hAPF": 1,
+        "li_2017:exp3_GH146_24hAPF": 12,
+        "li_2017:exp5_GH146_24hAPF": 6,
+        "li_2017:exp6_GH146_24hAPF": 11
+      }
+    },
+    {
+      "label": "main_24h_vPN",
+      "type": "vPN",
+      "clustering": "main_24h",
+      "clustering_name": "Xie 2021 PN types (24 h APF)",
+      "source_cluster_id": "vPN",
+      "cell_number": 11,
+      "cells_by_sample": {
+        "li_2017:exp12_GH146_24hAPF": 1,
+        "li_2017:exp3_GH146_24hAPF": 5,
+        "li_2017:exp5_GH146_24hAPF": 2,
+        "li_2017:exp6_GH146_24hAPF": 3
+      }
+    },
+    {
+      "label": "main_48h_APL",
+      "type": "APL",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "APL",
+      "cell_number": 54,
+      "cells_by_sample": {
+        "48h_GH146": 54
+      }
+    },
+    {
+      "label": "main_48h_D",
+      "type": "D",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "D",
+      "cell_number": 36,
+      "cells_by_sample": {
+        "48h_GH146": 36
+      }
+    },
+    {
+      "label": "main_48h_DA1_fru+",
+      "type": "DA1_fru+",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "DA1_fru+",
+      "cell_number": 31,
+      "cells_by_sample": {
+        "48h_GH146": 31
+      }
+    },
+    {
+      "label": "main_48h_DA1_fru-",
+      "type": "DA1_fru-",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "DA1_fru-",
+      "cell_number": 15,
+      "cells_by_sample": {
+        "48h_GH146": 15
+      }
+    },
+    {
+      "label": "main_48h_DC3",
+      "type": "DC3",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "DC3",
+      "cell_number": 26,
+      "cells_by_sample": {
+        "48h_GH146": 26
+      }
+    },
+    {
+      "label": "main_48h_DL1",
+      "type": "DL1",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "DL1",
+      "cell_number": 15,
+      "cells_by_sample": {
+        "48h_GH146": 15
+      }
+    },
+    {
+      "label": "main_48h_DL3",
+      "type": "DL3",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "DL3",
+      "cell_number": 47,
+      "cells_by_sample": {
+        "48h_GH146": 47
+      }
+    },
+    {
+      "label": "main_48h_DM6",
+      "type": "DM6",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "DM6",
+      "cell_number": 24,
+      "cells_by_sample": {
+        "48h_GH146": 24
+      }
+    },
+    {
+      "label": "main_48h_MARS_19",
+      "type": "MARS_19",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "MARS_19",
+      "cell_number": 66,
+      "cells_by_sample": {
+        "48h_GH146": 66
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_48h_MARS_2",
+      "type": "MARS_2",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "MARS_2",
+      "cell_number": 58,
+      "cells_by_sample": {
+        "48h_GH146": 58
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_48h_MARS_25",
+      "type": "MARS_25",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "MARS_25",
+      "cell_number": 38,
+      "cells_by_sample": {
+        "48h_GH146": 38
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_48h_MARS_27",
+      "type": "MARS_27",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "MARS_27",
+      "cell_number": 25,
+      "cells_by_sample": {
+        "48h_GH146": 25
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_48h_MARS_5",
+      "type": "MARS_5",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "MARS_5",
+      "cell_number": 11,
+      "cells_by_sample": {
+        "48h_GH146": 11
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_48h_unassigned",
+      "type": "unassigned",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "unassigned",
+      "cell_number": 194,
+      "cells_by_sample": {
+        "48h_GH146": 194
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_48h_VA1d",
+      "type": "VA1d",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "VA1d",
+      "cell_number": 21,
+      "cells_by_sample": {
+        "48h_GH146": 21
+      }
+    },
+    {
+      "label": "main_48h_VA1v",
+      "type": "VA1v",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "VA1v",
+      "cell_number": 31,
+      "cells_by_sample": {
+        "48h_GH146": 31
+      }
+    },
+    {
+      "label": "main_48h_VA5",
+      "type": "VA5",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "VA5",
+      "cell_number": 23,
+      "cells_by_sample": {
+        "48h_GH146": 23
+      }
+    },
+    {
+      "label": "main_48h_VA6",
+      "type": "VA6",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "VA6",
+      "cell_number": 24,
+      "cells_by_sample": {
+        "48h_GH146": 24
+      }
+    },
+    {
+      "label": "main_48h_VC2",
+      "type": "VC2",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "VC2",
+      "cell_number": 35,
+      "cells_by_sample": {
+        "48h_GH146": 35
+      }
+    },
+    {
+      "label": "main_48h_VM2",
+      "type": "VM2",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "VM2",
+      "cell_number": 12,
+      "cells_by_sample": {
+        "48h_GH146": 12
+      }
+    },
+    {
+      "label": "main_48h_VM7 or VM5v #1",
+      "type": "VM7 or VM5v #1",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "VM7 or VM5v #1",
+      "cell_number": 17,
+      "cells_by_sample": {
+        "48h_GH146": 17
+      }
+    },
+    {
+      "label": "main_48h_VM7 or VM5v #2",
+      "type": "VM7 or VM5v #2",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "VM7 or VM5v #2",
+      "cell_number": 24,
+      "cells_by_sample": {
+        "48h_GH146": 24
+      }
+    },
+    {
+      "label": "main_48h_vPN",
+      "type": "vPN",
+      "clustering": "main_48h",
+      "clustering_name": "Xie 2021 PN types (48 h APF)",
+      "source_cluster_id": "vPN",
+      "cell_number": 61,
+      "cells_by_sample": {
+        "48h_GH146": 61
+      }
+    },
+    {
+      "label": "main_adult_APL",
+      "type": "APL",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "APL",
+      "cell_number": 16,
+      "cells_by_sample": {
+        "adult_GH146": 16
+      }
+    },
+    {
+      "label": "main_adult_D",
+      "type": "D",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "D",
+      "cell_number": 13,
+      "cells_by_sample": {
+        "adult_GH146": 13
+      }
+    },
+    {
+      "label": "main_adult_DA1",
+      "type": "DA1",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "DA1",
+      "cell_number": 21,
+      "cells_by_sample": {
+        "adult_GH146": 21
+      }
+    },
+    {
+      "label": "main_adult_DC3 and VA1d",
+      "type": "DC3 and VA1d",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "DC3 and VA1d",
+      "cell_number": 35,
+      "cells_by_sample": {
+        "adult_GH146": 35
+      }
+    },
+    {
+      "label": "main_adult_DL1",
+      "type": "DL1",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "DL1",
+      "cell_number": 9,
+      "cells_by_sample": {
+        "adult_GH146": 9
+      }
+    },
+    {
+      "label": "main_adult_DM6",
+      "type": "DM6",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "DM6",
+      "cell_number": 5,
+      "cells_by_sample": {
+        "adult_GH146": 5
+      }
+    },
+    {
+      "label": "main_adult_MARS_19",
+      "type": "MARS_19",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "MARS_19",
+      "cell_number": 27,
+      "cells_by_sample": {
+        "adult_GH146": 27
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_adult_MARS_2",
+      "type": "MARS_2",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "MARS_2",
+      "cell_number": 15,
+      "cells_by_sample": {
+        "adult_GH146": 15
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_adult_MARS_25",
+      "type": "MARS_25",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "MARS_25",
+      "cell_number": 30,
+      "cells_by_sample": {
+        "adult_GH146": 30
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_adult_MARS_5",
+      "type": "MARS_5",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "MARS_5",
+      "cell_number": 12,
+      "cells_by_sample": {
+        "adult_GH146": 12
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_adult_unassigned",
+      "type": "unassigned",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "unassigned",
+      "cell_number": 321,
+      "cells_by_sample": {
+        "adult_GH146": 321
+      },
+      "unannotated": true
+    },
+    {
+      "label": "main_adult_VA1v",
+      "type": "VA1v",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "VA1v",
+      "cell_number": 16,
+      "cells_by_sample": {
+        "adult_GH146": 16
+      }
+    },
+    {
+      "label": "main_adult_VA6",
+      "type": "VA6",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "VA6",
+      "cell_number": 15,
+      "cells_by_sample": {
+        "adult_GH146": 15
+      }
+    },
+    {
+      "label": "main_adult_VC2",
+      "type": "VC2",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "VC2",
+      "cell_number": 26,
+      "cells_by_sample": {
+        "adult_GH146": 26
+      }
+    },
+    {
+      "label": "main_adult_VM2",
+      "type": "VM2",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "VM2",
+      "cell_number": 9,
+      "cells_by_sample": {
+        "adult_GH146": 9
+      }
+    },
+    {
+      "label": "main_adult_VM7 or VM5v #1",
+      "type": "VM7 or VM5v #1",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "VM7 or VM5v #1",
+      "cell_number": 23,
+      "cells_by_sample": {
+        "adult_GH146": 23
+      }
+    },
+    {
+      "label": "main_adult_VM7 or VM5v #2",
+      "type": "VM7 or VM5v #2",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "VM7 or VM5v #2",
+      "cell_number": 6,
+      "cells_by_sample": {
+        "adult_GH146": 6
+      }
+    },
+    {
+      "label": "main_adult_vPN",
+      "type": "vPN",
+      "clustering": "main_adult",
+      "clustering_name": "Xie 2021 PN types (adult)",
+      "source_cluster_id": "vPN",
+      "cell_number": 42,
+      "cells_by_sample": {
+        "adult_GH146": 42
+      }
+    },
+    {
+      "label": "knot_24h_D",
+      "type": "D",
+      "clustering": "knot_24h",
+      "clustering_name": "Xie 2021 kn+ PN types (24 h APF)",
+      "source_cluster_id": "D",
+      "cell_number": 26,
+      "cells_by_sample": {
+        "24h_knot": 26
+      }
+    },
+    {
+      "label": "knot_24h_DM6",
+      "type": "DM6",
+      "clustering": "knot_24h",
+      "clustering_name": "Xie 2021 kn+ PN types (24 h APF)",
+      "source_cluster_id": "DM6",
+      "cell_number": 11,
+      "cells_by_sample": {
+        "24h_knot": 11
+      }
+    },
+    {
+      "label": "knot_24h_VA1v",
+      "type": "VA1v",
+      "clustering": "knot_24h",
+      "clustering_name": "Xie 2021 kn+ PN types (24 h APF)",
+      "source_cluster_id": "VA1v",
+      "cell_number": 21,
+      "cells_by_sample": {
+        "24h_knot": 21
+      }
+    },
+    {
+      "label": "knot_24h_VM2",
+      "type": "VM2",
+      "clustering": "knot_24h",
+      "clustering_name": "Xie 2021 kn+ PN types (24 h APF)",
+      "source_cluster_id": "VM2",
+      "cell_number": 16,
+      "cells_by_sample": {
+        "24h_knot": 16
+      }
+    },
+    {
+      "label": "knot_24h_VM7 or VM5v #1",
+      "type": "VM7 or VM5v #1",
+      "clustering": "knot_24h",
+      "clustering_name": "Xie 2021 kn+ PN types (24 h APF)",
+      "source_cluster_id": "VM7 or VM5v #1",
+      "cell_number": 12,
+      "cells_by_sample": {
+        "24h_knot": 12
+      }
+    },
+    {
+      "label": "knot_24h_VM7 or VM5v #2",
+      "type": "VM7 or VM5v #2",
+      "clustering": "knot_24h",
+      "clustering_name": "Xie 2021 kn+ PN types (24 h APF)",
+      "source_cluster_id": "VM7 or VM5v #2",
+      "cell_number": 12,
+      "cells_by_sample": {
+        "24h_knot": 12
+      }
+    },
+    {
+      "label": "knot_24h_vPN",
+      "type": "vPN",
+      "clustering": "knot_24h",
+      "clustering_name": "Xie 2021 kn+ PN types (24 h APF)",
+      "source_cluster_id": "vPN",
+      "cell_number": 10,
+      "cells_by_sample": {
+        "24h_knot": 10
+      }
+    },
+    {
+      "label": "knot_24h_vPN_DA1",
+      "type": "vPN_DA1",
+      "clustering": "knot_24h",
+      "clustering_name": "Xie 2021 kn+ PN types (24 h APF)",
+      "source_cluster_id": "vPN_DA1",
+      "cell_number": 6,
+      "cells_by_sample": {
+        "24h_knot": 6
+      }
+    },
+    {
+      "label": "knot_48h_D",
+      "type": "D",
+      "clustering": "knot_48h",
+      "clustering_name": "Xie 2021 kn+ PN types (48 h APF)",
+      "source_cluster_id": "D",
+      "cell_number": 37,
+      "cells_by_sample": {
+        "48h_knot": 37
+      }
+    },
+    {
+      "label": "knot_48h_DM6",
+      "type": "DM6",
+      "clustering": "knot_48h",
+      "clustering_name": "Xie 2021 kn+ PN types (48 h APF)",
+      "source_cluster_id": "DM6",
+      "cell_number": 18,
+      "cells_by_sample": {
+        "48h_knot": 18
+      }
+    },
+    {
+      "label": "knot_48h_unassigned",
+      "type": "unassigned",
+      "clustering": "knot_48h",
+      "clustering_name": "Xie 2021 kn+ PN types (48 h APF)",
+      "source_cluster_id": "unassigned",
+      "cell_number": 22,
+      "cells_by_sample": {
+        "48h_knot": 22
+      },
+      "unannotated": true
+    },
+    {
+      "label": "knot_48h_VA1v",
+      "type": "VA1v",
+      "clustering": "knot_48h",
+      "clustering_name": "Xie 2021 kn+ PN types (48 h APF)",
+      "source_cluster_id": "VA1v",
+      "cell_number": 30,
+      "cells_by_sample": {
+        "48h_knot": 30
+      }
+    },
+    {
+      "label": "knot_48h_VM2",
+      "type": "VM2",
+      "clustering": "knot_48h",
+      "clustering_name": "Xie 2021 kn+ PN types (48 h APF)",
+      "source_cluster_id": "VM2",
+      "cell_number": 13,
+      "cells_by_sample": {
+        "48h_knot": 13
+      }
+    },
+    {
+      "label": "knot_48h_VM7 or VM5v #1",
+      "type": "VM7 or VM5v #1",
+      "clustering": "knot_48h",
+      "clustering_name": "Xie 2021 kn+ PN types (48 h APF)",
+      "source_cluster_id": "VM7 or VM5v #1",
+      "cell_number": 24,
+      "cells_by_sample": {
+        "48h_knot": 24
+      }
+    },
+    {
+      "label": "knot_48h_VM7 or VM5v #2",
+      "type": "VM7 or VM5v #2",
+      "clustering": "knot_48h",
+      "clustering_name": "Xie 2021 kn+ PN types (48 h APF)",
+      "source_cluster_id": "VM7 or VM5v #2",
+      "cell_number": 30,
+      "cells_by_sample": {
+        "48h_knot": 30
+      }
+    },
+    {
+      "label": "knot_48h_vPN",
+      "type": "vPN",
+      "clustering": "knot_48h",
+      "clustering_name": "Xie 2021 kn+ PN types (48 h APF)",
+      "source_cluster_id": "vPN",
+      "cell_number": 25,
+      "cells_by_sample": {
+        "48h_knot": 25
+      }
+    },
+    {
+      "label": "knot_48h_vPN_DA1",
+      "type": "vPN_DA1",
+      "clustering": "knot_48h",
+      "clustering_name": "Xie 2021 kn+ PN types (48 h APF)",
+      "source_cluster_id": "vPN_DA1",
+      "cell_number": 10,
+      "cells_by_sample": {
+        "48h_knot": 10
+      }
+    },
+    {
+      "label": "knot_adult_D",
+      "type": "D",
+      "clustering": "knot_adult",
+      "clustering_name": "Xie 2021 kn+ PN types (adult)",
+      "source_cluster_id": "D",
+      "cell_number": 18,
+      "cells_by_sample": {
+        "adult_knot": 18
+      }
+    },
+    {
+      "label": "knot_adult_DM6",
+      "type": "DM6",
+      "clustering": "knot_adult",
+      "clustering_name": "Xie 2021 kn+ PN types (adult)",
+      "source_cluster_id": "DM6",
+      "cell_number": 22,
+      "cells_by_sample": {
+        "adult_knot": 22
+      }
+    },
+    {
+      "label": "knot_adult_VA1v",
+      "type": "VA1v",
+      "clustering": "knot_adult",
+      "clustering_name": "Xie 2021 kn+ PN types (adult)",
+      "source_cluster_id": "VA1v",
+      "cell_number": 26,
+      "cells_by_sample": {
+        "adult_knot": 26
+      }
+    },
+    {
+      "label": "knot_adult_VM2",
+      "type": "VM2",
+      "clustering": "knot_adult",
+      "clustering_name": "Xie 2021 kn+ PN types (adult)",
+      "source_cluster_id": "VM2",
+      "cell_number": 17,
+      "cells_by_sample": {
+        "adult_knot": 17
+      }
+    },
+    {
+      "label": "knot_adult_VM7 or VM5v #1",
+      "type": "VM7 or VM5v #1",
+      "clustering": "knot_adult",
+      "clustering_name": "Xie 2021 kn+ PN types (adult)",
+      "source_cluster_id": "VM7 or VM5v #1",
+      "cell_number": 28,
+      "cells_by_sample": {
+        "adult_knot": 28
+      }
+    },
+    {
+      "label": "knot_adult_VM7 or VM5v #2",
+      "type": "VM7 or VM5v #2",
+      "clustering": "knot_adult",
+      "clustering_name": "Xie 2021 kn+ PN types (adult)",
+      "source_cluster_id": "VM7 or VM5v #2",
+      "cell_number": 13,
+      "cells_by_sample": {
+        "adult_knot": 13
+      }
+    },
+    {
+      "label": "knot_adult_vPN",
+      "type": "vPN",
+      "clustering": "knot_adult",
+      "clustering_name": "Xie 2021 kn+ PN types (adult)",
+      "source_cluster_id": "vPN",
+      "cell_number": 9,
+      "cells_by_sample": {
+        "adult_knot": 9
+      }
+    },
+    {
+      "label": "knot_adult_vPN_DA1",
+      "type": "vPN_DA1",
+      "clustering": "knot_adult",
+      "clustering_name": "Xie 2021 kn+ PN types (adult)",
+      "source_cluster_id": "vPN_DA1",
+      "cell_number": 8,
+      "cells_by_sample": {
+        "adult_knot": 8
+      }
+    }
+  ]
+}
