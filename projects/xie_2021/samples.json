@@ -1,0 +1,687 @@
+{
+  "dataset": {
+    "vfbseq_id": "VFBseq_00002581",
+    "accession": "GSE161228",
+    "site": "GEO"
+  },
+  "samples": [
+    {
+      "vfbseq_id": "VFBseq_00002582",
+      "sample_id": "0h_VT033006",
+      "label": "brain, 0 h APF, VT033006-GAL4 > UAS-mCD8GFP",
+      "tissue_raw": null,
+      "age_raw": "0 h APF",
+      "genotype": "VT033006-GAL4 > UAS-mCD8GFP",
+      "stock": null,
+      "genotype_includes": [
+        "FBal0310709"
+      ],
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00005343",
+        "label": "prepupal stage P1"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00005095",
+          "label": "brain"
+        }
+      ],
+      "associated_dataset": "VFBseq_00002581",
+      "assay_vfbseq_ids": [
+        "VFBseq_00002583",
+        "VFBseq_00002584",
+        "VFBseq_00002585",
+        "VFBseq_00002586",
+        "VFBseq_00002587",
+        "VFBseq_00002588"
+      ],
+      "n_assays": 6
+    },
+    {
+      "vfbseq_id": "VFBseq_00002589",
+      "sample_id": "24h_knot",
+      "label": "brain, 24 h APF, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP",
+      "tissue_raw": null,
+      "age_raw": "24 h APF",
+      "genotype": "kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP",
+      "stock": null,
+      "genotype_includes": [
+        "FBal0327926",
+        "FBal0243707",
+        "FBal0243701"
+      ],
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00005353",
+        "label": "pupal stage P6"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00005095",
+          "label": "brain"
+        }
+      ],
+      "associated_dataset": "VFBseq_00002581",
+      "assay_vfbseq_ids": [
+        "VFBseq_00002590"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00002591",
+      "sample_id": "48h_GH146",
+      "label": "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP",
+      "tissue_raw": null,
+      "age_raw": "48 h APF",
+      "genotype": "GH146-GAL4 > UAS-mCD8GFP",
+      "stock": null,
+      "genotype_includes": [
+        "FBal0218122"
+      ],
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00005355",
+        "label": "pharate adult stage P8"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003624",
+          "label": "adult brain"
+        }
+      ],
+      "associated_dataset": "VFBseq_00002581",
+      "assay_vfbseq_ids": [
+        "VFBseq_00002592",
+        "VFBseq_00002593",
+        "VFBseq_00002594",
+        "VFBseq_00002595",
+        "VFBseq_00002596",
+        "VFBseq_00002597",
+        "VFBseq_00002598",
+        "VFBseq_00002599"
+      ],
+      "n_assays": 8
+    },
+    {
+      "vfbseq_id": "VFBseq_00002600",
+      "sample_id": "48h_knot",
+      "label": "adult brain, 48 h APF, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP",
+      "tissue_raw": null,
+      "age_raw": "48 h APF",
+      "genotype": "kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP",
+      "stock": null,
+      "genotype_includes": [
+        "FBal0327926",
+        "FBal0243707",
+        "FBal0243701"
+      ],
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00005355",
+        "label": "pharate adult stage P8"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003624",
+          "label": "adult brain"
+        }
+      ],
+      "associated_dataset": "VFBseq_00002581",
+      "assay_vfbseq_ids": [
+        "VFBseq_00002601",
+        "VFBseq_00002602"
+      ],
+      "n_assays": 2
+    },
+    {
+      "vfbseq_id": "VFBseq_00002603",
+      "sample_id": "adult_GH146",
+      "label": "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP",
+      "tissue_raw": null,
+      "age_raw": "adult",
+      "genotype": "GH146-GAL4 > UAS-mCD8GFP",
+      "stock": null,
+      "genotype_includes": [
+        "FBal0218122"
+      ],
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00005369",
+        "label": "adult stage"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003624",
+          "label": "adult brain"
+        }
+      ],
+      "associated_dataset": "VFBseq_00002581",
+      "assay_vfbseq_ids": [
+        "VFBseq_00002604",
+        "VFBseq_00002605",
+        "VFBseq_00002606",
+        "VFBseq_00002607",
+        "VFBseq_00002608",
+        "VFBseq_00002609",
+        "VFBseq_00002610",
+        "VFBseq_00002611",
+        "VFBseq_00002612"
+      ],
+      "n_assays": 9
+    },
+    {
+      "vfbseq_id": "VFBseq_00002613",
+      "sample_id": "adult_knot",
+      "label": "adult brain, adult, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP",
+      "tissue_raw": null,
+      "age_raw": "adult",
+      "genotype": "kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP",
+      "stock": null,
+      "genotype_includes": [
+        "FBal0327926",
+        "FBal0243707",
+        "FBal0243701"
+      ],
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00005369",
+        "label": "adult stage"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00003624",
+          "label": "adult brain"
+        }
+      ],
+      "associated_dataset": "VFBseq_00002581",
+      "assay_vfbseq_ids": [
+        "VFBseq_00002614"
+      ],
+      "n_assays": 1
+    }
+  ],
+  "assays": [
+    {
+      "vfbseq_id": "VFBseq_00002583",
+      "library_id": "plate P1",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002582",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002584",
+      "library_id": "plate P2",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 383,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002582",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002585",
+      "library_id": "plate P3",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002582",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002586",
+      "library_id": "plate P4",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002582",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002587",
+      "library_id": "plate P5",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002582",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002588",
+      "library_id": "plate P8",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002582",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002590",
+      "library_id": "plate P1",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002589",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002592",
+      "library_id": "plate P1",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002591",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002593",
+      "library_id": "plate P2",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002591",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002594",
+      "library_id": "plate P3",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002591",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002595",
+      "library_id": "plate P4",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002591",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002596",
+      "library_id": "plate P6",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002591",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002597",
+      "library_id": "plate P7",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002591",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002598",
+      "library_id": "plate P8",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002591",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002599",
+      "library_id": "plate P12",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002591",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002601",
+      "library_id": "plate P1",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002600",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002602",
+      "library_id": "plate P3",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002600",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002604",
+      "library_id": "plate P1",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002603",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002605",
+      "library_id": "plate P2",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002603",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002606",
+      "library_id": "plate P3",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 382,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002603",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002607",
+      "library_id": "plate P4",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002603",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002608",
+      "library_id": "plate P7",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002603",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002609",
+      "library_id": "plate P8",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002603",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002610",
+      "library_id": "plate P9",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002603",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002611",
+      "library_id": "plate P11",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002603",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002612",
+      "library_id": "plate P12",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002603",
+      "associated_dataset": "VFBseq_00002581"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002614",
+      "library_id": "plate P1",
+      "accession": null,
+      "dbxrefs": [],
+      "n_sources": 384,
+      "method": {
+        "fbcv_id": "FBcv:0009007",
+        "label": "Smart-seq2"
+      },
+      "sample_vfbseq_id": "VFBseq_00002613",
+      "associated_dataset": "VFBseq_00002581"
+    }
+  ],
+  "clusterings": [
+    {
+      "vfbseq_id": "VFBseq_00002615",
+      "subset": "main_0h",
+      "associated_dataset": "VFBseq_00002581",
+      "name": "Xie 2021 PN types (0 h APF)",
+      "samples": [
+        "VFBseq_00002582"
+      ]
+    },
+    {
+      "vfbseq_id": "VFBseq_00002616",
+      "subset": "main_24h",
+      "associated_dataset": "VFBseq_00002581",
+      "name": "Xie 2021 PN types (24 h APF)",
+      "samples": [
+        "VFBseq_00002528",
+        "VFBseq_00002530",
+        "VFBseq_00002537",
+        "VFBseq_00002544",
+        "VFBseq_00002560"
+      ]
+    },
+    {
+      "vfbseq_id": "VFBseq_00002617",
+      "subset": "main_48h",
+      "associated_dataset": "VFBseq_00002581",
+      "name": "Xie 2021 PN types (48 h APF)",
+      "samples": [
+        "VFBseq_00002591"
+      ]
+    },
+    {
+      "vfbseq_id": "VFBseq_00002618",
+      "subset": "main_adult",
+      "associated_dataset": "VFBseq_00002581",
+      "name": "Xie 2021 PN types (adult)",
+      "samples": [
+        "VFBseq_00002603"
+      ]
+    },
+    {
+      "vfbseq_id": "VFBseq_00002619",
+      "subset": "knot_24h",
+      "associated_dataset": "VFBseq_00002581",
+      "name": "Xie 2021 kn+ PN types (24 h APF)",
+      "samples": [
+        "VFBseq_00002589"
+      ]
+    },
+    {
+      "vfbseq_id": "VFBseq_00002620",
+      "subset": "knot_48h",
+      "associated_dataset": "VFBseq_00002581",
+      "name": "Xie 2021 kn+ PN types (48 h APF)",
+      "samples": [
+        "VFBseq_00002600"
+      ]
+    },
+    {
+      "vfbseq_id": "VFBseq_00002621",
+      "subset": "knot_adult",
+      "associated_dataset": "VFBseq_00002581",
+      "name": "Xie 2021 kn+ PN types (adult)",
+      "samples": [
+        "VFBseq_00002613"
+      ]
+    }
+  ],
+  "reused_samples": [
+    {
+      "vfbseq_id": "VFBseq_00002528",
+      "sample_id": "exp2_GH146_24hAPF",
+      "from_project": "li_2017",
+      "tissue_raw": null,
+      "assay_vfbseq_ids": [
+        "VFBseq_00002529"
+      ]
+    },
+    {
+      "vfbseq_id": "VFBseq_00002530",
+      "sample_id": "exp3_GH146_24hAPF",
+      "from_project": "li_2017",
+      "tissue_raw": null,
+      "assay_vfbseq_ids": [
+        "VFBseq_00002531",
+        "VFBseq_00002532",
+        "VFBseq_00002533",
+        "VFBseq_00002534",
+        "VFBseq_00002535",
+        "VFBseq_00002536"
+      ]
+    },
+    {
+      "vfbseq_id": "VFBseq_00002537",
+      "sample_id": "exp5_GH146_24hAPF",
+      "from_project": "li_2017",
+      "tissue_raw": null,
+      "assay_vfbseq_ids": [
+        "VFBseq_00002538",
+        "VFBseq_00002539",
+        "VFBseq_00002540"
+      ]
+    },
+    {
+      "vfbseq_id": "VFBseq_00002544",
+      "sample_id": "exp6_GH146_24hAPF",
+      "from_project": "li_2017",
+      "tissue_raw": null,
+      "assay_vfbseq_ids": [
+        "VFBseq_00002545",
+        "VFBseq_00002546",
+        "VFBseq_00002547"
+      ]
+    },
+    {
+      "vfbseq_id": "VFBseq_00002560",
+      "sample_id": "exp12_GH146_24hAPF",
+      "from_project": "li_2017",
+      "tissue_raw": null,
+      "assay_vfbseq_ids": [
+        "VFBseq_00002561",
+        "VFBseq_00002562",
+        "VFBseq_00002563",
+        "VFBseq_00002564",
+        "VFBseq_00002565",
+        "VFBseq_00002566"
+      ]
+    }
+  ]
+}

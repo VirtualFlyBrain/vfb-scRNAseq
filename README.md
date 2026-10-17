@@ -78,6 +78,10 @@ from FlyBase; that authority is being dropped.)
   series (per-cell assignments from the authors' repository): 45 entries, 8 loaded (mature
   PN types from 48 h APF; the 24 h / 36 h types await immature FBbt terms). Curated before
   Xie 2021, which reuses its 24 h cells.
+- `projects/xie_2021/` — Xie et al. 2021, olfactory projection neurons through development
+  (PMID 33427646; [GSE161228](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161228)):
+  Smart-seq2 of sorted PNs at 0 h, 24 h, 48 h APF and adult (main pan-PN and knot⁺
+  analyses); its 24 h cells are Li 2017's, reused. In progress.
 - `projects/hormann_2020/` — Hörmann et al. 2020, T4/T5 neurons through pupal
   development (PMID 32238425; [GSE147987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987)):
   FACS-sorted T4/T5 neurons at five pupal stages, one Clustering per stage of the
@@ -127,6 +131,7 @@ projects/ozel_2021/                      # optic lobe developmental atlas (GEO +
 projects/konstantinides_2022/            # larval optic lobe (GEO + Seurat object; SCEA author labels)
 projects/hormann_2020/                   # pupal T4/T5 neurons (GEO matrices; SCEA author labels)
 projects/li_2017/                        # olfactory PNs (GEO per-cell samples; authors' repo assignments)
+projects/xie_2021/                       # olfactory PNs through development (GEO h5ads; reuses Li 2017 samples)
 metadata/                                # VFB-loadable metadata OWL, one per project
 expression/                              # VFB-loadable expression OWL (.owl.gz), one per project
 id_registry/                             # minted-id registry (JSON)
