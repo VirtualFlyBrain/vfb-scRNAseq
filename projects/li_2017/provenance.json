@@ -1,0 +1,376 @@
+{
+  "project": "li_2017",
+  "created_at": "2026-10-17",
+  "updated_at": "2026-10-17",
+  "summary": "Li, Horns et al. 2017 (Cell), Smart-seq2 of FACS-sorted Drosophila olfactory projection neurons (GEO GSE100058), curated before Xie et al. 2021, which reuses its 24 h APF GH146 cells; not previously in VFB. 10 Samples (one per sort: 5 GH146 sorts at 24 h APF; Mz19 at 24, 36, 48, 72 h APF and adult) with 29 Smart-seq2 plate Assays, linked to their GAL4 driver alleles (GENO has_genotype). Six Clusterings: the authors' GH146 24 h HDBSCAN clusters (from their repository; the paper's decoded clusters linked by the authors' own criteria) and the Mz19 developmental series (per-type, per-stage lists). 45 entries: 8 loaded (mature PN type terms from 48 h APF); the 24 h / 36 h types held until FBbt has immature projection neuron terms. Summary expression as CPM from GEO's raw HTSeq counts (14,457 genes x 1,379 cells).",
+  "decisions": [
+    {
+      "date": "2026-10-08",
+      "by": "curator",
+      "decision": "Map to cell-level FBbt terms only (a tissue or organ author term maps to its cell-level equivalent, else the type is held)."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Clusters with no FBbt term are held: listed in mapping.tsv with a hold_reason but not loaded (no VFBseq id, entity or expression rows). Their cells still count towards the Dataset's gene counts."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Summary expression is computed as CPM for every dataset."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Narrow a generic type by the dissected tissue only where the tissue makes the tissue-specific FBbt term exact; hold clusters that could only be typed as cell or neuron (or stage-specific versions); load glia under a glial-cell term."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "curator",
+      "decision": "Curate Li 2017 before Xie 2021, which reuses its 24 h APF GH146 cells (curate the source study first)."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "curator",
+      "decision": "Load the GH146 24 h clusters and the Mz19 developmental series; not the astrocyte / C155 controls (not clustered)."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "curator",
+      "decision": "Link the paper's decoded GH146 clusters (figure labels #1-#6') to the authors' HDBSCAN clusters by the authors' own criteria (driver cells mapped onto the clusters with a random forest on their ICIM genes, and the defining markers): this uses author definitions, not our own reading."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "curator",
+      "decision": "Swap the authors' two adult Mz19 lists back: the paper defines DA1 PNs as Mz19+/acj6- and VA1d / DC3 as Mz19+/acj6+, the pupal lists follow this, but the adult files are reversed in acj6 / fru."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "curator",
+      "decision": "Immature terms up to the pupal stage (24, 36 h APF), mature from the pharate adult stage; FBbt has no immature projection neuron terms, so the 24 h / 36 h types are held until it does, the request to be made together with Xie 2021's types."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "curator",
+      "decision": "Stages by the Bainbridge & Bownes FBdv definitions; tissue brain to the pupal stage, adult brain from the pharate adult stage; samples from crosses link the GAL4 alleles FlyBase curated for the paper (genotype_includes), the UAS-mCD8GFP reporter left unlinked."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "pipeline",
+      "decision": "Samples by build_samples.py from GEO (one GSM per cell, titled '<driver> [<library>]') and the authors' library table: one Sample per sort (experiment x driver / stage label), one Assay per Smart-seq2 plate (the pooled library where no plate is recorded)."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "pipeline",
+      "decision": "Clusters by build_clusters.py from the authors' repository files; decoded GH146 clusters from config (match_clusters.py: 91G04 -> 22; Mz19 DA1 -> 8, 5; VA1d -> 7; DC3 -> 12; trol+ NP5103 -> 2; the remaining acj6-/CG31676+ 20, 21 = DL3); the 22 undecoded clusters held (untyped), the unclustered cells held (unassigned). Type mappings by write_type_mappings.py (no judgement needed)."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "pipeline",
+      "decision": "Expression from GEO's raw HTSeq counts (export_counts.py: the loaded cells, spike-ins dropped), CPM over each cell's own counts, extent > 0.2; r6.10 FBgn ids mapped to current FlyBase genes."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "curator",
+      "decision": "All 8 mapped clusters reviewed by the curator (mapping.tsv `reviewed`)."
+    }
+  ],
+  "checks": [
+    {
+      "date": "2026-10-17",
+      "check": "verify_mappings.py: every FBbt term in the mappings looked up in OLS (FBbt 2026-10-01).",
+      "result": "4 terms current, not obsolete, labels match."
+    },
+    {
+      "date": "2026-10-17",
+      "check": "FBbt, FBdv and FBcv terms on the Samples, Assays and Dataset looked up in OLS.",
+      "result": "All 9 terms current (pupal stage P6, P7, pharate adult stage P8, P9, adult stage, brain, adult brain, single-cell RNA-Seq, Smart-seq2)."
+    },
+    {
+      "date": "2026-10-17",
+      "check": "Decoded GH146 clusters: driver cells mapped onto the HDBSCAN clusters (random forest, authors' ICIM genes) and markers per cluster (match_clusters.py -> cluster_matching.tsv).",
+      "result": "91G04 23/23 -> 22; Mz19 DA1 66 -> 8 and 8 -> 5; Mz19 VA1d 12/12 -> 7; Mz19 DC3 32/32 -> 12; trol+ NP5103 25/28 -> 2; fru only in DA1 cluster 8 (the paper's large #2); CG31676 in 7 not 12; acj6-/CG31676+ 20, 21 (DL3). Eight clusters for the paper's six types, as in the paper."
+    },
+    {
+      "date": "2026-10-17",
+      "check": "Mz19 lists against the paper's definitions (acj6, fru in the authors' expression table).",
+      "result": "Pupal lists follow them (DA1 acj6 0.00, fru 0.83 at 72 h; DC3 acj6 0.90); the adult files are reversed (names_DA1_adult acj6 0.88; names_adPN_adult acj6 0.02, fru 0.98), hence the swap."
+    },
+    {
+      "date": "2026-10-17",
+      "check": "Marker spot checks in the expression output.",
+      "result": "acj6 in VA1d / DC3 not DA1; fru in DA1; CG31676 in VA1d and DA1 not DC3, at 48 h, 72 h and (after the swap) adult."
+    }
+  ],
+  "people": [
+    {
+      "id": "ORCID:0000-0002-1373-1705",
+      "label": "Clare Pilgrim",
+      "role": "curator",
+      "username": "Clare72"
+    }
+  ],
+  "pipeline": {
+    "id": "vfb-scrnaseq",
+    "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
+    "version": "0.0.0",
+    "commit": "586e6f5",
+    "uncommitted_changes": true
+  },
+  "ontologies": [
+    {
+      "id": "FBbt",
+      "label": "Drosophila gross anatomy ontology",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBdv",
+      "label": "Drosophila developmental ontology",
+      "version": "2026-09-30",
+      "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-09-30/fbdv.owl",
+      "accessed_via": "OLS4 API; local fbdv.obo in .cache (stage definitions)",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBcv",
+      "label": "FlyBase controlled vocabulary",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-10-01/fbcv.owl",
+      "accessed_via": "OLS4 API",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "accessed_at": "2026-10-16"
+    }
+  ],
+  "data_sources": [
+    {
+      "id": "10.1016/j.cell.2017.10.019",
+      "type": "publication",
+      "label": "Classifying Drosophila Olfactory Projection Neuron Subtypes by Single-Cell RNA Sequencing",
+      "xrefs": [
+        "PMID:29149607",
+        "PMCID:PMC6095479",
+        "FlyBase:FBrf0237214"
+      ],
+      "description": "Li, Horns et al. 2017, Cell. Full text read for the samples, the decoded clusters (Figures 3-4) and the Mz19 series (Figure 6).",
+      "url": "https://doi.org/10.1016/j.cell.2017.10.019",
+      "files": [
+        {
+          "path": "supp/PMC6095479.jats.xml",
+          "description": "JATS full text, NCBI efetch (db=pmc).",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=PMC6095479",
+          "sha256": "e16fce3252c628b7e8ccd4d84b749994ca131724811845692452178166728c52",
+          "bytes": 205095,
+          "accessed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "GSE100058",
+      "type": "dataset",
+      "label": "Classifying Drosophila Olfactory Projection Neuron Subtypes by Single-cell RNA Sequencing",
+      "xrefs": [
+        "BioProject:PRJNA390607",
+        "SRA:SRP109266"
+      ],
+      "description": "GEO series: one Smart-seq2 cell per sample (1,842). The family SOFT file (the live endpoint fails for large series), the authors' library table and the raw HTSeq counts.",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE100058",
+      "accessed_at": "2026-10-17",
+      "files": [
+        {
+          "path": "li2017/GSE100058_family.soft.gz",
+          "description": "Family SOFT (sample metadata).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE100nnn/GSE100058/soft/GSE100058_family.soft.gz",
+          "sha256": "895723973c3b71d914bf91578cbbec5ea030ea129daf04857dacb8df30511fbc",
+          "bytes": 62514,
+          "accessed_at": "2026-10-17"
+        },
+        {
+          "path": "li2017/df_libs.csv.gz",
+          "description": "The authors' library table (experiment, plate, driver / stage label).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE100nnn/GSE100058/suppl/GSE100058_df_libs.csv.gz",
+          "sha256": "65e884478aa57fbf9d139db3edbf237635ffe8490e897b68edcbcbb4df2b0c29",
+          "bytes": 53459,
+          "accessed_at": "2026-10-17"
+        },
+        {
+          "path": "li2017/GSE100058_htseq.tab.gz",
+          "description": "Raw HTSeq read counts (FBgn x library).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE100nnn/GSE100058/suppl/GSE100058_htseq.tab.gz",
+          "sha256": "4f13b9986201816ab29d95833d2c73fb202c6efaf6fd844efc27b1e93b976996",
+          "bytes": 10532929,
+          "accessed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "felixhorns/FlyPN",
+      "type": "author_files",
+      "label": "The authors' analysis repository (GitHub)",
+      "description": "data/: the per-cell GH146 HDBSCAN clusters, the Mz19 per-type, per-stage cell lists (names_*.txt, 15 used), the ICIM genes and log-CPM table used for the cluster matching (at commit ee4d53e).",
+      "url": "https://github.com/felixhorns/FlyPN",
+      "accessed_at": "2026-10-17",
+      "files": [
+        {
+          "path": "li2017/labels_HDBSCAN.csv",
+          "description": "GH146 24 h cells -> HDBSCAN cluster.",
+          "url": "https://raw.githubusercontent.com/felixhorns/FlyPN/ee4d53e/data/labels_HDBSCAN.csv",
+          "sha256": "26af3be9b28e57ff68be3d6af287fdd0cd7262dbf9fa140ef92dd0693a5cf457",
+          "bytes": 18023,
+          "accessed_at": "2026-10-17"
+        },
+        {
+          "path": "li2017/genes_GH146_ICIM.txt",
+          "description": "The authors' ICIM genes (random forest features).",
+          "url": "https://raw.githubusercontent.com/felixhorns/FlyPN/ee4d53e/data/genes_GH146_ICIM.txt",
+          "sha256": "4f262a752110eac76882c85361ebfbb2053f7b318584ab047e4fca973c0217ec",
+          "bytes": 3775,
+          "accessed_at": "2026-10-17"
+        },
+        {
+          "path": "li2017/htseq_logCPM_neurons.tab.gz",
+          "description": "The authors' log-CPM table (cluster matching only).",
+          "url": "https://raw.githubusercontent.com/felixhorns/FlyPN/ee4d53e/data/htseq_logCPM_neurons.tab.gz",
+          "sha256": "d42fbea5a7c38e3b4a79eba0b6df62d9988087545b8cf6a41bf6b6449d2e0891",
+          "bytes": 42268069,
+          "accessed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "xie_2021",
+      "type": "project",
+      "label": "Xie 2021 (this repo, to come)",
+      "description": "Reuses this study's 24 h APF GH146 Samples; the reason it is curated first.",
+      "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq/issues/52",
+      "accessed_at": "2026-10-17"
+    }
+  ],
+  "software": [
+    {
+      "id": "claude-code",
+      "type": "tool",
+      "label": "Claude Code",
+      "version": "2.1.300",
+      "description": "Agentic CLI that ran the session (orchestrator), stages 1-5."
+    },
+    {
+      "id": "ols4",
+      "type": "service",
+      "label": "OLS4 (Ontology Lookup Service)",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "accessed_at": "2026-10-16",
+      "description": "FBbt / FBdv / FBcv lookup during mapping (OLS MCP) and term verification."
+    },
+    {
+      "id": "vfb-pdb",
+      "type": "service",
+      "label": "VFB production (neo4j)",
+      "url": "https://pdb.virtualflybrain.org",
+      "accessed_at": "2026-10-16",
+      "description": "Checked for the publication FBrf0237214 (not yet in VFB; linked from config) and the driver alleles."
+    },
+    {
+      "id": "flybase-chado",
+      "type": "service",
+      "label": "FlyBase Chado",
+      "version": "FB2026_03 (data last modified 2026-08-29)",
+      "url": "https://chado.flybase.org",
+      "accessed_at": "2026-10-16",
+      "description": "FBrf for the paper (pub_dbxref), its curated genetic entities (scripts/flybase_pub_entities.py), and gene ids mapped to current FlyBase genes (update_gene_ids.py)."
+    },
+    {
+      "id": "ncbi-geo",
+      "type": "service",
+      "label": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/",
+      "accessed_at": "2026-10-16",
+      "description": "Series and Sample SOFT metadata read by ingest.fetch_series (build_samples_from_geo.py)."
+    },
+    {
+      "id": "scikit-learn",
+      "type": "library",
+      "label": "scikit-learn",
+      "version": "1.9.1",
+      "description": "Random forest for match_clusters.py (run with uv --with scikit-learn)."
+    },
+    {
+      "id": "python",
+      "type": "language",
+      "label": "Python",
+      "version": "3.14.3",
+      "description": "Pipeline environment (uv-managed)."
+    },
+    {
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
+      "version": "2.5.1"
+    },
+    {
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
+      "version": "3.0.5"
+    },
+    {
+      "id": "pyyaml",
+      "type": "library",
+      "label": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
+      "version": "1.11.1",
+      "description": "linkml-validate and linkml-convert (flat RDF)."
+    },
+    {
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
+      "version": "1.11.1"
+    },
+    {
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
+      "version": "0.5.0",
+      "description": "Metadata OWL."
+    },
+    {
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
+      "version": "1.9.11",
+      "description": "OFN to OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "id": "psql",
+      "type": "tool",
+      "label": "psql",
+      "version": "14.15",
+      "description": "FlyBase Chado queries."
+    }
+  ],
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "role": "orchestrator",
+      "label": "Claude Opus 5.5",
+      "provider": "Anthropic",
+      "description": "Main Claude Code session: scoping (paper, GEO, SCEA, the authors' repository), the reuse dependency with Xie 2021, sample and cluster builds, the cluster matching and the adult-list check, type mappings, expression and builds. No subagents."
+    }
+  ]
+}
