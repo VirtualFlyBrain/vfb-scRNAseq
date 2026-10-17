@@ -126,3 +126,19 @@ type_mapping:
     GH146_24h: immature
     Mz19_24h: immature
     Mz19_36h: immature
+
+# Summary expression (scripts/build_expression.py) from GEO's raw HTSeq read counts
+# (export_counts.py: the loaded cells only, spike-ins dropped), as CPM over each cell's own
+# counts; cell -> cluster from build_clusters.py's memberships (a GH146 cell is in its
+# cluster; an Mz19 cell in its stage's type). Genes are r6.10 FBgn ids (the table's
+# "symbol" column holds FBgn ids), mapped to current FlyBase genes.
+expression:
+  matrix_file: li2017/counts/matrix.mtx.gz
+  features_file: li2017/counts/features.tsv.gz
+  barcodes_file: li2017/counts/barcodes.tsv.gz
+  membership_file: li2017/memberships.tsv.gz
+  normalisation: CPM
+  extent_cutoff: 0.2
+  hide_in_terminfo: "true"
+  gzip_tsv: true
+  gene_id_map: gene_id_map.tsv
