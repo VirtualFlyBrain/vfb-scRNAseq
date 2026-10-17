@@ -1,0 +1,734 @@
+[
+  {
+    "type": "Publication",
+    "id": "FlyBase:FBrf0237214",
+    "neo_label": "pub"
+  },
+  {
+    "type": "Dataset",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "name": "scRNAseq data from Li (2017)",
+    "title": "Classifying Drosophila Olfactory Projection Neuron Subtypes by Single-Cell RNA Sequencing",
+    "accession": "GSE100058",
+    "neo_label": "DataSet",
+    "site": "vfb:GEO",
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "assay_type": "FBcv:0009000",
+    "total_gene_count": 14457,
+    "filtered_gene_count": 7562,
+    "publication": "FlyBase:FBrf0237214"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002528",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 2 (Li 2017)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002529"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00005095"
+    ],
+    "stage": "FBdv:00005353",
+    "genotype_includes": [
+      "FlyBase:FBal0218122"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002530",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 3 (Li 2017)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002531",
+      "http://virtualflybrain.org/reports/VFBseq_00002532",
+      "http://virtualflybrain.org/reports/VFBseq_00002533",
+      "http://virtualflybrain.org/reports/VFBseq_00002534",
+      "http://virtualflybrain.org/reports/VFBseq_00002535",
+      "http://virtualflybrain.org/reports/VFBseq_00002536"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00005095"
+    ],
+    "stage": "FBdv:00005353",
+    "genotype_includes": [
+      "FlyBase:FBal0218122"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002537",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 5 (Li 2017)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002538",
+      "http://virtualflybrain.org/reports/VFBseq_00002539",
+      "http://virtualflybrain.org/reports/VFBseq_00002540"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00005095"
+    ],
+    "stage": "FBdv:00005353",
+    "genotype_includes": [
+      "FlyBase:FBal0218122"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002541",
+    "name": "brain, 24 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 5 (Li 2017)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002542",
+      "http://virtualflybrain.org/reports/VFBseq_00002543"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00005095"
+    ],
+    "stage": "FBdv:00005353",
+    "genotype_includes": [
+      "FlyBase:FBal0155865"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002544",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 6 (Li 2017)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002545",
+      "http://virtualflybrain.org/reports/VFBseq_00002546",
+      "http://virtualflybrain.org/reports/VFBseq_00002547"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00005095"
+    ],
+    "stage": "FBdv:00005353",
+    "genotype_includes": [
+      "FlyBase:FBal0218122"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002548",
+    "name": "adult brain, adult, Mz19-GAL4 > UAS-mCD8GFP, sort 7 (Li 2017)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002549",
+      "http://virtualflybrain.org/reports/VFBseq_00002550"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00005369",
+    "genotype_includes": [
+      "FlyBase:FBal0155865"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002551",
+    "name": "brain, 36 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10 (Li 2017)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002552",
+      "http://virtualflybrain.org/reports/VFBseq_00002553"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00005095"
+    ],
+    "stage": "FBdv:00005354",
+    "genotype_includes": [
+      "FlyBase:FBal0155865"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002554",
+    "name": "adult brain, 48 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10 (Li 2017)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002555",
+      "http://virtualflybrain.org/reports/VFBseq_00002556"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00005355",
+    "genotype_includes": [
+      "FlyBase:FBal0155865"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002557",
+    "name": "adult brain, 72 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10 (Li 2017)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002558",
+      "http://virtualflybrain.org/reports/VFBseq_00002559"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00005356",
+    "genotype_includes": [
+      "FlyBase:FBal0155865"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002560",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 12 (Li 2017)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002561",
+      "http://virtualflybrain.org/reports/VFBseq_00002562",
+      "http://virtualflybrain.org/reports/VFBseq_00002563",
+      "http://virtualflybrain.org/reports/VFBseq_00002564",
+      "http://virtualflybrain.org/reports/VFBseq_00002565",
+      "http://virtualflybrain.org/reports/VFBseq_00002566"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00005095"
+    ],
+    "stage": "FBdv:00005353",
+    "genotype_includes": [
+      "FlyBase:FBal0218122"
+    ]
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002529",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 2, Smart-seq2 pool IL7024 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002528"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002531",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 3, Smart-seq2 plate 1000100101 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002530"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002532",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 3, Smart-seq2 plate 1000100102 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002530"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002533",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 3, Smart-seq2 plate 1000100103 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002530"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002534",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 3, Smart-seq2 plate 1000100104 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002530"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002535",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 3, Smart-seq2 plate 1000100105 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002530"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002536",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 3, Smart-seq2 plate 1000100106 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002530"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002538",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 5, Smart-seq2 plate 1000100201 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002537"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002539",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 5, Smart-seq2 plate 1000100202 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002537"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002540",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 5, Smart-seq2 plate 1000100203 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002537"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002542",
+    "name": "brain, 24 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 5, Smart-seq2 plate 1000100204 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002541"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002543",
+    "name": "brain, 24 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 5, Smart-seq2 plate 1000100205 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002541"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002545",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 6, Smart-seq2 plate 1000100301 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002544"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002546",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 6, Smart-seq2 plate 1000100302 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002544"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002547",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 6, Smart-seq2 plate 1000100303 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002544"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002549",
+    "name": "adult brain, adult, Mz19-GAL4 > UAS-mCD8GFP, sort 7, Smart-seq2 plate 1000100304 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002548"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002550",
+    "name": "adult brain, adult, Mz19-GAL4 > UAS-mCD8GFP, sort 7, Smart-seq2 plate 1000100305 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002548"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002552",
+    "name": "brain, 36 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10, Smart-seq2 plate 1000100401 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002551"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002553",
+    "name": "brain, 36 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10, Smart-seq2 plate 1000100402 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002551"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002555",
+    "name": "adult brain, 48 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10, Smart-seq2 plate 1000100403 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002554"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002556",
+    "name": "adult brain, 48 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10, Smart-seq2 plate 1000100404 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002554"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002558",
+    "name": "adult brain, 72 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10, Smart-seq2 plate 1000100405 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002557"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002559",
+    "name": "adult brain, 72 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10, Smart-seq2 plate 1000100406 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002557"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002561",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 12, Smart-seq2 plate 1000100601 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002560"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002562",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 12, Smart-seq2 plate 1000100602 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002560"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002563",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 12, Smart-seq2 plate 1000100603 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002560"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002564",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 12, Smart-seq2 plate 1000100604 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002560"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002565",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 12, Smart-seq2 plate 1000100605 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002560"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002566",
+    "name": "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 12, Smart-seq2 plate 1000100606 (Li 2017)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002560"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002567",
+    "name": "Li 2017 GH146 PN clusters (24 h APF)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002528",
+      "http://virtualflybrain.org/reports/VFBseq_00002530",
+      "http://virtualflybrain.org/reports/VFBseq_00002537",
+      "http://virtualflybrain.org/reports/VFBseq_00002544",
+      "http://virtualflybrain.org/reports/VFBseq_00002560"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002568",
+    "name": "Li 2017 Mz19 PN types (24 h APF)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002541"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002569",
+    "name": "Li 2017 Mz19 PN types (36 h APF)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002551"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002570",
+    "name": "Li 2017 Mz19 PN types (48 h APF)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002554"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002571",
+    "name": "Li 2017 Mz19 PN types (72 h APF)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002557"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002572",
+    "name": "Li 2017 Mz19 PN types (adult)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002548"
+    ]
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002573",
+    "name": "DA1 cluster (Li 2017 Mz19 PN types (48 h APF)) (Li 2017)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002570",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "cell_number": 64,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067363"
+    ],
+    "total_gene_count": 10157,
+    "filtered_gene_count": 5243
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002574",
+    "name": "DC3 cluster (Li 2017 Mz19 PN types (48 h APF)) (Li 2017)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002570",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "cell_number": 13,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00040000"
+    ],
+    "total_gene_count": 7923,
+    "filtered_gene_count": 5517
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002575",
+    "name": "VA1d cluster (Li 2017 Mz19 PN types (48 h APF)) (Li 2017)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002570",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "cell_number": 14,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067357"
+    ],
+    "total_gene_count": 7636,
+    "filtered_gene_count": 5468
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002576",
+    "name": "DA1 cluster (Li 2017 Mz19 PN types (72 h APF)) (Li 2017)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002571",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "cell_number": 48,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067363"
+    ],
+    "total_gene_count": 8056,
+    "filtered_gene_count": 4609
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002577",
+    "name": "DC3 cluster (Li 2017 Mz19 PN types (72 h APF)) (Li 2017)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002571",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "cell_number": 21,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00040000"
+    ],
+    "total_gene_count": 7303,
+    "filtered_gene_count": 4742
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002578",
+    "name": "VA1d cluster (Li 2017 Mz19 PN types (72 h APF)) (Li 2017)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002571",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "cell_number": 23,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067357"
+    ],
+    "total_gene_count": 7399,
+    "filtered_gene_count": 4875
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002579",
+    "name": "DA1 cluster (Li 2017 Mz19 PN types (adult)) (Li 2017)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002572",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "cell_number": 43,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067363"
+    ],
+    "total_gene_count": 7727,
+    "filtered_gene_count": 4349
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002580",
+    "name": "VA1d or DC3 cluster (Li 2017 Mz19 PN types (adult)) (Li 2017)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002572",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002527",
+    "cell_number": 52,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100368"
+    ],
+    "total_gene_count": 8012,
+    "filtered_gene_count": 4456
+  }
+]
