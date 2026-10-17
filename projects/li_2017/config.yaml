@@ -37,6 +37,9 @@ sample_build:
   # pooled sequencing library where no plate is recorded). Cells come one per GSM, titled
   # "<driver> [<library>]".
   assay_method: { fbcv_id: FBcv:0009007, label: Smart-seq2 }
+  # Assay names: the Sample + "Smart-seq2 plate <id>" (or "... pool <library>" where no
+  # plate is recorded)
+  assay_label: { unit: Smart-seq2, pattern: '^(.+)$' }
   # Paper: "In all experiments, both male and female flies were used" (pooled: unset).
   sex: mixed
   # Drivers (crosses with UAS-mCD8GFP): the GAL4 alleles FlyBase curated for the paper

@@ -75,8 +75,9 @@ from FlyBase; that authority is being dropped.)
 - `projects/li_2017/` — Li, Horns et al. 2017, olfactory projection neurons (PMID
   29149607; [GSE100058](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE100058)):
   Smart-seq2 of sorted PNs, the GH146 24 h APF clusters and the Mz19 developmental
-  series (per-cell assignments from the authors' repository). Curated before Xie 2021,
-  which reuses its 24 h cells. In progress.
+  series (per-cell assignments from the authors' repository): 45 entries, 8 loaded (mature
+  PN types from 48 h APF; the 24 h / 36 h types await immature FBbt terms). Curated before
+  Xie 2021, which reuses its 24 h cells.
 - `projects/hormann_2020/` — Hörmann et al. 2020, T4/T5 neurons through pupal
   development (PMID 32238425; [GSE147987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987)):
   FACS-sorted T4/T5 neurons at five pupal stages, one Clustering per stage of the
@@ -181,7 +182,7 @@ from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#genera
 
 ## Status
 
-All eight projects are curated and built. Every mapped cluster has been reviewed (bar
+All nine projects are curated and built. Every mapped cluster has been reviewed (bar
 three Kurmangaliyev early clusters awaiting FBbt #2216, below), and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the

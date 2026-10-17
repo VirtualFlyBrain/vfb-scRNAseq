@@ -1,0 +1,466 @@
+@prefix BAO: <http://www.bioassayontology.org/bao#BAO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix FBbt: <http://purl.obolibrary.org/obo/FBbt_> .
+@prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
+@prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
+@prefix FlyBase: <http://flybase.org/reports/> .
+@prefix GENO: <http://purl.obolibrary.org/obo/GENO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix VFBseq: <http://virtualflybrain.org/reports/VFBseq_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix neo_custom: <http://n2o.neo/custom/> .
+@prefix neo_property: <http://n2o.neo/property/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vfb: <http://virtualflybrain.org/reports/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VFBseq:00002567 a FBcv:0009002 ;
+    rdfs:label "Li 2017 GH146 PN clusters (24 h APF)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002528,
+        VFBseq:00002530,
+        VFBseq:00002537,
+        VFBseq:00002544,
+        VFBseq:00002560 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002568 a FBcv:0009002 ;
+    rdfs:label "Li 2017 Mz19 PN types (24 h APF)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002541 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002569 a FBcv:0009002 ;
+    rdfs:label "Li 2017 Mz19 PN types (36 h APF)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002551 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002573 a FBcv:0009003 ;
+    rdfs:label "DA1 cluster (Li 2017 Mz19 PN types (48 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 64 ;
+    neo_custom:filtered_gene_count 5243 ;
+    neo_custom:total_gene_count 10157 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002570 ;
+    RO:0002473 FBbt:00067363 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002574 a FBcv:0009003 ;
+    rdfs:label "DC3 cluster (Li 2017 Mz19 PN types (48 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 13 ;
+    neo_custom:filtered_gene_count 5517 ;
+    neo_custom:total_gene_count 7923 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002570 ;
+    RO:0002473 FBbt:00040000 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002575 a FBcv:0009003 ;
+    rdfs:label "VA1d cluster (Li 2017 Mz19 PN types (48 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 14 ;
+    neo_custom:filtered_gene_count 5468 ;
+    neo_custom:total_gene_count 7636 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002570 ;
+    RO:0002473 FBbt:00067357 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002576 a FBcv:0009003 ;
+    rdfs:label "DA1 cluster (Li 2017 Mz19 PN types (72 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 48 ;
+    neo_custom:filtered_gene_count 4609 ;
+    neo_custom:total_gene_count 8056 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002571 ;
+    RO:0002473 FBbt:00067363 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002577 a FBcv:0009003 ;
+    rdfs:label "DC3 cluster (Li 2017 Mz19 PN types (72 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 21 ;
+    neo_custom:filtered_gene_count 4742 ;
+    neo_custom:total_gene_count 7303 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002571 ;
+    RO:0002473 FBbt:00040000 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002578 a FBcv:0009003 ;
+    rdfs:label "VA1d cluster (Li 2017 Mz19 PN types (72 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 23 ;
+    neo_custom:filtered_gene_count 4875 ;
+    neo_custom:total_gene_count 7399 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002571 ;
+    RO:0002473 FBbt:00067357 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002579 a FBcv:0009003 ;
+    rdfs:label "DA1 cluster (Li 2017 Mz19 PN types (adult)) (Li 2017)" ;
+    neo_custom:cell_count 43 ;
+    neo_custom:filtered_gene_count 4349 ;
+    neo_custom:total_gene_count 7727 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002572 ;
+    RO:0002473 FBbt:00067363 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002580 a FBcv:0009003 ;
+    rdfs:label "VA1d or DC3 cluster (Li 2017 Mz19 PN types (adult)) (Li 2017)" ;
+    neo_custom:cell_count 52 ;
+    neo_custom:filtered_gene_count 4456 ;
+    neo_custom:total_gene_count 8012 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002572 ;
+    RO:0002473 FBbt:00100368 ;
+    dcterms:source VFBseq:00002527 .
+
+FlyBase:FBrf0237214 a FBcv:0000212 ;
+    neo_property:nodeLabel "pub" .
+
+VFBseq:00002529 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 2, Smart-seq2 pool IL7024 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002528 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002531 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 3, Smart-seq2 plate 1000100101 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002530 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002532 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 3, Smart-seq2 plate 1000100102 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002530 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002533 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 3, Smart-seq2 plate 1000100103 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002530 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002534 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 3, Smart-seq2 plate 1000100104 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002530 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002535 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 3, Smart-seq2 plate 1000100105 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002530 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002536 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 3, Smart-seq2 plate 1000100106 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002530 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002538 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 5, Smart-seq2 plate 1000100201 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002537 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002539 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 5, Smart-seq2 plate 1000100202 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002537 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002540 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 5, Smart-seq2 plate 1000100203 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002537 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002542 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 5, Smart-seq2 plate 1000100204 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002541 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002543 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 5, Smart-seq2 plate 1000100205 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002541 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002545 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 6, Smart-seq2 plate 1000100301 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002544 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002546 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 6, Smart-seq2 plate 1000100302 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002544 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002547 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 6, Smart-seq2 plate 1000100303 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002544 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002549 a FBcv:0003025 ;
+    rdfs:label "adult brain, adult, Mz19-GAL4 > UAS-mCD8GFP, sort 7, Smart-seq2 plate 1000100304 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002548 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002550 a FBcv:0003025 ;
+    rdfs:label "adult brain, adult, Mz19-GAL4 > UAS-mCD8GFP, sort 7, Smart-seq2 plate 1000100305 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002548 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002552 a FBcv:0003025 ;
+    rdfs:label "brain, 36 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10, Smart-seq2 plate 1000100401 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002551 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002553 a FBcv:0003025 ;
+    rdfs:label "brain, 36 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10, Smart-seq2 plate 1000100402 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002551 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002555 a FBcv:0003025 ;
+    rdfs:label "adult brain, 48 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10, Smart-seq2 plate 1000100403 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002554 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002556 a FBcv:0003025 ;
+    rdfs:label "adult brain, 48 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10, Smart-seq2 plate 1000100404 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002554 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002558 a FBcv:0003025 ;
+    rdfs:label "adult brain, 72 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10, Smart-seq2 plate 1000100405 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002557 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002559 a FBcv:0003025 ;
+    rdfs:label "adult brain, 72 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10, Smart-seq2 plate 1000100406 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002557 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002561 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 12, Smart-seq2 plate 1000100601 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002560 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002562 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 12, Smart-seq2 plate 1000100602 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002560 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002563 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 12, Smart-seq2 plate 1000100603 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002560 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002564 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 12, Smart-seq2 plate 1000100604 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002560 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002565 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 12, Smart-seq2 plate 1000100605 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002560 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002566 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 12, Smart-seq2 plate 1000100606 (Li 2017)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002560 ;
+    dcterms:source VFBseq:00002527 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002528 a FBcv:0003024 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 2 (Li 2017)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0218122 ;
+    RO:0002131 FBbt:00005095 ;
+    RO:0002352 VFBseq:00002529 ;
+    RO:0002490 FBdv:00005353 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002572 a FBcv:0009002 ;
+    rdfs:label "Li 2017 Mz19 PN types (adult)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002548 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002541 a FBcv:0003024 ;
+    rdfs:label "brain, 24 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 5 (Li 2017)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0155865 ;
+    RO:0002131 FBbt:00005095 ;
+    RO:0002352 VFBseq:00002542,
+        VFBseq:00002543 ;
+    RO:0002490 FBdv:00005353 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002548 a FBcv:0003024 ;
+    rdfs:label "adult brain, adult, Mz19-GAL4 > UAS-mCD8GFP, sort 7 (Li 2017)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0155865 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00002549,
+        VFBseq:00002550 ;
+    RO:0002490 FBdv:00005369 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002551 a FBcv:0003024 ;
+    rdfs:label "brain, 36 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10 (Li 2017)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0155865 ;
+    RO:0002131 FBbt:00005095 ;
+    RO:0002352 VFBseq:00002552,
+        VFBseq:00002553 ;
+    RO:0002490 FBdv:00005354 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002554 a FBcv:0003024 ;
+    rdfs:label "adult brain, 48 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10 (Li 2017)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0155865 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00002555,
+        VFBseq:00002556 ;
+    RO:0002490 FBdv:00005355 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002557 a FBcv:0003024 ;
+    rdfs:label "adult brain, 72 h APF, Mz19-GAL4 > UAS-mCD8GFP, sort 10 (Li 2017)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0155865 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00002558,
+        VFBseq:00002559 ;
+    RO:0002490 FBdv:00005356 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002570 a FBcv:0009002 ;
+    rdfs:label "Li 2017 Mz19 PN types (48 h APF)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002554 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002571 a FBcv:0009002 ;
+    rdfs:label "Li 2017 Mz19 PN types (72 h APF)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002557 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002537 a FBcv:0003024 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 5 (Li 2017)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0218122 ;
+    RO:0002131 FBbt:00005095 ;
+    RO:0002352 VFBseq:00002538,
+        VFBseq:00002539,
+        VFBseq:00002540 ;
+    RO:0002490 FBdv:00005353 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002544 a FBcv:0003024 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 6 (Li 2017)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0218122 ;
+    RO:0002131 FBbt:00005095 ;
+    RO:0002352 VFBseq:00002545,
+        VFBseq:00002546,
+        VFBseq:00002547 ;
+    RO:0002490 FBdv:00005353 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002530 a FBcv:0003024 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 3 (Li 2017)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0218122 ;
+    RO:0002131 FBbt:00005095 ;
+    RO:0002352 VFBseq:00002531,
+        VFBseq:00002532,
+        VFBseq:00002533,
+        VFBseq:00002534,
+        VFBseq:00002535,
+        VFBseq:00002536 ;
+    RO:0002490 FBdv:00005353 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002560 a FBcv:0003024 ;
+    rdfs:label "brain, 24 h APF, GH146-GAL4 > UAS-mCD8GFP, sort 12 (Li 2017)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0218122 ;
+    RO:0002131 FBbt:00005095 ;
+    RO:0002352 VFBseq:00002561,
+        VFBseq:00002562,
+        VFBseq:00002563,
+        VFBseq:00002564,
+        VFBseq:00002565,
+        VFBseq:00002566 ;
+    RO:0002490 FBdv:00005353 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002527 a FBcv:0003023 ;
+    rdfs:label "scRNAseq data from Li (2017)" ;
+    neo_custom:accession "GSE100058" ;
+    neo_custom:filtered_gene_count 7562 ;
+    neo_custom:total_gene_count 14457 ;
+    neo_property:nodeLabel "DataSet" ;
+    IAO:0000115 "Classifying Drosophila Olfactory Projection Neuron Subtypes by Single-Cell RNA Sequencing" ;
+    OBI:0000312 FBcv:0009000 ;
+    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references FlyBase:FBrf0237214 ;
+    oboInOwl:hasDbXref vfb:GEO .
+
