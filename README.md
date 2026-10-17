@@ -137,6 +137,7 @@ uv run pytest                # tests
 # full pipeline for a project (GEO -> working JSON -> RDF + OWL):
 uv run python scripts/build_annotations_from_geo.py --project kurmangaliyev_2020
 uv run python scripts/build_samples_from_geo.py     --project kurmangaliyev_2020
+uv run python scripts/flybase_pub_entities.py   --fbrf FBrf0247594              # genetic entities FlyBase curated for the paper (scoping samples)
 uv run python scripts/assign_placeholders.py        --project kurmangaliyev_2020
 uv run python scripts/collate_mapping.py            --project kurmangaliyev_2020
 uv run python scripts/verify_mappings.py            --project kurmangaliyev_2020   # FBbt terms current (OLS)

@@ -1,7 +1,7 @@
 {
   "project": "li_2022_fca_ss2",
   "created_at": "2026-10-14",
-  "updated_at": "2026-10-16",
+  "updated_at": "2026-10-17",
   "summary": "Fly Cell Atlas Smart-seq2 data (Li et al. 2022, Science), rebuilt from ArrayExpress E-MTAB-10628 and the authors' own per-tissue Smart-seq2 AnnData analyses (flycellatlas.org), replacing the old SCEA-based FCA loads with fresh VFBseq ids; the 10x data (E-MTAB-10519) is the separate project li_2022_fca_10x. 31 Samples (tissue x sex x genotype x age) and 35 Assays (384-well plates) from the ArrayExpress SDRF; 17 Clusterings, one per author tissue analysis, whose groups are the authors' label-transfer predictions (and two FACS-sorted groups) rather than transcriptomic clusters. 237 author groups, 211 mapped to FBbt (via the type-level mappings shared with li_2022_fca_10x) and loaded, 26 held. Summary expression for the loaded Clusters as CPM (16,306 genes x 9,892 cells; 426,111 cluster x gene rows with extent > 0.2).",
   "decisions": [
     {
@@ -63,6 +63,11 @@
       "date": "2026-10-16",
       "by": "curator",
       "decision": "Revisit the fat mappings (adult fat cell) when FBbt issue #2218 (review adult fat terms) is fixed and released; tracked in checks/pending_fbbt_requests.json. (No Smart-seq2 mapping is narrowed by the 2026-10-16 tissue rule: there is no head analysis.)"
+    },
+    {
+      "date": "2026-10-17",
+      "by": "curator",
+      "decision": "Samples from GAL4 > UAS crosses (fat body, trachea, oenocyte, Malpighian tubule, insulin-producing cells, corpora cardiaca) link the FlyBase genetic entities in the genotype instead of a stock (genotype_includes, GENO:0000222 has_genotype; the FBst0007378 UAS-lamGFP stock link removed), at allele (FBal) level for now (FBti may be preferred later): the alleles FlyBase curated for the paper (Chado feature_pub, FBrf0252876), plus unambiguous ones it did not link (tub-GAL80ts in the trachea cross, FBal0147425). UAS-nlsGFP and UAS-unc84GFP are not identifiable and not linked."
     }
   ],
   "checks": [
@@ -85,6 +90,11 @@
       "date": "2026-10-14",
       "check": "Marker spot checks in the expression output.",
       "result": "Ilp2 in the dilp2 insulin-producing cells (extent 0.73), Akh in the Akh corpora cardiaca cells (0.24), SP in male accessory gland main cells (0.95), fzo in late primary spermatocytes (0.50). Re-confirmed 2026-10-15 against the current expression.tsv.gz."
+    },
+    {
+      "date": "2026-10-17",
+      "check": "Genotype alleles against FlyBase's curation of the paper (scripts/flybase_pub_entities.py --fbrf FBrf0252876) and VFB production.",
+      "result": "Every linked driver / reporter allele is curated by FlyBase for the paper, except tub-GAL80ts (from the supplement; one FlyBase allele for P{tubP-GAL80[ts]}). In VFB now: the btl, Desat1, Ilp2 and Akh GAL4 alleles; the others to be imported."
     }
   ],
   "people": [

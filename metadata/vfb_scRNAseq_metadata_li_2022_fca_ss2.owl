@@ -7,7 +7,6 @@
      xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
      xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
      xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
-     xmlns:bao="http://www.bioassayontology.org/bao#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -17,6 +16,7 @@
      xmlns:FBbt="http://purl.obolibrary.org/obo/FBbt_"
      xmlns:FBcv="http://purl.obolibrary.org/obo/FBcv_"
      xmlns:FBdv="http://purl.obolibrary.org/obo/FBdv_"
+     xmlns:GENO="http://purl.obolibrary.org/obo/GENO_"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:VFBseq="http://virtualflybrain.org/reports/VFBseq_"
      xmlns:linkml="https://w3id.org/linkml/"
@@ -116,6 +116,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GENO_0000222 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/GENO_0000222"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
@@ -158,12 +164,6 @@
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0095000 -->
-
-    <ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0095000"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -172,6 +172,54 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://flybase.org/reports/FBal0052380 -->
+
+    <Class rdf:about="http://flybase.org/reports/FBal0052380"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0119470 -->
+
+    <Class rdf:about="http://flybase.org/reports/FBal0119470"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0147425 -->
+
+    <Class rdf:about="http://flybase.org/reports/FBal0147425"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0155893 -->
+
+    <Class rdf:about="http://flybase.org/reports/FBal0155893"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0243539 -->
+
+    <Class rdf:about="http://flybase.org/reports/FBal0243539"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0305188 -->
+
+    <Class rdf:about="http://flybase.org/reports/FBal0305188"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0327974 -->
+
+    <Class rdf:about="http://flybase.org/reports/FBal0327974"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0341663 -->
+
+    <Class rdf:about="http://flybase.org/reports/FBal0341663"/>
     
 
 
@@ -1034,12 +1082,6 @@
     
 
 
-    <!-- http://flybase.org/reports/FBst0007378 -->
-
-    <NamedIndividual rdf:about="http://flybase.org/reports/FBst0007378"/>
-    
-
-
     <!-- http://virtualflybrain.org/reports/VFBseq_00000777 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000777">
@@ -1076,6 +1118,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007011"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0327974"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -1128,6 +1176,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0327974"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005725"/>
             </Restriction>
@@ -1176,6 +1230,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0243539"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003024"/>
             </Restriction>
@@ -1220,6 +1280,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0243539"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -1464,6 +1530,18 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0119470"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0341663"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003209"/>
             </Restriction>
@@ -1476,7 +1554,6 @@
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000795"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000796"/>
-        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0007378"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>fat body, 5 days, female, Cg-GAL4; UAS-lamGFP (Li 2022)</rdfs:label>
@@ -1532,6 +1609,18 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0119470"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0341663"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003209"/>
             </Restriction>
@@ -1544,7 +1633,6 @@
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000798"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000799"/>
-        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0007378"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>fat body, 5 days, male, Cg-GAL4; UAS-lamGFP (Li 2022)</rdfs:label>
@@ -1792,6 +1880,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0305188"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003007"/>
             </Restriction>
@@ -1836,6 +1930,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0305188"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -2370,6 +2470,12 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0155893"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003018"/>
             </Restriction>
@@ -2414,6 +2520,12 @@
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007004"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0155893"/>
             </Restriction>
         </rdf:type>
         <rdf:type>
@@ -2466,6 +2578,24 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0052380"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0119470"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0147425"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003037"/>
             </Restriction>
@@ -2477,7 +2607,6 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000837"/>
-        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0007378"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>trachea, 5 days, female, Btl-GAL4; UAS-lamGFP (Li 2022)</rdfs:label>
@@ -2515,6 +2644,24 @@
         </rdf:type>
         <rdf:type>
             <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0052380"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0119470"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0147425"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003037"/>
             </Restriction>
@@ -2526,7 +2673,6 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000839"/>
-        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBst0007378"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>trachea, 5 days, male, Btl-GAL4; UAS-lamGFP (Li 2022)</rdfs:label>
