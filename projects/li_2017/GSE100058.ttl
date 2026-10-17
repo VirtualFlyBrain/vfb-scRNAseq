@@ -17,28 +17,6 @@
 @prefix vfb: <http://virtualflybrain.org/reports/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-VFBseq:00002567 a FBcv:0009002 ;
-    rdfs:label "Li 2017 GH146 PN clusters (24 h APF)" ;
-    neo_property:nodeLabel "Clustering" ;
-    BFO:0000051 VFBseq:00002528,
-        VFBseq:00002530,
-        VFBseq:00002537,
-        VFBseq:00002544,
-        VFBseq:00002560 ;
-    dcterms:source VFBseq:00002527 .
-
-VFBseq:00002568 a FBcv:0009002 ;
-    rdfs:label "Li 2017 Mz19 PN types (24 h APF)" ;
-    neo_property:nodeLabel "Clustering" ;
-    BFO:0000051 VFBseq:00002541 ;
-    dcterms:source VFBseq:00002527 .
-
-VFBseq:00002569 a FBcv:0009002 ;
-    rdfs:label "Li 2017 Mz19 PN types (36 h APF)" ;
-    neo_property:nodeLabel "Clustering" ;
-    BFO:0000051 VFBseq:00002551 ;
-    dcterms:source VFBseq:00002527 .
-
 VFBseq:00002573 a FBcv:0009003 ;
     rdfs:label "DA1 cluster (Li 2017 Mz19 PN types (48 h APF)) (Li 2017)" ;
     neo_custom:cell_count 64 ;
@@ -117,6 +95,146 @@ VFBseq:00002580 a FBcv:0009003 ;
     neo_property:nodeLabel "Cluster" ;
     BFO:0000050 VFBseq:00002572 ;
     RO:0002473 FBbt:00100368 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002622 a FBcv:0009003 ;
+    rdfs:label "VM2 cluster 2 (Li 2017 GH146 PN clusters (24 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 43 ;
+    neo_custom:filtered_gene_count 4869 ;
+    neo_custom:total_gene_count 8568 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002567 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002623 a FBcv:0009003 ;
+    rdfs:label "DA1 cluster 5 (Li 2017 GH146 PN clusters (24 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 21 ;
+    neo_custom:filtered_gene_count 4486 ;
+    neo_custom:total_gene_count 7536 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002567 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002624 a FBcv:0009003 ;
+    rdfs:label "VA1d cluster 7 (Li 2017 GH146 PN clusters (24 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 35 ;
+    neo_custom:filtered_gene_count 4779 ;
+    neo_custom:total_gene_count 8182 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002567 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002625 a FBcv:0009003 ;
+    rdfs:label "DA1 cluster 8 (Li 2017 GH146 PN clusters (24 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 108 ;
+    neo_custom:filtered_gene_count 4835 ;
+    neo_custom:total_gene_count 10022 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002567 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002626 a FBcv:0009003 ;
+    rdfs:label "DC3 cluster 12 (Li 2017 GH146 PN clusters (24 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 32 ;
+    neo_custom:filtered_gene_count 5026 ;
+    neo_custom:total_gene_count 8273 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002567 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002627 a FBcv:0009003 ;
+    rdfs:label "DL3 cluster 20 (Li 2017 GH146 PN clusters (24 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 14 ;
+    neo_custom:filtered_gene_count 5051 ;
+    neo_custom:total_gene_count 7157 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002567 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002628 a FBcv:0009003 ;
+    rdfs:label "DL3 cluster 21 (Li 2017 GH146 PN clusters (24 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 13 ;
+    neo_custom:filtered_gene_count 4677 ;
+    neo_custom:total_gene_count 7034 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002567 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002629 a FBcv:0009003 ;
+    rdfs:label "DC2 cluster 22 (Li 2017 GH146 PN clusters (24 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 30 ;
+    neo_custom:filtered_gene_count 4765 ;
+    neo_custom:total_gene_count 8424 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002567 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002630 a FBcv:0009003 ;
+    rdfs:label "DA1 cluster (Li 2017 Mz19 PN types (24 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 74 ;
+    neo_custom:filtered_gene_count 4901 ;
+    neo_custom:total_gene_count 9975 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002568 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002631 a FBcv:0009003 ;
+    rdfs:label "DC3 cluster (Li 2017 Mz19 PN types (24 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 32 ;
+    neo_custom:filtered_gene_count 5021 ;
+    neo_custom:total_gene_count 8662 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002568 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002632 a FBcv:0009003 ;
+    rdfs:label "VA1d cluster (Li 2017 Mz19 PN types (24 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 12 ;
+    neo_custom:filtered_gene_count 4959 ;
+    neo_custom:total_gene_count 7272 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002568 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002633 a FBcv:0009003 ;
+    rdfs:label "DA1 cluster (Li 2017 Mz19 PN types (36 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 54 ;
+    neo_custom:filtered_gene_count 4658 ;
+    neo_custom:total_gene_count 8696 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002569 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002634 a FBcv:0009003 ;
+    rdfs:label "DC3 cluster (Li 2017 Mz19 PN types (36 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 12 ;
+    neo_custom:filtered_gene_count 4698 ;
+    neo_custom:total_gene_count 6856 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002569 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002635 a FBcv:0009003 ;
+    rdfs:label "VA1d cluster (Li 2017 Mz19 PN types (36 h APF)) (Li 2017)" ;
+    neo_custom:cell_count 15 ;
+    neo_custom:filtered_gene_count 4531 ;
+    neo_custom:total_gene_count 7212 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002569 ;
+    RO:0002473 FBbt:00067349 ;
     dcterms:source VFBseq:00002527 .
 
 FlyBase:FBrf0237214 a FBcv:0000212 ;
@@ -390,6 +508,18 @@ VFBseq:00002557 a FBcv:0003024 ;
     RO:0002490 FBdv:00005356 ;
     dcterms:source VFBseq:00002527 .
 
+VFBseq:00002568 a FBcv:0009002 ;
+    rdfs:label "Li 2017 Mz19 PN types (24 h APF)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002541 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002569 a FBcv:0009002 ;
+    rdfs:label "Li 2017 Mz19 PN types (36 h APF)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002551 ;
+    dcterms:source VFBseq:00002527 .
+
 VFBseq:00002570 a FBcv:0009002 ;
     rdfs:label "Li 2017 Mz19 PN types (48 h APF)" ;
     neo_property:nodeLabel "Clustering" ;
@@ -450,6 +580,16 @@ VFBseq:00002560 a FBcv:0003024 ;
         VFBseq:00002565,
         VFBseq:00002566 ;
     RO:0002490 FBdv:00005353 ;
+    dcterms:source VFBseq:00002527 .
+
+VFBseq:00002567 a FBcv:0009002 ;
+    rdfs:label "Li 2017 GH146 PN clusters (24 h APF)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002528,
+        VFBseq:00002530,
+        VFBseq:00002537,
+        VFBseq:00002544,
+        VFBseq:00002560 ;
     dcterms:source VFBseq:00002527 .
 
 VFBseq:00002527 a FBcv:0003023 ;
