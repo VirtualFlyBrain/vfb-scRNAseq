@@ -1345,3 +1345,33 @@ licence CC-BY-4.0. Curator decisions 2026-10-16.
   FBdv / FBcv terms on Samples, Assays and the Dataset current in OLS. Recorded in
   `provenance.json`.
 
+## Li 2017 (olfactory projection neurons)
+
+Cell 2017, PMID 29149607, FBrf0237214; GEO GSE100058 (`li_2017`). Smart-seq2 of
+FACS-sorted olfactory projection neurons (PNs), one GEO sample per cell (1,842). Not
+previously in VFB. Curated first because Xie et al. 2021 reuses its 24 h APF GH146 cells
+(*Reuse entities that are truly identical; curate the source study first*). Licence
+CC-BY-4.0. Curator decisions 2026-10-17.
+
+- **Data.** GEO has the counts (HTSeq / STAR tables) and the authors' library table
+  (`GSE100058_df_libs.csv.gz`: library, sort `experiment`, Smart-seq2 `plate`, driver /
+  stage `label`), but no cluster assignments, and SCEA E-GEOD-100058 has no author labels.
+  The authors' repository (github.com/felixhorns/FlyPN, `data/`) has them:
+  `labels_HDBSCAN.csv` (901 GH146 cells at 24 h APF: HDBSCAN clusters 0-29 on ICIM genes,
+  -1 unclustered) and per-type, per-stage cell lists for the Mz19 developmental series
+  (`names_{DA1,VA1d,DC3}_{24,36,48,72}hAPF.txt`, adult adPN classes, lPN). The paper names
+  decoded clusters in its text (e.g. "Cluster #1 corresponds to DC2 PNs").
+- **Scope (curator).** The GH146 24 h clusters and the Mz19 developmental series; not
+  the astrocyte / C155 controls (not clustered). The single-type driver cells (NP5103,
+  91G04) were used only to decode clusters.
+- **Samples (stage 1):** `projects/li_2017/build_samples.py` (GEO titles carry no stage):
+  one Sample per sort (`experiment` x driver / stage label) in scope, one Assay per plate
+  (the pooled library where no plate is recorded): 10 Samples (5 GH146 sorts at 24 h APF;
+  Mz19 at 24, 36, 48, 72 h APF and adult), 29 Assays, 1,686 cells. Stages Bainbridge &
+  Bownes as for Özel (24 h P6, 36 h P7, 48 h P8, 72 h P9; adult *adult stage*, no age
+  given); tissue *brain* to the pupal stage, *adult brain* from the pharate adult stage
+  (as for Hörmann). Both sexes (unset). Genotype: crosses with UAS-mCD8GFP, linking the
+  GAL4 alleles FlyBase curated for the paper (`genotype_includes`: Scer\GAL4[GH146]
+  FBal0218122, Scer\GAL4[Mz19] FBal0155865); the reporter is not identified. Six
+  Clusterings: GH146 24 h, and Mz19 at each of the five stages.
+
