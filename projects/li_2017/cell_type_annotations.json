@@ -1,0 +1,632 @@
+{
+  "source": {
+    "doi": "10.1016/j.cell.2017.10.019",
+    "title": "Classifying Drosophila Olfactory Projection Neuron Subtypes by Single-Cell RNA Sequencing"
+  },
+  "dataset": {
+    "accession": "GSE100058",
+    "label_source": "authors' repository (github.com/felixhorns/FlyPN data/): GH146 HDBSCAN clusters (labels_HDBSCAN.csv), decoded clusters linked to the paper's figure labels by the authors' criteria; Mz19 per-type, per-stage cell lists",
+    "label_level": "author cluster (GH146) / author type per stage (Mz19)",
+    "validate_against": "paper, Figures 3-4 and 6"
+  },
+  "annotations": [
+    {
+      "label": "GH146_24h_unclustered",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "-1",
+      "type": "unclustered",
+      "unannotated": true,
+      "cell_number": 12,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 3,
+        "exp2_GH146_24hAPF": 2,
+        "exp3_GH146_24hAPF": 3,
+        "exp5_GH146_24hAPF": 2,
+        "exp6_GH146_24hAPF": 2
+      }
+    },
+    {
+      "label": "GH146_24h_0",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "0",
+      "type": "GH146_24h_0",
+      "unannotated": true,
+      "cell_number": 22,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 4,
+        "exp2_GH146_24hAPF": 1,
+        "exp3_GH146_24hAPF": 9,
+        "exp5_GH146_24hAPF": 5,
+        "exp6_GH146_24hAPF": 3
+      }
+    },
+    {
+      "label": "GH146_24h_1",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "1",
+      "type": "GH146_24h_1",
+      "unannotated": true,
+      "cell_number": 53,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 16,
+        "exp2_GH146_24hAPF": 1,
+        "exp3_GH146_24hAPF": 15,
+        "exp5_GH146_24hAPF": 8,
+        "exp6_GH146_24hAPF": 13
+      }
+    },
+    {
+      "label": "GH146_24h_2",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "2",
+      "type": "VM2",
+      "author_note": "paper cluster #5 (VM2): 25 of 28 trol+ NP5103 cells map to it; trol high (paper: trol+ Cluster #5, VM2)",
+      "cell_number": 43,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 14,
+        "exp2_GH146_24hAPF": 1,
+        "exp3_GH146_24hAPF": 15,
+        "exp5_GH146_24hAPF": 6,
+        "exp6_GH146_24hAPF": 7
+      }
+    },
+    {
+      "label": "GH146_24h_3",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "3",
+      "type": "GH146_24h_3",
+      "unannotated": true,
+      "cell_number": 50,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 22,
+        "exp2_GH146_24hAPF": 3,
+        "exp3_GH146_24hAPF": 13,
+        "exp5_GH146_24hAPF": 6,
+        "exp6_GH146_24hAPF": 6
+      }
+    },
+    {
+      "label": "GH146_24h_4",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "4",
+      "type": "GH146_24h_4",
+      "unannotated": true,
+      "cell_number": 9,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 1,
+        "exp3_GH146_24hAPF": 8
+      }
+    },
+    {
+      "label": "GH146_24h_5",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "5",
+      "type": "DA1",
+      "author_note": "paper cluster #2' (DA1): 8 of 74 Mz19+ DA1 cells map to it; acj6-, CG31676+, fru low (paper: DA1 #2')",
+      "cell_number": 21,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 5,
+        "exp3_GH146_24hAPF": 9,
+        "exp5_GH146_24hAPF": 5,
+        "exp6_GH146_24hAPF": 2
+      }
+    },
+    {
+      "label": "GH146_24h_6",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "6",
+      "type": "GH146_24h_6",
+      "unannotated": true,
+      "cell_number": 30,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 10,
+        "exp2_GH146_24hAPF": 3,
+        "exp3_GH146_24hAPF": 10,
+        "exp5_GH146_24hAPF": 5,
+        "exp6_GH146_24hAPF": 2
+      }
+    },
+    {
+      "label": "GH146_24h_7",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "7",
+      "type": "VA1d",
+      "author_note": "paper cluster #3 (VA1d): all 12 Mz19+ VA1d cells map to it; acj6+, CG31676+ (paper: Cluster #3, CG31676+, VA1d)",
+      "cell_number": 35,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 9,
+        "exp3_GH146_24hAPF": 8,
+        "exp5_GH146_24hAPF": 4,
+        "exp6_GH146_24hAPF": 14
+      }
+    },
+    {
+      "label": "GH146_24h_8",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "8",
+      "type": "DA1",
+      "author_note": "paper cluster #2 (DA1): 66 of 74 Mz19+ DA1 cells map to it; acj6-, CG31676+, fru+ (paper: fru only in the large DA1 cluster #2)",
+      "cell_number": 108,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 33,
+        "exp3_GH146_24hAPF": 37,
+        "exp5_GH146_24hAPF": 20,
+        "exp6_GH146_24hAPF": 18
+      }
+    },
+    {
+      "label": "GH146_24h_9",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "9",
+      "type": "GH146_24h_9",
+      "unannotated": true,
+      "cell_number": 93,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 30,
+        "exp2_GH146_24hAPF": 9,
+        "exp3_GH146_24hAPF": 22,
+        "exp5_GH146_24hAPF": 16,
+        "exp6_GH146_24hAPF": 16
+      }
+    },
+    {
+      "label": "GH146_24h_10",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "10",
+      "type": "GH146_24h_10",
+      "unannotated": true,
+      "cell_number": 32,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 9,
+        "exp2_GH146_24hAPF": 1,
+        "exp3_GH146_24hAPF": 10,
+        "exp5_GH146_24hAPF": 7,
+        "exp6_GH146_24hAPF": 5
+      }
+    },
+    {
+      "label": "GH146_24h_11",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "11",
+      "type": "GH146_24h_11",
+      "unannotated": true,
+      "cell_number": 10,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 3,
+        "exp5_GH146_24hAPF": 3,
+        "exp6_GH146_24hAPF": 4
+      }
+    },
+    {
+      "label": "GH146_24h_12",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "12",
+      "type": "DC3",
+      "author_note": "paper cluster #4 (DC3): all 32 Mz19+ DC3 cells map to it; acj6+, CG31676- (paper: Cluster #4, CG31676-, DC3)",
+      "cell_number": 32,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 11,
+        "exp2_GH146_24hAPF": 2,
+        "exp3_GH146_24hAPF": 8,
+        "exp5_GH146_24hAPF": 6,
+        "exp6_GH146_24hAPF": 5
+      }
+    },
+    {
+      "label": "GH146_24h_13",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "13",
+      "type": "GH146_24h_13",
+      "unannotated": true,
+      "cell_number": 51,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 15,
+        "exp2_GH146_24hAPF": 3,
+        "exp3_GH146_24hAPF": 19,
+        "exp5_GH146_24hAPF": 5,
+        "exp6_GH146_24hAPF": 9
+      }
+    },
+    {
+      "label": "GH146_24h_14",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "14",
+      "type": "GH146_24h_14",
+      "unannotated": true,
+      "cell_number": 51,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 20,
+        "exp3_GH146_24hAPF": 12,
+        "exp5_GH146_24hAPF": 6,
+        "exp6_GH146_24hAPF": 13
+      }
+    },
+    {
+      "label": "GH146_24h_15",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "15",
+      "type": "GH146_24h_15",
+      "unannotated": true,
+      "cell_number": 12,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 4,
+        "exp3_GH146_24hAPF": 4,
+        "exp5_GH146_24hAPF": 3,
+        "exp6_GH146_24hAPF": 1
+      }
+    },
+    {
+      "label": "GH146_24h_16",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "16",
+      "type": "GH146_24h_16",
+      "unannotated": true,
+      "cell_number": 61,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 22,
+        "exp2_GH146_24hAPF": 2,
+        "exp3_GH146_24hAPF": 14,
+        "exp5_GH146_24hAPF": 10,
+        "exp6_GH146_24hAPF": 13
+      }
+    },
+    {
+      "label": "GH146_24h_17",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "17",
+      "type": "GH146_24h_17",
+      "unannotated": true,
+      "cell_number": 28,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 6,
+        "exp2_GH146_24hAPF": 1,
+        "exp3_GH146_24hAPF": 8,
+        "exp5_GH146_24hAPF": 7,
+        "exp6_GH146_24hAPF": 6
+      }
+    },
+    {
+      "label": "GH146_24h_18",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "18",
+      "type": "GH146_24h_18",
+      "unannotated": true,
+      "cell_number": 12,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 5,
+        "exp2_GH146_24hAPF": 1,
+        "exp3_GH146_24hAPF": 5,
+        "exp6_GH146_24hAPF": 1
+      }
+    },
+    {
+      "label": "GH146_24h_19",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "19",
+      "type": "GH146_24h_19",
+      "unannotated": true,
+      "cell_number": 13,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 6,
+        "exp2_GH146_24hAPF": 1,
+        "exp3_GH146_24hAPF": 6
+      }
+    },
+    {
+      "label": "GH146_24h_20",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "20",
+      "type": "DL3",
+      "author_note": "paper cluster #6 (DL3): acj6-, CG31676+, not DA1 (paper: the remaining acj6-/CG31676+ Clusters #6 and #6', DL3)",
+      "cell_number": 14,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 4,
+        "exp3_GH146_24hAPF": 7,
+        "exp5_GH146_24hAPF": 2,
+        "exp6_GH146_24hAPF": 1
+      }
+    },
+    {
+      "label": "GH146_24h_21",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "21",
+      "type": "DL3",
+      "author_note": "paper cluster #6' (DL3): acj6-, CG31676+, not DA1 (paper: the remaining acj6-/CG31676+ Clusters #6 and #6', DL3)",
+      "cell_number": 13,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 3,
+        "exp3_GH146_24hAPF": 5,
+        "exp5_GH146_24hAPF": 1,
+        "exp6_GH146_24hAPF": 4
+      }
+    },
+    {
+      "label": "GH146_24h_22",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "22",
+      "type": "DC2",
+      "author_note": "paper cluster #1 (DC2): all 23 91G04+ cells map to it (paper: 91G04+ PNs map to Cluster #1, DC2)",
+      "cell_number": 30,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 11,
+        "exp2_GH146_24hAPF": 2,
+        "exp3_GH146_24hAPF": 9,
+        "exp5_GH146_24hAPF": 5,
+        "exp6_GH146_24hAPF": 3
+      }
+    },
+    {
+      "label": "GH146_24h_23",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "23",
+      "type": "GH146_24h_23",
+      "unannotated": true,
+      "cell_number": 5,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 2,
+        "exp5_GH146_24hAPF": 1,
+        "exp6_GH146_24hAPF": 2
+      }
+    },
+    {
+      "label": "GH146_24h_24",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "24",
+      "type": "GH146_24h_24",
+      "unannotated": true,
+      "cell_number": 7,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 4,
+        "exp2_GH146_24hAPF": 1,
+        "exp3_GH146_24hAPF": 2
+      }
+    },
+    {
+      "label": "GH146_24h_25",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "25",
+      "type": "GH146_24h_25",
+      "unannotated": true,
+      "cell_number": 9,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 1,
+        "exp2_GH146_24hAPF": 1,
+        "exp3_GH146_24hAPF": 5,
+        "exp6_GH146_24hAPF": 2
+      }
+    },
+    {
+      "label": "GH146_24h_26",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "26",
+      "type": "GH146_24h_26",
+      "unannotated": true,
+      "cell_number": 16,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 7,
+        "exp3_GH146_24hAPF": 9
+      }
+    },
+    {
+      "label": "GH146_24h_27",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "27",
+      "type": "GH146_24h_27",
+      "unannotated": true,
+      "cell_number": 6,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 3,
+        "exp3_GH146_24hAPF": 3
+      }
+    },
+    {
+      "label": "GH146_24h_28",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "28",
+      "type": "GH146_24h_28",
+      "unannotated": true,
+      "cell_number": 9,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 6,
+        "exp3_GH146_24hAPF": 3
+      }
+    },
+    {
+      "label": "GH146_24h_29",
+      "clustering": "GH146_24h",
+      "clustering_name": "Li 2017 GH146 PN clusters (24 h APF)",
+      "source_cluster_id": "29",
+      "type": "GH146_24h_29",
+      "unannotated": true,
+      "cell_number": 15,
+      "cells_by_sample": {
+        "exp12_GH146_24hAPF": 7,
+        "exp3_GH146_24hAPF": 8
+      }
+    },
+    {
+      "label": "Mz19_24h_DA1",
+      "clustering": "Mz19_24h",
+      "clustering_name": "Li 2017 Mz19 PN types (24 h APF)",
+      "source_cluster_id": "DA1",
+      "type": "DA1",
+      "cell_number": 74,
+      "cells_by_sample": {
+        "exp5_Mz19_24hAPF": 74
+      }
+    },
+    {
+      "label": "Mz19_24h_DC3",
+      "clustering": "Mz19_24h",
+      "clustering_name": "Li 2017 Mz19 PN types (24 h APF)",
+      "source_cluster_id": "DC3",
+      "type": "DC3",
+      "cell_number": 32,
+      "cells_by_sample": {
+        "exp5_Mz19_24hAPF": 32
+      }
+    },
+    {
+      "label": "Mz19_24h_VA1d",
+      "clustering": "Mz19_24h",
+      "clustering_name": "Li 2017 Mz19 PN types (24 h APF)",
+      "source_cluster_id": "VA1d",
+      "type": "VA1d",
+      "cell_number": 12,
+      "cells_by_sample": {
+        "exp5_Mz19_24hAPF": 12
+      }
+    },
+    {
+      "label": "Mz19_36h_DA1",
+      "clustering": "Mz19_36h",
+      "clustering_name": "Li 2017 Mz19 PN types (36 h APF)",
+      "source_cluster_id": "DA1",
+      "type": "DA1",
+      "cell_number": 54,
+      "cells_by_sample": {
+        "exp10_Mz19_36hAPF": 54
+      }
+    },
+    {
+      "label": "Mz19_36h_DC3",
+      "clustering": "Mz19_36h",
+      "clustering_name": "Li 2017 Mz19 PN types (36 h APF)",
+      "source_cluster_id": "DC3",
+      "type": "DC3",
+      "cell_number": 12,
+      "cells_by_sample": {
+        "exp10_Mz19_36hAPF": 12
+      }
+    },
+    {
+      "label": "Mz19_36h_VA1d",
+      "clustering": "Mz19_36h",
+      "clustering_name": "Li 2017 Mz19 PN types (36 h APF)",
+      "source_cluster_id": "VA1d",
+      "type": "VA1d",
+      "cell_number": 15,
+      "cells_by_sample": {
+        "exp10_Mz19_36hAPF": 15
+      }
+    },
+    {
+      "label": "Mz19_48h_DA1",
+      "clustering": "Mz19_48h",
+      "clustering_name": "Li 2017 Mz19 PN types (48 h APF)",
+      "source_cluster_id": "DA1",
+      "type": "DA1",
+      "cell_number": 64,
+      "cells_by_sample": {
+        "exp10_Mz19_48hAPF": 64
+      }
+    },
+    {
+      "label": "Mz19_48h_DC3",
+      "clustering": "Mz19_48h",
+      "clustering_name": "Li 2017 Mz19 PN types (48 h APF)",
+      "source_cluster_id": "DC3",
+      "type": "DC3",
+      "cell_number": 13,
+      "cells_by_sample": {
+        "exp10_Mz19_48hAPF": 13
+      }
+    },
+    {
+      "label": "Mz19_48h_VA1d",
+      "clustering": "Mz19_48h",
+      "clustering_name": "Li 2017 Mz19 PN types (48 h APF)",
+      "source_cluster_id": "VA1d",
+      "type": "VA1d",
+      "cell_number": 14,
+      "cells_by_sample": {
+        "exp10_Mz19_48hAPF": 14
+      }
+    },
+    {
+      "label": "Mz19_72h_DA1",
+      "clustering": "Mz19_72h",
+      "clustering_name": "Li 2017 Mz19 PN types (72 h APF)",
+      "source_cluster_id": "DA1",
+      "type": "DA1",
+      "cell_number": 48,
+      "cells_by_sample": {
+        "exp10_Mz19_72hAPF": 48
+      }
+    },
+    {
+      "label": "Mz19_72h_DC3",
+      "clustering": "Mz19_72h",
+      "clustering_name": "Li 2017 Mz19 PN types (72 h APF)",
+      "source_cluster_id": "DC3",
+      "type": "DC3",
+      "cell_number": 21,
+      "cells_by_sample": {
+        "exp10_Mz19_72hAPF": 21
+      }
+    },
+    {
+      "label": "Mz19_72h_VA1d",
+      "clustering": "Mz19_72h",
+      "clustering_name": "Li 2017 Mz19 PN types (72 h APF)",
+      "source_cluster_id": "VA1d",
+      "type": "VA1d",
+      "cell_number": 23,
+      "cells_by_sample": {
+        "exp10_Mz19_72hAPF": 23
+      }
+    },
+    {
+      "label": "Mz19_adult_DA1",
+      "clustering": "Mz19_adult",
+      "clustering_name": "Li 2017 Mz19 PN types (adult)",
+      "source_cluster_id": "DA1",
+      "type": "DA1",
+      "cell_number": 52,
+      "cells_by_sample": {
+        "exp7_Mz19_adult": 52
+      }
+    },
+    {
+      "label": "Mz19_adult_VA1d_or_DC3",
+      "clustering": "Mz19_adult",
+      "clustering_name": "Li 2017 Mz19 PN types (adult)",
+      "source_cluster_id": "VA1d or DC3",
+      "type": "VA1d or DC3",
+      "cell_number": 43,
+      "cells_by_sample": {
+        "exp7_Mz19_adult": 43
+      }
+    }
+  ]
+}
