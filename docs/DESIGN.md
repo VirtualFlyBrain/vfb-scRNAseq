@@ -1374,4 +1374,18 @@ CC-BY-4.0. Curator decisions 2026-10-17.
   GAL4 alleles FlyBase curated for the paper (`genotype_includes`: Scer\GAL4[GH146]
   FBal0218122, Scer\GAL4[Mz19] FBal0155865); the reporter is not identified. Six
   Clusterings: GH146 24 h, and Mz19 at each of the five stages.
+- **Clusters (stage 2):** `projects/li_2017/build_clusters.py` from the authors' files: 45
+  entries, 1,379 cells.
+  - GH146 24 h: the 30 HDBSCAN clusters plus the unclustered cells (held: unassigned). The
+    paper names its decoded clusters by figure label (#1-#6'), not by HDBSCAN number, so
+    `match_clusters.py` links them by the authors' own criteria (curator 2026-10-17): a
+    random forest on the authors' ICIM genes, trained on the GH146 clusters, maps the
+    driver cells as the paper did (91G04 -> 22, 23/23; Mz19 DA1 -> 8 (66) and 5 (8); Mz19
+    VA1d -> 7, 12/12; Mz19 DC3 -> 12, 32/32; trol+ NP5103 -> 2, 25/28), and the defining
+    markers agree (fru only in DA1 cluster 8, the paper's large #2; CG31676 in VA1d 7 not
+    DC3 12; the remaining acj6-/CG31676+ clusters 20, 21 = DL3 #6/#6'). Eight clusters
+    typed (config `decoded_clusters`, with the basis as `author_note`); the 22 the paper
+    left undecoded are held (untyped).
+  - Mz19: the authors' per-type, per-stage lists: DA1, VA1d, DC3 at 24-72 h APF; DA1 and
+    "VA1d or DC3" (adPN; not separated in adults) in adults (14 entries).
 
