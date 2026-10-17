@@ -1,0 +1,21 @@
+{
+  "cluster_label": "VM7 or VM5v #1",
+  "working_definition": "Olfactory projection neuron type VM7 or VM5v #1 (Xie et al. 2021) at 0 h or 24 h APF.",
+  "searches_performed": [
+    "immature antennal lobe projection neuron VM7 or VM5v #1",
+    "immature antennal lobe projection neuron"
+  ],
+  "other_candidates": [],
+  "new_term_needed": true,
+  "verification_needed": false,
+  "best_match": {
+    "fbbt_term": "antennal lobe projection neuron adPN",
+    "fbbt_id": "FBbt:00067349",
+    "fbbt_definition": "Any antennal lobe projection neuron (FBbt:00007422) that develops from some neuroblast BAmv3 (FBbt:00067346).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "Up to the pupal stage the immature term is used (curator), but FBbt has no immature (or remodelling) antennal lobe projection neuron terms yet (requested, curator 2026-10-17); meanwhile the stage-neutral class for the authors' lineage (adPN), to be refined when the new terms exist.",
+  "recommendation": "Map to FBbt:00067349 antennal lobe projection neuron adPN (broad match) until FBbt has the immature / remodelling term for VM7 or VM5v #1."
+}

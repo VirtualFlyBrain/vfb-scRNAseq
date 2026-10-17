@@ -3,8 +3,9 @@
 
 Curator 2026-10-17: immature terms up to the pupal stage (24 h, 36 h APF), mature from the
 pharate adult stage (48 h, 72 h APF, adult). FBbt has the mature PN types but no immature
-projection neuron terms, so the 24 h / 36 h types are held (no term; new terms to be
-requested together with Xie 2021's) in type_mapping/immature/; the mature types are mapped
+(or remodelling) projection neuron terms yet (requested with Xie 2021's), so the 24 h /
+36 h types map meanwhile to the stage-neutral PN class of their lineage, broad (curator
+2026-10-17; type_mapping/immature/); the mature types are mapped
 in type_mapping/. Terms and definitions are read from OLS.
 
 Usage:
@@ -30,7 +31,14 @@ MATURE = {   # author type: (FBbt id, match, justification)
                     "The authors' adult Mz19+ adPN list, VA1d and DC3 not separated: the most specific "
                     "common parent of VA1d adPN and DC3 adPN."),
 }
-IMMATURE = ["DA1", "VA1d", "DC3", "DC2", "VM2", "DL3"]
+LINEAGE_CLASS = {   # stage-neutral PN classes, for the immature-stage types meanwhile (curator 2026-10-17)
+    "adPN": "FBbt:00067349",   # antennal lobe projection neuron adPN
+    "lPN": "FBbt:00067362",    # antennal lobe projection neuron of ALl1 lineage (FBbt's former lPN)
+    "vPN": "FBbt:00067351",    # antennal lobe projection neuron vPN
+}
+IMMATURE = {   # author type: lineage (the paper: DA1 / DL3 acj6- lPNs; the others adPNs)
+    "DA1": "lPN", "VA1d": "adPN", "DC3": "adPN", "DC2": "adPN", "VM2": "adPN", "DL3": "lPN",
+}
 
 
 def term(fbbt_id: str) -> dict:
@@ -62,24 +70,35 @@ def main() -> None:
             "new_term_needed": False,
             "verification_needed": False,
         })
-    for typ in IMMATURE:
-        write(PROJ / "type_mapping" / "immature" / f"{label_slug(typ)}.fbbt_mapping.json", {
+    for typ, lineage in IMMATURE.items():
+        path = PROJ / "type_mapping" / "immature" / f"{label_slug(typ)}.fbbt_mapping.json"
+        base = {
             "cluster_label": typ,
-            "working_definition": f"Olfactory projection neurons of type {typ} (Li et al. 2017) at "
-                                  f"24 h or 36 h APF (pupal).",
+            "working_definition": f"Olfactory projection neuron type {typ} (Li et al. 2017) at 24 h or 36 h APF.",
             "searches_performed": [f"immature antennal lobe projection neuron {typ}",
                                    "immature antennal lobe projection neuron"],
-            "best_match": None,
-            "justification": "Up to the pupal stage the immature term is used (curator), but FBbt has no "
-                             "immature antennal lobe projection neuron terms; the nearest immature ancestor "
-                             "is immature neuron, which is too broad (held). New terms to be requested "
-                             "with Xie 2021's (curator 2026-10-17).",
             "other_candidates": [],
-            "recommendation": "Hold until FBbt has an immature term for this PN type.",
             "new_term_needed": True,
             "verification_needed": False,
-        })
-    print(f"wrote {len(MATURE)} mature and {len(IMMATURE)} held immature type mappings")
+        }
+        if lineage is None:
+            write(path, {**base, "best_match": None,
+                         "justification": "Up to the pupal stage the immature term is used (curator), but FBbt has no "
+                                          "pupal term for this cell and no stage-neutral parent; held until FBbt adds "
+                                          "one (requested, curator 2026-10-17).",
+                         "recommendation": "Hold until FBbt has a pupal-stage term."})
+            continue
+        best = term(LINEAGE_CLASS[lineage])
+        write(path, {**base,
+                     "best_match": {**best, "match_type": "broad match", "skos_mapping": "skos:broadMatch",
+                                    "confidence": "high"},
+                     "justification": f"Up to the pupal stage the immature term is used (curator), but FBbt has no "
+                                      f"immature (or remodelling) antennal lobe projection neuron terms yet "
+                                      f"(requested, curator 2026-10-17); meanwhile the stage-neutral class for the "
+                                      f"authors' lineage ({lineage}), to be refined when the new terms exist.",
+                     "recommendation": f"Map to {best['fbbt_id']} {best['fbbt_term']} (broad match) until FBbt has the "
+                                       f"immature / remodelling term for {typ}."})
+    print(f"wrote {len(MATURE)} mature and {len(IMMATURE)} immature-stage type mappings (lineage classes)")
 
 
 if __name__ == "__main__":

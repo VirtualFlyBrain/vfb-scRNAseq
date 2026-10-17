@@ -1,0 +1,20 @@
+{
+  "cluster_label": "main_adult_APL",
+  "working_definition": "Olfactory projection neuron type APL of Xie et al. 2021 at 48 h APF or adult (pharate adult / adult).",
+  "searches_performed": [
+    "adult antennal lobe projection neuron APL"
+  ],
+  "best_match": {
+    "fbbt_term": "adult mushroom body anterior paired lateral cell",
+    "fbbt_id": "FBbt:00100222",
+    "fbbt_definition": "Pre-synaptic terminals were identified using the pre-synaptic marker Bruchpilot in DPM neurons genetically labelled with the GH146-GAL4 driver (FBti0016783) (Pitman et al., 2011). The neurotransmitter was identified by immunolabelling (Liu and Davis, 2009). Electrical connectivity was inferred using dye coupling (Wu et al., 2011). Function in odor response was assessed by measuring the electrophysiological response of GH146-GAL4-labelled (FBti0016783) APL neurons to odor presentation (Papadopolou et al., 2011). Its role in olfactory learning was assessed using a conditioned olfactory learning assay and measuring the responses of the GH146-GAL4-labelled (FBti0016783) APL neurons using a calcium reporter, cGCaMP, or a synaptic vesicle release reporter, synapto-pHluorin (spH) (Liu and Davis, 2009). Mushroom body intrinsic neuron with a large (~10um) cell body at the dorsal margin of the ventrolateral protocerebrum, in the lateral cell body region, between the anterior lateral superior clamp and the optic lobe (Tanaka et al., 2008). Its cell body fiber projects dorsomedially towards the mushroom body and bifurcates (Tanaka et al., 2008). One branch joins the mediolateral antennal lobe tract to enter the calyx and extensively arborizes there, with the other branch entering the medial region of the vertical lobes (Tanaka et al., 2008). It provides a more substantial proportion of input to Kenyon cells in the dorsal and ventral accessory calyces than in the lateral accessory calyx (Li et al., 2020). Its arborizations fill the entire mushroom body (Tanaka et al., 2008; Liu and Davis, 2009; Takemura et al., 2017; Li et al., 2020). It is GABAergic (Liu and Davis, 2009) and forms synapses with Kenyon cells in both directions throughout the mushroom body (Takemura et al., 2017; Li et al., 2020). It is also electrically connected to the mushroom body dorsal paired medial cell (Wu et al., 2011). It responds to odor and shock stimuli and suppresses and is suppressed by learning (Liu and Davis, 2009). It develops from the larval APL cell (Truman et al., 2023).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The APL neuron (labelled by GH146; not a projection neuron). Mature term from the pharate adult stage (curator).",
+  "other_candidates": [],
+  "recommendation": "Map to FBbt:00100222 adult mushroom body anterior paired lateral cell (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}
