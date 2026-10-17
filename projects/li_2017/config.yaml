@@ -76,3 +76,37 @@ sample_build:
     - { id: Mz19_48h, name: "Li 2017 Mz19 PN types (48 h APF)", driver: Mz19-GFP, stage: 48hAPF }
     - { id: Mz19_72h, name: "Li 2017 Mz19 PN types (72 h APF)", driver: Mz19-GFP, stage: 72hAPF }
     - { id: Mz19_adult, name: "Li 2017 Mz19 PN types (adult)", driver: Mz19-GFP, stage: adult }
+
+# Clusters (projects/li_2017/build_clusters.py, from the authors' repository files in
+# .cache/li2017/). GH146 24 h: the HDBSCAN clusters (labels_HDBSCAN.csv). The paper names
+# its decoded clusters by figure label (#1-#6'), not by HDBSCAN number; the link is made by
+# the authors' own criteria (driver cells mapped onto the clusters with a random forest on
+# their ICIM genes, and the defining markers; projects/li_2017/match_clusters.py ->
+# cluster_matching.tsv; curator 2026-10-17). Clusters the paper did not decode stay
+# numbered (held: untyped); -1 = not clustered (held: unassigned).
+decoded_clusters:
+  "22": { type: DC2,  figure: "#1",  basis: "all 23 91G04+ cells map to it (paper: 91G04+ PNs map to Cluster #1, DC2)" }
+  "8":  { type: DA1,  figure: "#2",  basis: "66 of 74 Mz19+ DA1 cells map to it; acj6-, CG31676+, fru+ (paper: fru only in the large DA1 cluster #2)" }
+  "5":  { type: DA1,  figure: "#2'", basis: "8 of 74 Mz19+ DA1 cells map to it; acj6-, CG31676+, fru low (paper: DA1 #2')" }
+  "7":  { type: VA1d, figure: "#3",  basis: "all 12 Mz19+ VA1d cells map to it; acj6+, CG31676+ (paper: Cluster #3, CG31676+, VA1d)" }
+  "12": { type: DC3,  figure: "#4",  basis: "all 32 Mz19+ DC3 cells map to it; acj6+, CG31676- (paper: Cluster #4, CG31676-, DC3)" }
+  "2":  { type: VM2,  figure: "#5",  basis: "25 of 28 trol+ NP5103 cells map to it; trol high (paper: trol+ Cluster #5, VM2)" }
+  "20": { type: DL3,  figure: "#6",  basis: "acj6-, CG31676+, not DA1 (paper: the remaining acj6-/CG31676+ Clusters #6 and #6', DL3)" }
+  "21": { type: DL3,  figure: "#6'", basis: "acj6-, CG31676+, not DA1 (paper: the remaining acj6-/CG31676+ Clusters #6 and #6', DL3)" }
+# Mz19 developmental series: the authors' per-type, per-stage cell lists; VA1d and DC3 are
+# not separated in adults (one adPN list: "VA1d or DC3"). Sorted Mz19 cells in no list
+# (low quality, or not typed) are in no cluster.
+mz19_lists:
+  24hAPF: { DA1: names_DA1_24hAPF.txt, VA1d: names_VA1d_24hAPF.txt, DC3: names_DC3_24hAPF.txt }
+  36hAPF: { DA1: names_DA1_36hAPF.txt, VA1d: names_VA1d_36hAPF.txt, DC3: names_DC3_36hAPF.txt }
+  48hAPF: { DA1: names_DA1_48hAPF.txt, VA1d: names_VA1d_48hAPF.txt, DC3: names_DC3_48hAPF.txt }
+  72hAPF: { DA1: names_DA1_72hAPF.txt, VA1d: names_VA1d_72hAPF.txt, DC3: names_DC3_72hAPF.txt }
+  adult:  { DA1: names_DA1_adult.txt, "VA1d or DC3": names_adPN_adult.txt }
+
+annotations:
+  review_columns: [clustering, source_cluster_id, type, author_note]
+
+unidentified:
+  rule: none
+  hold_reasons:
+    "unclustered": unassigned
