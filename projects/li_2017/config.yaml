@@ -1,0 +1,78 @@
+# Li, Horns et al. 2017 (Cell; FBrf0237214): Smart-seq2 of FACS-sorted olfactory
+# projection neurons (PNs), one GEO sample per cell (GSE100058). Not previously in VFB.
+# Its 24 h APF GH146 cells are reused by Xie et al. 2021 (xie_2021), so this study is
+# curated first (entity reuse rule). Curator decisions 2026-10-17: load the two author
+# analyses with per-cell assignments in the authors' repository (github.com/felixhorns/
+# FlyPN, data/): the GH146 24 h APF clusters (HDBSCAN on ICIM genes, labels_HDBSCAN.csv:
+# clusters 0-29) and the Mz19 developmental series (per-stage PN type lists, names_*.txt);
+# not the astrocyte / C155 controls (not clustered). Samples are built by
+# projects/li_2017/build_samples.py from GEO and the authors' library table
+# (GSE100058_df_libs.csv.gz: library, experiment, plate, driver / stage label).
+project: li_2017
+
+source:
+  doi: 10.1016/j.cell.2017.10.019
+  pmid: "29149607"
+  pmcid: PMC6095479
+  fbrf: FBrf0237214
+  title: "Classifying Drosophila Olfactory Projection Neuron Subtypes by Single-Cell RNA Sequencing"
+  journal: Cell
+  year: 2017
+  first_author: Li
+
+organism: Drosophila melanogaster
+
+dataset:
+  site: GEO
+  accession: GSE100058
+  bioproject: PRJNA390607
+  sra_study: SRP109266
+  platform: GPL22106            # Illumina NextSeq 500
+  licence: CC-BY-4.0
+  assay_type: FBcv:0009000      # single-cell RNA-seq
+
+sample_build:
+  # One Sample per sort: the authors' `experiment` x driver / stage `label` (a batch of
+  # brains dissected and sorted together); one Assay per Smart-seq2 plate (`plate`; the
+  # pooled sequencing library where no plate is recorded). Cells come one per GSM, titled
+  # "<driver> [<library>]".
+  assay_method: { fbcv_id: FBcv:0009007, label: Smart-seq2 }
+  # Paper: "In all experiments, both male and female flies were used" (pooled: unset).
+  sex: mixed
+  # Drivers (crosses with UAS-mCD8GFP): the GAL4 alleles FlyBase curated for the paper
+  # (scripts/flybase_pub_entities.py --fbrf FBrf0237214); the UAS-mCD8GFP reporter is not
+  # identified (several constructs), so not linked.
+  drivers:
+    GH146-GFP: { name: GH146-GAL4 > UAS-mCD8GFP, genotype_includes: [FBal0218122] }   # Scer\GAL4[GH146]
+    Mz19-GFP:  { name: Mz19-GAL4 > UAS-mCD8GFP,  genotype_includes: [FBal0155865] }   # Scer\GAL4[Mz19]
+  # Stage (from the label; GH146 sorts are all 24 h APF): Bainbridge & Bownes FBdv stages
+  # (25 C), as for Özel 2021 / Hörmann 2020; tissue: whole brains were dissected, so brain
+  # to the pupal stage and adult brain from the pharate adult stage (as for Hörmann).
+  stages:
+    "24hAPF":
+      age: 24 h APF       # Mz19: "24-30h APF"
+      stage:  { fbdv_id: FBdv:00005353, label: pupal stage P6 }
+      tissue: { fbbt_id: FBbt:00005095, label: brain }
+    "36hAPF":
+      age: 36 h APF
+      stage:  { fbdv_id: FBdv:00005354, label: pupal stage P7 }
+      tissue: { fbbt_id: FBbt:00005095, label: brain }
+    "48hAPF":
+      age: 48 h APF
+      stage:  { fbdv_id: FBdv:00005355, label: pharate adult stage P8 }
+      tissue: { fbbt_id: FBbt:00003624, label: adult brain }
+    "72hAPF":
+      age: 72 h APF
+      stage:  { fbdv_id: FBdv:00005356, label: pharate adult stage P9 }
+      tissue: { fbbt_id: FBbt:00003624, label: adult brain }
+    "adult":
+      age: adult
+      stage:  { fbdv_id: FBdv:00005369, label: adult stage }
+      tissue: { fbbt_id: FBbt:00003624, label: adult brain }
+  clusterings:
+    - { id: GH146_24h, name: "Li 2017 GH146 PN clusters (24 h APF)", driver: GH146-GFP }
+    - { id: Mz19_24h, name: "Li 2017 Mz19 PN types (24 h APF)", driver: Mz19-GFP, stage: 24hAPF }
+    - { id: Mz19_36h, name: "Li 2017 Mz19 PN types (36 h APF)", driver: Mz19-GFP, stage: 36hAPF }
+    - { id: Mz19_48h, name: "Li 2017 Mz19 PN types (48 h APF)", driver: Mz19-GFP, stage: 48hAPF }
+    - { id: Mz19_72h, name: "Li 2017 Mz19 PN types (72 h APF)", driver: Mz19-GFP, stage: 72hAPF }
+    - { id: Mz19_adult, name: "Li 2017 Mz19 PN types (adult)", driver: Mz19-GFP, stage: adult }
