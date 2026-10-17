@@ -15,7 +15,7 @@ projects/<name>/samples.json. Config-driven (`sample_build` in config.yaml):
   sample_label_id  regex on the sample id; group 1 (the authors' sample id, e.g.
                    FCA4) is added to the Sample label, to tell like samples apart
   sex_column / sex_map, age_column / age_map, tissue_column / tissue_map,
-  genotype_columns / stock_map, assay_method, clusterings
+  genotype_columns / stock_map / genotype_includes_map, assay_method, clusterings
   sdrf_corrections [{match: {column: value}, set: {column: value}, note}] curator
                    fixes to SDRF values (e.g. an age contradicted by the paper),
                    applied before grouping; the note is kept on the affected Samples
@@ -110,6 +110,11 @@ def build(rows: list[dict], sb: dict, accession: str, reg: IDRegistry, dataset_i
         if tissue_raw and tissues is None:
             warnings.append(f"sample {sample_id!r}: no tissue_map entry for {tissue_raw!r}")
         stock = sb.get("stock_map", {}).get(genotype) if genotype else None
+        # FlyBase genetic entities of a cross (`genotype_includes_map`, keyed like stock_map)
+        geno_parts = sb.get("genotype_includes_map", {}).get(genotype) if genotype else None
+        if genotype and genotype not in sb.get("wild_type_genotypes", []) and not (stock or geno_parts):
+            warnings.append(f"sample {sample_id!r}: genotype {genotype!r} has no stock_map or "
+                            f"genotype_includes_map entry")
 
         sample_vid = reg.mint("Sample", f"{accession}:{sample_id}", label=sample_id)
         by_assay: dict[str, list[dict]] = defaultdict(list)
@@ -152,6 +157,7 @@ def build(rows: list[dict], sb: dict, accession: str, reg: IDRegistry, dataset_i
             "age_raw": f"{age_raw} {sb.get('age_unit', 'days')}" if age_raw else None,
             "genotype": genotype,
             "stock": stock,
+            **({"genotype_includes": geno_parts} if geno_parts else {}),
             "sex": sex,
             "stage": age.get("stage"),
             "sample_tissue": tissues,
