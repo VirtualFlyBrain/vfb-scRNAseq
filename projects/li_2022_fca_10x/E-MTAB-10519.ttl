@@ -4,6 +4,7 @@
 @prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
 @prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
 @prefix FlyBase: <http://flybase.org/reports/> .
+@prefix GENO: <http://purl.obolibrary.org/obo/GENO_> .
 @prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
 @prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
 @prefix RO: <http://purl.obolibrary.org/obo/RO_> .
@@ -3374,6 +3375,7 @@ VFBseq:00000539 a FBcv:0003024 ;
     rdfs:label "thorax, 5 days, male, PromE800-GAL4, UAS-unc84GFP, FCA53 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
+    GENO:0000222 FlyBase:FBal0243539 ;
     RO:0002131 FBbt:00003018 ;
     RO:0002352 VFBseq:00000540 ;
     RO:0002490 FBdv:00007080 ;
@@ -5223,14 +5225,15 @@ VFBseq:00000541 a FBcv:0003024 ;
     rdfs:label "fat body, 5 days, female, Cg-GAL4, UAS-lamGFP, FCA46 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
+    GENO:0000222 FlyBase:FBal0119470,
+        FlyBase:FBal0341663 ;
     RO:0002131 FBbt:00003209 ;
     RO:0002352 VFBseq:00000542,
         VFBseq:00000543,
         VFBseq:00000544,
         VFBseq:00000545 ;
     RO:0002490 FBdv:00007080 ;
-    dcterms:source VFBseq:00000538 ;
-    BAO:0095000 FlyBase:FBst0007378 .
+    dcterms:source VFBseq:00000538 .
 
 VFBseq:00000546 a FBcv:0003024 ;
     rdfs:label "haltere, 5 days, male, FCA47 (Li 2022)" ;
@@ -5286,6 +5289,7 @@ VFBseq:00000566 a FBcv:0003024 ;
     rdfs:label "thorax, 5 days, female, PromE800-GAL4, UAS-unc84GFP, FCA54 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
+    GENO:0000222 FlyBase:FBal0243539 ;
     RO:0002131 FBbt:00003018 ;
     RO:0002352 VFBseq:00000567,
         VFBseq:00000568,
@@ -5322,27 +5326,31 @@ VFBseq:00000581 a FBcv:0003024 ;
     rdfs:label "trachea, 5 days, male, Btl-GAL4, UAS-lamGFP, FCA57 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
+    GENO:0000222 FlyBase:FBal0052380,
+        FlyBase:FBal0119470,
+        FlyBase:FBal0147425 ;
     RO:0002131 FBbt:00003037 ;
     RO:0002352 VFBseq:00000582,
         VFBseq:00000583,
         VFBseq:00000584,
         VFBseq:00000585 ;
     RO:0002490 FBdv:00007080 ;
-    dcterms:source VFBseq:00000538 ;
-    BAO:0095000 FlyBase:FBst0007378 .
+    dcterms:source VFBseq:00000538 .
 
 VFBseq:00000586 a FBcv:0003024 ;
     rdfs:label "trachea, 5 days, female, Btl-GAL4, UAS-lamGFP, FCA58 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
+    GENO:0000222 FlyBase:FBal0052380,
+        FlyBase:FBal0119470,
+        FlyBase:FBal0147425 ;
     RO:0002131 FBbt:00003037 ;
     RO:0002352 VFBseq:00000587,
         VFBseq:00000588,
         VFBseq:00000589,
         VFBseq:00000590 ;
     RO:0002490 FBdv:00007080 ;
-    dcterms:source VFBseq:00000538 ;
-    BAO:0095000 FlyBase:FBst0007378 .
+    dcterms:source VFBseq:00000538 .
 
 VFBseq:00000591 a FBcv:0003024 ;
     rdfs:label "testis, 1 days, male, FCA59 (Li 2022)" ;
@@ -5432,6 +5440,7 @@ VFBseq:00000626 a FBcv:0003024 ;
     rdfs:label "malpighian tubule, 5 days, male, drip-GAL4, UAS-nlsGFP, FCA30 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
+    GENO:0000222 FlyBase:FBal0327974 ;
     RO:0002131 FBbt:00005725 ;
     RO:0002352 VFBseq:00000627,
         VFBseq:00000628,
@@ -5444,6 +5453,7 @@ VFBseq:00000631 a FBcv:0003024 ;
     rdfs:label "malpighian tubule, 5 days, female, drip-GAL4, UAS-nlsGFP, FCA31 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
+    GENO:0000222 FlyBase:FBal0327974 ;
     RO:0002131 FBbt:00005725 ;
     RO:0002352 VFBseq:00000632,
         VFBseq:00000633,
@@ -5616,14 +5626,15 @@ VFBseq:00000701 a FBcv:0003024 ;
     rdfs:label "fat body, 5 days, male, Cg-GAL4, UAS-lamGFP, FCA45 (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
+    GENO:0000222 FlyBase:FBal0119470,
+        FlyBase:FBal0341663 ;
     RO:0002131 FBbt:00003209 ;
     RO:0002352 VFBseq:00000702,
         VFBseq:00000703,
         VFBseq:00000704,
         VFBseq:00000705 ;
     RO:0002490 FBdv:00007080 ;
-    dcterms:source VFBseq:00000538 ;
-    BAO:0095000 FlyBase:FBst0007378 .
+    dcterms:source VFBseq:00000538 .
 
 VFBseq:00000775 a FBcv:0009002 ;
     rdfs:label "Fly Cell Atlas 10x Stringent Trachea" ;
