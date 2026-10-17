@@ -1442,4 +1442,10 @@ FACS-sorted olfactory projection neurons (PNs), one GEO sample per cell (11,509)
   (`genotype_includes`, the alleles FlyBase curated for the paper): Scer\GAL4[VT033006],
   Scer\GAL4[GH146]; kn+ PNs: Scer\GAL4[kn-MI15480-TG4.2] intersected with GH146-Flp
   (Scer\FLP1[o.GH146.PP]) and UAS-FRT-STOP-FRT-mCD8GFP (Mmus\Cd8a[FRT.UAS.cHa.GFP]).
+- **Clusters (stage 2):** `projects/xie_2021/build_clusters.py` from the two h5ads: one entry
+  per analysis x stage x the authors' `PN_type`: 118 entries over 4,097 cells (main 0 h 22,
+  24 h 30, 48 h 23, adult 18; knot 24 h 8, 48 h 9, adult 8), 25 PN types (e.g. DA1_fru+ /
+  DA1_fru-, VM7 or VM5v #1 / #2, DC3 and VA1d, vPN, vPN_DA1, APL). Held: cells given no type
+  (`unassigned`) and the numbered `MARS_<n>` types (`untyped`): 24. The main 24 h cells all
+  belong to Li 2017's five GH146 sorts (`cells_by_sample`).
 
