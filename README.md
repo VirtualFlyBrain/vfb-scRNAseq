@@ -72,6 +72,11 @@ from FlyBase; that authority is being dropped.)
   five pupal stages and adult, one Clustering per stage (plus the authors' P50 T4/T5
   subtypes): 1,238 author identities, 522 with an FBbt term loaded (immature terms to
   the pupal stage). Replaces the old FlyBase/SCEA load (FBlc0005659).
+- `projects/li_2017/` — Li, Horns et al. 2017, olfactory projection neurons (PMID
+  29149607; [GSE100058](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE100058)):
+  Smart-seq2 of sorted PNs, the GH146 24 h APF clusters and the Mz19 developmental
+  series (per-cell assignments from the authors' repository). Curated before Xie 2021,
+  which reuses its 24 h cells. In progress.
 - `projects/hormann_2020/` — Hörmann et al. 2020, T4/T5 neurons through pupal
   development (PMID 32238425; [GSE147987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987)):
   FACS-sorted T4/T5 neurons at five pupal stages, one Clustering per stage of the
@@ -120,6 +125,7 @@ projects/lu_2023_afca/                   # Aging Fly Cell Atlas (GEO + h5ad; reu
 projects/ozel_2021/                      # optic lobe developmental atlas (GEO + Seurat objects via R)
 projects/konstantinides_2022/            # larval optic lobe (GEO + Seurat object; SCEA author labels)
 projects/hormann_2020/                   # pupal T4/T5 neurons (GEO matrices; SCEA author labels)
+projects/li_2017/                        # olfactory PNs (GEO per-cell samples; authors' repo assignments)
 metadata/                                # VFB-loadable metadata OWL, one per project
 expression/                              # VFB-loadable expression OWL (.owl.gz), one per project
 id_registry/                             # minted-id registry (JSON)
