@@ -110,3 +110,13 @@ unidentified:
   rule: none
   hold_reasons:
     "unclustered": unassigned
+
+# FBbt mappings once per author type, in two sets (curator 2026-10-17: immature terms up to
+# the pupal stage, mature from the pharate adult stage; write_type_mappings.py):
+# type_mapping/ for Mz19 48 h / 72 h / adult; type_mapping/immature/ for GH146 24 h and
+# Mz19 24 h / 36 h (held: FBbt has no immature PN terms; to be requested with Xie 2021).
+type_mapping:
+  clustering_dirs:
+    GH146_24h: immature
+    Mz19_24h: immature
+    Mz19_36h: immature
