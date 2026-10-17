@@ -11,7 +11,8 @@
   label              GH146_24h_<n> / GH146_24h_unclustered; Mz19_<stage>_<type>
   type               the PN type (DA1, VA1d, DC3, DC2, VM2, DL3, "VA1d or DC3"), else the label
   source_cluster_id  the HDBSCAN number; the type for Mz19 (the authors' lists are by type)
-  author_note        for decoded GH146 clusters: the paper's figure label and the basis
+  author_note        for decoded GH146 clusters: the paper's figure label and the basis;
+                     for the adult Mz19 lists: why they are swapped back (config)
   cells_by_sample    cells per Sample (sort)
 
 Also writes .cache/li2017/memberships.tsv.gz (library<TAB>cluster) for the expression build.
@@ -70,8 +71,11 @@ def main() -> None:
         cid = f"Mz19_{stage_ids[stage]}"
         for typ, f in lists.items():
             label = f"{cid}_{typ.replace(' ', '_')}"
-            groups[(cid, label)] = names(f)
+            entry = f if isinstance(f, dict) else {"file": f}       # {file, note}: a curator note
+            groups[(cid, label)] = names(entry["file"])
             meta[label] = {"source_cluster_id": typ, "type": typ}
+            if entry.get("note"):
+                meta[label]["author_note"] = entry["note"]
 
     anns, membership = [], []
     order = [c["id"] for c in cfg["sample_build"]["clusterings"]]
