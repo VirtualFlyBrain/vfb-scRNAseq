@@ -18,3 +18,4 @@ functional syntax) stay under `projects/<p>/`.
 | vfb_scRNAseq_metadata_ozel_2021.owl | ozel_2021 |
 | vfb_scRNAseq_metadata_konstantinides_2022.owl | konstantinides_2022 |
 | vfb_scRNAseq_metadata_hormann_2020.owl | hormann_2020 |
+| vfb_scRNAseq_metadata_li_2017.owl | li_2017 |

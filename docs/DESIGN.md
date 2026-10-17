@@ -1410,4 +1410,10 @@ CC-BY-4.0. Curator decisions 2026-10-17.
   39,259 rows; 37 held clusters (1,101 cells) counted in the Dataset gene counts only.
   Markers as the paper defines the types: acj6 in VA1d / DC3 (adPN), not DA1; fru in DA1;
   CG31676 in VA1d and DA1, not DC3; in adults too, after the swap.
+- **Build (stage 5):** `build_rdf.py`: 1 Dataset, 10 Samples (each `has_genotype some`
+  its GAL4 allele), 29 Assays (named "<Sample>, Smart-seq2 plate <id>" via `assay_label`),
+  6 Clusterings (each linked to its samples), 8 Clusters; the publication FBrf0237214 is
+  not yet in VFB, so it is linked from config (`source.fbrf`); `verify_mappings.py` OK (4
+  FBbt terms); the 9 FBbt / FBdv / FBcv terms on Samples, Assays and the Dataset current.
+  Recorded in `provenance.json`.
 
