@@ -1417,3 +1417,29 @@ CC-BY-4.0. Curator decisions 2026-10-17.
   FBbt terms); the 9 FBbt / FBdv / FBcv terms on Samples, Assays and the Dataset current.
   Recorded in `provenance.json`.
 
+## Xie 2021 (olfactory projection neurons through development)
+
+eLife 2021, PMID 33427646, FBrf0247975; GEO GSE161228 (`xie_2021`). Smart-seq2 of
+FACS-sorted olfactory projection neurons (PNs), one GEO sample per cell (11,509), at 0 h,
+24 h and 48 h APF and adult. Not previously in VFB. Licence CC-BY-4.0. Curator decisions
+2026-10-17.
+
+- **Data.** GEO has three annotated h5ads (log2(CPM + 1) in X): the main pan-PN analysis
+  (3,633 cells: `stage`, `PN_type` per cell, MARS / HDBSCAN clusters, `lineage`), the 24 h
+  decoding analysis (1,784 cells; sparse drivers) and the knot analysis (464 kn+ PNs at
+  24 h, 48 h, adult; `PN_type`). The live GEO SOFT endpoint fails for this series, so the
+  family SOFT file is read from the FTP site.
+- **Scope (curator).** The main analysis and the knot analysis, one Clustering per stage
+  of each; not the 24 h decoding analysis (validation). The main analysis's 24 h cells
+  (946) are Li et al. 2017's GH146 cells (GSE100058), so Li 2017 was curated first and its
+  five 24 h GH146 Samples are reused (`reuse`).
+- **Samples (stage 1):** `projects/xie_2021/build_samples.py`: one Sample per sort in scope
+  (a GSM title group "PN_<stage>_<driver>"), one Assay per plate: 6 Samples (0 h
+  VT033006, 48 h and adult GH146; kn+ at 24 h, 48 h, adult), 27 Assays, plus Li's 5
+  reused Samples for the main 24 h stage. Stages: 0 h APF *prepupal stage P1* (0-0.3 h
+  APF), 24 h P6, 48 h P8, adult *adult stage* (no age given); tissue *brain* to the pupal
+  stage, *adult brain* from the pharate adult stage. Sex not given (unset). Genotypes
+  (`genotype_includes`, the alleles FlyBase curated for the paper): Scer\GAL4[VT033006],
+  Scer\GAL4[GH146]; kn+ PNs: Scer\GAL4[kn-MI15480-TG4.2] intersected with GH146-Flp
+  (Scer\FLP1[o.GH146.PP]) and UAS-FRT-STOP-FRT-mCD8GFP (Mmus\Cd8a[FRT.UAS.cHa.GFP]).
+
