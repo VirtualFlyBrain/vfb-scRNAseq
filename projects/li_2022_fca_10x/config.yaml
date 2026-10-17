@@ -61,13 +61,20 @@ sample_build:
       note: "Age corrected from 3 to 5 days (SDRF) per the paper's supplement, which gives 5-day adults for fat body."
   genotype_columns: ['Characteristics[strain]']
   wild_type_genotypes: [w1118, wild type genotype]
-  # FlyBase stocks, from the supplement ("Fly sample information"; science.abk2432_sm.pdf,
-  # p4-5). Only UAS-lamGFP has a stock number (BDSC 7378 = FBst0007378, a parental
-  # stock of the fat body and trachea crosses). No stock numbers are given for w1118,
-  # the GAL4 drivers, UAS-nlsGFP or UAS-unc84GFP (the latter from Ref. 48).
-  stock_map:
-    "Cg-GAL4, UAS-lamGFP": [FBst0007378]
-    "Btl-GAL4, UAS-lamGFP": [FBst0007378]
+  # Genotype (curator 2026-10-17): the GAL4 > UAS samples come from crosses, so they link
+  # the FlyBase genetic entities in the genotype (`genotype_includes`, GENO:0000222
+  # has_genotype), at allele (FBal) level for now (FBti may be preferred later), not a
+  # stock (BDSC 7378, the UAS-lamGFP parent, would be only half the genotype). Alleles
+  # as FlyBase curated them for this paper (Chado feature_pub, FBrf0252876; supplement
+  # "Fly sample information", science.abk2432_sm.pdf p4-5), plus unambiguous ones it did
+  # not link: tub-GAL80ts in the trachea cross ("btl-GAL4, tub-Gal80ts flies with
+  # UAS-lamGFP") = FBal0147425. Not linked (not identifiable): UAS-nlsGFP (several
+  # constructs) and UAS-unc84GFP (from Ref. 48; no FlyBase construct found).
+  genotype_includes_map:
+    "Cg-GAL4, UAS-lamGFP": [FBal0341663, FBal0119470]   # Scer\GAL4[Cg.PU]; Lam[UAS.GFP]
+    "Btl-GAL4, UAS-lamGFP": [FBal0052380, FBal0147425, FBal0119470]   # Scer\GAL4[btl.PS]; Scer\GAL80[ts.alphaTub84B] (tub-GAL80ts); Lam[UAS.GFP]
+    "PromE800-GAL4, UAS-unc84GFP": [FBal0243539]   # Scer\GAL4[Desat1.PB]
+    "drip-GAL4, UAS-nlsGFP": [FBal0327974]   # Scer\GAL4[Drip-MI00887-TG4.0]
   tissue_column: Characteristics[organism part]
   # Organism part -> FBbt, following the authors' SDRF annotation (not the driver).
   # Samples *overlap* (RO:0002131) these terms, so a sample may contain other

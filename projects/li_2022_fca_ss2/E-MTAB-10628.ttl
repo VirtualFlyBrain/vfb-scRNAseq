@@ -4,6 +4,7 @@
 @prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
 @prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
 @prefix FlyBase: <http://flybase.org/reports/> .
+@prefix GENO: <http://purl.obolibrary.org/obo/GENO_> .
 @prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
 @prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
 @prefix RO: <http://purl.obolibrary.org/obo/RO_> .
@@ -2345,6 +2346,7 @@ VFBseq:00000778 a FBcv:0003024 ;
     rdfs:label "Malpighian tubule, 5 days, female, drip-GAL4; UAS-nlsGFP (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
+    GENO:0000222 FlyBase:FBal0327974 ;
     RO:0002131 FBbt:00005725 ;
     RO:0002352 VFBseq:00000779 ;
     RO:0002490 FBdv:00007080 ;
@@ -2361,6 +2363,7 @@ VFBseq:00000780 a FBcv:0003024 ;
     rdfs:label "Malpighian tubule, 5 days, male, drip-GAL4; UAS-nlsGFP (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
+    GENO:0000222 FlyBase:FBal0327974 ;
     RO:0002131 FBbt:00005725 ;
     RO:0002352 VFBseq:00000781 ;
     RO:0002490 FBdv:00007080 ;
@@ -2377,6 +2380,7 @@ VFBseq:00000782 a FBcv:0003024 ;
     rdfs:label "abdominal segment element, 5 days, female, PromE800-GAL4; UAS-unc84GFP (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
+    GENO:0000222 FlyBase:FBal0243539 ;
     RO:0002131 FBbt:00003024 ;
     RO:0002352 VFBseq:00000783 ;
     RO:0002490 FBdv:00007080 ;
@@ -2393,6 +2397,7 @@ VFBseq:00000784 a FBcv:0003024 ;
     rdfs:label "abdominal segment element, 5 days, male, PromE800-GAL4; UAS-unc84GFP (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
+    GENO:0000222 FlyBase:FBal0243539 ;
     RO:0002131 FBbt:00003024 ;
     RO:0002352 VFBseq:00000785 ;
     RO:0002490 FBdv:00007080 ;
@@ -2565,6 +2570,7 @@ VFBseq:00000808 a FBcv:0003024 ;
     rdfs:label "head, 5 days, female, dilp2-GAL4; UAS-unc84GFP (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
+    GENO:0000222 FlyBase:FBal0305188 ;
     RO:0002131 FBbt:00003007 ;
     RO:0002352 VFBseq:00000809 ;
     RO:0002490 FBdv:00007080 ;
@@ -2581,6 +2587,7 @@ VFBseq:00000810 a FBcv:0003024 ;
     rdfs:label "head, 5 days, male, dilp2-GAL4; UAS-unc84GFP (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
+    GENO:0000222 FlyBase:FBal0305188 ;
     RO:0002131 FBbt:00003007 ;
     RO:0002352 VFBseq:00000811 ;
     RO:0002490 FBdv:00007080 ;
@@ -2748,6 +2755,7 @@ VFBseq:00000832 a FBcv:0003024 ;
     rdfs:label "thorax, 5 days, female, Akh-GAL4; UAS-unc84GFP (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
+    GENO:0000222 FlyBase:FBal0155893 ;
     RO:0002131 FBbt:00003018 ;
     RO:0002352 VFBseq:00000833 ;
     RO:0002490 FBdv:00007080 ;
@@ -2764,6 +2772,7 @@ VFBseq:00000834 a FBcv:0003024 ;
     rdfs:label "thorax, 5 days, male, Akh-GAL4; UAS-unc84GFP (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
+    GENO:0000222 FlyBase:FBal0155893 ;
     RO:0002131 FBbt:00003018 ;
     RO:0002352 VFBseq:00000835 ;
     RO:0002490 FBdv:00007080 ;
@@ -2780,11 +2789,13 @@ VFBseq:00000836 a FBcv:0003024 ;
     rdfs:label "trachea, 5 days, female, Btl-GAL4; UAS-lamGFP (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
+    GENO:0000222 FlyBase:FBal0052380,
+        FlyBase:FBal0119470,
+        FlyBase:FBal0147425 ;
     RO:0002131 FBbt:00003037 ;
     RO:0002352 VFBseq:00000837 ;
     RO:0002490 FBdv:00007080 ;
-    dcterms:source VFBseq:00000777 ;
-    BAO:0095000 FlyBase:FBst0007378 .
+    dcterms:source VFBseq:00000777 .
 
 VFBseq:00000837 a FBcv:0003025 ;
     rdfs:label "trachea, 5 days, female, Btl-GAL4; UAS-lamGFP, Smart-seq2 plate P49 (Li 2022)" ;
@@ -2797,11 +2808,13 @@ VFBseq:00000838 a FBcv:0003024 ;
     rdfs:label "trachea, 5 days, male, Btl-GAL4; UAS-lamGFP (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
+    GENO:0000222 FlyBase:FBal0052380,
+        FlyBase:FBal0119470,
+        FlyBase:FBal0147425 ;
     RO:0002131 FBbt:00003037 ;
     RO:0002352 VFBseq:00000839 ;
     RO:0002490 FBdv:00007080 ;
-    dcterms:source VFBseq:00000777 ;
-    BAO:0095000 FlyBase:FBst0007378 .
+    dcterms:source VFBseq:00000777 .
 
 VFBseq:00000839 a FBcv:0003025 ;
     rdfs:label "trachea, 5 days, male, Btl-GAL4; UAS-lamGFP, Smart-seq2 plate P47 (Li 2022)" ;
@@ -2856,23 +2869,25 @@ VFBseq:00000794 a FBcv:0003024 ;
     rdfs:label "fat body, 5 days, female, Cg-GAL4; UAS-lamGFP (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007011 ;
+    GENO:0000222 FlyBase:FBal0119470,
+        FlyBase:FBal0341663 ;
     RO:0002131 FBbt:00003209 ;
     RO:0002352 VFBseq:00000795,
         VFBseq:00000796 ;
     RO:0002490 FBdv:00007080 ;
-    dcterms:source VFBseq:00000777 ;
-    BAO:0095000 FlyBase:FBst0007378 .
+    dcterms:source VFBseq:00000777 .
 
 VFBseq:00000797 a FBcv:0003024 ;
     rdfs:label "fat body, 5 days, male, Cg-GAL4; UAS-lamGFP (Li 2022)" ;
     neo_property:nodeLabel "Sample" ;
     BFO:0000050 FBbt:00007004 ;
+    GENO:0000222 FlyBase:FBal0119470,
+        FlyBase:FBal0341663 ;
     RO:0002131 FBbt:00003209 ;
     RO:0002352 VFBseq:00000798,
         VFBseq:00000799 ;
     RO:0002490 FBdv:00007080 ;
-    dcterms:source VFBseq:00000777 ;
-    BAO:0095000 FlyBase:FBst0007378 .
+    dcterms:source VFBseq:00000777 .
 
 VFBseq:00000824 a FBcv:0003024 ;
     rdfs:label "ovary, 5 days, female (Li 2022)" ;

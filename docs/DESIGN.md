@@ -584,8 +584,20 @@ and any genetic variation component of a genotype). These entities are classes i
 (e.g. FBco0000215 is an *intersectional expression pattern* with `has_hemidriver` edges
 to its FBal hemidrivers), so the link is a class expression:
 `ClassAssertion(ObjectSomeValuesFrom(GENO:0000222 FlyBase:FBco…) <Sample>)`. Config:
-`sample_build.genotype_includes` (common to every sample). The driver's own stock is not
-linked as well: it would be only half the genotype.
+`sample_build.genotype_includes` (GEO: common to every sample) or
+`genotype_includes_map` (ArrayExpress: per genotype, like `stock_map`). The driver's own
+stock is not linked as well: it would be only half the genotype.
+
+Which entities: what FlyBase curated for the paper is the starting point —
+`scripts/flybase_pub_entities.py --fbrf FBrf…` lists the paper's FBco / FBal / FBti /
+FBtp / FBst from Chado (`feature_pub`) and marks those already in VFB. Check it against
+the paper: FlyBase also curates lines used only in other experiments, and may not link
+everything in the sequenced genotypes; unambiguous entities it did not link are added
+(e.g. a tub-GAL80ts the paper names), ambiguous ones (several constructs under one name)
+are left out. Entities not yet in VFB are linked anyway (FlyBase IRIs; imported later).
+Level: split combinations as FBco; otherwise **alleles (FBal) for now** — a later
+retrofit to insertions (FBti), which the Alliance may favour, is possible (curator
+2026-10-17).
 
 ## Expression statistics
 
@@ -861,8 +873,10 @@ VFB until the release files are merged, so ids can still change during review.
    to the samples of that tissue / age; the title regex's `set` group is optional;
    `title_stages` for a more specific stage recorded in GSM titles; `tissue_labels` for
    the tissue shown in Sample labels; `age` for the paper's age when GEO records none; `stock` for a stock common to every
-   sample, or `genotype_includes` for the genetic entities of a cross); ArrayExpress: also
+   sample, or `genotype_includes` for the genetic entities of a cross, found with
+   `scripts/flybase_pub_entities.py`); ArrayExpress: also
    `sample_columns`, `assay_column` / `assay_regex`, `sex_column` / `sex_map`,
+   `stock_map` / `genotype_includes_map`,
    `sdrf_corrections`), `annotation_build` (h5ad obs columns,
    `unannotated_values`), `annotations` (label/class/timepoint
    columns, extra clusterings, prefixes), `unidentified` (rule, held classes, hold reasons,
@@ -935,7 +949,14 @@ Curator decisions (2026-10-07):
   "abdominal segment element" in Smart-seq2, as recorded). Samples overlap their
   tissues: "body" = adult postcephalic region (FBbt:00059181); "male reproductive
   gland" = accessory gland + ejaculatory duct + ejaculatory bulb. The supplement gives
-  only one stock number (UAS-lamGFP, FBst0007378, fat body and trachea crosses), none for w1118.
+  only one stock number (UAS-lamGFP, FBst0007378, a parent of the fat body and trachea
+  crosses), none for w1118. The GAL4 > UAS samples are crosses, so they link the genetic
+  entities instead of that stock (`genotype_includes_map`; curator 2026-10-17): FlyBase's
+  alleles for the paper (`scripts/flybase_pub_entities.py --fbrf FBrf0252876`), i.e.
+  Scer\GAL4[Cg.PU], [btl.PS], [Desat1.PB] (PromE800), [Drip-MI00887-TG4.0],
+  [Ilp2.215-1] (dilp2) and [Akh.PL], Lam[UAS.GFP], plus tub-GAL80ts in the trachea cross
+  (Scer\GAL80[ts.alphaTub84B], FBal0147425; in the supplement, not linked by FlyBase).
+  UAS-nlsGFP (several constructs) and UAS-unc84GFP (not in FlyBase) are not linked.
   Fat body age: the SDRF says 3 days, the supplement 5 (all tissues are 5-day adults
   except male reproductive gland and testis, with stated reasons) — treated as an
   ArrayExpress error and corrected via `sdrf_corrections` (noted on the Samples).

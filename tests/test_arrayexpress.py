@@ -58,7 +58,7 @@ def test_10x_samples_are_extracts_assays_are_libraries(tmp_path):
     mod = _builder()
     sb = dict(SB_COMMON, sample_columns=["Extract Name"], assay_column="Source Name",
               assay_xrefs=["Comment[ENA_EXPERIMENT]", "Comment[BioSD_SAMPLE]"],
-              genotype_columns=["Characteristics[strain]"])
+              genotype_columns=["Characteristics[strain]"], wild_type_genotypes=["w1118"])
     reg = IDRegistry.load(tmp_path / "reg.json")
     samples, assays, warnings = mod.build(_rows_10x(), sb, "E-MTAB-1", reg, "VFBseq_00000001")
     assert [s["sample_id"] for s in samples] == ["h__FCA47", "h__FCA48"]
@@ -94,6 +94,25 @@ def test_ss2_samples_group_cells_assays_are_plates(tmp_path):
     p1 = next(a for a in assays if a["library_id"] == "P1")
     assert p1["n_sources"] == 2 and p1["accession"] is None and p1["dbxrefs"] == []   # per-cell ids not listed
 
+
+
+def test_cross_genotype_links_genetic_entities_and_unmapped_ones_warn(tmp_path):
+    """A GAL4 > UAS genotype gets its `genotype_includes_map` entities (no stock); a
+    non-wild-type genotype with neither map entry is flagged."""
+    mod = _builder()
+    rows = _rows_10x()
+    for r in rows:
+        r["Characteristics[strain]"] = "Cg-GAL4, UAS-lamGFP" if r["Extract Name"].endswith("47") else "drip-GAL4, UAS-nlsGFP"
+    sb = dict(SB_COMMON, sample_columns=["Extract Name"], assay_column="Source Name",
+              genotype_columns=["Characteristics[strain]"], wild_type_genotypes=["w1118"],
+              genotype_includes_map={"Cg-GAL4, UAS-lamGFP": ["FBal0341663", "FBal0119470"]})
+    reg = IDRegistry.load(tmp_path / "reg.json")
+    samples, _, warnings = mod.build(rows, sb, "E-MTAB-1", reg, "VFBseq_00000001")
+    cg = next(s for s in samples if s["genotype"] == "Cg-GAL4, UAS-lamGFP")
+    assert cg["genotype_includes"] == ["FBal0341663", "FBal0119470"] and cg["stock"] is None
+    drip = next(s for s in samples if s["genotype"] == "drip-GAL4, UAS-nlsGFP")
+    assert "genotype_includes" not in drip
+    assert any("drip-GAL4, UAS-nlsGFP" in w for w in warnings)
 
 def test_sdrf_corrections_apply_before_grouping_and_leave_a_note(tmp_path):
     mod = _builder()
