@@ -1,0 +1,71 @@
+# Xie et al. 2021 (eLife; FBrf0247975): Smart-seq2 of FACS-sorted olfactory projection
+# neurons (PNs) at 0 h, 24 h and 48 h APF and adult (GEO GSE161228, one sample per cell).
+# Not previously in VFB. Curator decisions 2026-10-17: load the main pan-PN analysis
+# (GSE161228_adata_all_panPN_annotated_final.h5ad: PN_type per cell at each stage) and the
+# knot analysis (knot_24h_48h_adult.h5ad: kn+ PNs at 24 h, 48 h, adult), one Clustering per
+# stage of each; not the 24 h decoding analysis (24h_PN_all.h5ad; validation). The main
+# analysis's 24 h cells are Li et al. 2017's GH146 cells (GSE100058): its Samples are
+# reused from li_2017 (curated first). Samples are built by projects/xie_2021/build_samples.py
+# from the GEO family SOFT file (the live endpoint fails for this 11.5k-sample series).
+project: xie_2021
+
+source:
+  doi: 10.7554/eLife.63450
+  pmid: "33427646"
+  pmcid: PMC7870145
+  fbrf: FBrf0247975
+  title: "Temporal evolution of single-cell transcriptomes of Drosophila olfactory projection neurons"
+  journal: eLife
+  year: 2021
+  first_author: Xie
+
+organism: Drosophila melanogaster
+
+dataset:
+  site: GEO
+  accession: GSE161228
+  bioproject: PRJNA675921
+  sra_study: SRP292191
+  platform: GPL25244            # Illumina NovaSeq 6000
+  licence: CC-BY-4.0
+  assay_type: FBcv:0009000      # single-cell RNA-seq
+
+# The 24 h GH146 cells of the main analysis are Li 2017's (its five 24 h GH146 sorts).
+reuse:
+  - from_project: li_2017
+    note: "24 h APF GH146 PNs (Li et al. 2017) re-analysed in the main pan-PN analysis"
+    samples: [exp2_GH146_24hAPF, exp3_GH146_24hAPF, exp5_GH146_24hAPF, exp6_GH146_24hAPF, exp12_GH146_24hAPF]
+
+sample_build:
+  # One Sample per sort in scope: a GSM title group "PN_<stage>_<driver>" (one GSM per cell,
+  # titled "PN_<stage>_<driver>[_<plate>]_<well>"), one Assay per Smart-seq2 plate.
+  assay_method: { fbcv_id: FBcv:0009007, label: Smart-seq2 }
+  assay_label: { unit: Smart-seq2, pattern: '^(.+)$' }
+  # Sex is not given in the paper or GEO (left unset).
+  # In scope: title prefix -> sample. Drivers: crosses, linking the alleles FlyBase curated
+  # for the paper (scripts/flybase_pub_entities.py --fbrf FBrf0247975); kn+ PNs are
+  # kn-GAL4 intersected with GH146-Flp and UAS-FRT-STOP-FRT-mCD8GFP (paper).
+  sorts:
+    PN_0h_VTGAL4:   { id: 0h_VT033006,  stage: 0h,  name: VT033006-GAL4 > UAS-mCD8GFP, genotype_includes: [FBal0310709] }    # Scer\GAL4[VT033006]
+    PN_0h_VT:       { id: 0h_VT033006,  stage: 0h,  name: VT033006-GAL4 > UAS-mCD8GFP, genotype_includes: [FBal0310709] }    # plate P8 of the same sort
+    PN_48h_GH146:   { id: 48h_GH146,    stage: 48h, name: GH146-GAL4 > UAS-mCD8GFP,    genotype_includes: [FBal0218122] }    # Scer\GAL4[GH146]
+    PN_adult_GH146: { id: adult_GH146,  stage: adult, name: GH146-GAL4 > UAS-mCD8GFP,  genotype_includes: [FBal0218122] }
+    PN_24h_KnotGAL4_GH146: { id: 24h_knot, stage: 24h, name: "kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP", genotype_includes: [FBal0327926, FBal0243707, FBal0243701] }
+    PN_48h_knotGFP: { id: 48h_knot,     stage: 48h, name: "kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP", genotype_includes: [FBal0327926, FBal0243707, FBal0243701] }
+    PN_adult_knotGFP: { id: adult_knot, stage: adult, name: "kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP", genotype_includes: [FBal0327926, FBal0243707, FBal0243701] }
+  # Stages by the Bainbridge & Bownes FBdv definitions (25 C), as for Li 2017; 0 h APF is
+  # the white prepupa (prepupal stage P1, 0-0.3 h APF). Tissue: brain to the pupal stage,
+  # adult brain from the pharate adult stage; adult age not given (adult stage).
+  stages:
+    0h:    { age: 0 h APF,  stage: { fbdv_id: FBdv:00005343, label: prepupal stage P1 },      tissue: { fbbt_id: FBbt:00005095, label: brain } }
+    24h:   { age: 24 h APF, stage: { fbdv_id: FBdv:00005353, label: pupal stage P6 },         tissue: { fbbt_id: FBbt:00005095, label: brain } }
+    48h:   { age: 48 h APF, stage: { fbdv_id: FBdv:00005355, label: pharate adult stage P8 }, tissue: { fbbt_id: FBbt:00003624, label: adult brain } }
+    adult: { age: adult,    stage: { fbdv_id: FBdv:00005369, label: adult stage },            tissue: { fbbt_id: FBbt:00003624, label: adult brain } }
+  clusterings:
+    - { id: main_0h,    name: "Xie 2021 PN types (0 h APF)",    samples: [0h_VT033006] }
+    - { id: main_24h,   name: "Xie 2021 PN types (24 h APF)",   reused: true }
+    - { id: main_48h,   name: "Xie 2021 PN types (48 h APF)",   samples: [48h_GH146] }
+    - { id: main_adult, name: "Xie 2021 PN types (adult)",      samples: [adult_GH146] }
+    - { id: knot_24h,   name: "Xie 2021 kn+ PN types (24 h APF)", samples: [24h_knot] }
+    - { id: knot_48h,   name: "Xie 2021 kn+ PN types (48 h APF)", samples: [48h_knot] }
+    - { id: knot_adult, name: "Xie 2021 kn+ PN types (adult)",    samples: [adult_knot] }
