@@ -69,3 +69,14 @@ sample_build:
     - { id: knot_24h,   name: "Xie 2021 kn+ PN types (24 h APF)", samples: [24h_knot] }
     - { id: knot_48h,   name: "Xie 2021 kn+ PN types (48 h APF)", samples: [48h_knot] }
     - { id: knot_adult, name: "Xie 2021 kn+ PN types (adult)",    samples: [adult_knot] }
+
+# Clusters (projects/xie_2021/build_clusters.py, from the h5ads in .cache/xie/): one entry per
+# analysis x stage x the authors' PN type (`PN_type`). Held: cells given no type ("nan" /
+# "NaN": unassigned) and types left numbered ("MARS_<n>": untyped).
+annotations:
+  review_columns: [clustering, source_cluster_id, type]
+
+unidentified:
+  rule: none
+  hold_reasons:
+    unassigned: unassigned
