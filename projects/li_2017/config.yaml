@@ -95,13 +95,19 @@ decoded_clusters:
   "21": { type: DL3,  figure: "#6'", basis: "acj6-, CG31676+, not DA1 (paper: the remaining acj6-/CG31676+ Clusters #6 and #6', DL3)" }
 # Mz19 developmental series: the authors' per-type, per-stage cell lists; VA1d and DC3 are
 # not separated in adults (one adPN list: "VA1d or DC3"). Sorted Mz19 cells in no list
-# (low quality, or not typed) are in no cluster.
+# (low quality, or not typed) are in no cluster. The two adult lists are swapped back
+# (curator 2026-10-17): the paper defines DA1 PNs as Mz19+/acj6- and VA1d / DC3 as
+# Mz19+/acj6+, and the pupal lists follow this, but the authors' adult files are reversed
+# (names_DA1_adult: acj6 0.88, fru 0.62; names_adPN_adult: acj6 0.02, fru 0.98, in the
+# authors' expression table; carried into names_Mz19_lPN_all / adPN_all).
 mz19_lists:
   24hAPF: { DA1: names_DA1_24hAPF.txt, VA1d: names_VA1d_24hAPF.txt, DC3: names_DC3_24hAPF.txt }
   36hAPF: { DA1: names_DA1_36hAPF.txt, VA1d: names_VA1d_36hAPF.txt, DC3: names_DC3_36hAPF.txt }
   48hAPF: { DA1: names_DA1_48hAPF.txt, VA1d: names_VA1d_48hAPF.txt, DC3: names_DC3_48hAPF.txt }
   72hAPF: { DA1: names_DA1_72hAPF.txt, VA1d: names_VA1d_72hAPF.txt, DC3: names_DC3_72hAPF.txt }
-  adult:  { DA1: names_DA1_adult.txt, "VA1d or DC3": names_adPN_adult.txt }
+  adult:
+    DA1: { file: names_adPN_adult.txt, note: "the authors' adult adPN list (acj6-, fru+), swapped back to DA1 by the paper's definition (DA1 = Mz19+/acj6-); the authors' adult files are reversed" }
+    "VA1d or DC3": { file: names_DA1_adult.txt, note: "the authors' adult DA1 list (acj6+), swapped back to adPN (VA1d or DC3) by the paper's definition (VA1d / DC3 = Mz19+/acj6+); the authors' adult files are reversed" }
 
 annotations:
   review_columns: [clustering, source_cluster_id, type, author_note]
@@ -110,3 +116,13 @@ unidentified:
   rule: none
   hold_reasons:
     "unclustered": unassigned
+
+# FBbt mappings once per author type, in two sets (curator 2026-10-17: immature terms up to
+# the pupal stage, mature from the pharate adult stage; write_type_mappings.py):
+# type_mapping/ for Mz19 48 h / 72 h / adult; type_mapping/immature/ for GH146 24 h and
+# Mz19 24 h / 36 h (held: FBbt has no immature PN terms; to be requested with Xie 2021).
+type_mapping:
+  clustering_dirs:
+    GH146_24h: immature
+    Mz19_24h: immature
+    Mz19_36h: immature
