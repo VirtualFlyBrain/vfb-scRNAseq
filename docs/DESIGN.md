@@ -1387,5 +1387,19 @@ CC-BY-4.0. Curator decisions 2026-10-17.
     typed (config `decoded_clusters`, with the basis as `author_note`); the 22 the paper
     left undecoded are held (untyped).
   - Mz19: the authors' per-type, per-stage lists: DA1, VA1d, DC3 at 24-72 h APF; DA1 and
-    "VA1d or DC3" (adPN; not separated in adults) in adults (14 entries).
+    "VA1d or DC3" (adPN; not separated in adults) in adults (14 entries). The two adult
+    lists are swapped back (curator 2026-10-17): the paper defines DA1 PNs as
+    Mz19+/acj6- and VA1d / DC3 as Mz19+/acj6+, and the pupal lists follow this, but the
+    authors' adult files are reversed (names_DA1_adult: acj6 0.88, fru 0.62;
+    names_adPN_adult: acj6 0.02, fru 0.98 in the authors' own expression table). The
+    reason is recorded on both clusters (`author_note`).
+- **FBbt mapping (stage 3):** `projects/li_2017/write_type_mappings.py` (no judgement
+  needed). Mature terms from the pharate adult stage (Mz19 48 h, 72 h, adult): DA1 ->
+  *adult antennal lobe projection neuron DA1 lPN*, VA1d -> *... VA1d adPN*, DC3 -> *... DC3
+  adPN* (exact), adult "VA1d or DC3" -> *adult uniglomerular antennal lobe projection neuron
+  adPN* (broad; their common parent): 8 clusters loaded. Up to the pupal stage (GH146 24 h,
+  Mz19 24 h / 36 h) FBbt has no immature projection neuron terms, and *immature neuron* is
+  too broad, so those 14 typed clusters are held (`no term`, new term needed) until FBbt
+  adds them; the request is to be made together with Xie 2021's types (curator
+  2026-10-17).
 
