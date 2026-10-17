@@ -1402,4 +1402,12 @@ CC-BY-4.0. Curator decisions 2026-10-17.
   too broad, so those 14 typed clusters are held (`no term`, new term needed) until FBbt
   adds them; the request is to be made together with Xie 2021's types (curator
   2026-10-17).
+- **Expression (stage 4):** GEO's raw HTSeq read counts (`GSE100058_htseq.tab.gz`; its
+  "symbol" column holds r6.10 FBgn ids), exported for the 1,379 cells of the loaded
+  analyses by `projects/li_2017/export_counts.py` (spike-ins and HTSeq summary rows
+  dropped); FBgn ids mapped to current FlyBase genes (14,284 current, 176 secondary, 4 split
+  and 2 withdrawn dropped, 3 merges). CPM, extent > 0.2: 14,457 genes; 8 loaded clusters,
+  39,259 rows; 37 held clusters (1,101 cells) counted in the Dataset gene counts only.
+  Markers as the paper defines the types: acj6 in VA1d / DC3 (adPN), not DA1; fru in DA1;
+  CG31676 in VA1d and DA1, not DC3; in adults too, after the swap.
 
