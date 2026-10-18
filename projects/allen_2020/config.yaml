@@ -51,3 +51,13 @@ sample_build:
       tissue: { fbbt_id: FBbt:00004052, label: adult ventral nerve cord }
   clusterings:
     - { id: vnc, name: "Allen 2020 adult VNC clusters", sample_age: "5-day old adult" }
+
+# Clusters (projects/allen_2020/build_clusters.py, from the re-run's cell -> cluster table and
+# the paper's Figure 1-source data 2): one entry per author cluster, typed by the most specific
+# author call (predicted hemilineage; else neurotransmitter class; else the non-neuronal cell
+# type). Held: clusters the authors left "undefined" or typed only as neuron (untyped).
+annotations:
+  review_columns: [clustering, source_cluster_id, type, author_neurotransmitter, author_hemilineage, author_hox, author_peptides, author_cell_type]
+
+unidentified:
+  rule: none
