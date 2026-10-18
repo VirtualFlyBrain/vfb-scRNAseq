@@ -1548,4 +1548,9 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-17.
   (3,084 cells) left out. Markers agree with the author types (e.g. *Gad1* extent ~0.98
   in the GABAergic hemilineages, *VGlut1* (the DGEs' *VGlut*) ~1.0 in 8A/24B, 14A, 9B;
   *Vmat* 0.92 in the monoaminergic cluster).
+- **Build (stage 5):** `build_rdf.py`: 1 Dataset, 4 Samples (each `has_genotype some`
+  Scer\GAL4[dsx.KI] and UAS-Stinger), 4 Assays, 1 Clustering, 106 Clusters; publication
+  FBrf0245499 from VFB production; `verify_mappings.py` OK (26 FBbt terms); the FBbt /
+  FBdv / FBcv terms on Samples, Assays and the Dataset current. Recorded in
+  `provenance.json` (with the re-run's inputs and image).
 
