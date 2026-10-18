@@ -1,0 +1,53 @@
+# Allen et al. 2020 (eLife; FBrf0245499): Drop-seq of the adult ventral nerve cord (VNC),
+# 5-day-old females and males (GEO GSE141807, 4 libraries). Previously loaded into VFB via
+# the old FlyBase/SCEA mechanism as FBlc0005603 (scRNAseq_2020_Allen; SCEA E-GEOD-141807,
+# 20 clusters merged by type from SCEA composite labels); rebuilt here with fresh VFBseq
+# ids. Curator decisions 2026-10-17: the authors' 120 clusters (Seurat 2.3.4, CCA,
+# resolution 12), typed from the paper's Figure 1-source data 2. The per-cell cluster
+# assignments were not published (GEO, eLife source data, the authors' GitHub, SCEA and
+# data repositories checked); they are recovered by re-running the authors' published
+# pipeline (projects/allen_2020/rerun/), which reproduces all 120 cluster sizes exactly.
+project: allen_2020
+
+source:
+  doi: 10.7554/eLife.54074
+  pmid: "32314735"
+  pmcid: PMC7173974
+  fbrf: FBrf0245499
+  title: "A single-cell transcriptomic atlas of the adult Drosophila ventral nerve cord"
+  journal: eLife
+  year: 2020
+  first_author: Allen
+
+organism: Drosophila melanogaster
+
+dataset:
+  site: GEO
+  accession: GSE141807
+  bioproject: PRJNA594854
+  sra_study: SRP236591
+  platform: GPL21306            # Illumina HiSeq 4000
+  licence: CC-BY-4.0
+  assay_type: FBcv:0009000      # single-cell RNA-seq
+
+sample_build:
+  # GSM titles are "<sex>_vnc_rep<n>": each GSM one Drop-seq library from its own
+  # dissection (two replicates per sex), so Sample:Assay 1:1. Sex from GEO.
+  title_pattern: 'regex:(?P<set>female|male)_vnc_(?P<timepoint>rep)(?P<biorep>\d)'
+  assay_method: { fbcv_id: FBcv:0009006, label: DROP-Seq }
+  assay_label: { unit: Drop-seq library }
+  # Genotype (a cross: "+/w*; UAS-Stinger, 13XLexAop2-IVS-tdTomato.nls/+; dsxGAL4/+", a
+  # cross between w*; UAS-Stinger, 13XLexAop2-IVS-tdTomato.nls males and dsxGAL4 virgin
+  # females): the dsx GAL4 knock-in FlyBase curated for the paper, Scer\GAL4[dsx.KI]
+  # (FBal0277019), and UAS-Stinger, unambiguous in FlyBase (P{UAS-Stinger} FBtp0018187 ->
+  # Avic\GFP[Stinger.UAS.Tag:NLS(tra)] FBal0157333; not linked to the paper there).
+  # 13XLexAop2-IVS-tdTomato.nls is not identifiable as one FlyBase construct, so not linked
+  # (and is inert here: no LexA driver).
+  genotype_includes: [FBal0277019, FBal0157333]
+  # GEO age -> FBdv / FBbt. Paper: "Flies were aged 5 days".
+  age_map:
+    "5-day old adult":
+      stage:  { fbdv_id: FBdv:00007080, label: day 5 of adulthood }
+      tissue: { fbbt_id: FBbt:00004052, label: adult ventral nerve cord }
+  clusterings:
+    - { id: vnc, name: "Allen 2020 adult VNC clusters", sample_age: "5-day old adult" }
