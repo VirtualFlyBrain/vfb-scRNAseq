@@ -95,7 +95,10 @@ def main() -> None:
                      "justification": f"Up to the pupal stage the immature term is used (curator), but FBbt has no "
                                       f"immature (or remodelling) antennal lobe projection neuron terms yet "
                                       f"(requested, curator 2026-10-17); meanwhile the stage-neutral class for the "
-                                      f"authors' lineage ({lineage}), to be refined when the new terms exist.",
+                                      f"authors' lineage ({lineage}), to be refined when the new terms exist. "
+                                      f"Lineage from the paper's definitions: DA1 and DL3 PNs are acj6- lPNs "
+                                      f"(Mz19+/acj6- DA1; the acj6-/CG31676+ clusters #6 / #6' DL3), VA1d, DC3, "
+                                      f"DC2 and VM2 acj6+ adPNs (Figures 3-4).",
                      "recommendation": f"Map to {best['fbbt_id']} {best['fbbt_term']} (broad match) until FBbt has the "
                                        f"immature / remodelling term for {typ}."})
     print(f"wrote {len(MATURE)} mature and {len(IMMATURE)} immature-stage type mappings (lineage classes)")
