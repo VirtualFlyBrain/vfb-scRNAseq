@@ -1516,8 +1516,26 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-17.
   the most specific author call: the predicted hemilineage (68 clusters, e.g. "hemilineage
   12B", "hemilineages 13A/19A"), else the neurotransmitter class (35), else the non-neuronal
   cell type (glia, salivary gland, sperm, neuronal/glial); the table's other fields kept as
-  `author_*` (neurotransmitter, hemilineage, peptides, Hox). Held: 3 "undefined" clusters
-  and 7 typed only as neuron (`untyped`). The re-run scripts are committed in `rerun/`
+  `author_*` (neurotransmitter, hemilineage, peptides, Hox). Held: 3 "undefined" clusters,
+  7 typed only as neuron, the mixed-neurotransmitter cluster and the 2 neuronal/glial
+  clusters (`untyped`: typeable only as neuron / cell; curator 2026-10-18), and the salivary
+  gland contaminant (`artefact`). The re-run scripts are committed in `rerun/`
   (Dockerfile, rerun_clusters.R to the CCA checkpoint, align_chunk.R, cluster_aligned.R,
   run_chunks.sh).
+- **FBbt mapping (stage 3, curator 2026-10-18):** per author type
+  (`write_type_mappings.py`, `type_mapping/`): single hemilineages to their *hemilineage XY
+  secondary neuron* (exact); 10B, 15B, 16B, 23B, which have no FBbt hemilineage term, to
+  *lineage N secondary neuron* (broad); unseparated pairs to their common Notch class
+  (13A/19A, 20A/22A *Notch ON*, 5B/6B *Notch OFF hemilineage secondary neuron*, broad);
+  8A/24B (Notch ON / OFF: no common class) by the authors' neurotransmitter, *adult
+  glutamatergic neuron* (broad); neurotransmitter classes to the adult class terms
+  (monoaminergic: *adult aminergic neuron*); glia to *adult CNS glial cell*; sperm to
+  *spermatozoon*. The authors' neurotransmitter for hemilineage clusters (it varies within
+  some hemilineage types) is added per cluster as an additional match, broad
+  (`add_neurotransmitter_matches.py`, run after `expand_type_mappings.py`; 59 clusters).
+  106 clusters mapped (26 terms), 14 held. No neuromere terms from the
+  authors' enriched Hox genes (curator): the authors assign cells, not clusters, to
+  neuromeres, and only approximately (Figure 3E: no Hox ProNm, Antp MesoNm, Ubx MetaNm,
+  abd-A / Abd-B ANm); per cluster this contradicts their hemilineage calls (the
+  Antp-enriched 23B clusters; 23B is prothoracic, Figure 5).
 
