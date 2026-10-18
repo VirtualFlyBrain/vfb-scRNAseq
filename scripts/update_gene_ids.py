@@ -52,7 +52,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
-from vfb_scrnaseq.ingest_h5ad import h5ad_path, read_genes  # noqa: E402
+from vfb_scrnaseq.ingest_h5ad import expression_h5ads, read_genes  # noqa: E402
 from vfb_scrnaseq.project_config import load_config  # noqa: E402
 
 PSQL = ["psql", "-h", "chado.flybase.org", "-U", "flybase", "flybase", "-At", "-F", "\t"]
@@ -96,11 +96,10 @@ def _h5ad_ids(project: str) -> tuple[list[str], dict[str, str]]:
     """(gene symbols in first-seen order, {symbol: FBgn from the authors' files}) over
     a project's h5ad files."""
     cfg = load_config(project)
-    acc = cfg["dataset"]["accession"]
     order: dict[str, None] = {}
     ids: dict[str, str] = {}
-    for c in cfg["sample_build"]["clusterings"]:
-        genes, fbgns = read_genes(h5ad_path(acc, c["id"]))
+    for path in dict.fromkeys(expression_h5ads(cfg)):
+        genes, fbgns = read_genes(path)
         for g, f in zip(genes, fbgns):
             order.setdefault(g)
             if f:
@@ -127,9 +126,15 @@ def features(cfg: dict) -> list[tuple[str, str]]:
     ex = cfg["expression"]
     if ex.get("source") == "h5ad":
         symbols, ids = _h5ad_ids(cfg["project"])
-        for other in ex.get("gene_ids_from", []):
+        # other projects' ids for a symbol: from their h5ad files when they are h5ad-sourced
+        # (e.g. FCA Smart-seq2), else from their committed gene id maps
+        others = ex.get("gene_ids_from", [])
+        h5ad_src = [o for o in others if (load_config(o).get("expression") or {}).get("source") == "h5ad"]
+        for other in h5ad_src:
             for g, f in _h5ad_ids(other)[1].items():
                 ids.setdefault(g, f)
+        for g, f in _input_ids([o for o in others if o not in h5ad_src]).items():
+            ids.setdefault(g, f)
         return [(ids.get(g, ""), g) for g in symbols]
     files = [ex["features_file"]] + [p["features_file"] for p in ex.get("extra_parts", [])]
     seen: dict[str, str] = {}
