@@ -15,6 +15,9 @@ only, so each cluster keeps its cells from the two control Samples.
   source_cluster_id  the authors' cluster name
   cells_by_sample    control cells per Sample (replicate)
   all_genotypes_cell_number  the cluster's cells in all five libraries (the authors' size)
+  stage              the cellularisation clusters only: embryonic stage 5, from their own
+                     expression ("cells from embryos in the earlier stages of
+                     cellularization", bnk, slam; curator 2026-10-18)
 
 Also writes .cache/ing_simmons/memberships.tsv.gz (cell<TAB>cluster; cells named as in
 SCEA, <BioSample>-<barcode>) for the expression build.
@@ -43,6 +46,7 @@ SCEA_URL = "https://www.ebi.ac.uk/gxa/sc/experiment/E-MTAB-9304/download?fileTyp
 AUTHOR_COL = "Factor Value[inferred cell type - authors labels]"
 CONTROLS = {"SAMEA7039590": "control_stage5_Rep1", "SAMEA7039591": "control_stage5_Rep2"}   # BioSample -> SDRF source
 TYPE = {"haemocytes": "haemocyte", "pole cells": "pole cell"}
+STAGE = {"cellularisation": {"fbdv_id": "FBdv:00005311", "label": "embryonic stage 5"}}
 
 
 def main() -> None:
@@ -65,7 +69,7 @@ def main() -> None:
     anns = []
     for lab in sorted(cells):
         base = re.sub(r"\d+$", "", lab)
-        anns.append({
+        rec = {
             "label": lab,
             "type": TYPE.get(base, base),
             "clustering": clustering["id"],
@@ -74,7 +78,10 @@ def main() -> None:
             "cell_number": len(cells[lab]),
             "cells_by_sample": dict(sorted(Counter(CONTROLS[c.split("-", 1)[0]] for c in cells[lab]).items())),
             "all_genotypes_cell_number": total[lab],
-        })
+        }
+        if base in STAGE:
+            rec["stage"] = STAGE[base]
+        anns.append(rec)
     with gzip.open(CACHE / "memberships.tsv.gz", "wt") as fh:
         fh.write("barcode\tcluster\n")
         fh.writelines(f"{c}\t{lab}\n" for lab in sorted(cells) for c in cells[lab])
