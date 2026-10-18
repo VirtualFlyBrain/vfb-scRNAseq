@@ -1414,8 +1414,9 @@ CC-BY-4.0. Curator decisions 2026-10-17.
   CG31676 in VA1d and DA1, not DC3; in adults too, after the swap.
 - **Build (stage 5):** `build_rdf.py`: 1 Dataset, 10 Samples (each `has_genotype some`
   its GAL4 allele), 29 Assays (named "<Sample>, Smart-seq2 plate <id>" via `assay_label`),
-  6 Clusterings (each linked to its samples), 8 Clusters; the publication FBrf0237214 is
-  not yet in VFB, so it is linked from config (`source.fbrf`); `verify_mappings.py` OK (4
+  6 Clusterings (each linked to its samples), 22 Clusters (8 at first; the 14 pupal ones with
+  the lineage classes, FBbt #2220); the publication FBrf0237214 was
+  added to the VFB KB by the curator (2026-10-18; linked from config until then); `verify_mappings.py` OK (4
   FBbt terms); the 9 FBbt / FBdv / FBcv terms on Samples, Assays and the Dataset current.
   Recorded in `provenance.json`.
 
