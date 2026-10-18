@@ -217,6 +217,10 @@ def build_entities(project: str) -> list[dict]:
             "cell_number": ann.get("cell_number"),
             "neo_label": "Cluster",
         }
+        if ann.get("stage"):
+            # a stage determined from the cluster's own expression (e.g. the authors'
+            # cellularisation clusters), not copied from its Samples
+            rec["stage"] = ann["stage"]["fbdv_id"]
         title = MEMBERSHIP_TITLES.get(ann.get("membership"))
         if title:
             rec["title"] = title.format(type=ann.get("type", label))
