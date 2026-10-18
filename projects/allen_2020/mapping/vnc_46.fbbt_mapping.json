@@ -1,0 +1,20 @@
+{
+  "cluster_label": "vnc_46",
+  "working_definition": "Adult VNC cells of the authors' type hemilineage 16B (Allen et al. 2020, Figure 1-source data 2), 5-day-old adults.",
+  "searches_performed": [
+    "hemilineage 16B secondary neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "lineage 16 secondary neuron",
+    "fbbt_id": "FBbt:00048896",
+    "fbbt_definition": "Any neuron that develops from neuroblast NB1-1 during the postembryonic phase of neurogenesis. These are all Notch OFF hemilineage neurons, as the Notch ON hemilineage is eliminated by apoptosis (Lacin et al., 2019). In the adult, these neurons are glutamatergic (Lacin et al., 2019).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' predicted hemilineage 16B (Figure 4). FBbt has no hemilineage 16B term; lineage 16's secondary neurons are its parent (the authors predict no 16A cells).",
+  "other_candidates": [],
+  "recommendation": "Map to FBbt:00048896 lineage 16 secondary neuron (broad match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

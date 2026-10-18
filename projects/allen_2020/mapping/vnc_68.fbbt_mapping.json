@@ -1,0 +1,20 @@
+{
+  "cluster_label": "vnc_68",
+  "working_definition": "Adult VNC cells of the authors' type hemilineage 10B (Allen et al. 2020, Figure 1-source data 2), 5-day-old adults.",
+  "searches_performed": [
+    "hemilineage 10B secondary neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "lineage 10 secondary neuron",
+    "fbbt_id": "FBbt:00048899",
+    "fbbt_definition": "Any neuron that develops from neuroblast NB2-2 during the postembryonic phase of neurogenesis. These are all Notch OFF hemilineage neurons, as the Notch ON hemilineage is eliminated by apoptosis (Lacin et al., 2019). In the adult, these neurons are cholinergic (Lacin et al., 2019).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' predicted hemilineage 10B (Figure 4). FBbt has no hemilineage 10B term; lineage 10's secondary neurons are its parent (the authors predict no 10A cells).",
+  "other_candidates": [],
+  "recommendation": "Map to FBbt:00048899 lineage 10 secondary neuron (broad match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

@@ -55,9 +55,15 @@ sample_build:
 # Clusters (projects/allen_2020/build_clusters.py, from the re-run's cell -> cluster table and
 # the paper's Figure 1-source data 2): one entry per author cluster, typed by the most specific
 # author call (predicted hemilineage; else neurotransmitter class; else the non-neuronal cell
-# type). Held: clusters the authors left "undefined" or typed only as neuron (untyped).
+# type). Held (curator 2026-10-18): clusters the authors left "undefined" or typed only as
+# neuron, of mixed neurotransmitter identity or "neuronal/glial" (untyped: typeable only as
+# neuron / cell), and the salivary gland contaminant (artefact).
 annotations:
   review_columns: [clustering, source_cluster_id, type, author_neurotransmitter, author_hemilineage, author_hox, author_peptides, author_cell_type]
 
 unidentified:
   rule: none
+  hold_reasons: {salivary gland: artefact}
+
+# FBbt mappings are made once per author type (type_mapping/, write_type_mappings.py) and
+# copied per cluster by scripts/expand_type_mappings.py.
