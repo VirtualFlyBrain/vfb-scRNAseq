@@ -1,0 +1,108 @@
+{
+  "dataset": {
+    "vfbseq_id": "VFBseq_00002844",
+    "accession": "E-MTAB-9304",
+    "site": "ArrayExpress"
+  },
+  "samples": [
+    {
+      "vfbseq_id": "VFBseq_00002845",
+      "sample_id": "control_stage5_Rep1",
+      "label": "whole embryo, 2.5 to 3.5 hours, mixed, w[*]; P{EGFP-PCNA}attP2, Rep1",
+      "tissue_raw": "whole embryo",
+      "age_raw": "2.5 to 3.5 hours",
+      "genotype": "w[*]; P{EGFP-PCNA}attP2",
+      "stock": null,
+      "genotype_includes": [
+        "FBal0366828"
+      ],
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00005289",
+        "label": "embryonic stage"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00000052",
+          "label": "embryo"
+        }
+      ],
+      "associated_dataset": "VFBseq_00002844",
+      "assay_vfbseq_ids": [
+        "VFBseq_00002846"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00002847",
+      "sample_id": "control_stage5_Rep2",
+      "label": "whole embryo, 2.5 to 3.5 hours, mixed, Rep2",
+      "tissue_raw": "whole embryo",
+      "age_raw": "2.5 to 3.5 hours",
+      "genotype": "w[1118]",
+      "stock": null,
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00005289",
+        "label": "embryonic stage"
+      },
+      "sample_tissue": [
+        {
+          "fbbt_id": "FBbt:00000052",
+          "label": "embryo"
+        }
+      ],
+      "associated_dataset": "VFBseq_00002844",
+      "assay_vfbseq_ids": [
+        "VFBseq_00002848"
+      ],
+      "n_assays": 1
+    }
+  ],
+  "assays": [
+    {
+      "vfbseq_id": "VFBseq_00002846",
+      "library_id": "control_stage5_Rep1",
+      "accession": "ERX4267292",
+      "dbxrefs": [
+        "ERX4267292",
+        "SAMEA7039590"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00002845",
+      "associated_dataset": "VFBseq_00002844"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002848",
+      "library_id": "control_stage5_Rep2",
+      "accession": "ERX4267293",
+      "dbxrefs": [
+        "ERX4267293",
+        "SAMEA7039591"
+      ],
+      "n_sources": 1,
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00002847",
+      "associated_dataset": "VFBseq_00002844"
+    }
+  ],
+  "clusterings": [
+    {
+      "vfbseq_id": "VFBseq_00002849",
+      "subset": "embryo",
+      "associated_dataset": "VFBseq_00002844",
+      "name": "Ing-Simmons 2021 embryo clusters (controls)",
+      "samples": [
+        "VFBseq_00002845",
+        "VFBseq_00002847"
+      ]
+    }
+  ]
+}

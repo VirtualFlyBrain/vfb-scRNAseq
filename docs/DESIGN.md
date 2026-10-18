@@ -112,7 +112,8 @@ MAGE-TAB IDF + SDRF are fetched over HTTPS from the BioStudies FTP area (cached 
 `.cache/`) and grouped into Samples and Assays by config — `sample_columns` (the SDRF
 columns that define one biological sample), `assay_column` or `assay_regex` (the
 library / plate), `assay_xrefs` (ENA / BioSamples ids, only when single-valued per
-assay) and curated `sex_map` / `age_map` / `tissue_map` / `stock_map`. `sdrf_corrections`
+assay) and curated `sex_map` / `age_map` / `tissue_map` / `stock_map`. `sdrf_include`
+keeps only the SDRF rows with listed values (e.g. a study's control samples). `sdrf_corrections`
 records curator fixes to SDRF values that the paper contradicts (applied before grouping;
 the note is kept on each affected Sample as `curation_notes`). It writes the same
 `samples.json` as the GEO builder. A Sample may have several FBbt tissues. The `vfb:ArrayExpress`
@@ -1553,4 +1554,31 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-17.
   FBrf0245499 from VFB production; `verify_mappings.py` OK (26 FBbt terms); the FBbt /
   FBdv / FBcv terms on Samples, Assays and the Dataset current. Recorded in
   `provenance.json` (with the re-run's inputs and image).
+
+## Ing-Simmons 2021 (gastrulating embryos)
+
+Nat Genet 2021, PMID 33795866, FBrf0248615; ArrayExpress E-MTAB-9304 (`ing_simmons_2021`).
+10x scRNA-seq of whole embryos at 2.5-3.5 h after egg laying: two control replicates and
+embryos from gd7, Toll rm9/rm10 and Toll10B mutant mothers (uniform nuclear Dorsal: only
+dorsal ectoderm, neuroectoderm or mesoderm respectively). Replaces the old FlyBase/SCEA
+load FBlc0006191 (controls only, 9 types merged from the authors' labels) with fresh
+VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-18.
+
+- **Data.** The authors integrated all five libraries (Seurat 3.1.4, control replicate 1
+  as reference) and clustered them together: 15 clusters (16,790 cells; Fig. 2,
+  Supplementary Table 2). ArrayExpress has FASTQs only and the authors' code
+  (vaquerizaslab/Ing-Simmons_et_al_dorsoventral_3D_genome) saves no labels; SCEA's
+  "inferred cell type - authors labels" give the authors' cluster per cell (16,786 cells).
+- **Scope (curator):** controls only. The mutant embryos are fate-transformed, so their
+  cells would put non-wild-type cells into anatomical clusters. The authors' 15 clusters
+  are loaded, restricted to their control cells.
+- **Samples (stage 1):** `build_samples_from_arrayexpress.py` with `sdrf_include` (the two
+  control sources): 2 Samples / 2 Assays (one 10x library each; SDRF rows are lanes).
+  Stage *embryonic stage* (curator): 2.5-3.5 h at 25 C spans stage 5 (cellularisation)
+  and the gastrula stage (6-8), as the paper says ("cellular blastoderm and gastrulation
+  stages"); the SDRF's "stage 5 embryo" is too narrow, and no FBdv term covers stages 5-8
+  only. Tissue *embryo*; sex mixed (unset). Genotype: replicate 1 is Blythe & Wieschaus's
+  "yw; eGFP-PCNA" line (SDRF "w[*]; P{EGFP-PCNA}attP2"), FlyBase *PCNA[EGFP]*
+  (FBal0366828; no FlyBase stock or insertion), linked by `genotype_includes`; replicate 2
+  is w1118 (wild type). FlyBase curated no genetic entities for this paper. One Clustering.
 
