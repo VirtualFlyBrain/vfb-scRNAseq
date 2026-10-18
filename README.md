@@ -94,8 +94,9 @@ from FlyBase; that authority is being dropped.)
 - `projects/ing_simmons_2021/` — Ing-Simmons et al. 2021, gastrulating embryos (PMID
   33795866; [E-MTAB-9304](https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-9304)):
   10x, whole embryos at 2.5-3.5 h; controls only (the gd7 / Toll mutant embryos left out),
-  the authors' 15 clusters restricted to the control cells. Replaces the old FlyBase/SCEA
-  load (FBlc0006191). In progress.
+  the authors' 15 clusters restricted to the control cells: 13 loaded (embryonic germ-layer
+  and structure cell terms), 2 neural clusters held. Replaces the old FlyBase/SCEA load
+  (FBlc0006191).
 - `projects/hormann_2020/` — Hörmann et al. 2020, T4/T5 neurons through pupal
   development (PMID 32238425; [GSE147987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987)):
   FACS-sorted T4/T5 neurons at five pupal stages, one Clustering per stage of the
@@ -203,7 +204,7 @@ from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#genera
 
 ## Status
 
-All eleven projects are curated and built. Every mapped cluster has been reviewed (bar
+All twelve projects are curated and built. Every mapped cluster has been reviewed (bar
 three Kurmangaliyev early clusters awaiting FBbt #2216, below), and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the
