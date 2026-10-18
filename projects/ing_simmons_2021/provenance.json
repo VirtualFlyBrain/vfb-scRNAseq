@@ -1,0 +1,409 @@
+{
+  "project": "ing_simmons_2021",
+  "created_at": "2026-10-18",
+  "updated_at": "2026-10-18",
+  "summary": "Ing-Simmons et al. 2021 (Nat Genet), 10x scRNA-seq of whole embryos at 2.5-3.5 h after egg laying (ArrayExpress E-MTAB-9304); replaces the old FlyBase/SCEA load FBlc0006191 with fresh VFBseq ids. Controls only (the gd7 / Toll rm9/rm10 / Toll10B embryos of mutant mothers, fate-transformed, left out): 2 Samples / 2 Assays (embryonic stage; embryo; replicate 1 linked to PCNA[EGFP] by GENO has_genotype). One Clustering with the authors' 15 clusters (all genotypes integrated) restricted to their 7,739 control cells, from SCEA's per-cell author labels: 13 loaded (embryonic germ-layer and structure cell terms; the cellularisation clusters also at embryonic stage 5), 2 neural clusters held. Summary expression as CPM from SCEA's quantification (16,786 genes x 7,739 cells).",
+  "decisions": [
+    {
+      "date": "2026-10-08",
+      "by": "curator",
+      "decision": "Map to cell-level FBbt terms only (a tissue or organ author term maps to its cell-level equivalent, else the type is held)."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Clusters with no FBbt term are held: listed in mapping.tsv with a hold_reason but not loaded (no VFBseq id, entity or expression rows). Their cells still count towards the Dataset's gene counts."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Summary expression is computed as CPM for every dataset."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Narrow a generic type by the dissected tissue only where the tissue makes the tissue-specific FBbt term exact; hold clusters that could only be typed as cell or neuron (or stage-specific versions); load glia under a glial-cell term."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "Controls only: the two wild-type replicates. The embryos of gd7, Toll rm9/rm10 and Toll10B mothers are fate-transformed (a single dorsoventral fate), so their cells are left out; the authors' 15 clusters (made with all genotypes integrated) are loaded, restricted to their control cells."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "Samples at embryonic stage (FBdv:00005289): 2.5-3.5 h at 25 C spans stage 5 and the gastrula stage (6-8), the paper's 'cellular blastoderm and gastrulation stages'; the SDRF's 'stage 5 embryo' is too narrow. Tissue embryo; sex mixed (unset)."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "Genotype: replicate 1 ('yw; eGFP-PCNA' from Blythe & Wieschaus 2016; SDRF 'w[*]; P{EGFP-PCNA}attP2') is FlyBase PCNA[EGFP] (FBal0366828), with no FlyBase stock or insertion, so linked by genotype_includes; replicate 2 is w1118 (wild type). FlyBase curated no genetic entities for this paper."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "pipeline",
+      "decision": "Samples by build_samples_from_arrayexpress.py with sdrf_include (the two control sources): one Sample per SDRF source, one Assay per 10x library (the SDRF rows are lanes)."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "pipeline",
+      "decision": "Clusters by build_clusters.py from SCEA's per-cell 'inferred cell type - authors labels' (16,786 cells; the paper 16,790): one per author cluster, the control cells only; typed by the cell identity without the cluster number. ArrayExpress has FASTQs only and the authors' code saves no labels."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "Ectoderm / mesoderm to the germ-layer cell terms (somatic cell of ectoderm / mesoderm: the authors' words; most embryos in the window are gastrulating), not the anlage terms of the old load; cellularisation to somatic cell of stage 5 embryo with Cluster stage embryonic stage 5 (from the clusters' own expression, bnk / slam, the authors' reading); pole cells to embryonic pole cell; amnioserosa, terminal, haemocytes, trachea precursor to their embryonic cell terms."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "neural1 / neural2 held (no term): FBbt has no cell-level generic embryonic neural cell term, and embryonic neuroblast would go beyond the authors' typing (neural2's markers are neuronal)."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "pipeline",
+      "decision": "Expression from SCEA's quantification of E-MTAB-9304 (alevin aggregated filtered counts; the only count matrix; cell ids match the author labels), as CPM; FBgn ids mapped to current FlyBase genes (16,711 current, 76 secondary, 1 merge; 148 withdrawn and 1 split dropped)."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "All 15 mapping.tsv rows reviewed by the curator (mapping.tsv `reviewed`)."
+    }
+  ],
+  "checks": [
+    {
+      "date": "2026-10-18",
+      "check": "SCEA per-cell author labels against the paper.",
+      "result": "16,786 labelled cells in the 15 author clusters (the paper: 16,790); every cluster has control cells (7,739 in all)."
+    },
+    {
+      "date": "2026-10-18",
+      "check": "Cluster names against the authors' code (scRNA-seq_figures_PCNA-GFP.Rmd cluster_assignments) and Supplementary Table 2 markers.",
+      "result": "Names and cluster numbers agree; top markers fit (e.g. twi / Mdr49 mesoderm2, Ance / peb amnioserosa, pgc / nos pole cells, bnk / slam cellularisation)."
+    },
+    {
+      "date": "2026-10-18",
+      "check": "verify_mappings.py: every FBbt term in the mappings looked up in OLS (FBbt 2026-10-01).",
+      "result": "8 terms current, not obsolete, labels match."
+    },
+    {
+      "date": "2026-10-18",
+      "check": "FBbt, FBdv and FBcv terms on the Samples, Assays, Clusters and Dataset looked up in OLS.",
+      "result": "All current (embryonic stage, embryonic stage 5, embryo, single-cell RNA-Seq, 10x sequencing)."
+    },
+    {
+      "date": "2026-10-18",
+      "check": "Marker spot checks in the expression output.",
+      "result": "twi 0.92 in mesoderm2, Ance 0.94 in amnioserosa, pgc / nanos 0.95 in pole cells, fkh in terminal, slam in cellularisation2, Osi7 in trachea precursor, Apoltp / Tep4 in haemocytes2; PPO1 (~0.03) and Mlc2 (0.13) weak in this quantification."
+    }
+  ],
+  "people": [
+    {
+      "id": "ORCID:0000-0002-1373-1705",
+      "label": "Clare Pilgrim",
+      "role": "curator",
+      "username": "Clare72"
+    }
+  ],
+  "pipeline": {
+    "id": "vfb-scrnaseq",
+    "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
+    "version": "0.0.0",
+    "commit": "c20c47b",
+    "uncommitted_changes": true
+  },
+  "ontologies": [
+    {
+      "id": "FBbt",
+      "label": "Drosophila gross anatomy ontology",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBdv",
+      "label": "Drosophila developmental ontology",
+      "version": "2026-09-30",
+      "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-09-30/fbdv.owl",
+      "accessed_via": "OLS4 API; local fbdv.obo in .cache (stage definitions)",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBcv",
+      "label": "FlyBase controlled vocabulary",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-10-01/fbcv.owl",
+      "accessed_via": "OLS4 API",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "accessed_at": "2026-10-16"
+    }
+  ],
+  "data_sources": [
+    {
+      "id": "10.1038/s41588-021-00799-x",
+      "type": "publication",
+      "label": "Independence of chromatin conformation and gene regulation during Drosophila dorsoventral patterning",
+      "xrefs": [
+        "PMID:33795866",
+        "PMCID:PMC8035076",
+        "FlyBase:FBrf0248615"
+      ],
+      "description": "Ing-Simmons et al. 2021, Nat Genet. Full text read for the scope, samples, stocks, clustering and cluster identities; Supplementary Table 2 (cluster markers).",
+      "url": "https://doi.org/10.1038/s41588-021-00799-x",
+      "files": [
+        {
+          "path": "supp/PMC8035076.jats.xml",
+          "description": "JATS full text, NCBI efetch (db=pmc).",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=PMC8035076",
+          "sha256": "aa7ffec3b1c576ae7d5d0f0053722aaec734e5b8eeb5d80fd1d51620b25da975",
+          "bytes": 241333,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "supp/MOESM3.xlsx",
+          "description": "Supplementary Tables 1-4 (Table 2: cluster markers).",
+          "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41588-021-00799-x/MediaObjects/41588_2021_799_MOESM3_ESM.xlsx",
+          "sha256": "4f49a7682378cdf39efe8da412124392bc734c1598b9a6801f618446ed774e6a",
+          "bytes": 510265,
+          "accessed_at": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "E-MTAB-9304",
+      "type": "dataset",
+      "label": "Single-cell RNA-seq of Drosophila embryos to investigate gene expression during dorsal-ventral patterning",
+      "description": "ArrayExpress experiment: five 10x libraries (two controls, gd7, Toll rm9/rm10, Toll10B), FASTQs only; IDF and SDRF.",
+      "url": "https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-9304",
+      "accessed_at": "2026-10-18",
+      "files": [
+        {
+          "path": "ing_simmons/idf.txt",
+          "description": "IDF.",
+          "url": "https://ftp.ebi.ac.uk/biostudies/fire/E-MTAB-/304/E-MTAB-9304/Files/E-MTAB-9304.idf.txt",
+          "sha256": "a6069007e4777a9aaaa616fef40e016990cdffb6093a67c909ca5700ef8f961c",
+          "bytes": 4430,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "ing_simmons/sdrf.txt",
+          "description": "SDRF (samples, genotypes, libraries, lanes).",
+          "url": "https://ftp.ebi.ac.uk/biostudies/fire/E-MTAB-/304/E-MTAB-9304/Files/E-MTAB-9304.sdrf.txt",
+          "sha256": "ae47756c10e3512c65fb8b5e56c8a5adad4d72c60509664a7b77ce3afc1524c9",
+          "bytes": 21122,
+          "accessed_at": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "SCEA:E-MTAB-9304",
+      "type": "dataset",
+      "label": "Single Cell Expression Atlas E-MTAB-9304",
+      "description": "SCEA's processing of E-MTAB-9304: the experiment design (per-cell 'inferred cell type - authors labels') and the raw quantification (alevin aggregated filtered counts; .mtx / _cols / _rows gzipped here as matrix / barcodes / features).",
+      "url": "https://www.ebi.ac.uk/gxa/sc/experiments/E-MTAB-9304",
+      "accessed_at": "2026-10-18",
+      "files": [
+        {
+          "path": "ing_simmons/scea_design.tsv",
+          "description": "Experiment design (per-cell author labels).",
+          "url": "https://www.ebi.ac.uk/gxa/sc/experiment/E-MTAB-9304/download?fileType=experiment-design&accessKey=",
+          "sha256": "2bc4db0fd6e7460841deb5a942dc6180edd1fbd8b75acf87e337f44ecad7db5c",
+          "bytes": 31858845,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "ing_simmons/scea_raw/matrix.mtx.gz",
+          "description": "Raw counts (genes x cells).",
+          "url": "https://www.ebi.ac.uk/gxa/sc/experiment/E-MTAB-9304/download/zip?fileType=quantification-raw&accessKey=",
+          "sha256": "bd0028b67165c650239a52f913f8d7fa43e15a6a230837a7c97c920482d8b6fe",
+          "bytes": 266229024,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "ing_simmons/scea_raw/barcodes.tsv.gz",
+          "description": "Cell ids (<BioSample>-<barcode>).",
+          "url": "https://www.ebi.ac.uk/gxa/sc/experiment/E-MTAB-9304/download/zip?fileType=quantification-raw&accessKey=",
+          "sha256": "359769b89d604f40118c192a7ec1d5f2f845abb1965e6b08197cf375de211734",
+          "bytes": 512584,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "ing_simmons/scea_raw/features.tsv.gz",
+          "description": "Gene ids (FBgn).",
+          "url": "https://www.ebi.ac.uk/gxa/sc/experiment/E-MTAB-9304/download/zip?fileType=quantification-raw&accessKey=",
+          "sha256": "afe738f4bb44cc94f98647f66aa3402a8fe2bea0a904dd7471f4acf12bb923d2",
+          "bytes": 83207,
+          "accessed_at": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "vaquerizaslab/Ing-Simmons_et_al_dorsoventral_3D_genome",
+      "type": "author_files",
+      "label": "The authors' analysis code (GitHub; Zenodo 10.5281/zenodo.4272001)",
+      "description": "scRNA-seq Snakefile and the figures notebook (cluster numbers -> names); no per-cell labels saved.",
+      "url": "https://github.com/vaquerizaslab/Ing-Simmons_et_al_dorsoventral_3D_genome",
+      "accessed_at": "2026-10-18",
+      "files": [
+        {
+          "path": "ing_simmons/code/scRNA-seq_figures_PCNA-GFP.Rmd",
+          "description": "Integration, clustering and cluster names.",
+          "url": "https://github.com/vaquerizaslab/Ing-Simmons_et_al_dorsoventral_3D_genome/blob/HEAD/scrna-seq/scripts/scRNA-seq_figures_PCNA-GFP.Rmd",
+          "sha256": "7c24c5261509d1cfa36f98e01dec24c35e9f4bf7c698e0b98687b79c48a38bd2",
+          "bytes": 55939,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "ing_simmons/code/Snakefile",
+          "description": "Cell Ranger processing.",
+          "url": "https://github.com/vaquerizaslab/Ing-Simmons_et_al_dorsoventral_3D_genome/blob/HEAD/scrna-seq/Snakefile",
+          "sha256": "c7e0144156b9dde6fb671f92fcee636198c278c4f7d912065cab6148322d70ab",
+          "bytes": 6821,
+          "accessed_at": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "FBlc0006191",
+      "type": "previous_load",
+      "label": "scRNAseq_2021_IngSimmons",
+      "description": "The old FlyBase/SCEA load this project replaces (SCEA E-MTAB-9304; controls only, 9 types merged from the authors' labels, read from VFB production); used as a mapping cross-check.",
+      "url": "https://virtualflybrain.org/reports/FBlc0006191",
+      "accessed_at": "2026-10-18"
+    }
+  ],
+  "software": [
+    {
+      "id": "claude-code",
+      "type": "tool",
+      "label": "Claude Code",
+      "version": "2.1.301",
+      "description": "Agentic CLI that ran the session (orchestrator), stages 1-5."
+    },
+    {
+      "id": "ols4",
+      "type": "service",
+      "label": "OLS4 (Ontology Lookup Service)",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "accessed_at": "2026-10-16",
+      "description": "FBbt / FBdv / FBcv lookup during mapping (OLS MCP) and term verification."
+    },
+    {
+      "id": "vfb-pdb",
+      "type": "service",
+      "label": "VFB production (neo4j)",
+      "url": "https://pdb.virtualflybrain.org",
+      "accessed_at": "2026-10-16",
+      "description": "Publication FBrf0248615 resolved by PMID (vfb_scrnaseq.pub); the old load FBlc0006191 read for the cross-check."
+    },
+    {
+      "id": "flybase-chado",
+      "type": "service",
+      "label": "FlyBase Chado",
+      "version": "FB2026_03 (data last modified 2026-08-29)",
+      "url": "https://chado.flybase.org",
+      "accessed_at": "2026-10-16",
+      "description": "Genetic entities for the paper and for Blythe & Wieschaus 2016 (scripts/flybase_pub_entities.py), stock / insertion lookups, and FBgn ids mapped to current genes (update_gene_ids.py)."
+    },
+    {
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
+      "version": "2.5.1"
+    },
+    {
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
+      "version": "3.0.5"
+    },
+    {
+      "id": "pyyaml",
+      "type": "library",
+      "label": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
+      "version": "1.11.1",
+      "description": "linkml-validate and linkml-convert (flat RDF)."
+    },
+    {
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
+      "version": "1.11.1"
+    },
+    {
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
+      "version": "0.5.0",
+      "description": "Metadata OWL."
+    },
+    {
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
+      "version": "1.9.11",
+      "description": "OFN to OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "id": "psql",
+      "type": "tool",
+      "label": "psql",
+      "version": "14.15",
+      "description": "FlyBase Chado queries."
+    },
+    {
+      "id": "python",
+      "type": "language",
+      "label": "Python",
+      "version": "3.14.3",
+      "description": "Pipeline environment (uv-managed)."
+    },
+    {
+      "id": "ebi-arrayexpress",
+      "type": "service",
+      "label": "EMBL-EBI ArrayExpress / BioStudies",
+      "url": "https://www.ebi.ac.uk/biostudies/arrayexpress",
+      "accessed_at": "2026-10-18",
+      "description": "IDF / SDRF read by build_samples_from_arrayexpress.py."
+    },
+    {
+      "id": "scea",
+      "type": "service",
+      "label": "EMBL-EBI Single Cell Expression Atlas",
+      "url": "https://www.ebi.ac.uk/gxa/sc/experiments/E-MTAB-9304",
+      "accessed_at": "2026-10-18",
+      "description": "Per-cell author labels and raw quantification of E-MTAB-9304."
+    },
+    {
+      "id": "openpyxl",
+      "type": "library",
+      "label": "openpyxl",
+      "version": "3.1.5",
+      "description": "Reads Supplementary Table 2 (checks)."
+    }
+  ],
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "role": "orchestrator",
+      "label": "Claude Opus 5.5",
+      "provider": "Anthropic",
+      "description": "Main Claude Code session: scoping (paper, ArrayExpress, SCEA, the authors' code, the old load), sample and cluster builds, the type mappings, expression and builds. No subagents."
+    }
+  ]
+}

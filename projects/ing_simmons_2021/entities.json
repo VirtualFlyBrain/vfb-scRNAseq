@@ -1,0 +1,277 @@
+[
+  {
+    "type": "Publication",
+    "id": "FlyBase:FBrf0248615",
+    "neo_label": "pub"
+  },
+  {
+    "type": "Dataset",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "name": "scRNAseq data from Ing-Simmons (2021)",
+    "title": "Independence of chromatin conformation and gene regulation during Drosophila dorsoventral patterning",
+    "accession": "E-MTAB-9304",
+    "neo_label": "DataSet",
+    "site": "vfb:ArrayExpress",
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "assay_type": "FBcv:0009000",
+    "total_gene_count": 16178,
+    "filtered_gene_count": 6869,
+    "publication": "FlyBase:FBrf0248615"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002845",
+    "name": "whole embryo, 2.5 to 3.5 hours, mixed, w[*]; P{EGFP-PCNA}attP2, Rep1 (Ing-Simmons 2021)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002846"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00000052"
+    ],
+    "stage": "FBdv:00005289",
+    "genotype_includes": [
+      "FlyBase:FBal0366828"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002847",
+    "name": "whole embryo, 2.5 to 3.5 hours, mixed, Rep2 (Ing-Simmons 2021)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002848"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00000052"
+    ],
+    "stage": "FBdv:00005289"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002846",
+    "name": "whole embryo, 2.5 to 3.5 hours, mixed, w[*]; P{EGFP-PCNA}attP2, Rep1, 10x library (Ing-Simmons 2021)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002845"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "dbxref": [
+      "ERX4267292",
+      "SAMEA7039590"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002848",
+    "name": "whole embryo, 2.5 to 3.5 hours, mixed, Rep2, 10x library (Ing-Simmons 2021)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002847"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "dbxref": [
+      "ERX4267293",
+      "SAMEA7039591"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002849",
+    "name": "Ing-Simmons 2021 embryo clusters (controls)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002845",
+      "http://virtualflybrain.org/reports/VFBseq_00002847"
+    ]
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002850",
+    "name": "amnioserosa cluster (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "cell_number": 531,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059314"
+    ],
+    "total_gene_count": 11880,
+    "filtered_gene_count": 3366
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002851",
+    "name": "cellularisation cluster cellularisation1 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "cell_number": 933,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005311",
+    "cell_type": [
+      "FBbt:00059313"
+    ],
+    "total_gene_count": 10947,
+    "filtered_gene_count": 1056
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002852",
+    "name": "cellularisation cluster cellularisation2 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "cell_number": 565,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005311",
+    "cell_type": [
+      "FBbt:00059313"
+    ],
+    "total_gene_count": 11521,
+    "filtered_gene_count": 3478
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002853",
+    "name": "ectoderm cluster ectoderm1 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "cell_number": 1180,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059305"
+    ],
+    "total_gene_count": 12803,
+    "filtered_gene_count": 3222
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002854",
+    "name": "ectoderm cluster ectoderm2 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "cell_number": 775,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059305"
+    ],
+    "total_gene_count": 12932,
+    "filtered_gene_count": 4573
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002855",
+    "name": "ectoderm cluster ectoderm3 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "cell_number": 690,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059305"
+    ],
+    "total_gene_count": 13264,
+    "filtered_gene_count": 5403
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002856",
+    "name": "haemocyte cluster haemocytes1 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "cell_number": 220,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001684"
+    ],
+    "total_gene_count": 9985,
+    "filtered_gene_count": 2582
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002857",
+    "name": "haemocyte cluster haemocytes2 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "cell_number": 112,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001684"
+    ],
+    "total_gene_count": 9083,
+    "filtered_gene_count": 2089
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002858",
+    "name": "mesoderm cluster mesoderm1 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "cell_number": 903,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059307"
+    ],
+    "total_gene_count": 11945,
+    "filtered_gene_count": 2417
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002859",
+    "name": "mesoderm cluster mesoderm2 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "cell_number": 682,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059307"
+    ],
+    "total_gene_count": 12856,
+    "filtered_gene_count": 4803
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002860",
+    "name": "pole cell cluster pole cells (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "cell_number": 146,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053322"
+    ],
+    "total_gene_count": 9863,
+    "filtered_gene_count": 4621
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002861",
+    "name": "terminal cluster (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "cell_number": 235,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059312"
+    ],
+    "total_gene_count": 11085,
+    "filtered_gene_count": 4983
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002862",
+    "name": "trachea precursor cluster (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002849",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002844",
+    "cell_number": 72,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005041"
+    ],
+    "total_gene_count": 10131,
+    "filtered_gene_count": 4662
+  }
+]

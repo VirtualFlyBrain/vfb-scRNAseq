@@ -1,0 +1,739 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:RO="http://purl.obolibrary.org/obo/RO_"
+     xmlns:dc="http://purl.org/dc/terms/"
+     xmlns:BAO="http://www.bioassayontology.org/bao#BAO_"
+     xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
+     xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
+     xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vfb="http://virtualflybrain.org/reports/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:FBbt="http://purl.obolibrary.org/obo/FBbt_"
+     xmlns:FBcv="http://purl.obolibrary.org/obo/FBcv_"
+     xmlns:FBdv="http://purl.obolibrary.org/obo/FBdv_"
+     xmlns:GENO="http://purl.obolibrary.org/obo/GENO_"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:VFBseq="http://virtualflybrain.org/reports/VFBseq_"
+     xmlns:linkml="https://w3id.org/linkml/"
+     xmlns:FlyBase="http://flybase.org/reports/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:neo_custom="http://n2o.neo/custom/"
+     xmlns:neo_property="http://n2o.neo/property/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://n2o.neo/custom/accession -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/custom/accession"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_count -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/custom/cell_count"/>
+    
+
+
+    <!-- http://n2o.neo/custom/filtered_gene_count -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/custom/filtered_gene_count"/>
+    
+
+
+    <!-- http://n2o.neo/custom/total_gene_count -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/custom/total_gene_count"/>
+    
+
+
+    <!-- http://n2o.neo/property/nodeLabel -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/property/nodeLabel"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/licence -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/licence"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/references"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GENO_0000222 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/GENO_0000222"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002352 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002352"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002473"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002490 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002490"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000212 -->
+
+    <ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000212"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://flybase.org/reports/FBal0366828 -->
+
+    <Class rdf:about="http://flybase.org/reports/FBal0366828"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00000052 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00000052"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001684 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001684"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00005041 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005041"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00053322 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00053322"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059305 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059305"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059307 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059307"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059312 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059312"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059313 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059313"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059314 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059314"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003023 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003024 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003025 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009000 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009002 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009003 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009008 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00005289 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005289"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00005311 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005311"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://flybase.org/reports/FBrf0248615 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBrf0248615">
+        <neo_property:nodeLabel>pub</neo_property:nodeLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002844 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002844">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009000"/>
+            </Restriction>
+        </rdf:type>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6869</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16178</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
+        <obo:IAO_0000115>Independence of chromatin conformation and gene regulation during Drosophila dorsoventral patterning</obo:IAO_0000115>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dc:references rdf:resource="http://flybase.org/reports/FBrf0248615"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/ArrayExpress"/>
+        <rdfs:label>scRNAseq data from Ing-Simmons (2021)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/ArrayExpress"/>
+        <neo_custom:accession>E-MTAB-9304</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002845 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002845">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000222"/>
+                <someValuesFrom rdf:resource="http://flybase.org/reports/FBal0366828"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000052"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005289"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002846"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <rdfs:label>whole embryo, 2.5 to 3.5 hours, mixed, w[*]; P{EGFP-PCNA}attP2, Rep1 (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002846 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002846">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002845"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <oboInOwl:hasDbXref>ERX4267292</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SAMEA7039590</oboInOwl:hasDbXref>
+        <rdfs:label>whole embryo, 2.5 to 3.5 hours, mixed, w[*]; P{EGFP-PCNA}attP2, Rep1, 10x library (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002847 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002847">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000052"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005289"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002848"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <rdfs:label>whole embryo, 2.5 to 3.5 hours, mixed, Rep2 (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002848 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002848">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002847"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <oboInOwl:hasDbXref>ERX4267293</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SAMEA7039591</oboInOwl:hasDbXref>
+        <rdfs:label>whole embryo, 2.5 to 3.5 hours, mixed, Rep2, 10x library (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002849 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002849">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002845"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002847"/>
+        <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <rdfs:label>Ing-Simmons 2021 embryo clusters (controls)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002850 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002850">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059314"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002849"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">531</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3366</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11880</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <rdfs:label>amnioserosa cluster (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002851 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002851">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059313"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005311"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002849"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">933</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1056</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10947</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <rdfs:label>cellularisation cluster cellularisation1 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002852 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002852">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059313"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005311"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002849"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">565</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3478</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11521</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <rdfs:label>cellularisation cluster cellularisation2 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002853 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002853">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059305"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002849"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1180</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3222</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12803</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <rdfs:label>ectoderm cluster ectoderm1 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002854 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002854">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059305"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002849"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">775</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4573</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12932</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <rdfs:label>ectoderm cluster ectoderm2 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002855 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002855">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059305"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002849"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">690</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5403</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13264</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <rdfs:label>ectoderm cluster ectoderm3 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002856 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002856">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001684"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002849"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">220</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2582</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9985</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <rdfs:label>haemocyte cluster haemocytes1 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002857 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002857">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001684"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002849"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2089</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9083</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <rdfs:label>haemocyte cluster haemocytes2 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002858 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002858">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059307"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002849"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">903</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2417</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11945</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <rdfs:label>mesoderm cluster mesoderm1 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002859 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002859">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059307"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002849"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">682</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4803</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12856</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <rdfs:label>mesoderm cluster mesoderm2 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002860 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002860">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053322"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002849"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">146</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4621</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9863</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <rdfs:label>pole cell cluster pole cells (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002861 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002861">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059312"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002849"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">235</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4983</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11085</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <rdfs:label>terminal cluster (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002862 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002862">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005041"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002849"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4662</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10131</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002844"/>
+        <rdfs:label>trachea precursor cluster (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)</rdfs:label>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+
