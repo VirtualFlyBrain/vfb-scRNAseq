@@ -87,8 +87,10 @@ from FlyBase; that authority is being dropped.)
 - `projects/allen_2020/` — Allen et al. 2020, adult ventral nerve cord atlas (PMID
   32314735; [GSE141807](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE141807)):
   Drop-seq, 5-day-old females and males; the authors' 120 clusters, with per-cell
-  assignments recovered by re-running their published pipeline. Replaces the old
-  FlyBase/SCEA load (FBlc0005603). In progress.
+  assignments recovered by re-running their published pipeline: 120 clusters, 106 loaded
+  (hemilineage secondary neuron terms, with the authors' neurotransmitter class; Notch
+  classes for unseparated hemilineage pairs; neurotransmitter classes; glia, sperm).
+  Replaces the old FlyBase/SCEA load (FBlc0005603).
 - `projects/hormann_2020/` — Hörmann et al. 2020, T4/T5 neurons through pupal
   development (PMID 32238425; [GSE147987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987)):
   FACS-sorted T4/T5 neurons at five pupal stages, one Clustering per stage of the
@@ -195,7 +197,7 @@ from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#genera
 
 ## Status
 
-All ten projects are curated and built. Every mapped cluster has been reviewed (bar
+All eleven projects are curated and built. Every mapped cluster has been reviewed (bar
 three Kurmangaliyev early clusters awaiting FBbt #2216, below), and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the
