@@ -12,9 +12,19 @@
     "skos_mapping": "skos:broadMatch",
     "confidence": "high"
   },
-  "justification": "The authors' predicted hemilineage 10B (Figure 4). FBbt has no hemilineage 10B term; lineage 10's secondary neurons are its parent (the authors predict no 10A cells).",
+  "justification": "The authors' predicted hemilineage 10B (Figure 4). FBbt has no hemilineage 10B term; lineage 10's secondary neurons are its parent (the authors predict no 10A cells). Also the authors' neurotransmitter for this cluster (acetylcholine): adult cholinergic neuron (additional match).",
   "other_candidates": [],
   "recommendation": "Map to FBbt:00048899 lineage 10 secondary neuron (broad match).",
   "new_term_needed": false,
-  "verification_needed": false
+  "verification_needed": false,
+  "additional_matches": [
+    {
+      "fbbt_term": "adult cholinergic neuron",
+      "fbbt_id": "FBbt:00058205",
+      "fbbt_definition": "Any cholinergic neuron of the adult.",
+      "match_type": "broad match",
+      "skos_mapping": "skos:broadMatch",
+      "confidence": "high"
+    }
+  ]
 }

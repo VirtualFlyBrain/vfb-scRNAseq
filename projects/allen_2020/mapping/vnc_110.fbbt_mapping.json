@@ -1,14 +1,20 @@
 {
   "cluster_label": "vnc_110",
-  "working_definition": "Adult VNC cells the authors predict to be hemilineage 8A or 24B, not separated (Allen et al. 2020, Figure 1-source data 2).",
+  "working_definition": "Adult VNC cells of the authors' type hemilineages 8A/24B (Allen et al. 2020, Figure 1-source data 2), 5-day-old adults.",
   "searches_performed": [
-    "hemilineage 8A secondary neuron",
-    "hemilineage 24B secondary neuron"
+    "adult glutamatergic neuron"
   ],
-  "best_match": null,
-  "justification": "8A is a Notch ON and 24B a Notch OFF hemilineage: their only common parent is adult (secondary) neuron, which is not adequate. Held (curator 2026-10-18).",
+  "best_match": {
+    "fbbt_term": "adult glutamatergic neuron",
+    "fbbt_id": "FBbt:00058208",
+    "fbbt_definition": "Any glutamatergic neuron of the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors could not separate hemilineages 8A and 24B (Notch ON / OFF: no adequate common hemilineage class); all three clusters are glutamatergic (the authors' neurotransmitter call): adult glutamatergic neuron (curator 2026-10-18).",
   "other_candidates": [],
-  "recommendation": "Hold: no adequate FBbt term.",
+  "recommendation": "Map to FBbt:00058208 adult glutamatergic neuron (broad match).",
   "new_term_needed": false,
   "verification_needed": false
 }

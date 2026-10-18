@@ -12,9 +12,19 @@
     "skos_mapping": "skos:broadMatch",
     "confidence": "high"
   },
-  "justification": "The authors could not separate hemilineages 20A and 22A; both are Notch ON hemilineages: their common class.",
+  "justification": "The authors could not separate hemilineages 20A and 22A; both are Notch ON hemilineages: their common class. Also the authors' neurotransmitter for this cluster (acetylcholine): adult cholinergic neuron (additional match).",
   "other_candidates": [],
   "recommendation": "Map to FBbt:00049541 Notch ON hemilineage secondary neuron (broad match).",
   "new_term_needed": false,
-  "verification_needed": false
+  "verification_needed": false,
+  "additional_matches": [
+    {
+      "fbbt_term": "adult cholinergic neuron",
+      "fbbt_id": "FBbt:00058205",
+      "fbbt_definition": "Any cholinergic neuron of the adult.",
+      "match_type": "broad match",
+      "skos_mapping": "skos:broadMatch",
+      "confidence": "high"
+    }
+  ]
 }

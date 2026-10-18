@@ -12,9 +12,19 @@
     "skos_mapping": "skos:broadMatch",
     "confidence": "high"
   },
-  "justification": "The authors' predicted hemilineage 23B (Figure 4). FBbt has no hemilineage 23B term; lineage 23's secondary neurons are its parent (the authors predict no 23A cells).",
+  "justification": "The authors' predicted hemilineage 23B (Figure 4). FBbt has no hemilineage 23B term; lineage 23's secondary neurons are its parent (the authors predict no 23A cells). Also the authors' neurotransmitter for this cluster (acetylcholine): adult cholinergic neuron (additional match).",
   "other_candidates": [],
   "recommendation": "Map to FBbt:00048920 lineage 23 secondary neuron (broad match).",
   "new_term_needed": false,
-  "verification_needed": false
+  "verification_needed": false,
+  "additional_matches": [
+    {
+      "fbbt_term": "adult cholinergic neuron",
+      "fbbt_id": "FBbt:00058205",
+      "fbbt_definition": "Any cholinergic neuron of the adult.",
+      "match_type": "broad match",
+      "skos_mapping": "skos:broadMatch",
+      "confidence": "high"
+    }
+  ]
 }

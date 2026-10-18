@@ -12,9 +12,19 @@
     "skos_mapping": "skos:exactMatch",
     "confidence": "high"
   },
-  "justification": "The authors' predicted hemilineage 21A (lineage markers and fast-acting neurotransmitter, Figure 4): its secondary (postembryonic) neurons.",
+  "justification": "The authors' predicted hemilineage 21A (lineage markers and fast-acting neurotransmitter, Figure 4): its secondary (postembryonic) neurons. Also the authors' neurotransmitter for this cluster (glutamate): adult glutamatergic neuron (additional match).",
   "other_candidates": [],
   "recommendation": "Map to FBbt:00051459 hemilineage 21A secondary neuron (exact match).",
   "new_term_needed": false,
-  "verification_needed": false
+  "verification_needed": false,
+  "additional_matches": [
+    {
+      "fbbt_term": "adult glutamatergic neuron",
+      "fbbt_id": "FBbt:00058208",
+      "fbbt_definition": "Any glutamatergic neuron of the adult.",
+      "match_type": "broad match",
+      "skos_mapping": "skos:broadMatch",
+      "confidence": "high"
+    }
+  ]
 }

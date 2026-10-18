@@ -12,9 +12,19 @@
     "skos_mapping": "skos:exactMatch",
     "confidence": "high"
   },
-  "justification": "The authors' predicted hemilineage 4B (lineage markers and fast-acting neurotransmitter, Figure 4): its secondary (postembryonic) neurons.",
+  "justification": "The authors' predicted hemilineage 4B (lineage markers and fast-acting neurotransmitter, Figure 4): its secondary (postembryonic) neurons. Also the authors' neurotransmitter for this cluster (acetylcholine): adult cholinergic neuron (additional match).",
   "other_candidates": [],
   "recommendation": "Map to FBbt:00053311 hemilineage 4B secondary neuron (exact match).",
   "new_term_needed": false,
-  "verification_needed": false
+  "verification_needed": false,
+  "additional_matches": [
+    {
+      "fbbt_term": "adult cholinergic neuron",
+      "fbbt_id": "FBbt:00058205",
+      "fbbt_definition": "Any cholinergic neuron of the adult.",
+      "match_type": "broad match",
+      "skos_mapping": "skos:broadMatch",
+      "confidence": "high"
+    }
+  ]
 }
