@@ -97,6 +97,11 @@ from FlyBase; that authority is being dropped.)
   the authors' 15 clusters restricted to the control cells: 13 loaded (embryonic germ-layer
   and structure cell terms), 2 neural clusters held. Replaces the old FlyBase/SCEA load
   (FBlc0006191).
+- `projects/calderon_2022/` — Calderon et al. 2022, embryonic development 0-18 h (PMID
+  35926038; [GSE190147](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE190147)):
+  sci-RNA-seq3 of nuclei from 11 overlapping collection windows; the authors' clusters
+  in 2-hour windows of modelled nuclear age (9 windows, 268 clusters) and their neuronal
+  re-clusterings. Replaces the old FlyBase load (FBlc0007797). In progress.
 - `projects/hormann_2020/` — Hörmann et al. 2020, T4/T5 neurons through pupal
   development (PMID 32238425; [GSE147987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987)):
   FACS-sorted T4/T5 neurons at five pupal stages, one Clustering per stage of the
@@ -149,6 +154,7 @@ projects/allen_2020/                     # adult VNC (GEO DGE matrices; clusters
 projects/li_2017/                        # olfactory PNs (GEO per-cell samples; authors' repo assignments)
 projects/xie_2021/                       # olfactory PNs through development (GEO h5ads; reuses Li 2017 samples)
 projects/ing_simmons_2021/               # gastrulating embryos (ArrayExpress; SCEA author labels; controls only)
+projects/calderon_2022/                  # embryonic development (GEO; authors' portal Seurat objects via R)
 metadata/                                # VFB-loadable metadata OWL, one per project
 expression/                              # VFB-loadable expression OWL (.owl.gz), one per project
 id_registry/                             # minted-id registry (JSON)
