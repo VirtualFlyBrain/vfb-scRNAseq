@@ -84,6 +84,11 @@ from FlyBase; that authority is being dropped.)
   analyses, per stage): 118 author types per stage, 92 loaded (adult PN terms by lineage
   from 48 h; lineage classes at 0 h / 24 h until FBbt #2220); its 24 h cells are Li 2017's,
   whose Samples are reused.
+- `projects/allen_2020/` — Allen et al. 2020, adult ventral nerve cord atlas (PMID
+  32314735; [GSE141807](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE141807)):
+  Drop-seq, 5-day-old females and males; the authors' 120 clusters, with per-cell
+  assignments recovered by re-running their published pipeline. Replaces the old
+  FlyBase/SCEA load (FBlc0005603). In progress.
 - `projects/hormann_2020/` — Hörmann et al. 2020, T4/T5 neurons through pupal
   development (PMID 32238425; [GSE147987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987)):
   FACS-sorted T4/T5 neurons at five pupal stages, one Clustering per stage of the
@@ -132,6 +137,7 @@ projects/lu_2023_afca/                   # Aging Fly Cell Atlas (GEO + h5ad; reu
 projects/ozel_2021/                      # optic lobe developmental atlas (GEO + Seurat objects via R)
 projects/konstantinides_2022/            # larval optic lobe (GEO + Seurat object; SCEA author labels)
 projects/hormann_2020/                   # pupal T4/T5 neurons (GEO matrices; SCEA author labels)
+projects/allen_2020/                     # adult VNC (GEO DGE matrices; clusters by re-running the authors' Seurat 2 pipeline)
 projects/li_2017/                        # olfactory PNs (GEO per-cell samples; authors' repo assignments)
 projects/xie_2021/                       # olfactory PNs through development (GEO h5ads; reuses Li 2017 samples)
 metadata/                                # VFB-loadable metadata OWL, one per project
