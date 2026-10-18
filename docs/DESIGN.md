@@ -1511,4 +1511,13 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-17.
   cord*; sex from GEO. Genotype (a cross): Scer\GAL4[dsx.KI] (FlyBase's for the paper) and
   UAS-Stinger (Avic\GFP[Stinger.UAS.Tag:NLS(tra)], unambiguous); 13XLexAop2-IVS-tdTomato.nls
   not identifiable (and inert: no LexA driver). One Clustering.
+- **Clusters (stage 2):** `projects/allen_2020/build_clusters.py`: one entry per author
+  cluster (120; 26,768 cells; every size checked against Figure 1-source data 2), typed by
+  the most specific author call: the predicted hemilineage (68 clusters, e.g. "hemilineage
+  12B", "hemilineages 13A/19A"), else the neurotransmitter class (35), else the non-neuronal
+  cell type (glia, salivary gland, sperm, neuronal/glial); the table's other fields kept as
+  `author_*` (neurotransmitter, hemilineage, peptides, Hox). Held: 3 "undefined" clusters
+  and 7 typed only as neuron (`untyped`). The re-run scripts are committed in `rerun/`
+  (Dockerfile, rerun_clusters.R to the CCA checkpoint, align_chunk.R, cluster_aligned.R,
+  run_chunks.sh).
 
