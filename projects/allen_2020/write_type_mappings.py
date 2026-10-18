@@ -8,9 +8,13 @@ hemilineage, else the neurotransmitter class, else the non-neuronal cell type.
   where FBbt has no hemilineage term (10B, 15B, 16B, 23B; the authors predict none of
   these lineages' A hemilineages), the lineage's secondary neuron term, broad;
 - hemilineage pairs the authors could not separate: their common Notch class (13A/19A,
-  20A/22A Notch ON; 5B/6B Notch OFF), broad; 8A/24B (Notch ON / OFF) held, no term;
+  20A/22A Notch ON; 5B/6B Notch OFF), broad; 8A/24B (Notch ON / OFF, no common class) by
+  the authors' neurotransmitter, adult glutamatergic neuron, broad;
 - neurotransmitter classes: the adult class term (monoaminergic: adult aminergic neuron);
 - glia: adult CNS glial cell (curator); sperm: spermatozoon.
+
+The authors' neurotransmitter for hemilineage clusters is added per cluster afterwards
+(add_neurotransmitter_matches.py, after scripts/expand_type_mappings.py).
 
 Not added (curator 2026-10-18): neuromere terms from the authors' enriched Hox genes. The
 authors assign cells, not clusters, to neuromeres, approximately (Figure 3E), and per
@@ -60,6 +64,10 @@ OTHER = {   # author type: (FBbt id, match, justification)
                                                      "adult aminergic neuron (curator)."),
     "glia": ("FBbt:00100499", EXACT, "The authors' glial clusters (repo), adult VNC: adult CNS glial cell "
                                      "(curator; the authors do not subtype them)."),
+    "hemilineages 8A/24B": ("FBbt:00058208", BROAD, "The authors could not separate hemilineages 8A and 24B "
+                                                    "(Notch ON / OFF: no adequate common hemilineage class); all "
+                                                    "three clusters are glutamatergic (the authors' neurotransmitter "
+                                                    "call): adult glutamatergic neuron (curator 2026-10-18)."),
     "sperm": ("FBbt:00004954", EXACT, "The authors' sperm cluster (non-neuronal; carried over in dissection, "
                                       "mostly male cells)."),
 }
@@ -109,19 +117,7 @@ def main() -> None:
         assert f"lineage {n} " in term(fid)["fbbt_term"], fid
     for typ, (fid, match, why) in OTHER.items():
         mapped(typ, fid, match, why, term(fid)["fbbt_term"])
-    write("hemilineages 8A/24B", {
-        "working_definition": "Adult VNC cells the authors predict to be hemilineage 8A or 24B, not separated "
-                              "(Allen et al. 2020, Figure 1-source data 2).",
-        "searches_performed": ["hemilineage 8A secondary neuron", "hemilineage 24B secondary neuron"],
-        "best_match": None,
-        "justification": "8A is a Notch ON and 24B a Notch OFF hemilineage: their only common parent is "
-                         "adult (secondary) neuron, which is not adequate. Held (curator 2026-10-18).",
-        "other_candidates": [],
-        "recommendation": "Hold: no adequate FBbt term.",
-        "new_term_needed": False,
-        "verification_needed": False,
-    })
-    print(f"wrote {len(HEMILINEAGE) + len(LINEAGE) + len(OTHER) + 1} type mappings (8A/24B held)")
+    print(f"wrote {len(HEMILINEAGE) + len(LINEAGE) + len(OTHER)} type mappings")
 
 
 if __name__ == "__main__":

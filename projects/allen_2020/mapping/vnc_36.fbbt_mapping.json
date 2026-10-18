@@ -12,9 +12,19 @@
     "skos_mapping": "skos:broadMatch",
     "confidence": "high"
   },
-  "justification": "The authors' predicted hemilineage 15B (Figure 4). FBbt has no hemilineage 15B term; lineage 15's secondary neurons are its parent (the authors predict no 15A cells).",
+  "justification": "The authors' predicted hemilineage 15B (Figure 4). FBbt has no hemilineage 15B term; lineage 15's secondary neurons are its parent (the authors predict no 15A cells). Also the authors' neurotransmitter for this cluster (glutamate): adult glutamatergic neuron (additional match).",
   "other_candidates": [],
   "recommendation": "Map to FBbt:00048900 lineage 15 secondary neuron (broad match).",
   "new_term_needed": false,
-  "verification_needed": false
+  "verification_needed": false,
+  "additional_matches": [
+    {
+      "fbbt_term": "adult glutamatergic neuron",
+      "fbbt_id": "FBbt:00058208",
+      "fbbt_definition": "Any glutamatergic neuron of the adult.",
+      "match_type": "broad match",
+      "skos_mapping": "skos:broadMatch",
+      "confidence": "high"
+    }
+  ]
 }

@@ -12,9 +12,19 @@
     "skos_mapping": "skos:broadMatch",
     "confidence": "high"
   },
-  "justification": "The authors could not separate hemilineages 13A and 19A; both are Notch ON hemilineages: their common class.",
+  "justification": "The authors could not separate hemilineages 13A and 19A; both are Notch ON hemilineages: their common class. Also the authors' neurotransmitter for this cluster (GABA): adult GABAergic neuron (additional match).",
   "other_candidates": [],
   "recommendation": "Map to FBbt:00049541 Notch ON hemilineage secondary neuron (broad match).",
   "new_term_needed": false,
-  "verification_needed": false
+  "verification_needed": false,
+  "additional_matches": [
+    {
+      "fbbt_term": "adult GABAergic neuron",
+      "fbbt_id": "FBbt:00058207",
+      "fbbt_definition": "Any GABAergic neuron of the adult.",
+      "match_type": "broad match",
+      "skos_mapping": "skos:broadMatch",
+      "confidence": "high"
+    }
+  ]
 }
