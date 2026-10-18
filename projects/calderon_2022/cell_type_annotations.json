@@ -1,0 +1,6813 @@
+{
+  "source": {
+    "doi": "10.1126/science.abn5800",
+    "title": "The continuum of Drosophila embryonic development at single-cell resolution"
+  },
+  "dataset": {
+    "accession": "GSE190147",
+    "label_source": "the authors' clusters per modelled 2-hour window (NNv1 window Seurat objects, Table S1 manual annotations) and their neuronal re-clusterings (portal annotation files)",
+    "label_level": "author cluster",
+    "validate_against": "paper, Fig. 3 and Table S1"
+  },
+  "annotations": [
+    {
+      "label": "0_2h_0",
+      "type": "maternal",
+      "clustering": "0_2",
+      "clustering_name": "Calderon 2022 clusters, modelled age 0-2 h",
+      "source_cluster_id": "0",
+      "cell_number": 11349,
+      "cells_by_sample": {
+        "hrs_00_02": 7157,
+        "hrs_01_03": 4148,
+        "hrs_02_04": 3,
+        "hrs_03_07": 22,
+        "hrs_04_08": 4,
+        "hrs_06_10": 8,
+        "hrs_08_12": 4,
+        "hrs_10_14": 2,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "maternal",
+      "author_automated": "unknown",
+      "stage": {
+        "fbdv_id": "FBdv:00000054",
+        "label": "cleavage stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "0_2h_1",
+      "type": "maternal",
+      "clustering": "0_2",
+      "clustering_name": "Calderon 2022 clusters, modelled age 0-2 h",
+      "source_cluster_id": "1",
+      "cell_number": 10110,
+      "cells_by_sample": {
+        "hrs_00_02": 9613,
+        "hrs_01_03": 454,
+        "hrs_02_04": 10,
+        "hrs_03_07": 31,
+        "hrs_06_10": 2
+      },
+      "author_germ_layer": "maternal",
+      "author_automated": "maternal",
+      "stage": {
+        "fbdv_id": "FBdv:00000054",
+        "label": "cleavage stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "0_2h_2",
+      "type": "maternal",
+      "clustering": "0_2",
+      "clustering_name": "Calderon 2022 clusters, modelled age 0-2 h",
+      "source_cluster_id": "2",
+      "cell_number": 9764,
+      "cells_by_sample": {
+        "hrs_00_02": 598,
+        "hrs_01_03": 8852,
+        "hrs_02_04": 286,
+        "hrs_03_07": 20,
+        "hrs_04_08": 2,
+        "hrs_08_12": 5,
+        "hrs_12_16": 1
+      },
+      "author_germ_layer": "maternal",
+      "author_lineage": "Yolk_A",
+      "author_automated": "maternal",
+      "stage": {
+        "fbdv_id": "FBdv:00000054",
+        "label": "cleavage stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "0_2h_3",
+      "type": "maternal",
+      "clustering": "0_2",
+      "clustering_name": "Calderon 2022 clusters, modelled age 0-2 h",
+      "source_cluster_id": "3",
+      "cell_number": 9603,
+      "cells_by_sample": {
+        "hrs_00_02": 8667,
+        "hrs_01_03": 875,
+        "hrs_02_04": 5,
+        "hrs_03_07": 36,
+        "hrs_04_08": 8,
+        "hrs_06_10": 6,
+        "hrs_08_12": 4,
+        "hrs_10_14": 2
+      },
+      "author_germ_layer": "maternal",
+      "author_lineage": "Blastoderm_A",
+      "author_automated": "maternal",
+      "stage": {
+        "fbdv_id": "FBdv:00000054",
+        "label": "cleavage stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "0_2h_4",
+      "type": "maternal",
+      "clustering": "0_2",
+      "clustering_name": "Calderon 2022 clusters, modelled age 0-2 h",
+      "source_cluster_id": "4",
+      "cell_number": 9143,
+      "cells_by_sample": {
+        "hrs_00_02": 6700,
+        "hrs_01_03": 2403,
+        "hrs_02_04": 1,
+        "hrs_03_07": 20,
+        "hrs_04_08": 7,
+        "hrs_06_10": 5,
+        "hrs_08_12": 3,
+        "hrs_10_14": 2,
+        "hrs_12_16": 1,
+        "hrs_14_18": 1
+      },
+      "author_germ_layer": "maternal",
+      "author_automated": "maternal",
+      "stage": {
+        "fbdv_id": "FBdv:00000054",
+        "label": "cleavage stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "0_2h_5",
+      "type": "maternal",
+      "clustering": "0_2",
+      "clustering_name": "Calderon 2022 clusters, modelled age 0-2 h",
+      "source_cluster_id": "5",
+      "cell_number": 8903,
+      "cells_by_sample": {
+        "hrs_00_02": 6486,
+        "hrs_01_03": 2394,
+        "hrs_02_04": 4,
+        "hrs_03_07": 12,
+        "hrs_06_10": 4,
+        "hrs_08_12": 2,
+        "hrs_12_16": 1
+      },
+      "author_germ_layer": "maternal",
+      "author_automated": "maternal",
+      "stage": {
+        "fbdv_id": "FBdv:00000054",
+        "label": "cleavage stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "0_2h_6",
+      "type": "maternal",
+      "clustering": "0_2",
+      "clustering_name": "Calderon 2022 clusters, modelled age 0-2 h",
+      "source_cluster_id": "6",
+      "cell_number": 8391,
+      "cells_by_sample": {
+        "hrs_00_02": 6878,
+        "hrs_01_03": 1486,
+        "hrs_02_04": 5,
+        "hrs_03_07": 17,
+        "hrs_06_10": 3,
+        "hrs_10_14": 1,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "maternal",
+      "author_automated": "maternal",
+      "stage": {
+        "fbdv_id": "FBdv:00000054",
+        "label": "cleavage stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "0_2h_7",
+      "type": "maternal",
+      "clustering": "0_2",
+      "clustering_name": "Calderon 2022 clusters, modelled age 0-2 h",
+      "source_cluster_id": "7",
+      "cell_number": 7944,
+      "cells_by_sample": {
+        "hrs_00_02": 4578,
+        "hrs_01_03": 3333,
+        "hrs_02_04": 1,
+        "hrs_03_07": 15,
+        "hrs_04_08": 6,
+        "hrs_06_10": 2,
+        "hrs_08_12": 5,
+        "hrs_10_14": 1,
+        "hrs_12_16": 1,
+        "hrs_16_20": 2
+      },
+      "author_germ_layer": "maternal",
+      "author_automated": "maternal",
+      "stage": {
+        "fbdv_id": "FBdv:00000054",
+        "label": "cleavage stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "0_2h_8",
+      "type": "maternal",
+      "clustering": "0_2",
+      "clustering_name": "Calderon 2022 clusters, modelled age 0-2 h",
+      "source_cluster_id": "8",
+      "cell_number": 7387,
+      "cells_by_sample": {
+        "hrs_00_02": 1156,
+        "hrs_01_03": 6212,
+        "hrs_02_04": 4,
+        "hrs_03_07": 6,
+        "hrs_04_08": 1,
+        "hrs_08_12": 6,
+        "hrs_12_16": 1,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "maternal",
+      "author_automated": "maternal",
+      "stage": {
+        "fbdv_id": "FBdv:00000054",
+        "label": "cleavage stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "0_2h_9",
+      "type": "maternal",
+      "clustering": "0_2",
+      "clustering_name": "Calderon 2022 clusters, modelled age 0-2 h",
+      "source_cluster_id": "9",
+      "cell_number": 7029,
+      "cells_by_sample": {
+        "hrs_00_02": 2366,
+        "hrs_01_03": 4642,
+        "hrs_02_04": 7,
+        "hrs_03_07": 7,
+        "hrs_04_08": 1,
+        "hrs_06_10": 4,
+        "hrs_08_12": 2
+      },
+      "author_germ_layer": "maternal",
+      "author_automated": "maternal",
+      "stage": {
+        "fbdv_id": "FBdv:00000054",
+        "label": "cleavage stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "0_2h_10",
+      "type": "maternal",
+      "clustering": "0_2",
+      "clustering_name": "Calderon 2022 clusters, modelled age 0-2 h",
+      "source_cluster_id": "10",
+      "cell_number": 6813,
+      "cells_by_sample": {
+        "hrs_00_02": 6007,
+        "hrs_01_03": 766,
+        "hrs_02_04": 3,
+        "hrs_03_07": 15,
+        "hrs_04_08": 5,
+        "hrs_06_10": 7,
+        "hrs_08_12": 8,
+        "hrs_10_14": 1,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "maternal",
+      "author_automated": "maternal",
+      "stage": {
+        "fbdv_id": "FBdv:00000054",
+        "label": "cleavage stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "0_2h_11",
+      "type": "maternal",
+      "clustering": "0_2",
+      "clustering_name": "Calderon 2022 clusters, modelled age 0-2 h",
+      "source_cluster_id": "11",
+      "cell_number": 6516,
+      "cells_by_sample": {
+        "hrs_00_02": 5087,
+        "hrs_01_03": 1392,
+        "hrs_02_04": 11,
+        "hrs_03_07": 22,
+        "hrs_04_08": 1,
+        "hrs_06_10": 2,
+        "hrs_10_14": 1
+      },
+      "author_germ_layer": "maternal",
+      "author_automated": "maternal",
+      "stage": {
+        "fbdv_id": "FBdv:00000054",
+        "label": "cleavage stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "0_2h_12",
+      "type": "maternal",
+      "clustering": "0_2",
+      "clustering_name": "Calderon 2022 clusters, modelled age 0-2 h",
+      "source_cluster_id": "12",
+      "cell_number": 5477,
+      "cells_by_sample": {
+        "hrs_00_02": 339,
+        "hrs_01_03": 4721,
+        "hrs_02_04": 397,
+        "hrs_03_07": 12,
+        "hrs_04_08": 3,
+        "hrs_06_10": 2,
+        "hrs_08_12": 2,
+        "hrs_10_14": 1
+      },
+      "author_germ_layer": "maternal",
+      "author_lineage": "Ubi_0",
+      "author_automated": "maternal",
+      "stage": {
+        "fbdv_id": "FBdv:00000054",
+        "label": "cleavage stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "0_2h_13",
+      "type": "maternal",
+      "clustering": "0_2",
+      "clustering_name": "Calderon 2022 clusters, modelled age 0-2 h",
+      "source_cluster_id": "13",
+      "cell_number": 4826,
+      "cells_by_sample": {
+        "hrs_00_02": 1661,
+        "hrs_01_03": 3142,
+        "hrs_02_04": 2,
+        "hrs_03_07": 11,
+        "hrs_04_08": 4,
+        "hrs_06_10": 3,
+        "hrs_10_14": 2,
+        "hrs_14_18": 1
+      },
+      "author_germ_layer": "maternal",
+      "author_automated": "maternal",
+      "stage": {
+        "fbdv_id": "FBdv:00000054",
+        "label": "cleavage stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "0_2h_14",
+      "type": "maternal",
+      "clustering": "0_2",
+      "clustering_name": "Calderon 2022 clusters, modelled age 0-2 h",
+      "source_cluster_id": "14",
+      "cell_number": 4822,
+      "cells_by_sample": {
+        "hrs_00_02": 4723,
+        "hrs_01_03": 65,
+        "hrs_02_04": 10,
+        "hrs_03_07": 21,
+        "hrs_06_10": 2,
+        "hrs_08_12": 1
+      },
+      "author_germ_layer": "maternal",
+      "author_automated": "maternal",
+      "stage": {
+        "fbdv_id": "FBdv:00000054",
+        "label": "cleavage stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "0_2h_15",
+      "type": "maternal",
+      "clustering": "0_2",
+      "clustering_name": "Calderon 2022 clusters, modelled age 0-2 h",
+      "source_cluster_id": "15",
+      "cell_number": 4254,
+      "cells_by_sample": {
+        "hrs_00_02": 1391,
+        "hrs_01_03": 2852,
+        "hrs_02_04": 1,
+        "hrs_03_07": 3,
+        "hrs_06_10": 3,
+        "hrs_08_12": 3,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "maternal",
+      "author_automated": "maternal",
+      "stage": {
+        "fbdv_id": "FBdv:00000054",
+        "label": "cleavage stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "2_4h_0",
+      "type": "ectoderm anlage in statu nascendi",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "0",
+      "cell_number": 3264,
+      "cells_by_sample": {
+        "hrs_00_02": 4,
+        "hrs_01_03": 333,
+        "hrs_02_04": 2355,
+        "hrs_03_07": 525,
+        "hrs_04_08": 47
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_B",
+      "author_automated": "anlage in statu nascendi"
+    },
+    {
+      "label": "2_4h_1",
+      "type": "cellular blastoderm / pole cell",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "1",
+      "cell_number": 2624,
+      "cells_by_sample": {
+        "hrs_00_02": 498,
+        "hrs_01_03": 1976,
+        "hrs_02_04": 82,
+        "hrs_03_07": 36,
+        "hrs_04_08": 11,
+        "hrs_06_10": 13,
+        "hrs_08_12": 3,
+        "hrs_10_14": 1,
+        "hrs_12_16": 4
+      },
+      "author_germ_layer": "blastoderm / pole",
+      "author_automated": "ubiquitous"
+    },
+    {
+      "label": "2_4h_2",
+      "type": "ubiquitous",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "2",
+      "cell_number": 2552,
+      "cells_by_sample": {
+        "hrs_00_02": 14,
+        "hrs_01_03": 177,
+        "hrs_02_04": 2295,
+        "hrs_03_07": 50,
+        "hrs_04_08": 10,
+        "hrs_08_12": 2,
+        "hrs_12_16": 2,
+        "hrs_14_18": 1,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "unannotated": true
+    },
+    {
+      "label": "2_4h_3",
+      "type": "cellular blastoderm / pole cell",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "3",
+      "cell_number": 2466,
+      "cells_by_sample": {
+        "hrs_00_02": 1383,
+        "hrs_01_03": 918,
+        "hrs_02_04": 11,
+        "hrs_03_07": 69,
+        "hrs_04_08": 31,
+        "hrs_06_10": 23,
+        "hrs_08_12": 23,
+        "hrs_10_14": 4,
+        "hrs_12_16": 3,
+        "hrs_14_18": 1
+      },
+      "author_germ_layer": "blastoderm / pole",
+      "author_automated": "pole cell"
+    },
+    {
+      "label": "2_4h_4",
+      "type": "cellular blastoderm / pole cell",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "4",
+      "cell_number": 2201,
+      "cells_by_sample": {
+        "hrs_00_02": 413,
+        "hrs_01_03": 1671,
+        "hrs_02_04": 50,
+        "hrs_03_07": 33,
+        "hrs_04_08": 12,
+        "hrs_06_10": 8,
+        "hrs_08_12": 7,
+        "hrs_10_14": 2,
+        "hrs_12_16": 4,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "blastoderm / pole",
+      "author_automated": "pole cell"
+    },
+    {
+      "label": "2_4h_5",
+      "type": "cellular blastoderm / pole cell",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "5",
+      "cell_number": 2189,
+      "cells_by_sample": {
+        "hrs_00_02": 971,
+        "hrs_01_03": 998,
+        "hrs_02_04": 20,
+        "hrs_03_07": 98,
+        "hrs_04_08": 32,
+        "hrs_06_10": 29,
+        "hrs_08_12": 23,
+        "hrs_10_14": 9,
+        "hrs_12_16": 5,
+        "hrs_14_18": 1,
+        "hrs_16_20": 3
+      },
+      "author_germ_layer": "blastoderm / pole",
+      "author_lineage": "Blastoderm_A",
+      "author_automated": "ubiquitous"
+    },
+    {
+      "label": "2_4h_6",
+      "type": "ubiquitous",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "6",
+      "cell_number": 2118,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_02_04": 1749,
+        "hrs_03_07": 342,
+        "hrs_04_08": 25,
+        "hrs_08_12": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "unannotated": true
+    },
+    {
+      "label": "2_4h_7",
+      "type": "anlage in statu nascendi",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "7",
+      "cell_number": 1833,
+      "cells_by_sample": {
+        "hrs_01_03": 53,
+        "hrs_02_04": 1641,
+        "hrs_03_07": 132,
+        "hrs_04_08": 6,
+        "hrs_06_10": 1
+      },
+      "author_lineage": "Ubi_C",
+      "author_automated": "anlage in statu nascendi"
+    },
+    {
+      "label": "2_4h_8",
+      "type": "ubiquitous",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "8",
+      "cell_number": 1808,
+      "cells_by_sample": {
+        "hrs_01_03": 6,
+        "hrs_02_04": 1753,
+        "hrs_03_07": 45,
+        "hrs_04_08": 3,
+        "hrs_12_16": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "unannotated": true
+    },
+    {
+      "label": "2_4h_9",
+      "type": "ubiquitous",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "9",
+      "cell_number": 1677,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 16,
+        "hrs_02_04": 1600,
+        "hrs_03_07": 48,
+        "hrs_04_08": 9,
+        "hrs_08_12": 3
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_A",
+      "author_automated": "ubiquitous",
+      "unannotated": true
+    },
+    {
+      "label": "2_4h_10",
+      "type": "ubiquitous",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "10",
+      "cell_number": 1517,
+      "cells_by_sample": {
+        "hrs_01_03": 3,
+        "hrs_02_04": 1502,
+        "hrs_03_07": 12
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "unannotated": true
+    },
+    {
+      "label": "2_4h_11",
+      "type": "ubiquitous",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "11",
+      "cell_number": 1383,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 7,
+        "hrs_02_04": 1324,
+        "hrs_03_07": 47,
+        "hrs_04_08": 3,
+        "hrs_08_12": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "unannotated": true
+    },
+    {
+      "label": "2_4h_12",
+      "type": "ubiquitous",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "12",
+      "cell_number": 1255,
+      "cells_by_sample": {
+        "hrs_01_03": 5,
+        "hrs_02_04": 1227,
+        "hrs_03_07": 21,
+        "hrs_04_08": 2
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "unannotated": true
+    },
+    {
+      "label": "2_4h_13",
+      "type": "anlage in statu nascendi",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "13",
+      "cell_number": 990,
+      "cells_by_sample": {
+        "hrs_00_02": 2,
+        "hrs_01_03": 80,
+        "hrs_02_04": 750,
+        "hrs_03_07": 146,
+        "hrs_04_08": 12
+      },
+      "author_automated": "anlage in statu nascendi"
+    },
+    {
+      "label": "2_4h_14",
+      "type": "ubiquitous",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "14",
+      "cell_number": 582,
+      "cells_by_sample": {
+        "hrs_01_03": 2,
+        "hrs_02_04": 563,
+        "hrs_03_07": 14,
+        "hrs_04_08": 1,
+        "hrs_08_12": 2
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_D",
+      "author_automated": "ubiquitous",
+      "unannotated": true
+    },
+    {
+      "label": "2_4h_15",
+      "type": "ectoderm anlage",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "15",
+      "cell_number": 569,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 58,
+        "hrs_02_04": 438,
+        "hrs_03_07": 69,
+        "hrs_04_08": 3
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "anlage in statu nascendi"
+    },
+    {
+      "label": "2_4h_16",
+      "type": "yolk nuclei",
+      "clustering": "2_4",
+      "clustering_name": "Calderon 2022 clusters, modelled age 2-4 h",
+      "source_cluster_id": "16",
+      "cell_number": 480,
+      "cells_by_sample": {
+        "hrs_00_02": 5,
+        "hrs_01_03": 44,
+        "hrs_02_04": 320,
+        "hrs_03_07": 97,
+        "hrs_04_08": 14
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Yolk_A",
+      "author_automated": "anlage in statu nascendi"
+    },
+    {
+      "label": "4_6h_0",
+      "type": "ectoderm primordium",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "0",
+      "cell_number": 4329,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 27,
+        "hrs_02_04": 40,
+        "hrs_03_07": 2684,
+        "hrs_04_08": 1471,
+        "hrs_06_10": 89,
+        "hrs_08_12": 15,
+        "hrs_10_14": 1,
+        "hrs_14_18": 1
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BC",
+      "author_automated": "ventral ectoderm primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      }
+    },
+    {
+      "label": "4_6h_1",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "1",
+      "cell_number": 4073,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 4,
+        "hrs_02_04": 3,
+        "hrs_03_07": 1170,
+        "hrs_04_08": 2886,
+        "hrs_06_10": 2,
+        "hrs_08_12": 5,
+        "hrs_12_16": 1,
+        "hrs_14_18": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_D",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_2",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "2",
+      "cell_number": 3871,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 3599,
+        "hrs_04_08": 259,
+        "hrs_06_10": 7,
+        "hrs_08_12": 3,
+        "hrs_10_14": 1,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_3",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "3",
+      "cell_number": 3640,
+      "cells_by_sample": {
+        "hrs_00_02": 4,
+        "hrs_01_03": 7,
+        "hrs_02_04": 17,
+        "hrs_03_07": 2549,
+        "hrs_04_08": 1049,
+        "hrs_06_10": 11,
+        "hrs_10_14": 1,
+        "hrs_12_16": 1,
+        "hrs_14_18": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_4",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "4",
+      "cell_number": 3518,
+      "cells_by_sample": {
+        "hrs_00_02": 3,
+        "hrs_01_03": 24,
+        "hrs_02_04": 16,
+        "hrs_03_07": 1537,
+        "hrs_04_08": 1926,
+        "hrs_06_10": 6,
+        "hrs_08_12": 4,
+        "hrs_12_16": 1,
+        "hrs_14_18": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_AA",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_5",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "5",
+      "cell_number": 3512,
+      "cells_by_sample": {
+        "hrs_00_02": 2,
+        "hrs_01_03": 1,
+        "hrs_02_04": 6,
+        "hrs_03_07": 1728,
+        "hrs_04_08": 1756,
+        "hrs_06_10": 7,
+        "hrs_08_12": 7,
+        "hrs_14_18": 5
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_D",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_6",
+      "type": "ectoderm primordium",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "6",
+      "cell_number": 3457,
+      "cells_by_sample": {
+        "hrs_01_03": 26,
+        "hrs_02_04": 37,
+        "hrs_03_07": 2603,
+        "hrs_04_08": 727,
+        "hrs_06_10": 54,
+        "hrs_08_12": 6,
+        "hrs_10_14": 2,
+        "hrs_12_16": 1,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "procephalic ectoderm primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      }
+    },
+    {
+      "label": "4_6h_7",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "7",
+      "cell_number": 3204,
+      "cells_by_sample": {
+        "hrs_01_03": 6,
+        "hrs_02_04": 13,
+        "hrs_03_07": 2827,
+        "hrs_04_08": 346,
+        "hrs_06_10": 9,
+        "hrs_08_12": 2,
+        "hrs_14_18": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_8",
+      "type": "mesoderm primordium",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "8",
+      "cell_number": 3199,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 5,
+        "hrs_02_04": 19,
+        "hrs_03_07": 2361,
+        "hrs_04_08": 765,
+        "hrs_06_10": 44,
+        "hrs_08_12": 3,
+        "hrs_10_14": 1
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_BD",
+      "author_automated": "ventral ectoderm primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      }
+    },
+    {
+      "label": "4_6h_9",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "9",
+      "cell_number": 3196,
+      "cells_by_sample": {
+        "hrs_02_04": 1,
+        "hrs_03_07": 2806,
+        "hrs_04_08": 381,
+        "hrs_06_10": 8
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_10",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "10",
+      "cell_number": 3183,
+      "cells_by_sample": {
+        "hrs_03_07": 1710,
+        "hrs_04_08": 1468,
+        "hrs_06_10": 1,
+        "hrs_08_12": 2,
+        "hrs_14_18": 1,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_D",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_11",
+      "type": "ectoderm primordium",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "11",
+      "cell_number": 3149,
+      "cells_by_sample": {
+        "hrs_01_03": 29,
+        "hrs_02_04": 51,
+        "hrs_03_07": 2097,
+        "hrs_04_08": 915,
+        "hrs_06_10": 50,
+        "hrs_08_12": 3,
+        "hrs_10_14": 4
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "ventral ectoderm primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      }
+    },
+    {
+      "label": "4_6h_12",
+      "type": "peripheral nervous system primordium",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "12",
+      "cell_number": 3088,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 10,
+        "hrs_02_04": 22,
+        "hrs_03_07": 2226,
+        "hrs_04_08": 760,
+        "hrs_06_10": 61,
+        "hrs_08_12": 8
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CE",
+      "author_automated": "procephalic ectoderm primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      }
+    },
+    {
+      "label": "4_6h_13",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "13",
+      "cell_number": 3088,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 6,
+        "hrs_02_04": 14,
+        "hrs_03_07": 1278,
+        "hrs_04_08": 1782,
+        "hrs_06_10": 4,
+        "hrs_08_12": 1,
+        "hrs_14_18": 2
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_14",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "14",
+      "cell_number": 3051,
+      "cells_by_sample": {
+        "hrs_01_03": 3,
+        "hrs_02_04": 2,
+        "hrs_03_07": 806,
+        "hrs_04_08": 2237,
+        "hrs_06_10": 3
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_AC",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_15",
+      "type": "ectoderm primordium",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "15",
+      "cell_number": 2776,
+      "cells_by_sample": {
+        "hrs_01_03": 32,
+        "hrs_02_04": 54,
+        "hrs_03_07": 1829,
+        "hrs_04_08": 824,
+        "hrs_06_10": 31,
+        "hrs_08_12": 5,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BB",
+      "author_automated": "dorsal ectoderm primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      }
+    },
+    {
+      "label": "4_6h_16",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "16",
+      "cell_number": 2702,
+      "cells_by_sample": {
+        "hrs_03_07": 774,
+        "hrs_04_08": 1926,
+        "hrs_08_12": 1,
+        "hrs_12_16": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_D",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_17",
+      "type": "ectoderm primordium",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "17",
+      "cell_number": 2641,
+      "cells_by_sample": {
+        "hrs_01_03": 18,
+        "hrs_02_04": 31,
+        "hrs_03_07": 1851,
+        "hrs_04_08": 687,
+        "hrs_06_10": 47,
+        "hrs_08_12": 4,
+        "hrs_10_14": 2,
+        "hrs_14_18": 1
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BA",
+      "author_automated": "ventral ectoderm primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      }
+    },
+    {
+      "label": "4_6h_18",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "18",
+      "cell_number": 2621,
+      "cells_by_sample": {
+        "hrs_00_02": 4,
+        "hrs_01_03": 8,
+        "hrs_02_04": 3,
+        "hrs_03_07": 796,
+        "hrs_04_08": 1806,
+        "hrs_06_10": 1,
+        "hrs_08_12": 2,
+        "hrs_10_14": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_AB",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_19",
+      "type": "germ cell",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "19",
+      "cell_number": 2600,
+      "cells_by_sample": {
+        "hrs_00_02": 765,
+        "hrs_01_03": 579,
+        "hrs_02_04": 14,
+        "hrs_03_07": 649,
+        "hrs_04_08": 372,
+        "hrs_06_10": 96,
+        "hrs_08_12": 75,
+        "hrs_10_14": 23,
+        "hrs_12_16": 17,
+        "hrs_14_18": 4,
+        "hrs_16_20": 6
+      },
+      "author_germ_layer": "germ cell",
+      "author_lineage": "Blastoderm_AA",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      }
+    },
+    {
+      "label": "4_6h_20",
+      "type": "yolk nuclei",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "20",
+      "cell_number": 2595,
+      "cells_by_sample": {
+        "hrs_01_03": 14,
+        "hrs_02_04": 25,
+        "hrs_03_07": 1566,
+        "hrs_04_08": 925,
+        "hrs_06_10": 60,
+        "hrs_08_12": 4,
+        "hrs_14_18": 1
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Yolk_A",
+      "author_automated": "yolk nuclei",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      }
+    },
+    {
+      "label": "4_6h_21",
+      "type": "endoderm primordium",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "21",
+      "cell_number": 2451,
+      "cells_by_sample": {
+        "hrs_01_03": 12,
+        "hrs_02_04": 20,
+        "hrs_03_07": 1758,
+        "hrs_04_08": 598,
+        "hrs_06_10": 59,
+        "hrs_08_12": 1,
+        "hrs_10_14": 3
+      },
+      "author_germ_layer": "endoderm",
+      "author_lineage": "Ubi_CB",
+      "author_automated": "anterior endoderm primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      }
+    },
+    {
+      "label": "4_6h_22",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "22",
+      "cell_number": 2332,
+      "cells_by_sample": {
+        "hrs_01_03": 7,
+        "hrs_02_04": 26,
+        "hrs_03_07": 1926,
+        "hrs_04_08": 364,
+        "hrs_06_10": 5,
+        "hrs_08_12": 3,
+        "hrs_10_14": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_23",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "23",
+      "cell_number": 2216,
+      "cells_by_sample": {
+        "hrs_00_02": 4,
+        "hrs_01_03": 3,
+        "hrs_02_04": 3,
+        "hrs_03_07": 1303,
+        "hrs_04_08": 894,
+        "hrs_06_10": 7,
+        "hrs_08_12": 1,
+        "hrs_12_16": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_24",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "24",
+      "cell_number": 1744,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_02_04": 2,
+        "hrs_03_07": 1275,
+        "hrs_04_08": 461,
+        "hrs_06_10": 3,
+        "hrs_08_12": 1,
+        "hrs_14_18": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_CD",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_25",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "25",
+      "cell_number": 1703,
+      "cells_by_sample": {
+        "hrs_00_02": 2,
+        "hrs_01_03": 1,
+        "hrs_02_04": 3,
+        "hrs_03_07": 1438,
+        "hrs_04_08": 254,
+        "hrs_06_10": 3,
+        "hrs_08_12": 1,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_26",
+      "type": "ubiquitous",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "26",
+      "cell_number": 1430,
+      "cells_by_sample": {
+        "hrs_00_02": 2,
+        "hrs_01_03": 12,
+        "hrs_02_04": 20,
+        "hrs_03_07": 936,
+        "hrs_04_08": 452,
+        "hrs_06_10": 4,
+        "hrs_08_12": 2,
+        "hrs_14_18": 1,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "4_6h_27",
+      "type": "ventral nerve cord primordium",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "27",
+      "cell_number": 1218,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_02_04": 5,
+        "hrs_03_07": 925,
+        "hrs_04_08": 261,
+        "hrs_06_10": 22,
+        "hrs_08_12": 4
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CC",
+      "author_automated": "ventral nerve cord primordium P3",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      }
+    },
+    {
+      "label": "4_6h_28",
+      "type": "amnioserosa",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "28",
+      "cell_number": 1206,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 3,
+        "hrs_02_04": 7,
+        "hrs_03_07": 773,
+        "hrs_04_08": 389,
+        "hrs_06_10": 29,
+        "hrs_08_12": 4
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Ubi_CF",
+      "author_automated": "amnioserosa",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      }
+    },
+    {
+      "label": "4_6h_29",
+      "type": "tracheal primordium",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "29",
+      "cell_number": 1141,
+      "cells_by_sample": {
+        "hrs_01_03": 3,
+        "hrs_03_07": 824,
+        "hrs_04_08": 292,
+        "hrs_06_10": 15,
+        "hrs_08_12": 1,
+        "hrs_12_16": 3,
+        "hrs_14_18": 1,
+        "hrs_16_20": 2
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Blastoderm_AC",
+      "author_automated": "no staining",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      }
+    },
+    {
+      "label": "4_6h_30",
+      "type": "foregut / hindgut primordium",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "30",
+      "cell_number": 1098,
+      "cells_by_sample": {
+        "hrs_02_04": 7,
+        "hrs_03_07": 771,
+        "hrs_04_08": 304,
+        "hrs_06_10": 14,
+        "hrs_08_12": 1,
+        "hrs_10_14": 1
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_CA",
+      "author_automated": "dorsal ectoderm primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      }
+    },
+    {
+      "label": "4_6h_31",
+      "type": "yolk nuclei",
+      "clustering": "4_6",
+      "clustering_name": "Calderon 2022 clusters, modelled age 4-6 h",
+      "source_cluster_id": "31",
+      "cell_number": 594,
+      "cells_by_sample": {
+        "hrs_00_02": 3,
+        "hrs_01_03": 11,
+        "hrs_02_04": 24,
+        "hrs_03_07": 402,
+        "hrs_04_08": 150,
+        "hrs_08_12": 3,
+        "hrs_12_16": 1
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_automated": "yolk nuclei",
+      "stage": {
+        "fbdv_id": "FBdv:00005321",
+        "label": "extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_0",
+      "type": "germ cell",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "0",
+      "cell_number": 2674,
+      "cells_by_sample": {
+        "hrs_00_02": 136,
+        "hrs_01_03": 47,
+        "hrs_02_04": 6,
+        "hrs_03_07": 615,
+        "hrs_04_08": 561,
+        "hrs_06_10": 948,
+        "hrs_08_12": 289,
+        "hrs_10_14": 28,
+        "hrs_12_16": 25,
+        "hrs_14_18": 10,
+        "hrs_16_20": 9
+      },
+      "author_germ_layer": "germ cell",
+      "author_lineage": "Blastoderm_AA",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_1",
+      "type": "epidermis primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "1",
+      "cell_number": 2189,
+      "cells_by_sample": {
+        "hrs_01_03": 2,
+        "hrs_02_04": 1,
+        "hrs_03_07": 534,
+        "hrs_04_08": 563,
+        "hrs_06_10": 880,
+        "hrs_08_12": 197,
+        "hrs_10_14": 3,
+        "hrs_14_18": 8,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BCA",
+      "author_automated": "dorsal epidermis primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_2",
+      "type": "brain primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "2",
+      "cell_number": 2050,
+      "cells_by_sample": {
+        "hrs_00_02": 2,
+        "hrs_01_03": 5,
+        "hrs_02_04": 3,
+        "hrs_03_07": 312,
+        "hrs_04_08": 1346,
+        "hrs_06_10": 338,
+        "hrs_08_12": 34,
+        "hrs_10_14": 1,
+        "hrs_12_16": 1,
+        "hrs_14_18": 6,
+        "hrs_16_20": 2
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_AB",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_3",
+      "type": "brain primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "3",
+      "cell_number": 1959,
+      "cells_by_sample": {
+        "hrs_00_02": 2,
+        "hrs_02_04": 1,
+        "hrs_03_07": 217,
+        "hrs_04_08": 1303,
+        "hrs_06_10": 358,
+        "hrs_08_12": 51,
+        "hrs_10_14": 2,
+        "hrs_12_16": 1,
+        "hrs_14_18": 20,
+        "hrs_16_20": 4
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_D",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_4",
+      "type": "ubiquitous",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "4",
+      "cell_number": 1958,
+      "cells_by_sample": {
+        "hrs_00_02": 2,
+        "hrs_01_03": 1,
+        "hrs_02_04": 4,
+        "hrs_03_07": 612,
+        "hrs_04_08": 746,
+        "hrs_06_10": 528,
+        "hrs_08_12": 49,
+        "hrs_10_14": 3,
+        "hrs_12_16": 3,
+        "hrs_14_18": 8,
+        "hrs_16_20": 2
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_AA",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "6_8h_5",
+      "type": "trunk mesoderm primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "5",
+      "cell_number": 1906,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 423,
+        "hrs_04_08": 463,
+        "hrs_06_10": 898,
+        "hrs_08_12": 112,
+        "hrs_10_14": 3,
+        "hrs_12_16": 1,
+        "hrs_14_18": 2,
+        "hrs_16_20": 3
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_BDB",
+      "author_automated": "trunk mesoderm primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_6",
+      "type": "epidermis primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "6",
+      "cell_number": 1869,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 415,
+        "hrs_04_08": 347,
+        "hrs_06_10": 984,
+        "hrs_08_12": 114,
+        "hrs_10_14": 3,
+        "hrs_14_18": 5
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BA",
+      "author_automated": "dorsal epidermis primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_7",
+      "type": "yolk nuclei",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "7",
+      "cell_number": 1834,
+      "cells_by_sample": {
+        "hrs_00_02": 3,
+        "hrs_01_03": 1,
+        "hrs_02_04": 1,
+        "hrs_03_07": 478,
+        "hrs_04_08": 515,
+        "hrs_06_10": 712,
+        "hrs_08_12": 121,
+        "hrs_14_18": 1,
+        "hrs_16_20": 2
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Yolk_A",
+      "author_automated": "yolk nuclei",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_8",
+      "type": "brain primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "8",
+      "cell_number": 1691,
+      "cells_by_sample": {
+        "hrs_00_02": 2,
+        "hrs_03_07": 223,
+        "hrs_04_08": 894,
+        "hrs_06_10": 512,
+        "hrs_08_12": 50,
+        "hrs_10_14": 2,
+        "hrs_14_18": 5,
+        "hrs_16_20": 3
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_AC",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_9",
+      "type": "brain primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "9",
+      "cell_number": 1672,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 2,
+        "hrs_02_04": 2,
+        "hrs_03_07": 356,
+        "hrs_04_08": 441,
+        "hrs_06_10": 733,
+        "hrs_08_12": 128,
+        "hrs_10_14": 1,
+        "hrs_12_16": 2,
+        "hrs_14_18": 4,
+        "hrs_16_20": 2
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CC",
+      "author_automated": "brain primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_10",
+      "type": "sensory nervous system primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "10",
+      "cell_number": 1636,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_02_04": 1,
+        "hrs_03_07": 306,
+        "hrs_04_08": 283,
+        "hrs_06_10": 906,
+        "hrs_08_12": 132,
+        "hrs_10_14": 4,
+        "hrs_14_18": 2,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CEB",
+      "author_automated": "dorsal epidermis primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_11",
+      "type": "visceral muscle primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "11",
+      "cell_number": 1487,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 396,
+        "hrs_04_08": 362,
+        "hrs_06_10": 657,
+        "hrs_08_12": 63,
+        "hrs_10_14": 4,
+        "hrs_12_16": 1,
+        "hrs_14_18": 2,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_BDA",
+      "author_automated": "visceral muscle primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_12",
+      "type": "midgut primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "12",
+      "cell_number": 1258,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_02_04": 1,
+        "hrs_03_07": 262,
+        "hrs_04_08": 275,
+        "hrs_06_10": 620,
+        "hrs_08_12": 96,
+        "hrs_10_14": 2,
+        "hrs_14_18": 1
+      },
+      "author_germ_layer": "endoderm",
+      "author_lineage": "Ubi_CB",
+      "author_automated": "anterior midgut primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_13",
+      "type": "germ cell",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "13",
+      "cell_number": 1112,
+      "cells_by_sample": {
+        "hrs_00_02": 200,
+        "hrs_01_03": 201,
+        "hrs_02_04": 4,
+        "hrs_03_07": 184,
+        "hrs_04_08": 144,
+        "hrs_06_10": 219,
+        "hrs_08_12": 107,
+        "hrs_10_14": 27,
+        "hrs_12_16": 12,
+        "hrs_14_18": 4,
+        "hrs_16_20": 10
+      },
+      "author_germ_layer": "germ cell",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_14",
+      "type": "amnioserosa",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "14",
+      "cell_number": 1107,
+      "cells_by_sample": {
+        "hrs_01_03": 3,
+        "hrs_03_07": 218,
+        "hrs_04_08": 320,
+        "hrs_06_10": 495,
+        "hrs_08_12": 67,
+        "hrs_10_14": 3,
+        "hrs_14_18": 1
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Ubi_CF",
+      "author_automated": "amnioserosa",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_15",
+      "type": "epidermis primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "15",
+      "cell_number": 1093,
+      "cells_by_sample": {
+        "hrs_01_03": 2,
+        "hrs_03_07": 314,
+        "hrs_04_08": 358,
+        "hrs_06_10": 335,
+        "hrs_08_12": 73,
+        "hrs_10_14": 1,
+        "hrs_12_16": 1,
+        "hrs_14_18": 4,
+        "hrs_16_20": 5
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "dorsal epidermis primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_16",
+      "type": "epidermis primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "16",
+      "cell_number": 1016,
+      "cells_by_sample": {
+        "hrs_03_07": 243,
+        "hrs_04_08": 220,
+        "hrs_06_10": 471,
+        "hrs_08_12": 80,
+        "hrs_10_14": 2
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BB",
+      "author_automated": "ventral epidermis primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_17",
+      "type": "brain primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "17",
+      "cell_number": 915,
+      "cells_by_sample": {
+        "hrs_02_04": 2,
+        "hrs_03_07": 207,
+        "hrs_04_08": 191,
+        "hrs_06_10": 448,
+        "hrs_08_12": 65,
+        "hrs_10_14": 1,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CE",
+      "author_automated": "ventral epidermis primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_18",
+      "type": "ubiquitous",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "18",
+      "cell_number": 864,
+      "cells_by_sample": {
+        "hrs_03_07": 33,
+        "hrs_04_08": 89,
+        "hrs_06_10": 733,
+        "hrs_08_12": 7,
+        "hrs_14_18": 2
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_CDB",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "6_8h_19",
+      "type": "foregut / hindgut primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "19",
+      "cell_number": 760,
+      "cells_by_sample": {
+        "hrs_02_04": 1,
+        "hrs_03_07": 155,
+        "hrs_04_08": 196,
+        "hrs_06_10": 361,
+        "hrs_08_12": 44,
+        "hrs_10_14": 3
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_CA",
+      "author_automated": "dorsal epidermis primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_20",
+      "type": "tracheal primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "20",
+      "cell_number": 710,
+      "cells_by_sample": {
+        "hrs_01_03": 2,
+        "hrs_03_07": 354,
+        "hrs_04_08": 198,
+        "hrs_06_10": 121,
+        "hrs_08_12": 18,
+        "hrs_10_14": 5,
+        "hrs_12_16": 3,
+        "hrs_14_18": 4,
+        "hrs_16_20": 5
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Blastoderm_AC",
+      "author_automated": "tracheal primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_21",
+      "type": "salivary gland primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "21",
+      "cell_number": 498,
+      "cells_by_sample": {
+        "hrs_03_07": 97,
+        "hrs_04_08": 69,
+        "hrs_06_10": 302,
+        "hrs_08_12": 29,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_CBB",
+      "author_automated": "dorsal epidermis primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_22",
+      "type": "trunk mesoderm primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "22",
+      "cell_number": 334,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 1,
+        "hrs_03_07": 201,
+        "hrs_04_08": 75,
+        "hrs_06_10": 44,
+        "hrs_08_12": 3,
+        "hrs_10_14": 3,
+        "hrs_12_16": 1,
+        "hrs_14_18": 2,
+        "hrs_16_20": 3
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_CDA",
+      "author_automated": "anterior midgut primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_23",
+      "type": "unknown",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "23",
+      "cell_number": 256,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 119,
+        "hrs_04_08": 78,
+        "hrs_06_10": 33,
+        "hrs_08_12": 11,
+        "hrs_10_14": 1,
+        "hrs_12_16": 5,
+        "hrs_14_18": 3,
+        "hrs_16_20": 5
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Blastoderm_AB",
+      "author_automated": "posterior midgut primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "6_8h_24",
+      "type": "midline primordium",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "24",
+      "cell_number": 233,
+      "cells_by_sample": {
+        "hrs_03_07": 27,
+        "hrs_04_08": 36,
+        "hrs_06_10": 126,
+        "hrs_08_12": 41,
+        "hrs_10_14": 2,
+        "hrs_14_18": 1
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_BCB",
+      "author_automated": "midline primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "6_8h_25",
+      "type": "unknown",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "25",
+      "cell_number": 129,
+      "cells_by_sample": {
+        "hrs_00_02": 2,
+        "hrs_01_03": 1,
+        "hrs_03_07": 57,
+        "hrs_04_08": 28,
+        "hrs_06_10": 23,
+        "hrs_08_12": 6,
+        "hrs_10_14": 3,
+        "hrs_14_18": 2,
+        "hrs_16_20": 7
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "no staining",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "6_8h_26",
+      "type": "unknown",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "26",
+      "cell_number": 120,
+      "cells_by_sample": {
+        "hrs_03_07": 59,
+        "hrs_04_08": 39,
+        "hrs_06_10": 19,
+        "hrs_08_12": 1,
+        "hrs_10_14": 1,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "yolk nuclei",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "6_8h_27",
+      "type": "Malpighian tubule",
+      "clustering": "6_8",
+      "clustering_name": "Calderon 2022 clusters, modelled age 6-8 h",
+      "source_cluster_id": "27",
+      "cell_number": 82,
+      "cells_by_sample": {
+        "hrs_03_07": 43,
+        "hrs_04_08": 29,
+        "hrs_06_10": 7,
+        "hrs_08_12": 1,
+        "hrs_10_14": 1,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "posterior midgut primordium",
+      "stage": {
+        "fbdv_id": "FBdv:00004450",
+        "label": "late extended germ band stage"
+      }
+    },
+    {
+      "label": "8_10h_0",
+      "type": "germ cell",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "0",
+      "cell_number": 4233,
+      "cells_by_sample": {
+        "hrs_00_02": 134,
+        "hrs_01_03": 81,
+        "hrs_02_04": 2,
+        "hrs_03_07": 213,
+        "hrs_04_08": 233,
+        "hrs_06_10": 1512,
+        "hrs_08_12": 1570,
+        "hrs_10_14": 232,
+        "hrs_12_16": 102,
+        "hrs_14_18": 102,
+        "hrs_16_20": 52
+      },
+      "author_lineage": "Blastoderm_AA",
+      "author_automated": "ubiquitous"
+    },
+    {
+      "label": "8_10h_1",
+      "type": "epidermis primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "1",
+      "cell_number": 3764,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_03_07": 62,
+        "hrs_04_08": 65,
+        "hrs_06_10": 1448,
+        "hrs_08_12": 2117,
+        "hrs_10_14": 27,
+        "hrs_12_16": 5,
+        "hrs_14_18": 39
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BCA",
+      "author_automated": "dorsal epidermis primordium"
+    },
+    {
+      "label": "8_10h_2",
+      "type": "yolk nuclei",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "2",
+      "cell_number": 3513,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_02_04": 1,
+        "hrs_03_07": 63,
+        "hrs_04_08": 72,
+        "hrs_06_10": 1254,
+        "hrs_08_12": 2080,
+        "hrs_10_14": 25,
+        "hrs_12_16": 3,
+        "hrs_14_18": 12,
+        "hrs_16_20": 2
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Yolk_AB",
+      "author_automated": "yolk nuclei"
+    },
+    {
+      "label": "8_10h_3",
+      "type": "brain primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "3",
+      "cell_number": 3483,
+      "cells_by_sample": {
+        "hrs_03_07": 39,
+        "hrs_04_08": 38,
+        "hrs_06_10": 1316,
+        "hrs_08_12": 2034,
+        "hrs_10_14": 22,
+        "hrs_12_16": 3,
+        "hrs_14_18": 26,
+        "hrs_16_20": 5
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_BCAA",
+      "author_automated": "brain primordium"
+    },
+    {
+      "label": "8_10h_4",
+      "type": "brain primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "4",
+      "cell_number": 3455,
+      "cells_by_sample": {
+        "hrs_00_02": 10,
+        "hrs_01_03": 2,
+        "hrs_03_07": 16,
+        "hrs_04_08": 47,
+        "hrs_06_10": 1165,
+        "hrs_08_12": 2176,
+        "hrs_10_14": 9,
+        "hrs_12_16": 2,
+        "hrs_14_18": 23,
+        "hrs_16_20": 5
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_AC",
+      "author_automated": "ubiquitous"
+    },
+    {
+      "label": "8_10h_5",
+      "type": "somatic muscle primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "5",
+      "cell_number": 3108,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 24,
+        "hrs_04_08": 26,
+        "hrs_06_10": 1098,
+        "hrs_08_12": 1904,
+        "hrs_10_14": 16,
+        "hrs_12_16": 3,
+        "hrs_14_18": 34,
+        "hrs_16_20": 2
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_BDB",
+      "author_automated": "somatic muscle primordium"
+    },
+    {
+      "label": "8_10h_6",
+      "type": "amnioserosa",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "6",
+      "cell_number": 3099,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_02_04": 2,
+        "hrs_03_07": 24,
+        "hrs_04_08": 42,
+        "hrs_06_10": 985,
+        "hrs_08_12": 2000,
+        "hrs_10_14": 21,
+        "hrs_12_16": 4,
+        "hrs_14_18": 19,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Ubi_CF",
+      "author_automated": "amnioserosa"
+    },
+    {
+      "label": "8_10h_7",
+      "type": "visceral muscle primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "7",
+      "cell_number": 3019,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_03_07": 19,
+        "hrs_04_08": 22,
+        "hrs_06_10": 1150,
+        "hrs_08_12": 1786,
+        "hrs_10_14": 15,
+        "hrs_12_16": 3,
+        "hrs_14_18": 21,
+        "hrs_16_20": 2
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_BDAB",
+      "author_automated": "visceral muscle primordium"
+    },
+    {
+      "label": "8_10h_8",
+      "type": "peripheral nervous system",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "8",
+      "cell_number": 2940,
+      "cells_by_sample": {
+        "hrs_03_07": 25,
+        "hrs_04_08": 27,
+        "hrs_06_10": 1237,
+        "hrs_08_12": 1615,
+        "hrs_10_14": 13,
+        "hrs_12_16": 5,
+        "hrs_14_18": 18
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_automated": "dorsal epidermis primordium"
+    },
+    {
+      "label": "8_10h_9",
+      "type": "ubiquitous",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "9",
+      "cell_number": 2841,
+      "cells_by_sample": {
+        "hrs_00_02": 19,
+        "hrs_03_07": 1,
+        "hrs_04_08": 9,
+        "hrs_06_10": 755,
+        "hrs_08_12": 2037,
+        "hrs_10_14": 4,
+        "hrs_14_18": 15,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_CDBD",
+      "author_automated": "ubiquitous",
+      "unannotated": true
+    },
+    {
+      "label": "8_10h_10",
+      "type": "germ cell",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "10",
+      "cell_number": 2472,
+      "cells_by_sample": {
+        "hrs_00_02": 43,
+        "hrs_01_03": 10,
+        "hrs_03_07": 73,
+        "hrs_04_08": 95,
+        "hrs_06_10": 1170,
+        "hrs_08_12": 876,
+        "hrs_10_14": 95,
+        "hrs_12_16": 41,
+        "hrs_14_18": 48,
+        "hrs_16_20": 21
+      },
+      "author_automated": "ubiquitous"
+    },
+    {
+      "label": "8_10h_11",
+      "type": "epidermis primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "11",
+      "cell_number": 2470,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_03_07": 8,
+        "hrs_04_08": 16,
+        "hrs_06_10": 1002,
+        "hrs_08_12": 1415,
+        "hrs_10_14": 7,
+        "hrs_12_16": 1,
+        "hrs_14_18": 16,
+        "hrs_16_20": 4
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_AA",
+      "author_automated": "dorsal epidermis primordium"
+    },
+    {
+      "label": "8_10h_12",
+      "type": "hindgut primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "12",
+      "cell_number": 2432,
+      "cells_by_sample": {
+        "hrs_00_02": 3,
+        "hrs_03_07": 16,
+        "hrs_04_08": 24,
+        "hrs_06_10": 904,
+        "hrs_08_12": 1449,
+        "hrs_10_14": 15,
+        "hrs_12_16": 4,
+        "hrs_14_18": 16,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_CA",
+      "author_automated": "ventral epidermis primordium"
+    },
+    {
+      "label": "8_10h_13",
+      "type": "ubiquitous",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "13",
+      "cell_number": 2402,
+      "cells_by_sample": {
+        "hrs_00_02": 6,
+        "hrs_03_07": 1,
+        "hrs_06_10": 940,
+        "hrs_08_12": 1446,
+        "hrs_10_14": 1,
+        "hrs_14_18": 8
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_CDBC",
+      "author_automated": "ubiquitous",
+      "unannotated": true
+    },
+    {
+      "label": "8_10h_14",
+      "type": "epidermis primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "14",
+      "cell_number": 2370,
+      "cells_by_sample": {
+        "hrs_03_07": 19,
+        "hrs_04_08": 28,
+        "hrs_06_10": 1007,
+        "hrs_08_12": 1284,
+        "hrs_10_14": 17,
+        "hrs_12_16": 2,
+        "hrs_14_18": 13
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "dorsal epidermis primordium"
+    },
+    {
+      "label": "8_10h_15",
+      "type": "epidermis primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "15",
+      "cell_number": 2294,
+      "cells_by_sample": {
+        "hrs_00_02": 12,
+        "hrs_03_07": 8,
+        "hrs_04_08": 2,
+        "hrs_06_10": 581,
+        "hrs_08_12": 1666,
+        "hrs_10_14": 3,
+        "hrs_12_16": 2,
+        "hrs_14_18": 19,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "ubiquitous"
+    },
+    {
+      "label": "8_10h_16",
+      "type": "brain primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "16",
+      "cell_number": 2217,
+      "cells_by_sample": {
+        "hrs_03_07": 31,
+        "hrs_04_08": 42,
+        "hrs_06_10": 859,
+        "hrs_08_12": 1253,
+        "hrs_10_14": 10,
+        "hrs_12_16": 5,
+        "hrs_14_18": 14,
+        "hrs_16_20": 3
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_automated": "brain primordium"
+    },
+    {
+      "label": "8_10h_17",
+      "type": "unknown",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "17",
+      "cell_number": 2093,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_02_04": 1,
+        "hrs_03_07": 19,
+        "hrs_04_08": 32,
+        "hrs_06_10": 957,
+        "hrs_08_12": 1059,
+        "hrs_10_14": 6,
+        "hrs_12_16": 1,
+        "hrs_14_18": 13,
+        "hrs_16_20": 4
+      },
+      "author_germ_layer": "unknown",
+      "unannotated": true
+    },
+    {
+      "label": "8_10h_18",
+      "type": "peripheral nervous system",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "18",
+      "cell_number": 2089,
+      "cells_by_sample": {
+        "hrs_03_07": 22,
+        "hrs_04_08": 21,
+        "hrs_06_10": 715,
+        "hrs_08_12": 1317,
+        "hrs_10_14": 3,
+        "hrs_12_16": 3,
+        "hrs_14_18": 8
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CEB",
+      "author_automated": "dorsal epidermis primordium"
+    },
+    {
+      "label": "8_10h_19",
+      "type": "brain primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "19",
+      "cell_number": 2075,
+      "cells_by_sample": {
+        "hrs_03_07": 7,
+        "hrs_04_08": 12,
+        "hrs_06_10": 848,
+        "hrs_08_12": 1172,
+        "hrs_10_14": 20,
+        "hrs_12_16": 4,
+        "hrs_14_18": 12
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CE",
+      "author_automated": "ventral epidermis primordium"
+    },
+    {
+      "label": "8_10h_20",
+      "type": "midgut primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "20",
+      "cell_number": 2064,
+      "cells_by_sample": {
+        "hrs_03_07": 27,
+        "hrs_04_08": 22,
+        "hrs_06_10": 798,
+        "hrs_08_12": 1186,
+        "hrs_10_14": 19,
+        "hrs_12_16": 2,
+        "hrs_14_18": 10
+      },
+      "author_germ_layer": "endoderm",
+      "author_lineage": "Ubi_CB",
+      "author_automated": "anterior midgut primordium"
+    },
+    {
+      "label": "8_10h_21",
+      "type": "ubiquitous",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "21",
+      "cell_number": 2006,
+      "cells_by_sample": {
+        "hrs_00_02": 14,
+        "hrs_01_03": 1,
+        "hrs_03_07": 3,
+        "hrs_04_08": 7,
+        "hrs_06_10": 533,
+        "hrs_08_12": 1431,
+        "hrs_10_14": 5,
+        "hrs_12_16": 1,
+        "hrs_14_18": 9,
+        "hrs_16_20": 2
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "unannotated": true
+    },
+    {
+      "label": "8_10h_22",
+      "type": "procrystal cell",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "22",
+      "cell_number": 1909,
+      "cells_by_sample": {
+        "hrs_00_02": 3,
+        "hrs_03_07": 1,
+        "hrs_04_08": 5,
+        "hrs_06_10": 714,
+        "hrs_08_12": 1163,
+        "hrs_10_14": 12,
+        "hrs_12_16": 6,
+        "hrs_14_18": 4,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_CDBB",
+      "author_automated": "brain primordium"
+    },
+    {
+      "label": "8_10h_23",
+      "type": "plasmatocytes anlage",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "23",
+      "cell_number": 1893,
+      "cells_by_sample": {
+        "hrs_03_07": 13,
+        "hrs_04_08": 29,
+        "hrs_06_10": 569,
+        "hrs_08_12": 1256,
+        "hrs_10_14": 11,
+        "hrs_12_16": 4,
+        "hrs_14_18": 6,
+        "hrs_16_20": 5
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_BDBB",
+      "author_automated": "plasmatocytes anlage"
+    },
+    {
+      "label": "8_10h_24",
+      "type": "ubiquitous",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "24",
+      "cell_number": 1829,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 1,
+        "hrs_03_07": 10,
+        "hrs_04_08": 18,
+        "hrs_06_10": 777,
+        "hrs_08_12": 1002,
+        "hrs_10_14": 2,
+        "hrs_14_18": 17,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "unannotated": true
+    },
+    {
+      "label": "8_10h_25",
+      "type": "tracheal primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "25",
+      "cell_number": 1678,
+      "cells_by_sample": {
+        "hrs_03_07": 5,
+        "hrs_04_08": 6,
+        "hrs_06_10": 500,
+        "hrs_08_12": 1140,
+        "hrs_10_14": 17,
+        "hrs_12_16": 2,
+        "hrs_14_18": 7,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BA",
+      "author_automated": "tracheal primordium"
+    },
+    {
+      "label": "8_10h_26",
+      "type": "brain primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "26",
+      "cell_number": 1555,
+      "cells_by_sample": {
+        "hrs_03_07": 6,
+        "hrs_04_08": 9,
+        "hrs_06_10": 493,
+        "hrs_08_12": 1024,
+        "hrs_10_14": 11,
+        "hrs_12_16": 3,
+        "hrs_14_18": 9
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CC",
+      "author_automated": "brain primordium"
+    },
+    {
+      "label": "8_10h_27",
+      "type": "visceral muscle primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "27",
+      "cell_number": 1515,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_03_07": 6,
+        "hrs_04_08": 7,
+        "hrs_06_10": 513,
+        "hrs_08_12": 971,
+        "hrs_10_14": 5,
+        "hrs_12_16": 5,
+        "hrs_14_18": 7
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_BDA",
+      "author_automated": "visceral muscle primordium"
+    },
+    {
+      "label": "8_10h_28",
+      "type": "ubiquitous",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "28",
+      "cell_number": 1458,
+      "cells_by_sample": {
+        "hrs_00_02": 14,
+        "hrs_04_08": 2,
+        "hrs_06_10": 323,
+        "hrs_08_12": 1113,
+        "hrs_10_14": 2,
+        "hrs_14_18": 4
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_CDBA",
+      "author_automated": "ubiquitous",
+      "unannotated": true
+    },
+    {
+      "label": "8_10h_29",
+      "type": "yolk nuclei",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "29",
+      "cell_number": 1231,
+      "cells_by_sample": {
+        "hrs_03_07": 3,
+        "hrs_04_08": 3,
+        "hrs_06_10": 407,
+        "hrs_08_12": 808,
+        "hrs_10_14": 7,
+        "hrs_14_18": 3
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Yolk_AC",
+      "author_automated": "yolk nuclei"
+    },
+    {
+      "label": "8_10h_30",
+      "type": "salivary gland body primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "30",
+      "cell_number": 1146,
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_04_08": 2,
+        "hrs_06_10": 414,
+        "hrs_08_12": 720,
+        "hrs_10_14": 3,
+        "hrs_12_16": 1,
+        "hrs_14_18": 4,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_CBB",
+      "author_automated": "salivary gland body primordium"
+    },
+    {
+      "label": "8_10h_31",
+      "type": "midline primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "31",
+      "cell_number": 1028,
+      "cells_by_sample": {
+        "hrs_03_07": 4,
+        "hrs_04_08": 4,
+        "hrs_06_10": 290,
+        "hrs_08_12": 704,
+        "hrs_10_14": 11,
+        "hrs_12_16": 2,
+        "hrs_14_18": 8,
+        "hrs_16_20": 5
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_BCB",
+      "author_automated": "midline primordium"
+    },
+    {
+      "label": "8_10h_32",
+      "type": "brain primordium",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "32",
+      "cell_number": 810,
+      "cells_by_sample": {
+        "hrs_03_07": 6,
+        "hrs_04_08": 13,
+        "hrs_06_10": 337,
+        "hrs_08_12": 445,
+        "hrs_10_14": 7,
+        "hrs_14_18": 2
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_automated": "brain primordium"
+    },
+    {
+      "label": "8_10h_33",
+      "type": "unknown",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "33",
+      "cell_number": 244,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 1,
+        "hrs_03_07": 74,
+        "hrs_04_08": 28,
+        "hrs_06_10": 45,
+        "hrs_08_12": 51,
+        "hrs_10_14": 13,
+        "hrs_12_16": 17,
+        "hrs_14_18": 9,
+        "hrs_16_20": 5
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Blastoderm_AC",
+      "author_automated": "anterior midgut primordium",
+      "unannotated": true
+    },
+    {
+      "label": "8_10h_34",
+      "type": "unknown",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "34",
+      "cell_number": 153,
+      "cells_by_sample": {
+        "hrs_01_03": 2,
+        "hrs_03_07": 52,
+        "hrs_04_08": 16,
+        "hrs_06_10": 23,
+        "hrs_08_12": 40,
+        "hrs_10_14": 5,
+        "hrs_12_16": 4,
+        "hrs_14_18": 2,
+        "hrs_16_20": 9
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Blastoderm_AB",
+      "author_automated": "posterior midgut primordium",
+      "unannotated": true
+    },
+    {
+      "label": "8_10h_35",
+      "type": "muscle",
+      "clustering": "8_10",
+      "clustering_name": "Calderon 2022 clusters, modelled age 8-10 h",
+      "source_cluster_id": "35",
+      "cell_number": 147,
+      "cells_by_sample": {
+        "hrs_00_02": 3,
+        "hrs_03_07": 39,
+        "hrs_04_08": 41,
+        "hrs_06_10": 31,
+        "hrs_08_12": 26,
+        "hrs_12_16": 2,
+        "hrs_14_18": 3,
+        "hrs_16_20": 2
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_CDA",
+      "author_automated": "anterior midgut primordium"
+    },
+    {
+      "label": "10_12h_0",
+      "type": "germ cell",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "0",
+      "cell_number": 1714,
+      "cells_by_sample": {
+        "hrs_00_02": 74,
+        "hrs_01_03": 51,
+        "hrs_03_07": 56,
+        "hrs_04_08": 36,
+        "hrs_06_10": 194,
+        "hrs_08_12": 576,
+        "hrs_10_14": 317,
+        "hrs_12_16": 186,
+        "hrs_14_18": 171,
+        "hrs_16_20": 53
+      },
+      "author_lineage": "Blastoderm_AA",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_1",
+      "type": "brain",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "1",
+      "cell_number": 1672,
+      "cells_by_sample": {
+        "hrs_00_02": 8,
+        "hrs_02_04": 1,
+        "hrs_03_07": 2,
+        "hrs_04_08": 3,
+        "hrs_06_10": 63,
+        "hrs_08_12": 1414,
+        "hrs_10_14": 75,
+        "hrs_12_16": 8,
+        "hrs_14_18": 88,
+        "hrs_16_20": 10
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_AC",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_2",
+      "type": "epidermis",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "2",
+      "cell_number": 1433,
+      "cells_by_sample": {
+        "hrs_03_07": 5,
+        "hrs_04_08": 5,
+        "hrs_06_10": 74,
+        "hrs_08_12": 1141,
+        "hrs_10_14": 91,
+        "hrs_12_16": 19,
+        "hrs_14_18": 92,
+        "hrs_16_20": 6
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BCA",
+      "author_automated": "dorsal epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_3",
+      "type": "epidermis",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "3",
+      "cell_number": 1330,
+      "cells_by_sample": {
+        "hrs_03_07": 5,
+        "hrs_04_08": 4,
+        "hrs_06_10": 59,
+        "hrs_08_12": 1056,
+        "hrs_10_14": 123,
+        "hrs_12_16": 23,
+        "hrs_14_18": 58,
+        "hrs_16_20": 2
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "dorsal epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_4",
+      "type": "brain",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "4",
+      "cell_number": 1302,
+      "cells_by_sample": {
+        "hrs_02_04": 1,
+        "hrs_04_08": 2,
+        "hrs_06_10": 66,
+        "hrs_08_12": 1014,
+        "hrs_10_14": 123,
+        "hrs_12_16": 31,
+        "hrs_14_18": 56,
+        "hrs_16_20": 9
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CC",
+      "author_automated": "brain",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_5",
+      "type": "brain",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "5",
+      "cell_number": 1222,
+      "cells_by_sample": {
+        "hrs_03_07": 2,
+        "hrs_04_08": 2,
+        "hrs_06_10": 74,
+        "hrs_08_12": 997,
+        "hrs_10_14": 80,
+        "hrs_12_16": 7,
+        "hrs_14_18": 55,
+        "hrs_16_20": 5
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_BDAB",
+      "author_automated": "brain",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_6",
+      "type": "midgut",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "6",
+      "cell_number": 1146,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_03_07": 12,
+        "hrs_04_08": 11,
+        "hrs_06_10": 53,
+        "hrs_08_12": 521,
+        "hrs_10_14": 444,
+        "hrs_12_16": 60,
+        "hrs_14_18": 37,
+        "hrs_16_20": 7
+      },
+      "author_germ_layer": "endoderm",
+      "author_lineage": "Ubi_CB",
+      "author_automated": "midgut",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_7",
+      "type": "yolk nuclei",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "7",
+      "cell_number": 1104,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 1,
+        "hrs_04_08": 6,
+        "hrs_06_10": 59,
+        "hrs_08_12": 634,
+        "hrs_10_14": 329,
+        "hrs_12_16": 32,
+        "hrs_14_18": 36,
+        "hrs_16_20": 6
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Yolk_AB",
+      "author_automated": "yolk nuclei",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_8",
+      "type": "epidermis",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "8",
+      "cell_number": 1075,
+      "cells_by_sample": {
+        "hrs_03_07": 4,
+        "hrs_04_08": 1,
+        "hrs_06_10": 4,
+        "hrs_08_12": 48,
+        "hrs_10_14": 917,
+        "hrs_12_16": 96,
+        "hrs_14_18": 5
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_AAA",
+      "author_automated": "dorsal epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_9",
+      "type": "amnioserosa",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "9",
+      "cell_number": 993,
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_04_08": 1,
+        "hrs_06_10": 35,
+        "hrs_08_12": 704,
+        "hrs_10_14": 175,
+        "hrs_12_16": 34,
+        "hrs_14_18": 40,
+        "hrs_16_20": 3
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Ubi_CF",
+      "author_automated": "amnioserosa",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_10",
+      "type": "brain",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "10",
+      "cell_number": 920,
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_06_10": 65,
+        "hrs_08_12": 724,
+        "hrs_10_14": 90,
+        "hrs_12_16": 6,
+        "hrs_14_18": 31,
+        "hrs_16_20": 3
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_BCAA",
+      "author_automated": "brain",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_11",
+      "type": "somatic muscle",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "11",
+      "cell_number": 888,
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_06_10": 37,
+        "hrs_08_12": 693,
+        "hrs_10_14": 106,
+        "hrs_12_16": 15,
+        "hrs_14_18": 35,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_BDB",
+      "author_automated": "somatic muscle",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_12",
+      "type": "tracheal system",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "12",
+      "cell_number": 847,
+      "cells_by_sample": {
+        "hrs_04_08": 1,
+        "hrs_06_10": 40,
+        "hrs_08_12": 651,
+        "hrs_10_14": 106,
+        "hrs_12_16": 11,
+        "hrs_14_18": 30,
+        "hrs_16_20": 8
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "dorsal epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_13",
+      "type": "salivary gland",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "13",
+      "cell_number": 832,
+      "cells_by_sample": {
+        "hrs_03_07": 4,
+        "hrs_06_10": 44,
+        "hrs_08_12": 585,
+        "hrs_10_14": 155,
+        "hrs_12_16": 23,
+        "hrs_14_18": 21
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_CBB",
+      "author_automated": "salivary gland",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_14",
+      "type": "yolk nuclei",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "14",
+      "cell_number": 809,
+      "cells_by_sample": {
+        "hrs_06_10": 25,
+        "hrs_08_12": 537,
+        "hrs_10_14": 200,
+        "hrs_12_16": 29,
+        "hrs_14_18": 17,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Yolk_AC",
+      "author_automated": "yolk nuclei",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_15",
+      "type": "plasmatocytes",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "15",
+      "cell_number": 788,
+      "cells_by_sample": {
+        "hrs_03_07": 3,
+        "hrs_04_08": 1,
+        "hrs_06_10": 29,
+        "hrs_08_12": 641,
+        "hrs_10_14": 85,
+        "hrs_12_16": 10,
+        "hrs_14_18": 19
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_BDBB",
+      "author_automated": "plasmatocytes",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_16",
+      "type": "sensory nervous system primordium",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "16",
+      "cell_number": 691,
+      "cells_by_sample": {
+        "hrs_03_07": 3,
+        "hrs_04_08": 1,
+        "hrs_06_10": 35,
+        "hrs_08_12": 560,
+        "hrs_10_14": 47,
+        "hrs_12_16": 8,
+        "hrs_14_18": 35,
+        "hrs_16_20": 2
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CEB",
+      "author_automated": "brain",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_17",
+      "type": "muscle",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "17",
+      "cell_number": 664,
+      "cells_by_sample": {
+        "hrs_00_02": 3,
+        "hrs_01_03": 29,
+        "hrs_08_12": 3,
+        "hrs_10_14": 545,
+        "hrs_12_16": 79,
+        "hrs_14_18": 5
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_CDBA",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_18",
+      "type": "brain",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "18",
+      "cell_number": 630,
+      "cells_by_sample": {
+        "hrs_00_02": 2,
+        "hrs_06_10": 6,
+        "hrs_08_12": 606,
+        "hrs_10_14": 4,
+        "hrs_14_18": 11,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CDBC",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_19",
+      "type": "brain",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "19",
+      "cell_number": 581,
+      "cells_by_sample": {
+        "hrs_00_02": 85,
+        "hrs_01_03": 6,
+        "hrs_03_07": 5,
+        "hrs_04_08": 2,
+        "hrs_06_10": 25,
+        "hrs_08_12": 288,
+        "hrs_10_14": 65,
+        "hrs_12_16": 12,
+        "hrs_14_18": 74,
+        "hrs_16_20": 19
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CDBD",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_20",
+      "type": "somatic muscle",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "20",
+      "cell_number": 547,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 6,
+        "hrs_04_08": 1,
+        "hrs_06_10": 5,
+        "hrs_08_12": 24,
+        "hrs_10_14": 437,
+        "hrs_12_16": 53,
+        "hrs_14_18": 10,
+        "hrs_16_20": 10
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_AAB",
+      "author_automated": "somatic muscle",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_21",
+      "type": "epidermis",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "21",
+      "cell_number": 481,
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_06_10": 28,
+        "hrs_08_12": 372,
+        "hrs_10_14": 48,
+        "hrs_12_16": 12,
+        "hrs_14_18": 20
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_CE",
+      "author_automated": "optic lobe",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_22",
+      "type": "hindgut / anal pad",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "22",
+      "cell_number": 448,
+      "cells_by_sample": {
+        "hrs_03_07": 2,
+        "hrs_06_10": 28,
+        "hrs_08_12": 354,
+        "hrs_10_14": 37,
+        "hrs_12_16": 8,
+        "hrs_14_18": 17,
+        "hrs_16_20": 2
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "hindgut",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_23",
+      "type": "muscle",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "23",
+      "cell_number": 401,
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_04_08": 2,
+        "hrs_06_10": 17,
+        "hrs_08_12": 296,
+        "hrs_10_14": 59,
+        "hrs_12_16": 8,
+        "hrs_14_18": 18
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_BDA",
+      "author_automated": "muscle",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_24",
+      "type": "glia",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "24",
+      "cell_number": 371,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 1,
+        "hrs_03_07": 1,
+        "hrs_04_08": 3,
+        "hrs_06_10": 14,
+        "hrs_08_12": 270,
+        "hrs_10_14": 51,
+        "hrs_12_16": 9,
+        "hrs_14_18": 17,
+        "hrs_16_20": 4
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_BCB",
+      "author_automated": "ventral midline",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_25",
+      "type": "fat body",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "25",
+      "cell_number": 311,
+      "cells_by_sample": {
+        "hrs_03_07": 5,
+        "hrs_04_08": 2,
+        "hrs_06_10": 1,
+        "hrs_08_12": 17,
+        "hrs_10_14": 237,
+        "hrs_12_16": 40,
+        "hrs_14_18": 3,
+        "hrs_16_20": 6
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_CAB",
+      "author_automated": "fat body",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_26",
+      "type": "hindgut / anal pad",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "26",
+      "cell_number": 251,
+      "cells_by_sample": {
+        "hrs_06_10": 1,
+        "hrs_08_12": 8,
+        "hrs_10_14": 219,
+        "hrs_12_16": 21,
+        "hrs_14_18": 2
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_CA",
+      "author_automated": "dorsal epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_27",
+      "type": "tracheal system",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "27",
+      "cell_number": 237,
+      "cells_by_sample": {
+        "hrs_08_12": 4,
+        "hrs_10_14": 214,
+        "hrs_12_16": 18,
+        "hrs_16_20": 1
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BA",
+      "author_automated": "dorsal epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_28",
+      "type": "crystal cell",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "28",
+      "cell_number": 237,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_03_07": 1,
+        "hrs_06_10": 9,
+        "hrs_08_12": 163,
+        "hrs_10_14": 33,
+        "hrs_12_16": 10,
+        "hrs_14_18": 18,
+        "hrs_16_20": 2
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_CDBB",
+      "author_automated": "crystal cell",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_29",
+      "type": "salivary gland",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "29",
+      "cell_number": 82,
+      "cells_by_sample": {
+        "hrs_03_07": 28,
+        "hrs_04_08": 4,
+        "hrs_06_10": 9,
+        "hrs_08_12": 16,
+        "hrs_10_14": 5,
+        "hrs_12_16": 6,
+        "hrs_14_18": 8,
+        "hrs_16_20": 6
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Blastoderm_AC",
+      "author_automated": "dorsal epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "10_12h_30",
+      "type": "muscle",
+      "clustering": "10_12",
+      "clustering_name": "Calderon 2022 clusters, modelled age 10-12 h",
+      "source_cluster_id": "30",
+      "cell_number": 66,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 1,
+        "hrs_03_07": 16,
+        "hrs_04_08": 14,
+        "hrs_06_10": 9,
+        "hrs_08_12": 10,
+        "hrs_10_14": 4,
+        "hrs_12_16": 5,
+        "hrs_14_18": 3,
+        "hrs_16_20": 3
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_CDA",
+      "author_automated": "muscle",
+      "stage": {
+        "fbdv_id": "FBdv:00005331",
+        "label": "dorsal closure stage"
+      }
+    },
+    {
+      "label": "12_14h_0",
+      "type": "brain",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "0",
+      "cell_number": 3482,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 3,
+        "hrs_03_07": 5,
+        "hrs_04_08": 5,
+        "hrs_06_10": 36,
+        "hrs_08_12": 291,
+        "hrs_10_14": 1596,
+        "hrs_12_16": 1043,
+        "hrs_14_18": 309,
+        "hrs_16_20": 193
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_BCAA",
+      "author_automated": "brain"
+    },
+    {
+      "label": "12_14h_1",
+      "type": "somatic muscle",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "1",
+      "cell_number": 3298,
+      "cells_by_sample": {
+        "hrs_03_07": 10,
+        "hrs_06_10": 7,
+        "hrs_08_12": 60,
+        "hrs_10_14": 1472,
+        "hrs_12_16": 1429,
+        "hrs_14_18": 174,
+        "hrs_16_20": 146
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_AAB",
+      "author_automated": "somatic muscle"
+    },
+    {
+      "label": "12_14h_2",
+      "type": "ventral nerve cord",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "2",
+      "cell_number": 3102,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 4,
+        "hrs_04_08": 2,
+        "hrs_06_10": 7,
+        "hrs_08_12": 18,
+        "hrs_10_14": 1217,
+        "hrs_12_16": 1441,
+        "hrs_14_18": 166,
+        "hrs_16_20": 246
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_AABA",
+      "author_automated": "brain"
+    },
+    {
+      "label": "12_14h_3",
+      "type": "epidermis",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "3",
+      "cell_number": 2815,
+      "cells_by_sample": {
+        "hrs_03_07": 6,
+        "hrs_04_08": 1,
+        "hrs_06_10": 8,
+        "hrs_08_12": 151,
+        "hrs_10_14": 1485,
+        "hrs_12_16": 785,
+        "hrs_14_18": 272,
+        "hrs_16_20": 107
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_AAA",
+      "author_automated": "dorsal epidermis"
+    },
+    {
+      "label": "12_14h_4",
+      "type": "germ cell",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "4",
+      "cell_number": 2605,
+      "cells_by_sample": {
+        "hrs_00_02": 85,
+        "hrs_01_03": 65,
+        "hrs_02_04": 1,
+        "hrs_03_07": 34,
+        "hrs_04_08": 36,
+        "hrs_06_10": 95,
+        "hrs_08_12": 248,
+        "hrs_10_14": 581,
+        "hrs_12_16": 602,
+        "hrs_14_18": 638,
+        "hrs_16_20": 220
+      },
+      "author_lineage": "Blastoderm_AA",
+      "author_automated": "ubiquitous"
+    },
+    {
+      "label": "12_14h_5",
+      "type": "yolk nuclei",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "5",
+      "cell_number": 2392,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_03_07": 2,
+        "hrs_04_08": 1,
+        "hrs_06_10": 8,
+        "hrs_08_12": 95,
+        "hrs_10_14": 1230,
+        "hrs_12_16": 939,
+        "hrs_14_18": 95,
+        "hrs_16_20": 21
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Yolk_AC",
+      "author_automated": "yolk nuclei"
+    },
+    {
+      "label": "12_14h_6",
+      "type": "fat body",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "6",
+      "cell_number": 2312,
+      "cells_by_sample": {
+        "hrs_03_07": 2,
+        "hrs_06_10": 1,
+        "hrs_08_12": 14,
+        "hrs_10_14": 967,
+        "hrs_12_16": 1121,
+        "hrs_14_18": 98,
+        "hrs_16_20": 109
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_CAB",
+      "author_automated": "fat body"
+    },
+    {
+      "label": "12_14h_7",
+      "type": "epidermis",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "7",
+      "cell_number": 2279,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_03_07": 7,
+        "hrs_04_08": 3,
+        "hrs_06_10": 25,
+        "hrs_08_12": 311,
+        "hrs_10_14": 986,
+        "hrs_12_16": 540,
+        "hrs_14_18": 326,
+        "hrs_16_20": 80
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BCA",
+      "author_automated": "dorsal epidermis"
+    },
+    {
+      "label": "12_14h_8",
+      "type": "midgut",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "8",
+      "cell_number": 2075,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 1,
+        "hrs_06_10": 9,
+        "hrs_08_12": 59,
+        "hrs_10_14": 923,
+        "hrs_12_16": 862,
+        "hrs_14_18": 138,
+        "hrs_16_20": 82
+      },
+      "author_germ_layer": "endoderm",
+      "author_lineage": "Ubi_CB",
+      "author_automated": "midgut"
+    },
+    {
+      "label": "12_14h_9",
+      "type": "brain",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "9",
+      "cell_number": 2050,
+      "cells_by_sample": {
+        "hrs_00_02": 156,
+        "hrs_01_03": 106,
+        "hrs_03_07": 4,
+        "hrs_04_08": 3,
+        "hrs_06_10": 2,
+        "hrs_08_12": 94,
+        "hrs_10_14": 958,
+        "hrs_12_16": 223,
+        "hrs_14_18": 426,
+        "hrs_16_20": 78
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CDBD",
+      "author_automated": "ubiquitous"
+    },
+    {
+      "label": "12_14h_10",
+      "type": "hindgut / anal pad",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "10",
+      "cell_number": 2012,
+      "cells_by_sample": {
+        "hrs_03_07": 19,
+        "hrs_04_08": 6,
+        "hrs_06_10": 7,
+        "hrs_08_12": 70,
+        "hrs_10_14": 838,
+        "hrs_12_16": 871,
+        "hrs_14_18": 117,
+        "hrs_16_20": 84
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_CA",
+      "author_automated": "hindgut"
+    },
+    {
+      "label": "12_14h_11",
+      "type": "midgut",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "11",
+      "cell_number": 1950,
+      "cells_by_sample": {
+        "hrs_01_03": 2,
+        "hrs_03_07": 4,
+        "hrs_04_08": 1,
+        "hrs_06_10": 6,
+        "hrs_08_12": 29,
+        "hrs_10_14": 982,
+        "hrs_12_16": 782,
+        "hrs_14_18": 82,
+        "hrs_16_20": 62
+      },
+      "author_germ_layer": "endoderm",
+      "author_automated": "midgut"
+    },
+    {
+      "label": "12_14h_12",
+      "type": "muscle",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "12",
+      "cell_number": 1909,
+      "cells_by_sample": {
+        "hrs_00_02": 38,
+        "hrs_01_03": 170,
+        "hrs_03_07": 14,
+        "hrs_04_08": 7,
+        "hrs_06_10": 5,
+        "hrs_08_12": 13,
+        "hrs_10_14": 688,
+        "hrs_12_16": 739,
+        "hrs_14_18": 137,
+        "hrs_16_20": 98
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_CDBA",
+      "author_automated": "ubiquitous"
+    },
+    {
+      "label": "12_14h_13",
+      "type": "yolk nuclei",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "13",
+      "cell_number": 1876,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 10,
+        "hrs_06_10": 11,
+        "hrs_08_12": 97,
+        "hrs_10_14": 1108,
+        "hrs_12_16": 496,
+        "hrs_14_18": 119,
+        "hrs_16_20": 34
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Yolk_AB",
+      "author_automated": "yolk nuclei"
+    },
+    {
+      "label": "12_14h_14",
+      "type": "tracheal system",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "14",
+      "cell_number": 1674,
+      "cells_by_sample": {
+        "hrs_01_03": 3,
+        "hrs_03_07": 11,
+        "hrs_04_08": 7,
+        "hrs_06_10": 10,
+        "hrs_08_12": 46,
+        "hrs_10_14": 812,
+        "hrs_12_16": 609,
+        "hrs_14_18": 104,
+        "hrs_16_20": 72
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BAB",
+      "author_automated": "dorsal epidermis"
+    },
+    {
+      "label": "12_14h_15",
+      "type": "epidermis",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "15",
+      "cell_number": 1635,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 8,
+        "hrs_08_12": 2,
+        "hrs_10_14": 547,
+        "hrs_12_16": 850,
+        "hrs_14_18": 109,
+        "hrs_16_20": 118
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_AAAB",
+      "author_automated": "dorsal epidermis"
+    },
+    {
+      "label": "12_14h_16",
+      "type": "tracheal system",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "16",
+      "cell_number": 1618,
+      "cells_by_sample": {
+        "hrs_01_03": 3,
+        "hrs_03_07": 6,
+        "hrs_04_08": 1,
+        "hrs_06_10": 3,
+        "hrs_08_12": 2,
+        "hrs_10_14": 561,
+        "hrs_12_16": 853,
+        "hrs_14_18": 86,
+        "hrs_16_20": 103
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BA",
+      "author_automated": "dorsal epidermis"
+    },
+    {
+      "label": "12_14h_17",
+      "type": "proventriculus",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "17",
+      "cell_number": 1554,
+      "cells_by_sample": {
+        "hrs_03_07": 3,
+        "hrs_04_08": 1,
+        "hrs_06_10": 2,
+        "hrs_08_12": 21,
+        "hrs_10_14": 713,
+        "hrs_12_16": 666,
+        "hrs_14_18": 79,
+        "hrs_16_20": 69
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "proventriculus"
+    },
+    {
+      "label": "12_14h_18",
+      "type": "salivary gland",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "18",
+      "cell_number": 1554,
+      "cells_by_sample": {
+        "hrs_03_07": 2,
+        "hrs_06_10": 6,
+        "hrs_08_12": 87,
+        "hrs_10_14": 686,
+        "hrs_12_16": 600,
+        "hrs_14_18": 127,
+        "hrs_16_20": 46
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_CBB",
+      "author_automated": "salivary gland"
+    },
+    {
+      "label": "12_14h_19",
+      "type": "plasmatocytes",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "19",
+      "cell_number": 1514,
+      "cells_by_sample": {
+        "hrs_04_08": 1,
+        "hrs_06_10": 5,
+        "hrs_08_12": 100,
+        "hrs_10_14": 588,
+        "hrs_12_16": 653,
+        "hrs_14_18": 117,
+        "hrs_16_20": 50
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_BDBB",
+      "author_automated": "plasmatocytes"
+    },
+    {
+      "label": "12_14h_20",
+      "type": "epidermis",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "20",
+      "cell_number": 1500,
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_04_08": 1,
+        "hrs_06_10": 3,
+        "hrs_08_12": 8,
+        "hrs_10_14": 693,
+        "hrs_12_16": 616,
+        "hrs_14_18": 106,
+        "hrs_16_20": 72
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "dorsal epidermis"
+    },
+    {
+      "label": "12_14h_21",
+      "type": "epidermis",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "21",
+      "cell_number": 1349,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 12,
+        "hrs_04_08": 1,
+        "hrs_08_12": 6,
+        "hrs_10_14": 429,
+        "hrs_12_16": 751,
+        "hrs_14_18": 58,
+        "hrs_16_20": 91
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_AAAC",
+      "author_automated": "dorsal epidermis"
+    },
+    {
+      "label": "12_14h_22",
+      "type": "somatic muscle",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "22",
+      "cell_number": 1280,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 1,
+        "hrs_04_08": 1,
+        "hrs_06_10": 5,
+        "hrs_08_12": 53,
+        "hrs_10_14": 639,
+        "hrs_12_16": 444,
+        "hrs_14_18": 78,
+        "hrs_16_20": 58
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_AABB",
+      "author_automated": "somatic muscle"
+    },
+    {
+      "label": "12_14h_23",
+      "type": "foregut / hindgut / anal pad",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "23",
+      "cell_number": 1157,
+      "cells_by_sample": {
+        "hrs_03_07": 4,
+        "hrs_06_10": 5,
+        "hrs_08_12": 18,
+        "hrs_10_14": 465,
+        "hrs_12_16": 499,
+        "hrs_14_18": 83,
+        "hrs_16_20": 83
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_AAAA",
+      "author_automated": "dorsal epidermis"
+    },
+    {
+      "label": "12_14h_24",
+      "type": "amnioserosa",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "24",
+      "cell_number": 1157,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_06_10": 6,
+        "hrs_08_12": 76,
+        "hrs_10_14": 560,
+        "hrs_12_16": 338,
+        "hrs_14_18": 140,
+        "hrs_16_20": 36
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Ubi_CF",
+      "author_automated": "amnioserosa"
+    },
+    {
+      "label": "12_14h_25",
+      "type": "sensory nervous system",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "25",
+      "cell_number": 1138,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 2,
+        "hrs_04_08": 1,
+        "hrs_06_10": 2,
+        "hrs_08_12": 48,
+        "hrs_10_14": 514,
+        "hrs_12_16": 411,
+        "hrs_14_18": 101,
+        "hrs_16_20": 58
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_automated": "brain"
+    },
+    {
+      "label": "12_14h_26",
+      "type": "sensory nervous system",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "26",
+      "cell_number": 980,
+      "cells_by_sample": {
+        "hrs_00_02": 3,
+        "hrs_01_03": 2,
+        "hrs_06_10": 2,
+        "hrs_08_12": 56,
+        "hrs_10_14": 463,
+        "hrs_12_16": 328,
+        "hrs_14_18": 91,
+        "hrs_16_20": 35
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CEB",
+      "author_automated": "ventral epidermis"
+    },
+    {
+      "label": "12_14h_27",
+      "type": "brain",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "27",
+      "cell_number": 963,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_03_07": 6,
+        "hrs_04_08": 2,
+        "hrs_06_10": 4,
+        "hrs_08_12": 128,
+        "hrs_10_14": 446,
+        "hrs_12_16": 187,
+        "hrs_14_18": 145,
+        "hrs_16_20": 44
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CC",
+      "author_automated": "brain"
+    },
+    {
+      "label": "12_14h_28",
+      "type": "ventral nerve cord",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "28",
+      "cell_number": 872,
+      "cells_by_sample": {
+        "hrs_03_07": 4,
+        "hrs_06_10": 8,
+        "hrs_08_12": 40,
+        "hrs_10_14": 408,
+        "hrs_12_16": 305,
+        "hrs_14_18": 64,
+        "hrs_16_20": 43
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_BDBA",
+      "author_automated": "ventral nerve cord"
+    },
+    {
+      "label": "12_14h_29",
+      "type": "visceral muscle",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "29",
+      "cell_number": 802,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 2,
+        "hrs_03_07": 1,
+        "hrs_06_10": 3,
+        "hrs_08_12": 46,
+        "hrs_10_14": 372,
+        "hrs_12_16": 271,
+        "hrs_14_18": 77,
+        "hrs_16_20": 29
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_BDA",
+      "author_automated": "visceral muscle"
+    },
+    {
+      "label": "12_14h_30",
+      "type": "spiracle (tracheal system)",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "30",
+      "cell_number": 755,
+      "cells_by_sample": {
+        "hrs_03_07": 2,
+        "hrs_06_10": 2,
+        "hrs_08_12": 20,
+        "hrs_10_14": 301,
+        "hrs_12_16": 335,
+        "hrs_14_18": 51,
+        "hrs_16_20": 44
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_AAAD",
+      "author_automated": "dorsal epidermis"
+    },
+    {
+      "label": "12_14h_31",
+      "type": "Malpighian tubule",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "31",
+      "cell_number": 748,
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_04_08": 1,
+        "hrs_06_10": 2,
+        "hrs_08_12": 20,
+        "hrs_10_14": 352,
+        "hrs_12_16": 274,
+        "hrs_14_18": 63,
+        "hrs_16_20": 35
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "Malpighian tubule"
+    },
+    {
+      "label": "12_14h_32",
+      "type": "epidermis",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "32",
+      "cell_number": 617,
+      "cells_by_sample": {
+        "hrs_06_10": 2,
+        "hrs_08_12": 45,
+        "hrs_10_14": 324,
+        "hrs_12_16": 174,
+        "hrs_14_18": 61,
+        "hrs_16_20": 11
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_CE",
+      "author_automated": "dorsal epidermis"
+    },
+    {
+      "label": "12_14h_33",
+      "type": "glia",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "33",
+      "cell_number": 573,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_06_10": 3,
+        "hrs_08_12": 30,
+        "hrs_10_14": 292,
+        "hrs_12_16": 165,
+        "hrs_14_18": 53,
+        "hrs_16_20": 29
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_BCB",
+      "author_automated": "ventral midline"
+    },
+    {
+      "label": "12_14h_34",
+      "type": "brain",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "34",
+      "cell_number": 433,
+      "cells_by_sample": {
+        "hrs_03_07": 2,
+        "hrs_06_10": 21,
+        "hrs_08_12": 67,
+        "hrs_10_14": 111,
+        "hrs_12_16": 82,
+        "hrs_14_18": 80,
+        "hrs_16_20": 70
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CDBDA",
+      "author_automated": "ubiquitous"
+    },
+    {
+      "label": "12_14h_35",
+      "type": "epidermis",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "35",
+      "cell_number": 316,
+      "cells_by_sample": {
+        "hrs_03_07": 52,
+        "hrs_04_08": 21,
+        "hrs_06_10": 10,
+        "hrs_08_12": 18,
+        "hrs_10_14": 35,
+        "hrs_12_16": 75,
+        "hrs_14_18": 46,
+        "hrs_16_20": 59
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Blastoderm_AC",
+      "author_automated": "dorsal epidermis"
+    },
+    {
+      "label": "12_14h_36",
+      "type": "tracheal system",
+      "clustering": "12_14",
+      "clustering_name": "Calderon 2022 clusters, modelled age 12-14 h",
+      "source_cluster_id": "36",
+      "cell_number": 204,
+      "cells_by_sample": {
+        "hrs_03_07": 18,
+        "hrs_04_08": 17,
+        "hrs_06_10": 5,
+        "hrs_08_12": 11,
+        "hrs_10_14": 26,
+        "hrs_12_16": 72,
+        "hrs_14_18": 32,
+        "hrs_16_20": 23
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "midgut"
+    },
+    {
+      "label": "14_16h_0",
+      "type": "epidermis",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "0",
+      "cell_number": 2499,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_03_07": 4,
+        "hrs_04_08": 5,
+        "hrs_06_10": 9,
+        "hrs_08_12": 216,
+        "hrs_10_14": 95,
+        "hrs_12_16": 341,
+        "hrs_14_18": 1469,
+        "hrs_16_20": 359
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BCA",
+      "author_automated": "dorsal epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_1",
+      "type": "ventral nerve cord",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "1",
+      "cell_number": 2208,
+      "cells_by_sample": {
+        "hrs_03_07": 5,
+        "hrs_04_08": 1,
+        "hrs_06_10": 3,
+        "hrs_08_12": 9,
+        "hrs_10_14": 151,
+        "hrs_12_16": 899,
+        "hrs_14_18": 441,
+        "hrs_16_20": 699
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_AABA",
+      "author_automated": "brain",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_2",
+      "type": "epidermis",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "2",
+      "cell_number": 2041,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_06_10": 3,
+        "hrs_08_12": 94,
+        "hrs_10_14": 85,
+        "hrs_12_16": 485,
+        "hrs_14_18": 962,
+        "hrs_16_20": 411
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_AAA",
+      "author_automated": "dorsal epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_3",
+      "type": "ubiquitous",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "3",
+      "cell_number": 1957,
+      "cells_by_sample": {
+        "hrs_00_02": 42,
+        "hrs_01_03": 64,
+        "hrs_06_10": 1,
+        "hrs_08_12": 7,
+        "hrs_10_14": 76,
+        "hrs_12_16": 498,
+        "hrs_14_18": 665,
+        "hrs_16_20": 604
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_CDBA",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "14_16h_4",
+      "type": "ubiquitous",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "4",
+      "cell_number": 1926,
+      "cells_by_sample": {
+        "hrs_00_02": 76,
+        "hrs_01_03": 18,
+        "hrs_03_07": 5,
+        "hrs_04_08": 2,
+        "hrs_06_10": 1,
+        "hrs_08_12": 61,
+        "hrs_10_14": 82,
+        "hrs_12_16": 139,
+        "hrs_14_18": 1315,
+        "hrs_16_20": 227
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_CDBD",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "14_16h_5",
+      "type": "epidermis",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "5",
+      "cell_number": 1878,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_03_07": 1,
+        "hrs_06_10": 3,
+        "hrs_08_12": 6,
+        "hrs_10_14": 62,
+        "hrs_12_16": 738,
+        "hrs_14_18": 537,
+        "hrs_16_20": 530
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_AAAB",
+      "author_automated": "ventral epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_6",
+      "type": "plasmatocytes",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "6",
+      "cell_number": 1864,
+      "cells_by_sample": {
+        "hrs_04_08": 1,
+        "hrs_06_10": 1,
+        "hrs_08_12": 32,
+        "hrs_10_14": 79,
+        "hrs_12_16": 654,
+        "hrs_14_18": 680,
+        "hrs_16_20": 417
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_BDBB",
+      "author_automated": "plasmatocytes",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_7",
+      "type": "somatic muscle",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "7",
+      "cell_number": 1845,
+      "cells_by_sample": {
+        "hrs_01_03": 2,
+        "hrs_03_07": 9,
+        "hrs_04_08": 1,
+        "hrs_06_10": 6,
+        "hrs_08_12": 3,
+        "hrs_10_14": 81,
+        "hrs_12_16": 714,
+        "hrs_14_18": 450,
+        "hrs_16_20": 579
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_AAB",
+      "author_automated": "somatic muscle",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_8",
+      "type": "midgut",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "8",
+      "cell_number": 1729,
+      "cells_by_sample": {
+        "hrs_03_07": 3,
+        "hrs_04_08": 4,
+        "hrs_06_10": 4,
+        "hrs_08_12": 39,
+        "hrs_10_14": 60,
+        "hrs_12_16": 556,
+        "hrs_14_18": 611,
+        "hrs_16_20": 452
+      },
+      "author_germ_layer": "endoderm",
+      "author_lineage": "Ubi_CB",
+      "author_automated": "midgut",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_9",
+      "type": "brain",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "9",
+      "cell_number": 1711,
+      "cells_by_sample": {
+        "hrs_00_02": 110,
+        "hrs_01_03": 28,
+        "hrs_03_07": 7,
+        "hrs_04_08": 1,
+        "hrs_06_10": 1,
+        "hrs_08_12": 22,
+        "hrs_10_14": 57,
+        "hrs_12_16": 96,
+        "hrs_14_18": 1278,
+        "hrs_16_20": 111
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CDBD",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_10",
+      "type": "fat body",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "10",
+      "cell_number": 1629,
+      "cells_by_sample": {
+        "hrs_01_03": 2,
+        "hrs_03_07": 6,
+        "hrs_04_08": 1,
+        "hrs_06_10": 2,
+        "hrs_08_12": 14,
+        "hrs_10_14": 61,
+        "hrs_12_16": 558,
+        "hrs_14_18": 505,
+        "hrs_16_20": 480
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_CAB",
+      "author_automated": "fat body",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_11",
+      "type": "tracheal system",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "11",
+      "cell_number": 1556,
+      "cells_by_sample": {
+        "hrs_03_07": 2,
+        "hrs_06_10": 1,
+        "hrs_08_12": 2,
+        "hrs_10_14": 71,
+        "hrs_12_16": 664,
+        "hrs_14_18": 331,
+        "hrs_16_20": 485
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BA",
+      "author_automated": "dorsal epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_12",
+      "type": "epidermis",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "12",
+      "cell_number": 1529,
+      "cells_by_sample": {
+        "hrs_03_07": 3,
+        "hrs_08_12": 7,
+        "hrs_10_14": 90,
+        "hrs_12_16": 613,
+        "hrs_14_18": 258,
+        "hrs_16_20": 558
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_AAAC",
+      "author_automated": "ventral epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_13",
+      "type": "yolk nuclei",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "13",
+      "cell_number": 1516,
+      "cells_by_sample": {
+        "hrs_03_07": 4,
+        "hrs_04_08": 2,
+        "hrs_06_10": 5,
+        "hrs_08_12": 75,
+        "hrs_10_14": 36,
+        "hrs_12_16": 238,
+        "hrs_14_18": 850,
+        "hrs_16_20": 306
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Yolk_AB",
+      "author_automated": "yolk nuclei",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_14",
+      "type": "foregut / hindgut / anal pad",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "14",
+      "cell_number": 1507,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 2,
+        "hrs_04_08": 1,
+        "hrs_06_10": 4,
+        "hrs_08_12": 7,
+        "hrs_10_14": 52,
+        "hrs_12_16": 619,
+        "hrs_14_18": 331,
+        "hrs_16_20": 490
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_CA",
+      "author_automated": "ventral epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_15",
+      "type": "yolk nuclei",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "15",
+      "cell_number": 1406,
+      "cells_by_sample": {
+        "hrs_04_08": 1,
+        "hrs_08_12": 68,
+        "hrs_10_14": 65,
+        "hrs_12_16": 300,
+        "hrs_14_18": 677,
+        "hrs_16_20": 295
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Yolk_AC",
+      "author_automated": "yolk nuclei",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_16",
+      "type": "ventral nerve cord",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "16",
+      "cell_number": 1385,
+      "cells_by_sample": {
+        "hrs_03_07": 8,
+        "hrs_04_08": 4,
+        "hrs_06_10": 6,
+        "hrs_08_12": 4,
+        "hrs_10_14": 84,
+        "hrs_12_16": 476,
+        "hrs_14_18": 228,
+        "hrs_16_20": 575
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_AABAA",
+      "author_automated": "ventral nerve cord",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_17",
+      "type": "brain",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "17",
+      "cell_number": 1379,
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_06_10": 3,
+        "hrs_08_12": 107,
+        "hrs_10_14": 50,
+        "hrs_12_16": 235,
+        "hrs_14_18": 726,
+        "hrs_16_20": 257
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_automated": "brain",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_18",
+      "type": "somatic muscle",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "18",
+      "cell_number": 1317,
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_08_12": 19,
+        "hrs_10_14": 76,
+        "hrs_12_16": 460,
+        "hrs_14_18": 433,
+        "hrs_16_20": 328
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_AABB",
+      "author_automated": "somatic muscle",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_19",
+      "type": "somatic muscle",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "19",
+      "cell_number": 1313,
+      "cells_by_sample": {
+        "hrs_08_12": 22,
+        "hrs_10_14": 45,
+        "hrs_12_16": 449,
+        "hrs_14_18": 439,
+        "hrs_16_20": 358
+      },
+      "author_germ_layer": "mesoderm",
+      "author_automated": "somatic muscle",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_20",
+      "type": "ubiquitous",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "20",
+      "cell_number": 1249,
+      "cells_by_sample": {
+        "hrs_00_02": 22,
+        "hrs_01_03": 13,
+        "hrs_03_07": 10,
+        "hrs_04_08": 8,
+        "hrs_06_10": 12,
+        "hrs_08_12": 38,
+        "hrs_10_14": 67,
+        "hrs_12_16": 243,
+        "hrs_14_18": 599,
+        "hrs_16_20": 237
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Blastoderm_AA",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "14_16h_21",
+      "type": "sensory nervous system",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "21",
+      "cell_number": 1043,
+      "cells_by_sample": {
+        "hrs_06_10": 2,
+        "hrs_08_12": 49,
+        "hrs_10_14": 61,
+        "hrs_12_16": 288,
+        "hrs_14_18": 371,
+        "hrs_16_20": 272
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_BCAA",
+      "author_automated": "brain",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_22",
+      "type": "salivary gland",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "22",
+      "cell_number": 1031,
+      "cells_by_sample": {
+        "hrs_06_10": 2,
+        "hrs_08_12": 26,
+        "hrs_10_14": 28,
+        "hrs_12_16": 293,
+        "hrs_14_18": 451,
+        "hrs_16_20": 231
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_CBB",
+      "author_automated": "salivary gland",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_23",
+      "type": "spiracle (tracheal system)",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "23",
+      "cell_number": 1002,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 1,
+        "hrs_03_07": 2,
+        "hrs_04_08": 1,
+        "hrs_06_10": 1,
+        "hrs_08_12": 18,
+        "hrs_10_14": 35,
+        "hrs_12_16": 273,
+        "hrs_14_18": 344,
+        "hrs_16_20": 326
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_AAAD",
+      "author_automated": "ventral epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_24",
+      "type": "proventriculus",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "24",
+      "cell_number": 956,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 6,
+        "hrs_04_08": 2,
+        "hrs_06_10": 4,
+        "hrs_08_12": 16,
+        "hrs_10_14": 41,
+        "hrs_12_16": 314,
+        "hrs_14_18": 308,
+        "hrs_16_20": 264
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "proventriculus",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_25",
+      "type": "amnioserosa",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "25",
+      "cell_number": 909,
+      "cells_by_sample": {
+        "hrs_04_08": 1,
+        "hrs_06_10": 1,
+        "hrs_08_12": 46,
+        "hrs_10_14": 35,
+        "hrs_12_16": 167,
+        "hrs_14_18": 494,
+        "hrs_16_20": 165
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Ubi_CF",
+      "author_automated": "amnioserosa",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_26",
+      "type": "brain",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "26",
+      "cell_number": 809,
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_04_08": 1,
+        "hrs_06_10": 8,
+        "hrs_08_12": 56,
+        "hrs_10_14": 27,
+        "hrs_12_16": 90,
+        "hrs_14_18": 490,
+        "hrs_16_20": 136
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CC",
+      "author_automated": "brain",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_27",
+      "type": "brain",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "27",
+      "cell_number": 663,
+      "cells_by_sample": {
+        "hrs_03_07": 4,
+        "hrs_06_10": 2,
+        "hrs_08_12": 19,
+        "hrs_10_14": 26,
+        "hrs_12_16": 184,
+        "hrs_14_18": 239,
+        "hrs_16_20": 189
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_BDBA",
+      "author_automated": "brain",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_28",
+      "type": "epidermis",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "28",
+      "cell_number": 650,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 15,
+        "hrs_04_08": 14,
+        "hrs_06_10": 10,
+        "hrs_08_12": 11,
+        "hrs_10_14": 37,
+        "hrs_12_16": 131,
+        "hrs_14_18": 238,
+        "hrs_16_20": 193
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Blastoderm_AC",
+      "author_automated": "dorsal epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_29",
+      "type": "sensory nervous system",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "29",
+      "cell_number": 592,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_06_10": 1,
+        "hrs_08_12": 10,
+        "hrs_10_14": 30,
+        "hrs_12_16": 169,
+        "hrs_14_18": 235,
+        "hrs_16_20": 146
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CEB",
+      "author_automated": "foregut",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_30",
+      "type": "midgut",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "30",
+      "cell_number": 540,
+      "cells_by_sample": {
+        "hrs_08_12": 7,
+        "hrs_10_14": 21,
+        "hrs_12_16": 159,
+        "hrs_14_18": 218,
+        "hrs_16_20": 135
+      },
+      "author_germ_layer": "endoderm",
+      "author_automated": "midgut",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_31",
+      "type": "brain",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "31",
+      "cell_number": 444,
+      "cells_by_sample": {
+        "hrs_00_02": 2,
+        "hrs_01_03": 1,
+        "hrs_03_07": 1,
+        "hrs_04_08": 1,
+        "hrs_06_10": 4,
+        "hrs_08_12": 18,
+        "hrs_10_14": 36,
+        "hrs_12_16": 94,
+        "hrs_14_18": 131,
+        "hrs_16_20": 156
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_CDBDA",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_32",
+      "type": "tracheal system",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "32",
+      "cell_number": 433,
+      "cells_by_sample": {
+        "hrs_03_07": 2,
+        "hrs_06_10": 2,
+        "hrs_08_12": 10,
+        "hrs_10_14": 21,
+        "hrs_12_16": 110,
+        "hrs_14_18": 190,
+        "hrs_16_20": 98
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BAB",
+      "author_automated": "tracheal system",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_33",
+      "type": "muscle",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "33",
+      "cell_number": 311,
+      "cells_by_sample": {
+        "hrs_00_02": 2,
+        "hrs_03_07": 6,
+        "hrs_04_08": 10,
+        "hrs_06_10": 10,
+        "hrs_08_12": 10,
+        "hrs_10_14": 21,
+        "hrs_12_16": 94,
+        "hrs_14_18": 101,
+        "hrs_16_20": 57
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_CDBA",
+      "author_automated": "muscle",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_34",
+      "type": "brain",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "34",
+      "cell_number": 304,
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_08_12": 7,
+        "hrs_10_14": 31,
+        "hrs_12_16": 96,
+        "hrs_14_18": 83,
+        "hrs_16_20": 86
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_automated": "brain",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "14_16h_35",
+      "type": "foregut / hindgut / anal pad",
+      "clustering": "14_16",
+      "clustering_name": "Calderon 2022 clusters, modelled age 14-16 h",
+      "source_cluster_id": "35",
+      "cell_number": 280,
+      "cells_by_sample": {
+        "hrs_03_07": 3,
+        "hrs_06_10": 1,
+        "hrs_10_14": 10,
+        "hrs_12_16": 85,
+        "hrs_14_18": 90,
+        "hrs_16_20": 91
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_AAAA",
+      "author_automated": "ventral epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005334",
+        "label": "embryonic stage 16"
+      }
+    },
+    {
+      "label": "16_18h_0",
+      "type": "brain",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "0",
+      "cell_number": 3323,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_08_12": 1,
+        "hrs_10_14": 7,
+        "hrs_12_16": 22,
+        "hrs_14_18": 113,
+        "hrs_16_20": 3179
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_automated": "brain",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_1",
+      "type": "somatic muscle",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "1",
+      "cell_number": 2875,
+      "cells_by_sample": {
+        "hrs_01_03": 2,
+        "hrs_03_07": 7,
+        "hrs_04_08": 4,
+        "hrs_06_10": 4,
+        "hrs_08_12": 7,
+        "hrs_10_14": 37,
+        "hrs_12_16": 192,
+        "hrs_14_18": 316,
+        "hrs_16_20": 2306
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_AAB",
+      "author_automated": "somatic muscle",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_2",
+      "type": "ubiquitous",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "2",
+      "cell_number": 2855,
+      "cells_by_sample": {
+        "hrs_00_02": 20,
+        "hrs_01_03": 28,
+        "hrs_08_12": 2,
+        "hrs_10_14": 11,
+        "hrs_12_16": 64,
+        "hrs_14_18": 359,
+        "hrs_16_20": 2371
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_CDBA",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "16_18h_3",
+      "type": "foregut / hindgut / anal pad",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "3",
+      "cell_number": 2714,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 2,
+        "hrs_03_07": 1,
+        "hrs_04_08": 1,
+        "hrs_06_10": 2,
+        "hrs_08_12": 2,
+        "hrs_10_14": 6,
+        "hrs_12_16": 48,
+        "hrs_14_18": 161,
+        "hrs_16_20": 2490
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "ventral epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_4",
+      "type": "ubiquitous",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "4",
+      "cell_number": 2498,
+      "cells_by_sample": {
+        "hrs_01_03": 9,
+        "hrs_12_16": 14,
+        "hrs_14_18": 34,
+        "hrs_16_20": 2441
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ventral epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "16_18h_5",
+      "type": "epidermis",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "5",
+      "cell_number": 2493,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 2,
+        "hrs_06_10": 2,
+        "hrs_08_12": 3,
+        "hrs_10_14": 16,
+        "hrs_12_16": 124,
+        "hrs_14_18": 139,
+        "hrs_16_20": 2206
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_AAAC",
+      "author_automated": "dorsal epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_6",
+      "type": "brain",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "6",
+      "cell_number": 2451,
+      "cells_by_sample": {
+        "hrs_04_08": 1,
+        "hrs_06_10": 2,
+        "hrs_08_12": 2,
+        "hrs_10_14": 19,
+        "hrs_12_16": 217,
+        "hrs_14_18": 236,
+        "hrs_16_20": 1974
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_AABA",
+      "author_automated": "brain",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_7",
+      "type": "epidermis",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "7",
+      "cell_number": 2109,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 3,
+        "hrs_03_07": 1,
+        "hrs_08_12": 1,
+        "hrs_10_14": 9,
+        "hrs_12_16": 80,
+        "hrs_14_18": 240,
+        "hrs_16_20": 1774
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_AAAC",
+      "author_automated": "ventral epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_8",
+      "type": "epidermis",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "8",
+      "cell_number": 2102,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_08_12": 1,
+        "hrs_10_14": 5,
+        "hrs_12_16": 25,
+        "hrs_14_18": 39,
+        "hrs_16_20": 2031
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "head epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_9",
+      "type": "muscle",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "9",
+      "cell_number": 1931,
+      "cells_by_sample": {
+        "hrs_00_02": 3,
+        "hrs_01_03": 1,
+        "hrs_04_08": 1,
+        "hrs_08_12": 2,
+        "hrs_10_14": 1,
+        "hrs_12_16": 79,
+        "hrs_14_18": 224,
+        "hrs_16_20": 1620
+      },
+      "author_germ_layer": "mesoderm",
+      "author_automated": "dorsal epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_10",
+      "type": "brain",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "10",
+      "cell_number": 1905,
+      "cells_by_sample": {
+        "hrs_00_02": 18,
+        "hrs_01_03": 24,
+        "hrs_03_07": 1,
+        "hrs_06_10": 2,
+        "hrs_08_12": 2,
+        "hrs_10_14": 4,
+        "hrs_12_16": 37,
+        "hrs_14_18": 388,
+        "hrs_16_20": 1429
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_11",
+      "type": "epidermis",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "11",
+      "cell_number": 1878,
+      "cells_by_sample": {
+        "hrs_01_03": 5,
+        "hrs_03_07": 1,
+        "hrs_12_16": 9,
+        "hrs_14_18": 13,
+        "hrs_16_20": 1850
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "dorsal epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_12",
+      "type": "epidermis",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "12",
+      "cell_number": 1868,
+      "cells_by_sample": {
+        "hrs_00_02": 2,
+        "hrs_01_03": 6,
+        "hrs_03_07": 1,
+        "hrs_10_14": 3,
+        "hrs_12_16": 79,
+        "hrs_14_18": 343,
+        "hrs_16_20": 1434
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "foregut",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_13",
+      "type": "ubiquitous",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "13",
+      "cell_number": 1804,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 9,
+        "hrs_08_12": 1,
+        "hrs_10_14": 2,
+        "hrs_12_16": 30,
+        "hrs_14_18": 89,
+        "hrs_16_20": 1672
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "16_18h_14",
+      "type": "midgut",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "14",
+      "cell_number": 1755,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 4,
+        "hrs_03_07": 1,
+        "hrs_04_08": 2,
+        "hrs_06_10": 2,
+        "hrs_08_12": 3,
+        "hrs_10_14": 3,
+        "hrs_12_16": 97,
+        "hrs_14_18": 267,
+        "hrs_16_20": 1375
+      },
+      "author_germ_layer": "endoderm",
+      "author_automated": "midgut",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_15",
+      "type": "tracheal system",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "15",
+      "cell_number": 1606,
+      "cells_by_sample": {
+        "hrs_01_03": 4,
+        "hrs_03_07": 1,
+        "hrs_06_10": 4,
+        "hrs_10_14": 8,
+        "hrs_12_16": 70,
+        "hrs_14_18": 144,
+        "hrs_16_20": 1375
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_BA",
+      "author_automated": "tracheal system",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_16",
+      "type": "midgut",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "16",
+      "cell_number": 1589,
+      "cells_by_sample": {
+        "hrs_10_14": 4,
+        "hrs_12_16": 54,
+        "hrs_14_18": 133,
+        "hrs_16_20": 1398
+      },
+      "author_germ_layer": "endoderm",
+      "author_automated": "salivary gland",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_17",
+      "type": "ubiquitous",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "17",
+      "cell_number": 1571,
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 10,
+        "hrs_08_12": 1,
+        "hrs_12_16": 16,
+        "hrs_14_18": 53,
+        "hrs_16_20": 1490
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "16_18h_18",
+      "type": "ubiquitous",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "18",
+      "cell_number": 1538,
+      "cells_by_sample": {
+        "hrs_01_03": 3,
+        "hrs_10_14": 1,
+        "hrs_12_16": 15,
+        "hrs_14_18": 29,
+        "hrs_16_20": 1490
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "16_18h_19",
+      "type": "somatic muscle",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "19",
+      "cell_number": 1489,
+      "cells_by_sample": {
+        "hrs_10_14": 6,
+        "hrs_12_16": 70,
+        "hrs_14_18": 156,
+        "hrs_16_20": 1257
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_AABB",
+      "author_automated": "somatic muscle",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_20",
+      "type": "plasmatocytes",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "20",
+      "cell_number": 1445,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_06_10": 1,
+        "hrs_08_12": 1,
+        "hrs_10_14": 7,
+        "hrs_12_16": 86,
+        "hrs_14_18": 185,
+        "hrs_16_20": 1164
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_BDBB",
+      "author_automated": "plasmatocytes",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_21",
+      "type": "foregut / hindgut / anal pad",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "21",
+      "cell_number": 1390,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_10_14": 2,
+        "hrs_12_16": 30,
+        "hrs_14_18": 44,
+        "hrs_16_20": 1313
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "hypopharynx",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_22",
+      "type": "ubiquitous",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "22",
+      "cell_number": 1370,
+      "cells_by_sample": {
+        "hrs_01_03": 2,
+        "hrs_03_07": 2,
+        "hrs_04_08": 2,
+        "hrs_08_12": 1,
+        "hrs_10_14": 1,
+        "hrs_12_16": 12,
+        "hrs_14_18": 56,
+        "hrs_16_20": 1294
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "ubiquitous",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "16_18h_23",
+      "type": "fat body",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "23",
+      "cell_number": 1317,
+      "cells_by_sample": {
+        "hrs_03_07": 2,
+        "hrs_04_08": 1,
+        "hrs_10_14": 8,
+        "hrs_12_16": 67,
+        "hrs_14_18": 122,
+        "hrs_16_20": 1117
+      },
+      "author_germ_layer": "mesoderm",
+      "author_lineage": "Ubi_CAB",
+      "author_automated": "fat body",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_24",
+      "type": "epidermis",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "24",
+      "cell_number": 1301,
+      "cells_by_sample": {
+        "hrs_01_03": 3,
+        "hrs_08_12": 2,
+        "hrs_10_14": 2,
+        "hrs_12_16": 34,
+        "hrs_14_18": 65,
+        "hrs_16_20": 1195
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "head epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_25",
+      "type": "yolk nuclei",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "25",
+      "cell_number": 1167,
+      "cells_by_sample": {
+        "hrs_10_14": 7,
+        "hrs_12_16": 75,
+        "hrs_14_18": 384,
+        "hrs_16_20": 701
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Yolk_AC",
+      "author_automated": "yolk nuclei",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_26",
+      "type": "yolk nuclei",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "26",
+      "cell_number": 1099,
+      "cells_by_sample": {
+        "hrs_04_08": 2,
+        "hrs_08_12": 4,
+        "hrs_10_14": 3,
+        "hrs_12_16": 54,
+        "hrs_14_18": 423,
+        "hrs_16_20": 613
+      },
+      "author_germ_layer": "extra-embryonic",
+      "author_lineage": "Yolk_AB",
+      "author_automated": "yolk nuclei",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_27",
+      "type": "sensory nervous system",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "27",
+      "cell_number": 1098,
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_04_08": 1,
+        "hrs_06_10": 2,
+        "hrs_10_14": 5,
+        "hrs_12_16": 69,
+        "hrs_14_18": 96,
+        "hrs_16_20": 924
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_AABAA",
+      "author_automated": "ventral nerve cord",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_28",
+      "type": "ubiquitous",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "28",
+      "cell_number": 1063,
+      "cells_by_sample": {
+        "hrs_00_02": 2,
+        "hrs_01_03": 1,
+        "hrs_10_14": 1,
+        "hrs_12_16": 24,
+        "hrs_14_18": 33,
+        "hrs_16_20": 1002
+      },
+      "author_germ_layer": "unknown",
+      "author_automated": "oenocyte",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "16_18h_29",
+      "type": "brain",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "29",
+      "cell_number": 941,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_08_12": 1,
+        "hrs_10_14": 2,
+        "hrs_12_16": 58,
+        "hrs_14_18": 114,
+        "hrs_16_20": 765
+      },
+      "author_germ_layer": "neuroectoderm",
+      "author_lineage": "Ubi_BCAA",
+      "author_automated": "brain",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_30",
+      "type": "epidermis",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "30",
+      "cell_number": 913,
+      "cells_by_sample": {
+        "hrs_06_10": 2,
+        "hrs_08_12": 1,
+        "hrs_10_14": 1,
+        "hrs_12_16": 16,
+        "hrs_14_18": 49,
+        "hrs_16_20": 844
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "head epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_31",
+      "type": "ubiquitous",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "31",
+      "cell_number": 809,
+      "cells_by_sample": {
+        "hrs_01_03": 2,
+        "hrs_08_12": 2,
+        "hrs_10_14": 4,
+        "hrs_12_16": 40,
+        "hrs_14_18": 121,
+        "hrs_16_20": 640
+      },
+      "author_germ_layer": "unknown",
+      "author_lineage": "Ubi_BDBA",
+      "author_automated": "brain",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      },
+      "unannotated": true
+    },
+    {
+      "label": "16_18h_32",
+      "type": "epidermis",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "32",
+      "cell_number": 388,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_10_14": 3,
+        "hrs_12_16": 18,
+        "hrs_14_18": 22,
+        "hrs_16_20": 344
+      },
+      "author_germ_layer": "ectoderm",
+      "author_automated": "head epidermis",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_33",
+      "type": "Malpighian tubule",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "33",
+      "cell_number": 315,
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 1,
+        "hrs_06_10": 1,
+        "hrs_08_12": 2,
+        "hrs_10_14": 2,
+        "hrs_12_16": 20,
+        "hrs_14_18": 32,
+        "hrs_16_20": 256
+      },
+      "author_germ_layer": "ectoderm",
+      "author_lineage": "Ubi_CB",
+      "author_automated": "Malpighian tubule",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "16_18h_34",
+      "type": "midgut",
+      "clustering": "16_18",
+      "clustering_name": "Calderon 2022 clusters, modelled age 16-18 h",
+      "source_cluster_id": "34",
+      "cell_number": 143,
+      "cells_by_sample": {
+        "hrs_03_07": 2,
+        "hrs_04_08": 1,
+        "hrs_06_10": 1,
+        "hrs_08_12": 1,
+        "hrs_10_14": 4,
+        "hrs_12_16": 6,
+        "hrs_14_18": 39,
+        "hrs_16_20": 89
+      },
+      "author_germ_layer": "endoderm",
+      "author_automated": "midgut",
+      "stage": {
+        "fbdv_id": "FBdv:00005335",
+        "label": "embryonic stage 17"
+      }
+    },
+    {
+      "label": "neuronal_0",
+      "type": "Neural progenitors",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "0",
+      "cell_number": 9932,
+      "author_annotation": "Neural progenitors",
+      "cells_by_sample": {
+        "hrs_00_02": 53,
+        "hrs_01_03": 13,
+        "hrs_02_04": 5,
+        "hrs_03_07": 904,
+        "hrs_04_08": 3825,
+        "hrs_06_10": 2792,
+        "hrs_08_12": 1790,
+        "hrs_10_14": 80,
+        "hrs_12_16": 50,
+        "hrs_14_18": 340,
+        "hrs_16_20": 80
+      }
+    },
+    {
+      "label": "neuronal_1",
+      "type": "Neural progenitors",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "1",
+      "cell_number": 7020,
+      "author_annotation": "Neural progenitors",
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_02_04": 3,
+        "hrs_03_07": 316,
+        "hrs_04_08": 322,
+        "hrs_06_10": 1782,
+        "hrs_08_12": 3189,
+        "hrs_10_14": 534,
+        "hrs_12_16": 262,
+        "hrs_14_18": 476,
+        "hrs_16_20": 135
+      }
+    },
+    {
+      "label": "neuronal_2",
+      "type": "Immature neurons",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "2",
+      "cell_number": 6714,
+      "author_annotation": "Immature neurons",
+      "cells_by_sample": {
+        "hrs_03_07": 39,
+        "hrs_04_08": 26,
+        "hrs_06_10": 672,
+        "hrs_08_12": 2430,
+        "hrs_10_14": 1261,
+        "hrs_12_16": 831,
+        "hrs_14_18": 894,
+        "hrs_16_20": 561
+      }
+    },
+    {
+      "label": "neuronal_3",
+      "type": "Neural progenitors",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "3",
+      "cell_number": 4879,
+      "author_annotation": "Neural progenitors",
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_02_04": 2,
+        "hrs_03_07": 149,
+        "hrs_04_08": 155,
+        "hrs_06_10": 1645,
+        "hrs_08_12": 2613,
+        "hrs_10_14": 95,
+        "hrs_12_16": 29,
+        "hrs_14_18": 177,
+        "hrs_16_20": 13
+      }
+    },
+    {
+      "label": "neuronal_4",
+      "type": "Head epid. /muscle",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "4",
+      "cell_number": 4486,
+      "author_annotation": "Head epid. /muscle",
+      "cells_by_sample": {
+        "hrs_01_03": 3,
+        "hrs_10_14": 47,
+        "hrs_12_16": 110,
+        "hrs_14_18": 51,
+        "hrs_16_20": 4275
+      }
+    },
+    {
+      "label": "neuronal_5",
+      "type": "Mature neurons",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "5",
+      "cell_number": 4453,
+      "author_annotation": "Mature neurons",
+      "cells_by_sample": {
+        "hrs_03_07": 17,
+        "hrs_04_08": 10,
+        "hrs_06_10": 19,
+        "hrs_08_12": 36,
+        "hrs_10_14": 764,
+        "hrs_12_16": 1433,
+        "hrs_14_18": 625,
+        "hrs_16_20": 1549
+      }
+    },
+    {
+      "label": "neuronal_6",
+      "type": "Sensory progenitors",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "6",
+      "cell_number": 4360,
+      "author_annotation": "Sensory progenitors",
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_03_07": 189,
+        "hrs_04_08": 155,
+        "hrs_06_10": 1406,
+        "hrs_08_12": 2257,
+        "hrs_10_14": 142,
+        "hrs_12_16": 44,
+        "hrs_14_18": 148,
+        "hrs_16_20": 18
+      }
+    },
+    {
+      "label": "neuronal_7",
+      "type": "Immature neurons",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "7",
+      "cell_number": 3973,
+      "author_annotation": "Immature neurons",
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 2,
+        "hrs_04_08": 1,
+        "hrs_06_10": 1,
+        "hrs_08_12": 42,
+        "hrs_10_14": 807,
+        "hrs_12_16": 1274,
+        "hrs_14_18": 555,
+        "hrs_16_20": 1290
+      }
+    },
+    {
+      "label": "neuronal_8",
+      "type": "Immature neurons",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "8",
+      "cell_number": 2180,
+      "author_annotation": "Immature neurons",
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 1,
+        "hrs_03_07": 1,
+        "hrs_04_08": 1,
+        "hrs_06_10": 13,
+        "hrs_08_12": 139,
+        "hrs_10_14": 377,
+        "hrs_12_16": 726,
+        "hrs_14_18": 320,
+        "hrs_16_20": 601
+      }
+    },
+    {
+      "label": "neuronal_9",
+      "type": "Ventral midline",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "9",
+      "cell_number": 2064,
+      "author_annotation": "Ventral midline",
+      "cells_by_sample": {
+        "hrs_00_02": 1,
+        "hrs_01_03": 1,
+        "hrs_03_07": 34,
+        "hrs_04_08": 40,
+        "hrs_06_10": 335,
+        "hrs_08_12": 894,
+        "hrs_10_14": 284,
+        "hrs_12_16": 163,
+        "hrs_14_18": 210,
+        "hrs_16_20": 102
+      }
+    },
+    {
+      "label": "neuronal_10",
+      "type": "Mature neurons",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "10",
+      "cell_number": 1778,
+      "author_annotation": "Mature neurons",
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 7,
+        "hrs_04_08": 3,
+        "hrs_06_10": 9,
+        "hrs_08_12": 25,
+        "hrs_10_14": 350,
+        "hrs_12_16": 517,
+        "hrs_14_18": 233,
+        "hrs_16_20": 633
+      }
+    },
+    {
+      "label": "neuronal_11",
+      "type": "Neural progenitors",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "11",
+      "cell_number": 1731,
+      "author_annotation": "Neural progenitors",
+      "cells_by_sample": {
+        "hrs_00_02": 155,
+        "hrs_01_03": 31,
+        "hrs_03_07": 2,
+        "hrs_04_08": 3,
+        "hrs_06_10": 1,
+        "hrs_08_12": 42,
+        "hrs_10_14": 142,
+        "hrs_12_16": 64,
+        "hrs_14_18": 1237,
+        "hrs_16_20": 54
+      }
+    },
+    {
+      "label": "neuronal_12",
+      "type": "Immature neurons",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "12",
+      "cell_number": 1610,
+      "author_annotation": "Immature neurons",
+      "cells_by_sample": {
+        "hrs_03_07": 3,
+        "hrs_06_10": 7,
+        "hrs_08_12": 37,
+        "hrs_10_14": 439,
+        "hrs_12_16": 593,
+        "hrs_14_18": 220,
+        "hrs_16_20": 311
+      }
+    },
+    {
+      "label": "neuronal_13",
+      "type": "Immature neurons",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "13",
+      "cell_number": 1125,
+      "author_annotation": "Immature neurons",
+      "cells_by_sample": {
+        "hrs_03_07": 2,
+        "hrs_06_10": 17,
+        "hrs_08_12": 106,
+        "hrs_10_14": 308,
+        "hrs_12_16": 315,
+        "hrs_14_18": 202,
+        "hrs_16_20": 175
+      }
+    },
+    {
+      "label": "neuronal_14",
+      "type": "Sensory progenitors",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "14",
+      "cell_number": 789,
+      "author_annotation": "Sensory progenitors",
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_06_10": 4,
+        "hrs_08_12": 35,
+        "hrs_10_14": 222,
+        "hrs_12_16": 241,
+        "hrs_14_18": 181,
+        "hrs_16_20": 105
+      }
+    },
+    {
+      "label": "neuronal_15",
+      "type": "Neural progenitors",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "15",
+      "cell_number": 734,
+      "author_annotation": "Neural progenitors",
+      "cells_by_sample": {
+        "hrs_03_07": 169,
+        "hrs_04_08": 135,
+        "hrs_06_10": 296,
+        "hrs_08_12": 91,
+        "hrs_10_14": 13,
+        "hrs_12_16": 8,
+        "hrs_14_18": 17,
+        "hrs_16_20": 5
+      }
+    },
+    {
+      "label": "neuronal_16",
+      "type": "Neural progenitors",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "16",
+      "cell_number": 529,
+      "author_annotation": "Neural progenitors",
+      "cells_by_sample": {
+        "hrs_06_10": 31,
+        "hrs_08_12": 487,
+        "hrs_14_18": 11
+      }
+    },
+    {
+      "label": "neuronal_17",
+      "type": "Mature neurons",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "17",
+      "cell_number": 472,
+      "author_annotation": "Mature neurons",
+      "cells_by_sample": {
+        "hrs_03_07": 3,
+        "hrs_06_10": 3,
+        "hrs_08_12": 15,
+        "hrs_10_14": 115,
+        "hrs_12_16": 160,
+        "hrs_14_18": 70,
+        "hrs_16_20": 106
+      }
+    },
+    {
+      "label": "neuronal_18",
+      "type": "Oenocytes",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "18",
+      "cell_number": 140,
+      "author_annotation": "Oenocytes",
+      "cells_by_sample": {
+        "hrs_03_07": 3,
+        "hrs_06_10": 2,
+        "hrs_08_12": 9,
+        "hrs_10_14": 47,
+        "hrs_12_16": 56,
+        "hrs_14_18": 12,
+        "hrs_16_20": 11
+      }
+    },
+    {
+      "label": "neuronal_19",
+      "type": "Germline",
+      "clustering": "neuronal",
+      "clustering_name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+      "source_cluster_id": "19",
+      "cell_number": 43,
+      "author_annotation": "Germline",
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_04_08": 1,
+        "hrs_06_10": 10,
+        "hrs_08_12": 13,
+        "hrs_10_14": 9,
+        "hrs_12_16": 1,
+        "hrs_14_18": 2,
+        "hrs_16_20": 6
+      }
+    },
+    {
+      "label": "neuronal_mature_0",
+      "type": "Cholinergic",
+      "clustering": "neuronal_mature",
+      "clustering_name": "Calderon 2022 mature neuron sub-clusters (6-18 h)",
+      "source_cluster_id": "0",
+      "cell_number": 1562,
+      "author_annotation": "Cholinergic 1",
+      "cells_by_sample": {
+        "hrs_03_07": 2,
+        "hrs_04_08": 1,
+        "hrs_06_10": 3,
+        "hrs_08_12": 11,
+        "hrs_10_14": 337,
+        "hrs_12_16": 611,
+        "hrs_14_18": 212,
+        "hrs_16_20": 385
+      }
+    },
+    {
+      "label": "neuronal_mature_1",
+      "type": "Undiff.",
+      "clustering": "neuronal_mature",
+      "clustering_name": "Calderon 2022 mature neuron sub-clusters (6-18 h)",
+      "source_cluster_id": "1",
+      "cell_number": 1514,
+      "author_annotation": "Undiff. 1",
+      "cells_by_sample": {
+        "hrs_03_07": 2,
+        "hrs_06_10": 5,
+        "hrs_08_12": 10,
+        "hrs_10_14": 226,
+        "hrs_12_16": 402,
+        "hrs_14_18": 220,
+        "hrs_16_20": 649
+      }
+    },
+    {
+      "label": "neuronal_mature_2",
+      "type": "Cholinergic",
+      "clustering": "neuronal_mature",
+      "clustering_name": "Calderon 2022 mature neuron sub-clusters (6-18 h)",
+      "source_cluster_id": "2",
+      "cell_number": 997,
+      "author_annotation": "Cholinergic 2",
+      "cells_by_sample": {
+        "hrs_03_07": 11,
+        "hrs_04_08": 8,
+        "hrs_06_10": 10,
+        "hrs_08_12": 10,
+        "hrs_10_14": 102,
+        "hrs_12_16": 271,
+        "hrs_14_18": 126,
+        "hrs_16_20": 459
+      }
+    },
+    {
+      "label": "neuronal_mature_3",
+      "type": "Multidendritic sensory",
+      "clustering": "neuronal_mature",
+      "clustering_name": "Calderon 2022 mature neuron sub-clusters (6-18 h)",
+      "source_cluster_id": "3",
+      "cell_number": 656,
+      "author_annotation": "Multidendritic sensory",
+      "cells_by_sample": {
+        "hrs_03_07": 4,
+        "hrs_04_08": 2,
+        "hrs_06_10": 3,
+        "hrs_08_12": 6,
+        "hrs_10_14": 128,
+        "hrs_12_16": 170,
+        "hrs_14_18": 84,
+        "hrs_16_20": 259
+      }
+    },
+    {
+      "label": "neuronal_mature_4",
+      "type": "Glutamatergic",
+      "clustering": "neuronal_mature",
+      "clustering_name": "Calderon 2022 mature neuron sub-clusters (6-18 h)",
+      "source_cluster_id": "4",
+      "cell_number": 564,
+      "author_annotation": "Glutamatergic",
+      "cells_by_sample": {
+        "hrs_03_07": 3,
+        "hrs_06_10": 1,
+        "hrs_08_12": 7,
+        "hrs_10_14": 108,
+        "hrs_12_16": 216,
+        "hrs_14_18": 84,
+        "hrs_16_20": 145
+      }
+    },
+    {
+      "label": "neuronal_mature_5",
+      "type": "External sensory",
+      "clustering": "neuronal_mature",
+      "clustering_name": "Calderon 2022 mature neuron sub-clusters (6-18 h)",
+      "source_cluster_id": "5",
+      "cell_number": 447,
+      "author_annotation": "External sensory",
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_06_10": 2,
+        "hrs_08_12": 4,
+        "hrs_10_14": 96,
+        "hrs_12_16": 140,
+        "hrs_14_18": 54,
+        "hrs_16_20": 150
+      }
+    },
+    {
+      "label": "neuronal_mature_6",
+      "type": "Chordotonal sensory",
+      "clustering": "neuronal_mature",
+      "clustering_name": "Calderon 2022 mature neuron sub-clusters (6-18 h)",
+      "source_cluster_id": "6",
+      "cell_number": 353,
+      "author_annotation": "Chordotonal sensory",
+      "cells_by_sample": {
+        "hrs_06_10": 1,
+        "hrs_08_12": 11,
+        "hrs_10_14": 84,
+        "hrs_12_16": 119,
+        "hrs_14_18": 49,
+        "hrs_16_20": 89
+      }
+    },
+    {
+      "label": "neuronal_mature_7",
+      "type": "Monoaminergic",
+      "clustering": "neuronal_mature",
+      "clustering_name": "Calderon 2022 mature neuron sub-clusters (6-18 h)",
+      "source_cluster_id": "7",
+      "cell_number": 247,
+      "author_annotation": "Monoaminergic",
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_06_10": 1,
+        "hrs_08_12": 5,
+        "hrs_10_14": 58,
+        "hrs_12_16": 89,
+        "hrs_14_18": 32,
+        "hrs_16_20": 61
+      }
+    },
+    {
+      "label": "neuronal_mature_8",
+      "type": "Undiff.",
+      "clustering": "neuronal_mature",
+      "clustering_name": "Calderon 2022 mature neuron sub-clusters (6-18 h)",
+      "source_cluster_id": "8",
+      "cell_number": 244,
+      "author_annotation": "Undiff. 2",
+      "cells_by_sample": {
+        "hrs_03_07": 1,
+        "hrs_06_10": 2,
+        "hrs_08_12": 11,
+        "hrs_10_14": 76,
+        "hrs_12_16": 65,
+        "hrs_14_18": 44,
+        "hrs_16_20": 45
+      }
+    },
+    {
+      "label": "neuronal_mature_9",
+      "type": "Chordotonal glia",
+      "clustering": "neuronal_mature",
+      "clustering_name": "Calderon 2022 mature neuron sub-clusters (6-18 h)",
+      "source_cluster_id": "9",
+      "cell_number": 70,
+      "author_annotation": "Chordotonal glia",
+      "cells_by_sample": {
+        "hrs_01_03": 1,
+        "hrs_03_07": 2,
+        "hrs_04_08": 2,
+        "hrs_06_10": 2,
+        "hrs_08_12": 1,
+        "hrs_10_14": 4,
+        "hrs_12_16": 10,
+        "hrs_14_18": 17,
+        "hrs_16_20": 31
+      }
+    },
+    {
+      "label": "neuronal_mature_10",
+      "type": "Peptidergic",
+      "clustering": "neuronal_mature",
+      "clustering_name": "Calderon 2022 mature neuron sub-clusters (6-18 h)",
+      "source_cluster_id": "10",
+      "cell_number": 49,
+      "author_annotation": "Peptidergic",
+      "cells_by_sample": {
+        "hrs_06_10": 1,
+        "hrs_10_14": 10,
+        "hrs_12_16": 17,
+        "hrs_14_18": 6,
+        "hrs_16_20": 15
+      }
+    }
+  ]
+}
