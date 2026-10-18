@@ -271,3 +271,14 @@ def test_fetch_compresses_downloads(tmp_path):
         assert read_obs(dest, ["annotation"]) == read_obs(src, ["annotation"])
         assert not list(dest.parent.glob(name + ".*"))       # no leftover temp files
         mod.fetch_any(url, dest)                              # done: not fetched again
+
+
+def test_expression_h5ads_default_and_listed():
+    """One h5ad per Clustering by default (FCA layout); `expression.h5ad_files` lists files
+    in .cache instead (files holding several Clusterings, cells by membership file)."""
+    from vfb_scrnaseq.ingest_h5ad import REPO_ROOT, expression_h5ads, h5ad_path
+    cfg = {"dataset": {"accession": "E-MTAB-1"}, "sample_build": {"clusterings": [{"id": "head"}, {"id": "body"}]},
+           "expression": {"source": "h5ad"}}
+    assert expression_h5ads(cfg) == [h5ad_path("E-MTAB-1", "head"), h5ad_path("E-MTAB-1", "body")]
+    cfg["expression"]["h5ad_files"] = ["xie/all.h5ad", "xie/knot.h5ad"]
+    assert expression_h5ads(cfg) == [REPO_ROOT / ".cache" / "xie/all.h5ad", REPO_ROOT / ".cache" / "xie/knot.h5ad"]

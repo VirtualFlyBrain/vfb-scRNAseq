@@ -35,6 +35,17 @@ def h5ad_path(accession: str, clustering_id: str) -> Path:
     return REPO_ROOT / ".cache" / "h5ad" / accession / f"{clustering_id}.h5ad"
 
 
+def expression_h5ads(cfg: dict) -> list[Path]:
+    """The h5ad files an h5ad-sourced expression build reads: `expression.h5ad_files`
+    (paths in .cache, when one file holds several Clusterings and cells are assigned by
+    `expression.membership_file`), else one per Clustering (scripts/fetch_h5ad.py)."""
+    files = (cfg.get("expression") or {}).get("h5ad_files")
+    if files:
+        return [REPO_ROOT / ".cache" / f for f in files]
+    acc = cfg["dataset"]["accession"]
+    return [h5ad_path(acc, c["id"]) for c in cfg["sample_build"]["clusterings"]]
+
+
 def _str(v):
     return v.decode("utf-8") if isinstance(v, bytes) else v
 
