@@ -127,3 +127,13 @@ def test_sdrf_corrections_apply_before_grouping_and_leave_a_note(tmp_path):
     s47 = samples[0]
     assert s47["age_raw"] == "5 days" and s47["curation_notes"] == ["age per paper"]
     assert "curation_notes" not in samples[1] and warnings == []
+
+
+def test_sdrf_include_keeps_only_the_listed_rows(tmp_path):
+    mod = _builder()
+    sb = dict(SB_COMMON, sample_columns=["Extract Name"], assay_column="Source Name",
+              sdrf_include={"Extract Name": ["h__FCA48"]})
+    reg = IDRegistry.load(tmp_path / "reg.json")
+    samples, assays, _ = mod.build(_rows_10x(), sb, "E-MTAB-1", reg, "VFBseq_00000001")
+    assert [s["sample_id"] for s in samples] == ["h__FCA48"]
+    assert [a["library_id"] for a in assays] == ["FCA48_S4"]

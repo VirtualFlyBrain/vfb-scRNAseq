@@ -91,6 +91,11 @@ from FlyBase; that authority is being dropped.)
   (hemilineage secondary neuron terms, with the authors' neurotransmitter class; Notch
   classes for unseparated hemilineage pairs; neurotransmitter classes; glia, sperm).
   Replaces the old FlyBase/SCEA load (FBlc0005603).
+- `projects/ing_simmons_2021/` — Ing-Simmons et al. 2021, gastrulating embryos (PMID
+  33795866; [E-MTAB-9304](https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-9304)):
+  10x, whole embryos at 2.5-3.5 h; controls only (the gd7 / Toll mutant embryos left out),
+  the authors' 15 clusters restricted to the control cells. Replaces the old FlyBase/SCEA
+  load (FBlc0006191). In progress.
 - `projects/hormann_2020/` — Hörmann et al. 2020, T4/T5 neurons through pupal
   development (PMID 32238425; [GSE147987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987)):
   FACS-sorted T4/T5 neurons at five pupal stages, one Clustering per stage of the
@@ -142,6 +147,7 @@ projects/hormann_2020/                   # pupal T4/T5 neurons (GEO matrices; SC
 projects/allen_2020/                     # adult VNC (GEO DGE matrices; clusters by re-running the authors' Seurat 2 pipeline)
 projects/li_2017/                        # olfactory PNs (GEO per-cell samples; authors' repo assignments)
 projects/xie_2021/                       # olfactory PNs through development (GEO h5ads; reuses Li 2017 samples)
+projects/ing_simmons_2021/               # gastrulating embryos (ArrayExpress; SCEA author labels; controls only)
 metadata/                                # VFB-loadable metadata OWL, one per project
 expression/                              # VFB-loadable expression OWL (.owl.gz), one per project
 id_registry/                             # minted-id registry (JSON)

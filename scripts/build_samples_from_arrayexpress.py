@@ -16,6 +16,8 @@ projects/<name>/samples.json. Config-driven (`sample_build` in config.yaml):
                    FCA4) is added to the Sample label, to tell like samples apart
   sex_column / sex_map, age_column / age_map, tissue_column / tissue_map,
   genotype_columns / stock_map / genotype_includes_map, assay_method, clusterings
+  sdrf_include     {column: [values]}: keep only the SDRF rows with one of these values
+                   (e.g. the control embryos of a study that also sequenced mutants)
   sdrf_corrections [{match: {column: value}, set: {column: value}, note}] curator
                    fixes to SDRF values (e.g. an age contradicted by the paper),
                    applied before grouping; the note is kept on the affected Samples
@@ -75,6 +77,10 @@ def apply_corrections(rows: list[dict], corrections: list[dict]) -> list[dict]:
 def build(rows: list[dict], sb: dict, accession: str, reg: IDRegistry, dataset_id: str):
     """Group SDRF rows into samples and assays; returns (samples, assays, warnings)."""
     warnings = []
+    for col, keep in (sb.get("sdrf_include") or {}).items():
+        rows = [r for r in rows if r.get(col) in keep]
+        if not rows:
+            raise SystemExit(f"sdrf_include {col}: {keep} matched no rows")
     rows = apply_corrections(rows, sb.get("sdrf_corrections", []))
     for c in sb.get("sdrf_corrections", []):
         if not any(all(r.get(k) == v for k, v in c["set"].items()) and c["note"] in r.get("_notes", [])
