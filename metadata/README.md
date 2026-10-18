@@ -20,3 +20,4 @@ functional syntax) stay under `projects/<p>/`.
 | vfb_scRNAseq_metadata_hormann_2020.owl | hormann_2020 |
 | vfb_scRNAseq_metadata_li_2017.owl | li_2017 |
 | vfb_scRNAseq_metadata_xie_2021.owl | xie_2021 |
+| vfb_scRNAseq_metadata_allen_2020.owl | allen_2020 |

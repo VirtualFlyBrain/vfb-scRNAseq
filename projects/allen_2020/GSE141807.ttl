@@ -1,0 +1,1246 @@
+@prefix BAO: <http://www.bioassayontology.org/bao#BAO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix FBbt: <http://purl.obolibrary.org/obo/FBbt_> .
+@prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
+@prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
+@prefix FlyBase: <http://flybase.org/reports/> .
+@prefix GENO: <http://purl.obolibrary.org/obo/GENO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix VFBseq: <http://virtualflybrain.org/reports/VFBseq_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix neo_custom: <http://n2o.neo/custom/> .
+@prefix neo_property: <http://n2o.neo/property/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vfb: <http://virtualflybrain.org/reports/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VFBseq:00002738 a FBcv:0009003 ;
+    rdfs:label "hemilineage 4B cluster 0 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 623 ;
+    neo_custom:filtered_gene_count 1862 ;
+    neo_custom:total_gene_count 9001 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00053311,
+        FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002739 a FBcv:0009003 ;
+    rdfs:label "hemilineage 21A cluster 1 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 552 ;
+    neo_custom:filtered_gene_count 1894 ;
+    neo_custom:total_gene_count 8757 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051459,
+        FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002740 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 2 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 503 ;
+    neo_custom:filtered_gene_count 1846 ;
+    neo_custom:total_gene_count 8633 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002741 a FBcv:0009003 ;
+    rdfs:label "hemilineages 5B/6B cluster 3 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 500 ;
+    neo_custom:filtered_gene_count 2023 ;
+    neo_custom:total_gene_count 8725 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049542,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002742 a FBcv:0009003 ;
+    rdfs:label "hemilineage 16B cluster 5 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 477 ;
+    neo_custom:filtered_gene_count 1849 ;
+    neo_custom:total_gene_count 8586 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00048896,
+        FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002743 a FBcv:0009003 ;
+    rdfs:label "hemilineages 8A/24B cluster 6 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 471 ;
+    neo_custom:filtered_gene_count 1840 ;
+    neo_custom:total_gene_count 8629 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002744 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 7 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 466 ;
+    neo_custom:filtered_gene_count 1885 ;
+    neo_custom:total_gene_count 8665 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002745 a FBcv:0009003 ;
+    rdfs:label "hemilineage 8B cluster 8 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 454 ;
+    neo_custom:filtered_gene_count 1983 ;
+    neo_custom:total_gene_count 8749 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051468,
+        FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002746 a FBcv:0009003 ;
+    rdfs:label "hemilineage 6A cluster 9 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 440 ;
+    neo_custom:filtered_gene_count 1811 ;
+    neo_custom:total_gene_count 8495 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051460,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002747 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 10 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 434 ;
+    neo_custom:filtered_gene_count 2704 ;
+    neo_custom:total_gene_count 8964 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002748 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 11 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 425 ;
+    neo_custom:filtered_gene_count 2534 ;
+    neo_custom:total_gene_count 8806 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002749 a FBcv:0009003 ;
+    rdfs:label "hemilineage 1B cluster 12 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 421 ;
+    neo_custom:filtered_gene_count 1732 ;
+    neo_custom:total_gene_count 8413 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051467,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002750 a FBcv:0009003 ;
+    rdfs:label "hemilineage 14A cluster 13 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 413 ;
+    neo_custom:filtered_gene_count 1734 ;
+    neo_custom:total_gene_count 8408 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00053278,
+        FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002751 a FBcv:0009003 ;
+    rdfs:label "hemilineages 20A/22A cluster 14 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 391 ;
+    neo_custom:filtered_gene_count 1621 ;
+    neo_custom:total_gene_count 8338 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049541,
+        FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002752 a FBcv:0009003 ;
+    rdfs:label "glutamatergic neuron cluster 15 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 385 ;
+    neo_custom:filtered_gene_count 1906 ;
+    neo_custom:total_gene_count 8484 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002753 a FBcv:0009003 ;
+    rdfs:label "hemilineage 1A cluster 16 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 384 ;
+    neo_custom:filtered_gene_count 1984 ;
+    neo_custom:total_gene_count 8465 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051455,
+        FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002754 a FBcv:0009003 ;
+    rdfs:label "hemilineage 13B cluster 17 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 379 ;
+    neo_custom:filtered_gene_count 2029 ;
+    neo_custom:total_gene_count 8358 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051470,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002755 a FBcv:0009003 ;
+    rdfs:label "hemilineages 13A/19A cluster 19 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 347 ;
+    neo_custom:filtered_gene_count 1885 ;
+    neo_custom:total_gene_count 8293 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049541,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002756 a FBcv:0009003 ;
+    rdfs:label "hemilineages 5B/6B cluster 20 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 344 ;
+    neo_custom:filtered_gene_count 1956 ;
+    neo_custom:total_gene_count 8346 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049542,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002757 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 21 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 341 ;
+    neo_custom:filtered_gene_count 1785 ;
+    neo_custom:total_gene_count 8272 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002758 a FBcv:0009003 ;
+    rdfs:label "hemilineage 0A cluster 22 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 327 ;
+    neo_custom:filtered_gene_count 1964 ;
+    neo_custom:total_gene_count 8331 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00053055,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002759 a FBcv:0009003 ;
+    rdfs:label "glia cluster 24 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 318 ;
+    neo_custom:filtered_gene_count 1294 ;
+    neo_custom:total_gene_count 8496 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00100499 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002760 a FBcv:0009003 ;
+    rdfs:label "hemilineage 13B cluster 25 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 309 ;
+    neo_custom:filtered_gene_count 2107 ;
+    neo_custom:total_gene_count 8292 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051470,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002761 a FBcv:0009003 ;
+    rdfs:label "GABAergic neuron cluster 26 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 309 ;
+    neo_custom:filtered_gene_count 2450 ;
+    neo_custom:total_gene_count 8397 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002762 a FBcv:0009003 ;
+    rdfs:label "hemilineage 6A cluster 28 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 302 ;
+    neo_custom:filtered_gene_count 2150 ;
+    neo_custom:total_gene_count 8282 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051460,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002763 a FBcv:0009003 ;
+    rdfs:label "hemilineage 12B cluster 30 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 296 ;
+    neo_custom:filtered_gene_count 1988 ;
+    neo_custom:total_gene_count 8155 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051475,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002764 a FBcv:0009003 ;
+    rdfs:label "hemilineage 9A cluster 31 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 295 ;
+    neo_custom:filtered_gene_count 2422 ;
+    neo_custom:total_gene_count 8376 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051457,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002765 a FBcv:0009003 ;
+    rdfs:label "hemilineages 20A/22A cluster 33 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 294 ;
+    neo_custom:filtered_gene_count 1527 ;
+    neo_custom:total_gene_count 7969 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049541 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002766 a FBcv:0009003 ;
+    rdfs:label "hemilineages 20A/22A cluster 34 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 282 ;
+    neo_custom:filtered_gene_count 1667 ;
+    neo_custom:total_gene_count 8011 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049541,
+        FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002767 a FBcv:0009003 ;
+    rdfs:label "hemilineage 23B cluster 35 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 274 ;
+    neo_custom:filtered_gene_count 1809 ;
+    neo_custom:total_gene_count 8206 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00048920,
+        FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002768 a FBcv:0009003 ;
+    rdfs:label "hemilineage 15B cluster 36 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 273 ;
+    neo_custom:filtered_gene_count 3135 ;
+    neo_custom:total_gene_count 8609 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00048900,
+        FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002769 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 37 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 272 ;
+    neo_custom:filtered_gene_count 1787 ;
+    neo_custom:total_gene_count 8050 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002770 a FBcv:0009003 ;
+    rdfs:label "hemilineage 11B cluster 38 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 271 ;
+    neo_custom:filtered_gene_count 1801 ;
+    neo_custom:total_gene_count 8142 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051478,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002771 a FBcv:0009003 ;
+    rdfs:label "hemilineage 10B cluster 39 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 267 ;
+    neo_custom:filtered_gene_count 1543 ;
+    neo_custom:total_gene_count 7956 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00048899,
+        FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002772 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 40 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 257 ;
+    neo_custom:filtered_gene_count 2090 ;
+    neo_custom:total_gene_count 8330 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002773 a FBcv:0009003 ;
+    rdfs:label "hemilineage 14A cluster 41 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 253 ;
+    neo_custom:filtered_gene_count 1564 ;
+    neo_custom:total_gene_count 7778 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00053278,
+        FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002774 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 42 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 251 ;
+    neo_custom:filtered_gene_count 2337 ;
+    neo_custom:total_gene_count 8331 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002775 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 44 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 249 ;
+    neo_custom:filtered_gene_count 1975 ;
+    neo_custom:total_gene_count 8077 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002776 a FBcv:0009003 ;
+    rdfs:label "GABAergic neuron cluster 45 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 243 ;
+    neo_custom:filtered_gene_count 1950 ;
+    neo_custom:total_gene_count 8008 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002777 a FBcv:0009003 ;
+    rdfs:label "hemilineage 16B cluster 46 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 243 ;
+    neo_custom:filtered_gene_count 1864 ;
+    neo_custom:total_gene_count 7923 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00048896,
+        FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002778 a FBcv:0009003 ;
+    rdfs:label "hemilineage 1B cluster 47 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 238 ;
+    neo_custom:filtered_gene_count 1786 ;
+    neo_custom:total_gene_count 8019 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051467,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002779 a FBcv:0009003 ;
+    rdfs:label "hemilineages 13A/19A cluster 48 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 236 ;
+    neo_custom:filtered_gene_count 2571 ;
+    neo_custom:total_gene_count 8177 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049541,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002780 a FBcv:0009003 ;
+    rdfs:label "hemilineage 8B cluster 49 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 235 ;
+    neo_custom:filtered_gene_count 2771 ;
+    neo_custom:total_gene_count 8459 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051468,
+        FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002781 a FBcv:0009003 ;
+    rdfs:label "hemilineage 9A cluster 50 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 235 ;
+    neo_custom:filtered_gene_count 1859 ;
+    neo_custom:total_gene_count 7925 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051457,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002782 a FBcv:0009003 ;
+    rdfs:label "hemilineage 23B cluster 51 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 221 ;
+    neo_custom:filtered_gene_count 1720 ;
+    neo_custom:total_gene_count 7923 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00048920 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002783 a FBcv:0009003 ;
+    rdfs:label "hemilineage 15B cluster 52 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 220 ;
+    neo_custom:filtered_gene_count 3006 ;
+    neo_custom:total_gene_count 8327 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00048900,
+        FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002784 a FBcv:0009003 ;
+    rdfs:label "hemilineage 8B cluster 53 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 219 ;
+    neo_custom:filtered_gene_count 1988 ;
+    neo_custom:total_gene_count 7923 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051468,
+        FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002785 a FBcv:0009003 ;
+    rdfs:label "hemilineage 9B cluster 54 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 219 ;
+    neo_custom:filtered_gene_count 2166 ;
+    neo_custom:total_gene_count 7973 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051469,
+        FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002786 a FBcv:0009003 ;
+    rdfs:label "hemilineage 9A cluster 56 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 216 ;
+    neo_custom:filtered_gene_count 1662 ;
+    neo_custom:total_gene_count 7751 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051457,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002787 a FBcv:0009003 ;
+    rdfs:label "hemilineage 9A cluster 57 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 211 ;
+    neo_custom:filtered_gene_count 1771 ;
+    neo_custom:total_gene_count 7793 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051457,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002788 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 58 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 205 ;
+    neo_custom:filtered_gene_count 2057 ;
+    neo_custom:total_gene_count 7976 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002789 a FBcv:0009003 ;
+    rdfs:label "hemilineages 13A/19A cluster 59 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 205 ;
+    neo_custom:filtered_gene_count 2203 ;
+    neo_custom:total_gene_count 7815 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049541,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002790 a FBcv:0009003 ;
+    rdfs:label "GABAergic neuron cluster 60 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 199 ;
+    neo_custom:filtered_gene_count 1778 ;
+    neo_custom:total_gene_count 7757 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002791 a FBcv:0009003 ;
+    rdfs:label "glutamatergic neuron cluster 61 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 197 ;
+    neo_custom:filtered_gene_count 2355 ;
+    neo_custom:total_gene_count 8167 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002792 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 62 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 194 ;
+    neo_custom:filtered_gene_count 1707 ;
+    neo_custom:total_gene_count 7794 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002793 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 63 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 193 ;
+    neo_custom:filtered_gene_count 1509 ;
+    neo_custom:total_gene_count 7813 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002794 a FBcv:0009003 ;
+    rdfs:label "GABAergic neuron cluster 64 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 192 ;
+    neo_custom:filtered_gene_count 1594 ;
+    neo_custom:total_gene_count 7666 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002795 a FBcv:0009003 ;
+    rdfs:label "hemilineages 13A/19A cluster 65 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 189 ;
+    neo_custom:filtered_gene_count 1954 ;
+    neo_custom:total_gene_count 7788 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049541,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002796 a FBcv:0009003 ;
+    rdfs:label "hemilineage 6A cluster 66 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 187 ;
+    neo_custom:filtered_gene_count 1815 ;
+    neo_custom:total_gene_count 7629 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051460 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002797 a FBcv:0009003 ;
+    rdfs:label "hemilineage 23B cluster 67 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 187 ;
+    neo_custom:filtered_gene_count 1661 ;
+    neo_custom:total_gene_count 7703 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00048920 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002798 a FBcv:0009003 ;
+    rdfs:label "hemilineage 10B cluster 68 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 185 ;
+    neo_custom:filtered_gene_count 1943 ;
+    neo_custom:total_gene_count 7821 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00048899,
+        FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002799 a FBcv:0009003 ;
+    rdfs:label "hemilineages 8A/24B cluster 69 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 183 ;
+    neo_custom:filtered_gene_count 1758 ;
+    neo_custom:total_gene_count 7569 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002800 a FBcv:0009003 ;
+    rdfs:label "glia cluster 70 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 174 ;
+    neo_custom:filtered_gene_count 1147 ;
+    neo_custom:total_gene_count 7716 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00100499 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002801 a FBcv:0009003 ;
+    rdfs:label "monoaminergic neuron cluster 72 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 172 ;
+    neo_custom:filtered_gene_count 2621 ;
+    neo_custom:total_gene_count 8121 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058201 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002802 a FBcv:0009003 ;
+    rdfs:label "hemilineage 12B cluster 73 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 165 ;
+    neo_custom:filtered_gene_count 1843 ;
+    neo_custom:total_gene_count 7659 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051475,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002803 a FBcv:0009003 ;
+    rdfs:label "hemilineage 14A cluster 74 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 164 ;
+    neo_custom:filtered_gene_count 2048 ;
+    neo_custom:total_gene_count 7684 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00053278,
+        FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002804 a FBcv:0009003 ;
+    rdfs:label "hemilineages 13A/19A cluster 75 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 157 ;
+    neo_custom:filtered_gene_count 1809 ;
+    neo_custom:total_gene_count 7491 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049541,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002805 a FBcv:0009003 ;
+    rdfs:label "hemilineage 8B cluster 76 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 157 ;
+    neo_custom:filtered_gene_count 2427 ;
+    neo_custom:total_gene_count 7940 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051468,
+        FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002806 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 77 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 150 ;
+    neo_custom:filtered_gene_count 2773 ;
+    neo_custom:total_gene_count 7921 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002807 a FBcv:0009003 ;
+    rdfs:label "hemilineages 20A/22A cluster 78 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 149 ;
+    neo_custom:filtered_gene_count 2479 ;
+    neo_custom:total_gene_count 7719 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049541,
+        FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002808 a FBcv:0009003 ;
+    rdfs:label "hemilineages 13A/19A cluster 79 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 149 ;
+    neo_custom:filtered_gene_count 1998 ;
+    neo_custom:total_gene_count 7423 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049541,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002809 a FBcv:0009003 ;
+    rdfs:label "hemilineage 15B cluster 80 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 148 ;
+    neo_custom:filtered_gene_count 2221 ;
+    neo_custom:total_gene_count 7976 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00048900,
+        FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002810 a FBcv:0009003 ;
+    rdfs:label "hemilineage 12B cluster 81 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 148 ;
+    neo_custom:filtered_gene_count 1681 ;
+    neo_custom:total_gene_count 7456 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051475,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002811 a FBcv:0009003 ;
+    rdfs:label "hemilineages 13A/19A cluster 82 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 142 ;
+    neo_custom:filtered_gene_count 2108 ;
+    neo_custom:total_gene_count 7484 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049541,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002812 a FBcv:0009003 ;
+    rdfs:label "hemilineage 12B cluster 83 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 141 ;
+    neo_custom:filtered_gene_count 1974 ;
+    neo_custom:total_gene_count 7497 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051475,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002813 a FBcv:0009003 ;
+    rdfs:label "peptidergic neuron cluster 84 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 139 ;
+    neo_custom:filtered_gene_count 2520 ;
+    neo_custom:total_gene_count 8066 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058202 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002814 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 85 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 138 ;
+    neo_custom:filtered_gene_count 1912 ;
+    neo_custom:total_gene_count 7508 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002815 a FBcv:0009003 ;
+    rdfs:label "glutamatergic neuron cluster 86 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 136 ;
+    neo_custom:filtered_gene_count 2075 ;
+    neo_custom:total_gene_count 7662 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002816 a FBcv:0009003 ;
+    rdfs:label "hemilineages 5B/6B cluster 87 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 136 ;
+    neo_custom:filtered_gene_count 2258 ;
+    neo_custom:total_gene_count 7689 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049542,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002817 a FBcv:0009003 ;
+    rdfs:label "hemilineage 0A cluster 88 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 135 ;
+    neo_custom:filtered_gene_count 2312 ;
+    neo_custom:total_gene_count 7620 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00053055,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002818 a FBcv:0009003 ;
+    rdfs:label "hemilineages 5B/6B cluster 89 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 135 ;
+    neo_custom:filtered_gene_count 2331 ;
+    neo_custom:total_gene_count 7481 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049542,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002819 a FBcv:0009003 ;
+    rdfs:label "GABAergic neuron cluster 90 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 134 ;
+    neo_custom:filtered_gene_count 1861 ;
+    neo_custom:total_gene_count 7411 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002820 a FBcv:0009003 ;
+    rdfs:label "hemilineage 10B cluster 91 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 132 ;
+    neo_custom:filtered_gene_count 1493 ;
+    neo_custom:total_gene_count 7382 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00048899 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002821 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 92 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 126 ;
+    neo_custom:filtered_gene_count 1754 ;
+    neo_custom:total_gene_count 7390 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002822 a FBcv:0009003 ;
+    rdfs:label "hemilineage 23B cluster 93 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 118 ;
+    neo_custom:filtered_gene_count 1810 ;
+    neo_custom:total_gene_count 7216 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00048920,
+        FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002823 a FBcv:0009003 ;
+    rdfs:label "hemilineage 12B cluster 94 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 114 ;
+    neo_custom:filtered_gene_count 2130 ;
+    neo_custom:total_gene_count 7388 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051475,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002824 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 95 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 112 ;
+    neo_custom:filtered_gene_count 2537 ;
+    neo_custom:total_gene_count 7623 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002825 a FBcv:0009003 ;
+    rdfs:label "hemilineages 13A/19A cluster 96 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 96 ;
+    neo_custom:filtered_gene_count 1930 ;
+    neo_custom:total_gene_count 7121 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049541,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002826 a FBcv:0009003 ;
+    rdfs:label "hemilineages 5B/6B cluster 97 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 95 ;
+    neo_custom:filtered_gene_count 2756 ;
+    neo_custom:total_gene_count 7489 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049542,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002827 a FBcv:0009003 ;
+    rdfs:label "glia cluster 98 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 94 ;
+    neo_custom:filtered_gene_count 2156 ;
+    neo_custom:total_gene_count 7632 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00100499 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002828 a FBcv:0009003 ;
+    rdfs:label "hemilineage 4B cluster 100 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 89 ;
+    neo_custom:filtered_gene_count 2252 ;
+    neo_custom:total_gene_count 7313 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00053311,
+        FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002829 a FBcv:0009003 ;
+    rdfs:label "hemilineages 13A/19A cluster 102 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 83 ;
+    neo_custom:filtered_gene_count 2626 ;
+    neo_custom:total_gene_count 7295 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049541,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002830 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 103 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 78 ;
+    neo_custom:filtered_gene_count 1829 ;
+    neo_custom:total_gene_count 6854 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002831 a FBcv:0009003 ;
+    rdfs:label "GABAergic neuron cluster 104 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 75 ;
+    neo_custom:filtered_gene_count 2546 ;
+    neo_custom:total_gene_count 7084 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002832 a FBcv:0009003 ;
+    rdfs:label "hemilineage 21A cluster 107 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 72 ;
+    neo_custom:filtered_gene_count 2530 ;
+    neo_custom:total_gene_count 7150 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051459,
+        FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002833 a FBcv:0009003 ;
+    rdfs:label "hemilineages 20A/22A cluster 108 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 64 ;
+    neo_custom:filtered_gene_count 1678 ;
+    neo_custom:total_gene_count 6660 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00049541 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002834 a FBcv:0009003 ;
+    rdfs:label "GABAergic neuron cluster 109 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 63 ;
+    neo_custom:filtered_gene_count 1429 ;
+    neo_custom:total_gene_count 6399 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002835 a FBcv:0009003 ;
+    rdfs:label "hemilineages 8A/24B cluster 110 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 60 ;
+    neo_custom:filtered_gene_count 1805 ;
+    neo_custom:total_gene_count 6651 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002836 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 111 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 57 ;
+    neo_custom:filtered_gene_count 3059 ;
+    neo_custom:total_gene_count 7263 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002837 a FBcv:0009003 ;
+    rdfs:label "hemilineage 0A cluster 112 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 55 ;
+    neo_custom:filtered_gene_count 2325 ;
+    neo_custom:total_gene_count 6938 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00053055,
+        FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002838 a FBcv:0009003 ;
+    rdfs:label "glutamatergic neuron cluster 113 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 54 ;
+    neo_custom:filtered_gene_count 2653 ;
+    neo_custom:total_gene_count 7016 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002839 a FBcv:0009003 ;
+    rdfs:label "cholinergic neuron cluster 114 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 53 ;
+    neo_custom:filtered_gene_count 2715 ;
+    neo_custom:total_gene_count 7054 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002840 a FBcv:0009003 ;
+    rdfs:label "sperm cluster 116 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 40 ;
+    neo_custom:filtered_gene_count 2314 ;
+    neo_custom:total_gene_count 8414 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00004954 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002841 a FBcv:0009003 ;
+    rdfs:label "hemilineage 8B cluster 117 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 40 ;
+    neo_custom:filtered_gene_count 2033 ;
+    neo_custom:total_gene_count 6202 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00051468,
+        FBbt:00058205 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002842 a FBcv:0009003 ;
+    rdfs:label "glutamatergic neuron cluster 118 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 22 ;
+    neo_custom:filtered_gene_count 2865 ;
+    neo_custom:total_gene_count 6126 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058208 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002843 a FBcv:0009003 ;
+    rdfs:label "GABAergic neuron cluster 119 (Allen 2020 adult VNC clusters) (Allen 2020)" ;
+    neo_custom:cell_count 22 ;
+    neo_custom:filtered_gene_count 2928 ;
+    neo_custom:total_gene_count 6097 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002737 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00002728 .
+
+FlyBase:FBrf0245499 a FBcv:0000212 ;
+    neo_property:nodeLabel "pub" .
+
+VFBseq:00002730 a FBcv:0003025 ;
+    rdfs:label "ventral nerve cord, 5-day old adult, female rep 1, Drop-seq library (Allen 2020)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002729 ;
+    dcterms:source VFBseq:00002728 ;
+    BAO:0000212 FBcv:0009006 ;
+    oboInOwl:hasDbXref "GSM4213596",
+        "SAMN13536164",
+        "SRX7347370" .
+
+VFBseq:00002732 a FBcv:0003025 ;
+    rdfs:label "ventral nerve cord, 5-day old adult, female rep 2, Drop-seq library (Allen 2020)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002731 ;
+    dcterms:source VFBseq:00002728 ;
+    BAO:0000212 FBcv:0009006 ;
+    oboInOwl:hasDbXref "GSM4213597",
+        "SAMN13536163",
+        "SRX7347371" .
+
+VFBseq:00002734 a FBcv:0003025 ;
+    rdfs:label "ventral nerve cord, 5-day old adult, male rep 1, Drop-seq library (Allen 2020)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002733 ;
+    dcterms:source VFBseq:00002728 ;
+    BAO:0000212 FBcv:0009006 ;
+    oboInOwl:hasDbXref "GSM4213598",
+        "SAMN13536161",
+        "SRX7347372" .
+
+VFBseq:00002736 a FBcv:0003025 ;
+    rdfs:label "ventral nerve cord, 5-day old adult, male rep 2, Drop-seq library (Allen 2020)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002735 ;
+    dcterms:source VFBseq:00002728 ;
+    BAO:0000212 FBcv:0009006 ;
+    oboInOwl:hasDbXref "GSM4213599",
+        "SAMN13536160",
+        "SRX7347373" .
+
+VFBseq:00002729 a FBcv:0003024 ;
+    rdfs:label "ventral nerve cord, 5-day old adult, female rep 1 (Allen 2020)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    GENO:0000222 FlyBase:FBal0157333,
+        FlyBase:FBal0277019 ;
+    RO:0002131 FBbt:00004052 ;
+    RO:0002352 VFBseq:00002730 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002731 a FBcv:0003024 ;
+    rdfs:label "ventral nerve cord, 5-day old adult, female rep 2 (Allen 2020)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    GENO:0000222 FlyBase:FBal0157333,
+        FlyBase:FBal0277019 ;
+    RO:0002131 FBbt:00004052 ;
+    RO:0002352 VFBseq:00002732 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002733 a FBcv:0003024 ;
+    rdfs:label "ventral nerve cord, 5-day old adult, male rep 1 (Allen 2020)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    GENO:0000222 FlyBase:FBal0157333,
+        FlyBase:FBal0277019 ;
+    RO:0002131 FBbt:00004052 ;
+    RO:0002352 VFBseq:00002734 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002735 a FBcv:0003024 ;
+    rdfs:label "ventral nerve cord, 5-day old adult, male rep 2 (Allen 2020)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    GENO:0000222 FlyBase:FBal0157333,
+        FlyBase:FBal0277019 ;
+    RO:0002131 FBbt:00004052 ;
+    RO:0002352 VFBseq:00002736 ;
+    RO:0002490 FBdv:00007080 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002737 a FBcv:0009002 ;
+    rdfs:label "Allen 2020 adult VNC clusters" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002729,
+        VFBseq:00002731,
+        VFBseq:00002733,
+        VFBseq:00002735 ;
+    dcterms:source VFBseq:00002728 .
+
+VFBseq:00002728 a FBcv:0003023 ;
+    rdfs:label "scRNAseq data from Allen (2020)" ;
+    neo_custom:accession "GSE141807" ;
+    neo_custom:filtered_gene_count 6264 ;
+    neo_custom:total_gene_count 14410 ;
+    neo_property:nodeLabel "DataSet" ;
+    IAO:0000115 "A single-cell transcriptomic atlas of the adult Drosophila ventral nerve cord" ;
+    OBI:0000312 FBcv:0009000 ;
+    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references FlyBase:FBrf0245499 ;
+    oboInOwl:hasDbXref vfb:GEO .
+
