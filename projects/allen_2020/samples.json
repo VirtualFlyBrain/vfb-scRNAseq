@@ -1,0 +1,189 @@
+{
+  "dataset": {
+    "vfbseq_id": "VFBseq_00002728",
+    "accession": "GSE141807",
+    "site": "GEO"
+  },
+  "samples": [
+    {
+      "vfbseq_id": "VFBseq_00002729",
+      "sample_id": "female_rep_1",
+      "set": "female",
+      "timepoint": "rep",
+      "biorep": "1",
+      "tissue_raw": "ventral nerve cord",
+      "age_raw": "5-day old adult",
+      "stock": null,
+      "genotype_includes": [
+        "FBal0277019",
+        "FBal0157333"
+      ],
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00004052",
+        "label": "adult ventral nerve cord"
+      },
+      "associated_dataset": "VFBseq_00002728",
+      "assay_vfbseq_ids": [
+        "VFBseq_00002730"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00002731",
+      "sample_id": "female_rep_2",
+      "set": "female",
+      "timepoint": "rep",
+      "biorep": "2",
+      "tissue_raw": "ventral nerve cord",
+      "age_raw": "5-day old adult",
+      "stock": null,
+      "genotype_includes": [
+        "FBal0277019",
+        "FBal0157333"
+      ],
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00004052",
+        "label": "adult ventral nerve cord"
+      },
+      "associated_dataset": "VFBseq_00002728",
+      "assay_vfbseq_ids": [
+        "VFBseq_00002732"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00002733",
+      "sample_id": "male_rep_1",
+      "set": "male",
+      "timepoint": "rep",
+      "biorep": "1",
+      "tissue_raw": "ventral nerve cord",
+      "age_raw": "5-day old adult",
+      "stock": null,
+      "genotype_includes": [
+        "FBal0277019",
+        "FBal0157333"
+      ],
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00004052",
+        "label": "adult ventral nerve cord"
+      },
+      "associated_dataset": "VFBseq_00002728",
+      "assay_vfbseq_ids": [
+        "VFBseq_00002734"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00002735",
+      "sample_id": "male_rep_2",
+      "set": "male",
+      "timepoint": "rep",
+      "biorep": "2",
+      "tissue_raw": "ventral nerve cord",
+      "age_raw": "5-day old adult",
+      "stock": null,
+      "genotype_includes": [
+        "FBal0277019",
+        "FBal0157333"
+      ],
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00007080",
+        "label": "day 5 of adulthood"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00004052",
+        "label": "adult ventral nerve cord"
+      },
+      "associated_dataset": "VFBseq_00002728",
+      "assay_vfbseq_ids": [
+        "VFBseq_00002736"
+      ],
+      "n_assays": 1
+    }
+  ],
+  "assays": [
+    {
+      "vfbseq_id": "VFBseq_00002730",
+      "library_id": "female_vnc_rep1",
+      "accession": "GSM4213596",
+      "sra": "SRX7347370",
+      "biosample": "SAMN13536164",
+      "method": {
+        "fbcv_id": "FBcv:0009006",
+        "label": "DROP-Seq"
+      },
+      "sample_vfbseq_id": "VFBseq_00002729",
+      "associated_dataset": "VFBseq_00002728"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002732",
+      "library_id": "female_vnc_rep2",
+      "accession": "GSM4213597",
+      "sra": "SRX7347371",
+      "biosample": "SAMN13536163",
+      "method": {
+        "fbcv_id": "FBcv:0009006",
+        "label": "DROP-Seq"
+      },
+      "sample_vfbseq_id": "VFBseq_00002731",
+      "associated_dataset": "VFBseq_00002728"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002734",
+      "library_id": "male_vnc_rep1",
+      "accession": "GSM4213598",
+      "sra": "SRX7347372",
+      "biosample": "SAMN13536161",
+      "method": {
+        "fbcv_id": "FBcv:0009006",
+        "label": "DROP-Seq"
+      },
+      "sample_vfbseq_id": "VFBseq_00002733",
+      "associated_dataset": "VFBseq_00002728"
+    },
+    {
+      "vfbseq_id": "VFBseq_00002736",
+      "library_id": "male_vnc_rep2",
+      "accession": "GSM4213599",
+      "sra": "SRX7347373",
+      "biosample": "SAMN13536160",
+      "method": {
+        "fbcv_id": "FBcv:0009006",
+        "label": "DROP-Seq"
+      },
+      "sample_vfbseq_id": "VFBseq_00002735",
+      "associated_dataset": "VFBseq_00002728"
+    }
+  ],
+  "clusterings": [
+    {
+      "vfbseq_id": "VFBseq_00002737",
+      "subset": "vnc",
+      "associated_dataset": "VFBseq_00002728",
+      "name": "Allen 2020 adult VNC clusters",
+      "samples": [
+        "VFBseq_00002729",
+        "VFBseq_00002731",
+        "VFBseq_00002733",
+        "VFBseq_00002735"
+      ]
+    }
+  ]
+}
