@@ -1,0 +1,208 @@
+@prefix BAO: <http://www.bioassayontology.org/bao#BAO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix FBbt: <http://purl.obolibrary.org/obo/FBbt_> .
+@prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
+@prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
+@prefix FlyBase: <http://flybase.org/reports/> .
+@prefix GENO: <http://purl.obolibrary.org/obo/GENO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix VFBseq: <http://virtualflybrain.org/reports/VFBseq_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix neo_custom: <http://n2o.neo/custom/> .
+@prefix neo_property: <http://n2o.neo/property/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vfb: <http://virtualflybrain.org/reports/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VFBseq:00002850 a FBcv:0009003 ;
+    rdfs:label "amnioserosa cluster (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)" ;
+    neo_custom:cell_count 531 ;
+    neo_custom:filtered_gene_count 3366 ;
+    neo_custom:total_gene_count 11880 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002849 ;
+    RO:0002473 FBbt:00059314 ;
+    dcterms:source VFBseq:00002844 .
+
+VFBseq:00002851 a FBcv:0009003 ;
+    rdfs:label "cellularisation cluster cellularisation1 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)" ;
+    neo_custom:cell_count 933 ;
+    neo_custom:filtered_gene_count 1056 ;
+    neo_custom:total_gene_count 10947 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002849 ;
+    RO:0002473 FBbt:00059313 ;
+    RO:0002490 FBdv:00005311 ;
+    dcterms:source VFBseq:00002844 .
+
+VFBseq:00002852 a FBcv:0009003 ;
+    rdfs:label "cellularisation cluster cellularisation2 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)" ;
+    neo_custom:cell_count 565 ;
+    neo_custom:filtered_gene_count 3478 ;
+    neo_custom:total_gene_count 11521 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002849 ;
+    RO:0002473 FBbt:00059313 ;
+    RO:0002490 FBdv:00005311 ;
+    dcterms:source VFBseq:00002844 .
+
+VFBseq:00002853 a FBcv:0009003 ;
+    rdfs:label "ectoderm cluster ectoderm1 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)" ;
+    neo_custom:cell_count 1180 ;
+    neo_custom:filtered_gene_count 3222 ;
+    neo_custom:total_gene_count 12803 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002849 ;
+    RO:0002473 FBbt:00059305 ;
+    dcterms:source VFBseq:00002844 .
+
+VFBseq:00002854 a FBcv:0009003 ;
+    rdfs:label "ectoderm cluster ectoderm2 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)" ;
+    neo_custom:cell_count 775 ;
+    neo_custom:filtered_gene_count 4573 ;
+    neo_custom:total_gene_count 12932 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002849 ;
+    RO:0002473 FBbt:00059305 ;
+    dcterms:source VFBseq:00002844 .
+
+VFBseq:00002855 a FBcv:0009003 ;
+    rdfs:label "ectoderm cluster ectoderm3 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)" ;
+    neo_custom:cell_count 690 ;
+    neo_custom:filtered_gene_count 5403 ;
+    neo_custom:total_gene_count 13264 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002849 ;
+    RO:0002473 FBbt:00059305 ;
+    dcterms:source VFBseq:00002844 .
+
+VFBseq:00002856 a FBcv:0009003 ;
+    rdfs:label "haemocyte cluster haemocytes1 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)" ;
+    neo_custom:cell_count 220 ;
+    neo_custom:filtered_gene_count 2582 ;
+    neo_custom:total_gene_count 9985 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002849 ;
+    RO:0002473 FBbt:00001684 ;
+    dcterms:source VFBseq:00002844 .
+
+VFBseq:00002857 a FBcv:0009003 ;
+    rdfs:label "haemocyte cluster haemocytes2 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)" ;
+    neo_custom:cell_count 112 ;
+    neo_custom:filtered_gene_count 2089 ;
+    neo_custom:total_gene_count 9083 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002849 ;
+    RO:0002473 FBbt:00001684 ;
+    dcterms:source VFBseq:00002844 .
+
+VFBseq:00002858 a FBcv:0009003 ;
+    rdfs:label "mesoderm cluster mesoderm1 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)" ;
+    neo_custom:cell_count 903 ;
+    neo_custom:filtered_gene_count 2417 ;
+    neo_custom:total_gene_count 11945 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002849 ;
+    RO:0002473 FBbt:00059307 ;
+    dcterms:source VFBseq:00002844 .
+
+VFBseq:00002859 a FBcv:0009003 ;
+    rdfs:label "mesoderm cluster mesoderm2 (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)" ;
+    neo_custom:cell_count 682 ;
+    neo_custom:filtered_gene_count 4803 ;
+    neo_custom:total_gene_count 12856 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002849 ;
+    RO:0002473 FBbt:00059307 ;
+    dcterms:source VFBseq:00002844 .
+
+VFBseq:00002860 a FBcv:0009003 ;
+    rdfs:label "pole cell cluster pole cells (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)" ;
+    neo_custom:cell_count 146 ;
+    neo_custom:filtered_gene_count 4621 ;
+    neo_custom:total_gene_count 9863 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002849 ;
+    RO:0002473 FBbt:00053322 ;
+    dcterms:source VFBseq:00002844 .
+
+VFBseq:00002861 a FBcv:0009003 ;
+    rdfs:label "terminal cluster (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)" ;
+    neo_custom:cell_count 235 ;
+    neo_custom:filtered_gene_count 4983 ;
+    neo_custom:total_gene_count 11085 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002849 ;
+    RO:0002473 FBbt:00059312 ;
+    dcterms:source VFBseq:00002844 .
+
+VFBseq:00002862 a FBcv:0009003 ;
+    rdfs:label "trachea precursor cluster (Ing-Simmons 2021 embryo clusters (controls)) (Ing-Simmons 2021)" ;
+    neo_custom:cell_count 72 ;
+    neo_custom:filtered_gene_count 4662 ;
+    neo_custom:total_gene_count 10131 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002849 ;
+    RO:0002473 FBbt:00005041 ;
+    dcterms:source VFBseq:00002844 .
+
+FlyBase:FBrf0248615 a FBcv:0000212 ;
+    neo_property:nodeLabel "pub" .
+
+VFBseq:00002846 a FBcv:0003025 ;
+    rdfs:label "whole embryo, 2.5 to 3.5 hours, mixed, w[*]; P{EGFP-PCNA}attP2, Rep1, 10x library (Ing-Simmons 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002845 ;
+    dcterms:source VFBseq:00002844 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "ERX4267292",
+        "SAMEA7039590" .
+
+VFBseq:00002848 a FBcv:0003025 ;
+    rdfs:label "whole embryo, 2.5 to 3.5 hours, mixed, Rep2, 10x library (Ing-Simmons 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002847 ;
+    dcterms:source VFBseq:00002844 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "ERX4267293",
+        "SAMEA7039591" .
+
+VFBseq:00002845 a FBcv:0003024 ;
+    rdfs:label "whole embryo, 2.5 to 3.5 hours, mixed, w[*]; P{EGFP-PCNA}attP2, Rep1 (Ing-Simmons 2021)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0366828 ;
+    RO:0002131 FBbt:00000052 ;
+    RO:0002352 VFBseq:00002846 ;
+    RO:0002490 FBdv:00005289 ;
+    dcterms:source VFBseq:00002844 .
+
+VFBseq:00002847 a FBcv:0003024 ;
+    rdfs:label "whole embryo, 2.5 to 3.5 hours, mixed, Rep2 (Ing-Simmons 2021)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00000052 ;
+    RO:0002352 VFBseq:00002848 ;
+    RO:0002490 FBdv:00005289 ;
+    dcterms:source VFBseq:00002844 .
+
+VFBseq:00002849 a FBcv:0009002 ;
+    rdfs:label "Ing-Simmons 2021 embryo clusters (controls)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002845,
+        VFBseq:00002847 ;
+    dcterms:source VFBseq:00002844 .
+
+VFBseq:00002844 a FBcv:0003023 ;
+    rdfs:label "scRNAseq data from Ing-Simmons (2021)" ;
+    neo_custom:accession "E-MTAB-9304" ;
+    neo_custom:filtered_gene_count 6869 ;
+    neo_custom:total_gene_count 16178 ;
+    neo_property:nodeLabel "DataSet" ;
+    IAO:0000115 "Independence of chromatin conformation and gene regulation during Drosophila dorsoventral patterning" ;
+    OBI:0000312 FBcv:0009000 ;
+    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references FlyBase:FBrf0248615 ;
+    oboInOwl:hasDbXref vfb:ArrayExpress .
+
