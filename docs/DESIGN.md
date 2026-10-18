@@ -1655,4 +1655,15 @@ Curator decisions 2026-10-18.
   indexing RNA sequencing* (FBcv:0009056). 11 Clusterings, each with the Samples giving at
   least 1% of its nuclei (curator: every modelled window has thin tails from distant
   collections, e.g. 7 of the 0-2 h window's 122,331 nuclei from 16-20 h, likely mis-aged).
+- **Clusters (stage 2):** `projects/calderon_2022/build_clusters.py`: 299 entries. 268 window
+  clusters (label `<window>h_<n>`, typed by Table S1's manual annotation, one spelling
+  variant of *spiracle (tracheal system)* unified; germ layer, lineage and automated call
+  kept as `author_*`), with Cluster `stage` from the modelled window where an FBdv term
+  narrower than *embryonic stage* covers it (0-2 h *cleavage stage*, 4-6 h *extended germ
+  band stage*, 6-8 h *late extended germ band stage*, 10-12 h *dorsal closure stage*,
+  14-16 h *embryonic stage 16*, 16-18 h *embryonic stage 17*; config `cluster_stages`); 20
+  neuroectoderm sub-clusters and 11 mature-neuron sub-sub-clusters (label
+  `neuronal[_mature]_<n>`, typed by the authors' annotation without its number, which is
+  kept as `author_annotation`; no Cluster stage: they pool 6-18 h). Held (`untyped`): 43
+  "ubiquitous", 16 "maternal" and 6 "unknown" window clusters. 64 types to map.
 

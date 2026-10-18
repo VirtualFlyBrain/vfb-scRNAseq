@@ -80,3 +80,21 @@ sample_build:
     - { id: "16_18", name: "Calderon 2022 clusters, modelled age 16-18 h" }
     - { id: neuronal, name: "Calderon 2022 neuroectoderm sub-clusters (6-18 h)" }
     - { id: neuronal_mature, name: "Calderon 2022 mature neuron sub-clusters (6-18 h)" }
+  # modelled window -> the narrowest FBdv term covering its stages, for the Clusters
+  # (curator 2026-10-18); windows only covered by embryonic stage (2-4, 8-10, 12-14 h) get none
+  cluster_stages:
+    "0_2": { fbdv_id: FBdv:00000054, label: cleavage stage }                 # stages 1-4
+    "4_6": { fbdv_id: FBdv:00005321, label: extended germ band stage }       # 9-11
+    "6_8": { fbdv_id: FBdv:00004450, label: late extended germ band stage }  # 11-12
+    "10_12": { fbdv_id: FBdv:00005331, label: dorsal closure stage }         # 13-15
+    "14_16": { fbdv_id: FBdv:00005334, label: embryonic stage 16 }           # 16
+    "16_18": { fbdv_id: FBdv:00005335, label: embryonic stage 17 }           # 17
+
+# Clusters (projects/calderon_2022/build_clusters.py): one entry per author cluster per
+# modelled window (Table S1) and per neuronal re-clustering. Held (untyped): the authors'
+# "ubiquitous", "maternal" and "unknown" clusters.
+annotations:
+  review_columns: [clustering, source_cluster_id, type, author_germ_layer, author_lineage, author_annotation]
+
+unidentified:
+  rule: none
