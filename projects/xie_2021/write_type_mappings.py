@@ -75,7 +75,41 @@ def write(path: Path, m: dict) -> None:
     path.write_text(json.dumps(m, indent=2, ensure_ascii=False) + "\n")
 
 
+KNOT_TYPES = {"D", "DM6", "VA1v", "VM2", "VM7 or VM5v #1", "VM7 or VM5v #2", "vPN", "vPN_DA1"}
+KNOT_NOTE = ("kn+ PNs (knot analysis, no lineage column): the paper states they \"include six types of "
+             "adPNs and two vPNs\" (Figure 2), i.e. D, DM6, VA1v, VM2, VM7, VM5v (adPN) and the two vPNs.")
+
+
+def lineage_evidence() -> dict[str, str]:
+    """{author type: the authors' per-cell lineage counts in the main analysis}, as text."""
+    import collections
+    import h5py
+    o = h5py.File(PROJ.parents[1] / ".cache" / "xie" / "all.h5ad", "r")["obs"]
+
+    def col(name):
+        v = o[name]
+        if isinstance(v, h5py.Group):
+            cats = [c.decode() if isinstance(c, bytes) else c for c in v["categories"][:]]
+            return [cats[c] if c >= 0 else "nan" for c in v["codes"][:]]
+        cats = [c.decode() if isinstance(c, bytes) else c for c in o["__categories"][name][:]]
+        return [cats[c] if c >= 0 else "nan" for c in v[:]]
+    counts: dict[str, collections.Counter] = collections.defaultdict(collections.Counter)
+    for typ, lin in zip(col("PN_type"), col("lineage")):
+        counts[typ][lin or "unlabelled"] += 1
+    return {typ: ", ".join(f"{k} {n}" for k, n in c.most_common()) for typ, c in counts.items()}
+
+
+def lineage_note(typ: str, ev: dict[str, str]) -> str:
+    parts = []
+    if typ in ev:
+        parts.append(f"Lineage: the authors' per-cell `lineage` for this type in the main analysis: {ev[typ]}.")
+    if typ in KNOT_TYPES:
+        parts.append(KNOT_NOTE)
+    return (" " + " ".join(parts)) if parts else ""
+
+
 def main() -> None:
+    ev = lineage_evidence()
     for typ, (fid, match, why) in MATURE.items():
         best = term(fid)
         write(PROJ / "type_mapping" / f"{label_slug(typ)}.fbbt_mapping.json", {
@@ -86,7 +120,7 @@ def main() -> None:
             "best_match": {**best, "match_type": match,
                            "skos_mapping": "skos:exactMatch" if match == EXACT else "skos:broadMatch",
                            "confidence": "high"},
-            "justification": why + " Mature term from the pharate adult stage (curator).",
+            "justification": why + " Mature term from the pharate adult stage (curator)." + lineage_note(typ, ev),
             "other_candidates": [],
             "recommendation": f"Map to {fid} {best['fbbt_term']} ({match}).",
             "new_term_needed": False,
@@ -117,7 +151,8 @@ def main() -> None:
                      "justification": f"Up to the pupal stage the immature term is used (curator), but FBbt has no "
                                       f"immature (or remodelling) antennal lobe projection neuron terms yet "
                                       f"(requested, curator 2026-10-17); meanwhile the stage-neutral class for the "
-                                      f"authors' lineage ({lineage}), to be refined when the new terms exist.",
+                                      f"authors' lineage ({lineage}), to be refined when the new terms exist."
+                                      + lineage_note(typ, ev),
                      "recommendation": f"Map to {best['fbbt_id']} {best['fbbt_term']} (broad match) until FBbt has the "
                                        f"immature / remodelling term for {typ}."})
     print(f"wrote {len(MATURE)} mature and {len(IMMATURE)} immature-stage type mappings (lineage classes; APL held)")
