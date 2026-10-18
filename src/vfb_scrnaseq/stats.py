@@ -34,7 +34,7 @@ import numpy as np
 import pandas as pd
 
 from vfb_scrnaseq.ids import IDRegistry
-from vfb_scrnaseq.ingest_h5ad import h5ad_path, iter_matrix, matrix_shape, read_genes, read_obs
+from vfb_scrnaseq.ingest_h5ad import expression_h5ads, h5ad_path, iter_matrix, matrix_shape, read_genes, read_obs
 from vfb_scrnaseq.project_config import mapped_labels
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -243,11 +243,27 @@ def _h5ad_parts(project: str, cfg: dict, gene_map) -> list[dict]:
     (or the clustering's `fixed_annotation`), as build_annotations_from_h5ad.py labels
     them. Cluster sizes are checked against cell_type_annotations.json."""
     acc = cfg["dataset"]["accession"]
-    col = cfg["annotation_build"]["annotation_column"]
+    col = (cfg.get("annotation_build") or {}).get("annotation_column")
     proj = REPO_ROOT / "projects" / project
     expected = {a["label"]: a["cell_number"] for a in
                 json.loads((proj / "cell_type_annotations.json").read_text())["annotations"]}
     parts = []
+    ex = cfg["expression"]
+    if ex.get("h5ad_files"):
+        # files holding several Clusterings: each cell's cluster from the membership file
+        with gzip.open(REPO_ROOT / ".cache" / ex["membership_file"], "rt") as fh:
+            member = {r["barcode"]: r["cluster"] for r in csv.DictReader(fh, delimiter="\t")}
+        for path in expression_h5ads(cfg):
+            labels = [member.get(cell) for cell in read_obs(path, [])["_index"]]
+            part = _accumulate_h5ad(path, labels, ex["values"], gene_map, path.stem)
+            for lab, size in zip(part["clusters"], part["cluster_size"]):
+                if expected.get(lab) != int(size):
+                    raise SystemExit(f"{lab}: {size} cells in {path.name}, "
+                                     f"{expected.get(lab)} in cell_type_annotations.json")
+            print(f"    {path.name}: {sum(lab is not None for lab in labels)} cells, "
+                  f"{len(part['clusters'])} clusters, {len(part['fbgn'])} genes{part['note']}")
+            parts.append(part)
+        return parts
     for c in cfg["sample_build"]["clusterings"]:
         path = h5ad_path(acc, c["id"])
         if c.get("fixed_annotation"):

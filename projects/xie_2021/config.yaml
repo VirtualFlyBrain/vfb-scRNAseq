@@ -90,3 +90,19 @@ type_mapping:
     main_0h: immature
     main_24h: immature
     knot_24h: immature
+
+# Summary expression (scripts/build_expression.py) from the authors' annotated h5ads (GEO):
+# X is log2(CPM + 1) (each cell sums to 1e6 CPM; checked), converted back to CPM; each cell's
+# cluster from build_clusters.py's memberships (main and knot analyses, disjoint cells).
+# Genes are symbols (FlyBase release of the authors' alignment), looked up in FlyBase Chado.
+expression:
+  source: h5ad
+  h5ad_files: [xie/all.h5ad, xie/knot_24h_48h_adult.h5ad]
+  membership_file: xie/memberships.tsv.gz
+  values: log2_cpm1
+  normalisation: CPM
+  extent_cutoff: 0.2
+  hide_in_terminfo: "true"
+  gzip_tsv: true
+  gene_id_map: gene_id_map.tsv
+  gene_ids_from: [kurmangaliyev_2020, davie_2018, li_2022_fca_10x, lu_2023_afca, ozel_2021, konstantinides_2022]
