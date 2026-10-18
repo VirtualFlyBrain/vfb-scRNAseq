@@ -1,14 +1,21 @@
 {
   "cluster_label": "GH146_24h_12",
-  "working_definition": "Olfactory projection neurons of type DC3 (Li et al. 2017) at 24 h or 36 h APF (pupal).",
+  "working_definition": "Olfactory projection neuron type DC3 (Li et al. 2017) at 24 h or 36 h APF.",
   "searches_performed": [
     "immature antennal lobe projection neuron DC3",
     "immature antennal lobe projection neuron"
   ],
-  "best_match": null,
-  "justification": "Up to the pupal stage the immature term is used (curator), but FBbt has no immature antennal lobe projection neuron terms; the nearest immature ancestor is immature neuron, which is too broad (held). New terms to be requested with Xie 2021's (curator 2026-10-17).",
   "other_candidates": [],
-  "recommendation": "Hold until FBbt has an immature term for this PN type.",
   "new_term_needed": true,
-  "verification_needed": false
+  "verification_needed": false,
+  "best_match": {
+    "fbbt_term": "antennal lobe projection neuron adPN",
+    "fbbt_id": "FBbt:00067349",
+    "fbbt_definition": "Any antennal lobe projection neuron (FBbt:00007422) that develops from some neuroblast BAmv3 (FBbt:00067346).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "Up to the pupal stage the immature term is used (curator), but FBbt has no immature (or remodelling) antennal lobe projection neuron terms yet (requested, curator 2026-10-17); meanwhile the stage-neutral class for the authors' lineage (adPN), to be refined when the new terms exist. Lineage from the paper's definitions: DA1 and DL3 PNs are acj6- lPNs (Mz19+/acj6- DA1; the acj6-/CG31676+ clusters #6 / #6' DL3), VA1d, DC3, DC2 and VM2 acj6+ adPNs (Figures 3-4).",
+  "recommendation": "Map to FBbt:00067349 antennal lobe projection neuron adPN (broad match) until FBbt has the immature / remodelling term for DC3."
 }

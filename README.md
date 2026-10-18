@@ -75,9 +75,9 @@ from FlyBase; that authority is being dropped.)
 - `projects/li_2017/` — Li, Horns et al. 2017, olfactory projection neurons (PMID
   29149607; [GSE100058](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE100058)):
   Smart-seq2 of sorted PNs, the GH146 24 h APF clusters and the Mz19 developmental
-  series (per-cell assignments from the authors' repository): 45 entries, 8 loaded (mature
-  PN types from 48 h APF; the 24 h / 36 h types await immature FBbt terms). Curated before
-  Xie 2021, which reuses its 24 h cells.
+  series (per-cell assignments from the authors' repository): 45 entries, 22 loaded (mature
+  PN types from 48 h APF; the 24 h / 36 h types under stage-neutral PN lineage classes
+  until FBbt #2220). Curated before Xie 2021, which reuses its 24 h cells.
 - `projects/xie_2021/` — Xie et al. 2021, olfactory projection neurons through development
   (PMID 33427646; [GSE161228](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161228)):
   Smart-seq2 of sorted PNs at 0 h, 24 h, 48 h APF and adult (main pan-PN and knot⁺
@@ -205,6 +205,8 @@ Pending FBbt requests, tracked with the clusters waiting on them in
 [#2216](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2216)
 (immature T2 / T2a / T3 neurons; Kurmangaliyev and Özel),
 [#2219](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2219)
-(19 immature optic lobe neuron types; Özel), and the FBbt review of adult fat terms
+(19 immature optic lobe neuron types; Özel),
+[#2220](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2220)
+(pupal immature / remodelling olfactory projection neuron types; Li 2017 and Xie 2021), and the FBbt review of adult fat terms
 ([#2218](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2218);
 FCA and AFCA fat mappings to revisit).

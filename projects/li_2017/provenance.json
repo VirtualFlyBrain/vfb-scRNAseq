@@ -2,7 +2,7 @@
   "project": "li_2017",
   "created_at": "2026-10-17",
   "updated_at": "2026-10-17",
-  "summary": "Li, Horns et al. 2017 (Cell), Smart-seq2 of FACS-sorted Drosophila olfactory projection neurons (GEO GSE100058), curated before Xie et al. 2021, which reuses its 24 h APF GH146 cells; not previously in VFB. 10 Samples (one per sort: 5 GH146 sorts at 24 h APF; Mz19 at 24, 36, 48, 72 h APF and adult) with 29 Smart-seq2 plate Assays, linked to their GAL4 driver alleles (GENO has_genotype). Six Clusterings: the authors' GH146 24 h HDBSCAN clusters (from their repository; the paper's decoded clusters linked by the authors' own criteria) and the Mz19 developmental series (per-type, per-stage lists). 45 entries: 8 loaded (mature PN type terms from 48 h APF); the 24 h / 36 h types held until FBbt has immature projection neuron terms. Summary expression as CPM from GEO's raw HTSeq counts (14,457 genes x 1,379 cells).",
+  "summary": "Li, Horns et al. 2017 (Cell), Smart-seq2 of FACS-sorted Drosophila olfactory projection neurons (GEO GSE100058), curated before Xie et al. 2021, which reuses its 24 h APF GH146 cells; not previously in VFB. 10 Samples (one per sort: 5 GH146 sorts at 24 h APF; Mz19 at 24, 36, 48, 72 h APF and adult) with 29 Smart-seq2 plate Assays, linked to their GAL4 driver alleles (GENO has_genotype). Six Clusterings: the authors' GH146 24 h HDBSCAN clusters (from their repository; the paper's decoded clusters linked by the authors' own criteria) and the Mz19 developmental series (per-type, per-stage lists). 45 entries: 22 loaded (mature PN type terms from 48 h APF; the 24 h / 36 h types under the stage-neutral PN class of their lineage until FBbt #2220 adds immature / remodelling terms). Summary expression as CPM from GEO's raw HTSeq counts (14,457 genes x 1,379 cells).",
   "decisions": [
     {
       "date": "2026-10-08",
@@ -73,6 +73,11 @@
       "date": "2026-10-17",
       "by": "curator",
       "decision": "All 8 mapped clusters reviewed by the curator (mapping.tsv `reviewed`)."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "curator",
+      "decision": "FBbt term request opened for the pupal (immature, or remodelling for embryonic-born PNs) PN types, with Xie 2021's (FlyBase/drosophila-anatomy-developmental-ontology#2220); meanwhile the 24 h / 36 h types map to the stage-neutral PN class of their lineage (antennal lobe projection neuron adPN; ... of ALl1 lineage), broad: 14 more clusters loaded."
     }
   ],
   "checks": [
@@ -100,6 +105,11 @@
       "date": "2026-10-17",
       "check": "Marker spot checks in the expression output.",
       "result": "acj6 in VA1d / DC3 not DA1; fru in DA1; CG31676 in VA1d and DA1 not DC3, at 48 h, 72 h and (after the swap) adult."
+    },
+    {
+      "date": "2026-10-17",
+      "check": "verify_mappings.py after the lineage-class mappings.",
+      "result": "6 terms current, not obsolete, labels match."
     }
   ],
   "people": [
