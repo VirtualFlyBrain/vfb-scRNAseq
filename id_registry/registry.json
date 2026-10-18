@@ -1,5 +1,5 @@
 {
-  "counter": 2727,
+  "counter": 2737,
   "entries": {
     "Assay::E-MTAB-10519:FCA10_Male_head_adult_5dWT_Luo_sample4_S1": {
       "accession": null,
@@ -1750,6 +1750,34 @@
       "id": "VFBseq_00000277",
       "label": "w1118_30d_r1",
       "natural_key": "GSE107451:GSM2867577"
+    },
+    "Assay::GSE141807:GSM4213596": {
+      "accession": "GSM4213596",
+      "entity_type": "Assay",
+      "id": "VFBseq_00002730",
+      "label": "female_vnc_rep1",
+      "natural_key": "GSE141807:GSM4213596"
+    },
+    "Assay::GSE141807:GSM4213597": {
+      "accession": "GSM4213597",
+      "entity_type": "Assay",
+      "id": "VFBseq_00002732",
+      "label": "female_vnc_rep2",
+      "natural_key": "GSE141807:GSM4213597"
+    },
+    "Assay::GSE141807:GSM4213598": {
+      "accession": "GSM4213598",
+      "entity_type": "Assay",
+      "id": "VFBseq_00002734",
+      "label": "male_vnc_rep1",
+      "natural_key": "GSE141807:GSM4213598"
+    },
+    "Assay::GSE141807:GSM4213599": {
+      "accession": "GSM4213599",
+      "entity_type": "Assay",
+      "id": "VFBseq_00002736",
+      "label": "male_vnc_rep2",
+      "natural_key": "GSE141807:GSM4213599"
     },
     "Assay::GSE142787:GSM4240165": {
       "accession": "GSM4240165",
@@ -15709,6 +15737,13 @@
       "label": "Davie 2018 sub-clustering of res-2.0 cluster 64 (octopaminergic-tyraminergic neurons)",
       "natural_key": "GSE107451:sub64"
     },
+    "Clustering::GSE141807:vnc": {
+      "accession": null,
+      "entity_type": "Clustering",
+      "id": "VFBseq_00002737",
+      "label": "Allen 2020 adult VNC clusters",
+      "natural_key": "GSE141807:vnc"
+    },
     "Clustering::GSE142787:P15": {
       "accession": null,
       "entity_type": "Clustering",
@@ -15904,6 +15939,13 @@
       "id": "VFBseq_00000243",
       "label": "A single-cell transcriptome atlas of the ageing Drosophila brain",
       "natural_key": "GSE107451"
+    },
+    "Dataset::GSE141807": {
+      "accession": "GSE141807",
+      "entity_type": "Dataset",
+      "id": "VFBseq_00002728",
+      "label": "A single-cell transcriptomic atlas of the adult Drosophila ventral nerve cord",
+      "natural_key": "GSE141807"
     },
     "Dataset::GSE142787": {
       "accession": "GSE142787",
@@ -16842,6 +16884,34 @@
       "id": "VFBseq_00000294",
       "label": "w1118_9d_r3",
       "natural_key": "GSE107451:w1118_9d_r3"
+    },
+    "Sample::GSE141807:female_rep_1": {
+      "accession": null,
+      "entity_type": "Sample",
+      "id": "VFBseq_00002729",
+      "label": "female_rep_1",
+      "natural_key": "GSE141807:female_rep_1"
+    },
+    "Sample::GSE141807:female_rep_2": {
+      "accession": null,
+      "entity_type": "Sample",
+      "id": "VFBseq_00002731",
+      "label": "female_rep_2",
+      "natural_key": "GSE141807:female_rep_2"
+    },
+    "Sample::GSE141807:male_rep_1": {
+      "accession": null,
+      "entity_type": "Sample",
+      "id": "VFBseq_00002733",
+      "label": "male_rep_1",
+      "natural_key": "GSE141807:male_rep_1"
+    },
+    "Sample::GSE141807:male_rep_2": {
+      "accession": null,
+      "entity_type": "Sample",
+      "id": "VFBseq_00002735",
+      "label": "male_rep_2",
+      "natural_key": "GSE141807:male_rep_2"
     },
     "Sample::GSE142787:Adult_1": {
       "accession": null,

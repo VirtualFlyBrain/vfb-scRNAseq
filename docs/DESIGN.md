@@ -1481,3 +1481,34 @@ FACS-sorted olfactory projection neurons (PNs), one GEO sample per cell (11,509)
   OK (19 FBbt terms); the FBbt / FBdv / FBcv terms on Samples, Assays and the Dataset
   current. Recorded in `provenance.json`.
 
+## Allen 2020 (adult ventral nerve cord)
+
+eLife 2020, PMID 32314735, FBrf0245499; GEO GSE141807 (`allen_2020`). Drop-seq of the
+adult VNC of 5-day-old females and males (dsxGAL4 > UAS-Stinger flies). Replaces the old
+FlyBase/SCEA load FBlc0005603 (SCEA E-GEOD-141807, 20 clusters merged by type) with fresh
+VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-17.
+
+- **Data.** The paper's unit is 120 clusters (Seurat 2.3.4, CCA on the two sexes, Louvain
+  at resolution 12), typed in Figure 1-source data 2 (110 neuronal: neurotransmitter,
+  predicted hemilineage, peptides, Hox; 10 non-neuronal: cell type). The per-cell cluster
+  assignments were never published: GEO has only the per-library DGE matrices; the eLife
+  source data are cluster-level; the authors' GitHub (aaron-allen/VNC_scRNAseq) has code
+  only; SCEA's per-cell "authors labels" are composites (neurotransmitter + hemilineage +
+  neuromere: 141 labels for 120 clusters, non-neuronal cells unlabelled, hemilineage letters
+  dropped, e.g. "11A" for the authors' 11B, which the old load inherited); Zenodo,
+  Figshare, Dryad, Mendeley, CELLxGENE and the UCSC Cell Browser have nothing.
+- **Clusters recovered (curator):** the authors' published pipeline (`R_preprocessing.R`)
+  is re-run on the GEO matrices in a Docker image with their recorded versions (R 3.5.3,
+  Seurat 2.3.4; CRAN snapshot of 2019-04-10): `projects/allen_2020/rerun/`. Same cells
+  (26,768: 11,650 female, 15,118 male, as in the paper), and all 120 cluster sizes equal
+  the paper's (Figure 1-source data 2). The cross-sex alignment (AlignSubspace) does not
+  release memory between dimensions, so it runs in chunks of three dimensions in fresh
+  R sessions (each dimension is aligned independently; a check aligning dimensions 2-3 on
+  their own gives a maximum difference of 0); only the 45 aligned dimensions clustered on
+  are needed.
+- **Samples (stage 1):** `build_samples_from_geo.py`: 4 Samples / 4 Assays (one Drop-seq
+  library per GSM: two replicates per sex); *day 5 of adulthood*; *adult ventral nerve
+  cord*; sex from GEO. Genotype (a cross): Scer\GAL4[dsx.KI] (FlyBase's for the paper) and
+  UAS-Stinger (Avic\GFP[Stinger.UAS.Tag:NLS(tra)], unambiguous); 13XLexAop2-IVS-tdTomato.nls
+  not identifiable (and inert: no LexA driver). One Clustering.
+
