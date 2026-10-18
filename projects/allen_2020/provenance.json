@@ -1,0 +1,431 @@
+{
+  "project": "allen_2020",
+  "created_at": "2026-10-17",
+  "updated_at": "2026-10-18",
+  "summary": "Allen et al. 2020 (eLife), Drop-seq of the adult ventral nerve cord of 5-day-old females and males (GEO GSE141807); replaces the old FlyBase/SCEA load FBlc0005603 with fresh VFBseq ids. 4 Samples / 4 Assays (one library per GSM; two replicates per sex), linked to the dsx GAL4 knock-in and UAS-Stinger alleles (GENO has_genotype). One Clustering with the authors' 120 clusters, whose per-cell assignments (not published) were recovered by re-running the authors' Seurat 2.3.4 pipeline (all 120 cluster sizes equal the paper's): 106 loaded (hemilineage secondary neuron terms, Notch classes for unseparated pairs, adult neurotransmitter classes, adult CNS glial cell, spermatozoon; the authors' neurotransmitter added to hemilineage clusters), 14 held. Summary expression as CPM from the GEO DGE matrices (15,052 genes x 26,768 cells).",
+  "decisions": [
+    {
+      "date": "2026-10-08",
+      "by": "curator",
+      "decision": "Map to cell-level FBbt terms only (a tissue or organ author term maps to its cell-level equivalent, else the type is held)."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Clusters with no FBbt term are held: listed in mapping.tsv with a hold_reason but not loaded (no VFBseq id, entity or expression rows). Their cells still count towards the Dataset's gene counts."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Summary expression is computed as CPM for every dataset."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Narrow a generic type by the dissected tissue only where the tissue makes the tissue-specific FBbt term exact; hold clusters that could only be typed as cell or neuron (or stage-specific versions); load glia under a glial-cell term."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "curator",
+      "decision": "Load the authors' 120 clusters (Figure 1-source data 2), not SCEA's composite labels or the old load's 20 merged types. The per-cell assignments were not published (GEO, eLife source data, the authors' GitHub, SCEA, Zenodo / Figshare / Dryad / Mendeley / CELLxGENE / UCSC Cell Browser checked): recover them by re-running the authors' published pipeline."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "pipeline",
+      "decision": "Re-run (projects/allen_2020/rerun/): R_preprocessing.R in a Docker image with the authors' versions (R 3.5.3, Seurat 2.3.4, CRAN snapshot 2019-04-10); the cross-sex AlignSubspace run in chunks of three dimensions in fresh R sessions (it leaks memory between dimensions; dimensions are aligned independently, checked: max difference 0); only the input paths, core count and t-SNE (skipped) differ."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "curator",
+      "decision": "Samples from a cross link the alleles (genotype_includes, GENO:0000222): Scer\\GAL4[dsx.KI] (FlyBase's for the paper) and UAS-Stinger (unambiguous; not linked to the paper in FlyBase); 13XLexAop2-IVS-tdTomato.nls not identifiable and inert (no LexA driver), not linked. Stage day 5 of adulthood; tissue adult ventral nerve cord; sex from GEO."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "pipeline",
+      "decision": "Clusters by build_clusters.py from the re-run's cell -> cluster table and Figure 1-source data 2, typed by the most specific author call (predicted hemilineage, else neurotransmitter class, else non-neuronal cell type), the table's other fields kept as author_*."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "Single hemilineages to hemilineage XY secondary neuron; 10B / 15B / 16B / 23B (no FBbt hemilineage term) to lineage N secondary neuron, broad; unseparated pairs to their common Notch class (13A/19A, 20A/22A Notch ON; 5B/6B Notch OFF), broad; 8A/24B (Notch ON / OFF) by its neurotransmitter, adult glutamatergic neuron; monoaminergic to adult aminergic neuron; glia to adult CNS glial cell; sperm to spermatozoon."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "Held: undefined clusters and those typed only as neuron, of mixed neurotransmitter identity or neuronal/glial (untyped: typeable only as neuron / cell); salivary gland (artefact: a dissection contaminant)."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "The authors' neurotransmitter is added to hemilineage clusters as an additional match (adult cholinergic / GABAergic / glutamatergic neuron, broad; add_neurotransmitter_matches.py, 59 clusters)."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "No neuromere terms from the authors' enriched Hox genes: the authors assign cells, not clusters, to neuromeres, approximately (Figure 3E), and per cluster this contradicts their hemilineage calls (Antp-enriched 23B clusters; 23B is prothoracic)."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "pipeline",
+      "decision": "Expression from the GEO DGE matrices (raw UMI counts) combined into one sparse matrix of the clustered cells (combine_matrices.py), as CPM; gene symbols mapped to current FlyBase genes (14,949 current, 105 secondary, 1 synonym; 3 split and 6 unmatched dropped)."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "All 120 mapping.tsv rows reviewed by the curator (mapping.tsv `reviewed`)."
+    }
+  ],
+  "checks": [
+    {
+      "date": "2026-10-17",
+      "check": "Re-run cluster sizes against Figure 1-source data 2.",
+      "result": "All 120 clusters equal the paper's sizes; 26,768 cells (11,650 female, 15,118 male), as in the paper."
+    },
+    {
+      "date": "2026-10-17",
+      "check": "Chunked AlignSubspace: dimensions 2-3 aligned on their own against the same dimensions in chunk 1-3.",
+      "result": "Maximum absolute difference 0."
+    },
+    {
+      "date": "2026-10-18",
+      "check": "verify_mappings.py: every FBbt term in the mappings looked up in OLS (FBbt 2026-10-01).",
+      "result": "26 terms current, not obsolete, labels match."
+    },
+    {
+      "date": "2026-10-18",
+      "check": "FBbt, FBdv and FBcv terms on the Samples, Assays and Dataset looked up in OLS.",
+      "result": "All current (day 5 of adulthood, adult ventral nerve cord, single-cell RNA-Seq, DROP-Seq)."
+    },
+    {
+      "date": "2026-10-18",
+      "check": "Marker spot checks in the expression output.",
+      "result": "Gad1 ~0.98 extent in GABAergic hemilineages; VGlut1 ~1.0 in 8A/24B, 14A, 9B; Vmat 0.92 in the monoaminergic cluster; repo in glia; Antp highest in 23B."
+    }
+  ],
+  "people": [
+    {
+      "id": "ORCID:0000-0002-1373-1705",
+      "label": "Clare Pilgrim",
+      "role": "curator",
+      "username": "Clare72"
+    }
+  ],
+  "pipeline": {
+    "id": "vfb-scrnaseq",
+    "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
+    "version": "0.0.0",
+    "commit": "f9bd904",
+    "uncommitted_changes": true
+  },
+  "ontologies": [
+    {
+      "id": "FBbt",
+      "label": "Drosophila gross anatomy ontology",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBdv",
+      "label": "Drosophila developmental ontology",
+      "version": "2026-09-30",
+      "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-09-30/fbdv.owl",
+      "accessed_via": "OLS4 API; local fbdv.obo in .cache (stage definitions)",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBcv",
+      "label": "FlyBase controlled vocabulary",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-10-01/fbcv.owl",
+      "accessed_via": "OLS4 API",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "accessed_at": "2026-10-16"
+    }
+  ],
+  "data_sources": [
+    {
+      "id": "10.7554/eLife.54074",
+      "type": "publication",
+      "label": "A single-cell transcriptomic atlas of the adult Drosophila ventral nerve cord",
+      "xrefs": [
+        "PMID:32314735",
+        "PMCID:PMC7173974",
+        "FlyBase:FBrf0245499"
+      ],
+      "description": "Allen et al. 2020, eLife. Full text read for the scope, samples, genotype, the clustering parameters and the Hox / neuromere assignment (Figure 3E, image from eLife IIIF); Figure 1-source data 2 types the clusters.",
+      "url": "https://doi.org/10.7554/eLife.54074",
+      "files": [
+        {
+          "path": "supp/PMC7173974.jats.xml",
+          "description": "JATS full text, NCBI efetch (db=pmc).",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=PMC7173974",
+          "sha256": "3c8d677c61a6f8c8bc55b7ee6429e7a1744194af8fa11ab8db7a082728cfbbf5",
+          "bytes": 351883,
+          "accessed_at": "2026-10-17"
+        },
+        {
+          "path": "supp/elife-54074-fig1-data2.xlsx",
+          "description": "Figure 1-source data 2: per-cluster summary (cells, neurotransmitter, predicted hemilineage, peptides, Hox; non-neuronal cell type).",
+          "url": "https://doi.org/10.7554/eLife.54074",
+          "sha256": "05053fb9a967e1ce2356eb90e8afc2ca2f091f1caa26692a29bca198d48493cf",
+          "bytes": 17114,
+          "accessed_at": "2026-10-17"
+        },
+        {
+          "path": "supp/elife-54074-fig1-data1.xlsx",
+          "description": "Figure 1-source data 1: cluster markers.",
+          "url": "https://doi.org/10.7554/eLife.54074",
+          "sha256": "6cf8f8841383739c01b3985021cb9b038cf0c00ec24053b32e1c9d7707be20e1",
+          "bytes": 459067,
+          "accessed_at": "2026-10-17"
+        },
+        {
+          "path": "supp/elife-54074-fig4-data1.xlsx",
+          "description": "Figure 4-source data 1: hemilineage cell counts.",
+          "url": "https://doi.org/10.7554/eLife.54074",
+          "sha256": "32c8b7d84f8814f217606c6c02a84f6409616d7a637accc5a4da472317768c81",
+          "bytes": 46302,
+          "accessed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "GSE141807",
+      "type": "dataset",
+      "label": "A single-cell transcriptomic atlas of the adult Drosophila ventral nerve cord",
+      "xrefs": [
+        "BioProject:PRJNA594854",
+        "SRA:SRP236591"
+      ],
+      "description": "GEO series: four Drop-seq libraries (two per sex), a DGE matrix (gene symbol x cell, raw UMI) each; series and sample SOFT metadata.",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE141807",
+      "accessed_at": "2026-10-17",
+      "files": [
+        {
+          "path": "allen/InputFiles/GSM4213596_female_rep1_dge.txt.gz",
+          "description": "DGE matrix, female rep1.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4213nnn/GSM4213596/suppl/GSM4213596_female_rep1_dge.txt.gz",
+          "sha256": "127e3cf0437ef5fe0350805c92d6dc76f1669b4029ceeaafad23e8b1bf3b6ac9",
+          "bytes": 8368006,
+          "accessed_at": "2026-10-17"
+        },
+        {
+          "path": "allen/InputFiles/GSM4213597_female_rep2_dge.txt.gz",
+          "description": "DGE matrix, female rep2.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4213nnn/GSM4213597/suppl/GSM4213597_female_rep2_dge.txt.gz",
+          "sha256": "5281425406e077618c98cfa8c0822b9efb0f1c6347b0f5105188c7996c9f9463",
+          "bytes": 22538337,
+          "accessed_at": "2026-10-17"
+        },
+        {
+          "path": "allen/InputFiles/GSM4213598_male_rep1_dge.txt.gz",
+          "description": "DGE matrix, male rep1.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4213nnn/GSM4213598/suppl/GSM4213598_male_rep1_dge.txt.gz",
+          "sha256": "b58707c299fddc1ebbd026fc7a05454b509c6a227b5b884ad13c036fa6f76fbc",
+          "bytes": 16155437,
+          "accessed_at": "2026-10-17"
+        },
+        {
+          "path": "allen/InputFiles/GSM4213599_male_rep2_dge.txt.gz",
+          "description": "DGE matrix, male rep2.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4213nnn/GSM4213599/suppl/GSM4213599_male_rep2_dge.txt.gz",
+          "sha256": "e0a3d9e26a865adf315687b2f4cf25e37088b41a30de4d2f30e05284502ba8a5",
+          "bytes": 23513773,
+          "accessed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "aaron-allen/VNC_scRNAseq",
+      "type": "author_files",
+      "label": "The authors' analysis code (GitHub)",
+      "description": "R_preprocessing.R (the clustering re-run) and sessionInfo.txt (package versions).",
+      "url": "https://github.com/aaron-allen/VNC_scRNAseq",
+      "accessed_at": "2026-10-17",
+      "files": [
+        {
+          "path": "allen/R_preprocessing.R",
+          "description": "The authors' preprocessing and clustering script.",
+          "url": "https://github.com/aaron-allen/VNC_scRNAseq",
+          "sha256": "615db2d136128e3f92d5c62d876a57832f4a0bbea98f0d947592a0e24b961089",
+          "bytes": 9376,
+          "accessed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "rerun-clusters",
+      "type": "project",
+      "label": "Re-run cell -> cluster table",
+      "description": "Output of projects/allen_2020/rerun/ (cell, cluster, sex, replicate, nGene, nUMI); input to build_clusters.py.",
+      "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq/tree/main/projects/allen_2020/rerun",
+      "accessed_at": "2026-10-17",
+      "files": [
+        {
+          "path": "allen/rerun/clusters.tsv.gz",
+          "description": "26,768 cells x 120 clusters.",
+          "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq/tree/main/projects/allen_2020/rerun",
+          "sha256": "95649d1e0a80f77832858af0d625544ce34cccd3b54832cf0e4adba5a44d9cd0",
+          "bytes": 329329,
+          "accessed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "FBlc0005603",
+      "type": "previous_load",
+      "label": "scRNAseq_2020_Allen",
+      "description": "The old FlyBase/SCEA load this project replaces (SCEA E-GEOD-141807; 20 clusters merged by type from SCEA composite labels, hemilineage letters dropped); read during scoping, not reused.",
+      "url": "https://virtualflybrain.org/reports/FBlc0005603",
+      "accessed_at": "2026-10-17"
+    }
+  ],
+  "software": [
+    {
+      "id": "claude-code",
+      "type": "tool",
+      "label": "Claude Code",
+      "version": "2.1.301",
+      "description": "Agentic CLI that ran the session (orchestrator), stages 1-5."
+    },
+    {
+      "id": "ols4",
+      "type": "service",
+      "label": "OLS4 (Ontology Lookup Service)",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "accessed_at": "2026-10-16",
+      "description": "FBbt / FBdv / FBcv lookup during mapping (OLS MCP) and term verification."
+    },
+    {
+      "id": "vfb-pdb",
+      "type": "service",
+      "label": "VFB production (neo4j)",
+      "url": "https://pdb.virtualflybrain.org",
+      "accessed_at": "2026-10-16",
+      "description": "Publication FBrf0245499 resolved by PMID (vfb_scrnaseq.pub)."
+    },
+    {
+      "id": "flybase-chado",
+      "type": "service",
+      "label": "FlyBase Chado",
+      "version": "FB2026_03 (data last modified 2026-08-29)",
+      "url": "https://chado.flybase.org",
+      "accessed_at": "2026-10-16",
+      "description": "The paper's curated genetic entities (scripts/flybase_pub_entities.py) and gene symbols mapped to current FlyBase genes (update_gene_ids.py)."
+    },
+    {
+      "id": "ncbi-geo",
+      "type": "service",
+      "label": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/",
+      "accessed_at": "2026-10-16",
+      "description": "Series and Sample SOFT metadata read by ingest.fetch_series (build_samples_from_geo.py); the DGE matrices."
+    },
+    {
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
+      "version": "2.5.1"
+    },
+    {
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
+      "version": "3.0.5"
+    },
+    {
+      "id": "pyyaml",
+      "type": "library",
+      "label": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
+      "version": "1.11.1",
+      "description": "linkml-validate and linkml-convert (flat RDF)."
+    },
+    {
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
+      "version": "1.11.1"
+    },
+    {
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
+      "version": "0.5.0",
+      "description": "Metadata OWL."
+    },
+    {
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
+      "version": "1.9.11",
+      "description": "OFN to OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "id": "psql",
+      "type": "tool",
+      "label": "psql",
+      "version": "14.15",
+      "description": "FlyBase Chado queries."
+    },
+    {
+      "id": "python",
+      "type": "language",
+      "label": "Python",
+      "version": "3.14.3",
+      "description": "Pipeline environment (uv-managed)."
+    },
+    {
+      "id": "openpyxl",
+      "type": "library",
+      "label": "openpyxl",
+      "version": "3.1.5",
+      "description": "Reads Figure 1-source data 2."
+    },
+    {
+      "id": "docker-seurat",
+      "type": "tool",
+      "label": "vfbseq/seurat:2.3.4 (Docker image)",
+      "version": "83e63e3a8fe8",
+      "description": "R 3.5.3, Seurat 2.3.4, dplyr, future from the CRAN snapshot of 2019-04-10 (projects/allen_2020/rerun/Dockerfile); linux/amd64 under emulation."
+    },
+    {
+      "id": "r",
+      "type": "language",
+      "label": "R",
+      "version": "3.5.3",
+      "description": "The clustering re-run (in the Docker image)."
+    },
+    {
+      "id": "seurat",
+      "type": "library",
+      "label": "Seurat (R)",
+      "version": "2.3.4",
+      "description": "The authors' version; CCA, AlignSubspace, FindClusters."
+    }
+  ],
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "role": "orchestrator",
+      "label": "Claude Opus 5.5",
+      "provider": "Anthropic",
+      "description": "Main Claude Code session: scoping (paper, GEO, the search for per-cell assignments), the clustering re-run, sample and cluster builds, the type mappings, expression and builds. No subagents."
+    }
+  ]
+}

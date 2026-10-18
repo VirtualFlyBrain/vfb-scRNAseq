@@ -1,0 +1,1717 @@
+[
+  {
+    "type": "Publication",
+    "id": "FlyBase:FBrf0245499",
+    "neo_label": "pub"
+  },
+  {
+    "type": "Dataset",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "name": "scRNAseq data from Allen (2020)",
+    "title": "A single-cell transcriptomic atlas of the adult Drosophila ventral nerve cord",
+    "accession": "GSE141807",
+    "neo_label": "DataSet",
+    "site": "vfb:GEO",
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "assay_type": "FBcv:0009000",
+    "total_gene_count": 14410,
+    "filtered_gene_count": 6264,
+    "publication": "FlyBase:FBrf0245499"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002729",
+    "name": "ventral nerve cord, 5-day old adult, female rep 1 (Allen 2020)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002730"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004052"
+    ],
+    "stage": "FBdv:00007080",
+    "genotype_includes": [
+      "FlyBase:FBal0277019",
+      "FlyBase:FBal0157333"
+    ],
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002731",
+    "name": "ventral nerve cord, 5-day old adult, female rep 2 (Allen 2020)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002732"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004052"
+    ],
+    "stage": "FBdv:00007080",
+    "genotype_includes": [
+      "FlyBase:FBal0277019",
+      "FlyBase:FBal0157333"
+    ],
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002733",
+    "name": "ventral nerve cord, 5-day old adult, male rep 1 (Allen 2020)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002734"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004052"
+    ],
+    "stage": "FBdv:00007080",
+    "genotype_includes": [
+      "FlyBase:FBal0277019",
+      "FlyBase:FBal0157333"
+    ],
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002735",
+    "name": "ventral nerve cord, 5-day old adult, male rep 2 (Allen 2020)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002736"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00004052"
+    ],
+    "stage": "FBdv:00007080",
+    "genotype_includes": [
+      "FlyBase:FBal0277019",
+      "FlyBase:FBal0157333"
+    ],
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002730",
+    "name": "ventral nerve cord, 5-day old adult, female rep 1, Drop-seq library (Allen 2020)",
+    "method": "FBcv:0009006",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002729"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "dbxref": [
+      "GSM4213596",
+      "SRX7347370",
+      "SAMN13536164"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002732",
+    "name": "ventral nerve cord, 5-day old adult, female rep 2, Drop-seq library (Allen 2020)",
+    "method": "FBcv:0009006",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002731"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "dbxref": [
+      "GSM4213597",
+      "SRX7347371",
+      "SAMN13536163"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002734",
+    "name": "ventral nerve cord, 5-day old adult, male rep 1, Drop-seq library (Allen 2020)",
+    "method": "FBcv:0009006",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002733"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "dbxref": [
+      "GSM4213598",
+      "SRX7347372",
+      "SAMN13536161"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002736",
+    "name": "ventral nerve cord, 5-day old adult, male rep 2, Drop-seq library (Allen 2020)",
+    "method": "FBcv:0009006",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002735"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "dbxref": [
+      "GSM4213599",
+      "SRX7347373",
+      "SAMN13536160"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "name": "Allen 2020 adult VNC clusters",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002729",
+      "http://virtualflybrain.org/reports/VFBseq_00002731",
+      "http://virtualflybrain.org/reports/VFBseq_00002733",
+      "http://virtualflybrain.org/reports/VFBseq_00002735"
+    ]
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002738",
+    "name": "hemilineage 4B cluster 0 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 623,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053311",
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 9001,
+    "filtered_gene_count": 1862
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002739",
+    "name": "hemilineage 21A cluster 1 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 552,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051459",
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 8757,
+    "filtered_gene_count": 1894
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002740",
+    "name": "cholinergic neuron cluster 2 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 503,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 8633,
+    "filtered_gene_count": 1846
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002741",
+    "name": "hemilineages 5B/6B cluster 3 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 500,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049542",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8725,
+    "filtered_gene_count": 2023
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002742",
+    "name": "hemilineage 16B cluster 5 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 477,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048896",
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 8586,
+    "filtered_gene_count": 1849
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002743",
+    "name": "hemilineages 8A/24B cluster 6 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 471,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 8629,
+    "filtered_gene_count": 1840
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002744",
+    "name": "cholinergic neuron cluster 7 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 466,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 8665,
+    "filtered_gene_count": 1885
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002745",
+    "name": "hemilineage 8B cluster 8 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 454,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051468",
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 8749,
+    "filtered_gene_count": 1983
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002746",
+    "name": "hemilineage 6A cluster 9 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 440,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051460",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8495,
+    "filtered_gene_count": 1811
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002747",
+    "name": "cholinergic neuron cluster 10 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 434,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 8964,
+    "filtered_gene_count": 2704
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002748",
+    "name": "cholinergic neuron cluster 11 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 425,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 8806,
+    "filtered_gene_count": 2534
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002749",
+    "name": "hemilineage 1B cluster 12 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 421,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051467",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8413,
+    "filtered_gene_count": 1732
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002750",
+    "name": "hemilineage 14A cluster 13 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 413,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053278",
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 8408,
+    "filtered_gene_count": 1734
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002751",
+    "name": "hemilineages 20A/22A cluster 14 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 391,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049541",
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 8338,
+    "filtered_gene_count": 1621
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002752",
+    "name": "glutamatergic neuron cluster 15 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 385,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 8484,
+    "filtered_gene_count": 1906
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002753",
+    "name": "hemilineage 1A cluster 16 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 384,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051455",
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 8465,
+    "filtered_gene_count": 1984
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002754",
+    "name": "hemilineage 13B cluster 17 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 379,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051470",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8358,
+    "filtered_gene_count": 2029
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002755",
+    "name": "hemilineages 13A/19A cluster 19 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 347,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049541",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8293,
+    "filtered_gene_count": 1885
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002756",
+    "name": "hemilineages 5B/6B cluster 20 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 344,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049542",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8346,
+    "filtered_gene_count": 1956
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002757",
+    "name": "cholinergic neuron cluster 21 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 341,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 8272,
+    "filtered_gene_count": 1785
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002758",
+    "name": "hemilineage 0A cluster 22 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 327,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053055",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8331,
+    "filtered_gene_count": 1964
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002759",
+    "name": "glia cluster 24 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 318,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100499"
+    ],
+    "total_gene_count": 8496,
+    "filtered_gene_count": 1294
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002760",
+    "name": "hemilineage 13B cluster 25 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 309,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051470",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8292,
+    "filtered_gene_count": 2107
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002761",
+    "name": "GABAergic neuron cluster 26 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 309,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8397,
+    "filtered_gene_count": 2450
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002762",
+    "name": "hemilineage 6A cluster 28 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 302,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051460",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8282,
+    "filtered_gene_count": 2150
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002763",
+    "name": "hemilineage 12B cluster 30 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 296,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051475",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8155,
+    "filtered_gene_count": 1988
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002764",
+    "name": "hemilineage 9A cluster 31 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 295,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051457",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8376,
+    "filtered_gene_count": 2422
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002765",
+    "name": "hemilineages 20A/22A cluster 33 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 294,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049541"
+    ],
+    "total_gene_count": 7969,
+    "filtered_gene_count": 1527
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002766",
+    "name": "hemilineages 20A/22A cluster 34 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 282,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049541",
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 8011,
+    "filtered_gene_count": 1667
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002767",
+    "name": "hemilineage 23B cluster 35 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 274,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048920",
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 8206,
+    "filtered_gene_count": 1809
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002768",
+    "name": "hemilineage 15B cluster 36 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 273,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048900",
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 8609,
+    "filtered_gene_count": 3135
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002769",
+    "name": "cholinergic neuron cluster 37 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 272,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 8050,
+    "filtered_gene_count": 1787
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002770",
+    "name": "hemilineage 11B cluster 38 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 271,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051478",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8142,
+    "filtered_gene_count": 1801
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002771",
+    "name": "hemilineage 10B cluster 39 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 267,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048899",
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 7956,
+    "filtered_gene_count": 1543
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002772",
+    "name": "cholinergic neuron cluster 40 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 257,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 8330,
+    "filtered_gene_count": 2090
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002773",
+    "name": "hemilineage 14A cluster 41 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 253,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053278",
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 7778,
+    "filtered_gene_count": 1564
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002774",
+    "name": "cholinergic neuron cluster 42 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 251,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 8331,
+    "filtered_gene_count": 2337
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002775",
+    "name": "cholinergic neuron cluster 44 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 249,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 8077,
+    "filtered_gene_count": 1975
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002776",
+    "name": "GABAergic neuron cluster 45 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 243,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8008,
+    "filtered_gene_count": 1950
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002777",
+    "name": "hemilineage 16B cluster 46 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 243,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048896",
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 7923,
+    "filtered_gene_count": 1864
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002778",
+    "name": "hemilineage 1B cluster 47 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 238,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051467",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8019,
+    "filtered_gene_count": 1786
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002779",
+    "name": "hemilineages 13A/19A cluster 48 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 236,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049541",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8177,
+    "filtered_gene_count": 2571
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002780",
+    "name": "hemilineage 8B cluster 49 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 235,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051468",
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 8459,
+    "filtered_gene_count": 2771
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002781",
+    "name": "hemilineage 9A cluster 50 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 235,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051457",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7925,
+    "filtered_gene_count": 1859
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002782",
+    "name": "hemilineage 23B cluster 51 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 221,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048920"
+    ],
+    "total_gene_count": 7923,
+    "filtered_gene_count": 1720
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002783",
+    "name": "hemilineage 15B cluster 52 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 220,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048900",
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 8327,
+    "filtered_gene_count": 3006
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002784",
+    "name": "hemilineage 8B cluster 53 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 219,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051468",
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 7923,
+    "filtered_gene_count": 1988
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002785",
+    "name": "hemilineage 9B cluster 54 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 219,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051469",
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 7973,
+    "filtered_gene_count": 2166
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002786",
+    "name": "hemilineage 9A cluster 56 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 216,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051457",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7751,
+    "filtered_gene_count": 1662
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002787",
+    "name": "hemilineage 9A cluster 57 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 211,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051457",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7793,
+    "filtered_gene_count": 1771
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002788",
+    "name": "cholinergic neuron cluster 58 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 205,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 7976,
+    "filtered_gene_count": 2057
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002789",
+    "name": "hemilineages 13A/19A cluster 59 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 205,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049541",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7815,
+    "filtered_gene_count": 2203
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002790",
+    "name": "GABAergic neuron cluster 60 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 199,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7757,
+    "filtered_gene_count": 1778
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002791",
+    "name": "glutamatergic neuron cluster 61 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 197,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 8167,
+    "filtered_gene_count": 2355
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002792",
+    "name": "cholinergic neuron cluster 62 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 194,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 7794,
+    "filtered_gene_count": 1707
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002793",
+    "name": "cholinergic neuron cluster 63 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 193,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 7813,
+    "filtered_gene_count": 1509
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002794",
+    "name": "GABAergic neuron cluster 64 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 192,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7666,
+    "filtered_gene_count": 1594
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002795",
+    "name": "hemilineages 13A/19A cluster 65 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 189,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049541",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7788,
+    "filtered_gene_count": 1954
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002796",
+    "name": "hemilineage 6A cluster 66 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 187,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051460"
+    ],
+    "total_gene_count": 7629,
+    "filtered_gene_count": 1815
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002797",
+    "name": "hemilineage 23B cluster 67 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 187,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048920"
+    ],
+    "total_gene_count": 7703,
+    "filtered_gene_count": 1661
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002798",
+    "name": "hemilineage 10B cluster 68 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 185,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048899",
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 7821,
+    "filtered_gene_count": 1943
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002799",
+    "name": "hemilineages 8A/24B cluster 69 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 183,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 7569,
+    "filtered_gene_count": 1758
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002800",
+    "name": "glia cluster 70 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 174,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100499"
+    ],
+    "total_gene_count": 7716,
+    "filtered_gene_count": 1147
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002801",
+    "name": "monoaminergic neuron cluster 72 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 172,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058201"
+    ],
+    "total_gene_count": 8121,
+    "filtered_gene_count": 2621
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002802",
+    "name": "hemilineage 12B cluster 73 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 165,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051475",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7659,
+    "filtered_gene_count": 1843
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002803",
+    "name": "hemilineage 14A cluster 74 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 164,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053278",
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 7684,
+    "filtered_gene_count": 2048
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002804",
+    "name": "hemilineages 13A/19A cluster 75 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 157,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049541",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7491,
+    "filtered_gene_count": 1809
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002805",
+    "name": "hemilineage 8B cluster 76 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 157,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051468",
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 7940,
+    "filtered_gene_count": 2427
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002806",
+    "name": "cholinergic neuron cluster 77 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 150,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 7921,
+    "filtered_gene_count": 2773
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002807",
+    "name": "hemilineages 20A/22A cluster 78 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 149,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049541",
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 7719,
+    "filtered_gene_count": 2479
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002808",
+    "name": "hemilineages 13A/19A cluster 79 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 149,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049541",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7423,
+    "filtered_gene_count": 1998
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002809",
+    "name": "hemilineage 15B cluster 80 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 148,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048900",
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 7976,
+    "filtered_gene_count": 2221
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002810",
+    "name": "hemilineage 12B cluster 81 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 148,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051475",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7456,
+    "filtered_gene_count": 1681
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002811",
+    "name": "hemilineages 13A/19A cluster 82 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 142,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049541",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7484,
+    "filtered_gene_count": 2108
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002812",
+    "name": "hemilineage 12B cluster 83 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 141,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051475",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7497,
+    "filtered_gene_count": 1974
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002813",
+    "name": "peptidergic neuron cluster 84 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 139,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058202"
+    ],
+    "total_gene_count": 8066,
+    "filtered_gene_count": 2520
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002814",
+    "name": "cholinergic neuron cluster 85 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 138,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 7508,
+    "filtered_gene_count": 1912
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002815",
+    "name": "glutamatergic neuron cluster 86 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 136,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 7662,
+    "filtered_gene_count": 2075
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002816",
+    "name": "hemilineages 5B/6B cluster 87 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 136,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049542",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7689,
+    "filtered_gene_count": 2258
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002817",
+    "name": "hemilineage 0A cluster 88 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 135,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053055",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7620,
+    "filtered_gene_count": 2312
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002818",
+    "name": "hemilineages 5B/6B cluster 89 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 135,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049542",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7481,
+    "filtered_gene_count": 2331
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002819",
+    "name": "GABAergic neuron cluster 90 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 134,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7411,
+    "filtered_gene_count": 1861
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002820",
+    "name": "hemilineage 10B cluster 91 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 132,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048899"
+    ],
+    "total_gene_count": 7382,
+    "filtered_gene_count": 1493
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002821",
+    "name": "cholinergic neuron cluster 92 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 126,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 7390,
+    "filtered_gene_count": 1754
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002822",
+    "name": "hemilineage 23B cluster 93 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 118,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048920",
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 7216,
+    "filtered_gene_count": 1810
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002823",
+    "name": "hemilineage 12B cluster 94 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 114,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051475",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7388,
+    "filtered_gene_count": 2130
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002824",
+    "name": "cholinergic neuron cluster 95 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 112,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 7623,
+    "filtered_gene_count": 2537
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002825",
+    "name": "hemilineages 13A/19A cluster 96 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 96,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049541",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7121,
+    "filtered_gene_count": 1930
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002826",
+    "name": "hemilineages 5B/6B cluster 97 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 95,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049542",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7489,
+    "filtered_gene_count": 2756
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002827",
+    "name": "glia cluster 98 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 94,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100499"
+    ],
+    "total_gene_count": 7632,
+    "filtered_gene_count": 2156
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002828",
+    "name": "hemilineage 4B cluster 100 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 89,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053311",
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 7313,
+    "filtered_gene_count": 2252
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002829",
+    "name": "hemilineages 13A/19A cluster 102 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 83,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049541",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7295,
+    "filtered_gene_count": 2626
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002830",
+    "name": "cholinergic neuron cluster 103 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 78,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 6854,
+    "filtered_gene_count": 1829
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002831",
+    "name": "GABAergic neuron cluster 104 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 75,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 7084,
+    "filtered_gene_count": 2546
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002832",
+    "name": "hemilineage 21A cluster 107 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 72,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051459",
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 7150,
+    "filtered_gene_count": 2530
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002833",
+    "name": "hemilineages 20A/22A cluster 108 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 64,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049541"
+    ],
+    "total_gene_count": 6660,
+    "filtered_gene_count": 1678
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002834",
+    "name": "GABAergic neuron cluster 109 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 63,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 6399,
+    "filtered_gene_count": 1429
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002835",
+    "name": "hemilineages 8A/24B cluster 110 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 60,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 6651,
+    "filtered_gene_count": 1805
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002836",
+    "name": "cholinergic neuron cluster 111 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 57,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 7263,
+    "filtered_gene_count": 3059
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002837",
+    "name": "hemilineage 0A cluster 112 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 55,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00053055",
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 6938,
+    "filtered_gene_count": 2325
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002838",
+    "name": "glutamatergic neuron cluster 113 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 54,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 7016,
+    "filtered_gene_count": 2653
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002839",
+    "name": "cholinergic neuron cluster 114 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 53,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 7054,
+    "filtered_gene_count": 2715
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002840",
+    "name": "sperm cluster 116 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 40,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004954"
+    ],
+    "total_gene_count": 8414,
+    "filtered_gene_count": 2314
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002841",
+    "name": "hemilineage 8B cluster 117 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 40,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051468",
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 6202,
+    "filtered_gene_count": 2033
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002842",
+    "name": "glutamatergic neuron cluster 118 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 22,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 6126,
+    "filtered_gene_count": 2865
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002843",
+    "name": "GABAergic neuron cluster 119 (Allen 2020 adult VNC clusters) (Allen 2020)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002737",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002728",
+    "cell_number": 22,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 6097,
+    "filtered_gene_count": 2928
+  }
+]

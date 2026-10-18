@@ -22,3 +22,4 @@ report, and the counts JSON stay under `projects/<p>/`.
 | vfb_scRNAseq_expression_hormann_2020.owl.gz | hormann_2020 |
 | vfb_scRNAseq_expression_li_2017.owl.gz | li_2017 |
 | vfb_scRNAseq_expression_xie_2021.owl.gz | xie_2021 |
+| vfb_scRNAseq_expression_allen_2020.owl.gz | allen_2020 |
