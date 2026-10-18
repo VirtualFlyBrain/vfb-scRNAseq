@@ -1,0 +1,1270 @@
+@prefix BAO: <http://www.bioassayontology.org/bao#BAO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix FBbt: <http://purl.obolibrary.org/obo/FBbt_> .
+@prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
+@prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
+@prefix FlyBase: <http://flybase.org/reports/> .
+@prefix GENO: <http://purl.obolibrary.org/obo/GENO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix VFBseq: <http://virtualflybrain.org/reports/VFBseq_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix neo_custom: <http://n2o.neo/custom/> .
+@prefix neo_property: <http://n2o.neo/property/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vfb: <http://virtualflybrain.org/reports/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VFBseq:00002636 a FBcv:0009003 ;
+    rdfs:label "D cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 71 ;
+    neo_custom:filtered_gene_count 4639 ;
+    neo_custom:total_gene_count 10336 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002637 a FBcv:0009003 ;
+    rdfs:label "DA1_fru+ cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 55 ;
+    neo_custom:filtered_gene_count 5126 ;
+    neo_custom:total_gene_count 10099 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002638 a FBcv:0009003 ;
+    rdfs:label "DA1_fru- cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 66 ;
+    neo_custom:filtered_gene_count 4351 ;
+    neo_custom:total_gene_count 10292 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002639 a FBcv:0009003 ;
+    rdfs:label "DA4l cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 23 ;
+    neo_custom:filtered_gene_count 5381 ;
+    neo_custom:total_gene_count 8503 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002640 a FBcv:0009003 ;
+    rdfs:label "DC2 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 24 ;
+    neo_custom:filtered_gene_count 5186 ;
+    neo_custom:total_gene_count 8649 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002641 a FBcv:0009003 ;
+    rdfs:label "DC3 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 36 ;
+    neo_custom:filtered_gene_count 4655 ;
+    neo_custom:total_gene_count 9184 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002642 a FBcv:0009003 ;
+    rdfs:label "DL1 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 20 ;
+    neo_custom:filtered_gene_count 5189 ;
+    neo_custom:total_gene_count 8491 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002643 a FBcv:0009003 ;
+    rdfs:label "DL3 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 75 ;
+    neo_custom:filtered_gene_count 3365 ;
+    neo_custom:total_gene_count 10293 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002644 a FBcv:0009003 ;
+    rdfs:label "DM2 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 21 ;
+    neo_custom:filtered_gene_count 5408 ;
+    neo_custom:total_gene_count 8755 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002645 a FBcv:0009003 ;
+    rdfs:label "VA1d cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 51 ;
+    neo_custom:filtered_gene_count 4969 ;
+    neo_custom:total_gene_count 9778 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002646 a FBcv:0009003 ;
+    rdfs:label "VA1v cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 22 ;
+    neo_custom:filtered_gene_count 4581 ;
+    neo_custom:total_gene_count 8329 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002647 a FBcv:0009003 ;
+    rdfs:label "VA5 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 49 ;
+    neo_custom:filtered_gene_count 5143 ;
+    neo_custom:total_gene_count 9914 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002648 a FBcv:0009003 ;
+    rdfs:label "VA6 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 69 ;
+    neo_custom:filtered_gene_count 6018 ;
+    neo_custom:total_gene_count 10589 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002649 a FBcv:0009003 ;
+    rdfs:label "VC2 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 16 ;
+    neo_custom:filtered_gene_count 5399 ;
+    neo_custom:total_gene_count 8233 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002650 a FBcv:0009003 ;
+    rdfs:label "VM2 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 38 ;
+    neo_custom:filtered_gene_count 4988 ;
+    neo_custom:total_gene_count 9320 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002651 a FBcv:0009003 ;
+    rdfs:label "VM7 or VM5v #1 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 35 ;
+    neo_custom:filtered_gene_count 4535 ;
+    neo_custom:total_gene_count 9331 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002652 a FBcv:0009003 ;
+    rdfs:label "VM7 or VM5v #2 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 38 ;
+    neo_custom:filtered_gene_count 4382 ;
+    neo_custom:total_gene_count 9179 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002615 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002653 a FBcv:0009003 ;
+    rdfs:label "D cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 53 ;
+    neo_custom:filtered_gene_count 5008 ;
+    neo_custom:total_gene_count 9109 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002654 a FBcv:0009003 ;
+    rdfs:label "DA1_fru+ cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 112 ;
+    neo_custom:filtered_gene_count 4813 ;
+    neo_custom:total_gene_count 10051 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002655 a FBcv:0009003 ;
+    rdfs:label "DA1_fru- cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 21 ;
+    neo_custom:filtered_gene_count 4482 ;
+    neo_custom:total_gene_count 7531 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002656 a FBcv:0009003 ;
+    rdfs:label "DA3 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 3 ;
+    neo_custom:filtered_gene_count 5608 ;
+    neo_custom:total_gene_count 5608 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002657 a FBcv:0009003 ;
+    rdfs:label "DA4l cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 5037 ;
+    neo_custom:total_gene_count 6539 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002658 a FBcv:0009003 ;
+    rdfs:label "DC2 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 26 ;
+    neo_custom:filtered_gene_count 4941 ;
+    neo_custom:total_gene_count 8001 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002659 a FBcv:0009003 ;
+    rdfs:label "DC3 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 32 ;
+    neo_custom:filtered_gene_count 5022 ;
+    neo_custom:total_gene_count 8268 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002660 a FBcv:0009003 ;
+    rdfs:label "DL1 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 27 ;
+    neo_custom:filtered_gene_count 5110 ;
+    neo_custom:total_gene_count 8106 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002661 a FBcv:0009003 ;
+    rdfs:label "DL3 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 29 ;
+    neo_custom:filtered_gene_count 4860 ;
+    neo_custom:total_gene_count 8081 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002662 a FBcv:0009003 ;
+    rdfs:label "DM2 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 17 ;
+    neo_custom:filtered_gene_count 5431 ;
+    neo_custom:total_gene_count 7632 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002663 a FBcv:0009003 ;
+    rdfs:label "DM6 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 50 ;
+    neo_custom:filtered_gene_count 4708 ;
+    neo_custom:total_gene_count 8726 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002664 a FBcv:0009003 ;
+    rdfs:label "VA1d cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 35 ;
+    neo_custom:filtered_gene_count 4775 ;
+    neo_custom:total_gene_count 8177 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002665 a FBcv:0009003 ;
+    rdfs:label "VA1v cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 93 ;
+    neo_custom:filtered_gene_count 4896 ;
+    neo_custom:total_gene_count 10024 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002666 a FBcv:0009003 ;
+    rdfs:label "VA2 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 10 ;
+    neo_custom:filtered_gene_count 5050 ;
+    neo_custom:total_gene_count 7366 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002667 a FBcv:0009003 ;
+    rdfs:label "VA5 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 26 ;
+    neo_custom:filtered_gene_count 5072 ;
+    neo_custom:total_gene_count 8045 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002668 a FBcv:0009003 ;
+    rdfs:label "VA6 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 25 ;
+    neo_custom:filtered_gene_count 5233 ;
+    neo_custom:total_gene_count 8153 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002669 a FBcv:0009003 ;
+    rdfs:label "VC2 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 24 ;
+    neo_custom:filtered_gene_count 5664 ;
+    neo_custom:total_gene_count 8207 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067362 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002670 a FBcv:0009003 ;
+    rdfs:label "VM2 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 43 ;
+    neo_custom:filtered_gene_count 4865 ;
+    neo_custom:total_gene_count 8563 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002671 a FBcv:0009003 ;
+    rdfs:label "VM7 or VM5v #1 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 52 ;
+    neo_custom:filtered_gene_count 4713 ;
+    neo_custom:total_gene_count 8907 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002672 a FBcv:0009003 ;
+    rdfs:label "VM7 or VM5v #2 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 50 ;
+    neo_custom:filtered_gene_count 4137 ;
+    neo_custom:total_gene_count 8556 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002673 a FBcv:0009003 ;
+    rdfs:label "vPN cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 11 ;
+    neo_custom:filtered_gene_count 4499 ;
+    neo_custom:total_gene_count 7064 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002616 ;
+    RO:0002473 FBbt:00067351 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002674 a FBcv:0009003 ;
+    rdfs:label "APL cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 54 ;
+    neo_custom:filtered_gene_count 4684 ;
+    neo_custom:total_gene_count 9122 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00100222 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002675 a FBcv:0009003 ;
+    rdfs:label "D cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 36 ;
+    neo_custom:filtered_gene_count 5132 ;
+    neo_custom:total_gene_count 8664 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00067355 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002676 a FBcv:0009003 ;
+    rdfs:label "DA1_fru+ cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 31 ;
+    neo_custom:filtered_gene_count 5723 ;
+    neo_custom:total_gene_count 8935 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00067363 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002677 a FBcv:0009003 ;
+    rdfs:label "DA1_fru- cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 15 ;
+    neo_custom:filtered_gene_count 5214 ;
+    neo_custom:total_gene_count 7848 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00067363 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002678 a FBcv:0009003 ;
+    rdfs:label "DC3 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 26 ;
+    neo_custom:filtered_gene_count 5122 ;
+    neo_custom:total_gene_count 8277 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00040000 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002679 a FBcv:0009003 ;
+    rdfs:label "DL1 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 15 ;
+    neo_custom:filtered_gene_count 5673 ;
+    neo_custom:total_gene_count 8074 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00067353 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002680 a FBcv:0009003 ;
+    rdfs:label "DL3 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 47 ;
+    neo_custom:filtered_gene_count 4667 ;
+    neo_custom:total_gene_count 9128 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00067364 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002681 a FBcv:0009003 ;
+    rdfs:label "DM6 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 24 ;
+    neo_custom:filtered_gene_count 5136 ;
+    neo_custom:total_gene_count 8048 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00067360 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002682 a FBcv:0009003 ;
+    rdfs:label "VA1d cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 21 ;
+    neo_custom:filtered_gene_count 5414 ;
+    neo_custom:total_gene_count 8189 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00067357 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002683 a FBcv:0009003 ;
+    rdfs:label "VA1v cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 31 ;
+    neo_custom:filtered_gene_count 5051 ;
+    neo_custom:total_gene_count 8677 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00067361 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002684 a FBcv:0009003 ;
+    rdfs:label "VA5 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 23 ;
+    neo_custom:filtered_gene_count 5446 ;
+    neo_custom:total_gene_count 8308 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00067366 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002685 a FBcv:0009003 ;
+    rdfs:label "VA6 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 24 ;
+    neo_custom:filtered_gene_count 5737 ;
+    neo_custom:total_gene_count 8536 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00007447 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002686 a FBcv:0009003 ;
+    rdfs:label "VC2 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 35 ;
+    neo_custom:filtered_gene_count 5761 ;
+    neo_custom:total_gene_count 9047 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00007449 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002687 a FBcv:0009003 ;
+    rdfs:label "VM2 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 12 ;
+    neo_custom:filtered_gene_count 5380 ;
+    neo_custom:total_gene_count 7545 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00067359 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002688 a FBcv:0009003 ;
+    rdfs:label "VM7 or VM5v #1 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 17 ;
+    neo_custom:filtered_gene_count 5545 ;
+    neo_custom:total_gene_count 7979 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00100368 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002689 a FBcv:0009003 ;
+    rdfs:label "VM7 or VM5v #2 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 24 ;
+    neo_custom:filtered_gene_count 5110 ;
+    neo_custom:total_gene_count 8244 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00100368 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002690 a FBcv:0009003 ;
+    rdfs:label "vPN cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 61 ;
+    neo_custom:filtered_gene_count 5571 ;
+    neo_custom:total_gene_count 10019 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002617 ;
+    RO:0002473 FBbt:00007437 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002691 a FBcv:0009003 ;
+    rdfs:label "APL cluster (Xie 2021 PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 16 ;
+    neo_custom:filtered_gene_count 2123 ;
+    neo_custom:total_gene_count 6695 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002618 ;
+    RO:0002473 FBbt:00100222 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002692 a FBcv:0009003 ;
+    rdfs:label "D cluster (Xie 2021 PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 13 ;
+    neo_custom:filtered_gene_count 4405 ;
+    neo_custom:total_gene_count 7173 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002618 ;
+    RO:0002473 FBbt:00067355 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002693 a FBcv:0009003 ;
+    rdfs:label "DA1 cluster (Xie 2021 PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 21 ;
+    neo_custom:filtered_gene_count 4618 ;
+    neo_custom:total_gene_count 7990 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002618 ;
+    RO:0002473 FBbt:00067363 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002694 a FBcv:0009003 ;
+    rdfs:label "DC3 and VA1d cluster (Xie 2021 PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 35 ;
+    neo_custom:filtered_gene_count 4271 ;
+    neo_custom:total_gene_count 8865 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002618 ;
+    RO:0002473 FBbt:00100368 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002695 a FBcv:0009003 ;
+    rdfs:label "DL1 cluster (Xie 2021 PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 9 ;
+    neo_custom:filtered_gene_count 5463 ;
+    neo_custom:total_gene_count 7066 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002618 ;
+    RO:0002473 FBbt:00067353 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002696 a FBcv:0009003 ;
+    rdfs:label "DM6 cluster (Xie 2021 PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 5 ;
+    neo_custom:filtered_gene_count 4584 ;
+    neo_custom:total_gene_count 6513 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002618 ;
+    RO:0002473 FBbt:00067360 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002697 a FBcv:0009003 ;
+    rdfs:label "VA1v cluster (Xie 2021 PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 16 ;
+    neo_custom:filtered_gene_count 5038 ;
+    neo_custom:total_gene_count 7908 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002618 ;
+    RO:0002473 FBbt:00067361 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002698 a FBcv:0009003 ;
+    rdfs:label "VA6 cluster (Xie 2021 PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 15 ;
+    neo_custom:filtered_gene_count 3149 ;
+    neo_custom:total_gene_count 6977 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002618 ;
+    RO:0002473 FBbt:00007447 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002699 a FBcv:0009003 ;
+    rdfs:label "VC2 cluster (Xie 2021 PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 26 ;
+    neo_custom:filtered_gene_count 4013 ;
+    neo_custom:total_gene_count 8180 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002618 ;
+    RO:0002473 FBbt:00007449 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002700 a FBcv:0009003 ;
+    rdfs:label "VM2 cluster (Xie 2021 PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 9 ;
+    neo_custom:filtered_gene_count 4859 ;
+    neo_custom:total_gene_count 6643 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002618 ;
+    RO:0002473 FBbt:00067359 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002701 a FBcv:0009003 ;
+    rdfs:label "VM7 or VM5v #1 cluster (Xie 2021 PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 23 ;
+    neo_custom:filtered_gene_count 4549 ;
+    neo_custom:total_gene_count 8104 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002618 ;
+    RO:0002473 FBbt:00100368 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002702 a FBcv:0009003 ;
+    rdfs:label "VM7 or VM5v #2 cluster (Xie 2021 PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 2424 ;
+    neo_custom:total_gene_count 4578 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002618 ;
+    RO:0002473 FBbt:00100368 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002703 a FBcv:0009003 ;
+    rdfs:label "vPN cluster (Xie 2021 PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 42 ;
+    neo_custom:filtered_gene_count 3929 ;
+    neo_custom:total_gene_count 9192 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002618 ;
+    RO:0002473 FBbt:00007437 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002704 a FBcv:0009003 ;
+    rdfs:label "D cluster (Xie 2021 kn+ PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 26 ;
+    neo_custom:filtered_gene_count 4685 ;
+    neo_custom:total_gene_count 7575 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002619 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002705 a FBcv:0009003 ;
+    rdfs:label "DM6 cluster (Xie 2021 kn+ PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 11 ;
+    neo_custom:filtered_gene_count 4301 ;
+    neo_custom:total_gene_count 6390 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002619 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002706 a FBcv:0009003 ;
+    rdfs:label "VA1v cluster (Xie 2021 kn+ PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 21 ;
+    neo_custom:filtered_gene_count 4609 ;
+    neo_custom:total_gene_count 7257 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002619 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002707 a FBcv:0009003 ;
+    rdfs:label "VM2 cluster (Xie 2021 kn+ PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 16 ;
+    neo_custom:filtered_gene_count 4326 ;
+    neo_custom:total_gene_count 6841 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002619 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002708 a FBcv:0009003 ;
+    rdfs:label "VM7 or VM5v #1 cluster (Xie 2021 kn+ PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 12 ;
+    neo_custom:filtered_gene_count 4447 ;
+    neo_custom:total_gene_count 6600 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002619 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002709 a FBcv:0009003 ;
+    rdfs:label "VM7 or VM5v #2 cluster (Xie 2021 kn+ PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 12 ;
+    neo_custom:filtered_gene_count 4268 ;
+    neo_custom:total_gene_count 6313 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002619 ;
+    RO:0002473 FBbt:00067349 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002710 a FBcv:0009003 ;
+    rdfs:label "vPN cluster (Xie 2021 kn+ PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 10 ;
+    neo_custom:filtered_gene_count 3938 ;
+    neo_custom:total_gene_count 6172 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002619 ;
+    RO:0002473 FBbt:00067351 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002711 a FBcv:0009003 ;
+    rdfs:label "vPN_DA1 cluster (Xie 2021 kn+ PN types (24 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 6 ;
+    neo_custom:filtered_gene_count 4088 ;
+    neo_custom:total_gene_count 5670 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002619 ;
+    RO:0002473 FBbt:00067351 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002712 a FBcv:0009003 ;
+    rdfs:label "D cluster (Xie 2021 kn+ PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 37 ;
+    neo_custom:filtered_gene_count 2971 ;
+    neo_custom:total_gene_count 8369 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002620 ;
+    RO:0002473 FBbt:00067355 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002713 a FBcv:0009003 ;
+    rdfs:label "DM6 cluster (Xie 2021 kn+ PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 18 ;
+    neo_custom:filtered_gene_count 4504 ;
+    neo_custom:total_gene_count 8005 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002620 ;
+    RO:0002473 FBbt:00067360 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002714 a FBcv:0009003 ;
+    rdfs:label "VA1v cluster (Xie 2021 kn+ PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 30 ;
+    neo_custom:filtered_gene_count 3850 ;
+    neo_custom:total_gene_count 8446 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002620 ;
+    RO:0002473 FBbt:00067361 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002715 a FBcv:0009003 ;
+    rdfs:label "VM2 cluster (Xie 2021 kn+ PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 13 ;
+    neo_custom:filtered_gene_count 4644 ;
+    neo_custom:total_gene_count 7258 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002620 ;
+    RO:0002473 FBbt:00067359 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002716 a FBcv:0009003 ;
+    rdfs:label "VM7 or VM5v #1 cluster (Xie 2021 kn+ PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 24 ;
+    neo_custom:filtered_gene_count 3345 ;
+    neo_custom:total_gene_count 8135 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002620 ;
+    RO:0002473 FBbt:00100368 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002717 a FBcv:0009003 ;
+    rdfs:label "VM7 or VM5v #2 cluster (Xie 2021 kn+ PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 30 ;
+    neo_custom:filtered_gene_count 2401 ;
+    neo_custom:total_gene_count 8057 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002620 ;
+    RO:0002473 FBbt:00100368 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002718 a FBcv:0009003 ;
+    rdfs:label "vPN cluster (Xie 2021 kn+ PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 25 ;
+    neo_custom:filtered_gene_count 2964 ;
+    neo_custom:total_gene_count 7963 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002620 ;
+    RO:0002473 FBbt:00007437 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002719 a FBcv:0009003 ;
+    rdfs:label "vPN_DA1 cluster (Xie 2021 kn+ PN types (48 h APF)) (Xie 2021)" ;
+    neo_custom:cell_count 10 ;
+    neo_custom:filtered_gene_count 3049 ;
+    neo_custom:total_gene_count 6250 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002620 ;
+    RO:0002473 FBbt:00067372 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002720 a FBcv:0009003 ;
+    rdfs:label "D cluster (Xie 2021 kn+ PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 18 ;
+    neo_custom:filtered_gene_count 4116 ;
+    neo_custom:total_gene_count 7402 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002621 ;
+    RO:0002473 FBbt:00067355 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002721 a FBcv:0009003 ;
+    rdfs:label "DM6 cluster (Xie 2021 kn+ PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 22 ;
+    neo_custom:filtered_gene_count 4539 ;
+    neo_custom:total_gene_count 8032 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002621 ;
+    RO:0002473 FBbt:00067360 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002722 a FBcv:0009003 ;
+    rdfs:label "VA1v cluster (Xie 2021 kn+ PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 26 ;
+    neo_custom:filtered_gene_count 4591 ;
+    neo_custom:total_gene_count 8115 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002621 ;
+    RO:0002473 FBbt:00067361 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002723 a FBcv:0009003 ;
+    rdfs:label "VM2 cluster (Xie 2021 kn+ PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 17 ;
+    neo_custom:filtered_gene_count 3767 ;
+    neo_custom:total_gene_count 7018 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002621 ;
+    RO:0002473 FBbt:00067359 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002724 a FBcv:0009003 ;
+    rdfs:label "VM7 or VM5v #1 cluster (Xie 2021 kn+ PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 28 ;
+    neo_custom:filtered_gene_count 3809 ;
+    neo_custom:total_gene_count 8046 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002621 ;
+    RO:0002473 FBbt:00100368 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002725 a FBcv:0009003 ;
+    rdfs:label "VM7 or VM5v #2 cluster (Xie 2021 kn+ PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 13 ;
+    neo_custom:filtered_gene_count 3856 ;
+    neo_custom:total_gene_count 6715 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002621 ;
+    RO:0002473 FBbt:00100368 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002726 a FBcv:0009003 ;
+    rdfs:label "vPN cluster (Xie 2021 kn+ PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 9 ;
+    neo_custom:filtered_gene_count 3621 ;
+    neo_custom:total_gene_count 5573 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002621 ;
+    RO:0002473 FBbt:00007437 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002727 a FBcv:0009003 ;
+    rdfs:label "vPN_DA1 cluster (Xie 2021 kn+ PN types (adult)) (Xie 2021)" ;
+    neo_custom:cell_count 8 ;
+    neo_custom:filtered_gene_count 4010 ;
+    neo_custom:total_gene_count 5797 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002621 ;
+    RO:0002473 FBbt:00067372 ;
+    dcterms:source VFBseq:00002581 .
+
+FlyBase:FBrf0247975 a FBcv:0000212 ;
+    neo_property:nodeLabel "pub" .
+
+VFBseq:00002583 a FBcv:0003025 ;
+    rdfs:label "brain, 0 h APF, VT033006-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P1 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002582 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002584 a FBcv:0003025 ;
+    rdfs:label "brain, 0 h APF, VT033006-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P2 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002582 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002585 a FBcv:0003025 ;
+    rdfs:label "brain, 0 h APF, VT033006-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P3 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002582 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002586 a FBcv:0003025 ;
+    rdfs:label "brain, 0 h APF, VT033006-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P4 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002582 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002587 a FBcv:0003025 ;
+    rdfs:label "brain, 0 h APF, VT033006-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P5 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002582 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002588 a FBcv:0003025 ;
+    rdfs:label "brain, 0 h APF, VT033006-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P8 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002582 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002590 a FBcv:0003025 ;
+    rdfs:label "brain, 24 h APF, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP, Smart-seq2 plate P1 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002589 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002592 a FBcv:0003025 ;
+    rdfs:label "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P1 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002591 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002593 a FBcv:0003025 ;
+    rdfs:label "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P2 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002591 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002594 a FBcv:0003025 ;
+    rdfs:label "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P3 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002591 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002595 a FBcv:0003025 ;
+    rdfs:label "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P4 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002591 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002596 a FBcv:0003025 ;
+    rdfs:label "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P6 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002591 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002597 a FBcv:0003025 ;
+    rdfs:label "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P7 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002591 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002598 a FBcv:0003025 ;
+    rdfs:label "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P8 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002591 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002599 a FBcv:0003025 ;
+    rdfs:label "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P12 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002591 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002601 a FBcv:0003025 ;
+    rdfs:label "adult brain, 48 h APF, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP, Smart-seq2 plate P1 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002600 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002602 a FBcv:0003025 ;
+    rdfs:label "adult brain, 48 h APF, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP, Smart-seq2 plate P3 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002600 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002604 a FBcv:0003025 ;
+    rdfs:label "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P1 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002603 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002605 a FBcv:0003025 ;
+    rdfs:label "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P2 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002603 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002606 a FBcv:0003025 ;
+    rdfs:label "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P3 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002603 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002607 a FBcv:0003025 ;
+    rdfs:label "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P4 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002603 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002608 a FBcv:0003025 ;
+    rdfs:label "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P7 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002603 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002609 a FBcv:0003025 ;
+    rdfs:label "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P8 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002603 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002610 a FBcv:0003025 ;
+    rdfs:label "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P9 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002603 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002611 a FBcv:0003025 ;
+    rdfs:label "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P11 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002603 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002612 a FBcv:0003025 ;
+    rdfs:label "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P12 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002603 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002614 a FBcv:0003025 ;
+    rdfs:label "adult brain, adult, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP, Smart-seq2 plate P1 (Xie 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002613 ;
+    dcterms:source VFBseq:00002581 ;
+    BAO:0000212 FBcv:0009007 .
+
+VFBseq:00002589 a FBcv:0003024 ;
+    rdfs:label "brain, 24 h APF, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP (Xie 2021)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0243701,
+        FlyBase:FBal0243707,
+        FlyBase:FBal0327926 ;
+    RO:0002131 FBbt:00005095 ;
+    RO:0002352 VFBseq:00002590 ;
+    RO:0002490 FBdv:00005353 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002613 a FBcv:0003024 ;
+    rdfs:label "adult brain, adult, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP (Xie 2021)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0243701,
+        FlyBase:FBal0243707,
+        FlyBase:FBal0327926 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00002614 ;
+    RO:0002490 FBdv:00005369 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002600 a FBcv:0003024 ;
+    rdfs:label "adult brain, 48 h APF, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP (Xie 2021)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0243701,
+        FlyBase:FBal0243707,
+        FlyBase:FBal0327926 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00002601,
+        VFBseq:00002602 ;
+    RO:0002490 FBdv:00005355 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002582 a FBcv:0003024 ;
+    rdfs:label "brain, 0 h APF, VT033006-GAL4 > UAS-mCD8GFP (Xie 2021)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0310709 ;
+    RO:0002131 FBbt:00005095 ;
+    RO:0002352 VFBseq:00002583,
+        VFBseq:00002584,
+        VFBseq:00002585,
+        VFBseq:00002586,
+        VFBseq:00002587,
+        VFBseq:00002588 ;
+    RO:0002490 FBdv:00005343 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002619 a FBcv:0009002 ;
+    rdfs:label "Xie 2021 kn+ PN types (24 h APF)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002589 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002620 a FBcv:0009002 ;
+    rdfs:label "Xie 2021 kn+ PN types (48 h APF)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002600 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002621 a FBcv:0009002 ;
+    rdfs:label "Xie 2021 kn+ PN types (adult)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002613 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002591 a FBcv:0003024 ;
+    rdfs:label "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP (Xie 2021)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0218122 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00002592,
+        VFBseq:00002593,
+        VFBseq:00002594,
+        VFBseq:00002595,
+        VFBseq:00002596,
+        VFBseq:00002597,
+        VFBseq:00002598,
+        VFBseq:00002599 ;
+    RO:0002490 FBdv:00005355 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002603 a FBcv:0003024 ;
+    rdfs:label "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP (Xie 2021)" ;
+    neo_property:nodeLabel "Sample" ;
+    GENO:0000222 FlyBase:FBal0218122 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00002604,
+        VFBseq:00002605,
+        VFBseq:00002606,
+        VFBseq:00002607,
+        VFBseq:00002608,
+        VFBseq:00002609,
+        VFBseq:00002610,
+        VFBseq:00002611,
+        VFBseq:00002612 ;
+    RO:0002490 FBdv:00005369 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002618 a FBcv:0009002 ;
+    rdfs:label "Xie 2021 PN types (adult)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002603 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002615 a FBcv:0009002 ;
+    rdfs:label "Xie 2021 PN types (0 h APF)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002582 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002617 a FBcv:0009002 ;
+    rdfs:label "Xie 2021 PN types (48 h APF)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002591 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002616 a FBcv:0009002 ;
+    rdfs:label "Xie 2021 PN types (24 h APF)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002528,
+        VFBseq:00002530,
+        VFBseq:00002537,
+        VFBseq:00002544,
+        VFBseq:00002560 ;
+    dcterms:source VFBseq:00002581 .
+
+VFBseq:00002581 a FBcv:0003023 ;
+    rdfs:label "scRNAseq data from Xie (2021)" ;
+    neo_custom:accession "GSE161228" ;
+    neo_custom:filtered_gene_count 8317 ;
+    neo_custom:total_gene_count 15941 ;
+    neo_property:nodeLabel "DataSet" ;
+    IAO:0000115 "Temporal evolution of single-cell transcriptomes of Drosophila olfactory projection neurons" ;
+    OBI:0000312 FBcv:0009000 ;
+    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references FlyBase:FBrf0247975 ;
+    oboInOwl:hasDbXref vfb:GEO .
+

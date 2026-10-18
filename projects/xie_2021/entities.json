@@ -1,0 +1,1836 @@
+[
+  {
+    "type": "Publication",
+    "id": "FlyBase:FBrf0247975",
+    "neo_label": "pub"
+  },
+  {
+    "type": "Dataset",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "name": "scRNAseq data from Xie (2021)",
+    "title": "Temporal evolution of single-cell transcriptomes of Drosophila olfactory projection neurons",
+    "accession": "GSE161228",
+    "neo_label": "DataSet",
+    "site": "vfb:GEO",
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "assay_type": "FBcv:0009000",
+    "total_gene_count": 15941,
+    "filtered_gene_count": 8317,
+    "publication": "FlyBase:FBrf0247975"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002582",
+    "name": "brain, 0 h APF, VT033006-GAL4 > UAS-mCD8GFP (Xie 2021)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002583",
+      "http://virtualflybrain.org/reports/VFBseq_00002584",
+      "http://virtualflybrain.org/reports/VFBseq_00002585",
+      "http://virtualflybrain.org/reports/VFBseq_00002586",
+      "http://virtualflybrain.org/reports/VFBseq_00002587",
+      "http://virtualflybrain.org/reports/VFBseq_00002588"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00005095"
+    ],
+    "stage": "FBdv:00005343",
+    "genotype_includes": [
+      "FlyBase:FBal0310709"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002589",
+    "name": "brain, 24 h APF, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP (Xie 2021)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002590"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00005095"
+    ],
+    "stage": "FBdv:00005353",
+    "genotype_includes": [
+      "FlyBase:FBal0327926",
+      "FlyBase:FBal0243707",
+      "FlyBase:FBal0243701"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002591",
+    "name": "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP (Xie 2021)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002592",
+      "http://virtualflybrain.org/reports/VFBseq_00002593",
+      "http://virtualflybrain.org/reports/VFBseq_00002594",
+      "http://virtualflybrain.org/reports/VFBseq_00002595",
+      "http://virtualflybrain.org/reports/VFBseq_00002596",
+      "http://virtualflybrain.org/reports/VFBseq_00002597",
+      "http://virtualflybrain.org/reports/VFBseq_00002598",
+      "http://virtualflybrain.org/reports/VFBseq_00002599"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00005355",
+    "genotype_includes": [
+      "FlyBase:FBal0218122"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002600",
+    "name": "adult brain, 48 h APF, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP (Xie 2021)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002601",
+      "http://virtualflybrain.org/reports/VFBseq_00002602"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00005355",
+    "genotype_includes": [
+      "FlyBase:FBal0327926",
+      "FlyBase:FBal0243707",
+      "FlyBase:FBal0243701"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002603",
+    "name": "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP (Xie 2021)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002604",
+      "http://virtualflybrain.org/reports/VFBseq_00002605",
+      "http://virtualflybrain.org/reports/VFBseq_00002606",
+      "http://virtualflybrain.org/reports/VFBseq_00002607",
+      "http://virtualflybrain.org/reports/VFBseq_00002608",
+      "http://virtualflybrain.org/reports/VFBseq_00002609",
+      "http://virtualflybrain.org/reports/VFBseq_00002610",
+      "http://virtualflybrain.org/reports/VFBseq_00002611",
+      "http://virtualflybrain.org/reports/VFBseq_00002612"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00005369",
+    "genotype_includes": [
+      "FlyBase:FBal0218122"
+    ]
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002613",
+    "name": "adult brain, adult, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP (Xie 2021)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002614"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00005369",
+    "genotype_includes": [
+      "FlyBase:FBal0327926",
+      "FlyBase:FBal0243707",
+      "FlyBase:FBal0243701"
+    ]
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002583",
+    "name": "brain, 0 h APF, VT033006-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P1 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002582"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002584",
+    "name": "brain, 0 h APF, VT033006-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P2 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002582"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002585",
+    "name": "brain, 0 h APF, VT033006-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P3 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002582"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002586",
+    "name": "brain, 0 h APF, VT033006-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P4 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002582"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002587",
+    "name": "brain, 0 h APF, VT033006-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P5 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002582"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002588",
+    "name": "brain, 0 h APF, VT033006-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P8 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002582"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002590",
+    "name": "brain, 24 h APF, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP, Smart-seq2 plate P1 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002589"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002592",
+    "name": "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P1 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002591"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002593",
+    "name": "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P2 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002591"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002594",
+    "name": "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P3 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002591"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002595",
+    "name": "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P4 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002591"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002596",
+    "name": "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P6 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002591"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002597",
+    "name": "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P7 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002591"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002598",
+    "name": "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P8 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002591"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002599",
+    "name": "adult brain, 48 h APF, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P12 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002591"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002601",
+    "name": "adult brain, 48 h APF, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP, Smart-seq2 plate P1 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002600"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002602",
+    "name": "adult brain, 48 h APF, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP, Smart-seq2 plate P3 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002600"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002604",
+    "name": "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P1 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002603"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002605",
+    "name": "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P2 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002603"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002606",
+    "name": "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P3 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002603"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002607",
+    "name": "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P4 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002603"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002608",
+    "name": "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P7 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002603"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002609",
+    "name": "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P8 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002603"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002610",
+    "name": "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P9 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002603"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002611",
+    "name": "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P11 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002603"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002612",
+    "name": "adult brain, adult, GH146-GAL4 > UAS-mCD8GFP, Smart-seq2 plate P12 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002603"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002614",
+    "name": "adult brain, adult, kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP, Smart-seq2 plate P1 (Xie 2021)",
+    "method": "FBcv:0009007",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002613"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "name": "Xie 2021 PN types (0 h APF)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002582"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "name": "Xie 2021 PN types (24 h APF)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002528",
+      "http://virtualflybrain.org/reports/VFBseq_00002530",
+      "http://virtualflybrain.org/reports/VFBseq_00002537",
+      "http://virtualflybrain.org/reports/VFBseq_00002544",
+      "http://virtualflybrain.org/reports/VFBseq_00002560"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "name": "Xie 2021 PN types (48 h APF)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002591"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002618",
+    "name": "Xie 2021 PN types (adult)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002603"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002619",
+    "name": "Xie 2021 kn+ PN types (24 h APF)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002589"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002620",
+    "name": "Xie 2021 kn+ PN types (48 h APF)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002600"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002621",
+    "name": "Xie 2021 kn+ PN types (adult)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002613"
+    ]
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002636",
+    "name": "D cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 71,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 10336,
+    "filtered_gene_count": 4639
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002637",
+    "name": "DA1_fru+ cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 55,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067362"
+    ],
+    "total_gene_count": 10099,
+    "filtered_gene_count": 5126
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002638",
+    "name": "DA1_fru- cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 66,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067362"
+    ],
+    "total_gene_count": 10292,
+    "filtered_gene_count": 4351
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002639",
+    "name": "DA4l cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 23,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 8503,
+    "filtered_gene_count": 5381
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002640",
+    "name": "DC2 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 24,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 8649,
+    "filtered_gene_count": 5186
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002641",
+    "name": "DC3 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 36,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 9184,
+    "filtered_gene_count": 4655
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002642",
+    "name": "DL1 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 20,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 8491,
+    "filtered_gene_count": 5189
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002643",
+    "name": "DL3 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 75,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067362"
+    ],
+    "total_gene_count": 10293,
+    "filtered_gene_count": 3365
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002644",
+    "name": "DM2 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 21,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067362"
+    ],
+    "total_gene_count": 8755,
+    "filtered_gene_count": 5408
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002645",
+    "name": "VA1d cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 51,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 9778,
+    "filtered_gene_count": 4969
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002646",
+    "name": "VA1v cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 22,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 8329,
+    "filtered_gene_count": 4581
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002647",
+    "name": "VA5 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 49,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067362"
+    ],
+    "total_gene_count": 9914,
+    "filtered_gene_count": 5143
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002648",
+    "name": "VA6 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 69,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 10589,
+    "filtered_gene_count": 6018
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002649",
+    "name": "VC2 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 16,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067362"
+    ],
+    "total_gene_count": 8233,
+    "filtered_gene_count": 5399
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002650",
+    "name": "VM2 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 38,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 9320,
+    "filtered_gene_count": 4988
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002651",
+    "name": "VM7 or VM5v #1 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 35,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 9331,
+    "filtered_gene_count": 4535
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002652",
+    "name": "VM7 or VM5v #2 cluster (Xie 2021 PN types (0 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002615",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 38,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 9179,
+    "filtered_gene_count": 4382
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002653",
+    "name": "D cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 53,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 9109,
+    "filtered_gene_count": 5008
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002654",
+    "name": "DA1_fru+ cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 112,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067362"
+    ],
+    "total_gene_count": 10051,
+    "filtered_gene_count": 4813
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002655",
+    "name": "DA1_fru- cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 21,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067362"
+    ],
+    "total_gene_count": 7531,
+    "filtered_gene_count": 4482
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002656",
+    "name": "DA3 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 3,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 5608,
+    "filtered_gene_count": 5608
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002657",
+    "name": "DA4l cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 6539,
+    "filtered_gene_count": 5037
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002658",
+    "name": "DC2 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 26,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 8001,
+    "filtered_gene_count": 4941
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002659",
+    "name": "DC3 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 32,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 8268,
+    "filtered_gene_count": 5022
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002660",
+    "name": "DL1 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 27,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 8106,
+    "filtered_gene_count": 5110
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002661",
+    "name": "DL3 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 29,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067362"
+    ],
+    "total_gene_count": 8081,
+    "filtered_gene_count": 4860
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002662",
+    "name": "DM2 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 17,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067362"
+    ],
+    "total_gene_count": 7632,
+    "filtered_gene_count": 5431
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002663",
+    "name": "DM6 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 50,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 8726,
+    "filtered_gene_count": 4708
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002664",
+    "name": "VA1d cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 35,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 8177,
+    "filtered_gene_count": 4775
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002665",
+    "name": "VA1v cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 93,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 10024,
+    "filtered_gene_count": 4896
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002666",
+    "name": "VA2 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 10,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 7366,
+    "filtered_gene_count": 5050
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002667",
+    "name": "VA5 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 26,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067362"
+    ],
+    "total_gene_count": 8045,
+    "filtered_gene_count": 5072
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002668",
+    "name": "VA6 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 25,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 8153,
+    "filtered_gene_count": 5233
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002669",
+    "name": "VC2 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 24,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067362"
+    ],
+    "total_gene_count": 8207,
+    "filtered_gene_count": 5664
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002670",
+    "name": "VM2 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 43,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 8563,
+    "filtered_gene_count": 4865
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002671",
+    "name": "VM7 or VM5v #1 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 52,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 8907,
+    "filtered_gene_count": 4713
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002672",
+    "name": "VM7 or VM5v #2 cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 50,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 8556,
+    "filtered_gene_count": 4137
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002673",
+    "name": "vPN cluster (Xie 2021 PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002616",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 11,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067351"
+    ],
+    "total_gene_count": 7064,
+    "filtered_gene_count": 4499
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002674",
+    "name": "APL cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 54,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100222"
+    ],
+    "total_gene_count": 9122,
+    "filtered_gene_count": 4684
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002675",
+    "name": "D cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 36,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067355"
+    ],
+    "total_gene_count": 8664,
+    "filtered_gene_count": 5132
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002676",
+    "name": "DA1_fru+ cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 31,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067363"
+    ],
+    "total_gene_count": 8935,
+    "filtered_gene_count": 5723
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002677",
+    "name": "DA1_fru- cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 15,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067363"
+    ],
+    "total_gene_count": 7848,
+    "filtered_gene_count": 5214
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002678",
+    "name": "DC3 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 26,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00040000"
+    ],
+    "total_gene_count": 8277,
+    "filtered_gene_count": 5122
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002679",
+    "name": "DL1 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 15,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067353"
+    ],
+    "total_gene_count": 8074,
+    "filtered_gene_count": 5673
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002680",
+    "name": "DL3 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 47,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067364"
+    ],
+    "total_gene_count": 9128,
+    "filtered_gene_count": 4667
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002681",
+    "name": "DM6 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 24,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067360"
+    ],
+    "total_gene_count": 8048,
+    "filtered_gene_count": 5136
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002682",
+    "name": "VA1d cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 21,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067357"
+    ],
+    "total_gene_count": 8189,
+    "filtered_gene_count": 5414
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002683",
+    "name": "VA1v cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 31,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067361"
+    ],
+    "total_gene_count": 8677,
+    "filtered_gene_count": 5051
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002684",
+    "name": "VA5 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 23,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067366"
+    ],
+    "total_gene_count": 8308,
+    "filtered_gene_count": 5446
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002685",
+    "name": "VA6 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 24,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007447"
+    ],
+    "total_gene_count": 8536,
+    "filtered_gene_count": 5737
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002686",
+    "name": "VC2 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 35,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007449"
+    ],
+    "total_gene_count": 9047,
+    "filtered_gene_count": 5761
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002687",
+    "name": "VM2 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 12,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067359"
+    ],
+    "total_gene_count": 7545,
+    "filtered_gene_count": 5380
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002688",
+    "name": "VM7 or VM5v #1 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 17,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100368"
+    ],
+    "total_gene_count": 7979,
+    "filtered_gene_count": 5545
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002689",
+    "name": "VM7 or VM5v #2 cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 24,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100368"
+    ],
+    "total_gene_count": 8244,
+    "filtered_gene_count": 5110
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002690",
+    "name": "vPN cluster (Xie 2021 PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002617",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 61,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007437"
+    ],
+    "total_gene_count": 10019,
+    "filtered_gene_count": 5571
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002691",
+    "name": "APL cluster (Xie 2021 PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002618",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 16,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100222"
+    ],
+    "total_gene_count": 6695,
+    "filtered_gene_count": 2123
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002692",
+    "name": "D cluster (Xie 2021 PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002618",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 13,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067355"
+    ],
+    "total_gene_count": 7173,
+    "filtered_gene_count": 4405
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002693",
+    "name": "DA1 cluster (Xie 2021 PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002618",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 21,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067363"
+    ],
+    "total_gene_count": 7990,
+    "filtered_gene_count": 4618
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002694",
+    "name": "DC3 and VA1d cluster (Xie 2021 PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002618",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 35,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100368"
+    ],
+    "total_gene_count": 8865,
+    "filtered_gene_count": 4271
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002695",
+    "name": "DL1 cluster (Xie 2021 PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002618",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 9,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067353"
+    ],
+    "total_gene_count": 7066,
+    "filtered_gene_count": 5463
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002696",
+    "name": "DM6 cluster (Xie 2021 PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002618",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 5,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067360"
+    ],
+    "total_gene_count": 6513,
+    "filtered_gene_count": 4584
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002697",
+    "name": "VA1v cluster (Xie 2021 PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002618",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 16,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067361"
+    ],
+    "total_gene_count": 7908,
+    "filtered_gene_count": 5038
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002698",
+    "name": "VA6 cluster (Xie 2021 PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002618",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 15,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007447"
+    ],
+    "total_gene_count": 6977,
+    "filtered_gene_count": 3149
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002699",
+    "name": "VC2 cluster (Xie 2021 PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002618",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 26,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007449"
+    ],
+    "total_gene_count": 8180,
+    "filtered_gene_count": 4013
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002700",
+    "name": "VM2 cluster (Xie 2021 PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002618",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 9,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067359"
+    ],
+    "total_gene_count": 6643,
+    "filtered_gene_count": 4859
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002701",
+    "name": "VM7 or VM5v #1 cluster (Xie 2021 PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002618",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 23,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100368"
+    ],
+    "total_gene_count": 8104,
+    "filtered_gene_count": 4549
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002702",
+    "name": "VM7 or VM5v #2 cluster (Xie 2021 PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002618",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100368"
+    ],
+    "total_gene_count": 4578,
+    "filtered_gene_count": 2424
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002703",
+    "name": "vPN cluster (Xie 2021 PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002618",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 42,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007437"
+    ],
+    "total_gene_count": 9192,
+    "filtered_gene_count": 3929
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002704",
+    "name": "D cluster (Xie 2021 kn+ PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002619",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 26,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 7575,
+    "filtered_gene_count": 4685
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002705",
+    "name": "DM6 cluster (Xie 2021 kn+ PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002619",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 11,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 6390,
+    "filtered_gene_count": 4301
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002706",
+    "name": "VA1v cluster (Xie 2021 kn+ PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002619",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 21,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 7257,
+    "filtered_gene_count": 4609
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002707",
+    "name": "VM2 cluster (Xie 2021 kn+ PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002619",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 16,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 6841,
+    "filtered_gene_count": 4326
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002708",
+    "name": "VM7 or VM5v #1 cluster (Xie 2021 kn+ PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002619",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 12,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 6600,
+    "filtered_gene_count": 4447
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002709",
+    "name": "VM7 or VM5v #2 cluster (Xie 2021 kn+ PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002619",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 12,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067349"
+    ],
+    "total_gene_count": 6313,
+    "filtered_gene_count": 4268
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002710",
+    "name": "vPN cluster (Xie 2021 kn+ PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002619",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 10,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067351"
+    ],
+    "total_gene_count": 6172,
+    "filtered_gene_count": 3938
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002711",
+    "name": "vPN_DA1 cluster (Xie 2021 kn+ PN types (24 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002619",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 6,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067351"
+    ],
+    "total_gene_count": 5670,
+    "filtered_gene_count": 4088
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002712",
+    "name": "D cluster (Xie 2021 kn+ PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002620",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 37,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067355"
+    ],
+    "total_gene_count": 8369,
+    "filtered_gene_count": 2971
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002713",
+    "name": "DM6 cluster (Xie 2021 kn+ PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002620",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 18,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067360"
+    ],
+    "total_gene_count": 8005,
+    "filtered_gene_count": 4504
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002714",
+    "name": "VA1v cluster (Xie 2021 kn+ PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002620",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 30,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067361"
+    ],
+    "total_gene_count": 8446,
+    "filtered_gene_count": 3850
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002715",
+    "name": "VM2 cluster (Xie 2021 kn+ PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002620",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 13,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067359"
+    ],
+    "total_gene_count": 7258,
+    "filtered_gene_count": 4644
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002716",
+    "name": "VM7 or VM5v #1 cluster (Xie 2021 kn+ PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002620",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 24,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100368"
+    ],
+    "total_gene_count": 8135,
+    "filtered_gene_count": 3345
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002717",
+    "name": "VM7 or VM5v #2 cluster (Xie 2021 kn+ PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002620",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 30,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100368"
+    ],
+    "total_gene_count": 8057,
+    "filtered_gene_count": 2401
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002718",
+    "name": "vPN cluster (Xie 2021 kn+ PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002620",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 25,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007437"
+    ],
+    "total_gene_count": 7963,
+    "filtered_gene_count": 2964
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002719",
+    "name": "vPN_DA1 cluster (Xie 2021 kn+ PN types (48 h APF)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002620",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 10,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067372"
+    ],
+    "total_gene_count": 6250,
+    "filtered_gene_count": 3049
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002720",
+    "name": "D cluster (Xie 2021 kn+ PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002621",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 18,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067355"
+    ],
+    "total_gene_count": 7402,
+    "filtered_gene_count": 4116
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002721",
+    "name": "DM6 cluster (Xie 2021 kn+ PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002621",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 22,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067360"
+    ],
+    "total_gene_count": 8032,
+    "filtered_gene_count": 4539
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002722",
+    "name": "VA1v cluster (Xie 2021 kn+ PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002621",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 26,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067361"
+    ],
+    "total_gene_count": 8115,
+    "filtered_gene_count": 4591
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002723",
+    "name": "VM2 cluster (Xie 2021 kn+ PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002621",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 17,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067359"
+    ],
+    "total_gene_count": 7018,
+    "filtered_gene_count": 3767
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002724",
+    "name": "VM7 or VM5v #1 cluster (Xie 2021 kn+ PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002621",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 28,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100368"
+    ],
+    "total_gene_count": 8046,
+    "filtered_gene_count": 3809
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002725",
+    "name": "VM7 or VM5v #2 cluster (Xie 2021 kn+ PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002621",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 13,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100368"
+    ],
+    "total_gene_count": 6715,
+    "filtered_gene_count": 3856
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002726",
+    "name": "vPN cluster (Xie 2021 kn+ PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002621",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 9,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007437"
+    ],
+    "total_gene_count": 5573,
+    "filtered_gene_count": 3621
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002727",
+    "name": "vPN_DA1 cluster (Xie 2021 kn+ PN types (adult)) (Xie 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002621",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002581",
+    "cell_number": 8,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00067372"
+    ],
+    "total_gene_count": 5797,
+    "filtered_gene_count": 4010
+  }
+]

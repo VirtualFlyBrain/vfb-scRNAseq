@@ -1474,4 +1474,9 @@ FACS-sorted olfactory projection neurons (PNs), one GEO sample per cell (11,509)
   rows; 26 held (1,469 cells) in the Dataset gene counts only. Markers fit the authors'
   types: acj6 in adPNs (DL1, VM2, VA1v), vvl in lPNs (DA1, VC2), Lim1 in vPNs; trol in VM2;
   fru in DA1_fru+ not DA1_fru- (48 h).
+- **Build (stage 5):** `build_rdf.py`: 1 Dataset, 6 Samples (each `has_genotype some` its
+  driver alleles), 27 Assays, 7 Clusterings (main 24 h linked to Li 2017's five reused
+  Samples), 92 Clusters; publication FBrf0247975 from VFB production; `verify_mappings.py`
+  OK (19 FBbt terms); the FBbt / FBdv / FBcv terms on Samples, Assays and the Dataset
+  current. Recorded in `provenance.json`.
 
