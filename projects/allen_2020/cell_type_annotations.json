@@ -1,0 +1,2061 @@
+{
+  "source": {
+    "doi": "10.7554/eLife.54074",
+    "title": "A single-cell transcriptomic atlas of the adult Drosophila ventral nerve cord"
+  },
+  "dataset": {
+    "accession": "GSE141807",
+    "label_source": "the authors' 120 clusters, cells assigned by re-running their published pipeline (all cluster sizes equal the paper's); typed from Figure 1-source data 2",
+    "label_level": "author cluster",
+    "validate_against": "paper, Figure 1-source data 2, Figure 4"
+  },
+  "annotations": [
+    {
+      "label": "vnc_0",
+      "type": "hemilineage 4B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "0",
+      "cell_number": 623,
+      "cells_by_sample": {
+        "female_rep_1": 58,
+        "female_rep_2": 227,
+        "male_rep_1": 139,
+        "male_rep_2": 199
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hemilineage": "4B",
+      "author_peptides": "AstA, sNPF"
+    },
+    {
+      "label": "vnc_1",
+      "type": "hemilineage 21A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "1",
+      "cell_number": 552,
+      "cells_by_sample": {
+        "female_rep_1": 61,
+        "female_rep_2": 174,
+        "male_rep_1": 149,
+        "male_rep_2": 168
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_hemilineage": "21A"
+    },
+    {
+      "label": "vnc_2",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "2",
+      "cell_number": 503,
+      "cells_by_sample": {
+        "female_rep_1": 50,
+        "female_rep_2": 174,
+        "male_rep_1": 126,
+        "male_rep_2": 153
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hox": "Ubx"
+    },
+    {
+      "label": "vnc_3",
+      "type": "hemilineages 5B/6B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "3",
+      "cell_number": 500,
+      "cells_by_sample": {
+        "female_rep_1": 55,
+        "female_rep_2": 159,
+        "male_rep_1": 120,
+        "male_rep_2": 166
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "5B/6B",
+      "author_hox": "Antp"
+    },
+    {
+      "label": "vnc_4",
+      "type": "neuron of mixed neurotransmitter identity",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "4",
+      "cell_number": 489,
+      "cells_by_sample": {
+        "female_rep_1": 60,
+        "female_rep_2": 202,
+        "male_rep_1": 104,
+        "male_rep_2": 123
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "mixed",
+      "author_peptides": "Dh31, spab",
+      "author_hox": "abd-A, Abd-B"
+    },
+    {
+      "label": "vnc_5",
+      "type": "hemilineage 16B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "5",
+      "cell_number": 477,
+      "cells_by_sample": {
+        "female_rep_1": 62,
+        "female_rep_2": 151,
+        "male_rep_1": 127,
+        "male_rep_2": 137
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_hemilineage": "16B"
+    },
+    {
+      "label": "vnc_6",
+      "type": "hemilineages 8A/24B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "6",
+      "cell_number": 471,
+      "cells_by_sample": {
+        "female_rep_1": 34,
+        "female_rep_2": 159,
+        "male_rep_1": 124,
+        "male_rep_2": 154
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_hemilineage": "8A/24B",
+      "author_hox": "Antp"
+    },
+    {
+      "label": "vnc_7",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "7",
+      "cell_number": 466,
+      "cells_by_sample": {
+        "female_rep_1": 47,
+        "female_rep_2": 133,
+        "male_rep_1": 123,
+        "male_rep_2": 163
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hox": "Ubx"
+    },
+    {
+      "label": "vnc_8",
+      "type": "hemilineage 8B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "8",
+      "cell_number": 454,
+      "cells_by_sample": {
+        "female_rep_1": 37,
+        "female_rep_2": 168,
+        "male_rep_1": 95,
+        "male_rep_2": 154
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hemilineage": "8B"
+    },
+    {
+      "label": "vnc_9",
+      "type": "hemilineage 6A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "9",
+      "cell_number": 440,
+      "cells_by_sample": {
+        "female_rep_1": 32,
+        "female_rep_2": 156,
+        "male_rep_1": 101,
+        "male_rep_2": 151
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "6A"
+    },
+    {
+      "label": "vnc_10",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "10",
+      "cell_number": 434,
+      "cells_by_sample": {
+        "female_rep_1": 61,
+        "female_rep_2": 138,
+        "male_rep_1": 119,
+        "male_rep_2": 116
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_peptides": "Dh31, spab"
+    },
+    {
+      "label": "vnc_11",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "11",
+      "cell_number": 425,
+      "cells_by_sample": {
+        "female_rep_1": 71,
+        "female_rep_2": 117,
+        "male_rep_1": 153,
+        "male_rep_2": 84
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine"
+    },
+    {
+      "label": "vnc_12",
+      "type": "hemilineage 1B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "12",
+      "cell_number": 421,
+      "cells_by_sample": {
+        "female_rep_1": 38,
+        "female_rep_2": 151,
+        "male_rep_1": 95,
+        "male_rep_2": 137
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "1B",
+      "author_hox": "Antp"
+    },
+    {
+      "label": "vnc_13",
+      "type": "hemilineage 14A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "13",
+      "cell_number": 413,
+      "cells_by_sample": {
+        "female_rep_1": 45,
+        "female_rep_2": 151,
+        "male_rep_1": 93,
+        "male_rep_2": 124
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_hemilineage": "14A"
+    },
+    {
+      "label": "vnc_14",
+      "type": "hemilineages 20A/22A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "14",
+      "cell_number": 391,
+      "cells_by_sample": {
+        "female_rep_1": 27,
+        "female_rep_2": 113,
+        "male_rep_1": 94,
+        "male_rep_2": 157
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hemilineage": "20A/22A"
+    },
+    {
+      "label": "vnc_15",
+      "type": "glutamatergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "15",
+      "cell_number": 385,
+      "cells_by_sample": {
+        "female_rep_1": 31,
+        "female_rep_2": 145,
+        "male_rep_1": 91,
+        "male_rep_2": 118
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate"
+    },
+    {
+      "label": "vnc_16",
+      "type": "hemilineage 1A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "16",
+      "cell_number": 384,
+      "cells_by_sample": {
+        "female_rep_1": 24,
+        "female_rep_2": 130,
+        "male_rep_1": 92,
+        "male_rep_2": 138
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hemilineage": "1A"
+    },
+    {
+      "label": "vnc_17",
+      "type": "hemilineage 13B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "17",
+      "cell_number": 379,
+      "cells_by_sample": {
+        "female_rep_1": 38,
+        "female_rep_2": 140,
+        "male_rep_1": 103,
+        "male_rep_2": 98
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "13B"
+    },
+    {
+      "label": "vnc_18",
+      "type": "undefined",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "18",
+      "cell_number": 363,
+      "cells_by_sample": {
+        "female_rep_1": 23,
+        "female_rep_2": 126,
+        "male_rep_1": 96,
+        "male_rep_2": 118
+      },
+      "author_class": "non-neuronal",
+      "author_cell_type": "undefined",
+      "unannotated": true
+    },
+    {
+      "label": "vnc_19",
+      "type": "hemilineages 13A/19A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "19",
+      "cell_number": 347,
+      "cells_by_sample": {
+        "female_rep_1": 36,
+        "female_rep_2": 102,
+        "male_rep_1": 95,
+        "male_rep_2": 114
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "13A/19A"
+    },
+    {
+      "label": "vnc_20",
+      "type": "hemilineages 5B/6B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "20",
+      "cell_number": 344,
+      "cells_by_sample": {
+        "female_rep_1": 26,
+        "female_rep_2": 129,
+        "male_rep_1": 85,
+        "male_rep_2": 104
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "5B/6B"
+    },
+    {
+      "label": "vnc_21",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "21",
+      "cell_number": 341,
+      "cells_by_sample": {
+        "female_rep_1": 40,
+        "female_rep_2": 106,
+        "male_rep_1": 63,
+        "male_rep_2": 132
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine"
+    },
+    {
+      "label": "vnc_22",
+      "type": "hemilineage 0A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "22",
+      "cell_number": 327,
+      "cells_by_sample": {
+        "female_rep_1": 30,
+        "female_rep_2": 96,
+        "male_rep_1": 79,
+        "male_rep_2": 122
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "0A",
+      "author_hox": "Ubx"
+    },
+    {
+      "label": "vnc_23",
+      "type": "neuronal/glial mixed",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "23",
+      "cell_number": 319,
+      "cells_by_sample": {
+        "female_rep_1": 7,
+        "female_rep_2": 128,
+        "male_rep_1": 63,
+        "male_rep_2": 121
+      },
+      "author_class": "non-neuronal",
+      "author_cell_type": "neuronal/glial mixed"
+    },
+    {
+      "label": "vnc_24",
+      "type": "glia",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "24",
+      "cell_number": 318,
+      "cells_by_sample": {
+        "female_rep_1": 2,
+        "female_rep_2": 152,
+        "male_rep_1": 48,
+        "male_rep_2": 116
+      },
+      "author_class": "non-neuronal",
+      "author_cell_type": "glia"
+    },
+    {
+      "label": "vnc_25",
+      "type": "hemilineage 13B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "25",
+      "cell_number": 309,
+      "cells_by_sample": {
+        "female_rep_1": 37,
+        "female_rep_2": 110,
+        "male_rep_1": 58,
+        "male_rep_2": 104
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "13B"
+    },
+    {
+      "label": "vnc_26",
+      "type": "GABAergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "26",
+      "cell_number": 309,
+      "cells_by_sample": {
+        "female_rep_1": 27,
+        "female_rep_2": 132,
+        "male_rep_1": 56,
+        "male_rep_2": 94
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA"
+    },
+    {
+      "label": "vnc_27",
+      "type": "neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "27",
+      "cell_number": 306,
+      "cells_by_sample": {
+        "female_rep_1": 31,
+        "female_rep_2": 93,
+        "male_rep_1": 65,
+        "male_rep_2": 117
+      },
+      "author_class": "neuronal",
+      "author_peptides": "spab",
+      "unannotated": true
+    },
+    {
+      "label": "vnc_28",
+      "type": "hemilineage 6A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "28",
+      "cell_number": 302,
+      "cells_by_sample": {
+        "female_rep_1": 38,
+        "female_rep_2": 103,
+        "male_rep_1": 76,
+        "male_rep_2": 85
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "6A",
+      "author_hox": "Ubx"
+    },
+    {
+      "label": "vnc_29",
+      "type": "neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "29",
+      "cell_number": 297,
+      "cells_by_sample": {
+        "female_rep_1": 16,
+        "female_rep_2": 102,
+        "male_rep_1": 54,
+        "male_rep_2": 125
+      },
+      "author_class": "neuronal",
+      "unannotated": true
+    },
+    {
+      "label": "vnc_30",
+      "type": "hemilineage 12B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "30",
+      "cell_number": 296,
+      "cells_by_sample": {
+        "female_rep_1": 40,
+        "female_rep_2": 97,
+        "male_rep_1": 71,
+        "male_rep_2": 88
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "12B"
+    },
+    {
+      "label": "vnc_31",
+      "type": "hemilineage 9A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "31",
+      "cell_number": 295,
+      "cells_by_sample": {
+        "female_rep_1": 30,
+        "female_rep_2": 99,
+        "male_rep_1": 77,
+        "male_rep_2": 89
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "9A"
+    },
+    {
+      "label": "vnc_32",
+      "type": "neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "32",
+      "cell_number": 295,
+      "cells_by_sample": {
+        "female_rep_1": 12,
+        "female_rep_2": 113,
+        "male_rep_1": 65,
+        "male_rep_2": 105
+      },
+      "author_class": "neuronal",
+      "author_hox": "abd-A, Abd-B",
+      "unannotated": true
+    },
+    {
+      "label": "vnc_33",
+      "type": "hemilineages 20A/22A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "33",
+      "cell_number": 294,
+      "cells_by_sample": {
+        "female_rep_1": 19,
+        "female_rep_2": 100,
+        "male_rep_1": 66,
+        "male_rep_2": 109
+      },
+      "author_class": "neuronal",
+      "author_hemilineage": "20A/22A",
+      "author_peptides": "sNPF"
+    },
+    {
+      "label": "vnc_34",
+      "type": "hemilineages 20A/22A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "34",
+      "cell_number": 282,
+      "cells_by_sample": {
+        "female_rep_1": 42,
+        "female_rep_2": 98,
+        "male_rep_1": 56,
+        "male_rep_2": 86
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hemilineage": "20A/22A"
+    },
+    {
+      "label": "vnc_35",
+      "type": "hemilineage 23B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "35",
+      "cell_number": 274,
+      "cells_by_sample": {
+        "female_rep_1": 24,
+        "female_rep_2": 85,
+        "male_rep_1": 64,
+        "male_rep_2": 101
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hemilineage": "23B",
+      "author_peptides": "spab",
+      "author_hox": "Antp"
+    },
+    {
+      "label": "vnc_36",
+      "type": "hemilineage 15B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "36",
+      "cell_number": 273,
+      "cells_by_sample": {
+        "female_rep_1": 42,
+        "female_rep_2": 88,
+        "male_rep_1": 78,
+        "male_rep_2": 65
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_hemilineage": "15B",
+      "author_peptides": "Proc",
+      "author_hox": "abd-A, Abd-B"
+    },
+    {
+      "label": "vnc_37",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "37",
+      "cell_number": 272,
+      "cells_by_sample": {
+        "female_rep_1": 29,
+        "female_rep_2": 97,
+        "male_rep_1": 59,
+        "male_rep_2": 87
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine"
+    },
+    {
+      "label": "vnc_38",
+      "type": "hemilineage 11B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "38",
+      "cell_number": 271,
+      "cells_by_sample": {
+        "female_rep_1": 24,
+        "female_rep_2": 80,
+        "male_rep_1": 60,
+        "male_rep_2": 107
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "11B"
+    },
+    {
+      "label": "vnc_39",
+      "type": "hemilineage 10B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "39",
+      "cell_number": 267,
+      "cells_by_sample": {
+        "female_rep_1": 16,
+        "female_rep_2": 99,
+        "male_rep_1": 58,
+        "male_rep_2": 94
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hemilineage": "10B"
+    },
+    {
+      "label": "vnc_40",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "40",
+      "cell_number": 257,
+      "cells_by_sample": {
+        "female_rep_1": 7,
+        "female_rep_2": 52,
+        "male_rep_1": 89,
+        "male_rep_2": 109
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine"
+    },
+    {
+      "label": "vnc_41",
+      "type": "hemilineage 14A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "41",
+      "cell_number": 253,
+      "cells_by_sample": {
+        "female_rep_1": 23,
+        "female_rep_2": 98,
+        "male_rep_1": 44,
+        "male_rep_2": 88
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_hemilineage": "14A"
+    },
+    {
+      "label": "vnc_42",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "42",
+      "cell_number": 251,
+      "cells_by_sample": {
+        "female_rep_1": 31,
+        "female_rep_2": 81,
+        "male_rep_1": 72,
+        "male_rep_2": 67
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_peptides": "Dh31, spab",
+      "author_hox": "Ubx, abd-A"
+    },
+    {
+      "label": "vnc_43",
+      "type": "neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "43",
+      "cell_number": 251,
+      "cells_by_sample": {
+        "female_rep_1": 39,
+        "female_rep_2": 85,
+        "male_rep_1": 51,
+        "male_rep_2": 76
+      },
+      "author_class": "neuronal",
+      "author_hox": "Ubx",
+      "unannotated": true
+    },
+    {
+      "label": "vnc_44",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "44",
+      "cell_number": 249,
+      "cells_by_sample": {
+        "female_rep_1": 25,
+        "female_rep_2": 79,
+        "male_rep_1": 75,
+        "male_rep_2": 70
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hox": "Ubx"
+    },
+    {
+      "label": "vnc_45",
+      "type": "GABAergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "45",
+      "cell_number": 243,
+      "cells_by_sample": {
+        "female_rep_1": 23,
+        "female_rep_2": 86,
+        "male_rep_1": 51,
+        "male_rep_2": 83
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_peptides": "Nplp1"
+    },
+    {
+      "label": "vnc_46",
+      "type": "hemilineage 16B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "46",
+      "cell_number": 243,
+      "cells_by_sample": {
+        "female_rep_1": 30,
+        "female_rep_2": 91,
+        "male_rep_1": 46,
+        "male_rep_2": 76
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_hemilineage": "16B"
+    },
+    {
+      "label": "vnc_47",
+      "type": "hemilineage 1B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "47",
+      "cell_number": 238,
+      "cells_by_sample": {
+        "female_rep_1": 15,
+        "female_rep_2": 103,
+        "male_rep_1": 37,
+        "male_rep_2": 83
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "1B"
+    },
+    {
+      "label": "vnc_48",
+      "type": "hemilineages 13A/19A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "48",
+      "cell_number": 236,
+      "cells_by_sample": {
+        "female_rep_1": 34,
+        "female_rep_2": 87,
+        "male_rep_1": 60,
+        "male_rep_2": 55
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "13A/19A"
+    },
+    {
+      "label": "vnc_49",
+      "type": "hemilineage 8B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "49",
+      "cell_number": 235,
+      "cells_by_sample": {
+        "female_rep_1": 19,
+        "female_rep_2": 71,
+        "male_rep_1": 62,
+        "male_rep_2": 83
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hemilineage": "8B",
+      "author_peptides": "spab",
+      "author_hox": "abd-A, Abd-B"
+    },
+    {
+      "label": "vnc_50",
+      "type": "hemilineage 9A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "50",
+      "cell_number": 235,
+      "cells_by_sample": {
+        "female_rep_1": 18,
+        "female_rep_2": 67,
+        "male_rep_1": 70,
+        "male_rep_2": 80
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "9A"
+    },
+    {
+      "label": "vnc_51",
+      "type": "hemilineage 23B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "51",
+      "cell_number": 221,
+      "cells_by_sample": {
+        "female_rep_1": 13,
+        "female_rep_2": 68,
+        "male_rep_1": 52,
+        "male_rep_2": 88
+      },
+      "author_class": "neuronal",
+      "author_hemilineage": "23B",
+      "author_peptides": "sNPF",
+      "author_hox": "Antp"
+    },
+    {
+      "label": "vnc_52",
+      "type": "hemilineage 15B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "52",
+      "cell_number": 220,
+      "cells_by_sample": {
+        "female_rep_1": 33,
+        "female_rep_2": 60,
+        "male_rep_1": 77,
+        "male_rep_2": 50
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_hemilineage": "15B",
+      "author_peptides": "Proc"
+    },
+    {
+      "label": "vnc_53",
+      "type": "hemilineage 8B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "53",
+      "cell_number": 219,
+      "cells_by_sample": {
+        "female_rep_1": 25,
+        "female_rep_2": 73,
+        "male_rep_1": 52,
+        "male_rep_2": 69
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hemilineage": "8B"
+    },
+    {
+      "label": "vnc_54",
+      "type": "hemilineage 9B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "54",
+      "cell_number": 219,
+      "cells_by_sample": {
+        "female_rep_1": 12,
+        "female_rep_2": 81,
+        "male_rep_1": 44,
+        "male_rep_2": 82
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_hemilineage": "9B",
+      "author_peptides": "Dh31, sNPF, Nplp1"
+    },
+    {
+      "label": "vnc_55",
+      "type": "undefined",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "55",
+      "cell_number": 217,
+      "cells_by_sample": {
+        "female_rep_1": 11,
+        "female_rep_2": 91,
+        "male_rep_1": 62,
+        "male_rep_2": 53
+      },
+      "author_class": "non-neuronal",
+      "author_cell_type": "undefined",
+      "unannotated": true
+    },
+    {
+      "label": "vnc_56",
+      "type": "hemilineage 9A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "56",
+      "cell_number": 216,
+      "cells_by_sample": {
+        "female_rep_1": 21,
+        "female_rep_2": 63,
+        "male_rep_1": 60,
+        "male_rep_2": 72
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "9A"
+    },
+    {
+      "label": "vnc_57",
+      "type": "hemilineage 9A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "57",
+      "cell_number": 211,
+      "cells_by_sample": {
+        "female_rep_1": 14,
+        "female_rep_2": 67,
+        "male_rep_1": 55,
+        "male_rep_2": 75
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "9A"
+    },
+    {
+      "label": "vnc_58",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "58",
+      "cell_number": 205,
+      "cells_by_sample": {
+        "female_rep_1": 22,
+        "female_rep_2": 54,
+        "male_rep_1": 49,
+        "male_rep_2": 80
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine"
+    },
+    {
+      "label": "vnc_59",
+      "type": "hemilineages 13A/19A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "59",
+      "cell_number": 205,
+      "cells_by_sample": {
+        "female_rep_1": 14,
+        "female_rep_2": 73,
+        "male_rep_1": 60,
+        "male_rep_2": 58
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "13A/19A"
+    },
+    {
+      "label": "vnc_60",
+      "type": "GABAergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "60",
+      "cell_number": 199,
+      "cells_by_sample": {
+        "female_rep_1": 25,
+        "female_rep_2": 60,
+        "male_rep_1": 50,
+        "male_rep_2": 64
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hox": "Antp"
+    },
+    {
+      "label": "vnc_61",
+      "type": "glutamatergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "61",
+      "cell_number": 197,
+      "cells_by_sample": {
+        "female_rep_1": 17,
+        "female_rep_2": 55,
+        "male_rep_1": 67,
+        "male_rep_2": 58
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_peptides": "spab, sNPF, AstA, Gpb5",
+      "author_hox": "Ubx"
+    },
+    {
+      "label": "vnc_62",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "62",
+      "cell_number": 194,
+      "cells_by_sample": {
+        "female_rep_1": 13,
+        "female_rep_2": 84,
+        "male_rep_1": 38,
+        "male_rep_2": 59
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_peptides": "Dh31"
+    },
+    {
+      "label": "vnc_63",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "63",
+      "cell_number": 193,
+      "cells_by_sample": {
+        "female_rep_1": 24,
+        "female_rep_2": 39,
+        "male_rep_1": 78,
+        "male_rep_2": 52
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine"
+    },
+    {
+      "label": "vnc_64",
+      "type": "GABAergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "64",
+      "cell_number": 192,
+      "cells_by_sample": {
+        "female_rep_1": 23,
+        "female_rep_2": 51,
+        "male_rep_1": 47,
+        "male_rep_2": 71
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_peptides": "Tk"
+    },
+    {
+      "label": "vnc_65",
+      "type": "hemilineages 13A/19A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "65",
+      "cell_number": 189,
+      "cells_by_sample": {
+        "female_rep_1": 20,
+        "female_rep_2": 69,
+        "male_rep_1": 33,
+        "male_rep_2": 67
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "13A/19A",
+      "author_hox": "abd-A, Abd-B"
+    },
+    {
+      "label": "vnc_66",
+      "type": "hemilineage 6A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "66",
+      "cell_number": 187,
+      "cells_by_sample": {
+        "female_rep_1": 21,
+        "female_rep_2": 49,
+        "male_rep_1": 39,
+        "male_rep_2": 78
+      },
+      "author_class": "neuronal",
+      "author_hemilineage": "6A"
+    },
+    {
+      "label": "vnc_67",
+      "type": "hemilineage 23B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "67",
+      "cell_number": 187,
+      "cells_by_sample": {
+        "female_rep_1": 20,
+        "female_rep_2": 50,
+        "male_rep_1": 53,
+        "male_rep_2": 64
+      },
+      "author_class": "neuronal",
+      "author_hemilineage": "23B",
+      "author_peptides": "spab, sNPF",
+      "author_hox": "Antp"
+    },
+    {
+      "label": "vnc_68",
+      "type": "hemilineage 10B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "68",
+      "cell_number": 185,
+      "cells_by_sample": {
+        "female_rep_1": 19,
+        "female_rep_2": 71,
+        "male_rep_1": 32,
+        "male_rep_2": 63
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hemilineage": "10B",
+      "author_hox": "Antp"
+    },
+    {
+      "label": "vnc_69",
+      "type": "hemilineages 8A/24B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "69",
+      "cell_number": 183,
+      "cells_by_sample": {
+        "female_rep_1": 14,
+        "female_rep_2": 58,
+        "male_rep_1": 40,
+        "male_rep_2": 71
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_hemilineage": "8A/24B"
+    },
+    {
+      "label": "vnc_70",
+      "type": "glia",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "70",
+      "cell_number": 174,
+      "cells_by_sample": {
+        "female_rep_1": 5,
+        "female_rep_2": 76,
+        "male_rep_1": 31,
+        "male_rep_2": 62
+      },
+      "author_class": "non-neuronal",
+      "author_cell_type": "glia"
+    },
+    {
+      "label": "vnc_71",
+      "type": "neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "71",
+      "cell_number": 173,
+      "cells_by_sample": {
+        "female_rep_1": 25,
+        "female_rep_2": 38,
+        "male_rep_1": 54,
+        "male_rep_2": 56
+      },
+      "author_class": "neuronal",
+      "unannotated": true
+    },
+    {
+      "label": "vnc_72",
+      "type": "monoaminergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "72",
+      "cell_number": 172,
+      "cells_by_sample": {
+        "female_rep_1": 18,
+        "female_rep_2": 68,
+        "male_rep_1": 41,
+        "male_rep_2": 45
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "Monoaminergic",
+      "author_hox": "abd-A"
+    },
+    {
+      "label": "vnc_73",
+      "type": "hemilineage 12B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "73",
+      "cell_number": 165,
+      "cells_by_sample": {
+        "female_rep_1": 15,
+        "female_rep_2": 54,
+        "male_rep_1": 42,
+        "male_rep_2": 54
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "12B",
+      "author_hox": "Antp"
+    },
+    {
+      "label": "vnc_74",
+      "type": "hemilineage 14A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "74",
+      "cell_number": 164,
+      "cells_by_sample": {
+        "female_rep_1": 14,
+        "female_rep_2": 67,
+        "male_rep_1": 41,
+        "male_rep_2": 42
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_hemilineage": "14A"
+    },
+    {
+      "label": "vnc_75",
+      "type": "hemilineages 13A/19A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "75",
+      "cell_number": 157,
+      "cells_by_sample": {
+        "female_rep_1": 19,
+        "female_rep_2": 64,
+        "male_rep_1": 47,
+        "male_rep_2": 27
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "13A/19A"
+    },
+    {
+      "label": "vnc_76",
+      "type": "hemilineage 8B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "76",
+      "cell_number": 157,
+      "cells_by_sample": {
+        "female_rep_1": 13,
+        "female_rep_2": 60,
+        "male_rep_1": 27,
+        "male_rep_2": 57
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hemilineage": "8B",
+      "author_peptides": "spab",
+      "author_hox": "abd-A"
+    },
+    {
+      "label": "vnc_77",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "77",
+      "cell_number": 150,
+      "cells_by_sample": {
+        "female_rep_1": 20,
+        "female_rep_2": 44,
+        "male_rep_1": 40,
+        "male_rep_2": 46
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_peptides": "FMRFa, spab"
+    },
+    {
+      "label": "vnc_78",
+      "type": "hemilineages 20A/22A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "78",
+      "cell_number": 149,
+      "cells_by_sample": {
+        "female_rep_1": 17,
+        "female_rep_2": 44,
+        "male_rep_1": 51,
+        "male_rep_2": 37
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hemilineage": "20A/22A"
+    },
+    {
+      "label": "vnc_79",
+      "type": "hemilineages 13A/19A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "79",
+      "cell_number": 149,
+      "cells_by_sample": {
+        "female_rep_1": 19,
+        "female_rep_2": 57,
+        "male_rep_1": 36,
+        "male_rep_2": 37
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "13A/19A"
+    },
+    {
+      "label": "vnc_80",
+      "type": "hemilineage 15B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "80",
+      "cell_number": 148,
+      "cells_by_sample": {
+        "female_rep_1": 29,
+        "female_rep_2": 30,
+        "male_rep_1": 50,
+        "male_rep_2": 39
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_hemilineage": "15B",
+      "author_peptides": "Proc"
+    },
+    {
+      "label": "vnc_81",
+      "type": "hemilineage 12B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "81",
+      "cell_number": 148,
+      "cells_by_sample": {
+        "female_rep_1": 17,
+        "female_rep_2": 39,
+        "male_rep_1": 41,
+        "male_rep_2": 51
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "12B"
+    },
+    {
+      "label": "vnc_82",
+      "type": "hemilineages 13A/19A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "82",
+      "cell_number": 142,
+      "cells_by_sample": {
+        "female_rep_1": 11,
+        "female_rep_2": 56,
+        "male_rep_1": 32,
+        "male_rep_2": 43
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "13A/19A"
+    },
+    {
+      "label": "vnc_83",
+      "type": "hemilineage 12B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "83",
+      "cell_number": 141,
+      "cells_by_sample": {
+        "female_rep_1": 11,
+        "female_rep_2": 48,
+        "male_rep_1": 33,
+        "male_rep_2": 49
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "12B"
+    },
+    {
+      "label": "vnc_84",
+      "type": "peptidergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "84",
+      "cell_number": 139,
+      "cells_by_sample": {
+        "female_rep_1": 21,
+        "female_rep_2": 44,
+        "male_rep_1": 38,
+        "male_rep_2": 36
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "Peptidergic",
+      "author_peptides": "Lk, FMRFa, Capa, Orcokinin, Pdf, Nplp1, Dh31, Gpb5, Proc",
+      "author_hox": "abd-A"
+    },
+    {
+      "label": "vnc_85",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "85",
+      "cell_number": 138,
+      "cells_by_sample": {
+        "female_rep_1": 16,
+        "female_rep_2": 57,
+        "male_rep_1": 22,
+        "male_rep_2": 43
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine"
+    },
+    {
+      "label": "vnc_86",
+      "type": "glutamatergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "86",
+      "cell_number": 136,
+      "cells_by_sample": {
+        "female_rep_1": 18,
+        "female_rep_2": 53,
+        "male_rep_1": 18,
+        "male_rep_2": 47
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_peptides": "Nplp1",
+      "author_hox": "Ubx, abd-A"
+    },
+    {
+      "label": "vnc_87",
+      "type": "hemilineages 5B/6B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "87",
+      "cell_number": 136,
+      "cells_by_sample": {
+        "female_rep_1": 18,
+        "female_rep_2": 52,
+        "male_rep_1": 33,
+        "male_rep_2": 33
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "5B/6B",
+      "author_hox": "abd-A"
+    },
+    {
+      "label": "vnc_88",
+      "type": "hemilineage 0A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "88",
+      "cell_number": 135,
+      "cells_by_sample": {
+        "female_rep_1": 14,
+        "female_rep_2": 47,
+        "male_rep_1": 35,
+        "male_rep_2": 39
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "0A",
+      "author_peptides": "Dh31",
+      "author_hox": "Ubx"
+    },
+    {
+      "label": "vnc_89",
+      "type": "hemilineages 5B/6B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "89",
+      "cell_number": 135,
+      "cells_by_sample": {
+        "female_rep_1": 11,
+        "female_rep_2": 44,
+        "male_rep_1": 29,
+        "male_rep_2": 51
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "5B/6B",
+      "author_hox": "Ubx"
+    },
+    {
+      "label": "vnc_90",
+      "type": "GABAergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "90",
+      "cell_number": 134,
+      "cells_by_sample": {
+        "female_rep_1": 13,
+        "female_rep_2": 50,
+        "male_rep_1": 24,
+        "male_rep_2": 47
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hox": "Ubx"
+    },
+    {
+      "label": "vnc_91",
+      "type": "hemilineage 10B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "91",
+      "cell_number": 132,
+      "cells_by_sample": {
+        "female_rep_1": 2,
+        "female_rep_2": 50,
+        "male_rep_1": 31,
+        "male_rep_2": 49
+      },
+      "author_class": "neuronal",
+      "author_hemilineage": "10B"
+    },
+    {
+      "label": "vnc_92",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "92",
+      "cell_number": 126,
+      "cells_by_sample": {
+        "female_rep_1": 11,
+        "female_rep_2": 33,
+        "male_rep_1": 32,
+        "male_rep_2": 50
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine"
+    },
+    {
+      "label": "vnc_93",
+      "type": "hemilineage 23B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "93",
+      "cell_number": 118,
+      "cells_by_sample": {
+        "female_rep_1": 13,
+        "female_rep_2": 32,
+        "male_rep_1": 38,
+        "male_rep_2": 35
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hemilineage": "23B",
+      "author_peptides": "sNPF"
+    },
+    {
+      "label": "vnc_94",
+      "type": "hemilineage 12B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "94",
+      "cell_number": 114,
+      "cells_by_sample": {
+        "female_rep_1": 12,
+        "female_rep_2": 35,
+        "male_rep_1": 31,
+        "male_rep_2": 36
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "12B",
+      "author_peptides": "CCHa2, AstC, sNPF"
+    },
+    {
+      "label": "vnc_95",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "95",
+      "cell_number": 112,
+      "cells_by_sample": {
+        "female_rep_1": 8,
+        "female_rep_2": 34,
+        "male_rep_1": 32,
+        "male_rep_2": 38
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine"
+    },
+    {
+      "label": "vnc_96",
+      "type": "hemilineages 13A/19A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "96",
+      "cell_number": 96,
+      "cells_by_sample": {
+        "female_rep_1": 10,
+        "female_rep_2": 34,
+        "male_rep_1": 22,
+        "male_rep_2": 30
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "13A/19A"
+    },
+    {
+      "label": "vnc_97",
+      "type": "hemilineages 5B/6B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "97",
+      "cell_number": 95,
+      "cells_by_sample": {
+        "female_rep_1": 6,
+        "female_rep_2": 39,
+        "male_rep_1": 20,
+        "male_rep_2": 30
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "5B/6B",
+      "author_peptides": "AstA, FMRFa, Nplp1"
+    },
+    {
+      "label": "vnc_98",
+      "type": "glia",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "98",
+      "cell_number": 94,
+      "cells_by_sample": {
+        "female_rep_1": 5,
+        "female_rep_2": 31,
+        "male_rep_1": 13,
+        "male_rep_2": 45
+      },
+      "author_class": "non-neuronal",
+      "author_cell_type": "glia"
+    },
+    {
+      "label": "vnc_99",
+      "type": "salivary gland",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "99",
+      "cell_number": 91,
+      "cells_by_sample": {
+        "female_rep_1": 8,
+        "female_rep_2": 30,
+        "male_rep_1": 49,
+        "male_rep_2": 4
+      },
+      "author_class": "non-neuronal",
+      "author_cell_type": "salivary gland"
+    },
+    {
+      "label": "vnc_100",
+      "type": "hemilineage 4B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "100",
+      "cell_number": 89,
+      "cells_by_sample": {
+        "female_rep_1": 6,
+        "female_rep_2": 35,
+        "male_rep_1": 20,
+        "male_rep_2": 28
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hemilineage": "4B",
+      "author_peptides": "Dh31"
+    },
+    {
+      "label": "vnc_101",
+      "type": "neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "101",
+      "cell_number": 88,
+      "cells_by_sample": {
+        "female_rep_1": 12,
+        "female_rep_2": 29,
+        "male_rep_1": 16,
+        "male_rep_2": 31
+      },
+      "author_class": "neuronal",
+      "unannotated": true
+    },
+    {
+      "label": "vnc_102",
+      "type": "hemilineages 13A/19A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "102",
+      "cell_number": 83,
+      "cells_by_sample": {
+        "female_rep_1": 10,
+        "female_rep_2": 37,
+        "male_rep_1": 20,
+        "male_rep_2": 16
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "13A/19A",
+      "author_peptides": "Nplp1"
+    },
+    {
+      "label": "vnc_103",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "103",
+      "cell_number": 78,
+      "cells_by_sample": {
+        "female_rep_1": 10,
+        "female_rep_2": 22,
+        "male_rep_1": 17,
+        "male_rep_2": 29
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine"
+    },
+    {
+      "label": "vnc_104",
+      "type": "GABAergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "104",
+      "cell_number": 75,
+      "cells_by_sample": {
+        "female_rep_1": 6,
+        "female_rep_2": 26,
+        "male_rep_1": 20,
+        "male_rep_2": 23
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA"
+    },
+    {
+      "label": "vnc_105",
+      "type": "undefined",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "105",
+      "cell_number": 73,
+      "cells_by_sample": {
+        "female_rep_1": 13,
+        "female_rep_2": 14,
+        "male_rep_1": 26,
+        "male_rep_2": 20
+      },
+      "author_class": "non-neuronal",
+      "author_cell_type": "undefined",
+      "unannotated": true
+    },
+    {
+      "label": "vnc_106",
+      "type": "neuronal/glial",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "106",
+      "cell_number": 73,
+      "cells_by_sample": {
+        "female_rep_1": 5,
+        "female_rep_2": 26,
+        "male_rep_1": 10,
+        "male_rep_2": 32
+      },
+      "author_class": "non-neuronal",
+      "author_cell_type": "neuronal/glial"
+    },
+    {
+      "label": "vnc_107",
+      "type": "hemilineage 21A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "107",
+      "cell_number": 72,
+      "cells_by_sample": {
+        "female_rep_1": 10,
+        "female_rep_2": 24,
+        "male_rep_1": 26,
+        "male_rep_2": 12
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_hemilineage": "21A"
+    },
+    {
+      "label": "vnc_108",
+      "type": "hemilineages 20A/22A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "108",
+      "cell_number": 64,
+      "cells_by_sample": {
+        "female_rep_1": 2,
+        "female_rep_2": 24,
+        "male_rep_1": 10,
+        "male_rep_2": 28
+      },
+      "author_class": "neuronal",
+      "author_hemilineage": "20A/22A",
+      "author_peptides": "sNPF"
+    },
+    {
+      "label": "vnc_109",
+      "type": "GABAergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "109",
+      "cell_number": 63,
+      "cells_by_sample": {
+        "female_rep_1": 5,
+        "female_rep_2": 18,
+        "male_rep_1": 24,
+        "male_rep_2": 16
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hox": "Antp"
+    },
+    {
+      "label": "vnc_110",
+      "type": "hemilineages 8A/24B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "110",
+      "cell_number": 60,
+      "cells_by_sample": {
+        "female_rep_1": 1,
+        "female_rep_2": 28,
+        "male_rep_1": 12,
+        "male_rep_2": 19
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_hemilineage": "8A/24B"
+    },
+    {
+      "label": "vnc_111",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "111",
+      "cell_number": 57,
+      "cells_by_sample": {
+        "female_rep_1": 7,
+        "female_rep_2": 19,
+        "male_rep_1": 14,
+        "male_rep_2": 17
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine"
+    },
+    {
+      "label": "vnc_112",
+      "type": "hemilineage 0A",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "112",
+      "cell_number": 55,
+      "cells_by_sample": {
+        "female_rep_1": 6,
+        "female_rep_2": 21,
+        "male_rep_1": 15,
+        "male_rep_2": 13
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA",
+      "author_hemilineage": "0A",
+      "author_hox": "abd-A"
+    },
+    {
+      "label": "vnc_113",
+      "type": "glutamatergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "113",
+      "cell_number": 54,
+      "cells_by_sample": {
+        "female_rep_1": 8,
+        "female_rep_2": 17,
+        "male_rep_1": 13,
+        "male_rep_2": 16
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate",
+      "author_peptides": "Dh31"
+    },
+    {
+      "label": "vnc_114",
+      "type": "cholinergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "114",
+      "cell_number": 53,
+      "cells_by_sample": {
+        "female_rep_1": 4,
+        "female_rep_2": 18,
+        "male_rep_1": 16,
+        "male_rep_2": 15
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_peptides": "spab, FMRFa"
+    },
+    {
+      "label": "vnc_115",
+      "type": "neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "115",
+      "cell_number": 49,
+      "cells_by_sample": {
+        "female_rep_1": 10,
+        "female_rep_2": 14,
+        "male_rep_1": 17,
+        "male_rep_2": 8
+      },
+      "author_class": "neuronal",
+      "unannotated": true
+    },
+    {
+      "label": "vnc_116",
+      "type": "sperm",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "116",
+      "cell_number": 40,
+      "cells_by_sample": {
+        "female_rep_1": 2,
+        "female_rep_2": 3,
+        "male_rep_1": 6,
+        "male_rep_2": 29
+      },
+      "author_class": "non-neuronal",
+      "author_cell_type": "sperm"
+    },
+    {
+      "label": "vnc_117",
+      "type": "hemilineage 8B",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "117",
+      "cell_number": 40,
+      "cells_by_sample": {
+        "female_rep_1": 6,
+        "female_rep_2": 17,
+        "male_rep_1": 6,
+        "male_rep_2": 11
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "acetylcholine",
+      "author_hemilineage": "8B"
+    },
+    {
+      "label": "vnc_118",
+      "type": "glutamatergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "118",
+      "cell_number": 22,
+      "cells_by_sample": {
+        "female_rep_2": 9,
+        "male_rep_1": 10,
+        "male_rep_2": 3
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "glutamate"
+    },
+    {
+      "label": "vnc_119",
+      "type": "GABAergic neuron",
+      "clustering": "vnc",
+      "clustering_name": "Allen 2020 adult VNC clusters",
+      "source_cluster_id": "119",
+      "cell_number": 22,
+      "cells_by_sample": {
+        "female_rep_1": 1,
+        "female_rep_2": 10,
+        "male_rep_1": 6,
+        "male_rep_2": 5
+      },
+      "author_class": "neuronal",
+      "author_neurotransmitter": "GABA"
+    }
+  ]
+}
