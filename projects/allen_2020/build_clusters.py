@@ -14,8 +14,10 @@ genes; non-neuronal clusters by cell type. One entry per cluster:
                      class ("cholinergic neuron", ...); else the non-neuronal cell type;
                      else "neuron"
   author_*           the table's fields (neurotransmitter, hemilineage, peptides, Hox, cell type)
-  unannotated        clusters the authors left "undefined" or typed only as neuron
-                     (held: untyped)
+  unannotated        held (curator 2026-10-18): clusters the authors left "undefined" or
+                     typed only as neuron, of mixed neurotransmitter identity, or
+                     "neuronal/glial" (untyped: typeable only as neuron / cell), and the
+                     salivary gland contaminant (artefact; config unidentified.hold_reasons)
   cells_by_sample    cells per Sample (sex x replicate)
 
 Also writes .cache/allen/memberships.tsv.gz (cell<TAB>cluster) for the expression build.
@@ -41,6 +43,8 @@ TABLE = PROJ / "supp" / "elife-54074-fig1-data2.xlsx"
 NT_CLASS = {"acetylcholine": "cholinergic neuron", "GABA": "GABAergic neuron",
             "glutamate": "glutamatergic neuron", "Monoaminergic": "monoaminergic neuron",
             "Peptidergic": "peptidergic neuron", "mixed": "neuron of mixed neurotransmitter identity"}
+HELD = {"undefined", "neuron", "neuron of mixed neurotransmitter identity", "neuronal/glial",
+        "neuronal/glial mixed", "salivary gland"}
 SAMPLE = {"Female_rep1": "female_rep_1", "Female_rep2": "female_rep_2",
           "Male_rep1": "male_rep_1", "Male_rep2": "male_rep_2"}
 
@@ -93,7 +97,7 @@ def main() -> None:
         for k in ("neurotransmitter", "hemilineage", "peptides", "hox", "cell_type"):
             if t.get(k):
                 rec[f"author_{k}"] = t[k]
-        if rec["type"] in ("undefined", "neuron"):
+        if rec["type"] in HELD:
             rec["unannotated"] = True
         anns.append(rec)
     with gzip.open(CACHE / "memberships.tsv.gz", "wt") as fh:
