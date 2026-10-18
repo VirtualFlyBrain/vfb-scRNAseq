@@ -1619,3 +1619,40 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-18.
   `verify_mappings.py` OK (8 FBbt terms); the FBbt / FBdv / FBcv terms on Samples, Assays,
   Clusters and the Dataset current. Recorded in `provenance.json`.
 
+## Calderon 2022 (embryonic development, 0-18 h)
+
+Science 2022, PMID 35926038, FBrf0254247; GEO GSE190147 (the sci-RNA-seq SubSeries of
+GSE190149; sci-ATAC-seq GSE190130 not loaded) (`calderon_2022`). sci-RNA-seq3 of ~548,000
+nuclei from wild-type (Canton S) embryos collected in 11 overlapping windows spanning
+0-20 h at 25 C. Replaces the old FlyBase load FBlc0007797 (274 clusters merged by type,
+per collection window and over all windows) with fresh VFBseq ids; licence CC-BY-4.0.
+Curator decisions 2026-10-18.
+
+- **Data.** The authors estimated each nucleus's age from its transcriptome (a neural
+  network, NNv1), binned nuclei into non-overlapping 2-hour windows of modelled age and
+  clustered each window separately, annotating each cluster by hand (Table S1 / the
+  portal's `table_s1_withLineage.xlsx`: annotation, germ layer, lineage; 287 clusters in
+  10 windows). Per-nucleus clusters are in the portal's per-window Seurat objects
+  (`RNA/update/seurat_objects/pred_windows/NNv1/`), read with base R
+  (`export_windows.R`). The authors also re-clustered the 6-18 h neuroectoderm (59,012
+  nuclei, 20 sub-clusters) and its mature neurons (6,703 nuclei, 11 sub-sub-clusters;
+  portal `neuronal_fine_scale_annotations/`, 2023). GEO has the count matrix and
+  per-nucleus metadata (experiment, collection window, NNv1 age) but no clusters.
+- **Scope (curator):** the modelled-window clusters without the 18-20 h window (the paper
+  stops at 18 h: model edge effects; 9 windows, 268 clusters), plus both neuronal
+  re-clusterings (two further Clusterings, their nuclei also in the window clusters).
+  "ubiquitous", "maternal" and "unknown" clusters held (untyped).
+- **Samples (stage 1):** `projects/calderon_2022/build_samples.py`. The 1,908 GSMs are
+  sci-RNA-seq3 PCR wells pooling several collection windows (each nucleus's window comes
+  from its RT barcode), so they are not Samples. The supplementary methods: each
+  window's embryos were collected and frozen and their nuclei isolated as a batch, and
+  the experiments (exp1-exp12) each drew on several windows. So 11 Samples (collection
+  windows) and 41 Assays (experiment x window). Stage: the narrowest FBdv term covering
+  the window's stages (Campos-Ortega & Hartenstein timings at 25 C, from the FBdv
+  definitions): 0-2 h *cleavage stage*, 4-8 h *extended germ band stage*, 14-18 h *late
+  embryonic stage*, 16-20 h *embryonic stage 17*, the others *embryonic stage*. Tissue
+  *embryo*; Canton S, no stock named (not linked). Assay *single-cell combinatorial
+  indexing RNA sequencing* (FBcv:0009056). 11 Clusterings, each with the Samples giving at
+  least 1% of its nuclei (curator: every modelled window has thin tails from distant
+  collections, e.g. 7 of the 0-2 h window's 122,331 nuclei from 16-20 h, likely mis-aged).
+
