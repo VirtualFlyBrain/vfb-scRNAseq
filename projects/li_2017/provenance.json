@@ -1,7 +1,7 @@
 {
   "project": "li_2017",
   "created_at": "2026-10-17",
-  "updated_at": "2026-10-17",
+  "updated_at": "2026-10-18",
   "summary": "Li, Horns et al. 2017 (Cell), Smart-seq2 of FACS-sorted Drosophila olfactory projection neurons (GEO GSE100058), curated before Xie et al. 2021, which reuses its 24 h APF GH146 cells; not previously in VFB. 10 Samples (one per sort: 5 GH146 sorts at 24 h APF; Mz19 at 24, 36, 48, 72 h APF and adult) with 29 Smart-seq2 plate Assays, linked to their GAL4 driver alleles (GENO has_genotype). Six Clusterings: the authors' GH146 24 h HDBSCAN clusters (from their repository; the paper's decoded clusters linked by the authors' own criteria) and the Mz19 developmental series (per-type, per-stage lists). 45 entries: 22 loaded (mature PN type terms from 48 h APF; the 24 h / 36 h types under the stage-neutral PN class of their lineage until FBbt #2220 adds immature / remodelling terms). Summary expression as CPM from GEO's raw HTSeq counts (14,457 genes x 1,379 cells).",
   "decisions": [
     {
@@ -78,6 +78,11 @@
       "date": "2026-10-17",
       "by": "curator",
       "decision": "FBbt term request opened for the pupal (immature, or remodelling for embryonic-born PNs) PN types, with Xie 2021's (FlyBase/drosophila-anatomy-developmental-ontology#2220); meanwhile the 24 h / 36 h types map to the stage-neutral PN class of their lineage (antennal lobe projection neuron adPN; ... of ALl1 lineage), broad: 14 more clusters loaded."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "Publication FBrf0237214 added to the VFB KB (pub node modelled on an existing one), so the Dataset's publication is resolved from the KB rather than from config."
     }
   ],
   "checks": [
@@ -110,6 +115,11 @@
       "date": "2026-10-17",
       "check": "verify_mappings.py after the lineage-class mappings.",
       "result": "6 terms current, not obsolete, labels match."
+    },
+    {
+      "date": "2026-10-18",
+      "check": "FBrf0237214 looked up in the VFB KB; metadata rebuilt.",
+      "result": "Present (label, PMID, DOI, miniref); build_rdf resolves it from the KB; the metadata output is unchanged."
     }
   ],
   "people": [
@@ -282,7 +292,7 @@
       "label": "VFB production (neo4j)",
       "url": "https://pdb.virtualflybrain.org",
       "accessed_at": "2026-10-16",
-      "description": "Checked for the publication FBrf0237214 (not yet in VFB; linked from config) and the driver alleles."
+      "description": "Checked for the publication FBrf0237214 and the driver alleles; the publication was not in VFB at first (linked from config) and is now resolved from the VFB KB."
     },
     {
       "id": "flybase-chado",
