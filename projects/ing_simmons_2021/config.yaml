@@ -76,3 +76,19 @@ unidentified:
 
 # FBbt mappings are made once per author type (type_mapping/, write_type_mappings.py) and
 # copied per cluster by scripts/expand_type_mappings.py.
+
+# Summary expression (scripts/build_expression.py). ArrayExpress has FASTQs only and the
+# authors published no count matrix, so the counts are SCEA's quantification of E-MTAB-9304
+# (alevin, "aggregated filtered counts"; unnormalised UMI estimates, partly fractional),
+# whose cell ids (<BioSample>-<barcode>) are those of the per-cell author labels. Genes are
+# FBgn ids.
+expression:
+  matrix_file: ing_simmons/scea_raw/matrix.mtx.gz
+  features_file: ing_simmons/scea_raw/features.tsv.gz
+  barcodes_file: ing_simmons/scea_raw/barcodes.tsv.gz
+  membership_file: ing_simmons/memberships.tsv.gz
+  normalisation: CPM
+  extent_cutoff: 0.2
+  hide_in_terminfo: "true"
+  gzip_tsv: true
+  gene_id_map: gene_id_map.tsv
