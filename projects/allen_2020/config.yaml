@@ -67,3 +67,22 @@ unidentified:
 
 # FBbt mappings are made once per author type (type_mapping/, write_type_mappings.py) and
 # copied per cluster by scripts/expand_type_mappings.py.
+
+# Summary expression (scripts/build_expression.py) from the GEO DGE matrices (raw UMI
+# counts), the four libraries side by side (combine_matrices.py; cells named
+# <Sex>_rep<n>_<barcode>, as in build_clusters.py's memberships). The DGEs carry gene
+# symbols only.
+expression:
+  matrix_file: allen/combined/matrix.mtx.gz
+  features_file: allen/combined/features.tsv.gz
+  barcodes_file: allen/combined/barcodes.tsv.gz
+  membership_file: allen/memberships.tsv.gz
+  features_keyed_by: symbol
+  normalisation: CPM
+  extent_cutoff: 0.2
+  hide_in_terminfo: "true"
+  gzip_tsv: true
+  gene_id_map: gene_id_map.tsv
+  # FBgn for a symbol from the source files of other projects (same-era references),
+  # else by symbol in Chado
+  gene_ids_from: [kurmangaliyev_2020, davie_2018, li_2022_fca_10x, lu_2023_afca, ozel_2021]

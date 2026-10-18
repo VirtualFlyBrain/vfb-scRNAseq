@@ -1538,4 +1538,14 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-17.
   neuromeres, and only approximately (Figure 3E: no Hox ProNm, Antp MesoNm, Ubx MetaNm,
   abd-A / Abd-B ANm); per cluster this contradicts their hemilineage calls (the
   Antp-enriched 23B clusters; 23B is prothoracic, Figure 5).
+- **Expression (stage 4).** From the GEO DGE matrices (raw UMI counts), the four libraries
+  combined into one sparse matrix of the clustered cells (`combine_matrices.py`; cells
+  `<Sex>_rep<n>_<barcode>`, as in the memberships), as CPM over each cell's own counts.
+  The DGEs carry gene symbols only (`features_keyed_by: symbol`; `gene_ids_from` as for
+  Konstantinides): 14,949 current, 105 secondary (3 merges), 1 synonym; 3 split and 6
+  unmatched dropped (five numeric names, and *betapCOP*, FlyBase's *beta'COP*). 15,052
+  genes x 26,768 cells; 106 clusters, 218,472 rows (extent > 0.2); the 14 held clusters
+  (3,084 cells) left out. Markers agree with the author types (e.g. *Gad1* extent ~0.98
+  in the GABAergic hemilineages, *VGlut1* (the DGEs' *VGlut*) ~1.0 in 8A/24B, 14A, 9B;
+  *Vmat* 0.92 in the monoaminergic cluster).
 
