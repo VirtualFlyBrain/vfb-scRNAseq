@@ -1463,4 +1463,15 @@ FACS-sorted olfactory projection neurons (PNs), one GEO sample per cell (11,509)
   lineage, broad (curator 2026-10-17); the APL clusters there, with no stage-neutral term,
   are held. 92 clusters loaded (19 FBbt terms), 26 held (2 APL `no term`, 19 `untyped`
   MARS clusters, 5 `unassigned`).
+- **Expression (stage 4):** from the authors' annotated h5ads (GEO): X is log2(CPM + 1)
+  (each cell sums to 1e6 CPM after conversion; checked), converted back to CPM
+  (`expression.values: log2_cpm1`). The h5ad route takes `expression.h5ad_files` (files in
+  .cache holding several Clusterings) with each cell's cluster from
+  `expression.membership_file` (build_clusters.py), instead of one h5ad per Clustering.
+  Gene symbols mapped to current FlyBase genes (`gene_ids_from`: other projects' committed
+  gene id maps; h5ad-sourced ones by their files): 17,005 current, 346 synonyms, 107
+  secondary, 6 merges, 16 dropped. 17,452 genes x 4,097 cells; 92 loaded clusters, 425,729
+  rows; 26 held (1,469 cells) in the Dataset gene counts only. Markers fit the authors'
+  types: acj6 in adPNs (DL1, VM2, VA1v), vvl in lPNs (DA1, VC2), Lim1 in vPNs; trol in VM2;
+  fru in DA1_fru+ not DA1_fru- (48 h).
 
