@@ -1613,4 +1613,9 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-18.
   Some of the authors' markers are weak here: *PPO1* (~0.03 in the haemocytes; probably
   SCEA's quantification of the near-identical *PPO1* / *PPO2*) and *Mlc2* (0.13 in control
   mesoderm1; the authors' markers were computed over all genotypes, integrated).
+- **Build (stage 5):** `build_rdf.py`: 1 Dataset, 2 Samples (replicate 1 `has_genotype
+  some` PCNA[EGFP]), 2 Assays, 1 Clustering, 13 Clusters (the 2 cellularisation clusters
+  at *embryonic stage 5*); publication FBrf0248615 from VFB production;
+  `verify_mappings.py` OK (8 FBbt terms); the FBbt / FBdv / FBcv terms on Samples, Assays,
+  Clusters and the Dataset current. Recorded in `provenance.json`.
 
