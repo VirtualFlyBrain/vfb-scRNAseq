@@ -81,7 +81,9 @@ from FlyBase; that authority is being dropped.)
 - `projects/xie_2021/` — Xie et al. 2021, olfactory projection neurons through development
   (PMID 33427646; [GSE161228](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161228)):
   Smart-seq2 of sorted PNs at 0 h, 24 h, 48 h APF and adult (main pan-PN and knot⁺
-  analyses); its 24 h cells are Li 2017's, reused. In progress.
+  analyses, per stage): 118 author types per stage, 92 loaded (adult PN terms by lineage
+  from 48 h; lineage classes at 0 h / 24 h until FBbt #2220); its 24 h cells are Li 2017's,
+  whose Samples are reused.
 - `projects/hormann_2020/` — Hörmann et al. 2020, T4/T5 neurons through pupal
   development (PMID 32238425; [GSE147987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987)):
   FACS-sorted T4/T5 neurons at five pupal stages, one Clustering per stage of the
@@ -187,7 +189,7 @@ from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#genera
 
 ## Status
 
-All nine projects are curated and built. Every mapped cluster has been reviewed (bar
+All ten projects are curated and built. Every mapped cluster has been reviewed (bar
 three Kurmangaliyev early clusters awaiting FBbt #2216, below), and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the
