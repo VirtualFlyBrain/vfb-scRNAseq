@@ -1,0 +1,20 @@
+{
+  "cluster_label": "vnc_3",
+  "working_definition": "Adult VNC cells of the authors' type hemilineages 5B/6B (Allen et al. 2020, Figure 1-source data 2), 5-day-old adults.",
+  "searches_performed": [
+    "Notch OFF hemilineage secondary neuron"
+  ],
+  "best_match": {
+    "fbbt_term": "Notch OFF hemilineage secondary neuron",
+    "fbbt_id": "FBbt:00049542",
+    "fbbt_definition": "Secondary neuron belonging to a hemilineage that does not have active Notch signaling.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors could not separate hemilineages 5B and 6B; both are Notch OFF hemilineages: their common class.",
+  "other_candidates": [],
+  "recommendation": "Map to FBbt:00049542 Notch OFF hemilineage secondary neuron (broad match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}
