@@ -1,0 +1,66 @@
+# Ing-Simmons et al. 2021 (Nat Genet; FBrf0248615): 10x scRNA-seq of whole embryos at
+# 2.5-3.5 h after egg laying (ArrayExpress E-MTAB-9304), controls and embryos from
+# gd7, Toll rm9/rm10 and Toll10B mutant mothers (each producing a single dorsoventral
+# fate), integrated and clustered together (15 clusters, 16,790 cells). Previously loaded
+# into VFB via the old FlyBase/SCEA mechanism as FBlc0006191 (scRNAseq_2021_IngSimmons;
+# SCEA E-MTAB-9304, controls only, 9 types merged from the authors' labels); rebuilt here
+# with fresh VFBseq ids. Curator decisions 2026-10-18: controls only (the mutant embryos
+# are fate-transformed), the authors' 15 clusters restricted to the control cells.
+project: ing_simmons_2021
+
+source:
+  doi: 10.1038/s41588-021-00799-x
+  pmid: "33795866"
+  pmcid: PMC8035076
+  fbrf: FBrf0248615
+  title: "Independence of chromatin conformation and gene regulation during Drosophila dorsoventral patterning"
+  journal: Nature Genetics
+  year: 2021
+  first_author: Ing-Simmons
+
+organism: Drosophila melanogaster
+
+dataset:
+  site: ArrayExpress
+  accession: E-MTAB-9304
+  licence: CC-BY-4.0
+  assay_type: FBcv:0009000      # single-cell RNA-seq
+
+sample_build:
+  source: arrayexpress
+  # Controls only (curator 2026-10-18): the two wild-type replicates. The gd7, Toll rm9/rm10
+  # and Toll10B samples (embryos of mutant mothers, fate-transformed) are left out.
+  sdrf_include:
+    Source Name: [control_stage5_Rep1, control_stage5_Rep2]
+  # one Sample per SDRF source (one collection of embryos), one Assay (10x library) each;
+  # the SDRF rows are its sequencing lanes
+  sample_columns: [Source Name]
+  assay_column: Extract Name
+  assay_xrefs: ['Comment[ENA_EXPERIMENT]', 'Comment[BioSD_SAMPLE]']
+  assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
+  assay_label: { unit: 10x library }
+  sample_label_id: '(Rep\d)$'
+  sex_column: Characteristics[sex]     # "mixed": unset
+  age_column: Characteristics[age]
+  age_unit: hours
+  # 2.5-3.5 h after egg laying at 25 C spans embryonic stage 5 (cellularisation) to the
+  # gastrula stage (6-8); the paper: "cellular blastoderm and gastrulation stages"; the
+  # SDRF's "stage 5 embryo" is too narrow. Curator 2026-10-18: embryonic stage, the
+  # nearest FBdv term covering both.
+  age_map:
+    "2.5 to 3.5":
+      stage: { fbdv_id: FBdv:00005289, label: embryonic stage }
+  tissue_column: Characteristics[organism part]
+  tissue_map:
+    "whole embryo":
+      - { fbbt_id: "FBbt:00000052", label: "embryo" }
+  genotype_columns: ['Characteristics[genotype]']
+  wild_type_genotypes: ['w[1118]']
+  # Control replicate 1: "yw; eGFP-PCNA" flies from Blythe & Wieschaus 2016 (the paper's
+  # ref. 78), SDRF "w[*]; P{EGFP-PCNA}attP2": FlyBase's PCNA[EGFP] (FBal0366828, construct
+  # P{PCNA.EGFP} FBtp0146648), curated for Blythe & Wieschaus 2016 (FBrf0234284). No
+  # FlyBase stock or insertion for it, so the allele is linked (genotype_includes).
+  genotype_includes_map:
+    'w[*]; P{EGFP-PCNA}attP2': [FBal0366828]
+  clusterings:
+    - { id: embryo, name: "Ing-Simmons 2021 embryo clusters (controls)", sample_age: "2.5 to 3.5 hours" }

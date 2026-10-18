@@ -1,5 +1,5 @@
 {
-  "counter": 2843,
+  "counter": 2849,
   "entries": {
     "Assay::E-MTAB-10519:FCA10_Male_head_adult_5dWT_Luo_sample4_S1": {
       "accession": null,
@@ -1365,6 +1365,20 @@
       "id": "VFBseq_00000791",
       "label": "P9",
       "natural_key": "E-MTAB-10628:P9"
+    },
+    "Assay::E-MTAB-9304:control_stage5_Rep1": {
+      "accession": null,
+      "entity_type": "Assay",
+      "id": "VFBseq_00002846",
+      "label": "control_stage5_Rep1",
+      "natural_key": "E-MTAB-9304:control_stage5_Rep1"
+    },
+    "Assay::E-MTAB-9304:control_stage5_Rep2": {
+      "accession": null,
+      "entity_type": "Assay",
+      "id": "VFBseq_00002848",
+      "label": "control_stage5_Rep2",
+      "natural_key": "E-MTAB-9304:control_stage5_Rep2"
     },
     "Assay::GSE100058:exp10_Mz19_36hAPF:1000100401": {
       "accession": null,
@@ -16388,6 +16402,13 @@
       "label": "Fly Cell Atlas Smart-seq2 Wing",
       "natural_key": "E-MTAB-10628:wing"
     },
+    "Clustering::E-MTAB-9304:embryo": {
+      "accession": null,
+      "entity_type": "Clustering",
+      "id": "VFBseq_00002849",
+      "label": "Ing-Simmons 2021 embryo clusters (controls)",
+      "natural_key": "E-MTAB-9304:embryo"
+    },
     "Clustering::GSE100058:GH146_24h": {
       "accession": null,
       "entity_type": "Clustering",
@@ -16667,6 +16688,13 @@
       "id": "VFBseq_00000777",
       "label": "Fly Cell Atlas: single-cell transcriptomes of the entire adult Drosophila - Smartseq2 dataset",
       "natural_key": "E-MTAB-10628"
+    },
+    "Dataset::E-MTAB-9304": {
+      "accession": "E-MTAB-9304",
+      "entity_type": "Dataset",
+      "id": "VFBseq_00002844",
+      "label": "Single-cell RNA-seq of Drosophila embryos to investigate gene expression during dorsal-ventral patterning",
+      "natural_key": "E-MTAB-9304"
     },
     "Dataset::GSE100058": {
       "accession": "GSE100058",
@@ -17374,6 +17402,20 @@
       "id": "VFBseq_00000842",
       "label": "wing | male | wild type genotype | 5",
       "natural_key": "E-MTAB-10628:wing | male | wild type genotype | 5"
+    },
+    "Sample::E-MTAB-9304:control_stage5_Rep1": {
+      "accession": null,
+      "entity_type": "Sample",
+      "id": "VFBseq_00002845",
+      "label": "control_stage5_Rep1",
+      "natural_key": "E-MTAB-9304:control_stage5_Rep1"
+    },
+    "Sample::E-MTAB-9304:control_stage5_Rep2": {
+      "accession": null,
+      "entity_type": "Sample",
+      "id": "VFBseq_00002847",
+      "label": "control_stage5_Rep2",
+      "natural_key": "E-MTAB-9304:control_stage5_Rep2"
     },
     "Sample::GSE100058:exp10_Mz19_36hAPF": {
       "accession": null,
