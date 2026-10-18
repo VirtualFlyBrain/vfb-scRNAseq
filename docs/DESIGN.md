@@ -1600,4 +1600,17 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-18.
   neural2 held (`no term`): FBbt has no cell-level generic embryonic neural cell term, and
   *embryonic neuroblast* would go beyond the authors' typing (neural2's markers are
   neuronal). 13 clusters mapped (8 terms), 2 held.
+- **Expression (stage 4).** ArrayExpress has FASTQs only and the authors published no
+  count matrix, so the counts are SCEA's quantification of E-MTAB-9304 (alevin,
+  "aggregated filtered counts": unnormalised UMI estimates, ~9% of values fractional),
+  whose cell ids (`<BioSample>-<barcode>`) are those of the per-cell author labels; all
+  7,739 control cells present. CPM over each cell's own counts; FBgn ids mapped to current
+  genes (16,711 current, 76 secondary with 1 merge; 148 withdrawn and 1 split dropped).
+  16,786 genes; 13 clusters, 47,255 rows (extent > 0.2); the 2 held neural clusters (695
+  cells) left out. Markers agree with the author types (*twi* 0.92 in mesoderm2, *Ance*
+  0.94 in amnioserosa, *fkh* in terminal, *pgc* 0.95 / *nanos* 0.95 in pole cells, *slam*
+  in cellularisation2, *Osi7* in trachea precursor, *Apoltp* / *Tep4* in haemocytes2).
+  Some of the authors' markers are weak here: *PPO1* (~0.03 in the haemocytes; probably
+  SCEA's quantification of the near-identical *PPO1* / *PPO2*) and *Mlc2* (0.13 in control
+  mesoderm1; the authors' markers were computed over all genotypes, integrated).
 
