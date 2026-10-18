@@ -205,7 +205,9 @@ below record how each was applied).
 - **Stage belongs on the Sample.** Samples carry their FBdv stage. A Cluster gets a
   `stage` only when the stage is determined from the cluster's own gene expression
   (e.g. a cluster the authors identify as a particular developmental stage) — not
-  copied from the samples it was built from, which would be redundant.
+  copied from the samples it was built from, which would be redundant. It is recorded as
+  `stage` ({fbdv_id, label}) on the entry in `cell_type_annotations.json`, and
+  `build.py` emits it (RO:0002490).
 
 ## FBbt mapping & new-term requests
 
@@ -1586,4 +1588,16 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-18.
   16,786; every cluster has control cells), labelled by the authors' cluster name
   ("mesoderm1", "pole cells", ...), typed by the cell identity without the number; the
   all-genotype size kept as `all_genotypes_cell_number`. None left untyped by the authors.
+- **FBbt mapping (stage 3, curator 2026-10-18):** per author type
+  (`write_type_mappings.py`, `type_mapping/`), all exact: ectoderm / mesoderm to the
+  germ-layer cell terms (*somatic cell of ectoderm* / *of mesoderm*: the authors' words,
+  and most embryos in the window are gastrulating; the old load used the anlage terms);
+  cellularisation to *somatic cell of stage 5 embryo*, the two clusters also carrying
+  Cluster `stage` *embryonic stage 5* from their own expression (bnk, slam, the authors'
+  reading); amnioserosa and terminal to their *somatic cell of* terms; pole cells to
+  *embryonic pole cell* (not *primordial germ cell*, their later fate); haemocytes to
+  *embryonic/larval hemocyte*; trachea precursor to *tracheal precursor cell*. neural1 /
+  neural2 held (`no term`): FBbt has no cell-level generic embryonic neural cell term, and
+  *embryonic neuroblast* would go beyond the authors' typing (neural2's markers are
+  neuronal). 13 clusters mapped (8 terms), 2 held.
 
