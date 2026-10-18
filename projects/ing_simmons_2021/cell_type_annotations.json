@@ -1,0 +1,209 @@
+{
+  "source": {
+    "doi": "10.1038/s41588-021-00799-x",
+    "title": "Independence of chromatin conformation and gene regulation during Drosophila dorsoventral patterning"
+  },
+  "dataset": {
+    "accession": "E-MTAB-9304",
+    "label_source": "the authors' per-cell labels in SCEA E-MTAB-9304 ('inferred cell type - authors labels'), control cells only",
+    "label_level": "author cluster (restricted to the control cells)",
+    "validate_against": "paper, Fig. 2 and Extended Data Fig. 3"
+  },
+  "annotations": [
+    {
+      "label": "amnioserosa",
+      "type": "amnioserosa",
+      "clustering": "embryo",
+      "clustering_name": "Ing-Simmons 2021 embryo clusters (controls)",
+      "source_cluster_id": "amnioserosa",
+      "cell_number": 531,
+      "cells_by_sample": {
+        "control_stage5_Rep1": 199,
+        "control_stage5_Rep2": 332
+      },
+      "all_genotypes_cell_number": 1140
+    },
+    {
+      "label": "cellularisation1",
+      "type": "cellularisation",
+      "clustering": "embryo",
+      "clustering_name": "Ing-Simmons 2021 embryo clusters (controls)",
+      "source_cluster_id": "cellularisation1",
+      "cell_number": 933,
+      "cells_by_sample": {
+        "control_stage5_Rep1": 849,
+        "control_stage5_Rep2": 84
+      },
+      "all_genotypes_cell_number": 1894
+    },
+    {
+      "label": "cellularisation2",
+      "type": "cellularisation",
+      "clustering": "embryo",
+      "clustering_name": "Ing-Simmons 2021 embryo clusters (controls)",
+      "source_cluster_id": "cellularisation2",
+      "cell_number": 565,
+      "cells_by_sample": {
+        "control_stage5_Rep1": 476,
+        "control_stage5_Rep2": 89
+      },
+      "all_genotypes_cell_number": 1518
+    },
+    {
+      "label": "ectoderm1",
+      "type": "ectoderm",
+      "clustering": "embryo",
+      "clustering_name": "Ing-Simmons 2021 embryo clusters (controls)",
+      "source_cluster_id": "ectoderm1",
+      "cell_number": 1180,
+      "cells_by_sample": {
+        "control_stage5_Rep1": 644,
+        "control_stage5_Rep2": 536
+      },
+      "all_genotypes_cell_number": 3009
+    },
+    {
+      "label": "ectoderm2",
+      "type": "ectoderm",
+      "clustering": "embryo",
+      "clustering_name": "Ing-Simmons 2021 embryo clusters (controls)",
+      "source_cluster_id": "ectoderm2",
+      "cell_number": 775,
+      "cells_by_sample": {
+        "control_stage5_Rep1": 429,
+        "control_stage5_Rep2": 346
+      },
+      "all_genotypes_cell_number": 2027
+    },
+    {
+      "label": "ectoderm3",
+      "type": "ectoderm",
+      "clustering": "embryo",
+      "clustering_name": "Ing-Simmons 2021 embryo clusters (controls)",
+      "source_cluster_id": "ectoderm3",
+      "cell_number": 690,
+      "cells_by_sample": {
+        "control_stage5_Rep1": 492,
+        "control_stage5_Rep2": 198
+      },
+      "all_genotypes_cell_number": 1546
+    },
+    {
+      "label": "haemocytes1",
+      "type": "haemocyte",
+      "clustering": "embryo",
+      "clustering_name": "Ing-Simmons 2021 embryo clusters (controls)",
+      "source_cluster_id": "haemocytes1",
+      "cell_number": 220,
+      "cells_by_sample": {
+        "control_stage5_Rep1": 128,
+        "control_stage5_Rep2": 92
+      },
+      "all_genotypes_cell_number": 336
+    },
+    {
+      "label": "haemocytes2",
+      "type": "haemocyte",
+      "clustering": "embryo",
+      "clustering_name": "Ing-Simmons 2021 embryo clusters (controls)",
+      "source_cluster_id": "haemocytes2",
+      "cell_number": 112,
+      "cells_by_sample": {
+        "control_stage5_Rep1": 59,
+        "control_stage5_Rep2": 53
+      },
+      "all_genotypes_cell_number": 139
+    },
+    {
+      "label": "mesoderm1",
+      "type": "mesoderm",
+      "clustering": "embryo",
+      "clustering_name": "Ing-Simmons 2021 embryo clusters (controls)",
+      "source_cluster_id": "mesoderm1",
+      "cell_number": 903,
+      "cells_by_sample": {
+        "control_stage5_Rep1": 457,
+        "control_stage5_Rep2": 446
+      },
+      "all_genotypes_cell_number": 1433
+    },
+    {
+      "label": "mesoderm2",
+      "type": "mesoderm",
+      "clustering": "embryo",
+      "clustering_name": "Ing-Simmons 2021 embryo clusters (controls)",
+      "source_cluster_id": "mesoderm2",
+      "cell_number": 682,
+      "cells_by_sample": {
+        "control_stage5_Rep1": 340,
+        "control_stage5_Rep2": 342
+      },
+      "all_genotypes_cell_number": 1252
+    },
+    {
+      "label": "neural1",
+      "type": "neural",
+      "clustering": "embryo",
+      "clustering_name": "Ing-Simmons 2021 embryo clusters (controls)",
+      "source_cluster_id": "neural1",
+      "cell_number": 387,
+      "cells_by_sample": {
+        "control_stage5_Rep1": 205,
+        "control_stage5_Rep2": 182
+      },
+      "all_genotypes_cell_number": 921
+    },
+    {
+      "label": "neural2",
+      "type": "neural",
+      "clustering": "embryo",
+      "clustering_name": "Ing-Simmons 2021 embryo clusters (controls)",
+      "source_cluster_id": "neural2",
+      "cell_number": 308,
+      "cells_by_sample": {
+        "control_stage5_Rep1": 220,
+        "control_stage5_Rep2": 88
+      },
+      "all_genotypes_cell_number": 477
+    },
+    {
+      "label": "pole cells",
+      "type": "pole cell",
+      "clustering": "embryo",
+      "clustering_name": "Ing-Simmons 2021 embryo clusters (controls)",
+      "source_cluster_id": "pole cells",
+      "cell_number": 146,
+      "cells_by_sample": {
+        "control_stage5_Rep1": 102,
+        "control_stage5_Rep2": 44
+      },
+      "all_genotypes_cell_number": 333
+    },
+    {
+      "label": "terminal",
+      "type": "terminal",
+      "clustering": "embryo",
+      "clustering_name": "Ing-Simmons 2021 embryo clusters (controls)",
+      "source_cluster_id": "terminal",
+      "cell_number": 235,
+      "cells_by_sample": {
+        "control_stage5_Rep1": 148,
+        "control_stage5_Rep2": 87
+      },
+      "all_genotypes_cell_number": 648
+    },
+    {
+      "label": "trachea precursor",
+      "type": "trachea precursor",
+      "clustering": "embryo",
+      "clustering_name": "Ing-Simmons 2021 embryo clusters (controls)",
+      "source_cluster_id": "trachea precursor",
+      "cell_number": 72,
+      "cells_by_sample": {
+        "control_stage5_Rep1": 30,
+        "control_stage5_Rep2": 42
+      },
+      "all_genotypes_cell_number": 113
+    }
+  ]
+}

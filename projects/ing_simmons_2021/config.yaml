@@ -64,3 +64,12 @@ sample_build:
     'w[*]; P{EGFP-PCNA}attP2': [FBal0366828]
   clusterings:
     - { id: embryo, name: "Ing-Simmons 2021 embryo clusters (controls)", sample_age: "2.5 to 3.5 hours" }
+
+# Clusters (projects/ing_simmons_2021/build_clusters.py, from SCEA's per-cell author labels):
+# one entry per author cluster (15), restricted to the control cells; type is the cell
+# identity without the cluster number. No cluster is left untyped by the authors.
+annotations:
+  review_columns: [clustering, source_cluster_id, type, all_genotypes_cell_number]
+
+unidentified:
+  rule: none

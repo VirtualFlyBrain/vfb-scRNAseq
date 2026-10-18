@@ -1581,4 +1581,9 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-18.
   "yw; eGFP-PCNA" line (SDRF "w[*]; P{EGFP-PCNA}attP2"), FlyBase *PCNA[EGFP]*
   (FBal0366828; no FlyBase stock or insertion), linked by `genotype_includes`; replicate 2
   is w1118 (wild type). FlyBase curated no genetic entities for this paper. One Clustering.
+- **Clusters (stage 2):** `projects/ing_simmons_2021/build_clusters.py`: the authors' 15
+  clusters from SCEA's per-cell labels, each restricted to its control cells (7,739 of
+  16,786; every cluster has control cells), labelled by the authors' cluster name
+  ("mesoderm1", "pole cells", ...), typed by the cell identity without the number; the
+  all-genotype size kept as `all_genotypes_cell_number`. None left untyped by the authors.
 
