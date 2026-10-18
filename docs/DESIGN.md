@@ -205,7 +205,9 @@ below record how each was applied).
 - **Stage belongs on the Sample.** Samples carry their FBdv stage. A Cluster gets a
   `stage` only when the stage is determined from the cluster's own gene expression
   (e.g. a cluster the authors identify as a particular developmental stage) — not
-  copied from the samples it was built from, which would be redundant.
+  copied from the samples it was built from, which would be redundant. It is recorded as
+  `stage` ({fbdv_id, label}) on the entry in `cell_type_annotations.json`, and
+  `build.py` emits it (RO:0002490).
 
 ## FBbt mapping & new-term requests
 
@@ -1581,4 +1583,34 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-18.
   "yw; eGFP-PCNA" line (SDRF "w[*]; P{EGFP-PCNA}attP2"), FlyBase *PCNA[EGFP]*
   (FBal0366828; no FlyBase stock or insertion), linked by `genotype_includes`; replicate 2
   is w1118 (wild type). FlyBase curated no genetic entities for this paper. One Clustering.
+- **Clusters (stage 2):** `projects/ing_simmons_2021/build_clusters.py`: the authors' 15
+  clusters from SCEA's per-cell labels, each restricted to its control cells (7,739 of
+  16,786; every cluster has control cells), labelled by the authors' cluster name
+  ("mesoderm1", "pole cells", ...), typed by the cell identity without the number; the
+  all-genotype size kept as `all_genotypes_cell_number`. None left untyped by the authors.
+- **FBbt mapping (stage 3, curator 2026-10-18):** per author type
+  (`write_type_mappings.py`, `type_mapping/`), all exact: ectoderm / mesoderm to the
+  germ-layer cell terms (*somatic cell of ectoderm* / *of mesoderm*: the authors' words,
+  and most embryos in the window are gastrulating; the old load used the anlage terms);
+  cellularisation to *somatic cell of stage 5 embryo*, the two clusters also carrying
+  Cluster `stage` *embryonic stage 5* from their own expression (bnk, slam, the authors'
+  reading); amnioserosa and terminal to their *somatic cell of* terms; pole cells to
+  *embryonic pole cell* (not *primordial germ cell*, their later fate); haemocytes to
+  *embryonic/larval hemocyte*; trachea precursor to *tracheal precursor cell*. neural1 /
+  neural2 held (`no term`): FBbt has no cell-level generic embryonic neural cell term, and
+  *embryonic neuroblast* would go beyond the authors' typing (neural2's markers are
+  neuronal). 13 clusters mapped (8 terms), 2 held.
+- **Expression (stage 4).** ArrayExpress has FASTQs only and the authors published no
+  count matrix, so the counts are SCEA's quantification of E-MTAB-9304 (alevin,
+  "aggregated filtered counts": unnormalised UMI estimates, ~9% of values fractional),
+  whose cell ids (`<BioSample>-<barcode>`) are those of the per-cell author labels; all
+  7,739 control cells present. CPM over each cell's own counts; FBgn ids mapped to current
+  genes (16,711 current, 76 secondary with 1 merge; 148 withdrawn and 1 split dropped).
+  16,786 genes; 13 clusters, 47,255 rows (extent > 0.2); the 2 held neural clusters (695
+  cells) left out. Markers agree with the author types (*twi* 0.92 in mesoderm2, *Ance*
+  0.94 in amnioserosa, *fkh* in terminal, *pgc* 0.95 / *nanos* 0.95 in pole cells, *slam*
+  in cellularisation2, *Osi7* in trachea precursor, *Apoltp* / *Tep4* in haemocytes2).
+  Some of the authors' markers are weak here: *PPO1* (~0.03 in the haemocytes; probably
+  SCEA's quantification of the near-identical *PPO1* / *PPO2*) and *Mlc2* (0.13 in control
+  mesoderm1; the authors' markers were computed over all genotypes, integrated).
 

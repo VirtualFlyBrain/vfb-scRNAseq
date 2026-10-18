@@ -78,3 +78,13 @@ def test_cluster_title_is_a_definition(tmp_path):
     iao = URIRef("http://purl.obolibrary.org/obo/IAO_0000115")
     assert list(g.objects(URIRef(VFB + "VFBseq_00000047"), iao)) == [
         Literal("Cells assigned the type 'x' by the authors' classifier.")]
+
+
+def test_cluster_stage_from_its_own_expression(tmp_path):
+    ents = _entities()
+    ents[-1]["stage"] = "FBdv:00005311"
+    out = tmp_path / "s.ttl"
+    emit.emit_ttl(ents, out)
+    g = rdflib.Graph(); g.parse(out, format="turtle")
+    assert (URIRef(VFB + "VFBseq_00000047"), URIRef("http://purl.obolibrary.org/obo/RO_0002490"),
+            URIRef("http://purl.obolibrary.org/obo/FBdv_00005311")) in g
