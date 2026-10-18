@@ -1,0 +1,20 @@
+{
+  "cluster_label": "DA1_fru+",
+  "working_definition": "Olfactory projection neuron type DA1_fru+ of Xie et al. 2021 at 48 h APF or adult (pharate adult / adult).",
+  "searches_performed": [
+    "adult antennal lobe projection neuron DA1_fru+"
+  ],
+  "best_match": {
+    "fbbt_term": "adult antennal lobe projection neuron DA1 lPN",
+    "fbbt_id": "FBbt:00067363",
+    "fbbt_definition": "This is a subtype of the fruitless aDT-e neuron, whose lineage is ALl1 (lPN) according to Ito et al. (2013) and is stated to include DA1 PNs in Cachero et al. (2010), but consists of approximately 29 neurons. Adult uniglomerular antennal lobe projection neuron from the dorsal hemilineage of the lateral neuroblast (ALl1) whose dendrites mainly innervate antennal lobe glomerulus DA1 (Bates et al., 2020). It innervates the mushroom body calyx and a small area at the anterior edge of the lateral horn (Marin et al., 2002). It is a fruitless aDT-e neuron (Cachero et al., 2010; Ito et al., 2013). There are around eight of these per hemisphere, they fasciculate with the medial antennal lobe tract and they are cholinergic (Bates et al., 2020).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The fru+ subset of DA1 lPNs; FBbt has no fru+ / fru- DA1 subtypes. Mature term from the pharate adult stage (curator). Lineage: the authors' per-cell `lineage` for this type in the main analysis: lPN 197, unlabelled 1.",
+  "other_candidates": [],
+  "recommendation": "Map to FBbt:00067363 adult antennal lobe projection neuron DA1 lPN (broad match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

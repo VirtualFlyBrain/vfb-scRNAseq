@@ -1,0 +1,20 @@
+{
+  "cluster_label": "knot_48h_DM6",
+  "working_definition": "Olfactory projection neuron type DM6 of Xie et al. 2021 at 48 h APF or adult (pharate adult / adult).",
+  "searches_performed": [
+    "adult antennal lobe projection neuron DM6"
+  ],
+  "best_match": {
+    "fbbt_term": "adult antennal lobe projection neuron DM6 adPN",
+    "fbbt_id": "FBbt:00067360",
+    "fbbt_definition": "For image, see FBrf0211729. Adult uniglomerular antennal lobe projection neuron from the ad neuroblast lineage with dendrites that mainly innervate antennal lobe glomerulus DM6. This is the 11th cell type to be generated post-embryonically by neuroblast ALad1 (Yu et al., 2010). There are around three of these per hemisphere, they fasciculate with the medial antennal lobe tract and they are cholinergic (Yu et al., 2010; Bates et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "DM6 PNs; lineage adPN. Mature term from the pharate adult stage (curator). Lineage: the authors' per-cell `lineage` for this type in the main analysis: adPN 75, unlabelled 4. kn+ PNs (knot analysis, no lineage column): the paper states they \"include six types of adPNs and two vPNs\" (Figure 2), i.e. D, DM6, VA1v, VM2, VM7, VM5v (adPN) and the two vPNs.",
+  "other_candidates": [],
+  "recommendation": "Map to FBbt:00067360 adult antennal lobe projection neuron DM6 adPN (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

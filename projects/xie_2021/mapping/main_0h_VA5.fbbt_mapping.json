@@ -1,0 +1,21 @@
+{
+  "cluster_label": "main_0h_VA5",
+  "working_definition": "Olfactory projection neuron type VA5 (Xie et al. 2021) at 0 h or 24 h APF.",
+  "searches_performed": [
+    "immature antennal lobe projection neuron VA5",
+    "immature antennal lobe projection neuron"
+  ],
+  "other_candidates": [],
+  "new_term_needed": true,
+  "verification_needed": false,
+  "best_match": {
+    "fbbt_term": "antennal lobe projection neuron of ALl1 lineage",
+    "fbbt_id": "FBbt:00067362",
+    "fbbt_definition": "Renamed from lPN as this now implies dorsal hemilineage (Bates et al., 2020). Antennal lobe projection neuron that derives from the lateral antennal lobe neuroblast.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "Up to the pupal stage the immature term is used (curator), but FBbt has no immature (or remodelling) antennal lobe projection neuron terms yet (requested, curator 2026-10-17); meanwhile the stage-neutral class for the authors' lineage (lPN), to be refined when the new terms exist. Lineage: the authors' per-cell `lineage` for this type in the main analysis: lPN 95, unlabelled 3.",
+  "recommendation": "Map to FBbt:00067362 antennal lobe projection neuron of ALl1 lineage (broad match) until FBbt has the immature / remodelling term for VA5."
+}

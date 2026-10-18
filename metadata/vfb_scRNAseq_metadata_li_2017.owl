@@ -211,9 +211,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00067349 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00067349"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00067357 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00067357"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00067362 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00067362"/>
     
 
 
@@ -1429,6 +1441,300 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002527"/>
         <rdfs:label>VA1d or DC3 cluster (Li 2017 Mz19 PN types (adult)) (Li 2017)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002622 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002622">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00067349"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002567"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4869</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8568</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002527"/>
+        <rdfs:label>VM2 cluster 2 (Li 2017 GH146 PN clusters (24 h APF)) (Li 2017)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002623 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002623">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00067362"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002567"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4486</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7536</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002527"/>
+        <rdfs:label>DA1 cluster 5 (Li 2017 GH146 PN clusters (24 h APF)) (Li 2017)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002624 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002624">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00067349"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002567"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4779</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8182</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002527"/>
+        <rdfs:label>VA1d cluster 7 (Li 2017 GH146 PN clusters (24 h APF)) (Li 2017)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002625 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002625">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00067362"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002567"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">108</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4835</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10022</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002527"/>
+        <rdfs:label>DA1 cluster 8 (Li 2017 GH146 PN clusters (24 h APF)) (Li 2017)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002626 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002626">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00067349"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002567"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5026</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8273</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002527"/>
+        <rdfs:label>DC3 cluster 12 (Li 2017 GH146 PN clusters (24 h APF)) (Li 2017)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002627 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002627">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00067362"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002567"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5051</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7157</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002527"/>
+        <rdfs:label>DL3 cluster 20 (Li 2017 GH146 PN clusters (24 h APF)) (Li 2017)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002628 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002628">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00067362"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002567"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4677</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7034</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002527"/>
+        <rdfs:label>DL3 cluster 21 (Li 2017 GH146 PN clusters (24 h APF)) (Li 2017)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002629 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002629">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00067349"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002567"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4765</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8424</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002527"/>
+        <rdfs:label>DC2 cluster 22 (Li 2017 GH146 PN clusters (24 h APF)) (Li 2017)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002630 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002630">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00067362"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002568"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">74</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4901</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9975</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002527"/>
+        <rdfs:label>DA1 cluster (Li 2017 Mz19 PN types (24 h APF)) (Li 2017)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002631 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002631">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00067349"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002568"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5021</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8662</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002527"/>
+        <rdfs:label>DC3 cluster (Li 2017 Mz19 PN types (24 h APF)) (Li 2017)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002632 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002632">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00067349"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002568"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4959</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7272</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002527"/>
+        <rdfs:label>VA1d cluster (Li 2017 Mz19 PN types (24 h APF)) (Li 2017)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002633 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002633">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00067362"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002569"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4658</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8696</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002527"/>
+        <rdfs:label>DA1 cluster (Li 2017 Mz19 PN types (36 h APF)) (Li 2017)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002634 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002634">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00067349"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002569"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4698</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6856</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002527"/>
+        <rdfs:label>DC3 cluster (Li 2017 Mz19 PN types (36 h APF)) (Li 2017)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00002635 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002635">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00067349"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002569"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4531</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7212</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002527"/>
+        <rdfs:label>VA1d cluster (Li 2017 Mz19 PN types (36 h APF)) (Li 2017)</rdfs:label>
     </NamedIndividual>
 </rdf:RDF>
 

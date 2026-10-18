@@ -1397,11 +1397,13 @@ CC-BY-4.0. Curator decisions 2026-10-17.
   needed). Mature terms from the pharate adult stage (Mz19 48 h, 72 h, adult): DA1 ->
   *adult antennal lobe projection neuron DA1 lPN*, VA1d -> *... VA1d adPN*, DC3 -> *... DC3
   adPN* (exact), adult "VA1d or DC3" -> *adult uniglomerular antennal lobe projection neuron
-  adPN* (broad; their common parent): 8 clusters loaded. Up to the pupal stage (GH146 24 h,
-  Mz19 24 h / 36 h) FBbt has no immature projection neuron terms, and *immature neuron* is
-  too broad, so those 14 typed clusters are held (`no term`, new term needed) until FBbt
-  adds them; the request is to be made together with Xie 2021's types (curator
-  2026-10-17).
+  adPN* (broad; their common parent). Up to the pupal stage (GH146 24 h, Mz19 24 h / 36 h)
+  FBbt has no immature (or remodelling) projection neuron terms yet: requested in FBbt
+  [#2220](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2220)
+  with Xie 2021's (curator 2026-10-17); meanwhile those 14 typed clusters map to the
+  stage-neutral class of their lineage, broad: *antennal lobe projection neuron adPN*
+  (VA1d, DC3, DC2, VM2), *antennal lobe projection neuron of ALl1 lineage* (FBbt's former
+  lPN: DA1, DL3). 22 clusters loaded; tracked in `checks/pending_fbbt_requests.json`.
 - **Expression (stage 4):** GEO's raw HTSeq read counts (`GSE100058_htseq.tab.gz`; its
   "symbol" column holds r6.10 FBgn ids), exported for the 1,379 cells of the loaded
   analyses by `projects/li_2017/export_counts.py` (spike-ins and HTSeq summary rows
@@ -1448,4 +1450,17 @@ FACS-sorted olfactory projection neurons (PNs), one GEO sample per cell (11,509)
   DA1_fru-, VM7 or VM5v #1 / #2, DC3 and VA1d, vPN, vPN_DA1, APL). Held: cells given no type
   (`unassigned`) and the numbered `MARS_<n>` types (`untyped`): 24. The main 24 h cells all
   belong to Li 2017's five GH146 sorts (`cells_by_sample`).
+- **FBbt mapping (stage 3):** `projects/xie_2021/write_type_mappings.py`. Mature terms from
+  the pharate adult stage (48 h, adult): the adult PN type term of the authors' lineage
+  (`lineage` column: adPN / lPN / vPN), e.g. *adult antennal lobe projection neuron DL1
+  adPN*, *... VC2 lPN*, *... DA1 vPN* (knot `vPN_DA1`), unresolved vPNs *adult antennal lobe
+  projection neuron vPN*, APL *adult mushroom body anterior paired lateral cell*; DA1_fru+ /
+  DA1_fru- to *DA1 lPN* (broad: no fru subtypes); ambiguous groups to the common parent
+  (curator): "VM7 or VM5v #1 / #2" and "DC3 and VA1d" -> *adult uniglomerular antennal lobe
+  projection neuron adPN*. Up to the pupal stage (0 h, 24 h) FBbt has no immature or
+  remodelling PN terms yet (requested: FBbt #2220, with Li 2017's; the curator will add
+  remodelling forms for the embryonic-born PNs too); meanwhile the stage-neutral class of the
+  lineage, broad (curator 2026-10-17); the APL clusters there, with no stage-neutral term,
+  are held. 92 clusters loaded (19 FBbt terms), 26 held (2 APL `no term`, 19 `untyped`
+  MARS clusters, 5 `unassigned`).
 
