@@ -1,0 +1,330 @@
+{
+  "project": "xie_2021",
+  "created_at": "2026-10-17",
+  "updated_at": "2026-10-18",
+  "summary": "Xie et al. 2021 (eLife), Smart-seq2 of FACS-sorted Drosophila olfactory projection neurons at 0 h, 24 h and 48 h APF and adult (GEO GSE161228; not previously in VFB). 6 Samples (sorts: 0 h VT033006; 48 h and adult GH146; kn+ at 24 h, 48 h, adult) with 27 plate Assays, linked to their driver alleles (GENO has_genotype); the main analysis's 24 h cells are Li et al. 2017's, whose 5 Samples are reused. Seven Clusterings (the main pan-PN analysis and the knot analysis, per stage) with one Cluster per stage x the authors' PN type: 118, 92 loaded (adult PN type terms of the authors' lineage from 48 h APF; at 0 h / 24 h the stage-neutral lineage class until FBbt #2220 adds pupal terms), 26 held. Summary expression as CPM from the authors' h5ads (17,452 genes x 4,097 cells).",
+  "decisions": [
+    {
+      "date": "2026-10-08",
+      "by": "curator",
+      "decision": "Map to cell-level FBbt terms only (a tissue or organ author term maps to its cell-level equivalent, else the type is held)."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Clusters with no FBbt term are held: listed in mapping.tsv with a hold_reason but not loaded (no VFBseq id, entity or expression rows). Their cells still count towards the Dataset's gene counts."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Summary expression is computed as CPM for every dataset."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Narrow a generic type by the dissected tissue only where the tissue makes the tissue-specific FBbt term exact; hold clusters that could only be typed as cell or neuron (or stage-specific versions); load glia under a glial-cell term."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "curator",
+      "decision": "Load the main pan-PN analysis and the knot analysis (an additional experiment), one Clustering per stage of each; not the 24 h decoding analysis (validation)."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "curator",
+      "decision": "The main analysis's 24 h cells are Li et al. 2017's: curate Li 2017 first and reuse its Samples (entity reuse rule)."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "curator",
+      "decision": "Immature terms up to the pupal stage (0 h, 24 h APF), mature from the pharate adult stage; ambiguous author types to their common parent."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "curator",
+      "decision": "FBbt term request for the pupal (immature, or remodelling for embryonic-born PNs) PN types and a pupal APL cell term, with Li 2017's (FlyBase/drosophila-anatomy-developmental-ontology#2220); meanwhile the 0 h / 24 h types map to the stage-neutral PN class of their lineage (antennal lobe projection neuron adPN / of ALl1 lineage / vPN), broad; the APL clusters there held."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "curator",
+      "decision": "Stages by the Bainbridge & Bownes FBdv definitions (0 h APF prepupal stage P1); tissue brain to the pupal stage, adult brain from the pharate adult stage; sex not given (unset); samples from crosses link the alleles FlyBase curated for the paper, the kn+ sorts the full intersection (kn-GAL4, GH146-Flp, UAS-FRT-STOP-FRT-mCD8GFP)."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "pipeline",
+      "decision": "Samples by build_samples.py from the GEO family SOFT file (one GSM per cell; the live endpoint fails for this series): one Sample per sort (title group), one Assay per plate."
+    },
+    {
+      "date": "2026-10-17",
+      "by": "pipeline",
+      "decision": "Clusters by build_clusters.py from the h5ads: one per analysis x stage x PN_type; held: unassigned cells (nan) and numbered MARS_<n> types (untyped). Type mappings by write_type_mappings.py: the adult term of the authors' lineage (per-cell lineage counts and, for kn+ PNs, the paper's statement recorded in the justifications)."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "pipeline",
+      "decision": "Expression from the h5ads' log2(CPM + 1), converted back to CPM, cells assigned by the memberships (h5ad route with expression.h5ad_files); gene symbols mapped to current FlyBase genes."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "All 92 mapped clusters reviewed by the curator (mapping.tsv `reviewed`)."
+    }
+  ],
+  "checks": [
+    {
+      "date": "2026-10-18",
+      "check": "verify_mappings.py: every FBbt term in the mappings looked up in OLS (FBbt 2026-10-01).",
+      "result": "19 terms current, not obsolete, labels match."
+    },
+    {
+      "date": "2026-10-18",
+      "check": "FBbt, FBdv and FBcv terms on the Samples, Assays and Dataset looked up in OLS.",
+      "result": "All current (prepupal stage P1, pupal stage P6, pharate adult stage P8, adult stage, brain, adult brain, single-cell RNA-Seq, Smart-seq2)."
+    },
+    {
+      "date": "2026-10-17",
+      "check": "The main analysis's 24 h cells against Li 2017's library table.",
+      "result": "All 946 are Li 2017 GH146 cells, in its five 24 h sorts (experiments 2, 3, 5, 6, 12)."
+    },
+    {
+      "date": "2026-10-18",
+      "check": "h5ad values: log2(CPM + 1) converted back to CPM.",
+      "result": "Every cell sums to 1e6 CPM (main and knot files)."
+    },
+    {
+      "date": "2026-10-18",
+      "check": "Marker spot checks in the expression output.",
+      "result": "acj6 in adPNs (DL1, VM2, VA1v), vvl in lPNs (DA1, VC2), Lim1 in vPNs; trol in VM2; fru in DA1_fru+ not DA1_fru- (48 h)."
+    }
+  ],
+  "people": [
+    {
+      "id": "ORCID:0000-0002-1373-1705",
+      "label": "Clare Pilgrim",
+      "role": "curator",
+      "username": "Clare72"
+    }
+  ],
+  "pipeline": {
+    "id": "vfb-scrnaseq",
+    "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
+    "version": "0.0.0",
+    "commit": "0e02237",
+    "uncommitted_changes": true
+  },
+  "ontologies": [
+    {
+      "id": "FBbt",
+      "label": "Drosophila gross anatomy ontology",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBdv",
+      "label": "Drosophila developmental ontology",
+      "version": "2026-09-30",
+      "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-09-30/fbdv.owl",
+      "accessed_via": "OLS4 API; local fbdv.obo in .cache (stage definitions)",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBcv",
+      "label": "FlyBase controlled vocabulary",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-10-01/fbcv.owl",
+      "accessed_via": "OLS4 API",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "accessed_at": "2026-10-16"
+    }
+  ],
+  "data_sources": [
+    {
+      "id": "10.7554/eLife.63450",
+      "type": "publication",
+      "label": "Temporal evolution of single-cell transcriptomes of Drosophila olfactory projection neurons",
+      "xrefs": [
+        "PMID:33427646",
+        "PMCID:PMC7870145",
+        "FlyBase:FBrf0247975"
+      ],
+      "description": "Xie et al. 2021, eLife. Full text read for the scope, samples, genotypes and the lineage of kn+ PNs.",
+      "url": "https://doi.org/10.7554/eLife.63450",
+      "files": [
+        {
+          "path": "supp/PMC7870145.jats.xml",
+          "description": "JATS full text, NCBI efetch (db=pmc).",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=PMC7870145",
+          "sha256": "55f56799b4a4054a20181a975bdbead9a26ce620e293e84ff8671b8e42c3dfa2",
+          "bytes": 275638,
+          "accessed_at": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "GSE161228",
+      "type": "dataset",
+      "label": "Temporal evolution of single-cell transcriptomes of Drosophila olfactory projection neurons",
+      "xrefs": [
+        "BioProject:PRJNA675921",
+        "SRA:SRP292191"
+      ],
+      "description": "GEO series: one Smart-seq2 cell per sample (11,509). The family SOFT file and the authors' annotated h5ads (decompressed; the 24 h decoding h5ad not used).",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161228",
+      "accessed_at": "2026-10-18",
+      "files": [
+        {
+          "path": "xie/GSE161228_family.soft.gz",
+          "description": "Family SOFT (sample metadata).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE161nnn/GSE161228/soft/GSE161228_family.soft.gz",
+          "sha256": "12cfd535c471d6602ab941935440c5037fff9a9d16712727403731174993da8f",
+          "bytes": 446822,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "xie/all.h5ad",
+          "description": "Main pan-PN analysis (PN_type, stage, lineage per cell; log2(CPM+1)).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE161nnn/GSE161228/suppl/GSE161228_adata_all_panPN_annotated_final.h5ad.gz",
+          "sha256": "27ef34d1412513273e6f88f519d5520ec0f4622e81a91eefed746c85c6f58725",
+          "bytes": 255058942,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "xie/knot_24h_48h_adult.h5ad",
+          "description": "Knot analysis (kn+ PNs: PN_type, stage).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE161nnn/GSE161228/suppl/GSE161228_knot_24h_48h_adult.h5ad.gz",
+          "sha256": "df45193dd9f687266a6815ae0b9eaf0b88da1a6420b5e02d4533ac938c18b2c7",
+          "bytes": 33225176,
+          "accessed_at": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "li_2017",
+      "type": "project",
+      "label": "Li 2017 (this repo)",
+      "description": "Source of the main analysis's 24 h GH146 Samples (reused by VFBseq id); also tracked on FBbt #2220.",
+      "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq/tree/main/projects/li_2017",
+      "accessed_at": "2026-10-18"
+    }
+  ],
+  "software": [
+    {
+      "id": "claude-code",
+      "type": "tool",
+      "label": "Claude Code",
+      "version": "2.1.300",
+      "description": "Agentic CLI that ran the session (orchestrator), stages 1-5."
+    },
+    {
+      "id": "ols4",
+      "type": "service",
+      "label": "OLS4 (Ontology Lookup Service)",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "accessed_at": "2026-10-16",
+      "description": "FBbt / FBdv / FBcv lookup during mapping (OLS MCP) and term verification."
+    },
+    {
+      "id": "vfb-pdb",
+      "type": "service",
+      "label": "VFB production (neo4j)",
+      "url": "https://pdb.virtualflybrain.org",
+      "accessed_at": "2026-10-16",
+      "description": "Publication FBrf0247975 resolved by PMID (vfb_scrnaseq.pub)."
+    },
+    {
+      "id": "flybase-chado",
+      "type": "service",
+      "label": "FlyBase Chado",
+      "version": "FB2026_03 (data last modified 2026-08-29)",
+      "url": "https://chado.flybase.org",
+      "accessed_at": "2026-10-16",
+      "description": "The paper's curated genetic entities (scripts/flybase_pub_entities.py) and gene symbols mapped to current FlyBase genes (update_gene_ids.py)."
+    },
+    {
+      "id": "ncbi-geo",
+      "type": "service",
+      "label": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/",
+      "accessed_at": "2026-10-16",
+      "description": "Series and Sample SOFT metadata read by ingest.fetch_series (build_samples_from_geo.py)."
+    },
+    {
+      "id": "python",
+      "type": "language",
+      "label": "Python",
+      "version": "3.14.3",
+      "description": "Pipeline environment (uv-managed)."
+    },
+    {
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
+      "version": "2.5.1"
+    },
+    {
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
+      "version": "3.0.5"
+    },
+    {
+      "id": "pyyaml",
+      "type": "library",
+      "label": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
+      "version": "1.11.1",
+      "description": "linkml-validate and linkml-convert (flat RDF)."
+    },
+    {
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
+      "version": "1.11.1"
+    },
+    {
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
+      "version": "0.5.0",
+      "description": "Metadata OWL."
+    },
+    {
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
+      "version": "1.9.11",
+      "description": "OFN to OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "id": "psql",
+      "type": "tool",
+      "label": "psql",
+      "version": "14.15",
+      "description": "FlyBase Chado queries."
+    }
+  ],
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "role": "orchestrator",
+      "label": "Claude Opus 5.5",
+      "provider": "Anthropic",
+      "description": "Main Claude Code session: scoping (paper, GEO, the h5ads, the Li 2017 dependency), sample and cluster builds, the type mappings and lineage evidence, the FBbt request draft, expression (h5ad route generalised) and builds. No subagents."
+    }
+  ]
+}
