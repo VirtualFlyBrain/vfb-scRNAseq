@@ -81,7 +81,8 @@ MAPPED = {   # author type: (FBbt id, match, note)
     "procrystal cell": ("FBbt:00001689", E, ""),
     "crystal cell": ("FBbt:00001690", E, ""),
     "germ cell": ("FBbt:00000092", E, "Pole cells become primordial germ cells as they migrate to the gonad."),
-    "Germline": ("FBbt:00000092", E, "Germline cells in the neuroectoderm re-clustering."),
+    "Germline": ("FBbt:00004860", E, "Germline cells carried into the neuroectoderm re-clustering (6-18 h pooled): "
+                                     "the authors' own term (curator)."),
     "glia": ("FBbt:00052369", E, "Glia at 10-14 h, before their mature larval form."),
     "Oenocytes": ("FBbt:00001694", E, ""),
     "Sensory progenitors": ("FBbt:00001137", E, ""),
@@ -89,7 +90,7 @@ MAPPED = {   # author type: (FBbt id, match, note)
     "Mature neurons": ("FBbt:00047097", E, "Neurons born in the embryo are primary neurons."),
     "Multidendritic sensory": ("FBbt:00048285", E, ""),
     "External sensory": ("FBbt:00052615", E, ""),
-    "Chordotonal sensory": ("FBbt:00005222", E, ""),
+    "Chordotonal sensory": ("FBbt:00051425", E, "Late-embryonic chordotonal neurons: the larval term (curator)."),
     "brain": ("FBbt:00059273", B, "Brain clusters at 10-18 h, mostly neurons: larval CNS neuron, which covers the late "
                                   "embryo (curator: a tissue type to its main cell type)."),
     "ventral nerve cord": ("FBbt:00059273", B, "VNC clusters at 12-16 h, mostly neurons: larval CNS neuron, which covers "
