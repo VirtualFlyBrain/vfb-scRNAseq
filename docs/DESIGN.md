@@ -1738,4 +1738,9 @@ decisions 2026-10-19.
   are kept as published. *first
   instar larval stage*; *larval brain* (the VNC was removed); sex mixed (unset); Canton S,
   no stock named (not linked). One Clustering.
+- **Clusters (stage 2):** `projects/avalos_2019/build_clusters.py`: the authors' 29 clusters
+  (4,407 cells) from their Cell Browser `meta.tsv`, labelled by the cluster name, typed
+  without its number ("Glia cells" spelled "Glial cells", as in the paper); a cell's
+  library from its aggregated-barcode suffix (-3 Normal A, -1 / -2 Normal B.1 / B.2, -4
+  Normal C, matched with the per-library barcode files). None left untyped by the authors.
 
