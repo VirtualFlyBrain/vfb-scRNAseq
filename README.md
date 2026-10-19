@@ -101,7 +101,8 @@ from FlyBase; that authority is being dropped.)
   35926038; [GSE190147](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE190147)):
   sci-RNA-seq3 of nuclei from 11 overlapping collection windows; the authors' clusters
   in 2-hour windows of modelled nuclear age (9 windows, 268 clusters) and their neuronal
-  re-clusterings. Replaces the old FlyBase load (FBlc0007797). In progress.
+  re-clusterings: 299 clusters, 223 loaded (embryonic cell terms and somatic cell terms of
+  primordia). Replaces the old FlyBase load (FBlc0007797).
 - `projects/hormann_2020/` — Hörmann et al. 2020, T4/T5 neurons through pupal
   development (PMID 32238425; [GSE147987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987)):
   FACS-sorted T4/T5 neurons at five pupal stages, one Clustering per stage of the
@@ -210,7 +211,7 @@ from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#genera
 
 ## Status
 
-All twelve projects are curated and built. Every mapped cluster has been reviewed (bar
+All thirteen projects are curated and built. Every mapped cluster has been reviewed (bar
 three Kurmangaliyev early clusters awaiting FBbt #2216, below), and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the

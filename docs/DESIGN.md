@@ -1703,4 +1703,8 @@ Curator decisions 2026-10-18.
   cluster-specific genes fit the author types (somatic muscle *Mhc*, *up*, *sls*; tracheal
   system Osiris genes; plasmatocytes *Ppn*, *Col4a1*, *Pxn*; germ cells *CycB*, *me31B*;
   yolk nuclei *apolpp*; glia *wrapper*; cholinergic *cac*, *Sh*, *para*).
+- **Build (stage 5):** `build_rdf.py`: 1 Dataset, 11 Samples, 41 Assays, 11 Clusterings,
+  223 Clusters (129 with a Cluster stage from their window); publication FBrf0254247 from
+  VFB production; `verify_mappings.py` OK (52 FBbt terms); the FBbt / FBdv / FBcv terms on
+  Samples, Assays, Clusters and the Dataset current. Recorded in `provenance.json`.
 
