@@ -1772,3 +1772,26 @@ decisions 2026-10-19.
   from VFB production; `verify_mappings.py` OK (13 FBbt terms); the FBbt / FBdv / FBcv
   terms on Samples, Assays and the Dataset current. Recorded in `provenance.json`.
 
+## Baker 2021 (adult brain, acute cocaine study)
+
+Genome Res 2021, PMID 34035044, FBrf0251482; GEO GSE152495 (`baker_2021`). 10x scRNA-seq of
+adult brains (20 per sample) of wild-type Canton S (B) flies after acute consumption of
+sucrose or sucrose with cocaine, 2 sexes x 2 replicates. Replaces the old FlyBase/SCEA load
+FBlc0005515 (sucrose samples only, types merged per sex from SCEA labels) with fresh VFBseq
+ids; licence CC-BY-4.0. Curator decisions 2026-10-19, as for Mokashi 2021 (same lab and
+pipeline).
+
+- **Data.** The authors integrated all 8 samples (Seurat v3 SCTransform, 10 PCs) and
+  clustered them together at resolution 0.8: 36 clusters, named in SCEA's "authors labels"
+  (e.g. "CNS glial cell 13"; cluster 16 under two spellings). Their script is published
+  (vshanka23/The-Drosophila-Brain-on-Cocaine-at-Single-Cell-Resolution); GEO has each
+  sample's Cell Ranger filtered matrix. The script's filters keep 86,223 of 88,991 cells
+  (the paper 86,224); SCEA labels 74,511 (86%).
+- **Scope (curator):** the sucrose (control) cells only (4 Samples): the authors' 36
+  clusters, made with all 8 samples, restricted to their sucrose cells; per-cell clusters
+  by re-running the authors' script (`rerun/`), checked against SCEA's labels.
+- **Samples (stage 1):** `build_samples_from_geo.py`, the title pattern matching the
+  "<Sex> Sucrose Rep <n>" GSMs only: 4 Samples / 4 Assays (one 10x library each); *adult
+  stage* (methods: aged 3-5 d; GEO gives no age); *adult brain*; sex from GEO; Canton S (B),
+  no stock named (not linked). One Clustering.
+

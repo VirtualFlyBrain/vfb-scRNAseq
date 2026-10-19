@@ -1,0 +1,48 @@
+# Baker et al. 2021 (Genome Res; FBrf0251482): 10x scRNA-seq of adult brains (20 per sample)
+# of wild-type Canton S (B) flies after acute consumption of sucrose or sucrose with cocaine,
+# 2 sexes x 2 replicates (GEO GSE152495). Previously loaded into VFB via the old
+# FlyBase/SCEA mechanism as FBlc0005515 (scRNAseq_2021_Baker_CTRL: sucrose samples only,
+# types merged per sex from SCEA labels); rebuilt here with fresh VFBseq ids. Curator
+# decisions 2026-10-19, as for Mokashi 2021 (same lab and pipeline): the authors' 36
+# clusters (all 8 samples integrated, resolution 0.8), restricted to the sucrose (control)
+# cells; per-cell clusters recovered by re-running the authors' published script (rerun/),
+# since SCEA's labels cover only 86% of the authors' cells.
+project: baker_2021
+
+source:
+  doi: 10.1101/gr.268037.120
+  pmid: "34035044"
+  pmcid: PMC8494231
+  fbrf: FBrf0251482
+  title: "The Drosophila brain on cocaine at single-cell resolution"
+  journal: Genome Research
+  year: 2021
+  first_author: Baker
+
+organism: Drosophila melanogaster
+
+dataset:
+  site: GEO
+  accession: GSE152495
+  bioproject: PRJNA639538
+  sra_study: SRP267371
+  licence: CC-BY-4.0
+  assay_type: FBcv:0009000      # single-cell RNA-seq
+
+sample_build:
+  # Sucrose (control) only (curator 2026-10-19): titles "<Sex> Sucrose Rep <n>"; the
+  # "<Sex> Cocaine Rep <n>" GSMs do not match and are out of scope. Each GSM is one 10x
+  # library of 20 pooled brains, so Sample:Assay 1:1. Sex from GEO.
+  title_pattern: 'regex:(?P<set>Female|Male) (?P<timepoint>Sucrose) Rep (?P<biorep>\d)'
+  assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
+  assay_label: { unit: 10x library }
+  # GEO gives no age; methods: progeny "aged for 3-5 d before experimentation". No FBdv
+  # term covers days 3-5 only, so adult stage.
+  age: 3-5 days post-eclosion
+  age_map:
+    "3-5 days post-eclosion":
+      stage:  { fbdv_id: FBdv:00005369, label: adult stage }
+      tissue: { fbbt_id: FBbt:00003624, label: adult brain }
+  # Canton S (B) wild type (methods; Norga et al. 2003); no source stock named, so not linked.
+  clusterings:
+    - { id: sucrose, name: "Baker 2021 adult brain clusters (sucrose controls)", sample_age: "3-5 days post-eclosion" }

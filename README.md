@@ -109,6 +109,11 @@ from FlyBase; that authority is being dropped.)
   assignments from their UCSC Cell Browser dataset: 28 loaded (larval neuron, neuroblast,
   Kenyon cell, glia and other larval cell terms), 1 held. Replaces the old FlyBase/SCEA
   load (FBlc0005362).
+- `projects/baker_2021/` — Baker et al. 2021, adult brain, acute cocaine study (PMID
+  34035044; [GSE152495](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152495)):
+  10x, sucrose (control) samples only; the authors' 36 clusters, per-cell assignments
+  recovered by re-running their published script. Replaces the old FlyBase/SCEA load
+  (FBlc0005515). In progress.
 - `projects/hormann_2020/` — Hörmann et al. 2020, T4/T5 neurons through pupal
   development (PMID 32238425; [GSE147987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987)):
   FACS-sorted T4/T5 neurons at five pupal stages, one Clustering per stage of the
@@ -163,6 +168,7 @@ projects/xie_2021/                       # olfactory PNs through development (GE
 projects/ing_simmons_2021/               # gastrulating embryos (ArrayExpress; SCEA author labels; controls only)
 projects/calderon_2022/                  # embryonic development (GEO; authors' portal Seurat objects via R)
 projects/avalos_2019/                    # first-instar larval brain (GEO; authors' UCSC Cell Browser labels; fed only)
+projects/baker_2021/                     # adult brain (GEO; clusters by re-running the authors' Seurat 3 script; sucrose controls only)
 metadata/                                # VFB-loadable metadata OWL, one per project
 expression/                              # VFB-loadable expression OWL (.owl.gz), one per project
 id_registry/                             # minted-id registry (JSON)
