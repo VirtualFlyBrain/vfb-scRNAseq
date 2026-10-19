@@ -1,0 +1,173 @@
+{
+  "dataset": {
+    "vfbseq_id": "VFBseq_00003188",
+    "accession": "GSE152495",
+    "site": "GEO"
+  },
+  "samples": [
+    {
+      "vfbseq_id": "VFBseq_00003189",
+      "sample_id": "Female_Sucrose_1",
+      "set": "Female",
+      "timepoint": "Sucrose",
+      "biorep": "1",
+      "tissue_raw": "Brains",
+      "age_raw": "3-5 days post-eclosion",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00005369",
+        "label": "adult stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00003624",
+        "label": "adult brain"
+      },
+      "associated_dataset": "VFBseq_00003188",
+      "assay_vfbseq_ids": [
+        "VFBseq_00003190"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00003191",
+      "sample_id": "Female_Sucrose_2",
+      "set": "Female",
+      "timepoint": "Sucrose",
+      "biorep": "2",
+      "tissue_raw": "Brains",
+      "age_raw": "3-5 days post-eclosion",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00005369",
+        "label": "adult stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00003624",
+        "label": "adult brain"
+      },
+      "associated_dataset": "VFBseq_00003188",
+      "assay_vfbseq_ids": [
+        "VFBseq_00003192"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00003193",
+      "sample_id": "Male_Sucrose_1",
+      "set": "Male",
+      "timepoint": "Sucrose",
+      "biorep": "1",
+      "tissue_raw": "Brains",
+      "age_raw": "3-5 days post-eclosion",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00005369",
+        "label": "adult stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00003624",
+        "label": "adult brain"
+      },
+      "associated_dataset": "VFBseq_00003188",
+      "assay_vfbseq_ids": [
+        "VFBseq_00003194"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00003195",
+      "sample_id": "Male_Sucrose_2",
+      "set": "Male",
+      "timepoint": "Sucrose",
+      "biorep": "2",
+      "tissue_raw": "Brains",
+      "age_raw": "3-5 days post-eclosion",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00005369",
+        "label": "adult stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00003624",
+        "label": "adult brain"
+      },
+      "associated_dataset": "VFBseq_00003188",
+      "assay_vfbseq_ids": [
+        "VFBseq_00003196"
+      ],
+      "n_assays": 1
+    }
+  ],
+  "assays": [
+    {
+      "vfbseq_id": "VFBseq_00003190",
+      "library_id": "Female Sucrose Rep 1",
+      "accession": "GSM4616550",
+      "sra": "SRX8549641",
+      "biosample": "SAMN15238621",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00003189",
+      "associated_dataset": "VFBseq_00003188"
+    },
+    {
+      "vfbseq_id": "VFBseq_00003192",
+      "library_id": "Female Sucrose Rep 2",
+      "accession": "GSM4616551",
+      "sra": "SRX8549642",
+      "biosample": "SAMN15238620",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00003191",
+      "associated_dataset": "VFBseq_00003188"
+    },
+    {
+      "vfbseq_id": "VFBseq_00003194",
+      "library_id": "Male Sucrose Rep 1",
+      "accession": "GSM4616552",
+      "sra": "SRX8549643",
+      "biosample": "SAMN15238619",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00003193",
+      "associated_dataset": "VFBseq_00003188"
+    },
+    {
+      "vfbseq_id": "VFBseq_00003196",
+      "library_id": "Male Sucrose Rep 2",
+      "accession": "GSM4616553",
+      "sra": "SRX8549644",
+      "biosample": "SAMN15238618",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00003195",
+      "associated_dataset": "VFBseq_00003188"
+    }
+  ],
+  "clusterings": [
+    {
+      "vfbseq_id": "VFBseq_00003197",
+      "subset": "sucrose",
+      "associated_dataset": "VFBseq_00003188",
+      "name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "samples": [
+        "VFBseq_00003189",
+        "VFBseq_00003191",
+        "VFBseq_00003193",
+        "VFBseq_00003195"
+      ]
+    }
+  ]
+}
