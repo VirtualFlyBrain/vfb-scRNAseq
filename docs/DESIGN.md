@@ -1682,8 +1682,9 @@ Curator decisions 2026-10-18.
   (broad); Malpighian tubule to *embryonic specialized Malpighian tubule cell*, the 16-18 h
   cluster *embryonic/larval specialized Malpighian tubule cell*; yolk nuclei to *yolk
   nucleus* (a cell component, accepted: the data are nuclei); late-embryonic
-  neurotransmitter classes to the larval class terms; muscle (unspecified) to *muscle
+  neurotransmitter and chordotonal neurons to the larval terms; "Germline" (neuronal
+  re-clustering) to *germline cell*, the authors' term; muscle (unspecified) to *muscle
   cell* (broad). Held (`no term`): "anlage in statu nascendi", "cellular blastoderm / pole
   cell", "Head epid. /muscle", "Undiff.", "Chordotonal glia", "Ventral midline", "spiracle
-  (tracheal system)". 221 clusters mapped (50 terms), 78 held (65 untyped, 13 no term).
+  (tracheal system)". 221 clusters mapped (51 terms), 78 held (65 untyped, 13 no term).
 
