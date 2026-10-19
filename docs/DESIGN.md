@@ -1673,7 +1673,9 @@ Curator decisions 2026-10-18.
   *larval glial cell* cover the late embryo); primordium and anlage annotations to the
   *somatic cell of …* terms of those structures (e.g. *somatic cell of trunk mesoderm*,
   *of embryonic/larval midgut primordium*, *of presumptive embryonic salivary gland*).
-  Curator calls: brain / ventral nerve cord to *larval CNS neuron*, brain / VNC primordium
+  Curator calls: brain to *larval CNS neuron* at 14-18 h and *immature primary neuron* at
+  10-14 h (cluster-level override), ventral nerve cord to *larval CNS neuron*, "Immature
+  neurons" to *immature primary neuron*, spiracle to *larval tracheocyte* (broad); brain / VNC primordium
   and "Neural progenitors" to *embryonic neuroblast* (broad); peripheral nervous system to
   *larval PNS neuron*, PNS / sensory nervous system primordia to *peripheral sensory
   precursor cell*, sensory nervous system to *embryonic/larval sensory neuron* (broad);

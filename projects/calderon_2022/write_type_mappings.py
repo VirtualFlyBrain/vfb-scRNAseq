@@ -17,11 +17,12 @@ annotations to the somatic cell terms of those structures. Curator decisions:
   cell of ectoderm (broad);
 - Malpighian tubule: embryonic specialized Malpighian tubule cell; the 16-18 h cluster
   embryonic/larval (override_cluster_mappings.py, after expand_type_mappings.py);
+- brain: larval CNS neuron; the 10-14 h clusters immature primary neuron (override);
+  "Immature neurons": immature primary neuron; spiracle: larval tracheocyte (broad);
 - yolk nuclei: yolk nucleus (a cell component, accepted: the data are nuclei);
 - late-embryonic neurotransmitter classes: the larval class terms;
 - held (no term): "anlage in statu nascendi", "cellular blastoderm / pole cell", "Head
-  epid. /muscle", "Undiff.", "Chordotonal glia", "Ventral midline", "spiracle (tracheal
-  system)".
+  epid. /muscle", "Undiff.", "Chordotonal glia", "Ventral midline".
 
 Terms and definitions are read from OLS.
 
@@ -86,13 +87,14 @@ MAPPED = {   # author type: (FBbt id, match, note)
     "glia": ("FBbt:00052369", E, "Glia at 10-14 h, before their mature larval form."),
     "Oenocytes": ("FBbt:00001694", E, ""),
     "Sensory progenitors": ("FBbt:00001137", E, ""),
-    "Immature neurons": ("FBbt:00051424", E, ""),
+    "Immature neurons": ("FBbt:00052663", E, "Immature neurons of the embryo are immature primary neurons (curator)."),
     "Mature neurons": ("FBbt:00047097", E, "Neurons born in the embryo are primary neurons."),
     "Multidendritic sensory": ("FBbt:00048285", E, ""),
     "External sensory": ("FBbt:00052615", E, ""),
     "Chordotonal sensory": ("FBbt:00051425", E, "Late-embryonic chordotonal neurons: the larval term (curator)."),
-    "brain": ("FBbt:00059273", B, "Brain clusters at 10-18 h, mostly neurons: larval CNS neuron, which covers the late "
-                                  "embryo (curator: a tissue type to its main cell type)."),
+    "brain": ("FBbt:00059273", B, "Brain clusters at 14-18 h, mostly neurons: larval CNS neuron, which covers the late "
+                                  "embryo (curator: a tissue type to its main cell type; the 10-14 h clusters immature "
+                                  "primary neuron)."),
     "ventral nerve cord": ("FBbt:00059273", B, "VNC clusters at 12-16 h, mostly neurons: larval CNS neuron, which covers "
                                                "the late embryo (curator: a tissue type to its main cell type)."),
     "brain primordium": (NB, B, "The brain primordium at 6-10 h: its neuroblasts (curator)."),
@@ -107,6 +109,8 @@ MAPPED = {   # author type: (FBbt id, match, note)
                                               "(curator: embryonic; the 16-18 h cluster embryonic/larval)."),
     "yolk nuclei": ("FBbt:00000057", E, "FBbt's yolk nucleus is a cell component, not a cell; accepted as the data are "
                                         "nuclei (curator)."),
+    "spiracle (tracheal system)": ("FBbt:00005039", B, "Spiracle cells of the tracheal system at 12-16 h: larval "
+                                                       "tracheocyte (curator; FBbt has no spiracle cell term)."),
     "Cholinergic": ("FBbt:00058215", E, "Late-embryonic neurons: the larval class term (curator)."),
     "Glutamatergic": ("FBbt:00058218", E, "Late-embryonic neurons: the larval class term (curator)."),
     "Monoaminergic": ("FBbt:00058211", E, "Late-embryonic neurons: the larval class term (curator)."),
@@ -120,7 +124,6 @@ HELD = {
     "Chordotonal glia": "FBbt has no chordotonal glial cell term; the chordotonal cap and scolopale cells are support "
                         "cells, not glia.",
     "Ventral midline": "Midline neurons and glia pooled over 6-18 h; no adequate common cell term.",
-    "spiracle (tracheal system)": "FBbt has no spiracle cell term (curator: hold).",
 }
 
 

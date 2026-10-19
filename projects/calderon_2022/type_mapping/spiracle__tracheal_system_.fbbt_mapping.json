@@ -7,7 +7,14 @@
   "other_candidates": [],
   "new_term_needed": false,
   "verification_needed": false,
-  "best_match": null,
-  "justification": "FBbt has no spiracle cell term (curator: hold). Held (curator 2026-10-18).",
-  "recommendation": "Hold: no adequate FBbt term."
+  "best_match": {
+    "fbbt_term": "larval tracheocyte",
+    "fbbt_id": "FBbt:00005039",
+    "fbbt_definition": "Any tracheocyte of the larva.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' annotation 'spiracle (tracheal system)'. Spiracle cells of the tracheal system at 12-16 h: larval tracheocyte (curator; FBbt has no spiracle cell term).",
+  "recommendation": "Map to FBbt:00005039 larval tracheocyte (broad match)."
 }
