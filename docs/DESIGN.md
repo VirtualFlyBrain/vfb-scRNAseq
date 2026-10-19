@@ -1730,7 +1730,12 @@ decisions 2026-10-19.
 - **Scope (curator):** fed only: the paper's 29-cluster atlas. The starved samples and
   the combined analysis left out; the sub-clusterings have no per-cell labels.
 - **Samples (stage 1):** `build_samples_from_geo.py`, the title pattern matching the
-  "Normal condition" GSMs only: 4 Samples / 4 Assays (one 10x library per GSM); *first
+  "Normal condition" GSMs only: 3 Samples / 4 Assays (one 10x library per GSM; Supplementary
+  file 1: Normal A, Normal B with two libraries B.1 / B.2, Normal C, so B.1 and B.2 are one
+  Sample, `sample_groups`, a new GEO-builder option). B.1 and B.2 share 577 cell barcodes
+  in the authors' atlas (far above chance; 315 in the same cluster), so they appear to be
+  two libraries of the same captured cells, counted twice by the authors; their clusters
+  are kept as published. *first
   instar larval stage*; *larval brain* (the VNC was removed); sex mixed (unset); Canton S,
   no stock named (not linked). One Clustering.
 

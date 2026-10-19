@@ -32,7 +32,11 @@ dataset:
 sample_build:
   # Fed only (curator 2026-10-19): titles "First instar larval brain cells, Normal condition
   # (scRNAseq) <n> - sample <m>"; the Starvation condition GSMs do not match and are out of
-  # scope. Each GSM one 10x library from its own dissection, so Sample:Assay 1:1.
+  # scope. Each GSM is one 10x library. Supplementary file 1: the fed experiments are
+  # Normal A (GSM3964166), Normal B (two libraries, B.1 GSM3964167 and B.2 GSM3964168) and
+  # Normal C (GSM4132287), so 3 Samples, B with 2 Assays (sample_groups). B.1 and B.2 share
+  # 577 cell barcodes in the authors' atlas (far above chance), so they appear to be two
+  # libraries of the same captured cells; the authors' clusters are kept as published.
   title_pattern: 'regex:First instar larval brain cells, (?P<set>Normal) condition \(scRNAseq\) (?P<biorep>\d) - (?P<timepoint>sample) \d'
   assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
   assay_label: { unit: 10x library }
@@ -43,6 +47,7 @@ sample_build:
       stage:  { fbdv_id: FBdv:00005337, label: first instar larval stage }
       tissue: { fbbt_id: FBbt:00001920, label: larval brain }    # the VNC was removed
   sex: mixed                     # larvae, not sexed
+  sample_groups: { Normal_sample_3: Normal_sample_2 }
   # Canton S wild type (GEO "Wild type CS"; methods); no source stock named, so not linked.
   clusterings:
     - { id: fed, name: "Brunet Avalos 2019 larval brain clusters (fed)", sample_age: "First instar larval" }
