@@ -1,0 +1,1124 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:RO="http://purl.obolibrary.org/obo/RO_"
+     xmlns:dc="http://purl.org/dc/terms/"
+     xmlns:BAO="http://www.bioassayontology.org/bao#BAO_"
+     xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
+     xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
+     xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vfb="http://virtualflybrain.org/reports/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:FBbt="http://purl.obolibrary.org/obo/FBbt_"
+     xmlns:FBcv="http://purl.obolibrary.org/obo/FBcv_"
+     xmlns:FBdv="http://purl.obolibrary.org/obo/FBdv_"
+     xmlns:GENO="http://purl.obolibrary.org/obo/GENO_"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:VFBseq="http://virtualflybrain.org/reports/VFBseq_"
+     xmlns:linkml="https://w3id.org/linkml/"
+     xmlns:FlyBase="http://flybase.org/reports/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:neo_custom="http://n2o.neo/custom/"
+     xmlns:neo_property="http://n2o.neo/property/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://n2o.neo/custom/accession -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/custom/accession"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_count -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/custom/cell_count"/>
+    
+
+
+    <!-- http://n2o.neo/custom/filtered_gene_count -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/custom/filtered_gene_count"/>
+    
+
+
+    <!-- http://n2o.neo/custom/total_gene_count -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/custom/total_gene_count"/>
+    
+
+
+    <!-- http://n2o.neo/property/nodeLabel -->
+
+    <AnnotationProperty rdf:about="http://n2o.neo/property/nodeLabel"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/licence -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/licence"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/references"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002352 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002352"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002473"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002490 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002490"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000212 -->
+
+    <ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000212"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001251 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001251"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001684 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001684"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001920 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001920"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007115 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00049826 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049826"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00051424 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051424"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058211 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058211"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058212 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058212"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058215 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058215"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058217 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058217"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058218 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058218"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058231 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058231"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058236 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058236"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111738 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111738"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003023 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003024 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003025 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009000 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009002 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009003 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009008 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00005337 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005337"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://flybase.org/reports/FBrf0244302 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBrf0244302">
+        <neo_property:nodeLabel>pub</neo_property:nodeLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003150 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003150">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009000"/>
+            </Restriction>
+        </rdf:type>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6772</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12633</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single cell transcriptome atlas of the Drosophila larval brain</obo:IAO_0000115>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dc:references rdf:resource="http://flybase.org/reports/FBrf0244302"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <rdfs:label>scRNAseq data from Brunet Avalos (2019)</rdfs:label>
+    </NamedIndividual>
+    <Axiom>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
+        <neo_custom:accession>GSE134722</neo_custom:accession>
+    </Axiom>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003151 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003151">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001920"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005337"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003152"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>brain, First instar larval, Normal rep 1 (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003152 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003152">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003151"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <oboInOwl:hasDbXref>GSM3964166</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SAMN12343184</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SRX6491477</oboInOwl:hasDbXref>
+        <rdfs:label>brain, First instar larval, Normal rep 1, 10x library 1 (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003153 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003153">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001920"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005337"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003154"/>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003156"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>brain, First instar larval, Normal rep 2 (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003154 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003154">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003153"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <oboInOwl:hasDbXref>GSM3964167</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SAMN12343183</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SRX6491478</oboInOwl:hasDbXref>
+        <rdfs:label>brain, First instar larval, Normal rep 2, 10x library 2 (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003156 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003156">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003153"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <oboInOwl:hasDbXref>GSM3964168</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SAMN12343182</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SRX6491479</oboInOwl:hasDbXref>
+        <rdfs:label>brain, First instar larval, Normal rep 2, 10x library 3 (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003157 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003157">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001920"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005337"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003158"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>brain, First instar larval, Normal rep 4 (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003158 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003158">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003157"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <oboInOwl:hasDbXref>GSM4132287</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SAMN13068322</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SRX7028154</oboInOwl:hasDbXref>
+        <rdfs:label>brain, First instar larval, Normal rep 4, 10x library 6 (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003159 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003159">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003151"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003153"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003157"/>
+        <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Brunet Avalos 2019 larval brain clusters (fed)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003160 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003160">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058215"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">398</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4097</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10113</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Cholinergic neurons cluster Cholinergic neurons 1 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003161 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003161">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058215"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">392</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1316</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8905</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Cholinergic neurons cluster Cholinergic neurons 2 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003162 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003162">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058215"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">382</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3647</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9875</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Cholinergic neurons cluster Cholinergic neurons 3 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003163 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003163">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051424"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">369</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1426</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8758</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Undifferentiated neurons cluster Undifferentiated neurons 1 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003164 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003164">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058215"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">295</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1083</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7748</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Cholinergic neurons cluster Cholinergic neurons 4 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003165 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003165">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058217"/>
+            </Restriction>
+        </rdf:type>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058218"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">262</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3488</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9427</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Glutamatergic/GABAergic neurons cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003166 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003166">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058215"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">259</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3545</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9694</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Cholinergic neurons cluster Cholinergic neurons 5 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003167 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003167">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007115"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">233</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">919</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7857</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Neural progenitor cells cluster Neural progenitor cells 1 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003168 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003168">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051424"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">227</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1691</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8666</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Undifferentiated neurons cluster Undifferentiated neurons 2 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003169 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003169">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007115"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">175</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3427</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9005</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Neural progenitor cells cluster Neural progenitor cells 2 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003170 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003170">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058217"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">149</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4093</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8996</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>GABAergic neurons cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003171 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003171">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001251"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">138</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2575</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8828</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Glial cells cluster Glia cells 1 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003172 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003172">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049826"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">118</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2577</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8157</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Mushroom Body cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003173 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003173">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058231"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">111</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1790</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9313</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Muscle cells cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003174 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003174">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007115"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">93</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4662</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8809</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Neural progenitor cells cluster Neural progenitor cells 3 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003175 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003175">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058212"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4352</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8898</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Peptidergic neurons cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003176 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003176">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058218"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3072</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8181</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Glutamatergic neurons cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003177 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003177">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007115"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">86</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5234</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9020</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Neural progenitor cells cluster Neural progenitor cells 4 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003178 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003178">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058211"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3309</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8029</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Monoaminergic neurons cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003179 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003179">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111738"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4562</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8653</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Optic lobe epithelium cluster Optic lobe epithelium 1 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003180 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003180">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007115"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3460</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8037</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Neural progenitor cells cluster Neural progenitor cells 5 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003181 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003181">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007115"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">62</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1818</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6850</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Neural progenitor cells cluster Neural progenitor cells 6 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003182 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003182">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058215"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3677</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7925</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Cholinergic neurons cluster Cholinergic neurons 6 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003183 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003183">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111738"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1255</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6469</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Optic lobe epithelium cluster Optic lobe epithelium 2 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003184 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003184">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001251"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1732</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7107</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Glial cells cluster Glia cells 2 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003185 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003185">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058236"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1008</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5357</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Prothoracic gland cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003186 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003186">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001251"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3134</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7562</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Glial cells cluster Glia cells 3 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003187 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003187">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001684"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003159"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3397</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7473</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003150"/>
+        <rdfs:label>Hemocytes cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)</rdfs:label>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+
