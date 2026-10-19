@@ -39,7 +39,7 @@ sample_build:
   # libraries of the same captured cells; the authors' clusters are kept as published.
   title_pattern: 'regex:First instar larval brain cells, (?P<set>Normal) condition \(scRNAseq\) (?P<biorep>\d) - (?P<timepoint>sample) \d'
   assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
-  assay_label: { unit: 10x library }
+  assay_label: { unit: 10x library, pattern: 'sample (\d+)$' }   # GEO's sample number (B.1 and B.2: 2, 3)
   # Two GSMs record the stage as "development stage" (sic), so the age is also given here.
   age: First instar larval
   age_map:
@@ -63,3 +63,18 @@ unidentified:
 
 # FBbt mappings are made once per author type (type_mapping/, write_type_mappings.py) and
 # copied per cluster by scripts/expand_type_mappings.py.
+
+# Summary expression (scripts/build_expression.py) from GEO's aggregated fed matrix
+# (GSE134722_FirstInstarLarvalBrainNormalCondition_finalaggr_10X: Cell Ranger aggr of the
+# four fed libraries, 4,708 cells, raw UMI counts, FBgn ids; cells <barcode>-<n> as in the
+# authors' Cell Browser), cells assigned by the memberships (build_clusters.py).
+expression:
+  matrix_file: avalos/geo/matrix.mtx.gz
+  features_file: avalos/geo/features.tsv.gz
+  barcodes_file: avalos/geo/barcodes.tsv.gz
+  membership_file: avalos/memberships.tsv.gz
+  normalisation: CPM
+  extent_cutoff: 0.2
+  hide_in_terminfo: "true"
+  gzip_tsv: true
+  gene_id_map: gene_id_map.tsv
