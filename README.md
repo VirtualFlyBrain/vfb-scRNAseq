@@ -103,6 +103,11 @@ from FlyBase; that authority is being dropped.)
   in 2-hour windows of modelled nuclear age (9 windows, 268 clusters) and their neuronal
   re-clusterings: 299 clusters, 223 loaded (embryonic cell terms and somatic cell terms of
   primordia). Replaces the old FlyBase load (FBlc0007797).
+- `projects/avalos_2019/` — Brunet Avalos et al. 2019, first-instar larval brain (PMID
+  31746739; [GSE134722](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE134722)):
+  10x, fed larvae only (starved samples left out); the authors' 29 clusters, per-cell
+  assignments from their UCSC Cell Browser dataset. Replaces the old FlyBase/SCEA load
+  (FBlc0005362). In progress.
 - `projects/hormann_2020/` — Hörmann et al. 2020, T4/T5 neurons through pupal
   development (PMID 32238425; [GSE147987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987)):
   FACS-sorted T4/T5 neurons at five pupal stages, one Clustering per stage of the
@@ -156,6 +161,7 @@ projects/li_2017/                        # olfactory PNs (GEO per-cell samples; 
 projects/xie_2021/                       # olfactory PNs through development (GEO h5ads; reuses Li 2017 samples)
 projects/ing_simmons_2021/               # gastrulating embryos (ArrayExpress; SCEA author labels; controls only)
 projects/calderon_2022/                  # embryonic development (GEO; authors' portal Seurat objects via R)
+projects/avalos_2019/                    # first-instar larval brain (GEO; authors' UCSC Cell Browser labels; fed only)
 metadata/                                # VFB-loadable metadata OWL, one per project
 expression/                              # VFB-loadable expression OWL (.owl.gz), one per project
 id_registry/                             # minted-id registry (JSON)
