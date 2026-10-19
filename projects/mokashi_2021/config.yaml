@@ -1,0 +1,47 @@
+# Mokashi et al. 2021 (Front Psychiatry; FBrf0249767): 10x scRNA-seq of adult brains (20
+# per sample) of wild-type Canton S (B) flies reared on reference or ethanol-supplemented
+# (10% v/v) medium, 2 sexes x 2 replicates (GEO GSE172231). Previously loaded into VFB via
+# the old FlyBase/SCEA mechanism as FBlc0005420 (scRNAseq_2021_Mokashi_CTRL: reference
+# samples only, types merged per sex from SCEA labels); rebuilt here with fresh VFBseq ids.
+# Curator decisions 2026-10-19: the authors' 43 clusters (all 8 samples integrated,
+# resolution 0.9), restricted to the reference-medium cells; per-cell clusters recovered
+# by re-running the authors' published script (rerun/), since SCEA's labels cover only 77%
+# of the authors' cells.
+project: mokashi_2021
+
+source:
+  doi: 10.3389/fpsyt.2021.699033
+  pmid: "34366927"
+  pmcid: PMC8341641
+  fbrf: FBrf0249767
+  title: "Developmental Alcohol Exposure in Drosophila: Effects on Adult Phenotypes and Gene Expression in the Brain"
+  journal: Frontiers in Psychiatry
+  year: 2021
+  first_author: Mokashi
+
+organism: Drosophila melanogaster
+
+dataset:
+  site: GEO
+  accession: GSE172231
+  bioproject: PRJNA722499
+  sra_study: SRP315117
+  platform: GPL25244            # Illumina NovaSeq 6000
+  licence: CC-BY-4.0
+  assay_type: FBcv:0009000      # single-cell RNA-seq
+
+sample_build:
+  # Reference medium only (curator 2026-10-19): titles "<Sex> Reference Rep<n>"; the
+  # "<Sex> Ethanol Rep<n>" GSMs do not match and are out of scope. Each GSM is one 10x
+  # library of 20 pooled brains, so Sample:Assay 1:1. Sex from GEO.
+  title_pattern: 'regex:(?P<set>Female|Male) (?P<timepoint>Reference) Rep(?P<biorep>\d)'
+  assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
+  assay_label: { unit: 10x library }
+  # GEO age "3-5 days post-eclosion": no FBdv term covers days 3-5 only, so adult stage.
+  age_map:
+    "3-5 days post-eclosion":
+      stage:  { fbdv_id: FBdv:00005369, label: adult stage }
+      tissue: { fbbt_id: FBbt:00003624, label: adult brain }
+  # Canton S (B) wild type (methods); no source stock named, so not linked.
+  clusterings:
+    - { id: reference, name: "Mokashi 2021 adult brain clusters (reference medium)", sample_age: "3-5 days post-eclosion" }
