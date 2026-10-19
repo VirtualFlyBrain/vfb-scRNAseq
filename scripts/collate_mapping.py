@@ -67,9 +67,9 @@ def ensure_reports_readme(proj: Path) -> Path | None:
 
 
 def _reviewed(value: str) -> str:
-    """A curator marks a row reviewed with y/yes; record it as the date (ISO) of the
-    collate run that picks it up. Dates and anything else are kept as written."""
-    return datetime.date.today().isoformat() if value.strip().lower() in ("y", "yes") else value
+    """A curator marks a row reviewed with y / yes / x / 1 / true; record it as the date
+    (ISO) of the collate run that picks it up. Dates and anything else are kept as written."""
+    return datetime.date.today().isoformat() if value.strip().lower() in ("y", "yes", "x", "1", "true") else value
 
 
 def _manual_edit_summary(m: dict) -> str:
