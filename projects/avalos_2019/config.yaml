@@ -1,0 +1,48 @@
+# Brunet Avalos et al. 2019 (eLife; FBrf0244302): 10x scRNA-seq of first-instar larval
+# brains (ventral nerve cord removed), wild-type Canton S, fed and 4 h starved (GEO
+# GSE134722). Previously loaded into VFB via the old FlyBase/SCEA mechanism as FBlc0005362
+# (scRNAseq_2019_Avalos: fed only, 10 types merged from SCEA labels); rebuilt here with
+# fresh VFBseq ids. Curator decisions 2026-10-19: the paper's atlas, the fed cells only
+# (the starved samples and the combined fed + starved analysis left out): the authors'
+# 29 clusters, with per-cell assignments from the authors' UCSC Cell Browser dataset
+# (dros-brain/normal; all 29 cluster sizes equal Figure 1-source data 1).
+project: avalos_2019
+
+source:
+  doi: 10.7554/eLife.50354
+  pmid: "31746739"
+  pmcid: PMC6894929
+  fbrf: FBrf0244302
+  title: "Single cell transcriptome atlas of the Drosophila larval brain"
+  journal: eLife
+  year: 2019
+  first_author: Brunet Avalos
+
+organism: Drosophila melanogaster
+
+dataset:
+  site: GEO
+  accession: GSE134722
+  bioproject: PRJNA556226
+  sra_study: SRP216038
+  platform: GPL25244            # Illumina NovaSeq 6000
+  licence: CC-BY-4.0
+  assay_type: FBcv:0009000      # single-cell RNA-seq
+
+sample_build:
+  # Fed only (curator 2026-10-19): titles "First instar larval brain cells, Normal condition
+  # (scRNAseq) <n> - sample <m>"; the Starvation condition GSMs do not match and are out of
+  # scope. Each GSM one 10x library from its own dissection, so Sample:Assay 1:1.
+  title_pattern: 'regex:First instar larval brain cells, (?P<set>Normal) condition \(scRNAseq\) (?P<biorep>\d) - (?P<timepoint>sample) \d'
+  assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
+  assay_label: { unit: 10x library }
+  # Two GSMs record the stage as "development stage" (sic), so the age is also given here.
+  age: First instar larval
+  age_map:
+    "First instar larval":
+      stage:  { fbdv_id: FBdv:00005337, label: first instar larval stage }
+      tissue: { fbbt_id: FBbt:00001920, label: larval brain }    # the VNC was removed
+  sex: mixed                     # larvae, not sexed
+  # Canton S wild type (GEO "Wild type CS"; methods); no source stock named, so not linked.
+  clusterings:
+    - { id: fed, name: "Brunet Avalos 2019 larval brain clusters (fed)", sample_age: "First instar larval" }

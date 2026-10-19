@@ -1,0 +1,173 @@
+{
+  "dataset": {
+    "vfbseq_id": "VFBseq_00003150",
+    "accession": "GSE134722",
+    "site": "GEO"
+  },
+  "samples": [
+    {
+      "vfbseq_id": "VFBseq_00003151",
+      "sample_id": "Normal_sample_1",
+      "set": "Normal",
+      "timepoint": "sample",
+      "biorep": "1",
+      "tissue_raw": "brain",
+      "age_raw": "First instar larval",
+      "stock": null,
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00005337",
+        "label": "first instar larval stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00001920",
+        "label": "larval brain"
+      },
+      "associated_dataset": "VFBseq_00003150",
+      "assay_vfbseq_ids": [
+        "VFBseq_00003152"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00003153",
+      "sample_id": "Normal_sample_2",
+      "set": "Normal",
+      "timepoint": "sample",
+      "biorep": "2",
+      "tissue_raw": "brain",
+      "age_raw": "First instar larval",
+      "stock": null,
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00005337",
+        "label": "first instar larval stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00001920",
+        "label": "larval brain"
+      },
+      "associated_dataset": "VFBseq_00003150",
+      "assay_vfbseq_ids": [
+        "VFBseq_00003154"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00003155",
+      "sample_id": "Normal_sample_3",
+      "set": "Normal",
+      "timepoint": "sample",
+      "biorep": "3",
+      "tissue_raw": "brain",
+      "age_raw": "First instar larval",
+      "stock": null,
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00005337",
+        "label": "first instar larval stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00001920",
+        "label": "larval brain"
+      },
+      "associated_dataset": "VFBseq_00003150",
+      "assay_vfbseq_ids": [
+        "VFBseq_00003156"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00003157",
+      "sample_id": "Normal_sample_4",
+      "set": "Normal",
+      "timepoint": "sample",
+      "biorep": "4",
+      "tissue_raw": "brain",
+      "age_raw": "First instar larval",
+      "stock": null,
+      "sex": null,
+      "stage": {
+        "fbdv_id": "FBdv:00005337",
+        "label": "first instar larval stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00001920",
+        "label": "larval brain"
+      },
+      "associated_dataset": "VFBseq_00003150",
+      "assay_vfbseq_ids": [
+        "VFBseq_00003158"
+      ],
+      "n_assays": 1
+    }
+  ],
+  "assays": [
+    {
+      "vfbseq_id": "VFBseq_00003152",
+      "library_id": "First instar larval brain cells, Normal condition (scRNAseq) 1 - sample 1",
+      "accession": "GSM3964166",
+      "sra": "SRX6491477",
+      "biosample": "SAMN12343184",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00003151",
+      "associated_dataset": "VFBseq_00003150"
+    },
+    {
+      "vfbseq_id": "VFBseq_00003154",
+      "library_id": "First instar larval brain cells, Normal condition (scRNAseq) 2 - sample 2",
+      "accession": "GSM3964167",
+      "sra": "SRX6491478",
+      "biosample": "SAMN12343183",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00003153",
+      "associated_dataset": "VFBseq_00003150"
+    },
+    {
+      "vfbseq_id": "VFBseq_00003156",
+      "library_id": "First instar larval brain cells, Normal condition (scRNAseq) 3 - sample 3",
+      "accession": "GSM3964168",
+      "sra": "SRX6491479",
+      "biosample": "SAMN12343182",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00003155",
+      "associated_dataset": "VFBseq_00003150"
+    },
+    {
+      "vfbseq_id": "VFBseq_00003158",
+      "library_id": "First instar larval brain cells, Normal condition (scRNAseq) 4 - sample 6",
+      "accession": "GSM4132287",
+      "sra": "SRX7028154",
+      "biosample": "SAMN13068322",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00003157",
+      "associated_dataset": "VFBseq_00003150"
+    }
+  ],
+  "clusterings": [
+    {
+      "vfbseq_id": "VFBseq_00003159",
+      "subset": "fed",
+      "associated_dataset": "VFBseq_00003150",
+      "name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "samples": [
+        "VFBseq_00003151",
+        "VFBseq_00003153",
+        "VFBseq_00003155",
+        "VFBseq_00003157"
+      ]
+    }
+  ]
+}
