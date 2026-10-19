@@ -39,7 +39,7 @@ sample_build:
   # libraries of the same captured cells; the authors' clusters are kept as published.
   title_pattern: 'regex:First instar larval brain cells, (?P<set>Normal) condition \(scRNAseq\) (?P<biorep>\d) - (?P<timepoint>sample) \d'
   assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
-  assay_label: { unit: 10x library }
+  assay_label: { unit: 10x library, pattern: 'sample (\d+)$' }   # GEO's sample number (B.1 and B.2: 2, 3)
   # Two GSMs record the stage as "development stage" (sic), so the age is also given here.
   age: First instar larval
   age_map:
