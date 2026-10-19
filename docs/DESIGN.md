@@ -1772,6 +1772,32 @@ decisions 2026-10-19.
   from VFB production; `verify_mappings.py` OK (13 FBbt terms); the FBbt / FBdv / FBcv
   terms on Samples, Assays and the Dataset current. Recorded in `provenance.json`.
 
+## Mokashi 2021 (adult brain, developmental alcohol study)
+
+Front Psychiatry 2021, PMID 34366927, FBrf0249767; GEO GSE172231 (`mokashi_2021`). 10x
+scRNA-seq of adult brains (20 per sample) of wild-type Canton S (B) flies reared on
+reference or ethanol-supplemented (10% v/v) medium, 2 sexes x 2 replicates. Replaces the
+old FlyBase/SCEA load FBlc0005420 (reference samples only, types merged per sex from SCEA
+labels) with fresh VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-19.
+
+- **Data.** The authors integrated all 8 samples (Seurat v3 SCTransform, 10 PCs) and
+  clustered them together at resolution 0.9: 43 clusters, typed from markers (SCEA "authors
+  labels", e.g. "GABAergic neuron 14", "undetermined cluster 19"). Their script is
+  published (vshanka23/The-Drosophila-Brain-after-developmental-ethanol-exposure-at-Single-Cell-Resolution);
+  GEO has each sample's Cell Ranger filtered matrix, its input. The paper's 108,571 cells are
+  Cell Ranger's (the barcodes sum to it); the script's filters (min.cells 5, 300 <
+  nFeature < 2500) keep 104,984. SCEA re-quantified the data and labels only 80,362 of them
+  (77%). Searched without result: GitHub (the script only), Zenodo, Figshare, the UCSC Cell
+  Browser, CELLxGENE.
+- **Scope (curator):** the reference-medium cells only (4 Samples): the authors' 43 clusters,
+  made with all 8 samples, restricted to their reference cells. Per-cell clusters
+  recovered by re-running the authors' script (`rerun/`), checked against SCEA's labels
+  for the cells they share.
+- **Samples (stage 1):** `build_samples_from_geo.py`, the title pattern matching the
+  "<Sex> Reference Rep<n>" GSMs only: 4 Samples / 4 Assays (one 10x library per GSM);
+  *adult stage* (GEO "3-5 days post-eclosion": no FBdv term covers days 3-5 only);
+  *adult brain*; sex from GEO; Canton S (B), no stock named (not linked). One Clustering.
+
 ## Baker 2021 (adult brain, acute cocaine study)
 
 Genome Res 2021, PMID 34035044, FBrf0251482; GEO GSE152495 (`baker_2021`). 10x scRNA-seq of

@@ -1,0 +1,173 @@
+{
+  "dataset": {
+    "vfbseq_id": "VFBseq_00003188",
+    "accession": "GSE172231",
+    "site": "GEO"
+  },
+  "samples": [
+    {
+      "vfbseq_id": "VFBseq_00003189",
+      "sample_id": "Female_Reference_1",
+      "set": "Female",
+      "timepoint": "Reference",
+      "biorep": "1",
+      "tissue_raw": "Brains",
+      "age_raw": "3-5 days post-eclosion",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00005369",
+        "label": "adult stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00003624",
+        "label": "adult brain"
+      },
+      "associated_dataset": "VFBseq_00003188",
+      "assay_vfbseq_ids": [
+        "VFBseq_00003190"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00003191",
+      "sample_id": "Female_Reference_2",
+      "set": "Female",
+      "timepoint": "Reference",
+      "biorep": "2",
+      "tissue_raw": "Brains",
+      "age_raw": "3-5 days post-eclosion",
+      "stock": null,
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00005369",
+        "label": "adult stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00003624",
+        "label": "adult brain"
+      },
+      "associated_dataset": "VFBseq_00003188",
+      "assay_vfbseq_ids": [
+        "VFBseq_00003192"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00003193",
+      "sample_id": "Male_Reference_1",
+      "set": "Male",
+      "timepoint": "Reference",
+      "biorep": "1",
+      "tissue_raw": "Brains",
+      "age_raw": "3-5 days post-eclosion",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00005369",
+        "label": "adult stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00003624",
+        "label": "adult brain"
+      },
+      "associated_dataset": "VFBseq_00003188",
+      "assay_vfbseq_ids": [
+        "VFBseq_00003194"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00003195",
+      "sample_id": "Male_Reference_2",
+      "set": "Male",
+      "timepoint": "Reference",
+      "biorep": "2",
+      "tissue_raw": "Brains",
+      "age_raw": "3-5 days post-eclosion",
+      "stock": null,
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00005369",
+        "label": "adult stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00003624",
+        "label": "adult brain"
+      },
+      "associated_dataset": "VFBseq_00003188",
+      "assay_vfbseq_ids": [
+        "VFBseq_00003196"
+      ],
+      "n_assays": 1
+    }
+  ],
+  "assays": [
+    {
+      "vfbseq_id": "VFBseq_00003190",
+      "library_id": "Female Reference Rep1",
+      "accession": "GSM5244433",
+      "sra": "SRX10616068",
+      "biosample": "SAMN18759657",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00003189",
+      "associated_dataset": "VFBseq_00003188"
+    },
+    {
+      "vfbseq_id": "VFBseq_00003192",
+      "library_id": "Female Reference Rep2",
+      "accession": "GSM5244435",
+      "sra": "SRX10616070",
+      "biosample": "SAMN18759663",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00003191",
+      "associated_dataset": "VFBseq_00003188"
+    },
+    {
+      "vfbseq_id": "VFBseq_00003194",
+      "library_id": "Male Reference Rep1",
+      "accession": "GSM5244437",
+      "sra": "SRX10616072",
+      "biosample": "SAMN18759661",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00003193",
+      "associated_dataset": "VFBseq_00003188"
+    },
+    {
+      "vfbseq_id": "VFBseq_00003196",
+      "library_id": "Male Reference Rep2",
+      "accession": "GSM5244439",
+      "sra": "SRX10616074",
+      "biosample": "SAMN18759659",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00003195",
+      "associated_dataset": "VFBseq_00003188"
+    }
+  ],
+  "clusterings": [
+    {
+      "vfbseq_id": "VFBseq_00003197",
+      "subset": "reference",
+      "associated_dataset": "VFBseq_00003188",
+      "name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "samples": [
+        "VFBseq_00003189",
+        "VFBseq_00003191",
+        "VFBseq_00003193",
+        "VFBseq_00003195"
+      ]
+    }
+  ]
+}
