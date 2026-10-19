@@ -1666,4 +1666,24 @@ Curator decisions 2026-10-18.
   `neuronal[_mature]_<n>`, typed by the authors' annotation without its number, which is
   kept as `author_annotation`; no Cluster stage: they pool 6-18 h). Held (`untyped`): 43
   "ubiquitous", 16 "maternal" and 6 "unknown" window clusters. 64 types to map.
+- **FBbt mapping (stage 3, curator 2026-10-18/19):** per author type
+  (`write_type_mappings.py`, `type_mapping/`), then one cluster-level exception
+  (`override_cluster_mappings.py`, run after `expand_type_mappings.py`). Embryonic,
+  embryonic/larval or, for the late embryo, larval cell terms (FBbt's *larval CNS neuron* /
+  *larval glial cell* cover the late embryo); primordium and anlage annotations to the
+  *somatic cell of …* terms of those structures (e.g. *somatic cell of trunk mesoderm*,
+  *of embryonic/larval midgut primordium*, *of presumptive embryonic salivary gland*).
+  Curator calls: brain / ventral nerve cord to *larval CNS neuron*, brain / VNC primordium
+  and "Neural progenitors" to *embryonic neuroblast* (broad); peripheral nervous system to
+  *larval PNS neuron*, PNS / sensory nervous system primordia to *peripheral sensory
+  precursor cell*, sensory nervous system to *embryonic/larval sensory neuron* (broad);
+  hindgut / anal pad to *somatic cell of embryonic/larval hindgut* (the anal pad is part of
+  the hindgut in FBbt), foregut / hindgut (/ anal pad) to *somatic cell of ectoderm*
+  (broad); Malpighian tubule to *embryonic specialized Malpighian tubule cell*, the 16-18 h
+  cluster *embryonic/larval specialized Malpighian tubule cell*; yolk nuclei to *yolk
+  nucleus* (a cell component, accepted: the data are nuclei); late-embryonic
+  neurotransmitter classes to the larval class terms; muscle (unspecified) to *muscle
+  cell* (broad). Held (`no term`): "anlage in statu nascendi", "cellular blastoderm / pole
+  cell", "Head epid. /muscle", "Undiff.", "Chordotonal glia", "Ventral midline", "spiracle
+  (tracheal system)". 221 clusters mapped (50 terms), 78 held (65 untyped, 13 no term).
 
