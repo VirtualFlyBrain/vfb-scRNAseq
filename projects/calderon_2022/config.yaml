@@ -45,7 +45,7 @@ sample_build:
   # collection window (11), one Assay per experiment x window (the nuclei of that window
   # in that experiment).
   assay_method: { fbcv_id: FBcv:0009056, label: single-cell combinatorial indexing RNA sequencing }
-  assay_label: { unit: sci-RNA-seq3 experiment }
+  assay_label: { unit: sci-RNA-seq3 experiment, pattern: '^exp(\d+)$' }
   # Canton S wild type (supplementary methods); no source stock named, so not linked.
   genotype: Canton S
   tissue: { fbbt_id: FBbt:00000052, label: embryo }
@@ -102,3 +102,23 @@ unidentified:
 # FBbt mappings are made once per author type (type_mapping/, write_type_mappings.py),
 # copied per cluster by scripts/expand_type_mappings.py, then cluster-level exceptions
 # applied by override_cluster_mappings.py.
+
+# Summary expression (scripts/build_expression.py) from the GEO count matrix
+# (GSE190147_scirnaseq_gene_matrix: UMI counts, all 547,805 nuclei; features and barcodes
+# files written from its rows / columns files), cells assigned by the memberships
+# (build_clusters.py; a nucleus in a neuronal re-clustering is also in its window cluster).
+# Genes are named by symbol (some FBti / FBtr ids, dropped or mapped by update_gene_ids.py).
+expression:
+  matrix_file: calderon/GSE190147_scirnaseq_gene_matrix.mtx.gz
+  features_file: calderon/geo/features.tsv.gz
+  barcodes_file: calderon/geo/barcodes.tsv.gz
+  membership_file: calderon/memberships.tsv.gz
+  features_keyed_by: symbol
+  normalisation: CPM
+  extent_cutoff: 0.2
+  hide_in_terminfo: "true"
+  gzip_tsv: true
+  gene_id_map: gene_id_map.tsv
+  # FBgn for a symbol from the source files of other projects (same-era references),
+  # else by symbol in Chado
+  gene_ids_from: [kurmangaliyev_2020, davie_2018, li_2022_fca_10x, lu_2023_afca, ozel_2021]
