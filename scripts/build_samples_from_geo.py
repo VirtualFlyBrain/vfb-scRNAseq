@@ -7,6 +7,9 @@ named-group `regex:`; non-matching GSMs are out of scope) into biological Sample
 and their 10x-library Assays, attaches FBdv stage + FBbt tissue (per the curated timepoint map),
 genotype, and assay method, mints stable VFBseq IDs (idempotent registry), and
 writes projects/<name>/samples.json. GEO/SRA accessions are dbxrefs, never IRIs.
+`sample_build.sample_groups` ({parsed sample id: sample id}) puts GSMs the titles number
+as separate samples into one biological Sample (e.g. two libraries of one cell
+suspension, per the paper).
 
 Usage:
     uv run python scripts/build_samples_from_geo.py --project kurmangaliyev_2020
@@ -98,6 +101,12 @@ def sample_age(gsm, sb: dict) -> str | None:
     return gsm.stage_hint or sb.get("age")
 
 
+def sample_group(parsed: dict, sb: dict) -> str:
+    """The biological Sample a parsed GSM belongs to: its parsed sample id, unless
+    `sample_build.sample_groups` puts it with others."""
+    return (sb.get("sample_groups") or {}).get(parsed["sample_id"], parsed["sample_id"])
+
+
 def sample_stock(parsed: dict, sb: dict) -> list[str] | None:
     """FlyBase stock(s) of a sample: per strain/genotype group (`stock_map`), else the
     stock(s) common to every sample (`sample_build.stock`)."""
@@ -130,6 +139,7 @@ def main() -> None:
         if not p:
             unmatched.append(gsm)
             continue
+        p["sample_id"] = sample_group(p, sb)
         libraries.append((p, gsm))
         by_sample[p["sample_id"]].append((p, gsm))
     if unmatched:

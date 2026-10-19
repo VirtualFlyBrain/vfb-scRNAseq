@@ -227,6 +227,14 @@ def test_geo_title_regex_without_set_group():
     assert (p["set"], p["timepoint"], p["biorep"]) == (None, "Adult", "1d_F_3rd")
 
 
+def test_geo_sample_groups_merge_libraries_of_one_sample():
+    mod = _script("build_samples_from_geo")
+    sb = {"sample_groups": {"Normal_sample_3": "Normal_sample_2"}}
+    assert mod.sample_group({"sample_id": "Normal_sample_3"}, sb) == "Normal_sample_2"
+    assert mod.sample_group({"sample_id": "Normal_sample_1"}, sb) == "Normal_sample_1"
+    assert mod.sample_group({"sample_id": "x"}, {}) == "x"
+
+
 def test_tissue_labels_shorten_sample_labels(tmp_path, monkeypatch):
     """`sample_build.tissue_labels` changes only the tissue shown in the Sample label."""
     import vfb_scrnaseq.build as b
