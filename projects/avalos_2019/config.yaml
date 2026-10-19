@@ -51,3 +51,12 @@ sample_build:
   # Canton S wild type (GEO "Wild type CS"; methods); no source stock named, so not linked.
   clusterings:
     - { id: fed, name: "Brunet Avalos 2019 larval brain clusters (fed)", sample_age: "First instar larval" }
+
+# Clusters (projects/avalos_2019/build_clusters.py): the authors' 29 clusters from their UCSC
+# Cell Browser dataset, typed by the cluster name without its number. None left untyped by
+# the authors.
+annotations:
+  review_columns: [clustering, source_cluster_id, type]
+
+unidentified:
+  rule: none
