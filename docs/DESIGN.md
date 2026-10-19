@@ -1689,4 +1689,18 @@ Curator decisions 2026-10-18.
   cell* (broad). Held (`no term`): "anlage in statu nascendi", "cellular blastoderm / pole
   cell", "Head epid. /muscle", "Undiff.", "Chordotonal glia", "Ventral midline". 223 clusters
   mapped (52 terms), 76 held (65 untyped, 11 no term).
+- **Expression (stage 4).** From the GEO count matrix (GSE190147_scirnaseq_gene_matrix:
+  UMI counts, all 547,805 nuclei; features / barcodes written from its rows / columns
+  files, column order checked against GEO's `nCount_RNA`), as CPM over each nucleus's own
+  counts, nuclei assigned by the memberships (a nucleus in a neuronal re-clustering
+  counts in its window cluster too). Genes named by symbol (`features_keyed_by:
+  symbol`): 17,784 current, 81 secondary (3 merges), 2 synonym; dropped: 5,416 FBti
+  transposable-element insertions and 162 "RR…-transposable-element" features (not
+  genes), 485 miRNA transcripts named by FBtr id ("FBtr…-df-nrg", e.g. mir-995-RB; mature
+  miRNAs are not captured by poly-A sci-RNA-seq3), 1 split and 1 withdrawn. 17,864 genes;
+  223 clusters, 66,982 rows (extent > 0.2; ~300 genes per cluster: sci-RNA-seq3 is sparse,
+  a few hundred UMIs per nucleus); the 76 held clusters (239,981 nuclei) left out. The most
+  cluster-specific genes fit the author types (somatic muscle *Mhc*, *up*, *sls*; tracheal
+  system Osiris genes; plasmatocytes *Ppn*, *Col4a1*, *Pxn*; germ cells *CycB*, *me31B*;
+  yolk nuclei *apolpp*; glia *wrapper*; cholinergic *cac*, *Sh*, *para*).
 
