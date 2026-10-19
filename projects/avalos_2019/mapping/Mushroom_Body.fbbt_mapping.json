@@ -1,0 +1,20 @@
+{
+  "cluster_label": "Mushroom Body",
+  "working_definition": "Cells of the authors' 'Mushroom Body' cluster(s) (Brunet Avalos et al. 2019, Figure 1), first instar larval brain, fed.",
+  "searches_performed": [
+    "Mushroom Body"
+  ],
+  "other_candidates": [],
+  "new_term_needed": false,
+  "verification_needed": false,
+  "best_match": {
+    "fbbt_term": "larval Kenyon cell",
+    "fbbt_id": "FBbt:00049826",
+    "fbbt_definition": "Kenyon cell (KC) of the larval (or late embryonic) mushroom body. It has its soma in the mushroom body cell body rind (above the calyx) and dendrites in the calyx and its axon projects through the pedunculus and bifurcates into the vertical and medial lobes (Lee et al., 1999). The first KCs generated in the embryo and early larva are gamma neurons, with alpha'/beta' neurons being born in the late larva (Lee et al., 1999; Kunz et al., 2012). Later born neurons occupy more central positions within the pedunculus and lobe bundles, so that in the late third instar, the embryonic gamma axons occupy the periphery, with the larval-born gamma neurons beneath, and the alpha'/beta' neurons at the core (Kurusu et al., 2002). During the pupal stage, gamma KCs are dramatically remodeled to form the adult gamma lobe, alpha'/beta' KCs remain largely the same and alpha/beta neurons are generated to form the alpha and beta lobes (Lee et al., 1999).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' annotation 'Mushroom Body'. The authors' mushroom body cluster; its re-clustering finds MB neuroblasts, MB undifferentiated neurons and Kenyon cells (Figure 5), Kenyon cells probably the main component (curator).",
+  "recommendation": "Map to FBbt:00049826 larval Kenyon cell (broad match)."
+}

@@ -1,0 +1,30 @@
+{
+  "cluster_label": "Glutamatergic/GABAergic neurons",
+  "working_definition": "Cells of the authors' 'Glutamatergic/GABAergic neurons' cluster(s) (Brunet Avalos et al. 2019, Figure 1), first instar larval brain, fed.",
+  "searches_performed": [
+    "Glutamatergic/GABAergic neurons"
+  ],
+  "other_candidates": [],
+  "new_term_needed": false,
+  "verification_needed": false,
+  "best_match": {
+    "fbbt_term": "larval glutamatergic neuron",
+    "fbbt_id": "FBbt:00058218",
+    "fbbt_definition": "Any glutamatergic neuron of the larva.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' annotation 'Glutamatergic/GABAergic neurons'. Neurons co-expressing glutamatergic and GABAergic markers (validated, Figure 3-figure supplement 1): each cell is both, so larval GABAergic neuron as an additional match (curator).",
+  "recommendation": "Map to FBbt:00058218 larval glutamatergic neuron (exact match).",
+  "additional_matches": [
+    {
+      "fbbt_term": "larval GABAergic neuron",
+      "fbbt_id": "FBbt:00058217",
+      "fbbt_definition": "Any GABAergic neuron of the larva.",
+      "match_type": "exact match",
+      "skos_mapping": "skos:exactMatch",
+      "confidence": "high"
+    }
+  ]
+}

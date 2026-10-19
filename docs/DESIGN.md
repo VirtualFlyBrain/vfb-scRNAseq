@@ -362,7 +362,7 @@ is read through `src/vfb_scrnaseq/project_config.py`. Config sections:
   `cell_type_annotations.json` shown after the cluster key in `mapping.tsv` (e.g.
   Davie's clustering, the authors' cluster id, the Table S2 call and any conflict).
   Re-running `collate_mapping.py` keeps the `reviewed`/`review_notes` already there;
-  a `reviewed` mark of `y`/`yes` is converted to the date (ISO) of that run.
+  a `reviewed` mark of `y` / `yes` / `x` / `1` / `true` is converted to the date (ISO) of that run.
 - **Per-cluster annotation entries** may carry `clustering` (a `sample_build.clusterings`
   id; entries there may be `{id, name}`), `source_cluster_id` and `unannotated`
   (held when `hold_unidentified`). **`expression.membership_file`** (barcode→cluster)
@@ -1742,5 +1742,18 @@ decisions 2026-10-19.
   (4,407 cells) from their Cell Browser `meta.tsv`, labelled by the cluster name, typed
   without its number ("Glia cells" spelled "Glial cells", as in the paper); a cell's
   library from its aggregated-barcode suffix (-3 Normal A, -1 / -2 Normal B.1 / B.2, -4
-  Normal C, matched with the per-library barcode files). None left untyped by the authors.
+  Normal C, matched with the per-library barcode files). None left untyped by the authors.  The numbered sub-clusters largely follow the libraries (e.g. Cholinergic neurons 2 and 5
+  almost all Normal A, 3 and 4 Normal B, 1 mostly Normal C), so they look batch-driven;
+  kept as the authors' clusters (they map to one term per type anyway).
+- **FBbt mapping (stage 3, curator 2026-10-19):** per author type (`write_type_mappings.py`):
+  the larval neurotransmitter-class terms; Glutamatergic/GABAergic neurons (validated
+  co-expression) to *larval glutamatergic neuron* plus *larval GABAergic neuron*
+  (`additional_matches`); Neural progenitor cells to *larval neuroblast* (broad); Mushroom
+  Body to *larval Kenyon cell* (broad: the authors' re-clustering also finds MB
+  neuroblasts and undifferentiated neurons); Undifferentiated neurons to *immature neuron*
+  (not known to be secondary); *larval glial cell*, *optic lobe neuroepithelial cell*,
+  *larval muscle cell*, *embryonic/larval hemocyte*; Prothoracic gland to *endocrine cell
+  of the larval ring gland* (broad: the cluster also expresses Akh, corpora cardiaca).
+  Held (`no term`): "Corpora allata, Ring gland, Gut". 28 clusters mapped (13 terms), 1
+  held.
 
