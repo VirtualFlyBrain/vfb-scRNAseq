@@ -1687,6 +1687,6 @@ Curator decisions 2026-10-18.
   neurotransmitter and chordotonal neurons to the larval terms; "Germline" (neuronal
   re-clustering) to *germline cell*, the authors' term; muscle (unspecified) to *muscle
   cell* (broad). Held (`no term`): "anlage in statu nascendi", "cellular blastoderm / pole
-  cell", "Head epid. /muscle", "Undiff.", "Chordotonal glia", "Ventral midline", "spiracle
-  (tracheal system)". 221 clusters mapped (51 terms), 78 held (65 untyped, 13 no term).
+  cell", "Head epid. /muscle", "Undiff.", "Chordotonal glia", "Ventral midline". 223 clusters
+  mapped (52 terms), 76 held (65 untyped, 11 no term).
 
