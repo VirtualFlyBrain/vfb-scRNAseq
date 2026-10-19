@@ -1,0 +1,430 @@
+{
+  "project": "avalos_2019",
+  "created_at": "2026-10-19",
+  "updated_at": "2026-10-19",
+  "summary": "Brunet Avalos et al. 2019 (eLife), 10x scRNA-seq of first-instar larval brains (VNC removed), wild-type Canton S (GEO GSE134722); replaces the old FlyBase/SCEA load FBlc0005362 with fresh VFBseq ids. Fed larvae only: 3 Samples (Normal A, B, C) / 4 Assays (B sequenced as two libraries). One Clustering with the authors' 29 clusters, per-cell assignments from their UCSC Cell Browser dataset (all sizes equal Figure 1-source data 1): 28 loaded (larval neuron, neuroblast, Kenyon cell, glia, optic lobe neuroepithelium and contaminating-tissue terms), 1 held. Summary expression as CPM from GEO's aggregated fed matrix (17,484 genes x 4,407 cells).",
+  "decisions": [
+    {
+      "date": "2026-10-08",
+      "by": "curator",
+      "decision": "Map to cell-level FBbt terms only (a tissue or organ author term maps to its cell-level equivalent, else the type is held)."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Clusters with no FBbt term are held: listed in mapping.tsv with a hold_reason but not loaded (no VFBseq id, entity or expression rows). Their cells still count towards the Dataset's gene counts."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Summary expression is computed as CPM for every dataset."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Narrow a generic type by the dissected tissue only where the tissue makes the tissue-specific FBbt term exact; hold clusters that could only be typed as cell or neuron (or stage-specific versions); load glia under a glial-cell term."
+    },
+    {
+      "date": "2026-10-19",
+      "by": "curator",
+      "decision": "Fed larvae only: the paper's 29-cluster atlas; the starved samples and the combined fed + starved analysis left out (the sub-clusterings have no per-cell labels)."
+    },
+    {
+      "date": "2026-10-19",
+      "by": "pipeline",
+      "decision": "Per-cell clusters from the authors' UCSC Cell Browser dataset dros-brain/normal (found by a thorough search: GEO, eLife files, GitHub, Zenodo, Figshare, Dryad, CELLxGENE and the lab website have none; SCEA's labels are the combined analysis and miss most fed cells)."
+    },
+    {
+      "date": "2026-10-19",
+      "by": "curator",
+      "decision": "3 Samples (Supplementary file 1: Normal A, B, C; B's two libraries B.1 / B.2 one Sample, sample_groups); first instar larval stage; larval brain (VNC removed); sex mixed (unset); Canton S, no stock named (not linked)."
+    },
+    {
+      "date": "2026-10-19",
+      "by": "pipeline",
+      "decision": "Clusters by build_clusters.py: one per author cluster, typed by the cluster name without its number; library from the aggregated-barcode suffix (matched with the per-library barcode files)."
+    },
+    {
+      "date": "2026-10-19",
+      "by": "curator",
+      "decision": "Mapping per author type: larval neurotransmitter-class terms; Glutamatergic/GABAergic neurons to larval glutamatergic plus larval GABAergic neuron; Neural progenitor cells to larval neuroblast and Mushroom Body to larval Kenyon cell (broad); Undifferentiated neurons to immature neuron; larval glial cell, optic lobe neuroepithelial cell, larval muscle cell, embryonic/larval hemocyte; Prothoracic gland to endocrine cell of the larval ring gland (broad); 'Corpora allata, Ring gland, Gut' held."
+    },
+    {
+      "date": "2026-10-19",
+      "by": "pipeline",
+      "decision": "Expression from GEO's aggregated fed matrix (raw UMI counts, FBgn ids), as CPM; ids mapped to current FlyBase genes (17,370 current, 119 secondary, 5 merges; 3 split and 1 withdrawn dropped)."
+    },
+    {
+      "date": "2026-10-19",
+      "by": "curator",
+      "decision": "All 29 mapping.tsv rows reviewed by the curator (mapping.tsv `reviewed`)."
+    }
+  ],
+  "checks": [
+    {
+      "date": "2026-10-19",
+      "check": "Cell Browser cluster sizes against Figure 1-source data 1; cells against GEO's fed matrix.",
+      "result": "All 29 clusters equal (4,407 cells; the text's 4,349 apparently an earlier count); all 4,407 cells in the fed finalaggr barcodes."
+    },
+    {
+      "date": "2026-10-19",
+      "check": "Library of each cell: aggregated-barcode suffixes against the per-library barcode files.",
+      "result": "-3 Normal A, -1 / -2 Normal B.1 / B.2, -4 Normal C (unambiguous). B.1 and B.2 share 577 cell barcodes (far above chance; 315 in the same cluster): apparently two libraries of the same captured cells, counted twice by the authors."
+    },
+    {
+      "date": "2026-10-19",
+      "check": "Cluster composition by library.",
+      "result": "Numbered sub-clusters largely follow the libraries (batch-driven); kept as the authors' clusters."
+    },
+    {
+      "date": "2026-10-19",
+      "check": "verify_mappings.py: every FBbt term in the mappings looked up in OLS (FBbt 2026-10-01).",
+      "result": "13 terms current, not obsolete, labels match."
+    },
+    {
+      "date": "2026-10-19",
+      "check": "FBbt, FBdv and FBcv terms on the Samples, Assays and Dataset looked up in OLS.",
+      "result": "All current (first instar larval stage, larval brain, single-cell RNA-Seq, 10x sequencing)."
+    },
+    {
+      "date": "2026-10-19",
+      "check": "Marker spot checks in the expression output.",
+      "result": "ChAT 0.96 cholinergic, Gad1 0.93 GABAergic, Vmat 0.99 / ple monoaminergic, repo glia, dpn / ase neural progenitors, ey mushroom body, Mhc muscle, Hml hemocytes, heca (hdc) undifferentiated neurons. Ilp2 / Akh detected broadly in clusters from libraries Normal A and C (r = 0.79 with the Normal C fraction): apparently ambient RNA."
+    }
+  ],
+  "people": [
+    {
+      "id": "ORCID:0000-0002-1373-1705",
+      "label": "Clare Pilgrim",
+      "role": "curator",
+      "username": "Clare72"
+    }
+  ],
+  "pipeline": {
+    "id": "vfb-scrnaseq",
+    "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
+    "version": "0.0.0",
+    "commit": "a4a4e01",
+    "uncommitted_changes": true
+  },
+  "ontologies": [
+    {
+      "id": "FBbt",
+      "label": "Drosophila gross anatomy ontology",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBdv",
+      "label": "Drosophila developmental ontology",
+      "version": "2026-09-30",
+      "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-09-30/fbdv.owl",
+      "accessed_via": "OLS4 API; local fbdv.obo in .cache (stage definitions)",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBcv",
+      "label": "FlyBase controlled vocabulary",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-10-01/fbcv.owl",
+      "accessed_via": "OLS4 API",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "accessed_at": "2026-10-16"
+    }
+  ],
+  "data_sources": [
+    {
+      "id": "10.7554/eLife.50354",
+      "type": "publication",
+      "label": "Single cell transcriptome atlas of the Drosophila larval brain",
+      "xrefs": [
+        "PMID:31746739",
+        "PMCID:PMC6894929",
+        "FlyBase:FBrf0244302"
+      ],
+      "description": "Brunet Avalos et al. 2019, eLife. Full text and source data read for the scope, samples, libraries and cluster identities.",
+      "url": "https://doi.org/10.7554/eLife.50354",
+      "files": [
+        {
+          "path": "supp/PMC6894929.jats.xml",
+          "description": "JATS full text, NCBI efetch (db=pmc).",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=PMC6894929",
+          "sha256": "b72f9db307839119bd96d0811ce86cc7a08f1781b91b9d03af9dc588ed9a9fae",
+          "bytes": 214587,
+          "accessed_at": "2026-10-19"
+        },
+        {
+          "path": "supp/elife-50354-fig1-data1.xlsx",
+          "description": "Figure 1-source data 1: cluster markers, cells per cluster, annotation references.",
+          "url": "https://cdn.elifesciences.org/articles/50354/elife-50354-fig1-data1-v2.xlsx",
+          "sha256": "a9672d179fad64134b2575826e592c31376ae1f0f8bff3d37911953243394fef",
+          "bytes": 67975,
+          "accessed_at": "2026-10-19"
+        },
+        {
+          "path": "supp/elife-50354-supp1.xlsx",
+          "description": "Supplementary file 1: libraries (Normal A, B.1, B.2, C).",
+          "url": "https://cdn.elifesciences.org/articles/50354/elife-50354-supp1-v2.xlsx",
+          "sha256": "fc5e6e8c36e5d41900ac8b631fcd7f91ca239b3ba9ad249a74ba9481e48b8a97",
+          "bytes": 33177,
+          "accessed_at": "2026-10-19"
+        },
+        {
+          "path": "supp/elife-50354-fig7-data1.xlsx",
+          "description": "Figure 7-source data 1: combined analysis counts.",
+          "url": "https://cdn.elifesciences.org/articles/50354/elife-50354-fig7-data1-v2.xlsx",
+          "sha256": "ebcd4dd593e4801d036b85a2b807fdd26ed063fb2d34d6eab297ee66943cfc28",
+          "bytes": 10053,
+          "accessed_at": "2026-10-19"
+        },
+        {
+          "path": "supp/elife-50354-data1.xlsx",
+          "description": "Source data 1: starvation differential expression (not used).",
+          "url": "https://cdn.elifesciences.org/articles/50354/elife-50354-data1-v2.xlsx",
+          "sha256": "2e664b86086ed881216c020de722f644cc9b263fd086d9c37b5802d07e0b9801",
+          "bytes": 42417294,
+          "accessed_at": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "GSE134722",
+      "type": "dataset",
+      "label": "Single cell transcriptome atlas of the Drosophila larval brain",
+      "xrefs": [
+        "BioProject:PRJNA556226",
+        "SRA:SRP216038"
+      ],
+      "description": "GEO series: 4 fed and 3 starved 10x libraries; the aggregated fed matrix and the fed per-library barcode files used.",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE134722",
+      "accessed_at": "2026-10-19",
+      "files": [
+        {
+          "path": "avalos/geo/matrix.mtx.gz",
+          "description": "Aggregated fed matrix (raw UMI counts).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE134nnn/GSE134722/suppl/GSE134722_FirstInstarLarvalBrainNormalCondition_finalaggr_10X_matrix.mtx.gz",
+          "sha256": "85270768776c3f5933bfb8c986b1c11bc6c4f874093a535601348f80546d9c96",
+          "bytes": 26717743,
+          "accessed_at": "2026-10-19"
+        },
+        {
+          "path": "avalos/geo/features.tsv.gz",
+          "description": "Genes (FBgn, symbol).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE134nnn/GSE134722/suppl/GSE134722_FirstInstarLarvalBrainNormalCondition_finalaggr_10X_genes.tsv.gz",
+          "sha256": "68522e37c1448de906e440cab71ca10110bbc9b91aaefc4fe37981b5e22d779c",
+          "bytes": 132180,
+          "accessed_at": "2026-10-19"
+        },
+        {
+          "path": "avalos/geo/barcodes.tsv.gz",
+          "description": "Cells (<barcode>-<library>).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE134nnn/GSE134722/suppl/GSE134722_FirstInstarLarvalBrainNormalCondition_finalaggr_10X_barcodes.tsv.gz",
+          "sha256": "81d486f62cbeec66960ee272202befc5d6fd35c7872dc4aca18db371238335dc",
+          "bytes": 22248,
+          "accessed_at": "2026-10-19"
+        },
+        {
+          "path": "avalos/GSM3964166_barcodes.tsv.gz",
+          "description": "Per-library barcodes (sample1).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3964nnn/GSM3964166/suppl/GSM3964166_FirstInstarLarvalBrainNormalCondition_sample1_10X_barcodes.tsv.gz",
+          "sha256": "1b6588d055f986ea37b56553581a87c2f4a6a602b8adb447a613b4b741e77b6e",
+          "bytes": 6605,
+          "accessed_at": "2026-10-19"
+        },
+        {
+          "path": "avalos/GSM3964167_barcodes.tsv.gz",
+          "description": "Per-library barcodes (sample2).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3964nnn/GSM3964167/suppl/GSM3964167_FirstInstarLarvalBrainNormalCondition_sample2_10X_barcodes.tsv.gz",
+          "sha256": "140bcbf304dad629fb4edff6ec097b1b22734c3c10f0329a656a5825a07dcc05",
+          "bytes": 5416,
+          "accessed_at": "2026-10-19"
+        },
+        {
+          "path": "avalos/GSM3964168_barcodes.tsv.gz",
+          "description": "Per-library barcodes (sample3).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3964nnn/GSM3964168/suppl/GSM3964168_FirstInstarLarvalBrainNormalCondition_sample3_10X_barcodes.tsv.gz",
+          "sha256": "99b78dcae3a9a94de8ed8757322f3ba8d604d10b885c6faa961edd18d4034b92",
+          "bytes": 6228,
+          "accessed_at": "2026-10-19"
+        },
+        {
+          "path": "avalos/GSM4132287_barcodes.tsv.gz",
+          "description": "Per-library barcodes (sample6).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4132nnn/GSM4132287/suppl/GSM4132287_FirstInstarLarvalBrainNormalCondition_sample6_10X_barcodes.tsv.gz",
+          "sha256": "f9333fbb38ee9e2db8aa6561a313d2378ec1a9fb42a3882b319c4f93ac36ea51",
+          "bytes": 4784,
+          "accessed_at": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "UCSC_cellbrowser_dros-brain",
+      "type": "author_files",
+      "label": "The authors' UCSC Cell Browser dataset (dros-brain, Sprecher lab)",
+      "description": "Per-cell clusters of the fed atlas (normal) and the combined analysis (merge); normal used.",
+      "url": "https://cells.ucsc.edu/?ds=dros-brain+normal",
+      "accessed_at": "2026-10-19",
+      "files": [
+        {
+          "path": "avalos/cellbrowser/normal_meta.tsv",
+          "description": "Per-cell metadata (Cluster).",
+          "url": "https://cells.ucsc.edu/dros-brain/normal/meta.tsv",
+          "sha256": "44871cffd75bcd5bb3a07e2ee6a292ad1db710eeb46b93a6916dcf8eda1f53c8",
+          "bytes": 228030,
+          "accessed_at": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "FBlc0005362",
+      "type": "previous_load",
+      "label": "scRNAseq_2019_Avalos",
+      "description": "The old FlyBase/SCEA load this project replaces (fed only, 10 types merged from SCEA labels, read from VFB production); used as a mapping cross-check.",
+      "url": "https://virtualflybrain.org/reports/FBlc0005362",
+      "accessed_at": "2026-10-19"
+    }
+  ],
+  "software": [
+    {
+      "id": "claude-code",
+      "type": "tool",
+      "label": "Claude Code",
+      "version": "2.1.301",
+      "description": "Agentic CLI that ran the session (orchestrator), stages 1-5."
+    },
+    {
+      "id": "ols4",
+      "type": "service",
+      "label": "OLS4 (Ontology Lookup Service)",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "accessed_at": "2026-10-16",
+      "description": "FBbt / FBdv / FBcv lookup during mapping (OLS MCP) and term verification."
+    },
+    {
+      "id": "vfb-pdb",
+      "type": "service",
+      "label": "VFB production (neo4j)",
+      "url": "https://pdb.virtualflybrain.org",
+      "accessed_at": "2026-10-16",
+      "description": "Publication FBrf0244302 resolved by PMID (vfb_scrnaseq.pub); the old load FBlc0005362 read for the cross-check."
+    },
+    {
+      "id": "flybase-chado",
+      "type": "service",
+      "label": "FlyBase Chado",
+      "version": "FB2026_03 (data last modified 2026-08-29)",
+      "url": "https://chado.flybase.org",
+      "accessed_at": "2026-10-16",
+      "description": "FBgn ids mapped to current FlyBase genes (update_gene_ids.py)."
+    },
+    {
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
+      "version": "2.5.1"
+    },
+    {
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
+      "version": "3.0.5"
+    },
+    {
+      "id": "pyyaml",
+      "type": "library",
+      "label": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
+      "version": "1.11.1",
+      "description": "linkml-validate and linkml-convert (flat RDF)."
+    },
+    {
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
+      "version": "1.11.1"
+    },
+    {
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
+      "version": "0.5.0",
+      "description": "Metadata OWL."
+    },
+    {
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
+      "version": "1.9.11",
+      "description": "OFN to OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "id": "psql",
+      "type": "tool",
+      "label": "psql",
+      "version": "14.15",
+      "description": "FlyBase Chado queries."
+    },
+    {
+      "id": "python",
+      "type": "language",
+      "label": "Python",
+      "version": "3.14.3",
+      "description": "Pipeline environment (uv-managed)."
+    },
+    {
+      "id": "scea",
+      "type": "service",
+      "label": "EMBL-EBI Single Cell Expression Atlas",
+      "url": "https://www.ebi.ac.uk/gxa/sc/experiments/E-GEOD-134722",
+      "accessed_at": "2026-10-18",
+      "description": "Experiment design of E-GEOD-134722 (authors labels) read during scoping; not used (incomplete for the fed cells)."
+    },
+    {
+      "id": "openpyxl",
+      "type": "library",
+      "label": "openpyxl",
+      "version": "3.1.5",
+      "description": "Reads the eLife source data."
+    },
+    {
+      "id": "ncbi-geo",
+      "type": "service",
+      "label": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/",
+      "accessed_at": "2026-10-19",
+      "description": "Series and Sample SOFT metadata (build_samples_from_geo.py), the aggregated fed matrix and per-library barcodes."
+    },
+    {
+      "id": "ucsc-cellbrowser",
+      "type": "service",
+      "label": "UCSC Cell Browser",
+      "url": "https://cells.ucsc.edu",
+      "accessed_at": "2026-10-19",
+      "description": "The authors' per-cell cluster assignments."
+    }
+  ],
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "role": "orchestrator",
+      "label": "Claude Opus 5.5",
+      "provider": "Anthropic",
+      "description": "Main Claude Code session: scoping (paper, GEO, SCEA, the search for per-cell assignments, the old load), sample and cluster builds, the type mappings, expression and builds. No subagents."
+    }
+  ]
+}

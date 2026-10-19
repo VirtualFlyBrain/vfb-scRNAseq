@@ -1,0 +1,533 @@
+[
+  {
+    "type": "Publication",
+    "id": "FlyBase:FBrf0244302",
+    "neo_label": "pub"
+  },
+  {
+    "type": "Dataset",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "name": "scRNAseq data from Brunet Avalos (2019)",
+    "title": "Single cell transcriptome atlas of the Drosophila larval brain",
+    "accession": "GSE134722",
+    "neo_label": "DataSet",
+    "site": "vfb:GEO",
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "assay_type": "FBcv:0009000",
+    "total_gene_count": 12633,
+    "filtered_gene_count": 6772,
+    "publication": "FlyBase:FBrf0244302"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003151",
+    "name": "brain, First instar larval, Normal rep 1 (Brunet Avalos 2019)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003152"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00001920"
+    ],
+    "stage": "FBdv:00005337"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003153",
+    "name": "brain, First instar larval, Normal rep 2 (Brunet Avalos 2019)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003154",
+      "http://virtualflybrain.org/reports/VFBseq_00003156"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00001920"
+    ],
+    "stage": "FBdv:00005337"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003157",
+    "name": "brain, First instar larval, Normal rep 4 (Brunet Avalos 2019)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003158"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00001920"
+    ],
+    "stage": "FBdv:00005337"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003152",
+    "name": "brain, First instar larval, Normal rep 1, 10x library 1 (Brunet Avalos 2019)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003151"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "dbxref": [
+      "GSM3964166",
+      "SRX6491477",
+      "SAMN12343184"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003154",
+    "name": "brain, First instar larval, Normal rep 2, 10x library 2 (Brunet Avalos 2019)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003153"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "dbxref": [
+      "GSM3964167",
+      "SRX6491478",
+      "SAMN12343183"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003156",
+    "name": "brain, First instar larval, Normal rep 2, 10x library 3 (Brunet Avalos 2019)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003153"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "dbxref": [
+      "GSM3964168",
+      "SRX6491479",
+      "SAMN12343182"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003158",
+    "name": "brain, First instar larval, Normal rep 4, 10x library 6 (Brunet Avalos 2019)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003157"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "dbxref": [
+      "GSM4132287",
+      "SRX7028154",
+      "SAMN13068322"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "name": "Brunet Avalos 2019 larval brain clusters (fed)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00003151",
+      "http://virtualflybrain.org/reports/VFBseq_00003153",
+      "http://virtualflybrain.org/reports/VFBseq_00003157"
+    ]
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003160",
+    "name": "Cholinergic neurons cluster Cholinergic neurons 1 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 398,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058215"
+    ],
+    "total_gene_count": 10113,
+    "filtered_gene_count": 4097
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003161",
+    "name": "Cholinergic neurons cluster Cholinergic neurons 2 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 392,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058215"
+    ],
+    "total_gene_count": 8905,
+    "filtered_gene_count": 1316
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003162",
+    "name": "Cholinergic neurons cluster Cholinergic neurons 3 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 382,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058215"
+    ],
+    "total_gene_count": 9875,
+    "filtered_gene_count": 3647
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003163",
+    "name": "Undifferentiated neurons cluster Undifferentiated neurons 1 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 369,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051424"
+    ],
+    "total_gene_count": 8758,
+    "filtered_gene_count": 1426
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003164",
+    "name": "Cholinergic neurons cluster Cholinergic neurons 4 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 295,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058215"
+    ],
+    "total_gene_count": 7748,
+    "filtered_gene_count": 1083
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003165",
+    "name": "Glutamatergic/GABAergic neurons cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 262,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058218",
+      "FBbt:00058217"
+    ],
+    "total_gene_count": 9427,
+    "filtered_gene_count": 3488
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003166",
+    "name": "Cholinergic neurons cluster Cholinergic neurons 5 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 259,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058215"
+    ],
+    "total_gene_count": 9694,
+    "filtered_gene_count": 3545
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003167",
+    "name": "Neural progenitor cells cluster Neural progenitor cells 1 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 233,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007115"
+    ],
+    "total_gene_count": 7857,
+    "filtered_gene_count": 919
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003168",
+    "name": "Undifferentiated neurons cluster Undifferentiated neurons 2 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 227,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051424"
+    ],
+    "total_gene_count": 8666,
+    "filtered_gene_count": 1691
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003169",
+    "name": "Neural progenitor cells cluster Neural progenitor cells 2 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 175,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007115"
+    ],
+    "total_gene_count": 9005,
+    "filtered_gene_count": 3427
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003170",
+    "name": "GABAergic neurons cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 149,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058217"
+    ],
+    "total_gene_count": 8996,
+    "filtered_gene_count": 4093
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003171",
+    "name": "Glial cells cluster Glia cells 1 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 138,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001251"
+    ],
+    "total_gene_count": 8828,
+    "filtered_gene_count": 2575
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003172",
+    "name": "Mushroom Body cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 118,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049826"
+    ],
+    "total_gene_count": 8157,
+    "filtered_gene_count": 2577
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003173",
+    "name": "Muscle cells cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 111,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058231"
+    ],
+    "total_gene_count": 9313,
+    "filtered_gene_count": 1790
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003174",
+    "name": "Neural progenitor cells cluster Neural progenitor cells 3 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 93,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007115"
+    ],
+    "total_gene_count": 8809,
+    "filtered_gene_count": 4662
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003175",
+    "name": "Peptidergic neurons cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 91,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058212"
+    ],
+    "total_gene_count": 8898,
+    "filtered_gene_count": 4352
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003176",
+    "name": "Glutamatergic neurons cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 87,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058218"
+    ],
+    "total_gene_count": 8181,
+    "filtered_gene_count": 3072
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003177",
+    "name": "Neural progenitor cells cluster Neural progenitor cells 4 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 86,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007115"
+    ],
+    "total_gene_count": 9020,
+    "filtered_gene_count": 5234
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003178",
+    "name": "Monoaminergic neurons cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 72,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058211"
+    ],
+    "total_gene_count": 8029,
+    "filtered_gene_count": 3309
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003179",
+    "name": "Optic lobe epithelium cluster Optic lobe epithelium 1 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 71,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111738"
+    ],
+    "total_gene_count": 8653,
+    "filtered_gene_count": 4562
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003180",
+    "name": "Neural progenitor cells cluster Neural progenitor cells 5 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 66,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007115"
+    ],
+    "total_gene_count": 8037,
+    "filtered_gene_count": 3460
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003181",
+    "name": "Neural progenitor cells cluster Neural progenitor cells 6 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 62,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00007115"
+    ],
+    "total_gene_count": 6850,
+    "filtered_gene_count": 1818
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003182",
+    "name": "Cholinergic neurons cluster Cholinergic neurons 6 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 54,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058215"
+    ],
+    "total_gene_count": 7925,
+    "filtered_gene_count": 3677
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003183",
+    "name": "Optic lobe epithelium cluster Optic lobe epithelium 2 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 50,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00111738"
+    ],
+    "total_gene_count": 6469,
+    "filtered_gene_count": 1255
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003184",
+    "name": "Glial cells cluster Glia cells 2 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 47,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001251"
+    ],
+    "total_gene_count": 7107,
+    "filtered_gene_count": 1732
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003185",
+    "name": "Prothoracic gland cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 36,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058236"
+    ],
+    "total_gene_count": 5357,
+    "filtered_gene_count": 1008
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003186",
+    "name": "Glial cells cluster Glia cells 3 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 34,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001251"
+    ],
+    "total_gene_count": 7562,
+    "filtered_gene_count": 3134
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003187",
+    "name": "Hemocytes cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003159",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003150",
+    "cell_number": 33,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001684"
+    ],
+    "total_gene_count": 7473,
+    "filtered_gene_count": 3397
+  }
+]
