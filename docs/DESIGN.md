@@ -1708,3 +1708,29 @@ Curator decisions 2026-10-18.
   VFB production; `verify_mappings.py` OK (52 FBbt terms); the FBbt / FBdv / FBcv terms on
   Samples, Assays, Clusters and the Dataset current. Recorded in `provenance.json`.
 
+## Brunet Avalos 2019 (first-instar larval brain)
+
+eLife 2019, PMID 31746739, FBrf0244302; GEO GSE134722 (`avalos_2019`). 10x scRNA-seq of
+first-instar larval brains (ventral nerve cord removed), wild-type Canton S, fed (4
+libraries) and starved for 4 h (3). Replaces the old FlyBase/SCEA load FBlc0005362 (fed
+only, 10 types merged from SCEA labels) with fresh VFBseq ids; licence CC-BY-4.0. Curator
+decisions 2026-10-19.
+
+- **Data.** The paper's atlas is the fed cells only: 29 clusters typed from markers
+  (Figure 1-source data 1: names, sizes, annotation references; 4,407 cells, the text's
+  4,349 apparently an earlier count), some subgroups re-clustered further (figures only).
+  A combined fed + starved analysis (17 clusters, Figure 7) compares conditions. GEO has
+  the per-library and aggregated matrices only; the paper gives no code. SCEA's "authors
+  labels" are the combined analysis and miss most fed cells (1,474 of 4,361 labelled:
+  barcodes apparently mismatched across libraries). The authors' per-cell assignments
+  are on the UCSC Cell Browser (`dros-brain`, submitted by the Sprecher lab): `normal`
+  (4,407 cells, the 29 clusters; every size equals Figure 1-source data 1; all cells in
+  GEO's fed `finalaggr` matrix) and `merge` (8,696 cells, 17 clusters). Searched without
+  result: GitHub, Zenodo, Figshare, Dryad, CELLxGENE, the lab website.
+- **Scope (curator):** fed only: the paper's 29-cluster atlas. The starved samples and
+  the combined analysis left out; the sub-clusterings have no per-cell labels.
+- **Samples (stage 1):** `build_samples_from_geo.py`, the title pattern matching the
+  "Normal condition" GSMs only: 4 Samples / 4 Assays (one 10x library per GSM); *first
+  instar larval stage*; *larval brain* (the VNC was removed); sex mixed (unset); Canton S,
+  no stock named (not linked). One Clustering.
+
