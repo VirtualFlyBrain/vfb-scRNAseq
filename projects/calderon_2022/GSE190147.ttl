@@ -1,0 +1,2901 @@
+@prefix BAO: <http://www.bioassayontology.org/bao#BAO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix FBbt: <http://purl.obolibrary.org/obo/FBbt_> .
+@prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
+@prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
+@prefix FlyBase: <http://flybase.org/reports/> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix VFBseq: <http://virtualflybrain.org/reports/VFBseq_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix neo_custom: <http://n2o.neo/custom/> .
+@prefix neo_property: <http://n2o.neo/property/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vfb: <http://virtualflybrain.org/reports/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VFBseq:00002916 a FBcv:0009002 ;
+    rdfs:label "Calderon 2022 clusters, modelled age 0-2 h" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002864,
+        VFBseq:00002870 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002927 a FBcv:0009003 ;
+    rdfs:label "ectoderm anlage in statu nascendi cluster 0 (Calderon 2022 clusters, modelled age 2-4 h) (Calderon 2022)" ;
+    neo_custom:cell_count 3264 ;
+    neo_custom:filtered_gene_count 507 ;
+    neo_custom:total_gene_count 9850 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002917 ;
+    RO:0002473 FBbt:00059301 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002928 a FBcv:0009003 ;
+    rdfs:label "ectoderm anlage cluster 15 (Calderon 2022 clusters, modelled age 2-4 h) (Calderon 2022)" ;
+    neo_custom:cell_count 569 ;
+    neo_custom:filtered_gene_count 484 ;
+    neo_custom:total_gene_count 7473 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002917 ;
+    RO:0002473 FBbt:00059301 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002929 a FBcv:0009003 ;
+    rdfs:label "yolk nuclei cluster 16 (Calderon 2022 clusters, modelled age 2-4 h) (Calderon 2022)" ;
+    neo_custom:cell_count 480 ;
+    neo_custom:filtered_gene_count 577 ;
+    neo_custom:total_gene_count 7815 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002917 ;
+    RO:0002473 FBbt:00000057 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002930 a FBcv:0009003 ;
+    rdfs:label "ectoderm primordium cluster 0 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)" ;
+    neo_custom:cell_count 4329 ;
+    neo_custom:filtered_gene_count 313 ;
+    neo_custom:total_gene_count 10487 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002918 ;
+    RO:0002473 FBbt:00059305 ;
+    RO:0002490 FBdv:00005321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002931 a FBcv:0009003 ;
+    rdfs:label "ectoderm primordium cluster 6 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)" ;
+    neo_custom:cell_count 3457 ;
+    neo_custom:filtered_gene_count 311 ;
+    neo_custom:total_gene_count 10101 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002918 ;
+    RO:0002473 FBbt:00059305 ;
+    RO:0002490 FBdv:00005321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002932 a FBcv:0009003 ;
+    rdfs:label "mesoderm primordium cluster 8 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)" ;
+    neo_custom:cell_count 3199 ;
+    neo_custom:filtered_gene_count 367 ;
+    neo_custom:total_gene_count 10474 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002918 ;
+    RO:0002473 FBbt:00059307 ;
+    RO:0002490 FBdv:00005321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002933 a FBcv:0009003 ;
+    rdfs:label "ectoderm primordium cluster 11 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)" ;
+    neo_custom:cell_count 3149 ;
+    neo_custom:filtered_gene_count 317 ;
+    neo_custom:total_gene_count 10359 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002918 ;
+    RO:0002473 FBbt:00059305 ;
+    RO:0002490 FBdv:00005321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002934 a FBcv:0009003 ;
+    rdfs:label "peripheral nervous system primordium cluster 12 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)" ;
+    neo_custom:cell_count 3088 ;
+    neo_custom:filtered_gene_count 403 ;
+    neo_custom:total_gene_count 10616 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002918 ;
+    RO:0002473 FBbt:00052556 ;
+    RO:0002490 FBdv:00005321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002935 a FBcv:0009003 ;
+    rdfs:label "ectoderm primordium cluster 15 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2776 ;
+    neo_custom:filtered_gene_count 342 ;
+    neo_custom:total_gene_count 10094 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002918 ;
+    RO:0002473 FBbt:00059305 ;
+    RO:0002490 FBdv:00005321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002936 a FBcv:0009003 ;
+    rdfs:label "ectoderm primordium cluster 17 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2641 ;
+    neo_custom:filtered_gene_count 363 ;
+    neo_custom:total_gene_count 10174 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002918 ;
+    RO:0002473 FBbt:00059305 ;
+    RO:0002490 FBdv:00005321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002937 a FBcv:0009003 ;
+    rdfs:label "germ cell cluster 19 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2600 ;
+    neo_custom:filtered_gene_count 222 ;
+    neo_custom:total_gene_count 9363 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002918 ;
+    RO:0002473 FBbt:00000092 ;
+    RO:0002490 FBdv:00005321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002938 a FBcv:0009003 ;
+    rdfs:label "yolk nuclei cluster 20 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2595 ;
+    neo_custom:filtered_gene_count 362 ;
+    neo_custom:total_gene_count 10847 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002918 ;
+    RO:0002473 FBbt:00000057 ;
+    RO:0002490 FBdv:00005321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002939 a FBcv:0009003 ;
+    rdfs:label "endoderm primordium cluster 21 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2451 ;
+    neo_custom:filtered_gene_count 357 ;
+    neo_custom:total_gene_count 10238 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002918 ;
+    RO:0002473 FBbt:00059306 ;
+    RO:0002490 FBdv:00005321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002940 a FBcv:0009003 ;
+    rdfs:label "ventral nerve cord primordium cluster 27 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1218 ;
+    neo_custom:filtered_gene_count 404 ;
+    neo_custom:total_gene_count 9000 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002918 ;
+    RO:0002473 FBbt:00001332 ;
+    RO:0002490 FBdv:00005321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002941 a FBcv:0009003 ;
+    rdfs:label "amnioserosa cluster 28 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1206 ;
+    neo_custom:filtered_gene_count 392 ;
+    neo_custom:total_gene_count 9316 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002918 ;
+    RO:0002473 FBbt:00059314 ;
+    RO:0002490 FBdv:00005321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002942 a FBcv:0009003 ;
+    rdfs:label "tracheal primordium cluster 29 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1141 ;
+    neo_custom:filtered_gene_count 468 ;
+    neo_custom:total_gene_count 10967 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002918 ;
+    RO:0002473 FBbt:00005041 ;
+    RO:0002490 FBdv:00005321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002943 a FBcv:0009003 ;
+    rdfs:label "foregut / hindgut primordium cluster 30 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1098 ;
+    neo_custom:filtered_gene_count 366 ;
+    neo_custom:total_gene_count 8889 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002918 ;
+    RO:0002473 FBbt:00059305 ;
+    RO:0002490 FBdv:00005321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002944 a FBcv:0009003 ;
+    rdfs:label "yolk nuclei cluster 31 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)" ;
+    neo_custom:cell_count 594 ;
+    neo_custom:filtered_gene_count 332 ;
+    neo_custom:total_gene_count 8320 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002918 ;
+    RO:0002473 FBbt:00000057 ;
+    RO:0002490 FBdv:00005321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002945 a FBcv:0009003 ;
+    rdfs:label "germ cell cluster 0 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2674 ;
+    neo_custom:filtered_gene_count 468 ;
+    neo_custom:total_gene_count 10148 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00000092 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002946 a FBcv:0009003 ;
+    rdfs:label "epidermis primordium cluster 1 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2189 ;
+    neo_custom:filtered_gene_count 241 ;
+    neo_custom:total_gene_count 9430 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00004994 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002947 a FBcv:0009003 ;
+    rdfs:label "brain primordium cluster 2 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2050 ;
+    neo_custom:filtered_gene_count 149 ;
+    neo_custom:total_gene_count 9171 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00001332 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002948 a FBcv:0009003 ;
+    rdfs:label "brain primordium cluster 3 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1959 ;
+    neo_custom:filtered_gene_count 519 ;
+    neo_custom:total_gene_count 10316 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00001332 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002949 a FBcv:0009003 ;
+    rdfs:label "trunk mesoderm primordium cluster 5 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1906 ;
+    neo_custom:filtered_gene_count 243 ;
+    neo_custom:total_gene_count 9743 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00059310 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002950 a FBcv:0009003 ;
+    rdfs:label "epidermis primordium cluster 6 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1869 ;
+    neo_custom:filtered_gene_count 267 ;
+    neo_custom:total_gene_count 9397 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00004994 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002951 a FBcv:0009003 ;
+    rdfs:label "yolk nuclei cluster 7 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1834 ;
+    neo_custom:filtered_gene_count 308 ;
+    neo_custom:total_gene_count 9664 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00000057 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002952 a FBcv:0009003 ;
+    rdfs:label "brain primordium cluster 8 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1691 ;
+    neo_custom:filtered_gene_count 207 ;
+    neo_custom:total_gene_count 9286 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00001332 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002953 a FBcv:0009003 ;
+    rdfs:label "brain primordium cluster 9 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1672 ;
+    neo_custom:filtered_gene_count 255 ;
+    neo_custom:total_gene_count 9269 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00001332 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002954 a FBcv:0009003 ;
+    rdfs:label "sensory nervous system primordium cluster 10 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1636 ;
+    neo_custom:filtered_gene_count 285 ;
+    neo_custom:total_gene_count 9226 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00052556 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002955 a FBcv:0009003 ;
+    rdfs:label "visceral muscle primordium cluster 11 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1487 ;
+    neo_custom:filtered_gene_count 220 ;
+    neo_custom:total_gene_count 9180 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00059309 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002956 a FBcv:0009003 ;
+    rdfs:label "midgut primordium cluster 12 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1258 ;
+    neo_custom:filtered_gene_count 246 ;
+    neo_custom:total_gene_count 8966 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00059319 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002957 a FBcv:0009003 ;
+    rdfs:label "germ cell cluster 13 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1112 ;
+    neo_custom:filtered_gene_count 168 ;
+    neo_custom:total_gene_count 8266 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00000092 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002958 a FBcv:0009003 ;
+    rdfs:label "amnioserosa cluster 14 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1107 ;
+    neo_custom:filtered_gene_count 292 ;
+    neo_custom:total_gene_count 8897 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00059314 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002959 a FBcv:0009003 ;
+    rdfs:label "epidermis primordium cluster 15 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1093 ;
+    neo_custom:filtered_gene_count 202 ;
+    neo_custom:total_gene_count 8344 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00004994 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002960 a FBcv:0009003 ;
+    rdfs:label "epidermis primordium cluster 16 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1016 ;
+    neo_custom:filtered_gene_count 260 ;
+    neo_custom:total_gene_count 8362 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00004994 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002961 a FBcv:0009003 ;
+    rdfs:label "brain primordium cluster 17 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 915 ;
+    neo_custom:filtered_gene_count 282 ;
+    neo_custom:total_gene_count 8412 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00001332 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002962 a FBcv:0009003 ;
+    rdfs:label "foregut / hindgut primordium cluster 19 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 760 ;
+    neo_custom:filtered_gene_count 259 ;
+    neo_custom:total_gene_count 8242 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00059305 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002963 a FBcv:0009003 ;
+    rdfs:label "tracheal primordium cluster 20 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 710 ;
+    neo_custom:filtered_gene_count 298 ;
+    neo_custom:total_gene_count 9636 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00005041 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002964 a FBcv:0009003 ;
+    rdfs:label "salivary gland primordium cluster 21 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 498 ;
+    neo_custom:filtered_gene_count 249 ;
+    neo_custom:total_gene_count 7461 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00059322 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002965 a FBcv:0009003 ;
+    rdfs:label "trunk mesoderm primordium cluster 22 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 334 ;
+    neo_custom:filtered_gene_count 478 ;
+    neo_custom:total_gene_count 8279 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00059310 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002966 a FBcv:0009003 ;
+    rdfs:label "midline primordium cluster 24 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 233 ;
+    neo_custom:filtered_gene_count 272 ;
+    neo_custom:total_gene_count 6071 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00059320 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002967 a FBcv:0009003 ;
+    rdfs:label "Malpighian tubule cluster 27 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)" ;
+    neo_custom:cell_count 82 ;
+    neo_custom:filtered_gene_count 463 ;
+    neo_custom:total_gene_count 5901 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002919 ;
+    RO:0002473 FBbt:00005642 ;
+    RO:0002490 FBdv:00004450 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002968 a FBcv:0009003 ;
+    rdfs:label "germ cell cluster 0 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 4233 ;
+    neo_custom:filtered_gene_count 553 ;
+    neo_custom:total_gene_count 11019 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00000092 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002969 a FBcv:0009003 ;
+    rdfs:label "epidermis primordium cluster 1 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 3764 ;
+    neo_custom:filtered_gene_count 218 ;
+    neo_custom:total_gene_count 10212 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00004994 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002970 a FBcv:0009003 ;
+    rdfs:label "yolk nuclei cluster 2 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 3513 ;
+    neo_custom:filtered_gene_count 371 ;
+    neo_custom:total_gene_count 10577 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00000057 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002971 a FBcv:0009003 ;
+    rdfs:label "brain primordium cluster 3 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 3483 ;
+    neo_custom:filtered_gene_count 288 ;
+    neo_custom:total_gene_count 10473 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00001332 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002972 a FBcv:0009003 ;
+    rdfs:label "brain primordium cluster 4 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 3455 ;
+    neo_custom:filtered_gene_count 191 ;
+    neo_custom:total_gene_count 9994 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00001332 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002973 a FBcv:0009003 ;
+    rdfs:label "somatic muscle primordium cluster 5 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 3108 ;
+    neo_custom:filtered_gene_count 241 ;
+    neo_custom:total_gene_count 10244 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00000463 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002974 a FBcv:0009003 ;
+    rdfs:label "amnioserosa cluster 6 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 3099 ;
+    neo_custom:filtered_gene_count 314 ;
+    neo_custom:total_gene_count 10383 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00059314 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002975 a FBcv:0009003 ;
+    rdfs:label "visceral muscle primordium cluster 7 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 3019 ;
+    neo_custom:filtered_gene_count 310 ;
+    neo_custom:total_gene_count 10338 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00059309 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002976 a FBcv:0009003 ;
+    rdfs:label "peripheral nervous system cluster 8 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2940 ;
+    neo_custom:filtered_gene_count 292 ;
+    neo_custom:total_gene_count 10132 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00059275 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002977 a FBcv:0009003 ;
+    rdfs:label "germ cell cluster 10 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2472 ;
+    neo_custom:filtered_gene_count 194 ;
+    neo_custom:total_gene_count 9645 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00000092 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002978 a FBcv:0009003 ;
+    rdfs:label "epidermis primordium cluster 11 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2470 ;
+    neo_custom:filtered_gene_count 233 ;
+    neo_custom:total_gene_count 9893 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00004994 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002979 a FBcv:0009003 ;
+    rdfs:label "hindgut primordium cluster 12 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2432 ;
+    neo_custom:filtered_gene_count 277 ;
+    neo_custom:total_gene_count 9983 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00059318 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002980 a FBcv:0009003 ;
+    rdfs:label "epidermis primordium cluster 14 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2370 ;
+    neo_custom:filtered_gene_count 287 ;
+    neo_custom:total_gene_count 9820 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00004994 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002981 a FBcv:0009003 ;
+    rdfs:label "epidermis primordium cluster 15 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2294 ;
+    neo_custom:filtered_gene_count 269 ;
+    neo_custom:total_gene_count 9771 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00004994 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002982 a FBcv:0009003 ;
+    rdfs:label "brain primordium cluster 16 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2217 ;
+    neo_custom:filtered_gene_count 287 ;
+    neo_custom:total_gene_count 9681 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00001332 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002983 a FBcv:0009003 ;
+    rdfs:label "peripheral nervous system cluster 18 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2089 ;
+    neo_custom:filtered_gene_count 316 ;
+    neo_custom:total_gene_count 9696 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00059275 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002984 a FBcv:0009003 ;
+    rdfs:label "brain primordium cluster 19 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2075 ;
+    neo_custom:filtered_gene_count 322 ;
+    neo_custom:total_gene_count 9646 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00001332 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002985 a FBcv:0009003 ;
+    rdfs:label "midgut primordium cluster 20 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2064 ;
+    neo_custom:filtered_gene_count 278 ;
+    neo_custom:total_gene_count 9651 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00059319 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002986 a FBcv:0009003 ;
+    rdfs:label "procrystal cell cluster 22 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1909 ;
+    neo_custom:filtered_gene_count 883 ;
+    neo_custom:total_gene_count 11150 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00001689 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002987 a FBcv:0009003 ;
+    rdfs:label "plasmatocytes anlage cluster 23 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1893 ;
+    neo_custom:filtered_gene_count 305 ;
+    neo_custom:total_gene_count 9685 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00005249 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002988 a FBcv:0009003 ;
+    rdfs:label "tracheal primordium cluster 25 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1678 ;
+    neo_custom:filtered_gene_count 281 ;
+    neo_custom:total_gene_count 9366 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00005041 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002989 a FBcv:0009003 ;
+    rdfs:label "brain primordium cluster 26 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1555 ;
+    neo_custom:filtered_gene_count 303 ;
+    neo_custom:total_gene_count 9357 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00001332 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002990 a FBcv:0009003 ;
+    rdfs:label "visceral muscle primordium cluster 27 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1515 ;
+    neo_custom:filtered_gene_count 310 ;
+    neo_custom:total_gene_count 9342 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00059309 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002991 a FBcv:0009003 ;
+    rdfs:label "yolk nuclei cluster 29 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1231 ;
+    neo_custom:filtered_gene_count 254 ;
+    neo_custom:total_gene_count 9098 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00000057 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002992 a FBcv:0009003 ;
+    rdfs:label "salivary gland body primordium cluster 30 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1146 ;
+    neo_custom:filtered_gene_count 359 ;
+    neo_custom:total_gene_count 9095 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00059321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002993 a FBcv:0009003 ;
+    rdfs:label "midline primordium cluster 31 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1028 ;
+    neo_custom:filtered_gene_count 328 ;
+    neo_custom:total_gene_count 8741 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00059320 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002994 a FBcv:0009003 ;
+    rdfs:label "brain primordium cluster 32 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 810 ;
+    neo_custom:filtered_gene_count 290 ;
+    neo_custom:total_gene_count 8262 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00001332 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002995 a FBcv:0009003 ;
+    rdfs:label "muscle cluster 35 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)" ;
+    neo_custom:cell_count 147 ;
+    neo_custom:filtered_gene_count 411 ;
+    neo_custom:total_gene_count 6825 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002920 ;
+    RO:0002473 FBbt:00005074 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002996 a FBcv:0009003 ;
+    rdfs:label "germ cell cluster 0 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1714 ;
+    neo_custom:filtered_gene_count 358 ;
+    neo_custom:total_gene_count 9586 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00000092 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002997 a FBcv:0009003 ;
+    rdfs:label "brain cluster 1 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1672 ;
+    neo_custom:filtered_gene_count 213 ;
+    neo_custom:total_gene_count 9412 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00052663 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002998 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 2 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1433 ;
+    neo_custom:filtered_gene_count 207 ;
+    neo_custom:total_gene_count 8715 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002999 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 3 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1330 ;
+    neo_custom:filtered_gene_count 237 ;
+    neo_custom:total_gene_count 8663 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003000 a FBcv:0009003 ;
+    rdfs:label "brain cluster 4 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1302 ;
+    neo_custom:filtered_gene_count 262 ;
+    neo_custom:total_gene_count 8960 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00052663 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003001 a FBcv:0009003 ;
+    rdfs:label "brain cluster 5 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1222 ;
+    neo_custom:filtered_gene_count 249 ;
+    neo_custom:total_gene_count 8711 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00052663 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003002 a FBcv:0009003 ;
+    rdfs:label "midgut cluster 6 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1146 ;
+    neo_custom:filtered_gene_count 272 ;
+    neo_custom:total_gene_count 9509 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00001886 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003003 a FBcv:0009003 ;
+    rdfs:label "yolk nuclei cluster 7 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1104 ;
+    neo_custom:filtered_gene_count 376 ;
+    neo_custom:total_gene_count 8906 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00000057 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003004 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 8 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1075 ;
+    neo_custom:filtered_gene_count 271 ;
+    neo_custom:total_gene_count 9196 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003005 a FBcv:0009003 ;
+    rdfs:label "amnioserosa cluster 9 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 993 ;
+    neo_custom:filtered_gene_count 256 ;
+    neo_custom:total_gene_count 8455 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00059314 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003006 a FBcv:0009003 ;
+    rdfs:label "brain cluster 10 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 920 ;
+    neo_custom:filtered_gene_count 277 ;
+    neo_custom:total_gene_count 8558 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00052663 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003007 a FBcv:0009003 ;
+    rdfs:label "somatic muscle cluster 11 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 888 ;
+    neo_custom:filtered_gene_count 233 ;
+    neo_custom:total_gene_count 8318 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00005649 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003008 a FBcv:0009003 ;
+    rdfs:label "tracheal system cluster 12 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 847 ;
+    neo_custom:filtered_gene_count 256 ;
+    neo_custom:total_gene_count 8094 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00005038 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003009 a FBcv:0009003 ;
+    rdfs:label "salivary gland cluster 13 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 832 ;
+    neo_custom:filtered_gene_count 271 ;
+    neo_custom:total_gene_count 8408 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00059317 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003010 a FBcv:0009003 ;
+    rdfs:label "yolk nuclei cluster 14 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 809 ;
+    neo_custom:filtered_gene_count 163 ;
+    neo_custom:total_gene_count 8065 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00000057 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003011 a FBcv:0009003 ;
+    rdfs:label "plasmatocytes cluster 15 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 788 ;
+    neo_custom:filtered_gene_count 253 ;
+    neo_custom:total_gene_count 8401 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00001685 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003012 a FBcv:0009003 ;
+    rdfs:label "sensory nervous system primordium cluster 16 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 691 ;
+    neo_custom:filtered_gene_count 269 ;
+    neo_custom:total_gene_count 8022 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00052556 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003013 a FBcv:0009003 ;
+    rdfs:label "muscle cluster 17 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 664 ;
+    neo_custom:filtered_gene_count 1427 ;
+    neo_custom:total_gene_count 10327 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00005074 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003014 a FBcv:0009003 ;
+    rdfs:label "brain cluster 18 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 630 ;
+    neo_custom:filtered_gene_count 1567 ;
+    neo_custom:total_gene_count 10042 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00052663 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003015 a FBcv:0009003 ;
+    rdfs:label "brain cluster 19 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 581 ;
+    neo_custom:filtered_gene_count 254 ;
+    neo_custom:total_gene_count 8640 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00052663 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003016 a FBcv:0009003 ;
+    rdfs:label "somatic muscle cluster 20 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 547 ;
+    neo_custom:filtered_gene_count 378 ;
+    neo_custom:total_gene_count 8772 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00005649 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003017 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 21 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 481 ;
+    neo_custom:filtered_gene_count 257 ;
+    neo_custom:total_gene_count 7093 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003018 a FBcv:0009003 ;
+    rdfs:label "hindgut / anal pad cluster 22 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 448 ;
+    neo_custom:filtered_gene_count 254 ;
+    neo_custom:total_gene_count 7086 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00059315 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003019 a FBcv:0009003 ;
+    rdfs:label "muscle cluster 23 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 401 ;
+    neo_custom:filtered_gene_count 278 ;
+    neo_custom:total_gene_count 7152 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00005074 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003020 a FBcv:0009003 ;
+    rdfs:label "glia cluster 24 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 371 ;
+    neo_custom:filtered_gene_count 281 ;
+    neo_custom:total_gene_count 6900 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00052369 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003021 a FBcv:0009003 ;
+    rdfs:label "fat body cluster 25 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 311 ;
+    neo_custom:filtered_gene_count 288 ;
+    neo_custom:total_gene_count 7555 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00046052 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003022 a FBcv:0009003 ;
+    rdfs:label "hindgut / anal pad cluster 26 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 251 ;
+    neo_custom:filtered_gene_count 333 ;
+    neo_custom:total_gene_count 7098 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00059315 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003023 a FBcv:0009003 ;
+    rdfs:label "tracheal system cluster 27 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 237 ;
+    neo_custom:filtered_gene_count 323 ;
+    neo_custom:total_gene_count 6998 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00005038 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003024 a FBcv:0009003 ;
+    rdfs:label "crystal cell cluster 28 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 237 ;
+    neo_custom:filtered_gene_count 232 ;
+    neo_custom:total_gene_count 7069 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00001690 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003025 a FBcv:0009003 ;
+    rdfs:label "salivary gland cluster 29 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 82 ;
+    neo_custom:filtered_gene_count 344 ;
+    neo_custom:total_gene_count 6056 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00059317 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003026 a FBcv:0009003 ;
+    rdfs:label "muscle cluster 30 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)" ;
+    neo_custom:cell_count 66 ;
+    neo_custom:filtered_gene_count 424 ;
+    neo_custom:total_gene_count 5265 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002921 ;
+    RO:0002473 FBbt:00005074 ;
+    RO:0002490 FBdv:00005331 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003027 a FBcv:0009003 ;
+    rdfs:label "brain cluster 0 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 3482 ;
+    neo_custom:filtered_gene_count 219 ;
+    neo_custom:total_gene_count 10583 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00052663 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003028 a FBcv:0009003 ;
+    rdfs:label "somatic muscle cluster 1 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 3298 ;
+    neo_custom:filtered_gene_count 215 ;
+    neo_custom:total_gene_count 10539 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00005649 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003029 a FBcv:0009003 ;
+    rdfs:label "ventral nerve cord cluster 2 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 3102 ;
+    neo_custom:filtered_gene_count 249 ;
+    neo_custom:total_gene_count 10616 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00059273 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003030 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 3 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2815 ;
+    neo_custom:filtered_gene_count 220 ;
+    neo_custom:total_gene_count 10018 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00058243 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003031 a FBcv:0009003 ;
+    rdfs:label "germ cell cluster 4 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2605 ;
+    neo_custom:filtered_gene_count 279 ;
+    neo_custom:total_gene_count 10499 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00000092 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003032 a FBcv:0009003 ;
+    rdfs:label "yolk nuclei cluster 5 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2392 ;
+    neo_custom:filtered_gene_count 117 ;
+    neo_custom:total_gene_count 9109 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00000057 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003033 a FBcv:0009003 ;
+    rdfs:label "fat body cluster 6 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2312 ;
+    neo_custom:filtered_gene_count 204 ;
+    neo_custom:total_gene_count 10190 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00046052 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003034 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 7 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2279 ;
+    neo_custom:filtered_gene_count 182 ;
+    neo_custom:total_gene_count 9992 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00058243 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003035 a FBcv:0009003 ;
+    rdfs:label "midgut cluster 8 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2075 ;
+    neo_custom:filtered_gene_count 264 ;
+    neo_custom:total_gene_count 9884 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00001886 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003036 a FBcv:0009003 ;
+    rdfs:label "brain cluster 9 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2050 ;
+    neo_custom:filtered_gene_count 185 ;
+    neo_custom:total_gene_count 9998 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00052663 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003037 a FBcv:0009003 ;
+    rdfs:label "hindgut / anal pad cluster 10 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2012 ;
+    neo_custom:filtered_gene_count 211 ;
+    neo_custom:total_gene_count 10071 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00059315 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003038 a FBcv:0009003 ;
+    rdfs:label "midgut cluster 11 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1950 ;
+    neo_custom:filtered_gene_count 200 ;
+    neo_custom:total_gene_count 9851 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00001886 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003039 a FBcv:0009003 ;
+    rdfs:label "muscle cluster 12 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1909 ;
+    neo_custom:filtered_gene_count 368 ;
+    neo_custom:total_gene_count 10666 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00005074 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003040 a FBcv:0009003 ;
+    rdfs:label "yolk nuclei cluster 13 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1876 ;
+    neo_custom:filtered_gene_count 280 ;
+    neo_custom:total_gene_count 9428 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00000057 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003041 a FBcv:0009003 ;
+    rdfs:label "tracheal system cluster 14 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1674 ;
+    neo_custom:filtered_gene_count 222 ;
+    neo_custom:total_gene_count 9517 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00005038 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003042 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 15 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1635 ;
+    neo_custom:filtered_gene_count 218 ;
+    neo_custom:total_gene_count 9240 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00058243 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003043 a FBcv:0009003 ;
+    rdfs:label "tracheal system cluster 16 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1618 ;
+    neo_custom:filtered_gene_count 233 ;
+    neo_custom:total_gene_count 9528 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00005038 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003044 a FBcv:0009003 ;
+    rdfs:label "proventriculus cluster 17 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1554 ;
+    neo_custom:filtered_gene_count 222 ;
+    neo_custom:total_gene_count 9637 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00059316 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003045 a FBcv:0009003 ;
+    rdfs:label "salivary gland cluster 18 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1554 ;
+    neo_custom:filtered_gene_count 198 ;
+    neo_custom:total_gene_count 9355 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00059317 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003046 a FBcv:0009003 ;
+    rdfs:label "plasmatocytes cluster 19 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1514 ;
+    neo_custom:filtered_gene_count 203 ;
+    neo_custom:total_gene_count 9467 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00001685 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003047 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 20 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1500 ;
+    neo_custom:filtered_gene_count 203 ;
+    neo_custom:total_gene_count 9132 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00058243 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003048 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 21 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1349 ;
+    neo_custom:filtered_gene_count 205 ;
+    neo_custom:total_gene_count 9593 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00058243 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003049 a FBcv:0009003 ;
+    rdfs:label "somatic muscle cluster 22 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1280 ;
+    neo_custom:filtered_gene_count 224 ;
+    neo_custom:total_gene_count 8975 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00005649 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003050 a FBcv:0009003 ;
+    rdfs:label "foregut / hindgut / anal pad cluster 23 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1157 ;
+    neo_custom:filtered_gene_count 212 ;
+    neo_custom:total_gene_count 8878 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00059305 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003051 a FBcv:0009003 ;
+    rdfs:label "amnioserosa cluster 24 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1157 ;
+    neo_custom:filtered_gene_count 236 ;
+    neo_custom:total_gene_count 8675 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00059314 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003052 a FBcv:0009003 ;
+    rdfs:label "sensory nervous system cluster 25 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1138 ;
+    neo_custom:filtered_gene_count 234 ;
+    neo_custom:total_gene_count 9390 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00058245 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003053 a FBcv:0009003 ;
+    rdfs:label "sensory nervous system cluster 26 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 980 ;
+    neo_custom:filtered_gene_count 211 ;
+    neo_custom:total_gene_count 8974 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00058245 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003054 a FBcv:0009003 ;
+    rdfs:label "brain cluster 27 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 963 ;
+    neo_custom:filtered_gene_count 212 ;
+    neo_custom:total_gene_count 8830 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00052663 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003055 a FBcv:0009003 ;
+    rdfs:label "ventral nerve cord cluster 28 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 872 ;
+    neo_custom:filtered_gene_count 209 ;
+    neo_custom:total_gene_count 8713 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00059273 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003056 a FBcv:0009003 ;
+    rdfs:label "visceral muscle cluster 29 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 802 ;
+    neo_custom:filtered_gene_count 210 ;
+    neo_custom:total_gene_count 8550 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00005653 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003057 a FBcv:0009003 ;
+    rdfs:label "spiracle (tracheal system) cluster 30 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 755 ;
+    neo_custom:filtered_gene_count 240 ;
+    neo_custom:total_gene_count 8282 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00005039 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003058 a FBcv:0009003 ;
+    rdfs:label "Malpighian tubule cluster 31 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 748 ;
+    neo_custom:filtered_gene_count 213 ;
+    neo_custom:total_gene_count 8577 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00005642 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003059 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 32 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 617 ;
+    neo_custom:filtered_gene_count 228 ;
+    neo_custom:total_gene_count 7749 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00058243 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003060 a FBcv:0009003 ;
+    rdfs:label "glia cluster 33 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 573 ;
+    neo_custom:filtered_gene_count 230 ;
+    neo_custom:total_gene_count 7922 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00052369 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003061 a FBcv:0009003 ;
+    rdfs:label "brain cluster 34 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 433 ;
+    neo_custom:filtered_gene_count 584 ;
+    neo_custom:total_gene_count 6895 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00052663 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003062 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 35 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 316 ;
+    neo_custom:filtered_gene_count 327 ;
+    neo_custom:total_gene_count 8280 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00058243 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003063 a FBcv:0009003 ;
+    rdfs:label "tracheal system cluster 36 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)" ;
+    neo_custom:cell_count 204 ;
+    neo_custom:filtered_gene_count 447 ;
+    neo_custom:total_gene_count 8515 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002922 ;
+    RO:0002473 FBbt:00005038 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003064 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 0 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2499 ;
+    neo_custom:filtered_gene_count 189 ;
+    neo_custom:total_gene_count 9930 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003065 a FBcv:0009003 ;
+    rdfs:label "ventral nerve cord cluster 1 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2208 ;
+    neo_custom:filtered_gene_count 235 ;
+    neo_custom:total_gene_count 9912 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00059273 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003066 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 2 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2041 ;
+    neo_custom:filtered_gene_count 234 ;
+    neo_custom:total_gene_count 9572 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003067 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 5 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1878 ;
+    neo_custom:filtered_gene_count 230 ;
+    neo_custom:total_gene_count 9537 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003068 a FBcv:0009003 ;
+    rdfs:label "plasmatocytes cluster 6 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1864 ;
+    neo_custom:filtered_gene_count 208 ;
+    neo_custom:total_gene_count 9697 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00001685 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003069 a FBcv:0009003 ;
+    rdfs:label "somatic muscle cluster 7 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1845 ;
+    neo_custom:filtered_gene_count 220 ;
+    neo_custom:total_gene_count 9904 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00005649 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003070 a FBcv:0009003 ;
+    rdfs:label "midgut cluster 8 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1729 ;
+    neo_custom:filtered_gene_count 243 ;
+    neo_custom:total_gene_count 10013 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00001886 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003071 a FBcv:0009003 ;
+    rdfs:label "brain cluster 9 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1711 ;
+    neo_custom:filtered_gene_count 439 ;
+    neo_custom:total_gene_count 10710 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00059273 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003072 a FBcv:0009003 ;
+    rdfs:label "fat body cluster 10 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1629 ;
+    neo_custom:filtered_gene_count 207 ;
+    neo_custom:total_gene_count 9926 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00046052 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003073 a FBcv:0009003 ;
+    rdfs:label "tracheal system cluster 11 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1556 ;
+    neo_custom:filtered_gene_count 222 ;
+    neo_custom:total_gene_count 9637 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00005038 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003074 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 12 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1529 ;
+    neo_custom:filtered_gene_count 231 ;
+    neo_custom:total_gene_count 9969 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003075 a FBcv:0009003 ;
+    rdfs:label "yolk nuclei cluster 13 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1516 ;
+    neo_custom:filtered_gene_count 258 ;
+    neo_custom:total_gene_count 9163 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00000057 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003076 a FBcv:0009003 ;
+    rdfs:label "foregut / hindgut / anal pad cluster 14 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1507 ;
+    neo_custom:filtered_gene_count 226 ;
+    neo_custom:total_gene_count 9690 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00059305 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003077 a FBcv:0009003 ;
+    rdfs:label "yolk nuclei cluster 15 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1406 ;
+    neo_custom:filtered_gene_count 90 ;
+    neo_custom:total_gene_count 8322 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00000057 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003078 a FBcv:0009003 ;
+    rdfs:label "ventral nerve cord cluster 16 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1385 ;
+    neo_custom:filtered_gene_count 241 ;
+    neo_custom:total_gene_count 9553 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00059273 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003079 a FBcv:0009003 ;
+    rdfs:label "brain cluster 17 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1379 ;
+    neo_custom:filtered_gene_count 221 ;
+    neo_custom:total_gene_count 9104 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00059273 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003080 a FBcv:0009003 ;
+    rdfs:label "somatic muscle cluster 18 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1317 ;
+    neo_custom:filtered_gene_count 225 ;
+    neo_custom:total_gene_count 9022 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00005649 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003081 a FBcv:0009003 ;
+    rdfs:label "somatic muscle cluster 19 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1313 ;
+    neo_custom:filtered_gene_count 237 ;
+    neo_custom:total_gene_count 9247 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00005649 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003082 a FBcv:0009003 ;
+    rdfs:label "sensory nervous system cluster 21 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1043 ;
+    neo_custom:filtered_gene_count 215 ;
+    neo_custom:total_gene_count 8645 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00058245 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003083 a FBcv:0009003 ;
+    rdfs:label "salivary gland cluster 22 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1031 ;
+    neo_custom:filtered_gene_count 198 ;
+    neo_custom:total_gene_count 8865 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00059317 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003084 a FBcv:0009003 ;
+    rdfs:label "spiracle (tracheal system) cluster 23 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1002 ;
+    neo_custom:filtered_gene_count 202 ;
+    neo_custom:total_gene_count 8834 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00005039 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003085 a FBcv:0009003 ;
+    rdfs:label "proventriculus cluster 24 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 956 ;
+    neo_custom:filtered_gene_count 231 ;
+    neo_custom:total_gene_count 9471 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00059316 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003086 a FBcv:0009003 ;
+    rdfs:label "amnioserosa cluster 25 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 909 ;
+    neo_custom:filtered_gene_count 240 ;
+    neo_custom:total_gene_count 8336 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00059314 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003087 a FBcv:0009003 ;
+    rdfs:label "brain cluster 26 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 809 ;
+    neo_custom:filtered_gene_count 225 ;
+    neo_custom:total_gene_count 8469 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00059273 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003088 a FBcv:0009003 ;
+    rdfs:label "brain cluster 27 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 663 ;
+    neo_custom:filtered_gene_count 217 ;
+    neo_custom:total_gene_count 8054 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00059273 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003089 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 28 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 650 ;
+    neo_custom:filtered_gene_count 292 ;
+    neo_custom:total_gene_count 9559 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003090 a FBcv:0009003 ;
+    rdfs:label "sensory nervous system cluster 29 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 592 ;
+    neo_custom:filtered_gene_count 210 ;
+    neo_custom:total_gene_count 8132 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00058245 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003091 a FBcv:0009003 ;
+    rdfs:label "midgut cluster 30 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 540 ;
+    neo_custom:filtered_gene_count 238 ;
+    neo_custom:total_gene_count 7725 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00001886 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003092 a FBcv:0009003 ;
+    rdfs:label "brain cluster 31 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 444 ;
+    neo_custom:filtered_gene_count 952 ;
+    neo_custom:total_gene_count 7216 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00059273 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003093 a FBcv:0009003 ;
+    rdfs:label "tracheal system cluster 32 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 433 ;
+    neo_custom:filtered_gene_count 207 ;
+    neo_custom:total_gene_count 6706 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00005038 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003094 a FBcv:0009003 ;
+    rdfs:label "muscle cluster 33 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 311 ;
+    neo_custom:filtered_gene_count 585 ;
+    neo_custom:total_gene_count 8442 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00005074 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003095 a FBcv:0009003 ;
+    rdfs:label "brain cluster 34 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 304 ;
+    neo_custom:filtered_gene_count 222 ;
+    neo_custom:total_gene_count 6543 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00059273 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003096 a FBcv:0009003 ;
+    rdfs:label "foregut / hindgut / anal pad cluster 35 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)" ;
+    neo_custom:cell_count 280 ;
+    neo_custom:filtered_gene_count 215 ;
+    neo_custom:total_gene_count 6797 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002923 ;
+    RO:0002473 FBbt:00059305 ;
+    RO:0002490 FBdv:00005334 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003097 a FBcv:0009003 ;
+    rdfs:label "brain cluster 0 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 3323 ;
+    neo_custom:filtered_gene_count 1276 ;
+    neo_custom:total_gene_count 12399 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00059273 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003098 a FBcv:0009003 ;
+    rdfs:label "somatic muscle cluster 1 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2875 ;
+    neo_custom:filtered_gene_count 270 ;
+    neo_custom:total_gene_count 10896 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00005649 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003099 a FBcv:0009003 ;
+    rdfs:label "foregut / hindgut / anal pad cluster 3 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2714 ;
+    neo_custom:filtered_gene_count 233 ;
+    neo_custom:total_gene_count 10557 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00059305 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003100 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 5 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2493 ;
+    neo_custom:filtered_gene_count 277 ;
+    neo_custom:total_gene_count 10710 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003101 a FBcv:0009003 ;
+    rdfs:label "brain cluster 6 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2451 ;
+    neo_custom:filtered_gene_count 256 ;
+    neo_custom:total_gene_count 10435 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00059273 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003102 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 7 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2109 ;
+    neo_custom:filtered_gene_count 226 ;
+    neo_custom:total_gene_count 10043 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003103 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 8 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 2102 ;
+    neo_custom:filtered_gene_count 212 ;
+    neo_custom:total_gene_count 10157 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003104 a FBcv:0009003 ;
+    rdfs:label "muscle cluster 9 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1931 ;
+    neo_custom:filtered_gene_count 248 ;
+    neo_custom:total_gene_count 10187 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00005074 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003105 a FBcv:0009003 ;
+    rdfs:label "brain cluster 10 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1905 ;
+    neo_custom:filtered_gene_count 181 ;
+    neo_custom:total_gene_count 10069 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00059273 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003106 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 11 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1878 ;
+    neo_custom:filtered_gene_count 258 ;
+    neo_custom:total_gene_count 10109 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003107 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 12 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1868 ;
+    neo_custom:filtered_gene_count 176 ;
+    neo_custom:total_gene_count 9868 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003108 a FBcv:0009003 ;
+    rdfs:label "midgut cluster 14 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1755 ;
+    neo_custom:filtered_gene_count 229 ;
+    neo_custom:total_gene_count 10066 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00001886 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003109 a FBcv:0009003 ;
+    rdfs:label "tracheal system cluster 15 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1606 ;
+    neo_custom:filtered_gene_count 281 ;
+    neo_custom:total_gene_count 10234 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00005038 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003110 a FBcv:0009003 ;
+    rdfs:label "midgut cluster 16 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1589 ;
+    neo_custom:filtered_gene_count 205 ;
+    neo_custom:total_gene_count 9995 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00001886 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003111 a FBcv:0009003 ;
+    rdfs:label "somatic muscle cluster 19 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1489 ;
+    neo_custom:filtered_gene_count 260 ;
+    neo_custom:total_gene_count 9722 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00005649 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003112 a FBcv:0009003 ;
+    rdfs:label "plasmatocytes cluster 20 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1445 ;
+    neo_custom:filtered_gene_count 202 ;
+    neo_custom:total_gene_count 9665 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00001685 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003113 a FBcv:0009003 ;
+    rdfs:label "foregut / hindgut / anal pad cluster 21 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1390 ;
+    neo_custom:filtered_gene_count 202 ;
+    neo_custom:total_gene_count 9672 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00059305 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003114 a FBcv:0009003 ;
+    rdfs:label "fat body cluster 23 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1317 ;
+    neo_custom:filtered_gene_count 206 ;
+    neo_custom:total_gene_count 9825 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00046052 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003115 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 24 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1301 ;
+    neo_custom:filtered_gene_count 198 ;
+    neo_custom:total_gene_count 9517 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003116 a FBcv:0009003 ;
+    rdfs:label "yolk nuclei cluster 25 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1167 ;
+    neo_custom:filtered_gene_count 102 ;
+    neo_custom:total_gene_count 8692 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00000057 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003117 a FBcv:0009003 ;
+    rdfs:label "yolk nuclei cluster 26 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1099 ;
+    neo_custom:filtered_gene_count 305 ;
+    neo_custom:total_gene_count 9047 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00000057 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003118 a FBcv:0009003 ;
+    rdfs:label "sensory nervous system cluster 27 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 1098 ;
+    neo_custom:filtered_gene_count 290 ;
+    neo_custom:total_gene_count 9698 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00058245 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003119 a FBcv:0009003 ;
+    rdfs:label "brain cluster 29 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 941 ;
+    neo_custom:filtered_gene_count 253 ;
+    neo_custom:total_gene_count 9082 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00059273 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003120 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 30 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 913 ;
+    neo_custom:filtered_gene_count 246 ;
+    neo_custom:total_gene_count 9333 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003121 a FBcv:0009003 ;
+    rdfs:label "epidermis cluster 32 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 388 ;
+    neo_custom:filtered_gene_count 229 ;
+    neo_custom:total_gene_count 7669 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00058243 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003122 a FBcv:0009003 ;
+    rdfs:label "Malpighian tubule cluster 33 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 315 ;
+    neo_custom:filtered_gene_count 367 ;
+    neo_custom:total_gene_count 8275 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00001904 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003123 a FBcv:0009003 ;
+    rdfs:label "midgut cluster 34 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)" ;
+    neo_custom:cell_count 143 ;
+    neo_custom:filtered_gene_count 350 ;
+    neo_custom:total_gene_count 7246 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002924 ;
+    RO:0002473 FBbt:00001886 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003124 a FBcv:0009003 ;
+    rdfs:label "Neural progenitors cluster 0 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 9932 ;
+    neo_custom:filtered_gene_count 295 ;
+    neo_custom:total_gene_count 12203 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00001332 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003125 a FBcv:0009003 ;
+    rdfs:label "Neural progenitors cluster 1 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 7020 ;
+    neo_custom:filtered_gene_count 265 ;
+    neo_custom:total_gene_count 11482 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00001332 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003126 a FBcv:0009003 ;
+    rdfs:label "Immature neurons cluster 2 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 6714 ;
+    neo_custom:filtered_gene_count 225 ;
+    neo_custom:total_gene_count 11494 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00052663 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003127 a FBcv:0009003 ;
+    rdfs:label "Neural progenitors cluster 3 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 4879 ;
+    neo_custom:filtered_gene_count 264 ;
+    neo_custom:total_gene_count 10805 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00001332 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003128 a FBcv:0009003 ;
+    rdfs:label "Mature neurons cluster 5 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 4453 ;
+    neo_custom:filtered_gene_count 234 ;
+    neo_custom:total_gene_count 10801 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00047097 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003129 a FBcv:0009003 ;
+    rdfs:label "Sensory progenitors cluster 6 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 4360 ;
+    neo_custom:filtered_gene_count 286 ;
+    neo_custom:total_gene_count 10763 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00001137 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003130 a FBcv:0009003 ;
+    rdfs:label "Immature neurons cluster 7 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 3973 ;
+    neo_custom:filtered_gene_count 244 ;
+    neo_custom:total_gene_count 11126 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00052663 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003131 a FBcv:0009003 ;
+    rdfs:label "Immature neurons cluster 8 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 2180 ;
+    neo_custom:filtered_gene_count 252 ;
+    neo_custom:total_gene_count 10242 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00052663 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003132 a FBcv:0009003 ;
+    rdfs:label "Mature neurons cluster 10 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 1778 ;
+    neo_custom:filtered_gene_count 254 ;
+    neo_custom:total_gene_count 10276 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00047097 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003133 a FBcv:0009003 ;
+    rdfs:label "Neural progenitors cluster 11 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 1731 ;
+    neo_custom:filtered_gene_count 529 ;
+    neo_custom:total_gene_count 10790 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00001332 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003134 a FBcv:0009003 ;
+    rdfs:label "Immature neurons cluster 12 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 1610 ;
+    neo_custom:filtered_gene_count 233 ;
+    neo_custom:total_gene_count 9983 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00052663 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003135 a FBcv:0009003 ;
+    rdfs:label "Immature neurons cluster 13 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 1125 ;
+    neo_custom:filtered_gene_count 220 ;
+    neo_custom:total_gene_count 8874 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00052663 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003136 a FBcv:0009003 ;
+    rdfs:label "Sensory progenitors cluster 14 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 789 ;
+    neo_custom:filtered_gene_count 215 ;
+    neo_custom:total_gene_count 8601 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00001137 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003137 a FBcv:0009003 ;
+    rdfs:label "Neural progenitors cluster 15 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 734 ;
+    neo_custom:filtered_gene_count 266 ;
+    neo_custom:total_gene_count 7893 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00001332 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003138 a FBcv:0009003 ;
+    rdfs:label "Neural progenitors cluster 16 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 529 ;
+    neo_custom:filtered_gene_count 1816 ;
+    neo_custom:total_gene_count 9939 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00001332 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003139 a FBcv:0009003 ;
+    rdfs:label "Mature neurons cluster 17 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 472 ;
+    neo_custom:filtered_gene_count 248 ;
+    neo_custom:total_gene_count 7225 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00047097 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003140 a FBcv:0009003 ;
+    rdfs:label "Oenocytes cluster 18 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 140 ;
+    neo_custom:filtered_gene_count 200 ;
+    neo_custom:total_gene_count 5807 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00001694 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003141 a FBcv:0009003 ;
+    rdfs:label "Germline cluster 19 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 43 ;
+    neo_custom:filtered_gene_count 366 ;
+    neo_custom:total_gene_count 3113 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002925 ;
+    RO:0002473 FBbt:00004860 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003142 a FBcv:0009003 ;
+    rdfs:label "Cholinergic cluster 0 (Calderon 2022 mature neuron sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 1562 ;
+    neo_custom:filtered_gene_count 218 ;
+    neo_custom:total_gene_count 8568 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002926 ;
+    RO:0002473 FBbt:00058215 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003143 a FBcv:0009003 ;
+    rdfs:label "Cholinergic cluster 2 (Calderon 2022 mature neuron sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 997 ;
+    neo_custom:filtered_gene_count 245 ;
+    neo_custom:total_gene_count 7828 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002926 ;
+    RO:0002473 FBbt:00058215 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003144 a FBcv:0009003 ;
+    rdfs:label "Multidendritic sensory cluster 3 (Calderon 2022 mature neuron sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 656 ;
+    neo_custom:filtered_gene_count 260 ;
+    neo_custom:total_gene_count 7913 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002926 ;
+    RO:0002473 FBbt:00048285 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003145 a FBcv:0009003 ;
+    rdfs:label "Glutamatergic cluster 4 (Calderon 2022 mature neuron sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 564 ;
+    neo_custom:filtered_gene_count 236 ;
+    neo_custom:total_gene_count 6740 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002926 ;
+    RO:0002473 FBbt:00058218 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003146 a FBcv:0009003 ;
+    rdfs:label "External sensory cluster 5 (Calderon 2022 mature neuron sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 447 ;
+    neo_custom:filtered_gene_count 219 ;
+    neo_custom:total_gene_count 7005 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002926 ;
+    RO:0002473 FBbt:00052615 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003147 a FBcv:0009003 ;
+    rdfs:label "Chordotonal sensory cluster 6 (Calderon 2022 mature neuron sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 353 ;
+    neo_custom:filtered_gene_count 254 ;
+    neo_custom:total_gene_count 6947 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002926 ;
+    RO:0002473 FBbt:00051425 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003148 a FBcv:0009003 ;
+    rdfs:label "Monoaminergic cluster 7 (Calderon 2022 mature neuron sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 247 ;
+    neo_custom:filtered_gene_count 275 ;
+    neo_custom:total_gene_count 6016 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002926 ;
+    RO:0002473 FBbt:00058211 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00003149 a FBcv:0009003 ;
+    rdfs:label "Peptidergic cluster 10 (Calderon 2022 mature neuron sub-clusters (6-18 h)) (Calderon 2022)" ;
+    neo_custom:cell_count 49 ;
+    neo_custom:filtered_gene_count 260 ;
+    neo_custom:total_gene_count 2947 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00002926 ;
+    RO:0002473 FBbt:00058212 ;
+    dcterms:source VFBseq:00002863 .
+
+FlyBase:FBrf0254247 a FBcv:0000212 ;
+    neo_property:nodeLabel "pub" .
+
+VFBseq:00002865 a FBcv:0003025 ;
+    rdfs:label "embryo, 0-2 h after egg laying, Canton S, sci-RNA-seq3 experiment 2 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002864 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002866 a FBcv:0003025 ;
+    rdfs:label "embryo, 0-2 h after egg laying, Canton S, sci-RNA-seq3 experiment 4 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002864 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002867 a FBcv:0003025 ;
+    rdfs:label "embryo, 0-2 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002864 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002868 a FBcv:0003025 ;
+    rdfs:label "embryo, 0-2 h after egg laying, Canton S, sci-RNA-seq3 experiment 11 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002864 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002869 a FBcv:0003025 ;
+    rdfs:label "embryo, 0-2 h after egg laying, Canton S, sci-RNA-seq3 experiment 12 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002864 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002871 a FBcv:0003025 ;
+    rdfs:label "embryo, 1-3 h after egg laying, Canton S, sci-RNA-seq3 experiment 2 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002870 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002872 a FBcv:0003025 ;
+    rdfs:label "embryo, 1-3 h after egg laying, Canton S, sci-RNA-seq3 experiment 4 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002870 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002873 a FBcv:0003025 ;
+    rdfs:label "embryo, 1-3 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002870 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002874 a FBcv:0003025 ;
+    rdfs:label "embryo, 1-3 h after egg laying, Canton S, sci-RNA-seq3 experiment 11 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002870 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002875 a FBcv:0003025 ;
+    rdfs:label "embryo, 1-3 h after egg laying, Canton S, sci-RNA-seq3 experiment 12 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002870 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002877 a FBcv:0003025 ;
+    rdfs:label "embryo, 2-4 h after egg laying, Canton S, sci-RNA-seq3 experiment 4 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002876 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002878 a FBcv:0003025 ;
+    rdfs:label "embryo, 2-4 h after egg laying, Canton S, sci-RNA-seq3 experiment 11 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002876 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002879 a FBcv:0003025 ;
+    rdfs:label "embryo, 2-4 h after egg laying, Canton S, sci-RNA-seq3 experiment 12 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002876 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002881 a FBcv:0003025 ;
+    rdfs:label "embryo, 3-7 h after egg laying, Canton S, sci-RNA-seq3 experiment 1 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002880 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002882 a FBcv:0003025 ;
+    rdfs:label "embryo, 3-7 h after egg laying, Canton S, sci-RNA-seq3 experiment 2 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002880 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002883 a FBcv:0003025 ;
+    rdfs:label "embryo, 3-7 h after egg laying, Canton S, sci-RNA-seq3 experiment 4 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002880 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002884 a FBcv:0003025 ;
+    rdfs:label "embryo, 3-7 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002880 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002885 a FBcv:0003025 ;
+    rdfs:label "embryo, 3-7 h after egg laying, Canton S, sci-RNA-seq3 experiment 11 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002880 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002886 a FBcv:0003025 ;
+    rdfs:label "embryo, 3-7 h after egg laying, Canton S, sci-RNA-seq3 experiment 12 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002880 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002888 a FBcv:0003025 ;
+    rdfs:label "embryo, 4-8 h after egg laying, Canton S, sci-RNA-seq3 experiment 1 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002887 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002889 a FBcv:0003025 ;
+    rdfs:label "embryo, 4-8 h after egg laying, Canton S, sci-RNA-seq3 experiment 2 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002887 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002890 a FBcv:0003025 ;
+    rdfs:label "embryo, 4-8 h after egg laying, Canton S, sci-RNA-seq3 experiment 4 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002887 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002891 a FBcv:0003025 ;
+    rdfs:label "embryo, 4-8 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002887 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002893 a FBcv:0003025 ;
+    rdfs:label "embryo, 6-10 h after egg laying, Canton S, sci-RNA-seq3 experiment 1 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002892 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002894 a FBcv:0003025 ;
+    rdfs:label "embryo, 6-10 h after egg laying, Canton S, sci-RNA-seq3 experiment 3 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002892 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002895 a FBcv:0003025 ;
+    rdfs:label "embryo, 6-10 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002892 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002897 a FBcv:0003025 ;
+    rdfs:label "embryo, 8-12 h after egg laying, Canton S, sci-RNA-seq3 experiment 1 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002896 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002898 a FBcv:0003025 ;
+    rdfs:label "embryo, 8-12 h after egg laying, Canton S, sci-RNA-seq3 experiment 3 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002896 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002899 a FBcv:0003025 ;
+    rdfs:label "embryo, 8-12 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002896 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002901 a FBcv:0003025 ;
+    rdfs:label "embryo, 10-14 h after egg laying, Canton S, sci-RNA-seq3 experiment 1 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002900 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002902 a FBcv:0003025 ;
+    rdfs:label "embryo, 10-14 h after egg laying, Canton S, sci-RNA-seq3 experiment 3 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002900 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002903 a FBcv:0003025 ;
+    rdfs:label "embryo, 10-14 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002900 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002905 a FBcv:0003025 ;
+    rdfs:label "embryo, 12-16 h after egg laying, Canton S, sci-RNA-seq3 experiment 1 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002904 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002906 a FBcv:0003025 ;
+    rdfs:label "embryo, 12-16 h after egg laying, Canton S, sci-RNA-seq3 experiment 3 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002904 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002907 a FBcv:0003025 ;
+    rdfs:label "embryo, 12-16 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002904 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002909 a FBcv:0003025 ;
+    rdfs:label "embryo, 14-18 h after egg laying, Canton S, sci-RNA-seq3 experiment 1 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002908 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002910 a FBcv:0003025 ;
+    rdfs:label "embryo, 14-18 h after egg laying, Canton S, sci-RNA-seq3 experiment 3 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002908 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002911 a FBcv:0003025 ;
+    rdfs:label "embryo, 14-18 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002908 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002913 a FBcv:0003025 ;
+    rdfs:label "embryo, 16-20 h after egg laying, Canton S, sci-RNA-seq3 experiment 1 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002912 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002914 a FBcv:0003025 ;
+    rdfs:label "embryo, 16-20 h after egg laying, Canton S, sci-RNA-seq3 experiment 3 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002912 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002915 a FBcv:0003025 ;
+    rdfs:label "embryo, 16-20 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00002912 ;
+    dcterms:source VFBseq:00002863 ;
+    BAO:0000212 FBcv:0009056 .
+
+VFBseq:00002917 a FBcv:0009002 ;
+    rdfs:label "Calderon 2022 clusters, modelled age 2-4 h" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002864,
+        VFBseq:00002870,
+        VFBseq:00002876,
+        VFBseq:00002880 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002876 a FBcv:0003024 ;
+    rdfs:label "embryo, 2-4 h after egg laying, Canton S (Calderon 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00000052 ;
+    RO:0002352 VFBseq:00002877,
+        VFBseq:00002878,
+        VFBseq:00002879 ;
+    RO:0002490 FBdv:00005289 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002892 a FBcv:0003024 ;
+    rdfs:label "embryo, 6-10 h after egg laying, Canton S (Calderon 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00000052 ;
+    RO:0002352 VFBseq:00002893,
+        VFBseq:00002894,
+        VFBseq:00002895 ;
+    RO:0002490 FBdv:00005289 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002864 a FBcv:0003024 ;
+    rdfs:label "embryo, 0-2 h after egg laying, Canton S (Calderon 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00000052 ;
+    RO:0002352 VFBseq:00002865,
+        VFBseq:00002866,
+        VFBseq:00002867,
+        VFBseq:00002868,
+        VFBseq:00002869 ;
+    RO:0002490 FBdv:00000054 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002870 a FBcv:0003024 ;
+    rdfs:label "embryo, 1-3 h after egg laying, Canton S (Calderon 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00000052 ;
+    RO:0002352 VFBseq:00002871,
+        VFBseq:00002872,
+        VFBseq:00002873,
+        VFBseq:00002874,
+        VFBseq:00002875 ;
+    RO:0002490 FBdv:00005289 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002887 a FBcv:0003024 ;
+    rdfs:label "embryo, 4-8 h after egg laying, Canton S (Calderon 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00000052 ;
+    RO:0002352 VFBseq:00002888,
+        VFBseq:00002889,
+        VFBseq:00002890,
+        VFBseq:00002891 ;
+    RO:0002490 FBdv:00005321 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002900 a FBcv:0003024 ;
+    rdfs:label "embryo, 10-14 h after egg laying, Canton S (Calderon 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00000052 ;
+    RO:0002352 VFBseq:00002901,
+        VFBseq:00002902,
+        VFBseq:00002903 ;
+    RO:0002490 FBdv:00005289 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002912 a FBcv:0003024 ;
+    rdfs:label "embryo, 16-20 h after egg laying, Canton S (Calderon 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00000052 ;
+    RO:0002352 VFBseq:00002913,
+        VFBseq:00002914,
+        VFBseq:00002915 ;
+    RO:0002490 FBdv:00005335 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002926 a FBcv:0009002 ;
+    rdfs:label "Calderon 2022 mature neuron sub-clusters (6-18 h)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002896,
+        VFBseq:00002900,
+        VFBseq:00002904,
+        VFBseq:00002908,
+        VFBseq:00002912 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002904 a FBcv:0003024 ;
+    rdfs:label "embryo, 12-16 h after egg laying, Canton S (Calderon 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00000052 ;
+    RO:0002352 VFBseq:00002905,
+        VFBseq:00002906,
+        VFBseq:00002907 ;
+    RO:0002490 FBdv:00005289 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002908 a FBcv:0003024 ;
+    rdfs:label "embryo, 14-18 h after egg laying, Canton S (Calderon 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00000052 ;
+    RO:0002352 VFBseq:00002909,
+        VFBseq:00002910,
+        VFBseq:00002911 ;
+    RO:0002490 FBdv:00005333 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002896 a FBcv:0003024 ;
+    rdfs:label "embryo, 8-12 h after egg laying, Canton S (Calderon 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00000052 ;
+    RO:0002352 VFBseq:00002897,
+        VFBseq:00002898,
+        VFBseq:00002899 ;
+    RO:0002490 FBdv:00005289 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002880 a FBcv:0003024 ;
+    rdfs:label "embryo, 3-7 h after egg laying, Canton S (Calderon 2022)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00000052 ;
+    RO:0002352 VFBseq:00002881,
+        VFBseq:00002882,
+        VFBseq:00002883,
+        VFBseq:00002884,
+        VFBseq:00002885,
+        VFBseq:00002886 ;
+    RO:0002490 FBdv:00005289 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002918 a FBcv:0009002 ;
+    rdfs:label "Calderon 2022 clusters, modelled age 4-6 h" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002870,
+        VFBseq:00002880,
+        VFBseq:00002887 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002925 a FBcv:0009002 ;
+    rdfs:label "Calderon 2022 neuroectoderm sub-clusters (6-18 h)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002880,
+        VFBseq:00002887,
+        VFBseq:00002892,
+        VFBseq:00002896,
+        VFBseq:00002900,
+        VFBseq:00002904,
+        VFBseq:00002908,
+        VFBseq:00002912 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002919 a FBcv:0009002 ;
+    rdfs:label "Calderon 2022 clusters, modelled age 6-8 h" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002864,
+        VFBseq:00002880,
+        VFBseq:00002887,
+        VFBseq:00002892,
+        VFBseq:00002896 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002924 a FBcv:0009002 ;
+    rdfs:label "Calderon 2022 clusters, modelled age 16-18 h" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002904,
+        VFBseq:00002908,
+        VFBseq:00002912 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002920 a FBcv:0009002 ;
+    rdfs:label "Calderon 2022 clusters, modelled age 8-10 h" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002880,
+        VFBseq:00002887,
+        VFBseq:00002892,
+        VFBseq:00002896 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002921 a FBcv:0009002 ;
+    rdfs:label "Calderon 2022 clusters, modelled age 10-12 h" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002892,
+        VFBseq:00002896,
+        VFBseq:00002900,
+        VFBseq:00002904,
+        VFBseq:00002908 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002923 a FBcv:0009002 ;
+    rdfs:label "Calderon 2022 clusters, modelled age 14-16 h" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002896,
+        VFBseq:00002900,
+        VFBseq:00002904,
+        VFBseq:00002908,
+        VFBseq:00002912 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002922 a FBcv:0009002 ;
+    rdfs:label "Calderon 2022 clusters, modelled age 12-14 h" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00002896,
+        VFBseq:00002900,
+        VFBseq:00002904,
+        VFBseq:00002908,
+        VFBseq:00002912 ;
+    dcterms:source VFBseq:00002863 .
+
+VFBseq:00002863 a FBcv:0003023 ;
+    rdfs:label "scRNAseq data from Calderon (2022)" ;
+    neo_custom:accession "GSE190147" ;
+    neo_custom:filtered_gene_count 4539 ;
+    neo_custom:total_gene_count 16592 ;
+    neo_property:nodeLabel "DataSet" ;
+    IAO:0000115 "The continuum of Drosophila embryonic development at single-cell resolution" ;
+    OBI:0000312 FBcv:0009001 ;
+    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references FlyBase:FBrf0254247 ;
+    oboInOwl:hasDbXref vfb:GEO .
+

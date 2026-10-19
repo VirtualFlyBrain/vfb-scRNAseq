@@ -1,0 +1,459 @@
+{
+  "project": "calderon_2022",
+  "created_at": "2026-10-18",
+  "updated_at": "2026-10-19",
+  "summary": "Calderon et al. 2022 (Science), sci-RNA-seq3 of nuclei from wild-type (Canton S) embryos collected in 11 overlapping windows spanning 0-20 h (GEO GSE190147, the RNA SubSeries of GSE190149); replaces the old FlyBase load FBlc0007797 with fresh VFBseq ids. 11 Samples (collection windows) / 41 Assays (experiment x window). 11 Clusterings: the authors' clusters in 9 modelled 2-hour windows of nuclear age (0-18 h, NNv1; Table S1, 268 clusters; Cluster stage from the window where a narrow FBdv term fits) and their neuroectoderm (20) and mature-neuron (11) re-clusterings: 223 loaded (embryonic / embryonic-larval / late-embryonic larval cell terms and somatic cell terms of primordia), 76 held. Summary expression as CPM from the GEO count matrix (17,864 genes x 532,059 nuclei).",
+  "decisions": [
+    {
+      "date": "2026-10-08",
+      "by": "curator",
+      "decision": "Map to cell-level FBbt terms only (a tissue or organ author term maps to its cell-level equivalent, else the type is held)."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Clusters with no FBbt term are held: listed in mapping.tsv with a hold_reason but not loaded (no VFBseq id, entity or expression rows). Their cells still count towards the Dataset's gene counts."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Summary expression is computed as CPM for every dataset."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Narrow a generic type by the dissected tissue only where the tissue makes the tissue-specific FBbt term exact; hold clusters that could only be typed as cell or neuron (or stage-specific versions); load glia under a glial-cell term."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "Load the paper's main clustering: nuclei binned by the authors' NNv1 age estimate into 2-hour windows, each clustered and annotated by hand (Table S1); the 18-20 h window left out, as in the paper (model edge effects); plus both neuronal re-clusterings (neuroectoderm sub-clusters and mature-neuron sub-sub-clusters) as further Clusterings."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "One Sample per collection window (the supplementary methods: each window's nuclei isolated as a batch, drawn on by several sci-RNA-seq experiments), one Assay per experiment x window; GSMs are PCR wells, not Samples. Stage: the narrowest FBdv term covering the window's stages; tissue embryo; Canton S, no stock named (not linked). Each Clustering linked to the collection windows giving at least 1% of its nuclei (thin tails of likely mis-aged nuclei from distant collections)."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "Cluster stage from the modelled window (the nuclei's ages come from their own transcriptomes) where an FBdv term narrower than embryonic stage covers it; none for the neuronal re-clusterings (6-18 h pooled)."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "curator",
+      "decision": "'ubiquitous', 'maternal' and 'unknown' clusters held (untyped)."
+    },
+    {
+      "date": "2026-10-18",
+      "by": "pipeline",
+      "decision": "Clusters by build_clusters.py from the authors' per-window Seurat objects (export_windows.R, base R; all 9 windows match Table S1's cluster counts) and Table S1 annotations, and the portal's neuronal annotation files; one spelling variant of spiracle (tracheal system) unified."
+    },
+    {
+      "date": "2026-10-19",
+      "by": "curator",
+      "decision": "Mapping per author type: embryonic, embryonic/larval or (late embryo) larval cell terms; primordia and anlagen to the somatic cell terms of those structures. Brain to larval CNS neuron, at 10-14 h immature primary neuron; ventral nerve cord to larval CNS neuron; brain / VNC primordium and Neural progenitors to embryonic neuroblast (broad); Immature neurons to immature primary neuron; PNS to larval PNS neuron, PNS / sensory nervous system primordia to peripheral sensory precursor cell, sensory nervous system to embryonic/larval sensory neuron; hindgut / anal pad to somatic cell of embryonic/larval hindgut, foregut / hindgut (/ anal pad) to somatic cell of ectoderm (broad); Malpighian tubule to embryonic specialized Malpighian tubule cell (16-18 h embryonic/larval); spiracle to larval tracheocyte (broad); yolk nuclei to yolk nucleus; neurotransmitter and chordotonal neurons to the larval terms; Germline to germline cell. Held (no term): anlage in statu nascendi, cellular blastoderm / pole cell, Head epid. /muscle, Undiff., Chordotonal glia, Ventral midline."
+    },
+    {
+      "date": "2026-10-19",
+      "by": "pipeline",
+      "decision": "Expression from the GEO count matrix (UMI counts, all nuclei), as CPM; gene symbols mapped to current FlyBase genes (17,784 current, 81 secondary, 2 synonym); transposable-element features (FBti, RR...) and 485 miRNA transcripts named by FBtr id dropped."
+    },
+    {
+      "date": "2026-10-19",
+      "by": "curator",
+      "decision": "All 299 mapping.tsv rows reviewed by the curator (8 on 2026-10-18, the rest 2026-10-19)."
+    }
+  ],
+  "checks": [
+    {
+      "date": "2026-10-18",
+      "check": "Per-window cluster counts in the authors' Seurat objects against Table S1.",
+      "result": "All 9 windows match (16, 17, 32, 28, 36, 31, 37, 36, 35 clusters; 268), 532,059 nuclei."
+    },
+    {
+      "date": "2026-10-19",
+      "check": "GEO matrix column order against GEO's per-nucleus nCount_RNA; most-counted genes.",
+      "result": "Column sums equal nCount_RNA; top genes plausible (eEF1alpha1, mt:lrRNA, roX1, Hsromega)."
+    },
+    {
+      "date": "2026-10-19",
+      "check": "verify_mappings.py: every FBbt term in the mappings looked up in OLS (FBbt 2026-10-01).",
+      "result": "52 terms current, not obsolete, labels match."
+    },
+    {
+      "date": "2026-10-19",
+      "check": "FBbt, FBdv and FBcv terms on the Samples, Assays, Clusters and Dataset looked up in OLS.",
+      "result": "All current."
+    },
+    {
+      "date": "2026-10-19",
+      "check": "Most cluster-specific genes per author type in the expression output.",
+      "result": "Fit the types (somatic muscle Mhc / up / sls; tracheal system Osiris genes; plasmatocytes Ppn / Col4a1 / Pxn; germ cells CycB / me31B; yolk nuclei apolpp; glia wrapper; cholinergic cac / Sh / para)."
+    }
+  ],
+  "people": [
+    {
+      "id": "ORCID:0000-0002-1373-1705",
+      "label": "Clare Pilgrim",
+      "role": "curator",
+      "username": "Clare72"
+    }
+  ],
+  "pipeline": {
+    "id": "vfb-scrnaseq",
+    "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
+    "version": "0.0.0",
+    "commit": "111b9b0",
+    "uncommitted_changes": true
+  },
+  "ontologies": [
+    {
+      "id": "FBbt",
+      "label": "Drosophila gross anatomy ontology",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBdv",
+      "label": "Drosophila developmental ontology",
+      "version": "2026-09-30",
+      "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-09-30/fbdv.owl",
+      "accessed_via": "OLS4 API; local fbdv.obo in .cache (stage definitions)",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBcv",
+      "label": "FlyBase controlled vocabulary",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-10-01/fbcv.owl",
+      "accessed_via": "OLS4 API",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "accessed_at": "2026-10-16"
+    }
+  ],
+  "data_sources": [
+    {
+      "id": "10.1126/science.abn5800",
+      "type": "publication",
+      "label": "The continuum of Drosophila embryonic development at single-cell resolution",
+      "xrefs": [
+        "PMID:35926038",
+        "PMCID:PMC9371440",
+        "FlyBase:FBrf0254247"
+      ],
+      "description": "Calderon et al. 2022, Science. Full text and supplementary materials (methods: Canton S, collections, nuclei batches) read for the scope, samples and clustering.",
+      "url": "https://doi.org/10.1126/science.abn5800",
+      "files": [
+        {
+          "path": "supp/PMC9371440.jats.xml",
+          "description": "JATS full text (author manuscript), NCBI efetch (db=pmc).",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=PMC9371440",
+          "sha256": "7f9c475f8cca24e74f5d4b2231c635577c8775d459ada6f6d827437c0ce9f359",
+          "bytes": 123260,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "supp/science.abn5800_sm.pdf",
+          "description": "Supplementary materials (downloaded by the curator).",
+          "url": "https://www.science.org/doi/suppl/10.1126/science.abn5800/suppl_file/science.abn5800_sm.pdf",
+          "sha256": "befc6fab629138cf2af0bfddb02620f7b6c96056ae1e00c5efec342e05507c4c",
+          "bytes": 12770036,
+          "accessed_at": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "GSE190147",
+      "type": "dataset",
+      "label": "The continuum of Drosophila embryonic development at single cell resolution (sci-RNA-seq data)",
+      "xrefs": [
+        "GEO:GSE190149",
+        "BioProject:PRJNA785986"
+      ],
+      "description": "GEO sci-RNA-seq SubSeries: the count matrix and its rows / columns files (per-nucleus experiment, collection window, NNv1 age).",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE190147",
+      "accessed_at": "2026-10-18",
+      "files": [
+        {
+          "path": "calderon/GSE190147_scirnaseq_gene_matrix.mtx.gz",
+          "description": "Count matrix (genes x nuclei).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE190nnn/GSE190147/suppl/GSE190147_scirnaseq_gene_matrix.mtx.gz",
+          "sha256": "6dc86f9fc4d467cc310eea07d09db778b5c10c242e29966498f50979771c3824",
+          "bytes": 697773156,
+          "accessed_at": "2026-10-19"
+        },
+        {
+          "path": "calderon/GSE190147_scirnaseq_gene_matrix.columns.txt.gz",
+          "description": "Per-nucleus metadata.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE190nnn/GSE190147/suppl/GSE190147_scirnaseq_gene_matrix.columns.txt.gz",
+          "sha256": "fda11b6db52daa6f8536c4e9d26071df4d3d9bb6f66876542865b2e8cb214e25",
+          "bytes": 19958916,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "calderon/GSE190147_scirnaseq_gene_matrix.rows.txt.gz",
+          "description": "Gene names.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE190nnn/GSE190147/suppl/GSE190147_scirnaseq_gene_matrix.rows.txt.gz",
+          "sha256": "032a5833bc1de5953a14e64081d801d3bd0a8bf3b43b4a77dd49a1de7d1ae547",
+          "bytes": 88224,
+          "accessed_at": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "DEAP_portal",
+      "type": "author_files",
+      "label": "The authors' data portal (Shendure lab)",
+      "description": "Table S1 with lineage, the modelled-window (NNv1) Seurat objects and the neuronal fine-scale annotation files.",
+      "url": "https://shendure-web.gs.washington.edu/content/members/DEAP_website/public/",
+      "accessed_at": "2026-10-18",
+      "files": [
+        {
+          "path": "supp/table_s1_withLineage.xlsx",
+          "description": "Table S1: per-window cluster annotations, germ layer, lineage.",
+          "url": "https://shendure-web.gs.washington.edu/content/members/DEAP_website/public/RNA/update/rna_lineage_info/table_s1_withLineage.xlsx",
+          "sha256": "2f2df089adf0171359d4010a6c0dcee7bf80f5c0c890618c1324dfa3ec1990d0",
+          "bytes": 29286,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "calderon/nnv1/0_2_finished_processing.Rds",
+          "description": "Seurat object, modelled window 0-2 h.",
+          "url": "https://shendure-web.gs.washington.edu/content/members/DEAP_website/public/RNA/update/seurat_objects/pred_windows/NNv1/0_2_finished_processing.Rds",
+          "sha256": "3d598796b8006d427bf2fb610d8b18459b618e7d65125e42e87c5b8d5395669a",
+          "bytes": 449742488,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "calderon/nnv1/2_4_finished_processing.Rds",
+          "description": "Seurat object, modelled window 2-4 h.",
+          "url": "https://shendure-web.gs.washington.edu/content/members/DEAP_website/public/RNA/update/seurat_objects/pred_windows/NNv1/2_4_finished_processing.Rds",
+          "sha256": "bd05047c6df8209b44cd8e4d367218f842bb87cdf68a93a87361ab4f41912a0a",
+          "bytes": 96199065,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "calderon/nnv1/4_6_finished_processing.Rds",
+          "description": "Seurat object, modelled window 4-6 h.",
+          "url": "https://shendure-web.gs.washington.edu/content/members/DEAP_website/public/RNA/update/seurat_objects/pred_windows/NNv1/4_6_finished_processing.Rds",
+          "sha256": "db4f66fef2f7f7b2973776103e24d040a8b960f3c96824d691b84da40e3364d0",
+          "bytes": 249866435,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "calderon/nnv1/6_8_finished_processing.Rds",
+          "description": "Seurat object, modelled window 6-8 h.",
+          "url": "https://shendure-web.gs.washington.edu/content/members/DEAP_website/public/RNA/update/seurat_objects/pred_windows/NNv1/6_8_finished_processing.Rds",
+          "sha256": "4bef34b3d9e676da69ac4158b7bad0caf58d0d4209e3e923b81a8d9d8149c6c2",
+          "bytes": 84945009,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "calderon/nnv1/8_10_finished_processing.Rds",
+          "description": "Seurat object, modelled window 8-10 h.",
+          "url": "https://shendure-web.gs.washington.edu/content/members/DEAP_website/public/RNA/update/seurat_objects/pred_windows/NNv1/8_10_finished_processing.Rds",
+          "sha256": "57c282e3f57d2dbe76d96d76c8d6a136f9eaf313a904d8cc5d4775d8ceb29287",
+          "bytes": 202733759,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "calderon/nnv1/10_12_finished_processing.Rds",
+          "description": "Seurat object, modelled window 10-12 h.",
+          "url": "https://shendure-web.gs.washington.edu/content/members/DEAP_website/public/RNA/update/seurat_objects/pred_windows/NNv1/10_12_finished_processing.Rds",
+          "sha256": "faf88b71fddc2aeac9b283869da967ca0077ec40bca9e8b1591ebce8feb129d6",
+          "bytes": 66421106,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "calderon/nnv1/12_14_finished_processing.Rds",
+          "description": "Seurat object, modelled window 12-14 h.",
+          "url": "https://shendure-web.gs.washington.edu/content/members/DEAP_website/public/RNA/update/seurat_objects/pred_windows/NNv1/12_14_finished_processing.Rds",
+          "sha256": "8b0531a17c4a2b1ae47f73c45c7326166b7eb8bd808faae139fd7b1b95ae3557",
+          "bytes": 132545612,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "calderon/nnv1/14_16_finished_processing.Rds",
+          "description": "Seurat object, modelled window 14-16 h.",
+          "url": "https://shendure-web.gs.washington.edu/content/members/DEAP_website/public/RNA/update/seurat_objects/pred_windows/NNv1/14_16_finished_processing.Rds",
+          "sha256": "8d153b58c10b6d2210f814c8fb9e968d49fbdbe52737aa530121e4dad3d3ae9e",
+          "bytes": 105962785,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "calderon/nnv1/16_18_finished_processing.Rds",
+          "description": "Seurat object, modelled window 16-18 h.",
+          "url": "https://shendure-web.gs.washington.edu/content/members/DEAP_website/public/RNA/update/seurat_objects/pred_windows/NNv1/16_18_finished_processing.Rds",
+          "sha256": "71cfa27165265fd2777d783fa2957101924c1c2fe689646b47ff0235cdfff979",
+          "bytes": 143540773,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "calderon/neuronal_subcluster_annotations.txt",
+          "description": "Neuroectoderm sub-cluster annotations.",
+          "url": "https://shendure-web.gs.washington.edu/content/members/DEAP_website/public/RNA/update/neuronal_fine_scale_annotations/neuronal_subcluster_annotations.txt",
+          "sha256": "b6d2b526243cbd3bd73538e3e83be1ef03bf9f9ad8b342bdf8e00606eafeb2fb",
+          "bytes": 4814562,
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "path": "calderon/neuronal_subsubcluster_annotations.txt",
+          "description": "Mature-neuron sub-sub-cluster annotations.",
+          "url": "https://shendure-web.gs.washington.edu/content/members/DEAP_website/public/RNA/update/neuronal_fine_scale_annotations/neuronal_subsubcluster_annotations.txt",
+          "sha256": "0b576fcc3ab5242b6adf69c0b672d822648a9dc4c7838a56eef56a6583c9c6c3",
+          "bytes": 522085,
+          "accessed_at": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "FBlc0007797",
+      "type": "previous_load",
+      "label": "scRNAseq_2022_Calderon",
+      "description": "The old FlyBase load this project replaces (274 clusters merged by type, per collection window and over all windows, read from VFB production); used as a mapping cross-check.",
+      "url": "https://virtualflybrain.org/reports/FBlc0007797",
+      "accessed_at": "2026-10-18"
+    }
+  ],
+  "software": [
+    {
+      "id": "claude-code",
+      "type": "tool",
+      "label": "Claude Code",
+      "version": "2.1.301",
+      "description": "Agentic CLI that ran the session (orchestrator), stages 1-5."
+    },
+    {
+      "id": "ols4",
+      "type": "service",
+      "label": "OLS4 (Ontology Lookup Service)",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "accessed_at": "2026-10-16",
+      "description": "FBbt / FBdv / FBcv lookup during mapping (OLS MCP) and term verification."
+    },
+    {
+      "id": "vfb-pdb",
+      "type": "service",
+      "label": "VFB production (neo4j)",
+      "url": "https://pdb.virtualflybrain.org",
+      "accessed_at": "2026-10-16",
+      "description": "Publication FBrf0254247 resolved by PMID (vfb_scrnaseq.pub); the old load FBlc0007797 read for the cross-check."
+    },
+    {
+      "id": "flybase-chado",
+      "type": "service",
+      "label": "FlyBase Chado",
+      "version": "FB2026_03 (data last modified 2026-08-29)",
+      "url": "https://chado.flybase.org",
+      "accessed_at": "2026-10-16",
+      "description": "Gene symbols mapped to current FlyBase genes (update_gene_ids.py); FBtr ids looked up."
+    },
+    {
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
+      "version": "2.5.1"
+    },
+    {
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
+      "version": "3.0.5"
+    },
+    {
+      "id": "pyyaml",
+      "type": "library",
+      "label": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
+      "version": "1.11.1",
+      "description": "linkml-validate and linkml-convert (flat RDF)."
+    },
+    {
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
+      "version": "1.11.1"
+    },
+    {
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
+      "version": "0.5.0",
+      "description": "Metadata OWL."
+    },
+    {
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
+      "version": "1.9.11",
+      "description": "OFN to OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "id": "psql",
+      "type": "tool",
+      "label": "psql",
+      "version": "14.15",
+      "description": "FlyBase Chado queries."
+    },
+    {
+      "id": "python",
+      "type": "language",
+      "label": "Python",
+      "version": "3.14.3",
+      "description": "Pipeline environment (uv-managed)."
+    },
+    {
+      "id": "openpyxl",
+      "type": "library",
+      "label": "openpyxl",
+      "version": "3.1.5",
+      "description": "Reads Table S1."
+    },
+    {
+      "id": "ncbi-geo",
+      "type": "service",
+      "label": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/",
+      "accessed_at": "2026-10-18",
+      "description": "The count matrix and per-nucleus metadata of GSE190147."
+    },
+    {
+      "id": "r",
+      "type": "language",
+      "label": "R",
+      "version": "4.6.1",
+      "description": "Reads the authors' Seurat objects' metadata (base R; export_windows.R)."
+    },
+    {
+      "id": "pypdf",
+      "type": "library",
+      "label": "pypdf",
+      "description": "Text of the supplementary materials PDF."
+    }
+  ],
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "role": "orchestrator",
+      "label": "Claude Opus 5.5",
+      "provider": "Anthropic",
+      "description": "Main Claude Code session: scoping (paper, supplementary methods, GEO, the authors' portal, the old load), sample and cluster builds, the type mappings, expression and builds. No subagents."
+    }
+  ]
+}
