@@ -32,7 +32,7 @@ from vfb_scrnaseq.project_config import (  # noqa: E402
 COLUMNS = [
     "cluster_label", "type", "class", "cell_number", "kind", "hold_reason",
     "fbbt_id", "fbbt_label", "match_type", "confidence",
-    "new_term_needed", "verification_needed", "n_other_candidates", "recommendation",
+    "new_term_needed", "verification_needed", "n_other_candidates", "justification",
     "manual_edit", "reviewed", "review_notes",
 ]
 
@@ -123,7 +123,7 @@ def collate(project: str) -> tuple[list[str], list[dict]]:
             "new_term_needed": m.get("new_term_needed", ""),
             "verification_needed": m.get("verification_needed", ""),
             "n_other_candidates": len(m.get("other_candidates", [])),
-            "recommendation": " ".join(m.get("recommendation", "").split()),
+            "justification": " ".join(m.get("justification", "").split()),
             "manual_edit": _manual_edit_summary(m),
             "reviewed": _reviewed(previous.get(label, {}).get("reviewed", "")),
             "review_notes": previous.get(label, {}).get("review_notes", ""),
