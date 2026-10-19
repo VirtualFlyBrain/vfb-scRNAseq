@@ -1,0 +1,378 @@
+{
+  "source": {
+    "doi": "10.7554/eLife.50354",
+    "title": "Single cell transcriptome atlas of the Drosophila larval brain"
+  },
+  "dataset": {
+    "accession": "GSE134722",
+    "label_source": "the authors' per-cell clusters in their UCSC Cell Browser dataset (dros-brain/normal); every cluster size equals Figure 1-source data 1",
+    "label_level": "author cluster",
+    "validate_against": "paper, Figure 1-source data 1"
+  },
+  "annotations": [
+    {
+      "label": "Cholinergic neurons 1",
+      "type": "Cholinergic neurons",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Cholinergic neurons 1",
+      "cell_number": 398,
+      "cells_by_sample": {
+        "Normal_sample_1": 48,
+        "Normal_sample_2": 1,
+        "Normal_sample_4": 349
+      }
+    },
+    {
+      "label": "Cholinergic neurons 2",
+      "type": "Cholinergic neurons",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Cholinergic neurons 2",
+      "cell_number": 392,
+      "cells_by_sample": {
+        "Normal_sample_1": 380,
+        "Normal_sample_2": 12
+      }
+    },
+    {
+      "label": "Cholinergic neurons 3",
+      "type": "Cholinergic neurons",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Cholinergic neurons 3",
+      "cell_number": 382,
+      "cells_by_sample": {
+        "Normal_sample_1": 2,
+        "Normal_sample_2": 380
+      }
+    },
+    {
+      "label": "Undifferentiated neurons 1",
+      "type": "Undifferentiated neurons",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Undifferentiated neurons 1",
+      "cell_number": 369,
+      "cells_by_sample": {
+        "Normal_sample_1": 5,
+        "Normal_sample_2": 364
+      }
+    },
+    {
+      "label": "Cholinergic neurons 4",
+      "type": "Cholinergic neurons",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Cholinergic neurons 4",
+      "cell_number": 295,
+      "cells_by_sample": {
+        "Normal_sample_1": 24,
+        "Normal_sample_2": 271
+      }
+    },
+    {
+      "label": "Glutamatergic/GABAergic neurons",
+      "type": "Glutamatergic/GABAergic neurons",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Glutamatergic/GABAergic neurons",
+      "cell_number": 262,
+      "cells_by_sample": {
+        "Normal_sample_1": 12,
+        "Normal_sample_2": 249,
+        "Normal_sample_4": 1
+      }
+    },
+    {
+      "label": "Cholinergic neurons 5",
+      "type": "Cholinergic neurons",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Cholinergic neurons 5",
+      "cell_number": 259,
+      "cells_by_sample": {
+        "Normal_sample_1": 254,
+        "Normal_sample_2": 2,
+        "Normal_sample_4": 3
+      }
+    },
+    {
+      "label": "Neural progenitor cells 1",
+      "type": "Neural progenitor cells",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Neural progenitor cells 1",
+      "cell_number": 233,
+      "cells_by_sample": {
+        "Normal_sample_1": 9,
+        "Normal_sample_2": 222,
+        "Normal_sample_4": 2
+      }
+    },
+    {
+      "label": "Undifferentiated neurons 2",
+      "type": "Undifferentiated neurons",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Undifferentiated neurons 2",
+      "cell_number": 227,
+      "cells_by_sample": {
+        "Normal_sample_1": 218,
+        "Normal_sample_2": 5,
+        "Normal_sample_4": 4
+      }
+    },
+    {
+      "label": "Neural progenitor cells 2",
+      "type": "Neural progenitor cells",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Neural progenitor cells 2",
+      "cell_number": 175,
+      "cells_by_sample": {
+        "Normal_sample_1": 5,
+        "Normal_sample_2": 170
+      }
+    },
+    {
+      "label": "GABAergic neurons",
+      "type": "GABAergic neurons",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "GABAergic neurons",
+      "cell_number": 149,
+      "cells_by_sample": {
+        "Normal_sample_1": 27,
+        "Normal_sample_2": 1,
+        "Normal_sample_4": 121
+      }
+    },
+    {
+      "label": "Glial cells 1",
+      "type": "Glial cells",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Glia cells 1",
+      "cell_number": 138,
+      "cells_by_sample": {
+        "Normal_sample_1": 63,
+        "Normal_sample_2": 49,
+        "Normal_sample_4": 26
+      }
+    },
+    {
+      "label": "Mushroom Body",
+      "type": "Mushroom Body",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Mushroom Body",
+      "cell_number": 118,
+      "cells_by_sample": {
+        "Normal_sample_1": 39,
+        "Normal_sample_2": 75,
+        "Normal_sample_4": 4
+      }
+    },
+    {
+      "label": "Muscle cells",
+      "type": "Muscle cells",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Muscle cells",
+      "cell_number": 111,
+      "cells_by_sample": {
+        "Normal_sample_1": 30,
+        "Normal_sample_2": 74,
+        "Normal_sample_4": 7
+      }
+    },
+    {
+      "label": "Neural progenitor cells 3",
+      "type": "Neural progenitor cells",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Neural progenitor cells 3",
+      "cell_number": 93,
+      "cells_by_sample": {
+        "Normal_sample_1": 19,
+        "Normal_sample_2": 2,
+        "Normal_sample_4": 72
+      }
+    },
+    {
+      "label": "Peptidergic neurons",
+      "type": "Peptidergic neurons",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Peptidergic neurons",
+      "cell_number": 91,
+      "cells_by_sample": {
+        "Normal_sample_1": 29,
+        "Normal_sample_2": 22,
+        "Normal_sample_4": 40
+      }
+    },
+    {
+      "label": "Glutamatergic neurons",
+      "type": "Glutamatergic neurons",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Glutamatergic neurons",
+      "cell_number": 87,
+      "cells_by_sample": {
+        "Normal_sample_1": 4,
+        "Normal_sample_2": 83
+      }
+    },
+    {
+      "label": "Neural progenitor cells 4",
+      "type": "Neural progenitor cells",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Neural progenitor cells 4",
+      "cell_number": 86,
+      "cells_by_sample": {
+        "Normal_sample_1": 25,
+        "Normal_sample_2": 6,
+        "Normal_sample_4": 55
+      }
+    },
+    {
+      "label": "Monoaminergic neurons",
+      "type": "Monoaminergic neurons",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Monoaminergic neurons",
+      "cell_number": 72,
+      "cells_by_sample": {
+        "Normal_sample_1": 22,
+        "Normal_sample_2": 31,
+        "Normal_sample_4": 19
+      }
+    },
+    {
+      "label": "Optic lobe epithelium 1",
+      "type": "Optic lobe epithelium",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Optic lobe epithelium 1",
+      "cell_number": 71,
+      "cells_by_sample": {
+        "Normal_sample_1": 3,
+        "Normal_sample_2": 44,
+        "Normal_sample_4": 24
+      }
+    },
+    {
+      "label": "Neural progenitor cells 5",
+      "type": "Neural progenitor cells",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Neural progenitor cells 5",
+      "cell_number": 66,
+      "cells_by_sample": {
+        "Normal_sample_1": 3,
+        "Normal_sample_2": 18,
+        "Normal_sample_4": 45
+      }
+    },
+    {
+      "label": "Neural progenitor cells 6",
+      "type": "Neural progenitor cells",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Neural progenitor cells 6",
+      "cell_number": 62,
+      "cells_by_sample": {
+        "Normal_sample_1": 1,
+        "Normal_sample_2": 61
+      }
+    },
+    {
+      "label": "Cholinergic neurons 6",
+      "type": "Cholinergic neurons",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Cholinergic neurons 6",
+      "cell_number": 54,
+      "cells_by_sample": {
+        "Normal_sample_1": 14,
+        "Normal_sample_2": 20,
+        "Normal_sample_4": 20
+      }
+    },
+    {
+      "label": "Optic lobe epithelium 2",
+      "type": "Optic lobe epithelium",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Optic lobe epithelium 2",
+      "cell_number": 50,
+      "cells_by_sample": {
+        "Normal_sample_2": 50
+      }
+    },
+    {
+      "label": "Glial cells 2",
+      "type": "Glial cells",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Glia cells 2",
+      "cell_number": 47,
+      "cells_by_sample": {
+        "Normal_sample_1": 36,
+        "Normal_sample_2": 6,
+        "Normal_sample_4": 5
+      }
+    },
+    {
+      "label": "Prothoracic gland",
+      "type": "Prothoracic gland",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Prothoracic gland",
+      "cell_number": 36,
+      "cells_by_sample": {
+        "Normal_sample_1": 1,
+        "Normal_sample_2": 35
+      }
+    },
+    {
+      "label": "Glial cells 3",
+      "type": "Glial cells",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Glia cells 3",
+      "cell_number": 34,
+      "cells_by_sample": {
+        "Normal_sample_1": 4,
+        "Normal_sample_2": 21,
+        "Normal_sample_4": 9
+      }
+    },
+    {
+      "label": "Hemocytes",
+      "type": "Hemocytes",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Hemocytes",
+      "cell_number": 33,
+      "cells_by_sample": {
+        "Normal_sample_2": 32,
+        "Normal_sample_4": 1
+      }
+    },
+    {
+      "label": "Corpora allata, Ring gland, Gut",
+      "type": "Corpora allata, Ring gland, Gut",
+      "clustering": "fed",
+      "clustering_name": "Brunet Avalos 2019 larval brain clusters (fed)",
+      "source_cluster_id": "Corpora allata, Ring gland, Gut",
+      "cell_number": 17,
+      "cells_by_sample": {
+        "Normal_sample_2": 17
+      }
+    }
+  ]
+}
