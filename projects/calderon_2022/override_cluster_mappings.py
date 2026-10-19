@@ -7,6 +7,8 @@ scripts/expand_type_mappings.py (which rewrites mapping/), then collate.
 
 - Malpighian tubule at 16-18 h: embryonic/larval specialized Malpighian tubule cell (the
   6-8 h and 12-14 h clusters keep the embryonic term; curator 2026-10-19).
+- brain at 10-12 h and 12-14 h: immature primary neuron (the 14-18 h clusters keep larval
+  CNS neuron; curator 2026-10-19).
 
 Usage:
     uv run python projects/calderon_2022/override_cluster_mappings.py
@@ -27,6 +29,10 @@ OVERRIDES = {   # (author type, clustering): (FBbt id, justification)
     ("Malpighian tubule", "16_18"): ("FBbt:00001904", "Specialized Malpighian tubule cells cover all tubule cell "
                                                       "types; at 16-18 h, near hatching, the embryonic/larval term "
                                                       "(curator)."),
+    ("brain", "10_12"): ("FBbt:00052663", "Brain clusters at 10-12 h, mostly neurons not yet mature: immature primary "
+                                          "neuron (curator: a tissue type to its main cell type)."),
+    ("brain", "12_14"): ("FBbt:00052663", "Brain clusters at 12-14 h, mostly neurons not yet mature: immature primary "
+                                          "neuron (curator: a tissue type to its main cell type)."),
 }
 
 
@@ -39,7 +45,7 @@ def term(fbbt_id: str) -> dict:
 
 def main() -> None:
     anns = json.loads((PROJ / "cell_type_annotations.json").read_text())["annotations"]
-    done = 0
+    done, keys = 0, set()
     for a in anns:
         o = OVERRIDES.get((a["type"], a["clustering"]))
         if not o:
@@ -54,8 +60,9 @@ def main() -> None:
         m["recommendation"] = f"Map to {best['fbbt_id']} {best['fbbt_term']} ({m['best_match']['match_type']})."
         path.write_text(json.dumps(m, indent=2, ensure_ascii=False) + "\n")
         done += 1
-    if done != len(OVERRIDES):
-        raise SystemExit(f"{done} overrides applied, {len(OVERRIDES)} expected")
+        keys.add((a["type"], a["clustering"]))
+    if keys != set(OVERRIDES):
+        raise SystemExit(f"overrides matched no cluster: {sorted(set(OVERRIDES) - keys)}")
     print(f"applied {done} cluster override(s)")
 
 
