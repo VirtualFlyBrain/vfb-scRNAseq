@@ -1767,4 +1767,8 @@ decisions 2026-10-19.
   *Ilp2* (and *Akh*) are detected in most cells of clusters drawn from libraries Normal A
   and C (*Ilp2* extent vs the fraction of a cluster's cells from Normal C: r = 0.79),
   apparently ambient RNA in those libraries; reported as computed.
+- **Build (stage 5):** `build_rdf.py`: 1 Dataset, 3 Samples, 4 Assays (named by GEO sample
+  number: Normal B's two libraries), 1 Clustering, 28 Clusters; publication FBrf0244302
+  from VFB production; `verify_mappings.py` OK (13 FBbt terms); the FBbt / FBdv / FBcv
+  terms on Samples, Assays and the Dataset current. Recorded in `provenance.json`.
 

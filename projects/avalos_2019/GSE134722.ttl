@@ -1,0 +1,387 @@
+@prefix BAO: <http://www.bioassayontology.org/bao#BAO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix FBbt: <http://purl.obolibrary.org/obo/FBbt_> .
+@prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
+@prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
+@prefix FlyBase: <http://flybase.org/reports/> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix VFBseq: <http://virtualflybrain.org/reports/VFBseq_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix neo_custom: <http://n2o.neo/custom/> .
+@prefix neo_property: <http://n2o.neo/property/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vfb: <http://virtualflybrain.org/reports/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VFBseq:00003160 a FBcv:0009003 ;
+    rdfs:label "Cholinergic neurons cluster Cholinergic neurons 1 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 398 ;
+    neo_custom:filtered_gene_count 4097 ;
+    neo_custom:total_gene_count 10113 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00058215 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003161 a FBcv:0009003 ;
+    rdfs:label "Cholinergic neurons cluster Cholinergic neurons 2 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 392 ;
+    neo_custom:filtered_gene_count 1316 ;
+    neo_custom:total_gene_count 8905 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00058215 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003162 a FBcv:0009003 ;
+    rdfs:label "Cholinergic neurons cluster Cholinergic neurons 3 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 382 ;
+    neo_custom:filtered_gene_count 3647 ;
+    neo_custom:total_gene_count 9875 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00058215 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003163 a FBcv:0009003 ;
+    rdfs:label "Undifferentiated neurons cluster Undifferentiated neurons 1 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 369 ;
+    neo_custom:filtered_gene_count 1426 ;
+    neo_custom:total_gene_count 8758 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00051424 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003164 a FBcv:0009003 ;
+    rdfs:label "Cholinergic neurons cluster Cholinergic neurons 4 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 295 ;
+    neo_custom:filtered_gene_count 1083 ;
+    neo_custom:total_gene_count 7748 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00058215 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003165 a FBcv:0009003 ;
+    rdfs:label "Glutamatergic/GABAergic neurons cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 262 ;
+    neo_custom:filtered_gene_count 3488 ;
+    neo_custom:total_gene_count 9427 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00058217,
+        FBbt:00058218 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003166 a FBcv:0009003 ;
+    rdfs:label "Cholinergic neurons cluster Cholinergic neurons 5 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 259 ;
+    neo_custom:filtered_gene_count 3545 ;
+    neo_custom:total_gene_count 9694 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00058215 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003167 a FBcv:0009003 ;
+    rdfs:label "Neural progenitor cells cluster Neural progenitor cells 1 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 233 ;
+    neo_custom:filtered_gene_count 919 ;
+    neo_custom:total_gene_count 7857 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00007115 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003168 a FBcv:0009003 ;
+    rdfs:label "Undifferentiated neurons cluster Undifferentiated neurons 2 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 227 ;
+    neo_custom:filtered_gene_count 1691 ;
+    neo_custom:total_gene_count 8666 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00051424 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003169 a FBcv:0009003 ;
+    rdfs:label "Neural progenitor cells cluster Neural progenitor cells 2 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 175 ;
+    neo_custom:filtered_gene_count 3427 ;
+    neo_custom:total_gene_count 9005 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00007115 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003170 a FBcv:0009003 ;
+    rdfs:label "GABAergic neurons cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 149 ;
+    neo_custom:filtered_gene_count 4093 ;
+    neo_custom:total_gene_count 8996 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00058217 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003171 a FBcv:0009003 ;
+    rdfs:label "Glial cells cluster Glia cells 1 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 138 ;
+    neo_custom:filtered_gene_count 2575 ;
+    neo_custom:total_gene_count 8828 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00001251 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003172 a FBcv:0009003 ;
+    rdfs:label "Mushroom Body cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 118 ;
+    neo_custom:filtered_gene_count 2577 ;
+    neo_custom:total_gene_count 8157 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00049826 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003173 a FBcv:0009003 ;
+    rdfs:label "Muscle cells cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 111 ;
+    neo_custom:filtered_gene_count 1790 ;
+    neo_custom:total_gene_count 9313 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00058231 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003174 a FBcv:0009003 ;
+    rdfs:label "Neural progenitor cells cluster Neural progenitor cells 3 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 93 ;
+    neo_custom:filtered_gene_count 4662 ;
+    neo_custom:total_gene_count 8809 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00007115 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003175 a FBcv:0009003 ;
+    rdfs:label "Peptidergic neurons cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 91 ;
+    neo_custom:filtered_gene_count 4352 ;
+    neo_custom:total_gene_count 8898 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00058212 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003176 a FBcv:0009003 ;
+    rdfs:label "Glutamatergic neurons cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 87 ;
+    neo_custom:filtered_gene_count 3072 ;
+    neo_custom:total_gene_count 8181 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00058218 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003177 a FBcv:0009003 ;
+    rdfs:label "Neural progenitor cells cluster Neural progenitor cells 4 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 86 ;
+    neo_custom:filtered_gene_count 5234 ;
+    neo_custom:total_gene_count 9020 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00007115 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003178 a FBcv:0009003 ;
+    rdfs:label "Monoaminergic neurons cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 72 ;
+    neo_custom:filtered_gene_count 3309 ;
+    neo_custom:total_gene_count 8029 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00058211 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003179 a FBcv:0009003 ;
+    rdfs:label "Optic lobe epithelium cluster Optic lobe epithelium 1 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 71 ;
+    neo_custom:filtered_gene_count 4562 ;
+    neo_custom:total_gene_count 8653 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00111738 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003180 a FBcv:0009003 ;
+    rdfs:label "Neural progenitor cells cluster Neural progenitor cells 5 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 66 ;
+    neo_custom:filtered_gene_count 3460 ;
+    neo_custom:total_gene_count 8037 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00007115 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003181 a FBcv:0009003 ;
+    rdfs:label "Neural progenitor cells cluster Neural progenitor cells 6 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 62 ;
+    neo_custom:filtered_gene_count 1818 ;
+    neo_custom:total_gene_count 6850 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00007115 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003182 a FBcv:0009003 ;
+    rdfs:label "Cholinergic neurons cluster Cholinergic neurons 6 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 54 ;
+    neo_custom:filtered_gene_count 3677 ;
+    neo_custom:total_gene_count 7925 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00058215 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003183 a FBcv:0009003 ;
+    rdfs:label "Optic lobe epithelium cluster Optic lobe epithelium 2 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 50 ;
+    neo_custom:filtered_gene_count 1255 ;
+    neo_custom:total_gene_count 6469 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00111738 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003184 a FBcv:0009003 ;
+    rdfs:label "Glial cells cluster Glia cells 2 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 47 ;
+    neo_custom:filtered_gene_count 1732 ;
+    neo_custom:total_gene_count 7107 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00001251 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003185 a FBcv:0009003 ;
+    rdfs:label "Prothoracic gland cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 36 ;
+    neo_custom:filtered_gene_count 1008 ;
+    neo_custom:total_gene_count 5357 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00058236 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003186 a FBcv:0009003 ;
+    rdfs:label "Glial cells cluster Glia cells 3 (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 34 ;
+    neo_custom:filtered_gene_count 3134 ;
+    neo_custom:total_gene_count 7562 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00001251 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003187 a FBcv:0009003 ;
+    rdfs:label "Hemocytes cluster (Brunet Avalos 2019 larval brain clusters (fed)) (Brunet Avalos 2019)" ;
+    neo_custom:cell_count 33 ;
+    neo_custom:filtered_gene_count 3397 ;
+    neo_custom:total_gene_count 7473 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003159 ;
+    RO:0002473 FBbt:00001684 ;
+    dcterms:source VFBseq:00003150 .
+
+FlyBase:FBrf0244302 a FBcv:0000212 ;
+    neo_property:nodeLabel "pub" .
+
+VFBseq:00003152 a FBcv:0003025 ;
+    rdfs:label "brain, First instar larval, Normal rep 1, 10x library 1 (Brunet Avalos 2019)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00003151 ;
+    dcterms:source VFBseq:00003150 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM3964166",
+        "SAMN12343184",
+        "SRX6491477" .
+
+VFBseq:00003154 a FBcv:0003025 ;
+    rdfs:label "brain, First instar larval, Normal rep 2, 10x library 2 (Brunet Avalos 2019)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00003153 ;
+    dcterms:source VFBseq:00003150 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM3964167",
+        "SAMN12343183",
+        "SRX6491478" .
+
+VFBseq:00003156 a FBcv:0003025 ;
+    rdfs:label "brain, First instar larval, Normal rep 2, 10x library 3 (Brunet Avalos 2019)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00003153 ;
+    dcterms:source VFBseq:00003150 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM3964168",
+        "SAMN12343182",
+        "SRX6491479" .
+
+VFBseq:00003158 a FBcv:0003025 ;
+    rdfs:label "brain, First instar larval, Normal rep 4, 10x library 6 (Brunet Avalos 2019)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00003157 ;
+    dcterms:source VFBseq:00003150 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM4132287",
+        "SAMN13068322",
+        "SRX7028154" .
+
+VFBseq:00003151 a FBcv:0003024 ;
+    rdfs:label "brain, First instar larval, Normal rep 1 (Brunet Avalos 2019)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00001920 ;
+    RO:0002352 VFBseq:00003152 ;
+    RO:0002490 FBdv:00005337 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003157 a FBcv:0003024 ;
+    rdfs:label "brain, First instar larval, Normal rep 4 (Brunet Avalos 2019)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00001920 ;
+    RO:0002352 VFBseq:00003158 ;
+    RO:0002490 FBdv:00005337 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003153 a FBcv:0003024 ;
+    rdfs:label "brain, First instar larval, Normal rep 2 (Brunet Avalos 2019)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00001920 ;
+    RO:0002352 VFBseq:00003154,
+        VFBseq:00003156 ;
+    RO:0002490 FBdv:00005337 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003159 a FBcv:0009002 ;
+    rdfs:label "Brunet Avalos 2019 larval brain clusters (fed)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00003151,
+        VFBseq:00003153,
+        VFBseq:00003157 ;
+    dcterms:source VFBseq:00003150 .
+
+VFBseq:00003150 a FBcv:0003023 ;
+    rdfs:label "scRNAseq data from Brunet Avalos (2019)" ;
+    neo_custom:accession "GSE134722" ;
+    neo_custom:filtered_gene_count 6772 ;
+    neo_custom:total_gene_count 12633 ;
+    neo_property:nodeLabel "DataSet" ;
+    IAO:0000115 "Single cell transcriptome atlas of the Drosophila larval brain" ;
+    OBI:0000312 FBcv:0009000 ;
+    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references FlyBase:FBrf0244302 ;
+    oboInOwl:hasDbXref vfb:GEO .
+

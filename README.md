@@ -106,8 +106,9 @@ from FlyBase; that authority is being dropped.)
 - `projects/avalos_2019/` — Brunet Avalos et al. 2019, first-instar larval brain (PMID
   31746739; [GSE134722](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE134722)):
   10x, fed larvae only (starved samples left out); the authors' 29 clusters, per-cell
-  assignments from their UCSC Cell Browser dataset. Replaces the old FlyBase/SCEA load
-  (FBlc0005362). In progress.
+  assignments from their UCSC Cell Browser dataset: 28 loaded (larval neuron, neuroblast,
+  Kenyon cell, glia and other larval cell terms), 1 held. Replaces the old FlyBase/SCEA
+  load (FBlc0005362).
 - `projects/hormann_2020/` — Hörmann et al. 2020, T4/T5 neurons through pupal
   development (PMID 32238425; [GSE147987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987)):
   FACS-sorted T4/T5 neurons at five pupal stages, one Clustering per stage of the
@@ -217,7 +218,7 @@ from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#genera
 
 ## Status
 
-All thirteen projects are curated and built. Every mapped cluster has been reviewed (bar
+All fourteen projects are curated and built. Every mapped cluster has been reviewed (bar
 three Kurmangaliyev early clusters awaiting FBbt #2216, below), and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the
