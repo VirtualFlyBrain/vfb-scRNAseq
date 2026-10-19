@@ -1756,4 +1756,15 @@ decisions 2026-10-19.
   of the larval ring gland* (broad: the cluster also expresses Akh, corpora cardiaca).
   Held (`no term`): "Corpora allata, Ring gland, Gut". 28 clusters mapped (13 terms), 1
   held.
+- **Expression (stage 4).** From GEO's aggregated fed matrix (`…NormalCondition_finalaggr_10X`:
+  Cell Ranger aggr of the four fed libraries, 4,708 cells, raw UMI counts, FBgn ids; cells
+  named as in the authors' Cell Browser), as CPM over each cell's own counts. Genes: 17,370
+  current, 119 secondary (5 merges); 3 split and 1 withdrawn dropped. 17,484 genes; 28
+  clusters, 80,346 rows (extent > 0.2); the held cluster (17 cells) left out. Markers fit
+  the author types (*ChAT* 0.96 cholinergic, *Gad1* 0.93 GABAergic, *Vmat* 0.99 / *ple*
+  monoaminergic, *repo* glia, *dpn* / *ase* neural progenitors, *ey* mushroom body, *Mhc*
+  muscle, *Hml* hemocytes, *heca* (the authors' *hdc*) undifferentiated neurons). Note:
+  *Ilp2* (and *Akh*) are detected in most cells of clusters drawn from libraries Normal A
+  and C (*Ilp2* extent vs the fraction of a cluster's cells from Normal C: r = 0.79),
+  apparently ambient RNA in those libraries; reported as computed.
 
