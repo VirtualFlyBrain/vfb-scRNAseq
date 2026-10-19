@@ -1,0 +1,4096 @@
+[
+  {
+    "type": "Publication",
+    "id": "FlyBase:FBrf0254247",
+    "neo_label": "pub"
+  },
+  {
+    "type": "Dataset",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "name": "scRNAseq data from Calderon (2022)",
+    "title": "The continuum of Drosophila embryonic development at single-cell resolution",
+    "accession": "GSE190147",
+    "neo_label": "DataSet",
+    "site": "vfb:GEO",
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "assay_type": "FBcv:0009001",
+    "total_gene_count": 16592,
+    "filtered_gene_count": 4539,
+    "publication": "FlyBase:FBrf0254247"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002864",
+    "name": "embryo, 0-2 h after egg laying, Canton S (Calderon 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002865",
+      "http://virtualflybrain.org/reports/VFBseq_00002866",
+      "http://virtualflybrain.org/reports/VFBseq_00002867",
+      "http://virtualflybrain.org/reports/VFBseq_00002868",
+      "http://virtualflybrain.org/reports/VFBseq_00002869"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00000052"
+    ],
+    "stage": "FBdv:00000054"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002870",
+    "name": "embryo, 1-3 h after egg laying, Canton S (Calderon 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002871",
+      "http://virtualflybrain.org/reports/VFBseq_00002872",
+      "http://virtualflybrain.org/reports/VFBseq_00002873",
+      "http://virtualflybrain.org/reports/VFBseq_00002874",
+      "http://virtualflybrain.org/reports/VFBseq_00002875"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00000052"
+    ],
+    "stage": "FBdv:00005289"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002876",
+    "name": "embryo, 2-4 h after egg laying, Canton S (Calderon 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002877",
+      "http://virtualflybrain.org/reports/VFBseq_00002878",
+      "http://virtualflybrain.org/reports/VFBseq_00002879"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00000052"
+    ],
+    "stage": "FBdv:00005289"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002880",
+    "name": "embryo, 3-7 h after egg laying, Canton S (Calderon 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002881",
+      "http://virtualflybrain.org/reports/VFBseq_00002882",
+      "http://virtualflybrain.org/reports/VFBseq_00002883",
+      "http://virtualflybrain.org/reports/VFBseq_00002884",
+      "http://virtualflybrain.org/reports/VFBseq_00002885",
+      "http://virtualflybrain.org/reports/VFBseq_00002886"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00000052"
+    ],
+    "stage": "FBdv:00005289"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002887",
+    "name": "embryo, 4-8 h after egg laying, Canton S (Calderon 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002888",
+      "http://virtualflybrain.org/reports/VFBseq_00002889",
+      "http://virtualflybrain.org/reports/VFBseq_00002890",
+      "http://virtualflybrain.org/reports/VFBseq_00002891"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00000052"
+    ],
+    "stage": "FBdv:00005321"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002892",
+    "name": "embryo, 6-10 h after egg laying, Canton S (Calderon 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002893",
+      "http://virtualflybrain.org/reports/VFBseq_00002894",
+      "http://virtualflybrain.org/reports/VFBseq_00002895"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00000052"
+    ],
+    "stage": "FBdv:00005289"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002896",
+    "name": "embryo, 8-12 h after egg laying, Canton S (Calderon 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002897",
+      "http://virtualflybrain.org/reports/VFBseq_00002898",
+      "http://virtualflybrain.org/reports/VFBseq_00002899"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00000052"
+    ],
+    "stage": "FBdv:00005289"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002900",
+    "name": "embryo, 10-14 h after egg laying, Canton S (Calderon 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002901",
+      "http://virtualflybrain.org/reports/VFBseq_00002902",
+      "http://virtualflybrain.org/reports/VFBseq_00002903"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00000052"
+    ],
+    "stage": "FBdv:00005289"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002904",
+    "name": "embryo, 12-16 h after egg laying, Canton S (Calderon 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002905",
+      "http://virtualflybrain.org/reports/VFBseq_00002906",
+      "http://virtualflybrain.org/reports/VFBseq_00002907"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00000052"
+    ],
+    "stage": "FBdv:00005289"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002908",
+    "name": "embryo, 14-18 h after egg laying, Canton S (Calderon 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002909",
+      "http://virtualflybrain.org/reports/VFBseq_00002910",
+      "http://virtualflybrain.org/reports/VFBseq_00002911"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00000052"
+    ],
+    "stage": "FBdv:00005333"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002912",
+    "name": "embryo, 16-20 h after egg laying, Canton S (Calderon 2022)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002913",
+      "http://virtualflybrain.org/reports/VFBseq_00002914",
+      "http://virtualflybrain.org/reports/VFBseq_00002915"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00000052"
+    ],
+    "stage": "FBdv:00005335"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002865",
+    "name": "embryo, 0-2 h after egg laying, Canton S, sci-RNA-seq3 experiment 2 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002864"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002866",
+    "name": "embryo, 0-2 h after egg laying, Canton S, sci-RNA-seq3 experiment 4 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002864"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002867",
+    "name": "embryo, 0-2 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002864"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002868",
+    "name": "embryo, 0-2 h after egg laying, Canton S, sci-RNA-seq3 experiment 11 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002864"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002869",
+    "name": "embryo, 0-2 h after egg laying, Canton S, sci-RNA-seq3 experiment 12 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002864"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002871",
+    "name": "embryo, 1-3 h after egg laying, Canton S, sci-RNA-seq3 experiment 2 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002870"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002872",
+    "name": "embryo, 1-3 h after egg laying, Canton S, sci-RNA-seq3 experiment 4 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002870"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002873",
+    "name": "embryo, 1-3 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002870"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002874",
+    "name": "embryo, 1-3 h after egg laying, Canton S, sci-RNA-seq3 experiment 11 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002870"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002875",
+    "name": "embryo, 1-3 h after egg laying, Canton S, sci-RNA-seq3 experiment 12 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002870"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002877",
+    "name": "embryo, 2-4 h after egg laying, Canton S, sci-RNA-seq3 experiment 4 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002876"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002878",
+    "name": "embryo, 2-4 h after egg laying, Canton S, sci-RNA-seq3 experiment 11 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002876"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002879",
+    "name": "embryo, 2-4 h after egg laying, Canton S, sci-RNA-seq3 experiment 12 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002876"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002881",
+    "name": "embryo, 3-7 h after egg laying, Canton S, sci-RNA-seq3 experiment 1 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002880"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002882",
+    "name": "embryo, 3-7 h after egg laying, Canton S, sci-RNA-seq3 experiment 2 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002880"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002883",
+    "name": "embryo, 3-7 h after egg laying, Canton S, sci-RNA-seq3 experiment 4 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002880"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002884",
+    "name": "embryo, 3-7 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002880"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002885",
+    "name": "embryo, 3-7 h after egg laying, Canton S, sci-RNA-seq3 experiment 11 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002880"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002886",
+    "name": "embryo, 3-7 h after egg laying, Canton S, sci-RNA-seq3 experiment 12 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002880"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002888",
+    "name": "embryo, 4-8 h after egg laying, Canton S, sci-RNA-seq3 experiment 1 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002887"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002889",
+    "name": "embryo, 4-8 h after egg laying, Canton S, sci-RNA-seq3 experiment 2 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002887"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002890",
+    "name": "embryo, 4-8 h after egg laying, Canton S, sci-RNA-seq3 experiment 4 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002887"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002891",
+    "name": "embryo, 4-8 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002887"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002893",
+    "name": "embryo, 6-10 h after egg laying, Canton S, sci-RNA-seq3 experiment 1 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002892"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002894",
+    "name": "embryo, 6-10 h after egg laying, Canton S, sci-RNA-seq3 experiment 3 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002892"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002895",
+    "name": "embryo, 6-10 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002892"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002897",
+    "name": "embryo, 8-12 h after egg laying, Canton S, sci-RNA-seq3 experiment 1 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002896"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002898",
+    "name": "embryo, 8-12 h after egg laying, Canton S, sci-RNA-seq3 experiment 3 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002896"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002899",
+    "name": "embryo, 8-12 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002896"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002901",
+    "name": "embryo, 10-14 h after egg laying, Canton S, sci-RNA-seq3 experiment 1 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002900"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002902",
+    "name": "embryo, 10-14 h after egg laying, Canton S, sci-RNA-seq3 experiment 3 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002900"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002903",
+    "name": "embryo, 10-14 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002900"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002905",
+    "name": "embryo, 12-16 h after egg laying, Canton S, sci-RNA-seq3 experiment 1 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002904"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002906",
+    "name": "embryo, 12-16 h after egg laying, Canton S, sci-RNA-seq3 experiment 3 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002904"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002907",
+    "name": "embryo, 12-16 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002904"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002909",
+    "name": "embryo, 14-18 h after egg laying, Canton S, sci-RNA-seq3 experiment 1 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002908"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002910",
+    "name": "embryo, 14-18 h after egg laying, Canton S, sci-RNA-seq3 experiment 3 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002908"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002911",
+    "name": "embryo, 14-18 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002908"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002913",
+    "name": "embryo, 16-20 h after egg laying, Canton S, sci-RNA-seq3 experiment 1 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002912"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002914",
+    "name": "embryo, 16-20 h after egg laying, Canton S, sci-RNA-seq3 experiment 3 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002912"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002915",
+    "name": "embryo, 16-20 h after egg laying, Canton S, sci-RNA-seq3 experiment 10 (Calderon 2022)",
+    "method": "FBcv:0009056",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00002912"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "dbxref": [],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002916",
+    "name": "Calderon 2022 clusters, modelled age 0-2 h",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002864",
+      "http://virtualflybrain.org/reports/VFBseq_00002870"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002917",
+    "name": "Calderon 2022 clusters, modelled age 2-4 h",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002864",
+      "http://virtualflybrain.org/reports/VFBseq_00002870",
+      "http://virtualflybrain.org/reports/VFBseq_00002876",
+      "http://virtualflybrain.org/reports/VFBseq_00002880"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002918",
+    "name": "Calderon 2022 clusters, modelled age 4-6 h",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002870",
+      "http://virtualflybrain.org/reports/VFBseq_00002880",
+      "http://virtualflybrain.org/reports/VFBseq_00002887"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "name": "Calderon 2022 clusters, modelled age 6-8 h",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002864",
+      "http://virtualflybrain.org/reports/VFBseq_00002880",
+      "http://virtualflybrain.org/reports/VFBseq_00002887",
+      "http://virtualflybrain.org/reports/VFBseq_00002892",
+      "http://virtualflybrain.org/reports/VFBseq_00002896"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "name": "Calderon 2022 clusters, modelled age 8-10 h",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002880",
+      "http://virtualflybrain.org/reports/VFBseq_00002887",
+      "http://virtualflybrain.org/reports/VFBseq_00002892",
+      "http://virtualflybrain.org/reports/VFBseq_00002896"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "name": "Calderon 2022 clusters, modelled age 10-12 h",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002892",
+      "http://virtualflybrain.org/reports/VFBseq_00002896",
+      "http://virtualflybrain.org/reports/VFBseq_00002900",
+      "http://virtualflybrain.org/reports/VFBseq_00002904",
+      "http://virtualflybrain.org/reports/VFBseq_00002908"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "name": "Calderon 2022 clusters, modelled age 12-14 h",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002896",
+      "http://virtualflybrain.org/reports/VFBseq_00002900",
+      "http://virtualflybrain.org/reports/VFBseq_00002904",
+      "http://virtualflybrain.org/reports/VFBseq_00002908",
+      "http://virtualflybrain.org/reports/VFBseq_00002912"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "name": "Calderon 2022 clusters, modelled age 14-16 h",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002896",
+      "http://virtualflybrain.org/reports/VFBseq_00002900",
+      "http://virtualflybrain.org/reports/VFBseq_00002904",
+      "http://virtualflybrain.org/reports/VFBseq_00002908",
+      "http://virtualflybrain.org/reports/VFBseq_00002912"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "name": "Calderon 2022 clusters, modelled age 16-18 h",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002904",
+      "http://virtualflybrain.org/reports/VFBseq_00002908",
+      "http://virtualflybrain.org/reports/VFBseq_00002912"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "name": "Calderon 2022 neuroectoderm sub-clusters (6-18 h)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002880",
+      "http://virtualflybrain.org/reports/VFBseq_00002887",
+      "http://virtualflybrain.org/reports/VFBseq_00002892",
+      "http://virtualflybrain.org/reports/VFBseq_00002896",
+      "http://virtualflybrain.org/reports/VFBseq_00002900",
+      "http://virtualflybrain.org/reports/VFBseq_00002904",
+      "http://virtualflybrain.org/reports/VFBseq_00002908",
+      "http://virtualflybrain.org/reports/VFBseq_00002912"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002926",
+    "name": "Calderon 2022 mature neuron sub-clusters (6-18 h)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00002896",
+      "http://virtualflybrain.org/reports/VFBseq_00002900",
+      "http://virtualflybrain.org/reports/VFBseq_00002904",
+      "http://virtualflybrain.org/reports/VFBseq_00002908",
+      "http://virtualflybrain.org/reports/VFBseq_00002912"
+    ]
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002927",
+    "name": "ectoderm anlage in statu nascendi cluster 0 (Calderon 2022 clusters, modelled age 2-4 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002917",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3264,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059301"
+    ],
+    "total_gene_count": 9850,
+    "filtered_gene_count": 507
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002928",
+    "name": "ectoderm anlage cluster 15 (Calderon 2022 clusters, modelled age 2-4 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002917",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 569,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059301"
+    ],
+    "total_gene_count": 7473,
+    "filtered_gene_count": 484
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002929",
+    "name": "yolk nuclei cluster 16 (Calderon 2022 clusters, modelled age 2-4 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002917",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 480,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00000057"
+    ],
+    "total_gene_count": 7815,
+    "filtered_gene_count": 577
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002930",
+    "name": "ectoderm primordium cluster 0 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002918",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 4329,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005321",
+    "cell_type": [
+      "FBbt:00059305"
+    ],
+    "total_gene_count": 10487,
+    "filtered_gene_count": 313
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002931",
+    "name": "ectoderm primordium cluster 6 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002918",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3457,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005321",
+    "cell_type": [
+      "FBbt:00059305"
+    ],
+    "total_gene_count": 10101,
+    "filtered_gene_count": 311
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002932",
+    "name": "mesoderm primordium cluster 8 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002918",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3199,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005321",
+    "cell_type": [
+      "FBbt:00059307"
+    ],
+    "total_gene_count": 10474,
+    "filtered_gene_count": 367
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002933",
+    "name": "ectoderm primordium cluster 11 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002918",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3149,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005321",
+    "cell_type": [
+      "FBbt:00059305"
+    ],
+    "total_gene_count": 10359,
+    "filtered_gene_count": 317
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002934",
+    "name": "peripheral nervous system primordium cluster 12 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002918",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3088,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005321",
+    "cell_type": [
+      "FBbt:00052556"
+    ],
+    "total_gene_count": 10616,
+    "filtered_gene_count": 403
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002935",
+    "name": "ectoderm primordium cluster 15 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002918",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2776,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005321",
+    "cell_type": [
+      "FBbt:00059305"
+    ],
+    "total_gene_count": 10094,
+    "filtered_gene_count": 342
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002936",
+    "name": "ectoderm primordium cluster 17 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002918",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2641,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005321",
+    "cell_type": [
+      "FBbt:00059305"
+    ],
+    "total_gene_count": 10174,
+    "filtered_gene_count": 363
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002937",
+    "name": "germ cell cluster 19 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002918",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2600,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005321",
+    "cell_type": [
+      "FBbt:00000092"
+    ],
+    "total_gene_count": 9363,
+    "filtered_gene_count": 222
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002938",
+    "name": "yolk nuclei cluster 20 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002918",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2595,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005321",
+    "cell_type": [
+      "FBbt:00000057"
+    ],
+    "total_gene_count": 10847,
+    "filtered_gene_count": 362
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002939",
+    "name": "endoderm primordium cluster 21 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002918",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2451,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005321",
+    "cell_type": [
+      "FBbt:00059306"
+    ],
+    "total_gene_count": 10238,
+    "filtered_gene_count": 357
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002940",
+    "name": "ventral nerve cord primordium cluster 27 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002918",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1218,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005321",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 9000,
+    "filtered_gene_count": 404
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002941",
+    "name": "amnioserosa cluster 28 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002918",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1206,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005321",
+    "cell_type": [
+      "FBbt:00059314"
+    ],
+    "total_gene_count": 9316,
+    "filtered_gene_count": 392
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002942",
+    "name": "tracheal primordium cluster 29 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002918",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1141,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005321",
+    "cell_type": [
+      "FBbt:00005041"
+    ],
+    "total_gene_count": 10967,
+    "filtered_gene_count": 468
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002943",
+    "name": "foregut / hindgut primordium cluster 30 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002918",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1098,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005321",
+    "cell_type": [
+      "FBbt:00059305"
+    ],
+    "total_gene_count": 8889,
+    "filtered_gene_count": 366
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002944",
+    "name": "yolk nuclei cluster 31 (Calderon 2022 clusters, modelled age 4-6 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002918",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 594,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005321",
+    "cell_type": [
+      "FBbt:00000057"
+    ],
+    "total_gene_count": 8320,
+    "filtered_gene_count": 332
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002945",
+    "name": "germ cell cluster 0 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2674,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00000092"
+    ],
+    "total_gene_count": 10148,
+    "filtered_gene_count": 468
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002946",
+    "name": "epidermis primordium cluster 1 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2189,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00004994"
+    ],
+    "total_gene_count": 9430,
+    "filtered_gene_count": 241
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002947",
+    "name": "brain primordium cluster 2 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2050,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 9171,
+    "filtered_gene_count": 149
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002948",
+    "name": "brain primordium cluster 3 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1959,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 10316,
+    "filtered_gene_count": 519
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002949",
+    "name": "trunk mesoderm primordium cluster 5 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1906,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00059310"
+    ],
+    "total_gene_count": 9743,
+    "filtered_gene_count": 243
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002950",
+    "name": "epidermis primordium cluster 6 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1869,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00004994"
+    ],
+    "total_gene_count": 9397,
+    "filtered_gene_count": 267
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002951",
+    "name": "yolk nuclei cluster 7 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1834,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00000057"
+    ],
+    "total_gene_count": 9664,
+    "filtered_gene_count": 308
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002952",
+    "name": "brain primordium cluster 8 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1691,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 9286,
+    "filtered_gene_count": 207
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002953",
+    "name": "brain primordium cluster 9 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1672,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 9269,
+    "filtered_gene_count": 255
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002954",
+    "name": "sensory nervous system primordium cluster 10 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1636,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00052556"
+    ],
+    "total_gene_count": 9226,
+    "filtered_gene_count": 285
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002955",
+    "name": "visceral muscle primordium cluster 11 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1487,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00059309"
+    ],
+    "total_gene_count": 9180,
+    "filtered_gene_count": 220
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002956",
+    "name": "midgut primordium cluster 12 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1258,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00059319"
+    ],
+    "total_gene_count": 8966,
+    "filtered_gene_count": 246
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002957",
+    "name": "germ cell cluster 13 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1112,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00000092"
+    ],
+    "total_gene_count": 8266,
+    "filtered_gene_count": 168
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002958",
+    "name": "amnioserosa cluster 14 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1107,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00059314"
+    ],
+    "total_gene_count": 8897,
+    "filtered_gene_count": 292
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002959",
+    "name": "epidermis primordium cluster 15 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1093,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00004994"
+    ],
+    "total_gene_count": 8344,
+    "filtered_gene_count": 202
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002960",
+    "name": "epidermis primordium cluster 16 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1016,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00004994"
+    ],
+    "total_gene_count": 8362,
+    "filtered_gene_count": 260
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002961",
+    "name": "brain primordium cluster 17 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 915,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 8412,
+    "filtered_gene_count": 282
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002962",
+    "name": "foregut / hindgut primordium cluster 19 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 760,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00059305"
+    ],
+    "total_gene_count": 8242,
+    "filtered_gene_count": 259
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002963",
+    "name": "tracheal primordium cluster 20 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 710,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00005041"
+    ],
+    "total_gene_count": 9636,
+    "filtered_gene_count": 298
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002964",
+    "name": "salivary gland primordium cluster 21 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 498,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00059322"
+    ],
+    "total_gene_count": 7461,
+    "filtered_gene_count": 249
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002965",
+    "name": "trunk mesoderm primordium cluster 22 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 334,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00059310"
+    ],
+    "total_gene_count": 8279,
+    "filtered_gene_count": 478
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002966",
+    "name": "midline primordium cluster 24 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 233,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00059320"
+    ],
+    "total_gene_count": 6071,
+    "filtered_gene_count": 272
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002967",
+    "name": "Malpighian tubule cluster 27 (Calderon 2022 clusters, modelled age 6-8 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002919",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 82,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00004450",
+    "cell_type": [
+      "FBbt:00005642"
+    ],
+    "total_gene_count": 5901,
+    "filtered_gene_count": 463
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002968",
+    "name": "germ cell cluster 0 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 4233,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00000092"
+    ],
+    "total_gene_count": 11019,
+    "filtered_gene_count": 553
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002969",
+    "name": "epidermis primordium cluster 1 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3764,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004994"
+    ],
+    "total_gene_count": 10212,
+    "filtered_gene_count": 218
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002970",
+    "name": "yolk nuclei cluster 2 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3513,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00000057"
+    ],
+    "total_gene_count": 10577,
+    "filtered_gene_count": 371
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002971",
+    "name": "brain primordium cluster 3 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3483,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 10473,
+    "filtered_gene_count": 288
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002972",
+    "name": "brain primordium cluster 4 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3455,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 9994,
+    "filtered_gene_count": 191
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002973",
+    "name": "somatic muscle primordium cluster 5 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3108,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00000463"
+    ],
+    "total_gene_count": 10244,
+    "filtered_gene_count": 241
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002974",
+    "name": "amnioserosa cluster 6 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3099,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059314"
+    ],
+    "total_gene_count": 10383,
+    "filtered_gene_count": 314
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002975",
+    "name": "visceral muscle primordium cluster 7 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3019,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059309"
+    ],
+    "total_gene_count": 10338,
+    "filtered_gene_count": 310
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002976",
+    "name": "peripheral nervous system cluster 8 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2940,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059275"
+    ],
+    "total_gene_count": 10132,
+    "filtered_gene_count": 292
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002977",
+    "name": "germ cell cluster 10 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2472,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00000092"
+    ],
+    "total_gene_count": 9645,
+    "filtered_gene_count": 194
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002978",
+    "name": "epidermis primordium cluster 11 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2470,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004994"
+    ],
+    "total_gene_count": 9893,
+    "filtered_gene_count": 233
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002979",
+    "name": "hindgut primordium cluster 12 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2432,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059318"
+    ],
+    "total_gene_count": 9983,
+    "filtered_gene_count": 277
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002980",
+    "name": "epidermis primordium cluster 14 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2370,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004994"
+    ],
+    "total_gene_count": 9820,
+    "filtered_gene_count": 287
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002981",
+    "name": "epidermis primordium cluster 15 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2294,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004994"
+    ],
+    "total_gene_count": 9771,
+    "filtered_gene_count": 269
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002982",
+    "name": "brain primordium cluster 16 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2217,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 9681,
+    "filtered_gene_count": 287
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002983",
+    "name": "peripheral nervous system cluster 18 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2089,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059275"
+    ],
+    "total_gene_count": 9696,
+    "filtered_gene_count": 316
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002984",
+    "name": "brain primordium cluster 19 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2075,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 9646,
+    "filtered_gene_count": 322
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002985",
+    "name": "midgut primordium cluster 20 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2064,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059319"
+    ],
+    "total_gene_count": 9651,
+    "filtered_gene_count": 278
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002986",
+    "name": "procrystal cell cluster 22 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1909,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001689"
+    ],
+    "total_gene_count": 11150,
+    "filtered_gene_count": 883
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002987",
+    "name": "plasmatocytes anlage cluster 23 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1893,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005249"
+    ],
+    "total_gene_count": 9685,
+    "filtered_gene_count": 305
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002988",
+    "name": "tracheal primordium cluster 25 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1678,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005041"
+    ],
+    "total_gene_count": 9366,
+    "filtered_gene_count": 281
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002989",
+    "name": "brain primordium cluster 26 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1555,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 9357,
+    "filtered_gene_count": 303
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002990",
+    "name": "visceral muscle primordium cluster 27 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1515,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059309"
+    ],
+    "total_gene_count": 9342,
+    "filtered_gene_count": 310
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002991",
+    "name": "yolk nuclei cluster 29 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1231,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00000057"
+    ],
+    "total_gene_count": 9098,
+    "filtered_gene_count": 254
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002992",
+    "name": "salivary gland body primordium cluster 30 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1146,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059321"
+    ],
+    "total_gene_count": 9095,
+    "filtered_gene_count": 359
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002993",
+    "name": "midline primordium cluster 31 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1028,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059320"
+    ],
+    "total_gene_count": 8741,
+    "filtered_gene_count": 328
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002994",
+    "name": "brain primordium cluster 32 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 810,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 8262,
+    "filtered_gene_count": 290
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002995",
+    "name": "muscle cluster 35 (Calderon 2022 clusters, modelled age 8-10 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002920",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 147,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005074"
+    ],
+    "total_gene_count": 6825,
+    "filtered_gene_count": 411
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002996",
+    "name": "germ cell cluster 0 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1714,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00000092"
+    ],
+    "total_gene_count": 9586,
+    "filtered_gene_count": 358
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002997",
+    "name": "brain cluster 1 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1672,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00052663"
+    ],
+    "total_gene_count": 9412,
+    "filtered_gene_count": 213
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002998",
+    "name": "epidermis cluster 2 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1433,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 8715,
+    "filtered_gene_count": 207
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00002999",
+    "name": "epidermis cluster 3 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1330,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 8663,
+    "filtered_gene_count": 237
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003000",
+    "name": "brain cluster 4 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1302,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00052663"
+    ],
+    "total_gene_count": 8960,
+    "filtered_gene_count": 262
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003001",
+    "name": "brain cluster 5 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1222,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00052663"
+    ],
+    "total_gene_count": 8711,
+    "filtered_gene_count": 249
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003002",
+    "name": "midgut cluster 6 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1146,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00001886"
+    ],
+    "total_gene_count": 9509,
+    "filtered_gene_count": 272
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003003",
+    "name": "yolk nuclei cluster 7 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1104,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00000057"
+    ],
+    "total_gene_count": 8906,
+    "filtered_gene_count": 376
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003004",
+    "name": "epidermis cluster 8 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1075,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 9196,
+    "filtered_gene_count": 271
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003005",
+    "name": "amnioserosa cluster 9 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 993,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00059314"
+    ],
+    "total_gene_count": 8455,
+    "filtered_gene_count": 256
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003006",
+    "name": "brain cluster 10 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 920,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00052663"
+    ],
+    "total_gene_count": 8558,
+    "filtered_gene_count": 277
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003007",
+    "name": "somatic muscle cluster 11 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 888,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00005649"
+    ],
+    "total_gene_count": 8318,
+    "filtered_gene_count": 233
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003008",
+    "name": "tracheal system cluster 12 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 847,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00005038"
+    ],
+    "total_gene_count": 8094,
+    "filtered_gene_count": 256
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003009",
+    "name": "salivary gland cluster 13 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 832,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00059317"
+    ],
+    "total_gene_count": 8408,
+    "filtered_gene_count": 271
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003010",
+    "name": "yolk nuclei cluster 14 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 809,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00000057"
+    ],
+    "total_gene_count": 8065,
+    "filtered_gene_count": 163
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003011",
+    "name": "plasmatocytes cluster 15 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 788,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00001685"
+    ],
+    "total_gene_count": 8401,
+    "filtered_gene_count": 253
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003012",
+    "name": "sensory nervous system primordium cluster 16 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 691,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00052556"
+    ],
+    "total_gene_count": 8022,
+    "filtered_gene_count": 269
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003013",
+    "name": "muscle cluster 17 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 664,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00005074"
+    ],
+    "total_gene_count": 10327,
+    "filtered_gene_count": 1427
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003014",
+    "name": "brain cluster 18 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 630,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00052663"
+    ],
+    "total_gene_count": 10042,
+    "filtered_gene_count": 1567
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003015",
+    "name": "brain cluster 19 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 581,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00052663"
+    ],
+    "total_gene_count": 8640,
+    "filtered_gene_count": 254
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003016",
+    "name": "somatic muscle cluster 20 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 547,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00005649"
+    ],
+    "total_gene_count": 8772,
+    "filtered_gene_count": 378
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003017",
+    "name": "epidermis cluster 21 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 481,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 7093,
+    "filtered_gene_count": 257
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003018",
+    "name": "hindgut / anal pad cluster 22 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 448,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00059315"
+    ],
+    "total_gene_count": 7086,
+    "filtered_gene_count": 254
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003019",
+    "name": "muscle cluster 23 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 401,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00005074"
+    ],
+    "total_gene_count": 7152,
+    "filtered_gene_count": 278
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003020",
+    "name": "glia cluster 24 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 371,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00052369"
+    ],
+    "total_gene_count": 6900,
+    "filtered_gene_count": 281
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003021",
+    "name": "fat body cluster 25 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 311,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00046052"
+    ],
+    "total_gene_count": 7555,
+    "filtered_gene_count": 288
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003022",
+    "name": "hindgut / anal pad cluster 26 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 251,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00059315"
+    ],
+    "total_gene_count": 7098,
+    "filtered_gene_count": 333
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003023",
+    "name": "tracheal system cluster 27 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 237,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00005038"
+    ],
+    "total_gene_count": 6998,
+    "filtered_gene_count": 323
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003024",
+    "name": "crystal cell cluster 28 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 237,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00001690"
+    ],
+    "total_gene_count": 7069,
+    "filtered_gene_count": 232
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003025",
+    "name": "salivary gland cluster 29 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 82,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00059317"
+    ],
+    "total_gene_count": 6056,
+    "filtered_gene_count": 344
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003026",
+    "name": "muscle cluster 30 (Calderon 2022 clusters, modelled age 10-12 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002921",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 66,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005331",
+    "cell_type": [
+      "FBbt:00005074"
+    ],
+    "total_gene_count": 5265,
+    "filtered_gene_count": 424
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003027",
+    "name": "brain cluster 0 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3482,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052663"
+    ],
+    "total_gene_count": 10583,
+    "filtered_gene_count": 219
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003028",
+    "name": "somatic muscle cluster 1 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3298,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005649"
+    ],
+    "total_gene_count": 10539,
+    "filtered_gene_count": 215
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003029",
+    "name": "ventral nerve cord cluster 2 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3102,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059273"
+    ],
+    "total_gene_count": 10616,
+    "filtered_gene_count": 249
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003030",
+    "name": "epidermis cluster 3 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2815,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 10018,
+    "filtered_gene_count": 220
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003031",
+    "name": "germ cell cluster 4 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2605,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00000092"
+    ],
+    "total_gene_count": 10499,
+    "filtered_gene_count": 279
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003032",
+    "name": "yolk nuclei cluster 5 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2392,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00000057"
+    ],
+    "total_gene_count": 9109,
+    "filtered_gene_count": 117
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003033",
+    "name": "fat body cluster 6 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2312,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00046052"
+    ],
+    "total_gene_count": 10190,
+    "filtered_gene_count": 204
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003034",
+    "name": "epidermis cluster 7 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2279,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 9992,
+    "filtered_gene_count": 182
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003035",
+    "name": "midgut cluster 8 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2075,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001886"
+    ],
+    "total_gene_count": 9884,
+    "filtered_gene_count": 264
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003036",
+    "name": "brain cluster 9 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2050,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052663"
+    ],
+    "total_gene_count": 9998,
+    "filtered_gene_count": 185
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003037",
+    "name": "hindgut / anal pad cluster 10 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2012,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059315"
+    ],
+    "total_gene_count": 10071,
+    "filtered_gene_count": 211
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003038",
+    "name": "midgut cluster 11 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1950,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001886"
+    ],
+    "total_gene_count": 9851,
+    "filtered_gene_count": 200
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003039",
+    "name": "muscle cluster 12 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1909,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005074"
+    ],
+    "total_gene_count": 10666,
+    "filtered_gene_count": 368
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003040",
+    "name": "yolk nuclei cluster 13 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1876,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00000057"
+    ],
+    "total_gene_count": 9428,
+    "filtered_gene_count": 280
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003041",
+    "name": "tracheal system cluster 14 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1674,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005038"
+    ],
+    "total_gene_count": 9517,
+    "filtered_gene_count": 222
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003042",
+    "name": "epidermis cluster 15 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1635,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 9240,
+    "filtered_gene_count": 218
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003043",
+    "name": "tracheal system cluster 16 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1618,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005038"
+    ],
+    "total_gene_count": 9528,
+    "filtered_gene_count": 233
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003044",
+    "name": "proventriculus cluster 17 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1554,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059316"
+    ],
+    "total_gene_count": 9637,
+    "filtered_gene_count": 222
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003045",
+    "name": "salivary gland cluster 18 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1554,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059317"
+    ],
+    "total_gene_count": 9355,
+    "filtered_gene_count": 198
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003046",
+    "name": "plasmatocytes cluster 19 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1514,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001685"
+    ],
+    "total_gene_count": 9467,
+    "filtered_gene_count": 203
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003047",
+    "name": "epidermis cluster 20 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1500,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 9132,
+    "filtered_gene_count": 203
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003048",
+    "name": "epidermis cluster 21 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1349,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 9593,
+    "filtered_gene_count": 205
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003049",
+    "name": "somatic muscle cluster 22 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1280,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005649"
+    ],
+    "total_gene_count": 8975,
+    "filtered_gene_count": 224
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003050",
+    "name": "foregut / hindgut / anal pad cluster 23 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1157,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059305"
+    ],
+    "total_gene_count": 8878,
+    "filtered_gene_count": 212
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003051",
+    "name": "amnioserosa cluster 24 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1157,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059314"
+    ],
+    "total_gene_count": 8675,
+    "filtered_gene_count": 236
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003052",
+    "name": "sensory nervous system cluster 25 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1138,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058245"
+    ],
+    "total_gene_count": 9390,
+    "filtered_gene_count": 234
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003053",
+    "name": "sensory nervous system cluster 26 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 980,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058245"
+    ],
+    "total_gene_count": 8974,
+    "filtered_gene_count": 211
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003054",
+    "name": "brain cluster 27 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 963,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052663"
+    ],
+    "total_gene_count": 8830,
+    "filtered_gene_count": 212
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003055",
+    "name": "ventral nerve cord cluster 28 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 872,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059273"
+    ],
+    "total_gene_count": 8713,
+    "filtered_gene_count": 209
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003056",
+    "name": "visceral muscle cluster 29 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 802,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005653"
+    ],
+    "total_gene_count": 8550,
+    "filtered_gene_count": 210
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003057",
+    "name": "spiracle (tracheal system) cluster 30 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 755,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005039"
+    ],
+    "total_gene_count": 8282,
+    "filtered_gene_count": 240
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003058",
+    "name": "Malpighian tubule cluster 31 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 748,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005642"
+    ],
+    "total_gene_count": 8577,
+    "filtered_gene_count": 213
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003059",
+    "name": "epidermis cluster 32 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 617,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 7749,
+    "filtered_gene_count": 228
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003060",
+    "name": "glia cluster 33 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 573,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052369"
+    ],
+    "total_gene_count": 7922,
+    "filtered_gene_count": 230
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003061",
+    "name": "brain cluster 34 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 433,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052663"
+    ],
+    "total_gene_count": 6895,
+    "filtered_gene_count": 584
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003062",
+    "name": "epidermis cluster 35 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 316,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 8280,
+    "filtered_gene_count": 327
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003063",
+    "name": "tracheal system cluster 36 (Calderon 2022 clusters, modelled age 12-14 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002922",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 204,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005038"
+    ],
+    "total_gene_count": 8515,
+    "filtered_gene_count": 447
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003064",
+    "name": "epidermis cluster 0 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2499,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 9930,
+    "filtered_gene_count": 189
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003065",
+    "name": "ventral nerve cord cluster 1 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2208,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00059273"
+    ],
+    "total_gene_count": 9912,
+    "filtered_gene_count": 235
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003066",
+    "name": "epidermis cluster 2 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2041,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 9572,
+    "filtered_gene_count": 234
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003067",
+    "name": "epidermis cluster 5 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1878,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 9537,
+    "filtered_gene_count": 230
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003068",
+    "name": "plasmatocytes cluster 6 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1864,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00001685"
+    ],
+    "total_gene_count": 9697,
+    "filtered_gene_count": 208
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003069",
+    "name": "somatic muscle cluster 7 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1845,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00005649"
+    ],
+    "total_gene_count": 9904,
+    "filtered_gene_count": 220
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003070",
+    "name": "midgut cluster 8 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1729,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00001886"
+    ],
+    "total_gene_count": 10013,
+    "filtered_gene_count": 243
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003071",
+    "name": "brain cluster 9 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1711,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00059273"
+    ],
+    "total_gene_count": 10710,
+    "filtered_gene_count": 439
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003072",
+    "name": "fat body cluster 10 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1629,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00046052"
+    ],
+    "total_gene_count": 9926,
+    "filtered_gene_count": 207
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003073",
+    "name": "tracheal system cluster 11 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1556,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00005038"
+    ],
+    "total_gene_count": 9637,
+    "filtered_gene_count": 222
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003074",
+    "name": "epidermis cluster 12 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1529,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 9969,
+    "filtered_gene_count": 231
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003075",
+    "name": "yolk nuclei cluster 13 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1516,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00000057"
+    ],
+    "total_gene_count": 9163,
+    "filtered_gene_count": 258
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003076",
+    "name": "foregut / hindgut / anal pad cluster 14 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1507,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00059305"
+    ],
+    "total_gene_count": 9690,
+    "filtered_gene_count": 226
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003077",
+    "name": "yolk nuclei cluster 15 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1406,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00000057"
+    ],
+    "total_gene_count": 8322,
+    "filtered_gene_count": 90
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003078",
+    "name": "ventral nerve cord cluster 16 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1385,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00059273"
+    ],
+    "total_gene_count": 9553,
+    "filtered_gene_count": 241
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003079",
+    "name": "brain cluster 17 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1379,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00059273"
+    ],
+    "total_gene_count": 9104,
+    "filtered_gene_count": 221
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003080",
+    "name": "somatic muscle cluster 18 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1317,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00005649"
+    ],
+    "total_gene_count": 9022,
+    "filtered_gene_count": 225
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003081",
+    "name": "somatic muscle cluster 19 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1313,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00005649"
+    ],
+    "total_gene_count": 9247,
+    "filtered_gene_count": 237
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003082",
+    "name": "sensory nervous system cluster 21 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1043,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00058245"
+    ],
+    "total_gene_count": 8645,
+    "filtered_gene_count": 215
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003083",
+    "name": "salivary gland cluster 22 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1031,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00059317"
+    ],
+    "total_gene_count": 8865,
+    "filtered_gene_count": 198
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003084",
+    "name": "spiracle (tracheal system) cluster 23 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1002,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00005039"
+    ],
+    "total_gene_count": 8834,
+    "filtered_gene_count": 202
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003085",
+    "name": "proventriculus cluster 24 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 956,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00059316"
+    ],
+    "total_gene_count": 9471,
+    "filtered_gene_count": 231
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003086",
+    "name": "amnioserosa cluster 25 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 909,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00059314"
+    ],
+    "total_gene_count": 8336,
+    "filtered_gene_count": 240
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003087",
+    "name": "brain cluster 26 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 809,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00059273"
+    ],
+    "total_gene_count": 8469,
+    "filtered_gene_count": 225
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003088",
+    "name": "brain cluster 27 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 663,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00059273"
+    ],
+    "total_gene_count": 8054,
+    "filtered_gene_count": 217
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003089",
+    "name": "epidermis cluster 28 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 650,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 9559,
+    "filtered_gene_count": 292
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003090",
+    "name": "sensory nervous system cluster 29 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 592,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00058245"
+    ],
+    "total_gene_count": 8132,
+    "filtered_gene_count": 210
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003091",
+    "name": "midgut cluster 30 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 540,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00001886"
+    ],
+    "total_gene_count": 7725,
+    "filtered_gene_count": 238
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003092",
+    "name": "brain cluster 31 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 444,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00059273"
+    ],
+    "total_gene_count": 7216,
+    "filtered_gene_count": 952
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003093",
+    "name": "tracheal system cluster 32 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 433,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00005038"
+    ],
+    "total_gene_count": 6706,
+    "filtered_gene_count": 207
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003094",
+    "name": "muscle cluster 33 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 311,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00005074"
+    ],
+    "total_gene_count": 8442,
+    "filtered_gene_count": 585
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003095",
+    "name": "brain cluster 34 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 304,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00059273"
+    ],
+    "total_gene_count": 6543,
+    "filtered_gene_count": 222
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003096",
+    "name": "foregut / hindgut / anal pad cluster 35 (Calderon 2022 clusters, modelled age 14-16 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002923",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 280,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005334",
+    "cell_type": [
+      "FBbt:00059305"
+    ],
+    "total_gene_count": 6797,
+    "filtered_gene_count": 215
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003097",
+    "name": "brain cluster 0 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3323,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00059273"
+    ],
+    "total_gene_count": 12399,
+    "filtered_gene_count": 1276
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003098",
+    "name": "somatic muscle cluster 1 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2875,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00005649"
+    ],
+    "total_gene_count": 10896,
+    "filtered_gene_count": 270
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003099",
+    "name": "foregut / hindgut / anal pad cluster 3 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2714,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00059305"
+    ],
+    "total_gene_count": 10557,
+    "filtered_gene_count": 233
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003100",
+    "name": "epidermis cluster 5 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2493,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 10710,
+    "filtered_gene_count": 277
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003101",
+    "name": "brain cluster 6 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2451,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00059273"
+    ],
+    "total_gene_count": 10435,
+    "filtered_gene_count": 256
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003102",
+    "name": "epidermis cluster 7 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2109,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 10043,
+    "filtered_gene_count": 226
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003103",
+    "name": "epidermis cluster 8 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2102,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 10157,
+    "filtered_gene_count": 212
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003104",
+    "name": "muscle cluster 9 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1931,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00005074"
+    ],
+    "total_gene_count": 10187,
+    "filtered_gene_count": 248
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003105",
+    "name": "brain cluster 10 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1905,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00059273"
+    ],
+    "total_gene_count": 10069,
+    "filtered_gene_count": 181
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003106",
+    "name": "epidermis cluster 11 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1878,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 10109,
+    "filtered_gene_count": 258
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003107",
+    "name": "epidermis cluster 12 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1868,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 9868,
+    "filtered_gene_count": 176
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003108",
+    "name": "midgut cluster 14 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1755,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00001886"
+    ],
+    "total_gene_count": 10066,
+    "filtered_gene_count": 229
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003109",
+    "name": "tracheal system cluster 15 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1606,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00005038"
+    ],
+    "total_gene_count": 10234,
+    "filtered_gene_count": 281
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003110",
+    "name": "midgut cluster 16 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1589,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00001886"
+    ],
+    "total_gene_count": 9995,
+    "filtered_gene_count": 205
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003111",
+    "name": "somatic muscle cluster 19 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1489,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00005649"
+    ],
+    "total_gene_count": 9722,
+    "filtered_gene_count": 260
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003112",
+    "name": "plasmatocytes cluster 20 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1445,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00001685"
+    ],
+    "total_gene_count": 9665,
+    "filtered_gene_count": 202
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003113",
+    "name": "foregut / hindgut / anal pad cluster 21 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1390,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00059305"
+    ],
+    "total_gene_count": 9672,
+    "filtered_gene_count": 202
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003114",
+    "name": "fat body cluster 23 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1317,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00046052"
+    ],
+    "total_gene_count": 9825,
+    "filtered_gene_count": 206
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003115",
+    "name": "epidermis cluster 24 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1301,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 9517,
+    "filtered_gene_count": 198
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003116",
+    "name": "yolk nuclei cluster 25 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1167,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00000057"
+    ],
+    "total_gene_count": 8692,
+    "filtered_gene_count": 102
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003117",
+    "name": "yolk nuclei cluster 26 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1099,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00000057"
+    ],
+    "total_gene_count": 9047,
+    "filtered_gene_count": 305
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003118",
+    "name": "sensory nervous system cluster 27 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1098,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00058245"
+    ],
+    "total_gene_count": 9698,
+    "filtered_gene_count": 290
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003119",
+    "name": "brain cluster 29 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 941,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00059273"
+    ],
+    "total_gene_count": 9082,
+    "filtered_gene_count": 253
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003120",
+    "name": "epidermis cluster 30 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 913,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 9333,
+    "filtered_gene_count": 246
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003121",
+    "name": "epidermis cluster 32 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 388,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00058243"
+    ],
+    "total_gene_count": 7669,
+    "filtered_gene_count": 229
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003122",
+    "name": "Malpighian tubule cluster 33 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 315,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00001904"
+    ],
+    "total_gene_count": 8275,
+    "filtered_gene_count": 367
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003123",
+    "name": "midgut cluster 34 (Calderon 2022 clusters, modelled age 16-18 h) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002924",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 143,
+    "neo_label": "Cluster",
+    "stage": "FBdv:00005335",
+    "cell_type": [
+      "FBbt:00001886"
+    ],
+    "total_gene_count": 7246,
+    "filtered_gene_count": 350
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003124",
+    "name": "Neural progenitors cluster 0 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 9932,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 12203,
+    "filtered_gene_count": 295
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003125",
+    "name": "Neural progenitors cluster 1 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 7020,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 11482,
+    "filtered_gene_count": 265
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003126",
+    "name": "Immature neurons cluster 2 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 6714,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052663"
+    ],
+    "total_gene_count": 11494,
+    "filtered_gene_count": 225
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003127",
+    "name": "Neural progenitors cluster 3 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 4879,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 10805,
+    "filtered_gene_count": 264
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003128",
+    "name": "Mature neurons cluster 5 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 4453,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047097"
+    ],
+    "total_gene_count": 10801,
+    "filtered_gene_count": 234
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003129",
+    "name": "Sensory progenitors cluster 6 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 4360,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001137"
+    ],
+    "total_gene_count": 10763,
+    "filtered_gene_count": 286
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003130",
+    "name": "Immature neurons cluster 7 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 3973,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052663"
+    ],
+    "total_gene_count": 11126,
+    "filtered_gene_count": 244
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003131",
+    "name": "Immature neurons cluster 8 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 2180,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052663"
+    ],
+    "total_gene_count": 10242,
+    "filtered_gene_count": 252
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003132",
+    "name": "Mature neurons cluster 10 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1778,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047097"
+    ],
+    "total_gene_count": 10276,
+    "filtered_gene_count": 254
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003133",
+    "name": "Neural progenitors cluster 11 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1731,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 10790,
+    "filtered_gene_count": 529
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003134",
+    "name": "Immature neurons cluster 12 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1610,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052663"
+    ],
+    "total_gene_count": 9983,
+    "filtered_gene_count": 233
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003135",
+    "name": "Immature neurons cluster 13 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1125,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052663"
+    ],
+    "total_gene_count": 8874,
+    "filtered_gene_count": 220
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003136",
+    "name": "Sensory progenitors cluster 14 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 789,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001137"
+    ],
+    "total_gene_count": 8601,
+    "filtered_gene_count": 215
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003137",
+    "name": "Neural progenitors cluster 15 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 734,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 7893,
+    "filtered_gene_count": 266
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003138",
+    "name": "Neural progenitors cluster 16 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 529,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001332"
+    ],
+    "total_gene_count": 9939,
+    "filtered_gene_count": 1816
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003139",
+    "name": "Mature neurons cluster 17 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 472,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047097"
+    ],
+    "total_gene_count": 7225,
+    "filtered_gene_count": 248
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003140",
+    "name": "Oenocytes cluster 18 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 140,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00001694"
+    ],
+    "total_gene_count": 5807,
+    "filtered_gene_count": 200
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003141",
+    "name": "Germline cluster 19 (Calderon 2022 neuroectoderm sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002925",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 43,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00004860"
+    ],
+    "total_gene_count": 3113,
+    "filtered_gene_count": 366
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003142",
+    "name": "Cholinergic cluster 0 (Calderon 2022 mature neuron sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002926",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 1562,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058215"
+    ],
+    "total_gene_count": 8568,
+    "filtered_gene_count": 218
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003143",
+    "name": "Cholinergic cluster 2 (Calderon 2022 mature neuron sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002926",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 997,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058215"
+    ],
+    "total_gene_count": 7828,
+    "filtered_gene_count": 245
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003144",
+    "name": "Multidendritic sensory cluster 3 (Calderon 2022 mature neuron sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002926",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 656,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00048285"
+    ],
+    "total_gene_count": 7913,
+    "filtered_gene_count": 260
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003145",
+    "name": "Glutamatergic cluster 4 (Calderon 2022 mature neuron sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002926",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 564,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058218"
+    ],
+    "total_gene_count": 6740,
+    "filtered_gene_count": 236
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003146",
+    "name": "External sensory cluster 5 (Calderon 2022 mature neuron sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002926",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 447,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00052615"
+    ],
+    "total_gene_count": 7005,
+    "filtered_gene_count": 219
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003147",
+    "name": "Chordotonal sensory cluster 6 (Calderon 2022 mature neuron sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002926",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 353,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051425"
+    ],
+    "total_gene_count": 6947,
+    "filtered_gene_count": 254
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003148",
+    "name": "Monoaminergic cluster 7 (Calderon 2022 mature neuron sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002926",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 247,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058211"
+    ],
+    "total_gene_count": 6016,
+    "filtered_gene_count": 275
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003149",
+    "name": "Peptidergic cluster 10 (Calderon 2022 mature neuron sub-clusters (6-18 h)) (Calderon 2022)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00002926",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00002863",
+    "cell_number": 49,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058212"
+    ],
+    "total_gene_count": 2947,
+    "filtered_gene_count": 260
+  }
+]
