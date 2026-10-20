@@ -60,3 +60,17 @@ unidentified:
 
 # FBbt mappings are made once per author type (type_mapping/, write_type_mappings.py) and
 # copied per cluster by scripts/expand_type_mappings.py.
+
+# Summary expression (scripts/build_expression.py) from the GEO matrices of the two control
+# libraries (Cell Ranger 7 filtered, raw UMI counts, FBgn ids), side by side
+# (combine_matrices.py; nuclei <library>_<barcode>, as in build_clusters.py's memberships).
+expression:
+  matrix_file: saavedra/combined/matrix.mtx.gz
+  features_file: saavedra/combined/features.tsv.gz
+  barcodes_file: saavedra/combined/barcodes.tsv.gz
+  membership_file: saavedra/memberships.tsv.gz
+  normalisation: CPM
+  extent_cutoff: 0.2
+  hide_in_terminfo: "true"
+  gzip_tsv: true
+  gene_id_map: gene_id_map.tsv

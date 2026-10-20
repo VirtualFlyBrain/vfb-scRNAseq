@@ -15,7 +15,8 @@ wt1 and wt2, one Sample).
   all_genotypes_cell_number  the cluster's nuclei in all six libraries
 
 Also writes .cache/saavedra/memberships.tsv.gz (nucleus<TAB>cluster; nuclei named
-<library>_<barcode>) for the expression build.
+<library>_<barcode>-1, the metadata's aggregation suffix replaced by the per-library one,
+as in GEO's per-library barcodes) for the expression build.
 
 Usage:
     uv run python projects/saavedra_2023/build_clusters.py
@@ -56,7 +57,9 @@ def main() -> None:
             n += 1
             total[r["Cluster"]] += 1
             if r["Sample"] in CONTROLS:
-                cells[r["Cluster"]].append(f"{r['Sample']}_{r['Barcode']}")
+                # the metadata's barcodes carry an aggregation suffix per library (wt1 -1, wt2 -2,
+                # ...); GEO's per-library barcodes all end -1
+                cells[r["Cluster"]].append(f"{r['Sample']}_{r['Barcode'].rsplit('-', 1)[0]}-1")
     if n != PAPER_NUCLEI or len(total) != 17 or set(cells) != set(total):
         raise SystemExit(f"expected the authors' 17 clusters / {PAPER_NUCLEI} nuclei: {len(total)} / {n}")
     anns = []
