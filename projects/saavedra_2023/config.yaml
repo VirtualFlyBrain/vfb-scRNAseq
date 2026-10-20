@@ -49,3 +49,11 @@ sample_build:
   genotype_includes: [FBal0288220, FBal0147425]
   clusterings:
     - { id: control, name: "Saavedra 2023 adult thorax clusters (controls)", sample_age: "adult (about 1-2 weeks)" }
+
+# Clusters (projects/saavedra_2023/build_clusters.py): the authors' 17 clusters from their GEO
+# metadata, restricted to the control nuclei. Held (untyped): the "Unknown cluster"s.
+annotations:
+  review_columns: [clustering, source_cluster_id, type, all_genotypes_cell_number]
+
+unidentified:
+  rule: none

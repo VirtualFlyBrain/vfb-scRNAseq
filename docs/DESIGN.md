@@ -1843,4 +1843,9 @@ or FoxO, two technical replicates each. Replaces the old FlyBase/SCEA load FBlc0
   age; methods: about 1-2 weeks, 4-5 d at 18 C then 4 d at 29 C); *adult thorax*; male. The
   control is a cross: `genotype_includes` Scer\GAL4[Mef2.PU] (FBal0288220, FlyBase's for
   the paper) and Scer\GAL80[ts.alphaTub84B] (FBal0147425, unambiguous). One Clustering.
+- **Clusters (stage 2):** `projects/saavedra_2023/build_clusters.py`: the authors' 17 clusters
+  from their GEO metadata (all 45,335 nuclei checked), restricted to the control libraries
+  (14,170 nuclei; every cluster has control nuclei); labelled as the authors give them
+  ("0_Indirect flight muscle"), typed by the name. Held (`untyped`): the three "Unknown
+  cluster"s.
 
