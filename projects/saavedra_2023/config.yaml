@@ -1,0 +1,51 @@
+# Saavedra et al. 2023 (Nat Commun; FBrf0257286): 10x single-nucleus RNA-seq of dissected
+# adult male thoraces, a driver-only control and muscle-specific (dMef2-GAL4) overexpression
+# of active REPTOR or FoxO, two technical replicates each (GEO GSE227038). Previously loaded
+# into VFB via the old FlyBase/SCEA mechanism as FBlc0006361 (scRNAseq_2023_Saavedra: control
+# only, 11 types merged); rebuilt here with fresh VFBseq ids. Curator decisions 2026-10-20:
+# controls only; the authors' 17 clusters (all genotypes integrated, Harmony, resolution 0.3),
+# restricted to the control nuclei; per-cell clusters from the authors' GEO metadata file.
+project: saavedra_2023
+
+source:
+  doi: 10.1038/s41467-023-40595-1
+  pmid: "37582831"
+  pmcid: PMC10427696
+  fbrf: FBrf0257286
+  title: "REPTOR and CREBRF encode key regulators of muscle energy metabolism"
+  journal: Nature Communications
+  year: 2023
+  first_author: Saavedra
+
+organism: Drosophila melanogaster
+
+dataset:
+  site: GEO
+  accession: GSE227038
+  bioproject: PRJNA942938
+  licence: CC-BY-4.0
+  assay_type: FBcv:0009001      # single-nucleus RNA-Seq
+
+sample_build:
+  # Controls only (curator 2026-10-20): titles "wildtype, replicate <n>, scRNAseq"; the REPTOR
+  # and FoxO gain-of-function GSMs do not match and are out of scope. Methods: "Ten thousand
+  # nuclei per genotype, with two technical replicates per genotype, were encapsulated", i.e.
+  # one nuclei preparation (30 thoraces) per genotype in two 10x channels: one Sample, two
+  # Assays (sample_groups).
+  title_pattern: 'regex:(?P<set>wildtype), (?P<timepoint>replicate) (?P<biorep>\d), scRNAseq'
+  sample_groups: { wildtype_replicate_2: wildtype_replicate_1 }
+  assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
+  assay_label: { unit: 10x library, pattern: 'replicate (\d+)' }
+  # GEO gives no age; methods: adult males collected over 48-72 h, kept 4-5 d at 18 C, then
+  # 4 d at 29 C (GAL80ts inactivated): roughly 1-2 weeks old, so adult stage.
+  age: adult (about 1-2 weeks)
+  age_map:
+    "adult (about 1-2 weeks)":
+      stage:  { fbdv_id: FBdv:00005369, label: adult stage }
+      tissue: { fbbt_id: FBbt:00003018, label: adult thorax }
+  # Genotype (a cross: tub-Gal80ts/+ ; dMef2-GAL4/+): the dMef2-GAL4 allele FlyBase curated
+  # for the paper, Scer\GAL4[Mef2.PU] (FBal0288220), and tub-GAL80ts, Scer\GAL80[ts.alphaTub84B]
+  # (FBal0147425; unambiguous, not linked to the paper in FlyBase).
+  genotype_includes: [FBal0288220, FBal0147425]
+  clusterings:
+    - { id: control, name: "Saavedra 2023 adult thorax clusters (controls)", sample_age: "adult (about 1-2 weeks)" }

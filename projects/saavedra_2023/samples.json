@@ -1,0 +1,77 @@
+{
+  "dataset": {
+    "vfbseq_id": "VFBseq_00003198",
+    "accession": "GSE227038",
+    "site": "GEO"
+  },
+  "samples": [
+    {
+      "vfbseq_id": "VFBseq_00003199",
+      "sample_id": "wildtype_replicate_1",
+      "set": "wildtype",
+      "timepoint": "replicate",
+      "biorep": "1",
+      "tissue_raw": "thorax",
+      "age_raw": "adult (about 1-2 weeks)",
+      "stock": null,
+      "genotype_includes": [
+        "FBal0288220",
+        "FBal0147425"
+      ],
+      "sex": "male",
+      "stage": {
+        "fbdv_id": "FBdv:00005369",
+        "label": "adult stage"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00003018",
+        "label": "adult thorax"
+      },
+      "associated_dataset": "VFBseq_00003198",
+      "assay_vfbseq_ids": [
+        "VFBseq_00003200",
+        "VFBseq_00003201"
+      ],
+      "n_assays": 2
+    }
+  ],
+  "assays": [
+    {
+      "vfbseq_id": "VFBseq_00003200",
+      "library_id": "wildtype, replicate 1, scRNAseq",
+      "accession": "GSM7090342",
+      "sra": "SRX19625141",
+      "biosample": "SAMN33705814",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00003199",
+      "associated_dataset": "VFBseq_00003198"
+    },
+    {
+      "vfbseq_id": "VFBseq_00003201",
+      "library_id": "wildtype, replicate 2, scRNAseq",
+      "accession": "GSM7090343",
+      "sra": "SRX19625142",
+      "biosample": "SAMN33705813",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00003199",
+      "associated_dataset": "VFBseq_00003198"
+    }
+  ],
+  "clusterings": [
+    {
+      "vfbseq_id": "VFBseq_00003202",
+      "subset": "control",
+      "associated_dataset": "VFBseq_00003198",
+      "name": "Saavedra 2023 adult thorax clusters (controls)",
+      "samples": [
+        "VFBseq_00003199"
+      ]
+    }
+  ]
+}
