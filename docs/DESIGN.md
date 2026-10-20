@@ -1858,4 +1858,14 @@ or FoxO, two technical replicates each. Replaces the old FlyBase/SCEA load FBlc0
   ventral nervous system to *adult VNC neuron*, peripheral nervous system to *adult PNS
   neuron*, salivary gland to *adult salivary gland epithelial cell*. 14 clusters mapped (12
   terms), 3 held ("Unknown cluster").
+- **Expression (stage 4).** From the GEO matrices of the two control libraries (Cell Ranger 7
+  filtered, raw UMI counts, FBgn ids), side by side (`combine_matrices.py`; nuclei
+  `<library>_<barcode>`), as CPM. The authors' metadata gives each library's barcodes an
+  aggregation suffix (wt1 `-1`, wt2 `-2`, ...); `build_clusters.py` maps them to GEO's
+  per-library `-1`, so all 14,170 control nuclei are assigned. Genes: 16,412 current, 80
+  secondary (3 merges); 1 split and 2 withdrawn dropped. 16,489 genes; 14 clusters, 3,163
+  rows (extent > 0.2; ~230 genes per cluster: single nuclei with ~400 UMIs); the 3 held
+  clusters (540 nuclei) left out. The most cluster-specific genes fit the author types
+  (muscle *sls*, *bt*, *Zasp52/66*; neurons *para*, *Snap25*; hemocytes *Hml*, *Ppn*;
+  adipose *apolpp*; salivary gland *CAH1*).
 
