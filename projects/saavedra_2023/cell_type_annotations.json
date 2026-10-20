@@ -1,0 +1,238 @@
+{
+  "source": {
+    "doi": "10.1038/s41467-023-40595-1",
+    "title": "REPTOR and CREBRF encode key regulators of muscle energy metabolism"
+  },
+  "dataset": {
+    "accession": "GSE227038",
+    "label_source": "the authors' per-nucleus clusters in their GEO metadata file (GSE227038_2023-02-21_metadata_Pedro_thorax_10K_final.csv), control libraries only",
+    "label_level": "author cluster (restricted to the control nuclei)",
+    "validate_against": "paper, Figure 3a"
+  },
+  "annotations": [
+    {
+      "label": "0_Indirect flight muscle",
+      "type": "Indirect flight muscle",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "0",
+      "cell_number": 6611,
+      "cells_by_library": {
+        "wt1": 3217,
+        "wt2": 3394
+      },
+      "all_genotypes_cell_number": 14616
+    },
+    {
+      "label": "1_Muscle cell",
+      "type": "Muscle cell",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "1",
+      "cell_number": 1930,
+      "cells_by_library": {
+        "wt1": 957,
+        "wt2": 973
+      },
+      "all_genotypes_cell_number": 8173
+    },
+    {
+      "label": "2_Ventral nervous system",
+      "type": "Ventral nervous system",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "2",
+      "cell_number": 1225,
+      "cells_by_library": {
+        "wt1": 578,
+        "wt2": 647
+      },
+      "all_genotypes_cell_number": 3905
+    },
+    {
+      "label": "3_Epithelial cell",
+      "type": "Epithelial cell",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "3",
+      "cell_number": 530,
+      "cells_by_library": {
+        "wt1": 279,
+        "wt2": 251
+      },
+      "all_genotypes_cell_number": 3872
+    },
+    {
+      "label": "4_Adipose tissue",
+      "type": "Adipose tissue",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "4",
+      "cell_number": 733,
+      "cells_by_library": {
+        "wt1": 329,
+        "wt2": 404
+      },
+      "all_genotypes_cell_number": 2214
+    },
+    {
+      "label": "5_Muscle cell",
+      "type": "Muscle cell",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "5",
+      "cell_number": 495,
+      "cells_by_library": {
+        "wt1": 232,
+        "wt2": 263
+      },
+      "all_genotypes_cell_number": 1742
+    },
+    {
+      "label": "6_Tracheal",
+      "type": "Tracheal",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "6",
+      "cell_number": 327,
+      "cells_by_library": {
+        "wt1": 157,
+        "wt2": 170
+      },
+      "all_genotypes_cell_number": 1489
+    },
+    {
+      "label": "7_Epithelial cell",
+      "type": "Epithelial cell",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "7",
+      "cell_number": 298,
+      "cells_by_library": {
+        "wt1": 148,
+        "wt2": 150
+      },
+      "all_genotypes_cell_number": 1457
+    },
+    {
+      "label": "8_Hemocyte",
+      "type": "Hemocyte",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "8",
+      "cell_number": 407,
+      "cells_by_library": {
+        "wt1": 206,
+        "wt2": 201
+      },
+      "all_genotypes_cell_number": 1426
+    },
+    {
+      "label": "9_Unknown cluster",
+      "type": "Unknown cluster",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "9",
+      "cell_number": 312,
+      "cells_by_library": {
+        "wt1": 155,
+        "wt2": 157
+      },
+      "all_genotypes_cell_number": 1407,
+      "unannotated": true
+    },
+    {
+      "label": "10_Peripheral nervous system",
+      "type": "Peripheral nervous system",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "10",
+      "cell_number": 364,
+      "cells_by_library": {
+        "wt1": 165,
+        "wt2": 199
+      },
+      "all_genotypes_cell_number": 1364
+    },
+    {
+      "label": "11_Unknown cluster",
+      "type": "Unknown cluster",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "11",
+      "cell_number": 208,
+      "cells_by_library": {
+        "wt1": 106,
+        "wt2": 102
+      },
+      "all_genotypes_cell_number": 998,
+      "unannotated": true
+    },
+    {
+      "label": "12_Cell body glial cell",
+      "type": "Cell body glial cell",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "12",
+      "cell_number": 212,
+      "cells_by_library": {
+        "wt1": 105,
+        "wt2": 107
+      },
+      "all_genotypes_cell_number": 861
+    },
+    {
+      "label": "13_Perineurial glial sheath",
+      "type": "Perineurial glial sheath",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "13",
+      "cell_number": 192,
+      "cells_by_library": {
+        "wt1": 93,
+        "wt2": 99
+      },
+      "all_genotypes_cell_number": 766
+    },
+    {
+      "label": "14_Adult alary muscle",
+      "type": "Adult alary muscle",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "14",
+      "cell_number": 211,
+      "cells_by_library": {
+        "wt1": 102,
+        "wt2": 109
+      },
+      "all_genotypes_cell_number": 712
+    },
+    {
+      "label": "15_Adult salivary gland",
+      "type": "Adult salivary gland",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "15",
+      "cell_number": 95,
+      "cells_by_library": {
+        "wt1": 44,
+        "wt2": 51
+      },
+      "all_genotypes_cell_number": 295
+    },
+    {
+      "label": "16_Unknown cluster",
+      "type": "Unknown cluster",
+      "clustering": "control",
+      "clustering_name": "Saavedra 2023 adult thorax clusters (controls)",
+      "source_cluster_id": "16",
+      "cell_number": 20,
+      "cells_by_library": {
+        "wt1": 12,
+        "wt2": 8
+      },
+      "all_genotypes_cell_number": 38,
+      "unannotated": true
+    }
+  ]
+}
