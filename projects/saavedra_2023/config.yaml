@@ -57,3 +57,6 @@ annotations:
 
 unidentified:
   rule: none
+
+# FBbt mappings are made once per author type (type_mapping/, write_type_mappings.py) and
+# copied per cluster by scripts/expand_type_mappings.py.

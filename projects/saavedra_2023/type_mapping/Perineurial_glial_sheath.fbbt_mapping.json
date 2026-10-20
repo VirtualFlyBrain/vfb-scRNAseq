@@ -1,0 +1,20 @@
+{
+  "cluster_label": "Perineurial glial sheath",
+  "working_definition": "Nuclei of the authors' 'Perineurial glial sheath' cluster(s) (Saavedra et al. 2023, Figure 3a), dissected adult male thoraces, control genotype.",
+  "searches_performed": [
+    "Perineurial glial sheath"
+  ],
+  "best_match": {
+    "fbbt_term": "adult perineurial glial cell",
+    "fbbt_id": "FBbt:00058251",
+    "fbbt_definition": "Any glial cell (FBbt:00005144) that is part of some adult nervous system (FBbt:00003559) and is part of some perineurial glial sheath (FBbt:00007089).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' annotation 'Perineurial glial sheath' (Fly Cell Atlas-based). Perineurial glia; not narrowed to the VNC, since the thorax's peripheral nerves also have a perineurial sheath (FCA rule).",
+  "other_candidates": [],
+  "recommendation": "Map to FBbt:00058251 adult perineurial glial cell (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

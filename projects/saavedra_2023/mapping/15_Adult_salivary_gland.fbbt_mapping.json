@@ -1,0 +1,20 @@
+{
+  "cluster_label": "15_Adult salivary gland",
+  "working_definition": "Nuclei of the authors' 'Adult salivary gland' cluster(s) (Saavedra et al. 2023, Figure 3a), dissected adult male thoraces, control genotype.",
+  "searches_performed": [
+    "Adult salivary gland"
+  ],
+  "best_match": {
+    "fbbt_term": "adult salivary gland epithelial cell",
+    "fbbt_id": "FBbt:00059269",
+    "fbbt_definition": "Any epithelial cell (FBbt:00000124) that is part of some adult salivary gland (FBbt:00003135).",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' annotation 'Adult salivary gland' (Fly Cell Atlas-based). A tissue type: its epithelial cells (the secretory cell would be narrower than the authors say).",
+  "other_candidates": [],
+  "recommendation": "Map to FBbt:00059269 adult salivary gland epithelial cell (broad match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}
