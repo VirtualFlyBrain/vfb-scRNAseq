@@ -1,0 +1,351 @@
+{
+  "project": "saavedra_2023",
+  "created_at": "2026-10-20",
+  "updated_at": "2026-10-20",
+  "summary": "Saavedra et al. 2023 (Nat Commun), 10x single-nucleus RNA-seq of dissected adult male thoraces (GEO GSE227038); replaces the old FlyBase/SCEA load FBlc0006361 with fresh VFBseq ids. Driver-only controls (tub-Gal80ts/+ ; dMef2-GAL4/+) only: 1 Sample / 2 technical-replicate Assays, linked to the GAL4 and GAL80ts alleles (GENO has_genotype). One Clustering with the authors' 17 clusters (all genotypes integrated) restricted to the 14,170 control nuclei, from the authors' GEO metadata: 14 loaded (adult muscle, glia, neuron, fat, trachea, hemocyte, epithelial and salivary gland cell terms), 3 'Unknown cluster' held. Summary expression as CPM from the control libraries (16,489 genes x 14,170 nuclei).",
+  "decisions": [
+    {
+      "date": "2026-10-08",
+      "by": "curator",
+      "decision": "Map to cell-level FBbt terms only (a tissue or organ author term maps to its cell-level equivalent, else the type is held)."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Clusters with no FBbt term are held: listed in mapping.tsv with a hold_reason but not loaded (no VFBseq id, entity or expression rows). Their cells still count towards the Dataset's gene counts."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Summary expression is computed as CPM for every dataset."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Narrow a generic type by the dissected tissue only where the tissue makes the tissue-specific FBbt term exact; hold clusters that could only be typed as cell or neuron (or stage-specific versions); load glia under a glial-cell term."
+    },
+    {
+      "date": "2026-10-20",
+      "by": "curator",
+      "decision": "Controls only (the driver-only cross); the REPTOR and FoxO muscle overexpression samples left out; the authors' 17 clusters (all genotypes integrated) restricted to the control nuclei."
+    },
+    {
+      "date": "2026-10-20",
+      "by": "curator",
+      "decision": "One Sample with two Assays (methods: one nuclei preparation per genotype in two 10x channels, 'technical replicates'; sample_groups); adult stage (GEO gives no age; about 1-2 weeks); adult thorax; male; the cross linked to Scer\\GAL4[Mef2.PU] (FBal0288220) and Scer\\GAL80[ts.alphaTub84B] (FBal0147425)."
+    },
+    {
+      "date": "2026-10-20",
+      "by": "pipeline",
+      "decision": "Clusters by build_clusters.py from the authors' GEO per-nucleus metadata (all 45,335 nuclei); 'Unknown cluster' held (untyped)."
+    },
+    {
+      "date": "2026-10-20",
+      "by": "curator",
+      "decision": "Mapping per author type: adult cell terms; cell body glia narrowed to the VNC (exact: CNS-only), perineurial glia not (the thorax's peripheral nerves); ventral / peripheral nervous system to adult VNC / PNS neuron and the salivary gland to adult salivary gland epithelial cell (broad: tissue types to their main cell type)."
+    },
+    {
+      "date": "2026-10-20",
+      "by": "curator",
+      "decision": "The thorax-only adipose cluster (adult fat cell) to move to 'adult postcephalic fat cell' when FBbt #2218 is fixed and released (tracked in checks/pending_fbbt_requests.json)."
+    },
+    {
+      "date": "2026-10-20",
+      "by": "pipeline",
+      "decision": "Expression from the two control libraries' GEO matrices side by side (combine_matrices.py), as CPM; the metadata's per-library aggregation suffixes mapped to GEO's -1 barcodes; FBgn ids mapped to current FlyBase genes (16,412 current, 80 secondary, 3 merges; 1 split and 2 withdrawn dropped)."
+    },
+    {
+      "date": "2026-10-20",
+      "by": "curator",
+      "decision": "All 17 mapping.tsv rows reviewed by the curator (mapping.tsv `reviewed`)."
+    }
+  ],
+  "checks": [
+    {
+      "date": "2026-10-20",
+      "check": "The authors' GEO metadata against the paper.",
+      "result": "45,335 nuclei in 17 clusters, as the paper reports; every cluster has control nuclei (14,170 in all)."
+    },
+    {
+      "date": "2026-10-20",
+      "check": "Control nuclei against the GEO per-library barcodes.",
+      "result": "All 14,170 found, once the metadata's aggregation suffix (wt2 -2) is mapped to the per-library -1."
+    },
+    {
+      "date": "2026-10-20",
+      "check": "verify_mappings.py: every FBbt term in the mappings looked up in OLS (FBbt 2026-10-01).",
+      "result": "12 terms current, not obsolete, labels match."
+    },
+    {
+      "date": "2026-10-20",
+      "check": "FBbt, FBdv and FBcv terms on the Sample, Assays and Dataset looked up in OLS.",
+      "result": "All current (adult stage, adult thorax, single-nucleus RNA-Seq, 10x sequencing)."
+    },
+    {
+      "date": "2026-10-20",
+      "check": "Most cluster-specific genes per author type in the expression output.",
+      "result": "Fit the types (muscle sls / bt / Zasp52 / Zasp66; neurons para / Snap25; hemocytes Hml / Ppn; adipose apolpp; salivary gland CAH1)."
+    }
+  ],
+  "people": [
+    {
+      "id": "ORCID:0000-0002-1373-1705",
+      "label": "Clare Pilgrim",
+      "role": "curator",
+      "username": "Clare72"
+    }
+  ],
+  "pipeline": {
+    "id": "vfb-scrnaseq",
+    "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
+    "version": "0.0.0",
+    "commit": "c50ce1e",
+    "uncommitted_changes": true
+  },
+  "ontologies": [
+    {
+      "id": "FBbt",
+      "label": "Drosophila gross anatomy ontology",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBdv",
+      "label": "Drosophila developmental ontology",
+      "version": "2026-09-30",
+      "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-09-30/fbdv.owl",
+      "accessed_via": "OLS4 API; local fbdv.obo in .cache (stage definitions)",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBcv",
+      "label": "FlyBase controlled vocabulary",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-10-01/fbcv.owl",
+      "accessed_via": "OLS4 API",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "accessed_at": "2026-10-16"
+    }
+  ],
+  "data_sources": [
+    {
+      "id": "10.1038/s41467-023-40595-1",
+      "type": "publication",
+      "label": "REPTOR and CREBRF encode key regulators of muscle energy metabolism",
+      "xrefs": [
+        "PMID:37582831",
+        "PMCID:PMC10427696",
+        "FlyBase:FBrf0257286"
+      ],
+      "description": "Saavedra et al. 2023, Nat Commun. Full text read for the scope, genotypes, rearing, replicates and clustering.",
+      "url": "https://doi.org/10.1038/s41467-023-40595-1",
+      "files": [
+        {
+          "path": "supp/PMC10427696.jats.xml",
+          "description": "JATS full text, NCBI efetch (db=pmc).",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=PMC10427696",
+          "sha256": "d7eb9ad8bc92f6285e603793c7a19821e55b81cb6dce9dc6eb1a08c05c5b2cbf",
+          "bytes": 231275,
+          "accessed_at": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": "GSE227038",
+      "type": "dataset",
+      "label": "Transcriptomic analysis of REPTOR or FoxO increased activity in muscle tissue using single nuclear RNA-seq analysis of Drosophila thoraces",
+      "xrefs": [
+        "BioProject:PRJNA942938"
+      ],
+      "description": "GEO series: six 10x libraries (control, REPTOR, FoxO x 2 technical replicates); the control libraries' matrices and the authors' per-nucleus metadata used.",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE227038",
+      "accessed_at": "2026-10-20",
+      "files": [
+        {
+          "path": "saavedra/geo/wt1/barcodes.tsv.gz",
+          "description": "wt1 (control) barcodes (Cell Ranger 7).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7090nnn/GSM7090342/suppl/GSM7090342_wt1.barcodes.tsv.gz",
+          "sha256": "c6b804cc15f55e6e6b7a27e7b68b95cc896e9dec47720839e0d8faa7854d7de9",
+          "bytes": 50820,
+          "accessed_at": "2026-10-20"
+        },
+        {
+          "path": "saavedra/geo/wt1/features.tsv.gz",
+          "description": "wt1 (control) features (Cell Ranger 7).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7090nnn/GSM7090342/suppl/GSM7090342_wt1.features.tsv.gz",
+          "sha256": "748e59a242556dc03642ad36bcec8a0657f60e1ea81fa2a92a38dd398cd17b68",
+          "bytes": 146730,
+          "accessed_at": "2026-10-20"
+        },
+        {
+          "path": "saavedra/geo/wt1/matrix.tsv.gz",
+          "description": "wt1 (control) matrix (Cell Ranger 7).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7090nnn/GSM7090342/suppl/GSM7090342_wt1.matrix.tsv.gz",
+          "sha256": "994e65903eb5b97c57ccc955255f75e6e5b2f7e48b4f451ea188c5f8ba473c2d",
+          "bytes": 6310593,
+          "accessed_at": "2026-10-20"
+        },
+        {
+          "path": "saavedra/geo/wt2/barcodes.tsv.gz",
+          "description": "wt2 (control) barcodes (Cell Ranger 7).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7090nnn/GSM7090343/suppl/GSM7090343_wt2.barcodes.tsv.gz",
+          "sha256": "87b969c02a3bafbd4c039280af1ad5603369dcfe5b2cd9d099deb2a11d309be4",
+          "bytes": 50790,
+          "accessed_at": "2026-10-20"
+        },
+        {
+          "path": "saavedra/geo/wt2/features.tsv.gz",
+          "description": "wt2 (control) features (Cell Ranger 7).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7090nnn/GSM7090343/suppl/GSM7090343_wt2.features.tsv.gz",
+          "sha256": "92a168e8c40ef5644ce48191ec13e06ea9e846cff604f2938830adefcbfe980b",
+          "bytes": 146730,
+          "accessed_at": "2026-10-20"
+        },
+        {
+          "path": "saavedra/geo/wt2/matrix.tsv.gz",
+          "description": "wt2 (control) matrix (Cell Ranger 7).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7090nnn/GSM7090343/suppl/GSM7090343_wt2.matrix.tsv.gz",
+          "sha256": "a3e88585888aa799cedb7a8d79cf87c707271b0a0e911be58a1ec04c29a00f42",
+          "bytes": 6235901,
+          "accessed_at": "2026-10-20"
+        },
+        {
+          "path": "saavedra/GSE227038_2023-02-21_metadata_Pedro_thorax_10K_final.csv.gz",
+          "description": "The authors' per-nucleus metadata: barcode, cluster, library (all 45,335 nuclei).",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE227nnn/GSE227038/suppl/GSE227038_2023-02-21_metadata_Pedro_thorax_10K_final.csv.gz",
+          "sha256": "022a4cdf445945073c63bd19ef79dd5bd5ec1e8f773e5d6d2824d195550a6148",
+          "bytes": 284799,
+          "accessed_at": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": "FBlc0006361",
+      "type": "previous_load",
+      "label": "scRNAseq_2023_Saavedra",
+      "description": "The old FlyBase/SCEA load this project replaces (control only, 11 types merged, read from VFB production); used as a mapping cross-check.",
+      "url": "https://virtualflybrain.org/reports/FBlc0006361",
+      "accessed_at": "2026-10-20"
+    }
+  ],
+  "software": [
+    {
+      "id": "claude-code",
+      "type": "tool",
+      "label": "Claude Code",
+      "version": "2.1.303-2.1.304",
+      "description": "Agentic CLI that ran the session (orchestrator), stages 1-5."
+    },
+    {
+      "id": "ols4",
+      "type": "service",
+      "label": "OLS4 (Ontology Lookup Service)",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "accessed_at": "2026-10-16",
+      "description": "FBbt / FBdv / FBcv lookup during mapping (OLS MCP) and term verification."
+    },
+    {
+      "id": "vfb-pdb",
+      "type": "service",
+      "label": "VFB production (neo4j)",
+      "url": "https://pdb.virtualflybrain.org",
+      "accessed_at": "2026-10-16",
+      "description": "Publication FBrf0257286 resolved by PMID (vfb_scrnaseq.pub); the old load FBlc0006361 read for the cross-check."
+    },
+    {
+      "id": "flybase-chado",
+      "type": "service",
+      "label": "FlyBase Chado",
+      "version": "FB2026_03 (data last modified 2026-08-29)",
+      "url": "https://chado.flybase.org",
+      "accessed_at": "2026-10-16",
+      "description": "The paper's genetic entities (flybase_pub_entities.py) and FBgn ids mapped to current FlyBase genes (update_gene_ids.py)."
+    },
+    {
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
+      "version": "2.5.1"
+    },
+    {
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
+      "version": "3.0.5"
+    },
+    {
+      "id": "pyyaml",
+      "type": "library",
+      "label": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
+      "version": "1.11.1",
+      "description": "linkml-validate and linkml-convert (flat RDF)."
+    },
+    {
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
+      "version": "1.11.1"
+    },
+    {
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
+      "version": "0.5.0",
+      "description": "Metadata OWL."
+    },
+    {
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
+      "version": "1.9.11",
+      "description": "OFN to OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "id": "psql",
+      "type": "tool",
+      "label": "psql",
+      "version": "14.15",
+      "description": "FlyBase Chado queries."
+    },
+    {
+      "id": "python",
+      "type": "language",
+      "label": "Python",
+      "version": "3.14.3",
+      "description": "Pipeline environment (uv-managed)."
+    },
+    {
+      "id": "ncbi-geo",
+      "type": "service",
+      "label": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/",
+      "accessed_at": "2026-10-19",
+      "description": "Series and Sample SOFT metadata (build_samples_from_geo.py), the control matrices and the authors' metadata."
+    }
+  ],
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "role": "orchestrator",
+      "label": "Claude Opus 5.5",
+      "provider": "Anthropic",
+      "description": "Main Claude Code session: scoping (paper, GEO, the authors' metadata, FlyBase genetic entities, the old load), sample and cluster builds, the type mappings, expression and builds. No subagents."
+    }
+  ]
+}
