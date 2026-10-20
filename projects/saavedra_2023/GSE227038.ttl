@@ -1,0 +1,212 @@
+@prefix BAO: <http://www.bioassayontology.org/bao#BAO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix FBbt: <http://purl.obolibrary.org/obo/FBbt_> .
+@prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
+@prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
+@prefix FlyBase: <http://flybase.org/reports/> .
+@prefix GENO: <http://purl.obolibrary.org/obo/GENO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix VFBseq: <http://virtualflybrain.org/reports/VFBseq_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix neo_custom: <http://n2o.neo/custom/> .
+@prefix neo_property: <http://n2o.neo/property/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vfb: <http://virtualflybrain.org/reports/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VFBseq:00003203 a FBcv:0009003 ;
+    rdfs:label "Indirect flight muscle cluster 0 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)" ;
+    neo_custom:cell_count 6611 ;
+    neo_custom:filtered_gene_count 207 ;
+    neo_custom:total_gene_count 10134 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003202 ;
+    RO:0002473 FBbt:00003361 ;
+    dcterms:source VFBseq:00003198 .
+
+VFBseq:00003204 a FBcv:0009003 ;
+    rdfs:label "Muscle cell cluster 1 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)" ;
+    neo_custom:cell_count 1930 ;
+    neo_custom:filtered_gene_count 176 ;
+    neo_custom:total_gene_count 8288 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003202 ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00003198 .
+
+VFBseq:00003205 a FBcv:0009003 ;
+    rdfs:label "Ventral nervous system cluster 2 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)" ;
+    neo_custom:cell_count 1225 ;
+    neo_custom:filtered_gene_count 201 ;
+    neo_custom:total_gene_count 8076 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003202 ;
+    RO:0002473 FBbt:00059289 ;
+    dcterms:source VFBseq:00003198 .
+
+VFBseq:00003206 a FBcv:0009003 ;
+    rdfs:label "Epithelial cell cluster 3 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)" ;
+    neo_custom:cell_count 530 ;
+    neo_custom:filtered_gene_count 108 ;
+    neo_custom:total_gene_count 6371 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003202 ;
+    RO:0002473 FBbt:00058238 ;
+    dcterms:source VFBseq:00003198 .
+
+VFBseq:00003207 a FBcv:0009003 ;
+    rdfs:label "Adipose tissue cluster 4 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)" ;
+    neo_custom:cell_count 733 ;
+    neo_custom:filtered_gene_count 442 ;
+    neo_custom:total_gene_count 8323 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003202 ;
+    RO:0002473 FBbt:00049949 ;
+    dcterms:source VFBseq:00003198 .
+
+VFBseq:00003208 a FBcv:0009003 ;
+    rdfs:label "Muscle cell cluster 5 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)" ;
+    neo_custom:cell_count 495 ;
+    neo_custom:filtered_gene_count 148 ;
+    neo_custom:total_gene_count 5973 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003202 ;
+    RO:0002473 FBbt:00058230 ;
+    dcterms:source VFBseq:00003198 .
+
+VFBseq:00003209 a FBcv:0009003 ;
+    rdfs:label "Tracheal cluster 6 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)" ;
+    neo_custom:cell_count 327 ;
+    neo_custom:filtered_gene_count 157 ;
+    neo_custom:total_gene_count 5351 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003202 ;
+    RO:0002473 FBbt:00005040 ;
+    dcterms:source VFBseq:00003198 .
+
+VFBseq:00003210 a FBcv:0009003 ;
+    rdfs:label "Epithelial cell cluster 7 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)" ;
+    neo_custom:cell_count 298 ;
+    neo_custom:filtered_gene_count 121 ;
+    neo_custom:total_gene_count 5127 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003202 ;
+    RO:0002473 FBbt:00058238 ;
+    dcterms:source VFBseq:00003198 .
+
+VFBseq:00003211 a FBcv:0009003 ;
+    rdfs:label "Hemocyte cluster 8 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)" ;
+    neo_custom:cell_count 407 ;
+    neo_custom:filtered_gene_count 199 ;
+    neo_custom:total_gene_count 6093 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003202 ;
+    RO:0002473 FBbt:00058143 ;
+    dcterms:source VFBseq:00003198 .
+
+VFBseq:00003212 a FBcv:0009003 ;
+    rdfs:label "Peripheral nervous system cluster 10 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)" ;
+    neo_custom:cell_count 364 ;
+    neo_custom:filtered_gene_count 162 ;
+    neo_custom:total_gene_count 6383 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003202 ;
+    RO:0002473 FBbt:00059276 ;
+    dcterms:source VFBseq:00003198 .
+
+VFBseq:00003213 a FBcv:0009003 ;
+    rdfs:label "Cell body glial cell cluster 12 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)" ;
+    neo_custom:cell_count 212 ;
+    neo_custom:filtered_gene_count 175 ;
+    neo_custom:total_gene_count 4635 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003202 ;
+    RO:0002473 FBbt:00059288 ;
+    dcterms:source VFBseq:00003198 .
+
+VFBseq:00003214 a FBcv:0009003 ;
+    rdfs:label "Perineurial glial sheath cluster 13 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)" ;
+    neo_custom:cell_count 192 ;
+    neo_custom:filtered_gene_count 305 ;
+    neo_custom:total_gene_count 6702 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003202 ;
+    RO:0002473 FBbt:00058251 ;
+    dcterms:source VFBseq:00003198 .
+
+VFBseq:00003215 a FBcv:0009003 ;
+    rdfs:label "Adult alary muscle cluster 14 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)" ;
+    neo_custom:cell_count 211 ;
+    neo_custom:filtered_gene_count 244 ;
+    neo_custom:total_gene_count 6809 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003202 ;
+    RO:0002473 FBbt:00003545 ;
+    dcterms:source VFBseq:00003198 .
+
+VFBseq:00003216 a FBcv:0009003 ;
+    rdfs:label "Adult salivary gland cluster 15 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)" ;
+    neo_custom:cell_count 95 ;
+    neo_custom:filtered_gene_count 518 ;
+    neo_custom:total_gene_count 5187 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003202 ;
+    RO:0002473 FBbt:00059269 ;
+    dcterms:source VFBseq:00003198 .
+
+FlyBase:FBrf0257286 a FBcv:0000212 ;
+    neo_property:nodeLabel "pub" .
+
+VFBseq:00003200 a FBcv:0003025 ;
+    rdfs:label "thorax, adult (about 1-2 weeks), wildtype rep 1, 10x library 1 (Saavedra 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00003199 ;
+    dcterms:source VFBseq:00003198 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM7090342",
+        "SAMN33705814",
+        "SRX19625141" .
+
+VFBseq:00003201 a FBcv:0003025 ;
+    rdfs:label "thorax, adult (about 1-2 weeks), wildtype rep 1, 10x library 2 (Saavedra 2023)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00003199 ;
+    dcterms:source VFBseq:00003198 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM7090343",
+        "SAMN33705813",
+        "SRX19625142" .
+
+VFBseq:00003199 a FBcv:0003024 ;
+    rdfs:label "thorax, adult (about 1-2 weeks), wildtype rep 1 (Saavedra 2023)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    GENO:0000222 FlyBase:FBal0147425,
+        FlyBase:FBal0288220 ;
+    RO:0002131 FBbt:00003018 ;
+    RO:0002352 VFBseq:00003200,
+        VFBseq:00003201 ;
+    RO:0002490 FBdv:00005369 ;
+    dcterms:source VFBseq:00003198 .
+
+VFBseq:00003202 a FBcv:0009002 ;
+    rdfs:label "Saavedra 2023 adult thorax clusters (controls)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00003199 ;
+    dcterms:source VFBseq:00003198 .
+
+VFBseq:00003198 a FBcv:0003023 ;
+    rdfs:label "scRNAseq data from Saavedra (2023)" ;
+    neo_custom:accession "GSE227038" ;
+    neo_custom:filtered_gene_count 1402 ;
+    neo_custom:total_gene_count 12031 ;
+    neo_property:nodeLabel "DataSet" ;
+    IAO:0000115 "REPTOR and CREBRF encode key regulators of muscle energy metabolism" ;
+    OBI:0000312 FBcv:0009001 ;
+    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references FlyBase:FBrf0257286 ;
+    oboInOwl:hasDbXref vfb:GEO .
+

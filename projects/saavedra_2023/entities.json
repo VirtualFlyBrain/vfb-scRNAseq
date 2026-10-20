@@ -1,0 +1,279 @@
+[
+  {
+    "type": "Publication",
+    "id": "FlyBase:FBrf0257286",
+    "neo_label": "pub"
+  },
+  {
+    "type": "Dataset",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "name": "scRNAseq data from Saavedra (2023)",
+    "title": "REPTOR and CREBRF encode key regulators of muscle energy metabolism",
+    "accession": "GSE227038",
+    "neo_label": "DataSet",
+    "site": "vfb:GEO",
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "assay_type": "FBcv:0009001",
+    "total_gene_count": 12031,
+    "filtered_gene_count": 1402,
+    "publication": "FlyBase:FBrf0257286"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003199",
+    "name": "thorax, adult (about 1-2 weeks), wildtype rep 1 (Saavedra 2023)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003200",
+      "http://virtualflybrain.org/reports/VFBseq_00003201"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003018"
+    ],
+    "stage": "FBdv:00005369",
+    "genotype_includes": [
+      "FlyBase:FBal0288220",
+      "FlyBase:FBal0147425"
+    ],
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003200",
+    "name": "thorax, adult (about 1-2 weeks), wildtype rep 1, 10x library 1 (Saavedra 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003199"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "dbxref": [
+      "GSM7090342",
+      "SRX19625141",
+      "SAMN33705814"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003201",
+    "name": "thorax, adult (about 1-2 weeks), wildtype rep 1, 10x library 2 (Saavedra 2023)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003199"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "dbxref": [
+      "GSM7090343",
+      "SRX19625142",
+      "SAMN33705813"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003202",
+    "name": "Saavedra 2023 adult thorax clusters (controls)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00003199"
+    ]
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003203",
+    "name": "Indirect flight muscle cluster 0 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003202",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "cell_number": 6611,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003361"
+    ],
+    "total_gene_count": 10134,
+    "filtered_gene_count": 207
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003204",
+    "name": "Muscle cell cluster 1 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003202",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "cell_number": 1930,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 8288,
+    "filtered_gene_count": 176
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003205",
+    "name": "Ventral nervous system cluster 2 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003202",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "cell_number": 1225,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059289"
+    ],
+    "total_gene_count": 8076,
+    "filtered_gene_count": 201
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003206",
+    "name": "Epithelial cell cluster 3 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003202",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "cell_number": 530,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058238"
+    ],
+    "total_gene_count": 6371,
+    "filtered_gene_count": 108
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003207",
+    "name": "Adipose tissue cluster 4 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003202",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "cell_number": 733,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049949"
+    ],
+    "total_gene_count": 8323,
+    "filtered_gene_count": 442
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003208",
+    "name": "Muscle cell cluster 5 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003202",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "cell_number": 495,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058230"
+    ],
+    "total_gene_count": 5973,
+    "filtered_gene_count": 148
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003209",
+    "name": "Tracheal cluster 6 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003202",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "cell_number": 327,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00005040"
+    ],
+    "total_gene_count": 5351,
+    "filtered_gene_count": 157
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003210",
+    "name": "Epithelial cell cluster 7 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003202",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "cell_number": 298,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058238"
+    ],
+    "total_gene_count": 5127,
+    "filtered_gene_count": 121
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003211",
+    "name": "Hemocyte cluster 8 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003202",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "cell_number": 407,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058143"
+    ],
+    "total_gene_count": 6093,
+    "filtered_gene_count": 199
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003212",
+    "name": "Peripheral nervous system cluster 10 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003202",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "cell_number": 364,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059276"
+    ],
+    "total_gene_count": 6383,
+    "filtered_gene_count": 162
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003213",
+    "name": "Cell body glial cell cluster 12 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003202",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "cell_number": 212,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059288"
+    ],
+    "total_gene_count": 4635,
+    "filtered_gene_count": 175
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003214",
+    "name": "Perineurial glial sheath cluster 13 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003202",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "cell_number": 192,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058251"
+    ],
+    "total_gene_count": 6702,
+    "filtered_gene_count": 305
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003215",
+    "name": "Adult alary muscle cluster 14 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003202",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "cell_number": 211,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003545"
+    ],
+    "total_gene_count": 6809,
+    "filtered_gene_count": 244
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003216",
+    "name": "Adult salivary gland cluster 15 (Saavedra 2023 adult thorax clusters (controls)) (Saavedra 2023)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003202",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003198",
+    "cell_number": 95,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00059269"
+    ],
+    "total_gene_count": 5187,
+    "filtered_gene_count": 518
+  }
+]
