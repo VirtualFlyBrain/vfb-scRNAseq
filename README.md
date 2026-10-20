@@ -119,6 +119,10 @@ from FlyBase; that authority is being dropped.)
   10x, sucrose (control) samples only; the authors' 36 clusters, per-cell assignments
   recovered by re-running their published script. Replaces the old FlyBase/SCEA load
   (FBlc0005515). In progress.
+- `projects/saavedra_2023/` — Saavedra et al. 2023, adult thorax (PMID 37582831;
+  [GSE227038](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE227038)): 10x
+  single-nucleus, driver-only controls; the authors' 17 clusters from their GEO metadata.
+  Replaces the old FlyBase/SCEA load (FBlc0006361). In progress.
 - `projects/hormann_2020/` — Hörmann et al. 2020, T4/T5 neurons through pupal
   development (PMID 32238425; [GSE147987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987)):
   FACS-sorted T4/T5 neurons at five pupal stages, one Clustering per stage of the
@@ -175,6 +179,7 @@ projects/calderon_2022/                  # embryonic development (GEO; authors' 
 projects/avalos_2019/                    # first-instar larval brain (GEO; authors' UCSC Cell Browser labels; fed only)
 projects/mokashi_2021/                   # adult brain (GEO; clusters by re-running the authors' Seurat 3 script; reference medium only)
 projects/baker_2021/                     # adult brain (GEO; clusters by re-running the authors' Seurat 3 script; sucrose controls only)
+projects/saavedra_2023/                  # adult thorax (GEO; authors' per-nucleus metadata; controls only)
 metadata/                                # VFB-loadable metadata OWL, one per project
 expression/                              # VFB-loadable expression OWL (.owl.gz), one per project
 id_registry/                             # minted-id registry (JSON)

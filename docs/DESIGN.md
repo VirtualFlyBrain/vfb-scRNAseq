@@ -1821,3 +1821,26 @@ pipeline).
   stage* (methods: aged 3-5 d; GEO gives no age); *adult brain*; sex from GEO; Canton S (B),
   no stock named (not linked). One Clustering.
 
+## Saavedra 2023 (adult thorax)
+
+Nat Commun 2023, PMID 37582831, FBrf0257286; GEO GSE227038 (`saavedra_2023`). 10x
+single-nucleus RNA-seq of dissected adult male thoraces (30 per genotype): a driver-only
+control (tub-Gal80ts/+ ; dMef2-GAL4/+) and muscle-specific overexpression of active REPTOR
+or FoxO, two technical replicates each. Replaces the old FlyBase/SCEA load FBlc0006361
+(control only, 11 types merged) with fresh VFBseq ids; licence CC-BY-4.0. Curator decisions
+2026-10-20.
+
+- **Data.** The authors integrated all six libraries (Seurat 4.3, Harmony) and clustered
+  them together at resolution 0.3: 17 clusters, annotated against the Fly Cell Atlas
+  (three "Unknown cluster"). GEO has the per-library matrices and the authors' per-nucleus
+  metadata (`…metadata_Pedro_thorax_10K_final.csv`: barcode, cluster, sample) for all
+  45,335 nuclei the paper reports, so no re-run is needed.
+- **Scope (curator):** the control nuclei only (14,170): the authors' 17 clusters restricted
+  to the control libraries, as for Mokashi and Baker.
+- **Samples (stage 1):** `build_samples_from_geo.py`, the title pattern matching the
+  "wildtype" GSMs only: 1 Sample / 2 Assays (methods: one nuclei preparation per genotype in
+  two 10x channels, "technical replicates"; `sample_groups`); *adult stage* (GEO gives no
+  age; methods: about 1-2 weeks, 4-5 d at 18 C then 4 d at 29 C); *adult thorax*; male. The
+  control is a cross: `genotype_includes` Scer\GAL4[Mef2.PU] (FBal0288220, FlyBase's for
+  the paper) and Scer\GAL80[ts.alphaTub84B] (FBal0147425, unambiguous). One Clustering.
+

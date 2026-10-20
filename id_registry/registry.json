@@ -1,5 +1,5 @@
 {
-  "counter": 3197,
+  "counter": 3202,
   "entries": {
     "Assay::E-MTAB-10519:FCA10_Male_head_adult_5dWT_Luo_sample4_S1": {
       "accession": null,
@@ -3514,6 +3514,20 @@
       "id": "VFBseq_00001504",
       "label": "Female_body_adult_70dWT_Hongjie_S6_S18",
       "natural_key": "GSE218661:GSM6754305"
+    },
+    "Assay::GSE227038:GSM7090342": {
+      "accession": "GSM7090342",
+      "entity_type": "Assay",
+      "id": "VFBseq_00003200",
+      "label": "wildtype, replicate 1, scRNAseq",
+      "natural_key": "GSE227038:GSM7090342"
+    },
+    "Assay::GSE227038:GSM7090343": {
+      "accession": "GSM7090343",
+      "entity_type": "Assay",
+      "id": "VFBseq_00003201",
+      "label": "wildtype, replicate 2, scRNAseq",
+      "natural_key": "GSE227038:GSM7090343"
     },
     "Cluster::E-MTAB-10519:main:antenna_Johnston organ neuron": {
       "accession": null,
@@ -18992,6 +19006,13 @@
       "label": "Aging Fly Cell Atlas head",
       "natural_key": "GSE218661:head"
     },
+    "Clustering::GSE227038:control": {
+      "accession": null,
+      "entity_type": "Clustering",
+      "id": "VFBseq_00003202",
+      "label": "Saavedra 2023 adult thorax clusters (controls)",
+      "natural_key": "GSE227038:control"
+    },
     "Dataset::E-MTAB-10519": {
       "accession": "E-MTAB-10519",
       "entity_type": "Dataset",
@@ -19103,6 +19124,13 @@
       "id": "VFBseq_00001468",
       "label": "Aging Fly Cell Atlas Identifies Exhaustive Aging Features at Cellular Resolution",
       "natural_key": "GSE218661"
+    },
+    "Dataset::GSE227038": {
+      "accession": "GSE227038",
+      "entity_type": "Dataset",
+      "id": "VFBseq_00003198",
+      "label": "Transcriptomic analysis of REPTOR or FoxO increased activity in muscle tissue using single nuclear RNA-seq analysis of Drosophila thoraces",
+      "natural_key": "GSE227038"
     },
     "Sample::E-MTAB-10519:0ece9e7a__FCA53_Male_oenocyteGFP_adult_5dWT_Jasper_sample1": {
       "accession": null,
@@ -21203,6 +21231,13 @@
       "id": "VFBseq_00001611",
       "label": "Male_head_70d_S6",
       "natural_key": "GSE218661:Male_head_70d_S6"
+    },
+    "Sample::GSE227038:wildtype_replicate_1": {
+      "accession": null,
+      "entity_type": "Sample",
+      "id": "VFBseq_00003199",
+      "label": "wildtype_replicate_1",
+      "natural_key": "GSE227038:wildtype_replicate_1"
     }
   },
   "id_width": 8,
