@@ -121,8 +121,9 @@ from FlyBase; that authority is being dropped.)
   (FBlc0005515). In progress.
 - `projects/saavedra_2023/` — Saavedra et al. 2023, adult thorax (PMID 37582831;
   [GSE227038](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE227038)): 10x
-  single-nucleus, driver-only controls; the authors' 17 clusters from their GEO metadata.
-  Replaces the old FlyBase/SCEA load (FBlc0006361). In progress.
+  single-nucleus, driver-only controls; the authors' 17 clusters from their GEO metadata:
+  14 loaded (adult muscle, glia, neuron, fat, trachea, hemocyte, epithelial and salivary
+  gland cell terms), 3 held. Replaces the old FlyBase/SCEA load (FBlc0006361).
 - `projects/hormann_2020/` — Hörmann et al. 2020, T4/T5 neurons through pupal
   development (PMID 32238425; [GSE147987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147987)):
   FACS-sorted T4/T5 neurons at five pupal stages, one Clustering per stage of the
@@ -235,7 +236,7 @@ from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#genera
 
 ## Status
 
-All fourteen projects are curated and built. Every mapped cluster has been reviewed (bar
+All fifteen projects are curated and built. Every mapped cluster has been reviewed (bar
 three Kurmangaliyev early clusters awaiting FBbt #2216, below), and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the
