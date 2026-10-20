@@ -1,0 +1,20 @@
+{
+  "cluster_label": "Cell body glial cell",
+  "working_definition": "Nuclei of the authors' 'Cell body glial cell' cluster(s) (Saavedra et al. 2023, Figure 3a), dissected adult male thoraces, control genotype.",
+  "searches_performed": [
+    "Cell body glial cell"
+  ],
+  "best_match": {
+    "fbbt_term": "adult VNC cell body glial cell",
+    "fbbt_id": "FBbt:00059288",
+    "fbbt_definition": "Any glial cell (FBbt:00005144) that is part of some adult ventral nerve cord cell body rind (FBbt:00111082).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The authors' annotation 'Cell body glial cell' (Fly Cell Atlas-based). Cell body glia are CNS-only and the thorax's CNS is the ventral nerve cord, so the VNC term is exact (FCA rule).",
+  "other_candidates": [],
+  "recommendation": "Map to FBbt:00059288 adult VNC cell body glial cell (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
+}

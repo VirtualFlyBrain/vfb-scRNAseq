@@ -1848,4 +1848,14 @@ or FoxO, two technical replicates each. Replaces the old FlyBase/SCEA load FBlc0
   (14,170 nuclei; every cluster has control nuclei); labelled as the authors give them
   ("0_Indirect flight muscle"), typed by the name. Held (`untyped`): the three "Unknown
   cluster"s.
+- **FBbt mapping (stage 3, 2026-10-20):** per author type (`write_type_mappings.py`): adult
+  cell terms (*indirect flight muscle cell*, *adult muscle cell*, *adult alary muscle cell*,
+  *adult epithelial cell*, *adult fat cell*, *adult tracheocyte*, *adult hemocyte*);
+  narrowed by the dissected tissue only where exact (FCA rules): cell body glia to *adult
+  VNC cell body glial cell* (CNS-only; the thorax's CNS is the VNC), perineurial glia to
+  *adult perineurial glial cell* (not narrowed: the thorax's peripheral nerves have a
+  perineurial sheath too); tissue types to their main cell type, broad (as for Calderon):
+  ventral nervous system to *adult VNC neuron*, peripheral nervous system to *adult PNS
+  neuron*, salivary gland to *adult salivary gland epithelial cell*. 14 clusters mapped (12
+  terms), 3 held ("Unknown cluster").
 
