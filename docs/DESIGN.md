@@ -1868,4 +1868,8 @@ or FoxO, two technical replicates each. Replaces the old FlyBase/SCEA load FBlc0
   clusters (540 nuclei) left out. The most cluster-specific genes fit the author types
   (muscle *sls*, *bt*, *Zasp52/66*; neurons *para*, *Snap25*; hemocytes *Hml*, *Ppn*;
   adipose *apolpp*; salivary gland *CAH1*).
+- **Build (stage 5):** `build_rdf.py`: 1 Dataset, 1 Sample (`has_genotype some` the GAL4 and
+  GAL80ts alleles), 2 Assays, 1 Clustering, 14 Clusters; publication FBrf0257286 from VFB
+  production; `verify_mappings.py` OK (12 FBbt terms); the FBbt / FBdv / FBcv terms on the
+  Sample, Assays and Dataset current. Recorded in `provenance.json`.
 
