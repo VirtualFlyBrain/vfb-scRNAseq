@@ -1,0 +1,710 @@
+{
+  "source": {
+    "doi": "10.3389/fpsyt.2021.699033",
+    "title": "Developmental Alcohol Exposure in Drosophila: Effects on Adult Phenotypes and Gene Expression in the Brain"
+  },
+  "dataset": {
+    "accession": "GSE172231",
+    "label_source": "the authors' complete per-cell table in SCEA (E-GEOD-172231.cells.txt): cluster and the authors' inferred cell type; reference-medium cells only",
+    "label_level": "author cluster (restricted to the reference cells)",
+    "validate_against": "paper, Figure 4; the authors' script (filters keep 104,984 cells)"
+  },
+  "annotations": [
+    {
+      "label": "0_Optic lobe neurons",
+      "type": "Optic lobe neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "0",
+      "cell_number": 5110,
+      "cells_by_sample": {
+        "Female_Reference_1": 882,
+        "Female_Reference_2": 956,
+        "Male_Reference_1": 1794,
+        "Male_Reference_2": 1478
+      },
+      "all_samples_cell_number": 9461,
+      "author_scea_label": "adult optic lobe neuron 0"
+    },
+    {
+      "label": "1_5-HT and DA neurons",
+      "type": "5-HT and DA neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "1",
+      "cell_number": 4043,
+      "cells_by_sample": {
+        "Female_Reference_1": 601,
+        "Female_Reference_2": 873,
+        "Male_Reference_1": 1236,
+        "Male_Reference_2": 1333
+      },
+      "all_samples_cell_number": 7686,
+      "author_scea_label": "mixed serotonergic and dopaminergic neuron 1"
+    },
+    {
+      "label": "2_Glutamatergic neurons",
+      "type": "Glutamatergic neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "2",
+      "cell_number": 3920,
+      "cells_by_sample": {
+        "Female_Reference_1": 601,
+        "Female_Reference_2": 913,
+        "Male_Reference_1": 994,
+        "Male_Reference_2": 1412
+      },
+      "all_samples_cell_number": 7212,
+      "author_scea_label": "glutamatergic neuron 2"
+    },
+    {
+      "label": "3_Neuropeptides/cholinergic neurons, central brain",
+      "type": "Neuropeptides/cholinergic neurons, central brain",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "3",
+      "cell_number": 3477,
+      "cells_by_sample": {
+        "Female_Reference_1": 611,
+        "Female_Reference_2": 812,
+        "Male_Reference_1": 887,
+        "Male_Reference_2": 1167
+      },
+      "all_samples_cell_number": 6520,
+      "author_scea_label": "mixed peptidergic neuron and cholinergic neuron 3"
+    },
+    {
+      "label": "4_Glutamatergic neurons",
+      "type": "Glutamatergic neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "4",
+      "cell_number": 3095,
+      "cells_by_sample": {
+        "Female_Reference_1": 530,
+        "Female_Reference_2": 553,
+        "Male_Reference_1": 1062,
+        "Male_Reference_2": 950
+      },
+      "all_samples_cell_number": 5882,
+      "author_scea_label": "glutamatergic neuron 4"
+    },
+    {
+      "label": "5_Surface glia",
+      "type": "Surface glia",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "5",
+      "cell_number": 2652,
+      "cells_by_sample": {
+        "Female_Reference_1": 282,
+        "Female_Reference_2": 501,
+        "Male_Reference_1": 884,
+        "Male_Reference_2": 985
+      },
+      "all_samples_cell_number": 4868,
+      "author_scea_label": "surface glial cell 5"
+    },
+    {
+      "label": "6_Neuropeptides/cholinergic neurons",
+      "type": "Neuropeptides/cholinergic neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "6",
+      "cell_number": 2359,
+      "cells_by_sample": {
+        "Female_Reference_1": 407,
+        "Female_Reference_2": 588,
+        "Male_Reference_1": 619,
+        "Male_Reference_2": 745
+      },
+      "all_samples_cell_number": 4489,
+      "author_scea_label": "mixed peptidergic neuron and cholinergic neuron 6"
+    },
+    {
+      "label": "7_Optic lobe neurons",
+      "type": "Optic lobe neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "7",
+      "cell_number": 1980,
+      "cells_by_sample": {
+        "Female_Reference_1": 354,
+        "Female_Reference_2": 373,
+        "Male_Reference_1": 753,
+        "Male_Reference_2": 500
+      },
+      "all_samples_cell_number": 3745,
+      "author_scea_label": "adult optic lobe neuron 7"
+    },
+    {
+      "label": "8_GABAergic neurons",
+      "type": "GABAergic neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "8",
+      "cell_number": 1956,
+      "cells_by_sample": {
+        "Female_Reference_1": 339,
+        "Female_Reference_2": 457,
+        "Male_Reference_1": 507,
+        "Male_Reference_2": 653
+      },
+      "all_samples_cell_number": 3703,
+      "author_scea_label": "GABAergic neuron 8"
+    },
+    {
+      "label": "9_GABAergic neurons",
+      "type": "GABAergic neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "9",
+      "cell_number": 1965,
+      "cells_by_sample": {
+        "Female_Reference_1": 300,
+        "Female_Reference_2": 325,
+        "Male_Reference_1": 608,
+        "Male_Reference_2": 732
+      },
+      "all_samples_cell_number": 3440,
+      "author_scea_label": "GABAergic neuron 9"
+    },
+    {
+      "label": "10_Olfactory projection neurons",
+      "type": "Olfactory projection neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "10",
+      "cell_number": 1500,
+      "cells_by_sample": {
+        "Female_Reference_1": 316,
+        "Female_Reference_2": 273,
+        "Male_Reference_1": 565,
+        "Male_Reference_2": 346
+      },
+      "all_samples_cell_number": 2947,
+      "author_scea_label": "olfactory projection neuron 10"
+    },
+    {
+      "label": "11_Optic lobe and antennal lobe neurons",
+      "type": "Optic lobe and antennal lobe neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "11",
+      "cell_number": 1493,
+      "cells_by_sample": {
+        "Female_Reference_1": 384,
+        "Female_Reference_2": 223,
+        "Male_Reference_1": 638,
+        "Male_Reference_2": 248
+      },
+      "all_samples_cell_number": 2903,
+      "author_scea_label": "mixed optic lobe and antennal lobe neuron 11"
+    },
+    {
+      "label": "12_Kenyon cells",
+      "type": "Kenyon cells",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "12",
+      "cell_number": 1548,
+      "cells_by_sample": {
+        "Female_Reference_1": 258,
+        "Female_Reference_2": 376,
+        "Male_Reference_1": 341,
+        "Male_Reference_2": 573
+      },
+      "all_samples_cell_number": 2814,
+      "author_scea_label": "Kenyon cell 12"
+    },
+    {
+      "label": "13_Glutamatergic neurons",
+      "type": "Glutamatergic neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "13",
+      "cell_number": 1363,
+      "cells_by_sample": {
+        "Female_Reference_1": 328,
+        "Female_Reference_2": 262,
+        "Male_Reference_1": 467,
+        "Male_Reference_2": 306
+      },
+      "all_samples_cell_number": 2716,
+      "author_scea_label": "glutamatergic neuron 13"
+    },
+    {
+      "label": "14_GABAergic neurons",
+      "type": "GABAergic neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "14",
+      "cell_number": 1459,
+      "cells_by_sample": {
+        "Female_Reference_1": 221,
+        "Female_Reference_2": 295,
+        "Male_Reference_1": 366,
+        "Male_Reference_2": 577
+      },
+      "all_samples_cell_number": 2614,
+      "author_scea_label": "GABAergic neuron 14"
+    },
+    {
+      "label": "15_Eye, cuticle, glia",
+      "type": "Eye, cuticle, glia",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "15",
+      "cell_number": 1411,
+      "cells_by_sample": {
+        "Female_Reference_1": 173,
+        "Female_Reference_2": 108,
+        "Male_Reference_1": 990,
+        "Male_Reference_2": 140
+      },
+      "all_samples_cell_number": 2389,
+      "author_scea_label": "mixed eye, cuticle and glia 15"
+    },
+    {
+      "label": "16_GABAergic neurons",
+      "type": "GABAergic neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "16",
+      "cell_number": 1259,
+      "cells_by_sample": {
+        "Female_Reference_1": 246,
+        "Female_Reference_2": 315,
+        "Male_Reference_1": 292,
+        "Male_Reference_2": 406
+      },
+      "all_samples_cell_number": 2369,
+      "author_scea_label": "GABAergic neuron 16"
+    },
+    {
+      "label": "17_Cholinergic neurons of central brain",
+      "type": "Cholinergic neurons of central brain",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "17",
+      "cell_number": 1306,
+      "cells_by_sample": {
+        "Female_Reference_1": 180,
+        "Female_Reference_2": 344,
+        "Male_Reference_1": 312,
+        "Male_Reference_2": 470
+      },
+      "all_samples_cell_number": 2350,
+      "author_scea_label": "cholinergic neuron 17"
+    },
+    {
+      "label": "18_Undetermined, perhaps optic lobe neurons",
+      "type": "Undetermined, perhaps optic lobe neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "18",
+      "cell_number": 1127,
+      "cells_by_sample": {
+        "Female_Reference_1": 241,
+        "Female_Reference_2": 228,
+        "Male_Reference_1": 430,
+        "Male_Reference_2": 228
+      },
+      "all_samples_cell_number": 2183,
+      "author_scea_label": "adult optic lobe neuron 18"
+    },
+    {
+      "label": "19_Undetermined",
+      "type": "Undetermined",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "19",
+      "cell_number": 1194,
+      "cells_by_sample": {
+        "Female_Reference_1": 234,
+        "Female_Reference_2": 235,
+        "Male_Reference_1": 377,
+        "Male_Reference_2": 348
+      },
+      "all_samples_cell_number": 2163,
+      "author_scea_label": "undetermined cluster 19",
+      "unannotated": true
+    },
+    {
+      "label": "20_Glutamaterigic neurons of central brain",
+      "type": "Glutamaterigic neurons of central brain",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "20",
+      "cell_number": 1181,
+      "cells_by_sample": {
+        "Female_Reference_1": 226,
+        "Female_Reference_2": 305,
+        "Male_Reference_1": 260,
+        "Male_Reference_2": 390
+      },
+      "all_samples_cell_number": 2135,
+      "author_scea_label": "glutamatergic neuron 20"
+    },
+    {
+      "label": "21_GABAergic neurons of central brain",
+      "type": "GABAergic neurons of central brain",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "21",
+      "cell_number": 1132,
+      "cells_by_sample": {
+        "Female_Reference_1": 179,
+        "Female_Reference_2": 249,
+        "Male_Reference_1": 289,
+        "Male_Reference_2": 415
+      },
+      "all_samples_cell_number": 2135,
+      "author_scea_label": "GABAergic neuron 21"
+    },
+    {
+      "label": "22_Undetermined",
+      "type": "Undetermined",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "22",
+      "cell_number": 1028,
+      "cells_by_sample": {
+        "Female_Reference_1": 183,
+        "Female_Reference_2": 190,
+        "Male_Reference_1": 289,
+        "Male_Reference_2": 366
+      },
+      "all_samples_cell_number": 2027,
+      "author_scea_label": "undetermined cluster 22",
+      "unannotated": true
+    },
+    {
+      "label": "23_Astrocytes",
+      "type": "Astrocytes",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "23",
+      "cell_number": 970,
+      "cells_by_sample": {
+        "Female_Reference_1": 88,
+        "Female_Reference_2": 177,
+        "Male_Reference_1": 481,
+        "Male_Reference_2": 224
+      },
+      "all_samples_cell_number": 1890,
+      "author_scea_label": "astrocyte-like glial cell 23"
+    },
+    {
+      "label": "24_Astrocytes",
+      "type": "Astrocytes",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "24",
+      "cell_number": 967,
+      "cells_by_sample": {
+        "Female_Reference_1": 172,
+        "Female_Reference_2": 200,
+        "Male_Reference_1": 253,
+        "Male_Reference_2": 342
+      },
+      "all_samples_cell_number": 1732,
+      "author_scea_label": "astrocyte-like glial cell 24"
+    },
+    {
+      "label": "25_Kenyon cells",
+      "type": "Kenyon cells",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "25",
+      "cell_number": 838,
+      "cells_by_sample": {
+        "Female_Reference_1": 148,
+        "Female_Reference_2": 167,
+        "Male_Reference_1": 204,
+        "Male_Reference_2": 319
+      },
+      "all_samples_cell_number": 1520,
+      "author_scea_label": "Kenyon cell 25"
+    },
+    {
+      "label": "26_GABAergic neurons",
+      "type": "GABAergic neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "26",
+      "cell_number": 815,
+      "cells_by_sample": {
+        "Female_Reference_1": 160,
+        "Female_Reference_2": 140,
+        "Male_Reference_1": 270,
+        "Male_Reference_2": 245
+      },
+      "all_samples_cell_number": 1499,
+      "author_scea_label": "GABAergic neuron 26"
+    },
+    {
+      "label": "27_Undetermined",
+      "type": "Undetermined",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "27",
+      "cell_number": 575,
+      "cells_by_sample": {
+        "Female_Reference_1": 126,
+        "Female_Reference_2": 140,
+        "Male_Reference_1": 247,
+        "Male_Reference_2": 62
+      },
+      "all_samples_cell_number": 1244,
+      "author_scea_label": "undetermined cluster 27",
+      "unannotated": true
+    },
+    {
+      "label": "28_Cells of ellipsoid body and fan shaped body",
+      "type": "Cells of ellipsoid body and fan shaped body",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "28",
+      "cell_number": 578,
+      "cells_by_sample": {
+        "Female_Reference_1": 129,
+        "Female_Reference_2": 92,
+        "Male_Reference_1": 233,
+        "Male_Reference_2": 124
+      },
+      "all_samples_cell_number": 1146,
+      "author_scea_label": "adult fan-shaped body-ellipsoid body neuron 28"
+    },
+    {
+      "label": "29_Photoreceptor cells",
+      "type": "Photoreceptor cells",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "29",
+      "cell_number": 639,
+      "cells_by_sample": {
+        "Female_Reference_1": 132,
+        "Female_Reference_2": 34,
+        "Male_Reference_1": 419,
+        "Male_Reference_2": 54
+      },
+      "all_samples_cell_number": 1107,
+      "author_scea_label": "photoreceptor neuron 29"
+    },
+    {
+      "label": "30_GABAergic neurons",
+      "type": "GABAergic neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "30",
+      "cell_number": 457,
+      "cells_by_sample": {
+        "Female_Reference_1": 117,
+        "Female_Reference_2": 73,
+        "Male_Reference_1": 158,
+        "Male_Reference_2": 109
+      },
+      "all_samples_cell_number": 904,
+      "author_scea_label": "GABAergic neuron 30"
+    },
+    {
+      "label": "31_Undetermined",
+      "type": "Undetermined",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "31",
+      "cell_number": 464,
+      "cells_by_sample": {
+        "Female_Reference_1": 96,
+        "Female_Reference_2": 112,
+        "Male_Reference_1": 114,
+        "Male_Reference_2": 142
+      },
+      "all_samples_cell_number": 893,
+      "author_scea_label": "undetermined cluster 31",
+      "unannotated": true
+    },
+    {
+      "label": "32_Mostly undetermined, dorsal fan-shaped body",
+      "type": "Mostly undetermined, dorsal fan-shaped body",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "32",
+      "cell_number": 455,
+      "cells_by_sample": {
+        "Female_Reference_1": 119,
+        "Female_Reference_2": 44,
+        "Male_Reference_1": 229,
+        "Male_Reference_2": 63
+      },
+      "all_samples_cell_number": 842,
+      "author_scea_label": "adult dorsal fan-shaped body 32"
+    },
+    {
+      "label": "33_Surface glia and fat body",
+      "type": "Surface glia and fat body",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "33",
+      "cell_number": 398,
+      "cells_by_sample": {
+        "Female_Reference_1": 50,
+        "Female_Reference_2": 120,
+        "Male_Reference_1": 114,
+        "Male_Reference_2": 114
+      },
+      "all_samples_cell_number": 783,
+      "author_scea_label": "mixed surface glial cell and fat body cell 33"
+    },
+    {
+      "label": "34_Undetermined",
+      "type": "Undetermined",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "34",
+      "cell_number": 297,
+      "cells_by_sample": {
+        "Female_Reference_1": 56,
+        "Female_Reference_2": 57,
+        "Male_Reference_1": 95,
+        "Male_Reference_2": 89
+      },
+      "all_samples_cell_number": 563,
+      "author_scea_label": "undetermined cluster 34",
+      "unannotated": true
+    },
+    {
+      "label": "35_Ellipsoid body, mushroom body",
+      "type": "Ellipsoid body, mushroom body",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "35",
+      "cell_number": 320,
+      "cells_by_sample": {
+        "Female_Reference_1": 39,
+        "Female_Reference_2": 65,
+        "Male_Reference_1": 60,
+        "Male_Reference_2": 156
+      },
+      "all_samples_cell_number": 553,
+      "author_scea_label": "mixed ellipsoid body and mushroom body 35"
+    },
+    {
+      "label": "36_Adult dopaminergic neurons",
+      "type": "Adult dopaminergic neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "36",
+      "cell_number": 220,
+      "cells_by_sample": {
+        "Female_Reference_1": 45,
+        "Female_Reference_2": 45,
+        "Male_Reference_1": 83,
+        "Male_Reference_2": 47
+      },
+      "all_samples_cell_number": 478,
+      "author_scea_label": "dopaminergic neuron 36"
+    },
+    {
+      "label": "37_Undetermined",
+      "type": "Undetermined",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "37",
+      "cell_number": 158,
+      "cells_by_sample": {
+        "Female_Reference_1": 24,
+        "Female_Reference_2": 31,
+        "Male_Reference_1": 50,
+        "Male_Reference_2": 53
+      },
+      "all_samples_cell_number": 262,
+      "author_scea_label": "undetermined cluster 37",
+      "unannotated": true
+    },
+    {
+      "label": "38_Neuropeptides in perhaps cholinergic neurons",
+      "type": "Neuropeptides in perhaps cholinergic neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "38",
+      "cell_number": 133,
+      "cells_by_sample": {
+        "Female_Reference_1": 24,
+        "Female_Reference_2": 23,
+        "Male_Reference_1": 38,
+        "Male_Reference_2": 48
+      },
+      "all_samples_cell_number": 237,
+      "author_scea_label": "cholinergic neuron 38"
+    },
+    {
+      "label": "39_Developmental genes",
+      "type": "Developmental genes",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "39",
+      "cell_number": 106,
+      "cells_by_sample": {
+        "Female_Reference_1": 30,
+        "Female_Reference_2": 17,
+        "Male_Reference_1": 54,
+        "Male_Reference_2": 5
+      },
+      "all_samples_cell_number": 201,
+      "author_scea_label": "developmental genes cluster 39"
+    },
+    {
+      "label": "40_Undetermined",
+      "type": "Undetermined",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "40",
+      "cell_number": 99,
+      "cells_by_sample": {
+        "Female_Reference_1": 21,
+        "Female_Reference_2": 24,
+        "Male_Reference_1": 28,
+        "Male_Reference_2": 26
+      },
+      "all_samples_cell_number": 182,
+      "author_scea_label": "undetermined cluster 40",
+      "unannotated": true
+    },
+    {
+      "label": "41_Undetermined",
+      "type": "Undetermined",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "41",
+      "cell_number": 76,
+      "cells_by_sample": {
+        "Female_Reference_1": 15,
+        "Female_Reference_2": 13,
+        "Male_Reference_1": 26,
+        "Male_Reference_2": 22
+      },
+      "all_samples_cell_number": 125,
+      "author_scea_label": "undetermined cluster 41",
+      "unannotated": true
+    },
+    {
+      "label": "42_Tachykinin/neuropeptidergic neurons",
+      "type": "Tachykinin/neuropeptidergic neurons",
+      "clustering": "reference",
+      "clustering_name": "Mokashi 2021 adult brain clusters (reference medium)",
+      "source_cluster_id": "42",
+      "cell_number": 42,
+      "cells_by_sample": {
+        "Female_Reference_1": 9,
+        "Female_Reference_2": 12,
+        "Male_Reference_1": 10,
+        "Male_Reference_2": 11
+      },
+      "all_samples_cell_number": 72,
+      "author_scea_label": "mixed tachykinin and neuropeptidergic neuron 42"
+    }
+  ]
+}
