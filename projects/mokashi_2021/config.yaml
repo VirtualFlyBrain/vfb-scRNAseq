@@ -5,8 +5,8 @@
 # samples only, types merged per sex from SCEA labels); rebuilt here with fresh VFBseq ids.
 # Curator decisions 2026-10-19: the authors' 43 clusters (all 8 samples integrated,
 # resolution 0.9), restricted to the reference-medium cells; per-cell clusters recovered
-# by re-running the authors' published script (rerun/), since SCEA's labels cover only 77%
-# of the authors' cells.
+# from the authors' complete per-cell table in SCEA's FTP folder (E-GEOD-172231.cells.txt;
+# re-running their script did not reproduce it).
 project: mokashi_2021
 
 source:
@@ -45,3 +45,12 @@ sample_build:
   # Canton S (B) wild type (methods); no source stock named, so not linked.
   clusterings:
     - { id: reference, name: "Mokashi 2021 adult brain clusters (reference medium)", sample_age: "3-5 days post-eclosion" }
+
+# Clusters (projects/mokashi_2021/build_clusters.py): the authors' 43 clusters from their
+# complete per-cell table in SCEA (E-GEOD-172231.cells.txt), restricted to the reference
+# cells; typed by the authors' own "Inferred cell type". Held (untyped): "undetermined".
+annotations:
+  review_columns: [clustering, source_cluster_id, type, author_scea_label, all_samples_cell_number]
+
+unidentified:
+  rule: none

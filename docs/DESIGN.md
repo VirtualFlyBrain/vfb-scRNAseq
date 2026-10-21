@@ -1786,17 +1786,28 @@ labels) with fresh VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-19.
   published (vshanka23/The-Drosophila-Brain-after-developmental-ethanol-exposure-at-Single-Cell-Resolution);
   GEO has each sample's Cell Ranger filtered matrix, its input. The paper's 108,571 cells are
   Cell Ranger's (the barcodes sum to it); the script's filters (min.cells 5, 300 <
-  nFeature < 2500) keep 104,984. SCEA re-quantified the data and labels only 80,362 of them
-  (77%). Searched without result: GitHub (the script only), Zenodo, Figshare, the UCSC Cell
-  Browser, CELLxGENE.
+  nFeature < 2500) keep 104,984. The authors' complete per-cell table is in SCEA's FTP
+  folder (`E-GEOD-172231.cells.txt`: run, barcode, their "Inferred cell type", cluster, SCEA's
+  standardised "authors labels"): all 104,984 cells, every sample's count equal to the
+  filters'. (SCEA's experiment-design download labels only the 80,362 cells SCEA's own
+  reprocessing kept.) Before `cells.txt` was found, the authors' script was re-run (Seurat
+  3.2.3 / sctransform 0.3.2, CRAN snapshot 2021-01-15, on a 240 GB VFB server: the
+  integration needs ~55 GB): 34 clusters, not 43 (ARI 0.72 against the authors' labels;
+  pairs of their clusters merged), presumably from unrecorded versions and unseeded parallel
+  steps; not used.
 - **Scope (curator):** the reference-medium cells only (4 Samples): the authors' 43 clusters,
-  made with all 8 samples, restricted to their reference cells. Per-cell clusters
-  recovered by re-running the authors' script (`rerun/`), checked against SCEA's labels
-  for the cells they share.
+  made with all 8 samples, restricted to their reference cells.
 - **Samples (stage 1):** `build_samples_from_geo.py`, the title pattern matching the
   "<Sex> Reference Rep<n>" GSMs only: 4 Samples / 4 Assays (one 10x library per GSM);
   *adult stage* (GEO "3-5 days post-eclosion": no FBdv term covers days 3-5 only);
   *adult brain*; sex from GEO; Canton S (B), no stock named (not linked). One Clustering.
+- **Clusters (stage 2):** `projects/mokashi_2021/build_clusters.py`: the authors' 43
+  clusters from `cells.txt`, restricted to the reference cells (56,165; every cluster has
+  some); labelled `<cluster>_<inferred cell type>`, typed by the authors' own "Inferred cell
+  type" (capitalisation normalised; SCEA's standardised label, which sometimes drops their
+  hedges, e.g. cluster 18 "undetermined, perhaps optic lobe neurons" -> "adult optic lobe
+  neuron", kept as `author_scea_label`). Held (`untyped`): the 8 "undetermined" clusters.
+  26 types to map.
 
 ## Baker 2021 (adult brain, acute cocaine study)
 
