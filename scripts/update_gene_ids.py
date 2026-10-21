@@ -28,6 +28,13 @@ projects) and is then mapped as above; a symbol with no FBgn is looked up by nam
 Chado records a current gene's own FBgn and each retired FBgn it absorbed as its
 FlyBase dbxrefs (feature_dbxref.is_current true / false).
 
+Features files keyed by FlyBase **annotation id** (`expression.features_keyed_by:
+annotation_id`, e.g. "Dmel_CG17636" from an NCBI GenBank reference; an optional
+`expression.annotation_id_prefix` such as "Dmel_" is stripped) take the gene that Chado
+records for the annotation id (FlyBase Annotation IDs dbxref, current or retired; an id
+of several genes is left unresolved), then are mapped as above; the feature name is kept
+as `input_symbol`, which the expression build uses as the key.
+
 The FlyBase release is read from the FlyBase homepage ("FB2026_03, released
 September 17, 2026"; the website and Chado are updated together) and recorded in the
 table header with Chado's last-modified date (its data freeze for that release).
@@ -143,6 +150,12 @@ def features(cfg: dict) -> list[tuple[str, str]]:
             for ln in fh:
                 r = ln.rstrip("\n").split("\t")
                 seen.setdefault(r[0], r[1] if len(r) > 1 else r[0])
+    if ex.get("features_keyed_by") == "annotation_id":
+        # features named by annotation id (e.g. Dmel_CG17636): the gene Chado records for it
+        prefix = ex.get("annotation_id_prefix", "")
+        ann = {name: name[len(prefix):] if name.startswith(prefix) else name for name in seen}
+        ids = chado_annotation_lookup(sorted(set(ann.values())))
+        return [(ids.get(ann[name], ""), name) for name in seen]
     if ex.get("features_keyed_by") == "symbol":
         # features files that carry gene symbols only (e.g. exported from Seurat
         # objects): the FBgn another project's input files give the symbol
@@ -151,6 +164,28 @@ def features(cfg: dict) -> list[tuple[str, str]]:
         ids = _input_ids(ex.get("gene_ids_from", []))
         return [(ids.get(sym, ""), sym) for sym in seen]
     return list(seen.items())
+
+
+ANNOTATION_QUERY = """
+with ids as (select unnest(string_to_array('{ids}', ',')) u)
+select ids.u, f.uniquename from ids
+join dbxref d on d.accession = ids.u
+join db on db.db_id = d.db_id and db.name = 'FlyBase Annotation IDs'
+join feature_dbxref fd on fd.dbxref_id = d.dbxref_id
+join feature f on f.feature_id = fd.feature_id and not f.is_obsolete and f.uniquename like 'FBgn%';
+"""
+
+
+def chado_annotation_lookup(ids: list[str]) -> dict[str, str]:
+    """{annotation id: FBgn} for ids that Chado records against exactly one current gene."""
+    genes: dict[str, set[str]] = defaultdict(set)
+    for i in range(0, len(ids), 2000):
+        out = subprocess.run(PSQL + ["-c", ANNOTATION_QUERY.format(ids=",".join(ids[i:i + 2000]))],
+                             capture_output=True, text=True, check=True).stdout
+        for line in out.splitlines():
+            u, fbgn = line.split("\t")
+            genes[u].add(fbgn)
+    return {u: g.pop() for u, g in genes.items() if len(g) == 1}
 
 
 def read_map(path: Path) -> tuple[str, list[dict]]:
