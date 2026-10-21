@@ -1874,6 +1874,14 @@ pipeline).
   co-expression ("Neuropeptides/cholinergic neurons", "GABAergic and monoaminergic
   neurons"); "Central brain neurons type A" (typeable only as neuron). 22 clusters mapped
   (12 terms), 14 held (7 untyped, 7 no term).
+- **Expression (stage 4).** As for Mokashi: the GEO matrices of the four sucrose libraries
+  side by side (`combine_matrices.py`), as CPM; the features are FlyBase annotation ids
+  from the same GenBank reference (`features_keyed_by: annotation_id`): 17,451 current (3
+  merges), 30 dropped. 17,448 genes; 22 clusters, 32,981 rows (extent > 0.2); the 14 held
+  clusters (15,208 cells) left out. Markers fit the author types (*Gad1* 0.98 central-brain
+  GABAergic, *VGlut1* 1.0 glutamatergic, *ple* 0.81 / *Vmat* 0.94 dopaminergic, *alrm* /
+  *repo* glia, *ey* Kenyon cells, *ninaE* 0.90 photoreceptors, *Tk* 1.0 tachykinin /
+  neuropeptidergic).
 
 ## Saavedra 2023 (adult thorax)
 
