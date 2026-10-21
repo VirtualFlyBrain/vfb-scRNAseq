@@ -340,6 +340,9 @@ is read through `src/vfb_scrnaseq/project_config.py`. Config sections:
   biological replicate (/ technical replicate): the default
   `set_timepoint_biorep_techrep`, or `regex:` with named groups. GSMs that do not
   match are out of the project's scope (lets one GEO series contribute a subset).
+- **`sample_build.sample_groups`** — `{sample id: sample id}` (ids parsed from the GSM
+  titles) merging GSMs that are libraries of one biological sample into one Sample with
+  several Assays (Brunet Avalos, Saavedra).
 - **`sample_build.sex: mixed`** — curator-confirmed pooled-sex samples; the
   single-valued `sex` slot stays unset without the "check the paper" warning.
 - **`annotations.barcode_column`** — the per-cell metadata column that matches the
@@ -511,9 +514,8 @@ the same schema + `Container` data, no custom triple code):
 - **OWL** (`--format owl`, default `both`) via **`linkml-owl` (`linkml-data2owl`)**,
   which honours the schema's `owl.fstring`/`owl.template` annotations →
   `ClassAssertion(ObjectSomeValuesFrom(R Term) {id})` existential restrictions,
-  `ObjectPropertyAssertion`s, `AnnotationAssertion`s, and (expression phase) the
-  This is the **VFB-pipeline-compatible**
-  output → `projects/<name>/<accession>.ofn`.
+  `ObjectPropertyAssertion`s and `AnnotationAssertion`s. This is the
+  **VFB-pipeline-compatible** output → `projects/<name>/<accession>.ofn`.
 - **Flat RDF** (`--format ttl`) via **`linkml-convert`**, which uses `slot_uri`/
   `class_uri` only — simpler generic RDF (ontology-term links are plain triples,
   no OWL restrictions), Container node stripped → `<accession>.ttl`.
@@ -679,6 +681,13 @@ project's files and `expression.gene_ids_from` projects) and is mapped as below;
 symbol with no FBgn is looked up by name among *D. melanogaster* genes: a current
 symbol → that gene; else a synonym of exactly one gene → that gene; a synonym of
 several genes (**ambiguous**) or of none (**unmatched**) → dropped.
+
+Matrices from other sources are keyed the same way when their features are not FBgns:
+`expression.features_keyed_by: symbol` for symbols only (Özel, Konstantinides, Allen,
+Calderon; FBgns from `gene_ids_from` projects first), or `annotation_id` for FlyBase
+annotation ids such as `Dmel_CG17636` from an NCBI GenBank reference
+(`annotation_id_prefix: Dmel_` stripped; Chado's FlyBase Annotation IDs dbxref gives the
+gene; Mokashi, Baker).
 
 Mapping rules:
 
@@ -867,10 +876,13 @@ VFB until the release files are merged, so ids can still change during review.
 
 1. **Scope with the curator first:** which part of the series (matrices / subsets),
    which author clusterings, where the authors' cluster labels live (GEO metadata,
-   supplementary tables), whether the dataset was in the old FlyBase/SCEA load.
+   supplementary tables), whether the dataset was in the old FlyBase/SCEA load. For a
+   dataset in the Single Cell Expression Atlas, check its FTP folder's
+   `<acc>.cells.txt` first: it is the authors' complete per-cell table (clusters and
+   labels); the experiment-design download covers only the cells SCEA's reprocessing kept.
 2. **`projects/<name>/config.yaml`:** `source` (DOI, PMID, FBrf fallback),
    `dataset` (GEO / BioProject / SRA, or ArrayExpress), `sample_build` (GEO: title
-   pattern, sex, stocks from the paper's Key Resources Table resolved in FlyBase
+   pattern, `sample_groups`, sex, stocks from the paper's Key Resources Table resolved in FlyBase
    Chado, `age_map` → FBdv stage + FBbt tissue, `tissue_map` when one series has
    several tissues, clusterings (`sample_tissue_raw` / `sample_age` link a clustering
    to the samples of that tissue / age; the title regex's `set` group is optional;
@@ -880,16 +892,20 @@ VFB until the release files are merged, so ids can still change during review.
    `scripts/flybase_pub_entities.py`); ArrayExpress: also
    `sample_columns`, `assay_column` / `assay_regex`, `sex_column` / `sex_map`,
    `stock_map` / `genotype_includes_map`,
-   `sdrf_corrections`), `annotation_build` (h5ad obs columns,
+   `sdrf_include`, `sdrf_corrections`; both: `assay_label`, with a `pattern` where a
+   Sample has several Assays), `annotation_build` (h5ad obs columns,
    `unannotated_values`), `annotations` (label/class/timepoint
    columns, extra clusterings, prefixes), `unidentified` (rule, held classes, hold reasons,
-   class anchors), `expression` (matrix files, extra parts; or `source: h5ad` with
+   class anchors), `expression` (matrix files, extra parts, `features_keyed_by` for
+   matrices not keyed by FBgn; or `source: h5ad` with
    `values`, `gene_ids_from`, `gzip_tsv`), and `reuse` (Samples/Assays reused by
    VFBseq id from an already-curated project; see *General curation rules*).
 3. **Clusters:** `build_annotations_from_geo.py` (one entry per author cluster;
    the main cluster label must be the authors' cluster, not a merged type). For
    layouts it can't express, a project script writes `cell_type_annotations.json`
-   (as `projects/davie_2018/build_clusters.py` does).
+   (as `projects/davie_2018/build_clusters.py` does), and a project
+   `combine_matrices.py` puts per-library matrices side by side for the expression
+   build (cells `<library>_<barcode>`).
    When the authors publish AnnData files (one per analysis), list each as an
    `h5ad` URL on its clustering, fetch with `fetch_h5ad.py` (into `.cache/h5ad/`; gzipped downloads are decompressed, and files the authors stored uncompressed are recompressed with HDF5's own gzip filter — lossless, verified dataset by dataset, read transparently by h5py — `--compress-existing` for files already cached) and
    build with `build_annotations_from_h5ad.py` (`annotation_build` config: the obs
@@ -897,7 +913,9 @@ VFB until the release files are merged, so ids can still change during review.
    are kept as one flagged entry per analysis, held and so not loaded). `ingest_h5ad.read_obs` reads obs with h5py from the
    old, 0.7 and 0.8+ AnnData layouts.
 4. **Samples:** `build_samples_from_geo.py` (GEO) or `build_samples_from_arrayexpress.py`
-   (ArrayExpress) → `samples.json`.
+   (ArrayExpress) → `samples.json`. Once clusters and samples exist, run `build_rdf.py`
+   and `pytest`, so the Sample / Assay label-uniqueness test runs before the samples are
+   committed.
 5. **Paper index:** add the paper (JATS if open access, else PDF) with the
    Atlas-reporter clone (`local-paper-index` skill); keep supplementary tables in
    `projects/<name>/supp/` (gitignored).
@@ -923,7 +941,9 @@ VFB until the release files are merged, so ids can still change during review.
 11. **Term requests:** only with curator sign-off; add each to
     `checks/pending_fbbt_requests.json`.
 12. **Check:** `pytest`, `validate_project_files.py`, `check_mapping_tsv.py`; commit
-    in stages on a branch and open a PR (CI runs the same checks).
+    in stages on a branch and open a PR against `main` per stage (CI runs the same
+    checks): 1 samples, 2 clusters, 3 FBbt mapping (after the curator's review in
+    `mapping.tsv`), 4 expression, 5 build, provenance and docs.
 
 ## Fly Cell Atlas (Li et al. 2022)
 
