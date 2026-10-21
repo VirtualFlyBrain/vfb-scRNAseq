@@ -1839,6 +1839,16 @@ pipeline).
   labelled `<cluster>_<inferred cell type>`, typed by the authors' own "Inferred cell type"
   (SCEA's standardised label kept as `author_scea_label`; it spells cluster 16 two ways).
   Held (`untyped`): the 7 "undetermined" clusters. 22 types to map.
+- **FBbt mapping (stage 3, curator 2026-10-21):** per author type (`write_type_mappings.py`;
+  the calls shared with Mokashi 2021): adult neurotransmitter-class terms ("Central brain
+  ..." to the class; type 2 monoaminergic to *adult aminergic neuron*); *adult CNS glial
+  cell* (Glia), *adult astrocyte-like glial cell*, *adult Kenyon cell*, *adult olfactory
+  projection neuron*, *adult optic lobe neuron* ("Optic lobe": broad), *eye photoreceptor
+  cell*, *adult Tachykinin neuron of the central nervous system*. Held (`no term`): clusters
+  naming different structures together; two classes in one name without stated
+  co-expression ("Neuropeptides/cholinergic neurons", "GABAergic and monoaminergic
+  neurons"); "Central brain neurons type A" (typeable only as neuron). 22 clusters mapped
+  (12 terms), 14 held (7 untyped, 7 no term).
 
 ## Saavedra 2023 (adult thorax)
 
