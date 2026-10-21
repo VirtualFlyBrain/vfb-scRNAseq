@@ -57,3 +57,22 @@ unidentified:
 
 # FBbt mappings are made once per author type (type_mapping/, write_type_mappings.py) and
 # copied per cluster by scripts/expand_type_mappings.py.
+
+# Summary expression (scripts/build_expression.py) from the GEO matrices of the four
+# reference libraries (Cell Ranger filtered, raw UMI counts), side by side
+# (combine_matrices.py; cells <GEO sample dir>_<barcode>, as in build_clusters.py's
+# memberships).
+expression:
+  matrix_file: mokashi/combined/matrix.mtx.gz
+  features_file: mokashi/combined/features.tsv.gz
+  barcodes_file: mokashi/combined/barcodes.tsv.gz
+  membership_file: mokashi/memberships.tsv.gz
+  # features are FlyBase annotation ids from the authors' NCBI GenBank reference (e.g.
+  # Dmel_CG17636); mapped to genes in Chado (update_gene_ids.py)
+  features_keyed_by: annotation_id
+  annotation_id_prefix: Dmel_
+  normalisation: CPM
+  extent_cutoff: 0.2
+  hide_in_terminfo: "true"
+  gzip_tsv: true
+  gene_id_map: gene_id_map.tsv

@@ -227,6 +227,21 @@ def test_geo_title_regex_without_set_group():
     assert (p["set"], p["timepoint"], p["biorep"]) == (None, "Adult", "1d_F_3rd")
 
 
+def test_update_gene_ids_annotation_id_features(tmp_path, monkeypatch):
+    """`features_keyed_by: annotation_id`: the prefix is stripped, the gene Chado records
+    for the annotation id becomes the input FBgn, the feature name stays the symbol."""
+    import gzip
+    mod = _script("update_gene_ids")
+    (tmp_path / ".cache" / "f").mkdir(parents=True)
+    with gzip.open(tmp_path / ".cache" / "f" / "features.tsv.gz", "wt") as fh:
+        fh.write("Dmel_CG31240\tDmel_CG31240\tGene Expression\nDmel_CG0000\tDmel_CG0000\tGene Expression\n")
+    monkeypatch.setattr(mod, "REPO_ROOT", tmp_path)
+    monkeypatch.setattr(mod, "chado_annotation_lookup", lambda ids: {"CG31240": "FBgn0011701"})
+    cfg = {"expression": {"features_file": "f/features.tsv.gz", "features_keyed_by": "annotation_id",
+                          "annotation_id_prefix": "Dmel_"}}
+    assert mod.features(cfg) == [("FBgn0011701", "Dmel_CG31240"), ("", "Dmel_CG0000")]
+
+
 def test_geo_sample_groups_merge_libraries_of_one_sample():
     mod = _script("build_samples_from_geo")
     sb = {"sample_groups": {"Normal_sample_3": "Normal_sample_2"}}
