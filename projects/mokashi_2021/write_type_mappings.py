@@ -52,7 +52,9 @@ MAPPED = {   # author type: (FBbt id, match, justification)
     "Photoreceptor cells": ("FBbt:00006009", E, "Photoreceptors of the adult compound eye (retina attached to the "
                                                 "dissected brains)."),
     "Surface glia": ("FBbt:00100500", E, "Brain-only dissection, so the brain surface glia term is exact."),
-    "Tachykinin/neuropeptidergic neurons": ("FBbt:00110061", E, ""),
+    "Tachykinin/neuropeptidergic neurons": ("FBbt:00058202", B, "Tachykinin and other neuropeptidergic neurons "
+                                            "(SCEA: 'mixed tachykinin and neuropeptidergic'): their common class, the "
+                                            "peptidergic neuron (tachykinin neurons are peptidergic; curator)."),
     "Cells of ellipsoid body and fan shaped body": ("FBbt:00049819", B, "Ellipsoid body and fan-shaped body cells: the "
                                                     "central complex neuron (the fan-shaped body-ellipsoid body neuron "
                                                     "is one specific class the name does not imply)."),

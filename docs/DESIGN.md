@@ -1813,14 +1813,14 @@ labels) with fresh VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-19.
   central-brain versions, so "... of central brain" maps to the class); 5-HT and DA neurons
   to *adult aminergic neuron* (broad); *adult astrocyte-like glial cell*, *adult Kenyon
   cell*, *adult olfactory projection neuron*, *adult optic lobe neuron*, *eye photoreceptor
-  cell*, *adult brain surface glial cell* (brain-only dissection: exact), *adult Tachykinin
-  neuron of the central nervous system*; ellipsoid / fan-shaped body cells to *adult central
+  cell*, *adult brain surface glial cell* (brain-only dissection: exact); Tachykinin /
+  neuropeptidergic neurons to *adult peptidergic neuron* (broad, their common class); ellipsoid / fan-shaped body cells to *adult central
   complex neuron* (broad); "Neuropeptides in perhaps cholinergic neurons" to *adult
   peptidergic neuron* (the part the authors are sure of). Held (`no term`): clusters naming
   different structures together; clusters the authors leave (mostly) undetermined; two
   classes in one name without stated co-expression ("Neuropeptides/cholinergic neurons";
   curator: two terms only where the annotations or paper state co-expression, else hold);
-  "Developmental genes". 26 clusters mapped (14 terms), 17 held (8 untyped, 9 no term).
+  "Developmental genes". 26 clusters mapped (13 terms), 17 held (8 untyped, 9 no term).
 
 ## Baker 2021 (adult brain, acute cocaine study)
 

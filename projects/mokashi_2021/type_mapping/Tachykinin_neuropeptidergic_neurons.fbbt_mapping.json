@@ -8,13 +8,13 @@
   "new_term_needed": false,
   "verification_needed": false,
   "best_match": {
-    "fbbt_term": "adult Tachykinin neuron of the central nervous system",
-    "fbbt_id": "FBbt:00110061",
-    "fbbt_definition": "An adult neuron that expresses Tachykinin (FBgn0037976) and that is located in the central nervous system (Winther et al., 2003).",
-    "match_type": "exact match",
-    "skos_mapping": "skos:exactMatch",
+    "fbbt_term": "adult peptidergic neuron",
+    "fbbt_id": "FBbt:00058202",
+    "fbbt_definition": "Any peptidergic neuron of the adult.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
     "confidence": "high"
   },
-  "justification": "The authors' annotation 'Tachykinin/neuropeptidergic neurons'.",
-  "recommendation": "Map to FBbt:00110061 adult Tachykinin neuron of the central nervous system (exact match)."
+  "justification": "The authors' annotation 'Tachykinin/neuropeptidergic neurons'. Tachykinin and other neuropeptidergic neurons (SCEA: 'mixed tachykinin and neuropeptidergic'): their common class, the peptidergic neuron (tachykinin neurons are peptidergic; curator).",
+  "recommendation": "Map to FBbt:00058202 adult peptidergic neuron (broad match)."
 }
