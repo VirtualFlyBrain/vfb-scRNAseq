@@ -116,9 +116,9 @@ from FlyBase; that authority is being dropped.)
   terms), 17 held. Replaces the old FlyBase/SCEA load (FBlc0005420).
 - `projects/baker_2021/` — Baker et al. 2021, adult brain, acute cocaine study (PMID
   34035044; [GSE152495](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152495)):
-  10x, sucrose (control) samples only; the authors' 36 clusters, per-cell assignments
-  recovered by re-running their published script. Replaces the old FlyBase/SCEA load
-  (FBlc0005515). In progress.
+  10x, sucrose (control) samples only; the authors' 36 clusters, per-cell assignments from
+  their per-cell table in SCEA: 22 loaded (adult neurotransmitter-class and brain cell-type
+  terms), 14 held. Replaces the old FlyBase/SCEA load (FBlc0005515).
 - `projects/saavedra_2023/` — Saavedra et al. 2023, adult thorax (PMID 37582831;
   [GSE227038](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE227038)): 10x
   single-nucleus, driver-only controls; the authors' 17 clusters from their GEO metadata:
@@ -179,7 +179,7 @@ projects/ing_simmons_2021/               # gastrulating embryos (ArrayExpress; S
 projects/calderon_2022/                  # embryonic development (GEO; authors' portal Seurat objects via R)
 projects/avalos_2019/                    # first-instar larval brain (GEO; authors' UCSC Cell Browser labels; fed only)
 projects/mokashi_2021/                   # adult brain (GEO; authors' SCEA per-cell table; reference medium only)
-projects/baker_2021/                     # adult brain (GEO; clusters by re-running the authors' Seurat 3 script; sucrose controls only)
+projects/baker_2021/                     # adult brain (GEO; authors' SCEA per-cell table; sucrose controls only)
 projects/saavedra_2023/                  # adult thorax (GEO; authors' per-nucleus metadata; controls only)
 metadata/                                # VFB-loadable metadata OWL, one per project
 expression/                              # VFB-loadable expression OWL (.owl.gz), one per project
@@ -236,7 +236,7 @@ from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#genera
 
 ## Status
 
-All sixteen projects are curated and built. Every mapped cluster has been reviewed (bar
+All seventeen projects are curated and built. Every mapped cluster has been reviewed (bar
 three Kurmangaliyev early clusters awaiting FBbt #2216, below), and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the
