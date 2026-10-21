@@ -1,0 +1,597 @@
+{
+  "source": {
+    "doi": "10.1101/gr.268037.120",
+    "title": "The Drosophila brain on cocaine at single-cell resolution"
+  },
+  "dataset": {
+    "accession": "GSE152495",
+    "label_source": "the authors' complete per-cell table in SCEA (E-GEOD-152495.cells.txt): cluster and the authors' inferred cell type; sucrose (control) cells only",
+    "label_level": "author cluster (restricted to the sucrose cells)",
+    "validate_against": "paper; the authors' script (filters keep 86,223 cells)"
+  },
+  "annotations": [
+    {
+      "label": "0_Glutamatergic neurons",
+      "type": "Glutamatergic neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "0",
+      "cell_number": 3946,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 704,
+        "Female_Sucrose_2": 1104,
+        "Male_Sucrose_1": 1232,
+        "Male_Sucrose_2": 906
+      },
+      "all_samples_cell_number": 8016,
+      "author_scea_label": "glutamatergic neuron 0"
+    },
+    {
+      "label": "1_GABAergic neurons",
+      "type": "GABAergic neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "1",
+      "cell_number": 3727,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 703,
+        "Female_Sucrose_2": 1066,
+        "Male_Sucrose_1": 1155,
+        "Male_Sucrose_2": 803
+      },
+      "all_samples_cell_number": 7914,
+      "author_scea_label": "GABAergic neuron 1"
+    },
+    {
+      "label": "2_Neuropeptides/cholinergic neurons",
+      "type": "Neuropeptides/cholinergic neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "2",
+      "cell_number": 3754,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 578,
+        "Female_Sucrose_2": 1107,
+        "Male_Sucrose_1": 1149,
+        "Male_Sucrose_2": 920
+      },
+      "all_samples_cell_number": 7545,
+      "author_scea_label": "mixed neuropeptidergic and cholinergic neuron 2"
+    },
+    {
+      "label": "3_Glutamatergic neurons",
+      "type": "Glutamatergic neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "3",
+      "cell_number": 3956,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 954,
+        "Female_Sucrose_2": 848,
+        "Male_Sucrose_1": 1102,
+        "Male_Sucrose_2": 1052
+      },
+      "all_samples_cell_number": 6932,
+      "author_scea_label": "glutamatergic neuron 3"
+    },
+    {
+      "label": "4_Optic lobe",
+      "type": "Optic lobe",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "4",
+      "cell_number": 3125,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 703,
+        "Female_Sucrose_2": 707,
+        "Male_Sucrose_1": 846,
+        "Male_Sucrose_2": 869
+      },
+      "all_samples_cell_number": 5291,
+      "author_scea_label": "adult optic lobe neuron 4"
+    },
+    {
+      "label": "5_Central brain neurons type A",
+      "type": "Central brain neurons type A",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "5",
+      "cell_number": 2473,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 491,
+        "Female_Sucrose_2": 667,
+        "Male_Sucrose_1": 756,
+        "Male_Sucrose_2": 559
+      },
+      "all_samples_cell_number": 5051,
+      "author_scea_label": "central brain type A neuron 5"
+    },
+    {
+      "label": "6_Undetermined",
+      "type": "Undetermined",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "6",
+      "cell_number": 2673,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 578,
+        "Female_Sucrose_2": 640,
+        "Male_Sucrose_1": 750,
+        "Male_Sucrose_2": 705
+      },
+      "all_samples_cell_number": 4974,
+      "author_scea_label": "undetermined cluster 6",
+      "unannotated": true
+    },
+    {
+      "label": "7_Central brain neurons type A",
+      "type": "Central brain neurons type A",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "7",
+      "cell_number": 1888,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 310,
+        "Female_Sucrose_2": 563,
+        "Male_Sucrose_1": 573,
+        "Male_Sucrose_2": 442
+      },
+      "all_samples_cell_number": 3868,
+      "author_scea_label": "central brain type A neuron 7"
+    },
+    {
+      "label": "8_Olfactory projection neurons",
+      "type": "Olfactory projection neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "8",
+      "cell_number": 1990,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 459,
+        "Female_Sucrose_2": 441,
+        "Male_Sucrose_1": 557,
+        "Male_Sucrose_2": 533
+      },
+      "all_samples_cell_number": 3450,
+      "author_scea_label": "olfactory projection neuron 8"
+    },
+    {
+      "label": "9_GABAergic neurons",
+      "type": "GABAergic neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "9",
+      "cell_number": 1713,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 338,
+        "Female_Sucrose_2": 422,
+        "Male_Sucrose_1": 501,
+        "Male_Sucrose_2": 452
+      },
+      "all_samples_cell_number": 3376,
+      "author_scea_label": "GABAergic neuron 9"
+    },
+    {
+      "label": "10_Central brain type B cholinergic neurons",
+      "type": "Central brain type B cholinergic neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "10",
+      "cell_number": 1339,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 200,
+        "Female_Sucrose_2": 441,
+        "Male_Sucrose_1": 419,
+        "Male_Sucrose_2": 279
+      },
+      "all_samples_cell_number": 3222,
+      "author_scea_label": "central brain type B cholinergic neuron 10"
+    },
+    {
+      "label": "11_Kenyon cells",
+      "type": "Kenyon cells",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "11",
+      "cell_number": 1067,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 144,
+        "Female_Sucrose_2": 299,
+        "Male_Sucrose_1": 345,
+        "Male_Sucrose_2": 279
+      },
+      "all_samples_cell_number": 2302,
+      "author_scea_label": "Kenyon cell 11"
+    },
+    {
+      "label": "12_GABAergic neurons",
+      "type": "GABAergic neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "12",
+      "cell_number": 1036,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 231,
+        "Female_Sucrose_2": 242,
+        "Male_Sucrose_1": 303,
+        "Male_Sucrose_2": 260
+      },
+      "all_samples_cell_number": 2135,
+      "author_scea_label": "GABAergic neuron 12"
+    },
+    {
+      "label": "13_Glia",
+      "type": "Glia",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "13",
+      "cell_number": 960,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 171,
+        "Female_Sucrose_2": 305,
+        "Male_Sucrose_1": 313,
+        "Male_Sucrose_2": 171
+      },
+      "all_samples_cell_number": 2109,
+      "author_scea_label": "CNS glial cell 13"
+    },
+    {
+      "label": "14_Optic lobe neurons",
+      "type": "Optic lobe neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "14",
+      "cell_number": 1201,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 346,
+        "Female_Sucrose_2": 260,
+        "Male_Sucrose_1": 287,
+        "Male_Sucrose_2": 308
+      },
+      "all_samples_cell_number": 2055,
+      "author_scea_label": "adult optic lobe neuron 14"
+    },
+    {
+      "label": "15_Undetermined",
+      "type": "Undetermined",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "15",
+      "cell_number": 1061,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 235,
+        "Female_Sucrose_2": 278,
+        "Male_Sucrose_1": 293,
+        "Male_Sucrose_2": 255
+      },
+      "all_samples_cell_number": 2008,
+      "author_scea_label": "undetermined cluster 15",
+      "unannotated": true
+    },
+    {
+      "label": "16_Optic lobe and antennal lobe neurons",
+      "type": "Optic lobe and antennal lobe neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "16",
+      "cell_number": 1032,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 315,
+        "Female_Sucrose_2": 214,
+        "Male_Sucrose_1": 242,
+        "Male_Sucrose_2": 261
+      },
+      "all_samples_cell_number": 1952,
+      "author_scea_label": "mixed adult optic lobe and antennal lobe neuron 16; mixed optic lobe and antennal lobe neuron 16"
+    },
+    {
+      "label": "17_Astrocytes",
+      "type": "Astrocytes",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "17",
+      "cell_number": 723,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 162,
+        "Female_Sucrose_2": 219,
+        "Male_Sucrose_1": 212,
+        "Male_Sucrose_2": 130
+      },
+      "all_samples_cell_number": 1836,
+      "author_scea_label": "astrocyte-like glial cell 17"
+    },
+    {
+      "label": "18_Optic lobe neurons",
+      "type": "Optic lobe neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "18",
+      "cell_number": 1031,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 261,
+        "Female_Sucrose_2": 227,
+        "Male_Sucrose_1": 318,
+        "Male_Sucrose_2": 225
+      },
+      "all_samples_cell_number": 1752,
+      "author_scea_label": "adult optic lobe neuron 18"
+    },
+    {
+      "label": "19_Glia",
+      "type": "Glia",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "19",
+      "cell_number": 729,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 147,
+        "Female_Sucrose_2": 207,
+        "Male_Sucrose_1": 186,
+        "Male_Sucrose_2": 189
+      },
+      "all_samples_cell_number": 1656,
+      "author_scea_label": "CNS glial cell 19"
+    },
+    {
+      "label": "20_Kenyon cells",
+      "type": "Kenyon cells",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "20",
+      "cell_number": 655,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 94,
+        "Female_Sucrose_2": 182,
+        "Male_Sucrose_1": 234,
+        "Male_Sucrose_2": 145
+      },
+      "all_samples_cell_number": 1309,
+      "author_scea_label": "Kenyon cell 20"
+    },
+    {
+      "label": "21_Central Brain type 2 glutamatergic neurons",
+      "type": "Central Brain type 2 glutamatergic neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "21",
+      "cell_number": 550,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 90,
+        "Female_Sucrose_2": 169,
+        "Male_Sucrose_1": 173,
+        "Male_Sucrose_2": 118
+      },
+      "all_samples_cell_number": 1205,
+      "author_scea_label": "central brain type 2 glutamatergic neuron 21"
+    },
+    {
+      "label": "22_Surface glia and fat body",
+      "type": "Surface glia and fat body",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "22",
+      "cell_number": 458,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 57,
+        "Female_Sucrose_2": 125,
+        "Male_Sucrose_1": 147,
+        "Male_Sucrose_2": 129
+      },
+      "all_samples_cell_number": 987,
+      "author_scea_label": "mixed glial cell of the perineurium and fat body 22"
+    },
+    {
+      "label": "23_GABAergic and monoaminergic neurons",
+      "type": "GABAergic and monoaminergic neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "23",
+      "cell_number": 461,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 114,
+        "Female_Sucrose_2": 106,
+        "Male_Sucrose_1": 129,
+        "Male_Sucrose_2": 112
+      },
+      "all_samples_cell_number": 795,
+      "author_scea_label": "mixed GABAergic and monoaminergic neuron 23"
+    },
+    {
+      "label": "24_Central brain type 2 monoaminergic neurons",
+      "type": "Central brain type 2 monoaminergic neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "24",
+      "cell_number": 298,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 52,
+        "Female_Sucrose_2": 92,
+        "Male_Sucrose_1": 89,
+        "Male_Sucrose_2": 65
+      },
+      "all_samples_cell_number": 770,
+      "author_scea_label": "central brain type 2 monoaminergic neuron 24"
+    },
+    {
+      "label": "25_Undetermined",
+      "type": "Undetermined",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "25",
+      "cell_number": 384,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 99,
+        "Female_Sucrose_2": 91,
+        "Male_Sucrose_1": 96,
+        "Male_Sucrose_2": 98
+      },
+      "all_samples_cell_number": 655,
+      "author_scea_label": "undetermined cluster 25",
+      "unannotated": true
+    },
+    {
+      "label": "26_Undetermined",
+      "type": "Undetermined",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "26",
+      "cell_number": 341,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 130,
+        "Female_Sucrose_2": 52,
+        "Male_Sucrose_1": 62,
+        "Male_Sucrose_2": 97
+      },
+      "all_samples_cell_number": 539,
+      "author_scea_label": "undetermined cluster 26",
+      "unannotated": true
+    },
+    {
+      "label": "27_Mushroom body and ellipsoid body",
+      "type": "Mushroom body and ellipsoid body",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "27",
+      "cell_number": 201,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 24,
+        "Female_Sucrose_2": 58,
+        "Male_Sucrose_1": 78,
+        "Male_Sucrose_2": 41
+      },
+      "all_samples_cell_number": 529,
+      "author_scea_label": "mixed mushroom body and ellipsoid body 27"
+    },
+    {
+      "label": "28_Undetermined",
+      "type": "Undetermined",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "28",
+      "cell_number": 263,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 47,
+        "Female_Sucrose_2": 57,
+        "Male_Sucrose_1": 86,
+        "Male_Sucrose_2": 73
+      },
+      "all_samples_cell_number": 488,
+      "author_scea_label": "undetermined cluster 28",
+      "unannotated": true
+    },
+    {
+      "label": "29_Dopaminergic neurons",
+      "type": "Dopaminergic neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "29",
+      "cell_number": 180,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 20,
+        "Female_Sucrose_2": 46,
+        "Male_Sucrose_1": 68,
+        "Male_Sucrose_2": 46
+      },
+      "all_samples_cell_number": 368,
+      "author_scea_label": "dopaminergic neuron 29"
+    },
+    {
+      "label": "30_Photoreceptor cells",
+      "type": "Photoreceptor cells",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "30",
+      "cell_number": 196,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 19,
+        "Female_Sucrose_2": 46,
+        "Male_Sucrose_1": 71,
+        "Male_Sucrose_2": 60
+      },
+      "all_samples_cell_number": 276,
+      "author_scea_label": "photoreceptor neuron 30"
+    },
+    {
+      "label": "31_Undetermined",
+      "type": "Undetermined",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "31",
+      "cell_number": 107,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 21,
+        "Female_Sucrose_2": 26,
+        "Male_Sucrose_1": 23,
+        "Male_Sucrose_2": 37
+      },
+      "all_samples_cell_number": 235,
+      "author_scea_label": "undetermined cluster 31",
+      "unannotated": true
+    },
+    {
+      "label": "32_Undetermined",
+      "type": "Undetermined",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "32",
+      "cell_number": 112,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 25,
+        "Female_Sucrose_2": 28,
+        "Male_Sucrose_1": 24,
+        "Male_Sucrose_2": 35
+      },
+      "all_samples_cell_number": 232,
+      "author_scea_label": "undetermined cluster 32",
+      "unannotated": true
+    },
+    {
+      "label": "33_Glutamatergic neurons",
+      "type": "Glutamatergic neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "33",
+      "cell_number": 109,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 20,
+        "Female_Sucrose_2": 25,
+        "Male_Sucrose_1": 28,
+        "Male_Sucrose_2": 36
+      },
+      "all_samples_cell_number": 205,
+      "author_scea_label": "glutamatergic neuron 33"
+    },
+    {
+      "label": "34_Tachykinin/neuropeptidergic neurons",
+      "type": "Tachykinin/neuropeptidergic neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "34",
+      "cell_number": 41,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 5,
+        "Female_Sucrose_2": 11,
+        "Male_Sucrose_1": 16,
+        "Male_Sucrose_2": 9
+      },
+      "all_samples_cell_number": 102,
+      "author_scea_label": "mixed tachykinin and neuropeptidergic neuron 34"
+    },
+    {
+      "label": "35_Central brain GABAergic neurons",
+      "type": "Central brain GABAergic neurons",
+      "clustering": "sucrose",
+      "clustering_name": "Baker 2021 adult brain clusters (sucrose controls)",
+      "source_cluster_id": "35",
+      "cell_number": 44,
+      "cells_by_sample": {
+        "Female_Sucrose_1": 6,
+        "Female_Sucrose_2": 14,
+        "Male_Sucrose_1": 14,
+        "Male_Sucrose_2": 10
+      },
+      "all_samples_cell_number": 84,
+      "author_scea_label": "GABAergic neuron 35"
+    }
+  ]
+}

@@ -5,8 +5,8 @@
 # types merged per sex from SCEA labels); rebuilt here with fresh VFBseq ids. Curator
 # decisions 2026-10-19, as for Mokashi 2021 (same lab and pipeline): the authors' 36
 # clusters (all 8 samples integrated, resolution 0.8), restricted to the sucrose (control)
-# cells; per-cell clusters recovered by re-running the authors' published script (rerun/),
-# since SCEA's labels cover only 86% of the authors' cells.
+# cells; per-cell clusters from the authors' complete per-cell table in SCEA's FTP folder
+# (E-GEOD-152495.cells.txt; re-running their script did not reproduce it).
 project: baker_2021
 
 source:
@@ -46,3 +46,12 @@ sample_build:
   # Canton S (B) wild type (methods; Norga et al. 2003); no source stock named, so not linked.
   clusterings:
     - { id: sucrose, name: "Baker 2021 adult brain clusters (sucrose controls)", sample_age: "3-5 days post-eclosion" }
+
+# Clusters (projects/baker_2021/build_clusters.py): the authors' 36 clusters from their
+# complete per-cell table in SCEA (E-GEOD-152495.cells.txt), restricted to the sucrose cells;
+# typed by the authors' own "Inferred cell type". Held (untyped): "undetermined".
+annotations:
+  review_columns: [clustering, source_cluster_id, type, author_scea_label, all_samples_cell_number]
+
+unidentified:
+  rule: none
