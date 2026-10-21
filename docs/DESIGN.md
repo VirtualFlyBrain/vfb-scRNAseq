@@ -1886,6 +1886,10 @@ pipeline).
   GABAergic, *VGlut1* 1.0 glutamatergic, *ple* 0.81 / *Vmat* 0.94 dopaminergic, *alrm* /
   *repo* glia, *ey* Kenyon cells, *ninaE* 0.90 photoreceptors, *Tk* 1.0 tachykinin /
   neuropeptidergic).
+- **Build (stage 5):** `build_rdf.py`: 1 Dataset, 4 Samples, 4 Assays, 1 Clustering, 22
+  Clusters; publication FBrf0251482 from VFB production; `verify_mappings.py` OK (12 FBbt
+  terms); the FBbt / FBdv / FBcv terms on the Samples, Assays and Dataset current. Recorded
+  in `provenance.json`.
 
 ## Saavedra 2023 (adult thorax)
 
