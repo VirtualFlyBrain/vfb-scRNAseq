@@ -349,7 +349,8 @@ def _mtx_parts(project: str, cfg: dict, cache: Path) -> list[dict]:
     # current FlyBase gene ids (`expression.gene_id_map`, from scripts/update_gene_ids.py);
     # keyed by symbol when the features files carry symbols only
     # (`expression.features_keyed_by: symbol`)
-    key = "input_symbol" if ex.get("features_keyed_by") == "symbol" else "input_fbgn"
+    # (`expression.features_keyed_by: symbol`) or annotation ids (`annotation_id`)
+    key = "input_symbol" if ex.get("features_keyed_by") in ("symbol", "annotation_id") else "input_fbgn"
     gene_map = (load_gene_id_map(REPO_ROOT / "projects" / project / ex["gene_id_map"], key=key)
                 if ex.get("gene_id_map") else None)
     parts = [_accumulate(cache / ex["matrix_file"], cache / ex["features_file"],
