@@ -1812,14 +1812,22 @@ pipeline).
   (e.g. "CNS glial cell 13"; cluster 16 under two spellings). Their script is published
   (vshanka23/The-Drosophila-Brain-on-Cocaine-at-Single-Cell-Resolution); GEO has each
   sample's Cell Ranger filtered matrix. The script's filters keep 86,223 of 88,991 cells
-  (the paper 86,224); SCEA labels 74,511 (86%).
+  (the paper 86,224). The authors' complete per-cell table is in SCEA's FTP folder
+  (`E-GEOD-152495.cells.txt`): all 86,223 cells, every sample's count equal to the filters'
+  (SCEA's experiment-design download labels only 74,511). A re-run of the authors' script
+  (as for Mokashi) gave 36 clusters but a different partition (ARI 0.48 against the
+  authors' labels); not used.
 - **Scope (curator):** the sucrose (control) cells only (4 Samples): the authors' 36
-  clusters, made with all 8 samples, restricted to their sucrose cells; per-cell clusters
-  by re-running the authors' script (`rerun/`), checked against SCEA's labels.
+  clusters, made with all 8 samples, restricted to their sucrose cells.
 - **Samples (stage 1):** `build_samples_from_geo.py`, the title pattern matching the
   "<Sex> Sucrose Rep <n>" GSMs only: 4 Samples / 4 Assays (one 10x library each); *adult
   stage* (methods: aged 3-5 d; GEO gives no age); *adult brain*; sex from GEO; Canton S (B),
   no stock named (not linked). One Clustering.
+- **Clusters (stage 2):** `projects/baker_2021/build_clusters.py`: the authors' 36 clusters
+  from `cells.txt`, restricted to the sucrose cells (43,824; every cluster has some);
+  labelled `<cluster>_<inferred cell type>`, typed by the authors' own "Inferred cell type"
+  (SCEA's standardised label kept as `author_scea_label`; it spells cluster 16 two ways).
+  Held (`untyped`): the 7 "undetermined" clusters. 22 types to map.
 
 ## Saavedra 2023 (adult thorax)
 
