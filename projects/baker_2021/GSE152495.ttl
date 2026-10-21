@@ -1,0 +1,338 @@
+@prefix BAO: <http://www.bioassayontology.org/bao#BAO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix FBbt: <http://purl.obolibrary.org/obo/FBbt_> .
+@prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
+@prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
+@prefix FlyBase: <http://flybase.org/reports/> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix VFBseq: <http://virtualflybrain.org/reports/VFBseq_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix neo_custom: <http://n2o.neo/custom/> .
+@prefix neo_property: <http://n2o.neo/property/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vfb: <http://virtualflybrain.org/reports/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VFBseq:00003243 a FBcv:0009003 ;
+    rdfs:label "Glutamatergic neurons cluster 0 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 3946 ;
+    neo_custom:filtered_gene_count 1557 ;
+    neo_custom:total_gene_count 10810 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058208 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003244 a FBcv:0009003 ;
+    rdfs:label "GABAergic neurons cluster 1 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 3727 ;
+    neo_custom:filtered_gene_count 1802 ;
+    neo_custom:total_gene_count 10917 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003245 a FBcv:0009003 ;
+    rdfs:label "Glutamatergic neurons cluster 3 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 3956 ;
+    neo_custom:filtered_gene_count 968 ;
+    neo_custom:total_gene_count 9968 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058208 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003246 a FBcv:0009003 ;
+    rdfs:label "Optic lobe cluster 4 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 3125 ;
+    neo_custom:filtered_gene_count 846 ;
+    neo_custom:total_gene_count 9557 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00003702 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003247 a FBcv:0009003 ;
+    rdfs:label "Olfactory projection neurons cluster 8 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 1990 ;
+    neo_custom:filtered_gene_count 842 ;
+    neo_custom:total_gene_count 9128 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00051299 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003248 a FBcv:0009003 ;
+    rdfs:label "GABAergic neurons cluster 9 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 1713 ;
+    neo_custom:filtered_gene_count 1344 ;
+    neo_custom:total_gene_count 9496 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003249 a FBcv:0009003 ;
+    rdfs:label "Central brain type B cholinergic neurons cluster 10 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 1339 ;
+    neo_custom:filtered_gene_count 2407 ;
+    neo_custom:total_gene_count 10193 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003250 a FBcv:0009003 ;
+    rdfs:label "Kenyon cells cluster 11 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 1067 ;
+    neo_custom:filtered_gene_count 1459 ;
+    neo_custom:total_gene_count 8822 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00049825 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003251 a FBcv:0009003 ;
+    rdfs:label "GABAergic neurons cluster 12 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 1036 ;
+    neo_custom:filtered_gene_count 1556 ;
+    neo_custom:total_gene_count 8964 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003252 a FBcv:0009003 ;
+    rdfs:label "Glia cluster 13 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 960 ;
+    neo_custom:filtered_gene_count 915 ;
+    neo_custom:total_gene_count 9253 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00100499 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003253 a FBcv:0009003 ;
+    rdfs:label "Optic lobe neurons cluster 14 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 1201 ;
+    neo_custom:filtered_gene_count 918 ;
+    neo_custom:total_gene_count 8629 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00003702 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003254 a FBcv:0009003 ;
+    rdfs:label "Astrocytes cluster 17 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 723 ;
+    neo_custom:filtered_gene_count 2338 ;
+    neo_custom:total_gene_count 8870 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00047841 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003255 a FBcv:0009003 ;
+    rdfs:label "Optic lobe neurons cluster 18 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 1031 ;
+    neo_custom:filtered_gene_count 925 ;
+    neo_custom:total_gene_count 8498 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00003702 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003256 a FBcv:0009003 ;
+    rdfs:label "Glia cluster 19 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 729 ;
+    neo_custom:filtered_gene_count 603 ;
+    neo_custom:total_gene_count 8533 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00100499 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003257 a FBcv:0009003 ;
+    rdfs:label "Kenyon cells cluster 20 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 655 ;
+    neo_custom:filtered_gene_count 1158 ;
+    neo_custom:total_gene_count 8217 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00049825 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003258 a FBcv:0009003 ;
+    rdfs:label "Central Brain type 2 glutamatergic neurons cluster 21 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 550 ;
+    neo_custom:filtered_gene_count 2520 ;
+    neo_custom:total_gene_count 8968 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058208 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003259 a FBcv:0009003 ;
+    rdfs:label "Central brain type 2 monoaminergic neurons cluster 24 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 298 ;
+    neo_custom:filtered_gene_count 2483 ;
+    neo_custom:total_gene_count 8478 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058201 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003260 a FBcv:0009003 ;
+    rdfs:label "Dopaminergic neurons cluster 29 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 180 ;
+    neo_custom:filtered_gene_count 1274 ;
+    neo_custom:total_gene_count 7195 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058206 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003261 a FBcv:0009003 ;
+    rdfs:label "Photoreceptor cells cluster 30 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 196 ;
+    neo_custom:filtered_gene_count 1153 ;
+    neo_custom:total_gene_count 7502 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00006009 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003262 a FBcv:0009003 ;
+    rdfs:label "Glutamatergic neurons cluster 33 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 109 ;
+    neo_custom:filtered_gene_count 1942 ;
+    neo_custom:total_gene_count 6880 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058208 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003263 a FBcv:0009003 ;
+    rdfs:label "Tachykinin/neuropeptidergic neurons cluster 34 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 41 ;
+    neo_custom:filtered_gene_count 2198 ;
+    neo_custom:total_gene_count 6156 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058202 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003264 a FBcv:0009003 ;
+    rdfs:label "Central brain GABAergic neurons cluster 35 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)" ;
+    neo_custom:cell_count 44 ;
+    neo_custom:filtered_gene_count 1773 ;
+    neo_custom:total_gene_count 5981 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00003188 .
+
+FlyBase:FBrf0251482 a FBcv:0000212 ;
+    neo_property:nodeLabel "pub" .
+
+VFBseq:00003190 a FBcv:0003025 ;
+    rdfs:label "Brains, 3-5 days post-eclosion, Female rep 1, 10x library (Baker 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00003189 ;
+    dcterms:source VFBseq:00003188 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM4616550",
+        "SAMN15238621",
+        "SRX8549641" .
+
+VFBseq:00003192 a FBcv:0003025 ;
+    rdfs:label "Brains, 3-5 days post-eclosion, Female rep 2, 10x library (Baker 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00003191 ;
+    dcterms:source VFBseq:00003188 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM4616551",
+        "SAMN15238620",
+        "SRX8549642" .
+
+VFBseq:00003194 a FBcv:0003025 ;
+    rdfs:label "Brains, 3-5 days post-eclosion, Male rep 1, 10x library (Baker 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00003193 ;
+    dcterms:source VFBseq:00003188 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM4616552",
+        "SAMN15238619",
+        "SRX8549643" .
+
+VFBseq:00003196 a FBcv:0003025 ;
+    rdfs:label "Brains, 3-5 days post-eclosion, Male rep 2, 10x library (Baker 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00003195 ;
+    dcterms:source VFBseq:00003188 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM4616553",
+        "SAMN15238618",
+        "SRX8549644" .
+
+VFBseq:00003189 a FBcv:0003024 ;
+    rdfs:label "Brains, 3-5 days post-eclosion, Female rep 1 (Baker 2021)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00003190 ;
+    RO:0002490 FBdv:00005369 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003191 a FBcv:0003024 ;
+    rdfs:label "Brains, 3-5 days post-eclosion, Female rep 2 (Baker 2021)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00003192 ;
+    RO:0002490 FBdv:00005369 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003193 a FBcv:0003024 ;
+    rdfs:label "Brains, 3-5 days post-eclosion, Male rep 1 (Baker 2021)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00003194 ;
+    RO:0002490 FBdv:00005369 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003195 a FBcv:0003024 ;
+    rdfs:label "Brains, 3-5 days post-eclosion, Male rep 2 (Baker 2021)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00003196 ;
+    RO:0002490 FBdv:00005369 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003197 a FBcv:0009002 ;
+    rdfs:label "Baker 2021 adult brain clusters (sucrose controls)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00003189,
+        VFBseq:00003191,
+        VFBseq:00003193,
+        VFBseq:00003195 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003188 a FBcv:0003023 ;
+    rdfs:label "scRNAseq data from Baker (2021)" ;
+    neo_custom:accession "GSE152495" ;
+    neo_custom:filtered_gene_count 3634 ;
+    neo_custom:total_gene_count 13673 ;
+    neo_property:nodeLabel "DataSet" ;
+    IAO:0000115 "The Drosophila brain on cocaine at single-cell resolution" ;
+    OBI:0000312 FBcv:0009000 ;
+    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references FlyBase:FBrf0251482 ;
+    oboInOwl:hasDbXref vfb:GEO .
+

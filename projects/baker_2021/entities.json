@@ -1,0 +1,466 @@
+[
+  {
+    "type": "Publication",
+    "id": "FlyBase:FBrf0251482",
+    "neo_label": "pub"
+  },
+  {
+    "type": "Dataset",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "name": "scRNAseq data from Baker (2021)",
+    "title": "The Drosophila brain on cocaine at single-cell resolution",
+    "accession": "GSE152495",
+    "neo_label": "DataSet",
+    "site": "vfb:GEO",
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "assay_type": "FBcv:0009000",
+    "total_gene_count": 13673,
+    "filtered_gene_count": 3634,
+    "publication": "FlyBase:FBrf0251482"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003189",
+    "name": "Brains, 3-5 days post-eclosion, Female rep 1 (Baker 2021)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003190"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00005369",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003191",
+    "name": "Brains, 3-5 days post-eclosion, Female rep 2 (Baker 2021)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003192"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00005369",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003193",
+    "name": "Brains, 3-5 days post-eclosion, Male rep 1 (Baker 2021)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003194"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00005369",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003195",
+    "name": "Brains, 3-5 days post-eclosion, Male rep 2 (Baker 2021)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003196"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00005369",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003190",
+    "name": "Brains, 3-5 days post-eclosion, Female rep 1, 10x library (Baker 2021)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003189"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "dbxref": [
+      "GSM4616550",
+      "SRX8549641",
+      "SAMN15238621"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003192",
+    "name": "Brains, 3-5 days post-eclosion, Female rep 2, 10x library (Baker 2021)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003191"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "dbxref": [
+      "GSM4616551",
+      "SRX8549642",
+      "SAMN15238620"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003194",
+    "name": "Brains, 3-5 days post-eclosion, Male rep 1, 10x library (Baker 2021)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003193"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "dbxref": [
+      "GSM4616552",
+      "SRX8549643",
+      "SAMN15238619"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003196",
+    "name": "Brains, 3-5 days post-eclosion, Male rep 2, 10x library (Baker 2021)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003195"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "dbxref": [
+      "GSM4616553",
+      "SRX8549644",
+      "SAMN15238618"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "name": "Baker 2021 adult brain clusters (sucrose controls)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00003189",
+      "http://virtualflybrain.org/reports/VFBseq_00003191",
+      "http://virtualflybrain.org/reports/VFBseq_00003193",
+      "http://virtualflybrain.org/reports/VFBseq_00003195"
+    ]
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003243",
+    "name": "Glutamatergic neurons cluster 0 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 3946,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 10810,
+    "filtered_gene_count": 1557
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003244",
+    "name": "GABAergic neurons cluster 1 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 3727,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 10917,
+    "filtered_gene_count": 1802
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003245",
+    "name": "Glutamatergic neurons cluster 3 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 3956,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 9968,
+    "filtered_gene_count": 968
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003246",
+    "name": "Optic lobe cluster 4 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 3125,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003702"
+    ],
+    "total_gene_count": 9557,
+    "filtered_gene_count": 846
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003247",
+    "name": "Olfactory projection neurons cluster 8 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1990,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051299"
+    ],
+    "total_gene_count": 9128,
+    "filtered_gene_count": 842
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003248",
+    "name": "GABAergic neurons cluster 9 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1713,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 9496,
+    "filtered_gene_count": 1344
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003249",
+    "name": "Central brain type B cholinergic neurons cluster 10 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1339,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 10193,
+    "filtered_gene_count": 2407
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003250",
+    "name": "Kenyon cells cluster 11 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1067,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049825"
+    ],
+    "total_gene_count": 8822,
+    "filtered_gene_count": 1459
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003251",
+    "name": "GABAergic neurons cluster 12 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1036,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8964,
+    "filtered_gene_count": 1556
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003252",
+    "name": "Glia cluster 13 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 960,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100499"
+    ],
+    "total_gene_count": 9253,
+    "filtered_gene_count": 915
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003253",
+    "name": "Optic lobe neurons cluster 14 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1201,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003702"
+    ],
+    "total_gene_count": 8629,
+    "filtered_gene_count": 918
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003254",
+    "name": "Astrocytes cluster 17 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 723,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047841"
+    ],
+    "total_gene_count": 8870,
+    "filtered_gene_count": 2338
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003255",
+    "name": "Optic lobe neurons cluster 18 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1031,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003702"
+    ],
+    "total_gene_count": 8498,
+    "filtered_gene_count": 925
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003256",
+    "name": "Glia cluster 19 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 729,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100499"
+    ],
+    "total_gene_count": 8533,
+    "filtered_gene_count": 603
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003257",
+    "name": "Kenyon cells cluster 20 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 655,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049825"
+    ],
+    "total_gene_count": 8217,
+    "filtered_gene_count": 1158
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003258",
+    "name": "Central Brain type 2 glutamatergic neurons cluster 21 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 550,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 8968,
+    "filtered_gene_count": 2520
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003259",
+    "name": "Central brain type 2 monoaminergic neurons cluster 24 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 298,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058201"
+    ],
+    "total_gene_count": 8478,
+    "filtered_gene_count": 2483
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003260",
+    "name": "Dopaminergic neurons cluster 29 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 180,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058206"
+    ],
+    "total_gene_count": 7195,
+    "filtered_gene_count": 1274
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003261",
+    "name": "Photoreceptor cells cluster 30 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 196,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00006009"
+    ],
+    "total_gene_count": 7502,
+    "filtered_gene_count": 1153
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003262",
+    "name": "Glutamatergic neurons cluster 33 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 109,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 6880,
+    "filtered_gene_count": 1942
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003263",
+    "name": "Tachykinin/neuropeptidergic neurons cluster 34 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 41,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058202"
+    ],
+    "total_gene_count": 6156,
+    "filtered_gene_count": 2198
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003264",
+    "name": "Central brain GABAergic neurons cluster 35 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 44,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 5981,
+    "filtered_gene_count": 1773
+  }
+]
