@@ -1,0 +1,378 @@
+@prefix BAO: <http://www.bioassayontology.org/bao#BAO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix FBbt: <http://purl.obolibrary.org/obo/FBbt_> .
+@prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
+@prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
+@prefix FlyBase: <http://flybase.org/reports/> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix VFBseq: <http://virtualflybrain.org/reports/VFBseq_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix neo_custom: <http://n2o.neo/custom/> .
+@prefix neo_property: <http://n2o.neo/property/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vfb: <http://virtualflybrain.org/reports/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VFBseq:00003217 a FBcv:0009003 ;
+    rdfs:label "Optic lobe neurons cluster 0 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 5110 ;
+    neo_custom:filtered_gene_count 919 ;
+    neo_custom:total_gene_count 10875 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00003702 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003218 a FBcv:0009003 ;
+    rdfs:label "5-HT and DA neurons cluster 1 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 4043 ;
+    neo_custom:filtered_gene_count 1298 ;
+    neo_custom:total_gene_count 10909 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058201 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003219 a FBcv:0009003 ;
+    rdfs:label "Glutamatergic neurons cluster 2 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 3920 ;
+    neo_custom:filtered_gene_count 1816 ;
+    neo_custom:total_gene_count 11303 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058208 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003220 a FBcv:0009003 ;
+    rdfs:label "Glutamatergic neurons cluster 4 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 3095 ;
+    neo_custom:filtered_gene_count 1038 ;
+    neo_custom:total_gene_count 10166 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058208 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003221 a FBcv:0009003 ;
+    rdfs:label "Surface glia cluster 5 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 2652 ;
+    neo_custom:filtered_gene_count 818 ;
+    neo_custom:total_gene_count 10129 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00100500 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003222 a FBcv:0009003 ;
+    rdfs:label "Optic lobe neurons cluster 7 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 1980 ;
+    neo_custom:filtered_gene_count 893 ;
+    neo_custom:total_gene_count 9641 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00003702 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003223 a FBcv:0009003 ;
+    rdfs:label "GABAergic neurons cluster 8 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 1956 ;
+    neo_custom:filtered_gene_count 1665 ;
+    neo_custom:total_gene_count 10285 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003224 a FBcv:0009003 ;
+    rdfs:label "GABAergic neurons cluster 9 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 1965 ;
+    neo_custom:filtered_gene_count 1269 ;
+    neo_custom:total_gene_count 9965 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003225 a FBcv:0009003 ;
+    rdfs:label "Olfactory projection neurons cluster 10 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 1500 ;
+    neo_custom:filtered_gene_count 867 ;
+    neo_custom:total_gene_count 9299 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00051299 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003226 a FBcv:0009003 ;
+    rdfs:label "Kenyon cells cluster 12 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 1548 ;
+    neo_custom:filtered_gene_count 1429 ;
+    neo_custom:total_gene_count 9557 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00049825 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003227 a FBcv:0009003 ;
+    rdfs:label "Glutamatergic neurons cluster 13 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 1363 ;
+    neo_custom:filtered_gene_count 1260 ;
+    neo_custom:total_gene_count 9339 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058208 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003228 a FBcv:0009003 ;
+    rdfs:label "GABAergic neurons cluster 14 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 1459 ;
+    neo_custom:filtered_gene_count 1362 ;
+    neo_custom:total_gene_count 9607 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003229 a FBcv:0009003 ;
+    rdfs:label "GABAergic neurons cluster 16 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 1259 ;
+    neo_custom:filtered_gene_count 2226 ;
+    neo_custom:total_gene_count 9952 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003230 a FBcv:0009003 ;
+    rdfs:label "Cholinergic neurons of central brain cluster 17 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 1306 ;
+    neo_custom:filtered_gene_count 2281 ;
+    neo_custom:total_gene_count 10254 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058205 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003231 a FBcv:0009003 ;
+    rdfs:label "Glutamaterigic neurons of central brain cluster 20 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 1181 ;
+    neo_custom:filtered_gene_count 1661 ;
+    neo_custom:total_gene_count 9564 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058208 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003232 a FBcv:0009003 ;
+    rdfs:label "GABAergic neurons of central brain cluster 21 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 1132 ;
+    neo_custom:filtered_gene_count 1716 ;
+    neo_custom:total_gene_count 9606 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003233 a FBcv:0009003 ;
+    rdfs:label "Astrocytes cluster 23 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 970 ;
+    neo_custom:filtered_gene_count 727 ;
+    neo_custom:total_gene_count 9244 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00047841 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003234 a FBcv:0009003 ;
+    rdfs:label "Astrocytes cluster 24 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 967 ;
+    neo_custom:filtered_gene_count 2223 ;
+    neo_custom:total_gene_count 9529 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00047841 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003235 a FBcv:0009003 ;
+    rdfs:label "Kenyon cells cluster 25 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 838 ;
+    neo_custom:filtered_gene_count 1157 ;
+    neo_custom:total_gene_count 8804 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00049825 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003236 a FBcv:0009003 ;
+    rdfs:label "GABAergic neurons cluster 26 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 815 ;
+    neo_custom:filtered_gene_count 1039 ;
+    neo_custom:total_gene_count 8816 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003237 a FBcv:0009003 ;
+    rdfs:label "Cells of ellipsoid body and fan shaped body cluster 28 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 578 ;
+    neo_custom:filtered_gene_count 1147 ;
+    neo_custom:total_gene_count 8448 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00049819 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003238 a FBcv:0009003 ;
+    rdfs:label "Photoreceptor cells cluster 29 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 639 ;
+    neo_custom:filtered_gene_count 1081 ;
+    neo_custom:total_gene_count 8985 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00006009 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003239 a FBcv:0009003 ;
+    rdfs:label "GABAergic neurons cluster 30 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 457 ;
+    neo_custom:filtered_gene_count 1238 ;
+    neo_custom:total_gene_count 8258 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058207 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003240 a FBcv:0009003 ;
+    rdfs:label "Adult dopaminergic neurons cluster 36 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 220 ;
+    neo_custom:filtered_gene_count 762 ;
+    neo_custom:total_gene_count 7155 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058206 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003241 a FBcv:0009003 ;
+    rdfs:label "Neuropeptides in perhaps cholinergic neurons cluster 38 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 133 ;
+    neo_custom:filtered_gene_count 1210 ;
+    neo_custom:total_gene_count 7171 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058202 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003242 a FBcv:0009003 ;
+    rdfs:label "Tachykinin/neuropeptidergic neurons cluster 42 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)" ;
+    neo_custom:cell_count 42 ;
+    neo_custom:filtered_gene_count 2541 ;
+    neo_custom:total_gene_count 6539 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003197 ;
+    RO:0002473 FBbt:00058202 ;
+    dcterms:source VFBseq:00003188 .
+
+FlyBase:FBrf0249767 a FBcv:0000212 ;
+    neo_property:nodeLabel "pub" .
+
+VFBseq:00003190 a FBcv:0003025 ;
+    rdfs:label "Brains, 3-5 days post-eclosion, Female rep 1, 10x library (Mokashi 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00003189 ;
+    dcterms:source VFBseq:00003188 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM5244433",
+        "SAMN18759657",
+        "SRX10616068" .
+
+VFBseq:00003192 a FBcv:0003025 ;
+    rdfs:label "Brains, 3-5 days post-eclosion, Female rep 2, 10x library (Mokashi 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00003191 ;
+    dcterms:source VFBseq:00003188 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM5244435",
+        "SAMN18759663",
+        "SRX10616070" .
+
+VFBseq:00003194 a FBcv:0003025 ;
+    rdfs:label "Brains, 3-5 days post-eclosion, Male rep 1, 10x library (Mokashi 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00003193 ;
+    dcterms:source VFBseq:00003188 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM5244437",
+        "SAMN18759661",
+        "SRX10616072" .
+
+VFBseq:00003196 a FBcv:0003025 ;
+    rdfs:label "Brains, 3-5 days post-eclosion, Male rep 2, 10x library (Mokashi 2021)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00003195 ;
+    dcterms:source VFBseq:00003188 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM5244439",
+        "SAMN18759659",
+        "SRX10616074" .
+
+VFBseq:00003189 a FBcv:0003024 ;
+    rdfs:label "Brains, 3-5 days post-eclosion, Female rep 1 (Mokashi 2021)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00003190 ;
+    RO:0002490 FBdv:00005369 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003191 a FBcv:0003024 ;
+    rdfs:label "Brains, 3-5 days post-eclosion, Female rep 2 (Mokashi 2021)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00003192 ;
+    RO:0002490 FBdv:00005369 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003193 a FBcv:0003024 ;
+    rdfs:label "Brains, 3-5 days post-eclosion, Male rep 1 (Mokashi 2021)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00003194 ;
+    RO:0002490 FBdv:00005369 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003195 a FBcv:0003024 ;
+    rdfs:label "Brains, 3-5 days post-eclosion, Male rep 2 (Mokashi 2021)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007004 ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00003196 ;
+    RO:0002490 FBdv:00005369 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003197 a FBcv:0009002 ;
+    rdfs:label "Mokashi 2021 adult brain clusters (reference medium)" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00003189,
+        VFBseq:00003191,
+        VFBseq:00003193,
+        VFBseq:00003195 ;
+    dcterms:source VFBseq:00003188 .
+
+VFBseq:00003188 a FBcv:0003023 ;
+    rdfs:label "scRNAseq data from Mokashi (2021)" ;
+    neo_custom:accession "GSE172231" ;
+    neo_custom:filtered_gene_count 3664 ;
+    neo_custom:total_gene_count 14182 ;
+    neo_property:nodeLabel "DataSet" ;
+    IAO:0000115 "Developmental Alcohol Exposure in Drosophila: Effects on Adult Phenotypes and Gene Expression in the Brain" ;
+    OBI:0000312 FBcv:0009000 ;
+    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references FlyBase:FBrf0249767 ;
+    oboInOwl:hasDbXref vfb:GEO .
+
