@@ -1844,7 +1844,7 @@ pipeline).
   ..." to the class; type 2 monoaminergic to *adult aminergic neuron*); *adult CNS glial
   cell* (Glia), *adult astrocyte-like glial cell*, *adult Kenyon cell*, *adult olfactory
   projection neuron*, *adult optic lobe neuron* ("Optic lobe": broad), *eye photoreceptor
-  cell*, *adult Tachykinin neuron of the central nervous system*. Held (`no term`): clusters
+  cell*, *adult peptidergic neuron* (Tachykinin/neuropeptidergic: broad, their common class). Held (`no term`): clusters
   naming different structures together; two classes in one name without stated
   co-expression ("Neuropeptides/cholinergic neurons", "GABAergic and monoaminergic
   neurons"); "Central brain neurons type A" (typeable only as neuron). 22 clusters mapped

@@ -49,7 +49,9 @@ MAPPED = {   # author type: (FBbt id, match, justification)
     "Optic lobe": ("FBbt:00003702", B, "The optic lobe: its main cell type, the neuron."),
     "Photoreceptor cells": ("FBbt:00006009", E, "Photoreceptors of the adult compound eye (retina attached to the "
                                                 "dissected brains)."),
-    "Tachykinin/neuropeptidergic neurons": ("FBbt:00110061", E, ""),
+    "Tachykinin/neuropeptidergic neurons": ("FBbt:00058202", B, "Tachykinin and other neuropeptidergic neurons "
+                                            "(SCEA: 'mixed tachykinin and neuropeptidergic'): their common class, the "
+                                            "peptidergic neuron (tachykinin neurons are peptidergic; curator)."),
 }
 HELD = {
     "Optic lobe and antennal lobe neurons": "Two structures together; their only common parent is neuron (curator).",
