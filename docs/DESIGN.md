@@ -1833,6 +1833,10 @@ labels) with fresh VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-19.
   glutamatergic, *ple* / *Vmat* dopaminergic, *alrm* astrocytes, *ey* / *Mef2* Kenyon cells,
   *ninaE* 0.88 photoreceptors, *Tk* 0.93 tachykinin / neuropeptidergic); *repo* is below the
   cutoff everywhere.
+- **Build (stage 5):** `build_rdf.py`: 1 Dataset, 4 Samples, 4 Assays, 1 Clustering, 26
+  Clusters; publication FBrf0249767 from VFB production; `verify_mappings.py` OK (13 FBbt
+  terms); the FBbt / FBdv / FBcv terms on the Samples, Assays and Dataset current. Recorded
+  in `provenance.json`.
 
 ## Baker 2021 (adult brain, acute cocaine study)
 

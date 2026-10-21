@@ -1,0 +1,420 @@
+{
+  "project": "mokashi_2021",
+  "created_at": "2026-10-19",
+  "updated_at": "2026-10-21",
+  "summary": "Mokashi et al. 2021, 10x scRNA-seq of adult brains of wild-type Canton S (B) flies reared on reference or ethanol-supplemented medium (GEO GSE172231); replaces the old FlyBase/SCEA load FBlc0005420 with fresh VFBseq ids. Reference-medium samples only: 4 Samples / 4 Assays (2 sexes x 2 replicates). One Clustering with the authors' 43 clusters (all 8 samples integrated, resolution 0.9) restricted to the 56,165 reference cells, from the authors' complete per-cell table in SCEA (E-GEOD-172231.cells.txt): 26 loaded (adult neurotransmitter-class and cell-type terms), 17 held. Summary expression as CPM from the reference libraries' GEO matrices (17,448 genes x 56,165 cells).",
+  "decisions": [
+    {
+      "date": "2026-10-08",
+      "by": "curator",
+      "decision": "Map to cell-level FBbt terms only (a tissue or organ author term maps to its cell-level equivalent, else the type is held)."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Clusters with no FBbt term are held: listed in mapping.tsv with a hold_reason but not loaded (no VFBseq id, entity or expression rows). Their cells still count towards the Dataset's gene counts."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Summary expression is computed as CPM for every dataset."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Narrow a generic type by the dissected tissue only where the tissue makes the tissue-specific FBbt term exact; hold clusters that could only be typed as cell or neuron (or stage-specific versions); load glia under a glial-cell term."
+    },
+    {
+      "date": "2026-10-19",
+      "by": "curator",
+      "decision": "Reference-medium samples only (as the old load); the authors' 43 clusters, made with all 8 samples, restricted to the reference cells."
+    },
+    {
+      "date": "2026-10-19",
+      "by": "curator",
+      "decision": "Samples: one per GSM (20 pooled brains, one 10x library); adult stage (3-5 days post-eclosion; no FBdv term covers days 3-5 only); adult brain; sex from GEO; Canton S (B), no stock named (not linked)."
+    },
+    {
+      "date": "2026-10-21",
+      "by": "pipeline",
+      "decision": "Per-cell clusters from the authors' complete per-cell table in SCEA's FTP folder (E-GEOD-172231.cells.txt; all 104,984 cells the authors' script's filters keep, every sample equal), typed by the authors' own 'Inferred cell type' (SCEA's standardised label kept as author_scea_label). SCEA's experiment-design download covers only the cells SCEA's own reprocessing kept. A re-run of the authors' script (Seurat 3.2.3 / sctransform 0.3.2, CRAN snapshot 2021-01-15, on a 240 GB VFB server) gave 34 clusters, not 43 (ARI 0.72 against the authors' labels; pairs of their clusters merged), so it was not used."
+    },
+    {
+      "date": "2026-10-21",
+      "by": "curator",
+      "decision": "Mapping per author type (shared calls with Baker 2021): adult neurotransmitter-class terms ('... of central brain' to the class); 5-HT and DA neurons to adult aminergic neuron (broad); adult astrocyte-like glial cell, Kenyon cell, olfactory projection neuron, optic lobe neuron, eye photoreceptor cell, adult brain surface glial cell (brain-only dissection: exact); Tachykinin/neuropeptidergic neurons to adult peptidergic neuron (broad, corrected after review); ellipsoid / fan-shaped body cells to adult central complex neuron (broad); 'Neuropeptides in perhaps cholinergic neurons' to adult peptidergic neuron. Held: mixed-structure clusters, the authors' undetermined hedges, 'Neuropeptides/cholinergic neurons' (co-expression not stated; curator: two terms only where stated, else hold), 'Developmental genes'."
+    },
+    {
+      "date": "2026-10-21",
+      "by": "pipeline",
+      "decision": "Expression from the four reference libraries' GEO matrices side by side (combine_matrices.py), as CPM; the features are FlyBase annotation ids from the authors' NCBI GenBank reference (Dmel_CG...), mapped to genes in Chado (update_gene_ids.py features_keyed_by: annotation_id): 17,451 current, 3 merges, 30 dropped."
+    },
+    {
+      "date": "2026-10-21",
+      "by": "curator",
+      "decision": "All mapping.tsv rows reviewed by the curator (mapping.tsv `reviewed`)."
+    }
+  ],
+  "checks": [
+    {
+      "date": "2026-10-21",
+      "check": "The authors' per-cell table (E-GEOD-172231.cells.txt) against the authors' script's filters on the GEO matrices.",
+      "result": "All 104,984 cells in 43 clusters; every sample's count equal."
+    },
+    {
+      "date": "2026-10-21",
+      "check": "Memberships against the combined reference matrix.",
+      "result": "All 56,165 reference cells found."
+    },
+    {
+      "date": "2026-10-21",
+      "check": "verify_mappings.py: every FBbt term in the mappings looked up in OLS (FBbt 2026-10-01).",
+      "result": "13 terms current, not obsolete, labels match."
+    },
+    {
+      "date": "2026-10-21",
+      "check": "FBbt, FBdv and FBcv terms on the Samples, Assays and Dataset looked up in OLS.",
+      "result": "All current (adult stage, adult brain, single-cell RNA-Seq, 10x sequencing)."
+    },
+    {
+      "date": "2026-10-21",
+      "check": "Marker spot checks in the expression output.",
+      "result": "Gad1 0.99 GABAergic, VGlut1 1.0 glutamatergic, ple / Vmat dopaminergic, alrm astrocytes, ey / Mef2 Kenyon cells, ninaE 0.88 photoreceptors, Tk 0.93 tachykinin / neuropeptidergic; repo below the cutoff everywhere."
+    }
+  ],
+  "people": [
+    {
+      "id": "ORCID:0000-0002-1373-1705",
+      "label": "Clare Pilgrim",
+      "role": "curator",
+      "username": "Clare72"
+    }
+  ],
+  "pipeline": {
+    "id": "vfb-scrnaseq",
+    "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
+    "version": "0.0.0",
+    "commit": "595193f",
+    "uncommitted_changes": true
+  },
+  "ontologies": [
+    {
+      "id": "FBbt",
+      "label": "Drosophila gross anatomy ontology",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBdv",
+      "label": "Drosophila developmental ontology",
+      "version": "2026-09-30",
+      "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-09-30/fbdv.owl",
+      "accessed_via": "OLS4 API; local fbdv.obo in .cache (stage definitions)",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBcv",
+      "label": "FlyBase controlled vocabulary",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-10-01/fbcv.owl",
+      "accessed_via": "OLS4 API",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "accessed_at": "2026-10-16"
+    }
+  ],
+  "data_sources": [
+    {
+      "id": "10.3389/fpsyt.2021.699033",
+      "type": "publication",
+      "label": "Developmental Alcohol Exposure in Drosophila: Effects on Adult Phenotypes and Gene Expression in the Brain",
+      "xrefs": [
+        "PMID:34366927",
+        "PMCID:PMC8341641",
+        "FlyBase:FBrf0249767"
+      ],
+      "description": "Full text and the authors' analysis script read for the scope, samples, filters and clustering.",
+      "url": "https://doi.org/10.3389/fpsyt.2021.699033",
+      "files": [
+        {
+          "path": "supp/PMC8341641.jats.xml",
+          "description": "JATS full text, NCBI efetch (db=pmc).",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=PMC8341641",
+          "sha256": "8fc78c00c9442f1adef9c110f5c52b86c8c024afb72ba60a88e9a6e68244191b",
+          "bytes": 100483,
+          "accessed_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "GSE172231",
+      "type": "dataset",
+      "label": "Adult Phenotypes and Gene Expression in the Brain at Single Cell Resolution After Developmental Alcohol Exposure in Drosophila",
+      "xrefs": [
+        "BioProject:PRJNA722499",
+        "SRA:SRP315117"
+      ],
+      "description": "GEO series: 8 10x libraries, a Cell Ranger filtered matrix each; the four reference libraries used.",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE172231",
+      "accessed_at": "2026-10-19",
+      "files": [
+        {
+          "path": "mokashi/geo/1_F_R_1/barcodes.tsv.gz",
+          "description": "Female Reference Rep1: Cell Ranger barcodes.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5244nnn/GSM5244433/suppl/GSM5244433_1_F_R_1_barcodes.tsv.gz",
+          "sha256": "d87ab4bd11ecebde50583226488fd4c99c28e645ff24e2339bb9a9ad40f0cd95",
+          "bytes": 50038,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "mokashi/geo/1_F_R_1/features.tsv.gz",
+          "description": "Female Reference Rep1: Cell Ranger features.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5244nnn/GSM5244433/suppl/GSM5244433_1_F_R_1_features.tsv.gz",
+          "sha256": "7847f0917aca1f30140215aac336328622cae3895dc63f1086f0535ade57e70c",
+          "bytes": 124303,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "mokashi/geo/1_F_R_1/matrix.mtx.gz",
+          "description": "Female Reference Rep1: Cell Ranger matrix.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5244nnn/GSM5244433/suppl/GSM5244433_1_F_R_1_matrix.mtx.gz",
+          "sha256": "f7d5c502c33b6ca760332a4aea8266bcaad1c3e8069f69698986ea70e45d31b6",
+          "bytes": 29202138,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "mokashi/geo/3_F_R_2/barcodes.tsv.gz",
+          "description": "Female Reference Rep2: Cell Ranger barcodes.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5244nnn/GSM5244435/suppl/GSM5244435_3_F_R_2_barcodes.tsv.gz",
+          "sha256": "5391e4754b5c75b8c598d5e6925c94d3a5ef37f714f490008b6268393fcfef43",
+          "bytes": 59314,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "mokashi/geo/3_F_R_2/features.tsv.gz",
+          "description": "Female Reference Rep2: Cell Ranger features.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5244nnn/GSM5244435/suppl/GSM5244435_3_F_R_2_features.tsv.gz",
+          "sha256": "46d9673d3776ab816a204ddd920fec7096b8730d30b17814feae0ba2b1e0be96",
+          "bytes": 124303,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "mokashi/geo/3_F_R_2/matrix.mtx.gz",
+          "description": "Female Reference Rep2: Cell Ranger matrix.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5244nnn/GSM5244435/suppl/GSM5244435_3_F_R_2_matrix.mtx.gz",
+          "sha256": "8a492ae3c1b07964b55cd8dc3e464f487d431c0a644273d62a1290f3a1ed778e",
+          "bytes": 46324163,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "mokashi/geo/5_M_R_1/barcodes.tsv.gz",
+          "description": "Male Reference Rep1: Cell Ranger barcodes.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5244nnn/GSM5244437/suppl/GSM5244437_5_M_R_1_barcodes.tsv.gz",
+          "sha256": "b329c2b2ec36890c35bd553efda449975c571f2480721edb88ac89d7d53a42e1",
+          "bytes": 91329,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "mokashi/geo/5_M_R_1/features.tsv.gz",
+          "description": "Male Reference Rep1: Cell Ranger features.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5244nnn/GSM5244437/suppl/GSM5244437_5_M_R_1_features.tsv.gz",
+          "sha256": "b7c571be39c01fd007f65b410f0a60523baff7c3ee2fabf162dc0eabba0777e5",
+          "bytes": 124303,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "mokashi/geo/5_M_R_1/matrix.mtx.gz",
+          "description": "Male Reference Rep1: Cell Ranger matrix.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5244nnn/GSM5244437/suppl/GSM5244437_5_M_R_1_matrix.mtx.gz",
+          "sha256": "36b4532fb157f8ab2ba81a424fcdd0f50e4da3300fbebd0d8bd8f37c709b2fbc",
+          "bytes": 71320661,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "mokashi/geo/7_M_R_2/barcodes.tsv.gz",
+          "description": "Male Reference Rep2: Cell Ranger barcodes.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5244nnn/GSM5244439/suppl/GSM5244439_7_M_R_2_barcodes.tsv.gz",
+          "sha256": "fdf67dc0d1ad00f1515cfc092ee44e2320ebe76041f66a5d4e3e9f52eeaeebdc",
+          "bytes": 84760,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "mokashi/geo/7_M_R_2/features.tsv.gz",
+          "description": "Male Reference Rep2: Cell Ranger features.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5244nnn/GSM5244439/suppl/GSM5244439_7_M_R_2_features.tsv.gz",
+          "sha256": "ecd0f97bd9b487d1294412721da1e0b4ae7f76e2469f91460f84f4f558513c96",
+          "bytes": 124303,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "mokashi/geo/7_M_R_2/matrix.mtx.gz",
+          "description": "Male Reference Rep2: Cell Ranger matrix.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5244nnn/GSM5244439/suppl/GSM5244439_7_M_R_2_matrix.mtx.gz",
+          "sha256": "db0d317b9767ab9fcb09ed2a14f5a899942e2c3da7d6c7fe02760a5e9984a3cc",
+          "bytes": 58397322,
+          "accessed_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "SCEA:E-GEOD-172231",
+      "type": "author_files",
+      "label": "The authors' per-cell table submitted to SCEA (E-GEOD-172231)",
+      "description": "cells.txt: run, barcode, the authors' cell name, inferred cell type, cluster and SCEA's standardised label for every cell.",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/sc_experiments/E-GEOD-172231/",
+      "accessed_at": "2026-10-21",
+      "files": [
+        {
+          "path": "mokashi/scea_cells.txt",
+          "description": "The authors' per-cell table.",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/sc_experiments/E-GEOD-172231/E-GEOD-172231.cells.txt",
+          "sha256": "cf659c9a01a1ae7f4452a19592bca7930cc2683f7bf91452593686fae5413393",
+          "bytes": 17534793,
+          "accessed_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "FBlc0005420",
+      "type": "previous_load",
+      "label": "scRNAseq_2021_Mokashi_CTRL",
+      "description": "The old FlyBase/SCEA load this project replaces (reference samples only, types merged per sex from SCEA labels, read from VFB production); used as a mapping cross-check.",
+      "url": "https://virtualflybrain.org/reports/FBlc0005420",
+      "accessed_at": "2026-10-19"
+    }
+  ],
+  "software": [
+    {
+      "id": "claude-code",
+      "type": "tool",
+      "label": "Claude Code",
+      "version": "2.1.303-2.1.306",
+      "description": "Agentic CLI that ran the session (orchestrator), stages 1-5."
+    },
+    {
+      "id": "ols4",
+      "type": "service",
+      "label": "OLS4 (Ontology Lookup Service)",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "accessed_at": "2026-10-16",
+      "description": "FBbt / FBdv / FBcv lookup during mapping (OLS MCP) and term verification."
+    },
+    {
+      "id": "vfb-pdb",
+      "type": "service",
+      "label": "VFB production (neo4j)",
+      "url": "https://pdb.virtualflybrain.org",
+      "accessed_at": "2026-10-16",
+      "description": "Publication FBrf0249767 resolved by PMID (vfb_scrnaseq.pub); the old load FBlc0005420 read for the cross-check."
+    },
+    {
+      "id": "flybase-chado",
+      "type": "service",
+      "label": "FlyBase Chado",
+      "version": "FB2026_03 (data last modified 2026-08-29)",
+      "url": "https://chado.flybase.org",
+      "accessed_at": "2026-10-16",
+      "description": "Annotation ids and FBgn ids mapped to current FlyBase genes (update_gene_ids.py)."
+    },
+    {
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
+      "version": "2.5.1"
+    },
+    {
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
+      "version": "3.0.5"
+    },
+    {
+      "id": "pyyaml",
+      "type": "library",
+      "label": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
+      "version": "1.11.1",
+      "description": "linkml-validate and linkml-convert (flat RDF)."
+    },
+    {
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
+      "version": "1.11.1"
+    },
+    {
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
+      "version": "0.5.0",
+      "description": "Metadata OWL."
+    },
+    {
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
+      "version": "1.9.11",
+      "description": "OFN to OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "id": "psql",
+      "type": "tool",
+      "label": "psql",
+      "version": "14.15",
+      "description": "FlyBase Chado queries."
+    },
+    {
+      "id": "python",
+      "type": "language",
+      "label": "Python",
+      "version": "3.14.3",
+      "description": "Pipeline environment (uv-managed)."
+    },
+    {
+      "id": "ncbi-geo",
+      "type": "service",
+      "label": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/",
+      "accessed_at": "2026-10-19",
+      "description": "Series and Sample SOFT metadata (build_samples_from_geo.py) and the per-sample matrices."
+    },
+    {
+      "id": "scea",
+      "type": "service",
+      "label": "EMBL-EBI Single Cell Expression Atlas",
+      "url": "https://www.ebi.ac.uk/gxa/sc/experiments/E-GEOD-172231",
+      "accessed_at": "2026-10-21",
+      "description": "The authors' per-cell table (cells.txt, FTP)."
+    },
+    {
+      "id": "vfb-jupyter",
+      "type": "service",
+      "label": "VFB JupyterLab server (ubuntu.virtualflybrain.org)",
+      "accessed_at": "2026-10-20",
+      "description": "240 GB host for the re-run of the authors' script (R 4.0.3, Seurat 3.2.3); the re-run was not used."
+    }
+  ],
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "role": "orchestrator",
+      "label": "Claude Opus 5.5",
+      "provider": "Anthropic",
+      "description": "Main Claude Code session: scoping (paper, GEO, SCEA, the authors' script, the old load), the re-run attempt, sample and cluster builds, the type mappings, expression (annotation-id gene mapping) and builds. No subagents."
+    }
+  ]
+}
