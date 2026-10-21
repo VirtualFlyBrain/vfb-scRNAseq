@@ -1,0 +1,420 @@
+{
+  "project": "baker_2021",
+  "created_at": "2026-10-19",
+  "updated_at": "2026-10-21",
+  "summary": "Baker et al. 2021, 10x scRNA-seq of adult brains of wild-type Canton S (B) flies after acute consumption of sucrose or sucrose with cocaine (GEO GSE152495); replaces the old FlyBase/SCEA load FBlc0005515 with fresh VFBseq ids. Sucrose (control) samples only: 4 Samples / 4 Assays (2 sexes x 2 replicates). One Clustering with the authors' 36 clusters (all 8 samples integrated, resolution 0.8) restricted to the 43,824 sucrose cells, from the authors' complete per-cell table in SCEA (E-GEOD-152495.cells.txt): 22 loaded (adult neurotransmitter-class and cell-type terms), 14 held. Summary expression as CPM from the sucrose libraries' GEO matrices (17,448 genes x 43,824 cells).",
+  "decisions": [
+    {
+      "date": "2026-10-08",
+      "by": "curator",
+      "decision": "Map to cell-level FBbt terms only (a tissue or organ author term maps to its cell-level equivalent, else the type is held)."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Clusters with no FBbt term are held: listed in mapping.tsv with a hold_reason but not loaded (no VFBseq id, entity or expression rows). Their cells still count towards the Dataset's gene counts."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Summary expression is computed as CPM for every dataset."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Narrow a generic type by the dissected tissue only where the tissue makes the tissue-specific FBbt term exact; hold clusters that could only be typed as cell or neuron (or stage-specific versions); load glia under a glial-cell term."
+    },
+    {
+      "date": "2026-10-19",
+      "by": "curator",
+      "decision": "Sucrose (control) samples only (as the old load); the authors' 36 clusters, made with all 8 samples, restricted to the sucrose cells."
+    },
+    {
+      "date": "2026-10-19",
+      "by": "curator",
+      "decision": "Samples: one per GSM (20 pooled brains, one 10x library); adult stage (3-5 days post-eclosion; no FBdv term covers days 3-5 only); adult brain; sex from GEO; Canton S (B), no stock named (not linked)."
+    },
+    {
+      "date": "2026-10-21",
+      "by": "pipeline",
+      "decision": "Per-cell clusters from the authors' complete per-cell table in SCEA's FTP folder (E-GEOD-152495.cells.txt; all 86,223 cells the authors' script's filters keep, every sample equal), typed by the authors' own 'Inferred cell type' (SCEA's standardised label kept as author_scea_label). SCEA's experiment-design download covers only the cells SCEA's own reprocessing kept. A re-run of the authors' script (Seurat 3.2.3 / sctransform 0.3.2, CRAN snapshot 2021-01-15, on a 240 GB VFB server) gave 36 clusters but a different partition (ARI 0.48 against the authors' labels), so it was not used."
+    },
+    {
+      "date": "2026-10-21",
+      "by": "curator",
+      "decision": "Mapping per author type (the calls shared with Mokashi 2021): adult neurotransmitter-class terms ('Central brain ...' to the class; type 2 monoaminergic to adult aminergic neuron); adult CNS glial cell (Glia), astrocyte-like glial cell, Kenyon cell, olfactory projection neuron, optic lobe neuron ('Optic lobe': broad), eye photoreceptor cell; Tachykinin/neuropeptidergic neurons to adult peptidergic neuron (broad, corrected after review). Held: mixed-structure clusters, 'Neuropeptides/cholinergic neurons' and 'GABAergic and monoaminergic neurons' (co-expression not stated), 'Central brain neurons type A' (typeable only as neuron)."
+    },
+    {
+      "date": "2026-10-21",
+      "by": "pipeline",
+      "decision": "Expression from the four sucrose libraries' GEO matrices side by side (combine_matrices.py), as CPM; the features are FlyBase annotation ids from the authors' NCBI GenBank reference (Dmel_CG...), mapped to genes in Chado (update_gene_ids.py features_keyed_by: annotation_id): 17,451 current, 3 merges, 30 dropped."
+    },
+    {
+      "date": "2026-10-21",
+      "by": "curator",
+      "decision": "All mapping.tsv rows reviewed by the curator (mapping.tsv `reviewed`)."
+    }
+  ],
+  "checks": [
+    {
+      "date": "2026-10-21",
+      "check": "The authors' per-cell table (E-GEOD-152495.cells.txt) against the authors' script's filters on the GEO matrices.",
+      "result": "All 86,223 cells in 36 clusters; every sample's count equal."
+    },
+    {
+      "date": "2026-10-21",
+      "check": "Memberships against the combined sucrose matrix.",
+      "result": "All 43,824 sucrose cells found."
+    },
+    {
+      "date": "2026-10-21",
+      "check": "verify_mappings.py: every FBbt term in the mappings looked up in OLS (FBbt 2026-10-01).",
+      "result": "12 terms current, not obsolete, labels match."
+    },
+    {
+      "date": "2026-10-21",
+      "check": "FBbt, FBdv and FBcv terms on the Samples, Assays and Dataset looked up in OLS.",
+      "result": "All current (adult stage, adult brain, single-cell RNA-Seq, 10x sequencing)."
+    },
+    {
+      "date": "2026-10-21",
+      "check": "Marker spot checks in the expression output.",
+      "result": "Gad1 0.98 central-brain GABAergic, VGlut1 1.0 glutamatergic, ple 0.81 / Vmat 0.94 dopaminergic, alrm / repo glia, ey Kenyon cells, ninaE 0.90 photoreceptors, Tk 1.0 tachykinin / neuropeptidergic."
+    }
+  ],
+  "people": [
+    {
+      "id": "ORCID:0000-0002-1373-1705",
+      "label": "Clare Pilgrim",
+      "role": "curator",
+      "username": "Clare72"
+    }
+  ],
+  "pipeline": {
+    "id": "vfb-scrnaseq",
+    "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
+    "version": "0.0.0",
+    "commit": "595193f",
+    "uncommitted_changes": true
+  },
+  "ontologies": [
+    {
+      "id": "FBbt",
+      "label": "Drosophila gross anatomy ontology",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBdv",
+      "label": "Drosophila developmental ontology",
+      "version": "2026-09-30",
+      "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-09-30/fbdv.owl",
+      "accessed_via": "OLS4 API; local fbdv.obo in .cache (stage definitions)",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "accessed_at": "2026-10-16"
+    },
+    {
+      "id": "FBcv",
+      "label": "FlyBase controlled vocabulary",
+      "version": "2026-10-01",
+      "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-10-01/fbcv.owl",
+      "accessed_via": "OLS4 API",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "accessed_at": "2026-10-16"
+    }
+  ],
+  "data_sources": [
+    {
+      "id": "10.1101/gr.268037.120",
+      "type": "publication",
+      "label": "The Drosophila brain on cocaine at single-cell resolution",
+      "xrefs": [
+        "PMID:34035044",
+        "PMCID:PMC8494231",
+        "FlyBase:FBrf0251482"
+      ],
+      "description": "Full text and the authors' analysis script read for the scope, samples, filters and clustering.",
+      "url": "https://doi.org/10.1101/gr.268037.120",
+      "files": [
+        {
+          "path": "supp/PMC8494231.jats.xml",
+          "description": "JATS full text, NCBI efetch (db=pmc).",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=PMC8494231",
+          "sha256": "d22d31fa80d5926ed68b1c04e3e6571e472d53239108ded822f134b38941d891",
+          "bytes": 170471,
+          "accessed_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "GSE152495",
+      "type": "dataset",
+      "label": "The Drosophila Brain on Cocaine at Single Cell Resolution",
+      "xrefs": [
+        "BioProject:PRJNA639538",
+        "SRA:SRP267371"
+      ],
+      "description": "GEO series: 8 10x libraries, a Cell Ranger filtered matrix each; the four sucrose libraries used.",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152495",
+      "accessed_at": "2026-10-19",
+      "files": [
+        {
+          "path": "baker/geo/1_S1_L001/barcodes.tsv.gz",
+          "description": "Female Sucrose Rep 1: Cell Ranger barcodes.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4616nnn/GSM4616550/suppl/GSM4616550_1_S1_L001_barcodes.tsv.gz",
+          "sha256": "04c1e0875c4f53fb3de21e4b31d83eaba0fb8e8eb67599f0e2ca3cd955334256",
+          "bytes": 46342,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "baker/geo/1_S1_L001/features.tsv.gz",
+          "description": "Female Sucrose Rep 1: Cell Ranger features.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4616nnn/GSM4616550/suppl/GSM4616550_1_S1_L001_features.tsv.gz",
+          "sha256": "df4efb8c53f7c2cf10ec9e763ea39d4fe102202eff98ee56630361e25f47d5f3",
+          "bytes": 124303,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "baker/geo/1_S1_L001/matrix.mtx.gz",
+          "description": "Female Sucrose Rep 1: Cell Ranger matrix.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4616nnn/GSM4616550/suppl/GSM4616550_1_S1_L001_matrix.mtx.gz",
+          "sha256": "3121cb8b4bcef6bf41a75b49874fdd6383d2489e7f708568c82f941b160e238e",
+          "bytes": 31609555,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "baker/geo/2_S2_L001/barcodes.tsv.gz",
+          "description": "Female Sucrose Rep 2: Cell Ranger barcodes.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4616nnn/GSM4616551/suppl/GSM4616551_2_S2_L001_barcodes.tsv.gz",
+          "sha256": "e18ee118296dc658a8cdf6f85b887f422a394410a63f74817d78413c2408223d",
+          "bytes": 58851,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "baker/geo/2_S2_L001/features.tsv.gz",
+          "description": "Female Sucrose Rep 2: Cell Ranger features.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4616nnn/GSM4616551/suppl/GSM4616551_2_S2_L001_features.tsv.gz",
+          "sha256": "9b4867da25982de7d808c5b8ee5bd7f90627a6f3729fc0e3817fe9239cb23daa",
+          "bytes": 124303,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "baker/geo/2_S2_L001/matrix.mtx.gz",
+          "description": "Female Sucrose Rep 2: Cell Ranger matrix.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4616nnn/GSM4616551/suppl/GSM4616551_2_S2_L001_matrix.mtx.gz",
+          "sha256": "43dbf4007993d916a52d8d480cf33b6a6964424fd1c079a7c257da5d956d25f3",
+          "bytes": 42536167,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "baker/geo/3_S3_L001/barcodes.tsv.gz",
+          "description": "Male Sucrose Rep 1: Cell Ranger barcodes.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4616nnn/GSM4616552/suppl/GSM4616552_3_S3_L001_barcodes.tsv.gz",
+          "sha256": "b5fb575f9828b8d31f26e6ea4adb116ee2254a37a6576bf34ecd371a4abeac67",
+          "bytes": 65867,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "baker/geo/3_S3_L001/features.tsv.gz",
+          "description": "Male Sucrose Rep 1: Cell Ranger features.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4616nnn/GSM4616552/suppl/GSM4616552_3_S3_L001_features.tsv.gz",
+          "sha256": "f65ed3a4346e5e16daa51d911720521c9fb189ee3682ca1b8c5693425f735c2a",
+          "bytes": 124303,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "baker/geo/3_S3_L001/matrix.mtx.gz",
+          "description": "Male Sucrose Rep 1: Cell Ranger matrix.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4616nnn/GSM4616552/suppl/GSM4616552_3_S3_L001_matrix.mtx.gz",
+          "sha256": "0309cfb195dfb17b4ac69dbf9bd01cb3c65b26b9c46f055b6df1cb4be947dd1b",
+          "bytes": 45656534,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "baker/geo/4_S4_L001/barcodes.tsv.gz",
+          "description": "Male Sucrose Rep 2: Cell Ranger barcodes.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4616nnn/GSM4616553/suppl/GSM4616553_4_S4_L001_barcodes.tsv.gz",
+          "sha256": "8da0584625667e587229da1b95620b5eb5a761d013a22c34f23d05b203fef64b",
+          "bytes": 55810,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "baker/geo/4_S4_L001/features.tsv.gz",
+          "description": "Male Sucrose Rep 2: Cell Ranger features.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4616nnn/GSM4616553/suppl/GSM4616553_4_S4_L001_features.tsv.gz",
+          "sha256": "c5b10ac9e920bbfdce2f2581193b5ff0b7d9e0d81d2a08838eb6220b8b9e6c81",
+          "bytes": 124303,
+          "accessed_at": "2026-10-21"
+        },
+        {
+          "path": "baker/geo/4_S4_L001/matrix.mtx.gz",
+          "description": "Male Sucrose Rep 2: Cell Ranger matrix.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4616nnn/GSM4616553/suppl/GSM4616553_4_S4_L001_matrix.mtx.gz",
+          "sha256": "a4bcd40e16cfce4960a0df707f49ce69a8129208873e9707372afa0492a21e36",
+          "bytes": 40278631,
+          "accessed_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "SCEA:E-GEOD-152495",
+      "type": "author_files",
+      "label": "The authors' per-cell table submitted to SCEA (E-GEOD-152495)",
+      "description": "cells.txt: run, barcode, the authors' cell name, inferred cell type, cluster and SCEA's standardised label for every cell.",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/sc_experiments/E-GEOD-152495/",
+      "accessed_at": "2026-10-21",
+      "files": [
+        {
+          "path": "baker/scea_cells.txt",
+          "description": "The authors' per-cell table.",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/sc_experiments/E-GEOD-152495/E-GEOD-152495.cells.txt",
+          "sha256": "75b064fffad742241a37886bbfc31f2e60aaf516856f17ce481f788ee0894978",
+          "bytes": 13620734,
+          "accessed_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "FBlc0005515",
+      "type": "previous_load",
+      "label": "scRNAseq_2021_Baker_CTRL",
+      "description": "The old FlyBase/SCEA load this project replaces (sucrose samples only, types merged per sex from SCEA labels, read from VFB production); used as a mapping cross-check.",
+      "url": "https://virtualflybrain.org/reports/FBlc0005515",
+      "accessed_at": "2026-10-19"
+    }
+  ],
+  "software": [
+    {
+      "id": "claude-code",
+      "type": "tool",
+      "label": "Claude Code",
+      "version": "2.1.303-2.1.306",
+      "description": "Agentic CLI that ran the session (orchestrator), stages 1-5."
+    },
+    {
+      "id": "ols4",
+      "type": "service",
+      "label": "OLS4 (Ontology Lookup Service)",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "accessed_at": "2026-10-16",
+      "description": "FBbt / FBdv / FBcv lookup during mapping (OLS MCP) and term verification."
+    },
+    {
+      "id": "vfb-pdb",
+      "type": "service",
+      "label": "VFB production (neo4j)",
+      "url": "https://pdb.virtualflybrain.org",
+      "accessed_at": "2026-10-16",
+      "description": "Publication FBrf0251482 resolved by PMID (vfb_scrnaseq.pub); the old load FBlc0005515 read for the cross-check."
+    },
+    {
+      "id": "flybase-chado",
+      "type": "service",
+      "label": "FlyBase Chado",
+      "version": "FB2026_03 (data last modified 2026-08-29)",
+      "url": "https://chado.flybase.org",
+      "accessed_at": "2026-10-16",
+      "description": "Annotation ids and FBgn ids mapped to current FlyBase genes (update_gene_ids.py)."
+    },
+    {
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
+      "version": "2.5.1"
+    },
+    {
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
+      "version": "3.0.5"
+    },
+    {
+      "id": "pyyaml",
+      "type": "library",
+      "label": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
+      "version": "1.11.1",
+      "description": "linkml-validate and linkml-convert (flat RDF)."
+    },
+    {
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
+      "version": "1.11.1"
+    },
+    {
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
+      "version": "0.5.0",
+      "description": "Metadata OWL."
+    },
+    {
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
+      "version": "1.9.11",
+      "description": "OFN to OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "id": "psql",
+      "type": "tool",
+      "label": "psql",
+      "version": "14.15",
+      "description": "FlyBase Chado queries."
+    },
+    {
+      "id": "python",
+      "type": "language",
+      "label": "Python",
+      "version": "3.14.3",
+      "description": "Pipeline environment (uv-managed)."
+    },
+    {
+      "id": "ncbi-geo",
+      "type": "service",
+      "label": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/",
+      "accessed_at": "2026-10-19",
+      "description": "Series and Sample SOFT metadata (build_samples_from_geo.py) and the per-sample matrices."
+    },
+    {
+      "id": "scea",
+      "type": "service",
+      "label": "EMBL-EBI Single Cell Expression Atlas",
+      "url": "https://www.ebi.ac.uk/gxa/sc/experiments/E-GEOD-152495",
+      "accessed_at": "2026-10-21",
+      "description": "The authors' per-cell table (cells.txt, FTP)."
+    },
+    {
+      "id": "vfb-jupyter",
+      "type": "service",
+      "label": "VFB JupyterLab server (ubuntu.virtualflybrain.org)",
+      "accessed_at": "2026-10-20",
+      "description": "240 GB host for the re-run of the authors' script (R 4.0.3, Seurat 3.2.3); the re-run was not used."
+    }
+  ],
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "role": "orchestrator",
+      "label": "Claude Opus 5.5",
+      "provider": "Anthropic",
+      "description": "Main Claude Code session: scoping (paper, GEO, SCEA, the authors' script, the old load), the re-run attempt, sample and cluster builds, the type mappings, expression (annotation-id gene mapping) and builds. No subagents."
+    }
+  ]
+}
