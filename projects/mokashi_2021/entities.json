@@ -1,0 +1,522 @@
+[
+  {
+    "type": "Publication",
+    "id": "FlyBase:FBrf0249767",
+    "neo_label": "pub"
+  },
+  {
+    "type": "Dataset",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "name": "scRNAseq data from Mokashi (2021)",
+    "title": "Developmental Alcohol Exposure in Drosophila: Effects on Adult Phenotypes and Gene Expression in the Brain",
+    "accession": "GSE172231",
+    "neo_label": "DataSet",
+    "site": "vfb:GEO",
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "assay_type": "FBcv:0009000",
+    "total_gene_count": 14182,
+    "filtered_gene_count": 3664,
+    "publication": "FlyBase:FBrf0249767"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003189",
+    "name": "Brains, 3-5 days post-eclosion, Female rep 1 (Mokashi 2021)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003190"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00005369",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003191",
+    "name": "Brains, 3-5 days post-eclosion, Female rep 2 (Mokashi 2021)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003192"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00005369",
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003193",
+    "name": "Brains, 3-5 days post-eclosion, Male rep 1 (Mokashi 2021)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003194"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00005369",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003195",
+    "name": "Brains, 3-5 days post-eclosion, Male rep 2 (Mokashi 2021)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003196"
+    ],
+    "neo_label": "Sample",
+    "sample_tissue": [
+      "FBbt:00003624"
+    ],
+    "stage": "FBdv:00005369",
+    "sex": "FBbt:00007004"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003190",
+    "name": "Brains, 3-5 days post-eclosion, Female rep 1, 10x library (Mokashi 2021)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003189"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "dbxref": [
+      "GSM5244433",
+      "SRX10616068",
+      "SAMN18759657"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003192",
+    "name": "Brains, 3-5 days post-eclosion, Female rep 2, 10x library (Mokashi 2021)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003191"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "dbxref": [
+      "GSM5244435",
+      "SRX10616070",
+      "SAMN18759663"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003194",
+    "name": "Brains, 3-5 days post-eclosion, Male rep 1, 10x library (Mokashi 2021)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003193"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "dbxref": [
+      "GSM5244437",
+      "SRX10616072",
+      "SAMN18759661"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003196",
+    "name": "Brains, 3-5 days post-eclosion, Male rep 2, 10x library (Mokashi 2021)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003195"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "dbxref": [
+      "GSM5244439",
+      "SRX10616074",
+      "SAMN18759659"
+    ],
+    "neo_label": "Assay"
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "name": "Mokashi 2021 adult brain clusters (reference medium)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "neo_label": "Clustering",
+    "associated_sample_or_assay_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00003189",
+      "http://virtualflybrain.org/reports/VFBseq_00003191",
+      "http://virtualflybrain.org/reports/VFBseq_00003193",
+      "http://virtualflybrain.org/reports/VFBseq_00003195"
+    ]
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003217",
+    "name": "Optic lobe neurons cluster 0 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 5110,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003702"
+    ],
+    "total_gene_count": 10875,
+    "filtered_gene_count": 919
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003218",
+    "name": "5-HT and DA neurons cluster 1 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 4043,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058201"
+    ],
+    "total_gene_count": 10909,
+    "filtered_gene_count": 1298
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003219",
+    "name": "Glutamatergic neurons cluster 2 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 3920,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 11303,
+    "filtered_gene_count": 1816
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003220",
+    "name": "Glutamatergic neurons cluster 4 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 3095,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 10166,
+    "filtered_gene_count": 1038
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003221",
+    "name": "Surface glia cluster 5 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 2652,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00100500"
+    ],
+    "total_gene_count": 10129,
+    "filtered_gene_count": 818
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003222",
+    "name": "Optic lobe neurons cluster 7 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1980,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00003702"
+    ],
+    "total_gene_count": 9641,
+    "filtered_gene_count": 893
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003223",
+    "name": "GABAergic neurons cluster 8 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1956,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 10285,
+    "filtered_gene_count": 1665
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003224",
+    "name": "GABAergic neurons cluster 9 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1965,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 9965,
+    "filtered_gene_count": 1269
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003225",
+    "name": "Olfactory projection neurons cluster 10 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1500,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00051299"
+    ],
+    "total_gene_count": 9299,
+    "filtered_gene_count": 867
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003226",
+    "name": "Kenyon cells cluster 12 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1548,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049825"
+    ],
+    "total_gene_count": 9557,
+    "filtered_gene_count": 1429
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003227",
+    "name": "Glutamatergic neurons cluster 13 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1363,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 9339,
+    "filtered_gene_count": 1260
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003228",
+    "name": "GABAergic neurons cluster 14 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1459,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 9607,
+    "filtered_gene_count": 1362
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003229",
+    "name": "GABAergic neurons cluster 16 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1259,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 9952,
+    "filtered_gene_count": 2226
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003230",
+    "name": "Cholinergic neurons of central brain cluster 17 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1306,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058205"
+    ],
+    "total_gene_count": 10254,
+    "filtered_gene_count": 2281
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003231",
+    "name": "Glutamaterigic neurons of central brain cluster 20 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1181,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058208"
+    ],
+    "total_gene_count": 9564,
+    "filtered_gene_count": 1661
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003232",
+    "name": "GABAergic neurons of central brain cluster 21 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 1132,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 9606,
+    "filtered_gene_count": 1716
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003233",
+    "name": "Astrocytes cluster 23 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 970,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047841"
+    ],
+    "total_gene_count": 9244,
+    "filtered_gene_count": 727
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003234",
+    "name": "Astrocytes cluster 24 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 967,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00047841"
+    ],
+    "total_gene_count": 9529,
+    "filtered_gene_count": 2223
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003235",
+    "name": "Kenyon cells cluster 25 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 838,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049825"
+    ],
+    "total_gene_count": 8804,
+    "filtered_gene_count": 1157
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003236",
+    "name": "GABAergic neurons cluster 26 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 815,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8816,
+    "filtered_gene_count": 1039
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003237",
+    "name": "Cells of ellipsoid body and fan shaped body cluster 28 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 578,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00049819"
+    ],
+    "total_gene_count": 8448,
+    "filtered_gene_count": 1147
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003238",
+    "name": "Photoreceptor cells cluster 29 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 639,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00006009"
+    ],
+    "total_gene_count": 8985,
+    "filtered_gene_count": 1081
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003239",
+    "name": "GABAergic neurons cluster 30 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 457,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058207"
+    ],
+    "total_gene_count": 8258,
+    "filtered_gene_count": 1238
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003240",
+    "name": "Adult dopaminergic neurons cluster 36 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 220,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058206"
+    ],
+    "total_gene_count": 7155,
+    "filtered_gene_count": 762
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003241",
+    "name": "Neuropeptides in perhaps cholinergic neurons cluster 38 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 133,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058202"
+    ],
+    "total_gene_count": 7171,
+    "filtered_gene_count": 1210
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003242",
+    "name": "Tachykinin/neuropeptidergic neurons cluster 42 (Mokashi 2021 adult brain clusters (reference medium)) (Mokashi 2021)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
+    "cell_number": 42,
+    "neo_label": "Cluster",
+    "cell_type": [
+      "FBbt:00058202"
+    ],
+    "total_gene_count": 6539,
+    "filtered_gene_count": 2541
+  }
+]
