@@ -1821,6 +1821,18 @@ labels) with fresh VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-19.
   classes in one name without stated co-expression ("Neuropeptides/cholinergic neurons";
   curator: two terms only where the annotations or paper state co-expression, else hold);
   "Developmental genes". 26 clusters mapped (13 terms), 17 held (8 untyped, 9 no term).
+- **Expression (stage 4).** From the GEO matrices of the four reference libraries (Cell
+  Ranger filtered, raw UMI counts), side by side (`combine_matrices.py`; cells `<GEO sample
+  dir>_<barcode>`), as CPM. The features are FlyBase annotation ids from the authors' NCBI
+  GenBank reference (`Dmel_CG17636`; the authors' script maps them with FlyBase's
+  `fbgn_annotation_ID` table): `features_keyed_by: annotation_id` with `annotation_id_prefix:
+  Dmel_` (a new `update_gene_ids.py` mode: the gene Chado records for the annotation id):
+  17,451 current (3 merges), 30 annotation ids no longer recorded against a gene dropped.
+  17,448 genes; 26 clusters, 35,643 rows (extent > 0.2); the 17 held clusters (15,037
+  cells) left out. Markers fit the author types (*Gad1* 0.99 GABAergic, *VGlut1* 1.0
+  glutamatergic, *ple* / *Vmat* dopaminergic, *alrm* astrocytes, *ey* / *Mef2* Kenyon cells,
+  *ninaE* 0.88 photoreceptors, *Tk* 0.93 tachykinin / neuropeptidergic); *repo* is below the
+  cutoff everywhere.
 
 ## Baker 2021 (adult brain, acute cocaine study)
 
