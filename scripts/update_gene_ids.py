@@ -13,6 +13,8 @@ need no Chado access:
   split      a retired id of more than one current gene  -> dropped (reads can't be
              attributed to the new genes; curator decision 2026-10-06)
   withdrawn  no current gene                             -> dropped
+  not_gene   a current FlyBase feature that is not a gene (e.g. an FBti
+             transposable-element insertion)              -> dropped
 
 h5ad projects (`expression.source: h5ad`) are keyed by gene **symbol** (the
 matrix's gene names): a symbol takes the FBgn the authors' files give it (`var` /
@@ -68,18 +70,24 @@ COLUMNS = ["input_fbgn", "input_symbol", "status", "current_fbgn", "current_symb
 QUERY = """
 with ids as (select unnest(string_to_array('{ids}', ',')) u),
 cur as (select ids.u, f.uniquename as cur, f.name as sym from ids
-        join feature f on f.uniquename = ids.u and not f.is_obsolete),
+        join feature f on f.uniquename = ids.u and not f.is_obsolete
+                       and f.uniquename like 'FBgn%'),
+nongene as (select ids.u from ids
+        join feature f on f.uniquename = ids.u and not f.is_obsolete
+                       and f.uniquename not like 'FBgn%'),
 sec as (select ids.u, f.uniquename as cur, f.name as sym from ids
         join dbxref d on d.accession = ids.u
         join db on db.db_id = d.db_id and db.name = 'FlyBase'
         join feature_dbxref fd on fd.dbxref_id = d.dbxref_id and not fd.is_current
         join feature f on f.feature_id = fd.feature_id and not f.is_obsolete
                        and f.uniquename like 'FBgn%'
-        where ids.u not in (select u from cur))
+        where ids.u not in (select u from cur) and ids.u not in (select u from nongene))
 select u, 'current', cur, sym from cur
 union all select u, 'secondary', cur, sym from sec
+union all select u, 'not_gene', '', '' from nongene
 union all select u, 'withdrawn', '', '' from ids
-  where u not in (select u from cur) and u not in (select u from sec);
+  where u not in (select u from cur) and u not in (select u from sec)
+    and u not in (select u from nongene);
 """
 
 

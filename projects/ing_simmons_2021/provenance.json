@@ -1,8 +1,8 @@
 {
   "project": "ing_simmons_2021",
   "created_at": "2026-10-18",
-  "updated_at": "2026-10-18",
-  "summary": "Ing-Simmons et al. 2021 (Nat Genet), 10x scRNA-seq of whole embryos at 2.5-3.5 h after egg laying (ArrayExpress E-MTAB-9304); replaces the old FlyBase/SCEA load FBlc0006191 with fresh VFBseq ids. Controls only (the gd7 / Toll rm9/rm10 / Toll10B embryos of mutant mothers, fate-transformed, left out): 2 Samples / 2 Assays (embryonic stage; embryo; replicate 1 linked to PCNA[EGFP] by GENO has_genotype). One Clustering with the authors' 15 clusters (all genotypes integrated) restricted to their 7,739 control cells, from SCEA's per-cell author labels: 13 loaded (embryonic germ-layer and structure cell terms; the cellularisation clusters also at embryonic stage 5), 2 neural clusters held. Summary expression as CPM from SCEA's quantification (16,786 genes x 7,739 cells).",
+  "updated_at": "2026-10-22",
+  "summary": "Ing-Simmons et al. 2021 (Nat Genet), 10x scRNA-seq of whole embryos at 2.5-3.5 h after egg laying (ArrayExpress E-MTAB-9304); replaces the old FlyBase/SCEA load FBlc0006191 with fresh VFBseq ids. Controls only (the gd7 / Toll rm9/rm10 / Toll10B embryos of mutant mothers, fate-transformed, left out): 2 Samples / 2 Assays (embryonic stage; embryo; replicate 1 linked to PCNA[EGFP] by GENO has_genotype). One Clustering with the authors' 15 clusters (all genotypes integrated) restricted to their 7,739 control cells, from SCEA's per-cell author labels: 13 loaded (embryonic germ-layer and structure cell terms; the cellularisation clusters also at embryonic stage 5), 2 neural clusters held. Summary expression as CPM from SCEA's quantification (14,136 genes x 7,739 cells).",
   "decisions": [
     {
       "date": "2026-10-08",
@@ -68,6 +68,11 @@
       "date": "2026-10-18",
       "by": "curator",
       "decision": "All 15 mapping.tsv rows reviewed by the curator (mapping.tsv `reviewed`)."
+    },
+    {
+      "date": "2026-10-22",
+      "by": "pipeline",
+      "decision": "Transposable-element insertions (2,650 FBti features of SCEA's reference) dropped from the expression output as not genes: update_gene_ids.py had kept any current FlyBase feature as a current gene; it now classes a current non-gene feature as not_gene (dropped), as the symbol-keyed projects already did (Calderon 2022). 466 rows removed; every gene row unchanged. 14,061 current, 76 secondary (1 merge); 148 withdrawn and 1 split dropped."
     }
   ],
   "checks": [
@@ -95,6 +100,11 @@
       "date": "2026-10-18",
       "check": "Marker spot checks in the expression output.",
       "result": "twi 0.92 in mesoderm2, Ance 0.94 in amnioserosa, pgc / nanos 0.95 in pole cells, fkh in terminal, slam in cellularisation2, Osi7 in trachea precursor, Apoltp / Tep4 in haemocytes2; PPO1 (~0.03) and Mlc2 (0.13) weak in this quantification."
+    },
+    {
+      "date": "2026-10-22",
+      "check": "Expression rows before and after dropping the FBti features.",
+      "result": "Identical apart from the 466 FBti rows: 46,789 rows, 14,136 genes."
     }
   ],
   "people": [
