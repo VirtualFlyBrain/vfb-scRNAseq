@@ -3,6 +3,8 @@
 # change its alignment (dims 2-3 alone vs. within 1-3), align dims 1-45 in chunks of 3, each
 # in a fresh R session (align_chunk.R), then cluster (cluster_aligned.R). Run from the repo
 # root; log in .cache/allen/chunks.log.
+# Method and parameters: Allen et al. 2020, aaron-allen/VNC_scRNAseq (Aaron M. Allen, GPL-3.0);
+# see README.md here.
 set -u
 log=.cache/allen/chunks.log
 R() { docker run --rm --platform linux/amd64 -v "$PWD/.cache/allen:/data" \

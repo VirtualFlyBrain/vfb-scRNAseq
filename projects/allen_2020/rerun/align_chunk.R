@@ -11,6 +11,8 @@
 # Usage (in the vfbseq/seurat:2.3.4 image, .cache/allen at /data):
 #   Rscript /work/align_chunk.R <first dim> <last dim>
 # Writes /data/rerun/aligned_<first>_<last>.rds (cells x dims, aligned embeddings).
+# Method and parameters: Allen et al. 2020, aaron-allen/VNC_scRNAseq (Aaron M. Allen, GPL-3.0);
+# see README.md here.
 
 library(Seurat)
 args <- as.integer(commandArgs(trailingOnly = TRUE))
