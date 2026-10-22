@@ -3,6 +3,8 @@
 # align_chunk.R) into the CCA-checkpoint object as the "cca.aligned" reduction and cluster
 # as the authors did (Louvain on 45 aligned dimensions, resolution 12). Writes
 # /data/rerun/clusters.tsv.gz (cell, cluster, sex, replicate, nGene, nUMI).
+# Method and parameters: Allen et al. 2020, aaron-allen/VNC_scRNAseq (Aaron M. Allen, GPL-3.0);
+# see README.md here.
 
 library(Seurat)
 out <- "/data/rerun"

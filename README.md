@@ -237,6 +237,14 @@ with a reason, not loaded); no routine new-term
 requests from expression alone; stage on Samples, on Clusters only when determined
 from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#general-curation-rules).
 
+## Licence
+
+MIT (`LICENSE`), which also carries the notice for the parts adapted from the
+atlas-chat / [Atlas-reporter](https://github.com/Cellular-Semantics/Atlas-reporter)
+template (MIT, Cellular Semantics). `projects/allen_2020/rerun/` reproduces the analysis
+of [aaron-allen/VNC_scRNAseq](https://github.com/aaron-allen/VNC_scRNAseq) (GPL-3.0); see
+its README.
+
 ## Status
 
 All seventeen projects are curated and built. Every mapped cluster has been reviewed (bar
