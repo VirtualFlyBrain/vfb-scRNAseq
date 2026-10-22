@@ -41,7 +41,7 @@ def test_publication_pub_node(entities):
     pubs = _one(entities, "Publication")
     assert len(pubs) == 1
     assert pubs[0]["id"].startswith("FlyBase:FBrf")
-    assert pubs[0]["neo_label"] == "pub"
+    assert pubs[0]["neo_label"] == ["pub"]
 
 
 def test_samples_sex_and_stock_curies(entities):

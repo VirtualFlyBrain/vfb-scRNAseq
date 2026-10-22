@@ -969,10 +969,12 @@ VFBseq:00002364 a FBcv:0003023 ;
     neo_custom:accession "GSE167266" ;
     neo_custom:filtered_gene_count 7154 ;
     neo_custom:total_gene_count 10698 ;
-    neo_property:nodeLabel "DataSet" ;
+    neo_property:nodeLabel "DataSet",
+        "hasScRNAseq",
+        "scRNAseq_DataSet" ;
     IAO:0000115 "A complete temporal transcription factor series in the fly visual system" ;
     OBI:0000312 FBcv:0009000 ;
-    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:licence vfb:VFBlicense_CC_BY_4_0 ;
     dcterms:references FlyBase:FBrf0253187 ;
     oboInOwl:hasDbXref vfb:GEO .
 

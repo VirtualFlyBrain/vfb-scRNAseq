@@ -1575,8 +1575,10 @@
         <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12747</neo_custom:filtered_gene_count>
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16363</neo_custom:total_gene_count>
         <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
+        <neo_property:nodeLabel>hasScRNAseq</neo_property:nodeLabel>
+        <neo_property:nodeLabel>scRNAseq_DataSet</neo_property:nodeLabel>
         <obo:IAO_0000115>Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly</obo:IAO_0000115>
-        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dc:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>
         <dc:references rdf:resource="http://flybase.org/reports/FBrf0252876"/>
         <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/ArrayExpress"/>
         <rdfs:label>scRNAseq data from Li (2022)</rdfs:label>

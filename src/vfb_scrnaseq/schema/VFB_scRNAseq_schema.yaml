@@ -302,7 +302,8 @@ slots:
       owl: AnnotationAssertion
   neo_label:
     slot_uri: neo_property:nodeLabel
-    description: neo4j node label to add to entity.
+    description: neo4j node label(s) to add to entity.
+    multivalued: true
     annotations:
       owl: AnnotationProperty
   gene:
@@ -313,7 +314,7 @@ slots:
       owl.template: |-
         {% if gene %}
         ClassAssertion ( 
-            Annotation ( neo_custom:hide_in_terminfo "{{hide_in_terminfo}}" )
+            Annotation ( neo_custom:hide_in_terminfo "{{hide_in_terminfo}}"^^xsd:boolean )
             Annotation ( neo_custom:expression_level "{{expression_level}}"^^xsd:float )
             {% if expression_extent %}
             Annotation ( neo_custom:expression_extent "{{expression_extent}}"^^xsd:float )
@@ -322,7 +323,7 @@ slots:
         {% endif %}
   hide_in_terminfo:
     slot_uri: neo_custom:hide_in_terminfo
-    description: Flag to hide expression edges in VFB Term Info pane. Range must be string - boolean changes capitalisation and does not add datatype anyway.
+    description: Flag to hide expression edges in VFB Term Info pane. Kept as the string "true" here (a LinkML boolean would change its capitalisation); the gene template types it xsd:boolean, as VFB's term-info indexer compares it with the boolean true.
   expression_extent:
     slot_uri: neo_custom:expression_extent
     description: Extent of expression of the given gene.

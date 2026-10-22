@@ -2,7 +2,9 @@
   {
     "type": "Publication",
     "id": "FlyBase:FBrf0251482",
-    "neo_label": "pub"
+    "neo_label": [
+      "pub"
+    ]
   },
   {
     "type": "Dataset",
@@ -10,9 +12,13 @@
     "name": "scRNAseq data from Baker (2021)",
     "title": "The Drosophila brain on cocaine at single-cell resolution",
     "accession": "GSE152495",
-    "neo_label": "DataSet",
+    "neo_label": [
+      "DataSet",
+      "scRNAseq_DataSet",
+      "hasScRNAseq"
+    ],
     "site": "vfb:GEO",
-    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "licence": "vfb:VFBlicense_CC_BY_4_0",
     "assay_type": "FBcv:0009000",
     "total_gene_count": 13673,
     "filtered_gene_count": 3634,
@@ -26,7 +32,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00003190"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00003624"
     ],
@@ -41,7 +49,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00003192"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00003624"
     ],
@@ -56,7 +66,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00003194"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00003624"
     ],
@@ -71,7 +83,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00003196"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00003624"
     ],
@@ -92,7 +106,9 @@
       "SRX8549641",
       "SAMN15238621"
     ],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -108,7 +124,9 @@
       "SRX8549642",
       "SAMN15238620"
     ],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -124,7 +142,9 @@
       "SRX8549643",
       "SAMN15238619"
     ],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -140,14 +160,18 @@
       "SRX8549644",
       "SAMN15238618"
     ],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "name": "Baker 2021 adult brain clusters (sucrose controls)",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
-    "neo_label": "Clustering",
+    "neo_label": [
+      "Clustering"
+    ],
     "associated_sample_or_assay_for_clustering": [
       "http://virtualflybrain.org/reports/VFBseq_00003189",
       "http://virtualflybrain.org/reports/VFBseq_00003191",
@@ -162,7 +186,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 3946,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00058208"
     ],
@@ -176,7 +202,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 3727,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00058207"
     ],
@@ -190,7 +218,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 3956,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00058208"
     ],
@@ -204,7 +234,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 3125,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00003702"
     ],
@@ -218,7 +250,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 1990,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00051299"
     ],
@@ -232,7 +266,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 1713,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00058207"
     ],
@@ -246,7 +282,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 1339,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00058205"
     ],
@@ -260,7 +298,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 1067,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00049825"
     ],
@@ -274,7 +314,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 1036,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00058207"
     ],
@@ -288,7 +330,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 960,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00100499"
     ],
@@ -302,7 +346,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 1201,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00003702"
     ],
@@ -316,7 +362,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 723,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00047841"
     ],
@@ -330,7 +378,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 1031,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00003702"
     ],
@@ -344,7 +394,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 729,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00100499"
     ],
@@ -358,7 +410,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 655,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00049825"
     ],
@@ -372,7 +426,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 550,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00058208"
     ],
@@ -386,7 +442,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 298,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00058201"
     ],
@@ -400,7 +458,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 180,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00058206"
     ],
@@ -414,7 +474,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 196,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00006009"
     ],
@@ -428,7 +490,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 109,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00058208"
     ],
@@ -442,7 +506,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 41,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00058202"
     ],
@@ -456,7 +522,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003197",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003188",
     "cell_number": 44,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "cell_type": [
       "FBbt:00058207"
     ],

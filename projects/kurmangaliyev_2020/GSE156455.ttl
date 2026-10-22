@@ -2881,10 +2881,12 @@ VFBseq:00000001 a FBcv:0003023 ;
     neo_custom:accession "GSE156455" ;
     neo_custom:filtered_gene_count 7473 ;
     neo_custom:total_gene_count 15751 ;
-    neo_property:nodeLabel "DataSet" ;
+    neo_property:nodeLabel "DataSet",
+        "hasScRNAseq",
+        "scRNAseq_DataSet" ;
     IAO:0000115 "Transcriptional Programs of Circuit Assembly in the Drosophila Visual System" ;
     OBI:0000312 FBcv:0009000 ;
-    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:licence vfb:VFBlicense_CC_BY_4_0 ;
     dcterms:references FlyBase:FBrf0247594 ;
     oboInOwl:hasDbXref vfb:GEO .
 
