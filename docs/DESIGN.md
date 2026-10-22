@@ -1649,8 +1649,10 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-18.
   "aggregated filtered counts": unnormalised UMI estimates, ~9% of values fractional),
   whose cell ids (`<BioSample>-<barcode>`) are those of the per-cell author labels; all
   7,739 control cells present. CPM over each cell's own counts; FBgn ids mapped to current
-  genes (16,711 current, 76 secondary with 1 merge; 148 withdrawn and 1 split dropped).
-  16,786 genes; 13 clusters, 47,255 rows (extent > 0.2); the 2 held neural clusters (695
+  genes (14,061 current, 76 secondary with 1 merge; dropped: 2,650 FBti
+  transposable-element insertions, not genes (2026-10-22: `update_gene_ids.py` had kept
+  them as current, as it took any current FlyBase feature), 148 withdrawn, 1 split).
+  14,136 genes; 13 clusters, 46,789 rows (extent > 0.2); the 2 held neural clusters (695
   cells) left out. Markers agree with the author types (*twi* 0.92 in mesoderm2, *Ance*
   0.94 in amnioserosa, *fkh* in terminal, *pgc* 0.95 / *nanos* 0.95 in pole cells, *slam*
   in cellularisation2, *Osi7* in trachea precursor, *Apoltp* / *Tep4* in haemocytes2).
