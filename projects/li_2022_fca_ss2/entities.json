@@ -2,7 +2,9 @@
   {
     "type": "Publication",
     "id": "FlyBase:FBrf0252876",
-    "neo_label": "pub"
+    "neo_label": [
+      "pub"
+    ]
   },
   {
     "type": "Dataset",
@@ -10,9 +12,13 @@
     "name": "scRNAseq data from Li (2022)",
     "title": "Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly",
     "accession": "E-MTAB-10628",
-    "neo_label": "DataSet",
+    "neo_label": [
+      "DataSet",
+      "scRNAseq_DataSet",
+      "hasScRNAseq"
+    ],
     "site": "vfb:ArrayExpress",
-    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "licence": "vfb:VFBlicense_CC_BY_4_0",
     "assay_type": "FBcv:0009001",
     "total_gene_count": 16293,
     "filtered_gene_count": 15011,
@@ -26,7 +32,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000779"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00005725"
     ],
@@ -44,7 +52,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000781"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00005725"
     ],
@@ -62,7 +72,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000783"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00003024"
     ],
@@ -80,7 +92,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000785"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00003024"
     ],
@@ -98,7 +112,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000787"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00004511"
     ],
@@ -113,7 +129,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000789"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00004511"
     ],
@@ -128,7 +146,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000791"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00005396"
     ],
@@ -143,7 +163,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000793"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00005396"
     ],
@@ -159,7 +181,9 @@
       "http://virtualflybrain.org/reports/VFBseq_00000795",
       "http://virtualflybrain.org/reports/VFBseq_00000796"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00003209"
     ],
@@ -179,7 +203,9 @@
       "http://virtualflybrain.org/reports/VFBseq_00000798",
       "http://virtualflybrain.org/reports/VFBseq_00000799"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00003209"
     ],
@@ -198,7 +224,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000801"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00007513"
     ],
@@ -213,7 +241,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000803"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00007513"
     ],
@@ -228,7 +258,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000805"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00004783"
     ],
@@ -243,7 +275,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000807"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00004783"
     ],
@@ -258,7 +292,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000809"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00003007"
     ],
@@ -276,7 +312,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000811"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00003007"
     ],
@@ -294,7 +332,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000813"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00003154"
     ],
@@ -309,7 +349,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000815"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00003154"
     ],
@@ -324,7 +366,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000817"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00004535"
     ],
@@ -339,7 +383,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000819"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00004535"
     ],
@@ -354,7 +400,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000821"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00004640"
     ],
@@ -369,7 +417,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000823"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00004640"
     ],
@@ -386,7 +436,9 @@
       "http://virtualflybrain.org/reports/VFBseq_00000826",
       "http://virtualflybrain.org/reports/VFBseq_00000827"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00004865"
     ],
@@ -401,7 +453,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000829"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00004959",
       "FBbt:00004965",
@@ -418,7 +472,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000831"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00004928"
     ],
@@ -433,7 +489,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000833"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00003018"
     ],
@@ -451,7 +509,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000835"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00003018"
     ],
@@ -469,7 +529,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000837"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00003037"
     ],
@@ -489,7 +551,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000839"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00003037"
     ],
@@ -509,7 +573,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000841"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00004729"
     ],
@@ -524,7 +590,9 @@
     "associated_assay": [
       "http://virtualflybrain.org/reports/VFBseq_00000843"
     ],
-    "neo_label": "Sample",
+    "neo_label": [
+      "Sample"
+    ],
     "sample_tissue": [
       "FBbt:00004729"
     ],
@@ -541,7 +609,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -553,7 +623,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -565,7 +637,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -577,7 +651,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -589,7 +665,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -601,7 +679,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -613,7 +693,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -625,7 +707,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -637,7 +721,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -649,7 +735,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -661,7 +749,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -673,7 +763,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -685,7 +777,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -697,7 +791,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -709,7 +805,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -721,7 +819,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -733,7 +833,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -745,7 +847,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -757,7 +861,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -769,7 +875,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -781,7 +889,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -793,7 +903,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -805,7 +917,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -817,7 +931,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -829,7 +945,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -841,7 +959,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -853,7 +973,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -865,7 +987,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -877,7 +1001,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -889,7 +1015,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -901,7 +1029,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -913,7 +1043,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -925,7 +1057,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -937,7 +1071,9 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Assay",
@@ -949,126 +1085,162 @@
     ],
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "dbxref": [],
-    "neo_label": "Assay"
+    "neo_label": [
+      "Assay"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "name": "Fly Cell Atlas Smart-seq2 Antenna",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000845",
     "name": "Fly Cell Atlas Smart-seq2 Body Wall",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000846",
     "name": "Fly Cell Atlas Smart-seq2 Fat Body",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "name": "Fly Cell Atlas Smart-seq2 Gut",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000848",
     "name": "Fly Cell Atlas Smart-seq2 Haltere",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000849",
     "name": "Fly Cell Atlas Smart-seq2 Heart",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000850",
     "name": "Fly Cell Atlas Smart-seq2 Leg",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000851",
     "name": "Fly Cell Atlas Smart-seq2 Male Reproductive Glands",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000852",
     "name": "Fly Cell Atlas Smart-seq2 Malpighian Tubule",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000853",
     "name": "Fly Cell Atlas Smart-seq2 Oenocyte",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "name": "Fly Cell Atlas Smart-seq2 Ovary",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000855",
     "name": "Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "name": "Fly Cell Atlas Smart-seq2 Testis",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000857",
     "name": "Fly Cell Atlas Smart-seq2 Trachea",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000858",
     "name": "Fly Cell Atlas Smart-seq2 Wing",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000859",
     "name": "Fly Cell Atlas Smart-seq2 dilp2 IPC (insulin-producing cells)",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Clustering",
     "id": "http://virtualflybrain.org/reports/VFBseq_00000860",
     "name": "Fly Cell Atlas Smart-seq2 Akh CC (corpora cardiaca)",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
-    "neo_label": "Clustering"
+    "neo_label": [
+      "Clustering"
+    ]
   },
   {
     "type": "Cluster",
@@ -1077,7 +1249,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 37,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'Johnston organ neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00100000"
@@ -1092,7 +1266,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 37,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult antenna glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058258"
@@ -1107,7 +1283,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult olfactory receptor neuron Gr21a/63a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00067064"
@@ -1122,7 +1300,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult olfactory receptor neuron Ir56a+, Orco-' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00007386"
@@ -1137,7 +1317,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult olfactory receptor neuron Ir75d' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00047054"
@@ -1152,7 +1334,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult olfactory receptor neuron Ir84a, Ir31a, Ir76a, Ir76b, Ir8a, Or35a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049980"
@@ -1167,7 +1351,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 9,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult olfactory receptor neuron Or22a, Or42b, Or59b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049977"
@@ -1182,7 +1368,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 6,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult olfactory receptor neuron Or47a, Or56a and likely other ORN types' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00007386"
@@ -1197,7 +1385,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult olfactory receptor neuron Or47b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00067056"
@@ -1212,7 +1402,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 6,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult olfactory receptor neuron Or65' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00067011"
@@ -1227,7 +1419,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 14,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult olfactory receptor neuron Or67a and likely other unknown ORN types' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00007386"
@@ -1242,7 +1436,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 9,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult olfactory receptor neuron Or67d' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00067031"
@@ -1257,7 +1453,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 1,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult olfactory receptor neuron Or85a, Or43b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049977"
@@ -1272,7 +1470,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 8,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult olfactory receptor neuron Or88a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00067057"
@@ -1287,7 +1487,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult olfactory receptor neuron Or92a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00067059"
@@ -1302,7 +1504,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 2,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult olfactory receptor neuron acid-sensing, Ir75a/b/c, Ir64a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00007352"
@@ -1317,7 +1521,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 1,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult olfactory receptor neuron unknown type, Orco-' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00007386"
@@ -1332,7 +1538,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 147,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058238"
@@ -1347,7 +1555,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 4,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058230"
@@ -1362,7 +1572,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 8,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'olfactory receptor neuron, coeloconics' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049980"
@@ -1377,7 +1589,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000844",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'sacculus/arista neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00051173"
@@ -1392,7 +1606,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 12,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049949"
@@ -1407,7 +1623,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00100497"
@@ -1422,7 +1640,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult oenocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00003185"
@@ -1437,7 +1657,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 4,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult peripheral nervous system' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00059276"
@@ -1452,7 +1674,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 10,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005040"
@@ -1467,7 +1691,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 11,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult ventral nervous system' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00059289"
@@ -1482,7 +1708,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 11,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'epidermal cell that specialized in antimicrobial response' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058242"
@@ -1497,7 +1725,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 63,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058238"
@@ -1512,7 +1742,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 4,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058143"
@@ -1527,7 +1759,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 30,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'indirect flight muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00003361"
@@ -1542,7 +1776,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 1,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'midgut' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058294"
@@ -1557,7 +1793,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 65,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058230"
@@ -1572,7 +1810,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000845",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 6,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'tendon cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058016"
@@ -1587,7 +1827,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 11,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult alary muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00003545"
@@ -1602,7 +1844,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 880,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049949"
@@ -1617,7 +1861,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 10,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00047095"
@@ -1632,7 +1878,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 24,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult oenocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00003185"
@@ -1647,7 +1895,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 53,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058238"
@@ -1662,7 +1912,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 178,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058143"
@@ -1677,7 +1929,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 6,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'male accessory gland' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058232"
@@ -1692,7 +1946,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'male germline differentiating cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00057011"
@@ -1707,7 +1963,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 31,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058230"
@@ -1722,7 +1980,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000846",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 9,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'sensory neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058244"
@@ -1737,7 +1997,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 1,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult Malpighian tubule' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005733"
@@ -1752,7 +2014,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 14,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult differentiating enterocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049281"
@@ -1767,7 +2031,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 2,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049949"
@@ -1782,7 +2048,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 11,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult midgut enterocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00047182"
@@ -1797,7 +2065,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 18,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult midgut-hindgut hybrid zone' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058275"
@@ -1812,7 +2082,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 10,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult pylorus' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058276"
@@ -1827,7 +2099,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 12,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'antimicrobial peptide-producing cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00059377"
@@ -1842,7 +2116,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 74,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'cardia (1)' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058282"
@@ -1857,7 +2133,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 20,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'cardia (2)' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058282"
@@ -1872,7 +2150,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'copper cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00110908"
@@ -1887,7 +2167,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 150,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'crop' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058263"
@@ -1902,7 +2184,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 23,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'enteroblast' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00110205"
@@ -1917,7 +2201,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 34,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'enterocyte of anterior adult midgut epithelium' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049280"
@@ -1932,7 +2218,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 29,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'enterocyte of posterior adult midgut epithelium' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00007037"
@@ -1947,7 +2235,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 42,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'enterocyte-like' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00047147"
@@ -1962,7 +2252,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 8,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'enteroendocrine cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00047149"
@@ -1977,7 +2269,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 23,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'intestinal stem cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00007039"
@@ -1992,7 +2286,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 10,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'midgut large flat cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00110912"
@@ -2007,7 +2303,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058230"
@@ -2022,7 +2320,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 8,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'visceral muscle of the crop' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00003532"
@@ -2037,7 +2337,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000847",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 15,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'visceral muscle of the midgut' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00003534"
@@ -2052,7 +2354,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000848",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049949"
@@ -2067,7 +2371,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000848",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 8,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00100497"
@@ -2082,7 +2388,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000848",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 136,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058238"
@@ -2097,7 +2405,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000848",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 7,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058143"
@@ -2112,7 +2422,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000848",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 14,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'mechanosensory neuron of haltere' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00051420"
@@ -2127,7 +2439,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000848",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 4,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058230"
@@ -2142,7 +2456,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000848",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 9,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'neuron of haltere' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00047095"
@@ -2157,7 +2473,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 22,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult abdominal pericardial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00013185"
@@ -2172,7 +2490,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 17,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049949"
@@ -2187,7 +2507,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 23,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult heart ventral longitudinal muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00003550"
@@ -2202,7 +2524,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 25,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult oenocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00003185"
@@ -2217,7 +2541,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 13,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult peripheral neuron of the heart' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00059276"
@@ -2232,7 +2558,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 6,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005040"
@@ -2247,7 +2575,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'cardiomyocyte, working adult heart muscle (non-ostia)' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058240"
@@ -2262,7 +2592,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'crystal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058146"
@@ -2277,7 +2609,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 76,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058238"
@@ -2292,7 +2626,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 29,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058143"
@@ -2307,7 +2643,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 4,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'indirect flight muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00003361"
@@ -2322,7 +2660,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000849",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 12,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058230"
@@ -2337,7 +2677,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005040"
@@ -2352,7 +2694,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 316,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058238"
@@ -2367,7 +2711,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'gustatory receptor neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058249"
@@ -2382,7 +2728,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 6,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058143"
@@ -2397,7 +2745,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 29,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'mechanosensory neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00051420"
@@ -2412,7 +2762,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 9,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'mechanosensory neuron of leg chordotonal organ' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00048274"
@@ -2427,7 +2779,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 147,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058230"
@@ -2442,7 +2796,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 19,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'peripheral glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058258"
@@ -2457,7 +2813,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000850",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'sensory neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058244"
@@ -2472,7 +2830,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 2,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049949"
@@ -2487,7 +2847,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 17,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'anterior ejaculatory duct' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058271"
@@ -2502,7 +2864,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 31,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'ejaculatory bulb' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058269"
@@ -2517,7 +2881,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 11,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'ejaculatory bulb epithelium' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058269"
@@ -2532,7 +2898,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 16,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058238"
@@ -2547,7 +2915,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 1,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058143"
@@ -2562,7 +2932,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 131,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'male accessory gland main cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004960"
@@ -2577,7 +2949,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'male accessory gland secondary cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004961"
@@ -2592,7 +2966,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 8,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'male reproductive tract muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058230"
@@ -2607,7 +2983,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058230"
@@ -2622,7 +3000,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'secretory cell of the male reproductive tract' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058293"
@@ -2637,7 +3017,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000851",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'spermatid' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004942"
@@ -2652,7 +3034,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 9,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult Malpighian tubule bar-shaped cell of initial segment' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049472"
@@ -2667,7 +3051,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 38,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult Malpighian tubule principal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005735"
@@ -2682,7 +3068,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 25,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult Malpighian tubule principal cell of initial segment' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049474"
@@ -2697,7 +3085,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 61,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult Malpighian tubule principal cell of lower segment' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049477"
@@ -2712,7 +3102,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 9,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult Malpighian tubule principal cell of lower ureter' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049478"
@@ -2727,7 +3119,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 33,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult Malpighian tubule stellate cell of main segment' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00047102"
@@ -2742,7 +3136,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049949"
@@ -2757,7 +3153,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 2,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult hindgut*' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058276"
@@ -2772,7 +3170,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 2,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult midgut*' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058294"
@@ -2787,7 +3187,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 124,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult renal stem cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00110862"
@@ -2802,7 +3204,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 15,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult salivary gland' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00059269"
@@ -2817,7 +3221,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 12,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005040"
@@ -2832,7 +3238,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 4,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'posterior midgut*' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00007037"
@@ -2847,7 +3255,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 59,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'principal cell*' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005735"
@@ -2862,7 +3272,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000852",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 2,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'visceral muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00003525"
@@ -2877,7 +3289,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 15,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult alary muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00003545"
@@ -2892,7 +3306,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult enterocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00047147"
@@ -2907,7 +3323,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 59,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049949"
@@ -2922,7 +3340,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 44,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00047095"
@@ -2937,7 +3357,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 73,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult oenocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00003185"
@@ -2952,7 +3374,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 12,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005040"
@@ -2967,7 +3391,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'ejaculatory bulb' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058269"
@@ -2982,7 +3408,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 37,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058238"
@@ -2997,7 +3425,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 10,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058143"
@@ -3012,7 +3442,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000853",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 65,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058230"
@@ -3027,7 +3459,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 58,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type '16-cell germline cyst in germarium region 2a and 2b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00059160"
@@ -3042,7 +3476,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005040"
@@ -3057,7 +3493,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 40,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'central main body follicle cell ca. St. 6-8' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005402"
@@ -3072,7 +3510,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 11,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'choriogenic main body follicle cell St. 12' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005402"
@@ -3087,7 +3527,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 6,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'choriogenic main body follicle cell St. 14' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005402"
@@ -3102,7 +3544,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 22,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'choriogenic main body follicle cell and corpus luteum' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005402",
@@ -3118,7 +3562,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 7,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'dorsal appendage forming follicle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00046036"
@@ -3133,7 +3579,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 16,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'escort cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00006049"
@@ -3148,7 +3596,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 10,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'follicle stem cell and prefollicle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00006030"
@@ -3163,7 +3613,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 14,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'germ cell stage 4 and later' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00057012"
@@ -3178,7 +3630,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'germline cell, unknown stage' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00057012"
@@ -3193,7 +3647,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 157,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'main body follicle cell ca. until St. 5' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005402"
@@ -3208,7 +3664,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'ovarian sheath muscle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00003557"
@@ -3223,7 +3681,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 7,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'oviduct' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058273"
@@ -3238,7 +3698,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'polar follicle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004907"
@@ -3253,7 +3715,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 8,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'post-mitotic endocycling nurse cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004878"
@@ -3268,7 +3732,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'post-mitotic germ cell early 16-cell cyst' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00059160"
@@ -3283,7 +3749,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 7,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'posterior terminal follicle cell ca. St. 5-8' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00048554"
@@ -3298,7 +3766,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'stalk follicle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004910"
@@ -3313,7 +3783,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 21,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'stretch follicle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004908"
@@ -3328,7 +3800,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000854",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 109,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'young germ cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00057012"
@@ -3343,7 +3817,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 6,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult esophagus' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058280"
@@ -3358,7 +3834,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049949"
@@ -3373,7 +3851,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 62,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult peripheral nervous system' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00059276"
@@ -3388,7 +3868,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 7,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005040"
@@ -3403,7 +3885,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'bitter-sensitive labellar taste bristle' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00048152"
@@ -3418,7 +3902,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 375,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'epithelial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058238"
@@ -3433,7 +3919,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 7,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'gustatory receptor neuron of the labellum' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00110887"
@@ -3448,7 +3936,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 2,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058143"
@@ -3463,7 +3953,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 7,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'labral sense organ mechanosensory neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00048035"
@@ -3478,7 +3970,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 11,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'maxillary palp olfactory receptor neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00007353"
@@ -3493,7 +3987,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 90,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058230"
@@ -3508,7 +4004,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 18,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'peripheral glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058258"
@@ -3523,7 +4021,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'photoreceptor' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004211"
@@ -3538,7 +4038,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000855",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 6,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'tormogen cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005171"
@@ -3553,7 +4055,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005040"
@@ -3568,7 +4072,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'cyst cell branch a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004931"
@@ -3583,7 +4089,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 1,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'cyst cell branch b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004931"
@@ -3598,7 +4106,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 17,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'cyst cell intermediate' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004931"
@@ -3613,7 +4123,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'cyst stem cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004933"
@@ -3628,7 +4140,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 6,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'early cyst cell 1' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004931"
@@ -3643,7 +4157,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 74,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'early elongation stage spermatid' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00057175"
@@ -3658,7 +4174,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 4,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'early-mid elongation-stage spermatid' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00057000"
@@ -3673,7 +4191,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 11,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'head cyst cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00057009"
@@ -3688,7 +4208,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 6,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058143"
@@ -3703,7 +4225,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 2,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'late cyst cell branch a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004931"
@@ -3718,7 +4242,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 6,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'late cyst cell branch b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004931"
@@ -3733,7 +4259,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 2,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'late primary spermatocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005286"
@@ -3748,7 +4276,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 85,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'male gonad associated epithelium' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058261"
@@ -3763,7 +4293,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 12,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'mid-late elongation-stage spermatid' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00057003"
@@ -3778,7 +4310,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 5,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'mid-late proliferating spermatogonia' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004935"
@@ -3793,7 +4327,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 34,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058230"
@@ -3808,7 +4344,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'pigment cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004230"
@@ -3823,7 +4361,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 1,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'secretory cell of the male reproductive tract' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058293"
@@ -3838,7 +4378,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'spermatid' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004942"
@@ -3853,7 +4395,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 30,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'spermatocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004936"
@@ -3868,7 +4412,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 11,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'spermatocyte 0' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004936"
@@ -3883,7 +4429,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 4,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'spermatocyte 1' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004936"
@@ -3898,7 +4446,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'spermatocyte 2' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004936"
@@ -3913,7 +4463,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 4,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'spermatocyte 3' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004936"
@@ -3928,7 +4480,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 1,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'spermatocyte 4' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004936"
@@ -3943,7 +4497,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 6,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'spermatocyte 5' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004936"
@@ -3958,7 +4514,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'spermatocyte 6' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004936"
@@ -3973,7 +4531,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 2,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'spermatocyte 7a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004936"
@@ -3988,7 +4548,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 2,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'spermatocyte cyst cell branch a' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00057004"
@@ -4003,7 +4565,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'spermatocyte cyst cell branch b' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00057004"
@@ -4018,7 +4582,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 8,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'spermatogonium' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004935"
@@ -4033,7 +4599,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000856",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 2,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'spermatogonium-spermatocyte transition' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00004936"
@@ -4048,7 +4616,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000857",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 1,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult fat body' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00049949"
@@ -4063,7 +4633,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000857",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 25,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00047095"
@@ -4078,7 +4650,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000857",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 318,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'adult tracheal cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00005040"
@@ -4093,7 +4667,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000857",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 6,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058230"
@@ -4108,7 +4684,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000858",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 16,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'gustatory receptor neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058249"
@@ -4123,7 +4701,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000858",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 4,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'hemocyte' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058143"
@@ -4138,7 +4718,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000858",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 24,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'mechanosensory neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00051420"
@@ -4153,7 +4735,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000858",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 7,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'muscle cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058230"
@@ -4168,7 +4752,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000858",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 3,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'nociceptive neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00048471"
@@ -4183,7 +4769,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000858",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 17,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'peripheral glial cell' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058258"
@@ -4198,7 +4786,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000858",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 11,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells assigned the type 'pheromone-sensing neuron' by the authors' classifier (label transfer from an annotated analysis), not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058247"
@@ -4213,7 +4803,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000859",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 658,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells FACS-sorted by the authors as 'insulin-producing cell' and analysed as a whole; typed from the authors' sample description, not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00110107"
@@ -4228,7 +4820,9 @@
     "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00000860",
     "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00000777",
     "cell_number": 592,
-    "neo_label": "Cluster",
+    "neo_label": [
+      "Cluster"
+    ],
     "title": "Cells FACS-sorted by the authors as 'corpora cardiaca cell' and analysed as a whole; typed from the authors' sample description, not a transcriptomic cluster.",
     "cell_type": [
       "FBbt:00058019"

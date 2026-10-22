@@ -26,7 +26,12 @@ from vfb_scrnaseq.pub import resolve_pub
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 VFB_BASE = "http://virtualflybrain.org/reports/"
-CC_BY_4 = "https://creativecommons.org/licenses/by/4.0/"
+#: config licence -> VFB License node (VFB's term info reads a dataset's licence from
+#: the License individual, with its logo and legal-code link).
+LICENCES = {"CC-BY-4.0": "vfb:VFBlicense_CC_BY_4_0"}
+#: Node labels for an scRNAseq Dataset: the scRNAseq ones were set by the VFB pipeline
+#: only on FlyBase FBlc datasets, so VFBseq datasets carry them themselves.
+DATASET_NEO_LABELS = ["DataSet", "scRNAseq_DataSet", "hasScRNAseq"]
 
 
 def iri(vfbseq_id: str) -> str:
@@ -63,14 +68,16 @@ def build_entities(project: str) -> list[dict]:
         "name": f"scRNAseq data from {cite}" if cite else d["accession"],
         "title": src.get("title"),
         "accession": d["accession"],
-        "neo_label": "DataSet",
+        "neo_label": DATASET_NEO_LABELS,
     }
     if d.get("site"):
         # VFB Site node CURIE (e.g. GEO -> vfb:GEO = http://virtualflybrain.org/reports/GEO);
         # the schema's `site` owl.fstring emits hasDbXref->site annotated with the accession.
         dataset["site"] = f"vfb:{d['site']}"
     if ds_cfg.get("licence"):
-        dataset["licence"] = CC_BY_4
+        if ds_cfg["licence"] not in LICENCES:
+            raise ValueError(f"licence {ds_cfg['licence']!r} has no VFB License node; known: {sorted(LICENCES)}")
+        dataset["licence"] = LICENCES[ds_cfg["licence"]]
     if ds_cfg.get("assay_type"):
         dataset["assay_type"] = ds_cfg["assay_type"]
     if ds_counts:
@@ -86,7 +93,7 @@ def build_entities(project: str) -> list[dict]:
         pub_curie = f"FlyBase:{pub['fbrf']}"
         dataset["publication"] = pub_curie
         entities.append({
-            "type": "Publication", "id": pub_curie, "neo_label": "pub",
+            "type": "Publication", "id": pub_curie, "neo_label": ["pub"],
         })
         print(f"  linked publication {pub['fbrf']} (via {pub['source']})", file=sys.stderr)
     else:
@@ -123,7 +130,7 @@ def build_entities(project: str) -> list[dict]:
             "name": (f"{descr}{cite_suffix}" if descr else s["sample_id"]),
             "associated_dataset": dataset_iri,
             "associated_assay": [iri(a) for a in s["assay_vfbseq_ids"]],
-            "neo_label": "Sample",
+            "neo_label": ["Sample"],
         }
         if tissues:
             rec["sample_tissue"] = [t["fbbt_id"] for t in tissues]
@@ -160,7 +167,7 @@ def build_entities(project: str) -> list[dict]:
             "associated_sample_for_assay": [iri(a["sample_vfbseq_id"])],
             "associated_dataset": dataset_iri,
             "dbxref": xrefs,
-            "neo_label": "Assay",
+            "neo_label": ["Assay"],
         })
 
     # --- Clusterings ---
@@ -171,7 +178,7 @@ def build_entities(project: str) -> list[dict]:
             "type": "Clustering", "id": iri(c["vfbseq_id"]),
             "name": c.get("name") or f"{d['accession']} {c['subset']} clustering",
             "associated_dataset": dataset_iri,
-            "neo_label": "Clustering",
+            "neo_label": ["Clustering"],
         }
         if c.get("samples"):
             # the Samples it used, own or reused from another dataset (those are
@@ -215,7 +222,7 @@ def build_entities(project: str) -> list[dict]:
             "associated_clustering": clustering,
             "associated_dataset": dataset_iri,
             "cell_number": ann.get("cell_number"),
-            "neo_label": "Cluster",
+            "neo_label": ["Cluster"],
         }
         if ann.get("stage"):
             # a stage determined from the cluster's own expression (e.g. the authors'

@@ -533,6 +533,26 @@ Schema use: the LinkML schema now drives **validation** (`linkml-validate`),
 **flat RDF** (`linkml-convert`), and **OWL** (`linkml-owl`) — the `owl.*`
 annotations are the linkml-owl input format the schema was authored for.
 
+**What VFB's loaders and indexers expect** (checked against VFB production and
+VFBquery, 2026-10-22; the old FlyBase/SCEA files did the same):
+
+- **Licence** as VFB's License individual, not the licence URL: `dc:licence`
+  `vfb:VFBlicense_CC_BY_4_0` (`build.LICENCES`, keyed by the config's `licence`; an
+  unknown licence fails the build). VFB's term info takes the logo and legal-code
+  link from that node.
+- **Node labels** (`neo_label`, `n2o:nodeLabel`, multivalued): Dataset `DataSet`,
+  `scRNAseq_DataSet`, `hasScRNAseq`; Sample, Assay, Clustering, Cluster, pub by type.
+  The VFB pipeline set the two scRNAseq labels only on datasets with FlyBase `FBlc`
+  ids, and VFBquery's scRNAseq queries (and the `hasScRNAseq` labels the pipeline
+  then puts on cell types and genes) depend on them.
+- **`hide_in_terminfo`** typed `xsd:boolean` on each expression axiom: the term-info
+  indexer compares it with the boolean `true`, so a plain string would list every
+  expressed gene in the cluster's term info.
+- **Genes:** every expressed gene must be a VFB Gene class. `expression/FBgn_list.txt`
+  (`scripts/write_fbgn_list.py`; CI checks it is current) is read by
+  VirtualFlyBrain/vfb-scRNAseq-gene-annotations, which makes the Gene classes and
+  their function labels.
+
 **Caveats / deferred** (deliberately not done here):
 - **`Clustering.associated_sample_or_assay_for_clustering`** left unwired when a
   sample/assay feeds more than one clustering (the slot is single-valued), so the
@@ -656,6 +676,8 @@ repo's `metadata_release_files/` + `expression_data/`):
 `expression/vfb_scRNAseq_expression_<project>.owl.gz` (expression). The build
 scripts write there directly; per-project dirs keep only the
 intermediates/diffables (`.ttl`, `.ofn`, `expression.tsv`, report, counts).
+`scripts/emit_expression_owl.py` re-emits the expression OWL from the committed
+`expression.tsv` when only its rendering changes (no matrices needed).
 
 **Emission — efficient, NOT linkml-owl.** linkml-owl renders *and re-parses* the
 template per row (~1.4 ms/row → ~14 min / ~3 GB at this scale). Instead we render
@@ -761,8 +783,10 @@ Either way, mismatches are **flagged for review**, never silently resolved.
 `pytest`; `scripts/validate_project_files.py`, which feeds every committed mapping /
 type_mapping / term-request / provenance / samples file through the same
 `.claude/hooks/check_*.py` validators Claude Code uses on write (hand edits otherwise
-bypass them); and `scripts/check_mapping_tsv.py`, which fails if a `mapping.tsv` no
-longer matches what `collate_mapping.py` would produce.
+bypass them); `scripts/check_mapping_tsv.py`, which fails if a `mapping.tsv` no
+longer matches what `collate_mapping.py` would produce; and `scripts/write_fbgn_list.py
+--check`, which fails if `expression/FBgn_list.txt` no longer lists the expression
+tables' genes.
 
 `.github/workflows/fbbt-release-check.yml` runs weekly (and on demand).
 `scripts/check_fbbt_release.py` compares OLS's current FBbt release with the one

@@ -597,10 +597,12 @@ VFBseq:00002527 a FBcv:0003023 ;
     neo_custom:accession "GSE100058" ;
     neo_custom:filtered_gene_count 7562 ;
     neo_custom:total_gene_count 14457 ;
-    neo_property:nodeLabel "DataSet" ;
+    neo_property:nodeLabel "DataSet",
+        "hasScRNAseq",
+        "scRNAseq_DataSet" ;
     IAO:0000115 "Classifying Drosophila Olfactory Projection Neuron Subtypes by Single-Cell RNA Sequencing" ;
     OBI:0000312 FBcv:0009000 ;
-    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:licence vfb:VFBlicense_CC_BY_4_0 ;
     dcterms:references FlyBase:FBrf0237214 ;
     oboInOwl:hasDbXref vfb:GEO .
 

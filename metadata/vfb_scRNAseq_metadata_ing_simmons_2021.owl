@@ -327,8 +327,10 @@
         <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6869</neo_custom:filtered_gene_count>
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16178</neo_custom:total_gene_count>
         <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
+        <neo_property:nodeLabel>hasScRNAseq</neo_property:nodeLabel>
+        <neo_property:nodeLabel>scRNAseq_DataSet</neo_property:nodeLabel>
         <obo:IAO_0000115>Independence of chromatin conformation and gene regulation during Drosophila dorsoventral patterning</obo:IAO_0000115>
-        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dc:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>
         <dc:references rdf:resource="http://flybase.org/reports/FBrf0248615"/>
         <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/ArrayExpress"/>
         <rdfs:label>scRNAseq data from Ing-Simmons (2021)</rdfs:label>
