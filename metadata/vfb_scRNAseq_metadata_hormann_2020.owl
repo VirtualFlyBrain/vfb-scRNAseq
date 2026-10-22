@@ -393,8 +393,10 @@
         <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3874</neo_custom:filtered_gene_count>
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13286</neo_custom:total_gene_count>
         <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
+        <neo_property:nodeLabel>hasScRNAseq</neo_property:nodeLabel>
+        <neo_property:nodeLabel>scRNAseq_DataSet</neo_property:nodeLabel>
         <obo:IAO_0000115>A combinatorial code of transcription factors specifies subtypes of visual motion-sensing neurons in Drosophila</obo:IAO_0000115>
-        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dc:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>
         <dc:references rdf:resource="http://flybase.org/reports/FBrf0245647"/>
         <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/GEO"/>
         <rdfs:label>scRNAseq data from Hörmann (2020)</rdfs:label>

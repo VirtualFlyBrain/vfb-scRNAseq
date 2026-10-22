@@ -378,10 +378,12 @@ VFBseq:00003150 a FBcv:0003023 ;
     neo_custom:accession "GSE134722" ;
     neo_custom:filtered_gene_count 6772 ;
     neo_custom:total_gene_count 12633 ;
-    neo_property:nodeLabel "DataSet" ;
+    neo_property:nodeLabel "DataSet",
+        "hasScRNAseq",
+        "scRNAseq_DataSet" ;
     IAO:0000115 "Single cell transcriptome atlas of the Drosophila larval brain" ;
     OBI:0000312 FBcv:0009000 ;
-    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:licence vfb:VFBlicense_CC_BY_4_0 ;
     dcterms:references FlyBase:FBrf0244302 ;
     oboInOwl:hasDbXref vfb:GEO .
 

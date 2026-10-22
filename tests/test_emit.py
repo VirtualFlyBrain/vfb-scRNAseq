@@ -22,15 +22,15 @@ FLYBASE = "http://flybase.org/reports/"
 def _entities():
     return [
         {"type": "Dataset", "id": str(DS), "name": "ds", "accession": "GSE156455",
-         "neo_label": "DataSet", "site": "vfb:GEO", "publication": "FlyBase:FBrf0247594",
+         "neo_label": ["DataSet"], "site": "vfb:GEO", "publication": "FlyBase:FBrf0247594",
          "assay_type": "FBcv:0009000", "total_gene_count": 15700, "filtered_gene_count": 7031},
-        {"type": "Publication", "id": "FlyBase:FBrf0247594", "neo_label": "pub"},
+        {"type": "Publication", "id": "FlyBase:FBrf0247594", "neo_label": ["pub"]},
         {"type": "Sample", "id": str(SA), "name": "sample", "associated_dataset": str(DS),
-         "neo_label": "Sample", "sample_tissue": ["FBbt:00003701"], "stage": "FBdv:00007001",
+         "neo_label": ["Sample"], "sample_tissue": ["FBbt:00003701"], "stage": "FBdv:00007001",
          "sex": "FBbt:00007011", "stock": ["FlyBase:FBst0005905"],
          "genotype_includes": ["FlyBase:FBco0000215"]},
         {"type": "Cluster", "id": str(URIRef(VFB + "VFBseq_00000047")), "name": "cl",
-         "associated_dataset": str(DS), "cell_number": 100, "neo_label": "Cluster",
+         "associated_dataset": str(DS), "cell_number": 100, "neo_label": ["Cluster"],
          "cell_type": ["FBbt:00003791"], "total_gene_count": 11538, "filtered_gene_count": 2536},
     ]
 

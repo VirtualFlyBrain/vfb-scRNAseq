@@ -6049,10 +6049,12 @@ VFBseq:00001758 a FBcv:0003023 ;
     neo_custom:accession "GSE142787" ;
     neo_custom:filtered_gene_count 8138 ;
     neo_custom:total_gene_count 13262 ;
-    neo_property:nodeLabel "DataSet" ;
+    neo_property:nodeLabel "DataSet",
+        "hasScRNAseq",
+        "scRNAseq_DataSet" ;
     IAO:0000115 "Neuronal diversity and convergence in a visual system developmental atlas" ;
     OBI:0000312 FBcv:0009000 ;
-    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:licence vfb:VFBlicense_CC_BY_4_0 ;
     dcterms:references FlyBase:FBrf0247762 ;
     oboInOwl:hasDbXref vfb:GEO .
 

@@ -369,10 +369,12 @@ VFBseq:00003188 a FBcv:0003023 ;
     neo_custom:accession "GSE172231" ;
     neo_custom:filtered_gene_count 3664 ;
     neo_custom:total_gene_count 14182 ;
-    neo_property:nodeLabel "DataSet" ;
+    neo_property:nodeLabel "DataSet",
+        "hasScRNAseq",
+        "scRNAseq_DataSet" ;
     IAO:0000115 "Developmental Alcohol Exposure in Drosophila: Effects on Adult Phenotypes and Gene Expression in the Brain" ;
     OBI:0000312 FBcv:0009000 ;
-    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:licence vfb:VFBlicense_CC_BY_4_0 ;
     dcterms:references FlyBase:FBrf0249767 ;
     oboInOwl:hasDbXref vfb:GEO .
 

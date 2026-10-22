@@ -2930,10 +2930,12 @@ VFBseq:00001468 a FBcv:0003023 ;
     neo_custom:accession "GSE218661" ;
     neo_custom:filtered_gene_count 5399 ;
     neo_custom:total_gene_count 15962 ;
-    neo_property:nodeLabel "DataSet" ;
+    neo_property:nodeLabel "DataSet",
+        "hasScRNAseq",
+        "scRNAseq_DataSet" ;
     IAO:0000115 "Aging Fly Cell Atlas identifies exhaustive aging features at cellular resolution" ;
     OBI:0000312 FBcv:0009001 ;
-    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:licence vfb:VFBlicense_CC_BY_4_0 ;
     dcterms:references FlyBase:FBrf0256843 ;
     oboInOwl:hasDbXref vfb:GEO .
 

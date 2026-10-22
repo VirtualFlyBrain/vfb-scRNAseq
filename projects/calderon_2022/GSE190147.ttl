@@ -2892,10 +2892,12 @@ VFBseq:00002863 a FBcv:0003023 ;
     neo_custom:accession "GSE190147" ;
     neo_custom:filtered_gene_count 4539 ;
     neo_custom:total_gene_count 16592 ;
-    neo_property:nodeLabel "DataSet" ;
+    neo_property:nodeLabel "DataSet",
+        "hasScRNAseq",
+        "scRNAseq_DataSet" ;
     IAO:0000115 "The continuum of Drosophila embryonic development at single-cell resolution" ;
     OBI:0000312 FBcv:0009001 ;
-    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:licence vfb:VFBlicense_CC_BY_4_0 ;
     dcterms:references FlyBase:FBrf0254247 ;
     oboInOwl:hasDbXref vfb:GEO .
 
