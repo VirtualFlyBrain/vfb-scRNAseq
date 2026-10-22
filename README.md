@@ -30,7 +30,8 @@ definitions).
 project config (+ project script for bespoke clusterings)
   -> author clusters + samples    (GEO: build_annotations_from_geo.py, build_samples_from_geo.py;
                                    ArrayExpress + h5ad: build_samples_from_arrayexpress.py,
-                                   fetch_h5ad.py, build_annotations_from_h5ad.py)
+                                   fetch_h5ad.py, build_annotations_from_h5ad.py;
+                                   other author files: a project build_clusters.py)
   -> per-type reports             (write-cell-type-report agent)
   -> FBbt mapping + human review  (map-clusters-to-fbbt agent; expand_type_mappings.py;
                                    collate_mapping.py -> mapping.tsv)
@@ -54,7 +55,8 @@ from FlyBase; that authority is being dropped.)
 - `projects/kurmangaliyev_2020/` — Kurmangaliyev et al. 2020, *Drosophila* visual
   system developmental atlas ([GSE156455](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156455),
   PMID 33125872): the 24-96h main dataset (196 clusters) and the 0-24h early
-  dataset (110 clusters); 232 with an FBbt term are loaded.
+  dataset (110 clusters); 232 with an FBbt term are loaded. Replaces the old FlyBase/SCEA
+  load (FBlc0006237).
 - `projects/davie_2018/` — Davie et al. 2018, ageing adult brain atlas
   ([GSE107451](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107451),
   PMID 29909982), 57K 10x set (125 clusters; 82 with an FBbt term are loaded).
@@ -156,6 +158,7 @@ src/vfb_scrnaseq/
   stats.py      # FlyBase-style expression extent/level per cluster x gene
   project_config.py / ingest.py / pub.py   # config knobs, GEO SOFT ingest, :pub lookup
   ingest_arrayexpress.py / ingest_h5ad.py  # ArrayExpress IDF/SDRF; AnnData obs/var/matrix (h5py)
+  h5ad_compress.py                  # lossless HDF5-gzip recompression of cached h5ad files
 scripts/                                 # dataset-agnostic pipeline + CI check scripts
 tests/                                   # pytest suite (run in CI)
 docs/DESIGN.md                           # design decisions, curation rules, per-project notes
@@ -247,8 +250,9 @@ an issue when a FlyBase release changes a gene id in use, and reminds when a pen
 FBbt term request is closed (`checks/`).
 
 Outstanding, outside this repo: loading the OWL into VFB, and retiring the old loads
-these replace (FBlc0006090, FBlc0003846 / 4307 / 4785, FBlc0006422, FBlc0005659,
-FBlc0006404, FBlc0006305).
+these replace (FBlc0006237, FBlc0006090, FBlc0003846 / 4307 / 4785, FBlc0006422,
+FBlc0005659, FBlc0006404, FBlc0006305, FBlc0005603, FBlc0006191, FBlc0007797,
+FBlc0005362, FBlc0005420, FBlc0005515, FBlc0006361).
 Pending FBbt requests, tracked with the clusters waiting on them in
 `checks/pending_fbbt_requests.json`:
 [#2216](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2216)
@@ -258,4 +262,5 @@ Pending FBbt requests, tracked with the clusters waiting on them in
 [#2220](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2220)
 (pupal immature / remodelling olfactory projection neuron types; Li 2017 and Xie 2021), and the FBbt review of adult fat terms
 ([#2218](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2218);
-FCA and AFCA fat mappings to revisit).
+FCA and AFCA fat mappings to revisit; Saavedra's thorax adipose cluster to *adult
+postcephalic fat cell* once released).
