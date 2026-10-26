@@ -47,3 +47,29 @@ def test_unknown_entity_type_rejected(tmp_path):
         pass
     else:
         raise AssertionError("expected ValueError for unknown entity_type")
+
+
+def test_committed_registry_has_unique_ids():
+    from pathlib import Path
+    IDRegistry.load(Path(__file__).resolve().parents[1] / "id_registry" / "registry.json")   # check() on load
+
+
+def test_load_rejects_an_id_minted_twice(tmp_path):
+    import json
+    import pytest
+    path = tmp_path / "r.json"
+    entry = {"id": "VFBseq_00000001", "entity_type": "Dataset", "label": None, "accession": None}
+    path.write_text(json.dumps({"counter": 1, "entries": {
+        "Dataset::A": {**entry, "natural_key": "A"}, "Dataset::B": {**entry, "natural_key": "B"}}}))
+    with pytest.raises(ValueError, match="minted twice"):
+        IDRegistry.load(path)
+
+
+def test_load_rejects_a_counter_behind_the_ids(tmp_path):
+    import json
+    import pytest
+    path = tmp_path / "r.json"
+    path.write_text(json.dumps({"counter": 1, "entries": {"Dataset::A": {
+        "id": "VFBseq_00000005", "entity_type": "Dataset", "natural_key": "A", "label": None, "accession": None}}}))
+    with pytest.raises(ValueError, match="behind"):
+        IDRegistry.load(path)

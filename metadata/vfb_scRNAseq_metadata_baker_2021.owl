@@ -332,9 +332,471 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003188 -->
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003243 -->
 
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003188">
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003243">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058208"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3946</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1557</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10810</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Glutamatergic neurons cluster 0 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003244 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003244">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058207"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3727</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1802</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10917</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>GABAergic neurons cluster 1 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003245 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003245">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058208"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3956</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">968</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9968</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Glutamatergic neurons cluster 3 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003246 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003246">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003702"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3125</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">846</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9557</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Optic lobe cluster 4 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003247 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003247">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051299"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">842</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9128</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Olfactory projection neurons cluster 8 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003248 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003248">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058207"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1713</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1344</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9496</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>GABAergic neurons cluster 9 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003249 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003249">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058205"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1339</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2407</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10193</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Central brain type B cholinergic neurons cluster 10 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003250 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003250">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049825"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1067</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1459</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8822</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Kenyon cells cluster 11 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003251 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003251">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058207"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1036</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1556</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8964</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>GABAergic neurons cluster 12 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003252 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003252">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100499"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">960</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">915</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9253</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Glia cluster 13 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003253 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003253">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003702"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1201</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">918</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8629</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Optic lobe neurons cluster 14 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003254 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003254">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047841"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">723</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2338</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8870</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Astrocytes cluster 17 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003255 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003255">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003702"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1031</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">925</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8498</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Optic lobe neurons cluster 18 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003256 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003256">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100499"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">729</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">603</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8533</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Glia cluster 19 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003257 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003257">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049825"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">655</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1158</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8217</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Kenyon cells cluster 20 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003258 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003258">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058208"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">550</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2520</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8968</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Central Brain type 2 glutamatergic neurons cluster 21 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003259 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003259">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058201"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">298</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2483</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8478</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Central brain type 2 monoaminergic neurons cluster 24 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003260 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003260">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058206"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1274</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7195</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Dopaminergic neurons cluster 29 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003261 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003261">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00006009"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">196</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1153</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7502</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Photoreceptor cells cluster 30 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003262 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003262">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058208"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">109</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1942</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6880</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Glutamatergic neurons cluster 33 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003263 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003263">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058202"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2198</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6156</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Tachykinin/neuropeptidergic neurons cluster 34 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003264 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003264">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058207"/>
+            </Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003274"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1773</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5981</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
+        <rdfs:label>Central brain GABAergic neurons cluster 35 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003265 -->
+
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003265">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003023"/>
         <rdf:type>
             <Restriction>
@@ -354,7 +816,7 @@
         <rdfs:label>scRNAseq data from Baker (2021)</rdfs:label>
     </NamedIndividual>
     <Axiom>
-        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
+        <annotatedSource rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <annotatedTarget rdf:resource="http://virtualflybrain.org/reports/GEO"/>
         <neo_custom:accession>GSE152495</neo_custom:accession>
@@ -362,9 +824,9 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003189 -->
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003266 -->
 
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003189">
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003266">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
         <rdf:type>
             <Restriction>
@@ -384,17 +846,17 @@
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
         </rdf:type>
-        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003190"/>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003267"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
         <rdfs:label>Brains, 3-5 days post-eclosion, Female rep 1 (Baker 2021)</rdfs:label>
     </NamedIndividual>
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003190 -->
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003267 -->
 
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003190">
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003267">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
         <rdf:type>
             <Restriction>
@@ -402,9 +864,9 @@
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
             </Restriction>
         </rdf:type>
-        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003189"/>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003266"/>
         <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
         <oboInOwl:hasDbXref>GSM4616550</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SAMN15238621</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SRX8549641</oboInOwl:hasDbXref>
@@ -413,9 +875,9 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003191 -->
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003268 -->
 
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003191">
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003268">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
         <rdf:type>
             <Restriction>
@@ -435,17 +897,17 @@
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
         </rdf:type>
-        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003192"/>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003269"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
         <rdfs:label>Brains, 3-5 days post-eclosion, Female rep 2 (Baker 2021)</rdfs:label>
     </NamedIndividual>
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003192 -->
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003269 -->
 
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003192">
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003269">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
         <rdf:type>
             <Restriction>
@@ -453,9 +915,9 @@
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
             </Restriction>
         </rdf:type>
-        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003191"/>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003268"/>
         <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
         <oboInOwl:hasDbXref>GSM4616551</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SAMN15238620</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SRX8549642</oboInOwl:hasDbXref>
@@ -464,9 +926,9 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003193 -->
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003270 -->
 
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003193">
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003270">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
         <rdf:type>
             <Restriction>
@@ -486,17 +948,17 @@
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
         </rdf:type>
-        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003194"/>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003271"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
         <rdfs:label>Brains, 3-5 days post-eclosion, Male rep 1 (Baker 2021)</rdfs:label>
     </NamedIndividual>
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003194 -->
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003271 -->
 
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003194">
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003271">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
         <rdf:type>
             <Restriction>
@@ -504,9 +966,9 @@
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
             </Restriction>
         </rdf:type>
-        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003193"/>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003270"/>
         <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
         <oboInOwl:hasDbXref>GSM4616552</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SAMN15238619</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SRX8549643</oboInOwl:hasDbXref>
@@ -515,9 +977,9 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003195 -->
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003272 -->
 
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003195">
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003272">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
         <rdf:type>
             <Restriction>
@@ -537,17 +999,17 @@
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
             </Restriction>
         </rdf:type>
-        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003196"/>
+        <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003273"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
         <rdfs:label>Brains, 3-5 days post-eclosion, Male rep 2 (Baker 2021)</rdfs:label>
     </NamedIndividual>
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003196 -->
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003273 -->
 
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003196">
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003273">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
         <rdf:type>
             <Restriction>
@@ -555,9 +1017,9 @@
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
             </Restriction>
         </rdf:type>
-        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003195"/>
+        <obo:RO_0002233 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003272"/>
         <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
         <oboInOwl:hasDbXref>GSM4616553</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SAMN15238618</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SRX8549644</oboInOwl:hasDbXref>
@@ -566,479 +1028,17 @@
     
 
 
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003197 -->
+    <!-- http://virtualflybrain.org/reports/VFBseq_00003274 -->
 
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003197">
+    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003274">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
-        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003189"/>
-        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003191"/>
-        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003193"/>
-        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003195"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003266"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003268"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003270"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003272"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
+        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
         <rdfs:label>Baker 2021 adult brain clusters (sucrose controls)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003243 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003243">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058208"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3946</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1557</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10810</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Glutamatergic neurons cluster 0 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003244 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003244">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058207"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3727</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1802</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10917</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>GABAergic neurons cluster 1 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003245 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003245">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058208"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3956</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">968</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9968</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Glutamatergic neurons cluster 3 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003246 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003246">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003702"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3125</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">846</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9557</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Optic lobe cluster 4 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003247 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003247">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051299"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">842</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9128</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Olfactory projection neurons cluster 8 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003248 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003248">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058207"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1713</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1344</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9496</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>GABAergic neurons cluster 9 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003249 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003249">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058205"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1339</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2407</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10193</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Central brain type B cholinergic neurons cluster 10 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003250 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003250">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049825"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1067</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1459</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8822</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Kenyon cells cluster 11 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003251 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003251">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058207"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1036</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1556</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8964</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>GABAergic neurons cluster 12 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003252 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003252">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100499"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">960</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">915</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9253</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Glia cluster 13 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003253 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003253">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003702"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1201</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">918</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8629</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Optic lobe neurons cluster 14 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003254 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003254">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047841"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">723</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2338</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8870</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Astrocytes cluster 17 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003255 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003255">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003702"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1031</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">925</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8498</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Optic lobe neurons cluster 18 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003256 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003256">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100499"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">729</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">603</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8533</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Glia cluster 19 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003257 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003257">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049825"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">655</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1158</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8217</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Kenyon cells cluster 20 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003258 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003258">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058208"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">550</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2520</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8968</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Central Brain type 2 glutamatergic neurons cluster 21 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003259 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003259">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058201"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">298</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2483</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8478</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Central brain type 2 monoaminergic neurons cluster 24 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003260 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003260">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058206"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1274</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7195</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Dopaminergic neurons cluster 29 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003261 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003261">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00006009"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">196</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1153</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7502</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Photoreceptor cells cluster 30 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003262 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003262">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058208"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">109</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1942</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6880</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Glutamatergic neurons cluster 33 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003263 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003263">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058202"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2198</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6156</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Tachykinin/neuropeptidergic neurons cluster 34 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://virtualflybrain.org/reports/VFBseq_00003264 -->
-
-    <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003264">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
-                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058207"/>
-            </Restriction>
-        </rdf:type>
-        <obo:BFO_0000050 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003197"/>
-        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</neo_custom:cell_count>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1773</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5981</neo_custom:total_gene_count>
-        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
-        <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
-        <rdfs:label>Central brain GABAergic neurons cluster 35 (Baker 2021 adult brain clusters (sucrose controls)) (Baker 2021)</rdfs:label>
     </NamedIndividual>
 </rdf:RDF>
 

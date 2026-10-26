@@ -47,9 +47,28 @@ class IDRegistry:
         if path.exists():
             data = json.loads(path.read_text())
             reg = cls(path=path, _counter=data["counter"], _entries=data["entries"])
+            reg.check()
         else:
             reg = cls(path=path, _counter=0, _entries={})
         return reg
+
+    def check(self) -> None:
+        """Fail if two entries share an id, or the counter is behind an id in use.
+
+        Both happen when branches that each minted ids are merged: git combines the
+        entries and keeps one counter, so the same ids are issued twice.
+        """
+        seen: dict[str, str] = {}
+        dups = []
+        for key, entry in self._entries.items():
+            if entry["id"] in seen:
+                dups.append(f"{entry['id']}: {seen[entry['id']]} / {key}")
+            seen[entry["id"]] = key
+        if dups:
+            raise ValueError(f"{self.path}: ids minted twice (re-mint one side):\n  " + "\n  ".join(dups))
+        top = max((int(e["id"].rsplit("_", 1)[1]) for e in self._entries.values()), default=0)
+        if top > self._counter:
+            raise ValueError(f"{self.path}: counter {self._counter} is behind id {_format_id(top)}")
 
     def _key(self, entity_type: str, natural_key: str) -> str:
         if entity_type not in ENTITY_TYPES:
