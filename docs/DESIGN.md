@@ -63,6 +63,12 @@ See *Adding a new dataset* (end of this document) for the step-by-step checklist
 Every published entity (Dataset, Sample, Assay, Clustering, Cluster) gets an
 opaque, registry-backed **`VFBseq_########`** IRI (`src/vfb_scrnaseq/ids.py`,
 registry in `id_registry/`). Minting is idempotent on `(entity_type, natural_key)`.
+Loading the registry fails if two entries share an id or the counter is behind an id
+in use (`IDRegistry.check`). Both happen when two branches that each minted ids are
+merged: git keeps both sets of entries and one counter, so the same ids are issued
+twice (Baker 2021 and Mokashi 2021, curated in parallel, shared ten ids until
+2026-10-26, when Baker's were re-minted before either was loaded). Mint on one branch
+at a time, or re-mint one side when merging. A published id is never re-minted.
 
 GEO/SRA accessions (GSE / GSM / PRJNA / SRP / GPL) are **cross-references**,
 carried in the schema's `site` / `accession` slots and dbxrefs — **never** used
