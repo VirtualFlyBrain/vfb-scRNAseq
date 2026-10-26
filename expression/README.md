@@ -5,7 +5,9 @@ VFB-loadable summary **expression** OWL, aggregated across all projects — one
 annotated `expresses` (RO:0002292) axiom per cluster × gene, carrying
 `expression_level` (CPM mean over expressing cells), `expression_extent`
 (fraction of expressing cells, filtered > cutoff), and `hide_in_terminfo`
-(`xsd:boolean` true).
+(`xsd:boolean` true). VFB loads them unzipped, renamed
+`VFB_scRNAseq_exp_<project>.owl`, from its OWL server once they are published (see
+*Getting changes into VFB* in the top-level README).
 
 `FBgn_list.txt` lists every gene in the expression output, for VFB's scRNAseq gene
 ontology (VirtualFlyBrain/vfb-scRNAseq-gene-annotations); regenerate it with

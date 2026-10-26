@@ -1,9 +1,12 @@
 """The CI check scripts: mapping.tsv freshness, the FBbt- and FlyBase-release checks,
-and gene ids by symbol (h5ad projects). Offline."""
+gene ids by symbol (h5ad projects) and the release file set. Offline."""
 
+import gzip
 import importlib.util
 import json
 from pathlib import Path
+
+import pytest
 
 REPO = Path(__file__).resolve().parents[1]
 
@@ -211,3 +214,42 @@ def test_symbol_majority_tiebreak():
     rows = {r["input_symbol"]: r for r in mod.classify_symbols(["Cha", "Cry"], hits)}
     assert (rows["Cha"]["status"], rows["Cha"]["current_fbgn"]) == ("synonym", "FBgn0000303")
     assert rows["Cry"]["status"] == "ambiguous" and rows["Cry"]["current_fbgn"] == ""
+
+
+def _fake_release_repo(root, projects, expression_only=()):
+    owl = b'<?xml version="1.0"?>\n<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#">\n</rdf:RDF>\n'
+    (root / "metadata").mkdir()
+    (root / "expression").mkdir()
+    for p in projects:
+        (root / "metadata" / f"vfb_scRNAseq_metadata_{p}.owl").write_bytes(owl)
+    for p in (*projects, *expression_only):
+        with gzip.open(root / "expression" / f"vfb_scRNAseq_expression_{p}.owl.gz", "wb") as fh:
+            fh.write(owl)
+
+
+def test_release_files_published_names(tmp_path):
+    rel = _script("release_files")
+    (tmp_path / "repo").mkdir()
+    _fake_release_repo(tmp_path / "repo", ["a_2020", "b_2021"])
+    written = rel.write_release(tmp_path / "out", root=tmp_path / "repo")
+    names = sorted(n for n, _ in written)
+    assert names == ["VFB_scRNAseq_exp_a_2020.owl", "VFB_scRNAseq_exp_b_2021.owl",
+                     "VFB_scRNAseq_metadata_a_2020.owl", "VFB_scRNAseq_metadata_b_2021.owl"]
+    assert (tmp_path / "out" / "VFB_scRNAseq_exp_a_2020.owl").read_bytes().startswith(b"<?xml")
+    manifest = (tmp_path / "out" / "release_manifest.tsv").read_text().splitlines()
+    assert len(manifest) == 4
+    assert all(int(line.split("\t")[1]) > 0 for line in manifest)
+
+
+def test_release_files_needs_both_files(tmp_path):
+    rel = _script("release_files")
+    (tmp_path / "repo").mkdir()
+    _fake_release_repo(tmp_path / "repo", ["a_2020"], expression_only=["c_2022"])
+    with pytest.raises(SystemExit, match="expression only"):
+        rel.projects(tmp_path / "repo")
+
+
+def test_release_files_cover_every_project():
+    rel = _script("release_files")
+    built = {p.parent.name for p in (REPO / "projects").glob("*/provenance.json")}
+    assert set(rel.projects()) == built

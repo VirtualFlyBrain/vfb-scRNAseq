@@ -679,6 +679,19 @@ intermediates/diffables (`.ttl`, `.ofn`, `expression.tsv`, report, counts).
 `scripts/emit_expression_owl.py` re-emits the expression OWL from the committed
 `expression.tsv` when only its rendering changes (no matrices needed).
 
+**Publishing to VFB (manual).** VFB reads the files from its OWL server, not from
+this repo. `scripts/release_files.py <dir>` writes the published set:
+`VFB_scRNAseq_metadata_<project>.owl` (loaded into the main graph by
+vfb-pipeline-collectdata's `VFB_scRNAseq_metadata_*` pattern) and
+`VFB_scRNAseq_exp_<project>.owl`, unzipped (side-loaded as edges only by
+vfb-pipeline-dumps' `VFB_scRNAseq_exp_*.owl`, which the cluster's data release copies
+from the OWL server), plus `release_manifest.tsv`. Every project needs both files.
+The vfb-k8s `scrnaseq-publish` workflow, run on demand, clones `main`, runs the script
+into a staging folder, checks it against the manifest, removes the previous
+`VFB_scRNAseq_*` dataset files (the old FBlc ones included) and moves the new set into
+place; it also copies the gene-annotations repo's committed `VFB_scRNAseq_genes.owl`.
+The script uses the standard library only, so it runs from a plain clone.
+
 **Emission — efficient, NOT linkml-owl.** linkml-owl renders *and re-parses* the
 template per row (~1.4 ms/row → ~14 min / ~3 GB at this scale). Instead we render
 the schema's `gene` `owl.template` per row (Jinja) straight to one `.ofn` (~0.6 s),

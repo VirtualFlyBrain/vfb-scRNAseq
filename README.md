@@ -237,6 +237,26 @@ with a reason, not loaded); no routine new-term
 requests from expression alone; stage on Samples, on Clusters only when determined
 from the cluster's expression. Details: [`docs/DESIGN.md`](docs/DESIGN.md#general-curation-rules).
 
+## Getting changes into VFB
+
+**Merging here does not update VFB.** VFB loads these files from its OWL server
+(<http://virtualflybrain.org/data/VFB/OWL/>), and nothing copies them there
+automatically. After a change to `metadata/` or `expression/` is merged:
+
+1. Someone with access to the VFB cluster runs the vfb-k8s `scrnaseq-publish` workflow:
+   `argo -n pipeline submit --from wftmpl/scrnaseq-publish`. It publishes this repo's
+   `main` (`scripts/release_files.py`: `VFB_scRNAseq_metadata_<project>.owl` and the
+   unzipped `VFB_scRNAseq_exp_<project>.owl`, replacing every earlier
+   `VFB_scRNAseq_*` dataset file) and the committed `VFB_scRNAseq_genes.owl` of
+   [vfb-scRNAseq-gene-annotations](https://github.com/VirtualFlyBrain/vfb-scRNAseq-gene-annotations).
+2. The change reaches the site with the next VFB data release, which reads the files
+   from the OWL server.
+
+When the expressed genes change (`expression/FBgn_list.txt`), rebuild and release
+vfb-scRNAseq-gene-annotations first, so every gene has its Gene class. The loaders'
+expectations are listed under *What VFB's loaders and indexers expect* in
+`docs/DESIGN.md`.
+
 ## Licence
 
 MIT (`LICENSE`), which also carries the notice for the parts adapted from the
@@ -257,10 +277,9 @@ see *Expression statistics* in `docs/DESIGN.md`). A weekly workflow
 an issue when a FlyBase release changes a gene id in use, and reminds when a pending
 FBbt term request is closed (`checks/`).
 
-Outstanding, outside this repo: loading the OWL into VFB, and retiring the old loads
-these replace (FBlc0006237, FBlc0006090, FBlc0003846 / 4307 / 4785, FBlc0006422,
-FBlc0005659, FBlc0006404, FBlc0006305, FBlc0005603, FBlc0006191, FBlc0007797,
-FBlc0005362, FBlc0005420, FBlc0005515, FBlc0006361).
+Outstanding, outside this repo: the first load into VFB (see *Getting changes into
+VFB*), which also retires all 24 old FlyBase/SCEA scRNAseq files (FBlc ids) on VFB's
+OWL server; they stay in the archived VirtualFlyBrain/vfb-scRNAseq-ontology repo.
 Pending FBbt requests, tracked with the clusters waiting on them in
 `checks/pending_fbbt_requests.json`:
 [#2216](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2216)
