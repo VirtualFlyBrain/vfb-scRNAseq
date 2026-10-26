@@ -86,3 +86,22 @@ def test_additional_matches_emit_multiple_cell_types(monkeypatch):
     mip_itp = [e for e in ents if e["type"] == "Cluster" and e["name"].startswith("Mip/ITP")]
     assert len(mip_itp) == 1
     assert mip_itp[0]["cell_type"] == ["FBbt:00047527", "FBbt:00048313"]
+
+
+def test_dataset_name_qualifier():
+    assert build.dataset_name("Li (2022)", "E-MTAB-10519") == "scRNAseq data from Li (2022)"
+    assert build.dataset_name("Li (2022)", "E-MTAB-10519", "10x") == "scRNAseq data from Li (2022), 10x"
+    assert build.dataset_name(None, "GSE1") == "GSE1"
+
+
+def test_dataset_names_are_unique():
+    """VFB shows datasets by name: two with the same one (e.g. one paper's two
+    datasets) need a `dataset.label_qualifier` in their configs."""
+    import json
+    from collections import Counter
+    from pathlib import Path
+    names = Counter(
+        e["name"]
+        for f in (Path(__file__).resolve().parents[1] / "projects").glob("*/entities.json")
+        for e in json.loads(f.read_text()) if e.get("type") == "Dataset")
+    assert [n for n, c in names.items() if c > 1] == []

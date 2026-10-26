@@ -546,6 +546,9 @@ VFBquery, 2026-10-22; the old FlyBase/SCEA files did the same):
   `vfb:VFBlicense_CC_BY_4_0` (`build.LICENCES`, keyed by the config's `licence`; an
   unknown licence fails the build). VFB's term info takes the logo and legal-code
   link from that node.
+- **Dataset names** are unique: "scRNAseq data from <Author> (<year>)", plus the
+  config's `dataset.label_qualifier` where one paper has several datasets (the Fly
+  Cell Atlas: ", 10x" and ", Smart-seq2"). A test checks no two datasets share a name.
 - **Node labels** (`neo_label`, `n2o:nodeLabel`, multivalued): Dataset `DataSet`,
   `scRNAseq_DataSet`, `hasScRNAseq`; Sample, Assay, Clustering, Cluster, pub by type.
   The VFB pipeline set the two scRNAseq labels only on datasets with FlyBase `FBlc`
