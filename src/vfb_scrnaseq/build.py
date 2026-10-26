@@ -38,6 +38,14 @@ def iri(vfbseq_id: str) -> str:
     return VFB_BASE + vfbseq_id
 
 
+
+def dataset_name(cite: str | None, accession: str, qualifier: str | None = None) -> str:
+    """Dataset label: "scRNAseq data from <Author> (<year>)", plus the config's
+    `dataset.label_qualifier` where one paper has several datasets (e.g. the Fly Cell
+    Atlas 10x and Smart-seq2 datasets), so VFB never shows two with the same name."""
+    name = f"scRNAseq data from {cite}" if cite else accession
+    return f"{name}, {qualifier}" if qualifier else name
+
 def build_entities(project: str) -> list[dict]:
     proj = REPO_ROOT / "projects" / project
     cfg = _yaml(proj / "config.yaml")
@@ -65,7 +73,7 @@ def build_entities(project: str) -> list[dict]:
     dataset_iri = iri(d["vfbseq_id"])
     dataset = {
         "type": "Dataset", "id": dataset_iri,
-        "name": f"scRNAseq data from {cite}" if cite else d["accession"],
+        "name": dataset_name(cite, d["accession"], ds_cfg.get("label_qualifier")),
         "title": src.get("title"),
         "accession": d["accession"],
         "neo_label": DATASET_NEO_LABELS,
