@@ -252,6 +252,12 @@ automatically. After a change to `metadata/` or `expression/` is merged:
 2. The change reaches the site with the next VFB data release, which reads the files
    from the OWL server.
 
+When a dataset is added, removed or renamed, or its number of clusters changes, update
+the dataset tables on the VFB site docs once the release is live
+([VFB2](https://github.com/VirtualFlyBrain/VFB2): `content/en/docs/Data/scRNAseq/_index.md`
+and `content/en/docs/Data/stages.md`; step 13 of *Adding a new dataset* in
+`docs/DESIGN.md`).
+
 When the expressed genes change (`expression/FBgn_list.txt`), rebuild and release
 vfb-scRNAseq-gene-annotations first, so every gene has its Gene class. The loaders'
 expectations are listed under *What VFB's loaders and indexers expect* in
