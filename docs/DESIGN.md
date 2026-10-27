@@ -990,6 +990,13 @@ VFB until the release files are merged, so ids can still change during review.
     in stages on a branch and open a PR against `main` per stage (CI runs the same
     checks): 1 samples, 2 clusters, 3 FBbt mapping (after the curator's review in
     `mapping.tsv`), 4 expression, 5 build, provenance and docs.
+13. **VFB site docs:** once the dataset is live on VFB (published and through a data
+    release), add it to the VFB2 docs with a PR to
+    [VirtualFlyBrain/VFB2](https://github.com/VirtualFlyBrain/VFB2): the Datasets table in
+    `content/en/docs/Data/scRNAseq/_index.md` (dataset, id, stage, clusters, genes, study)
+    and its row in `content/en/docs/Data/stages.md` (with the stage counts). Update both
+    pages too when a dataset is renamed, removed or rebuilt with a different number of
+    clusters.
 
 ## Fly Cell Atlas (Li et al. 2022)
 
