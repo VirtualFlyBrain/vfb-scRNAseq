@@ -203,6 +203,15 @@ below record how each was applied).
   Clusters, even over the same cells. If the source study has not been curated yet,
   the build stops and tells the curator, with the suggestion to curate that study
   first (so the shared Samples/Assays get their ids, labels and metadata there).
+- **Every entity links what it is part of and made from** (curator decision
+  2026-11-01). Each Dataset, Sample, Assay, Clustering and Cluster has at least one
+  link to each related entity type (*Entity links* below lists them), so every page in
+  VFB leads on to the rest of the study. In particular, **a Clustering links the
+  Samples its cells came from**, taken from the authors' own record of which
+  libraries each analysis used (per-cell sample / library columns in the h5ad or
+  metadata), not inferred from tissue names when that record exists. A missing link
+  is allowed only with a recorded reason (`unclustered_samples`, `no_clusters`);
+  `scripts/check_entity_links.py` enforces this in CI.
 - **Stock for a strain, genetic entities for a cross** (curator decision 2026-10-16).
   Samples taken from a defined stock or strain link the FlyBase stock (`stock`);
   samples from a cross (e.g. split-GAL4 > UAS effector) link the genetic entities in the
@@ -567,10 +576,46 @@ VFBquery, 2026-10-22; the old FlyBase/SCEA files did the same):
   gene-annotations repo adds them, labelled from FlyBase, to `VFB_scRNAseq_genes.owl`,
   so Sample pages show names rather than bare ids.
 
-**Caveats / deferred** (deliberately not done here):
-- **`Clustering.associated_sample_or_assay_for_clustering`** left unwired when a
-  sample/assay feeds more than one clustering (the slot is single-valued), so the
-  sample→clustering link is not 1:1. Only `associated_dataset` is set.
+### Entity links
+
+`scripts/check_entity_links.py` (CI) reads the released metadata OWL, all projects as
+one graph so reused Samples count, and requires each entity to have at least one edge
+(either direction) to each type listed, and the listed class / annotation links:
+
+| Entity | Entity links | Other links |
+|---|---|---|
+| Dataset | Sample, Assay, Clustering, Cluster | publication, licence, assay type |
+| Sample | Dataset, Assay, Clustering | tissue, stage |
+| Assay | Dataset, Sample | method |
+| Clustering | Dataset, Sample (or Assay), Cluster | |
+| Cluster | Dataset, Clustering | cell type |
+
+Checking the OWL rather than `entities.json` also catches a link the build makes but
+the emission drops. The only exemptions, each with its reason in the project config:
+`sample_build.unclustered_samples` (sample_id → reason) for a Sample no clustering
+uses (e.g. FCA Smart-seq2's female body wall: the authors' stringent set kept male
+cells only), and `no_clusters: <reason>` on a clustering whose clusters are all held
+(Calderon 0-2 h: all 16 untyped).
+
+### Clustering → Samples
+
+A Clustering's `associated_sample_or_assay_for_clustering` (BFO:0000051 *has part*)
+comes from its `sample_build.clusterings` entry, which must select some Samples
+(`project_config.clustering_samples` refuses an entry without a selector, an unknown
+id or an empty match):
+
+- `sample_ids: [...]`: the Samples' `sample_id`s, own or reused. Use this when the
+  authors' per-cell data show which libraries the clustering used, e.g. FCA 10x (each
+  h5ad cell's `sample_id`), Kurmangaliyev *early* (DGRP pools only), Davie *sub20* (24
+  of 26 Samples);
+- `all_samples: true`: every own Sample, when the per-cell data show all were used;
+- `sample_tissue_raw` / `sample_age`: own and reused Samples with that raw tissue /
+  age, when that is what the authors' split is (Lu 2023 head / body; FCA Smart-seq2,
+  whose h5ads record no library per cell).
+
+Record the evidence in a comment beside the entries. Until 2026-11 four projects (FCA
+10x and Smart-seq2, Davie, Kurmangaliyev) had no selector and so linked no Samples
+from 43 Clusterings; that is what the build now refuses and the check reports.
 
 ## Publication → VFB `:pub` node
 
@@ -813,7 +858,9 @@ type_mapping / term-request / provenance / samples file through the same
 bypass them); `scripts/check_mapping_tsv.py`, which fails if a `mapping.tsv` no
 longer matches what `collate_mapping.py` would produce; and `scripts/write_fbgn_list.py
 --check`, which fails if `expression/FBgn_list.txt` no longer lists the expression
-tables' genes.
+tables' genes; `scripts/write_flybase_entity_list.py --check` likewise for
+`metadata/FlyBase_entity_list.txt`; and `scripts/check_entity_links.py`, which fails
+if any entity in the metadata OWL lacks a link it should have (*Entity links*).
 
 `.github/workflows/fbbt-release-check.yml` runs weekly (and on demand).
 `scripts/check_fbbt_release.py` compares OLS's current FBbt release with the one
@@ -935,8 +982,10 @@ VFB until the release files are merged, so ids can still change during review.
    `dataset` (GEO / BioProject / SRA, or ArrayExpress), `sample_build` (GEO: title
    pattern, `sample_groups`, sex, stocks from the paper's Key Resources Table resolved in FlyBase
    Chado, `age_map` → FBdv stage + FBbt tissue, `tissue_map` when one series has
-   several tissues, clusterings (`sample_tissue_raw` / `sample_age` link a clustering
-   to the samples of that tissue / age; the title regex's `set` group is optional;
+   several tissues, clusterings (each must select the Samples its cells came from:
+   `sample_ids`, `all_samples`, or `sample_tissue_raw` / `sample_age`, from the
+   authors' per-cell data where they exist; see *Clustering → Samples*); the title
+   regex's `set` group is optional;
    `title_stages` for a more specific stage recorded in GSM titles; `tissue_labels` for
    the tissue shown in Sample labels; `age` for the paper's age when GEO records none; `stock` for a stock common to every
    sample, or `genotype_includes` for the genetic entities of a cross, found with
@@ -991,7 +1040,8 @@ VFB until the release files are merged, so ids can still change during review.
     `expression/` READMEs and the project to README.
 11. **Term requests:** only with curator sign-off; add each to
     `checks/pending_fbbt_requests.json`.
-12. **Check:** `pytest`, `validate_project_files.py`, `check_mapping_tsv.py`; commit
+12. **Check:** `pytest`, `validate_project_files.py`, `check_mapping_tsv.py`,
+    `check_entity_links.py` (every entity links the types it should); commit
     in stages on a branch and open a PR against `main` per stage (CI runs the same
     checks): 1 samples, 2 clusters, 3 FBbt mapping (after the curator's review in
     `mapping.tsv`), 4 expression, 5 build, provenance and docs.

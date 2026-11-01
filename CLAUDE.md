@@ -22,6 +22,10 @@ clusters mapped to FBbt, for loading into Virtual Fly Brain. Read `README.md`, t
 - Samples from a defined stock/strain link the FlyBase stock (`stock`); samples from a
   cross (e.g. split-GAL4 > UAS) link the genetic entities instead (`genotype_includes`,
   GENO:0000222: FBco / FBal / FBtp / FBti).
+- Every entity links each related entity type (docs/DESIGN.md *Entity links*;
+  `scripts/check_entity_links.py`). A Clustering links the Samples its cells came
+  from, taken from the authors' per-cell sample/library data where it exists; a gap
+  needs a recorded reason (`unclustered_samples`, `no_clusters`).
 - Reuse identical Samples/Assays from another study by their existing VFBseq ids
   (never mint duplicates); if that study isn't curated yet, tell the curator and
   suggest curating it first.
@@ -30,7 +34,7 @@ clusters mapped to FBbt, for loading into Virtual Fly Brain. Read `README.md`, t
 
 - Environment: `uv` (`uv sync`, `uv run ...`). Run the CI checks locally before
   committing: `uv run pytest`, `uv run python scripts/validate_project_files.py`,
-  `uv run python scripts/check_mapping_tsv.py`.
+  `uv run python scripts/check_mapping_tsv.py`, `uv run python scripts/check_entity_links.py`.
 - Project-specific knowledge lives in `projects/<name>/config.yaml` (or a project
   script); `scripts/` and `src/` stay dataset-agnostic.
 - Mapping JSON is written with the Write tool so `.claude/hooks/check_fbbt_mapping.py`
