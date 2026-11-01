@@ -468,6 +468,14 @@ Beyond the cluster→FBbt layer, the rest of the schema is populated from GEO
   libraries from one biological condition/replicate; an `Assay` is a single
   sequencing library (one GSM), carrying GSM + SRX (+ BioSample) as dbxrefs. The
   GSM→Sample grouping is driven by the GSM-title pattern declared in `sample_build`.
+- **Assay xrefs link to VFB Sites.** `build.site_xrefs` sorts an Assay's accessions by
+  prefix into `geo_xref` (GSM → `vfb:GEO`), `sra_xref` (SRX/ERX/DRX → `vfb:SRA`, NCBI
+  SRA) and `biosample_xref` (SAMN/SAMEA/SAMD → `vfb:BioSample`, NCBI BioSample). Each
+  is emitted like the Dataset's `site`: a dbxref to the Site node annotated with the
+  accession, which VFB loads as a linked `database_cross_reference` edge. Anything
+  else (e.g. a source's own library id) stays a plain-string `dbxref`, which VFB
+  does not load. The Site nodes live in the VFB KB; a new Site prefix needs its KB
+  node before the release that loads it.
 - **Stock:** the master schema had no slot for the source stock — a `stock` slot was
   **added to `Sample`** (we own the schema), carrying the FlyBase FBst reference(s).
   Real biological metadata we shouldn't drop; see the *Stock* note below.

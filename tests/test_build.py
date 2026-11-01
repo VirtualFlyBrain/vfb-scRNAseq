@@ -105,3 +105,17 @@ def test_dataset_names_are_unique():
         for f in (Path(__file__).resolve().parents[1] / "projects").glob("*/entities.json")
         for e in json.loads(f.read_text()) if e.get("type") == "Dataset")
     assert [n for n, c in names.items() if c > 1] == []
+
+
+def test_site_xrefs_sorts_accessions_by_site():
+    got = build.site_xrefs(["GSM1", "SRX2", "ERX3", "SAMN4", "SAMEA5", "FCA6_Female_head", "GSM1"])
+    assert got == {"geo_xref": ["GSM1"], "sra_xref": ["SRX2", "ERX3"],
+                   "biosample_xref": ["SAMN4", "SAMEA5"], "dbxref": ["FCA6_Female_head"]}
+    assert build.site_xrefs(["GSMx"]) == {"dbxref": ["GSMx"]}   # not an accession
+
+
+def test_assay_xrefs_link_their_sites(entities):
+    assays = [e for e in entities if e["type"] == "Assay"]
+    assert assays and all(a.get("geo_xref") for a in assays)
+    assert all(x.startswith("GSM") for a in assays for x in a["geo_xref"])
+    assert all(x.startswith("SRX") for a in assays for x in a.get("sra_xref", []))

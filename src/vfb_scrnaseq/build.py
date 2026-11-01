@@ -39,6 +39,26 @@ def iri(vfbseq_id: str) -> str:
 
 
 
+#: Assay accession prefix -> schema slot for a dbxref to that VFB Site node. INSDC
+#: accessions resolve at NCBI whichever archive minted them (SRX/ERX/DRX at SRA,
+#: SAMN/SAMEA/SAMD at BioSample). Anything else stays a plain-string `dbxref`.
+SITE_XREF_PREFIXES = (
+    ("GSM", "geo_xref"),
+    ("SRX", "sra_xref"), ("ERX", "sra_xref"), ("DRX", "sra_xref"),
+    ("SAMN", "biosample_xref"), ("SAMEA", "biosample_xref"), ("SAMD", "biosample_xref"),
+)
+
+
+def site_xrefs(xrefs: list[str]) -> dict[str, list[str]]:
+    """Sort accessions into the per-Site slots, the rest into `dbxref` (order kept)."""
+    out: dict[str, list[str]] = {}
+    for x in dict.fromkeys(xrefs):
+        slot = next((s for p, s in SITE_XREF_PREFIXES
+                     if x.startswith(p) and x[len(p):].isdigit()), "dbxref")
+        out.setdefault(slot, []).append(x)
+    return out
+
+
 def dataset_name(cite: str | None, accession: str, qualifier: str | None = None) -> str:
     """Dataset label: "scRNAseq data from <Author> (<year>)", plus the config's
     `dataset.label_qualifier` where one paper has several datasets (e.g. the Fly Cell
@@ -168,15 +188,16 @@ def build_entities(project: str) -> list[dict]:
             xrefs.append(a["sra"])
         if a.get("biosample"):
             xrefs.append(a["biosample"])
-        entities.append({
+        rec = {
             "type": "Assay", "id": iri(a["vfbseq_id"]),
             "name": assay_name(a),
             "method": a["method"]["fbcv_id"],
             "associated_sample_for_assay": [iri(a["sample_vfbseq_id"])],
             "associated_dataset": dataset_iri,
-            "dbxref": xrefs,
             "neo_label": ["Assay"],
-        })
+        }
+        rec.update(site_xrefs(xrefs))
+        entities.append(rec)
 
     # --- Clusterings ---
     clustering_iri_by_subset = {}
