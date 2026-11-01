@@ -222,14 +222,42 @@ def reused_samples(config: dict) -> list[dict]:
     return out
 
 
+#: `sample_build.clusterings` entry keys that select a clustering's Samples.
+CLUSTERING_SAMPLE_SELECTORS = ("sample_ids", "all_samples", "sample_tissue_raw", "sample_age")
+
+
 def clustering_samples(entry: dict, own: list[dict], reused: list[dict]) -> list[str]:
     """VFBseq ids of the Samples a clustering uses, from its `sample_build.clusterings`
-    entry: ``sample_tissue_raw`` and/or ``sample_age`` select the own and reused samples
-    with that raw tissue / age; with neither, none are recorded."""
-    if not isinstance(entry, dict):
-        return []
-    tissue, age = entry.get("sample_tissue_raw"), entry.get("sample_age")
-    if not (tissue or age):
-        return []
-    return [s["vfbseq_id"] for s in own + reused
-            if (not tissue or s.get("tissue_raw") == tissue) and (not age or s.get("age_raw") == age)]
+    entry. Every clustering must link the Samples its cells came from (docs/DESIGN.md
+    *Clustering → Samples*), so an entry must select some, by one of:
+
+    - ``sample_ids``: the Samples' ``sample_id``s (own or reused), exactly; for when the
+      authors' per-cell data show which libraries a clustering used;
+    - ``all_samples: true``: every own Sample (not reused ones);
+    - ``sample_tissue_raw`` and/or ``sample_age``: own and reused Samples with that raw
+      tissue / age.
+
+    Raises ValueError for an entry with no selector, an unknown ``sample_id``, or a
+    selection that matches nothing.
+    """
+    subset = entry.get("id") if isinstance(entry, dict) else entry
+    if not isinstance(entry, dict) or not any(k in entry for k in CLUSTERING_SAMPLE_SELECTORS):
+        raise ValueError(
+            f"clustering {subset!r} selects no Samples: give its sample_build.clusterings entry "
+            f"one of {', '.join(CLUSTERING_SAMPLE_SELECTORS)} (docs/DESIGN.md, Clustering -> Samples)")
+    if "sample_ids" in entry:
+        by_id = {s["sample_id"]: s["vfbseq_id"] for s in own + reused}
+        unknown = [i for i in entry["sample_ids"] if i not in by_id]
+        if unknown:
+            raise ValueError(f"clustering {subset!r}: unknown sample_ids {unknown}")
+        used = [by_id[i] for i in entry["sample_ids"]]
+    elif entry.get("all_samples"):
+        used = [s["vfbseq_id"] for s in own]
+    else:
+        tissue, age = entry.get("sample_tissue_raw"), entry.get("sample_age")
+        used = [s["vfbseq_id"] for s in own + reused
+                if (not tissue or s.get("tissue_raw") == tissue)
+                and (not age or s.get("age_raw") == age)]
+    if not used:
+        raise ValueError(f"clustering {subset!r}: its sample selector matches no Samples")
+    return used
