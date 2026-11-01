@@ -116,6 +116,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GENO_0000222 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/GENO_0000222"/>
@@ -177,37 +183,49 @@
 
     <!-- http://flybase.org/reports/FBal0052380 -->
 
-    <Class rdf:about="http://flybase.org/reports/FBal0052380"/>
+    <Class rdf:about="http://flybase.org/reports/FBal0052380">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </Class>
     
 
 
     <!-- http://flybase.org/reports/FBal0119470 -->
 
-    <Class rdf:about="http://flybase.org/reports/FBal0119470"/>
+    <Class rdf:about="http://flybase.org/reports/FBal0119470">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </Class>
     
 
 
     <!-- http://flybase.org/reports/FBal0147425 -->
 
-    <Class rdf:about="http://flybase.org/reports/FBal0147425"/>
+    <Class rdf:about="http://flybase.org/reports/FBal0147425">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </Class>
     
 
 
     <!-- http://flybase.org/reports/FBal0243539 -->
 
-    <Class rdf:about="http://flybase.org/reports/FBal0243539"/>
+    <Class rdf:about="http://flybase.org/reports/FBal0243539">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </Class>
     
 
 
     <!-- http://flybase.org/reports/FBal0327974 -->
 
-    <Class rdf:about="http://flybase.org/reports/FBal0327974"/>
+    <Class rdf:about="http://flybase.org/reports/FBal0327974">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </Class>
     
 
 
     <!-- http://flybase.org/reports/FBal0341663 -->
 
-    <Class rdf:about="http://flybase.org/reports/FBal0341663"/>
+    <Class rdf:about="http://flybase.org/reports/FBal0341663">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </Class>
     
 
 
@@ -8907,6 +8925,19 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000760">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000706"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000712"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000714"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000716"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000718"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000720"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000722"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000724"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000726"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000728"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000730"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000732"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000734"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Head</rdfs:label>
@@ -8918,6 +8949,19 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000761">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000708"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000736"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000738"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000740"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000742"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000744"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000746"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000748"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000750"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000752"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000754"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000756"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000758"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Body</rdfs:label>
@@ -8929,6 +8973,11 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000762">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000571"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000576"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000691"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000696"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000710"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Antenna</rdfs:label>
@@ -8940,6 +8989,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000763">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000636"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000641"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Body Wall</rdfs:label>
@@ -8951,6 +9002,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000764">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000541"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000701"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Fat Body</rdfs:label>
@@ -8962,6 +9015,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000765">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000616"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000621"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Gut</rdfs:label>
@@ -8973,6 +9028,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000766">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000546"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000551"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Haltere</rdfs:label>
@@ -8984,6 +9041,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000767">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000646"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000651"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Heart</rdfs:label>
@@ -8995,6 +9054,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000768">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000661"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000666"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Leg</rdfs:label>
@@ -9006,6 +9067,7 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000769">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000656"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Male Reproductive Glands</rdfs:label>
@@ -9017,6 +9079,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000770">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000626"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000631"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Malpighian Tubule</rdfs:label>
@@ -9028,6 +9092,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000771">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000539"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000566"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Oenocyte</rdfs:label>
@@ -9039,6 +9105,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000772">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000606"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000611"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Ovary</rdfs:label>
@@ -9050,6 +9118,10 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000773">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000556"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000561"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000681"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000686"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps</rdfs:label>
@@ -9061,6 +9133,9 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000774">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000591"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000596"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000601"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Testis</rdfs:label>
@@ -9072,6 +9147,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000775">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000581"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000586"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Trachea</rdfs:label>
@@ -9083,6 +9160,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000776">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000671"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000676"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000538"/>
         <rdfs:label>Fly Cell Atlas 10x Stringent Wing</rdfs:label>

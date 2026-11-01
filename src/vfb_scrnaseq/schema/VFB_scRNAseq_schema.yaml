@@ -309,8 +309,11 @@ slots:
       genotype in FlyBase; the strain is also carried in the Sample's rdfs:label.
     range: uriorcurie
     multivalued: true
+    # The second axiom gives the stock node label hasScRNAseqSample, which VFB's
+    # queries from a stock / strain / genetic entity back to its Samples key on.
     annotations:
       owl.fstring: ObjectPropertyAssertion( BAO:0095000 {id} {V} )
+        AnnotationAssertion( neo_property:nodeLabel {V} "hasScRNAseqSample" )
   genotype_includes:
     slot_uri: GENO:0000222
     description: >-
@@ -323,8 +326,10 @@ slots:
       in VFB, so the link is a class expression (has_genotype some X).
     range: uriorcurie
     multivalued: true
+    # The second axiom gives the entity node label hasScRNAseqSample (as `stock`).
     annotations:
       owl.fstring: ClassAssertion( ObjectSomeValuesFrom( GENO:0000222 {V} ) {id} )
+        AnnotationAssertion( neo_property:nodeLabel {V} "hasScRNAseqSample" )
   dbxref:
     slot_uri: oboInOwl:hasDbXref
     description: Cross-reference accession(s) for the entity with no VFB Site (e.g. a source's own library id), kept as plain strings, which VFB does not load. Accessions at a VFB Site use geo_xref / sra_xref / biosample_xref. Not an IRI for the entity.

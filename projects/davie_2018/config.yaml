@@ -77,14 +77,24 @@ sample_build:
       tissue: { fbbt_id: FBbt:00003624, label: adult brain }
   # One Clustering per author analysis (curator decision: rows are the authors'
   # clusters, never merged by cell type). Built by projects/davie_2018/build_clusters.py.
+  # Samples per clustering from the cells' libraries (barcode suffix = sample_id) in
+  # the cluster membership build_clusters.py writes: every clustering has cells from
+  # all 26 Samples except sub20, which has none from DGRP-551_6d_r1 or w1118_30d_r1.
   clusterings:
-    - { id: res2, name: "Davie 2018 Seurat res-2.0 clustering of the 57K cells (87 clusters, Table S2)" }
-    - { id: res8, name: "Davie 2018 Seurat res-8.0 clustering (clusters annotated in Table S2)" }
-    - { id: sub20, name: "Davie 2018 sub-clustering of res-2.0 cluster 20 (lamina monopolar neurons)" }
-    - { id: sub27, name: "Davie 2018 sub-clustering of res-2.0 cluster 27 (olfactory projection neurons)" }
-    - { id: sub42, name: "Davie 2018 sub-clustering of res-2.0 cluster 42 (dopaminergic neurons)" }
-    - { id: sub64, name: "Davie 2018 sub-clustering of res-2.0 cluster 64 (octopaminergic-tyraminergic neurons)" }
-    - { id: neuropeptide, name: "Davie 2018 re-clustering of neuropeptide-expressing cells (Figure 2K)" }
+    - { id: res2, name: "Davie 2018 Seurat res-2.0 clustering of the 57K cells (87 clusters, Table S2)",
+        all_samples: true }
+    - { id: res8, name: "Davie 2018 Seurat res-8.0 clustering (clusters annotated in Table S2)",
+        all_samples: true }
+    - { id: sub20, name: "Davie 2018 sub-clustering of res-2.0 cluster 20 (lamina monopolar neurons)",
+        sample_ids: [DGRP-551_0d_r1, DGRP-551_0d_r2, DGRP-551_15d_r1, DGRP-551_1d_r1, DGRP-551_30d_r1, DGRP-551_30d_r2, DGRP-551_3d_r1, DGRP-551_3d_r2, DGRP-551_50d_r1, DGRP-551_6d_r2, DGRP-551_9d_r1, w1118_0d_r1, w1118_0d_r2, w1118_15d_r1, w1118_1d_r1, w1118_3d_r1, w1118_3d_r2, w1118_3d_r3, w1118_6d_r1, w1118_6d_r2, w1118_6d_r3, w1118_9d_r1, w1118_9d_r2, w1118_9d_r3] }
+    - { id: sub27, name: "Davie 2018 sub-clustering of res-2.0 cluster 27 (olfactory projection neurons)",
+        all_samples: true }
+    - { id: sub42, name: "Davie 2018 sub-clustering of res-2.0 cluster 42 (dopaminergic neurons)",
+        all_samples: true }
+    - { id: sub64, name: "Davie 2018 sub-clustering of res-2.0 cluster 64 (octopaminergic-tyraminergic neurons)",
+        all_samples: true }
+    - { id: neuropeptide, name: "Davie 2018 re-clustering of neuropeptide-expressing cells (Figure 2K)",
+        all_samples: true }
 
 # Summary expression statistics. The GEO 57K MEX tarball
 # (GSE107451_DGRP-551_w1118_WholeBrain_57k_..._10X_DGEM_MEX.mtx.tsv.tar.gz) is

@@ -30,5 +30,11 @@ jobs:
       - name: mapping.tsv up to date with the mapping JSON
         run: uv run python scripts/check_mapping_tsv.py
 
+      - name: Every entity links the entity types it should (metadata OWL)
+        run: uv run python scripts/check_entity_links.py
+
       - name: expression/FBgn_list.txt up to date with the expression tables
         run: uv run python scripts/write_fbgn_list.py --check
+
+      - name: metadata/FlyBase_entity_list.txt up to date with the Samples
+        run: uv run python scripts/write_flybase_entity_list.py --check

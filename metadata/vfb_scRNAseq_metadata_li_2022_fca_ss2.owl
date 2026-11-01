@@ -116,6 +116,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GENO_0000222 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/GENO_0000222"/>
@@ -177,49 +183,65 @@
 
     <!-- http://flybase.org/reports/FBal0052380 -->
 
-    <Class rdf:about="http://flybase.org/reports/FBal0052380"/>
+    <Class rdf:about="http://flybase.org/reports/FBal0052380">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </Class>
     
 
 
     <!-- http://flybase.org/reports/FBal0119470 -->
 
-    <Class rdf:about="http://flybase.org/reports/FBal0119470"/>
+    <Class rdf:about="http://flybase.org/reports/FBal0119470">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </Class>
     
 
 
     <!-- http://flybase.org/reports/FBal0147425 -->
 
-    <Class rdf:about="http://flybase.org/reports/FBal0147425"/>
+    <Class rdf:about="http://flybase.org/reports/FBal0147425">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </Class>
     
 
 
     <!-- http://flybase.org/reports/FBal0155893 -->
 
-    <Class rdf:about="http://flybase.org/reports/FBal0155893"/>
+    <Class rdf:about="http://flybase.org/reports/FBal0155893">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </Class>
     
 
 
     <!-- http://flybase.org/reports/FBal0243539 -->
 
-    <Class rdf:about="http://flybase.org/reports/FBal0243539"/>
+    <Class rdf:about="http://flybase.org/reports/FBal0243539">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </Class>
     
 
 
     <!-- http://flybase.org/reports/FBal0305188 -->
 
-    <Class rdf:about="http://flybase.org/reports/FBal0305188"/>
+    <Class rdf:about="http://flybase.org/reports/FBal0305188">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </Class>
     
 
 
     <!-- http://flybase.org/reports/FBal0327974 -->
 
-    <Class rdf:about="http://flybase.org/reports/FBal0327974"/>
+    <Class rdf:about="http://flybase.org/reports/FBal0327974">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </Class>
     
 
 
     <!-- http://flybase.org/reports/FBal0341663 -->
 
-    <Class rdf:about="http://flybase.org/reports/FBal0341663"/>
+    <Class rdf:about="http://flybase.org/reports/FBal0341663">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </Class>
     
 
 
@@ -2800,6 +2822,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000844">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000786"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000788"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 Antenna</rdfs:label>
@@ -2811,6 +2835,7 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000845">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000792"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 Body Wall</rdfs:label>
@@ -2822,6 +2847,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000846">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000794"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000797"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 Fat Body</rdfs:label>
@@ -2833,6 +2860,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000847">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000800"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000802"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 Gut</rdfs:label>
@@ -2844,6 +2873,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000848">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000804"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000806"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 Haltere</rdfs:label>
@@ -2855,6 +2886,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000849">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000812"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000814"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 Heart</rdfs:label>
@@ -2866,6 +2899,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000850">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000820"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000822"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 Leg</rdfs:label>
@@ -2877,6 +2912,7 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000851">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000828"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 Male Reproductive Glands</rdfs:label>
@@ -2888,6 +2924,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000852">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000778"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000780"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 Malpighian Tubule</rdfs:label>
@@ -2899,6 +2937,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000853">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000782"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000784"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 Oenocyte</rdfs:label>
@@ -2910,6 +2950,7 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000854">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000824"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 Ovary</rdfs:label>
@@ -2921,6 +2962,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000855">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000816"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000818"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 Proboscis and Maxillary Palps</rdfs:label>
@@ -2932,6 +2975,7 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000856">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000830"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 Testis</rdfs:label>
@@ -2943,6 +2987,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000857">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000836"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000838"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 Trachea</rdfs:label>
@@ -2954,6 +3000,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000858">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000840"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000842"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 Wing</rdfs:label>
@@ -2965,6 +3013,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000859">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000808"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000810"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 dilp2 IPC (insulin-producing cells)</rdfs:label>
@@ -2976,6 +3026,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000860">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000832"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000834"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000777"/>
         <rdfs:label>Fly Cell Atlas Smart-seq2 Akh CC (corpora cardiaca)</rdfs:label>

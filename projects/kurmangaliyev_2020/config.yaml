@@ -117,9 +117,13 @@ sample_build:
   # clustering analyses present in this dataset (GEO subsets): the main dataset
   # (24-96h APF, 196 clusters) and the separately clustered early dataset (0-24h APF,
   # 110 clusters; 24h cells are in both).
+  # Samples per clustering from the per-cell metadata (GSE156455_metadata_<subset>):
+  # early has cells only from the two DGRP pools (0, 12, 24h); main from all 7 Samples.
   clusterings:
-    - { id: main, name: "Kurmangaliyev 2020 main dataset clustering (24-96h APF, 196 clusters)" }
-    - { id: early, name: "Kurmangaliyev 2020 early dataset clustering (0-24h APF, 110 clusters)" }
+    - { id: main, name: "Kurmangaliyev 2020 main dataset clustering (24-96h APF, 196 clusters)",
+        all_samples: true }
+    - { id: early, name: "Kurmangaliyev 2020 early dataset clustering (0-24h APF, 110 clusters)",
+        sample_ids: [DGRP_All_A, DGRP_All_B] }
 
 # Summary expression statistics (extent + CPM level per cluster x gene).
 # Matrix/features/barcodes are the 10x MEX files in .cache (metadata + label column
