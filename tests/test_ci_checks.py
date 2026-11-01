@@ -253,3 +253,75 @@ def test_release_files_cover_every_project():
     rel = _script("release_files")
     built = {p.parent.name for p in (REPO / "projects").glob("*/provenance.json")}
     assert set(rel.projects()) == built
+
+
+# --- check_entity_links: every entity links each entity type it should ---------------
+
+def _links_graph(drop=None):
+    """A minimal complete Dataset/Sample/Assay/Clustering/Cluster set, optionally
+    without one (subject, predicate) triple."""
+    import rdflib
+    from rdflib import BNode, Literal, OWL, RDF, URIRef
+    obo, vfb = "http://purl.obolibrary.org/obo/", "http://virtualflybrain.org/reports/"
+    dc = "http://purl.org/dc/terms/"
+    g = rdflib.Graph()
+    ids = {k: URIRef(vfb + k) for k in ("ds", "s", "a", "cl", "c")}
+    for k, t in [("ds", "FBcv_0003023"), ("s", "FBcv_0003024"), ("a", "FBcv_0003025"),
+                 ("cl", "FBcv_0009002"), ("c", "FBcv_0009003")]:
+        g.add((ids[k], RDF.type, URIRef(obo + t)))
+        g.add((ids[k], rdflib.RDFS.label, Literal(k)))
+        if k != "ds":
+            g.add((ids[k], URIRef(dc + "source"), ids["ds"]))
+    g.add((ids["s"], URIRef(obo + "RO_0002352"), ids["a"]))
+    g.add((ids["cl"], URIRef(obo + "BFO_0000051"), ids["s"]))
+    g.add((ids["c"], URIRef(obo + "BFO_0000050"), ids["cl"]))
+    g.add((ids["ds"], URIRef(dc + "references"), URIRef("http://flybase.org/reports/FBrf1")))
+    g.add((ids["ds"], URIRef(dc + "licence"), URIRef(vfb + "VFBlicense_CC_BY_4_0")))
+    for k, prop in [("ds", obo + "OBI_0000312"), ("s", obo + "RO_0002131"),
+                    ("s", obo + "RO_0002490"), ("a", "http://www.bioassayontology.org/bao#BAO_0000212"),
+                    ("c", obo + "RO_0002473")]:
+        r = BNode()
+        g.add((r, RDF.type, OWL.Restriction))
+        g.add((r, OWL.onProperty, URIRef(prop)))
+        g.add((r, OWL.someValuesFrom, URIRef(obo + "X")))
+        g.add((ids[k], RDF.type, r))
+    if drop:
+        s, p = drop
+        g.remove((ids[s], URIRef(p), None))
+    return g, ids
+
+
+def test_entity_links_complete_set_passes():
+    assert _script("check_entity_links").check(_links_graph()[0]) == []
+
+
+def test_entity_links_reports_a_clustering_with_no_samples():
+    chk = _script("check_entity_links")
+    g, _ = _links_graph(drop=("cl", "http://purl.obolibrary.org/obo/BFO_0000051"))
+    problems = chk.check(g)
+    assert any("Clustering cl" in p and "Assay or Sample" in p for p in problems)
+    assert any("Sample s" in p and "Clustering" in p for p in problems)
+
+
+def test_entity_links_reports_a_missing_cell_type():
+    chk = _script("check_entity_links")
+    g, ids = _links_graph()
+    for o in list(g.objects(ids["c"], __import__("rdflib").RDF.type)):
+        if isinstance(o, __import__("rdflib").BNode):
+            g.remove((ids["c"], __import__("rdflib").RDF.type, o))
+    assert chk.check(g) == ["Cluster c (c): no cell type"]
+
+
+def test_entity_links_exemption_needs_matching_type():
+    chk = _script("check_entity_links")
+    g, ids = _links_graph(drop=("cl", "http://purl.obolibrary.org/obo/BFO_0000051"))
+    exempt = {(str(ids["s"]), "Clustering"): "reason"}
+    problems = chk.check(g, exempt)
+    assert not any(p.startswith("Sample s") for p in problems)          # exempted
+    assert any(p.startswith("Clustering cl") for p in problems)         # still reported
+
+
+def test_entity_links_repo_metadata_passes():
+    chk = _script("check_entity_links")
+    files = sorted((REPO / "metadata").glob("vfb_scRNAseq_metadata_*.owl"))
+    assert chk.check(chk.load_graph(files), chk.exemptions()) == []

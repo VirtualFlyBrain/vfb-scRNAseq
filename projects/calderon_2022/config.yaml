@@ -69,7 +69,8 @@ sample_build:
   # distant collections), from .cache/calderon/cells.tsv.gz (export_windows.R).
   min_sample_fraction: 0.01
   clusterings:
-    - { id: "0_2", name: "Calderon 2022 clusters, modelled age 0-2 h" }
+    - { id: "0_2", name: "Calderon 2022 clusters, modelled age 0-2 h",
+        no_clusters: "the authors left all 16 clusters untyped, so all are held; curator decision 2026-11-01: keep loading the Clustering and its Samples" }
     - { id: "2_4", name: "Calderon 2022 clusters, modelled age 2-4 h" }
     - { id: "4_6", name: "Calderon 2022 clusters, modelled age 4-6 h" }
     - { id: "6_8", name: "Calderon 2022 clusters, modelled age 6-8 h" }

@@ -117,6 +117,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
@@ -2193,6 +2199,13 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000045">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000011"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000020"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000025"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000030"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000035"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000040"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000001"/>
         <rdfs:label>Kurmangaliyev 2020 main dataset clustering (24-96h APF, 196 clusters)</rdfs:label>
@@ -2204,6 +2217,8 @@
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00000046">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000002"/>
+        <obo:BFO_0000051 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000011"/>
         <neo_property:nodeLabel>Clustering</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00000001"/>
         <rdfs:label>Kurmangaliyev 2020 early dataset clustering (0-24h APF, 110 clusters)</rdfs:label>

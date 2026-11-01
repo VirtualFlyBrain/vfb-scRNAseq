@@ -2,6 +2,7 @@
 label slugs, holding class-less unidentified clusters, and regex GSM-title parsing.
 Offline."""
 
+import pytest
 import importlib.util
 import json
 from pathlib import Path
@@ -126,7 +127,8 @@ def test_reused_samples_and_clustering_links(tmp_path, monkeypatch):
            {"vfbseq_id": "VFBseq_00000011", "tissue_raw": "body"}]
     assert pc.clustering_samples({"id": "h", "sample_tissue_raw": "head"}, own, reused) == \
         ["VFBseq_00000010", "VFBseq_00000001"]
-    assert pc.clustering_samples("main", own, reused) == []
+    with pytest.raises(ValueError):                 # no selector: refused, not silently empty
+        pc.clustering_samples("main", own, reused)
 
 
 def test_hold_reason_untyped_by_rule_and_pending():
@@ -145,4 +147,32 @@ def test_clustering_samples_by_age():
            {"vfbseq_id": "VFBseq_00000002", "age_raw": "P30%", "tissue_raw": "OL"}]
     assert clustering_samples({"id": "P15", "sample_age": "P15%"}, own, []) == ["VFBseq_00000001"]
     assert clustering_samples({"id": "x", "sample_age": "P30%", "sample_tissue_raw": "OL"}, own, []) == ["VFBseq_00000002"]
-    assert clustering_samples({"id": "x"}, own, []) == []
+    with pytest.raises(ValueError):                 # no selector: refused, not silently empty
+        clustering_samples({"id": "x"}, own, [])
+
+
+# --- clustering_samples: every clustering must select the Samples its cells came from --
+
+_OWN = [{"vfbseq_id": "V1", "sample_id": "a", "tissue_raw": "head", "age_raw": "5d"},
+        {"vfbseq_id": "V2", "sample_id": "b", "tissue_raw": "body", "age_raw": "5d"}]
+_REUSED = [{"vfbseq_id": "V9", "sample_id": "r", "tissue_raw": "head", "age_raw": "30d"}]
+
+
+def test_clustering_samples_selectors():
+    from vfb_scrnaseq.project_config import clustering_samples as cs
+    assert cs({"id": "x", "sample_ids": ["b", "r"]}, _OWN, _REUSED) == ["V2", "V9"]
+    assert cs({"id": "x", "all_samples": True}, _OWN, _REUSED) == ["V1", "V2"]      # own only
+    assert cs({"id": "x", "sample_tissue_raw": "head"}, _OWN, _REUSED) == ["V1", "V9"]
+    assert cs({"id": "x", "sample_tissue_raw": "head", "sample_age": "5d"}, _OWN, _REUSED) == ["V1"]
+
+
+@pytest.mark.parametrize("entry", [
+    "plain_subset",                                     # no selector at all
+    {"id": "x", "name": "described, no selector"},
+    {"id": "x", "sample_ids": ["nope"]},                # unknown sample_id
+    {"id": "x", "sample_tissue_raw": "wing"},           # matches nothing
+])
+def test_clustering_samples_refuses_no_samples(entry):
+    from vfb_scrnaseq.project_config import clustering_samples as cs
+    with pytest.raises(ValueError):
+        cs(entry, _OWN, _REUSED)
