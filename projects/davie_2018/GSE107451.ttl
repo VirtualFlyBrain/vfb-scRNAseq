@@ -819,15 +819,6 @@ VFBseq:00000427 a FBcv:0009003 ;
 FlyBase:FBrf0239740 a FBcv:0000212 ;
     neo_property:nodeLabel "pub" .
 
-VFBseq:00000244 a FBcv:0003024 ;
-    rdfs:label "brain, < 8 Hours, DGRP-551 rep r1 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000245 ;
-    RO:0002490 FBdv:00007075 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0055026 .
-
 VFBseq:00000245 a FBcv:0003025 ;
     rdfs:label "brain, < 8 Hours, DGRP-551 rep r1, 10x library (Davie 2018)" ;
     neo_property:nodeLabel "Assay" ;
@@ -837,15 +828,6 @@ VFBseq:00000245 a FBcv:0003025 ;
     oboInOwl:hasDbXref "GSM2867552",
         "SAMN08105415",
         "SRX3426759" .
-
-VFBseq:00000246 a FBcv:0003024 ;
-    rdfs:label "brain, < 8 Hours, DGRP-551 rep r2 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000247 ;
-    RO:0002490 FBdv:00007075 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0055026 .
 
 VFBseq:00000247 a FBcv:0003025 ;
     rdfs:label "brain, < 8 Hours, DGRP-551 rep r2, 10x library (Davie 2018)" ;
@@ -857,15 +839,6 @@ VFBseq:00000247 a FBcv:0003025 ;
         "SAMN08105414",
         "SRX3426760" .
 
-VFBseq:00000248 a FBcv:0003024 ;
-    rdfs:label "brain, 15 Days, DGRP-551 rep r1 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000249 ;
-    RO:0002490 FBdv:00007090 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0055026 .
-
 VFBseq:00000249 a FBcv:0003025 ;
     rdfs:label "brain, 15 Days, DGRP-551 rep r1, 10x library (Davie 2018)" ;
     neo_property:nodeLabel "Assay" ;
@@ -875,15 +848,6 @@ VFBseq:00000249 a FBcv:0003025 ;
     oboInOwl:hasDbXref "GSM2867560",
         "SAMN08105407",
         "SRX3426767" .
-
-VFBseq:00000250 a FBcv:0003024 ;
-    rdfs:label "brain, 1 Day, DGRP-551 rep r1 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000251 ;
-    RO:0002490 FBdv:00007076 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0055026 .
 
 VFBseq:00000251 a FBcv:0003025 ;
     rdfs:label "brain, 1 Day, DGRP-551 rep r1, 10x library (Davie 2018)" ;
@@ -895,15 +859,6 @@ VFBseq:00000251 a FBcv:0003025 ;
         "SAMN08105413",
         "SRX3426761" .
 
-VFBseq:00000252 a FBcv:0003024 ;
-    rdfs:label "brain, 30 Days, DGRP-551 rep r1 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000253 ;
-    RO:0002490 FBdv:00007105 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0055026 .
-
 VFBseq:00000253 a FBcv:0003025 ;
     rdfs:label "brain, 30 Days, DGRP-551 rep r1, 10x library (Davie 2018)" ;
     neo_property:nodeLabel "Assay" ;
@@ -913,15 +868,6 @@ VFBseq:00000253 a FBcv:0003025 ;
     oboInOwl:hasDbXref "GSM2867561",
         "SAMN08105406",
         "SRX3426768" .
-
-VFBseq:00000254 a FBcv:0003024 ;
-    rdfs:label "brain, 30 Days, DGRP-551 rep r2 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000255 ;
-    RO:0002490 FBdv:00007105 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0055026 .
 
 VFBseq:00000255 a FBcv:0003025 ;
     rdfs:label "brain, 30 Days, DGRP-551 rep r2, 10x library (Davie 2018)" ;
@@ -933,15 +879,6 @@ VFBseq:00000255 a FBcv:0003025 ;
         "SAMN08105405",
         "SRX3426769" .
 
-VFBseq:00000256 a FBcv:0003024 ;
-    rdfs:label "brain, 3 Days, DGRP-551 rep r1 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000257 ;
-    RO:0002490 FBdv:00007078 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0055026 .
-
 VFBseq:00000257 a FBcv:0003025 ;
     rdfs:label "brain, 3 Days, DGRP-551 rep r1, 10x library (Davie 2018)" ;
     neo_property:nodeLabel "Assay" ;
@@ -951,15 +888,6 @@ VFBseq:00000257 a FBcv:0003025 ;
     oboInOwl:hasDbXref "GSM2867555",
         "SAMN08105412",
         "SRX3426762" .
-
-VFBseq:00000258 a FBcv:0003024 ;
-    rdfs:label "brain, 3 Days, DGRP-551 rep r2 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000259 ;
-    RO:0002490 FBdv:00007078 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0055026 .
 
 VFBseq:00000259 a FBcv:0003025 ;
     rdfs:label "brain, 3 Days, DGRP-551 rep r2, 10x library (Davie 2018)" ;
@@ -971,15 +899,6 @@ VFBseq:00000259 a FBcv:0003025 ;
         "SAMN08105411",
         "SRX3426763" .
 
-VFBseq:00000260 a FBcv:0003024 ;
-    rdfs:label "brain, 50 Days, DGRP-551 rep r1 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000261 ;
-    RO:0002490 FBdv:00007125 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0055026 .
-
 VFBseq:00000261 a FBcv:0003025 ;
     rdfs:label "brain, 50 Days, DGRP-551 rep r1, 10x library (Davie 2018)" ;
     neo_property:nodeLabel "Assay" ;
@@ -989,15 +908,6 @@ VFBseq:00000261 a FBcv:0003025 ;
     oboInOwl:hasDbXref "GSM2867563",
         "SAMN08105404",
         "SRX3426770" .
-
-VFBseq:00000262 a FBcv:0003024 ;
-    rdfs:label "brain, 6 Days, DGRP-551 rep r1 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000263 ;
-    RO:0002490 FBdv:00007081 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0055026 .
 
 VFBseq:00000263 a FBcv:0003025 ;
     rdfs:label "brain, 6 Days, DGRP-551 rep r1, 10x library (Davie 2018)" ;
@@ -1009,15 +919,6 @@ VFBseq:00000263 a FBcv:0003025 ;
         "SAMN08105410",
         "SRX3426764" .
 
-VFBseq:00000264 a FBcv:0003024 ;
-    rdfs:label "brain, 6 Days, DGRP-551 rep r2 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000265 ;
-    RO:0002490 FBdv:00007081 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0055026 .
-
 VFBseq:00000265 a FBcv:0003025 ;
     rdfs:label "brain, 6 Days, DGRP-551 rep r2, 10x library (Davie 2018)" ;
     neo_property:nodeLabel "Assay" ;
@@ -1027,15 +928,6 @@ VFBseq:00000265 a FBcv:0003025 ;
     oboInOwl:hasDbXref "GSM2867558",
         "SAMN08105409",
         "SRX3426765" .
-
-VFBseq:00000266 a FBcv:0003024 ;
-    rdfs:label "brain, 9 Days, DGRP-551 rep r1 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000267 ;
-    RO:0002490 FBdv:00007084 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0055026 .
 
 VFBseq:00000267 a FBcv:0003025 ;
     rdfs:label "brain, 9 Days, DGRP-551 rep r1, 10x library (Davie 2018)" ;
@@ -1047,15 +939,6 @@ VFBseq:00000267 a FBcv:0003025 ;
         "SAMN08105408",
         "SRX3426766" .
 
-VFBseq:00000268 a FBcv:0003024 ;
-    rdfs:label "brain, < 8 Hours, w1118 rep r1 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000269 ;
-    RO:0002490 FBdv:00007075 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0003605 .
-
 VFBseq:00000269 a FBcv:0003025 ;
     rdfs:label "brain, < 8 Hours, w1118 rep r1, 10x library (Davie 2018)" ;
     neo_property:nodeLabel "Assay" ;
@@ -1065,15 +948,6 @@ VFBseq:00000269 a FBcv:0003025 ;
     oboInOwl:hasDbXref "GSM2867564",
         "SAMN08105403",
         "SRX3426771" .
-
-VFBseq:00000270 a FBcv:0003024 ;
-    rdfs:label "brain, < 8 Hours, w1118 rep r2 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000271 ;
-    RO:0002490 FBdv:00007075 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0003605 .
 
 VFBseq:00000271 a FBcv:0003025 ;
     rdfs:label "brain, < 8 Hours, w1118 rep r2, 10x library (Davie 2018)" ;
@@ -1085,15 +959,6 @@ VFBseq:00000271 a FBcv:0003025 ;
         "SAMN08105402",
         "SRX3426773" .
 
-VFBseq:00000272 a FBcv:0003024 ;
-    rdfs:label "brain, 15 Days, w1118 rep r1 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000273 ;
-    RO:0002490 FBdv:00007090 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0003605 .
-
 VFBseq:00000273 a FBcv:0003025 ;
     rdfs:label "brain, 15 Days, w1118 rep r1, 10x library (Davie 2018)" ;
     neo_property:nodeLabel "Assay" ;
@@ -1103,15 +968,6 @@ VFBseq:00000273 a FBcv:0003025 ;
     oboInOwl:hasDbXref "GSM2867576",
         "SAMN08105391",
         "SRX3426784" .
-
-VFBseq:00000274 a FBcv:0003024 ;
-    rdfs:label "brain, 1 Day, w1118 rep r1 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000275 ;
-    RO:0002490 FBdv:00007076 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0003605 .
 
 VFBseq:00000275 a FBcv:0003025 ;
     rdfs:label "brain, 1 Day, w1118 rep r1, 10x library (Davie 2018)" ;
@@ -1123,15 +979,6 @@ VFBseq:00000275 a FBcv:0003025 ;
         "SAMN08105401",
         "SRX3426774" .
 
-VFBseq:00000276 a FBcv:0003024 ;
-    rdfs:label "brain, 30 Days, w1118 rep r1 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000277 ;
-    RO:0002490 FBdv:00007105 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0003605 .
-
 VFBseq:00000277 a FBcv:0003025 ;
     rdfs:label "brain, 30 Days, w1118 rep r1, 10x library (Davie 2018)" ;
     neo_property:nodeLabel "Assay" ;
@@ -1141,15 +988,6 @@ VFBseq:00000277 a FBcv:0003025 ;
     oboInOwl:hasDbXref "GSM2867577",
         "SAMN08105390",
         "SRX3426785" .
-
-VFBseq:00000278 a FBcv:0003024 ;
-    rdfs:label "brain, 3 Days, w1118 rep r1 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000279 ;
-    RO:0002490 FBdv:00007078 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0003605 .
 
 VFBseq:00000279 a FBcv:0003025 ;
     rdfs:label "brain, 3 Days, w1118 rep r1, 10x library (Davie 2018)" ;
@@ -1161,15 +999,6 @@ VFBseq:00000279 a FBcv:0003025 ;
         "SAMN08105400",
         "SRX3426775" .
 
-VFBseq:00000280 a FBcv:0003024 ;
-    rdfs:label "brain, 3 Days, w1118 rep r2 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000281 ;
-    RO:0002490 FBdv:00007078 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0003605 .
-
 VFBseq:00000281 a FBcv:0003025 ;
     rdfs:label "brain, 3 Days, w1118 rep r2, 10x library (Davie 2018)" ;
     neo_property:nodeLabel "Assay" ;
@@ -1179,15 +1008,6 @@ VFBseq:00000281 a FBcv:0003025 ;
     oboInOwl:hasDbXref "GSM2867568",
         "SAMN08105399",
         "SRX3426776" .
-
-VFBseq:00000282 a FBcv:0003024 ;
-    rdfs:label "brain, 3 Days, w1118 rep r3 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000283 ;
-    RO:0002490 FBdv:00007078 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0003605 .
 
 VFBseq:00000283 a FBcv:0003025 ;
     rdfs:label "brain, 3 Days, w1118 rep r3, 10x library (Davie 2018)" ;
@@ -1199,15 +1019,6 @@ VFBseq:00000283 a FBcv:0003025 ;
         "SAMN08105398",
         "SRX3426777" .
 
-VFBseq:00000284 a FBcv:0003024 ;
-    rdfs:label "brain, 6 Days, w1118 rep r1 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000285 ;
-    RO:0002490 FBdv:00007081 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0003605 .
-
 VFBseq:00000285 a FBcv:0003025 ;
     rdfs:label "brain, 6 Days, w1118 rep r1, 10x library (Davie 2018)" ;
     neo_property:nodeLabel "Assay" ;
@@ -1217,15 +1028,6 @@ VFBseq:00000285 a FBcv:0003025 ;
     oboInOwl:hasDbXref "GSM2867570",
         "SAMN08105397",
         "SRX3426778" .
-
-VFBseq:00000286 a FBcv:0003024 ;
-    rdfs:label "brain, 6 Days, w1118 rep r2 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000287 ;
-    RO:0002490 FBdv:00007081 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0003605 .
 
 VFBseq:00000287 a FBcv:0003025 ;
     rdfs:label "brain, 6 Days, w1118 rep r2, 10x library (Davie 2018)" ;
@@ -1237,15 +1039,6 @@ VFBseq:00000287 a FBcv:0003025 ;
         "SAMN08105396",
         "SRX3426779" .
 
-VFBseq:00000288 a FBcv:0003024 ;
-    rdfs:label "brain, 6 Days, w1118 rep r3 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000289 ;
-    RO:0002490 FBdv:00007081 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0003605 .
-
 VFBseq:00000289 a FBcv:0003025 ;
     rdfs:label "brain, 6 Days, w1118 rep r3, 10x library (Davie 2018)" ;
     neo_property:nodeLabel "Assay" ;
@@ -1255,15 +1048,6 @@ VFBseq:00000289 a FBcv:0003025 ;
     oboInOwl:hasDbXref "GSM2867572",
         "SAMN08105395",
         "SRX3426780" .
-
-VFBseq:00000290 a FBcv:0003024 ;
-    rdfs:label "brain, 9 Days, w1118 rep r1 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000291 ;
-    RO:0002490 FBdv:00007084 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0003605 .
 
 VFBseq:00000291 a FBcv:0003025 ;
     rdfs:label "brain, 9 Days, w1118 rep r1, 10x library (Davie 2018)" ;
@@ -1275,15 +1059,6 @@ VFBseq:00000291 a FBcv:0003025 ;
         "SAMN08105394",
         "SRX3426781" .
 
-VFBseq:00000292 a FBcv:0003024 ;
-    rdfs:label "brain, 9 Days, w1118 rep r2 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000293 ;
-    RO:0002490 FBdv:00007084 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0003605 .
-
 VFBseq:00000293 a FBcv:0003025 ;
     rdfs:label "brain, 9 Days, w1118 rep r2, 10x library (Davie 2018)" ;
     neo_property:nodeLabel "Assay" ;
@@ -1293,15 +1068,6 @@ VFBseq:00000293 a FBcv:0003025 ;
     oboInOwl:hasDbXref "GSM2867574",
         "SAMN08105393",
         "SRX3426782" .
-
-VFBseq:00000294 a FBcv:0003024 ;
-    rdfs:label "brain, 9 Days, w1118 rep r3 (Davie 2018)" ;
-    neo_property:nodeLabel "Sample" ;
-    RO:0002131 FBbt:00003624 ;
-    RO:0002352 VFBseq:00000295 ;
-    RO:0002490 FBdv:00007084 ;
-    dcterms:source VFBseq:00000243 ;
-    BAO:0095000 FlyBase:FBst0003605 .
 
 VFBseq:00000295 a FBcv:0003025 ;
     rdfs:label "brain, 9 Days, w1118 rep r3, 10x library (Davie 2018)" ;
@@ -1316,11 +1082,63 @@ VFBseq:00000295 a FBcv:0003025 ;
 VFBseq:00000300 a FBcv:0009002 ;
     rdfs:label "Davie 2018 sub-clustering of res-2.0 cluster 42 (dopaminergic neurons)" ;
     neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00000244,
+        VFBseq:00000246,
+        VFBseq:00000248,
+        VFBseq:00000250,
+        VFBseq:00000252,
+        VFBseq:00000254,
+        VFBseq:00000256,
+        VFBseq:00000258,
+        VFBseq:00000260,
+        VFBseq:00000262,
+        VFBseq:00000264,
+        VFBseq:00000266,
+        VFBseq:00000268,
+        VFBseq:00000270,
+        VFBseq:00000272,
+        VFBseq:00000274,
+        VFBseq:00000276,
+        VFBseq:00000278,
+        VFBseq:00000280,
+        VFBseq:00000282,
+        VFBseq:00000284,
+        VFBseq:00000286,
+        VFBseq:00000288,
+        VFBseq:00000290,
+        VFBseq:00000292,
+        VFBseq:00000294 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000301 a FBcv:0009002 ;
     rdfs:label "Davie 2018 sub-clustering of res-2.0 cluster 64 (octopaminergic-tyraminergic neurons)" ;
     neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00000244,
+        VFBseq:00000246,
+        VFBseq:00000248,
+        VFBseq:00000250,
+        VFBseq:00000252,
+        VFBseq:00000254,
+        VFBseq:00000256,
+        VFBseq:00000258,
+        VFBseq:00000260,
+        VFBseq:00000262,
+        VFBseq:00000264,
+        VFBseq:00000266,
+        VFBseq:00000268,
+        VFBseq:00000270,
+        VFBseq:00000272,
+        VFBseq:00000274,
+        VFBseq:00000276,
+        VFBseq:00000278,
+        VFBseq:00000280,
+        VFBseq:00000282,
+        VFBseq:00000284,
+        VFBseq:00000286,
+        VFBseq:00000288,
+        VFBseq:00000290,
+        VFBseq:00000292,
+        VFBseq:00000294 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000345 a FBcv:0009003 ;
@@ -1346,11 +1164,61 @@ VFBseq:00000367 a FBcv:0009003 ;
 VFBseq:00000297 a FBcv:0009002 ;
     rdfs:label "Davie 2018 Seurat res-8.0 clustering (clusters annotated in Table S2)" ;
     neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00000244,
+        VFBseq:00000246,
+        VFBseq:00000248,
+        VFBseq:00000250,
+        VFBseq:00000252,
+        VFBseq:00000254,
+        VFBseq:00000256,
+        VFBseq:00000258,
+        VFBseq:00000260,
+        VFBseq:00000262,
+        VFBseq:00000264,
+        VFBseq:00000266,
+        VFBseq:00000268,
+        VFBseq:00000270,
+        VFBseq:00000272,
+        VFBseq:00000274,
+        VFBseq:00000276,
+        VFBseq:00000278,
+        VFBseq:00000280,
+        VFBseq:00000282,
+        VFBseq:00000284,
+        VFBseq:00000286,
+        VFBseq:00000288,
+        VFBseq:00000290,
+        VFBseq:00000292,
+        VFBseq:00000294 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000298 a FBcv:0009002 ;
     rdfs:label "Davie 2018 sub-clustering of res-2.0 cluster 20 (lamina monopolar neurons)" ;
     neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00000244,
+        VFBseq:00000246,
+        VFBseq:00000248,
+        VFBseq:00000250,
+        VFBseq:00000252,
+        VFBseq:00000254,
+        VFBseq:00000256,
+        VFBseq:00000258,
+        VFBseq:00000260,
+        VFBseq:00000264,
+        VFBseq:00000266,
+        VFBseq:00000268,
+        VFBseq:00000270,
+        VFBseq:00000272,
+        VFBseq:00000274,
+        VFBseq:00000278,
+        VFBseq:00000280,
+        VFBseq:00000282,
+        VFBseq:00000284,
+        VFBseq:00000286,
+        VFBseq:00000288,
+        VFBseq:00000290,
+        VFBseq:00000292,
+        VFBseq:00000294 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000323 a FBcv:0009003 ;
@@ -1363,9 +1231,269 @@ VFBseq:00000323 a FBcv:0009003 ;
     RO:0002473 FBbt:00003718 ;
     dcterms:source VFBseq:00000243 .
 
+VFBseq:00000262 a FBcv:0003024 ;
+    rdfs:label "brain, 6 Days, DGRP-551 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000263 ;
+    RO:0002490 FBdv:00007081 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000276 a FBcv:0003024 ;
+    rdfs:label "brain, 30 Days, w1118 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000277 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000244 a FBcv:0003024 ;
+    rdfs:label "brain, < 8 Hours, DGRP-551 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000245 ;
+    RO:0002490 FBdv:00007075 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000246 a FBcv:0003024 ;
+    rdfs:label "brain, < 8 Hours, DGRP-551 rep r2 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000247 ;
+    RO:0002490 FBdv:00007075 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000248 a FBcv:0003024 ;
+    rdfs:label "brain, 15 Days, DGRP-551 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000249 ;
+    RO:0002490 FBdv:00007090 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000250 a FBcv:0003024 ;
+    rdfs:label "brain, 1 Day, DGRP-551 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000251 ;
+    RO:0002490 FBdv:00007076 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000252 a FBcv:0003024 ;
+    rdfs:label "brain, 30 Days, DGRP-551 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000253 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000254 a FBcv:0003024 ;
+    rdfs:label "brain, 30 Days, DGRP-551 rep r2 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000255 ;
+    RO:0002490 FBdv:00007105 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000256 a FBcv:0003024 ;
+    rdfs:label "brain, 3 Days, DGRP-551 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000257 ;
+    RO:0002490 FBdv:00007078 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000258 a FBcv:0003024 ;
+    rdfs:label "brain, 3 Days, DGRP-551 rep r2 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000259 ;
+    RO:0002490 FBdv:00007078 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000260 a FBcv:0003024 ;
+    rdfs:label "brain, 50 Days, DGRP-551 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000261 ;
+    RO:0002490 FBdv:00007125 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000264 a FBcv:0003024 ;
+    rdfs:label "brain, 6 Days, DGRP-551 rep r2 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000265 ;
+    RO:0002490 FBdv:00007081 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000266 a FBcv:0003024 ;
+    rdfs:label "brain, 9 Days, DGRP-551 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000267 ;
+    RO:0002490 FBdv:00007084 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0055026 .
+
+VFBseq:00000268 a FBcv:0003024 ;
+    rdfs:label "brain, < 8 Hours, w1118 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000269 ;
+    RO:0002490 FBdv:00007075 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000270 a FBcv:0003024 ;
+    rdfs:label "brain, < 8 Hours, w1118 rep r2 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000271 ;
+    RO:0002490 FBdv:00007075 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000272 a FBcv:0003024 ;
+    rdfs:label "brain, 15 Days, w1118 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000273 ;
+    RO:0002490 FBdv:00007090 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000274 a FBcv:0003024 ;
+    rdfs:label "brain, 1 Day, w1118 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000275 ;
+    RO:0002490 FBdv:00007076 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000278 a FBcv:0003024 ;
+    rdfs:label "brain, 3 Days, w1118 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000279 ;
+    RO:0002490 FBdv:00007078 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000280 a FBcv:0003024 ;
+    rdfs:label "brain, 3 Days, w1118 rep r2 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000281 ;
+    RO:0002490 FBdv:00007078 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000282 a FBcv:0003024 ;
+    rdfs:label "brain, 3 Days, w1118 rep r3 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000283 ;
+    RO:0002490 FBdv:00007078 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000284 a FBcv:0003024 ;
+    rdfs:label "brain, 6 Days, w1118 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000285 ;
+    RO:0002490 FBdv:00007081 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000286 a FBcv:0003024 ;
+    rdfs:label "brain, 6 Days, w1118 rep r2 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000287 ;
+    RO:0002490 FBdv:00007081 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000288 a FBcv:0003024 ;
+    rdfs:label "brain, 6 Days, w1118 rep r3 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000289 ;
+    RO:0002490 FBdv:00007081 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000290 a FBcv:0003024 ;
+    rdfs:label "brain, 9 Days, w1118 rep r1 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000291 ;
+    RO:0002490 FBdv:00007084 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000292 a FBcv:0003024 ;
+    rdfs:label "brain, 9 Days, w1118 rep r2 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000293 ;
+    RO:0002490 FBdv:00007084 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
+VFBseq:00000294 a FBcv:0003024 ;
+    rdfs:label "brain, 9 Days, w1118 rep r3 (Davie 2018)" ;
+    neo_property:nodeLabel "Sample" ;
+    RO:0002131 FBbt:00003624 ;
+    RO:0002352 VFBseq:00000295 ;
+    RO:0002490 FBdv:00007084 ;
+    dcterms:source VFBseq:00000243 ;
+    BAO:0095000 FlyBase:FBst0003605 .
+
 VFBseq:00000299 a FBcv:0009002 ;
     rdfs:label "Davie 2018 sub-clustering of res-2.0 cluster 27 (olfactory projection neurons)" ;
     neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00000244,
+        VFBseq:00000246,
+        VFBseq:00000248,
+        VFBseq:00000250,
+        VFBseq:00000252,
+        VFBseq:00000254,
+        VFBseq:00000256,
+        VFBseq:00000258,
+        VFBseq:00000260,
+        VFBseq:00000262,
+        VFBseq:00000264,
+        VFBseq:00000266,
+        VFBseq:00000268,
+        VFBseq:00000270,
+        VFBseq:00000272,
+        VFBseq:00000274,
+        VFBseq:00000276,
+        VFBseq:00000278,
+        VFBseq:00000280,
+        VFBseq:00000282,
+        VFBseq:00000284,
+        VFBseq:00000286,
+        VFBseq:00000288,
+        VFBseq:00000290,
+        VFBseq:00000292,
+        VFBseq:00000294 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000330 a FBcv:0009003 ;
@@ -1381,11 +1509,63 @@ VFBseq:00000330 a FBcv:0009003 ;
 VFBseq:00000302 a FBcv:0009002 ;
     rdfs:label "Davie 2018 re-clustering of neuropeptide-expressing cells (Figure 2K)" ;
     neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00000244,
+        VFBseq:00000246,
+        VFBseq:00000248,
+        VFBseq:00000250,
+        VFBseq:00000252,
+        VFBseq:00000254,
+        VFBseq:00000256,
+        VFBseq:00000258,
+        VFBseq:00000260,
+        VFBseq:00000262,
+        VFBseq:00000264,
+        VFBseq:00000266,
+        VFBseq:00000268,
+        VFBseq:00000270,
+        VFBseq:00000272,
+        VFBseq:00000274,
+        VFBseq:00000276,
+        VFBseq:00000278,
+        VFBseq:00000280,
+        VFBseq:00000282,
+        VFBseq:00000284,
+        VFBseq:00000286,
+        VFBseq:00000288,
+        VFBseq:00000290,
+        VFBseq:00000292,
+        VFBseq:00000294 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000296 a FBcv:0009002 ;
     rdfs:label "Davie 2018 Seurat res-2.0 clustering of the 57K cells (87 clusters, Table S2)" ;
     neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00000244,
+        VFBseq:00000246,
+        VFBseq:00000248,
+        VFBseq:00000250,
+        VFBseq:00000252,
+        VFBseq:00000254,
+        VFBseq:00000256,
+        VFBseq:00000258,
+        VFBseq:00000260,
+        VFBseq:00000262,
+        VFBseq:00000264,
+        VFBseq:00000266,
+        VFBseq:00000268,
+        VFBseq:00000270,
+        VFBseq:00000272,
+        VFBseq:00000274,
+        VFBseq:00000276,
+        VFBseq:00000278,
+        VFBseq:00000280,
+        VFBseq:00000282,
+        VFBseq:00000284,
+        VFBseq:00000286,
+        VFBseq:00000288,
+        VFBseq:00000290,
+        VFBseq:00000292,
+        VFBseq:00000294 ;
     dcterms:source VFBseq:00000243 .
 
 VFBseq:00000243 a FBcv:0003023 ;
