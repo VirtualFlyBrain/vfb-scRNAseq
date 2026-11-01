@@ -561,6 +561,11 @@ VFBquery, 2026-10-22; the old FlyBase/SCEA files did the same):
   (`scripts/write_fbgn_list.py`; CI checks it is current) is read by
   VirtualFlyBrain/vfb-scRNAseq-gene-annotations, which makes the Gene classes and
   their function labels.
+- **Stocks and genotypes:** the FlyBase stocks (FBst) and genetic entities (FBal /
+  FBti / FBtp / FBco) the Samples link are listed in `metadata/FlyBase_entity_list.txt`
+  (`scripts/write_flybase_entity_list.py`; CI checks it is current). The same
+  gene-annotations repo adds them, labelled from FlyBase, to `VFB_scRNAseq_genes.owl`,
+  so Sample pages show names rather than bare ids.
 
 **Caveats / deferred** (deliberately not done here):
 - **`Clustering.associated_sample_or_assay_for_clustering`** left unwired when a
