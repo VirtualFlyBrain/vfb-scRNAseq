@@ -32,3 +32,6 @@ jobs:
 
       - name: expression/FBgn_list.txt up to date with the expression tables
         run: uv run python scripts/write_fbgn_list.py --check
+
+      - name: metadata/FlyBase_entity_list.txt up to date with the Samples
+        run: uv run python scripts/write_flybase_entity_list.py --check
