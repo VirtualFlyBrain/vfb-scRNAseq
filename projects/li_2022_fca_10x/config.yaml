@@ -120,41 +120,105 @@ sample_build:
       - { fbbt_id: "FBbt:00004535", label: "proboscis" }
       - { fbbt_id: "FBbt:00004546", label: "maxillary palp" }
   # one Clustering per author tissue analysis (10x Stringent, flycellatlas.org)
+  # sample_ids per clustering are the per-cell `sample_id`s in its h5ad (each cell
+  # records its library). Tissue would not do: the oenocyte libraries are `thorax`
+  # in ArrayExpress.
   clusterings:
     - { id: head, name: "Fly Cell Atlas 10x Stringent Head",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/LAEybPc2HZnpzKs" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/LAEybPc2HZnpzKs",
+        sample_ids: [d541ae4e__FCA1_MaleFemale_Head,
+                     d55c64e6__FCA4_Male_Adult_Head1,
+                     d5653fbc__FCA5_Male_Adult_Head2,
+                     d56d6d0e__FCA6_Male_Adult_Head3,
+                     d57550d2__FCA7_Female_Adult_Head1,
+                     d57d41fc__FCA8_Female_Adult_Head2,
+                     d584e4e8__FCA9_Female_Adult_Head3,
+                     f7c048d0__FCA10_Male_head_adult,
+                     f7ca8a02__FCA11_Male_head_adult,
+                     f7d3b3d4__FCA12_Male_head_adult,
+                     f7dc3ba8__FCA13_Female_head_adult,
+                     f7e4c476__FCA14_Female_head_adult,
+                     f7ed0992__FCA15_Female_head_adult] }
     - { id: body, name: "Fly Cell Atlas 10x Stringent Body",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/nXnbWzQnLxTXmMT" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/nXnbWzQnLxTXmMT",
+        sample_ids: [d54b72e4__FCA2_MaleFemale_Body,
+                     f7f586bc__FCA16_Male_body_adult,
+                     f7fd9b2c__FCA17_Male_body_adult,
+                     f8063598__FCA18_Male_body_adult,
+                     f80ebbdc__FCA19_Male_body_adult,
+                     f817481a__FCA20_Male_body_adult,
+                     f82124ca__FCA21_Male_body_adult,
+                     f829fffa__FCA22_Female_body_adult,
+                     f8328e36__FCA23_Female_body_adult,
+                     f83b3be4__FCA24_Female_body_adult,
+                     f8438c5e__FCA25_Female_body_adult,
+                     f84bfd1c__FCA26_Female_body_adult,
+                     f8548b44__FCA27_Female_body_adult] }
     - { id: antenna, name: "Fly Cell Atlas 10x Stringent Antenna",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/jpLWSwcA638yZka" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/jpLWSwcA638yZka",
+        sample_ids: [6e294c34__FCA55_Male_antenna_adult_5dWT_Luo_sample2,
+                     6e38a0f8__FCA56_Female_antenna_adult_5dWT_Luo_sample2,
+                     a3f9404e__FCA43_Male_antenna_adult_5dWT_Luo_sample1,
+                     a4088eb4__FCA44_Female_antenna_adult_5dWT_Luo_sample1,
+                     d5543d16__FCA3_MaleFemale_Antenna] }
     - { id: body_wall, name: "Fly Cell Atlas 10x Stringent Body Wall",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/sZZMSbcNk4SWtHE" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/sZZMSbcNk4SWtHE",
+        sample_ids: [a350a646__FCA32_Male_bodyWall_adult_5dWT_Jan_sample1,
+                     a35ff452__FCA33_Female_bodyWall_adult_5dWT_Jan_sample1] }
     - { id: fat_body, name: "Fly Cell Atlas 10x Stringent Fat Body",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/zca3Es6MNx9TDsy" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/zca3Es6MNx9TDsy",
+        sample_ids: [6d9f44c6__FCA46_Female_fatbodyGFP_adult_3dcgGAL4LamGFPT_Jasper_sample1,
+                     a417df9a__FCA45_Male_fatbody_adult_3dcgGAL4LamGFP_Jasper_sample1] }
     - { id: gut, name: "Fly Cell Atlas 10x Stringent Gut",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/TfX7etSc5NnmFAz" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/TfX7etSc5NnmFAz",
+        sample_ids: [a31353cc__FCA28_Male_gut_adult_5dWT_OBrien_sample1,
+                     a322a764__FCA29_Female_gut_adult_5dWT_OBrien_sample1] }
     - { id: haltere, name: "Fly Cell Atlas 10x Stringent Haltere",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/QDtoYjpfQgey5aq" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/QDtoYjpfQgey5aq",
+        sample_ids: [6dae9a5c__FCA47_Male_haltere_adult_5dWT_Luo_sample1,
+                     6dbdf10a__FCA48_Female_haltere_adult_5dWT_Luo_sample1] }
     - { id: heart, name: "Fly Cell Atlas 10x Stringent Heart",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/sCB3bs3Yg5ypaBS" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/sCB3bs3Yg5ypaBS",
+        sample_ids: [a36f434e__FCA34_Male_heart_adult_5dWT_Bodmer_sample1,
+                     a37e98a8__FCA35_Female_heart_adult_5dWT_Bodmer_sample1] }
     - { id: leg, name: "Fly Cell Atlas 10x Stringent Leg",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/ofHeNRbZPn52QtT" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/ofHeNRbZPn52QtT",
+        sample_ids: [a39d4366__FCA37_Male_leg_adult_5dWT_Scott_sample1,
+                     a3ac98d4__FCA38_Female_leg_adult_5dWT_Scott_sample1] }
     - { id: male_reproductive_glands, name: "Fly Cell Atlas 10x Stringent Male Reproductive Glands",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/B4kH5SiLPF24nsC" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/B4kH5SiLPF24nsC",
+        sample_ids: [a38dee20__FCA36_Male_testisACG_adult_2dWT_Wolfner_sample1] }
     - { id: malpighian_tubule, name: "Fly Cell Atlas 10x Stringent Malpighian Tubule",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/qDRy6NqxmqN7SxS" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/qDRy6NqxmqN7SxS",
+        sample_ids: [a331fc82__FCA30_Male_MalpighianTubule_adult_5d_Perrimon_sample1,
+                     a3415132__FCA31_Female_MalpighianTubule_adult_5d_Perrimon_sample1] }
     - { id: oenocyte, name: "Fly Cell Atlas 10x Stringent Oenocyte",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/WdSri425t88B7JA" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/WdSri425t88B7JA",
+        sample_ids: [0ece9e7a__FCA53_Male_oenocyteGFP_adult_5dWT_Jasper_sample1,
+                     6e19fc98__FCA54_Female_oenocyteGFP_adult_5dWT_Jasper_sample1] }
     - { id: ovary, name: "Fly Cell Atlas 10x Stringent Ovary",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/zgZe3Zsegpn5Bpg" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/zgZe3Zsegpn5Bpg",
+        sample_ids: [6e949598__FCA62_Female_ovary_adult_5dWT_Nystul_All_Nuclei,
+                     6ea3ec82__FCA63_Female_ovary_adult_5dWT_Nystul_Big_Nuclei] }
     - { id: proboscis_and_maxillary_palps, name: "Fly Cell Atlas 10x Stringent Proboscis and Maxillary Palps",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/gGsWF6PRk45Apan" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/gGsWF6PRk45Apan",
+        sample_ids: [6debf5fa__FCA51_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample2,
+                     6dfb4e9c__FCA52_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample2,
+                     a3da986a__FCA41_Male_proboscis_and_maxpalp_adult_5dWT_Scott_sample1,
+                     a3e9e982__FCA42_Female_proboscis_and_maxpalp_adult_5dWT_Scott_sample1] }
     - { id: testis, name: "Fly Cell Atlas 10x Stringent Testis",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/A2jn7iTEeRgMkc3" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/A2jn7iTEeRgMkc3",
+        sample_ids: [6e669170__FCA59_Male_testis_adult_1dWT_Fuller_sample1,
+                     6e75e580__FCA60_Male_testis_adult_1dWT_Fuller_sample2,
+                     6e853dd2__FCA61_Male_testis_adult_1dWT_Fuller_sample3] }
     - { id: trachea, name: "Fly Cell Atlas 10x Stringent Trachea",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/j3kQTf5KifXyBYr" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/j3kQTf5KifXyBYr",
+        sample_ids: [6e47f1ca__FCA57_Male_TracheaGFP_adult_5dWT_Kornberg_sample1,
+                     6e574292__FCA58_Female_TracheaGFP_adult_5dWT_Kornberg_sample1] }
     - { id: wing, name: "Fly Cell Atlas 10x Stringent Wing",
-        h5ad: "https://cloud.flycellatlas.org/index.php/s/eAD6HL7TaesZ6GM" }
+        h5ad: "https://cloud.flycellatlas.org/index.php/s/eAD6HL7TaesZ6GM",
+        sample_ids: [a3bbecd0__FCA39_Male_wing_adult_5dWT_Scott_sample1,
+                     a3cb42b6__FCA40_Female_wing_adult_5dWT_Scott_sample1] }
 
 # Summary expression (scripts/build_expression.py) from the same h5ad files. Each
 # file's `raw.X` holds all retained genes as log(counts per 10,000 + 1) (the main `X`
