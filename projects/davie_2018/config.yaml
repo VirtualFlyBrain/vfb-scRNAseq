@@ -47,6 +47,10 @@ sample_build:
   stock_map:
     DGRP-551: [FBst0055026]
     w1118: [FBst0003605]
+  # set -> FlyBase strain, from the stock's strainprop derived_stock_strain_* in Chado
+  # (scripts/flybase_stock_strains.py). w[1118] has no FlyBase strain.
+  strain_map:
+    DGRP-551: [FBsn0000297]
   # Keyed on the GEO `age` characteristic. Adults "used at ages 0, 1, 3, 6, 9, 15,
   # 30 and 50 days old"; day 0 = "< 8 Hours" post-eclosion. NB the old FBlc release
   # labelled two w1118 samples D14/D29; GEO (and the paper) say 15/30 days.

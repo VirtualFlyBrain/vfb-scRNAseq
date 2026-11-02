@@ -5,7 +5,7 @@ Config-driven (see the `sample_build` section of config.yaml). Parses GSM titles
 (per `sample_build.title_pattern`: `set_timepoint_biorep_techrep` by default, or a
 named-group `regex:`; non-matching GSMs are out of scope) into biological Samples
 and their 10x-library Assays, attaches FBdv stage + FBbt tissue (per the curated timepoint map),
-genotype, and assay method, mints stable VFBseq IDs (idempotent registry), and
+stock / strain / genotype, and assay method, mints stable VFBseq IDs (idempotent registry), and
 writes projects/<name>/samples.json. GEO/SRA accessions are dbxrefs, never IRIs.
 `sample_build.sample_groups` ({parsed sample id: sample id}) puts GSMs the titles number
 as separate samples into one biological Sample (e.g. two libraries of one cell
@@ -113,6 +113,12 @@ def sample_stock(parsed: dict, sb: dict) -> list[str] | None:
     return sb.get("stock_map", {}).get(parsed.get("set")) or sb.get("stock")
 
 
+def sample_strain(parsed: dict, sb: dict) -> list[str] | None:
+    """FlyBase strain(s) of a sample, as `sample_stock`: `strain_map` per group, else
+    `sample_build.strain`."""
+    return sb.get("strain_map", {}).get(parsed.get("set")) or sb.get("strain")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--project", required=True)
@@ -210,6 +216,7 @@ def main() -> None:
             "tissue_raw": gsm0.characteristic("tissue"),   # original GEO characteristics
             "age_raw": age_raw,
             "stock": sample_stock(p0, sb),                # FlyBase FBst ref(s)
+            "strain": sample_strain(p0, sb),              # FlyBase FBsn ref(s)
             # FlyBase genetic entities in the animals' genotype (crosses: e.g. the split-GAL4
             # combination FBco), common to every sample
             "genotype_includes": sb.get("genotype_includes"),

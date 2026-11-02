@@ -54,7 +54,10 @@ sample_build:
   #    has a typo "BDSC:5909" — an unrelated FRT stock — but the text says "w[1118]
   #    (BDSC #5905)", so 5905 is correct.)
   #  - DGRP: DGRP_All samples pool the 35 DGRP lines listed in the KRT (reshuffled
-  #    across timepoints/replicates), so all 35 stocks are linked to each DGRP sample.
+  #    across timepoints/replicates), so all their stocks are linked to each DGRP
+  #    sample. DGRP-28 (BDSC 28124) and DGRP-383 (BDSC 28190) are no longer FlyBase
+  #    stocks (FBst0028124 / FBst0028190 gone from Chado), so those two lines are
+  #    linked by their strains only (strain_map); 33 stocks remain.
   stock_map:
     W1118: [FBst0005905]
     DGRP:
@@ -64,14 +67,12 @@ sample_build:
       - FBst0025191  # DGRP-391
       - FBst0025194  # DGRP-437
       - FBst0028122  # DGRP-21
-      - FBst0028124  # DGRP-28
       - FBst0028141  # DGRP-129
       - FBst0028150  # DGRP-177
       - FBst0028151  # DGRP-181
       - FBst0028152  # DGRP-189
       - FBst0028185  # DGRP-374
       - FBst0028189  # DGRP-382
-      - FBst0028190  # DGRP-383
       - FBst0028198  # DGRP-441
       - FBst0028200  # DGRP-461
       - FBst0028203  # DGRP-492
@@ -93,6 +94,47 @@ sample_build:
       - FBst0055022  # DGRP-395
       - FBst0055024  # DGRP-505
       - FBst0055038  # DGRP-355
+  # set -> FlyBase strain(s) (FBsn): the 35 DGRP lines, from each stock's strainprop
+  # derived_stock_strain_Bloomington in Chado (scripts/flybase_stock_strains.py), and
+  # by strain name for DGRP-28 and DGRP-383, whose stocks are gone. W1118 has no
+  # FlyBase strain.
+  strain_map:
+    DGRP:
+      - FBsn0000058  # DGRP-304
+      - FBsn0000060  # DGRP-307
+      - FBsn0000070  # DGRP-324
+      - FBsn0000104  # DGRP-391
+      - FBsn0000114  # DGRP-437
+      - FBsn0000006  # DGRP-21
+      - FBsn0000008  # DGRP-28
+      - FBsn0000029  # DGRP-129
+      - FBsn0000038  # DGRP-177
+      - FBsn0000039  # DGRP-181
+      - FBsn0000040  # DGRP-189
+      - FBsn0000092  # DGRP-374
+      - FBsn0000099  # DGRP-382
+      - FBsn0000100  # DGRP-383
+      - FBsn0000117  # DGRP-441
+      - FBsn0000119  # DGRP-461
+      - FBsn0000123  # DGRP-492
+      - FBsn0000125  # DGRP-508
+      - FBsn0000138  # DGRP-589
+      - FBsn0000156  # DGRP-748
+      - FBsn0000167  # DGRP-790
+      - FBsn0000173  # DGRP-805
+      - FBsn0000175  # DGRP-810
+      - FBsn0000178  # DGRP-819
+      - FBsn0000186  # DGRP-850
+      - FBsn0000200  # DGRP-897
+      - FBsn0000049  # DGRP-235
+      - FBsn0000010  # DGRP-40
+      - FBsn0000068  # DGRP-320
+      - FBsn0000110  # DGRP-406
+      - FBsn0000289  # DGRP-348
+      - FBsn0000290  # DGRP-354
+      - FBsn0000293  # DGRP-395
+      - FBsn0000295  # DGRP-505
+      - FBsn0000291  # DGRP-355
   # Keyed on the GEO `age` characteristic (age_raw), NOT the sample-title token,
   # because the token is not 1:1 with developmental age (e.g. the sample titled
   # 'Adult' has age 96h APF = pharate adult, not adult). Curated.

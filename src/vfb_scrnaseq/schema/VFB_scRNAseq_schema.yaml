@@ -109,6 +109,7 @@ classes:
       - associated_dataset
       - sex
       - stock
+      - strain
       - genotype_includes
       - dbxref
       - neo_label
@@ -260,7 +261,7 @@ classes:
 # slots can be used as attributes that can be shared by multiple classes
 slots:
   id:
-    description: Identifier for the entity, a VFBseq IRI (FlyBase CURIEs, prefixed 'FlyBase:', only for publications, stocks and genes).
+    description: Identifier for the entity, a VFBseq IRI (FlyBase CURIEs, prefixed 'FlyBase:', only for publications, stocks, strains and genes).
     identifier: true
     range: uriorcurie
     required: true
@@ -305,12 +306,27 @@ slots:
     description: >-
       FlyBase stock(s) the Sample is derived from (FlyBase:FBst#######), via BAO
       'is derived from' (BAO:0095000). Multivalued: a genuinely pooled sample links
-      all applicable stocks (e.g. a DGRP pool). The stock resolves to the strain's
-      genotype in FlyBase; the strain is also carried in the Sample's rdfs:label.
+      all applicable stocks (e.g. a DGRP pool). The strain, where FlyBase has one, is
+      linked as well (`strain`).
     range: uriorcurie
     multivalued: true
     # The second axiom gives the stock node label hasScRNAseqSample, which VFB's
     # queries from a stock / strain / genetic entity back to its Samples key on.
+    annotations:
+      owl.fstring: ObjectPropertyAssertion( BAO:0095000 {id} {V} )
+        AnnotationAssertion( neo_property:nodeLabel {V} "hasScRNAseqSample" )
+  strain:
+    slot_uri: BAO:0095000
+    description: >-
+      FlyBase strain(s) the Sample is derived from (FlyBase:FBsn#######), via BAO
+      'is derived from' (BAO:0095000), as `stock`. A strain is what the animals are
+      genetically and a stock where they came from, so a Sample links the strain
+      wherever FlyBase has one for its line, with the stock where the paper names one,
+      and the strain alone where no stock is named or FlyBase has dropped the stock.
+      Multivalued: a pooled sample links every applicable strain.
+    range: uriorcurie
+    multivalued: true
+    # Node label hasScRNAseqSample, as `stock`.
     annotations:
       owl.fstring: ObjectPropertyAssertion( BAO:0095000 {id} {V} )
         AnnotationAssertion( neo_property:nodeLabel {V} "hasScRNAseqSample" )

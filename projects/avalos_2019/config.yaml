@@ -48,7 +48,10 @@ sample_build:
       tissue: { fbbt_id: FBbt:00001920, label: larval brain }    # the VNC was removed
   sex: mixed                     # larvae, not sexed
   sample_groups: { Normal_sample_3: Normal_sample_2 }
-  # Canton S wild type (GEO "Wild type CS"; methods); no source stock named, so not linked.
+  # Canton S wild type (GEO "Wild type CS"; methods).
+  # Canton-S strain FBsn0000274 (FlyBase strain, resolved in Chado: strain.name); no
+  # centre stock is named, so the strain alone is linked.
+  strain: [FBsn0000274]
   clusterings:
     - { id: fed, name: "Brunet Avalos 2019 larval brain clusters (fed)", sample_age: "First instar larval" }
 

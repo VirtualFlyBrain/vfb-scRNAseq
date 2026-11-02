@@ -7,6 +7,7 @@
      xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
      xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
      xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
+     xmlns:bao="http://www.bioassayontology.org/bao#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -161,6 +162,12 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0000212 -->
 
     <ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000212"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0095000 -->
+
+    <ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0095000"/>
     
 
 
@@ -602,6 +609,14 @@
     
 
 
+    <!-- http://flybase.org/reports/FBsn0000274 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBsn0000274">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </NamedIndividual>
+    
+
+
     <!-- http://virtualflybrain.org/reports/VFBseq_00002863 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002863">
@@ -653,6 +668,7 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002867"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002868"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002869"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002863"/>
         <rdfs:label>embryo, 0-2 h after egg laying, Canton S (Calderon 2022)</rdfs:label>
@@ -771,6 +787,7 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002873"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002874"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002875"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002863"/>
         <rdfs:label>embryo, 1-3 h after egg laying, Canton S (Calderon 2022)</rdfs:label>
@@ -887,6 +904,7 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002877"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002878"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002879"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002863"/>
         <rdfs:label>embryo, 2-4 h after egg laying, Canton S (Calderon 2022)</rdfs:label>
@@ -970,6 +988,7 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002884"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002885"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002886"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002863"/>
         <rdfs:label>embryo, 3-7 h after egg laying, Canton S (Calderon 2022)</rdfs:label>
@@ -1105,6 +1124,7 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002889"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002890"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002891"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002863"/>
         <rdfs:label>embryo, 4-8 h after egg laying, Canton S (Calderon 2022)</rdfs:label>
@@ -1203,6 +1223,7 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002893"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002894"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002895"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002863"/>
         <rdfs:label>embryo, 6-10 h after egg laying, Canton S (Calderon 2022)</rdfs:label>
@@ -1283,6 +1304,7 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002897"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002898"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002899"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002863"/>
         <rdfs:label>embryo, 8-12 h after egg laying, Canton S (Calderon 2022)</rdfs:label>
@@ -1363,6 +1385,7 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002901"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002902"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002903"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002863"/>
         <rdfs:label>embryo, 10-14 h after egg laying, Canton S (Calderon 2022)</rdfs:label>
@@ -1443,6 +1466,7 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002905"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002906"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002907"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002863"/>
         <rdfs:label>embryo, 12-16 h after egg laying, Canton S (Calderon 2022)</rdfs:label>
@@ -1523,6 +1547,7 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002909"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002910"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002911"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002863"/>
         <rdfs:label>embryo, 14-18 h after egg laying, Canton S (Calderon 2022)</rdfs:label>
@@ -1603,6 +1628,7 @@
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002913"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002914"/>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002915"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002863"/>
         <rdfs:label>embryo, 16-20 h after egg laying, Canton S (Calderon 2022)</rdfs:label>

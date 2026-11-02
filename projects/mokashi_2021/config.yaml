@@ -42,7 +42,11 @@ sample_build:
     "3-5 days post-eclosion":
       stage:  { fbdv_id: FBdv:00005369, label: adult stage }
       tissue: { fbbt_id: FBbt:00003624, label: adult brain }
-  # Canton S (B) wild type (methods); no source stock named, so not linked.
+  # Canton S (B) wild type (methods).
+  # Canton-S strain FBsn0000274 (FlyBase strain, resolved in Chado: strain.name). The
+  # paper doesn't say which centre's Canton S (B) line (BDSC-CS-B, FBsn0001780, is one
+  # candidate), so plain Canton-S is linked, as for the other Canton S studies.
+  strain: [FBsn0000274]
   clusterings:
     - { id: reference, name: "Mokashi 2021 adult brain clusters (reference medium)", sample_age: "3-5 days post-eclosion" }
 

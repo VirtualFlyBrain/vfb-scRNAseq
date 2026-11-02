@@ -212,11 +212,13 @@ below record how each was applied).
   metadata), not inferred from tissue names when that record exists. A missing link
   is allowed only with a recorded reason (`unclustered_samples`, `no_clusters`);
   `scripts/check_entity_links.py` enforces this in CI.
-- **Stock for a strain, genetic entities for a cross** (curator decision 2026-10-16).
-  Samples taken from a defined stock or strain link the FlyBase stock (`stock`);
-  samples from a cross (e.g. split-GAL4 > UAS effector) link the genetic entities in the
-  genotype instead (`genotype_includes`, GENO:0000222 has_genotype: FBco / FBal / FBtp /
-  FBti), as a stock would be only part of the genotype. See *Stock*.
+- **Stock and strain for a line, genetic entities for a cross** (curator decisions
+  2026-10-16, 2026-11-02). Samples taken from a defined line link its FlyBase strain
+  (`strain`, FBsn) wherever FlyBase has one, and the FlyBase stock (`stock`, FBst) where
+  the paper names one; the strain alone where no stock is named or FlyBase has dropped
+  the stock. Samples from a cross (e.g. split-GAL4 > UAS effector) link the genetic
+  entities in the genotype instead (`genotype_includes`, GENO:0000222 has_genotype: FBco
+  / FBal / FBtp / FBti), as a stock would be only part of the genotype. See *Stock*.
 - **Stage belongs on the Sample.** Samples carry their FBdv stage. A Cluster gets a
   `stage` only when the stage is determined from the cluster's own gene expression
   (e.g. a cluster the authors identify as a particular developmental stage) — not
@@ -578,8 +580,8 @@ VFBquery, 2026-10-22; the old FlyBase/SCEA files did the same):
   (`scripts/write_fbgn_list.py`; CI checks it is current) is read by
   VirtualFlyBrain/vfb-scRNAseq-gene-annotations, which makes the Gene classes and
   their function labels.
-- **Stocks and genotypes:** the FlyBase stocks (FBst) and genetic entities (FBal /
-  FBti / FBtp / FBco) the Samples link are listed in `metadata/FlyBase_entity_list.txt`
+- **Stocks, strains and genotypes:** the FlyBase stocks (FBst), strains (FBsn) and
+  genetic entities (FBal / FBti / FBtp / FBco) the Samples link are listed in `metadata/FlyBase_entity_list.txt`
   (`scripts/write_flybase_entity_list.py`; CI checks it is current). The same
   gene-annotations repo adds them, labelled from FlyBase, to `VFB_scRNAseq_genes.owl`,
   so Sample pages show names rather than bare ids.
@@ -664,6 +666,25 @@ imported for the assay method). It is undefined in BAO, but reads correctly and
 avoids `RO:0001000` derives_from's strict "source ceases to exist" clause, which is
 wrong for a persistent stock. Emitted as an IRI object in flat RDF (`BAO:0095000` →
 FBst IRI) and as `ObjectPropertyAssertion(BAO:0095000 …)` in OWL.
+
+**Strain (`strain`).** A stock is where the animals came from; a FlyBase strain (FBsn) is
+what they are genetically (curator 2026-11-02). Strains outlast stocks (two of
+Kurmangaliyev's DGRP stocks have been dropped from FlyBase; their strains are current),
+carry the line's biology (origin, DGRP genome data), and join samples of one line across
+studies whichever centre supplied the flies. So a Sample links, by the same
+`BAO:0095000`:
+- the strain wherever FlyBase has one for the line (`sample_build.strain`, common to
+  every sample, or `strain_map`, per group / genotype as `stock_map`);
+- the stock as well where the paper names one;
+- the strain alone where no stock is named (e.g. Canton-S, FBsn0000274) or FlyBase has
+  dropped the stock.
+
+FlyBase links a strain to its centre stocks by strainprop `derived_stock_strain_<centre>`;
+`scripts/flybase_stock_strains.py FBst…` lists the strains for stocks, and `--name`
+looks strains up by name (for a dropped stock or an unnamed one). Lines without a FlyBase
+strain (e.g. w[1118]) link the stock only. Where the paper's line is a centre variant
+FlyBase records separately (e.g. Canton S (B), maybe BDSC-CS-B FBsn0001780) but no
+centre is named, the plain strain is linked.
 
 **Genotype (`genotype_includes`).** A stock link fits samples taken from a defined stock
 or strain (Canton-S, w1118, DGRP lines). Samples from a **cross** (e.g. a split-GAL4
@@ -824,6 +845,10 @@ Structure confirmed by `ingest.fetch_series("GSE156455")`:
   platform `GPL25244`, BioProject `PRJNA658010`, SRA study `SRP278058`.
 - **Sparse characteristics:** only `tissue` (optic lobes) and `age` — **no sex** in
   GEO; set to female from the paper (`sample_build.sex`).
+- **Stocks and strains:** w1118 samples link BDSC 5905 (FBst0005905; no FlyBase
+  strain). The pooled DGRP samples link the 35 DGRP lines' strains (FBsn) and 33 of
+  their stocks: DGRP-28 and DGRP-383's stocks (FBst0028124, FBst0028190) are no longer
+  in FlyBase, so those lines link their strains only.
 - **Stages are APF time windows** (`0-96h`, `24h`, `48h`, `72h`, `96h APF`) →
   map to FBdv pupal stages.
 - **Two sub-datasets, `early` and `main`**, in the supplementary files:
@@ -969,7 +994,8 @@ in VFB from the old FlyBase/SCEA mechanism (`FBlc0006090`, SCEA `E-CURD-91`,
   (crosswalked to the authors' types by name + cell count; since removed).
 - **Sex mixed** (20 female + 20 male brains per run); **stocks** FBst0055026
   (DGRP-551, BDSC 55026) and FBst0003605 (w[1118], BDSC 3605), from the Key
-  Resources Table via Chado; stages = FBdv "day N of adulthood".
+  Resources Table via Chado; DGRP-551 also links its strain FBsn0000297 (w[1118] has
+  none); stages = FBdv "day N of adulthood".
 - Evidence for reports: the open-access JATS full text (PMC6086935) in the local
   index, plus Tables S2 (annotation method + references per cluster) and S3
   (markers per res-2.0 cluster) joined per author type in `supp_evidence.json`;
@@ -1272,7 +1298,7 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-16.
   *embryonic/larval optic lobe* to the pupal stage (P5-P7), *adult optic lobe* from the
   pharate adult stage. Sample labels show the pupal tissue as "optic lobe" (GEO's
   "P70 optic lobe" repeats the stage; `tissue_labels`), replicate ids as in GEO. Sex from GEO (female; 2 adult libraries pooled-sex, unset). No
-  stock number is given for Canton-S. Each stage Clustering links its samples
+  stock number is given, so the Canton-S strain (FBsn0000274) alone is linked. Each stage Clustering links its samples
   (`sample_age`).
 - **Clusters (stage 2):** `projects/ozel_2021/export_seurat.R` exports each stage's
   object once (Homebrew R; base R reads the objects, `Matrix` the counts; ~1 min per
@@ -1384,7 +1410,8 @@ clusters merged by type) with fresh VFBseq ids; licence CC-BY-4.0. Curator decis
   one 10x library ("10 libraries (biological replicates)"). GEO records no age, so the
   paper's (`sample_build.age`): wandering third instar larvae, *wandering third instar
   larval stage*; tissue *embryonic/larval optic lobe* (labels: "larval optic lobe").
-  Pooled sex (unset). No stock number is given for Canton-S. One Clustering (L3).
+  Pooled sex (unset). No stock number is given, so the Canton-S strain (FBsn0000274)
+  alone is linked. One Clustering (L3).
 - **Clusters (stage 2):** `projects/konstantinides_2022/export_seurat.R` exports the
   object once (Homebrew R, base R + `Matrix`; ~1 min) to `.cache/konstantinides/`: the
   cell metadata of all 69,119 cells and the raw counts of the 49,893 L3 cells (11,590
@@ -1789,7 +1816,7 @@ Curator decisions 2026-10-18.
   the window's stages (Campos-Ortega & Hartenstein timings at 25 C, from the FBdv
   definitions): 0-2 h *cleavage stage*, 4-8 h *extended germ band stage*, 14-18 h *late
   embryonic stage*, 16-20 h *embryonic stage 17*, the others *embryonic stage*. Tissue
-  *embryo*; Canton S, no stock named (not linked). Assay *single-cell combinatorial
+  *embryo*; Canton S, no stock named (Canton-S strain FBsn0000274 linked). Assay *single-cell combinatorial
   indexing RNA sequencing* (FBcv:0009056). 11 Clusterings, each with the Samples giving at
   least 1% of its nuclei (curator: every modelled window has thin tails from distant
   collections, e.g. 7 of the 0-2 h window's 122,331 nuclei from 16-20 h, likely mis-aged).
@@ -1875,7 +1902,7 @@ decisions 2026-10-19.
   two libraries of the same captured cells, counted twice by the authors; their clusters
   are kept as published. *first
   instar larval stage*; *larval brain* (the VNC was removed); sex mixed (unset); Canton S,
-  no stock named (not linked). One Clustering.
+  no stock named (Canton-S strain FBsn0000274 linked). One Clustering.
 - **Clusters (stage 2):** `projects/avalos_2019/build_clusters.py`: the authors' 29 clusters
   (4,407 cells) from their Cell Browser `meta.tsv`, labelled by the cluster name, typed
   without its number ("Glia cells" spelled "Glial cells", as in the paper); a cell's
@@ -1938,7 +1965,8 @@ labels) with fresh VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-19.
 - **Samples (stage 1):** `build_samples_from_geo.py`, the title pattern matching the
   "<Sex> Reference Rep<n>" GSMs only: 4 Samples / 4 Assays (one 10x library per GSM);
   *adult stage* (GEO "3-5 days post-eclosion": no FBdv term covers days 3-5 only);
-  *adult brain*; sex from GEO; Canton S (B), no stock named (not linked). One Clustering.
+  *adult brain*; sex from GEO; Canton S (B), no stock named (plain Canton-S strain FBsn0000274 linked). One
+  Clustering.
 - **Clusters (stage 2):** `projects/mokashi_2021/build_clusters.py`: the authors' 43
   clusters from `cells.txt`, restricted to the reference cells (56,165; every cluster has
   some); labelled `<cluster>_<inferred cell type>`, typed by the authors' own "Inferred cell
@@ -2000,7 +2028,7 @@ pipeline).
 - **Samples (stage 1):** `build_samples_from_geo.py`, the title pattern matching the
   "<Sex> Sucrose Rep <n>" GSMs only: 4 Samples / 4 Assays (one 10x library each); *adult
   stage* (methods: aged 3-5 d; GEO gives no age); *adult brain*; sex from GEO; Canton S (B),
-  no stock named (not linked). One Clustering.
+  no stock named (plain Canton-S strain FBsn0000274 linked). One Clustering.
 - **Clusters (stage 2):** `projects/baker_2021/build_clusters.py`: the authors' 36 clusters
   from `cells.txt`, restricted to the sucrose cells (43,824; every cluster has some);
   labelled `<cluster>_<inferred cell type>`, typed by the authors' own "Inferred cell type"

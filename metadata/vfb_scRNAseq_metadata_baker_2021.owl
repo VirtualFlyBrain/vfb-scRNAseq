@@ -7,6 +7,7 @@
      xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
      xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
      xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
+     xmlns:bao="http://www.bioassayontology.org/bao#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -161,6 +162,12 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0000212 -->
 
     <ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000212"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0095000 -->
+
+    <ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0095000"/>
     
 
 
@@ -328,6 +335,14 @@
 
     <NamedIndividual rdf:about="http://flybase.org/reports/FBrf0251482">
         <neo_property:nodeLabel>pub</neo_property:nodeLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBsn0000274 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBsn0000274">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
     </NamedIndividual>
     
 
@@ -847,6 +862,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003267"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
         <rdfs:label>Brains, 3-5 days post-eclosion, Female rep 1 (Baker 2021)</rdfs:label>
@@ -916,6 +932,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003269"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
         <rdfs:label>Brains, 3-5 days post-eclosion, Female rep 2 (Baker 2021)</rdfs:label>
@@ -985,6 +1002,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003271"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
         <rdfs:label>Brains, 3-5 days post-eclosion, Male rep 1 (Baker 2021)</rdfs:label>
@@ -1054,6 +1072,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003273"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003265"/>
         <rdfs:label>Brains, 3-5 days post-eclosion, Male rep 2 (Baker 2021)</rdfs:label>

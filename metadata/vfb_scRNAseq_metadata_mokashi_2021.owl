@@ -7,6 +7,7 @@
      xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
      xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
      xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
+     xmlns:bao="http://www.bioassayontology.org/bao#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -161,6 +162,12 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0000212 -->
 
     <ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000212"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0095000 -->
+
+    <ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0095000"/>
     
 
 
@@ -338,6 +345,14 @@
     
 
 
+    <!-- http://flybase.org/reports/FBsn0000274 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBsn0000274">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </NamedIndividual>
+    
+
+
     <!-- http://virtualflybrain.org/reports/VFBseq_00003188 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00003188">
@@ -391,6 +406,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003190"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
         <rdfs:label>Brains, 3-5 days post-eclosion, Female rep 1 (Mokashi 2021)</rdfs:label>
@@ -460,6 +476,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003192"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
         <rdfs:label>Brains, 3-5 days post-eclosion, Female rep 2 (Mokashi 2021)</rdfs:label>
@@ -529,6 +546,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003194"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
         <rdfs:label>Brains, 3-5 days post-eclosion, Male rep 1 (Mokashi 2021)</rdfs:label>
@@ -598,6 +616,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003196"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00003188"/>
         <rdfs:label>Brains, 3-5 days post-eclosion, Male rep 2 (Mokashi 2021)</rdfs:label>

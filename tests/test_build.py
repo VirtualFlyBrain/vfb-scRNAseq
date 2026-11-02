@@ -54,6 +54,20 @@ def test_samples_sex_and_stock_curies(entities):
     assert stock_counts[0] == 1 and stock_counts[-1] > 1
 
 
+def test_samples_strains(entities):
+    """Pooled DGRP samples link all 35 DGRP strains, including DGRP-28 and DGRP-383,
+    whose stocks FlyBase has dropped; w1118 has no FlyBase strain."""
+    samples = _one(entities, "Sample")
+    dgrp = [s for s in samples if len(s["stock"]) > 1]
+    w1118 = [s for s in samples if len(s["stock"]) == 1]
+    assert dgrp and w1118
+    for s in dgrp:
+        assert len(s["strain"]) == 35
+        assert {"FlyBase:FBsn0000008", "FlyBase:FBsn0000100"} <= set(s["strain"])
+        assert not {"FlyBase:FBst0028124", "FlyBase:FBst0028190"} & set(s["stock"])
+    assert all("strain" not in s for s in w1118)
+
+
 def test_clusters_have_celltype(entities):
     clusters = _one(entities, "Cluster")
     assert any(c.get("cell_type") for c in clusters)

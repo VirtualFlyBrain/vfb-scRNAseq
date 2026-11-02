@@ -82,6 +82,7 @@ def main() -> None:
             "vfbseq_id": svid, "sample_id": w,
             "label": f"{sb['tissue']['label']}, {spec['hours']} after egg laying, {sb['genotype']}",
             "tissue_raw": None, "age_raw": spec["hours"], "genotype": sb["genotype"], "stock": None,
+            "strain": sb.get("strain"),
             "sex": None, "stage": spec["stage"], "sample_tissue": [sb["tissue"]],
             "associated_dataset": dataset_id, "assay_vfbseq_ids": avids, "n_assays": len(avids),
         })
