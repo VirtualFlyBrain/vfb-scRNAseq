@@ -7,6 +7,7 @@
      xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
      xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
      xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
+     xmlns:bao="http://www.bioassayontology.org/bao#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -161,6 +162,12 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0000212 -->
 
     <ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000212"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0095000 -->
+
+    <ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0095000"/>
     
 
 
@@ -1082,6 +1089,14 @@
     
 
 
+    <!-- http://flybase.org/reports/FBsn0000274 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBsn0000274">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </NamedIndividual>
+    
+
+
     <!-- http://virtualflybrain.org/reports/VFBseq_00001758 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00001758">
@@ -1135,6 +1150,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001760"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>adult optic lobe, 1-3 days old, rep 1 (Özel 2021)</rdfs:label>
@@ -1204,6 +1220,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001762"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>adult optic lobe, 1-3 days old, rep 1d_F_3rd (Özel 2021)</rdfs:label>
@@ -1267,6 +1284,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001764"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>adult optic lobe, 1-3 days old, rep 1d_N_1 (Özel 2021)</rdfs:label>
@@ -1330,6 +1348,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001766"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>adult optic lobe, 1-3 days old, rep 1d_N_2 (Özel 2021)</rdfs:label>
@@ -1399,6 +1418,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001768"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>adult optic lobe, 1-3 days old, rep 2 (Özel 2021)</rdfs:label>
@@ -1468,6 +1488,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001770"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>adult optic lobe, 1-3 days old, rep 3 (Özel 2021)</rdfs:label>
@@ -1537,6 +1558,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001772"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>adult optic lobe, 1-3 days old, rep 3d_F_1st (Özel 2021)</rdfs:label>
@@ -1606,6 +1628,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001774"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>adult optic lobe, 1-3 days old, rep 3d_F_2nd (Özel 2021)</rdfs:label>
@@ -1675,6 +1698,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001776"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>adult optic lobe, 1-3 days old, rep 3d_N (Özel 2021)</rdfs:label>
@@ -1744,6 +1768,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001778"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>adult optic lobe, 1-3 days old, rep 3d_S (Özel 2021)</rdfs:label>
@@ -1813,6 +1838,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001780"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>adult optic lobe, 1-3 days old, rep 4 (Özel 2021)</rdfs:label>
@@ -1882,6 +1908,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001782"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>adult optic lobe, 1-3 days old, rep 5 (Özel 2021)</rdfs:label>
@@ -1951,6 +1978,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001784"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>adult optic lobe, 1-3 days old, rep 6 (Özel 2021)</rdfs:label>
@@ -2020,6 +2048,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001786"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>adult optic lobe, 1-3 days old, rep 7 (Özel 2021)</rdfs:label>
@@ -2089,6 +2118,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001788"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>adult optic lobe, 1-3 days old, rep 8 (Özel 2021)</rdfs:label>
@@ -2158,6 +2188,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001790"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P15%, rep 1 (Özel 2021)</rdfs:label>
@@ -2227,6 +2258,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001792"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P15%, rep 2 (Özel 2021)</rdfs:label>
@@ -2296,6 +2328,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001794"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P15%, rep 3 (Özel 2021)</rdfs:label>
@@ -2365,6 +2398,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001796"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P15%, rep 5 (Özel 2021)</rdfs:label>
@@ -2434,6 +2468,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001798"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P15%, rep 6 (Özel 2021)</rdfs:label>
@@ -2503,6 +2538,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001800"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P30%, rep 1 (Özel 2021)</rdfs:label>
@@ -2572,6 +2608,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001802"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P30%, rep 2 (Özel 2021)</rdfs:label>
@@ -2641,6 +2678,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001804"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P30%, rep 3 (Özel 2021)</rdfs:label>
@@ -2710,6 +2748,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001806"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P30%, rep 4 (Özel 2021)</rdfs:label>
@@ -2779,6 +2818,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001808"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P30%, rep 5 (Özel 2021)</rdfs:label>
@@ -2848,6 +2888,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001810"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P40%, rep 1 (Özel 2021)</rdfs:label>
@@ -2917,6 +2958,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001812"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P40%, rep 2 (Özel 2021)</rdfs:label>
@@ -2986,6 +3028,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001814"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P40%, rep 3 (Özel 2021)</rdfs:label>
@@ -3055,6 +3098,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001816"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P40%, rep 4 (Özel 2021)</rdfs:label>
@@ -3124,6 +3168,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001818"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P50%, rep 1 (Özel 2021)</rdfs:label>
@@ -3193,6 +3238,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001820"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P50%, rep 2 (Özel 2021)</rdfs:label>
@@ -3262,6 +3308,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001822"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P50%, rep 3 (Özel 2021)</rdfs:label>
@@ -3331,6 +3378,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001824"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P50%, rep 4 (Özel 2021)</rdfs:label>
@@ -3400,6 +3448,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001826"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P70%, rep 5 (Özel 2021)</rdfs:label>
@@ -3469,6 +3518,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001828"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P70%, rep 6 (Özel 2021)</rdfs:label>
@@ -3538,6 +3588,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001830"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P70%, rep 7 (Özel 2021)</rdfs:label>
@@ -3607,6 +3658,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001832"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P70%, rep 8 (Özel 2021)</rdfs:label>
@@ -3676,6 +3728,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001834"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00001758"/>
         <rdfs:label>optic lobe, P70%, rep 9 (Özel 2021)</rdfs:label>

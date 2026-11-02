@@ -41,9 +41,11 @@ sample_build:
   assay_method: { fbcv_id: FBcv:0009008, label: 10x sequencing }
   assay_label: { unit: 10x library }
   # Sex from GEO: female, except 2 adult libraries "pooled male and female" (left unset;
-  # `mixed` suppresses the missing-sex warning for those). Flies: female Canton-S; no
-  # stock number is given, so no FlyBase stock is linked.
+  # `mixed` suppresses the missing-sex warning for those). Flies: female Canton-S.
   sex: mixed
+  # Canton-S strain FBsn0000274 (FlyBase strain, resolved in Chado: strain.name); no
+  # centre stock is named, so the strain alone is linked.
+  strain: [FBsn0000274]
   # GEO age -> FBdv. Pupal stages are % of pupal development at 25 C (paper: pupae
   # "selected at P0 (white pupae) and maintained at 25°C until the required stage"),
   # i.e. ~hours APF of the 100 h pupal period (FBdv: eclosion at 100 h APF), each

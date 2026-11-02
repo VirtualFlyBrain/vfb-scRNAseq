@@ -7,6 +7,7 @@
      xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
      xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
      xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
+     xmlns:bao="http://www.bioassayontology.org/bao#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -161,6 +162,12 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0000212 -->
 
     <ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000212"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0095000 -->
+
+    <ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0095000"/>
     
 
 
@@ -344,6 +351,14 @@
     
 
 
+    <!-- http://flybase.org/reports/FBsn0000274 -->
+
+    <NamedIndividual rdf:about="http://flybase.org/reports/FBsn0000274">
+        <neo_property:nodeLabel>hasScRNAseqSample</neo_property:nodeLabel>
+    </NamedIndividual>
+    
+
+
     <!-- http://virtualflybrain.org/reports/VFBseq_00002364 -->
 
     <NamedIndividual rdf:about="http://virtualflybrain.org/reports/VFBseq_00002364">
@@ -391,6 +406,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002366"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
         <rdfs:label>larval optic lobe, wandering third instar larva, rep 1 (Konstantinides 2022)</rdfs:label>
@@ -454,6 +470,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002368"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
         <rdfs:label>larval optic lobe, wandering third instar larva, rep 10 (Konstantinides 2022)</rdfs:label>
@@ -517,6 +534,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002370"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
         <rdfs:label>larval optic lobe, wandering third instar larva, rep 2 (Konstantinides 2022)</rdfs:label>
@@ -580,6 +598,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002372"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
         <rdfs:label>larval optic lobe, wandering third instar larva, rep 3 (Konstantinides 2022)</rdfs:label>
@@ -643,6 +662,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002374"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
         <rdfs:label>larval optic lobe, wandering third instar larva, rep 4 (Konstantinides 2022)</rdfs:label>
@@ -706,6 +726,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002376"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
         <rdfs:label>larval optic lobe, wandering third instar larva, rep 5 (Konstantinides 2022)</rdfs:label>
@@ -769,6 +790,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002378"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
         <rdfs:label>larval optic lobe, wandering third instar larva, rep 6 (Konstantinides 2022)</rdfs:label>
@@ -832,6 +854,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002380"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
         <rdfs:label>larval optic lobe, wandering third instar larva, rep 7 (Konstantinides 2022)</rdfs:label>
@@ -895,6 +918,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002382"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
         <rdfs:label>larval optic lobe, wandering third instar larva, rep 8 (Konstantinides 2022)</rdfs:label>
@@ -958,6 +982,7 @@
             </Restriction>
         </rdf:type>
         <obo:RO_0002352 rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002384"/>
+        <bao:BAO_0095000 rdf:resource="http://flybase.org/reports/FBsn0000274"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <dc:source rdf:resource="http://virtualflybrain.org/reports/VFBseq_00002364"/>
         <rdfs:label>larval optic lobe, wandering third instar larva, rep 9 (Konstantinides 2022)</rdfs:label>

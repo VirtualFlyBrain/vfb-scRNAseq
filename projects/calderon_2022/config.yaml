@@ -46,8 +46,11 @@ sample_build:
   # in that experiment).
   assay_method: { fbcv_id: FBcv:0009056, label: single-cell combinatorial indexing RNA sequencing }
   assay_label: { unit: sci-RNA-seq3 experiment, pattern: '^exp(\d+)$' }
-  # Canton S wild type (supplementary methods); no source stock named, so not linked.
+  # Canton S wild type (supplementary methods).
   genotype: Canton S
+  # Canton-S strain FBsn0000274 (FlyBase strain, resolved in Chado: strain.name); no
+  # centre stock is named, so the strain alone is linked.
+  strain: [FBsn0000274]
   tissue: { fbbt_id: FBbt:00000052, label: embryo }
   # collection window -> the narrowest FBdv term covering its stages (Campos-Ortega &
   # Hartenstein timings at 25 C, from the FBdv definitions)
