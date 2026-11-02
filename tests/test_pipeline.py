@@ -292,3 +292,12 @@ def test_geo_sample_stock_falls_back_to_config():
     sb = {"stock_map": {"W1118": ["FBst0005905"]}, "stock": ["FBst0000001"]}
     assert mod.sample_stock({"set": "W1118"}, sb) == ["FBst0005905"]
     assert mod.sample_stock({"set": None}, {}) is None
+
+
+def test_geo_sample_strain():
+    """`strain_map` per group, else `sample_build.strain`, as stocks."""
+    mod = _script("build_samples_from_geo")
+    assert mod.sample_strain({"set": None}, {"strain": ["FBsn0000274"]}) == ["FBsn0000274"]
+    sb = {"strain_map": {"DGRP": ["FBsn0000008"]}, "stock_map": {"DGRP": ["FBst0025177"]}}
+    assert mod.sample_strain({"set": "DGRP"}, sb) == ["FBsn0000008"]
+    assert mod.sample_strain({"set": "W1118"}, sb) is None

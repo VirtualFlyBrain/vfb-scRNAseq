@@ -1,9 +1,9 @@
 #!/usr/bin/env python
-"""Write metadata/FlyBase_entity_list.txt: the FlyBase stocks and genetic entities
-the projects' Samples link.
+"""Write metadata/FlyBase_entity_list.txt: the FlyBase stocks, strains and genetic
+entities the projects' Samples link.
 
-Samples link a FlyBase stock (`stock`, FBst) or the genetic entities in a cross's
-genotype (`genotype_includes`: FBal / FBti / FBtp / FBco). VFB has no labels for
+Samples link FlyBase stocks (`stock`, FBst) and strains (`strain`, FBsn), or the
+genetic entities in a cross's genotype (`genotype_includes`: FBal / FBti / FBtp / FBco). VFB has no labels for
 most of these, so VirtualFlyBrain/vfb-scRNAseq-gene-annotations reads this list
 and adds them, labelled from FlyBase, to VFB_scRNAseq_genes.owl, as it does for the
 expressed genes (expression/FBgn_list.txt). One id per line, sorted, from every
@@ -23,7 +23,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 OUT = REPO_ROOT / "metadata" / "FlyBase_entity_list.txt"
-SLOTS = ("stock", "genotype_includes")
+SLOTS = ("stock", "strain", "genotype_includes")
 PREFIX = "FlyBase:"
 
 

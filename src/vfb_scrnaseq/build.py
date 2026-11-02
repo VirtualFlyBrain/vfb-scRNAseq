@@ -167,6 +167,9 @@ def build_entities(project: str) -> list[dict]:
         if s.get("stock"):
             # FlyBase stock refs: bare FBst ids -> FlyBase: CURIEs (IRIs in RDF)
             rec["stock"] = [f"FlyBase:{fbst}" for fbst in s["stock"]]
+        if s.get("strain"):
+            # FlyBase strain refs (FBsn), as stocks
+            rec["strain"] = [f"FlyBase:{fbsn}" for fbsn in s["strain"]]
         if s.get("genotype_includes"):
             # FlyBase genetic entities (FBco / FBal / FBtp / FBti) in the animals' genotype
             rec["genotype_includes"] = [f"FlyBase:{x}" for x in s["genotype_includes"]]

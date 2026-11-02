@@ -137,3 +137,17 @@ def test_sdrf_include_keeps_only_the_listed_rows(tmp_path):
     samples, assays, _ = mod.build(_rows_10x(), sb, "E-MTAB-1", reg, "VFBseq_00000001")
     assert [s["sample_id"] for s in samples] == ["h__FCA48"]
     assert [a["library_id"] for a in assays] == ["FCA48_S4"]
+
+
+def test_genotype_strain_map(tmp_path):
+    """A genotype's `strain_map` entry links its FlyBase strain and counts as mapped."""
+    mod = _builder()
+    rows = _rows_10x()
+    for r in rows:
+        r["Characteristics[strain]"] = "Canton-S"
+    sb = dict(SB_COMMON, sample_columns=["Extract Name"], assay_column="Source Name",
+              genotype_columns=["Characteristics[strain]"], strain_map={"Canton-S": ["FBsn0000274"]})
+    reg = IDRegistry.load(tmp_path / "reg.json")
+    samples, _, warnings = mod.build(rows, sb, "E-MTAB-1", reg, "VFBseq_00000001")
+    assert all(s["strain"] == ["FBsn0000274"] and s["stock"] is None for s in samples)
+    assert not any("Canton-S" in w for w in warnings)
