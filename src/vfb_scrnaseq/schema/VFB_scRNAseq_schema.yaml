@@ -133,6 +133,37 @@ classes:
         annotations:
           owl: ObjectPropertyAssertion
         multivalued: true
+      # Accessions at a VFB Site: a dbxref to the Site node annotated with the
+      # accession (as Dataset `site`), which VFB loads as a database_cross_reference
+      # edge with a link. A bare-string dbxref is not loaded. The Site nodes are in
+      # the VFB KB (GEO; SRA and BioSample added 2026-11).
+      geo_xref:
+        slot_uri: oboInOwl:hasDbXref
+        description: GEO sample accession(s) (GSM) for the Assay.
+        range: string
+        multivalued: true
+        annotations:
+          owl.fstring: AnnotationAssertion(
+                        Annotation( neo_custom:accession "{V}" )
+                        oboInOwl:hasDbXref {id} vfb:GEO )
+      sra_xref:
+        slot_uri: oboInOwl:hasDbXref
+        description: INSDC sequence read experiment accession(s) (SRX / ERX / DRX) for the Assay, linked at NCBI SRA.
+        range: string
+        multivalued: true
+        annotations:
+          owl.fstring: AnnotationAssertion(
+                        Annotation( neo_custom:accession "{V}" )
+                        oboInOwl:hasDbXref {id} vfb:SRA )
+      biosample_xref:
+        slot_uri: oboInOwl:hasDbXref
+        description: BioSample accession(s) (SAMN / SAMEA / SAMD) for the Assay, linked at NCBI BioSample.
+        range: string
+        multivalued: true
+        annotations:
+          owl.fstring: AnnotationAssertion(
+                        Annotation( neo_custom:accession "{V}" )
+                        oboInOwl:hasDbXref {id} vfb:BioSample )
     slots:
       - associated_dataset
       - dbxref
@@ -301,7 +332,7 @@ slots:
         AnnotationAssertion( neo_property:nodeLabel {V} "hasScRNAseqSample" )
   dbxref:
     slot_uri: oboInOwl:hasDbXref
-    description: Cross-reference accession(s) for the entity (e.g. GEO GSM, SRA SRX/SRP, BioSample SAMN). Not an IRI for the entity.
+    description: Cross-reference accession(s) for the entity with no VFB Site (e.g. a source's own library id), kept as plain strings, which VFB does not load. Accessions at a VFB Site use geo_xref / sra_xref / biosample_xref. Not an IRI for the entity.
     multivalued: true
     annotations:
       owl: AnnotationAssertion
