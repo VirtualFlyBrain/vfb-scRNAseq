@@ -73,3 +73,60 @@ def test_load_rejects_a_counter_behind_the_ids(tmp_path):
         "id": "VFBseq_00000005", "entity_type": "Dataset", "natural_key": "A", "label": None, "accession": None}}}))
     with pytest.raises(ValueError, match="behind"):
         IDRegistry.load(path)
+
+
+def _git(cwd, *args):
+    import subprocess
+    subprocess.run(["git", *args], cwd=cwd, check=True, capture_output=True,
+                   env={"GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@t", "GIT_COMMITTER_NAME": "t",
+                        "GIT_COMMITTER_EMAIL": "t@t", "PATH": __import__("os").environ["PATH"]})
+
+
+def _repo_with_branch(tmp_path):
+    """A git repo whose main registry has counter 2, and branch `other` that minted ids 3-4."""
+    repo = tmp_path / "repo"
+    repo.mkdir()
+    _git(repo, "init", "-q", "-b", "main")
+    path = repo / "id_registry" / "registry.json"
+    reg = IDRegistry.load(path)
+    reg.mint("Dataset", "A")
+    reg.mint("Dataset", "B")
+    reg.save()
+    _git(repo, "add", ".")
+    _git(repo, "commit", "-q", "-m", "main")
+    _git(repo, "switch", "-q", "-c", "other")
+    reg = IDRegistry.load(path)
+    reg.mint("Cluster", "x")
+    reg.mint("Cluster", "y")
+    reg.save()
+    _git(repo, "commit", "-q", "-am", "other")
+    _git(repo, "switch", "-q", "main")
+    return repo, path
+
+
+def test_new_ids_skip_those_minted_on_another_branch(tmp_path, monkeypatch):
+    monkeypatch.delenv("VFBSEQ_IDS_LOCAL_ONLY", raising=False)
+    repo, path = _repo_with_branch(tmp_path)
+    reg = IDRegistry.load(path)
+    assert reg.get("Dataset", "A") == "VFBseq_00000001"          # existing ids untouched
+    assert reg.mint("Dataset", "A") == "VFBseq_00000001"
+    assert reg.mint("Cluster", "z") == "VFBseq_00000005"          # past branch `other` (3-4)
+    assert reg.mint("Cluster", "w") == "VFBseq_00000006"
+
+
+def test_new_ids_skip_those_minted_in_another_worktree(tmp_path, monkeypatch):
+    monkeypatch.delenv("VFBSEQ_IDS_LOCAL_ONLY", raising=False)
+    repo, path = _repo_with_branch(tmp_path)
+    wt = tmp_path / "wt"
+    _git(repo, "worktree", "add", "-q", "-b", "third", str(wt), "main")
+    reg = IDRegistry.load(wt / "id_registry" / "registry.json")   # uncommitted mints: 5-7
+    for k in "pqr":
+        reg.mint("Cluster", k)
+    reg.save()
+    assert IDRegistry.load(path).mint("Cluster", "s") == "VFBseq_00000008"
+
+
+def test_local_only_opt_out(tmp_path, monkeypatch):
+    repo, path = _repo_with_branch(tmp_path)
+    monkeypatch.setenv("VFBSEQ_IDS_LOCAL_ONLY", "1")
+    assert IDRegistry.load(path).mint("Cluster", "z") == "VFBseq_00000003"

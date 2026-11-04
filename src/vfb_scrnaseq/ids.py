@@ -14,6 +14,9 @@ version control so the id<->entity mapping is auditable.
 from __future__ import annotations
 
 import json
+import os
+import re
+import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -28,6 +31,62 @@ def _format_id(counter: int) -> str:
     return f"{PREFIX}_{counter:0{ID_WIDTH}d}"
 
 
+_COUNTER_RE = re.compile(r'"counter":\s*(\d+)')
+
+
+def _git(cwd: Path, *args: str, stdin: str | None = None) -> str | None:
+    try:
+        r = subprocess.run(["git", *args], cwd=cwd, input=stdin, capture_output=True, text=True, check=True)
+    except (OSError, subprocess.CalledProcessError):
+        return None
+    return r.stdout
+
+
+def counters_elsewhere(path: Path) -> dict[str, int]:
+    """{where: registry counter} for this registry on the repo's other branches and worktrees.
+
+    Branches cut from the same main each mint from the same counter, so two open
+    branches would issue the same ids. Looking at every local and remote-tracking
+    branch (as of the last fetch) and every other worktree's working copy (ids
+    minted there but not yet committed) lets a new mint start past all of them.
+    Empty outside a git repository. Set VFBSEQ_IDS_LOCAL_ONLY=1 to skip.
+    """
+    if os.environ.get("VFBSEQ_IDS_LOCAL_ONLY"):
+        return {}
+    path = Path(path).resolve()
+    top = _git(path.parent, "rev-parse", "--show-toplevel")
+    if not top:
+        return {}
+    top = Path(top.strip()).resolve()
+    rel = path.relative_to(top).as_posix()
+    out: dict[str, int] = {}
+
+    refs = (_git(top, "for-each-ref", "--format=%(refname)", "refs/heads", "refs/remotes") or "").split()
+    refs = [r for r in refs if not r.endswith("/HEAD")]
+    if refs:
+        checked = _git(top, "cat-file", "--batch-check=%(objectname) %(objecttype)",
+                       stdin="".join(f"{r}:{rel}\n" for r in refs)) or ""
+        blobs: dict[str, list[str]] = {}
+        for ref, line in zip(refs, checked.splitlines()):
+            sha, _, kind = line.partition(" ")
+            if kind == "blob":
+                blobs.setdefault(sha, []).append(re.sub(r"^refs/(heads|remotes)/", "", ref))
+        for sha, names in blobs.items():
+            m = _COUNTER_RE.search((_git(top, "cat-file", "-p", sha) or "")[:500])
+            if m:
+                out[", ".join(names)] = int(m.group(1))
+
+    for line in (_git(top, "worktree", "list", "--porcelain") or "").splitlines():
+        if line.startswith("worktree "):
+            wt = Path(line[len("worktree "):]).resolve()
+            other = wt / rel
+            if wt != top and other.exists():
+                m = _COUNTER_RE.search(other.read_text()[:500])
+                if m:
+                    out[f"worktree {wt}"] = int(m.group(1))
+    return out
+
+
 @dataclass
 class IDRegistry:
     """A JSON-backed, append-only registry of minted ``VFBseq`` ids.
@@ -40,6 +99,7 @@ class IDRegistry:
     path: Path
     _counter: int = 0
     _entries: dict[str, dict] = None  # natural_key -> {id, entity_type, label, accession}
+    _checked_elsewhere: bool = False   # other branches / worktrees looked at (once, before a new id)
 
     @classmethod
     def load(cls, path: str | Path) -> "IDRegistry":
@@ -91,6 +151,8 @@ class IDRegistry:
         existing = self._entries.get(key)
         if existing is not None:
             return existing["id"]
+        if not self._checked_elsewhere:
+            self._skip_ids_claimed_elsewhere()
         self._counter += 1
         new_id = _format_id(self._counter)
         self._entries[key] = {
@@ -101,6 +163,18 @@ class IDRegistry:
             "accession": accession,
         }
         return new_id
+
+    def _skip_ids_claimed_elsewhere(self) -> None:
+        """Before the first new id, move the counter past every other branch's / worktree's."""
+        self._checked_elsewhere = True
+        others = counters_elsewhere(self.path)
+        if not others:
+            return
+        where, top = max(others.items(), key=lambda kv: kv[1])
+        if top > self._counter:
+            print(f"id registry: {where} has minted up to {_format_id(top)}; "
+                  f"new ids start at {_format_id(top + 1)} (counter here was {self._counter})")
+            self._counter = top
 
     def get(self, entity_type: str, natural_key: str) -> str | None:
         entry = self._entries.get(self._key(entity_type, natural_key))
