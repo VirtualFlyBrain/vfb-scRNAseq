@@ -1348,12 +1348,15 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-16.
   / *immature lobula columnar neuron*; 112 "best match for all kenyon cells ... likely
   good quality" (P70, adult) → *adult Kenyon cell*. Not mapped: 5 and 48 ("might be"
   only), 102 ("could correspond to multiplets"), and those with low-quality features
-  (38, 85, 120, G/LQ). 522 of 1,238 entries now mapped (130 FBbt terms).
+  (38, 85, 120, G/LQ). 522 of 1,238 entries now mapped (130 FBbt terms). After FBbt #2219 (below): 528 (147 terms).
 - **Pending FBbt terms (curator 2026-10-16).** The P15-P40 T2 / T2a / T3 clusters wait
   on #2216 (requested for Kurmangaliyev), and the other immature types FBbt lacks
   (C2, C3, LC4, LC6, LC10a/b/d, LC12, LC16, LC17, LLPC1, LPC1, LPLC1, LPLC2, Lawf1,
   Lawf2, Tm5 / Tm5a, and LC10c by a later comment) were requested in FBbt #2219; both are tracked in
-  `checks/pending_fbbt_requests.json` (the weekly check reminds when released).
+  `checks/pending_fbbt_requests.json` (the weekly check reminds when released). #2219 was
+  released in FBbt 2026-11-02 and the P15-P40 clusters remapped (2026-11-04): each type to
+  its new immature term (exact), Tm5ab to *immature transmedullary neuron Tm5* (broad, the
+  common parent of Tm5a and Tm5b), and LPLC1 / LPLC2 no longer held (6 new Clusters).
 - **Cross-checks.** 53 of 55 types shared with Kurmangaliyev 2020 (main) map alike;
   the two others are Dm3a / Dm3b: FBbt's *Dm3a* / *Dm3b* are defined from this paper,
   so they are exact here, while Kurmangaliyev keeps *Dm3* (equivalence of its Dm3a / b
