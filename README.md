@@ -294,7 +294,4 @@ Pending FBbt requests, tracked with the clusters waiting on them in
 [#2219](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2219)
 (19 immature optic lobe neuron types; Özel),
 [#2220](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2220)
-(pupal immature / remodelling olfactory projection neuron types; Li 2017 and Xie 2021), and the FBbt review of adult fat terms
-([#2218](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2218);
-FCA and AFCA fat mappings to revisit; Saavedra's thorax adipose cluster to *adult
-postcephalic fat cell* once released).
+(pupal immature / remodelling olfactory projection neuron types; Li 2017 and Xie 2021).

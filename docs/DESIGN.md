@@ -181,8 +181,14 @@ below record how each was applied).
   (cell body rind), so head = brain and body = VNC cell body glia; a brain-only or
   optic-lobe-only dissection makes *adult brain …* / *adult optic lobe …* terms exact
   (Davie, Kurmangaliyev). Not exact, so not narrowed: head perineurial /
-  subperineurial glia (the head has PNS too), body fat (thorax and abdomen) and body
-  surface glia. Such cluster-specific narrowings are recorded as curator edits
+  subperineurial glia (the head has PNS too) and body surface glia. Adult fat (after
+  FBbt #2218, 2026-11-04): head fat → *adult pericerebral fat cell*; whole body minus head
+  → *adult postcephalic fat cell*; thorax-only → *adult thoracic fat cell*; FCA body wall →
+  *adult subcuticular fat cell*; abdominal dissections (fat body, oenocyte) → *adult
+  abdominal fat cell*; fat dissected with internal organs (gut, Malpighian tubule, male
+  reproductive glands, testis) → *adult visceral fat cell*; heart → *adult postcephalic
+  fat cell* (the sample also has thoracic tissue); trachea and proboscis stay *adult fat
+  cell* (trachea has head tissue; proboscis fat is not pericerebral). Such cluster-specific narrowings are recorded as curator edits
   (`manual_edit`) on the cluster's mapping file, which `expand_type_mappings.py` keeps.
 - **Too-broad terms are held** (curator decision 2026-10-16). A cluster that could only
   be typed as *cell* or *neuron* (or a stage-specific version) is held; one of a known
@@ -1154,9 +1160,11 @@ Curator decisions (2026-10-07):
   dissected tissue** — generic types map at the authors' level in every tissue (refined
   2026-10-16: narrowed where the tissue makes the term exact — head fat body → *adult
   pericerebral fat cell*, body cell body glia → *adult VNC cell body glial cell*; the fat
-  mappings are to be revisited once FBbt #2218, a review of the adult fat terms, is
-  released, tracked in `checks/pending_fbbt_requests.json`).
-  11 types are held (no adequate cell term; not loaded); 5 curator edits (`manual_edit`).
+  mappings were revisited after FBbt #2218, a review of the adult fat terms, was released
+  in FBbt 2026-11-02: each non-head tissue's fat cluster narrowed by the dissection, per
+  *General curation rules*, curator 2026-11-04).
+  11 types are held (no adequate cell term; not loaded); 5 curator edits (`manual_edit`),
+  plus the fat narrowings (10 in 10x, 8 in Smart-seq2, AFCA body).
 - **Expression (stage 4):** from the same h5ad files, as CPM. 10x: each file's `raw.X`
   (all retained genes, log(counts per 10k + 1)); the main `X` is scaled HVGs only.
   Smart-seq2: `X` (all genes, log2(CPM + 1)). Genes keyed by symbol: FBgn from the 10x
@@ -2086,7 +2094,8 @@ or FoxO, two technical replicates each. Replaces the old FlyBase/SCEA load FBlc0
   cluster"s.
 - **FBbt mapping (stage 3, 2026-10-20):** per author type (`write_type_mappings.py`): adult
   cell terms (*indirect flight muscle cell*, *adult muscle cell*, *adult alary muscle cell*,
-  *adult epithelial cell*, *adult fat cell*, *adult tracheocyte*, *adult hemocyte*);
+  *adult epithelial cell*, *adult fat cell* (*adult thoracic fat cell* since FBbt #2218,
+  2026-11-04), *adult tracheocyte*, *adult hemocyte*);
   narrowed by the dissected tissue only where exact (FCA rules): cell body glia to *adult
   VNC cell body glial cell* (CNS-only; the thorax's CNS is the VNC), perineurial glia to
   *adult perineurial glial cell* (not narrowed: the thorax's peripheral nerves have a

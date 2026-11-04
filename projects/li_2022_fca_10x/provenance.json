@@ -1,7 +1,7 @@
 {
   "project": "li_2022_fca_10x",
   "created_at": "2026-10-14",
-  "updated_at": "2026-10-17",
+  "updated_at": "2026-11-04",
   "summary": "Fly Cell Atlas 10x (Li et al. 2022, Science), rebuilt from ArrayExpress E-MTAB-10519 and the authors' own per-tissue 10x Stringent AnnData analyses (flycellatlas.org), replacing the old SCEA-based loads FBlc0003846, FBlc0004307 and FBlc0004785 (split by sex); the Smart-seq2 data (E-MTAB-10628) are a separate project, li_2022_fca_ss2. Single-nucleus 10x data from 15 tissues plus whole head and body (61 Samples, 160 Assays). 17 Clusterings, one per author analysis, with one Cluster per author annotation: 370 clusters, 335 mapped to 190 distinct FBbt terms and loaded, 35 held. Summary expression for the loaded Clusters as CPM (16,363 genes x 506,660 cells; 512,215 cluster x gene rows with extent > 0.2).",
   "decisions": [
     {
@@ -98,6 +98,11 @@
       "date": "2026-10-17",
       "by": "curator",
       "decision": "Samples from GAL4 > UAS crosses (fat body, trachea, oenocyte, Malpighian tubule) link the FlyBase genetic entities in the genotype instead of a stock (genotype_includes, GENO:0000222 has_genotype; the FBst0007378 UAS-lamGFP stock link removed), at allele (FBal) level for now (FBti may be preferred later): the alleles FlyBase curated for the paper (Chado feature_pub, FBrf0252876), plus unambiguous ones it did not link (tub-GAL80ts in the trachea cross, FBal0147425). UAS-nlsGFP and UAS-unc84GFP are not identifiable and not linked."
+    },
+    {
+      "date": "2026-11-04",
+      "by": "curator",
+      "decision": "FBbt #2218 (review of the adult fat terms) released in FBbt 2026-11-02: the 'adult fat body' clusters of the non-head analyses narrowed by the dissected tissue (cluster-level manual_edit): body and heart to adult postcephalic fat cell, body wall to adult subcuticular fat cell, fat body and oenocyte to adult abdominal fat cell, haltere to adult thoracic fat cell, gut, Malpighian tubule, male reproductive glands and testis to adult visceral fat cell; trachea (the sample has head tissue) and proboscis and maxillary palps stay adult fat cell; head stays adult pericerebral fat cell. 10 clusters."
     }
   ],
   "checks": [
@@ -125,6 +130,11 @@
       "date": "2026-10-17",
       "check": "Genotype alleles against FlyBase's curation of the paper (scripts/flybase_pub_entities.py --fbrf FBrf0252876) and VFB production.",
       "result": "Every linked driver / reporter allele is curated by FlyBase for the paper, except tub-GAL80ts (from the supplement; one FlyBase allele for P{tubP-GAL80[ts]}). In VFB now: the btl, Desat1, Ilp2 and Akh GAL4 alleles; the others to be imported."
+    },
+    {
+      "date": "2026-11-04",
+      "check": "All FBbt terms verified against FBbt 2026-11-02 (verify_mappings.py).",
+      "result": "All 195 terms current, non-obsolete, labels match."
     }
   ],
   "people": [
@@ -146,11 +156,11 @@
     {
       "id": "FBbt",
       "label": "Drosophila gross anatomy ontology",
-      "version": "2026-10-01",
-      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "version": "2026-11-02",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-11-02/fbbt.owl",
       "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
       "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
-      "accessed_at": "2026-10-14"
+      "accessed_at": "2026-11-04"
     },
     {
       "id": "FBdv",
