@@ -1,8 +1,8 @@
 {
   "project": "xie_2021",
   "created_at": "2026-10-17",
-  "updated_at": "2026-10-18",
-  "summary": "Xie et al. 2021 (eLife), Smart-seq2 of FACS-sorted Drosophila olfactory projection neurons at 0 h, 24 h and 48 h APF and adult (GEO GSE161228; not previously in VFB). 6 Samples (sorts: 0 h VT033006; 48 h and adult GH146; kn+ at 24 h, 48 h, adult) with 27 plate Assays, linked to their driver alleles (GENO has_genotype); the main analysis's 24 h cells are Li et al. 2017's, whose 5 Samples are reused. Seven Clusterings (the main pan-PN analysis and the knot analysis, per stage) with one Cluster per stage x the authors' PN type: 118, 92 loaded (adult PN type terms of the authors' lineage from 48 h APF; at 0 h / 24 h the stage-neutral lineage class until FBbt #2220 adds pupal terms), 26 held. Summary expression as CPM from the authors' h5ads (17,452 genes x 4,097 cells).",
+  "updated_at": "2026-11-04",
+  "summary": "Xie et al. 2021 (eLife), Smart-seq2 of FACS-sorted Drosophila olfactory projection neurons at 0 h, 24 h and 48 h APF and adult (GEO GSE161228; not previously in VFB). 6 Samples (sorts: 0 h VT033006; 48 h and adult GH146; kn+ at 24 h, 48 h, adult) with 27 plate Assays, linked to their driver alleles (GENO has_genotype); the main analysis's 24 h cells are Li et al. 2017's, whose 5 Samples are reused. Seven Clusterings (the main pan-PN analysis and the knot analysis, per stage) with one Cluster per stage x the authors' PN type: 118, 94 loaded (adult PN type terms of the authors' lineage from 48 h APF; at 0 h / 24 h the pupal PN / APL terms FBbt added in #2220), 24 held. Summary expression as CPM from the authors' h5ads (17,452 genes x 4,097 cells).",
   "decisions": [
     {
       "date": "2026-10-08",
@@ -68,6 +68,11 @@
       "date": "2026-10-18",
       "by": "curator",
       "decision": "All 92 mapped clusters reviewed by the curator (mapping.tsv `reviewed`)."
+    },
+    {
+      "date": "2026-11-04",
+      "by": "curator",
+      "decision": "FBbt #2220 released (FBbt 2026-11-02): the 0 h / 24 h types (type_mapping/immature/, written by write_type_mappings.py) remapped from the stage-neutral lineage classes (broad) to the new pupal terms: immature adult ... adPN / lPN for larval-born types, pupal ... adPN (remodelling) for DA4l, VA2, VA6, pupal vPN / DA1 vPN, all exact; DA1_fru+ / DA1_fru- to immature adult DA1 lPN and VM7 or VM5v to immature adult uniglomerular adPN, broad. The APL clusters, held until now, map to pupal mushroom body anterior paired lateral cell (2 new Clusters, VFBseq_00003281-2; main_0h_APL has 1 cell). 48 clusters in all."
     }
   ],
   "checks": [
@@ -95,6 +100,11 @@
       "date": "2026-10-18",
       "check": "Marker spot checks in the expression output.",
       "result": "acj6 in adPNs (DL1, VM2, VA1v), vvl in lPNs (DA1, VC2), Lim1 in vPNs; trol in VM2; fru in DA1_fru+ not DA1_fru- (48 h)."
+    },
+    {
+      "date": "2026-11-04",
+      "check": "All FBbt terms verified against FBbt 2026-11-02 (verify_mappings.py); expression rebuilt and compared with the previous output.",
+      "result": "All 37 terms current, non-obsolete, labels match. Expression: rows added for the 2 APL Clusters, all other rows unchanged (433,211 in all)."
     }
   ],
   "people": [
@@ -116,11 +126,11 @@
     {
       "id": "FBbt",
       "label": "Drosophila gross anatomy ontology",
-      "version": "2026-10-01",
-      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "version": "2026-11-02",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-11-02/fbbt.owl",
       "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
       "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
-      "accessed_at": "2026-10-16"
+      "accessed_at": "2026-11-04"
     },
     {
       "id": "FBdv",

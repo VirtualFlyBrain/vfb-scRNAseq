@@ -1570,6 +1570,8 @@ CC-BY-4.0. Curator decisions 2026-10-17.
   stage-neutral class of their lineage, broad: *antennal lobe projection neuron adPN*
   (VA1d, DC3, DC2, VM2), *antennal lobe projection neuron of ALl1 lineage* (FBbt's former
   lPN: DA1, DL3). 22 clusters loaded; tracked in `checks/pending_fbbt_requests.json`.
+  #2220 was released in FBbt 2026-11-02 and the 14 clusters remapped (2026-11-04) to the
+  new *immature adult antennal lobe projection neuron … adPN / lPN* terms (exact).
 - **Expression (stage 4):** GEO's raw HTSeq read counts (`GSE100058_htseq.tab.gz`; its
   "symbol" column holds r6.10 FBgn ids), exported for the 1,379 cells of the loaded
   analyses by `projects/li_2017/export_counts.py` (spike-ins and HTSeq summary rows
@@ -1629,7 +1631,15 @@ FACS-sorted olfactory projection neurons (PNs), one GEO sample per cell (11,509)
   remodelling forms for the embryonic-born PNs too); meanwhile the stage-neutral class of the
   lineage, broad (curator 2026-10-17); the APL clusters there, with no stage-neutral term,
   are held. 92 clusters loaded (19 FBbt terms), 26 held (2 APL `no term`, 19 `untyped`
-  MARS clusters, 5 `unassigned`).
+  MARS clusters, 5 `unassigned`). #2220 was released in FBbt 2026-11-02 and the 0 h / 24 h
+  clusters remapped (2026-11-04): larval-born PN types to *immature adult antennal lobe
+  projection neuron … adPN / lPN*, the embryonic-born DA4l, VA2 and VA6 adPNs to the
+  remodelling *pupal antennal lobe projection neuron … adPN*, vPN / vPN_DA1 to *pupal …
+  vPN* / *DA1 vPN*, all exact; DA1_fru+ / DA1_fru- to *immature adult … DA1 lPN* and
+  "VM7 or VM5v" to *immature adult uniglomerular antennal lobe projection neuron adPN*,
+  broad; and the APL clusters, no longer held, to *pupal mushroom body anterior paired
+  lateral cell* (2 new Clusters; main_0h_APL is a single cell). 94 clusters loaded
+  (37 FBbt terms), 24 held.
 - **Expression (stage 4):** from the authors' annotated h5ads (GEO): X is log2(CPM + 1)
   (each cell sums to 1e6 CPM after conversion; checked), converted back to CPM
   (`expression.values: log2_cpm1`). The h5ad route takes `expression.h5ad_files` (files in
