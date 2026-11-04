@@ -275,7 +275,7 @@ its README.
 ## Status
 
 All seventeen projects are curated and built. Every mapped cluster has been reviewed (bar
-three Kurmangaliyev early clusters awaiting FBbt #2216, below), and
+three Kurmangaliyev early clusters, remapped to FBbt #2216's new terms), and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the
 expression output are mapped to current FlyBase genes (`scripts/update_gene_ids.py`;
@@ -289,8 +289,6 @@ VFB*), which also retires all 24 old FlyBase/SCEA scRNAseq files (FBlc ids) on V
 OWL server; they stay in the archived VirtualFlyBrain/vfb-scRNAseq-ontology repo.
 Pending FBbt requests, tracked with the clusters waiting on them in
 `checks/pending_fbbt_requests.json`:
-[#2216](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2216)
-(immature T2 / T2a / T3 neurons; Kurmangaliyev and Özel),
 [#2219](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2219)
 (19 immature optic lobe neuron types; Özel),
 [#2220](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2220)
