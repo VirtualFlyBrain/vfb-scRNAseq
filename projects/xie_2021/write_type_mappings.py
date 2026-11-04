@@ -3,10 +3,11 @@
 
 Curator 2026-10-17: immature terms up to the pupal stage (0 h, 24 h APF), mature from the
 pharate adult stage (48 h APF, adult); ambiguous author types to their common parent.
-FBbt has adult PN type terms with lineage (adPN / lPN / vPN; the authors' `lineage`
-column) but no immature (or remodelling) projection neuron terms yet (requested), so the
-0 h / 24 h types map meanwhile to the stage-neutral PN class of their lineage, broad
-(curator 2026-10-17; type_mapping/immature/); APL, with no stage-neutral class, is held. Terms and definitions are read from OLS.
+The 0 h / 24 h types (type_mapping/immature/) map to FBbt's pupal PN terms, requested for
+this paper (FBbt #2220, in FBbt 2026-11-02): *immature adult ... PN* for larval-born PNs,
+*pupal ... PN* for embryonic-born ones (remodelling) and vPNs, and *pupal mushroom body anterior
+paired lateral cell* for APL. Until then they mapped to the stage-neutral PN class of
+their lineage (broad) and APL was held. Terms and definitions are read from OLS.
 
 Usage:
     uv run python projects/xie_2021/write_type_mappings.py
@@ -50,16 +51,33 @@ MATURE = {   # author type: (FBbt id, match, justification)
     "vPN_DA1": ("FBbt:00067372", EXACT, "DA1 vPNs (knot analysis)."),
     "APL": ("FBbt:00100222", EXACT, "The APL neuron (labelled by GH146; not a projection neuron)."),
 }
-LINEAGE_CLASS = {   # stage-neutral PN classes, for the immature-stage types meanwhile (curator 2026-10-17)
-    "adPN": "FBbt:00067349",   # antennal lobe projection neuron adPN
-    "lPN": "FBbt:00067362",    # antennal lobe projection neuron of ALl1 lineage (FBbt's former lPN)
-    "vPN": "FBbt:00067351",    # antennal lobe projection neuron vPN
-}
-IMMATURE = {   # author type: lineage (the authors' `lineage` column); None: no stage-neutral class
-    "APL": None, "D": "adPN", "DA1_fru+": "lPN", "DA1_fru-": "lPN", "DA3": "adPN", "DA4l": "adPN",
-    "DC2": "adPN", "DC3": "adPN", "DL1": "adPN", "DL3": "lPN", "DM2": "lPN", "DM6": "adPN",
-    "VA1d": "adPN", "VA1v": "adPN", "VA2": "adPN", "VA5": "lPN", "VA6": "adPN", "VC2": "lPN",
-    "VM2": "adPN", "VM7 or VM5v #1": "adPN", "VM7 or VM5v #2": "adPN", "vPN": "vPN", "vPN_DA1": "vPN",
+IMMATURE_ADPN = "FBbt:00053704"   # immature adult uniglomerular antennal lobe projection neuron adPN
+IMMATURE = {   # author type: (pupal FBbt term from FBbt #2220, match, justification)
+    "APL": ("FBbt:00053708", EXACT, "The APL neuron (labelled by GH146; not a projection neuron)."),
+    "D": ("FBbt:00053686", EXACT, "D adPNs."),
+    "DA1_fru+": ("FBbt:00053697", BROAD, "The fru+ subset of DA1 lPNs; FBbt has no fru+ / fru- DA1 subtypes."),
+    "DA1_fru-": ("FBbt:00053697", BROAD, "The fru- subset of DA1 lPNs; FBbt has no fru+ / fru- DA1 subtypes."),
+    "DA3": ("FBbt:00053687", EXACT, "DA3 adPNs."),
+    "DA4l": ("FBbt:00053705", EXACT, "DA4l adPNs (embryonic-born, remodelling)."),
+    "DC2": ("FBbt:00053688", EXACT, "DC2 adPNs."),
+    "DC3": ("FBbt:00053689", EXACT, "DC3 adPNs."),
+    "DL1": ("FBbt:00053690", EXACT, "DL1 adPNs."),
+    "DL3": ("FBbt:00053698", EXACT, "DL3 lPNs."),
+    "DM2": ("FBbt:00053699", EXACT, "DM2 lPNs."),
+    "DM6": ("FBbt:00053691", EXACT, "DM6 adPNs."),
+    "VA1d": ("FBbt:00053692", EXACT, "VA1d adPNs."),
+    "VA1v": ("FBbt:00053693", EXACT, "VA1v adPNs."),
+    "VA2": ("FBbt:00053707", EXACT, "VA2 adPNs (embryonic-born, remodelling)."),
+    "VA5": ("FBbt:00053700", EXACT, "VA5 lPNs."),
+    "VA6": ("FBbt:00053706", EXACT, "VA6 adPNs (embryonic-born, remodelling)."),
+    "VC2": ("FBbt:00053701", EXACT, "VC2 lPNs."),
+    "VM2": ("FBbt:00053694", EXACT, "VM2 adPNs."),
+    "VM7 or VM5v #1": (IMMATURE_ADPN, BROAD, "VM7 or VM5v adPNs (the authors could not tell which; one of two such "
+                                             "clusters): the common parent of immature adult VM7 adPN and VM5v adPN."),
+    "VM7 or VM5v #2": (IMMATURE_ADPN, BROAD, "VM7 or VM5v adPNs (the authors could not tell which; one of two such "
+                                             "clusters): the common parent of immature adult VM7 adPN and VM5v adPN."),
+    "vPN": ("FBbt:00053703", EXACT, "Ventral PNs (vPNs), not resolved to a type."),
+    "vPN_DA1": ("FBbt:00053702", EXACT, "DA1 vPNs (knot analysis)."),
 }
 
 
@@ -126,36 +144,26 @@ def main() -> None:
             "new_term_needed": False,
             "verification_needed": False,
         })
-    for typ, lineage in IMMATURE.items():
-        path = PROJ / "type_mapping" / "immature" / f"{label_slug(typ)}.fbbt_mapping.json"
-        base = {
+    for typ, (fid, match, why) in IMMATURE.items():
+        best = term(fid)
+        write(PROJ / "type_mapping" / "immature" / f"{label_slug(typ)}.fbbt_mapping.json", {
             "cluster_label": typ,
             "working_definition": f"Olfactory projection neuron type {typ} (Xie et al. 2021) at 0 h or 24 h APF.",
             "searches_performed": [f"immature antennal lobe projection neuron {typ}",
-                                   "immature antennal lobe projection neuron"],
+                                   "immature antennal lobe projection neuron",
+                                   "FBbt #2220 terms (FBbt 2026-11-02)"],
+            "best_match": {**best, "match_type": match,
+                           "skos_mapping": "skos:exactMatch" if match == EXACT else "skos:broadMatch",
+                           "confidence": "high"},
+            "justification": why + " Up to the pupal stage the immature or pupal term is used (curator); FBbt #2220, "
+                                   "release 2026-11-02."
+                             + lineage_note(typ, ev),
             "other_candidates": [],
-            "new_term_needed": True,
+            "recommendation": f"Map to {fid} {best['fbbt_term']} ({match}).",
+            "new_term_needed": False,
             "verification_needed": False,
-        }
-        if lineage is None:
-            write(path, {**base, "best_match": None,
-                         "justification": "Up to the pupal stage the immature term is used (curator), but FBbt has no "
-                                          "pupal term for this cell and no stage-neutral parent; held until FBbt adds "
-                                          "one (requested, curator 2026-10-17).",
-                         "recommendation": "Hold until FBbt has a pupal-stage term."})
-            continue
-        best = term(LINEAGE_CLASS[lineage])
-        write(path, {**base,
-                     "best_match": {**best, "match_type": "broad match", "skos_mapping": "skos:broadMatch",
-                                    "confidence": "high"},
-                     "justification": f"Up to the pupal stage the immature term is used (curator), but FBbt has no "
-                                      f"immature (or remodelling) antennal lobe projection neuron terms yet "
-                                      f"(requested, curator 2026-10-17); meanwhile the stage-neutral class for the "
-                                      f"authors' lineage ({lineage}), to be refined when the new terms exist."
-                                      + lineage_note(typ, ev),
-                     "recommendation": f"Map to {best['fbbt_id']} {best['fbbt_term']} (broad match) until FBbt has the "
-                                       f"immature / remodelling term for {typ}."})
-    print(f"wrote {len(MATURE)} mature and {len(IMMATURE)} immature-stage type mappings (lineage classes; APL held)")
+        })
+    print(f"wrote {len(MATURE)} mature and {len(IMMATURE)} immature-stage type mappings")
 
 
 if __name__ == "__main__":

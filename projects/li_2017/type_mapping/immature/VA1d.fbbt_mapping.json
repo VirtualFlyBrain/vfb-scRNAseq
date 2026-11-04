@@ -3,19 +3,20 @@
   "working_definition": "Olfactory projection neuron type VA1d (Li et al. 2017) at 24 h or 36 h APF.",
   "searches_performed": [
     "immature antennal lobe projection neuron VA1d",
-    "immature antennal lobe projection neuron"
+    "immature antennal lobe projection neuron",
+    "FBbt #2220 terms (FBbt 2026-11-02)"
   ],
-  "other_candidates": [],
-  "new_term_needed": true,
-  "verification_needed": false,
   "best_match": {
-    "fbbt_term": "antennal lobe projection neuron adPN",
-    "fbbt_id": "FBbt:00067349",
-    "fbbt_definition": "Any antennal lobe projection neuron (FBbt:00007422) that develops from some neuroblast BAmv3 (FBbt:00067346).",
-    "match_type": "broad match",
-    "skos_mapping": "skos:broadMatch",
+    "fbbt_term": "immature adult antennal lobe projection neuron VA1d adPN",
+    "fbbt_id": "FBbt:00053692",
+    "fbbt_definition": "Transcriptional clusters corresponding to this cell type were identified in single-cell RNA-seq data from pupal stages (Li et al., 2017; Xie et al., 2021). At 24h APF, the corresponding transcriptional cluster was identified using intersections between GH146-GAL4 and drivers for newly identified marker genes (Li et al., 2017). Mz19-GAL4-labelled cells of this type were followed from 24h APF to adulthood (Li et al., 2017). Clusters at other stages were matched to it by Xie et al. (2021), based on shared differentially expressed genes and marker expression. Immature secondary neuron that is a precursor to an adult antennal lobe projection neuron VA1d adPN (Yu et al., 2010; Xie et al., 2021).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
     "confidence": "high"
   },
-  "justification": "Up to the pupal stage the immature term is used (curator), but FBbt has no immature (or remodelling) antennal lobe projection neuron terms yet (requested, curator 2026-10-17); meanwhile the stage-neutral class for the authors' lineage (adPN), to be refined when the new terms exist. Lineage from the paper's definitions: DA1 and DL3 PNs are acj6- lPNs (Mz19+/acj6- DA1; the acj6-/CG31676+ clusters #6 / #6' DL3), VA1d, DC3, DC2 and VM2 acj6+ adPNs (Figures 3-4).",
-  "recommendation": "Map to FBbt:00067349 antennal lobe projection neuron adPN (broad match) until FBbt has the immature / remodelling term for VA1d."
+  "justification": "Up to the pupal stage the immature term is used (curator); FBbt's pupal form of the VA1d PN, added for these datasets (FBbt #2220, release 2026-11-02). Lineage from the paper's definitions: DA1 and DL3 PNs are acj6- lPNs (Mz19+/acj6- DA1; the acj6-/CG31676+ clusters #6 / #6' DL3), VA1d, DC3, DC2 and VM2 acj6+ adPNs (Figures 3-4).",
+  "other_candidates": [],
+  "recommendation": "Map to FBbt:00053692 immature adult antennal lobe projection neuron VA1d adPN (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
 }
