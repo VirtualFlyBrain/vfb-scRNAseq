@@ -10,8 +10,7 @@ Pipeline (cell-type-annotation focus):
         -> summary expression statistics + expression OWL (stats, emit)
 
 The LinkML schema in ``schema/VFB_scRNAseq_schema.yaml`` is the new master copy,
-imported from VirtualFlyBrain/vfb-scRNAseq-ontology (to be deprecated) and extended
-here.
+imported from VirtualFlyBrain/vfb-scRNAseq-ontology (archived) and extended here.
 """
 
 __version__ = "0.0.0"

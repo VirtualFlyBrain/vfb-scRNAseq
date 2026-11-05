@@ -30,10 +30,16 @@ template (literature-grounded, quote-validated cell type reports). The repo's
 
 ### Schema master copy & deprecation
 
-`VFB_scRNAseq_schema.yaml` here is the **new master copy**, imported from
+`VFB_scRNAseq_schema.yaml` here is the **master copy**, imported from
 `VirtualFlyBrain/vfb-scRNAseq-ontology` and extended here since (the `VFBseq`
 prefix, stock, sex, site, `parent_cluster`, gene-count and expression slots). That
-repo will be **deprecated** once this one is running. Remaining clean-up: legacy
+repo is **archived** (November 2026), after this repo's files replaced its FBlc files
+on VFB's OWL server (2026-11-02). The schema `id` and the `Container` type keep its
+`http://github.org/vfb/vfb-scRNAseq-ontology/` namespace: they are identifiers, not
+links. Some builds still download files from it by raw URL (archived repos stay
+readable): vfb-scRNAseq-gene-annotations its `FBgn_list.txt`, vfb-EPseq-ontology its
+schema, and vfb-region-connectivity / vfb-neurotransmitter-predictions its
+`cypher_query.py`. Remaining clean-up: legacy
 FlyBase / TSV-loader wording in some slot descriptions.
 
 ### Pipeline (cell-type-annotation focus)
