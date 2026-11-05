@@ -10,7 +10,7 @@ listed for it, and the listed class / annotation links.
     Dataset     Sample, Assay, Clustering, Cluster; publication, licence, assay type
     Sample      Dataset, Assay, Clustering; tissue, stage
     Assay       Dataset, Sample; method
-    Clustering  Dataset, Sample (or Assay), Cluster
+    Clustering  Dataset, Sample, Cluster
     Cluster     Dataset, Clustering; cell type
 
 Exemptions, each with its reason in the project config, are the only way past a
@@ -48,12 +48,12 @@ TYPES = {
 }
 
 #: Entity type -> groups of entity types it must link; each group needs one edge to
-#: any of its types (a Clustering's parts may be Samples or Assays).
+#: any of its types.
 ENTITY_LINKS = {
     "Dataset": [{"Sample"}, {"Assay"}, {"Clustering"}, {"Cluster"}],
     "Sample": [{"Dataset"}, {"Assay"}, {"Clustering"}],
     "Assay": [{"Dataset"}, {"Sample"}],
-    "Clustering": [{"Dataset"}, {"Sample", "Assay"}, {"Cluster"}],
+    "Clustering": [{"Dataset"}, {"Sample"}, {"Cluster"}],
     "Cluster": [{"Dataset"}, {"Clustering"}],
 }
 

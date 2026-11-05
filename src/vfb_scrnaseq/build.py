@@ -215,7 +215,7 @@ def build_entities(project: str) -> list[dict]:
         if c.get("samples"):
             # the Samples it used, own or reused from another dataset (those are
             # emitted only by the project that curated them)
-            rec["associated_sample_or_assay_for_clustering"] = [iri(s) for s in c["samples"]]
+            rec["associated_sample_for_clustering"] = [iri(s) for s in c["samples"]]
         entities.append(rec)
 
     # --- Clusters ---

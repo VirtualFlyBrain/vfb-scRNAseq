@@ -176,10 +176,14 @@ classes:
     annotations:
       owl.fstring: ClassAssertion( FBcv:0009002 {id} )
     attributes:
-      associated_sample_or_assay_for_clustering:
+      associated_sample_for_clustering:
         slot_uri: BFO:0000051
-        description: Sample(s) or Assay(s) (VFBseq ids) that the Clustering uses, including any reused from another dataset.
-        range: Class
+        description: >-
+          Sample(s) (VFBseq ids) that the Clustering's cells came from, including any reused
+          from another dataset. Samples only: an Assay is a process, and has part from a
+          Clustering (a continuant) to an occurrent violates BFO; Assays are reached through
+          their Samples (RO:0002352 input of).
+        range: Sample
         multivalued: true
         annotations:
           owl: ObjectPropertyAssertion

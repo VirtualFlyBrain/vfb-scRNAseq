@@ -299,8 +299,18 @@ def test_entity_links_reports_a_clustering_with_no_samples():
     chk = _script("check_entity_links")
     g, _ = _links_graph(drop=("cl", "http://purl.obolibrary.org/obo/BFO_0000051"))
     problems = chk.check(g)
-    assert any("Clustering cl" in p and "Assay or Sample" in p for p in problems)
+    assert any("Clustering cl" in p and "no link to a Sample" in p for p in problems)
     assert any("Sample s" in p and "Clustering" in p for p in problems)
+
+
+def test_entity_links_a_clustering_linked_only_to_an_assay_fails():
+    """A Clustering's has part must reach a Sample, not an Assay (a process: has part
+    to it is a BFO continuant/occurrent clash)."""
+    from rdflib import URIRef
+    chk = _script("check_entity_links")
+    g, ids = _links_graph(drop=("cl", "http://purl.obolibrary.org/obo/BFO_0000051"))
+    g.add((ids["cl"], URIRef("http://purl.obolibrary.org/obo/BFO_0000051"), ids["a"]))
+    assert any("Clustering cl" in p and "no link to a Sample" in p for p in chk.check(g))
 
 
 def test_entity_links_reports_a_missing_cell_type():
