@@ -8,10 +8,18 @@
     "'immature lobula complex columnar neuron'",
     "'immature lobula columnar neuron'",
     "'immature adult optic lobe neuron'",
-    "ancestor walk of FBbt:00111763 for any immature counterpart"
+    "ancestor walk of FBbt:00111763 for any immature counterpart",
+    "'immature lobula plate-lobula columnar neuron LPLC2' (new term, FBbt fbbt/releases/2026-11-02)"
   ],
-  "best_match": null,
-  "justification": "FBbt has no immature form of LPLC2 or of any of its ancestors. The immature lobula columnar neuron (FBbt:00053273) is not an ancestor: LPLC is a lobula complex columnar neuron, a sibling of lobula columnar (LC) neurons, not a subclass. LPLC2 is also not a descendant of adult optic lobe neuron (soma in the lateral brain cell body rind, projects to the central brain), so immature adult optic lobe neuron (FBbt:00053539) is not a true ancestor. The only immature ancestor is the generic immature neuron, which is too broad and is not used. No adequate immature term exists, so the cluster is held and the gap recorded.",
+  "best_match": {
+    "fbbt_term": "immature lobula plate-lobula columnar neuron LPLC2",
+    "fbbt_id": "FBbt:00053681",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult lobula plate-lobula columnar neuron LPLC2 (Özel et al., 2021).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "'LPLC2' is FBbt:00111763 'lobula plate-lobula columnar neuron LPLC2' (mature set); at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so its immature form FBbt:00053681 (FBbt #2219, release 2026-11-02).",
   "other_candidates": [
     {
       "fbbt_term": "immature lobula columnar neuron",
@@ -32,7 +40,7 @@
       "reason_rejected": "Mature term; the stage is developing (P15-P40), which takes immature terms."
     }
   ],
-  "recommendation": "Hold: no immature FBbt term for LPLC2 or a true ancestor (other than the too-broad immature neuron). Gap recorded; no request made.",
-  "new_term_needed": true,
+  "recommendation": "Map to FBbt:00053681 'immature lobula plate-lobula columnar neuron LPLC2' (exact match).",
+  "new_term_needed": false,
   "verification_needed": false
 }

@@ -3,19 +3,20 @@
   "working_definition": "Olfactory projection neuron type DL1 (Xie et al. 2021) at 0 h or 24 h APF.",
   "searches_performed": [
     "immature antennal lobe projection neuron DL1",
-    "immature antennal lobe projection neuron"
+    "immature antennal lobe projection neuron",
+    "FBbt #2220 terms (FBbt 2026-11-02)"
   ],
-  "other_candidates": [],
-  "new_term_needed": true,
-  "verification_needed": false,
   "best_match": {
-    "fbbt_term": "antennal lobe projection neuron adPN",
-    "fbbt_id": "FBbt:00067349",
-    "fbbt_definition": "Any antennal lobe projection neuron (FBbt:00007422) that develops from some neuroblast BAmv3 (FBbt:00067346).",
-    "match_type": "broad match",
-    "skos_mapping": "skos:broadMatch",
+    "fbbt_term": "immature adult antennal lobe projection neuron DL1 adPN",
+    "fbbt_id": "FBbt:00053690",
+    "fbbt_definition": "Transcriptional clusters corresponding to this cell type were identified in single-cell RNA-seq data from pupal stages (Xie et al., 2021). At 24h APF, the corresponding transcriptional cluster was identified using intersections between projection neuron drivers and GAL4 lines for differentially expressed genes, and clusters at other stages were matched to it based on shared differentially expressed genes and marker expression (Xie et al., 2021). Immature secondary neuron that is a precursor to an adult antennal lobe projection neuron DL1 adPN (Yu et al., 2010; Xie et al., 2021).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
     "confidence": "high"
   },
-  "justification": "Up to the pupal stage the immature term is used (curator), but FBbt has no immature (or remodelling) antennal lobe projection neuron terms yet (requested, curator 2026-10-17); meanwhile the stage-neutral class for the authors' lineage (adPN), to be refined when the new terms exist. Lineage: the authors' per-cell `lineage` for this type in the main analysis: adPN 69, lPN 2.",
-  "recommendation": "Map to FBbt:00067349 antennal lobe projection neuron adPN (broad match) until FBbt has the immature / remodelling term for DL1."
+  "justification": "DL1 adPNs. Up to the pupal stage the immature or pupal term is used (curator); FBbt #2220, release 2026-11-02. Lineage: the authors' per-cell `lineage` for this type in the main analysis: adPN 69, lPN 2.",
+  "other_candidates": [],
+  "recommendation": "Map to FBbt:00053690 immature adult antennal lobe projection neuron DL1 adPN (exact match).",
+  "new_term_needed": false,
+  "verification_needed": false
 }

@@ -7,18 +7,25 @@
     "'immature lamina wide-field neuron'",
     "'immature optic lobe intrinsic neuron'",
     "'immature adult optic lobe intrinsic neuron'",
-    "ancestor walk of FBbt:00003741 for immature counterparts"
+    "ancestor walk of FBbt:00003741 for immature counterparts",
+    "'immature lamina wide-field 1 neuron' (new term, FBbt fbbt/releases/2026-11-02)"
   ],
   "best_match": {
-    "fbbt_term": "immature adult optic lobe intrinsic neuron",
-    "fbbt_id": "FBbt:00053540",
-    "fbbt_definition": "Immature neuron that will have its synapses restricted to the optic lobe in the adult.",
-    "match_type": "broad match",
-    "skos_mapping": "skos:broadMatch",
-    "confidence": "medium"
+    "fbbt_term": "immature lamina wide-field 1 neuron",
+    "fbbt_id": "FBbt:00053682",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult lamina wide-field 1 neuron (Özel et al., 2021).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
   },
-  "justification": "FBbt has no immature lamina wide-field neuron (or immature Lawf1). lamina wide-field 1 neuron is a subclass of adult optic lobe intrinsic neuron (FBbt:00007577), whose immature form is FBbt:00053540, the most specific immature true ancestor. immature adult optic lobe neuron (FBbt:00053539) is broader.",
+  "justification": "'Lawf1' is FBbt:00003741 'lamina wide-field 1 neuron' (mature set); at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so its immature form FBbt:00053682 (FBbt #2219, release 2026-11-02).",
   "other_candidates": [
+    {
+      "fbbt_term": "immature adult optic lobe intrinsic neuron",
+      "fbbt_id": "FBbt:00053540",
+      "fbbt_definition": "Immature neuron that will have its synapses restricted to the optic lobe in the adult.",
+      "reason_rejected": "Parent of the new immature Lawf1 term (used until FBbt #2219 was released)."
+    },
     {
       "fbbt_term": "immature adult optic lobe neuron",
       "fbbt_id": "FBbt:00053539",
@@ -32,7 +39,7 @@
       "reason_rejected": "Mature term; the stage is developing (P15-P40), which takes immature terms."
     }
   ],
-  "recommendation": "Broad match to FBbt:00053540 'immature adult optic lobe intrinsic neuron'; gap (no immature lamina wide-field neuron term) recorded, no request made.",
-  "new_term_needed": true,
+  "recommendation": "Map to FBbt:00053682 'immature lamina wide-field 1 neuron' (exact match).",
+  "new_term_needed": false,
   "verification_needed": false
 }

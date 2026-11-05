@@ -8,18 +8,25 @@
     "immature adult optic lobe neuron",
     "immature T neuron",
     "immature columnar neuron",
-    "photoreceptor precursor"
+    "photoreceptor precursor",
+    "'immature T2 neuron' (new term, FBbt fbbt/releases/2026-11-02)"
   ],
   "best_match": {
-    "fbbt_term": "immature T neuron",
-    "fbbt_id": "FBbt:00059279",
-    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T neuron (Hormann et al., 2020).",
-    "match_type": "broad match",
-    "skos_mapping": "skos:broadMatch",
-    "confidence": "medium"
+    "fbbt_term": "immature T2 neuron",
+    "fbbt_id": "FBbt:00053664",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T2 neuron (Kurmangaliyev et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
   },
-  "justification": "Authors name this early cluster T2. FBbt has no immature T2 term; nearest parent with an immature form is immature T neuron (precursor to adult T neurons, which include T2).",
+  "justification": "Authors name this early (0-24h APF) cluster T2; the cells are developing T2 neurons, so FBbt's immature form of the T2 neuron, added for this dataset (FBbt #2216, release 2026-11-02).",
   "other_candidates": [
+    {
+      "fbbt_term": "immature T neuron",
+      "fbbt_id": "FBbt:00059279",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T neuron (Hormann et al., 2020).",
+      "reason_rejected": "Parent of the new immature T2 neuron term (used until FBbt #2216 was released)."
+    },
     {
       "fbbt_term": "T2 neuron",
       "fbbt_id": "FBbt:00003728",
@@ -27,7 +34,7 @@
       "reason_rejected": "Mature/adult term; cells are 0-24h APF immature neurons."
     }
   ],
-  "recommendation": "Broad match to immature T neuron; request immature T2 term only if fine granularity is wanted.",
+  "recommendation": "Map to FBbt:00053664 'immature T2 neuron' (exact match).",
   "new_term_needed": false,
   "verification_needed": false
 }

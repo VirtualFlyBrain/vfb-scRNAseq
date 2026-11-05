@@ -72,19 +72,18 @@ from FlyBase; that authority is being dropped.)
 - `projects/ozel_2021/` — Özel et al. 2021, optic lobe developmental atlas (PMID
   33149298; [GSE142787](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE142787)):
   five pupal stages and adult, one Clustering per stage (plus the authors' P50 T4/T5
-  subtypes): 1,238 author identities, 522 with an FBbt term loaded (immature terms to
+  subtypes): 1,238 author identities, 528 with an FBbt term loaded (immature terms to
   the pupal stage). Replaces the old FlyBase/SCEA load (FBlc0005659).
 - `projects/li_2017/` — Li, Horns et al. 2017, olfactory projection neurons (PMID
   29149607; [GSE100058](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE100058)):
   Smart-seq2 of sorted PNs, the GH146 24 h APF clusters and the Mz19 developmental
   series (per-cell assignments from the authors' repository): 45 entries, 22 loaded (mature
-  PN types from 48 h APF; the 24 h / 36 h types under stage-neutral PN lineage classes
-  until FBbt #2220). Curated before Xie 2021, which reuses its 24 h cells.
+  PN types from 48 h APF; FBbt's pupal PN types, FBbt #2220, at 24 h / 36 h). Curated before Xie 2021, which reuses its 24 h cells.
 - `projects/xie_2021/` — Xie et al. 2021, olfactory projection neurons through development
   (PMID 33427646; [GSE161228](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161228)):
   Smart-seq2 of sorted PNs at 0 h, 24 h, 48 h APF and adult (main pan-PN and knot⁺
-  analyses, per stage): 118 author types per stage, 92 loaded (adult PN terms by lineage
-  from 48 h; lineage classes at 0 h / 24 h until FBbt #2220); its 24 h cells are Li 2017's,
+  analyses, per stage): 118 author types per stage, 94 loaded (adult PN terms by lineage
+  from 48 h; FBbt's pupal PN and APL terms, FBbt #2220, at 0 h / 24 h); its 24 h cells are Li 2017's,
   whose Samples are reused.
 - `projects/allen_2020/` — Allen et al. 2020, adult ventral nerve cord atlas (PMID
   32314735; [GSE141807](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE141807)):
@@ -221,9 +220,10 @@ uv run python scripts/expand_type_mappings.py            --project li_2022_fca_1
 uv run python scripts/validate_project_files.py
 uv run python scripts/check_mapping_tsv.py
 uv run python scripts/check_entity_links.py              # every entity links the types it should
+uv run python scripts/write_fbgn_list.py --check         # FBgn list covers every expressed gene
 
 # the weekly release checks (also run by .github/workflows/fbbt-release-check.yml)
-uv run python scripts/check_fbbt_release.py [--force]
+uv run python scripts/check_fbbt_release.py [--force] [--dry-run]
 uv run python scripts/check_flybase_release.py [--dry-run]   # opens an issue on change
 ```
 
@@ -275,7 +275,7 @@ its README.
 ## Status
 
 All seventeen projects are curated and built. Every mapped cluster has been reviewed (bar
-three Kurmangaliyev early clusters awaiting FBbt #2216, below), and
+three Kurmangaliyev early clusters, remapped to FBbt #2216's new terms), and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the
 expression output are mapped to current FlyBase genes (`scripts/update_gene_ids.py`;
@@ -287,11 +287,6 @@ FBbt term request is closed (`checks/`).
 Outstanding, outside this repo: the first load into VFB (see *Getting changes into
 VFB*), which also retires all 24 old FlyBase/SCEA scRNAseq files (FBlc ids) on VFB's
 OWL server; they stay in the archived VirtualFlyBrain/vfb-scRNAseq-ontology repo.
-Pending FBbt requests, tracked with the clusters waiting on them in
-`checks/pending_fbbt_requests.json`:
-[#2216](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2216)
-(immature T2 / T2a / T3 neurons; Kurmangaliyev and Özel),
-[#2219](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2219)
-(19 immature optic lobe neuron types; Özel),
-[#2220](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2220)
-(pupal immature / remodelling olfactory projection neuron types; Li 2017 and Xie 2021).
+No FBbt requests are pending: those tracked in `checks/pending_fbbt_requests.json`
+(#2216, #2218, #2219, #2220) were all released in FBbt 2026-11-02 and their clusters
+remapped.

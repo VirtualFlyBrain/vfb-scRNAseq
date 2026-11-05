@@ -26,7 +26,9 @@
     },
     "reason": "early-dataset (0-24h APF) T2, T2a, T3 clusters currently mapped to immature T neuron (FBbt:00059279); ozel_2021 P15-P40 T2, T2a, T3 clusters likewise mapped to immature T neuron (added 2026-10-16)",
     "opened": "2026-10-06",
-    "status": "pending"
+    "status": "released",
+    "fbbt_release": "2026-11-02",
+    "remapped": "2026-11-04: kurmangaliyev_2020 early_T2/T2a/T3 and ozel_2021 P15-P40 T2/T2a/T3 remapped to FBbt:00053664-6 (exact)"
   },
   {
     "fbbt_issue": "FlyBase/drosophila-anatomy-developmental-ontology#2218",
@@ -160,7 +162,9 @@
     },
     "reason": "ozel_2021 P15-P40 clusters of these types mapped to the nearest immature parent (LPLC1 / LPLC2 held: no immature ancestor); requested with curator sign-off 2026-10-16; immature LC10c (identity 93, 'likely to be LC10c') added by comment 2026-10-16",
     "opened": "2026-10-16",
-    "status": "pending"
+    "status": "released",
+    "fbbt_release": "2026-11-02",
+    "remapped": "2026-11-04: ozel_2021 P15-P40 clusters remapped to FBbt:00053667-84 (Tm5ab broad to immature Tm5); LPLC1/LPLC2 unheld (6 new Clusters)"
   },
   {
     "fbbt_issue": "FlyBase/drosophila-anatomy-developmental-ontology#2220",
@@ -258,6 +262,8 @@
     },
     "reason": "pupal (immature, or remodelling for embryonic-born PNs) forms of olfactory PN types at 0 h / 24 h / 36 h APF; clusters mapped meanwhile to the stage-neutral lineage classes (antennal lobe projection neuron adPN / of ALl1 lineage / vPN), the APL clusters held (added 2026-10-17)",
     "opened": "2026-10-17",
-    "status": "pending"
+    "status": "released",
+    "fbbt_release": "2026-11-02",
+    "remapped": "2026-11-04: xie_2021 and li_2017 pupal clusters remapped to FBbt:00053686-708; Xie APL unheld (2 new Clusters). Requested terms not used: VM5v / VM7 adPN (the clusters are 'VM7 or VM5v', mapped to the common parent)"
   }
 ]

@@ -1,7 +1,7 @@
 {
   "project": "kurmangaliyev_2020",
   "created_at": "2026-06-19",
-  "updated_at": "2026-10-16",
+  "updated_at": "2026-11-04",
   "summary": "Optic lobe single-cell RNAseq across pupal development (Kurmangaliyev et al. 2020, Neuron), built from GEO GSE156455: the authors' cell metadata and raw 10x matrices for their main and separately clustered early (0-24h APF) datasets. Samples and Assays from GEO (7 female biological samples, 36 10x-library Assays) with FBdv stages and FBbt tissue, and FlyBase stocks linked. Two Clusterings (main, early) with one Cluster per author cluster: 196 main clusters (184 mapped to FBbt, 12 held) and 110 early clusters (48 mapped, 62 held), so 232 Clusters loaded. Summary expression for the loaded Clusters as CPM from the raw counts (686,568 cluster x gene rows with extent > 0.2; dataset total/filtered gene counts 15,751 / 7,473).",
   "decisions": [
     {
@@ -68,6 +68,11 @@
       "date": "2026-10-16",
       "by": "curator",
       "decision": "Narrow by dissected tissue only where the tissue makes the term exact: the optic-lobe-only dissection makes the class anchors adult optic lobe neuron / glial cell (and immature adult optic lobe neuron for the early set) exact, so the numbered N and G clusters stay mapped and loaded."
+    },
+    {
+      "date": "2026-11-04",
+      "by": "curator",
+      "decision": "FBbt #2216 released (FBbt 2026-11-02): early clusters T2, T2a and T3 remapped from immature T neuron (broad) to the new immature T2 / T2a / T3 neuron terms (FBbt:00053664-6, exact)."
     }
   ],
   "checks": [
@@ -100,6 +105,11 @@
       "date": "2026-10-06",
       "check": "Expression recomputed for main + early and compared with the previous main-only output.",
       "result": "Main rows byte-identical; 901,382 rows total (before held clusters were dropped)."
+    },
+    {
+      "date": "2026-11-04",
+      "check": "All FBbt terms in the main and early mappings verified against FBbt 2026-11-02 (verify_mappings.py).",
+      "result": "All 91 terms current, non-obsolete, labels match."
     }
   ],
   "people": [
@@ -120,11 +130,11 @@
     {
       "id": "FBbt",
       "label": "Drosophila gross anatomy ontology",
-      "version": "2026-10-01",
-      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "version": "2026-11-02",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-11-02/fbbt.owl",
       "accessed_via": "OLS MCP (OLS4)",
       "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
-      "accessed_at": "2026-10-06",
+      "accessed_at": "2026-11-04",
       "description": "The initial main-cluster mappings were verified against FBbt 2026-06-11."
     },
     {

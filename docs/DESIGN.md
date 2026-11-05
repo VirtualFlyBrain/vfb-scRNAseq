@@ -67,8 +67,15 @@ Loading the registry fails if two entries share an id or the counter is behind a
 in use (`IDRegistry.check`). Both happen when two branches that each minted ids are
 merged: git keeps both sets of entries and one counter, so the same ids are issued
 twice (Baker 2021 and Mokashi 2021, curated in parallel, shared ten ids until
-2026-10-26, when Baker's were re-minted before either was loaded). Mint on one branch
-at a time, or re-mint one side when merging. A published id is never re-minted.
+2026-10-26, when Baker's were re-minted before either was loaded). To prevent this,
+before its first new id the registry reads the counter on every local and
+remote-tracking branch (as of the last `git fetch`) and in every other worktree's
+working copy (ids minted there but not committed), and starts past the highest
+(`ids.counters_elsewhere`; it prints a note when it skips ahead; `VFBSEQ_IDS_LOCAL_ONLY=1`
+turns it off). So `git fetch` before minting. The ids on main may then have gaps, which is
+harmless. Branches pushed from another clone and not yet fetched are not seen, so the
+load-time check stays the backstop: re-mint one side when merging. A published id is
+never re-minted.
 
 GEO/SRA accessions (GSE / GSM / PRJNA / SRP / GPL) are **cross-references**,
 carried in the schema's `site` / `accession` slots and dbxrefs — **never** used
@@ -1081,7 +1088,8 @@ VFB until the release files are merged, so ids can still change during review.
 11. **Term requests:** only with curator sign-off; add each to
     `checks/pending_fbbt_requests.json`.
 12. **Check:** `pytest`, `validate_project_files.py`, `check_mapping_tsv.py`,
-    `check_entity_links.py` (every entity links the types it should); commit
+    `check_entity_links.py` (every entity links the types it should),
+    `write_fbgn_list.py --check` (the FBgn list covers every expressed gene); commit
     in stages on a branch and open a PR against `main` per stage (CI runs the same
     checks): 1 samples, 2 clusters, 3 FBbt mapping (after the curator's review in
     `mapping.tsv`), 4 expression, 5 build, provenance and docs.
@@ -1356,12 +1364,16 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-16.
   / *immature lobula columnar neuron*; 112 "best match for all kenyon cells ... likely
   good quality" (P70, adult) → *adult Kenyon cell*. Not mapped: 5 and 48 ("might be"
   only), 102 ("could correspond to multiplets"), and those with low-quality features
-  (38, 85, 120, G/LQ). 522 of 1,238 entries now mapped (130 FBbt terms).
-- **Pending FBbt terms (curator 2026-10-16).** The P15-P40 T2 / T2a / T3 clusters wait
-  on #2216 (requested for Kurmangaliyev), and the other immature types FBbt lacks
+  (38, 85, 120, G/LQ). 522 of 1,238 entries now mapped (130 FBbt terms). After FBbt #2216 and #2219 (below): 528 (150 terms).
+- **Pending FBbt terms (curator 2026-10-16).** The P15-P40 T2 / T2a / T3 clusters waited
+  on #2216 (requested for Kurmangaliyev; released in FBbt 2026-11-02 and remapped to
+  *immature T2 / T2a / T3 neuron*, 2026-11-04), and the other immature types FBbt lacks
   (C2, C3, LC4, LC6, LC10a/b/d, LC12, LC16, LC17, LLPC1, LPC1, LPLC1, LPLC2, Lawf1,
   Lawf2, Tm5 / Tm5a, and LC10c by a later comment) were requested in FBbt #2219; both are tracked in
-  `checks/pending_fbbt_requests.json` (the weekly check reminds when released).
+  `checks/pending_fbbt_requests.json` (the weekly check reminds when released). #2219 was
+  released in FBbt 2026-11-02 and the P15-P40 clusters remapped (2026-11-04): each type to
+  its new immature term (exact), Tm5ab to *immature transmedullary neuron Tm5* (broad, the
+  common parent of Tm5a and Tm5b), and LPLC1 / LPLC2 no longer held (6 new Clusters).
 - **Cross-checks.** 53 of 55 types shared with Kurmangaliyev 2020 (main) map alike;
   the two others are Dm3a / Dm3b: FBbt's *Dm3a* / *Dm3b* are defined from this paper,
   so they are exact here, while Kurmangaliyev keeps *Dm3* (equivalence of its Dm3a / b
@@ -1578,6 +1590,8 @@ CC-BY-4.0. Curator decisions 2026-10-17.
   stage-neutral class of their lineage, broad: *antennal lobe projection neuron adPN*
   (VA1d, DC3, DC2, VM2), *antennal lobe projection neuron of ALl1 lineage* (FBbt's former
   lPN: DA1, DL3). 22 clusters loaded; tracked in `checks/pending_fbbt_requests.json`.
+  #2220 was released in FBbt 2026-11-02 and the 14 clusters remapped (2026-11-04) to the
+  new *immature adult antennal lobe projection neuron … adPN / lPN* terms (exact).
 - **Expression (stage 4):** GEO's raw HTSeq read counts (`GSE100058_htseq.tab.gz`; its
   "symbol" column holds r6.10 FBgn ids), exported for the 1,379 cells of the loaded
   analyses by `projects/li_2017/export_counts.py` (spike-ins and HTSeq summary rows
@@ -1637,7 +1651,15 @@ FACS-sorted olfactory projection neurons (PNs), one GEO sample per cell (11,509)
   remodelling forms for the embryonic-born PNs too); meanwhile the stage-neutral class of the
   lineage, broad (curator 2026-10-17); the APL clusters there, with no stage-neutral term,
   are held. 92 clusters loaded (19 FBbt terms), 26 held (2 APL `no term`, 19 `untyped`
-  MARS clusters, 5 `unassigned`).
+  MARS clusters, 5 `unassigned`). #2220 was released in FBbt 2026-11-02 and the 0 h / 24 h
+  clusters remapped (2026-11-04): larval-born PN types to *immature adult antennal lobe
+  projection neuron … adPN / lPN*, the embryonic-born DA4l, VA2 and VA6 adPNs to the
+  remodelling *pupal antennal lobe projection neuron … adPN*, vPN / vPN_DA1 to *pupal …
+  vPN* / *DA1 vPN*, all exact; DA1_fru+ / DA1_fru- to *immature adult … DA1 lPN* and
+  "VM7 or VM5v" to *immature adult uniglomerular antennal lobe projection neuron adPN*,
+  broad; and the APL clusters, no longer held, to *pupal mushroom body anterior paired
+  lateral cell* (2 new Clusters; main_0h_APL is a single cell). 94 clusters loaded
+  (37 FBbt terms), 24 held.
 - **Expression (stage 4):** from the authors' annotated h5ads (GEO): X is log2(CPM + 1)
   (each cell sums to 1e6 CPM after conversion; checked), converted back to CPM
   (`expression.values: log2_cpm1`). The h5ad route takes `expression.h5ad_files` (files in
