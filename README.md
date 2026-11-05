@@ -223,7 +223,7 @@ uv run python scripts/check_mapping_tsv.py
 uv run python scripts/check_entity_links.py              # every entity links the types it should
 
 # the weekly release checks (also run by .github/workflows/fbbt-release-check.yml)
-uv run python scripts/check_fbbt_release.py [--force]
+uv run python scripts/check_fbbt_release.py [--force] [--dry-run]
 uv run python scripts/check_flybase_release.py [--dry-run]   # opens an issue on change
 ```
 
@@ -275,7 +275,7 @@ its README.
 ## Status
 
 All seventeen projects are curated and built. Every mapped cluster has been reviewed (bar
-three Kurmangaliyev early clusters awaiting FBbt #2216, below), and
+three Kurmangaliyev early clusters, remapped to FBbt #2216's new terms), and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the
 expression output are mapped to current FlyBase genes (`scripts/update_gene_ids.py`;
@@ -289,8 +289,6 @@ VFB*), which also retires all 24 old FlyBase/SCEA scRNAseq files (FBlc ids) on V
 OWL server; they stay in the archived VirtualFlyBrain/vfb-scRNAseq-ontology repo.
 Pending FBbt requests, tracked with the clusters waiting on them in
 `checks/pending_fbbt_requests.json`:
-[#2216](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2216)
-(immature T2 / T2a / T3 neurons; Kurmangaliyev and Özel),
 [#2220](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2220)
 (pupal immature / remodelling olfactory projection neuron types; Li 2017 and Xie 2021), and the FBbt review of adult fat terms
 ([#2218](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2218);

@@ -67,8 +67,15 @@ Loading the registry fails if two entries share an id or the counter is behind a
 in use (`IDRegistry.check`). Both happen when two branches that each minted ids are
 merged: git keeps both sets of entries and one counter, so the same ids are issued
 twice (Baker 2021 and Mokashi 2021, curated in parallel, shared ten ids until
-2026-10-26, when Baker's were re-minted before either was loaded). Mint on one branch
-at a time, or re-mint one side when merging. A published id is never re-minted.
+2026-10-26, when Baker's were re-minted before either was loaded). To prevent this,
+before its first new id the registry reads the counter on every local and
+remote-tracking branch (as of the last `git fetch`) and in every other worktree's
+working copy (ids minted there but not committed), and starts past the highest
+(`ids.counters_elsewhere`; it prints a note when it skips ahead; `VFBSEQ_IDS_LOCAL_ONLY=1`
+turns it off). So `git fetch` before minting. The ids on main may then have gaps, which is
+harmless. Branches pushed from another clone and not yet fetched are not seen, so the
+load-time check stays the backstop: re-mint one side when merging. A published id is
+never re-minted.
 
 GEO/SRA accessions (GSE / GSM / PRJNA / SRP / GPL) are **cross-references**,
 carried in the schema's `site` / `accession` slots and dbxrefs — **never** used
@@ -1348,9 +1355,10 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-16.
   / *immature lobula columnar neuron*; 112 "best match for all kenyon cells ... likely
   good quality" (P70, adult) → *adult Kenyon cell*. Not mapped: 5 and 48 ("might be"
   only), 102 ("could correspond to multiplets"), and those with low-quality features
-  (38, 85, 120, G/LQ). 522 of 1,238 entries now mapped (130 FBbt terms). After FBbt #2219 (below): 528 (147 terms).
-- **Pending FBbt terms (curator 2026-10-16).** The P15-P40 T2 / T2a / T3 clusters wait
-  on #2216 (requested for Kurmangaliyev), and the other immature types FBbt lacks
+  (38, 85, 120, G/LQ). 522 of 1,238 entries now mapped (130 FBbt terms). After FBbt #2216 and #2219 (below): 528 (150 terms).
+- **Pending FBbt terms (curator 2026-10-16).** The P15-P40 T2 / T2a / T3 clusters waited
+  on #2216 (requested for Kurmangaliyev; released in FBbt 2026-11-02 and remapped to
+  *immature T2 / T2a / T3 neuron*, 2026-11-04), and the other immature types FBbt lacks
   (C2, C3, LC4, LC6, LC10a/b/d, LC12, LC16, LC17, LLPC1, LPC1, LPLC1, LPLC2, Lawf1,
   Lawf2, Tm5 / Tm5a, and LC10c by a later comment) were requested in FBbt #2219; both are tracked in
   `checks/pending_fbbt_requests.json` (the weekly check reminds when released). #2219 was

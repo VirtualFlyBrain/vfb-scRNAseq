@@ -2,18 +2,25 @@
   "cluster_label": "T3",
   "working_definition": "Author type 'T3' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
   "searches_performed": [
-    "'T3' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+    "'T3' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'immature T3 neuron' (new term, FBbt fbbt/releases/2026-11-02)"
   ],
   "best_match": {
-    "fbbt_term": "immature T neuron",
-    "fbbt_id": "FBbt:00059279",
-    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T neuron (Hormann et al., 2020).",
-    "match_type": "broad match",
-    "skos_mapping": "skos:broadMatch",
-    "confidence": "medium"
+    "fbbt_term": "immature T3 neuron",
+    "fbbt_id": "FBbt:00053666",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T3 neuron (Kurmangaliyev et al., 2020).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
   },
-  "justification": "'T3' is FBbt:00003730 'T3 neuron', which has no immature form in FBbt; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so the most specific ancestor with an immature form is used: FBbt:00059279 'immature T neuron' (as for Kurmangaliyev 2020 early clusters).",
+  "justification": "'T3' is FBbt:00003730 'T3 neuron'; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so its immature form FBbt:00053666 (FBbt #2216, release 2026-11-02).",
   "other_candidates": [
+    {
+      "fbbt_term": "immature T neuron",
+      "fbbt_id": "FBbt:00059279",
+      "fbbt_definition": "Immature secondary neuron that is a precursor to an adult T neuron (Hormann et al., 2020).",
+      "reason_rejected": "Parent of the new immature T3 neuron term (used until FBbt #2216 was released)."
+    },
     {
       "fbbt_term": "T3 neuron",
       "fbbt_id": "FBbt:00003730",
@@ -21,7 +28,7 @@
       "reason_rejected": "Mature form, used from the pharate adult stage; no immature form in FBbt."
     }
   ],
-  "recommendation": "Map to FBbt:00059279 'immature T neuron' (broad match).",
-  "new_term_needed": true,
+  "recommendation": "Map to FBbt:00053666 'immature T3 neuron' (exact match).",
+  "new_term_needed": false,
   "verification_needed": false
 }
