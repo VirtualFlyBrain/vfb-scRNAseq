@@ -2,18 +2,25 @@
   "cluster_label": "P15_66",
   "working_definition": "Author type 'LLPC1' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
   "searches_performed": [
-    "'LLPC1' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+    "'LLPC1' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'immature lobula-lobula plate columnar neuron LLPC1' (new term, FBbt fbbt/releases/2026-11-02)"
   ],
   "best_match": {
-    "fbbt_term": "immature adult optic lobe neuron",
-    "fbbt_id": "FBbt:00053539",
-    "fbbt_definition": "Immature neuron that develops from an optic neuroblast and will become an adult optic lobe neuron.",
-    "match_type": "broad match",
-    "skos_mapping": "skos:broadMatch",
-    "confidence": "medium"
+    "fbbt_term": "immature lobula-lobula plate columnar neuron LLPC1",
+    "fbbt_id": "FBbt:00053678",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult lobula-lobula plate columnar neuron LLPC1 (Özel et al., 2021).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
   },
-  "justification": "'LLPC1' is FBbt:00058227 'lobula-lobula plate columnar neuron LLPC1', which has no immature form in FBbt; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so the most specific ancestor with an immature form is used: FBbt:00053539 'immature adult optic lobe neuron' (as for Kurmangaliyev 2020 early clusters).",
+  "justification": "'LLPC1' is FBbt:00058227 'lobula-lobula plate columnar neuron LLPC1'; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so its immature form FBbt:00053678 (FBbt #2219, release 2026-11-02).",
   "other_candidates": [
+    {
+      "fbbt_term": "immature adult optic lobe neuron",
+      "fbbt_id": "FBbt:00053539",
+      "fbbt_definition": "Immature neuron that develops from an optic neuroblast and will become an adult optic lobe neuron.",
+      "reason_rejected": "Parent of the new immature LLPC1 term (used until FBbt #2219 was released)."
+    },
     {
       "fbbt_term": "lobula-lobula plate columnar neuron LLPC1",
       "fbbt_id": "FBbt:00058227",
@@ -21,7 +28,7 @@
       "reason_rejected": "Mature form, used from the pharate adult stage; no immature form in FBbt."
     }
   ],
-  "recommendation": "Map to FBbt:00053539 'immature adult optic lobe neuron' (broad match).",
-  "new_term_needed": true,
+  "recommendation": "Map to FBbt:00053678 'immature lobula-lobula plate columnar neuron LLPC1' (exact match).",
+  "new_term_needed": false,
   "verification_needed": false
 }

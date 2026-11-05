@@ -7,18 +7,25 @@
     "'immature transmedullary neuron Tm5a'",
     "'immature transmedullary neuron Tm5b'",
     "'immature transmedullary neuron'",
-    "ancestor walk of Tm5a/Tm5b for immature counterparts"
+    "ancestor walk of Tm5a/Tm5b for immature counterparts",
+    "'immature transmedullary neuron Tm5' (new term, FBbt fbbt/releases/2026-11-02)"
   ],
   "best_match": {
-    "fbbt_term": "immature transmedullary neuron",
-    "fbbt_id": "FBbt:00053274",
-    "fbbt_definition": "Immature form of a transmedullary neuron (Konstantinides et al., 2022).",
+    "fbbt_term": "immature transmedullary neuron Tm5",
+    "fbbt_id": "FBbt:00053684",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult transmedullary neuron Tm5 (Özel et al., 2021).",
     "match_type": "broad match",
     "skos_mapping": "skos:broadMatch",
-    "confidence": "medium"
+    "confidence": "high"
   },
-  "justification": "The group is Tm5a + Tm5b, whose common mature parent is transmedullary neuron Tm5 (FBbt:00003793). FBbt has no immature Tm5 or immature Tm5a term (only immature Tm5b and Tm5c), so the most specific immature true ancestor of both is immature transmedullary neuron. The gap is recorded.",
+  "justification": "The group is Tm5a + Tm5b, whose common mature parent is transmedullary neuron Tm5 (FBbt:00003793); at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so the immature form of that common parent, FBbt:00053684 'immature transmedullary neuron Tm5' (FBbt #2219, release 2026-11-02), as a broad match.",
   "other_candidates": [
+    {
+      "fbbt_term": "immature transmedullary neuron",
+      "fbbt_id": "FBbt:00053274",
+      "fbbt_definition": "Immature form of a transmedullary neuron (Konstantinides et al., 2022).",
+      "reason_rejected": "Parent of the new immature Tm5 term (used until FBbt #2219 was released)."
+    },
     {
       "fbbt_term": "immature transmedullary neuron Tm5b",
       "fbbt_id": "FBbt:00052331",
@@ -32,7 +39,7 @@
       "reason_rejected": "Mature term; the stage is developing (P15-P40), which takes immature terms."
     }
   ],
-  "recommendation": "Broad match to FBbt:00053274 'immature transmedullary neuron'; gap (no immature Tm5 / Tm5a term) recorded, no request made.",
-  "new_term_needed": true,
+  "recommendation": "Map to FBbt:00053684 'immature transmedullary neuron Tm5' (broad match).",
+  "new_term_needed": false,
   "verification_needed": false
 }

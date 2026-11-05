@@ -72,7 +72,7 @@ from FlyBase; that authority is being dropped.)
 - `projects/ozel_2021/` — Özel et al. 2021, optic lobe developmental atlas (PMID
   33149298; [GSE142787](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE142787)):
   five pupal stages and adult, one Clustering per stage (plus the authors' P50 T4/T5
-  subtypes): 1,238 author identities, 522 with an FBbt term loaded (immature terms to
+  subtypes): 1,238 author identities, 528 with an FBbt term loaded (immature terms to
   the pupal stage). Replaces the old FlyBase/SCEA load (FBlc0005659).
 - `projects/li_2017/` — Li, Horns et al. 2017, olfactory projection neurons (PMID
   29149607; [GSE100058](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE100058)):
@@ -289,8 +289,6 @@ VFB*), which also retires all 24 old FlyBase/SCEA scRNAseq files (FBlc ids) on V
 OWL server; they stay in the archived VirtualFlyBrain/vfb-scRNAseq-ontology repo.
 Pending FBbt requests, tracked with the clusters waiting on them in
 `checks/pending_fbbt_requests.json`:
-[#2219](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2219)
-(19 immature optic lobe neuron types; Özel),
 [#2220](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2220)
 (pupal immature / remodelling olfactory projection neuron types; Li 2017 and Xie 2021), and the FBbt review of adult fat terms
 ([#2218](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2218);

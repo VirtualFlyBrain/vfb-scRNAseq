@@ -2,18 +2,25 @@
   "cluster_label": "P15_182",
   "working_definition": "Author type 'C2' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
   "searches_performed": [
-    "'C2' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+    "'C2' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'immature centrifugal neuron C2' (new term, FBbt fbbt/releases/2026-11-02)"
   ],
   "best_match": {
-    "fbbt_term": "immature optic lobe centrifugal columnar neuron",
-    "fbbt_id": "FBbt:00053275",
-    "fbbt_definition": "Immature form of a centrifugal columnar neuron (Konstantinides et al., 2022).",
-    "match_type": "broad match",
-    "skos_mapping": "skos:broadMatch",
-    "confidence": "medium"
+    "fbbt_term": "immature centrifugal neuron C2",
+    "fbbt_id": "FBbt:00053667",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult centrifugal neuron C2 (Özel et al., 2021).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
   },
-  "justification": "'C2' is FBbt:00003743 'centrifugal neuron C2', which has no immature form in FBbt; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so the most specific ancestor with an immature form is used: FBbt:00053275 'immature optic lobe centrifugal columnar neuron' (as for Kurmangaliyev 2020 early clusters).",
+  "justification": "'C2' is FBbt:00003743 'centrifugal neuron C2'; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so its immature form FBbt:00053667 (FBbt #2219, release 2026-11-02).",
   "other_candidates": [
+    {
+      "fbbt_term": "immature optic lobe centrifugal columnar neuron",
+      "fbbt_id": "FBbt:00053275",
+      "fbbt_definition": "Immature form of a centrifugal columnar neuron (Konstantinides et al., 2022).",
+      "reason_rejected": "Parent of the new immature C2 term (used until FBbt #2219 was released)."
+    },
     {
       "fbbt_term": "centrifugal neuron C2",
       "fbbt_id": "FBbt:00003743",
@@ -21,7 +28,7 @@
       "reason_rejected": "Mature form, used from the pharate adult stage; no immature form in FBbt."
     }
   ],
-  "recommendation": "Map to FBbt:00053275 'immature optic lobe centrifugal columnar neuron' (broad match).",
-  "new_term_needed": true,
+  "recommendation": "Map to FBbt:00053667 'immature centrifugal neuron C2' (exact match).",
+  "new_term_needed": false,
   "verification_needed": false
 }

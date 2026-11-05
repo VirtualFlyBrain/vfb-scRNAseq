@@ -2,18 +2,25 @@
   "cluster_label": "LC10c",
   "working_definition": "Author type 'LC10c' of the Özel et al. 2021 optic lobe atlas (Supplementary Table 1).",
   "searches_performed": [
-    "'LC10c' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)"
+    "'LC10c' (exact label / exact synonym, FBbt fbbt/releases/2026-10-01)",
+    "'immature lobula columnar neuron LC10c' (new term, FBbt fbbt/releases/2026-11-02)"
   ],
   "best_match": {
-    "fbbt_term": "immature lobula columnar neuron",
-    "fbbt_id": "FBbt:00053273",
-    "fbbt_definition": "Immature form of a lobula columnar neuron (Konstantinides et al., 2022).",
-    "match_type": "broad match",
-    "skos_mapping": "skos:broadMatch",
+    "fbbt_term": "immature lobula columnar neuron LC10c",
+    "fbbt_id": "FBbt:00053673",
+    "fbbt_definition": "Immature secondary neuron that is a precursor to an adult lobula columnar neuron LC10c (Özel et al., 2021).",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
     "confidence": "medium"
   },
-  "justification": "'LC10c' is FBbt:00111746 'lobula columnar neuron LC10c', which has no immature form in FBbt; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so the most specific ancestor with an immature form is used: FBbt:00053273 'immature lobula columnar neuron' (as for Kurmangaliyev 2020 early clusters).",
+  "justification": "'LC10c' is FBbt:00111746 'lobula columnar neuron LC10c'; at P15-P40 the cells are developing (curator: immature terms up to the pupal stage), so its immature form FBbt:00053673 (FBbt #2219, release 2026-11-02). Identity 93 is 'likely to be LC10c' in the authors' Supplementary Table 1 (probable, author comment).",
   "other_candidates": [
+    {
+      "fbbt_term": "immature lobula columnar neuron",
+      "fbbt_id": "FBbt:00053273",
+      "fbbt_definition": "Immature form of a lobula columnar neuron (Konstantinides et al., 2022).",
+      "reason_rejected": "Parent of the new immature LC10c term (used until FBbt #2219 was released)."
+    },
     {
       "fbbt_term": "lobula columnar neuron LC10c",
       "fbbt_id": "FBbt:00111746",
@@ -21,7 +28,7 @@
       "reason_rejected": "Mature form, used from the pharate adult stage; no immature form in FBbt."
     }
   ],
-  "recommendation": "Map to FBbt:00053273 'immature lobula columnar neuron' (broad match).",
-  "new_term_needed": true,
+  "recommendation": "Map to FBbt:00053673 'immature lobula columnar neuron LC10c' (exact match).",
+  "new_term_needed": false,
   "verification_needed": true
 }
