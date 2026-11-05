@@ -1,7 +1,7 @@
 {
   "project": "ozel_2021",
   "created_at": "2026-10-16",
-  "updated_at": "2026-10-16",
+  "updated_at": "2026-11-04",
   "summary": "Özel et al. 2021 (Nature), the Drosophila optic lobe developmental atlas, rebuilt from GEO GSE142787 and the authors' own Seurat objects, replacing the old FlyBase/SCEA load FBlc0005659 with fresh VFBseq ids. Single-cell 10x data from female Canton-S optic lobes at five pupal stages (P15, P30, P40, P50, P70) and in 1-3-day adults: 38 Samples / Assays. Seven Clusterings (one per stage, plus the authors' P50 T4/T5 subtype split) with one Cluster per author final identity: 1,238 entries, 522 mapped to FBbt (immature terms up to the pupal stage, mature from the pharate adult stage) and loaded. Summary expression as CPM from the authors' raw counts (13,265 genes x 275,683 cells; 1,211,693 cluster x gene rows with extent > 0.2).",
   "decisions": [
     {
@@ -88,6 +88,11 @@
       "date": "2026-10-16",
       "by": "curator",
       "decision": "All 522 mapped entries reviewed by the curator (mapping.tsv `reviewed`); held entries are not reviewed, as they are not loaded."
+    },
+    {
+      "date": "2026-11-04",
+      "by": "curator",
+      "decision": "FBbt #2216 released (FBbt 2026-11-02): P15-P40 T2, T2a and T3 (type_mapping/immature/) remapped from immature T neuron (broad) to the new immature T2 / T2a / T3 neuron terms (FBbt:00053664-6, exact); 9 clusters."
     }
   ],
   "checks": [
@@ -125,6 +130,11 @@
       "date": "2026-10-16",
       "check": "Export and cluster sizes: adult cells against the paper; identities against Supplementary Table 1.",
       "result": "109,743 adult cells, as in the paper; every final identity except 0 is in the table."
+    },
+    {
+      "date": "2026-11-04",
+      "check": "All FBbt terms in both mapping sets verified against FBbt 2026-11-02 (verify_mappings.py).",
+      "result": "All 133 terms current, non-obsolete, labels match."
     }
   ],
   "people": [
@@ -146,11 +156,11 @@
     {
       "id": "FBbt",
       "label": "Drosophila gross anatomy ontology",
-      "version": "2026-10-01",
-      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "version": "2026-11-02",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-11-02/fbbt.owl",
       "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
       "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
-      "accessed_at": "2026-10-16"
+      "accessed_at": "2026-11-04"
     },
     {
       "id": "FBdv",

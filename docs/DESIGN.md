@@ -1356,8 +1356,9 @@ VFBseq ids; licence CC-BY-4.0. Curator decisions 2026-10-16.
   good quality" (P70, adult) → *adult Kenyon cell*. Not mapped: 5 and 48 ("might be"
   only), 102 ("could correspond to multiplets"), and those with low-quality features
   (38, 85, 120, G/LQ). 522 of 1,238 entries now mapped (130 FBbt terms).
-- **Pending FBbt terms (curator 2026-10-16).** The P15-P40 T2 / T2a / T3 clusters wait
-  on #2216 (requested for Kurmangaliyev), and the other immature types FBbt lacks
+- **Pending FBbt terms (curator 2026-10-16).** The P15-P40 T2 / T2a / T3 clusters waited
+  on #2216 (requested for Kurmangaliyev; released in FBbt 2026-11-02 and remapped to
+  *immature T2 / T2a / T3 neuron*, 2026-11-04), and the other immature types FBbt lacks
   (C2, C3, LC4, LC6, LC10a/b/d, LC12, LC16, LC17, LLPC1, LPC1, LPLC1, LPLC2, Lawf1,
   Lawf2, Tm5 / Tm5a, and LC10c by a later comment) were requested in FBbt #2219; both are tracked in
   `checks/pending_fbbt_requests.json` (the weekly check reminds when released).
