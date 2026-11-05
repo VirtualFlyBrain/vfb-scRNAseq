@@ -274,8 +274,7 @@ its README.
 
 ## Status
 
-All seventeen projects are curated and built. Every mapped cluster has been reviewed (bar
-three Kurmangaliyev early clusters, remapped to FBbt #2216's new terms), and
+All seventeen projects are curated and built. Every mapped cluster has been reviewed, and
 each project has validated metadata OWL (`metadata/`), summary expression OWL
 (`expression/`, CPM for every dataset) and a `provenance.json`. Gene ids in the
 expression output are mapped to current FlyBase genes (`scripts/update_gene_ids.py`;
@@ -284,9 +283,9 @@ see *Expression statistics* in `docs/DESIGN.md`). A weekly workflow
 an issue when a FlyBase release changes a gene id in use, and reminds when a pending
 FBbt term request is closed (`checks/`).
 
-Outstanding, outside this repo: the first load into VFB (see *Getting changes into
-VFB*), which also retires all 24 old FlyBase/SCEA scRNAseq files (FBlc ids) on VFB's
-OWL server; they stay in the archived VirtualFlyBrain/vfb-scRNAseq-ontology repo.
+The files are published to VFB's OWL server (see *Getting changes into VFB*), replacing
+the 24 old FlyBase/SCEA scRNAseq files (FBlc ids), which stay in the archived
+VirtualFlyBrain/vfb-scRNAseq-ontology repo.
 No FBbt requests are pending: those tracked in `checks/pending_fbbt_requests.json`
 (#2216, #2218, #2219, #2220) were all released in FBbt 2026-11-02 and their clusters
 remapped.
