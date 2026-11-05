@@ -1,7 +1,7 @@
 {
   "project": "lu_2023_afca",
   "created_at": "2026-10-15",
-  "updated_at": "2026-10-16",
+  "updated_at": "2026-11-04",
   "summary": "Aging Fly Cell Atlas (Lu et al. 2023, Science), rebuilt from GEO GSE218661 and the authors' own head and body AnnData analyses, replacing the old FlyBase/SCEA load FBlc0006422 with fresh VFBseq ids. Single-nucleus 10x data from whole head and body, male and female, at 30, 50 and 70 days (72 new Samples/Assays), co-analysed by the authors with the Fly Cell Atlas 5-day head and body samples, which are reused from li_2022_fca_10x. Two Clusterings (head, body) with one Cluster per author cell type over all ages: 164 author types, 143 mapped to FBbt and loaded, 21 held. Summary expression for the loaded Clusters as CPM (15,989 genes x 566,254 cells; 133,771 cluster x gene rows with extent > 0.2).",
   "decisions": [
     {
@@ -68,6 +68,11 @@
       "date": "2026-10-16",
       "by": "curator",
       "decision": "Revisit the fat mappings when FBbt issue #2218 (review adult fat terms) is fixed and released; tracked in checks/pending_fbbt_requests.json."
+    },
+    {
+      "date": "2026-11-04",
+      "by": "curator",
+      "decision": "FBbt #2218 (review of the adult fat terms) released in FBbt 2026-11-02: the body analysis's 'adult fat body' cluster narrowed to adult postcephalic fat cell (the body sample is the whole fly minus the head; cluster-level manual_edit); head clusters stay adult pericerebral fat cell."
     }
   ],
   "checks": [
@@ -95,6 +100,11 @@
       "date": "2026-10-15",
       "check": "Expression: the CPM conversion (every cell must sum to 1e6) and marker spot checks.",
       "result": "Conversion check passed. Rh3/Rh4 in R7, SP in male accessory gland main cells, apolpp in fat body; indirect flight muscle led by bt, sls, Zasp52 and up (Act88F below the cutoff, as in the FCA). Per-cluster gene counts close to the FCA's for the same types."
+    },
+    {
+      "date": "2026-11-04",
+      "check": "All FBbt terms verified against FBbt 2026-11-02 (verify_mappings.py).",
+      "result": "All 130 terms current, non-obsolete, labels match."
     }
   ],
   "people": [
@@ -116,11 +126,11 @@
     {
       "id": "FBbt",
       "label": "Drosophila gross anatomy ontology",
-      "version": "2026-10-01",
-      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "version": "2026-11-02",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-11-02/fbbt.owl",
       "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
       "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
-      "accessed_at": "2026-10-15"
+      "accessed_at": "2026-11-04"
     },
     {
       "id": "FBdv",

@@ -287,9 +287,6 @@ FBbt term request is closed (`checks/`).
 Outstanding, outside this repo: the first load into VFB (see *Getting changes into
 VFB*), which also retires all 24 old FlyBase/SCEA scRNAseq files (FBlc ids) on VFB's
 OWL server; they stay in the archived VirtualFlyBrain/vfb-scRNAseq-ontology repo.
-Pending FBbt requests, tracked with the clusters waiting on them in
-`checks/pending_fbbt_requests.json`:
-the FBbt review of adult fat terms
-([#2218](https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2218);
-FCA and AFCA fat mappings to revisit; Saavedra's thorax adipose cluster to *adult
-postcephalic fat cell* once released).
+No FBbt requests are pending: those tracked in `checks/pending_fbbt_requests.json`
+(#2216, #2218, #2219, #2220) were all released in FBbt 2026-11-02 and their clusters
+remapped.

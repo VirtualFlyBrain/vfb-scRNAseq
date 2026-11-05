@@ -3,18 +3,25 @@
   "working_definition": "Fat cells of the adult fat body (FCA, adult flies, found across many tissues); authors' FBbt term is the tissue adult fat body.",
   "searches_performed": [
     "adult fat body",
-    "adult fat cell"
+    "adult fat cell",
+    "'adult visceral fat cell' (new term, FBbt fbbt/releases/2026-11-02)"
   ],
   "best_match": {
-    "fbbt_term": "adult fat cell",
-    "fbbt_id": "FBbt:00049949",
-    "fbbt_definition": "Fat cell of the adult fat body. These cells are derived from cells of the larval body wall and adepithelial cells associated with imaginal discs (Hoshizaki et al., 1995; Musselman and Kuhnlein, 2018). Fully-differentiated adult fat cells are found from around 3-4 days after eclosion (Aguila et al., 2007). Unlike the larval fat cells, they are diploid (Musselman and Kuhnlein, 2018).",
+    "fbbt_term": "adult visceral fat cell",
+    "fbbt_id": "FBbt:00053713",
+    "fbbt_definition": "Any fat cell (FBbt:00046052) that is part of some adult visceral fat mass (FBbt:00053711).",
     "match_type": "exact match",
     "skos_mapping": "skos:exactMatch",
     "confidence": "high"
   },
-  "justification": "Authors' term FBbt:00003209 is a tissue; the cell-level equivalent is adult fat cell, the principal cell type of the adult fat body.",
+  "justification": "The authors' 'adult fat body' type in the testis analysis. Narrowed by the dissected tissue (curator, after the FBbt #2218 review of the adult fat terms, FBbt 2026-11-02): fat dissected with the testis: fat associated with an internal organ (also abdominal; FBbt has no term for both).",
   "other_candidates": [
+    {
+      "fbbt_term": "adult fat cell",
+      "fbbt_id": "FBbt:00049949",
+      "fbbt_definition": "Fat cell of the adult fat body. These cells are derived from cells of the larval body wall and adepithelial cells associated with imaginal discs (Hoshizaki et al., 1995; Musselman and Kuhnlein, 2018). Fully-differentiated adult fat cells are found from around 3-4 days after eclosion (Aguila et al., 2007). Unlike the larval fat cells, they are diploid (Musselman and Kuhnlein, 2018).",
+      "reason_rejected": "Parent term; narrowed by the dissected tissue (curator, FBbt #2218)."
+    },
     {
       "fbbt_term": "adult fat body",
       "fbbt_id": "FBbt:00003209",
@@ -22,7 +29,13 @@
       "reason_rejected": "Authors' tissue term; not a cell term."
     }
   ],
-  "recommendation": "Use adult fat cell (FBbt:00049949).",
+  "recommendation": "Map to FBbt:00053713 'adult visceral fat cell' (exact match).",
   "new_term_needed": false,
-  "verification_needed": false
+  "verification_needed": false,
+  "manual_edit": {
+    "by": "Clare Pilgrim (Clare72)",
+    "date": "2026-11-04",
+    "reason": "curator: FBbt #2218 fat review; fat dissected with the testis: fat associated with an internal organ (also abdominal; FBbt has no term for both)",
+    "change": "best_match FBbt:00049949 adult fat cell -> FBbt:00053713 adult visceral fat cell (testis analysis only)"
+  }
 }

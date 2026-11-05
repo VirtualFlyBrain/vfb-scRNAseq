@@ -31,7 +31,9 @@ MAPPED = {   # author type: (FBbt id, match, justification)
     "Muscle cell": ("FBbt:00058230", E, "Thoracic muscle not resolved further by the authors."),
     "Adult alary muscle": ("FBbt:00003545", E, ""),
     "Epithelial cell": ("FBbt:00058238", E, "Thoracic epithelial cells not resolved further by the authors."),
-    "Adipose tissue": ("FBbt:00049949", E, "The adipose tissue (fat body): its cell type, the fat cell."),
+    "Adipose tissue": ("FBbt:00053714", E, "The adipose tissue (fat body): its cell type, the fat cell; the "
+                       "samples are thorax only, so the thoracic fat cell (curator, after the FBbt #2218 review "
+                       "of the adult fat terms, FBbt 2026-11-02)."),
     "Tracheal": ("FBbt:00005040", E, "Tracheal cells."),
     "Hemocyte": ("FBbt:00058143", E, ""),
     "Cell body glial cell": ("FBbt:00059288", E, "Cell body glia are CNS-only and the thorax's CNS is the ventral "

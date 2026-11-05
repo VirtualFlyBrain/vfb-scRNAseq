@@ -1,7 +1,7 @@
 {
   "project": "saavedra_2023",
   "created_at": "2026-10-20",
-  "updated_at": "2026-10-20",
+  "updated_at": "2026-11-04",
   "summary": "Saavedra et al. 2023 (Nat Commun), 10x single-nucleus RNA-seq of dissected adult male thoraces (GEO GSE227038); replaces the old FlyBase/SCEA load FBlc0006361 with fresh VFBseq ids. Driver-only controls (tub-Gal80ts/+ ; dMef2-GAL4/+) only: 1 Sample / 2 technical-replicate Assays, linked to the GAL4 and GAL80ts alleles (GENO has_genotype). One Clustering with the authors' 17 clusters (all genotypes integrated) restricted to the 14,170 control nuclei, from the authors' GEO metadata: 14 loaded (adult muscle, glia, neuron, fat, trachea, hemocyte, epithelial and salivary gland cell terms), 3 'Unknown cluster' held. Summary expression as CPM from the control libraries (16,489 genes x 14,170 nuclei).",
   "decisions": [
     {
@@ -58,6 +58,11 @@
       "date": "2026-10-20",
       "by": "curator",
       "decision": "All 17 mapping.tsv rows reviewed by the curator (mapping.tsv `reviewed`)."
+    },
+    {
+      "date": "2026-11-04",
+      "by": "curator",
+      "decision": "FBbt #2218 (review of the adult fat terms) released in FBbt 2026-11-02: the Adipose tissue cluster to adult thoracic fat cell (thorax-only samples; write_type_mappings.py)."
     }
   ],
   "checks": [
@@ -85,6 +90,11 @@
       "date": "2026-10-20",
       "check": "Most cluster-specific genes per author type in the expression output.",
       "result": "Fit the types (muscle sls / bt / Zasp52 / Zasp66; neurons para / Snap25; hemocytes Hml / Ppn; adipose apolpp; salivary gland CAH1)."
+    },
+    {
+      "date": "2026-11-04",
+      "check": "All FBbt terms verified against FBbt 2026-11-02 (verify_mappings.py).",
+      "result": "All 12 terms current, non-obsolete, labels match."
     }
   ],
   "people": [
@@ -106,11 +116,11 @@
     {
       "id": "FBbt",
       "label": "Drosophila gross anatomy ontology",
-      "version": "2026-10-01",
-      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-10-01/fbbt.owl",
+      "version": "2026-11-02",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-11-02/fbbt.owl",
       "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
       "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
-      "accessed_at": "2026-10-16"
+      "accessed_at": "2026-11-04"
     },
     {
       "id": "FBdv",
