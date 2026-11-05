@@ -67,8 +67,15 @@ Loading the registry fails if two entries share an id or the counter is behind a
 in use (`IDRegistry.check`). Both happen when two branches that each minted ids are
 merged: git keeps both sets of entries and one counter, so the same ids are issued
 twice (Baker 2021 and Mokashi 2021, curated in parallel, shared ten ids until
-2026-10-26, when Baker's were re-minted before either was loaded). Mint on one branch
-at a time, or re-mint one side when merging. A published id is never re-minted.
+2026-10-26, when Baker's were re-minted before either was loaded). To prevent this,
+before its first new id the registry reads the counter on every local and
+remote-tracking branch (as of the last `git fetch`) and in every other worktree's
+working copy (ids minted there but not committed), and starts past the highest
+(`ids.counters_elsewhere`; it prints a note when it skips ahead; `VFBSEQ_IDS_LOCAL_ONLY=1`
+turns it off). So `git fetch` before minting. The ids on main may then have gaps, which is
+harmless. Branches pushed from another clone and not yet fetched are not seen, so the
+load-time check stays the backstop: re-mint one side when merging. A published id is
+never re-minted.
 
 GEO/SRA accessions (GSE / GSM / PRJNA / SRP / GPL) are **cross-references**,
 carried in the schema's `site` / `accession` slots and dbxrefs — **never** used
