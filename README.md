@@ -5,9 +5,9 @@ Produce RDF metadata for *Drosophila* single-cell RNA-seq data: dataset / sample
 expression statistics (extent and level per cluster × gene) computed the FlyBase way.
 
 This repo is built on the [atlas-chat](https://github.com/Cellular-Semantics/atlas-chat)
-template and will become the **new master copy** of the VFB scRNAseq LinkML
-schema, deprecating
-[`VirtualFlyBrain/vfb-scRNAseq-ontology`](https://github.com/VirtualFlyBrain/vfb-scRNAseq-ontology).
+template and is the **master copy** of the VFB scRNAseq LinkML schema. It replaced
+[`VirtualFlyBrain/vfb-scRNAseq-ontology`](https://github.com/VirtualFlyBrain/vfb-scRNAseq-ontology)
+(FlyBase/SCEA data, FBlc ids), which was archived in November 2026.
 
 See [`docs/DESIGN.md`](docs/DESIGN.md) for the design decisions and external
 conventions behind the structure below (the two-schema split, the `VFBseq` id
