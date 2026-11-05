@@ -1,8 +1,8 @@
 # Expression summary — GSE161228
 
 - normalisation: **CPM**; extent filter: **> 0.2**
-- 17452 genes x 4097 cells; 92 clusters; 425,729 filtered rows
-- not loaded: 26 held clusters (no FBbt term), 1469 cells
+- 17452 genes x 4097 cells; 94 clusters; 433,211 filtered rows
+- not loaded: 24 held clusters (no FBbt term), 1436 cells
 - dataset-level: total_gene_count **15941**, filtered_gene_count **8317**
 
 | cluster | cells | total_gene_count | filtered_gene_count |
@@ -31,6 +31,7 @@
 | knot_adult_VM7 or VM5v #2 | 13 | 6715 | 3856 |
 | knot_adult_vPN | 9 | 5573 | 3621 |
 | knot_adult_vPN_DA1 | 8 | 5797 | 4010 |
+| main_0h_APL | 1 | 3603 | 3603 |
 | main_0h_D | 71 | 10336 | 4639 |
 | main_0h_DA1_fru+ | 55 | 10099 | 5126 |
 | main_0h_DA1_fru- | 66 | 10292 | 4351 |
@@ -48,6 +49,7 @@
 | main_0h_VM2 | 38 | 9320 | 4988 |
 | main_0h_VM7 or VM5v #1 | 35 | 9331 | 4535 |
 | main_0h_VM7 or VM5v #2 | 38 | 9179 | 4382 |
+| main_24h_APL | 32 | 7936 | 3879 |
 | main_24h_D | 53 | 9109 | 5008 |
 | main_24h_DA1_fru+ | 112 | 10051 | 4813 |
 | main_24h_DA1_fru- | 21 | 7531 | 4482 |
