@@ -19,11 +19,12 @@ request (e.g. a review of a group of terms): its reminder lists the mappings to
 revisit instead of requested terms.
 
 Usage:
-    uv run python scripts/check_fbbt_release.py [--force]
+    uv run python scripts/check_fbbt_release.py [--force] [--dry-run]
 Writes `checked`, `updated` and `changed` (any file under checks/ changed) to
 $GITHUB_OUTPUT when set. Reminder issues are opened with the `gh` CLI in
-$GITHUB_REPOSITORY (default VirtualFlyBrain/vfb-scRNAseq); with --dry-run they are
-only printed.
+$GITHUB_REPOSITORY (default VirtualFlyBrain/vfb-scRNAseq). --dry-run changes no
+files and opens no issues: reminders are only printed, and neither the release record
+nor the pending requests are updated.
 """
 
 from __future__ import annotations
@@ -166,7 +167,7 @@ def _output(**kv) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--force", action="store_true", help="verify even if the release is unchanged")
-    ap.add_argument("--dry-run", action="store_true", help="print reminder issues instead of opening them")
+    ap.add_argument("--dry-run", action="store_true", help="print reminder issues instead of opening them; write no files")
     args = ap.parse_args()
 
     record = json.loads(RECORD.read_text()) if RECORD.exists() else {}
@@ -200,6 +201,10 @@ def main() -> int:
         _output(checked=True, updated=False, changed=pending_changed)
         return 1
 
+    if args.dry_run:
+        print(f"\nAll terms OK; dry run, so FBbt {rel['version']} not recorded in {RECORD}")
+        _output(checked=True, updated=False, changed=False)
+        return 0
     RECORD.parent.mkdir(exist_ok=True)
     RECORD.write_text(json.dumps({
         "version": rel["version"],
