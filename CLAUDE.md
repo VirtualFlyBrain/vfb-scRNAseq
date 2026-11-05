@@ -36,7 +36,8 @@ clusters mapped to FBbt, for loading into Virtual Fly Brain. Read `README.md`, t
 
 - Environment: `uv` (`uv sync`, `uv run ...`). Run the CI checks locally before
   committing: `uv run pytest`, `uv run python scripts/validate_project_files.py`,
-  `uv run python scripts/check_mapping_tsv.py`, `uv run python scripts/check_entity_links.py`.
+  `uv run python scripts/check_mapping_tsv.py`, `uv run python scripts/check_entity_links.py`,
+  `uv run python scripts/write_fbgn_list.py --check` (fails when new expression adds genes).
 - Project-specific knowledge lives in `projects/<name>/config.yaml` (or a project
   script); `scripts/` and `src/` stay dataset-agnostic.
 - Mapping JSON is written with the Write tool so `.claude/hooks/check_fbbt_mapping.py`
