@@ -221,6 +221,7 @@ uv run python scripts/expand_type_mappings.py            --project li_2022_fca_1
 uv run python scripts/validate_project_files.py
 uv run python scripts/check_mapping_tsv.py
 uv run python scripts/check_entity_links.py              # every entity links the types it should
+uv run python scripts/write_fbgn_list.py --check         # FBgn list covers every expressed gene
 
 # the weekly release checks (also run by .github/workflows/fbbt-release-check.yml)
 uv run python scripts/check_fbbt_release.py [--force]

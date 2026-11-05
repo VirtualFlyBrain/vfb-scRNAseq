@@ -1075,7 +1075,8 @@ VFB until the release files are merged, so ids can still change during review.
 11. **Term requests:** only with curator sign-off; add each to
     `checks/pending_fbbt_requests.json`.
 12. **Check:** `pytest`, `validate_project_files.py`, `check_mapping_tsv.py`,
-    `check_entity_links.py` (every entity links the types it should); commit
+    `check_entity_links.py` (every entity links the types it should),
+    `write_fbgn_list.py --check` (the FBgn list covers every expressed gene); commit
     in stages on a branch and open a PR against `main` per stage (CI runs the same
     checks): 1 samples, 2 clusters, 3 FBbt mapping (after the curator's review in
     `mapping.tsv`), 4 expression, 5 build, provenance and docs.
