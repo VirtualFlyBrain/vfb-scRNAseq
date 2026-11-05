@@ -223,7 +223,7 @@ uv run python scripts/check_mapping_tsv.py
 uv run python scripts/check_entity_links.py              # every entity links the types it should
 
 # the weekly release checks (also run by .github/workflows/fbbt-release-check.yml)
-uv run python scripts/check_fbbt_release.py [--force]
+uv run python scripts/check_fbbt_release.py [--force] [--dry-run]
 uv run python scripts/check_flybase_release.py [--dry-run]   # opens an issue on change
 ```
 
