@@ -211,7 +211,7 @@ below record how each was applied).
   FCA's 5-day head and body libraries — its build references the existing entities by
   their VFBseq ids instead of minting duplicates. The reused entities stay owned by
   (and are emitted only by) the project that first curated them; the reusing project
-  links to them from its own Clusterings (`associated_sample_or_assay_for_clustering`).
+  links to them from its own Clusterings (`associated_sample_for_clustering`).
   Only identical entities are reused: a re-analysis is a new Clustering with new
   Clusters, even over the same cells. If the source study has not been curated yet,
   the build stops and tells the curator, with the suggestion to curate that study
@@ -610,7 +610,7 @@ one graph so reused Samples count, and requires each entity to have at least one
 | Dataset | Sample, Assay, Clustering, Cluster | publication, licence, assay type |
 | Sample | Dataset, Assay, Clustering | tissue, stage |
 | Assay | Dataset, Sample | method |
-| Clustering | Dataset, Sample (or Assay), Cluster | |
+| Clustering | Dataset, Sample, Cluster | |
 | Cluster | Dataset, Clustering | cell type |
 
 Checking the OWL rather than `entities.json` also catches a link the build makes but
@@ -622,7 +622,8 @@ cells only), and `no_clusters: <reason>` on a clustering whose clusters are all 
 
 ### Clustering → Samples
 
-A Clustering's `associated_sample_or_assay_for_clustering` (BFO:0000051 *has part*)
+A Clustering's `associated_sample_for_clustering` (BFO:0000051 *has part*; Samples only,
+since *has part* to an Assay, a process, is a BFO continuant/occurrent clash)
 comes from its `sample_build.clusterings` entry, which must select some Samples
 (`project_config.clustering_samples` refuses an entry without a selector, an unknown
 id or an empty match):
@@ -1219,7 +1220,7 @@ assignments are a mapping cross-check only. Licence CC-BY-4.0. Curator decisions
   over all ages (not split by age; age stays on the Samples). The annotation differs
   from the FCA's for 23% of head / 36% of body 5-day cells (renamed with a tissue
   suffix, split, newly typed, a few moved), so a 5-day cell is in one FCA and one AFCA
-  cluster. Each Clustering links (`associated_sample_or_assay_for_clustering`) to its
+  cluster. Each Clustering links (`associated_sample_for_clustering`) to its
   36 new and 13 reused Samples.
 - **Samples (stage 1):** `build_samples_from_geo.py` — 72 Samples / 72 Assays; stage
   day 30 / 50 / 70 of adulthood (FBdv:00007105 / 00007125 / 0010010); tissue head →
