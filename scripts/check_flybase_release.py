@@ -115,7 +115,7 @@ def main() -> int:
                 lines += [f"  - {ex}" for ex in r["examples"]]
         else:
             lines += ["Chado could not be queried from CI, so the number of changed ids is unknown."]
-        lines += ["", "To update (needs `psql` access to chado.flybase.org and the source files in `.cache/`):",
+        lines += ["", "To update (needs `psql` 17+ for VFB's Chado copy, or any `psql` for chado.flybase.org, and the source files in `.cache/`):",
                   "```sh"]
         for project in behind:
             lines += [f"uv run python scripts/update_gene_ids.py  --project {project}",

@@ -3,7 +3,7 @@
 
 Gene ids come from the GEO features file(s) as published, so some are no longer
 current. This queries FlyBase Chado (public read-only:
-`psql -h chado.flybase.org -U flybase flybase`) once and writes a committed table the
+`psql`, VFB's copy chado.flybase.virtualflybrain.org:443 or chado.flybase.org) once and writes a committed table the
 expression build applies (`expression.gene_id_map`), so builds stay reproducible and
 need no Chado access:
 
@@ -64,7 +64,7 @@ sys.path.insert(0, str(REPO_ROOT / "src"))
 from vfb_scrnaseq.ingest_h5ad import expression_h5ads, read_genes  # noqa: E402
 from vfb_scrnaseq.project_config import load_config  # noqa: E402
 
-PSQL = ["psql", "-h", "chado.flybase.org", "-U", "flybase", "flybase", "-At", "-F", "\t"]
+from chado import psql as _psql  # VFB's Chado copy first, FlyBase's as fallback (FB_CHADO_HOST overrides)
 COLUMNS = ["input_fbgn", "input_symbol", "status", "current_fbgn", "current_symbol"]
 
 QUERY = """
@@ -188,7 +188,7 @@ def chado_annotation_lookup(ids: list[str]) -> dict[str, str]:
     """{annotation id: FBgn} for ids that Chado records against exactly one current gene."""
     genes: dict[str, set[str]] = defaultdict(set)
     for i in range(0, len(ids), 2000):
-        out = subprocess.run(PSQL + ["-c", ANNOTATION_QUERY.format(ids=",".join(ids[i:i + 2000]))],
+        out = subprocess.run(_psql() + ["-c", ANNOTATION_QUERY.format(ids=",".join(ids[i:i + 2000]))],
                              capture_output=True, text=True, check=True).stdout
         for line in out.splitlines():
             u, fbgn = line.split("\t")
@@ -210,7 +210,7 @@ def map_release(path: Path) -> str:
 
 
 def chado_lookup(ids: list[str]) -> dict[str, list[tuple[str, str, str]]]:
-    out = subprocess.run(PSQL + ["-c", QUERY.format(ids=",".join(ids))],
+    out = subprocess.run(_psql() + ["-c", QUERY.format(ids=",".join(ids))],
                          capture_output=True, text=True, check=True).stdout
     hits: dict[str, list[tuple[str, str, str]]] = defaultdict(list)
     for line in out.splitlines():
@@ -224,7 +224,7 @@ def chado_symbol_lookup(symbols: list[str]) -> dict[str, list[tuple]]:
     synonym for that gene)]} for D. melanogaster genes."""
     if not symbols:
         return {}
-    out = subprocess.run(PSQL + ["-v", "syms=" + "\t".join(symbols)], input=SYMBOL_QUERY,
+    out = subprocess.run(_psql() + ["-v", "syms=" + "\t".join(symbols)], input=SYMBOL_QUERY,
                          capture_output=True, text=True, check=True).stdout
     hits: dict[str, list[tuple]] = defaultdict(list)
     for line in out.splitlines():
@@ -297,7 +297,7 @@ def flybase_release() -> str:
 
 
 def chado_last_modified() -> str:
-    out = subprocess.run(PSQL + ["-c", "select max(timelastmodified) from feature where uniquename like 'FBgn%'"],
+    out = subprocess.run(_psql() + ["-c", "select max(timelastmodified) from feature where uniquename like 'FBgn%'"],
                          capture_output=True, text=True, check=True).stdout.strip()
     return out[:10]
 
@@ -331,7 +331,7 @@ def main() -> None:
     rows = reclassify(feats)
     out = REPO_ROOT / "projects" / args.project / "gene_id_map.tsv"
     with out.open("w", newline="") as fh:
-        fh.write(f"# FlyBase Chado (chado.flybase.org), queried {dt.date.today().isoformat()}; "
+        fh.write(f"# FlyBase Chado ({_psql()[2].split()[0][5:]}), queried {dt.date.today().isoformat()}; "
                  f"data last modified {chado_last_modified()}"
                  f"{'; FlyBase ' + release if release else ''}\n")
         w = csv.DictWriter(fh, fieldnames=COLUMNS, delimiter="\t", lineterminator="\n")

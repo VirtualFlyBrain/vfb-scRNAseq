@@ -18,7 +18,7 @@ import re
 import subprocess
 import sys
 
-PSQL = ["psql", "-h", "chado.flybase.org", "-U", "flybase", "flybase", "-At", "-F", "\t"]
+from chado import psql as _psql  # VFB's Chado copy first, FlyBase's as fallback (FB_CHADO_HOST overrides)
 BY_STOCK = """
 select substring(sp.value from '@(FBst[0-9]{{7}}):'), s.uniquename, s.name
 from strain s
@@ -32,7 +32,7 @@ BY_NAME = "select name, uniquename, name from strain where not is_obsolete and n
 
 def query(sql: str, values: list[str]) -> list[tuple[str, str, str]]:
     ids = ",".join("'" + v.replace("'", "''") + "'" for v in values)
-    out = subprocess.run(PSQL + ["-c", sql.format(ids=ids)], capture_output=True, text=True, check=True)
+    out = subprocess.run(_psql() + ["-c", sql.format(ids=ids)], capture_output=True, text=True, check=True)
     return [tuple(ln.split("\t")) for ln in out.stdout.splitlines() if ln.strip()]
 
 
