@@ -22,7 +22,7 @@ import subprocess
 import sys
 import urllib.request
 
-PSQL = ["psql", "-h", "chado.flybase.org", "-U", "flybase", "flybase", "-At", "-F", "\t"]
+from chado import psql as _psql  # VFB's Chado copy first, FlyBase's as fallback (FB_CHADO_HOST overrides)
 VFB_PDB = "https://pdb.virtualflybrain.org/db/neo4j/tx/commit"
 PREFIXES = ("FBco", "FBal", "FBti", "FBtp", "FBst")
 QUERY = """
@@ -42,7 +42,7 @@ where p.uniquename = '{fbrf}' and not s.is_obsolete
 
 
 def chado_entities(fbrf: str) -> list[tuple[str, str, str]]:
-    out = subprocess.run(PSQL + ["-c", QUERY.format(fbrf=fbrf)], capture_output=True, text=True, check=True)
+    out = subprocess.run(_psql() + ["-c", QUERY.format(fbrf=fbrf)], capture_output=True, text=True, check=True)
     rows = [tuple(ln.split("\t")) for ln in out.stdout.splitlines() if ln.strip()]
     return sorted(rows, key=lambda r: (PREFIXES.index(r[0][:4]), r[0]))
 
