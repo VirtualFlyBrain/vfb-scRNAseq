@@ -918,7 +918,10 @@ if any entity in the metadata OWL lacks a link it should have (*Entity links*).
 `.github/workflows/fbbt-release-check.yml` runs weekly (and on demand).
 `scripts/check_fbbt_release.py` compares OLS's current FBbt release with the one
 recorded in `checks/fbbt_last_checked.json` and only when it is newer re-verifies
-every project's FBbt terms (current, non-obsolete, label unchanged). On success the
+every project's FBbt terms (current, non-obsolete, label unchanged) against that
+release's `fbbt-simple.obo`, downloaded once from its versioned PURL (not one OLS query
+per term). Requests to OLS, the PURL and GitHub are retried on server errors and
+timeouts. On success the
 record is updated and committed by the workflow; on failure the job fails and the
 record is kept, so the next run re-checks.
 

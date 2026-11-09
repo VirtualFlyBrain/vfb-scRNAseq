@@ -48,8 +48,15 @@ def _gate(tmp_path, monkeypatch, recorded, current, problems=()):
     calls = []
 
     class _V:
+        RELEASE_OBO = "release/{version}"
+
         @staticmethod
-        def verify(project):
+        def release_terms(version):
+            return {"FBbt:00000001": {"label": "x", "is_obsolete": False}}
+
+        @staticmethod
+        def verify(project, terms=None):
+            assert terms is not None          # checked against the one downloaded release
             calls.append(project)
             return {"FBbt:00000001": {}}, list(problems)
     monkeypatch.setattr(mod, "_verify_module", lambda: _V)
@@ -74,6 +81,58 @@ def test_fbbt_gate_failure_keeps_old_record(tmp_path, monkeypatch):
     rc, calls, record = _gate(tmp_path, monkeypatch, "2026-10-01", "2026-11-01", bad)
     assert rc == 1
     assert json.loads(record.read_text())["version"] == "2026-10-01"
+
+
+def test_urlopen_retry_retries_server_errors_only(monkeypatch):
+    import io
+    import urllib.error
+    mod = _script("verify_mappings")
+    monkeypatch.setattr(mod.time, "sleep", lambda s: None)
+    seen = []
+
+    def flaky(req, timeout):
+        seen.append(req)
+        if len(seen) < 3:
+            raise urllib.error.HTTPError("u", 500, "", {}, None)
+        return io.BytesIO(b"ok")
+    monkeypatch.setattr(mod.urllib.request, "urlopen", flaky)
+    assert mod.urlopen_retry("u").read() == b"ok" and len(seen) == 3
+
+    def not_found(req, timeout):
+        seen.append(req)
+        raise urllib.error.HTTPError("u", 404, "", {}, None)
+    seen.clear()
+    monkeypatch.setattr(mod.urllib.request, "urlopen", not_found)
+    with pytest.raises(urllib.error.HTTPError):
+        mod.urlopen_retry("u")
+    assert len(seen) == 1                     # a 404 is not retried
+
+
+def test_release_terms_and_verify_against_them(tmp_path, monkeypatch):
+    import io
+    mod = _script("verify_mappings")
+    obo = ("format-version: 1.2\ndata-version: fbbt/releases/2026-11-02/fbbt-simple.owl\n\n"
+           "[Term]\nid: FBbt:00000001\nname: kept neuron\n\n"
+           "[Term]\nid: FBbt:00000002\nname: obsolete gone neuron\nis_obsolete: true\n\n"
+           "[Typedef]\nid: part_of\nname: part of\n")
+    monkeypatch.setattr(mod, "urlopen_retry", lambda req, timeout: io.BytesIO(obo.encode()))
+    terms = mod.release_terms("2026-11-02")
+    assert set(terms) == {"FBbt:00000001", "FBbt:00000002"}
+    assert terms["FBbt:00000002"]["is_obsolete"] and not terms["FBbt:00000001"]["is_obsolete"]
+    with pytest.raises(ValueError):
+        mod.release_terms("2026-12-01")           # file is not the release asked for
+
+    mdir = tmp_path / "projects" / "p" / "mapping"
+    mdir.mkdir(parents=True)
+    for i, (fid, label) in enumerate([("FBbt:00000001", "kept neuron"), ("FBbt:00000002", "gone neuron"),
+                                      ("FBbt:00000003", "missing neuron")]):
+        (mdir / f"c{i}.fbbt_mapping.json").write_text(json.dumps(
+            {"cluster_label": f"c{i}", "best_match": {"fbbt_id": fid, "fbbt_term": label}}))
+    monkeypatch.setattr(mod, "REPO_ROOT", tmp_path)
+    monkeypatch.setattr(mod, "lookup", lambda fid: pytest.fail("queried OLS"))
+    _, problems = mod.verify("p", terms)
+    assert {(f, m.split()[0]) for f, m, _ in problems} == {("FBbt:00000002", "OBSOLETE"),
+                                                            ("FBbt:00000003", "NOT")}
 
 
 def _pending(tmp_path, monkeypatch, issue, status="pending"):
