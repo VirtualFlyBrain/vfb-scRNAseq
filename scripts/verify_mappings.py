@@ -3,7 +3,8 @@
 
 For each mapping/*.fbbt_mapping.json best_match and additional_matches (and
 placeholder anchors), look up
-the recorded fbbt_id in the live OLS FBbt and confirm it is (a) found, (b) not
+the recorded fbbt_id in the live OLS FBbt (or, given `terms` from
+`release_terms`, in one downloaded FBbt release file) and confirm it is (a) found, (b) not
 obsolete, and (c) still carries the label we recorded. Catches ontology drift —
 renamed/obsoleted/re-IDed terms — deterministically, so a mapping set can be
 re-certified against any FBbt release (e.g. the 2026-06-11 release that fixed the
@@ -18,13 +19,64 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 OLS_SEARCH = "https://www.ebi.ac.uk/ols4/api/search"
+RELEASE_OBO = "http://purl.obolibrary.org/obo/fbbt/releases/{version}/fbbt-simple.obo"
+RETRY_DELAYS = (5, 15, 45)   # seconds before each retry
+
+
+def urlopen_retry(req, timeout: float = 30):
+    """urllib.request.urlopen, retried on server errors (5xx, 429), timeouts and dropped connections.
+
+    OLS sometimes returns a 500 for one request in hundreds; a retry gets through.
+    Client errors (other 4xx) are raised at once.
+    """
+    for delay in (*RETRY_DELAYS, None):
+        try:
+            return urllib.request.urlopen(req, timeout=timeout)  # noqa: S310
+        except urllib.error.HTTPError as e:
+            if delay is None or not (e.code >= 500 or e.code == 429):
+                raise
+            err = f"HTTP {e.code}"
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+            if delay is None:
+                raise
+            err = str(e)
+        url = req.full_url if isinstance(req, urllib.request.Request) else req
+        print(f"  {err} from {url.split('?')[0]}; retrying in {delay}s", file=sys.stderr)
+        time.sleep(delay)
+
+
+def release_terms(version: str) -> dict[str, dict]:
+    """{FBbt id: {obo_id, label, is_obsolete}} for every term in one FBbt release, from one download.
+
+    Reads the release's fbbt-simple.obo (obsolete terms included) from its versioned
+    PURL, so the terms checked are exactly that release's.
+    """
+    url = RELEASE_OBO.format(version=version)
+    req = urllib.request.Request(url, headers={"User-Agent": "vfb-scrnaseq/0.0"})
+    with urlopen_retry(req, timeout=300) as r:
+        text = r.read().decode("utf-8")
+    head = text[:2000]
+    if f"releases/{version}/" not in head:
+        raise ValueError(f"{url} is not FBbt {version}: {head.splitlines()[:3]}")
+    terms = {}
+    for block in text.split("\n[Term]\n")[1:]:
+        block = block.split("\n[", 1)[0]
+        tid = re.search(r"^id: (\S+)", block, re.M)
+        name = re.search(r"^name: (.*)$", block, re.M)
+        if tid and name:
+            terms[tid.group(1)] = {"obo_id": tid.group(1), "label": name.group(1),
+                                   "is_obsolete": bool(re.search(r"^is_obsolete: true", block, re.M))}
+    return terms
 
 
 def lookup(curie: str) -> dict | None:
@@ -33,7 +85,7 @@ def lookup(curie: str) -> dict | None:
         "fieldList": "obo_id,label,is_obsolete", "exact": "true", "rows": 5,
     })
     req = urllib.request.Request(f"{OLS_SEARCH}?{q}", headers={"User-Agent": "vfb-scrnaseq/0.0"})
-    with urllib.request.urlopen(req, timeout=30) as r:  # noqa: S310
+    with urlopen_retry(req, timeout=30) as r:
         docs = json.load(r).get("response", {}).get("docs", [])
     for doc in docs:
         if doc.get("obo_id") == curie:
@@ -41,15 +93,19 @@ def lookup(curie: str) -> dict | None:
     return None
 
 
-def verify(project: str) -> tuple[dict, list]:
+def verify(project: str, terms: dict[str, dict] | None = None) -> tuple[dict, list]:
     """Check every FBbt term a project's mappings use against live OLS FBbt.
+
+    With `terms` (from `release_terms`), check against those instead of querying OLS
+    once per term.
 
     Returns (terms, problems): terms = {fbbt_id: {recorded_label, clusters}},
     problems = [(fbbt_id, message, info)] for missing / obsolete / relabelled terms.
     """
     mdir = REPO_ROOT / "projects" / project / "mapping"
     # unique (fbbt_id -> recorded_label), with the clusters that use each
-    terms: dict[str, dict] = {}
+    release = terms
+    terms = {}
     for f in sorted(mdir.glob("*.fbbt_mapping.json")):
         m = json.loads(f.read_text())
         for bm in [m.get("best_match") or {}] + (m.get("additional_matches") or []):
@@ -61,7 +117,7 @@ def verify(project: str) -> tuple[dict, list]:
 
     problems = []
     for fid, info in sorted(terms.items()):
-        doc = lookup(fid)
+        doc = release.get(fid) if release is not None else lookup(fid)
         if doc is None:
             problems.append((fid, "NOT FOUND in current FBbt", info))
         elif doc.get("is_obsolete"):

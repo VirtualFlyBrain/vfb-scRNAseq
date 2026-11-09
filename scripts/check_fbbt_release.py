@@ -3,8 +3,9 @@
 
 Reads the FBbt release last verified from `checks/fbbt_last_checked.json` and asks
 OLS for the current FBbt release. If it is the same, exits 0 without checking terms.
-If it is new (or nothing is recorded), runs `verify_mappings.verify` for every project
-with mappings; when every term is current, non-obsolete and still carries its recorded
+If it is new (or nothing is recorded), downloads that release's fbbt-simple.obo once
+and runs `verify_mappings.verify` against it for every project with mappings (one
+download rather than an OLS query per term; requests are retried on server errors); when every term is current, non-obsolete and still carries its recorded
 label, the record is updated to the new release. If any term fails, the record is NOT
 updated (so the next run re-checks) and the exit code is 1.
 
@@ -49,7 +50,7 @@ OLS_SEARCH = "https://www.ebi.ac.uk/ols4/api/search"
 
 def current_release() -> dict:
     req = urllib.request.Request(OLS_FBBT, headers={"User-Agent": "vfb-scrnaseq/0.0"})
-    with urllib.request.urlopen(req, timeout=60) as r:  # noqa: S310
+    with _verify_module().urlopen_retry(req, timeout=60) as r:
         cfg = json.load(r)["config"]
     return {"version": cfg.get("version"), "version_iri": cfg.get("versionIri")}
 
@@ -58,7 +59,7 @@ def _get_json(url: str, token: str | None = None) -> dict:
     headers = {"User-Agent": "vfb-scrnaseq/0.0", "Accept": "application/json"}
     if token:
         headers["Authorization"] = f"Bearer {token}"
-    with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=60) as r:  # noqa: S310
+    with _verify_module().urlopen_retry(urllib.request.Request(url, headers=headers), timeout=60) as r:
         return json.load(r)
 
 
@@ -184,11 +185,13 @@ def main() -> int:
     pending_changed = check_pending(rel, dry_run=args.dry_run)
 
     print(f"FBbt {rel['version']} (last verified: {record.get('version') or 'never'}) — verifying all mappings")
-    verify = _verify_module().verify
+    vm = _verify_module()
+    release = vm.release_terms(rel["version"])
+    print(f"  {len(release)} terms in {vm.RELEASE_OBO.format(version=rel['version'])}")
     projects = sorted(p.parent.name for p in (REPO_ROOT / "projects").glob("*/mapping"))
     results, failed = {}, False
     for project in projects:
-        terms, problems = verify(project)
+        terms, problems = vm.verify(project, release)
         results[project] = {"terms": len(terms), "problems": len(problems)}
         print(f"  {project}: {len(terms)} terms, {len(problems)} problem(s)")
         for fid, msg, info in problems:
@@ -211,6 +214,7 @@ def main() -> int:
         "version_iri": rel["version_iri"],
         "checked_at": dt.date.today().isoformat(),
         "source": OLS_FBBT,
+        "terms_from": vm.RELEASE_OBO.format(version=rel["version"]),
         "projects": results,
     }, indent=2) + "\n")
     print(f"\nAll terms OK; recorded FBbt {rel['version']} in {RECORD}")
