@@ -940,9 +940,10 @@ committed maps list them, so no GEO files are needed) and, if any id or symbol u
 the expression output changed, opens an issue with the counts and the commands to run
 (`update_gene_ids.py` → `build_expression.py` → `build_rdf.py`). No change → the
 release is recorded without an issue; Chado unreachable from CI → the issue is opened
-without counts. `checks/flybase_release_check.json` makes each release reported once.
+without counts. Maps already at the current release → the release is recorded (nothing to
+check). `checks/flybase_release_check.json` makes each release handled once.
 The full rebuild is not automated (it needs the GEO matrices / h5ad files and ROBOT).
-(`checks/flybase_release_check.json` is created on the first FlyBase release check.) Not run on PRs: it needs OLS, which is
+Not run on PRs: it needs OLS, which is
 sometimes unavailable.
 
 ### 2026-10 regeneration under the general curation rules

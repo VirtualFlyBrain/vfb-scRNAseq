@@ -8,7 +8,8 @@ input gene ids (or, for h5ad projects, symbols without ids) against FlyBase Chad
 by the expression output has changed, it opens an issue in this repo with the counts
 and the commands to run (`update_gene_ids.py`, `build_expression.py`, `build_rdf.py`); if nothing
 changed, it records the release without an issue. If Chado can't be reached, the
-issue is still opened, without counts.
+issue is still opened, without counts. If the maps are already at the current release,
+it records the release (nothing to check).
 
 Each release is handled once: `checks/flybase_release_check.json` records the last
 release checked.
@@ -81,9 +82,13 @@ def main() -> int:
     maps = sorted(REPO_ROOT.glob("projects/*/gene_id_map.tsv"))
     behind = {p.parent.name: ug.map_release(p) for p in maps if ug.map_release(p) != release}
     record = json.loads(RECORD.read_text()) if RECORD.exists() else {}
-    if not behind or record.get("release") == release:
-        print(f"FlyBase {full}: gene id maps {'current' if not behind else 'already reported'}; nothing to do")
+    if record.get("release") == release:
+        print(f"FlyBase {full}: already checked on {record.get('checked_at')}; nothing to do")
         _output(changed=False)
+        return 0
+    if not behind:
+        print(f"FlyBase {full}: gene id maps current; nothing to check")
+        _record(release, full, args.dry_run, maps_current=True)
         return 0
 
     print(f"FlyBase {full}; gene id maps at: {behind}")
@@ -128,14 +133,20 @@ def main() -> int:
     else:
         print("  no gene id or symbol used by the expression output changed; no issue")
 
-    if not args.dry_run:
-        RECORD.parent.mkdir(exist_ok=True)
-        RECORD.write_text(json.dumps({"release": release, "release_text": full,
-                                      "checked_at": dt.date.today().isoformat(),
-                                      "chado_queried": chado_ok, "changes": results,
-                                      "issue": issue}, indent=2) + "\n")
-        _output(changed=True)
+    _record(release, full, args.dry_run, maps_current=False, chado_queried=chado_ok,
+            changes=results, issue=issue)
     return 0
+
+
+def _record(release: str, full: str, dry_run: bool, **fields) -> None:
+    """Write the release record (so the release is handled once), unless a dry run."""
+    if dry_run:
+        _output(changed=False)
+        return
+    RECORD.parent.mkdir(exist_ok=True)
+    RECORD.write_text(json.dumps({"release": release, "release_text": full,
+                                  "checked_at": dt.date.today().isoformat(), **fields}, indent=2) + "\n")
+    _output(changed=True)
 
 
 if __name__ == "__main__":

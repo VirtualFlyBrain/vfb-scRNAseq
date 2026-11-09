@@ -232,9 +232,23 @@ def test_flybase_chado_unreachable_still_opens_issue(tmp_path, monkeypatch):
     assert mod.main() == 0 and len(opened) == 1 and "could not be queried" in opened[0][1]
 
 
-def test_flybase_same_release_does_nothing(tmp_path, monkeypatch):
+def test_flybase_maps_current_records_release_once(tmp_path, monkeypatch):
     mod, opened = _flybase(tmp_path, monkeypatch, "FB2026_03, released September 17, 2026",
                            lambda ids: (_ for _ in ()).throw(AssertionError("queried")))
+    out = tmp_path / "gh_output"
+    monkeypatch.setenv("GITHUB_OUTPUT", str(out))
+    record = tmp_path / "checks" / "flybase_release_check.json"
+    assert mod.main() == 0 and opened == []
+    rec = json.loads(record.read_text())
+    assert rec["release"] == "FB2026_03" and rec["maps_current"] is True
+    assert out.read_text() == "changed=true\n"
+    assert mod.main() == 0 and out.read_text() == "changed=true\nchanged=false\n"   # once per release
+
+
+def test_flybase_maps_current_dry_run_writes_nothing(tmp_path, monkeypatch):
+    mod, opened = _flybase(tmp_path, monkeypatch, "FB2026_03, released September 17, 2026",
+                           lambda ids: (_ for _ in ()).throw(AssertionError("queried")))
+    monkeypatch.setattr("sys.argv", ["check_flybase_release.py", "--dry-run"])
     assert mod.main() == 0 and opened == []
     assert not (tmp_path / "checks" / "flybase_release_check.json").exists()
 
