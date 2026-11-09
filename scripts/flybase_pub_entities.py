@@ -20,8 +20,10 @@ import json
 import re
 import subprocess
 import sys
+from pathlib import Path
 import urllib.request
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))  # finds scripts/chado.py when loaded by path
 from chado import psql as _psql  # VFB's Chado copy first, FlyBase's as fallback (FB_CHADO_HOST overrides)
 VFB_PDB = "https://pdb.virtualflybrain.org/db/neo4j/tx/commit"
 PREFIXES = ("FBco", "FBal", "FBti", "FBtp", "FBst")

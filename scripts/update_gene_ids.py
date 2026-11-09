@@ -64,6 +64,7 @@ sys.path.insert(0, str(REPO_ROOT / "src"))
 from vfb_scrnaseq.ingest_h5ad import expression_h5ads, read_genes  # noqa: E402
 from vfb_scrnaseq.project_config import load_config  # noqa: E402
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))  # finds scripts/chado.py when loaded by path
 from chado import psql as _psql  # VFB's Chado copy first, FlyBase's as fallback (FB_CHADO_HOST overrides)
 COLUMNS = ["input_fbgn", "input_symbol", "status", "current_fbgn", "current_symbol"]
 

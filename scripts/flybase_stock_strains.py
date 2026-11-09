@@ -17,7 +17,9 @@ import argparse
 import re
 import subprocess
 import sys
+from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))  # finds scripts/chado.py when loaded by path
 from chado import psql as _psql  # VFB's Chado copy first, FlyBase's as fallback (FB_CHADO_HOST overrides)
 BY_STOCK = """
 select substring(sp.value from '@(FBst[0-9]{{7}}):'), s.uniquename, s.name
