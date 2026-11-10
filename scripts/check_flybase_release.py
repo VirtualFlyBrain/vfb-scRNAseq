@@ -31,6 +31,9 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO_ROOT / "src"))
+from vfb_scrnaseq import gene_ids as ug  # noqa: E402
+
 RECORD = REPO_ROOT / "checks" / "flybase_release_check.json"
 
 
@@ -70,7 +73,6 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true", help="print the issue instead of opening it")
     args = ap.parse_args()
 
-    ug = _script("update_gene_ids")
     open_issue = _script("check_fbbt_release").open_issue
     full = ug.flybase_release()
     m = re.match(r"(FB\d{4}_\d{2})", full)

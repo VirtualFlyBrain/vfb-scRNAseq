@@ -2,7 +2,7 @@ import os
 import subprocess
 from unittest import mock
 
-import chado
+from vfb_scrnaseq import chado
 
 
 def _ok(*a, **k):

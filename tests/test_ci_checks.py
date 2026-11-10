@@ -180,7 +180,7 @@ def test_pending_request_still_open_waits(tmp_path, monkeypatch):
 
 def _flybase(tmp_path, monkeypatch, website, lookup):
     mod = _script("check_flybase_release")
-    ug = _script("update_gene_ids")
+    ug = mod.ug
     proj = tmp_path / "projects" / "p"
     proj.mkdir(parents=True)
     (proj / "gene_id_map.tsv").write_text(
@@ -199,7 +199,7 @@ def _flybase(tmp_path, monkeypatch, website, lookup):
         def open_issue(title, body, dry_run):
             opened.append((title, body))
             return "issue-url"
-    monkeypatch.setattr(mod, "_script", lambda name: ug if name == "update_gene_ids" else _Fbbt)
+    monkeypatch.setattr(mod, "_script", lambda name: _Fbbt)
     monkeypatch.setattr("sys.argv", ["check_flybase_release.py"])
     return mod, opened
 
@@ -255,7 +255,7 @@ def test_flybase_maps_current_dry_run_writes_nothing(tmp_path, monkeypatch):
 
 def test_gene_ids_by_symbol(monkeypatch):
     """h5ad projects: ids where the files give them, else by symbol; rows keep input order."""
-    ug = _script("update_gene_ids")
+    from vfb_scrnaseq import gene_ids as ug
     monkeypatch.setattr(ug, "chado_lookup", lambda ids: {"FBgn0000001": [("current", "FBgn0000001", "a")]})
     monkeypatch.setattr(ug, "chado_symbol_lookup", lambda syms: {
         "cur": [("current", "FBgn0000002", "cur"), ("synonym", "FBgn0000009", "other")],  # current wins
@@ -281,7 +281,7 @@ def test_pending_review_issue_opens_revisit_reminder(tmp_path, monkeypatch):
 
 
 def test_symbol_majority_tiebreak():
-    mod = _script("update_gene_ids")
+    from vfb_scrnaseq import gene_ids as mod
     hits = {"Cha": [("synonym", "FBgn0000303", "ChAT", 41), ("synonym", "FBgn0000302", "cha", 2)],
             "Cry": [("synonym", "FBgn0005664", "Crys", 6), ("synonym", "FBgn0025680", "cry", 4)]}
     rows = {r["input_symbol"]: r for r in mod.classify_symbols(["Cha", "Cry"], hits)}
@@ -408,3 +408,19 @@ def test_entity_links_repo_metadata_passes():
     chk = _script("check_entity_links")
     files = sorted((REPO / "metadata").glob("vfb_scRNAseq_metadata_*.owl"))
     assert chk.check(chk.load_graph(files), chk.exemptions()) == []
+
+
+def test_mint_external_ids(tmp_path):
+    from vfb_scrnaseq.ids import IDRegistry
+    mod = _script("mint_external_ids")
+    reg = IDRegistry.load(tmp_path / "registry.json")
+    reg.mint("Dataset", "GSE1")                                    # already registered
+    rows = [{"entity_type": "Dataset", "natural_key": "GSE1", "label": "", "accession": ""},
+            {"entity_type": "Sample", "natural_key": "GSE1:SAMN1", "label": "s1", "accession": "SAMN1"}]
+    out = mod.mint(rows, reg)
+    assert [r["id"] for r in out] == ["VFBseq_00000001", "VFBseq_00000002"]
+    assert mod.mint(rows, reg) == out                              # idempotent
+    with pytest.raises(ValueError, match="repeated"):
+        mod.mint(rows + rows[:1], reg)
+    with pytest.raises(ValueError, match="unknown entity_type"):
+        mod.mint([{"entity_type": "Gene", "natural_key": "x"}], reg)

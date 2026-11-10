@@ -38,9 +38,29 @@ on VFB's OWL server (2026-11-02). The schema `id` and the `Container` type keep 
 `http://github.org/vfb/vfb-scRNAseq-ontology/` namespace: they are identifiers, not
 links. Some builds still download files from it by raw URL (archived repos stay
 readable): vfb-scRNAseq-gene-annotations its `FBgn_list.txt`, vfb-EPseq-ontology its
-schema, and vfb-region-connectivity / vfb-neurotransmitter-predictions its
+schema (until its migration, below), and vfb-region-connectivity / vfb-neurotransmitter-predictions its
 `cypher_query.py`. Remaining clean-up: legacy
 FlyBase / TSV-loader wording in some slot descriptions.
+
+### Use from other repos (vfb-EPseq-ontology)
+
+vfb-EPseq-ontology (Davis 2020 TAPIN-seq, bulk RNA-seq of driver-sorted neurons) is
+being moved to this repo's way of working (decided 2026-11-10). It installs this
+package as a uv git dependency and keeps its own data; what it shares:
+
+- **Schema:** an *extension schema* there imports this one as `vfb_scrnaseq` and adds
+  only what EPseq needs (a `DriverSample` subclass of Sample, typed by its driver's
+  `VFBexp_` class, and its own tree_root container), so nothing EPseq-specific goes in
+  the master schema. `emit.load_schema` resolves the import to the installed schema
+  file; `emit_owl` / `emit_ttl` / `validate` / `emit_expression_owl` take the extension's
+  `schema_path`, and linkml-data2owl (which does not follow imports) gets a merged copy.
+  Entity records are grouped by the container's list slots, so a `DriverSample`
+  record goes under the extension container's list for it.
+- **Gene ids:** `vfb_scrnaseq.gene_ids` (Chado lookups, classification, gene_id_map.tsv
+  read/write, the FlyBase release) and `vfb_scrnaseq.chado`.
+- **Ids:** VFBseq ids are minted *here* so they stay unique: the other repo writes a key
+  list and `scripts/mint_external_ids.py` registers it and writes the ids back for that
+  repo to commit (a PR here for the registry change).
 
 ### Pipeline (cell-type-annotation focus)
 
