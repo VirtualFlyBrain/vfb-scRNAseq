@@ -11,6 +11,11 @@ Rather than hand-building triples, this drives the LinkML CLIs against a
 
 ``emit_expression_owl`` renders the expression axioms directly from the schema's
 gene template (too many for linkml-owl), then ROBOT-converts and gzips them.
+
+Every function takes an optional ``schema_path``: the master schema (default), or an
+*extension* schema in another repo (e.g. vfb-EPseq-ontology) that imports the master
+one as ``vfb_scrnaseq`` and adds its own subclasses and tree_root container. See
+:func:`load_schema`.
 """
 
 from __future__ import annotations
@@ -21,10 +26,13 @@ import subprocess
 import sys
 import sysconfig
 import tempfile
+from dataclasses import dataclass
+from functools import lru_cache
 from pathlib import Path
 
 import yaml
 from linkml_runtime import SchemaView
+from linkml_runtime.dumpers import yaml_dumper
 from rdflib import Graph, RDF, URIRef
 
 
@@ -34,54 +42,90 @@ def _script(name: str) -> str:
     return p if os.path.exists(p) else name
 
 SCHEMA_PATH = Path(__file__).parent / "schema" / "VFB_scRNAseq_schema.yaml"
-CONTAINER_TYPE = URIRef("http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/Container")
-
-ENTITY_GROUPS = {
-    "Dataset": "datasets", "Sample": "samples", "Assay": "assays",
-    "Clustering": "clusterings", "Cluster": "clusters", "Publication": "publications",
-}
+#: Name an extension schema imports the master schema by (`imports: [vfb_scrnaseq]`).
+SCHEMA_IMPORT_NAME = "vfb_scrnaseq"
 
 
-def container_from_entities(entities: list[dict]) -> dict:
+@dataclass(frozen=True)
+class Schema:
+    """A schema as the LinkML CLIs need it.
+
+    ``path`` is the file passed to the CLIs: the schema itself, or for an extension
+    schema a merged copy (linkml-data2owl does not follow imports). ``container`` is
+    the tree_root class declared in the schema's own file, and ``groups`` maps each
+    entity type to its list slot on that container.
+    """
+
+    path: Path
+    view: SchemaView
+    container: str
+    container_uri: URIRef
+    groups: dict[str, str]
+
+
+@lru_cache
+def load_schema(schema_path: str | Path = SCHEMA_PATH) -> Schema:
+    """Load the master schema or an extension of it (resolving `vfb_scrnaseq`)."""
+    schema_path = Path(schema_path).resolve()
+    importmap = {SCHEMA_IMPORT_NAME: str(SCHEMA_PATH.with_suffix(""))}
+    view = SchemaView(str(schema_path), importmap=importmap)
+    roots = [n for n, c in view.schema.classes.items() if c.tree_root]
+    if len(roots) != 1:
+        raise ValueError(f"{schema_path}: expected one tree_root class in the file, found {roots}")
+    container = roots[0]
+    groups = {s.range: s.name for s in view.class_induced_slots(container)}
+    path = schema_path
+    if schema_path != SCHEMA_PATH.resolve():
+        view.merge_imports()
+        path = Path(tempfile.mkdtemp()) / schema_path.name
+        yaml_dumper.dump(view.schema, str(path))
+        view = SchemaView(str(path))
+    return Schema(path, view, container, URIRef(view.get_uri(container, expand=True)), groups)
+
+
+def container_from_entities(entities: list[dict], schema_path: str | Path = SCHEMA_PATH) -> dict:
     """Group flat entity records into the tree_root Container shape."""
-    cont: dict[str, list] = {g: [] for g in ENTITY_GROUPS.values()}
+    groups = load_schema(schema_path).groups
+    cont: dict[str, list] = {g: [] for g in groups.values()}
     for e in entities:
-        group = ENTITY_GROUPS[e["type"]]
-        cont[group].append({k: v for k, v in e.items() if k != "type"})
+        if e["type"] not in groups:
+            raise ValueError(f"entity type {e['type']!r} has no list on the schema's container")
+        cont[groups[e["type"]]].append({k: v for k, v in e.items() if k != "type"})
     return {k: v for k, v in cont.items() if v}
 
 
-def validate(container: dict, schema_path: Path = SCHEMA_PATH) -> None:
-    """Run linkml-validate on the container; raise with the report on failure."""
+def _dump(container: dict) -> str:
     with tempfile.NamedTemporaryFile("w", suffix=".yaml", delete=False) as fh:
         yaml.safe_dump(container, fh, sort_keys=False)
-        data_path = fh.name
-    r = subprocess.run([_script("linkml-validate"), "-s", str(schema_path), data_path],
-                       capture_output=True, text=True)
+        return fh.name
+
+
+def validate(container: dict, schema_path: str | Path = SCHEMA_PATH) -> None:
+    """Run linkml-validate on the container; raise with the report on failure."""
+    sch = load_schema(schema_path)
+    r = subprocess.run([_script("linkml-validate"), "-s", str(sch.path), "-C", sch.container,
+                        _dump(container)], capture_output=True, text=True)
     if r.returncode != 0 or "No issues found" not in r.stdout:
         raise RuntimeError(f"linkml-validate failed:\n{r.stdout}\n{r.stderr}")
 
 
 def emit_ttl(entities: list[dict], out_path: str | Path,
-             schema_path: Path = SCHEMA_PATH, do_validate: bool = True) -> Path:
+             schema_path: str | Path = SCHEMA_PATH, do_validate: bool = True) -> Path:
     """Validate then convert entities to Turtle via the LinkML CLIs."""
-    container = container_from_entities(entities)
-    with tempfile.NamedTemporaryFile("w", suffix=".yaml", delete=False) as fh:
-        yaml.safe_dump(container, fh, sort_keys=False)
-        data_path = fh.name
-
+    sch = load_schema(schema_path)
+    container = container_from_entities(entities, schema_path)
     if do_validate:
         validate(container, schema_path)
 
-    r = subprocess.run([_script("linkml-convert"), "-s", str(schema_path), "-t", "ttl", data_path],
-                       capture_output=True, text=True)
+    r = subprocess.run([_script("linkml-convert"), "-s", str(sch.path), "-C", sch.container,
+                        "-t", "ttl", _dump(container)], capture_output=True, text=True)
     if r.returncode != 0:
         raise RuntimeError(f"linkml-convert failed:\n{r.stderr}")
 
     g = Graph()
     g.parse(data=r.stdout, format="turtle")
     # strip the tree_root Container index node (not domain data)
-    for cnode in list(g.subjects(RDF.type, CONTAINER_TYPE)):
+    for cnode in list(g.subjects(RDF.type, sch.container_uri)):
         for triple in list(g.triples((cnode, None, None))):
             g.remove(triple)
     out_path = Path(out_path)
@@ -90,7 +134,7 @@ def emit_ttl(entities: list[dict], out_path: str | Path,
 
 
 def emit_owl(entities: list[dict], out_path: str | Path,
-             schema_path: Path = SCHEMA_PATH, do_validate: bool = True) -> Path:
+             schema_path: str | Path = SCHEMA_PATH, do_validate: bool = True) -> Path:
     """Emit OWL via linkml-owl, honouring the schema's owl.fstring/owl.template
     annotations (ClassAssertions, ObjectSomeValuesFrom restrictions, and the
     annotated expression axioms) — the VFB-pipeline-compatible representation.
@@ -98,15 +142,14 @@ def emit_owl(entities: list[dict], out_path: str | Path,
     Output format follows the file extension (.ofn functional syntax, .owl RDF/XML,
     .ttl Turtle).
     """
-    container = container_from_entities(entities)
+    sch = load_schema(schema_path)
+    container = container_from_entities(entities, schema_path)
     if do_validate:
         validate(container, schema_path)
-    with tempfile.NamedTemporaryFile("w", suffix=".yaml", delete=False) as fh:
-        yaml.safe_dump(container, fh, sort_keys=False)
-        data_path = fh.name
     out_path = Path(out_path)
     r = subprocess.run(
-        [_script("linkml-data2owl"), "-s", str(schema_path), data_path, "-o", str(out_path)],
+        [_script("linkml-data2owl"), "-s", str(sch.path), "-C", sch.container, _dump(container),
+         "-o", str(out_path)],
         capture_output=True, text=True)
     if r.returncode != 0:
         raise RuntimeError(f"linkml-data2owl failed:\n{r.stdout}\n{r.stderr}")
@@ -120,7 +163,7 @@ def _gene_template(sv: SchemaView) -> str:
     return a.value
 
 
-def emit_expression_owl(rows, out_owl_gz: str | Path, schema_path: Path = SCHEMA_PATH,
+def emit_expression_owl(rows, out_owl_gz: str | Path, schema_path: str | Path = SCHEMA_PATH,
                         hide: str = "true") -> Path:
     """Emit the per-(cluster,gene) expression axioms as gzipped OWL/XML.
 
@@ -132,7 +175,7 @@ def emit_expression_owl(rows, out_owl_gz: str | Path, schema_path: Path = SCHEMA
 
     import jinja2
 
-    sv = SchemaView(str(schema_path))
+    sv = load_schema(schema_path).view
     tmpl = jinja2.Template(_gene_template(sv))
     header = "\n".join(f"Prefix({p}:=<{o.prefix_reference}>)" for p, o in sv.schema.prefixes.items())
 

@@ -45,7 +45,7 @@ def _graph(tmp_path):
 def test_container_node_stripped(tmp_path):
     g = _graph(tmp_path)
     # the tree_root Container index node must not leak into the emitted RDF
-    assert not list(g.subjects(RDF.type, emit.CONTAINER_TYPE))
+    assert not list(g.subjects(RDF.type, emit.load_schema().container_uri))
     schema_ns = "http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/"
     leaked = [p for p in set(g.predicates()) if str(p).startswith(schema_ns)]
     assert leaked == [], f"container slots leaked: {leaked}"
