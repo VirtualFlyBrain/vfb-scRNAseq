@@ -856,7 +856,15 @@ Mapping rules:
 
 - **secondary** id of one current gene → that gene (and its current symbol);
 - **merge** (several input ids → one current gene) → counts summed per cell before
-  extent/level, so a cell expressing both is counted once;
+  extent/level, so a cell expressing both is counted once. Summing is safe because the
+  count pipelines assign each read to at most one gene (a read on overlapping models
+  is discarded, not counted twice). Checked 2026-11-10 on every project at FB2026_03:
+  no merged pair has identical values in any cell with expression; the pairs whose
+  models overlap completely (CG30497 / CG45093, stg1 / CG11566) are zero in every
+  cell. Bulk TPM differs (vfb-EPseq-ontology): TPM estimation shares reads between
+  overlapping models, so there identical rows count once and a merge with differing
+  rows is dropped. A new dataset whose values come from such a pipeline (e.g. EM
+  read assignment) needs the same check;
 - **split** (one retired id → several current genes) → dropped, since the reads
   can't be attributed (curator decision); **withdrawn** → dropped.
 
