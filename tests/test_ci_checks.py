@@ -408,3 +408,19 @@ def test_entity_links_repo_metadata_passes():
     chk = _script("check_entity_links")
     files = sorted((REPO / "metadata").glob("vfb_scRNAseq_metadata_*.owl"))
     assert chk.check(chk.load_graph(files), chk.exemptions()) == []
+
+
+def test_mint_external_ids(tmp_path):
+    from vfb_scrnaseq.ids import IDRegistry
+    mod = _script("mint_external_ids")
+    reg = IDRegistry.load(tmp_path / "registry.json")
+    reg.mint("Dataset", "GSE1")                                    # already registered
+    rows = [{"entity_type": "Dataset", "natural_key": "GSE1", "label": "", "accession": ""},
+            {"entity_type": "Sample", "natural_key": "GSE1:SAMN1", "label": "s1", "accession": "SAMN1"}]
+    out = mod.mint(rows, reg)
+    assert [r["id"] for r in out] == ["VFBseq_00000001", "VFBseq_00000002"]
+    assert mod.mint(rows, reg) == out                              # idempotent
+    with pytest.raises(ValueError, match="repeated"):
+        mod.mint(rows + rows[:1], reg)
+    with pytest.raises(ValueError, match="unknown entity_type"):
+        mod.mint([{"entity_type": "Gene", "natural_key": "x"}], reg)
