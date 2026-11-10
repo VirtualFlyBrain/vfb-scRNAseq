@@ -6,7 +6,7 @@ Reads the current FlyBase release from flybase.org and the release recorded in e
 input gene ids (or, for h5ad projects, symbols without ids) against FlyBase Chado
 (the committed map already lists them, so no source files are needed) and compares with the committed map. If any gene id or symbol used
 by the expression output has changed, it opens an issue in this repo with the counts
-and the commands to run (`update_gene_ids.py`, `build_expression.py`, `build_rdf.py`); if nothing
+and the commands to run (`update_gene_ids.py`, `check_merged_genes.py`, `build_expression.py`, `build_rdf.py`); if nothing
 changed, it records the release without an issue. If Chado can't be reached, the
 issue is still opened, without counts. If the maps are already at the current release,
 it records the release (nothing to check).
@@ -125,9 +125,10 @@ def main() -> int:
         lines += ["", "To update (needs `psql` 17+ for VFB's Chado copy, or any `psql` for chado.flybase.org, and the source files in `.cache/`):",
                   "```sh"]
         for project in behind:
-            lines += [f"uv run python scripts/update_gene_ids.py  --project {project}",
-                      f"uv run python scripts/build_expression.py --project {project}",
-                      f"uv run python scripts/build_rdf.py        --project {project}"]
+            lines += [f"uv run python scripts/update_gene_ids.py    --project {project}",
+                      f"uv run python scripts/check_merged_genes.py --project {project}",
+                      f"uv run python scripts/build_expression.py   --project {project}",
+                      f"uv run python scripts/build_rdf.py          --project {project}"]
         lines += ["```", "Then update the projects' provenance and open a PR.",
                   "", "_Opened automatically by the weekly release check._"]
         issue = open_issue(f"Update gene ids to FlyBase {release}", "\n".join(lines), args.dry_run)

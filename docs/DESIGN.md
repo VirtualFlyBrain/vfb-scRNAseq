@@ -863,8 +863,11 @@ Mapping rules:
   models overlap completely (CG30497 / CG45093, stg1 / CG11566) are zero in every
   cell. Bulk TPM differs (vfb-EPseq-ontology): TPM estimation shares reads between
   overlapping models, so there identical rows count once and a merge with differing
-  rows is dropped. A new dataset whose values come from such a pipeline (e.g. EM
-  read assignment) needs the same check;
+  rows is dropped. `scripts/check_merged_genes.py` (`--project` / `--all`; reads the
+  matrices in `.cache`, so not in CI) compares each merged gene's inputs cell by cell
+  and fails on a pair with expression and identical values: run it for a new dataset
+  and after a FlyBase release changes the merges, and if it fails, treat that gene as
+  EPseq does;
 - **split** (one retired id → several current genes) → dropped, since the reads
   can't be attributed (curator decision); **withdrawn** → dropped.
 
@@ -966,7 +969,7 @@ reports a release newer than the one recorded in the projects' `gene_id_map.tsv`
 headers, it re-classifies each project's input gene ids against FlyBase Chado (the
 committed maps list them, so no GEO files are needed) and, if any id or symbol used by
 the expression output changed, opens an issue with the counts and the commands to run
-(`update_gene_ids.py` → `build_expression.py` → `build_rdf.py`). No change → the
+(`update_gene_ids.py` → `check_merged_genes.py` → `build_expression.py` → `build_rdf.py`). No change → the
 release is recorded without an issue; Chado unreachable from CI → the issue is opened
 without counts. Maps already at the current release → the release is recorded (nothing to
 check). `checks/flybase_release_check.json` makes each release handled once.
@@ -1118,7 +1121,8 @@ VFB until the release files are merged, so ids can still change during review.
 8. **Review:** `collate_mapping.py` → `mapping.tsv` (optionally with a `prior_mapping`
    crosswalk to the old load); curator changes are made in the mapping JSON with a
    `manual_edit` block.
-9. **Build:** `update_gene_ids.py` (current FlyBase genes) → `build_rdf.py` (mints
+9. **Build:** `update_gene_ids.py` (current FlyBase genes) → `check_merged_genes.py`
+   (the counts of genes FlyBase merged can be summed) → `build_rdf.py` (mints
    Cluster ids) → `build_expression.py` →
    `build_rdf.py` again (gene counts) → `verify_mappings.py`.
 10. **Record:** `provenance.json` (ontology versions, files + sha256, software,
