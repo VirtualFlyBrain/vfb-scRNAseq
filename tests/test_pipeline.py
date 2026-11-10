@@ -236,7 +236,7 @@ def test_update_gene_ids_annotation_id_features(tmp_path, monkeypatch):
     with gzip.open(tmp_path / ".cache" / "f" / "features.tsv.gz", "wt") as fh:
         fh.write("Dmel_CG31240\tDmel_CG31240\tGene Expression\nDmel_CG0000\tDmel_CG0000\tGene Expression\n")
     monkeypatch.setattr(mod, "REPO_ROOT", tmp_path)
-    monkeypatch.setattr(mod, "chado_annotation_lookup", lambda ids: {"CG31240": "FBgn0011701"})
+    monkeypatch.setattr(mod.gene_ids, "chado_annotation_lookup", lambda ids: {"CG31240": "FBgn0011701"})
     cfg = {"expression": {"features_file": "f/features.tsv.gz", "features_keyed_by": "annotation_id",
                           "annotation_id_prefix": "Dmel_"}}
     assert mod.features(cfg) == [("FBgn0011701", "Dmel_CG31240"), ("", "Dmel_CG0000")]

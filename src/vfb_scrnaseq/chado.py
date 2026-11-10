@@ -1,4 +1,4 @@
-"""Which FlyBase Chado server the scripts query.
+"""Which FlyBase Chado server to query.
 
 VFB's own copy first (chado.flybase.virtualflybrain.org, Postgres 17 "direct SSL" on port 443, so it needs psql 17
 or newer), then FlyBase's public server. FB_CHADO_HOST overrides the list: comma-separated host or host:port.
