@@ -212,7 +212,7 @@ def test_flybase_newer_release_with_changes_opens_issue_once(tmp_path, monkeypat
     assert mod.main() == 0 and len(opened) == 1
     title, body = opened[0]
     assert "FB2026_04" in title and "1 id change(s)" in body and "1 symbol change(s)" in body
-    assert "update_gene_ids.py  --project p" in body
+    assert "update_gene_ids.py    --project p" in body and "check_merged_genes.py --project p" in body
     assert mod.main() == 0 and len(opened) == 1                      # same release: not re-reported
 
 

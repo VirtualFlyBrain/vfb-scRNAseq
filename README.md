@@ -206,6 +206,7 @@ uv run python scripts/collate_mapping.py            --project kurmangaliyev_2020
 uv run python scripts/verify_mappings.py            --project kurmangaliyev_2020   # FBbt terms current (OLS)
 uv run python scripts/build_rdf.py                  --project kurmangaliyev_2020   # -> .ttl + .ofn + metadata/*.owl (mints Cluster ids)
 uv run python scripts/update_gene_ids.py            --project kurmangaliyev_2020   # needs psql (FlyBase Chado)
+uv run python scripts/check_merged_genes.py         --project kurmangaliyev_2020   # merged genes' counts can be summed
 uv run python scripts/build_expression.py           --project kurmangaliyev_2020   # -> expression/*.owl.gz
 uv run python scripts/build_rdf.py                  --project kurmangaliyev_2020   # again: adds the gene counts
 
