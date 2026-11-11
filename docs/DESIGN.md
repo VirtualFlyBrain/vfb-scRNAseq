@@ -103,6 +103,12 @@ harmless. Branches pushed from another clone and not yet fetched are not seen, s
 load-time check stays the backstop: re-mint one side when merging. A published id is
 never re-minted.
 
+**Ids are not final until published on the live VFB site** (virtualflybrain.org), here
+and for ids minted for other repos (vfb-EPseq-ontology). Until an entity is in a VFB
+release, anything about it may change: re-keyed, re-minted or dropped, with its
+mappings and output files (a dropped id leaves a gap, which is harmless). Once it is
+live its id is fixed.
+
 GEO/SRA accessions (GSE / GSM / PRJNA / SRP / GPL) are **cross-references**,
 carried in the schema's `site` / `accession` slots and dbxrefs — **never** used
 as the IRI.
