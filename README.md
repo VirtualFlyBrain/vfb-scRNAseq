@@ -50,6 +50,9 @@ Every published entity gets an opaque, registry-backed **`VFBseq_########`** IRI
 `site` / `accession` slots — never used as the IRI. (Identifiers previously came
 from FlyBase; that authority is being dropped.)
 
+Ids are not final until published on the live VFB site: until an entity is in a VFB
+release it may still be re-keyed, re-minted or dropped (docs/DESIGN.md, *Identifiers*).
+
 ## Projects
 
 - `projects/kurmangaliyev_2020/` — Kurmangaliyev et al. 2020, *Drosophila* visual
