@@ -1,5 +1,5 @@
 {
-  "counter": 3572,
+  "counter": 3593,
   "entries": {
     "Assay::E-MTAB-10519:FCA10_Male_head_adult_5dWT_Luo_sample4_S1": {
       "accession": null,
@@ -19594,6 +19594,13 @@
       "label": "Transcriptional programs of circuit assembly in the Drosophila visual system",
       "natural_key": "GSE156455"
     },
+    "Dataset::GSE158748": {
+      "accession": "GSE158748",
+      "entity_type": "Dataset",
+      "id": "VFBseq_00003573",
+      "label": "Bulk RNA-seq data from Schretter (2020)",
+      "natural_key": "GSE158748"
+    },
     "Dataset::GSE161228": {
       "accession": "GSE161228",
       "entity_type": "Dataset",
@@ -23030,6 +23037,146 @@
       "id": "VFBseq_00000040",
       "label": "W1118_Adult_A",
       "natural_key": "GSE156455:W1118_Adult_A"
+    },
+    "Sample::GSE158748:aIPgSS3_RNAseq_rep1": {
+      "accession": "SAMN16290386",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003577",
+      "label": "aIPgSS3_RNAseq_rep1",
+      "natural_key": "GSE158748:aIPgSS3_RNAseq_rep1"
+    },
+    "Sample::GSE158748:aIPgSS3_RNAseq_rep2": {
+      "accession": "SAMN16290385",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003578",
+      "label": "aIPgSS3_RNAseq_rep2",
+      "natural_key": "GSE158748:aIPgSS3_RNAseq_rep2"
+    },
+    "Sample::GSE158748:aIPgSS4_RNAseq_rep1": {
+      "accession": "SAMN16290383",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003574",
+      "label": "aIPgSS4_RNAseq_rep1",
+      "natural_key": "GSE158748:aIPgSS4_RNAseq_rep1"
+    },
+    "Sample::GSE158748:aIPgSS4_RNAseq_rep2": {
+      "accession": "SAMN16290388",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003575",
+      "label": "aIPgSS4_RNAseq_rep2",
+      "natural_key": "GSE158748:aIPgSS4_RNAseq_rep2"
+    },
+    "Sample::GSE158748:aIPgSS4_RNAseq_rep3": {
+      "accession": "SAMN16290387",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003576",
+      "label": "aIPgSS4_RNAseq_rep3",
+      "natural_key": "GSE158748:aIPgSS4_RNAseq_rep3"
+    },
+    "Sample::GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q5_A12": {
+      "accession": "SAMN16290384",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003579",
+      "label": "pC1d_pC1de_pC1e_RNAseq_reps:Q5_A12",
+      "natural_key": "GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q5_A12"
+    },
+    "Sample::GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q5_B12": {
+      "accession": "SAMN16290384",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003580",
+      "label": "pC1d_pC1de_pC1e_RNAseq_reps:Q5_B12",
+      "natural_key": "GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q5_B12"
+    },
+    "Sample::GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q5_C12": {
+      "accession": "SAMN16290384",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003581",
+      "label": "pC1d_pC1de_pC1e_RNAseq_reps:Q5_C12",
+      "natural_key": "GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q5_C12"
+    },
+    "Sample::GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q6_A05": {
+      "accession": "SAMN16290384",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003583",
+      "label": "pC1d_pC1de_pC1e_RNAseq_reps:Q6_A05",
+      "natural_key": "GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q6_A05"
+    },
+    "Sample::GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q6_B05": {
+      "accession": "SAMN16290384",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003584",
+      "label": "pC1d_pC1de_pC1e_RNAseq_reps:Q6_B05",
+      "natural_key": "GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q6_B05"
+    },
+    "Sample::GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q6_C05": {
+      "accession": "SAMN16290384",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003585",
+      "label": "pC1d_pC1de_pC1e_RNAseq_reps:Q6_C05",
+      "natural_key": "GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q6_C05"
+    },
+    "Sample::GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q6_D05": {
+      "accession": "SAMN16290384",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003586",
+      "label": "pC1d_pC1de_pC1e_RNAseq_reps:Q6_D05",
+      "natural_key": "GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q6_D05"
+    },
+    "Sample::GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q6_E05": {
+      "accession": "SAMN16290384",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003587",
+      "label": "pC1d_pC1de_pC1e_RNAseq_reps:Q6_E05",
+      "natural_key": "GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q6_E05"
+    },
+    "Sample::GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q6_H04": {
+      "accession": "SAMN16290384",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003582",
+      "label": "pC1d_pC1de_pC1e_RNAseq_reps:Q6_H04",
+      "natural_key": "GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q6_H04"
+    },
+    "Sample::GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q8_C10": {
+      "accession": "SAMN16290384",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003591",
+      "label": "pC1d_pC1de_pC1e_RNAseq_reps:Q8_C10",
+      "natural_key": "GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q8_C10"
+    },
+    "Sample::GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q8_D10": {
+      "accession": "SAMN16290384",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003592",
+      "label": "pC1d_pC1de_pC1e_RNAseq_reps:Q8_D10",
+      "natural_key": "GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q8_D10"
+    },
+    "Sample::GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q8_E10": {
+      "accession": "SAMN16290384",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003593",
+      "label": "pC1d_pC1de_pC1e_RNAseq_reps:Q8_E10",
+      "natural_key": "GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q8_E10"
+    },
+    "Sample::GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q8_F10": {
+      "accession": "SAMN16290384",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003588",
+      "label": "pC1d_pC1de_pC1e_RNAseq_reps:Q8_F10",
+      "natural_key": "GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q8_F10"
+    },
+    "Sample::GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q8_G10": {
+      "accession": "SAMN16290384",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003589",
+      "label": "pC1d_pC1de_pC1e_RNAseq_reps:Q8_G10",
+      "natural_key": "GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q8_G10"
+    },
+    "Sample::GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q8_H10": {
+      "accession": "SAMN16290384",
+      "entity_type": "Sample",
+      "id": "VFBseq_00003590",
+      "label": "pC1d_pC1de_pC1e_RNAseq_reps:Q8_H10",
+      "natural_key": "GSE158748:pC1d_pC1de_pC1e_RNAseq_reps:Q8_H10"
     },
     "Sample::GSE161228:0h_VT033006": {
       "accession": null,
