@@ -67,8 +67,9 @@ def title_parser(pattern: str | None) -> Callable[[str], dict | None]:
     """Return a GSM-title parser for `sample_build.title_pattern`.
 
     - ``set_timepoint_biorep_techrep`` (default): underscore-split, see parse_title.
-    - ``regex:<pattern>``: full-match regex with named groups ``timepoint`` and
-      ``biorep``, and optionally ``set`` (strain/genotype group) and ``techrep``. Without ``techrep`` each GSM is its own
+    - ``regex:<pattern>``: full-match regex with a named group ``timepoint``, and
+      optionally ``biorep`` (left out when there is one sample per timepoint), ``set``
+      (strain/genotype group) and ``techrep``. Without ``techrep`` each GSM is its own
       biological sample (one library per sample). Any further named groups (e.g.
       ``tissue``) also go into the sample id, after ``set``. GSMs whose title does not match
       are not part of this dataset's scope and are skipped.
@@ -88,9 +89,9 @@ def title_parser(pattern: str | None) -> Callable[[str], dict | None]:
         return {
             "set": g.get("set"),
             "timepoint": g["timepoint"],
-            "biorep": g["biorep"],
+            "biorep": g.get("biorep"),
             "techrep": g.get("techrep"),
-            "sample_id": "_".join(v for v in (g.get("set"), *extra, g["timepoint"], g["biorep"]) if v),
+            "sample_id": "_".join(v for v in (g.get("set"), *extra, g["timepoint"], g.get("biorep")) if v),
         }
     return parse
 
@@ -212,7 +213,7 @@ def main() -> None:
             "sample_id": sample_id,
             "set": p0["set"],
             "timepoint": p0["timepoint"],
-            "biorep": p0["biorep"],
+            "biorep": p0.get("biorep"),
             "tissue_raw": gsm0.characteristic("tissue"),   # original GEO characteristics
             "age_raw": age_raw,
             "stock": sample_stock(p0, sb),                # FlyBase FBst ref(s)
@@ -232,6 +233,8 @@ def main() -> None:
         })
         if samples_out[-1]["set"] is None:
             del samples_out[-1]["set"]                 # no strain/genotype group in the titles
+        if samples_out[-1]["biorep"] is None:
+            del samples_out[-1]["biorep"]              # one sample per timepoint
         if samples_out[-1]["genotype_includes"] is None:
             del samples_out[-1]["genotype_includes"]   # recorded only where curated
 

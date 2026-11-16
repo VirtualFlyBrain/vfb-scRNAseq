@@ -1,0 +1,190 @@
+{
+  "source": {
+    "doi": "10.7554/eLife.50822",
+    "title": "Modular transcriptional programs separately define axon and dendrite connectivity"
+  },
+  "dataset": {
+    "accession": "GSE126139",
+    "label_source": "the authors' per-cell cluster files on GEO (GSM3592259_clust24.txt, GSM3592260_clust48.txt: each cell's subtype, per stage)",
+    "label_level": "author cluster (one per stage x subtype)",
+    "validate_against": "paper (per-stage clusters assigned to the eight subtypes)"
+  },
+  "annotations": [
+    {
+      "label": "24h_T4a",
+      "type": "T4a neuron",
+      "clustering": "24h",
+      "clustering_name": "Kurmangaliyev 2019 24 h APF T4/T5 clusters",
+      "source_cluster_id": "T4a",
+      "cell_number": 502,
+      "cells_by_library": {
+        "T4/T5 24h APF": 502
+      }
+    },
+    {
+      "label": "24h_T4b",
+      "type": "T4b neuron",
+      "clustering": "24h",
+      "clustering_name": "Kurmangaliyev 2019 24 h APF T4/T5 clusters",
+      "source_cluster_id": "T4b",
+      "cell_number": 425,
+      "cells_by_library": {
+        "T4/T5 24h APF": 425
+      }
+    },
+    {
+      "label": "24h_T4c",
+      "type": "T4c neuron",
+      "clustering": "24h",
+      "clustering_name": "Kurmangaliyev 2019 24 h APF T4/T5 clusters",
+      "source_cluster_id": "T4c",
+      "cell_number": 318,
+      "cells_by_library": {
+        "T4/T5 24h APF": 318
+      }
+    },
+    {
+      "label": "24h_T4d",
+      "type": "T4d neuron",
+      "clustering": "24h",
+      "clustering_name": "Kurmangaliyev 2019 24 h APF T4/T5 clusters",
+      "source_cluster_id": "T4d",
+      "cell_number": 409,
+      "cells_by_library": {
+        "T4/T5 24h APF": 409
+      }
+    },
+    {
+      "label": "24h_T5a",
+      "type": "T5a neuron",
+      "clustering": "24h",
+      "clustering_name": "Kurmangaliyev 2019 24 h APF T4/T5 clusters",
+      "source_cluster_id": "T5a",
+      "cell_number": 382,
+      "cells_by_library": {
+        "T4/T5 24h APF": 382
+      }
+    },
+    {
+      "label": "24h_T5b",
+      "type": "T5b neuron",
+      "clustering": "24h",
+      "clustering_name": "Kurmangaliyev 2019 24 h APF T4/T5 clusters",
+      "source_cluster_id": "T5b",
+      "cell_number": 383,
+      "cells_by_library": {
+        "T4/T5 24h APF": 383
+      }
+    },
+    {
+      "label": "24h_T5c",
+      "type": "T5c neuron",
+      "clustering": "24h",
+      "clustering_name": "Kurmangaliyev 2019 24 h APF T4/T5 clusters",
+      "source_cluster_id": "T5c",
+      "cell_number": 318,
+      "cells_by_library": {
+        "T4/T5 24h APF": 318
+      }
+    },
+    {
+      "label": "24h_T5d",
+      "type": "T5d neuron",
+      "clustering": "24h",
+      "clustering_name": "Kurmangaliyev 2019 24 h APF T4/T5 clusters",
+      "source_cluster_id": "T5d",
+      "cell_number": 334,
+      "cells_by_library": {
+        "T4/T5 24h APF": 334
+      }
+    },
+    {
+      "label": "48h_T4a",
+      "type": "T4a neuron",
+      "clustering": "48h",
+      "clustering_name": "Kurmangaliyev 2019 48 h APF T4/T5 clusters",
+      "source_cluster_id": "T4a",
+      "cell_number": 474,
+      "cells_by_library": {
+        "T4/T5 48h APF": 474
+      }
+    },
+    {
+      "label": "48h_T4b",
+      "type": "T4b neuron",
+      "clustering": "48h",
+      "clustering_name": "Kurmangaliyev 2019 48 h APF T4/T5 clusters",
+      "source_cluster_id": "T4b",
+      "cell_number": 521,
+      "cells_by_library": {
+        "T4/T5 48h APF": 521
+      }
+    },
+    {
+      "label": "48h_T4c",
+      "type": "T4c neuron",
+      "clustering": "48h",
+      "clustering_name": "Kurmangaliyev 2019 48 h APF T4/T5 clusters",
+      "source_cluster_id": "T4c",
+      "cell_number": 398,
+      "cells_by_library": {
+        "T4/T5 48h APF": 398
+      }
+    },
+    {
+      "label": "48h_T4d",
+      "type": "T4d neuron",
+      "clustering": "48h",
+      "clustering_name": "Kurmangaliyev 2019 48 h APF T4/T5 clusters",
+      "source_cluster_id": "T4d",
+      "cell_number": 454,
+      "cells_by_library": {
+        "T4/T5 48h APF": 454
+      }
+    },
+    {
+      "label": "48h_T5a",
+      "type": "T5a neuron",
+      "clustering": "48h",
+      "clustering_name": "Kurmangaliyev 2019 48 h APF T4/T5 clusters",
+      "source_cluster_id": "T5a",
+      "cell_number": 432,
+      "cells_by_library": {
+        "T4/T5 48h APF": 432
+      }
+    },
+    {
+      "label": "48h_T5b",
+      "type": "T5b neuron",
+      "clustering": "48h",
+      "clustering_name": "Kurmangaliyev 2019 48 h APF T4/T5 clusters",
+      "source_cluster_id": "T5b",
+      "cell_number": 435,
+      "cells_by_library": {
+        "T4/T5 48h APF": 435
+      }
+    },
+    {
+      "label": "48h_T5c",
+      "type": "T5c neuron",
+      "clustering": "48h",
+      "clustering_name": "Kurmangaliyev 2019 48 h APF T4/T5 clusters",
+      "source_cluster_id": "T5c",
+      "cell_number": 407,
+      "cells_by_library": {
+        "T4/T5 48h APF": 407
+      }
+    },
+    {
+      "label": "48h_T5d",
+      "type": "T5d neuron",
+      "clustering": "48h",
+      "clustering_name": "Kurmangaliyev 2019 48 h APF T4/T5 clusters",
+      "source_cluster_id": "T5d",
+      "cell_number": 439,
+      "cells_by_library": {
+        "T4/T5 48h APF": 439
+      }
+    }
+  ]
+}

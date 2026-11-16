@@ -1,0 +1,109 @@
+{
+  "dataset": {
+    "vfbseq_id": "VFBseq_00003684",
+    "accession": "GSE126139",
+    "site": "GEO"
+  },
+  "samples": [
+    {
+      "vfbseq_id": "VFBseq_00003685",
+      "sample_id": "24h",
+      "timepoint": "24h",
+      "tissue_raw": null,
+      "age_raw": "24h APF",
+      "stock": null,
+      "strain": null,
+      "genotype_includes": [
+        "FBti0134091"
+      ],
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00005353",
+        "label": "pupal stage P6"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00001930",
+        "label": "embryonic/larval optic lobe"
+      },
+      "associated_dataset": "VFBseq_00003684",
+      "assay_vfbseq_ids": [
+        "VFBseq_00003686"
+      ],
+      "n_assays": 1
+    },
+    {
+      "vfbseq_id": "VFBseq_00003687",
+      "sample_id": "48h",
+      "timepoint": "48h",
+      "tissue_raw": null,
+      "age_raw": "48h APF",
+      "stock": null,
+      "strain": null,
+      "genotype_includes": [
+        "FBti0134091"
+      ],
+      "sex": "female",
+      "stage": {
+        "fbdv_id": "FBdv:00005355",
+        "label": "pharate adult stage P8"
+      },
+      "sample_tissue": {
+        "fbbt_id": "FBbt:00003701",
+        "label": "adult optic lobe"
+      },
+      "associated_dataset": "VFBseq_00003684",
+      "assay_vfbseq_ids": [
+        "VFBseq_00003688"
+      ],
+      "n_assays": 1
+    }
+  ],
+  "assays": [
+    {
+      "vfbseq_id": "VFBseq_00003686",
+      "library_id": "T4/T5 24h APF",
+      "accession": "GSM3592259",
+      "sra": "SRX5341906",
+      "biosample": "SAMN10880474",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00003685",
+      "associated_dataset": "VFBseq_00003684"
+    },
+    {
+      "vfbseq_id": "VFBseq_00003688",
+      "library_id": "T4/T5 48h APF",
+      "accession": "GSM3592260",
+      "sra": "SRX5341907",
+      "biosample": "SAMN10880473",
+      "method": {
+        "fbcv_id": "FBcv:0009008",
+        "label": "10x sequencing"
+      },
+      "sample_vfbseq_id": "VFBseq_00003687",
+      "associated_dataset": "VFBseq_00003684"
+    }
+  ],
+  "clusterings": [
+    {
+      "vfbseq_id": "VFBseq_00003689",
+      "subset": "24h",
+      "associated_dataset": "VFBseq_00003684",
+      "name": "Kurmangaliyev 2019 24 h APF T4/T5 clusters",
+      "samples": [
+        "VFBseq_00003685"
+      ]
+    },
+    {
+      "vfbseq_id": "VFBseq_00003690",
+      "subset": "48h",
+      "associated_dataset": "VFBseq_00003684",
+      "name": "Kurmangaliyev 2019 48 h APF T4/T5 clusters",
+      "samples": [
+        "VFBseq_00003687"
+      ]
+    }
+  ]
+}
