@@ -227,6 +227,13 @@ def test_geo_title_regex_without_set_group():
     assert (p["set"], p["timepoint"], p["biorep"]) == (None, "Adult", "1d_F_3rd")
 
 
+def test_geo_title_regex_without_biorep_group():
+    """One sample per timepoint (Kurmangaliyev 2019): no replicate group in the titles."""
+    mod = _script("build_samples_from_geo")
+    p = mod.title_parser(r"regex:T4/T5 (?P<timepoint>\d+h) APF")("T4/T5 24h APF")
+    assert (p["sample_id"], p["timepoint"], p["biorep"]) == ("24h", "24h", None)
+
+
 def test_update_gene_ids_annotation_id_features(tmp_path, monkeypatch):
     """`features_keyed_by: annotation_id`: the prefix is stripped, the gene Chado records
     for the annotation id becomes the input FBgn, the feature name stays the symbol."""
@@ -269,6 +276,23 @@ def test_expand_type_mappings_clustering_dirs(tmp_path):
     anns = [{"label": "P15_1", "type": "L1", "clustering": "P15"}, {"label": "adult_1", "type": "L1", "clustering": "adult"}]
     (proj / "cell_type_annotations.json").write_text(json.dumps({"annotations": anns}))
     n, _, missing = mod.expand(proj, [proj / "type_mapping"], {}, None, {"P15": "immature"})
+    assert (n, missing) == (2, [])
+    got = {p.stem: json.loads(p.read_text())["best_match"]["fbbt_id"] for p in (proj / "mapping").glob("*.json")}
+    assert got == {"P15_1.fbbt_mapping": "FBbt:00000002", "adult_1.fbbt_mapping": "FBbt:00000001"}
+
+
+def test_expand_type_mappings_clustering_dirs_from_other_project(tmp_path):
+    """A clustering's subfolder is found in the `from` project's type_mapping/ when the
+    project has none of its own (Kurmangaliyev 2019 sharing Hörmann 2020's)."""
+    mod = _script("expand_type_mappings")
+    other, proj = tmp_path / "other", tmp_path / "p"
+    (other / "type_mapping" / "immature").mkdir(parents=True)
+    proj.mkdir()
+    for d, fb in ((other / "type_mapping", "FBbt:00000001"), (other / "type_mapping" / "immature", "FBbt:00000002")):
+        (d / "L1.fbbt_mapping.json").write_text(json.dumps({"cluster_label": "L1", "best_match": {"fbbt_id": fb}}))
+    anns = [{"label": "P15_1", "type": "L1", "clustering": "P15"}, {"label": "adult_1", "type": "L1", "clustering": "adult"}]
+    (proj / "cell_type_annotations.json").write_text(json.dumps({"annotations": anns}))
+    n, _, missing = mod.expand(proj, [other / "type_mapping"], {}, None, {"P15": "immature"})
     assert (n, missing) == (2, [])
     got = {p.stem: json.loads(p.read_text())["best_match"]["fbbt_id"] for p in (proj / "mapping").glob("*.json")}
     assert got == {"P15_1.fbbt_mapping": "FBbt:00000002", "adult_1.fbbt_mapping": "FBbt:00000001"}

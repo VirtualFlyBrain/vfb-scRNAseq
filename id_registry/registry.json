@@ -1,5 +1,5 @@
 {
-  "counter": 3683,
+  "counter": 3690,
   "entries": {
     "Assay::E-MTAB-10519:FCA10_Male_head_adult_5dWT_Luo_sample4_S1": {
       "accession": null,
@@ -1764,6 +1764,20 @@
       "id": "VFBseq_00000277",
       "label": "w1118_30d_r1",
       "natural_key": "GSE107451:GSM2867577"
+    },
+    "Assay::GSE126139:GSM3592259": {
+      "accession": "GSM3592259",
+      "entity_type": "Assay",
+      "id": "VFBseq_00003686",
+      "label": "T4/T5 24h APF",
+      "natural_key": "GSE126139:GSM3592259"
+    },
+    "Assay::GSE126139:GSM3592260": {
+      "accession": "GSM3592260",
+      "entity_type": "Assay",
+      "id": "VFBseq_00003688",
+      "label": "T4/T5 48h APF",
+      "natural_key": "GSE126139:GSM3592260"
     },
     "Assay::GSE134722:GSM3964166": {
       "accession": "GSM3964166",
@@ -19223,6 +19237,20 @@
       "label": "Davie 2018 sub-clustering of res-2.0 cluster 64 (octopaminergic-tyraminergic neurons)",
       "natural_key": "GSE107451:sub64"
     },
+    "Clustering::GSE126139:24h": {
+      "accession": null,
+      "entity_type": "Clustering",
+      "id": "VFBseq_00003689",
+      "label": "Kurmangaliyev 2019 24 h APF T4/T5 clusters",
+      "natural_key": "GSE126139:24h"
+    },
+    "Clustering::GSE126139:48h": {
+      "accession": null,
+      "entity_type": "Clustering",
+      "id": "VFBseq_00003690",
+      "label": "Kurmangaliyev 2019 48 h APF T4/T5 clusters",
+      "natural_key": "GSE126139:48h"
+    },
     "Clustering::GSE134722:fed": {
       "accession": null,
       "entity_type": "Clustering",
@@ -19558,6 +19586,13 @@
       "id": "VFBseq_00003283",
       "label": "TAPIN-seq data from Davis (2020)",
       "natural_key": "GSE116969"
+    },
+    "Dataset::GSE126139": {
+      "accession": "GSE126139",
+      "entity_type": "Dataset",
+      "id": "VFBseq_00003684",
+      "label": "Modular transcriptional programs separately define axon and dendrite connectivity",
+      "natural_key": "GSE126139"
     },
     "Dataset::GSE134722": {
       "accession": "GSE134722",
@@ -22848,6 +22883,20 @@
       "id": "VFBseq_00003515",
       "label": "lLNv_d1_rep2",
       "natural_key": "GSE116969:lLNv_d1_rep2"
+    },
+    "Sample::GSE126139:24h": {
+      "accession": null,
+      "entity_type": "Sample",
+      "id": "VFBseq_00003685",
+      "label": "24h",
+      "natural_key": "GSE126139:24h"
+    },
+    "Sample::GSE126139:48h": {
+      "accession": null,
+      "entity_type": "Sample",
+      "id": "VFBseq_00003687",
+      "label": "48h",
+      "natural_key": "GSE126139:48h"
     },
     "Sample::GSE134722:Normal_sample_1": {
       "accession": null,
