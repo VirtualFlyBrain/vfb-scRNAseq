@@ -49,7 +49,7 @@ def mapping(subtype: str, best: dict, other: dict, stage: str) -> dict:
                        "confidence": "high"},
         "justification": f"The authors assign the cluster to subtype {subtype}; FBbt has the "
                          f"{'mature' if stage == 'mature' else 'immature'} term for it"
-                         f"{'' if stage == 'mature' else ' (defined from this paper)'}, as the stage requires.",
+                         f"{'' if stage == 'mature' else ' (defined from Hörmann et al., 2020)'}, as the stage requires.",
         "other_candidates": [{**other, "reason_rejected": other_reason}],
         "recommendation": f"Map to {best['fbbt_id']} {best['fbbt_term']} (exact match).",
         "new_term_needed": False,
