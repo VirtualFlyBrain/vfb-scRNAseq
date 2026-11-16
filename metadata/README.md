@@ -28,3 +28,4 @@ functional syntax) stay under `projects/<p>/`.
 | vfb_scRNAseq_metadata_mokashi_2021.owl | mokashi_2021 |
 | vfb_scRNAseq_metadata_baker_2021.owl | baker_2021 |
 | vfb_scRNAseq_metadata_saavedra_2023.owl | saavedra_2023 |
+| vfb_scRNAseq_metadata_kurmangaliyev_2019.owl | kurmangaliyev_2019 |

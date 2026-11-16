@@ -1558,7 +1558,7 @@ licence CC-BY-4.0. Curator decisions 2026-10-16.
   build.
 - **FBbt mapping (stage 3):** `projects/hormann_2020/write_type_mappings.py` writes the
   16 type mappings (no judgement needed: one exact FBbt term per subtype, read from OLS):
-  *immature T4a neuron* ... *immature T5d neuron* (defined from this paper) at 24 and 36
+  *immature T4a neuron* ... *immature T5d neuron* (defined from Hörmann et al., 2020) at 24 and 36
   h APF (`type_mapping/immature/`), *T4a neuron* ... *T5d neuron* from 48 h APF
   (`type_mapping/`). All 40 clusters mapped and loaded. The old load used the mature
   terms at every stage.
@@ -2189,3 +2189,39 @@ or FoxO, two technical replicates each. Replaces the old FlyBase/SCEA load FBlc0
   production; `verify_mappings.py` OK (12 FBbt terms); the FBbt / FBdv / FBcv terms on the
   Sample, Assays and Dataset current. Recorded in `provenance.json`.
 
+## Kurmangaliyev 2019 (T4/T5 neurons, 24 and 48 h APF)
+
+eLife 2019, PMID 31687928, FBrf0244060; GEO GSE126139 (`kurmangaliyev_2019`).
+Single-cell 10x of GFP+ T4/T5 neurons FACS-sorted from the optic lobes of female
+23G12-GAL4 > UAS-H2A::GFP pupae at 24 and 48 h APF; the authors analysed the two stages
+separately. Not in the old FlyBase/SCEA load (FlyBase curated only genes for the paper);
+licence CC-BY-4.0. Curator decisions 2026-11-16, following Hörmann 2020.
+
+- **Data.** GEO has a CellRanger matrix and the authors' per-cell cluster file per
+  library (`GSM3592259_clust24.txt`, `GSM3592260_clust48.txt`: each barcode's subtype
+  T4a-d / T5a-d, or "filtered"). SCEA E-GEOD-126139 has no `cells.txt` and labels every
+  cell only "mixed T4 and T5", so it isn't used.
+- **Samples (stage 1):** `build_samples_from_geo.py`: 2 Samples / 2 Assays (titles
+  "T4/T5 <n>h APF", one library per stage, no replicate number: the title regex has no
+  `biorep` group). Female (methods); 24 h *pupal stage P6* + *embryonic/larval optic
+  lobe*, 48 h *pharate adult stage P8* + *adult optic lobe*, as for Özel. Genotype (a
+  cross): `genotype_includes` FBti0134091 P{GMR23G12-GAL4}attP2; UAS-H2A::GFP (a gift
+  from Pfeiffer and Rubin) is not identified in FlyBase, so not linked.
+- **Clusters (stage 2):** `projects/kurmangaliyev_2019/build_clusters.py`: one entry
+  per stage x subtype, 16, 6,631 cells (24 h: 3,071 of 3,833 barcodes; 48 h: 3,560 of
+  3,894, the paper's 3,557); "filtered" cells left out. Writes
+  `.cache/kurmangaliyev_2019/memberships.tsv.gz` for the expression build.
+- **FBbt mapping (stage 3):** Hörmann 2020's type mappings (`type_mapping.from:
+  hormann_2020`; `clustering_dirs` 24h: immature, looked up in the `from` project):
+  *immature T4a-d / T5a-d neuron* at 24 h, *T4a-d / T5a-d neuron* at 48 h. All 16 loaded.
+- **Expression (stage 4):** the two CellRanger matrices (raw UMI counts) side by side
+  (`projects/kurmangaliyev_2019/combine_matrices.py`: 7,727 cells, named
+  `<stage>_<barcode>`), cell -> cluster from the memberships. FlyBase 6.22 FBgn ids:
+  17,369 current, 119 secondary, 3 split and 1 withdrawn dropped, 5 merges. CPM, extent
+  > 0.2: 17,483 genes; 16 clusters, 39,484 rows; Dataset gene counts total 10,977,
+  filtered 3,270. Markers as in the paper: *dac* in a/b, *bi* (omb) in c/d, *grn* in
+  b/c, *TfAP-2* in T4 only, *SoxN* in all.
+- **Build (stage 5):** `build_rdf.py`: 1 Dataset, 2 Samples, 2 Assays, 2 Clusterings, 16
+  Clusters; the publication FBrf0244060 is not yet a VFB `:pub` node, so the minimal
+  Publication entity comes from `source.fbrf`; `verify_mappings.py` OK (16 FBbt terms).
+  Recorded in `provenance.json`.

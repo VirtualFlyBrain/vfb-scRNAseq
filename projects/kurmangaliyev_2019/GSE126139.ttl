@@ -1,0 +1,248 @@
+@prefix BAO: <http://www.bioassayontology.org/bao#BAO_> .
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix FBbt: <http://purl.obolibrary.org/obo/FBbt_> .
+@prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_> .
+@prefix FBdv: <http://purl.obolibrary.org/obo/FBdv_> .
+@prefix FlyBase: <http://flybase.org/reports/> .
+@prefix GENO: <http://purl.obolibrary.org/obo/GENO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix VFBseq: <http://virtualflybrain.org/reports/VFBseq_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix neo_custom: <http://n2o.neo/custom/> .
+@prefix neo_property: <http://n2o.neo/property/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vfb: <http://virtualflybrain.org/reports/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VFBseq:00003691 a FBcv:0009003 ;
+    rdfs:label "T4a neuron cluster T4a (Kurmangaliyev 2019 24 h APF T4/T5 clusters) (Kurmangaliyev 2019)" ;
+    neo_custom:cell_count 502 ;
+    neo_custom:filtered_gene_count 2510 ;
+    neo_custom:total_gene_count 8238 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003689 ;
+    RO:0002473 FBbt:00052263 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003692 a FBcv:0009003 ;
+    rdfs:label "T4b neuron cluster T4b (Kurmangaliyev 2019 24 h APF T4/T5 clusters) (Kurmangaliyev 2019)" ;
+    neo_custom:cell_count 425 ;
+    neo_custom:filtered_gene_count 2454 ;
+    neo_custom:total_gene_count 7991 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003689 ;
+    RO:0002473 FBbt:00052264 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003693 a FBcv:0009003 ;
+    rdfs:label "T4c neuron cluster T4c (Kurmangaliyev 2019 24 h APF T4/T5 clusters) (Kurmangaliyev 2019)" ;
+    neo_custom:cell_count 318 ;
+    neo_custom:filtered_gene_count 2331 ;
+    neo_custom:total_gene_count 7733 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003689 ;
+    RO:0002473 FBbt:00052265 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003694 a FBcv:0009003 ;
+    rdfs:label "T4d neuron cluster T4d (Kurmangaliyev 2019 24 h APF T4/T5 clusters) (Kurmangaliyev 2019)" ;
+    neo_custom:cell_count 409 ;
+    neo_custom:filtered_gene_count 2384 ;
+    neo_custom:total_gene_count 7998 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003689 ;
+    RO:0002473 FBbt:00052266 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003695 a FBcv:0009003 ;
+    rdfs:label "T5a neuron cluster T5a (Kurmangaliyev 2019 24 h APF T4/T5 clusters) (Kurmangaliyev 2019)" ;
+    neo_custom:cell_count 382 ;
+    neo_custom:filtered_gene_count 2377 ;
+    neo_custom:total_gene_count 7964 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003689 ;
+    RO:0002473 FBbt:00052259 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003696 a FBcv:0009003 ;
+    rdfs:label "T5b neuron cluster T5b (Kurmangaliyev 2019 24 h APF T4/T5 clusters) (Kurmangaliyev 2019)" ;
+    neo_custom:cell_count 383 ;
+    neo_custom:filtered_gene_count 2335 ;
+    neo_custom:total_gene_count 7908 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003689 ;
+    RO:0002473 FBbt:00052260 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003697 a FBcv:0009003 ;
+    rdfs:label "T5c neuron cluster T5c (Kurmangaliyev 2019 24 h APF T4/T5 clusters) (Kurmangaliyev 2019)" ;
+    neo_custom:cell_count 318 ;
+    neo_custom:filtered_gene_count 2262 ;
+    neo_custom:total_gene_count 7727 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003689 ;
+    RO:0002473 FBbt:00052261 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003698 a FBcv:0009003 ;
+    rdfs:label "T5d neuron cluster T5d (Kurmangaliyev 2019 24 h APF T4/T5 clusters) (Kurmangaliyev 2019)" ;
+    neo_custom:cell_count 334 ;
+    neo_custom:filtered_gene_count 2293 ;
+    neo_custom:total_gene_count 7806 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003689 ;
+    RO:0002473 FBbt:00052262 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003699 a FBcv:0009003 ;
+    rdfs:label "T4a neuron cluster T4a (Kurmangaliyev 2019 48 h APF T4/T5 clusters) (Kurmangaliyev 2019)" ;
+    neo_custom:cell_count 474 ;
+    neo_custom:filtered_gene_count 2643 ;
+    neo_custom:total_gene_count 8178 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003690 ;
+    RO:0002473 FBbt:00003732 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003700 a FBcv:0009003 ;
+    rdfs:label "T4b neuron cluster T4b (Kurmangaliyev 2019 48 h APF T4/T5 clusters) (Kurmangaliyev 2019)" ;
+    neo_custom:cell_count 521 ;
+    neo_custom:filtered_gene_count 2592 ;
+    neo_custom:total_gene_count 8176 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003690 ;
+    RO:0002473 FBbt:00003733 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003701 a FBcv:0009003 ;
+    rdfs:label "T4c neuron cluster T4c (Kurmangaliyev 2019 48 h APF T4/T5 clusters) (Kurmangaliyev 2019)" ;
+    neo_custom:cell_count 398 ;
+    neo_custom:filtered_gene_count 2555 ;
+    neo_custom:total_gene_count 7885 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003690 ;
+    RO:0002473 FBbt:00003734 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003702 a FBcv:0009003 ;
+    rdfs:label "T4d neuron cluster T4d (Kurmangaliyev 2019 48 h APF T4/T5 clusters) (Kurmangaliyev 2019)" ;
+    neo_custom:cell_count 454 ;
+    neo_custom:filtered_gene_count 2500 ;
+    neo_custom:total_gene_count 8244 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003690 ;
+    RO:0002473 FBbt:00003735 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003703 a FBcv:0009003 ;
+    rdfs:label "T5a neuron cluster T5a (Kurmangaliyev 2019 48 h APF T4/T5 clusters) (Kurmangaliyev 2019)" ;
+    neo_custom:cell_count 432 ;
+    neo_custom:filtered_gene_count 2616 ;
+    neo_custom:total_gene_count 7917 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003690 ;
+    RO:0002473 FBbt:00003737 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003704 a FBcv:0009003 ;
+    rdfs:label "T5b neuron cluster T5b (Kurmangaliyev 2019 48 h APF T4/T5 clusters) (Kurmangaliyev 2019)" ;
+    neo_custom:cell_count 435 ;
+    neo_custom:filtered_gene_count 2588 ;
+    neo_custom:total_gene_count 7897 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003690 ;
+    RO:0002473 FBbt:00003738 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003705 a FBcv:0009003 ;
+    rdfs:label "T5c neuron cluster T5c (Kurmangaliyev 2019 48 h APF T4/T5 clusters) (Kurmangaliyev 2019)" ;
+    neo_custom:cell_count 407 ;
+    neo_custom:filtered_gene_count 2533 ;
+    neo_custom:total_gene_count 7842 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003690 ;
+    RO:0002473 FBbt:00003739 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003706 a FBcv:0009003 ;
+    rdfs:label "T5d neuron cluster T5d (Kurmangaliyev 2019 48 h APF T4/T5 clusters) (Kurmangaliyev 2019)" ;
+    neo_custom:cell_count 439 ;
+    neo_custom:filtered_gene_count 2511 ;
+    neo_custom:total_gene_count 7828 ;
+    neo_property:nodeLabel "Cluster" ;
+    BFO:0000050 VFBseq:00003690 ;
+    RO:0002473 FBbt:00003740 ;
+    dcterms:source VFBseq:00003684 .
+
+FlyBase:FBrf0244060 a FBcv:0000212 ;
+    neo_property:nodeLabel "pub" .
+
+VFBseq:00003686 a FBcv:0003025 ;
+    rdfs:label "embryonic/larval optic lobe, 24h APF, 10x library (Kurmangaliyev 2019)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00003685 ;
+    dcterms:source VFBseq:00003684 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM3592259",
+        "SAMN10880474",
+        "SRX5341906" .
+
+VFBseq:00003688 a FBcv:0003025 ;
+    rdfs:label "adult optic lobe, 48h APF, 10x library (Kurmangaliyev 2019)" ;
+    neo_property:nodeLabel "Assay" ;
+    RO:0002233 VFBseq:00003687 ;
+    dcterms:source VFBseq:00003684 ;
+    BAO:0000212 FBcv:0009008 ;
+    oboInOwl:hasDbXref "GSM3592260",
+        "SAMN10880473",
+        "SRX5341907" .
+
+VFBseq:00003685 a FBcv:0003024 ;
+    rdfs:label "embryonic/larval optic lobe, 24h APF (Kurmangaliyev 2019)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    GENO:0000222 FlyBase:FBti0134091 ;
+    RO:0002131 FBbt:00001930 ;
+    RO:0002352 VFBseq:00003686 ;
+    RO:0002490 FBdv:00005353 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003687 a FBcv:0003024 ;
+    rdfs:label "adult optic lobe, 48h APF (Kurmangaliyev 2019)" ;
+    neo_property:nodeLabel "Sample" ;
+    BFO:0000050 FBbt:00007011 ;
+    GENO:0000222 FlyBase:FBti0134091 ;
+    RO:0002131 FBbt:00003701 ;
+    RO:0002352 VFBseq:00003688 ;
+    RO:0002490 FBdv:00005355 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003689 a FBcv:0009002 ;
+    rdfs:label "Kurmangaliyev 2019 24 h APF T4/T5 clusters" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00003685 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003690 a FBcv:0009002 ;
+    rdfs:label "Kurmangaliyev 2019 48 h APF T4/T5 clusters" ;
+    neo_property:nodeLabel "Clustering" ;
+    BFO:0000051 VFBseq:00003687 ;
+    dcterms:source VFBseq:00003684 .
+
+VFBseq:00003684 a FBcv:0003023 ;
+    rdfs:label "scRNAseq data from Kurmangaliyev (2019)" ;
+    neo_custom:accession "GSE126139" ;
+    neo_custom:filtered_gene_count 3270 ;
+    neo_custom:total_gene_count 10977 ;
+    neo_property:nodeLabel "DataSet",
+        "hasScRNAseq",
+        "scRNAseq_DataSet" ;
+    IAO:0000115 "Modular transcriptional programs separately define axon and dendrite connectivity" ;
+    OBI:0000312 FBcv:0009000 ;
+    dcterms:licence vfb:VFBlicense_CC_BY_4_0 ;
+    dcterms:references FlyBase:FBrf0244060 ;
+    oboInOwl:hasDbXref vfb:GEO .
+
