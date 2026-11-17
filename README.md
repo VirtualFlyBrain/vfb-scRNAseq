@@ -134,6 +134,12 @@ release it may still be re-keyed, re-minted or dropped (docs/DESIGN.md, *Identif
   authors' 8 subtype clusters (from their labels in the Single Cell Expression Atlas):
   all 40 loaded (immature subtype terms to the pupal stage); samples linked to the
   split-GAL4 genotype (FBco). Replaces the old FlyBase/SCEA load (FBlc0006305).
+- `projects/kurmangaliyev_2019/` — Kurmangaliyev et al. 2019, T4/T5 neurons at 24 and 48 h
+  APF (PMID 31687928; [GSE126139](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE126139)):
+  FACS-sorted T4/T5 neurons from female optic lobes, one Clustering per stage of the
+  authors' 8 subtype clusters (from their per-cell files on GEO): all 16 loaded, with
+  Hörmann 2020's mappings (immature subtype terms at 24 h); samples linked to the GAL4
+  insertion (FBti). Not in the old FlyBase/SCEA load.
 - `projects/konstantinides_2022/` — Konstantinides et al. 2022, larval optic lobe
   atlas (PMID 35388222; [GSE167266](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE167266)):
   wandering L3 optic lobes, one Clustering of the authors' 95 L3 clusters, typed from the
@@ -186,6 +192,7 @@ projects/avalos_2019/                    # first-instar larval brain (GEO; autho
 projects/mokashi_2021/                   # adult brain (GEO; authors' SCEA per-cell table; reference medium only)
 projects/baker_2021/                     # adult brain (GEO; authors' SCEA per-cell table; sucrose controls only)
 projects/saavedra_2023/                  # adult thorax (GEO; authors' per-nucleus metadata; controls only)
+projects/kurmangaliyev_2019/             # pupal T4/T5 neurons (GEO matrices + authors' per-cell clusters; Hörmann's mappings)
 metadata/                                # VFB-loadable metadata OWL, one per project
 expression/                              # VFB-loadable expression OWL (.owl.gz), one per project
 id_registry/                             # minted-id registry (JSON)

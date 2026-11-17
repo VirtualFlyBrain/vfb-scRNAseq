@@ -1,0 +1,391 @@
+[
+  {
+    "type": "Publication",
+    "id": "FlyBase:FBrf0244060",
+    "neo_label": [
+      "pub"
+    ]
+  },
+  {
+    "type": "Dataset",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "name": "scRNAseq data from Kurmangaliyev (2019)",
+    "title": "Modular transcriptional programs separately define axon and dendrite connectivity",
+    "accession": "GSE126139",
+    "neo_label": [
+      "DataSet",
+      "scRNAseq_DataSet",
+      "hasScRNAseq"
+    ],
+    "site": "vfb:GEO",
+    "licence": "vfb:VFBlicense_CC_BY_4_0",
+    "assay_type": "FBcv:0009000",
+    "total_gene_count": 10977,
+    "filtered_gene_count": 3270,
+    "publication": "FlyBase:FBrf0244060"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003685",
+    "name": "embryonic/larval optic lobe, 24h APF (Kurmangaliyev 2019)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003686"
+    ],
+    "neo_label": [
+      "Sample"
+    ],
+    "sample_tissue": [
+      "FBbt:00001930"
+    ],
+    "stage": "FBdv:00005353",
+    "genotype_includes": [
+      "FlyBase:FBti0134091"
+    ],
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Sample",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003687",
+    "name": "adult optic lobe, 48h APF (Kurmangaliyev 2019)",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "associated_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003688"
+    ],
+    "neo_label": [
+      "Sample"
+    ],
+    "sample_tissue": [
+      "FBbt:00003701"
+    ],
+    "stage": "FBdv:00005355",
+    "genotype_includes": [
+      "FlyBase:FBti0134091"
+    ],
+    "sex": "FBbt:00007011"
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003686",
+    "name": "embryonic/larval optic lobe, 24h APF, 10x library (Kurmangaliyev 2019)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003685"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "neo_label": [
+      "Assay"
+    ],
+    "geo_xref": [
+      "GSM3592259"
+    ],
+    "sra_xref": [
+      "SRX5341906"
+    ],
+    "biosample_xref": [
+      "SAMN10880474"
+    ]
+  },
+  {
+    "type": "Assay",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003688",
+    "name": "adult optic lobe, 48h APF, 10x library (Kurmangaliyev 2019)",
+    "method": "FBcv:0009008",
+    "associated_sample_for_assay": [
+      "http://virtualflybrain.org/reports/VFBseq_00003687"
+    ],
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "neo_label": [
+      "Assay"
+    ],
+    "geo_xref": [
+      "GSM3592260"
+    ],
+    "sra_xref": [
+      "SRX5341907"
+    ],
+    "biosample_xref": [
+      "SAMN10880473"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003689",
+    "name": "Kurmangaliyev 2019 24 h APF T4/T5 clusters",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "neo_label": [
+      "Clustering"
+    ],
+    "associated_sample_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00003685"
+    ]
+  },
+  {
+    "type": "Clustering",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003690",
+    "name": "Kurmangaliyev 2019 48 h APF T4/T5 clusters",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "neo_label": [
+      "Clustering"
+    ],
+    "associated_sample_for_clustering": [
+      "http://virtualflybrain.org/reports/VFBseq_00003687"
+    ]
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003691",
+    "name": "T4a neuron cluster T4a (Kurmangaliyev 2019 24 h APF T4/T5 clusters) (Kurmangaliyev 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003689",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "cell_number": 502,
+    "neo_label": [
+      "Cluster"
+    ],
+    "cell_type": [
+      "FBbt:00052263"
+    ],
+    "total_gene_count": 8238,
+    "filtered_gene_count": 2510
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003692",
+    "name": "T4b neuron cluster T4b (Kurmangaliyev 2019 24 h APF T4/T5 clusters) (Kurmangaliyev 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003689",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "cell_number": 425,
+    "neo_label": [
+      "Cluster"
+    ],
+    "cell_type": [
+      "FBbt:00052264"
+    ],
+    "total_gene_count": 7991,
+    "filtered_gene_count": 2454
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003693",
+    "name": "T4c neuron cluster T4c (Kurmangaliyev 2019 24 h APF T4/T5 clusters) (Kurmangaliyev 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003689",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "cell_number": 318,
+    "neo_label": [
+      "Cluster"
+    ],
+    "cell_type": [
+      "FBbt:00052265"
+    ],
+    "total_gene_count": 7733,
+    "filtered_gene_count": 2331
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003694",
+    "name": "T4d neuron cluster T4d (Kurmangaliyev 2019 24 h APF T4/T5 clusters) (Kurmangaliyev 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003689",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "cell_number": 409,
+    "neo_label": [
+      "Cluster"
+    ],
+    "cell_type": [
+      "FBbt:00052266"
+    ],
+    "total_gene_count": 7998,
+    "filtered_gene_count": 2384
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003695",
+    "name": "T5a neuron cluster T5a (Kurmangaliyev 2019 24 h APF T4/T5 clusters) (Kurmangaliyev 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003689",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "cell_number": 382,
+    "neo_label": [
+      "Cluster"
+    ],
+    "cell_type": [
+      "FBbt:00052259"
+    ],
+    "total_gene_count": 7964,
+    "filtered_gene_count": 2377
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003696",
+    "name": "T5b neuron cluster T5b (Kurmangaliyev 2019 24 h APF T4/T5 clusters) (Kurmangaliyev 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003689",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "cell_number": 383,
+    "neo_label": [
+      "Cluster"
+    ],
+    "cell_type": [
+      "FBbt:00052260"
+    ],
+    "total_gene_count": 7908,
+    "filtered_gene_count": 2335
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003697",
+    "name": "T5c neuron cluster T5c (Kurmangaliyev 2019 24 h APF T4/T5 clusters) (Kurmangaliyev 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003689",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "cell_number": 318,
+    "neo_label": [
+      "Cluster"
+    ],
+    "cell_type": [
+      "FBbt:00052261"
+    ],
+    "total_gene_count": 7727,
+    "filtered_gene_count": 2262
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003698",
+    "name": "T5d neuron cluster T5d (Kurmangaliyev 2019 24 h APF T4/T5 clusters) (Kurmangaliyev 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003689",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "cell_number": 334,
+    "neo_label": [
+      "Cluster"
+    ],
+    "cell_type": [
+      "FBbt:00052262"
+    ],
+    "total_gene_count": 7806,
+    "filtered_gene_count": 2293
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003699",
+    "name": "T4a neuron cluster T4a (Kurmangaliyev 2019 48 h APF T4/T5 clusters) (Kurmangaliyev 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003690",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "cell_number": 474,
+    "neo_label": [
+      "Cluster"
+    ],
+    "cell_type": [
+      "FBbt:00003732"
+    ],
+    "total_gene_count": 8178,
+    "filtered_gene_count": 2643
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003700",
+    "name": "T4b neuron cluster T4b (Kurmangaliyev 2019 48 h APF T4/T5 clusters) (Kurmangaliyev 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003690",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "cell_number": 521,
+    "neo_label": [
+      "Cluster"
+    ],
+    "cell_type": [
+      "FBbt:00003733"
+    ],
+    "total_gene_count": 8176,
+    "filtered_gene_count": 2592
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003701",
+    "name": "T4c neuron cluster T4c (Kurmangaliyev 2019 48 h APF T4/T5 clusters) (Kurmangaliyev 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003690",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "cell_number": 398,
+    "neo_label": [
+      "Cluster"
+    ],
+    "cell_type": [
+      "FBbt:00003734"
+    ],
+    "total_gene_count": 7885,
+    "filtered_gene_count": 2555
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003702",
+    "name": "T4d neuron cluster T4d (Kurmangaliyev 2019 48 h APF T4/T5 clusters) (Kurmangaliyev 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003690",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "cell_number": 454,
+    "neo_label": [
+      "Cluster"
+    ],
+    "cell_type": [
+      "FBbt:00003735"
+    ],
+    "total_gene_count": 8244,
+    "filtered_gene_count": 2500
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003703",
+    "name": "T5a neuron cluster T5a (Kurmangaliyev 2019 48 h APF T4/T5 clusters) (Kurmangaliyev 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003690",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "cell_number": 432,
+    "neo_label": [
+      "Cluster"
+    ],
+    "cell_type": [
+      "FBbt:00003737"
+    ],
+    "total_gene_count": 7917,
+    "filtered_gene_count": 2616
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003704",
+    "name": "T5b neuron cluster T5b (Kurmangaliyev 2019 48 h APF T4/T5 clusters) (Kurmangaliyev 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003690",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "cell_number": 435,
+    "neo_label": [
+      "Cluster"
+    ],
+    "cell_type": [
+      "FBbt:00003738"
+    ],
+    "total_gene_count": 7897,
+    "filtered_gene_count": 2588
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003705",
+    "name": "T5c neuron cluster T5c (Kurmangaliyev 2019 48 h APF T4/T5 clusters) (Kurmangaliyev 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003690",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "cell_number": 407,
+    "neo_label": [
+      "Cluster"
+    ],
+    "cell_type": [
+      "FBbt:00003739"
+    ],
+    "total_gene_count": 7842,
+    "filtered_gene_count": 2533
+  },
+  {
+    "type": "Cluster",
+    "id": "http://virtualflybrain.org/reports/VFBseq_00003706",
+    "name": "T5d neuron cluster T5d (Kurmangaliyev 2019 48 h APF T4/T5 clusters) (Kurmangaliyev 2019)",
+    "associated_clustering": "http://virtualflybrain.org/reports/VFBseq_00003690",
+    "associated_dataset": "http://virtualflybrain.org/reports/VFBseq_00003684",
+    "cell_number": 439,
+    "neo_label": [
+      "Cluster"
+    ],
+    "cell_type": [
+      "FBbt:00003740"
+    ],
+    "total_gene_count": 7828,
+    "filtered_gene_count": 2511
+  }
+]

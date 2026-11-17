@@ -1,0 +1,383 @@
+{
+  "project": "kurmangaliyev_2019",
+  "created_at": "2026-11-16",
+  "updated_at": "2026-11-16",
+  "summary": "Kurmangaliyev et al. 2019 (eLife), single-cell 10x of FACS-sorted T4/T5 neurons from female optic lobes at 24 and 48 h APF (23G12-GAL4 > UAS-H2A::GFP), from GEO GSE126139 and the authors' per-cell cluster files on GEO. Not in the old FlyBase/SCEA load. 2 Samples / Assays (one library per stage), linked to the GAL4 insertion FBti0134091 via GENO has_genotype. Two Clusterings (one per stage), one Cluster per author cluster (8 per stage, each one T4/T5 subtype): 16, all mapped to FBbt with Hörmann 2020's type mappings (immature subtype terms at 24 h, mature at 48 h) and loaded. Summary expression as CPM from the GEO raw counts (17,483 genes x 6,631 cells; 39,484 cluster x gene rows with extent > 0.2).",
+  "decisions": [
+    {
+      "date": "2026-10-08",
+      "by": "curator",
+      "decision": "Map to cell-level FBbt terms only (a tissue or organ author term maps to its cell-level equivalent, else the type is held)."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Clusters with no FBbt term are held: listed in mapping.tsv with a hold_reason but not loaded (no VFBseq id, entity or expression rows). Their cells still count towards the Dataset's gene counts."
+    },
+    {
+      "date": "2026-10-14",
+      "by": "curator",
+      "decision": "Summary expression is computed as CPM for every dataset."
+    },
+    {
+      "date": "2026-10-16",
+      "by": "curator",
+      "decision": "Narrow a generic type by the dissected tissue only where the tissue makes the tissue-specific FBbt term exact; hold clusters that could only be typed as cell or neuron (or stage-specific versions); load glia under a glial-cell term."
+    },
+    {
+      "date": "2026-11-16",
+      "by": "curator",
+      "decision": "Licence CC-BY-4.0 (eLife). Not in the old FlyBase/SCEA load (FlyBase curated only genes for the paper); SCEA E-GEOD-126139 labels cells only 'mixed T4 and T5', so the authors' per-cell files on GEO are used."
+    },
+    {
+      "date": "2026-11-16",
+      "by": "curator",
+      "decision": "As for Hörmann 2020: one Clustering per stage, one Cluster per author cluster (stage x subtype, from the authors' per-cell files GSM*_clust24/48.txt); cells the authors marked 'filtered' are left out."
+    },
+    {
+      "date": "2026-11-16",
+      "by": "curator",
+      "decision": "Stages by the Bainbridge & Bownes FBdv definitions (24 h P6, 48 h P8); Sample tissue the dissected optic lobe: embryonic/larval optic lobe to the pupal stage, adult optic lobe from the pharate adult stage (as for Özel 2021 / Kurmangaliyev 2020). Female (methods)."
+    },
+    {
+      "date": "2026-11-16",
+      "by": "curator",
+      "decision": "Samples from a cross link the genetic entities: here the GAL4 insertion P{GMR23G12-GAL4}attP2 (FBti0134091); UAS-H2A::GFP (a gift from Pfeiffer and Rubin) is not identified in FlyBase, so not linked."
+    },
+    {
+      "date": "2026-11-16",
+      "by": "curator",
+      "decision": "FBbt mappings shared with Hörmann 2020 (type_mapping.from): immature subtype terms at 24 h APF, mature at 48 h. The shared immature justification reworded to name Hörmann et al. 2020 as the source of the term definitions."
+    },
+    {
+      "date": "2026-11-16",
+      "by": "pipeline",
+      "decision": "Samples from GEO: each GSM one sample with one 10x library (titles 'T4/T5 <n>h APF', no replicate number)."
+    },
+    {
+      "date": "2026-11-16",
+      "by": "pipeline",
+      "decision": "Clusters: build_clusters.py reads the authors' per-cell files; the per-stage clusters have no numbers, so the subtype label is the cluster id."
+    },
+    {
+      "date": "2026-11-16",
+      "by": "pipeline",
+      "decision": "Expression from the GEO CellRanger matrices (raw UMI counts) combined side by side (combine_matrices.py), cell -> cluster from the memberships (the authors' labelled cells), CPM over each cell's own counts; level the mean CPM over expressing cells, extent the fraction expressing, rows kept with extent > 0.2; FlyBase 6.22 FBgn ids mapped to current FlyBase genes."
+    },
+    {
+      "date": "2026-11-16",
+      "by": "curator",
+      "decision": "All 16 mapped clusters reviewed by the curator (mapping.tsv `reviewed`)."
+    }
+  ],
+  "checks": [
+    {
+      "date": "2026-11-16",
+      "check": "verify_mappings.py: every FBbt term in the mappings looked up in OLS (FBbt 2026-11-02).",
+      "result": "16 terms current, not obsolete, labels match."
+    },
+    {
+      "date": "2026-11-16",
+      "check": "FBbt, FBdv and FBcv terms on the Samples, Assays and Dataset looked up in OLS.",
+      "result": "All current (pupal stage P6, pharate adult stage P8, embryonic/larval optic lobe, adult optic lobe, single-cell RNA-Seq, 10x sequencing)."
+    },
+    {
+      "date": "2026-11-16",
+      "check": "Author cluster files against the paper and the GEO matrices.",
+      "result": "24 h: 3,071 labelled of 3,833 barcodes; 48 h: 3,560 of 3,894 (paper: 3,557 after quality control); 8 subtypes per stage; all labelled cells in the matrices."
+    },
+    {
+      "date": "2026-11-16",
+      "check": "Publication FBrf0244060 in VFB.",
+      "result": "Not yet a :pub node in the KB or production; the build emits the minimal Publication entity (source.fbrf)."
+    },
+    {
+      "date": "2026-11-16",
+      "check": "Marker spot checks in the expression output.",
+      "result": "dac in the a/b subtypes, bi (omb) in c/d, grn in b/c, TfAP-2 in T4 only, SoxN in all clusters, at both stages."
+    }
+  ],
+  "people": [
+    {
+      "id": "ORCID:0000-0002-1373-1705",
+      "label": "Clare Pilgrim",
+      "role": "curator",
+      "username": "Clare72"
+    }
+  ],
+  "pipeline": {
+    "id": "vfb-scrnaseq",
+    "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq",
+    "version": "0.0.0",
+    "commit": "a214b93",
+    "uncommitted_changes": true
+  },
+  "ontologies": [
+    {
+      "id": "FBbt",
+      "label": "Drosophila gross anatomy ontology",
+      "version": "2026-11-02",
+      "version_iri": "http://purl.obolibrary.org/obo/fbbt/releases/2026-11-02/fbbt.owl",
+      "accessed_via": "OLS MCP (OLS4); local fbbt.obo in .cache",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbbt",
+      "accessed_at": "2026-11-16"
+    },
+    {
+      "id": "FBdv",
+      "label": "Drosophila developmental ontology",
+      "version": "2026-11-02",
+      "version_iri": "http://purl.obolibrary.org/obo/fbdv/releases/2026-11-02/fbdv.owl",
+      "accessed_via": "OLS4 API; local fbdv.obo in .cache (stage definitions)",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbdv",
+      "accessed_at": "2026-11-16"
+    },
+    {
+      "id": "FBcv",
+      "label": "FlyBase controlled vocabulary",
+      "version": "2026-11-02",
+      "version_iri": "http://purl.obolibrary.org/obo/fbcv/releases/2026-11-02/fbcv.owl",
+      "accessed_via": "OLS4 API",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/fbcv",
+      "accessed_at": "2026-11-16"
+    }
+  ],
+  "data_sources": [
+    {
+      "id": "10.7554/eLife.50822",
+      "type": "publication",
+      "label": "Modular transcriptional programs separately define axon and dendrite connectivity",
+      "xrefs": [
+        "PMID:31687928",
+        "PMCID:PMC6855804",
+        "FlyBase:FBrf0244060"
+      ],
+      "description": "Kurmangaliyev et al. 2019, eLife. Full text (Europe PMC) read for the samples (sex, stages, genotype, dissection, sorting) and the cluster scheme (stages analysed separately, 8 clusters each assigned to a subtype).",
+      "url": "https://doi.org/10.7554/eLife.50822",
+      "accessed_at": "2026-11-16",
+      "files": []
+    },
+    {
+      "id": "GSE126139",
+      "type": "dataset",
+      "label": "Modular transcriptional programs separately define axon and dendrite connectivity",
+      "xrefs": [
+        "BioProject:PRJNA521120",
+        "SRA:SRP184201"
+      ],
+      "description": "GEO series: 2 single-cell 10x libraries of FACS-sorted T4/T5 neurons (24 and 48 h APF). Sample metadata read live (SOFT); the per-library CellRanger matrices are the expression input and the per-cell cluster files the source of the clusters.",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE126139",
+      "accessed_at": "2026-11-16",
+      "files": [
+        {
+          "path": "kurmangaliyev_2019/geo/GSM3592259_T4T5_24_barcodes.tsv.gz",
+          "description": "CellRanger matrix (barcodes), 24 h APF.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3592nnn/GSM3592259/suppl/GSM3592259_T4T5_24_barcodes.tsv.gz",
+          "sha256": "970e47de93ade3e067ecefe73c8eaa998104851bf63a5dd8e627cef1e4c7b731",
+          "bytes": 16258,
+          "accessed_at": "2026-11-16"
+        },
+        {
+          "path": "kurmangaliyev_2019/geo/GSM3592259_T4T5_24_genes.tsv.gz",
+          "description": "CellRanger matrix (genes, FlyBase 6.22 FBgn ids), 24 h APF.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3592nnn/GSM3592259/suppl/GSM3592259_T4T5_24_genes.tsv.gz",
+          "sha256": "81a7abcc20307df989d8fcc2b14c29a4d36647c7ac2e3c63a3dc7baf787fa983",
+          "bytes": 115124,
+          "accessed_at": "2026-11-16"
+        },
+        {
+          "path": "kurmangaliyev_2019/geo/GSM3592259_T4T5_24_matrix.mtx.gz",
+          "description": "CellRanger matrix (raw UMI counts), 24 h APF.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3592nnn/GSM3592259/suppl/GSM3592259_T4T5_24_matrix.mtx.gz",
+          "sha256": "36452ea1d7ba15b4fab30c616504cb861af62f11929e8ce698da2d93f6d3c956",
+          "bytes": 16501696,
+          "accessed_at": "2026-11-16"
+        },
+        {
+          "path": "kurmangaliyev_2019/geo/GSM3592259_clust24.txt.gz",
+          "description": "The authors' per-cell clusters, 24 h APF (subtype or 'filtered').",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3592nnn/GSM3592259/suppl/GSM3592259_clust24.txt.gz",
+          "sha256": "36a577e1201ee4a3d402ad256293253f59a4fefe28079d40e7c61cacf403e254",
+          "bytes": 20615,
+          "accessed_at": "2026-11-16"
+        },
+        {
+          "path": "kurmangaliyev_2019/geo/GSM3592260_T4T5_48_barcodes.tsv.gz",
+          "description": "CellRanger matrix (barcodes), 48 h APF.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3592nnn/GSM3592260/suppl/GSM3592260_T4T5_48_barcodes.tsv.gz",
+          "sha256": "883ab43cbaeddb7f87606600b2dea0a493970f1285390826da588ae617006ca5",
+          "bytes": 16503,
+          "accessed_at": "2026-11-16"
+        },
+        {
+          "path": "kurmangaliyev_2019/geo/GSM3592260_T4T5_48_genes.tsv.gz",
+          "description": "CellRanger matrix (genes, FlyBase 6.22 FBgn ids), 48 h APF.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3592nnn/GSM3592260/suppl/GSM3592260_T4T5_48_genes.tsv.gz",
+          "sha256": "bc0c8eb75b15e96ca4fa5a5cdfe90a5e362e5e9a91f75d5aad632ed430e19791",
+          "bytes": 115124,
+          "accessed_at": "2026-11-16"
+        },
+        {
+          "path": "kurmangaliyev_2019/geo/GSM3592260_T4T5_48_matrix.mtx.gz",
+          "description": "CellRanger matrix (raw UMI counts), 48 h APF.",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3592nnn/GSM3592260/suppl/GSM3592260_T4T5_48_matrix.mtx.gz",
+          "sha256": "98cca92afee4c4b9de23ddd328e0583acec1c860c1708accbc1f490fc5260c32",
+          "bytes": 19500987,
+          "accessed_at": "2026-11-16"
+        },
+        {
+          "path": "kurmangaliyev_2019/geo/GSM3592260_clust48.txt.gz",
+          "description": "The authors' per-cell clusters, 48 h APF (subtype or 'filtered').",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3592nnn/GSM3592260/suppl/GSM3592260_clust48.txt.gz",
+          "sha256": "85c4e6272ee59e1b4d3c54f3d6e17616cb03614928584eceb8ee4d94dd2d1cea",
+          "bytes": 20713,
+          "accessed_at": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "id": "E-GEOD-126139",
+      "type": "dataset",
+      "label": "Modular transcriptional programs separately define axon and dendrite connectivity (SCEA)",
+      "xrefs": [
+        "GEO:GSE126139"
+      ],
+      "description": "Checked: no cells.txt; its cell metadata labels every cell 'mixed T neuron T4 and T neuron T5', so not used.",
+      "url": "https://www.ebi.ac.uk/gxa/sc/experiments/E-GEOD-126139",
+      "accessed_at": "2026-11-16",
+      "files": []
+    },
+    {
+      "id": "hormann_2020",
+      "type": "project",
+      "label": "Hörmann 2020 (this repo)",
+      "description": "Its per-subtype type mappings (mature and immature) reused; its stage scheme followed.",
+      "url": "https://github.com/VirtualFlyBrain/vfb-scRNAseq/tree/main/projects/hormann_2020",
+      "accessed_at": "2026-11-16",
+      "files": []
+    }
+  ],
+  "software": [
+    {
+      "id": "claude-code",
+      "type": "tool",
+      "label": "Claude Code",
+      "version": "2.1.325",
+      "description": "Agentic CLI that ran the session (orchestrator), stages 1-5."
+    },
+    {
+      "id": "ols4",
+      "type": "service",
+      "label": "OLS4 (Ontology Lookup Service)",
+      "url": "https://www.ebi.ac.uk/ols4",
+      "accessed_at": "2026-11-16",
+      "description": "FBbt / FBdv / FBcv lookup during mapping (OLS MCP) and term verification."
+    },
+    {
+      "id": "vfb-pdb",
+      "type": "service",
+      "label": "VFB production (neo4j)",
+      "url": "https://pdb.virtualflybrain.org",
+      "accessed_at": "2026-11-16",
+      "description": "Publication FBrf0244060 looked up by PMID (not present)."
+    },
+    {
+      "id": "flybase-chado",
+      "type": "service",
+      "label": "FlyBase Chado",
+      "version": "FB2026_03 (data last modified 2026-08-29)",
+      "url": "https://chado.flybase.org",
+      "accessed_at": "2026-11-16",
+      "description": "Gene ids mapped to current FlyBase genes (update_gene_ids.py); the paper's features and the GMR23G12-GAL4 insertion looked up."
+    },
+    {
+      "id": "ncbi-geo",
+      "type": "service",
+      "label": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/",
+      "accessed_at": "2026-11-16",
+      "description": "Series and Sample SOFT metadata read by ingest.fetch_series (build_samples_from_geo.py)."
+    },
+    {
+      "id": "scea",
+      "type": "service",
+      "label": "EMBL-EBI Single Cell Expression Atlas",
+      "url": "https://www.ebi.ac.uk/gxa/sc/experiments/E-GEOD-126139",
+      "accessed_at": "2026-11-16",
+      "description": "Checked for author labels (none at subtype level)."
+    },
+    {
+      "id": "python",
+      "type": "language",
+      "label": "Python",
+      "version": "3.14.3",
+      "description": "Pipeline environment (uv-managed)."
+    },
+    {
+      "id": "numpy",
+      "type": "library",
+      "label": "numpy",
+      "version": "2.5.1"
+    },
+    {
+      "id": "pandas",
+      "type": "library",
+      "label": "pandas",
+      "version": "3.0.5"
+    },
+    {
+      "id": "pyyaml",
+      "type": "library",
+      "label": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "id": "linkml",
+      "type": "library",
+      "label": "linkml",
+      "version": "1.11.1",
+      "description": "linkml-validate and linkml-convert (flat RDF)."
+    },
+    {
+      "id": "linkml-runtime",
+      "type": "library",
+      "label": "linkml-runtime",
+      "version": "1.11.1"
+    },
+    {
+      "id": "linkml-owl",
+      "type": "library",
+      "label": "linkml-owl",
+      "version": "0.5.0",
+      "description": "Metadata OWL."
+    },
+    {
+      "id": "rdflib",
+      "type": "library",
+      "label": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "id": "robot",
+      "type": "tool",
+      "label": "ROBOT",
+      "version": "1.9.11",
+      "description": "OFN to OWL/XML conversion (metadata and expression OWL)."
+    },
+    {
+      "id": "psql",
+      "type": "tool",
+      "label": "psql",
+      "version": "14.15",
+      "description": "FlyBase Chado queries."
+    }
+  ],
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "role": "orchestrator",
+      "label": "Claude Opus 5.5",
+      "provider": "Anthropic",
+      "description": "Main Claude Code session: scoping (paper, GEO, SCEA, FlyBase), sample and cluster builds, the cluster and matrix-combining scripts, checks, expression and builds. No subagents."
+    }
+  ]
+}
